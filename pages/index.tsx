@@ -1,10 +1,9 @@
 import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import { PlusIcon } from '@heroicons/react/20/solid'
+import { Disclosure } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
+  { name: 'Home', href: '#', current: true },
   { name: 'Team', href: '#', current: false },
   { name: 'Projects', href: '#', current: false },
   { name: 'Calendar', href: '#', current: false },
@@ -21,35 +20,25 @@ function classNames(...classes) {
 
 export default function Home() {
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="sticky bg-white drop-shadow-md">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="flex h-16 justify-between">
+          <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div className="flex justify-between h-16">
               <div className="flex">
-                <div className="-ml-2 mr-2 flex items-center md:hidden">
+                <div className="flex items-center mr-2 -ml-2 md:hidden">
                   {/* Mobile menu button */}
-                  <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-                    <span className="sr-only">Open main menu</span>
+                  <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md hover:bg-yellow-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                     {open ? (
-                      <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                      <XMarkIcon className="block w-6 h-6" aria-hidden="true" />
                     ) : (
-                      <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                      <Bars3Icon className="block w-6 h-6" aria-hidden="true" />
                     )}
                   </Disclosure.Button>
                 </div>
                 {/* Logo icon */}
-                <div className="flex flex-shrink-0 items-center">
-                  <img
-                    className="block h-8 w-auto lg:hidden"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    alt="Your Company"
-                  />
-                  <img
-                    className="hidden h-8 w-auto lg:block"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    alt="Your Company"
-                  />
+                <div className="flex items-center flex-shrink-0 font-bold md:text-xl">
+                  World<span className='text-yellow-900'>Coffee</span>Summit
                 </div>
                 <div className="hidden md:ml-6 md:flex md:items-center md:space-x-4">
                   {navigation.map((item) => (
@@ -57,7 +46,7 @@ export default function Home() {
                       key={item.name}
                       href={item.href}
                       className={classNames(
-                        item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                        item.current ? 'bg-lime-700 text-white' : 'text-black hover:bg-lime-700 hover:text-white',
                         'px-3 py-2 rounded-md text-sm font-medium'
                       )}
                       aria-current={item.current ? 'page' : undefined}
@@ -71,58 +60,23 @@ export default function Home() {
                 <div className="flex-shrink-0">
                   <button
                     type="button"
-                    className="relative inline-flex items-center rounded-md border border-transparent bg-indigo-500 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-800"
+                    className="relative inline-flex items-center px-8 py-2 text-sm font-medium text-white bg-yellow-900 border border-transparent rounded-md shadow-sm hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-800"
                   >
-                    <PlusIcon className="-ml-1 mr-2 h-5 w-5" aria-hidden="true" />
-                    <span>New Job</span>
+                    <span>Buy tickets</span>
                   </button>
-                </div>
-                <div className="hidden md:ml-4 md:flex md:flex-shrink-0 md:items-center">
-
-                  {/* Profile dropdown */}
-                  <Menu as="div" className="relative ml-3">
-                    <Transition
-                      as={Fragment}
-                      enter="transition ease-out duration-200"
-                      enterFrom="transform opacity-0 scale-95"
-                      enterTo="transform opacity-100 scale-100"
-                      leave="transition ease-in duration-75"
-                      leaveFrom="transform opacity-100 scale-100"
-                      leaveTo="transform opacity-0 scale-95"
-                    >
-                      <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                        {userNavigation.map((item) => (
-                          <Menu.Item key={item.name}>
-                            {({ active }) => (
-                              <a
-                                href={item.href}
-                                className={classNames(
-                                  active ? 'bg-gray-100' : '',
-                                  'block px-4 py-2 text-sm text-gray-700'
-                                )}
-                              >
-                                {item.name}
-                              </a>
-                            )}
-                          </Menu.Item>
-                        ))}
-                      </Menu.Items>
-                    </Transition>
-                  </Menu>
                 </div>
               </div>
             </div>
           </div>
-
           <Disclosure.Panel className="md:hidden">
-            <div className="space-y-1 px-2 pt-2 pb-3 sm:px-3">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                    item.current ? 'bg-lime-700 text-white' : 'text-black hover:bg-lime-700 hover:text-white',
                     'block px-3 py-2 rounded-md text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}
