@@ -5,8 +5,8 @@ import { Carousel } from 'react-responsive-carousel';
 const Venue = () => {
     return (
         <>
-            <div className='flex py-24 lg:flex-row md:flex-col sm:flex-col md:items-center'>
-                <div className='w-1/2 lg:px-16 md:px-8 sm:px-4'>
+            <div className='flex py-24 lg:flex-row md:flex-col msm:flex-col '>
+                <div className='justify-items-center md:w-1/2 sm:px-12'>
                     <Carousel
                         autoPlay={true}
                         infiniteLoop={true}
@@ -46,7 +46,7 @@ const Venue = () => {
                         </div>
                     </Carousel>
                 </div>
-                <div className='w-1/2 px-8 mlg:text-center'>
+                <div className='px-8 lg:w-1/2 mlg:text-center'>
                     <h2 className="mb-6 font-bold text-gray-900 sm:text-2xl lg:text-5xl">
                         THE VENUE - THE COURTHOUSE HOTEL
                     </h2>
@@ -59,7 +59,7 @@ const Venue = () => {
                         building for the Morning Chronicle, and Louis Napoleon appeared in court as witness in a fraud case
                         between attempts to establish a second empire in France in 1847.
                     </h4>
-                    <h4 className="mt-4 text-gray-600 sm:text-sm lg:text-xl mlg:hidden">
+                    <h4 className="mt-4 text-gray-600 sm:text-sm lg:text-xl mmd:hidden">
                         In 1895 Oscar Wilde took the Marquess of Queensbury to court on a criminal libel charge. The
                         current building was designed between 1912-1913 by the Surveyor to the Metropolitan Police, John
                         Dixon Butler. In 1963 Christine Keeler was taken to court over sex allegations which led to the
