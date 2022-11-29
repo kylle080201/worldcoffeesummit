@@ -4,11 +4,11 @@ const GlobalNetwork = () => {
     return (
         <>
             <div className="flex flex-col py-16 mx-auto bg-gray-100 mlg:flex-col lg:px-6 md:px-4 sm:px-2">
-                <h2 className="mb-6 font-bold text-center text-gray-900 sm:text-2xl lg:text-5xl">
-                    OUR MEDIA PARTNERS
-                </h2>
                 <div className="py-4 mx-auto md:px-12">
                     <div className="h-full p-12 bg-white border-none rounded-lg shadow-md mmd:text-center">
+                        <h2 className="mb-6 font-bold text-center text-gray-900 sm:text-2xl lg:text-5xl">
+                            OUR <span className='text-lime-700'>GLOBAL</span> NETWORK
+                        </h2>
                         <div className='grid items-center h-full gap-8 justify-items-center lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2'>
                             <div >
                                 <img src='https://worldcoffeealliance.com/wp-content/uploads/2020/12/LOGO-CE_Vertical_EN_quadri_HR.png'></img>

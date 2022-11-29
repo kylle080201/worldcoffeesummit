@@ -5,7 +5,7 @@ const MediaPartners = () => {
         <>
             <div className="flex flex-col py-16 bg-gray-100 bg-cover mlg:flex-col lg:px-72 md:px-0">
                 <h2 className="mb-6 font-bold text-center text-gray-900 sm:text-2xl lg:text-5xl">
-                    OUR MEDIA PARTNERS
+                    OUR <span className='text-lime-700'>MEDIA</span> PARTNERS
                 </h2>
                 <div className="w-5/6 py-4 mx-auto">
                     <div className="h-full p-8 bg-local bg-white bg-opacity-75 bg-cover border-none rounded-lg shadow-md mmd:text-center">

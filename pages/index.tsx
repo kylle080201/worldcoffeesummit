@@ -1,3 +1,4 @@
+import CountDown from "../components/CountDown"
 import Footer from "../components/Footer"
 import GlobalNetwork from "../components/GlobalNetwork"
 import HeaderVideo from "../components/HeaderVideo"
@@ -13,6 +14,7 @@ const index = () => {
     <>
       <NavBar />
       <HeaderVideo />
+      <CountDown />
       <WhoAreWe />
       <TheWhy />
       <Venue />

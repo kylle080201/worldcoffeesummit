@@ -48,7 +48,7 @@ const Venue = () => {
                 </div>
                 <div className='px-8 lg:w-1/2 mlg:text-center'>
                     <h2 className="mb-6 font-bold text-gray-900 sm:text-2xl lg:text-5xl">
-                        THE VENUE - THE COURTHOUSE HOTEL
+                        THE <span className='text-lime-700'>VENUE</span> - THE COURTHOUSE HOTEL
                     </h2>
                     <h4 className="text-gray-600 sm:text-sm lg:text-xl">
                         The Courthouse Hotel is located in the old Grade II listed Marlborough Street Magistrates Court
