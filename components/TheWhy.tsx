@@ -1,12 +1,12 @@
 import React from 'react'
 
-export const TheWhy = () => {
+const TheWhy = () => {
     return (
         <>
             <div className="flex flex-row bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2019/11/11.jpg')] mlg:flex-col lg:px-72 md:px-0 bg-cover py-16">
                 <div className="w-1/2 py-4 mx-auto max-w-7xl lg:pr-4">
                     <div className="h-full p-8 bg-local bg-gray-700 bg-opacity-75 bg-cover border-none rounded-lg shadow-md mmd:text-center">
-                        <h2 className="mt-1 font-bold text-white sm:text-2xl lg:text-5xl">
+                        <h2 className="mb-6 font-bold text-white sm:text-2xl lg:text-5xl">
                             THE WHY?
                         </h2>
                         <h4 className="mt-4 text-white sm:text-sm lg:text-xl">
@@ -17,7 +17,7 @@ export const TheWhy = () => {
                 </div>
                 <div className="w-1/2 py-4 mx-auto max-w-7xl lg:pl-4">
                     <div className="h-full p-8 bg-local bg-gray-700 bg-opacity-75 bg-cover border-none rounded-lg shadow-md mmd:text-center">
-                        <h2 className="mt-1 font-bold text-white sm:text-2xl lg:text-5xl">
+                        <h2 className="mb-6 font-bold text-white sm:text-2xl lg:text-5xl">
                             THE HOW?
                         </h2>
                         <h4 className="mt-4 text-white sm:text-sm lg:text-xl">
@@ -33,3 +33,5 @@ export const TheWhy = () => {
         </>
     )
 }
+
+export default TheWhy
