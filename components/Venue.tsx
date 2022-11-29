@@ -5,7 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 const Venue = () => {
     return (
         <>
-            <div className='flex flex-row py-16'>
+            <div className='flex flex-row py-24'>
                 <div className='w-1/2 lg:px-16 md:px-8 sm:px-4'>
                     <Carousel
                         autoPlay={true}
@@ -44,7 +44,7 @@ const Venue = () => {
                     </Carousel>
                 </div>
                 <div className='w-1/2 px-8'>
-                    <h2 className="mt-1 font-bold text-gray-900 sm:text-3xl lg:text-6xl">
+                    <h2 className="font-bold text-gray-900 sm:text-3xl lg:text-6xl">
                         THE VENUE - THE COURTHOUSE HOTEL
                     </h2>
                     <h4 className="mt-4 font-bold text-gray-600 sm:text-sm lg:text-xl">
