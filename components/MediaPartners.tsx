@@ -25,7 +25,7 @@ const MediaPartners = () => {
                         <div className='mx-auto my-6 w-60 justify-self-center'>
                             <img src='https://worldcoffeealliance.com/wp-content/uploads/2021/02/ROAST-LOGO-MEDIA-PARTNER.jpg'></img>
                         </div>
-                        <h4 className="text-gray-900 sm:text-sm lg:text-xl">
+                        <h4 className="text-center text-gray-900 sm:text-sm lg:text-xl">
                             "<span className='font-bold'>Roast</span> is a bi-monthly technical trade magazine dedicated to the success and growth of the specialty coffee industry.
                             Roast addresses the art, science and business of coffee by covering the issues most important to the industry, with
                             high-quality editorial focused on the technical aspects of coffee."
