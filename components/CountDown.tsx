@@ -4,10 +4,10 @@ import { useEffect, useState } from "react";
 
 const CountDown = () => {
     const [eventTime, setEventTime] = useState(false);
-    const [days, setDays] = useState(0);
-    const [hours, setHours] = useState(0);
-    const [minutes, setMinutes] = useState(0);
-    const [seconds, setSeconds] = useState(0);
+    const [days, setDays] = useState("00");
+    const [hours, setHours] = useState("00");
+    const [minutes, setMinutes] = useState("00");
+    const [seconds, setSeconds] = useState("00");
     const target = new Date("06/21/2023 08:30:00");
 
     function addLeadingZeros(num, totalLength) {
@@ -41,32 +41,63 @@ const CountDown = () => {
     }, []);
 
     return (
-        <div>
-
+        <>
             {eventTime ? (
-                <>
+                <div>
                     <h1>Event Day</h1>
                     <video autoPlay loop muted>
                         <source src="/party.mp4" />
                     </video>
-                </>
+                </div>
             ) : (
                 <>
-                    <div className="flex flex-row bg-gray-100 mlg:flex-col ">
-                        <div className="flex py-24 mx-auto text-center ">
-                            <div className="text-center">
-                                <h2 className="font-bold text-center text-lime-700 text-9xl">
-                                    {days} : {hours} : {minutes} : {seconds}
+                    <div className="flex-col bg-gray-100 justify-self-center">
+                        <div className="flex flex-row justify-center gap-4 pt-24 mx-auto text-center lg:px-44 md:px-24 msm:px-12">
+                            <div className="flex flex-col w-1/4 bg-white rounded-md msm:p-2 md:p-6 lg:p-8">
+                                <h2 className="font-bold text-center text-lime-700 mmd:text-5xl msm:text-xl lg:text-9xl">
+                                    {days}
                                 </h2>
-                                <h2 className="mt-6 text-3xl font-bold text-gray-900">
-                                    Time left until the event, buy your tickets now!
-                                </h2>
+                                <p className="font-semibold text-center text-gray-900 mmd:text-3xl msm:text-sm lg:text-5xl">
+                                    Days
+                                </p>
                             </div>
+
+                            <div className="flex flex-col w-1/4 bg-white rounded-md msm:p-2 md:p-6 lg:p-8">
+                                <h2 className="font-bold text-center text-lime-700 mmd:text-5xl msm:text-xl lg:text-9xl">
+                                    {hours}
+                                </h2>
+                                <p className="font-semibold text-center text-gray-900 mmd:text-3xl msm:text-sm lg:text-5xl">
+                                    Hours
+                                </p>
+                            </div>
+
+                            <div className="flex flex-col w-1/4 bg-white rounded-md msm:p-2 md:p-6 lg:p-8">
+                                <h2 className="font-bold text-center text-lime-700 mmd:text-5xl msm:text-xl lg:text-9xl">
+                                    {minutes}
+                                </h2>
+                                <p className="font-semibold text-center text-gray-900 mmd:text-3xl msm:text-sm lg:text-5xl">
+                                    Minutes
+                                </p>
+                            </div>
+
+                            <div className="flex flex-col w-1/4 bg-white rounded-md msm:p-2 md:p-6 lg:p-8">
+                                <h2 className="font-bold text-center text-lime-700 mmd:text-5xl msm:text-xl lg:text-9xl">
+                                    {seconds}
+                                </h2>
+                                <p className="font-semibold text-center text-gray-900 mmd:text-3xl msm:text-sm lg:text-5xl">
+                                    Seconds
+                                </p>
+                            </div>
+                        </div>
+                        <div className="flex flex-row justify-center pt-6 pb-24 mx-auto text-center lg:px-44 md:px-24 msm:px-12">
+                            <h2 className="font-semibold lg:text-4xl msm:text-sm">
+                                Time left until the event. Buy your tickets now!
+                            </h2>
                         </div>
                     </div>
                 </>
             )}
-        </div>
+        </>
     );
 };
 
