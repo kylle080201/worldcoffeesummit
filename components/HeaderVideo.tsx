@@ -11,7 +11,7 @@ const HeaderVideo = () => {
                     className="w-auto h-auto min-w-full min-h-full "
                 >
                     <source
-                        src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/Save-the-date-Revised-2.mp4"
+                        src="https://worldcoffeealliance.com/wp-content/uploads/2023/04/Save-the-date_13-September-2023_Final.mp4"
                         type="video/mp4"
                     />
                 </video>

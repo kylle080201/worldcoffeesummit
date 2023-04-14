@@ -8,14 +8,14 @@ const Venue = () => {
             <div className='flex py-24 mlg:flex-row mmd:flex-col msm:flex-col '>
                 <div className='justify-items-center md:w-1/2 sm:px-12'>
                     <Carousel
-                        autoPlay={true}
-                        infiniteLoop={true}
-                        interval={3000}
-                        showIndicators={false}
+                        // autoPlay={true}
+                        // infiniteLoop={true}
+                        // interval={3000}
+                        showIndicators={true}
                         showStatus={false}
                         stopOnHover={true}
                         emulateTouch={true}
-                        showArrows={false}
+                        showArrows={true}
                     >
                         <div>
                             <img src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/courthouse-hotel-exterior-1.jpg" />
@@ -77,7 +77,18 @@ const Venue = () => {
                         film distribution companies, and in 1967 former television presenter <a href='https://en.wikipedia.org/wiki/Katie_Boyle' target={"_blank"} className='font-semibold text-yellow-900 underline'>Katie Boyle</a> gave evidence
                         against a man facing careless driving charges after an accident.
                     </h4>
+                    <div className='flex justify-center mt-16' >
+                        <a target={'_blank'} rel="noopener noreferrer" href='https://memoirsofametrogirl.com/2020/11/19/marlborough-street-magistrates-court-courthouse-hotel-soho-history/?fbclid=IwAR0WHxAcGuEFVQh94x1Wo0HHVgBbjoo1F7l8-8ErVXLLuw8AYdbIP6BY4ZA'>
+                            <button
+                                type="button"
+                                className="px-24 py-6 mx-auto text-base font-semibold text-white border border-transparent rounded-full shadow-sm bg-lime-700 hover:bg-lime-900 focus:outline-none"
+                            >
+                                <span className='text-xl '>CHECK THE VENUE</span>
+                            </button>
+                        </a>
+                    </div>
                 </div>
+
             </div>
 
         </>

@@ -1,5 +1,3 @@
-import Head from "next/head";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const CountDown = () => {
@@ -8,9 +6,9 @@ const CountDown = () => {
     const [hours, setHours] = useState("00");
     const [minutes, setMinutes] = useState("00");
     const [seconds, setSeconds] = useState("00");
-    const target = new Date("06/21/2023 08:30:00");
+    const target = new Date("09/13/2023 08:30:00");
 
-    function addLeadingZeros(num, totalLength) {
+    function addLeadingZeros(num: any, totalLength: any) {
         return String(num).padStart(totalLength, '0');
     }
 
@@ -91,7 +89,7 @@ const CountDown = () => {
                         </div>
                         <div className="flex flex-row justify-center pt-6 pb-24 mx-auto text-center lg:px-44 md:px-24 msm:px-12">
                             <h2 className="font-semibold lg:text-4xl msm:text-sm">
-                                Time left until the event. Buy your tickets now!
+                                Time left until the event. Buy your delegate tickets now!
                             </h2>
                         </div>
                     </div>
