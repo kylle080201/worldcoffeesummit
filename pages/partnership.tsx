@@ -2,7 +2,7 @@ import Footer from "../components/Footer"
 import NavBar from "../components/NavBar"
 import Partnership from "../components/Partnership"
 
-const index = () => {
+const partnership = () => {
     return (
         <>
             <NavBar currentPage={"Partnership"} />
@@ -12,4 +12,4 @@ const index = () => {
     )
 }
 
-export default index
+export default partnership
