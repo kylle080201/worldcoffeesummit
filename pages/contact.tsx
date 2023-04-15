@@ -2,7 +2,7 @@ import Contact from "../components/Contact"
 import Footer from "../components/Footer"
 import NavBar from "../components/NavBar"
 
-const index = () => {
+const contact = () => {
     return (
         <>
             <NavBar currentPage={"Contact"} />
@@ -12,4 +12,4 @@ const index = () => {
     )
 }
 
-export default index
+export default contact
