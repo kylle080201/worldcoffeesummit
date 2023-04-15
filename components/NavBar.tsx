@@ -1,15 +1,13 @@
-import { Fragment } from 'react'
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-
-
+import { useRouter } from 'next/router';
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
 const NavBar = ({ currentPage }) => {
-
+    const router = useRouter();
     const navigation = [
         { name: 'Partnership', href: '/partnership', current: currentPage === "Partnership" ? true : false },
         { name: 'Contact', href: '/contact', current: currentPage === "Contact" ? true : false },
@@ -33,18 +31,18 @@ const NavBar = ({ currentPage }) => {
                                 </div>
                                 {/* Logo icon */}
                                 <div className="flex items-center flex-shrink-0 font-bold md:text-2xl">
-                                    <a href='/' >
+                                    <a onClick={() => router.push('/')} className='cursor-pointer'>
                                         WCA World<span className='text-yellow-900'>Coffee</span>Summit 2023
                                     </a>
                                 </div>
-                                <div className="hidden md:ml-6 md:flex md:items-center md:space-x-4">
+                                <div className="hidden md:ml-6 md:flex md:items-center md:space-x-4 ">
                                     {navigation.map((item) => (
                                         <a
                                             key={item.name}
-                                            href={item.href}
+                                            onClick={() => router.push(item.href)}
                                             className={classNames(
                                                 item.current ? 'bg-lime-700 text-white hover:bg-lime-900' : 'text-black hover:bg-lime-900 hover:text-white',
-                                                'px-3 py-2 rounded-md text-xl font-medium'
+                                                'px-3 py-2 rounded-md text-xl font-medium cursor-pointer'
                                             )}
                                             aria-current={item.current ? 'page' : undefined}
                                         >

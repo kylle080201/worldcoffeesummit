@@ -1,6 +1,5 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-import HeaderVideo from './HeaderVideo';
 
 const SignIn = () => {
     const router = useRouter();
@@ -18,7 +17,7 @@ const SignIn = () => {
                     <div className="w-full max-w-sm mx-auto lg:w-96">
                         <div>
                             <div className="flex items-center flex-shrink-0 font-bold md:text-3xl">
-                                <a href='/' >
+                                <a onClick={() => router.push('/')} className='cursor-pointer'>
                                     WCA World<span className='text-yellow-900'>Coffee</span>Summit 2023
                                 </a>
                             </div>
