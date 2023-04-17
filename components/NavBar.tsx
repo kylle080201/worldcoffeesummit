@@ -1,13 +1,13 @@
+"use client"
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { useRouter } from 'next/router';
+import Link from 'next/link';
 
-function classNames(...classes) {
+function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
 }
 
-const NavBar = ({ currentPage }) => {
-    const router = useRouter();
+const NavBar = ({ currentPage }: any) => {
     const navigation = [
         { name: 'Partnership', href: '/partnership', current: currentPage === "Partnership" ? true : false },
         { name: 'Contact', href: '/contact', current: currentPage === "Contact" ? true : false },
@@ -31,15 +31,15 @@ const NavBar = ({ currentPage }) => {
                                 </div>
                                 {/* Logo icon */}
                                 <div className="flex items-center flex-shrink-0 font-bold md:text-2xl">
-                                    <a onClick={() => router.push('/')} className='cursor-pointer'>
+                                    <Link href={'/'} className='cursor-pointer'>
                                         WCA World<span className='text-yellow-900'>Coffee</span>Summit 2023
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="hidden md:ml-6 md:flex md:items-center md:space-x-4 ">
                                     {navigation.map((item) => (
-                                        <a
+                                        <Link
                                             key={item.name}
-                                            onClick={() => router.push(item.href)}
+                                            href={item.href}
                                             className={classNames(
                                                 item.current ? 'bg-lime-700 text-white hover:bg-lime-900' : 'text-black hover:bg-lime-900 hover:text-white',
                                                 'px-3 py-2 rounded-md text-xl font-medium cursor-pointer'
@@ -47,7 +47,7 @@ const NavBar = ({ currentPage }) => {
                                             aria-current={item.current ? 'page' : undefined}
                                         >
                                             {item.name}
-                                        </a>
+                                        </Link>
                                     ))}
                                     <div className="flex items-center">
                                         <div className="flex-shrink-1">
