@@ -1,9 +1,7 @@
 import React from 'react';
-import { useRouter } from 'next/router';
-import HeaderVideo from './HeaderVideo';
+import Link from 'next/link';
 
 const SignIn = () => {
-    const router = useRouter();
     return (
         <>
             <div className="flex min-h-full ">
@@ -18,9 +16,9 @@ const SignIn = () => {
                     <div className="w-full max-w-sm mx-auto lg:w-96">
                         <div>
                             <div className="flex items-center flex-shrink-0 font-bold md:text-3xl">
-                                <a href='/' >
+                                <Link href='/' className='cursor-pointer'>
                                     WCA World<span className='text-yellow-900'>Coffee</span>Summit 2023
-                                </a>
+                                </Link>
                             </div>
                             <h2 className="mt-6 text-2xl font-bold tracking-tight text-gray-900">Admin access</h2>
                         </div>
@@ -37,7 +35,7 @@ const SignIn = () => {
                                                 id="email"
                                                 name="email"
                                                 type="text"
-                                                placeholder='juandelacruz@samplemail.com'
+                                                placeholder='johndoe@samplemail.com'
                                                 autoComplete="email"
                                                 required
                                                 className="block w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-md shadow-sm appearance-none focus:border-lime-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
@@ -62,11 +60,6 @@ const SignIn = () => {
 
                                         </div>
                                     </div>
-
-                                    <div className="flex items-center justify-between">
-
-                                    </div>
-
                                     <div>
                                         <button
                                             type="submit"
