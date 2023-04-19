@@ -35,7 +35,7 @@ const SignIn = () => {
                                                 id="email"
                                                 name="email"
                                                 type="text"
-                                                placeholder='juandelacruz@samplemail.com'
+                                                placeholder='johndoe@samplemail.com'
                                                 autoComplete="email"
                                                 required
                                                 className="block w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-md shadow-sm appearance-none focus:border-lime-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
