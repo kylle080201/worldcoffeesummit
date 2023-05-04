@@ -60,7 +60,7 @@ export default function TicketPricing() {
     ]
 
     return (
-        <div className="py-24 bg-white sm:py-32">
+        <div className="z-40 py-24 bg-white sm:py-32">
             <div className="px-6 mx-auto max-w-7xl lg:px-8">
                 <div className="max-w-2xl mx-auto sm:text-center">
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">SPONSORSHIP/PARTNERSHIP PACKAGES</h2>

@@ -1,5 +1,5 @@
 import Footer from '../../components/Footer';
-import NavBar from '../../components/NavBar';
+import Navbar from '../../components/NavBar';
 import './globals.css';
 export const metadata = {
   title: 'World Coffee Summit 2023',
@@ -15,7 +15,7 @@ export default function RootLayout({
     <html lang="en">
       <head></head>
       <body>
-        <NavBar />
+        <Navbar />
         {children}
         <Footer />
       </body>

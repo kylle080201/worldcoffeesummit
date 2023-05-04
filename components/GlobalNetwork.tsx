@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const GlobalNetwork = () => {
@@ -11,55 +12,55 @@ const GlobalNetwork = () => {
                         </h2>
                         <div className='grid items-center h-full gap-8 justify-items-center lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2'>
                             <div >
-                                <img src='https://worldcoffeealliance.com/wp-content/uploads/2020/12/LOGO-CE_Vertical_EN_quadri_HR.png'></img>
+                                <Image src='https://worldcoffeealliance.com/wp-content/uploads/2020/12/LOGO-CE_Vertical_EN_quadri_HR.png' alt=''></Image>
                             </div>
                             <div>
-                                <img src='https://worldcoffeealliance.com/wp-content/uploads/2020/08/ICO-Logo-Black-Clear-Background-copy-2.png'></img>
+                                <Image src='https://worldcoffeealliance.com/wp-content/uploads/2020/08/ICO-Logo-Black-Clear-Background-copy-2.png' alt=''></Image>
                             </div>
                             <div>
-                                <img src='https://worldcoffeealliance.com/wp-content/uploads/2021/05/ITC-logo.png'></img>
+                                <Image src='https://worldcoffeealliance.com/wp-content/uploads/2021/05/ITC-logo.png' alt=''></Image>
                             </div>
                             <div>
-                                <img src='https://worldcoffeealliance.com/wp-content/uploads/2021/01/WBG-logo-780x439-1.jpg'></img>
+                                <Image src='https://worldcoffeealliance.com/wp-content/uploads/2021/01/WBG-logo-780x439-1.jpg' alt=''></Image>
                             </div>
                             <div>
-                                <img src='https://worldcoffeealliance.com/wp-content/uploads/2021/01/IFC-CMCO_Horizontal_RGB_TransparentBG-high.png'></img>
+                                <Image src='https://worldcoffeealliance.com/wp-content/uploads/2021/01/IFC-CMCO_Horizontal_RGB_TransparentBG-high.png' alt=''></Image>
                             </div>
                             <div>
-                                <img src='https://worldcoffeealliance.com/wp-content/uploads/2021/04/CHINA-COFFEE-ASSOCIATION_2019-11-30-223815_Transparent.png'></img>
+                                <Image src='https://worldcoffeealliance.com/wp-content/uploads/2021/04/CHINA-COFFEE-ASSOCIATION_2019-11-30-223815_Transparent.png' alt=''></Image>
                             </div>
                             <div>
-                                <img src='https://worldcoffeealliance.com/wp-content/uploads/2021/05/lavazza-logo.jpg'></img>
+                                <Image src='https://worldcoffeealliance.com/wp-content/uploads/2021/05/lavazza-logo.jpg' alt=''></Image>
                             </div>
                             <div>
-                                <img src='https://worldcoffeealliance.com/wp-content/uploads/2021/05/harambee.png' ></img>
+                                <Image src='https://worldcoffeealliance.com/wp-content/uploads/2021/05/harambee.png' alt=''></Image>
                             </div>
                             <div>
-                                <img src='https://worldcoffeealliance.com/wp-content/uploads/2020/08/IWCA-Promoting-Possibilities_Logo_Registered108.png' className=' h-60'></img>
+                                <Image src='https://worldcoffeealliance.com/wp-content/uploads/2020/08/IWCA-Promoting-Possibilities_Logo_Registered108.png' className=' h-60' alt=''></Image>
                             </div>
                             <div>
-                                <img src='https://worldcoffeealliance.com/wp-content/uploads/2021/04/MSCA_Transparent.png' className='h-60'></img>
+                                <Image src='https://worldcoffeealliance.com/wp-content/uploads/2021/04/MSCA_Transparent.png' className='h-60' alt=''></Image>
                             </div>
                             <div>
-                                <img src='https://worldcoffeealliance.com/wp-content/uploads/2021/01/Logo_IACO.png'></img>
+                                <Image src='https://worldcoffeealliance.com/wp-content/uploads/2021/01/Logo_IACO.png' alt=''></Image>
                             </div>
                             <div>
-                                <img src='https://worldcoffeealliance.com/wp-content/uploads/2020/08/FBM_INT_VERT_RGB_POS.png' className='h-44'></img>
+                                <Image src='https://worldcoffeealliance.com/wp-content/uploads/2020/08/FBM_INT_VERT_RGB_POS.png' className='h-44' alt=''></Image>
                             </div>
                             <div>
-                                <img src='https://worldcoffeealliance.com/wp-content/uploads/2020/08/logo_forest_RGB.png'></img>
+                                <Image src='https://worldcoffeealliance.com/wp-content/uploads/2020/08/logo_forest_RGB.png' alt=''></Image>
                             </div>
                             <div>
-                                <img src='https://worldcoffeealliance.com/wp-content/uploads/2022/09/BCA_PrimaryLogo_Large-scaled.jpg'></img>
+                                <Image src='https://worldcoffeealliance.com/wp-content/uploads/2022/09/BCA_PrimaryLogo_Large-scaled.jpg' alt=''></Image>
                             </div>
                             <div>
-                                <img src='https://worldcoffeealliance.com/wp-content/uploads/2021/01/Fedecafe.png' className='h-48'></img>
+                                <Image src='https://worldcoffeealliance.com/wp-content/uploads/2021/01/Fedecafe.png' className='h-48' alt=''></Image>
                             </div>
                             <div>
-                                <img src='https://worldcoffeealliance.com/wp-content/uploads/2021/05/gsma-logo.png'></img>
+                                <Image src='https://worldcoffeealliance.com/wp-content/uploads/2021/05/gsma-logo.png' alt=''></Image>
                             </div>
                             <div>
-                                <img src='https://worldcoffeealliance.com/wp-content/uploads/2021/01/logo_bsca.jpg'></img>
+                                <Image src='https://worldcoffeealliance.com/wp-content/uploads/2021/01/logo_bsca.jpg' alt=''></Image>
                             </div>
                         </div>
                     </div>

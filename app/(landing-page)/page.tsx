@@ -1,5 +1,6 @@
 import CountDown from "../../components/CountDown";
 import HeaderVideo from "../../components/HeaderVideo";
+import Speakers from "../../components/Speakers";
 import TheWhy from "../../components/TheWhy";
 import Venue from "../../components/Venue";
 import WhoAreWe from "../../components/WhoAreWe";
@@ -12,6 +13,7 @@ export default function HomePage() {
                 <CountDown />
                 <WhoAreWe />
                 <TheWhy />
+                <Speakers />
                 <Venue />
             </div>
         </>

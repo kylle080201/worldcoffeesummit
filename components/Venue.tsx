@@ -2,17 +2,15 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import Link from "next/link";
+import Image from "next/image";
 
 
 const Venue = () => {
     return (
         <>
-            <div className='flex py-24 mlg:flex-row mmd:flex-col msm:flex-col '>
+            <div className='flex py-24 mlg:flex-row mmd:flex-col msm:flex-col' id="venue" >
                 <div className='justify-items-center md:w-1/2 sm:px-12'>
                     <Carousel
-                        // autoPlay={true}
-                        // infiniteLoop={true}
-                        // interval={3000}
                         showIndicators={true}
                         showStatus={false}
                         stopOnHover={true}
@@ -20,40 +18,40 @@ const Venue = () => {
                         showArrows={true}
                     >
                         <div>
-                            <img src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/courthouse-hotel-exterior-1.jpg" />
+                            <img alt="Venue image1" src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/courthouse-hotel-exterior-1.jpg" />
                         </div>
                         <div>
-                            <img src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/Courthouse-front_cropped.jpg" />
+                            <img alt="Venue image2" src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/Courthouse-front_cropped.jpg" />
                         </div>
                         <div>
-                            <img src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/PATCHC-SP2__02_cropped.jpg" />
+                            <img alt="Venue image3" src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/PATCHC-SP2__02_cropped.jpg" />
                         </div>
                         <div>
-                            <img src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/Courthouse-Hotel-Lobby_cropped.jpg" />
+                            <img alt="Venue image4" src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/Courthouse-Hotel-Lobby_cropped.jpg" />
                         </div>
                         <div>
-                            <img src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/Courthouse-Hotel-London-London-Undefined-Bar-at-Courthouse-Hotel-London_cropped.jpg" />
+                            <img alt="Venue image5" src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/Courthouse-Hotel-London-London-Undefined-Bar-at-Courthouse-Hotel-London_cropped.jpg" />
                         </div>
                         <div>
-                            <img src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/Silk-Restaurant-@-Courthouse-Hotel-Soho_cropped.jpg" />
+                            <img alt="Venue image6" src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/Silk-Restaurant-@-Courthouse-Hotel-Soho_cropped.jpg" />
                         </div>
                         <div>
-                            <img src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/courthouse-hotel-bar.jpg" />
+                            <img alt="Venue image7" src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/courthouse-hotel-bar.jpg" />
                         </div>
                         <div>
-                            <img src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/RAU_7291_cropped.jpg" />
+                            <img alt="Venue image8" src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/RAU_7291_cropped.jpg" />
                         </div>
                         <div>
-                            <img src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/Courthouse-Shoreditch-restaurant-02a-1-1024x683_cropped.jpg" />
+                            <img alt="Venue image9" src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/Courthouse-Shoreditch-restaurant-02a-1-1024x683_cropped.jpg" />
                         </div>
                         <div>
-                            <img src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/Courthouse-Hotel-London-web-1-1-1_cropped.jpg" />
+                            <img alt="Venue image10" src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/Courthouse-Hotel-London-web-1-1-1_cropped.jpg" />
                         </div>
                         <div>
-                            <img src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/courthouse-cinema_cropped.jpg" />
+                            <img alt="Venue image11" src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/courthouse-cinema_cropped.jpg" />
                         </div>
                         <div>
-                            <img src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/20220622_163535_cropped.jpg" />
+                            <img alt="Venue image12" src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/20220622_163535_cropped.jpg" />
                         </div>
                     </Carousel>
                 </div>

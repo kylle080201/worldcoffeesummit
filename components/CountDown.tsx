@@ -37,7 +37,7 @@ const CountDown = () => {
         }, 1000);
 
         return () => clearInterval(interval);
-    }, []);
+    });
 
     return (
         <>
