@@ -80,7 +80,7 @@ const ambassadors = [
         role: 'The Swiss Ambassador to the United Kingdom',
         company: '',
         imageUrl:
-            '',
+            'https://worldcoffeealliance.com/wp-content/uploads/2023/05/MARKUS-LEITNER.jpg',
     },
     {
         name: 'H.E. Vikram Doraiswami',
