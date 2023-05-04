@@ -132,7 +132,7 @@ export default function Speakers() {
                 </div>
                 <ul
                     role="list"
-                    className="grid grid-cols-1 mx-auto mt-20 gap-x-6 gap-y-20 sm:grid-cols-3 lg:gap-x-8"
+                    className="grid grid-cols-1 mx-auto mt-20 gap-x-6 gap-y-20 sm:grid-cols-2 lg:gap-x-8"
                 >
                     {ambassadors.map((ambassador) => (
                         <li key={ambassador.name} className="flex flex-col gap-6 xl:flex-row">
