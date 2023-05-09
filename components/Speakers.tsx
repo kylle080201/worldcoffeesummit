@@ -94,7 +94,7 @@ const ambassadors = [
 export default function Speakers() {
     return (
 
-        <div className="py-16 bg-gray-100" id='speakers'>
+        <div className="py-16" id='speakers'>
             <div className="px-6 mx-auto my-16 sm:px-12">
                 <div className="max-w-2xl mx-auto sm:text-center">
                     <p className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Meet our Speakers and Ambassadors</p>
@@ -121,30 +121,6 @@ export default function Speakers() {
                                     <p className="text-3xl font-semibold leading-8 tracking-tight text-gray-900">{speaker.name}</p>
                                     <p className="text-xl leading-7 text-gray-700">{speaker.role}</p>
                                     <p className="text-xl leading-7 text-gray-900">{speaker.company}</p>
-                                </div>
-                            </div>
-                        </li>
-                    ))}
-                </ul>
-
-                <div className="max-w-2xl mx-auto mt-32 sm:text-center">
-                    <p className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Ambassadors</p>
-                </div>
-                <ul
-                    role="list"
-                    className="grid grid-cols-1 mx-auto mt-20 gap-x-6 gap-y-20 sm:grid-cols-2 lg:gap-x-8"
-                >
-                    {ambassadors.map((ambassador) => (
-                        <li key={ambassador.name} className="flex flex-col gap-6 xl:flex-row">
-                            <div>
-                                <Image className="flex-none w-40 rounded-full " src={ambassador.imageUrl} alt={ambassador.name} width={160} height={160} />
-                            </div>
-
-                            <div className="flex items-center">
-                                <div>
-                                    <p className="text-3xl font-semibold leading-8 tracking-tight text-gray-900">{ambassador.name}</p>
-                                    <p className="text-xl leading-7 text-gray-700">{ambassador.role}</p>
-                                    <p className="text-xl leading-7 text-gray-900">{ambassador.company}</p>
                                 </div>
                             </div>
                         </li>

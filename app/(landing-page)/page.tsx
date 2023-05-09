@@ -1,4 +1,5 @@
 import CountDown from "../../components/CountDown";
+import FAQ from "../../components/FAQ";
 import HeaderVideo from "../../components/HeaderVideo";
 import Speakers from "../../components/Speakers";
 import TheWhy from "../../components/TheWhy";
@@ -11,10 +12,9 @@ export default function HomePage() {
             <div>
                 <HeaderVideo />
                 <CountDown />
-                <WhoAreWe />
-                <TheWhy />
                 <Speakers />
                 <Venue />
+                <FAQ />
             </div>
         </>
     )

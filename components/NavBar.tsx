@@ -2,14 +2,12 @@
 import { Fragment, useState } from 'react'
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import {
+    BanknotesIcon,
     Bars3Icon,
-    ClockIcon,
-    DocumentIcon,
+    ListBulletIcon,
     MapPinIcon,
     PencilSquareIcon,
-    PresentationChartBarIcon,
     QuestionMarkCircleIcon,
-    UserGroupIcon,
     UserIcon,
     XMarkIcon,
 } from '@heroicons/react/24/outline'
@@ -29,13 +27,11 @@ const Navbar = () => {
         { name: 'Contact', href: '/contact', current: pathname === '/contact' ? true : false },
     ]
     const dropdown = [
-        { name: 'Overview', href: '#overview', icon: PresentationChartBarIcon },
-        { name: 'Agenda', href: '#agenda', icon: ClockIcon },
         { name: 'Speakers', href: '#speakers', icon: UserIcon },
+        { name: 'Program', href: '#program', icon: ListBulletIcon },
         { name: 'Venue', href: '#venue', icon: MapPinIcon },
-        { name: 'Partners', href: '#partners', icon: UserGroupIcon },
         { name: 'FAQ', href: '#faq', icon: QuestionMarkCircleIcon },
-        { name: 'Brochure', href: '#brochure', icon: DocumentIcon },
+        { name: 'Sponsors', href: '#sponsors', icon: BanknotesIcon },
         { name: 'Register', href: '#register', icon: PencilSquareIcon },
     ]
     return (
@@ -60,7 +56,7 @@ const Navbar = () => {
                     <Popover className="relative">
                         <Popover.Button className={classNames(pathname === '/' ? 'bg-lime-700 text-white hover:bg-lime-900' : 'text-gray hover:bg-lime-700 hover:text-white',
                             "flex items-center px-3 py-2 font-semibold leading-6 text-gray-900 rounded-md gap-x-1 ")}>
-                            Home
+                            Overview
                             <ChevronDownIcon className="flex-none w-5 h-5" aria-hidden="true" />
                         </Popover.Button>
 

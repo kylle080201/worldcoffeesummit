@@ -1,94 +1,27 @@
 "use client"
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+
 import Link from "next/link";
-import Image from "next/image";
 
 
 const Venue = () => {
     return (
         <>
-            <div className='flex py-24 mlg:flex-row mmd:flex-col msm:flex-col' id="venue" >
-                <div className='justify-items-center md:w-1/2 sm:px-12'>
-                    <Carousel
-                        showIndicators={true}
-                        showStatus={false}
-                        stopOnHover={true}
-                        emulateTouch={true}
-                        showArrows={true}
-                    >
-                        <div>
-                            <img alt="Venue image1" src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/courthouse-hotel-exterior-1.jpg" />
-                        </div>
-                        <div>
-                            <img alt="Venue image2" src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/Courthouse-front_cropped.jpg" />
-                        </div>
-                        <div>
-                            <img alt="Venue image3" src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/PATCHC-SP2__02_cropped.jpg" />
-                        </div>
-                        <div>
-                            <img alt="Venue image4" src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/Courthouse-Hotel-Lobby_cropped.jpg" />
-                        </div>
-                        <div>
-                            <img alt="Venue image5" src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/Courthouse-Hotel-London-London-Undefined-Bar-at-Courthouse-Hotel-London_cropped.jpg" />
-                        </div>
-                        <div>
-                            <img alt="Venue image6" src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/Silk-Restaurant-@-Courthouse-Hotel-Soho_cropped.jpg" />
-                        </div>
-                        <div>
-                            <img alt="Venue image7" src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/courthouse-hotel-bar.jpg" />
-                        </div>
-                        <div>
-                            <img alt="Venue image8" src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/RAU_7291_cropped.jpg" />
-                        </div>
-                        <div>
-                            <img alt="Venue image9" src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/Courthouse-Shoreditch-restaurant-02a-1-1024x683_cropped.jpg" />
-                        </div>
-                        <div>
-                            <img alt="Venue image10" src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/Courthouse-Hotel-London-web-1-1-1_cropped.jpg" />
-                        </div>
-                        <div>
-                            <img alt="Venue image11" src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/courthouse-cinema_cropped.jpg" />
-                        </div>
-                        <div>
-                            <img alt="Venue image12" src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/20220622_163535_cropped.jpg" />
-                        </div>
-                    </Carousel>
-                </div>
-                <div className='px-8 lg:w-1/2 mlg:text-center'>
-                    <h2 className="mb-6 font-bold text-gray-900 sm:text-2xl lg:text-5xl">
-                        THE <span className='text-lime-700'>VENUE</span> - THE COURTHOUSE HOTEL
-                    </h2>
-                    <h4 className="text-gray-600 sm:text-sm lg:text-xl">
-                        The Courthouse Hotel is located in the old Grade II listed Marlborough Street Magistrates Court
-                        building, which was the second-oldest magistrates court in the UK, dating back to the 1800s.The
-                        building has a turbulent history from its time as the Marlborough Street Magistrates Court, which set
-                        the scene for many famous cases over the years, involving figures such
-                        as <Link href='https://en.wikipedia.org/wiki/John_Lennon' target={"_blank"} className='font-semibold text-yellow-900 underline'>John Lennon</Link>, <Link href='https://en.wikipedia.org/wiki/Oscar_Wilde' target={"_blank"} className='font-semibold text-yellow-900 underline'>Oscar Wilde</Link>, <Link href='https://en.wikipedia.org/wiki/John_Lydon' target={"_blank"} className='font-semibold text-yellow-900 underline'>Johnny Rotten</Link>, <Link href='https://en.wikipedia.org/wiki/Mick_Jagger' target={"_blank"} className='font-semibold text-yellow-900 underline'>Mick Jagger</Link> and <Link href='https://en.wikipedia.org/wiki/Keith_Richards' target={"_blank"} className='font-semibold text-yellow-900 underline'>Keith Richards</Link>. In
-                        1835 <Link href='https://en.wikipedia.org/wiki/Charles_Dickens' target={"_blank"} className='font-semibold text-yellow-900 underline'>Charles Dickens</Link> worked as a reporter in the
-                        building for the <Link href='https://en.wikipedia.org/wiki/The_Morning_Chronicle' target={"_blank"} className='font-semibold text-yellow-900 underline'>Morning Chronicle</Link>, and <Link href='https://en.wikipedia.org/wiki/Napoleon_III' target={"_blank"} className='font-semibold text-yellow-900 underline'>Louis Napoleon</Link> appeared in court as witness in a fraud case
-                        between attempts to establish a second empire in France in 1847.
-                    </h4>
-                    <h4 className="mt-4 text-gray-600 sm:text-sm lg:text-xl">
-                        In 1895 Oscar Wilde took the <Link href='https://en.wikipedia.org/wiki/Marquess_of_Queensberry' target={"_blank"} className='font-semibold text-yellow-900 underline'>Marquess of Queensbury</Link> to court on a criminal libel charge. The
-                        current building was designed between 1912-1913 by the Surveyor to the <Link href='https://en.wikipedia.org/wiki/Metropolitan_Police' target={"_blank"} className='font-semibold text-yellow-900 underline'>Metropolitan Police</Link>, <Link href='https://en.wikipedia.org/wiki/John_Dixon_Butler' target={"_blank"} className='font-semibold text-yellow-900 underline'>John Dixon Butler</Link>.
-                        In 1963 <Link href='https://en.wikipedia.org/wiki/Christine_Keeler' target={"_blank"} className='font-semibold text-yellow-900 underline'>Christine Keeler</Link> was taken to court over sex allegations which led to the <Link href='https://en.wikipedia.org/wiki/Profumo_affair' target={"_blank"} className='font-semibold text-yellow-900 underline'>Profumo scandal</Link> becoming
-                        public. In 1966 <Link href='https://en.wikipedia.org/wiki/Bob_Monkhouse' target={"_blank"} className='font-semibold text-yellow-900 underline'>Bob Monkhouse</Link> faced a charge of conspiracy to defraud
-                        film distribution companies, and in 1967 former television presenter <Link href='https://en.wikipedia.org/wiki/Katie_Boyle' target={"_blank"} className='font-semibold text-yellow-900 underline'>Katie Boyle</Link> gave evidence
-                        against a man facing careless driving charges after an accident.
-                    </h4>
-                    <div className='flex justify-center mt-16' >
-                        <Link target={'_blank'} rel="noopener noreferrer" href='https://memoirsofametrogirl.com/2020/11/19/marlborough-street-magistrates-court-courthouse-hotel-soho-history/?fbclid=IwAR0WHxAcGuEFVQh94x1Wo0HHVgBbjoo1F7l8-8ErVXLLuw8AYdbIP6BY4ZA'>
-                            <button
-                                type="button"
-                                className="px-24 py-6 mx-auto text-base font-semibold text-white border border-transparent rounded-full shadow-sm bg-lime-700 hover:bg-lime-900 focus:outline-none"
-                            >
-                                <span className='text-xl '>CHECK THE VENUE</span>
-                            </button>
-                        </Link>
+            <div className='flex justify-center px-12 py-24 bg-gray-100 mlg:flex-row mmd:flex-col msm:flex-col' id="venue" >
+                <div className="self-center max-w-2xl mx-auto ">
+                    <div>
+                        <p className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">THE VENUE</p>
+                        <p className="mt-6 text-xl leading-8 text-gray-600">
+                            The Courthouse Hotel is located in the old Grade II listed Marlborough Street Magistrates Court
+                            building, which was the second-oldest magistrates court in the UK, dating back to the 1800s.
+                        </p>
                     </div>
                 </div>
+                <div className='px-6 drop-shadow-md hover:drop-shadow-lg'>
+                    <Link href={"https://www.google.com/maps/place/Courthouse+Hotel/@51.5143993,-0.1401305,19z/data=!4m9!3m8!1s0x487604d5482fa771:0xbec838d64b209b82!5m2!4m1!1i2!8m2!3d51.5143826!4d-0.1394573!16s%2Fm%2F09k68cb"} target="_blank">
+                        <img alt="Venue image" src="https://worldcoffeealliance.com/wp-content/uploads/2023/05/COURTHOUSE-HOTEL-LONDON-MAP.png" className="rounded-lg" />
+                    </Link>
 
+                </div>
             </div>
 
         </>
