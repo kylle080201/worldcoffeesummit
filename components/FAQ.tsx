@@ -1,4 +1,7 @@
-import Link from "next/link"
+"use client"
+import { Disclosure } from '@headlessui/react'
+import { CheckCircleIcon, MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
+import Link from 'next/link'
 
 const faqs = [
     {
@@ -65,7 +68,7 @@ const faqs = [
             },
             {
                 key: 9,
-                info: "Dr Dongyu Qu, Director-General of the Food and Agriculture Organization of the United Nations (FAO).",
+                info: "Dr Dongyu Qu, Director-General of the Food and Agriculture Organization of the United Nations (FAO)",
             },
         ]
     },
@@ -75,80 +78,113 @@ const faqs = [
         answer:
             "We will have Keynotes from various UK Government Ministers and 4 ambassadors, from Ethiopia, India, Switzerland and El Salvador, promoting their country not only as a coffee origin but also as a Tourism and Investment destination. The highlight of this event is the Government and Minister Roundtable to be moderated by the BBC HardTalk presenter Stephen Sackur’s, where he will facilitate an on-stage conversation with the four ambassadors, focusing on how governments can help shape regulations to help smallholder farmers thrive and earn prosperous income and what can they do to adopt smart climate best practices to promote regeneration and ESG compliance. We expect this Roundtable to generate a lot of media attention",
     },
+    {
+        id: 7,
+        question: "WHY ATTEND?",
+        answer:
+            "This event is a close door event and not open to the public which means that the networking will be intense, and engagement will be personal.",
+        list: [
+            {
+                key: 1,
+                description: "Listen and get involved on latest trends and government programs about shaping policies on regulations, including EU due diligence legislations, and living income"
+            },
+            {
+                key: 2,
+                description: "Meet and network with key Government Ministers, Ambassadors, NGOs, Global Coffee leaders, Thought Leaders, Big coffee brands and superstores, and Global ESG investors community to discuss about the future of collaboration on how to finance Regenerative Agriculture through ESG investment platforms"
+            },
+            {
+                key: 3,
+                description: "Engage with key decision makers, with budget and power to spend to discuss collaborative partnership on Regenerative Agriculture and ESG and impact funding solutions"
+            },
+            {
+                key: 4,
+                description: "Meet Coffee Exhibitors from various coffee origin and green coffee producers, organic farmers, roasters, and buyers and join cupping sessions to be facilitated by an independent coffee lab"
+            },
+        ]
+    },
 ]
 
-const whyAttend = [
-    {
-        key: 1,
-        paragraph: "1.	Listen and get involved on latest trends and government programs about shaping policies on regulations, including EU due diligence legislations, and living income."
-    },
-    {
-        key: 2,
-        paragraph: "2.	Meet and network with key Government Ministers, Ambassadors, NGOs, Global Coffee leaders, Thought Leaders, Big coffee brands and superstores, and Global ESG investors community to discuss about the future of collaboration on how to finance Regenerative Agriculture through ESG investment platforms."
-    },
-    {
-        key: 3,
-        paragraph: "3.	Engage with key decision makers, with budget and power to spend to discuss collaborative partnership on Regenerative Agriculture and ESG and impact funding solutions."
-    },
-    {
-        key: 4,
-        paragraph: "4.	Meet Coffee Exhibitors from various coffee origin and green coffee producers, organic farmers, roasters, and buyers and join cupping sessions to be facilitated by an independent coffee lab. "
-    },
-]
-
-
-export default function FAQ() {
+function FAQ() {
     return (
-        <div className="bg-lime-700" id="faq">
-            <div className="px-6 py-8 mx-auto sm:py-12 lg:px-24">
-                <h2 className="text-6xl font-bold leading-10 tracking-tight text-white">Frequently asked questions</h2>
-                <div className="w-full mt-10 bg-white rounded-lg sm:p-6">
-                    <dt className="text-2xl font-semibold leading-7 text-gray-900">WHAT IS THIS EVENT ALL ABOUT?</dt>
-                    <dd className="mt-2 text-xl leading-7 text-gray-900">
-                        <span className="font-bold">Regenerative agriculture</span> is a conservation and rehabilitation approach to food and farming systems. It focuses on topsoil regeneration, increasing biodiversity, improving the water cycle, enhancing ecosystem services, supporting bio sequestration, increasing resilience to climate change, and strengthening the health and vitality of farm soil. <span className="font-bold">ESG</span> or <span className="font-bold">Environmental, Social and Governance</span> is a framework companies use to evaluate their sustainability which looks at the conservation of the natural world, soil health, water conservation or other social factors that examine how a company treats people both inside and outside the company and governance factors consider how a company is run.
-                    </dd>
-                    <dd className="mt-2 text-xl leading-7 text-gray-900">
-                        This event will deep dive into the relationship between adoption of Regenerative Agriculture, its benefits and challenges, and ramifications against the backdrop of climate change and how it is going to be governed and financed, both in the short and the long-term. Transforming from conventional agriculture to regenerative will require some incentives, government grants and private funding to be operational.
-                    </dd>
-                </div>
-                <div className="mt-10">
-                    <dl className="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-8 sm:space-y-0 lg:grid-cols-2 lg:gap-x-8">
+        <div className="bg-gray-100" id="faq">
+            <div className="py-12 mx-autosm:py-32 lg:px-8 lg:py-20">
+                <div className="px-20 mx-auto divide-y sm:px-60 divide-gray-900/10">
+                    <h2 className="text-3xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
+                    <dl className="mt-10 space-y-6 divide-y divide-gray-900/10">
                         {faqs.map((faq) => (
-                            <div key={faq.id} className="bg-white rounded-lg sm:p-6">
-                                <dt className="text-2xl font-semibold leading-7 text-gray-900">{faq.question}</dt>
-                                <dd className="mt-2 text-lg leading-7 text-gray-700">{faq.answer}</dd>
-                                {
-                                    faq.speakers ?
-                                        faq.speakers.map((speaker) => (
-                                            <div key={speaker.key}>
-                                                <dd className="mt-2 text-lg leading-7 text-gray-700">{speaker.info}</dd>
-                                            </div>
-                                        ))
-                                        : null
-                                }
-                            </div>
+                            <Disclosure as="div" key={faq.question} className="pt-6">
+                                {({ open }) => (
+                                    <>
+                                        <dt>
+                                            <Disclosure.Button className="flex items-start justify-between w-full text-left text-gray-900">
+                                                <span className="text-xl font-semibold leading-7">{faq.question}</span>
+                                                <span className="flex items-center ml-6 h-7">
+                                                    {open ? (
+                                                        <MinusSmallIcon className="w-6 h-6" aria-hidden="true" />
+                                                    ) : (
+                                                        <PlusSmallIcon className="w-6 h-6" aria-hidden="true" />
+                                                    )}
+                                                </span>
+                                            </Disclosure.Button>
+                                        </dt>
+                                        <Disclosure.Panel as="dd" className="pr-12 mt-2">
+                                            <p className="text-lg leading-7 text-gray-600">{faq.answer}</p>
+                                            <ul role="list" className="mt-8 space-y-8 text-gray-600">
+                                                {
+                                                    faq.speakers ?
+                                                        faq.speakers.map((speaker) => (
+                                                            <li className="flex text-lg gap-x-3" key={speaker.key}>
+                                                                <CheckCircleIcon className="flex-none w-5 h-5 mt-1 text-lime-600" aria-hidden="true" />
+                                                                <span className="text-lg leading-7 text-gray-600">
+                                                                    {speaker.info}.
+                                                                </span>
+                                                            </li>
+                                                        ))
+                                                        : null
+                                                }
+                                                {
+                                                    faq.list ?
+                                                        faq.list.map((item) => (
+                                                            <li className="flex text-lg gap-x-3" key={item.key}>
+                                                                <span className="text-lg leading-7 text-gray-600">
+                                                                    {item.key}. {item.description}.
+                                                                </span>
+                                                            </li>
+                                                        ))
+                                                        : null
+                                                }
+                                            </ul>
+                                        </Disclosure.Panel>
+                                    </>
+                                )}
+                            </Disclosure>
                         ))}
+                        <Disclosure as="div" className="pt-6">
+                            {({ open }) => (
+                                <>
+                                    <dt>
+                                        <Disclosure.Button className="flex items-start justify-between w-full text-left text-gray-900">
+                                            <span className="text-xl font-semibold leading-7">HOW CAN I REGISTER?</span>
+                                            <span className="flex items-center ml-6 h-7">
+                                                {open ? (
+                                                    <MinusSmallIcon className="w-6 h-6" aria-hidden="true" />
+                                                ) : (
+                                                    <PlusSmallIcon className="w-6 h-6" aria-hidden="true" />
+                                                )}
+                                            </span>
+                                        </Disclosure.Button>
+                                    </dt>
+                                    <Disclosure.Panel as="dd" className="pr-12 mt-2">
+                                        <p className="text-lg leading-7 text-gray-600">For delegate and Sponsorship inquiries, please send interest to <Link href={"https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=mavis@worldcoffeealliance.com&su=Delegate%20and%20Sponsorship%20inquiry"} target="_blank" className="underline hover:underline-offset-4"> mavis@worldcoffeealliance.com</Link></p>
+                                    </Disclosure.Panel>
+                                </>
+                            )}
+                        </Disclosure>
                     </dl>
-                </div>
-                <div className="w-full mt-10 bg-white rounded-lg sm:p-6">
-                    <dt className="text-2xl font-semibold leading-7 text-gray-900">WHY ATTEND?</dt>
-                    {
-                        whyAttend.map((item) => (
-                            <div key={item.key}>
-                                <dd className="mt-4 text-lg leading-7 text-gray-700">{item.paragraph}</dd>
-                            </div>
-                        ))
-                    }
-                </div>
-                <div className="w-full mt-10 rounded-lg sm:p-6">
-                    <dt className="text-4xl font-semibold leading-7 text-white">HOW CAN I REGISTER?</dt>
-                    <div >
-                        <dd className="mt-4 text-2xl leading-7 text-white">
-                            For delegate and Sponsorship inquiries, please send interest to <Link href={"https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=mavis@worldcoffeealliance.com&su=Delegate%20and%20Sponsorship%20inquiry"} target="_blank" className="underline hover:underline-offset-4"> mavis@worldcoffeealliance.com</Link>
-                        </dd>
-                    </div>
                 </div>
             </div>
         </div>
     )
 }
+
+export default FAQ;

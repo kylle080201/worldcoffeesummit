@@ -1,5 +1,6 @@
 import Footer from '../../components/Footer';
 import Navbar from '../../components/NavBar';
+import NewNavbar from '../../components/NewNavbar';
 import './globals.css';
 export const metadata = {
   title: 'World Coffee Summit 2023',

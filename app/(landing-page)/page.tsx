@@ -1,10 +1,10 @@
+import Agenda from "../../components/Agenda";
 import CountDown from "../../components/CountDown";
 import FAQ from "../../components/FAQ";
 import HeaderVideo from "../../components/HeaderVideo";
+import Overview from "../../components/Overview";
 import Speakers from "../../components/Speakers";
-import TheWhy from "../../components/TheWhy";
 import Venue from "../../components/Venue";
-import WhoAreWe from "../../components/WhoAreWe";
 
 export default function HomePage() {
     return (
@@ -12,7 +12,9 @@ export default function HomePage() {
             <div>
                 <HeaderVideo />
                 <CountDown />
+                <Overview />
                 <Speakers />
+                <Agenda />
                 <Venue />
                 <FAQ />
             </div>

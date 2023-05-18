@@ -1,6 +1,8 @@
 "use client"
-import { Disclosure } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Fragment } from 'react'
+import { Disclosure, Menu, Transition } from '@headlessui/react'
+import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { PlusIcon } from '@heroicons/react/20/solid'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
@@ -8,7 +10,7 @@ function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
 }
 
-function Navbar() {
+function NewNavbar() {
     const pathname = usePathname();
     const navigation = [
         { name: 'Overview', href: '#overview', current: pathname === '/#speakers' ? true : false },
@@ -63,13 +65,12 @@ function Navbar() {
                                 </div>
                                 <div className="flex items-center sm:ml-12">
                                     <div className="flex-shrink-0">
-                                        <Link
-                                            href={'/buy-tickets'}
+                                        <button
                                             type="button"
                                             className="relative inline-flex items-center gap-x-1.5 rounded-md bg-yellow-900 hover:bg-lime-700 px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                                         >
                                             Register Now
-                                        </Link>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -104,4 +105,4 @@ function Navbar() {
     )
 }
 
-export default Navbar;
+export default NewNavbar;

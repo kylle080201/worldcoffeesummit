@@ -4,14 +4,14 @@ import React from 'react'
 const speakers = [
     {
         name: 'Dr. Dongyu Qu',
-        role: 'Directoral General',
+        role: 'Directoral-General',
         company: 'Food and Agriculture Organization (FAO)',
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/05/DR-DONGYU-QU.jpg',
     },
     {
         name: 'Dr. Leonard Mizzi',
-        role: 'Head of Unity, INTPA',
+        role: 'Head of Unit, INTPA',
         company: 'European Commission (EU)',
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/05/DR-LEONARD-MIZZI.jpg',
@@ -38,26 +38,33 @@ const speakers = [
             'https://worldcoffeealliance.com/wp-content/uploads/2023/02/preferred-Melissa-Duncan.jpg',
     },
     {
+        name: 'Anna Rios',
+        role: 'Climate Change Senior Specialist',
+        company: 'Inter-American Development Bank (IADB)',
+        imageUrl:
+            'https://worldcoffeealliance.com/wp-content/uploads/2023/04/user.png',
+    },
+    {
         name: 'William Kennedy',
         role: 'Senior Executive Editor',
         company: 'Bloomberg',
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/05/WILLIAM-KENNEDY.jpg',
     },
-    {
-        name: 'Emily Cromwell',
-        role: 'Climate Change and Sustainability Lead Consumer Industry',
-        company: 'Deloitte',
-        imageUrl:
-            '',
-    },
-    {
-        name: 'Chris Brett',
-        role: 'Lead Agri-business Specialist',
-        company: 'World Bank',
-        imageUrl:
-            'https://worldcoffeealliance.com/wp-content/uploads/2021/02/Christopher-Brett_square-scaled.jpg',
-    },
+    // {
+    //     name: 'Emily Cromwell',
+    //     role: 'Climate Change and Sustainability Lead Consumer Industry',
+    //     company: 'Deloitte',
+    //     imageUrl:
+    //         '',
+    // },
+    // {
+    //     name: 'Chris Brett',
+    //     role: 'Lead Agri-business Specialist',
+    //     company: 'World Bank',
+    //     imageUrl:
+    //         'https://worldcoffeealliance.com/wp-content/uploads/2021/02/Christopher-Brett_square-scaled.jpg',
+    // },
 ]
 
 const ambassadors = [
@@ -97,14 +104,7 @@ export default function Speakers() {
         <div className="py-16" id='speakers'>
             <div className="px-6 mx-auto my-16 sm:px-12">
                 <div className="max-w-2xl mx-auto sm:text-center">
-                    <p className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Meet our Speakers and Ambassadors</p>
-                    <p className="mt-6 text-lg leading-8 text-gray-600">
-                        We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the
-                        best results for our clients.
-                    </p>
-                </div>
-                <div className="max-w-2xl mx-auto mt-12 sm:text-center">
-                    <p className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Speakers</p>
+                    <p className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Meet our Speakers</p>
                 </div>
                 <ul
                     role="list"
