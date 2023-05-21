@@ -1,33 +1,14 @@
 "use client"
 import React from 'react'
-import { GET, POST } from '../app/api/hello/route'
 
 const Contact = () => {
 
-    const submitHandler = (e: any) => {
-        e.preventDefault();
-        const formData = new FormData(e.target);
-        const email = e.target.elements.email.value;
-        const lastName = e.target.elements.lastName.value;
-        const firstName = e.target.elements.firstName.value;
-        const companyName = e.target.elements.companyName.value;
-        const subject = e.target.elements.subject.value;
-        const message = e.target.elements.message.value;
-        const body = {
-            email,
-            lastName,
-            firstName,
-            companyName,
-            subject,
-            message
-        }
-        POST(body);
-    }
+
     return (
         <>
             <div className="max-w-screen-md px-4 py-8 mx-auto mb-12 lg:py-16">
                 <h2 className="mb-4 text-4xl font-bold tracking-tight text-center text-gray-900 dark:text-white"><span className='text-lime-700'>Contact</span> Us</h2>
-                <form onSubmit={(e) => submitHandler(e)} className="space-y-8">
+                <form className="space-y-8">
                     <div >
                         <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
                         <input type="email" id="email" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
