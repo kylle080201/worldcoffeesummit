@@ -53,7 +53,7 @@ function Navbar() {
                                             href={item.href}
                                             className={classNames(
                                                 item.current ? 'border-b-2 border-lime-600' : '',
-                                                'inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 '
+                                                'inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 hover:border-b-2 hover:border-lime-600'
                                             )}
                                             aria-current={item.current ? 'page' : undefined}
                                         >

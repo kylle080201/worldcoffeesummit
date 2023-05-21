@@ -27,10 +27,10 @@ export default function Agenda() {
     return (
         <div id="agenda" className="bg-lime-700">
             <div className="px-6 py-8 mx-auto sm:py-12 lg:px-32">
-                <h2 className="text-6xl font-bold tracking-tight text-white">AGENDA HIGHLIGHTS</h2>
+                <h2 className="text-4xl font-bold tracking-tight text-white">AGENDA HIGHLIGHTS</h2>
                 <div className="w-full rounded-lg">
                     <dd className="mt-2 text-xl leading-7 text-white">
-                        <span className="font-semibold">This one-day high-level business conference will bring together Governments, FAO,EU,ICO,BCA, NGOs like Rainforest Alliance and Fairtrade International, Financial Institutions like IADB, IFAD,WB to identify the main areas of collaboration, exploring innovative and regenerative solutions to face the challenges of regulatory compliance and climate change. </span>
+                        <span >This one-day high-level business conference will bring together Governments, FAO,EU,ICO,BCA, NGOs like Rainforest Alliance and Fairtrade International, Financial Institutions like IADB, IFAD,WB to identify the main areas of collaboration, exploring innovative and regenerative solutions to face the challenges of regulatory compliance and climate change. </span>
                     </dd>
                 </div>
                 <div className="mt-16 px-44">

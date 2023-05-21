@@ -117,8 +117,8 @@ function FAQ() {
                                     <>
                                         <dt>
                                             <Disclosure.Button className="flex items-start justify-between w-full text-left text-gray-900">
-                                                <span className="text-xl font-semibold leading-7">{faq.question}</span>
-                                                <span className="flex items-center ml-6 h-7">
+                                                <span className="text-lg font-semibold leading-7">{faq.question}</span>
+                                                <span className="flex items-center h-6 ml-6">
                                                     {open ? (
                                                         <MinusSmallIcon className="w-6 h-6" aria-hidden="true" />
                                                     ) : (

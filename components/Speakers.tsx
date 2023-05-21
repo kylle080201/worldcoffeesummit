@@ -102,9 +102,9 @@ export default function Speakers() {
     return (
 
         <div className="py-16" id='speakers'>
-            <div className="px-6 mx-auto my-16 sm:px-12">
+            <div className="px-16 mx-auto sm:px-32">
                 <div className="max-w-2xl mx-auto sm:text-center">
-                    <p className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Meet our Speakers</p>
+                    <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our Speakers</p>
                 </div>
                 <ul
                     role="list"
@@ -113,14 +113,14 @@ export default function Speakers() {
                     {speakers.map((speaker) => (
                         <li key={speaker.name} className="flex flex-col gap-6 xl:flex-row">
                             <div>
-                                <Image className="flex-none w-40 rounded-full " src={speaker.imageUrl} alt={speaker.name} width={160} height={160} />
+                                <Image className="flex-none rounded-full w-28 " src={speaker.imageUrl} alt={speaker.name} width={160} height={160} />
                             </div>
 
                             <div className="flex items-center">
                                 <div>
-                                    <p className="text-3xl font-semibold leading-8 tracking-tight text-gray-900">{speaker.name}</p>
-                                    <p className="text-xl leading-7 text-gray-700">{speaker.role}</p>
-                                    <p className="text-xl leading-7 text-gray-900">{speaker.company}</p>
+                                    <p className="text-xl font-semibold leading-8 tracking-tight text-gray-900">{speaker.name}</p>
+                                    <p className="text-lg leading-7 text-gray-700">{speaker.role}</p>
+                                    <p className="text-lg leading-7 text-gray-900">{speaker.company}</p>
                                 </div>
                             </div>
                         </li>

@@ -10,7 +10,6 @@ export default function HomePage() {
     return (
         <>
             <div>
-                <HeaderVideo />
                 <CountDown />
                 <Overview />
                 <Speakers />
