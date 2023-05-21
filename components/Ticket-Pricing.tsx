@@ -6,14 +6,17 @@ export default function TicketPricing() {
         {
             title: "NGO/Cooperatives, Coffee Associations, Academic Pass",
             price: 954,
+            link: "https://buy.stripe.com/3cs9DvcJ73PG2c06oo"
         },
         {
             title: "Standard Corporate Pass - Corporate Representatives",
             price: 1350,
+            link: "https://buy.stripe.com/bIYdTL38x71SeYM289"
         },
         {
             title: "Consultants, Start-ups, Service Providers",
             price: 1750,
+            link: "https://buy.stripe.com/cN25nf5gFgCs6sg146"
         },
     ]
 
@@ -21,6 +24,7 @@ export default function TicketPricing() {
         {
             title: "Coffee Roasters, Traders and Coffee Buyers only",
             price: 250,
+            link: "https://buy.stripe.com/test_7sIg2Z9MP4Byem4bII"
         },
     ]
 
@@ -44,7 +48,7 @@ export default function TicketPricing() {
                                         <span className="font-semibold leading-6 tracking-wide text-gray-600 text-md">GBP</span>
                                     </p>
                                     <a
-                                        href="#"
+                                        href={delegate.link}
                                         className="block w-full px-3 py-2 mt-10 text-lg font-semibold text-center text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                                     >
                                         Register
@@ -74,7 +78,7 @@ export default function TicketPricing() {
                                         <span className="font-semibold leading-6 tracking-wide text-gray-600 text-md">GBP</span>
                                     </p>
                                     <a
-                                        href="#"
+                                        href={visitor.link}
                                         className="block w-full px-3 py-2 mt-10 text-lg font-semibold text-center text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                                     >
                                         Register
