@@ -38,7 +38,7 @@ const speakers = [
             'https://worldcoffeealliance.com/wp-content/uploads/2023/02/preferred-Melissa-Duncan.jpg',
     },
     {
-        name: 'Anna Rios',
+        name: 'Anna R Rios',
         role: 'Climate Change Senior Specialist',
         company: 'Inter-American Development Bank (IADB)',
         imageUrl:
@@ -101,8 +101,8 @@ const ambassadors = [
 export default function Speakers() {
     return (
 
-        <div className="py-16" id='speakers'>
-            <div className="px-16 mx-auto sm:px-32">
+        <div className="px-12 py-20 sm:px-20" id='speakers'>
+            <div className="mx-auto">
                 <div className="max-w-2xl mx-auto sm:text-center">
                     <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our Speakers</p>
                 </div>

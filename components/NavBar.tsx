@@ -15,19 +15,16 @@ function Navbar() {
         { name: 'Speakers', href: '#speakers', current: pathname === '/#speakers' ? true : false },
         { name: 'Agenda', href: '#agenda', current: pathname === '/#program' ? true : false },
         { name: 'Venue', href: '#venue', current: pathname === '/#venue' ? true : false },
-        { name: 'FAQ', href: '#faq', current: pathname === '/#faq' ? true : false },
         { name: 'Sponsors', href: '#sponsors', current: pathname === '/#sponsors' ? true : false },
-        { name: 'Register', href: '#register', current: pathname === '/#register' ? true : false },
-        { name: 'Partnership', href: '/partnership', current: pathname === '/partnership' ? true : false },
-        { name: 'Contact', href: '/contact', current: pathname === '/contact' ? true : false },
+        { name: 'FAQ', href: '#faq', current: pathname === '/#faq' ? true : false },
     ]
     return (
-        <Disclosure as="nav" className="bg-white shadow">
+        <Disclosure as="nav" className="w-full bg-white shadow">
             {({ open }) => (
                 <>
-                    <div className="px-2 mx-auto max-w-7xl sm:px-6 lg:px-6">
+                    <div className="w-full px-8 mx-auto">
                         <div className="flex justify-between h-16">
-                            <div className="flex">
+                            <div className="flex justify-between w-full">
                                 <div className="flex items-center mr-2 -ml-2 md:hidden">
                                     {/* Mobile menu button */}
                                     <Disclosure.Button className="inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -46,14 +43,14 @@ function Navbar() {
                                         </Link>
                                     </div>
                                 </div>
-                                <div className="hidden md:ml-6 md:flex md:space-x-8">
+                                <div className="hidden sm:flex md:ml-6 ">
                                     {navigation.map((item) => (
                                         <Link
                                             key={item.name}
                                             href={item.href}
                                             className={classNames(
                                                 item.current ? 'border-b-2 border-lime-600' : '',
-                                                'inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 hover:border-b-2 hover:border-lime-600'
+                                                'inline-flex items-center px-2 sm:px-6 pt-1 text-sm font-medium text-gray-900 hover:border-b-2 hover:border-lime-600'
                                             )}
                                             aria-current={item.current ? 'page' : undefined}
                                         >

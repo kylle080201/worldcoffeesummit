@@ -10,8 +10,8 @@ export default function HomePage() {
     return (
         <>
             <div>
-                <CountDown />
                 <Overview />
+                <CountDown />
                 <Speakers />
                 <Agenda />
                 <Venue />

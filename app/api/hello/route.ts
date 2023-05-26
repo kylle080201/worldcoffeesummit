@@ -6,5 +6,11 @@ export async function GET() {
 }
 
 export async function POST(req: any) {
-  console.log({ req });
+  const email = req.email;
+  const lastName = req.lastName;
+  const firstName = req.firstName;
+  const companyName = req.companyName;
+  const subject = req.subject;
+  const message = req.message;
+  console.log(companyName);
 }
