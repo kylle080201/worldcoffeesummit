@@ -1,98 +1,32 @@
 "use client"
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+
 import Link from "next/link";
 
 
 const Venue = () => {
     return (
         <>
-            <div className='flex py-24 mlg:flex-row mmd:flex-col msm:flex-col '>
-                <div className='justify-items-center md:w-1/2 sm:px-12'>
-                    <Carousel
-                        // autoPlay={true}
-                        // infiniteLoop={true}
-                        // interval={3000}
-                        showIndicators={true}
-                        showStatus={false}
-                        stopOnHover={true}
-                        emulateTouch={true}
-                        showArrows={true}
-                    >
-                        <div>
-                            <img src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/courthouse-hotel-exterior-1.jpg" />
-                        </div>
-                        <div>
-                            <img src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/Courthouse-front_cropped.jpg" />
-                        </div>
-                        <div>
-                            <img src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/PATCHC-SP2__02_cropped.jpg" />
-                        </div>
-                        <div>
-                            <img src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/Courthouse-Hotel-Lobby_cropped.jpg" />
-                        </div>
-                        <div>
-                            <img src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/Courthouse-Hotel-London-London-Undefined-Bar-at-Courthouse-Hotel-London_cropped.jpg" />
-                        </div>
-                        <div>
-                            <img src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/Silk-Restaurant-@-Courthouse-Hotel-Soho_cropped.jpg" />
-                        </div>
-                        <div>
-                            <img src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/courthouse-hotel-bar.jpg" />
-                        </div>
-                        <div>
-                            <img src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/RAU_7291_cropped.jpg" />
-                        </div>
-                        <div>
-                            <img src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/Courthouse-Shoreditch-restaurant-02a-1-1024x683_cropped.jpg" />
-                        </div>
-                        <div>
-                            <img src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/Courthouse-Hotel-London-web-1-1-1_cropped.jpg" />
-                        </div>
-                        <div>
-                            <img src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/courthouse-cinema_cropped.jpg" />
-                        </div>
-                        <div>
-                            <img src="https://worldcoffeealliance.com/wp-content/uploads/2022/11/20220622_163535_cropped.jpg" />
-                        </div>
-                    </Carousel>
-                </div>
-                <div className='px-8 lg:w-1/2 mlg:text-center'>
-                    <h2 className="mb-6 font-bold text-gray-900 sm:text-2xl lg:text-5xl">
-                        THE <span className='text-lime-700'>VENUE</span> - THE COURTHOUSE HOTEL
-                    </h2>
-                    <h4 className="text-gray-600 sm:text-sm lg:text-xl">
-                        The Courthouse Hotel is located in the old Grade II listed Marlborough Street Magistrates Court
-                        building, which was the second-oldest magistrates court in the UK, dating back to the 1800s.The
-                        building has a turbulent history from its time as the Marlborough Street Magistrates Court, which set
-                        the scene for many famous cases over the years, involving figures such
-                        as <Link href='https://en.wikipedia.org/wiki/John_Lennon' target={"_blank"} className='font-semibold text-yellow-900 underline'>John Lennon</Link>, <Link href='https://en.wikipedia.org/wiki/Oscar_Wilde' target={"_blank"} className='font-semibold text-yellow-900 underline'>Oscar Wilde</Link>, <Link href='https://en.wikipedia.org/wiki/John_Lydon' target={"_blank"} className='font-semibold text-yellow-900 underline'>Johnny Rotten</Link>, <Link href='https://en.wikipedia.org/wiki/Mick_Jagger' target={"_blank"} className='font-semibold text-yellow-900 underline'>Mick Jagger</Link> and <Link href='https://en.wikipedia.org/wiki/Keith_Richards' target={"_blank"} className='font-semibold text-yellow-900 underline'>Keith Richards</Link>. In
-                        1835 <Link href='https://en.wikipedia.org/wiki/Charles_Dickens' target={"_blank"} className='font-semibold text-yellow-900 underline'>Charles Dickens</Link> worked as a reporter in the
-                        building for the <Link href='https://en.wikipedia.org/wiki/The_Morning_Chronicle' target={"_blank"} className='font-semibold text-yellow-900 underline'>Morning Chronicle</Link>, and <Link href='https://en.wikipedia.org/wiki/Napoleon_III' target={"_blank"} className='font-semibold text-yellow-900 underline'>Louis Napoleon</Link> appeared in court as witness in a fraud case
-                        between attempts to establish a second empire in France in 1847.
-                    </h4>
-                    <h4 className="mt-4 text-gray-600 sm:text-sm lg:text-xl">
-                        In 1895 Oscar Wilde took the <Link href='https://en.wikipedia.org/wiki/Marquess_of_Queensberry' target={"_blank"} className='font-semibold text-yellow-900 underline'>Marquess of Queensbury</Link> to court on a criminal libel charge. The
-                        current building was designed between 1912-1913 by the Surveyor to the <Link href='https://en.wikipedia.org/wiki/Metropolitan_Police' target={"_blank"} className='font-semibold text-yellow-900 underline'>Metropolitan Police</Link>, <Link href='https://en.wikipedia.org/wiki/John_Dixon_Butler' target={"_blank"} className='font-semibold text-yellow-900 underline'>John Dixon Butler</Link>.
-                        In 1963 <Link href='https://en.wikipedia.org/wiki/Christine_Keeler' target={"_blank"} className='font-semibold text-yellow-900 underline'>Christine Keeler</Link> was taken to court over sex allegations which led to the <Link href='https://en.wikipedia.org/wiki/Profumo_affair' target={"_blank"} className='font-semibold text-yellow-900 underline'>Profumo scandal</Link> becoming
-                        public. In 1966 <Link href='https://en.wikipedia.org/wiki/Bob_Monkhouse' target={"_blank"} className='font-semibold text-yellow-900 underline'>Bob Monkhouse</Link> faced a charge of conspiracy to defraud
-                        film distribution companies, and in 1967 former television presenter <Link href='https://en.wikipedia.org/wiki/Katie_Boyle' target={"_blank"} className='font-semibold text-yellow-900 underline'>Katie Boyle</Link> gave evidence
-                        against a man facing careless driving charges after an accident.
-                    </h4>
-                    <div className='flex justify-center mt-16' >
-                        <Link target={'_blank'} rel="noopener noreferrer" href='https://memoirsofametrogirl.com/2020/11/19/marlborough-street-magistrates-court-courthouse-hotel-soho-history/?fbclid=IwAR0WHxAcGuEFVQh94x1Wo0HHVgBbjoo1F7l8-8ErVXLLuw8AYdbIP6BY4ZA'>
-                            <button
-                                type="button"
-                                className="px-24 py-6 mx-auto text-base font-semibold text-white border border-transparent rounded-full shadow-sm bg-lime-700 hover:bg-lime-900 focus:outline-none"
-                            >
-                                <span className='text-xl '>CHECK THE VENUE</span>
-                            </button>
-                        </Link>
+            <div className="px-12 py-20 sm:px-20" id="venue">
+                <div className="px-4 sm:w-3/4">
+                    <div>
+                        <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">THE VENUE</p>
+                        <p className="mt-6 leading-8 text-gray-600 text-md sm:text-lg">
+                            The QEII Centre is the largest dedicated conference and exhibition space in central London. Our venue offers world-class facilities for high-profile conferences, conventions, exhibitions and corporate events with a capacity of up to 2,500 and hosting over 400 national and international events a year.
+                        </p>
                     </div>
                 </div>
-
+                <div className='flex flex-col justify-center p-4 mt-12 md:flex-row'>
+                    <div className='px-6 drop-shadow-md md:w-3/4 hover:drop-shadow-lg'>
+                        <Link href={"https://www.google.com/maps/place/Queen+Elizabeth+II+Centre/@51.5005231,-0.1292871,19z/data=!4m6!3m5!1s0x487604c4cb112d93:0x39efdcc690b64ca3!8m2!3d51.5005006!4d-0.1290725!16zL20vMDgwbDQx"} target="_blank">
+                            <img alt="Venue map" src="https://worldcoffeealliance.com/wp-content/uploads/2023/05/QEII-GMAPS.png" className="rounded-lg" />
+                        </Link>
+                    </div>
+                    <div className='px-6 pt-4 md:pt-0 md:w-2/4 drop-shadow-sm'>
+                        <img alt="Venue image" src="https://worldcoffeealliance.com/wp-content/uploads/2023/05/DSC09004.jpg" className="rounded-lg" />
+                        <p className="text-sm text-gray-600">src: https://structurae.net/en/media/192770-queen-elizabeth-ii-conference-centre</p>
+                    </div>
+                </div>
             </div>
-
         </>
     );
 };

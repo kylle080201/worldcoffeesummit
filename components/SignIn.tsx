@@ -1,15 +1,17 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const SignIn = () => {
     return (
         <>
             <div className="flex min-h-full ">
                 <div className="relative flex-1 hidden w-0 lg:block">
-                    <img
+                    <Image
                         className="absolute inset-0 object-cover w-full h-full"
                         src="https://plus.unsplash.com/premium_photo-1675237625862-d982e7f44696?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                         alt=""
+                        fill
                     />
                 </div>
                 <div className="flex flex-col justify-center flex-1 h-screen sm:px-6 lg:flex-none lg:px-12 xl:px-24">

@@ -1,18 +1,21 @@
+import Agenda from "../../components/Agenda";
 import CountDown from "../../components/CountDown";
+import FAQ from "../../components/FAQ";
 import HeaderVideo from "../../components/HeaderVideo";
-import TheWhy from "../../components/TheWhy";
+import Overview from "../../components/Overview";
+import Speakers from "../../components/Speakers";
 import Venue from "../../components/Venue";
-import WhoAreWe from "../../components/WhoAreWe";
 
 export default function HomePage() {
     return (
         <>
             <div>
-                <HeaderVideo />
+                <Overview />
                 <CountDown />
-                <WhoAreWe />
-                <TheWhy />
+                <Speakers />
+                <Agenda />
                 <Venue />
+                <FAQ />
             </div>
         </>
     )

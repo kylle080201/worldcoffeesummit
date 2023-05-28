@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const WhoAreWe = () => {
@@ -18,10 +19,13 @@ const WhoAreWe = () => {
                 </div>
                 <div className="flex items-center mlg:w-1/2">
                     <div className="block mx-auto w-96 mlg:hidden">
-                        <img
+                        <Image
                             src='https://worldcoffeealliance.com/wp-content/uploads/2021/08/WCA_new_logo.png'
+                            alt=''
+                            width={384}
+                            height={384}
                         >
-                        </img>
+                        </Image>
                     </div>
                 </div>
             </div>

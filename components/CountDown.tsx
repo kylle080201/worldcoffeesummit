@@ -37,63 +37,61 @@ const CountDown = () => {
         }, 1000);
 
         return () => clearInterval(interval);
-    }, []);
+    });
 
     return (
         <>
             {eventTime ? (
                 <div>
                     <h1>Event Day</h1>
-                    <video autoPlay loop muted>
-                        <source src="/party.mp4" />
-                    </video>
+
                 </div>
             ) : (
                 <>
-                    <div className="flex-col bg-gray-100 justify-self-center">
-                        <div className="flex flex-row justify-center gap-4 pt-24 mx-auto text-center lg:px-44 md:px-24 msm:px-12">
-                            <div className="flex flex-col w-1/4 bg-white rounded-md msm:p-2 md:p-6 lg:p-8">
-                                <h2 className="font-bold text-center text-lime-700 mmd:text-5xl msm:text-xl lg:text-9xl">
+                    <div className="flex-col py-20 bg-gray-100 justify-self-center">
+                        <div className="flex flex-row justify-center gap-4 mx-auto text-center lg:px-44 md:px-24 msm:px-12">
+                            <div className="flex flex-col w-1/4 p-2 m-auto bg-white rounded-md md:p-6">
+                                <h2 className="font-bold text-center text-md text-lime-700 md:text-7xl">
                                     {days}
                                 </h2>
-                                <p className="font-semibold text-center text-gray-900 mmd:text-3xl msm:text-sm lg:text-5xl">
+                                <p className="text-xl font-semibold text-center text-gray-900 md:text-2xl">
                                     Days
                                 </p>
                             </div>
 
-                            <div className="flex flex-col w-1/4 bg-white rounded-md msm:p-2 md:p-6 lg:p-8">
-                                <h2 className="font-bold text-center text-lime-700 mmd:text-5xl msm:text-xl lg:text-9xl">
+                            <div className="flex flex-col w-1/4 p-2 m-auto bg-white rounded-md md:p-6">
+                                <h2 className="font-bold text-center text-md text-lime-700 md:text-7xl">
                                     {hours}
                                 </h2>
-                                <p className="font-semibold text-center text-gray-900 mmd:text-3xl msm:text-sm lg:text-5xl">
+                                <p className="text-xl font-semibold text-center text-gray-900 md:text-2xl">
                                     Hours
                                 </p>
                             </div>
 
-                            <div className="flex flex-col w-1/4 bg-white rounded-md msm:p-2 md:p-6 lg:p-8">
-                                <h2 className="font-bold text-center text-lime-700 mmd:text-5xl msm:text-xl lg:text-9xl">
+                            <div className="flex flex-col w-1/4 p-2 m-auto bg-white rounded-md md:p-6">
+                                <h2 className="font-bold text-center text-md text-lime-700 md:text-7xl">
                                     {minutes}
                                 </h2>
-                                <p className="font-semibold text-center text-gray-900 mmd:text-3xl msm:text-sm lg:text-5xl">
+                                <p className="text-xl font-semibold text-center text-gray-900 md:text-2xl">
                                     Minutes
                                 </p>
                             </div>
 
-                            <div className="flex flex-col w-1/4 bg-white rounded-md msm:p-2 md:p-6 lg:p-8">
-                                <h2 className="font-bold text-center text-lime-700 mmd:text-5xl msm:text-xl lg:text-9xl">
+                            <div className="flex flex-col w-1/4 p-2 m-auto bg-white rounded-md md:p-6">
+                                <h2 className="font-bold text-center text-md text-lime-700 md:text-7xl">
                                     {seconds}
                                 </h2>
-                                <p className="font-semibold text-center text-gray-900 mmd:text-3xl msm:text-sm lg:text-5xl">
+                                <p className="text-xl font-semibold text-center text-gray-900 md:text-2xl">
                                     Seconds
                                 </p>
                             </div>
                         </div>
-                        <div className="flex flex-row justify-center pt-6 pb-24 mx-auto text-center lg:px-44 md:px-24 msm:px-12">
-                            <h2 className="font-semibold lg:text-4xl msm:text-sm">
+                        <div className="flex flex-row justify-center pt-6 mx-auto text-center lg:px-44 md:px-24 msm:px-12">
+                            <h2 className="text-2xl font-semibold md:text-4xl">
                                 Time left until the event. Buy your delegate tickets now!
                             </h2>
                         </div>
-                    </div>
+                    </div >
                 </>
             )}
         </>
