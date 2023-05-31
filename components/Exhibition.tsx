@@ -1,0 +1,180 @@
+import { LinkIcon, ChatBubbleLeftRightIcon, UserGroupIcon, EyeDropperIcon, PresentationChartLineIcon, CheckBadgeIcon, CheckCircleIcon, ClockIcon } from '@heroicons/react/24/solid'
+import classNames from 'classnames'
+import React from 'react'
+
+export default function Exhibition() {
+    const whyExhibit = [
+        {
+            id: 1,
+            description: "Connect and network with over 100 pre-qualified coffee buyers from UK and Europe with budget and power to spend",
+            icon: LinkIcon,
+        },
+        {
+            id: 2,
+            description: "The limited amount of Exhibitors provides your company with more exposure and intimate engagement with these decision-makers.",
+            icon: ChatBubbleLeftRightIcon,
+        },
+        {
+            id: 3,
+            description: "This Exhibition is not open to the public but will be attended by coffee buyers and roasters from the UK and Europe",
+            icon: UserGroupIcon,
+        },
+        {
+            id: 4,
+            description: "Two cupping sessions by an independent Coffee Lab who will cup all exhibitors on site",
+            icon: EyeDropperIcon,
+        },
+        {
+            id: 5,
+            description: "2 panel discussions on latest developments on SCA cupping protocols and EU due diligence",
+            icon: PresentationChartLineIcon,
+        },
+    ]
+    const services = [
+        {
+            id: 1,
+            description: "Additional outlets, lighting fixtures or special connections",
+        },
+        {
+            id: 2,
+            description: "Additional furniture",
+        },
+        {
+            id: 3,
+            description: "Description and logo of your company in the program and on the web page",
+        }
+    ]
+    const program = [
+        {
+            id: 1,
+            description: "EXHIBITORS SETUP",
+            time: "6:00 - 9:30"
+        },
+        {
+            id: 2,
+            description: "EXHIBITORS SETUP",
+            time: "10:00 - 11:00"
+        },
+        {
+            id: 3,
+            description: "PANEL ONE",
+            time: "11:00 - 12:00"
+        },
+        {
+            id: 3,
+            description: "BREAK",
+            time: "12:00 - 01:00"
+        },
+        {
+            id: 3,
+            description: "PANEL TWO",
+            time: "01:00 - 02:00"
+        },
+        {
+            id: 3,
+            description: "CUPPING SESSION 2",
+            time: "02:00 - 03:00"
+        },
+        {
+            id: 3,
+            description: "AWARDING CEREMONY",
+            time: "03:00 - 04:00"
+        },
+    ]
+    return (
+        <>
+            <div id="exhibition">
+                <div id="overview" className="flex flex-col bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2023/05/OVERVIEW-HERO-SECTION-BG.jpg')] py-20 bg-cover mlg:flex-col">
+                    <div className="self-center px-12 text-center sm:px-20">
+                        <div>
+                            <p className="text-4xl font-bold tracking-tight text-white sm:text-6xl">World Coffee Exhibition London 2023</p>
+                            <p className="mt-6 text-lg font-bold tracking-tight text-white sm:text-2xl">SUSTAINABILITY BEYOND COMPLIANCE</p>
+                            <p className="text-lg font-bold tracking-tight text-white sm:text-2xl">13th September 2023</p>
+                            <p className="text-lg font-bold tracking-tight text-white sm:text-2xl">Queen Elizabeth ll Centre, Westminster Hall</p>
+                            <p className="mt-16 text-xl leading-8 text-justify text-white sm:mt-40">
+                                Welcome to the world  of rustic flavors and sensient aroma of coffee origin. From the historic forests of the Ethiopian plateaus to the Central Highlands of Vietnam, each participant, showcasing and sharing their sumptuous profile of luxurious taste  and of out of this world experience. The overpowering notes of nuts, caramel with honey-like sweetness of El Salvador coffee with mild body and  acidity of a Burundi cup will bring one’s senses to a standstill – in an ecstatic fit, one feels as if there is no tomorrow. In this World Coffee Exhibition, once you joined the crowd of nosy cuppers and curious score crunching roasters, your life would never be the same again.
+                            </p>
+                            <p className="mt-4 text-lg font-bold tracking-tight text-white sm:text-2xl">Join us celebrate coffee.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className='justify-center px-12 py-20 mx-auto bg-white mlg:flex-row mmd:flex-col msm:flex-col sm:px-20 sm:max-w-5xl' >
+                    <h2 className="text-4xl font-bold tracking-tight text-gray-900">Exhibitors</h2>
+                    <div className="w-full rounded-lg">
+                        <dd className="mt-2 text-xl leading-7 text-gray-900">
+                            <span>Become an exhibitor at World Coffee Exhibition and display your company’s message in front of
+                                Green coffee buyers and roasters with key decision makers in the coffee industry.</span>
+                        </dd>
+                    </div>
+                    <div className='mt-12'>
+                        <div>
+                            <p className="text-lg font-bold tracking-tight text-gray-900 sm:text-2xl">Why exhibit at World Coffee Summit London?</p>
+                            <ul role="list" className="mt-12">
+                                {whyExhibit.map((event, eventIdx) => (
+                                    <li key={event.id}>
+                                        <div className="relative pb-8">
+                                            {eventIdx !== whyExhibit.length - 1 ? (
+                                                <span className="absolute left-4 top-4 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true" />
+                                            ) : null}
+                                            <div className="relative flex space-x-3">
+                                                <div>
+                                                    <span
+                                                        className='flex items-center justify-center w-8 h-8 bg-yellow-900 rounded-full ring-8 ring-white'
+                                                    >
+                                                        <event.icon className="w-5 h-5 text-white" aria-hidden="true" />
+                                                    </span>
+                                                </div>
+                                                <div className="flex justify-between flex-1 min-w-0 pl-2 space-x-4 sm:pl-4">
+                                                    <div className='flex flex-col'>
+                                                        <p className="text-gray-900 text-md sm:text-lg">
+                                                            {event.description}{' '}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div className='mt-8'>
+                            <p className="text-lg font-bold tracking-tight text-gray-900 sm:text-2xl">Sizes and dimensions</p>
+                            <p className="mt-4 tracking-tight text-gray-900 text-md sm:text-lg">The size of the stands used for exhibition here are 76cm x 153cm x 74cm (width x length x height). However, we would allocate each exhibitor with a 3m x 2m standard space which accommodates for banners on either side and chairs behind stands.
+                            </p>
+                        </div>
+                        <div className='mt-8'>
+                            <p className="text-lg font-bold tracking-tight text-gray-900 sm:text-2xl">Additional services</p>
+                            <ul role="list" className="mt-12">
+                                {services.map((event, eventIdx) => (
+                                    <li key={event.id}>
+                                        <div className="relative pb-8">
+                                            {eventIdx !== services.length - 1 ? (
+                                                <span className="absolute left-4 top-4 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true" />
+                                            ) : null}
+                                            <div className="relative flex space-x-3">
+                                                <div>
+                                                    <span
+                                                        className='flex items-center justify-center w-8 h-8 bg-yellow-900 rounded-full ring-8 ring-white'
+                                                    >
+                                                        <CheckCircleIcon className="w-5 h-5 text-white" aria-hidden="true" />
+                                                    </span>
+                                                </div>
+                                                <div className="flex justify-between flex-1 min-w-0 pl-2 space-x-4 sm:pl-4">
+                                                    <div className='flex flex-col'>
+                                                        <p className="text-gray-900 text-md sm:text-lg">
+                                                            {event.description}{' '}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
+    )
+}

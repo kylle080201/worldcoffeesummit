@@ -48,47 +48,35 @@ const CountDown = () => {
                 </div>
             ) : (
                 <>
-                    <div className="flex-col py-20 bg-gray-100 justify-self-center">
-                        <div className="flex flex-row justify-center gap-4 mx-auto text-center lg:px-44 md:px-24 msm:px-12">
-                            <div className="flex flex-col w-1/4 p-2 m-auto bg-white rounded-md md:p-6">
-                                <h2 className="font-bold text-center text-md text-lime-700 md:text-7xl">
+                    <div className="flex-col py-20 justify-self-center">
+                        <div className="flex flex-row justify-center gap-2 px-20 mx-auto text-center sm:px-60">
+                            <div className="flex flex-col p-2 bg-white rounded-md md:p-6">
+                                <h2 className="font-bold text-center text-md text-lime-700 md:text-4xl">
                                     {days}
                                 </h2>
-                                <p className="text-xl font-semibold text-center text-gray-900 md:text-2xl">
-                                    Days
-                                </p>
                             </div>
 
-                            <div className="flex flex-col w-1/4 p-2 m-auto bg-white rounded-md md:p-6">
-                                <h2 className="font-bold text-center text-md text-lime-700 md:text-7xl">
+                            <div className="flex flex-col p-2 bg-white rounded-md md:p-6">
+                                <h2 className="font-bold text-center text-md text-lime-700 md:text-4xl">
                                     {hours}
                                 </h2>
-                                <p className="text-xl font-semibold text-center text-gray-900 md:text-2xl">
-                                    Hours
-                                </p>
                             </div>
 
-                            <div className="flex flex-col w-1/4 p-2 m-auto bg-white rounded-md md:p-6">
-                                <h2 className="font-bold text-center text-md text-lime-700 md:text-7xl">
+                            <div className="flex flex-col p-2 bg-white rounded-md md:p-6">
+                                <h2 className="font-bold text-center text-md text-lime-700 md:text-4xl">
                                     {minutes}
                                 </h2>
-                                <p className="text-xl font-semibold text-center text-gray-900 md:text-2xl">
-                                    Minutes
-                                </p>
                             </div>
 
-                            <div className="flex flex-col w-1/4 p-2 m-auto bg-white rounded-md md:p-6">
-                                <h2 className="font-bold text-center text-md text-lime-700 md:text-7xl">
+                            <div className="flex flex-col p-2 bg-white rounded-md md:p-6">
+                                <h2 className="font-bold text-center text-md text-lime-700 md:text-4xl">
                                     {seconds}
                                 </h2>
-                                <p className="text-xl font-semibold text-center text-gray-900 md:text-2xl">
-                                    Seconds
-                                </p>
                             </div>
                         </div>
                         <div className="flex flex-row justify-center pt-6 mx-auto text-center lg:px-44 md:px-24 msm:px-12">
-                            <h2 className="text-2xl font-semibold md:text-4xl">
-                                Time left until the event. Buy your delegate tickets now!
+                            <h2 className="font-semibold text-white text-ll md:text-2xl">
+                                Limited tickets only!
                             </h2>
                         </div>
                     </div >

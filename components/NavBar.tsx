@@ -16,15 +16,16 @@ function Navbar() {
         { name: 'Agenda', href: '#agenda', current: pathname === '/#program' ? true : false },
         { name: 'Venue', href: '#venue', current: pathname === '/#venue' ? true : false },
         { name: 'Sponsors', href: '#sponsors', current: pathname === '/#sponsors' ? true : false },
+        { name: 'Exhibition', href: '#exhibition', current: pathname === '/#exhibition' ? true : false },
         { name: 'FAQ', href: '#faq', current: pathname === '/#faq' ? true : false },
     ]
     return (
         <Disclosure as="nav" className="w-full bg-white shadow">
             {({ open }) => (
                 <>
-                    <div className="w-full px-8 mx-auto">
+                    <div className="w-full px-8 mx-auto sm:max-w-7xl">
                         <div className="flex justify-between h-16">
-                            <div className="flex justify-between w-full">
+                            <div className="flex w-full sm:justify-between">
                                 <div className="flex items-center mr-2 -ml-2 md:hidden">
                                     {/* Mobile menu button */}
                                     <Disclosure.Button className="inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -37,10 +38,22 @@ function Navbar() {
                                     </Disclosure.Button>
                                 </div>
                                 <div className="flex items-center flex-shrink-0">
-                                    <div className="flex font-bold lg:flex-1">
+                                    {/* <div className="flex font-bold lg:flex-1">
                                         <Link href={'/'} className='cursor-pointer'>
                                             WCA World<span className='text-yellow-900'>Coffee</span>Summit 2023
                                         </Link>
+                                    </div> */}
+                                    <div>
+                                        <img
+                                            className="block w-auto h-8 lg:hidden"
+                                            src="https://worldcoffeealliance.com/wp-content/uploads/2023/05/world-coffee-summit-high-resolution-logo-color-on-transparent-background.png"
+                                            alt="WCS Logo"
+                                        />
+                                        <img
+                                            className="hidden w-32 h-auto lg:block"
+                                            src="https://worldcoffeealliance.com/wp-content/uploads/2023/05/world-coffee-summit-high-resolution-logo-color-on-transparent-background.png"
+                                            alt="WCS Logo"
+                                        />
                                     </div>
                                 </div>
                                 <div className="hidden sm:flex md:ml-6 ">
@@ -50,7 +63,7 @@ function Navbar() {
                                             href={item.href}
                                             className={classNames(
                                                 item.current ? 'border-b-2 border-lime-600' : '',
-                                                'inline-flex items-center px-2 sm:px-6 pt-1 text-sm font-medium text-gray-900 hover:border-b-2 hover:border-lime-600'
+                                                'inline-flex items-center px-2 sm:px-4 pt-1 text-sm font-medium text-gray-900 hover:border-b-2 hover:border-lime-600'
                                             )}
                                             aria-current={item.current ? 'page' : undefined}
                                         >
@@ -58,10 +71,10 @@ function Navbar() {
                                         </Link>
                                     ))}
                                 </div>
-                                <div className="flex items-center sm:ml-12">
+                                <div className="items-center hidden sm:flex">
                                     <div className="flex-shrink-0">
                                         <Link
-                                            href={'/buy-tickets'}
+                                            href={'/register'}
                                             type="button"
                                             className="relative inline-flex items-center gap-x-1.5 rounded-md bg-yellow-900 hover:bg-lime-700 px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                                         >
@@ -93,6 +106,17 @@ function Navbar() {
                                     {item.name}
                                 </Disclosure.Button>
                             ))}
+                        </div>
+                        <div className="items-center justify-center pb-4 pl-3">
+                            <div className="flex-shrink-0">
+                                <Link
+                                    href={'/register'}
+                                    type="button"
+                                    className="relative inline-flex items-center gap-x-1.5 rounded-md bg-yellow-900 hover:bg-lime-700 px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                >
+                                    Register Now
+                                </Link>
+                            </div>
                         </div>
                     </Disclosure.Panel>
                 </>

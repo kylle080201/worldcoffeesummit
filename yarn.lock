@@ -195,6 +195,18 @@
   resolved "https://registry.npmjs.org/@rushstack/eslint-patch/-/eslint-patch-1.2.0.tgz"
   integrity sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==
 
+"@stripe/react-stripe-js@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@stripe/react-stripe-js/-/react-stripe-js-2.1.0.tgz#71541107628731fb790e1f31d8994fecbcd6cf13"
+  integrity sha512-Zb6Ycrj5QuhYkvtlvvLzo+cysUyA6wkx3zWHQ7uVnHRYRM/n1jtQD6VGBrdmptC8e8PJN6L091gBCyB5P0FqmA==
+  dependencies:
+    prop-types "^15.7.2"
+
+"@stripe/stripe-js@^1.53.0":
+  version "1.53.0"
+  resolved "https://registry.yarnpkg.com/@stripe/stripe-js/-/stripe-js-1.53.0.tgz#7821e0ba3204a551de88acc7eb92b77bfc252628"
+  integrity sha512-qhhAa5WxlgVqh1J41ppyqqQVu6S1T1Q9lDAk2Ho9eI/GjrkMvAHcJpKqhekJRsZ1vjsK4P68PYOcXBXPyNCpnQ==
+
 "@swc/helpers@0.4.14":
   version "0.4.14"
   resolved "https://registry.npmjs.org/@swc/helpers/-/helpers-0.4.14.tgz"
@@ -1884,7 +1896,7 @@ prelude-ls@^1.2.1:
   resolved "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.2.1.tgz"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
-prop-types@^15.5.8, prop-types@^15.8.1:
+prop-types@^15.5.8, prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -2202,10 +2214,10 @@ strip-json-comments@^3.1.0, strip-json-comments@^3.1.1:
   resolved "https://registry.npmjs.org/strip-json-comments/-/strip-json-comments-3.1.1.tgz"
   integrity sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==
 
-stripe@^12.6.0:
-  version "12.6.0"
-  resolved "https://registry.yarnpkg.com/stripe/-/stripe-12.6.0.tgz#3b469c9d28b202712f40ac692200bdbb8967130d"
-  integrity sha512-aJat4pGA6fr5DvuojRVXMaOCAw8ceS3UQM4ux1BMUViG686NmOAf1psEh6Wu+NFUifoy6kV7+4APq66OlTWtTw==
+stripe@^12.7.0:
+  version "12.7.0"
+  resolved "https://registry.yarnpkg.com/stripe/-/stripe-12.7.0.tgz#8620154e9a7a599ff4eaa0f799fb008de7e3a625"
+  integrity sha512-4yY9gNFznBI6fZtR0B4y2a+o2EJe+s7p4DiHECKphwa36zYIczpWzO1g4dF0PF3lhTRw5FWTaHGBjwaD5FEiDQ==
   dependencies:
     "@types/node" ">=8.1.0"
     qs "^6.11.0"

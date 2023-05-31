@@ -30,56 +30,12 @@ const faqs = [
     },
     {
         id: 5,
-        question: "WHO ARE CONFIRMED SPEAKERS FOR THE CONFERENCE TO DATE?",
-        answer:
-            "",
-        speakers: [
-            {
-                key: 1,
-                info: "Dr Leonard Mizzi, Head of Unity, INTPA, European Commission (EU)",
-            },
-            {
-                key: 2,
-                info: "Vanusia Nogueria, Executive Director, International Coffee Organization(ICO)",
-            },
-            {
-                key: 3,
-                info: "Paul Rooke, Executive Director, British Coffee Association (BCA)",
-            },
-            {
-                key: 4,
-                info: "Melissa Duncan, Executive Director, Fairtrade International",
-            },
-            {
-                key: 5,
-                info: "William Kennedy, Senior Executive Editor, Bloomberg (Moderator Panel 2)",
-            },
-            {
-                key: 6,
-                info: "H. E. Teferi Melesse Desta, Ethiopian Ambassador to the United Kingdom",
-            },
-            {
-                key: 7,
-                info: "H.E Markus Leitner, The Swiss Ambassador to the United Kingdom",
-            },
-            {
-                key: 8,
-                info: "H.E. Vikram Doraiswami, High Commissioner for India in the United Kingdom",
-            },
-            {
-                key: 9,
-                info: "Dr Dongyu Qu, Director-General of the Food and Agriculture Organization of the United Nations (FAO)",
-            },
-        ]
-    },
-    {
-        id: 6,
         question: "WHAT IS THE HIGHLIGHT OF THIS EVENT?",
         answer:
             "We will have Keynotes from various UK Government Ministers and 4 ambassadors, from Ethiopia, India, Switzerland and El Salvador, promoting their country not only as a coffee origin but also as a Tourism and Investment destination. The highlight of this event is the Government and Minister Roundtable to be moderated by the BBC HardTalk presenter Stephen Sackur’s, where he will facilitate an on-stage conversation with the four ambassadors, focusing on how governments can help shape regulations to help smallholder farmers thrive and earn prosperous income and what can they do to adopt smart climate best practices to promote regeneration and ESG compliance. We expect this Roundtable to generate a lot of media attention",
     },
     {
-        id: 7,
+        id: 6,
         question: "WHY ATTEND?",
         answer:
             "This event is a close door event and not open to the public which means that the networking will be intense, and engagement will be personal.",
@@ -131,18 +87,6 @@ function FAQ() {
                                             <p className="text-lg leading-7 text-gray-600">{faq.answer}</p>
                                             <ul role="list" className="mt-8 space-y-8 text-gray-600">
                                                 {
-                                                    faq.speakers ?
-                                                        faq.speakers.map((speaker) => (
-                                                            <li className="flex text-lg gap-x-3" key={speaker.key}>
-                                                                <CheckCircleIcon className="flex-none w-5 h-5 mt-1 text-lime-600" aria-hidden="true" />
-                                                                <span className="text-lg leading-7 text-gray-600">
-                                                                    {speaker.info}.
-                                                                </span>
-                                                            </li>
-                                                        ))
-                                                        : null
-                                                }
-                                                {
                                                     faq.list ?
                                                         faq.list.map((item) => (
                                                             <li className="flex text-lg gap-x-3" key={item.key}>
@@ -175,7 +119,7 @@ function FAQ() {
                                         </Disclosure.Button>
                                     </dt>
                                     <Disclosure.Panel as="dd" className="pr-12 mt-2">
-                                        <p className="text-lg leading-7 text-gray-600">For delegate and Sponsorship inquiries, please send interest to <Link href={"https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=mavis@worldcoffeealliance.com&su=Delegate%20and%20Sponsorship%20inquiry"} target="_blank" className="underline hover:underline-offset-4"> mavis@worldcoffeealliance.com</Link></p>
+                                        <p className="text-lg leading-7 text-gray-600">For delegate and Sponsorship inquiries, click <Link target="_blank" href="/register" className='text-yellow-900 underline hover:underline-offset-4'>here</Link> or send interest to <Link href={"https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=mavis@worldcoffeealliance.com&su=Delegate%20and%20Sponsorship%20inquiry"} target="_blank" className="text-yellow-900 underline hover:underline-offset-4"> mavis@worldcoffeealliance.com</Link></p>
                                     </Disclosure.Panel>
                                 </>
                             )}
