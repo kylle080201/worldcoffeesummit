@@ -45,6 +45,7 @@ const RegisterForm = () => {
                 }).then(response => response.json())
                     .then(async data => {
                         const stripe = await getStripe();
+                        await stripe?.redirectToCheckout({ sessionId: data?.response?.retrievedSession?.id })
                     }).catch(error => {
                         console.error(error);
                     });
