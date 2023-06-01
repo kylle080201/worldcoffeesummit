@@ -23,7 +23,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
   } catch (error: any) {
     console.log(`❌ Error message: ${error.message}`);
     return NextResponse.json(
-      { body, signature, webhookSecret },
+      { message: error.message },
       {
         status: 400,
       }
