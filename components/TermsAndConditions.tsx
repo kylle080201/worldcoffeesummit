@@ -2,8 +2,9 @@ import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { CheckIcon } from '@heroicons/react/24/outline'
 
-export default function TermsAndConditions({ isOpen }: any) {
-    const [open, setOpen] = useState(isOpen || false)
+export default function TermsAndConditions({ isOpenModal }: any) {
+    const [open, setOpen] = useState(isOpenModal)
+    console.log(isOpenModal)
     return (
         <Transition.Root show={open} as={Fragment}>
             <Dialog as="div" className="relative z-10" onClose={setOpen}>
@@ -50,7 +51,7 @@ export default function TermsAndConditions({ isOpen }: any) {
                                     <button
                                         type="button"
                                         className="inline-flex justify-center w-full px-3 py-2 text-sm font-semibold text-white bg-indigo-600 rounded-md shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                                        onClick={() => setOpen(false)}
+                                        onClick={() => setOpen(!open)}
                                     >
                                         Go back to dashboard
                                     </button>

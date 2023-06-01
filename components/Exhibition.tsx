@@ -98,6 +98,7 @@ export default function Exhibition() {
                         </div>
                     </div>
                 </div>
+
                 <div className='justify-center px-12 py-20 mx-auto bg-white mlg:flex-row mmd:flex-col msm:flex-col sm:px-20 sm:max-w-5xl' >
                     <h2 className="text-4xl font-bold tracking-tight text-gray-900">Exhibitors</h2>
                     <div className="w-full rounded-lg">
@@ -137,6 +138,7 @@ export default function Exhibition() {
                                 ))}
                             </ul>
                         </div>
+
                         <div className='mt-8'>
                             <p className="text-lg font-bold tracking-tight text-gray-900 sm:text-2xl">Sizes and dimensions</p>
                             <p className="mt-4 tracking-tight text-gray-900 text-md sm:text-lg">The size of the stands used for exhibition here are 76cm x 153cm x 74cm (width x length x height). However, we would allocate each exhibitor with a 3m x 2m standard space which accommodates for banners on either side and chairs behind stands.
@@ -165,6 +167,39 @@ export default function Exhibition() {
                                                             {event.description}{' '}
                                                         </p>
                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div className='mt-8 sm:max-w-xl'>
+                            <p className="text-lg font-bold tracking-tight text-gray-900 sm:text-2xl">Program</p>
+                            <ul role="list" className="mt-12">
+                                {program.map((event, eventIdx) => (
+                                    <li key={event.id}>
+                                        <div className="relative pb-8 ">
+                                            {eventIdx !== program.length - 1 ? (
+                                                <span className="absolute left-4 top-4 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true" />
+                                            ) : null}
+                                            <div className="relative flex space-x-3">
+                                                <div>
+                                                    <span
+                                                        className='flex items-center justify-center w-8 h-8 bg-yellow-900 rounded-full ring-8 ring-white'
+                                                    >
+                                                        <ClockIcon className="w-5 h-5 text-white" aria-hidden="true" />
+                                                    </span>
+                                                </div>
+                                                <div className="flex justify-between flex-1 min-w-0 pl-2 space-x-4 sm:pl-4">
+                                                    <div className='flex flex-col'>
+                                                        <p className="my-auto text-gray-900 text-md sm:text-lg">
+                                                            {event.description}{' '}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className="my-auto text-sm text-right text-gray-500 whitespace-nowrap">
+                                                    <time>{event.time}</time>
                                                 </div>
                                             </div>
                                         </div>
