@@ -9,7 +9,9 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
 
 export async function POST(request: Request, response: Response) {
   let event;
+  const req = await request.json();
   try {
+    console.log(req);
     const headersList = headers();
     const signature = headersList.get("stripe-signature")!;
     const rawBody = await buffer(request);
@@ -23,10 +25,11 @@ export async function POST(request: Request, response: Response) {
 
     if (event.type === "checkout.session.completed") {
       console.log("💰 Payment Received!");
+      return NextResponse.json({ message: "Success" + event.id });
     }
   } catch (error: any) {
     console.log(`❌ Error message: ${error.message}`);
-    NextResponse.json(
+    return NextResponse.json(
       {
         message: error.message,
       },

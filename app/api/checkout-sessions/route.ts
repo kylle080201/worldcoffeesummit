@@ -6,7 +6,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2022-11-15",
 });
 
-export async function POST(request: Request, response: Response) {
+export async function POST(request: { json: () => any }, response: Response) {
   const req = await request.json();
   const line_items = [req.line_items];
   const formData = [req.formData];
@@ -26,7 +26,7 @@ export async function POST(request: Request, response: Response) {
       response: { retrievedSession, formData },
     });
   } catch (error: any) {
-    NextResponse.json({
+    return NextResponse.json({
       message: error.message,
     });
   }
