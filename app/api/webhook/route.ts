@@ -1,13 +1,13 @@
 import Stripe from "stripe";
 import { buffer } from "micro";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { headers } from "next/headers";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2022-11-15",
 });
 
-export async function POST(request: Request, response: Response) {
+export async function POST(request: NextRequest, response: Response) {
   let event;
   const req = await request.json();
   try {
