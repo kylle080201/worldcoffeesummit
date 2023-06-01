@@ -1,8 +1,9 @@
 "use client"
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import getStripe from '../get_stripe'
 import { useSearchParams } from 'next/navigation'
+import { useForm } from 'react-hook-form'
 
 function classNames(...classes: any[]) {
     return classes.filter(Boolean).join(' ')
@@ -11,16 +12,23 @@ function classNames(...classes: any[]) {
 const RegisterForm = () => {
     const searchParams = useSearchParams()
     const [isAgree, setIsAgree] = useState(false)
-    const [line_items, setLine_items] = useState('')
     const [openTermsAndConditions, setOpenTermsAndConditions] = useState(false)
     const [openLetterOfInvitation, setOpenLetterOfInvitation] = useState(false)
 
-    const redirectToCheckout = async () => {
-        if (searchParams?.get('line_items')) {
-            setLine_items(JSON.parse(searchParams?.get('line_items'))[0]);
-        }
+    const {
+        register,
+        handleSubmit,
+        formState: { errors },
+    } = useForm();
 
-        let sessionId = ""
+    const onSubmit = data => {
+        if (data) {
+            redirectToCheckout(data)
+        }
+    }
+
+    const redirectToCheckout = async (formData: any) => {
+        const line_items = JSON.parse(searchParams?.get('line_items'))[0];
         if (line_items) {
             try {
                 await fetch('/api/checkout-sessions', {
@@ -31,61 +39,63 @@ const RegisterForm = () => {
                     body: JSON.stringify(
                         {
                             line_items,
-                            hello: "hello"
+                            formData
                         }
                     )
                 }).then(response => response.json())
-                    .then(data => {
-                        sessionId = data?.response?.id
+                    .then(async data => {
+                        const stripe = await getStripe();
+                        // await stripe?.redirectToCheckout({ sessionId: data?.response?.retrievedSession?.id })
                     }).catch(error => {
                         console.error(error);
                     });
-
-                if (sessionId) {
-                    const stripe = await getStripe();
-                    await stripe?.redirectToCheckout({ sessionId })
-                }
             } catch (error) {
                 alert(error)
             }
         }
     }
+
+
     return (
         <>
             <div className="max-w-screen-md px-4 py-8 mx-auto mb-12 lg:py-16">
                 <h2 className="mb-4 text-4xl font-bold tracking-tight text-center text-gray-900 dark:text-white"><span className='text-lime-700'>Regstration</span> Form</h2>
-                <form className="space-y-8">
-                    <div >
+                <form className="space-y-8" onSubmit={handleSubmit(onSubmit)}>
+
+                    <div>
                         <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email</label>
-                        <input type="email" id="email" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                        <input {...register('email')} type='email' className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
                     </div>
 
                     <div className='flex gap-4'>
                         <div className='w-1/2'>
                             <label htmlFor="lastName" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Last Name</label>
-                            <input type="text" id="lastName" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                            <input {...register('lastName')} className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
                         </div>
                         <div className='w-1/2'>
                             <label htmlFor="firstName" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">First Name</label>
-                            <input type="text" id="firstName" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                            <input {...register('firstName')} className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+
                         </div>
                     </div>
 
                     <div>
-                        <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Company Name</label>
-                        <input type="text" id="companyName" className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                        <label htmlFor="companyName" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Company Name</label>
+                        <input {...register('companyName')} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+
                     </div>
 
                     <div>
                         <label htmlFor="jobTitle" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Job Title</label>
-                        <input type="text" id="jobTitle" className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                        <input {...register('jobTitle')} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+
                     </div>
                     <fieldset>
-                        <legend className="sr-only">Notifications</legend>
                         <div className="space-y-5">
                             <div className="relative flex items-start">
                                 <div className="flex items-center h-6">
                                     <input
+                                        required
                                         onChange={() => (setIsAgree(!isAgree))}
                                         id="agree"
                                         aria-describedby="terms-and-conditions"
@@ -106,24 +116,19 @@ const RegisterForm = () => {
                         </div>
                     </fieldset>
                     <div className="flex justify-end">
-                        <button
-                            type='button'
-                            disabled={!isAgree}
-                            onClick={() => { redirectToCheckout() }}
-                            className={classNames(
-                                isAgree ? ' bg-lime-700 hover:bg-lime-900 focus:outline-none'
-                                    : ' bg-gray-400 focus:outline-none',
-                                'flex justify-center px-3 py-2 font-semibold text-sm text-white border border-transparent rounded-md shadow-sm'
-                            )}
-                        >
-                            Submit
-                        </button>
+                        <input type="submit" className="flex justify-center px-3 py-2 text-sm font-semibold text-white border border-transparent rounded-md shadow-sm bg-lime-700 hover:cursor-pointer hover:bg-lime-900 focus:outline-none"
+                        // className={classNames(
+                        //     isAgree ? ' bg-lime-700 hover:cursor-pointer hover:bg-lime-900 focus:outline-none'
+                        //         : ' bg-gray-400 focus:outline-none',
+                        //     'flex justify-center  px-3 py-2 font-semibold text-sm text-white border border-transparent rounded-md shadow-sm'
+                        // )} 
+                        />
                     </div>
                 </form>
-            </div>
+            </div >
 
             {/* terms and conditions */}
-            <Transition.Root show={openTermsAndConditions} as={Fragment}>
+            < Transition.Root show={openTermsAndConditions} as={Fragment}>
                 <Dialog as="div" className="relative z-10" onClose={setOpenTermsAndConditions}>
                     <Transition.Child
                         as={Fragment}
@@ -185,10 +190,10 @@ const RegisterForm = () => {
                         </div>
                     </div>
                 </Dialog>
-            </Transition.Root>
+            </ Transition.Root >
 
             {/* letter of invitation*/}
-            <Transition.Root show={openLetterOfInvitation} as={Fragment}>
+            < Transition.Root show={openLetterOfInvitation} as={Fragment}>
                 <Dialog as="div" className="relative z-10" onClose={setOpenLetterOfInvitation}>
                     <Transition.Child
                         as={Fragment}
@@ -241,7 +246,7 @@ const RegisterForm = () => {
                         </div>
                     </div>
                 </Dialog>
-            </Transition.Root>
+            </ Transition.Root>
         </>
     )
 }
