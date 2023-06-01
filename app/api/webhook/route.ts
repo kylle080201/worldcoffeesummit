@@ -13,7 +13,7 @@ export async function POST(request: any, response: Response) {
   try {
     const headersList = headers();
     const signature = headersList.get("stripe-signature")!;
-    const rawBody = Buffer.from(await request, "utf-8");
+    const rawBody = Buffer.from(await request.toString());
     event = stripe.webhooks.constructEvent(
       rawBody,
       signature,
