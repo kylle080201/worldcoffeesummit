@@ -7,7 +7,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2022-11-15",
 });
 
-export async function POST(request: any, response: Response) {
+export async function POST(request: Response, response: Response) {
   let event;
   try {
     const headersList = headers();
