@@ -1,21 +1,31 @@
+"use client"
 import React from 'react'
-import { CheckIcon } from '@heroicons/react/20/solid'
 
-export default function TicketPricing() {
+import Link from 'next/link'
+import RegisterForm from './RegisterForm'
+
+function TicketPricing() {
+
     const delegates = [
         {
             title: "NGO/Cooperatives, Coffee Associations, Academic Pass",
-            price: 954,
-            link: "https://buy.stripe.com/dR6dTLdNb0Du03S28b"
+            item_price: 799,
+            link: "https://buy.stripe.com/dR6dTLdNb0Du03S28b",
+            line_items: [
+                {
+                    price: 'price_1NCfrUKMWpUKzQVzcTWlkQsK',
+                    quantity: 1
+                }
+            ]
         },
         {
             title: "Standard Corporate Pass - Corporate Representatives",
-            price: 1350,
+            item_price: 1249,
             link: "https://buy.stripe.com/bIYdTL38x71SeYM289"
         },
         {
             title: "Consultants, Start-ups, Service Providers",
-            price: 1750,
+            item_price: 1499,
             link: "https://buy.stripe.com/cN25nf5gFgCs6sg146"
         },
     ]
@@ -23,7 +33,7 @@ export default function TicketPricing() {
     const visitors = [
         {
             title: "Coffee Roasters, Traders and Coffee Buyers only",
-            price: 149,
+            item_price: 149,
             link: "https://buy.stripe.com/test_cN21851gj7NKb9S6op"
         },
     ]
@@ -36,19 +46,25 @@ export default function TicketPricing() {
                 </div>
                 <div className='mt-4 sm:mt-12'>
                     {delegates.map((delegate) => (
-                        <div key={delegate.title} className="flex flex-col items-center content-center justify-between w-full max-w-2xl p-4 mx-auto my-auto mt-2 sm:items-start sm:flex-row justify-items-start sm:p-8 rounded-3xl ring-1 ring-lime-700 sm:mt-4 lg:mx-0 lg:flex lg:max-w-none">
-                            <div className='w-10/12 my-auto text-lg font-semibold text-yellow-900 sm:text-2xl'><p>{delegate.title}</p></div>
-                            <div className='w-2/12 my-auto text-lg font-semibold sm:text-2xl'><p>£{delegate.price}.00</p></div>
-                            <div className="w-1/2 my-auto mt-2 sm:mt-0 sm:w-2/12">
-                                <a
-                                    href={delegate.link}
-                                    target='_blank'
-                                    rel="noreferrer"
-                                    className="block w-full px-3 py-2 text-lg font-semibold text-center text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                        <div key={delegate.title} className="flex flex-col items-center content-center justify-between w-full max-w-2xl p-4 mx-auto my-auto mt-2 gap-x-4 sm:items-start sm:flex-row justify-items-start sm:p-8 rounded-3xl ring-1 ring-gray-500 sm:mt-4 lg:mx-0 lg:flex lg:max-w-none">
+                            <div className='w-10/12 my-auto text-lg font-semibold text-gray-900 sm:text-2xl'><p>{delegate.title}</p></div>
+                            <div className='my-auto text-lg font-semibold sm:text-2xl'><p>£{delegate.item_price}.00</p></div>
+                            <div className='my-auto justify-self-center mx:auto'>
+                                <Link
+                                    href={{
+                                        pathname: '/register/form',
+                                        query: {
+                                            line_items: JSON.stringify(delegate.line_items)
+                                        }
+                                    }}
+                                    type="button"
+                                    className="block w-full px-3 py-2 text-sm font-semibold text-center text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                                 >
                                     Register
-                                </a>
+                                </Link>
+
                             </div>
+
                         </div>
                     ))}
                 </div>
@@ -62,7 +78,7 @@ export default function TicketPricing() {
                     {visitors.map((visitor) => (
                         <div key={visitor.title} className="flex flex-col items-center content-center justify-between w-full max-w-2xl p-4 mx-auto my-auto mt-2 sm:items-start sm:flex-row justify-items-start sm:p-8 rounded-3xl ring-1 ring-lime-700 sm:mt-4 lg:mx-0 lg:flex lg:max-w-none">
                             <div className='w-10/12 my-auto text-lg font-semibold text-yellow-900 sm:text-2xl'><p>{visitor.title}</p></div>
-                            <div className='w-2/12 my-auto text-lg font-semibold sm:text-2xl'><p>£{visitor.price}.00</p></div>
+                            <div className='w-2/12 my-auto text-lg font-semibold sm:text-2xl'><p>£{visitor.item_price}.00</p></div>
                             <div className="w-1/2 my-auto mt-2 sm:mt-0 sm:w-2/12">
                                 <a
                                     href={visitor.link}
@@ -80,3 +96,5 @@ export default function TicketPricing() {
         </div>
     )
 }
+
+export default TicketPricing;

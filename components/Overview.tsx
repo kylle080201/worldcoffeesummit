@@ -1,4 +1,5 @@
 import React from 'react'
+import CountDown from './CountDown'
 
 export default function Overview() {
     return (
@@ -8,8 +9,9 @@ export default function Overview() {
                     <div>
                         <p className="text-xl leading-8 text-white">13th September 2023</p>
                         <p className="text-4xl font-bold tracking-tight text-white sm:text-6xl">World Coffee Summit London</p>
-                        <p className="mt-6 text-2xl font-bold tracking-tight text-white sm:text-4xl">SUSTAINABILITY BEYOND COMPLIANCE </p>
-                        <p className="mt-32 text-xl leading-8 text-white sm:mt-80">
+                        <p className="mt-6 text-2xl font-bold tracking-tight text-yellow-900 sm:text-4xl">SUSTAINABILITY BEYOND COMPLIANCE </p>
+                        <CountDown />
+                        <p className="mt-24 text-xl leading-8 text-justify text-white sm:mt-60">
                             WITH THE LOOMING IMPLEMENTATION OF THE  EU DUE DILIGENCE LEGISLATION, THE GLOBAL COFFEE INDUSTRY IS FACED WITH REGULATORY COMPLIANCE THAT WILL  HAVE DRAMATIC IMPACT ON BUSINESSES. AGAINST THE BACKDROP OF RISING COST, CLIMATE CHANGE AND SUSTAINABILITY ISSUES, THIS BUSINESS EVENT WILL TACKLE AND FLESH OUT HOW TO NAVIGATE ITS COMPLEXITIES AND FIND COLLABORATIVE AND REGENERATIVE SOLUTIONS FOR THE FUTURE OF COFFEE.
                         </p>
                     </div>

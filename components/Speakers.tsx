@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-const speakers = [
+const firstRow = [
     {
         name: 'Dr. Dongyu Qu',
         role: 'Directoral-General',
@@ -9,6 +9,33 @@ const speakers = [
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/05/DR-DONGYU-QU.jpg',
     },
+    {
+        name: 'H.E. Markus Leitner',
+        role: 'Ambassador of Switzerland to the United Kingdom',
+        imageUrl:
+            'https://worldcoffeealliance.com/wp-content/uploads/2023/05/MARKUS-LEITNER.jpg',
+    },
+    {
+        name: 'H.E. Teferi Melesse Desta',
+        role: 'Ambassador of Ethiopia to the United Kingdom',
+        imageUrl:
+            'https://worldcoffeealliance.com/wp-content/uploads/2023/05/TEFERI-MELESSE-DESTA.jpg',
+    },
+    {
+        name: 'H.E. Hayashu Hajime',
+        role: 'Ambassador of Japan to the United Kingdom',
+        imageUrl:
+            'https://worldcoffeealliance.com/wp-content/uploads/2023/05/HAYASHU-HAJIME-1.jpg',
+    },
+    {
+        name: 'H.E. Carmen Maria',
+        role: 'Ambassador of El Salvador to the United Kingdom',
+        imageUrl:
+            'https://worldcoffeealliance.com/wp-content/uploads/2023/05/Picture2.jpg',
+    },
+]
+
+const secondRow = [
     {
         name: 'Dr. Leonard Mizzi',
         role: 'Head of Unit, INTPA',
@@ -37,12 +64,15 @@ const speakers = [
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/02/preferred-Melissa-Duncan.jpg',
     },
+]
+
+const thirdRow = [
     {
         name: 'Anna R Rios',
         role: 'Climate Change Senior Specialist',
         company: 'Inter-American Development Bank (IADB)',
         imageUrl:
-            'https://worldcoffeealliance.com/wp-content/uploads/2023/04/user.png',
+            'https://worldcoffeealliance.com/wp-content/uploads/2023/05/ANNA-R-RIOS.jpg',
     },
     {
         name: 'William Kennedy',
@@ -51,76 +81,76 @@ const speakers = [
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/05/WILLIAM-KENNEDY.jpg',
     },
-    // {
-    //     name: 'Emily Cromwell',
-    //     role: 'Climate Change and Sustainability Lead Consumer Industry',
-    //     company: 'Deloitte',
-    //     imageUrl:
-    //         '',
-    // },
-    // {
-    //     name: 'Chris Brett',
-    //     role: 'Lead Agri-business Specialist',
-    //     company: 'World Bank',
-    //     imageUrl:
-    //         'https://worldcoffeealliance.com/wp-content/uploads/2021/02/Christopher-Brett_square-scaled.jpg',
-    // },
-]
-
-const ambassadors = [
     {
-        name: 'Rt Hon Andrew Mitchell',
-        role: 'UK Minister of State',
-        company: 'Development and Africa',
+        name: 'Katherine Stodulka',
+        role: 'Partner, Director, Blended Finance',
+        company: 'SYSTEMIQ',
         imageUrl:
-            '',
-    },
-    {
-        name: 'H. E. Teferi Melesse Desta',
-        role: 'Ethiopian Ambassador to the United Kingdom',
-        company: '',
-        imageUrl:
-            'https://worldcoffeealliance.com/wp-content/uploads/2023/05/TEFERI-MELESSE-DESTA.jpg',
-    },
-    {
-        name: 'H.E Markus Leitner',
-        role: 'The Swiss Ambassador to the United Kingdom',
-        company: '',
-        imageUrl:
-            'https://worldcoffeealliance.com/wp-content/uploads/2023/05/MARKUS-LEITNER.jpg',
-    },
-    {
-        name: 'H.E. Vikram Doraiswami',
-        role: 'High Commissioner for India in the United Kingdom',
-        company: '',
-        imageUrl:
-            '',
+            'https://worldcoffeealliance.com/wp-content/uploads/2023/05/KATHERINE-SODULKA.png',
     },
 ]
 
 export default function Speakers() {
     return (
 
-        <div className="px-12 py-20 sm:px-20" id='speakers'>
-            <div className="mx-auto">
-                <div className="max-w-2xl mx-auto sm:text-center">
+        <div className="px-12 py-20 bg-gray-100 sm:px-20" id='speakers'>
+            <div className="mx-auto sm:content-center">
+                <div className="max-w-2xl mx-auto text-center">
                     <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our Speakers</p>
                 </div>
                 <ul
                     role="list"
-                    className="grid grid-cols-1 mx-auto mt-20 gap-x-6 gap-y-20 sm:grid-cols-3 lg:gap-x-8"
+                    className="grid grid-cols-1 mx-auto mt-20 max-w-7xl gap-x-6 gap-y-20 sm:grid-cols-5 lg:gap-x-8"
                 >
-                    {speakers.map((speaker) => (
-                        <li key={speaker.name} className="flex flex-col gap-6 xl:flex-row">
-                            <div>
-                                <Image className="flex-none rounded-full w-28 " src={speaker.imageUrl} alt={speaker.name} width={160} height={160} />
+                    {firstRow.map((speaker) => (
+                        <li key={speaker.name} className="flex flex-col gap-6">
+                            <div className='flex-shrink-0 mx-auto'>
+                                <Image className="w-20 rounded-md " src={speaker.imageUrl} alt={speaker.name} width={160} height={160} />
                             </div>
 
-                            <div className="flex items-center">
+                            <div className="flex mx-auto text-center">
                                 <div>
-                                    <p className="text-xl font-semibold leading-8 tracking-tight text-gray-900">{speaker.name}</p>
-                                    <p className="text-lg leading-7 text-gray-700">{speaker.role}</p>
-                                    <p className="text-lg leading-7 text-gray-900">{speaker.company}</p>
+                                    <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900">{speaker.name}</p>
+                                    <p className="leading-7 text-gray-700 text-md">{speaker.role}</p>
+                                    <p className="leading-7 text-gray-900 text-md">{speaker.company}</p>
+                                </div>
+                            </div>
+                        </li>
+                    ))}
+                </ul>
+                <ul
+                    role="list"
+                    className="grid max-w-5xl grid-cols-1 mx-auto mt-20 gap-x-6 gap-y-20 sm:grid-cols-4 lg:gap-x-8"
+                >
+                    {secondRow.map((speaker) => (
+                        <li key={speaker.name} className="flex flex-col gap-6">
+                            <div className='flex-shrink-0 mx-auto'>
+                                <Image className="w-20 rounded-md" src={speaker.imageUrl} alt={speaker.name} width={160} height={160} />
+                            </div>
+                            <div className="flex mx-auto text-center">
+                                <div>
+                                    <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900">{speaker.name}</p>
+                                    <p className="leading-7 text-gray-700 text-md">{speaker.role}</p>
+                                    <p className="leading-7 text-gray-900 text-md">{speaker.company}</p>
+                                </div>
+                            </div>
+                        </li>
+                    ))}
+                </ul>
+                <ul
+                    role="list"
+                    className="grid max-w-3xl grid-cols-1 mx-auto mt-20 gap-x-6 gap-y-20 sm:grid-cols-3 sm:gap-x-8"
+                >
+                    {thirdRow.map((speaker) => (
+                        <li key={speaker.name} className="flex flex-col gap-6">
+                            <div className='flex-shrink-0 mx-auto'>
+                                <Image className="w-20 rounded-md" src={speaker.imageUrl} alt={speaker.name} width={160} height={160} />
+                            </div>
+                            <div className="flex flex-shrink-0 mx-auto text-center">
+                                <div>
+                                    <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900">{speaker.name}</p>
+                                    <p className="leading-7 text-gray-700 text-md">{speaker.role}</p>
+                                    <p className="leading-7 text-gray-900 text-md">{speaker.company}</p>
                                 </div>
                             </div>
                         </li>

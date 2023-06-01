@@ -1,48 +1,90 @@
-import { CheckCircleIcon, InformationCircleIcon } from '@heroicons/react/24/outline'
-import React from 'react'
+import { ArrowRightCircleIcon, BanknotesIcon, CursorArrowRippleIcon, GlobeAmericasIcon, PresentationChartBarIcon } from '@heroicons/react/24/solid'
+
+const timeline = [
+    {
+        id: 1,
+        title: "Navigating complexities of Regulatory Compliance",
+        description: "Our panel of experts and global speakers will examine and assess the impact of Regenerative Agricultural practices in promoting carbon capture and sequestration. Discussions will also pivot around financial opportunities that Regenerative Agriculture and of ESG compliant strategies to ensure a supply chain transformation that is scalable and more resilient.",
+        icon: CursorArrowRippleIcon,
+        iconBackground: 'bg-lime-600',
+    },
+    {
+        id: 2,
+        title: "Continuing engagement with Governments",
+        description: "How to ensure that engagement from companies and governments on enforcing forest governance on forest-coffee frontier, and that an industry-wide commitment to zero-deforestation is upheld.",
+        icon: ArrowRightCircleIcon,
+        iconBackground: 'bg-lime-600',
+    },
+    {
+        id: 3,
+        title: "Responsible sourcing and fair coffee price",
+        description: "How coffee brands and traders across the globe are likely to feel pressure from customers, the media and their respective regulators and governments to take responsibility for their actions as a business. But what are the cost implications?",
+        icon: BanknotesIcon,
+        iconBackground: 'bg-lime-600',
+    },
+    {
+        id: 4,
+        title: "Nature-led Solutions to mitigate climate change",
+        description: "Deep diving into insights and best practices beyond compliance that can enhance biodiversity and improve soil health to drive sustainable coffee farming.",
+        icon: GlobeAmericasIcon,
+        iconBackground: 'bg-lime-600',
+    },
+    {
+        id: 5,
+        title: "The Future of Collaboration",
+        description: "The role of coffee industry leaders in driving sustainable agriculture by supporting “living income principle”, incentivizing women and the young generation of farmers and ensuring that regeneration is at the heart of a future sustainability strategy.",
+        icon: PresentationChartBarIcon,
+        iconBackground: 'bg-lime-600',
+    },
+]
+
+function classNames(...classes: string[]) {
+    return classes.filter(Boolean).join(' ')
+}
 
 export default function Agenda() {
-    const agendas = [
-        {
-            title: "Navigating complexities of Regulatory Compliance",
-            description: "Our panel of experts and global speakers will examine and assess the impact of Regenerative Agricultural practices in promoting carbon capture and sequestration. Discussions will also pivot around financial opportunities that Regenerative Agriculture and of ESG compliant strategies to ensure a supply chain transformation that is scalable and more resilient."
-        },
-        {
-            title: "Continuing engagement with Governments",
-            description: "How to ensure that engagement from companies and governments on enforcing forest governance on forest-coffee frontier, and that an industry-wide commitment to zero-deforestation is upheld."
-        },
-        {
-            title: "Responsible sourcing and fair coffee price",
-            description: "How coffee brands and traders across the globe are likely to feel pressure from customers, the media and their respective regulators and governments to take responsibility for their actions as a business. But what are the cost implications?"
-        },
-        {
-            title: "Nature-led Solutions to mitigate climate change",
-            description: "Deep diving into insights and best practices beyond compliance that can enhance biodiversity and improve soil health to drive sustainable coffee farming."
-        },
-        {
-            title: "The Future of Collaboration",
-            description: "The role of coffee industry leaders in driving sustainable agriculture by supporting “living income principle”, incentivizing women and the young generation of farmers and ensuring that regeneration is at the heart of a future sustainability strategy."
-        },
-    ]
     return (
-        <div id="agenda" className="px-12 py-20 sm:px-20 bg-lime-700">
-            <div className="mx-auto">
+        <div className="flow-root px-12 py-20 sm:px-20 bg-lime-700 ">
+            <div className='mx-auto sm:max-w-5xl'>
                 <h2 className="text-4xl font-bold tracking-tight text-white">AGENDA HIGHLIGHTS</h2>
                 <div className="w-full rounded-lg">
                     <dd className="mt-2 text-xl leading-7 text-white">
                         <span >This one-day high-level business conference will bring together Governments, FAO,EU,ICO,BCA, NGOs like Rainforest Alliance and Fairtrade International, Financial Institutions like IADB, IFAD,WB to identify the main areas of collaboration, exploring innovative and regenerative solutions to face the challenges of regulatory compliance and climate change. </span>
                     </dd>
                 </div>
-                <div className="mt-16 ">
-                    <dl className="flex flex-col gap-y-8">
-                        {agendas.map((agenda) => (
-                            <div key={agenda.title} className="p-4 bg-white rounded-lg sm:p-6">
-                                <dt className="text-2xl font-semibold leading-7 text-gray-900">{agenda.title}</dt>
-                                <dd className="mt-4 text-lg leading-7 text-gray-700">{agenda.description}</dd>
+                <ul role="list" className="mt-12">
+                    {timeline.map((event, eventIdx) => (
+                        <li key={event.id}>
+                            <div className="relative pb-8">
+                                {eventIdx !== timeline.length - 1 ? (
+                                    <span className="absolute left-4 top-4 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true" />
+                                ) : null}
+                                <div className="relative flex space-x-3">
+                                    <div>
+                                        <span
+                                            className={classNames(
+                                                event.iconBackground,
+                                                'h-8 w-8 rounded-full flex items-center justify-center ring-8 ring-white'
+                                            )}
+                                        >
+                                            <event.icon className="w-5 h-5 text-white" aria-hidden="true" />
+                                        </span>
+                                    </div>
+                                    <div className="flex justify-between flex-1 min-w-0 pl-2 space-x-4 sm:pl-4">
+                                        <div className='flex flex-col'>
+                                            <p className="text-lg font-semibold text-white sm:text-2xl">
+                                                {event.title}{' '}
+                                            </p>
+                                            <p className="mt-2 text-sm text-white sm:text-lg">
+                                                {event.description}{' '}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        ))}
-                    </dl>
-                </div>
+                        </li>
+                    ))}
+                </ul>
             </div>
         </div>
     )
