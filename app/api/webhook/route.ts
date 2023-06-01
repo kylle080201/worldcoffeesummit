@@ -10,13 +10,11 @@ export async function POST(request: NextRequest, response: Response) {
   let event;
 
   try {
-    const signature = Buffer.from(
-      request.headers.get("stripe-signature")!.toString()
-    );
-    const rawBody = Buffer.from(request.toString());
+    const signature = request.headers.get("stripe-signature");
+    const body = await buffer(request);
     event = stripe.webhooks.constructEvent(
-      rawBody,
-      signature,
+      body,
+      signature!,
       process.env.STRIPE_WEBHOOK_SECRET!
     );
 
