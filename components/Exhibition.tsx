@@ -61,22 +61,22 @@ export default function Exhibition() {
             time: "11:00 - 12:00"
         },
         {
-            id: 3,
+            id: 4,
             description: "BREAK",
             time: "12:00 - 01:00"
         },
         {
-            id: 3,
+            id: 5,
             description: "PANEL TWO",
             time: "01:00 - 02:00"
         },
         {
-            id: 3,
+            id: 6,
             description: "CUPPING SESSION 2",
             time: "02:00 - 03:00"
         },
         {
-            id: 3,
+            id: 7,
             description: "AWARDING CEREMONY",
             time: "03:00 - 04:00"
         },
