@@ -21,14 +21,14 @@ const RegisterForm = () => {
         formState: { errors },
     } = useForm();
 
-    const onSubmit = data => {
+    const onSubmit = (data: any) => {
         if (data) {
             redirectToCheckout(data)
         }
     }
 
     const redirectToCheckout = async (formData: any) => {
-        const line_items = JSON.parse(searchParams?.get('line_items'))[0];
+        const line_items = JSON.parse(searchParams?.get('line_items')!)[0];
         if (line_items) {
             try {
                 await fetch('/api/checkout-sessions', {

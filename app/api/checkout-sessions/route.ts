@@ -1,12 +1,12 @@
+import { headers } from "next/headers";
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
-import { buffer } from "micro";
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2022-11-15",
 });
 
-export async function POST(request: Request) {
+export async function POST(request: Request, response: Response) {
   const req = await request.json();
   const line_items = [req.line_items];
   const formData = [req.formData];
@@ -25,7 +25,7 @@ export async function POST(request: Request) {
     return NextResponse.json({
       response: { retrievedSession, formData },
     });
-  } catch (error) {
+  } catch (error: any) {
     NextResponse.json({
       message: error.message,
     });
