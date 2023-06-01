@@ -10,7 +10,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
   let event: Stripe.Event;
   const webhookSecret: string = process.env.STRIPE_WEBHOOK_SECRET!;
   const signature = request.headers.get("stripe-signature");
-  const body = Buffer.from(request.toString());
+  const body = await request.json();
   try {
     event = stripe.webhooks.constructEvent(body, signature!, webhookSecret);
 
@@ -23,7 +23,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
   } catch (error: any) {
     console.log(`❌ Error message: ${error.message}`);
     return NextResponse.json(
-      { message: error.message },
+      { message: error.message, body, signature, webhookSecret },
       {
         status: 400,
       }
