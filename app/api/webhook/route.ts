@@ -11,9 +11,10 @@ export async function POST(request: any, response: Response) {
   let event;
 
   try {
+    const req = await request.json();
     const headersList = headers();
     const signature = headersList.get("stripe-signature")!;
-    const rawBody = await buffer(request);
+    const rawBody = await buffer(req);
     event = stripe.webhooks.constructEvent(
       rawBody,
       signature,
