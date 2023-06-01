@@ -1,19 +1,19 @@
 import Stripe from "stripe";
 import { buffer } from "micro";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { headers } from "next/headers";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2022-11-15",
 });
 
-export async function POST(request: any, response: Response) {
+export async function POST(request: NextRequest, response: Response) {
   let event;
 
   try {
     const headersList = headers();
-    const signature = headersList.get("stripe-signature")!;
-    const rawBody = Buffer.from(await request.toString());
+    const signature = request.headers.get("stripe-signature")!;
+    const rawBody = Buffer.from(request.toString());
     event = stripe.webhooks.constructEvent(
       rawBody,
       signature,
