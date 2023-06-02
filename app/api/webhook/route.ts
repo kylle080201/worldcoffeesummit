@@ -16,20 +16,20 @@ export async function POST(request: NextRequest, response: NextResponse) {
   });
 
   try {
-    // event = stripe.webhooks.constructEvent(
-    //   body,
-    //   header,
-    //   process.env.STRIPE_WEBHOOK_SECRET!
-    // );
-    // console.log("✅ Success:", event.id);
-    // if (event.type === "checkout.session.completed") {
-    //   console.log("💰 Payment Received!");
-    //   return NextResponse.json({
-    //     body,
-    //     header,
-    //     webhookSecret: process.env.STRIPE_WEBHOOK_SECRET!,
-    //   });
-    // }
+    event = stripe.webhooks.constructEvent(
+      body,
+      signature!,
+      process.env.STRIPE_WEBHOOK_SECRET!
+    );
+    console.log("✅ Success:", event.id);
+    if (event.type === "checkout.session.completed") {
+      console.log("💰 Payment Received!");
+      return NextResponse.json({
+        body,
+        header,
+        webhookSecret: process.env.STRIPE_WEBHOOK_SECRET!,
+      });
+    }
   } catch (error: any) {
     console.log(`❌ Error message: ${error.message}`);
     return NextResponse.json(
