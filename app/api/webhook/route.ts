@@ -8,7 +8,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
 export async function POST(request: NextRequest, response: NextResponse) {
   let event: Stripe.Event;
   const signature = request.headers.get("stripe-signature");
-  const body = Buffer.from(request.toString());
+  const body = Buffer.from(request.toString(), "utf-8");
 
   const header = stripe.webhooks.generateTestHeaderString({
     payload: body.toString(),
