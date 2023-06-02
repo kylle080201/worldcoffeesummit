@@ -28,7 +28,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
       console.log("💰 Payment Received!");
       return NextResponse.json({
         body,
-        signature,
+        header,
         webhookSecret: process.env.STRIPE_WEBHOOK_SECRET!,
       });
     }
@@ -38,7 +38,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
       {
         message: error.message,
         body,
-        signature,
+        header,
         webhookSecret: process.env.STRIPE_WEBHOOK_SECRET!,
       },
       {
