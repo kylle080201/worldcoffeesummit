@@ -44,16 +44,14 @@ function Navbar() {
                                         </Link>
                                     </div> */}
                                     <div>
-                                        <img
-                                            className="block w-auto h-8 lg:hidden"
-                                            src="https://worldcoffeealliance.com/wp-content/uploads/2023/05/world-coffee-summit-high-resolution-logo-color-on-transparent-background.png"
-                                            alt="WCS Logo"
-                                        />
-                                        <img
-                                            className="hidden w-32 h-auto lg:block"
-                                            src="https://worldcoffeealliance.com/wp-content/uploads/2023/05/world-coffee-summit-high-resolution-logo-color-on-transparent-background.png"
-                                            alt="WCS Logo"
-                                        />
+                                        <a href='/'>
+                                            <img
+                                                className="hidden w-32 h-auto lg:block"
+                                                src="https://worldcoffeealliance.com/wp-content/uploads/2023/05/world-coffee-summit-high-resolution-logo-color-on-transparent-background.png"
+                                                alt="WCS Logo"
+                                            />
+                                        </a>
+
                                     </div>
                                 </div>
                                 <div className="hidden sm:flex md:ml-6 ">
@@ -97,7 +95,7 @@ function Navbar() {
                                     href={item.href}
                                     className={classNames(
                                         item.current ?
-                                            ' text-indigo-700 border-indigo-500 bg-indigo-50' :
+                                            ' text-lime-700 border-lime-500 bg-lime-50' :
                                             ' text-gray-500 border-transparent hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700',
                                         'block py-2 pl-3 pr-4 text-base font-medium border-l-4 sm:pl-5 sm:pr-6'
                                     )}
