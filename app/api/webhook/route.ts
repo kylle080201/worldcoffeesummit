@@ -1,5 +1,6 @@
 import Stripe from "stripe";
 import { NextRequest, NextResponse } from "next/server";
+import { buffer } from "micro";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2022-11-15",
@@ -8,10 +9,12 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
 export async function POST(request: NextRequest, response: NextResponse) {
   let event: Stripe.Event;
   const signature = request.headers.get("stripe-signature");
-  const body = Buffer.from(request.toString(), "utf-8");
+
+  const rawBody = await buffer(await request.json(), { encoding: "utf-8" });
+  const body = rawBody.toString();
 
   const header = stripe.webhooks.generateTestHeaderString({
-    payload: body.toString(),
+    payload: body,
     secret: process.env.STRIPE_WEBHOOK_SECRET!,
   });
 
