@@ -9,23 +9,20 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
 export async function POST(request: NextRequest, response: NextResponse) {
   let event: Stripe.Event;
   const req = await request.json();
-  const headers = request.headers;
-  const signature = Buffer.from(headers.get("stripe-signature")!);
+  const signature = request.headers.get("stripe-signature")!;
   const body = Buffer.from(JSON.stringify(req));
+  const secret = process.env.STRIPE_WEBHOOK_SECRET!;
 
   try {
-    event = stripe.webhooks.constructEvent(
-      body,
-      signature!,
-      process.env.STRIPE_WEBHOOK_SECRET!
-    );
+    event = stripe.webhooks.constructEvent(body, signature, secret);
+
     console.log("✅ Success:", event.id);
     if (event.type === "checkout.session.completed") {
       console.log("💰 Payment Received!");
       return NextResponse.json({
         body,
         signature,
-        webhookSecret: process.env.STRIPE_WEBHOOK_SECRET!,
+        secret,
       });
     }
   } catch (error: any) {
@@ -36,7 +33,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
         body,
         headers: JSON.stringify(request.headers),
         signature,
-        webhookSecret: process.env.STRIPE_WEBHOOK_SECRET!,
+        secret,
       },
       {
         status: 400,
