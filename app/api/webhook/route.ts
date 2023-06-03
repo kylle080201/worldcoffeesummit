@@ -9,7 +9,8 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
 export async function POST(request: NextRequest, response: NextResponse) {
   let event: Stripe.Event;
   const req = await request.json();
-  const signature = request.headers.get("stripe-signature");
+  const headers = request.headers;
+  const signature = Buffer.from(headers.get("stripe-signature")!);
   const body = Buffer.from(JSON.stringify(req));
 
   try {
