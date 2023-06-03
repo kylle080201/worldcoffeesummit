@@ -11,7 +11,7 @@ function TicketPricing() {
             item_price: 799,
             line_items: [
                 {
-                    price: 'price_1NEpCRKMWpUKzQVzFKnpP0KE',
+                    price: 'price_1NCfrUKMWpUKzQVzcTWlkQsK',
                     quantity: 1
                 }
             ]
