@@ -13,6 +13,11 @@ export async function POST(request: NextRequest, response: NextResponse) {
   const body = Buffer.from(JSON.stringify(req));
   const secret = process.env.STRIPE_WEBHOOK_SECRET!;
 
+  const header = stripe.webhooks.generateTestHeaderString({
+    payload: JSON.stringify(req),
+    secret,
+  });
+
   try {
     event = stripe.webhooks.constructEvent(body, signature, secret);
 
@@ -31,6 +36,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
       {
         message: error.message,
         body,
+        header,
         headers: JSON.stringify(request.headers),
         signature,
         typesignature: typeof signature,
