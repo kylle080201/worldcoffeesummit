@@ -19,7 +19,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
   });
 
   try {
-    event = stripe.webhooks.constructEvent(body, signature, secret);
+    event = stripe.webhooks.constructEvent(body, header, secret);
 
     console.log("✅ Success:", event.id);
     if (event.type === "checkout.session.completed") {
