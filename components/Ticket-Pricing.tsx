@@ -9,10 +9,9 @@ function TicketPricing() {
         {
             title: "NGO/Cooperatives, Coffee Associations, Academic Pass",
             item_price: 799,
-            link: "https://buy.stripe.com/dR6dTLdNb0Du03S28b",
             line_items: [
                 {
-                    price: 'price_1NCfrUKMWpUKzQVzcTWlkQsK',
+                    price: 'price_1NEpCRKMWpUKzQVzFKnpP0KE',
                     quantity: 1
                 }
             ]
