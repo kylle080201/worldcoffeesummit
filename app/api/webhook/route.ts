@@ -10,10 +10,11 @@ export async function POST(request: NextRequest, response: NextResponse) {
   let event: Stripe.Event;
   const req = await request.json();
   const signature = request.headers.get("stripe-signature");
+  const body = Buffer.from(JSON.stringify(req));
 
   try {
     event = stripe.webhooks.constructEvent(
-      req,
+      body,
       signature!,
       process.env.STRIPE_WEBHOOK_SECRET!
     );
@@ -21,7 +22,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
     if (event.type === "checkout.session.completed") {
       console.log("💰 Payment Received!");
       return NextResponse.json({
-        req,
+        body,
         signature,
         webhookSecret: process.env.STRIPE_WEBHOOK_SECRET!,
       });
