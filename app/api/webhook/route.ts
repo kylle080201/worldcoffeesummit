@@ -31,7 +31,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
       // });
       return NextResponse.json(
         {
-          req: req.data.id,
+          req: req.data.object.payment_intent,
         },
         {
           status: 200,
