@@ -32,8 +32,8 @@ export async function POST(request: NextRequest, response: NextResponse) {
     return NextResponse.json(
       {
         message: error.message,
-        req,
-        signature,
+        body,
+        signature: request.headers,
         webhookSecret: process.env.STRIPE_WEBHOOK_SECRET!,
       },
       {
