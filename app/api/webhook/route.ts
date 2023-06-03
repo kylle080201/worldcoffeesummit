@@ -13,34 +13,24 @@ export async function POST(request: NextRequest, response: NextResponse) {
   const body = Buffer.from(JSON.stringify(req));
   const secret = process.env.STRIPE_WEBHOOK_SECRET!;
 
-  const header = stripe.webhooks.generateTestHeaderString({
-    payload: JSON.stringify(req),
-    secret,
-  });
-
   try {
-    event = stripe.webhooks.constructEvent(body, header, secret);
-
-    console.log("✅ Success:", event.id);
+    event = stripe.webhooks.constructEvent(body, signature, secret);
     if (event.type === "checkout.session.completed") {
-      console.log("💰 Payment Received!");
-      return NextResponse.json({
-        body,
-        signature,
-        secret,
-      });
+      return NextResponse.json(
+        {
+          body,
+          signature,
+          secret,
+        },
+        {
+          status: 200,
+        }
+      );
     }
   } catch (error: any) {
-    console.log(`❌ Error message: ${error.message}`);
     return NextResponse.json(
       {
         message: error.message,
-        body,
-        header,
-        headers: JSON.stringify(request.headers),
-        signature,
-        typesignature: typeof signature,
-        secret,
       },
       {
         status: 400,
