@@ -33,7 +33,8 @@ export async function POST(request: NextRequest, response: NextResponse) {
       {
         message: error.message,
         body,
-        signature: request.headers,
+        headers: request.headers,
+        signature,
         webhookSecret: process.env.STRIPE_WEBHOOK_SECRET!,
       },
       {
