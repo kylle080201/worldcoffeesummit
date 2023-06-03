@@ -33,6 +33,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
         body,
         headers: JSON.stringify(request.headers),
         signature,
+        typesignature: typeof signature,
         secret,
       },
       {
