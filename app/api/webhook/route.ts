@@ -33,7 +33,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
       {
         message: error.message,
         body,
-        headers: request.headers,
+        headers: request.headers.get("host"),
         signature,
         webhookSecret: process.env.STRIPE_WEBHOOK_SECRET!,
       },
