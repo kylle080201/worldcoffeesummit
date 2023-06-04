@@ -38,7 +38,7 @@ const RegisterForm = () => {
         const line_items = JSON.parse(searchParams?.get('line_items')!)[0];
         if (line_items) {
             try {
-                await fetch('/api/checkout-sessions', {
+                await fetch(`${origin}/api/checkout-sessions`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
