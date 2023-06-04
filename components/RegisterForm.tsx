@@ -46,7 +46,7 @@ const RegisterForm = () => {
                     .then(async data => {
                         const stripe = await getStripe();
                         await stripe?.redirectToCheckout({ sessionId: data?.response?.retrievedSession?.id })
-                        await fetch('http://localhost:3000/api/payment-success', {
+                        await fetch('/api/payment-success', {
                             method: 'POST',
                             headers: {
                                 'Content-Type': 'application/json'

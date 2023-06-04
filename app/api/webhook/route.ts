@@ -22,7 +22,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
     if (event.type === "checkout.session.completed") {
       const transactId = req.data.object.payment_intent;
       try {
-        await fetch("http://localhost:3000/api/payment-success", {
+        await fetch("api/payment-success", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
