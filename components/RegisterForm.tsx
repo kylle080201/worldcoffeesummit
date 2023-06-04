@@ -9,11 +9,18 @@ function classNames(...classes: any[]) {
     return classes.filter(Boolean).join(' ')
 }
 
+
 const RegisterForm = () => {
     const searchParams = useSearchParams()
     const [isAgree, setIsAgree] = useState(false)
+    const [origin, setOrigin] = useState('')
     const [openTermsAndConditions, setOpenTermsAndConditions] = useState(false)
     const [openLetterOfInvitation, setOpenLetterOfInvitation] = useState(false)
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            setOrigin(window.location.origin)
+        }
+    }, [])
 
     const {
         register,
@@ -39,7 +46,8 @@ const RegisterForm = () => {
                     body: JSON.stringify(
                         {
                             line_items,
-                            formData
+                            formData,
+                            origin
                         }
                     )
                 }).then(response => response.json())
@@ -58,7 +66,7 @@ const RegisterForm = () => {
                             )
                         })
                     }).catch(error => {
-                        console.error(error);
+                        console.log(error);
                     });
             } catch (error) {
                 alert(error)
