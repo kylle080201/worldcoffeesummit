@@ -1,16 +1,22 @@
 import Stripe from "stripe";
 import { NextRequest, NextResponse } from "next/server";
+import { useState } from "react";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2022-11-15",
 });
 
 export async function POST(request: NextRequest, response: NextResponse) {
+  let origin;
   let event: Stripe.Event;
   const req = await request.json();
   const signature = request.headers.get("stripe-signature")!;
   const body = Buffer.from(JSON.stringify(req));
   const secret = process.env.STRIPE_WEBHOOK_SECRET!;
+
+  if (typeof window !== undefined) {
+    origin = window.location.origin;
+  }
 
   const header = stripe.webhooks.generateTestHeaderString({
     payload: JSON.stringify(req),
@@ -43,9 +49,10 @@ export async function POST(request: NextRequest, response: NextResponse) {
         return NextResponse.json(
           {
             message: error.message,
+            origin,
           },
           {
-            status: 400,
+            status: 402,
           }
         );
       }
