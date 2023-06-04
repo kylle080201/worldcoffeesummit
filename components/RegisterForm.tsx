@@ -38,7 +38,7 @@ const RegisterForm = () => {
         const line_items = JSON.parse(searchParams?.get('line_items')!)[0];
         if (line_items) {
             try {
-                await fetch(`${origin}/api/checkout-sessions`, {
+                await fetch('/api/checkout-sessions', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -52,9 +52,7 @@ const RegisterForm = () => {
                     )
                 }).then(response => response.json())
                     .then(async data => {
-                        const stripe = await getStripe();
-                        await stripe?.redirectToCheckout({ sessionId: data?.response?.retrievedSession?.id })
-                        await fetch('/api/payment-success', {
+                        await fetch(`/api/payment-success`, {
                             method: 'POST',
                             headers: {
                                 'Content-Type': 'application/json'
@@ -65,6 +63,9 @@ const RegisterForm = () => {
                                 }
                             )
                         })
+                        const stripe = await getStripe();
+                        await stripe?.redirectToCheckout({ sessionId: data?.response?.retrievedSession?.id })
+
                     }).catch(error => {
                         console.log(error);
                     });
