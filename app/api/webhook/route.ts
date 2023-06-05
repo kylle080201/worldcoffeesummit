@@ -38,7 +38,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
             message: error.message,
           },
           {
-            status: 400,
+            status: 402,
           }
         );
       }
