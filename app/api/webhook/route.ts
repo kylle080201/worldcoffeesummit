@@ -60,14 +60,17 @@ export async function POST(request: NextRequest, response: NextResponse) {
         }
       }
     }
-    return NextResponse.json(
-      {
-        res,
-      },
-      {
-        status: 200,
-      }
-    );
+    console.log("Asdasd");
+    if (res) {
+      return NextResponse.json(
+        {
+          res,
+        },
+        {
+          status: 200,
+        }
+      );
+    }
   } catch (error: any) {
     return NextResponse.json(
       {
