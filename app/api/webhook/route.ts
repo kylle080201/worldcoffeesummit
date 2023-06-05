@@ -35,9 +35,6 @@ export async function POST(request: NextRequest, response: NextResponse) {
             }),
           })
             .then((response) => response.json())
-            .then(async (data) => {
-              res = data.response;
-            })
             .catch((error) => {
               return NextResponse.json(
                 {
@@ -60,11 +57,10 @@ export async function POST(request: NextRequest, response: NextResponse) {
         }
       }
     }
-    console.log("Asdasd");
     if (res) {
       return NextResponse.json(
         {
-          res,
+          message: "Payment Successful",
         },
         {
           status: 200,
