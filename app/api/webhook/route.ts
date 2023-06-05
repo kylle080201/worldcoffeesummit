@@ -24,7 +24,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
       const transactId = req.data.object.payment_intent;
       if (transactId) {
         try {
-          await fetch("http://localhost:3000/api/payment-success", {
+          await fetch("/api/payment-success", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -32,27 +32,47 @@ export async function POST(request: NextRequest, response: NextResponse) {
             body: JSON.stringify({
               transactId,
             }),
-          });
+          })
+            .then((response) => response.json())
+            .then(async (data) => {
+              return NextResponse.json(
+                {
+                  data,
+                },
+                {
+                  status: 200,
+                }
+              );
+            })
+            .catch((error) => {
+              return NextResponse.json(
+                {
+                  message: error.message,
+                },
+                {
+                  status: 402,
+                }
+              );
+            });
         } catch (error: any) {
           return NextResponse.json(
             {
               message: error.message,
-              transactId,
             },
             {
               status: 402,
             }
           );
         }
+        return NextResponse.json(
+          {
+            response: "Payment Succcessful",
+          },
+          {
+            status: 200,
+          }
+        );
       }
-      return NextResponse.json(
-        {
-          response: "Payment Succcessful",
-        },
-        {
-          status: 200,
-        }
-      );
     }
   } catch (error: any) {
     return NextResponse.json(

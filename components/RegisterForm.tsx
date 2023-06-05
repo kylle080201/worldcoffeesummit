@@ -65,7 +65,6 @@ const RegisterForm = () => {
                         // })
                         const stripe = await getStripe();
                         await stripe?.redirectToCheckout({ sessionId: data?.response?.retrievedSession?.id })
-
                     }).catch(error => {
                         console.log(error);
                     });
