@@ -37,14 +37,13 @@ function Navbar() {
                                 </div>
                                 <div className="flex items-center flex-shrink-0">
                                     <div>
-                                        <a href='/'>
+                                        <Link href='/'>
                                             <img
                                                 className="hidden w-32 h-auto lg:block"
                                                 src="https://worldcoffeealliance.com/wp-content/uploads/2023/05/world-coffee-summit-high-resolution-logo-color-on-transparent-background.png"
                                                 alt="WCS Logo"
                                             />
-                                        </a>
-
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="hidden sm:flex md:ml-6 ">
