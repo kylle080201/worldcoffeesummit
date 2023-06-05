@@ -1,6 +1,6 @@
 import Stripe from "stripe";
-import { buffer } from "micro";
 import { NextRequest, NextResponse } from "next/server";
+import { useState } from "react";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2022-11-15",
@@ -8,33 +8,66 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
 
 export async function POST(request: NextRequest, response: NextResponse) {
   let event: Stripe.Event;
-  const signature = request.headers.get("stripe-signature");
-  const body = await buffer(request.body);
+  const req = await request.json();
+  const signature = request.headers.get("stripe-signature")!;
+  const body = Buffer.from(JSON.stringify(req));
+  const secret = process.env.STRIPE_WEBHOOK_SECRET!;
+
+  const header = stripe.webhooks.generateTestHeaderString({
+    payload: JSON.stringify(req),
+    secret,
+  });
+
   try {
-    event = stripe.webhooks.constructEvent(
-      body,
-      signature!,
-      process.env.STRIPE_WEBHOOK_SECRET!
-    );
-
-    console.log("✅ Success:", event.id);
-
+    event = stripe.webhooks.constructEvent(body, header, secret);
     if (event.type === "checkout.session.completed") {
-      console.log("💰 Payment Received!");
-      return NextResponse.json({
-        body,
-        signature,
-        webhookSecret: process.env.STRIPE_WEBHOOK_SECRET!,
-      });
+      const transactId = req.data.object.payment_intent;
+      if (transactId) {
+        try {
+          await fetch("/api/payment-success", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              transactId,
+            }),
+          })
+            .then((response) => response.json())
+            .catch((error) => {
+              return NextResponse.json(
+                {
+                  message: error.message,
+                },
+                {
+                  status: 402,
+                }
+              );
+            });
+        } catch (error: any) {
+          return NextResponse.json(
+            {
+              message: error.message,
+            },
+            {
+              status: 402,
+            }
+          );
+        }
+      }
+      return NextResponse.json(
+        {
+          response: "Payment success",
+        },
+        {
+          status: 200,
+        }
+      );
     }
   } catch (error: any) {
-    console.log(`❌ Error message: ${error.message}`);
     return NextResponse.json(
       {
         message: error.message,
-        body,
-        signature,
-        webhookSecret: process.env.STRIPE_WEBHOOK_SECRET!,
       },
       {
         status: 400,

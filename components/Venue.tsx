@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Venue() {
     return (
-        <div className="relative overflow-hidden bg-white isolate">
+        <div className="relative overflow-hidden bg-white isolate" id='venue'>
             <div className="px-6 pt-10 pb-24 mx-auto max-w-7xl sm:pb-32 lg:flex lg:px-8 lg:py-40">
                 <div className="flex-shrink-0 w-1/2 mx-auto sm:w-2/5">
                     <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">

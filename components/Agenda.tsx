@@ -44,7 +44,7 @@ function classNames(...classes: string[]) {
 
 export default function Agenda() {
     return (
-        <div className="flow-root px-12 py-20 sm:px-20 bg-lime-700 ">
+        <div className="flow-root px-12 py-20 sm:px-20 bg-lime-700" id="agenda">
             <div className='mx-auto sm:max-w-5xl'>
                 <h2 className="text-4xl font-bold tracking-tight text-white">AGENDA HIGHLIGHTS</h2>
                 <div className="w-full rounded-lg">

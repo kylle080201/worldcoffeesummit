@@ -62,8 +62,8 @@ const faqs = [
 
 function FAQ() {
     return (
-        <div className="bg-gray-100" id="faq">
-            <div className="py-12 mx-autosm:py-32 lg:px-8 lg:py-20">
+        <div className="pt-12 pb-20 my-auto bg-gray-100 sm:pt-20 sm:pb-28" id="faq">
+            <div className="mx-auto lg:px-8">
                 <div className="px-20 mx-auto divide-y sm:px-60 divide-gray-900/10">
                     <h2 className="text-3xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
                     <dl className="mt-10 space-y-6 divide-y divide-gray-900/10">

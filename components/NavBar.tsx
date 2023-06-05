@@ -2,22 +2,20 @@
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 
 function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
 }
 
 function Navbar() {
-    const pathname = usePathname();
     const navigation = [
-        { name: 'Overview', href: '#overview', current: pathname === '/#speakers' ? true : false },
-        { name: 'Speakers', href: '#speakers', current: pathname === '/#speakers' ? true : false },
-        { name: 'Agenda', href: '#agenda', current: pathname === '/#program' ? true : false },
-        { name: 'Venue', href: '#venue', current: pathname === '/#venue' ? true : false },
-        { name: 'Sponsors', href: '#sponsors', current: pathname === '/#sponsors' ? true : false },
-        { name: 'Exhibition', href: '#exhibition', current: pathname === '/#exhibition' ? true : false },
-        { name: 'FAQ', href: '#faq', current: pathname === '/#faq' ? true : false },
+        { name: 'Overview', href: '#overview' },
+        { name: 'Speakers', href: '#speakers' },
+        { name: 'Agenda', href: '#agenda' },
+        { name: 'Venue', href: '#venue' },
+        { name: 'Sponsors', href: '#sponsors' },
+        { name: 'Exhibition', href: '#exhibition' },
+        { name: 'FAQ', href: '#faq' },
     ]
     return (
         <Disclosure as="nav" className="w-full bg-white shadow">
@@ -38,22 +36,15 @@ function Navbar() {
                                     </Disclosure.Button>
                                 </div>
                                 <div className="flex items-center flex-shrink-0">
-                                    {/* <div className="flex font-bold lg:flex-1">
-                                        <Link href={'/'} className='cursor-pointer'>
-                                            WCA World<span className='text-yellow-900'>Coffee</span>Summit 2023
-                                        </Link>
-                                    </div> */}
                                     <div>
-                                        <img
-                                            className="block w-auto h-8 lg:hidden"
-                                            src="https://worldcoffeealliance.com/wp-content/uploads/2023/05/world-coffee-summit-high-resolution-logo-color-on-transparent-background.png"
-                                            alt="WCS Logo"
-                                        />
-                                        <img
-                                            className="hidden w-32 h-auto lg:block"
-                                            src="https://worldcoffeealliance.com/wp-content/uploads/2023/05/world-coffee-summit-high-resolution-logo-color-on-transparent-background.png"
-                                            alt="WCS Logo"
-                                        />
+                                        <a href='/'>
+                                            <img
+                                                className="hidden w-32 h-auto lg:block"
+                                                src="https://worldcoffeealliance.com/wp-content/uploads/2023/05/world-coffee-summit-high-resolution-logo-color-on-transparent-background.png"
+                                                alt="WCS Logo"
+                                            />
+                                        </a>
+
                                     </div>
                                 </div>
                                 <div className="hidden sm:flex md:ml-6 ">
@@ -61,11 +52,7 @@ function Navbar() {
                                         <Link
                                             key={item.name}
                                             href={item.href}
-                                            className={classNames(
-                                                item.current ? 'border-b-2 border-lime-600' : '',
-                                                'inline-flex items-center px-2 sm:px-4 pt-1 text-sm font-medium text-gray-900 hover:border-b-2 hover:border-lime-600'
-                                            )}
-                                            aria-current={item.current ? 'page' : undefined}
+                                            className='inline-flex items-center px-2 pt-1 text-sm font-medium text-gray-900 sm:px-4 hover:border-b-2 hover:border-lime-600'
                                         >
                                             {item.name}
                                         </Link>
@@ -95,13 +82,7 @@ function Navbar() {
                                     as='a'
                                     key={item.name}
                                     href={item.href}
-                                    className={classNames(
-                                        item.current ?
-                                            ' text-indigo-700 border-indigo-500 bg-indigo-50' :
-                                            ' text-gray-500 border-transparent hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700',
-                                        'block py-2 pl-3 pr-4 text-base font-medium border-l-4 sm:pl-5 sm:pr-6'
-                                    )}
-                                    aria-current={item.current ? 'page' : undefined}
+                                    className='block py-2 pl-3 pr-4 text-base font-medium text-gray-500 border-l-4 border-transparent sm:pl-5 sm:pr-6 hover:border-lime-600 hover:bg-gray-50 hover:text-gray-900'
                                 >
                                     {item.name}
                                 </Disclosure.Button>
