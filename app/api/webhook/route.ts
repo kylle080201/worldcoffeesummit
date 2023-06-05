@@ -66,14 +66,6 @@ export async function POST(request: NextRequest, response: NextResponse) {
         }
       }
     }
-    return NextResponse.json(
-      {
-        message: "Payment Successful",
-      },
-      {
-        status: 200,
-      }
-    );
   } catch (error: any) {
     return NextResponse.json(
       {
