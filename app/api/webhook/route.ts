@@ -8,6 +8,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
 
 export async function POST(request: NextRequest, response: NextResponse) {
   let event: Stripe.Event;
+  let res;
   const req = await request.json();
   const signature = request.headers.get("stripe-signature")!;
   const body = Buffer.from(JSON.stringify(req));
@@ -35,7 +36,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
           })
             .then((response) => response.json())
             .then(async (data) => {
-              response = await data;
+              res = await data;
             })
             .catch((error) => {
               return NextResponse.json(
@@ -62,10 +63,10 @@ export async function POST(request: NextRequest, response: NextResponse) {
     return NextResponse.json(
       {
         message: "Payment success",
-        response,
+        res,
       },
       {
-        status: 402,
+        status: 200,
       }
     );
   } catch (error: any) {
