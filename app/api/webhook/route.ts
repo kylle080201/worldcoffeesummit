@@ -36,7 +36,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
           })
             .then((response) => response.json())
             .then(async (data) => {
-              res = await data;
+              res = data.response;
             })
             .catch((error) => {
               return NextResponse.json(
