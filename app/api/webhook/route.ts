@@ -62,7 +62,6 @@ export async function POST(request: NextRequest, response: NextResponse) {
     }
     return NextResponse.json(
       {
-        message: "Payment success",
         res,
       },
       {
