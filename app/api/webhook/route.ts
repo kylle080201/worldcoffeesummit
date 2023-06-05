@@ -22,25 +22,28 @@ export async function POST(request: NextRequest, response: NextResponse) {
     event = stripe.webhooks.constructEvent(body, header, secret);
     if (event.type === "checkout.session.completed") {
       const transactId = req.data.object.payment_intent;
-      try {
-        await fetch("http://localhost:3000/api/payment-success", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            transactId,
-          }),
-        });
-      } catch (error: any) {
-        return NextResponse.json(
-          {
-            message: error.message,
-          },
-          {
-            status: 402,
-          }
-        );
+      if (transactId) {
+        try {
+          await fetch("http://localhost:3000/api/payment-success", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              transactId,
+            }),
+          });
+        } catch (error: any) {
+          return NextResponse.json(
+            {
+              message: error.message,
+              transactId,
+            },
+            {
+              status: 402,
+            }
+          );
+        }
       }
       return NextResponse.json(
         {
