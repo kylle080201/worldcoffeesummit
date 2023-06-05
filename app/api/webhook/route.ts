@@ -33,11 +33,10 @@ export async function POST(request: NextRequest, response: NextResponse) {
               transactId,
             }),
           })
-            .then((response) => response.json())
-            .then(async (data) => {
+            .then((response) => {
               return NextResponse.json(
                 {
-                  res: data.response,
+                  res: response,
                 },
                 {
                   status: 200,
