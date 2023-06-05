@@ -33,16 +33,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
               transactId,
             }),
           })
-            .then((response) => {
-              return NextResponse.json(
-                {
-                  res: response,
-                },
-                {
-                  status: 200,
-                }
-              );
-            })
+            .then((response) => response.json())
             .catch((error) => {
               return NextResponse.json(
                 {
@@ -64,6 +55,14 @@ export async function POST(request: NextRequest, response: NextResponse) {
           );
         }
       }
+      return NextResponse.json(
+        {
+          response: "Payment success",
+        },
+        {
+          status: 200,
+        }
+      );
     }
   } catch (error: any) {
     return NextResponse.json(
