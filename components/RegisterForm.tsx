@@ -4,6 +4,7 @@ import { Dialog, Transition } from '@headlessui/react'
 import getStripe from '../get_stripe'
 import { useSearchParams } from 'next/navigation'
 import { useForm } from 'react-hook-form'
+import BackButton from './BackButton'
 
 function classNames(...classes: any[]) {
     return classes.filter(Boolean).join(' ')
@@ -145,6 +146,7 @@ const RegisterForm = () => {
                             />
                         </div>
                     </form>
+                    <BackButton />
                 </div >
 
                 {/* terms and conditions */}

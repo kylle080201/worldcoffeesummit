@@ -2,10 +2,9 @@
 import React from 'react'
 
 import Link from 'next/link'
+import BackButton from './BackButton';
 
 function TicketPricing({ tickets, title }: any) {
-
-    console.log(tickets)
 
     return (
         <div className="z-40 py-24 bg-white sm:py-32">
@@ -33,10 +32,10 @@ function TicketPricing({ tickets, title }: any) {
                                 </Link>
 
                             </div>
-
                         </div>
                     ))}
                 </div>
+                <BackButton />
             </div>
         </div>
     )
