@@ -37,6 +37,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
             .then(async (data) => {
               return NextResponse.json(
                 {
+                  message: "Payment Successful",
                   data,
                 },
                 {
@@ -64,14 +65,6 @@ export async function POST(request: NextRequest, response: NextResponse) {
             }
           );
         }
-        return NextResponse.json(
-          {
-            response: "Payment Succcessful",
-          },
-          {
-            status: 200,
-          }
-        );
       }
     }
   } catch (error: any) {
