@@ -96,7 +96,7 @@ export default function Speakers() {
         <div className="px-12 py-20 bg-gray-100 sm:px-20" id='speakers'>
             <div className="mx-auto sm:content-center">
                 <div className="max-w-2xl mx-auto text-center">
-                    <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our Speakers</p>
+                    <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">SPEAKERS</p>
                 </div>
                 <ul
                     role="list"
@@ -105,12 +105,12 @@ export default function Speakers() {
                     {firstRow.map((speaker) => (
                         <li key={speaker.name} className="flex flex-col gap-6">
                             <div className='flex-shrink-0 mx-auto'>
-                                <Image className="w-20 rounded-md " src={speaker.imageUrl} alt={speaker.name} width={160} height={160} />
+                                <Image className="w-32 rounded-md " src={speaker.imageUrl} alt={speaker.name} width={160} height={160} />
                             </div>
 
                             <div className="flex mx-auto text-center">
                                 <div>
-                                    <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900">{speaker.name}</p>
+                                    <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speaker.name}</p>
                                     <p className="leading-7 text-gray-700 text-md">{speaker.role}</p>
                                     <p className="leading-7 text-gray-900 text-md">{speaker.company}</p>
                                 </div>
@@ -125,11 +125,11 @@ export default function Speakers() {
                     {secondRow.map((speaker) => (
                         <li key={speaker.name} className="flex flex-col gap-6">
                             <div className='flex-shrink-0 mx-auto'>
-                                <Image className="w-20 rounded-md" src={speaker.imageUrl} alt={speaker.name} width={160} height={160} />
+                                <Image className="w-32 rounded-md" src={speaker.imageUrl} alt={speaker.name} width={160} height={160} />
                             </div>
                             <div className="flex mx-auto text-center">
                                 <div>
-                                    <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900">{speaker.name}</p>
+                                    <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speaker.name}</p>
                                     <p className="leading-7 text-gray-700 text-md">{speaker.role}</p>
                                     <p className="leading-7 text-gray-900 text-md">{speaker.company}</p>
                                 </div>
@@ -144,11 +144,11 @@ export default function Speakers() {
                     {thirdRow.map((speaker) => (
                         <li key={speaker.name} className="flex flex-col gap-6">
                             <div className='flex-shrink-0 mx-auto'>
-                                <Image className="w-20 rounded-md" src={speaker.imageUrl} alt={speaker.name} width={160} height={160} />
+                                <Image className="w-32 rounded-md" src={speaker.imageUrl} alt={speaker.name} width={160} height={160} />
                             </div>
                             <div className="flex flex-shrink-0 mx-auto text-center">
                                 <div>
-                                    <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900">{speaker.name}</p>
+                                    <p className="font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl text-md">{speaker.name}</p>
                                     <p className="leading-7 text-gray-700 text-md">{speaker.role}</p>
                                     <p className="leading-7 text-gray-900 text-md">{speaker.company}</p>
                                 </div>

@@ -22,7 +22,7 @@ function Navbar() {
             {({ open }) => (
                 <>
                     <div className="w-full px-8 mx-auto sm:max-w-7xl">
-                        <div className="flex justify-between h-16">
+                        <div className="flex justify-between w-full h-16 sm:h-24">
                             <div className="flex w-full sm:justify-between">
                                 <div className="flex items-center mr-2 -ml-2 md:hidden">
                                     {/* Mobile menu button */}
@@ -39,7 +39,7 @@ function Navbar() {
                                     <div>
                                         <Link href='/'>
                                             <img
-                                                className="hidden w-32 h-auto lg:block"
+                                                className="hidden h-auto w-44 lg:block"
                                                 src="https://worldcoffeealliance.com/wp-content/uploads/2023/05/world-coffee-summit-high-resolution-logo-color-on-transparent-background.png"
                                                 alt="WCS Logo"
                                             />
@@ -51,7 +51,7 @@ function Navbar() {
                                         <Link
                                             key={item.name}
                                             href={item.href}
-                                            className='inline-flex items-center px-2 pt-1 text-sm font-medium text-gray-900 sm:px-4 hover:border-b-2 hover:border-lime-600'
+                                            className='inline-flex items-center px-2 pt-1 font-bold text-gray-900 text-md sm:px-4 hover:border-b-2 hover:border-lime-600'
                                         >
                                             {item.name}
                                         </Link>
