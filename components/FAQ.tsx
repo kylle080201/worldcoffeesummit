@@ -72,14 +72,10 @@ const faqs = [
         id: 6,
         question: "WHAT IS THE HIGHLIGHT OF THIS EVENT?",
         answer:
-            "",
+            "We will have Keynotes from various UK Government Ministers and various ambassadors, from Ethiopia, India, Japan, Vietnam, Switzerland, Philippines and El Salvador, promoting their country not only as a coffee origin but also as a Tourism and Investment destination",
         paragraphs: [
             {
                 key: 1,
-                paragraph: "We will have Keynotes from various UK Government Ministers and various ambassadors, from Ethiopia, India, Japan, Vietnam, Switzerland, Philippines and El Salvador, promoting their country not only as a coffee origin but also as a Tourism and Investment destination"
-            },
-            {
-                key: 2,
                 paragraph: "The highlight of this event is the Government and Minister Roundtable to be moderated by the BBC HardTalk presenter Stephen Sackur, where he will facilitate an on-stage conversation, focusing on how governments can help shape regulations against the backdrop of climate change and lack of funding for mitigation. He will also delve into what can they do to adopt smart climate best practices to promote regeneration and ESG compliance. We expect this Roundtable to generate a lot of media attention"
             },
         ]
