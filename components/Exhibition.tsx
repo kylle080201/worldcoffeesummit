@@ -181,7 +181,7 @@ export default function Exhibition() {
                                 ))}
                             </ul>
                         </div>
-                        <div className='mt-8 sm:max-w-xl'>
+                        {/* <div className='mt-8 sm:max-w-xl'>
                             <p className="text-lg font-bold tracking-tight text-gray-900 sm:text-2xl">Program</p>
                             <ul role="list" className="mt-12">
                                 {program.map((event, eventIdx) => (
@@ -213,7 +213,7 @@ export default function Exhibition() {
                                     </li>
                                 ))}
                             </ul>
-                        </div>
+                        </div> */}
                         <div className='mt-8 sm:max-w-xl'>
                             <p className="text-lg font-bold tracking-tight text-gray-900 sm:text-2xl">QE II Westminster Hall layout</p>
                             <img className='w-full mt-12' src="https://worldcoffeealliance.com/wp-content/uploads/2023/05/QEII-Centre.jpg" alt="QE II Westminster Hall layout" />

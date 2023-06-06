@@ -30,19 +30,19 @@ const faqs = [
         items: [
             {
                 key: 1,
-                description: "Government Ministers and Ambassadors, Trade and Economic attaches of Coffee origin countries including Ethiopia, Brazil, Vietnam, India, China, El Salvador and importing countries including UK, Japan, Italy and Germany"
+                description: "Government Ministers and Ambassadors, Trade and Economic attaches of Coffee origin countries including Ethiopia, Brazil, Vietnam, India, China, Philippines, El Salvador and importing countries including UK, Japan, Italy and Germany"
             },
             {
                 key: 2,
-                description: "Global institutions including the European Commission, International Coffee organization (ICO), Food and Agriculture Organization(FAO)"
+                description: "Global institutions including the European Commission (EU), International Coffee organization (ICO), Food and Agriculture Organization(FAO)"
             },
             {
                 key: 3,
-                description: "Country Coffee organizations like the British Coffee Association (BCA), China Coffee Organization, Brazil Specialty Coffee Association (BSCA)"
+                description: "Country Coffee organizations like the British Coffee Association (BCA)."
             },
             {
                 key: 4,
-                description: "NGO Executive Directors od Fairtrade International (FI), Rainforest Alliance (RA)"
+                description: "NGOs including Fairtrade International (FI) and Rainforest Alliance (RA)"
             },
             {
                 key: 5,
@@ -50,7 +50,7 @@ const faqs = [
             },
             {
                 key: 6,
-                description: "UK and European Coffee Roasters and Coffee buyers "
+                description: "UK and European Coffee Roasters, Traders and Coffee buyers"
             },
             {
                 key: 7,
@@ -72,7 +72,17 @@ const faqs = [
         id: 6,
         question: "WHAT IS THE HIGHLIGHT OF THIS EVENT?",
         answer:
-            "We will have Keynotes from various UK Government Ministers and various ambassadors, from Ethiopia, India, Japan, Vietnam, Switzerland and El Salvador, promoting their country not only as a coffee origin but also as a Tourism and Investment destination. The highlight of this event is the Government and Minister Roundtable to be moderated by the BBC HardTalk presenter Stephen Sackur’s, where he will facilitate an on-stage conversation, focusing on how governments can help shape regulations to help smallholder farmers thrive and earn prosperous income. He will also delve into what can they do to adopt smart climate best practices to promote regeneration and ESG compliance. We expect this Roundtable to generate a lot of media attention. ",
+            "",
+        paragraphs: [
+            {
+                key: 1,
+                paragraph: "We will have Keynotes from various UK Government Ministers and various ambassadors, from Ethiopia, India, Japan, Vietnam, Switzerland, Philippines and El Salvador, promoting their country not only as a coffee origin but also as a Tourism and Investment destination"
+            },
+            {
+                key: 2,
+                paragraph: "The highlight of this event is the Government and Minister Roundtable to be moderated by the BBC HardTalk presenter Stephen Sackur, where he will facilitate an on-stage conversation, focusing on how governments can help shape regulations against the backdrop of climate change and lack of funding for mitigation. He will also delve into what can they do to adopt smart climate best practices to promote regeneration and ESG compliance. We expect this Roundtable to generate a lot of media attention"
+            },
+        ]
     },
     {
         id: 7,
@@ -126,6 +136,17 @@ function FAQ() {
                                         <Disclosure.Panel as="dd" className="pr-12 mt-2">
                                             <p className="text-lg leading-7 text-gray-600">{faq.answer}</p>
                                             <ul role="list" className="mt-8 space-y-8 text-gray-600">
+                                                {
+                                                    faq.paragraphs ?
+                                                        faq.paragraphs.map((item) => (
+                                                            <li className="flex text-lg gap-x-3" key={item.key}>
+                                                                <span className="text-lg leading-7 text-gray-600">
+                                                                    {item.paragraph}.
+                                                                </span>
+                                                            </li>
+                                                        ))
+                                                        : null
+                                                }
                                                 {
                                                     faq.list ?
                                                         faq.list.map((item) => (

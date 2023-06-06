@@ -4,7 +4,7 @@ import Venue from "../../components/Venue";
 import Overview from "../../components/Overview";
 import Speakers from "../../components/Speakers";
 import Exhibition from "../../components/Exhibition";
-import Sponsors from "../../components/Sponsors";
+import Partners from "../../components/Partners";
 
 export default function HomePage() {
     return (
@@ -14,7 +14,7 @@ export default function HomePage() {
                 <Speakers />
                 <Agenda />
                 <Venue />
-                <Sponsors />
+                <Partners />
                 <Exhibition />
                 <FAQ />
             </div>

@@ -46,53 +46,53 @@ const CountDown = () => {
             ) : (
                 <>
                     <div className="flex-col py-20 justify-self-center">
-                        <div className="flex flex-row justify-center w-full gap-2 px-20 mx-auto text-center sm:px-60">
+                        <div className="flex flex-row justify-center w-full px-20 mx-auto text-center sm:px-60">
                             <div className="flex flex-col">
-                                <div className="flex flex-col p-2 bg-white rounded-md md:p-6">
+                                <div className="flex flex-col p-2 mr-1 bg-white rounded-md md:p-6">
                                     <h2 className="font-bold text-center text-md text-lime-700 md:text-4xl">
                                         {days}
                                     </h2>
                                 </div>
-                                <div className="p-2 mt-4 bg-white rounded-md">
+                                <div className="p-2 mt-4 bg-white rounded-l-md">
                                     <p className="text-base font-semibold md:text-md">Days</p>
                                 </div>
                             </div>
 
                             <div className="flex flex-col">
-                                <div className="flex flex-col p-2 bg-white rounded-md md:p-6">
+                                <div className="flex flex-col p-2 mx-1 bg-white rounded-md md:p-6">
                                     <h2 className="font-bold text-center text-md text-lime-700 md:text-4xl">
                                         {hours}
                                     </h2>
                                 </div>
-                                <div className="p-2 mt-4 bg-white rounded-md">
+                                <div className="p-2 mt-4 bg-white">
                                     <p className="text-base font-semibold md:text-md">Hours</p>
                                 </div>
                             </div>
 
                             <div className="flex flex-col">
-                                <div className="flex flex-col p-2 bg-white rounded-md md:p-6">
+                                <div className="flex flex-col p-2 mx-1 bg-white rounded-md md:p-6">
                                     <h2 className="font-bold text-center text-md text-lime-700 md:text-4xl">
                                         {minutes}
                                     </h2>
                                 </div>
-                                <div className="p-2 mt-4 bg-white rounded-md">
+                                <div className="p-2 mt-4 bg-white">
                                     <p className="text-base font-semibold md:text-md">Minutes</p>
                                 </div>
                             </div>
 
                             <div className="flex flex-col">
-                                <div className="flex flex-col p-2 bg-white rounded-md md:p-6">
+                                <div className="flex flex-col p-2 ml-1 bg-white rounded-md md:p-6">
                                     <h2 className="font-bold text-center text-md text-lime-700 md:text-4xl">
                                         {seconds}
                                     </h2>
                                 </div>
-                                <div className="p-2 mt-4 bg-white rounded-md">
+                                <div className="p-2 mt-4 bg-white rounded-r-md">
                                     <p className="text-base font-semibold md:text-md">Seconds</p>
                                 </div>
                             </div>
-                        </div>
-                        <div className="flex flex-row justify-center pt-6 mx-auto text-center lg:px-44 md:px-24 msm:px-12">
-                            <p className="px-6 py-4 mx-auto text-lg font-bold tracking-tight text-gray-900 bg-yellow-500 w-max sm:text-2xl">Register Now </p>
+                            <div className="flex flex-row items-end justify-center pt-6 ml-4 text-center">
+                                <p className="px-6 py-4 mx-auto text-lg font-bold tracking-tight text-gray-900 bg-yellow-500 h-fit sm:text-2xl">Register Now </p>
+                            </div>
                         </div>
                     </div >
                 </>

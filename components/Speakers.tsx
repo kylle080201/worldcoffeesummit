@@ -11,25 +11,25 @@ const firstRow = [
     },
     {
         name: 'H.E. Markus Leitner',
-        role: 'Ambassador of Switzerland to the United Kingdom',
+        company: 'Ambassador of Switzerland to the United Kingdom',
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/05/MARKUS-LEITNER.jpg',
     },
     {
         name: 'H.E. Teferi Melesse Desta',
-        role: 'Ambassador of Ethiopia to the United Kingdom',
+        company: 'Ambassador of Ethiopia to the United Kingdom',
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/05/TEFERI-MELESSE-DESTA.jpg',
     },
     {
-        name: 'H.E. Hayashu Hajime',
-        role: 'Ambassador of Japan to the United Kingdom',
+        name: 'H.E. Hajime Hayashi',
+        company: 'Japanese Ambassador to the United Kingdom',
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/05/HAYASHU-HAJIME-1.jpg',
     },
     {
-        name: 'H.E. Carmen Maria',
-        role: 'Ambassador of El Salvador to the United Kingdom',
+        name: 'H.E. Mrs. Carmen María Gallardo',
+        company: 'Ambassador of El Salvador to the United Kingdom',
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/05/Picture2.jpg',
     },
@@ -112,7 +112,7 @@ export default function Speakers() {
                                 <div>
                                     <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speaker.name}</p>
                                     <p className="leading-7 text-gray-700 text-md">{speaker.role}</p>
-                                    <p className="leading-7 text-gray-900 text-md">{speaker.company}</p>
+                                    <p className="font-semibold leading-7 text-gray-900 text-md">{speaker.company}</p>
                                 </div>
                             </div>
                         </li>
@@ -131,7 +131,7 @@ export default function Speakers() {
                                 <div>
                                     <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speaker.name}</p>
                                     <p className="leading-7 text-gray-700 text-md">{speaker.role}</p>
-                                    <p className="leading-7 text-gray-900 text-md">{speaker.company}</p>
+                                    <p className="font-semibold leading-7 text-gray-900 text-md">{speaker.company}</p>
                                 </div>
                             </div>
                         </li>
@@ -150,7 +150,7 @@ export default function Speakers() {
                                 <div>
                                     <p className="font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl text-md">{speaker.name}</p>
                                     <p className="leading-7 text-gray-700 text-md">{speaker.role}</p>
-                                    <p className="leading-7 text-gray-900 text-md">{speaker.company}</p>
+                                    <p className="font-semibold leading-7 text-gray-900 text-md">{speaker.company}</p>
                                 </div>
                             </div>
                         </li>

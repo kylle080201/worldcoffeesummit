@@ -13,7 +13,7 @@ function Navbar() {
         { name: 'Speakers', href: '#speakers' },
         { name: 'Agenda', href: '#agenda' },
         { name: 'Venue', href: '#venue' },
-        { name: 'Sponsors', href: '#sponsors' },
+        { name: 'Partners', href: '#partners' },
         { name: 'Exhibition', href: '#exhibition' },
         { name: 'FAQ', href: '#faq' },
     ]
@@ -22,7 +22,7 @@ function Navbar() {
             {({ open }) => (
                 <>
                     <div className="w-full px-8 mx-auto sm:max-w-7xl">
-                        <div className="flex justify-between w-full h-16 sm:h-24">
+                        <div className="flex justify-between w-full h-16 sm:h-32">
                             <div className="flex w-full sm:justify-between">
                                 <div className="flex items-center mr-2 -ml-2 md:hidden">
                                     {/* Mobile menu button */}
@@ -39,7 +39,7 @@ function Navbar() {
                                     <div>
                                         <Link href='/'>
                                             <img
-                                                className="hidden h-auto w-44 lg:block"
+                                                className="flex-shrink-0 hidden h-auto sm:w-64 lg:block"
                                                 src="https://worldcoffeealliance.com/wp-content/uploads/2023/05/world-coffee-summit-high-resolution-logo-color-on-transparent-background.png"
                                                 alt="WCS Logo"
                                             />
@@ -51,18 +51,18 @@ function Navbar() {
                                         <Link
                                             key={item.name}
                                             href={item.href}
-                                            className='inline-flex items-center px-2 pt-1 font-bold text-gray-900 text-md sm:px-4 hover:border-b-2 hover:border-lime-600'
+                                            className='inline-flex items-end px-2 pt-1 pb-4 font-bold text-gray-900 text-md sm:px-4 hover:border-b-2 hover:border-lime-600'
                                         >
                                             {item.name}
                                         </Link>
                                     ))}
                                 </div>
-                                <div className="items-center hidden sm:flex">
+                                <div className="items-end hidden pb-2 sm:flex">
                                     <div className="flex-shrink-0">
                                         <Link
                                             href={'/register'}
                                             type="button"
-                                            className="relative inline-flex items-center gap-x-1.5 rounded-md bg-yellow-900 hover:bg-lime-700 px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                            className="relative inline-flex items-center gap-x-1.5 rounded-md bg-lime-700 hover:bg-lime-800 px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
                                         >
                                             Register Now
                                         </Link>
