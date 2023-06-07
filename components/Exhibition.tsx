@@ -1,5 +1,6 @@
 import { LinkIcon, ChatBubbleLeftRightIcon, UserGroupIcon, EyeDropperIcon, PresentationChartLineIcon, CheckBadgeIcon, CheckCircleIcon, ClockIcon } from '@heroicons/react/24/solid'
 import classNames from 'classnames'
+import Image from 'next/image'
 import React from 'react'
 
 export default function Exhibition() {
@@ -91,8 +92,14 @@ export default function Exhibition() {
                             <p className="mt-6 text-lg font-bold tracking-tight text-white sm:text-2xl">SUSTAINABILITY BEYOND COMPLIANCE</p>
                             <p className="text-lg font-bold tracking-tight text-white sm:text-2xl">13th September 2023</p>
                             <p className="text-lg font-bold tracking-tight text-white sm:text-2xl">Queen Elizabeth ll Centre, Westminster Hall</p>
-                            <p className="mt-16 text-xl leading-8 text-justify text-white sm:mt-40">
-                                Welcome to the world  of rustic flavors and sensient aroma of coffee origin. From the historic forests of the Ethiopian plateaus to the Central Highlands of Vietnam, each participant, showcasing and sharing their sumptuous profile of luxurious taste  and of out of this world experience. The overpowering notes of nuts, caramel with honey-like sweetness of El Salvador coffee with mild body and  acidity of a Burundi cup will bring one’s senses to a standstill – in an ecstatic fit, one feels as if there is no tomorrow. In this World Coffee Exhibition, once you joined the crowd of nosy cuppers and curious score crunching roasters, your life would never be the same again.
+                            <p className="mt-16 text-xl leading-8 text-justify text-white sm:mt-52">
+                                Welcome
+                                to the world of rustic flavors and sensient aroma of coffee origin From the historic forests of the
+                                Ethiopian plateaus to the Central Highlands of Vietnam, each participant, showcasing and sharing their sumptuous
+                                profile of luxurious taste and of out of this world experience The overpowering notes of nuts, caramel with
+                                honey like sweetness of El Salvador coffee with mild body and acidity of a Burundi cup will bring one’s senses to a
+                                standstill in an ecstatic fit, one feels as if there is no tomorrow In this <span className='font-semibold '>World Coffee Exhibition</span> once you joined
+                                the crowd of nosy cuppers and curious score crunching roasters, your life would never be the same again
                             </p>
                             <p className="mt-4 text-lg font-bold tracking-tight text-white sm:text-2xl">Join us celebrate coffee.</p>
                         </div>
@@ -109,7 +116,7 @@ export default function Exhibition() {
                     </div>
                     <div className='mt-12'>
                         <div>
-                            <p className="text-lg font-bold tracking-tight text-gray-900 sm:text-2xl">Why exhibit at World Coffee Summit London?</p>
+                            <p className="text-lg font-bold tracking-tight text-gray-900 sm:text-2xl">BENEFITS: Why exhibit at World Coffee Summit London?</p>
                             <ul role="list" className="mt-12">
                                 {whyExhibit.map((event, eventIdx) => (
                                     <li key={event.id}>
@@ -174,7 +181,7 @@ export default function Exhibition() {
                                 ))}
                             </ul>
                         </div>
-                        <div className='mt-8 sm:max-w-xl'>
+                        {/* <div className='mt-8 sm:max-w-xl'>
                             <p className="text-lg font-bold tracking-tight text-gray-900 sm:text-2xl">Program</p>
                             <ul role="list" className="mt-12">
                                 {program.map((event, eventIdx) => (
@@ -206,6 +213,10 @@ export default function Exhibition() {
                                     </li>
                                 ))}
                             </ul>
+                        </div> */}
+                        <div className='mt-8 sm:max-w-xl'>
+                            <p className="text-lg font-bold tracking-tight text-gray-900 sm:text-2xl">QE II Westminster Hall layout</p>
+                            <img className='w-full mt-12' src="https://worldcoffeealliance.com/wp-content/uploads/2023/06/WESTMINSTER-FLOORPLAN.jpg" alt="QE II Westminster Hall layout" />
                         </div>
                     </div>
                 </div>

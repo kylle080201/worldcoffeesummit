@@ -4,6 +4,7 @@ import { Dialog, Transition } from '@headlessui/react'
 import getStripe from '../get_stripe'
 import { useSearchParams } from 'next/navigation'
 import { useForm } from 'react-hook-form'
+import BackButton from './BackButton'
 
 function classNames(...classes: any[]) {
     return classes.filter(Boolean).join(' ')
@@ -74,12 +75,11 @@ const RegisterForm = () => {
         }
     }
 
-
     return (
         <>
             <div className="z-40 py-24 bg-white sm:py-32">
                 <div className="max-w-screen-md px-4 py-8 mx-auto mb-12 lg:py-16">
-                    <h2 className="mb-4 text-4xl font-bold tracking-tight text-center text-gray-900 dark:text-white"><span className='text-lime-700'>Regstration</span> Form</h2>
+                    <h2 className="mb-4 text-4xl font-bold tracking-tight text-center text-gray-900 dark:text-white"><span className='text-lime-700'>Registration</span> Form</h2>
                     <form className="space-y-8" onSubmit={handleSubmit(onSubmit)}>
 
                         <div>
@@ -145,6 +145,7 @@ const RegisterForm = () => {
                             />
                         </div>
                     </form>
+                    <BackButton />
                 </div >
 
                 {/* terms and conditions */}
@@ -186,7 +187,7 @@ const RegisterForm = () => {
                                                     By registering,  your personal information will be shared with the exhibitor or sponsor to allow them to engage with you and provide some more information of what they offer, and what they can help you with in terms of solutions and services. Once registered, your full contact details will be shared directly with another attendee, sponsor or exhibitor and they may follow-up and use your details for marketing and networking purposes.
                                                 </p>
                                                 <p className="mt-2 text-gray-600">
-                                                    For more information on how we use your data, please visit our <a href="#" className='underline'>privacy policy</a>.
+                                                    For more information on how we use your data, please visit our <a href="/privacy-policy" target='_blank' className='underline'>privacy policy</a>.
                                                 </p>
                                                 <p className="mt-4 font-semibold text-gray-900 text-md">
                                                     Badge Scanning
