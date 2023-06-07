@@ -4,10 +4,6 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 import { SocialIcon } from 'react-social-icons'
 
-function classNames(...classes: string[]) {
-    return classes.filter(Boolean).join(' ')
-}
-
 function Navbar() {
     const navigation = [
         { name: 'Overview', href: '#overview' },
