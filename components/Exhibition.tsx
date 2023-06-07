@@ -1,10 +1,9 @@
 import { LinkIcon, ChatBubbleLeftRightIcon, UserGroupIcon, EyeDropperIcon, PresentationChartLineIcon, CheckBadgeIcon, CheckCircleIcon, ClockIcon } from '@heroicons/react/24/solid'
-import classNames from 'classnames'
-import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 export default function Exhibition() {
-    const whyExhibit = [
+    const benefits = [
         {
             id: 1,
             description: "Connect and network with over 100 pre-qualified coffee buyers from UK and Europe with budget and power to spend",
@@ -12,7 +11,7 @@ export default function Exhibition() {
         },
         {
             id: 2,
-            description: "The limited amount of Exhibitors provides your company with more exposure and intimate engagement with these decision-makers.",
+            description: "The limited amount of Exhibitors provides your company with more exposure and intimate engagement with these decision-makers",
             icon: ChatBubbleLeftRightIcon,
         },
         {
@@ -93,8 +92,7 @@ export default function Exhibition() {
                             <p className="text-lg font-bold tracking-tight text-white sm:text-2xl">13th September 2023</p>
                             <p className="text-lg font-bold tracking-tight text-white sm:text-2xl">Queen Elizabeth ll Centre, Westminster Hall</p>
                             <p className="mt-16 text-xl leading-8 text-justify text-white sm:mt-52">
-                                Welcome
-                                to the world of rustic flavors and sensient aroma of coffee origin From the historic forests of the
+                                Welcome to the world of rustic flavors and sensient aroma of coffee origin From the historic forests of the
                                 Ethiopian plateaus to the Central Highlands of Vietnam, each participant, showcasing and sharing their sumptuous
                                 profile of luxurious taste and of out of this world experience The overpowering notes of nuts, caramel with
                                 honey like sweetness of El Salvador coffee with mild body and acidity of a Burundi cup will bring one’s senses to a
@@ -110,18 +108,17 @@ export default function Exhibition() {
                     <h2 className="text-4xl font-bold tracking-tight text-gray-900">Exhibitors</h2>
                     <div className="w-full rounded-lg">
                         <dd className="mt-2 text-xl leading-7 text-gray-900">
-                            <span>Become an exhibitor at World Coffee Exhibition and display your company’s message in front of
-                                Green coffee buyers and roasters with key decision makers in the coffee industry.</span>
+                            <span>Become an exhibitor at World Coffee Exhibition and display your company’s message in front of Green coffee buyers and roasters with key decision makers in the coffee industry.</span>
                         </dd>
                     </div>
                     <div className='mt-12'>
                         <div>
                             <p className="text-lg font-bold tracking-tight text-gray-900 sm:text-2xl">BENEFITS: Why exhibit at World Coffee Summit London?</p>
                             <ul role="list" className="mt-12">
-                                {whyExhibit.map((event, eventIdx) => (
+                                {benefits.map((event, eventIdx) => (
                                     <li key={event.id}>
                                         <div className="relative pb-8">
-                                            {eventIdx !== whyExhibit.length - 1 ? (
+                                            {eventIdx !== benefits.length - 1 ? (
                                                 <span className="absolute left-4 top-4 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true" />
                                             ) : null}
                                             <div className="relative flex space-x-3">
@@ -145,79 +142,9 @@ export default function Exhibition() {
                                 ))}
                             </ul>
                         </div>
-
-                        <div className='mt-8'>
-                            <p className="text-lg font-bold tracking-tight text-gray-900 sm:text-2xl">Sizes and dimensions</p>
-                            <p className="mt-4 tracking-tight text-gray-900 text-md sm:text-lg">The size of the stands used for exhibition here are 76cm x 153cm x 74cm (width x length x height). However, we would allocate each exhibitor with a 3m x 2m standard space which accommodates for banners on either side and chairs behind stands.
-                            </p>
-                        </div>
-                        <div className='mt-8'>
-                            <p className="text-lg font-bold tracking-tight text-gray-900 sm:text-2xl">Additional services</p>
-                            <ul role="list" className="mt-12">
-                                {services.map((event, eventIdx) => (
-                                    <li key={event.id}>
-                                        <div className="relative pb-8">
-                                            {eventIdx !== services.length - 1 ? (
-                                                <span className="absolute left-4 top-4 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true" />
-                                            ) : null}
-                                            <div className="relative flex space-x-3">
-                                                <div>
-                                                    <span
-                                                        className='flex items-center justify-center w-8 h-8 bg-yellow-900 rounded-full ring-8 ring-white'
-                                                    >
-                                                        <CheckCircleIcon className="w-5 h-5 text-white" aria-hidden="true" />
-                                                    </span>
-                                                </div>
-                                                <div className="flex justify-between flex-1 min-w-0 pl-2 space-x-4 sm:pl-4">
-                                                    <div className='flex flex-col'>
-                                                        <p className="text-gray-900 text-md sm:text-lg">
-                                                            {event.description}{' '}
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                        {/* <div className='mt-8 sm:max-w-xl'>
-                            <p className="text-lg font-bold tracking-tight text-gray-900 sm:text-2xl">Program</p>
-                            <ul role="list" className="mt-12">
-                                {program.map((event, eventIdx) => (
-                                    <li key={event.id}>
-                                        <div className="relative pb-8 ">
-                                            {eventIdx !== program.length - 1 ? (
-                                                <span className="absolute left-4 top-4 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true" />
-                                            ) : null}
-                                            <div className="relative flex space-x-3">
-                                                <div>
-                                                    <span
-                                                        className='flex items-center justify-center w-8 h-8 bg-yellow-900 rounded-full ring-8 ring-white'
-                                                    >
-                                                        <ClockIcon className="w-5 h-5 text-white" aria-hidden="true" />
-                                                    </span>
-                                                </div>
-                                                <div className="flex justify-between flex-1 min-w-0 pl-2 space-x-4 sm:pl-4">
-                                                    <div className='flex flex-col'>
-                                                        <p className="my-auto text-gray-900 text-md sm:text-lg">
-                                                            {event.description}{' '}
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div className="my-auto text-sm text-right text-gray-500 whitespace-nowrap">
-                                                    <time>{event.time}</time>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div> */}
-                        <div className='mt-8 sm:max-w-xl'>
-                            <p className="text-lg font-bold tracking-tight text-gray-900 sm:text-2xl">QE II Westminster Hall layout</p>
-                            <img className='w-full mt-12' src="https://worldcoffeealliance.com/wp-content/uploads/2023/06/WESTMINSTER-FLOORPLAN.jpg" alt="QE II Westminster Hall layout" />
-                        </div>
+                    </div>
+                    <div>
+                        <p className="text-lg leading-7 text-gray-600">For exhibition queries please email <Link href={"https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=mavis@worldcoffeealliance.com&su=Exhibition%20query"} target="_blank" className="text-yellow-900 underline hover:underline-offset-4"> mavis@worldcoffeealliance.com</Link></p>
                     </div>
                 </div>
             </div>

@@ -23,7 +23,7 @@ const firstRow = [
     },
     {
         name: 'H.E. Hajime Hayashi',
-        company: 'Japanese Ambassador to the United Kingdom',
+        company: 'Ambassador of Japan to the United Kingdom',
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/05/HAYASHU-HAJIME-1.jpg',
     },
@@ -88,6 +88,13 @@ const thirdRow = [
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/05/KATHERINE-SODULKA.png',
     },
+    {
+        name: 'Nigel Hunt',
+        role: 'Senior Correspondent',
+        company: 'Reuters',
+        imageUrl:
+            'https://worldcoffeealliance.com/wp-content/uploads/2023/06/NIGEL-HUNT-THOMSON-REUTERS.jpg',
+    },
 ]
 
 export default function Speakers() {
@@ -105,7 +112,7 @@ export default function Speakers() {
                     {firstRow.map((speaker) => (
                         <li key={speaker.name} className="flex flex-col gap-6">
                             <div className='flex-shrink-0 mx-auto'>
-                                <Image className="w-32 rounded-md " src={speaker.imageUrl} alt={speaker.name} width={160} height={160} />
+                                <Image className="rounded-md w-[30rem] " src={speaker.imageUrl} alt={speaker.name} width={160} height={160} />
                             </div>
 
                             <div className="flex mx-auto text-center">
@@ -125,7 +132,7 @@ export default function Speakers() {
                     {secondRow.map((speaker) => (
                         <li key={speaker.name} className="flex flex-col gap-6">
                             <div className='flex-shrink-0 mx-auto'>
-                                <Image className="w-32 rounded-md" src={speaker.imageUrl} alt={speaker.name} width={160} height={160} />
+                                <Image className="w-[30rem] rounded-md" src={speaker.imageUrl} alt={speaker.name} width={160} height={160} />
                             </div>
                             <div className="flex mx-auto text-center">
                                 <div>
@@ -139,12 +146,12 @@ export default function Speakers() {
                 </ul>
                 <ul
                     role="list"
-                    className="grid max-w-3xl grid-cols-1 mx-auto mt-20 gap-x-6 gap-y-20 sm:grid-cols-3 sm:gap-x-8"
+                    className="grid max-w-5xl grid-cols-1 mx-auto mt-20 gap-x-6 gap-y-20 sm:grid-cols-4 sm:gap-x-8"
                 >
                     {thirdRow.map((speaker) => (
                         <li key={speaker.name} className="flex flex-col gap-6">
                             <div className='flex-shrink-0 mx-auto'>
-                                <Image className="w-32 rounded-md" src={speaker.imageUrl} alt={speaker.name} width={160} height={160} />
+                                <Image className="w-[30rem] rounded-md" src={speaker.imageUrl} alt={speaker.name} width={160} height={160} />
                             </div>
                             <div className="flex flex-shrink-0 mx-auto text-center">
                                 <div>
