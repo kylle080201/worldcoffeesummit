@@ -21,7 +21,7 @@ export default function Overview() {
                         <CountDown />
                         <div className="flex flex-row items-center justify-center pt-6 ml-4 text-center sm:-mr-56">
                             <div>
-                                <Link target={'_blank'} rel='noreferer' className='px-6 py-2 mx-auto text-lg font-bold tracking-tight text-gray-900 bg-yellow-500 hover:underline h-max sm:text-2xl' href="/">Register Now
+                                <Link target={'_blank'} rel='noreferer' className='px-6 py-2 mx-auto text-lg font-bold tracking-tight text-gray-900 bg-yellow-500 hover:underline h-max sm:text-2xl' href="/register">Register Now
                                 </Link>
                             </div>
                         </div>
