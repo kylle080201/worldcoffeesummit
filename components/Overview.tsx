@@ -5,8 +5,8 @@ import CountDown from './CountDown'
 export default function Overview() {
     return (
         <>
-            <div id="overview" className="flex flex-col bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2023/06/OVERVIEW-HERO-BG-1-scaled-e1686220119704.jpg')] py-12 sm:py-20 bg-cover mlg:flex-col">
-                <div className="self-center w-full text-center sm:max-w-7xl ">
+            <div id="overview" className="flex flex-col bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2023/06/OVERVIEW-HERO-BG-scaled.jpg')] py-12 sm:py-20 bg-cover bg-center mlg:flex-col">
+                <div className="self-center w-full text-center sm:max-w-5xl">
                     <p className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">World Coffee Summit London</p>
                     <p className="mt-6 text-lg font-semibold tracking-tight text-gray-900 sm:text-2xl">Delivering collaborative change: </p>
                     <p className="text-lg font-semibold tracking-tight text-gray-900 sm:text-2xl">Impact of regenerative solutions </p>
@@ -19,7 +19,7 @@ export default function Overview() {
 
                     <div className='flex flex-col justify-center max-w-5xl mx-auto md:flex-row'>
                         <CountDown />
-                        <div className="flex flex-row items-center justify-center pt-6 ml-4 text-center sm:-mr-56">
+                        <div className="flex flex-row items-center justify-center pt-6 ml-4 text-center sm:-mr-48">
                             <div>
                                 <Link target={'_blank'} rel='noreferer' className='flex-shrink-0 px-6 py-2 mx-auto font-bold tracking-tight text-gray-900 bg-yellow-500 text-md hover:underline h-max sm:text-lg' href="/register">Register Now
                                 </Link>
