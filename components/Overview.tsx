@@ -28,7 +28,7 @@ export default function Overview() {
                     </div>
                 </div>
             </div>
-            <div className='justify-center px-12 py-40 bg-white mlg:flex-row mmd:flex-col msm:flex-col sm:px-20' >
+            <div className='justify-center px-12 py-12 bg-white sm:py-20 mlg:flex-row mmd:flex-col msm:flex-col sm:px-20' >
                 <p className="mt-6 text-2xl font-bold tracking-tight text-center text-gray-900 sm:text-4xl">OVERVIEW</p>
                 <p className="mt-4 text-xl leading-8 text-gray-900 sm:mt-8">
                     With the looming implementation of the EU due diligence legislations, the global coffee industry is faced with regulatory compliance that will have dramatic impact on businesses. Against the backdrop of rising cost, climate change and sustainability issues, this business event will tackle and flesh out how to navigate its complexities and find collaborative and regenerative solutions for the future of coffee.

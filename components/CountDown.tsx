@@ -53,7 +53,7 @@ const CountDown = () => {
                                         {days}
                                     </h2>
                                 </div>
-                                <div className="p-2 mt-4 rounded-l-md">
+                                <div className="p-2 rounded-l-md">
                                     <p className="text-base font-semibold text-white md:text-md">Days</p>
                                 </div>
                             </div>
@@ -64,7 +64,7 @@ const CountDown = () => {
                                         {hours}
                                     </h2>
                                 </div>
-                                <div className="p-2 mt-4 ">
+                                <div className="p-2 ">
                                     <p className="text-base font-semibold text-white md:text-md">Hours</p>
                                 </div>
                             </div>
@@ -75,7 +75,7 @@ const CountDown = () => {
                                         {minutes}
                                     </h2>
                                 </div>
-                                <div className="p-2 mt-4 ">
+                                <div className="p-2 ">
                                     <p className="text-base font-semibold text-white md:text-md">Minutes</p>
                                 </div>
                             </div>
@@ -86,7 +86,7 @@ const CountDown = () => {
                                         {seconds}
                                     </h2>
                                 </div>
-                                <div className="p-2 mt-4 rounded-r-md">
+                                <div className="p-2 rounded-r-md">
                                     <p className="text-base font-semibold text-white md:text-md">Seconds</p>
                                 </div>
                             </div>
