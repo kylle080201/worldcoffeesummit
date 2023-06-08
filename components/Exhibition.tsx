@@ -104,6 +104,16 @@ export default function Exhibition() {
                     </div>
                 </div>
 
+                <div className='justify-center px-12 py-6 mx-auto bg-white mlg:flex-row mmd:flex-col msm:flex-col sm:px-20 sm:max-w-5xl' >
+
+                    <div className="w-full rounded-lg">
+                        <dd className="mt-2 text-xl leading-7 text-gray-900">
+                            <span>There will also be a co-located World Coffee Exhibition at the Westminster Hall, adjacent to the conference, where around 15 Exhibitors from coffee origin countries including Ethiopia, Vietnam, Philippines, El Salvador,  Peru. Honduras and Papua New Guinea will showcase their coffee and distribute coffee samples. We will also conduct morning and afternoon cupping sessions by an independent coffee lab and 2 panel discussions on the recent SCA cupping protocol and EU due diligence legislations. This is not a big trade show but a bespoke event where coffee buyers, roasters traders and producers pre-qualified) meet to do business.</span>
+                        </dd>
+                    </div>
+
+                </div>
+
                 <div className='justify-center px-12 py-20 mx-auto bg-white mlg:flex-row mmd:flex-col msm:flex-col sm:px-20 sm:max-w-5xl' >
                     <h2 className="text-4xl font-bold tracking-tight text-gray-900">Exhibitors</h2>
                     <div className="w-full rounded-lg">

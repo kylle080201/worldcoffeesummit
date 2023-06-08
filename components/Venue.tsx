@@ -11,7 +11,7 @@ export default function Venue() {
                     </p>
                     <div className='mt-12'>
                         <p className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
-                            Summit: St. James&apos; Hall
+                            Summit: St. James&apos;s Hall
                         </p>
                         <p className="mt-6 text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
                             Exhibition: Westminster Hall
