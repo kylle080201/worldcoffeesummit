@@ -45,10 +45,10 @@ const CountDown = () => {
                 null
             ) : (
                 <>
-                    <div className="flex-col py-20 justify-self-center">
+                    <div className="flex-col py-8 justify-self-center">
                         <div className="flex flex-row justify-center w-full mx-auto text-center">
                             <div className="flex flex-col">
-                                <div className="flex flex-col p-2 mr-1 bg-white rounded-md md:p-6">
+                                <div className="flex flex-col p-2 mr-1 bg-white rounded-md md:p-4">
                                     <h2 className="font-bold text-center text-md text-lime-700 md:text-4xl">
                                         {days}
                                     </h2>
@@ -59,7 +59,7 @@ const CountDown = () => {
                             </div>
 
                             <div className="flex flex-col">
-                                <div className="flex flex-col p-2 mx-1 bg-white rounded-md md:p-6">
+                                <div className="flex flex-col p-2 mx-1 bg-white rounded-md md:p-4">
                                     <h2 className="font-bold text-center text-md text-lime-700 md:text-4xl">
                                         {hours}
                                     </h2>
@@ -70,7 +70,7 @@ const CountDown = () => {
                             </div>
 
                             <div className="flex flex-col">
-                                <div className="flex flex-col p-2 mx-1 bg-white rounded-md md:p-6">
+                                <div className="flex flex-col p-2 mx-1 bg-white rounded-md md:p-4">
                                     <h2 className="font-bold text-center text-md text-lime-700 md:text-4xl">
                                         {minutes}
                                     </h2>
@@ -81,7 +81,7 @@ const CountDown = () => {
                             </div>
 
                             <div className="flex flex-col">
-                                <div className="flex flex-col p-2 ml-1 bg-white rounded-md md:p-6">
+                                <div className="flex flex-col p-2 ml-1 bg-white rounded-md md:p-4">
                                     <h2 className="font-bold text-center text-md text-lime-700 md:text-4xl">
                                         {seconds}
                                     </h2>
