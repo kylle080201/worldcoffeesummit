@@ -84,7 +84,7 @@ const thirdRow = [
     {
         name: 'Katherine Stodulka',
         role: 'Partner, Director, Blended Finance',
-        company: 'SYSTEMIQ',
+        company: 'Systemiq',
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/05/KATHERINE-SODULKA.png',
     },

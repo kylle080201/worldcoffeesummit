@@ -53,8 +53,8 @@ const CountDown = () => {
                                         {days}
                                     </h2>
                                 </div>
-                                <div className="p-2 mt-4 bg-white rounded-l-md">
-                                    <p className="text-base font-semibold md:text-md">Days</p>
+                                <div className="p-2 mt-4 rounded-l-md">
+                                    <p className="text-base font-semibold text-white md:text-md">Days</p>
                                 </div>
                             </div>
 
@@ -64,8 +64,8 @@ const CountDown = () => {
                                         {hours}
                                     </h2>
                                 </div>
-                                <div className="p-2 mt-4 bg-white">
-                                    <p className="text-base font-semibold md:text-md">Hours</p>
+                                <div className="p-2 mt-4 ">
+                                    <p className="text-base font-semibold text-white md:text-md">Hours</p>
                                 </div>
                             </div>
 
@@ -75,8 +75,8 @@ const CountDown = () => {
                                         {minutes}
                                     </h2>
                                 </div>
-                                <div className="p-2 mt-4 bg-white">
-                                    <p className="text-base font-semibold md:text-md">Minutes</p>
+                                <div className="p-2 mt-4 ">
+                                    <p className="text-base font-semibold text-white md:text-md">Minutes</p>
                                 </div>
                             </div>
 
@@ -86,8 +86,8 @@ const CountDown = () => {
                                         {seconds}
                                     </h2>
                                 </div>
-                                <div className="p-2 mt-4 bg-white rounded-r-md">
-                                    <p className="text-base font-semibold md:text-md">Seconds</p>
+                                <div className="p-2 mt-4 rounded-r-md">
+                                    <p className="text-base font-semibold text-white md:text-md">Seconds</p>
                                 </div>
                             </div>
 

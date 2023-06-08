@@ -18,7 +18,7 @@ function Navbar() {
         <Disclosure as="nav" className="w-full bg-white shadow">
             {({ open }) => (
                 <>
-                    <div className="justify-center w-full px-8 mx-auto sm:max-w-7xl">
+                    <div className="justify-center w-full px-8 mx-auto max-w-7xl">
                         <div className="flex w-full h-16 sm:h-32">
                             <div className="flex w-full sm:justify-between">
                                 <div className="flex items-center mr-2 -ml-2 sm:hidden">
@@ -58,7 +58,10 @@ function Navbar() {
                                 <div className="hidden my-auto sm:flex">
                                     <div className="flex flex-col items-start">
                                         <div className='flex items-center flex-shrink-0'>
-                                            <p className='mr-2 font-semibold text-md'>Get in touch</p>
+                                            <div className='flex-shrink-0 hidden md:inline-flex'>
+                                                <p className='mr-2 font-semibold text-md'>Get in touch</p>
+                                            </div>
+
                                             <div className='flex gap-x-2'>
                                                 <SocialIcon url="https://www.linkedin.com/company/worldcoffeealliance/" style={{ height: 40, width: 40 }} target='_blank' />
                                                 <SocialIcon url="https://twitter.com/WCoffeeAlliance" style={{ height: 40, width: 40 }} target='_blank' />
