@@ -5,6 +5,7 @@ import getStripe from '../get_stripe'
 import { useSearchParams } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import BackButton from './BackButton'
+import Link from 'next/link'
 
 function classNames(...classes: any[]) {
     return classes.filter(Boolean).join(' ')
@@ -187,13 +188,13 @@ const RegisterForm = () => {
                                                     By registering,  your personal information will be shared with the exhibitor or sponsor to allow them to engage with you and provide some more information of what they offer, and what they can help you with in terms of solutions and services. Once registered, your full contact details will be shared directly with another attendee, sponsor or exhibitor and they may follow-up and use your details for marketing and networking purposes.
                                                 </p>
                                                 <p className="mt-2 text-gray-600">
-                                                    For more information on how we use your data, please visit our <a href="/privacy-policy" target='_blank' className='underline'>privacy policy</a>.
+                                                    For more information on how we use your data, please visit our <Link href="/privacy-policy" target='_blank' className='underline'>privacy policy</Link>.
                                                 </p>
                                                 <p className="mt-4 font-semibold text-gray-900 text-md">
                                                     Badge Scanning
                                                 </p>
                                                 <p className="mt-2 text-gray-600">
-                                                    Please be aware that your QR Code will serve as your badge and contains the information you provided upon registering to attend the event. The sponsors and exhibitors of this event may wish to scan your badge so they can contact you with more information. We provide badge scanning services to those exhibitors that request it. By allowing a sponsor or exhibitor to scan your badge, you are consenting for us to send your contact details to them for marketing purposes. For more information on how we use your data, please visit our <a href="#" className='underline'>privacy policy</a>.
+                                                    Please be aware that your QR Code will serve as your badge and contains the information you provided upon registering to attend the event. The sponsors and exhibitors of this event may wish to scan your badge so they can contact you with more information. We provide badge scanning services to those exhibitors that request it. By allowing a sponsor or exhibitor to scan your badge, you are consenting for us to send your contact details to them for marketing purposes. For more information on how we use your data, please visit our <Link href="/privacy-policy" target='_blank' className='underline'>privacy policy</Link>.
                                                 </p>
                                             </div>
                                         </div>
