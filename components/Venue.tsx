@@ -3,9 +3,9 @@ import Link from 'next/link'
 
 export default function Venue() {
     return (
-        <div className="relative py-20 overflow-hidden bg-gray-100 isolate" id='venue'>
-            <div className="px-6 mx-auto lg:flex sm:px-20">
-                <div className="flex-shrink-0 w-1/2 mx-auto sm:w-2/5">
+        <div className="py-20 overflow-hidden bg-gray-100 " id='venue'>
+            <div className="mx-auto lg:flex md:max-w-7xl">
+                <div className="flex-shrink-0 mx-auto md:max-w-7xl">
                     <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                         THE VENUE
                     </p>
@@ -63,7 +63,7 @@ export default function Venue() {
                         </div>
                     </div>
                 </div>
-                <div className="flex-shrink-0 w-1/2 max-w-5xl mx-auto mt-12 sm:mt-0 sm:ml-16">
+                <div className="flex-shrink-0 w-1/2 max-w-5xl mx-auto mt-12 md:mt-0 md:ml-16">
                     <img
                         src="https://worldcoffeealliance.com/wp-content/uploads/2023/06/sustainable-foods-QE2-2.jpg"
                         alt="QE II"
@@ -71,7 +71,7 @@ export default function Venue() {
                     />
                 </div>
             </div>
-            <div className="items-center px-12 mx-auto mt-20 max-w-7xl">
+            <div className="items-center px-6 mx-auto mt-20 max-w-7xl">
                 <Link href={"https://www.google.com/maps/place/Queen+Elizabeth+II+Centre/@51.5005231,-0.1292871,19z/data=!4m6!3m5!1s0x487604c4cb112d93:0x39efdcc690b64ca3!8m2!3d51.5005006!4d-0.1290725!16zL20vMDgwbDQx"} target="_blank">
                     <img
                         src="https://worldcoffeealliance.com/wp-content/uploads/2023/05/QEII-GMAPS.png"

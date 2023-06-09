@@ -201,7 +201,7 @@ const RegisterForm = () => {
                                         <div className="mt-5 sm:mt-6">
                                             <button
                                                 type="button"
-                                                className="inline-flex justify-center max-w-5xl px-3 py-2 text-sm font-semibold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-600"
+                                                className="inline-flex justify-center max-w-5xl px-3 py-2 text-sm font-semibold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-700"
                                                 onClick={() => setOpenTermsAndConditions(!openTermsAndConditions)}
                                             >
                                                 Back
@@ -257,7 +257,7 @@ const RegisterForm = () => {
                                         <div className="mt-5 sm:mt-6">
                                             <button
                                                 type="button"
-                                                className="inline-flex justify-center max-w-5xl px-3 py-2 text-sm font-semibold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-600"
+                                                className="inline-flex justify-center max-w-5xl px-3 py-2 text-sm font-semibold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-700"
                                                 onClick={() => setOpenLetterOfInvitation(!openLetterOfInvitation)}
                                             >
                                                 Back

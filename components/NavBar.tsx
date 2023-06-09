@@ -48,7 +48,7 @@ function Navbar() {
                                         <Link
                                             key={item.name}
                                             href={item.href}
-                                            className='inline-flex items-end px-2 pb-4 font-bold text-gray-900 text-md sm:px-4 hover:border-b-2 hover:border-lime-600'
+                                            className='inline-flex items-end px-2 pb-4 font-bold text-gray-900 text-md sm:px-4 hover:border-b-2 hover:border-lime-700'
                                         >
                                             {item.name}
                                         </Link>
@@ -92,7 +92,7 @@ function Navbar() {
                                     as='a'
                                     key={item.name}
                                     href={item.href}
-                                    className='block py-2 pl-3 pr-4 text-base font-medium text-gray-500 border-l-4 border-transparent sm:pl-5 sm:pr-6 hover:border-lime-600 hover:bg-gray-50 hover:text-gray-900'
+                                    className='block py-2 pl-3 pr-4 text-base font-medium text-gray-500 border-l-4 border-transparent sm:pl-5 sm:pr-6 hover:border-lime-700 hover:bg-gray-50 hover:text-gray-900'
                                 >
                                     {item.name}
                                 </Disclosure.Button>
