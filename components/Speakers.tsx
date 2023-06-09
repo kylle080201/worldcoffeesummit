@@ -14,7 +14,7 @@ const firstRow = [
         role: 'Executive Fellow; Co-Chair, Advisory Board',
         company: 'World Economic Forum; Carbon Tracker Initiative',
         imageUrl:
-            'https://worldcoffeealliance.com/wp-content/uploads/2023/05/DR-DONGYU-QU.jpg',
+            'https://worldcoffeealliance.com/wp-content/uploads/2023/06/ANTHONY-HOBLEY-PHOTO.jpg',
     },
     {
         name: 'Dr. Leonard Mizzi',
