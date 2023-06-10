@@ -24,7 +24,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
       const checkoutSessionId = await req.data.object.id;
 
       try {
-        await fetch("/api/payment-success", {
+        const res = await fetch("/api/payment-success", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -34,6 +34,14 @@ export async function POST(request: NextRequest, response: NextResponse) {
             checkoutSessionId,
           }),
         });
+        return NextResponse.json(
+          {
+            res,
+          },
+          {
+            status: 200,
+          }
+        );
       } catch (error: any) {
         return NextResponse.json(
           {
@@ -44,15 +52,6 @@ export async function POST(request: NextRequest, response: NextResponse) {
           }
         );
       }
-      return NextResponse.json(
-        {
-          paymentIntentId,
-          checkoutSessionId,
-        },
-        {
-          status: 200,
-        }
-      );
     }
   } catch (error: any) {
     return NextResponse.json(
