@@ -4,8 +4,8 @@ import Tickets from "../../../models/tickets";
 
 export async function POST(request: NextRequest, response: NextResponse) {
   const req = await request.json();
-  const paymentIntentId = req.body.paymentIntentId;
-  const checkoutSessionId = req.body.checkoutSessionId;
+  const paymentIntentId = req.paymentIntentId;
+  const checkoutSessionId = req.checkoutSessionId;
   try {
     await connectMongo();
 
