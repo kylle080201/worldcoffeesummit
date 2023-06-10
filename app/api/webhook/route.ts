@@ -33,18 +33,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
             paymentIntentId,
             checkoutSessionId,
           }),
-        })
-          .then((response) => response.json())
-          .catch((error) => {
-            return NextResponse.json(
-              {
-                message: error.message,
-              },
-              {
-                status: 402,
-              }
-            );
-          });
+        });
       } catch (error: any) {
         return NextResponse.json(
           {
