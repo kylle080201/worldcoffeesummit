@@ -26,4 +26,4 @@ const tickets = new Schema({
   deletedAt: Date,
 });
 
-module.exports = mongoose.models.Tickets || mongoose.model("Tickets", tickets);
+export default mongoose.models.Tickets || mongoose.model("Tickets", tickets);
