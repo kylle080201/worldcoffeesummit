@@ -1,14 +1,17 @@
 import { NextRequest, NextResponse } from "next/server";
+import Tickets from "../../../models/tickets";
 import Stripe from "stripe";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2022-11-15",
 });
 
+let formData;
+
 export async function POST(request: NextRequest, response: Response) {
   const req = await request.json();
   const line_items = [req.line_items];
-  const formData = [req.formData];
+  formData = [req.formData];
   const origin = req.origin;
 
   try {
@@ -23,7 +26,24 @@ export async function POST(request: NextRequest, response: Response) {
       session?.id
     );
     return NextResponse.json({
-      response: { retrievedSession, formData, origin },
+      response: { retrievedSession, origin },
+    });
+  } catch (error: any) {
+    return NextResponse.json({
+      message: error.message,
+    });
+  }
+}
+
+export async function PATCH(request: NextRequest, response: Response) {
+  const req = await request.json();
+  const paymentIntentId = req.paymentIntentId;
+  const checkoutSessionId = req.checkoutSessionId;
+
+  try {
+    const getExistingTickets = await Tickets.find({
+      $and: [{ paymentIntentId }, { checkoutSessionId }],
+      deletedAt: { $exists: false },
     });
   } catch (error: any) {
     return NextResponse.json({

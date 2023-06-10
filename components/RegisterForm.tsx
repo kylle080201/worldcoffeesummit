@@ -11,7 +11,6 @@ function classNames(...classes: any[]) {
     return classes.filter(Boolean).join(' ')
 }
 
-
 const RegisterForm = () => {
     const searchParams = useSearchParams()
     const [isAgree, setIsAgree] = useState(false)
@@ -54,17 +53,6 @@ const RegisterForm = () => {
                     )
                 }).then(response => response.json())
                     .then(async data => {
-                        // await fetch('/api/payment-success', {
-                        //     method: 'POST',
-                        //     headers: {
-                        //         'Content-Type': 'application/json'
-                        //     },
-                        //     body: JSON.stringify(
-                        //         {
-                        //             formData
-                        //         }
-                        //     )
-                        // })
                         const stripe = await getStripe();
                         await stripe?.redirectToCheckout({ sessionId: data?.response?.retrievedSession?.id })
                     }).catch(error => {

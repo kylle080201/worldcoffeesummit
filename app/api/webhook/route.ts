@@ -21,43 +21,46 @@ export async function POST(request: NextRequest, response: NextResponse) {
   try {
     event = stripe.webhooks.constructEvent(body, header, secret);
     if (event.type === "checkout.session.completed") {
-      const transactId = req.data.object.payment_intent;
-      if (transactId) {
-        try {
-          await fetch("/api/payment-success", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              transactId,
-            }),
-          })
-            .then((response) => response.json())
-            .catch((error) => {
-              return NextResponse.json(
-                {
-                  message: error.message,
-                },
-                {
-                  status: 402,
-                }
-              );
-            });
-        } catch (error: any) {
-          return NextResponse.json(
-            {
-              message: error.message,
-            },
-            {
-              status: 402,
-            }
-          );
-        }
+      const paymentIntentId = req.data.object.payment_intent;
+      const checkoutSessionId = req.data.object.id;
+
+      try {
+        await fetch("/api/payment-success", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            paymentIntentId,
+            checkoutSessionId,
+          }),
+        })
+          .then((response) => response.json())
+          .catch((error) => {
+            return NextResponse.json(
+              {
+                message: error.message,
+              },
+              {
+                status: 402,
+              }
+            );
+          });
+      } catch (error: any) {
+        return NextResponse.json(
+          {
+            message: error.message,
+          },
+          {
+            status: 402,
+          }
+        );
       }
+
       return NextResponse.json(
         {
-          transactId,
+          paymentIntentId,
+          checkoutSessionId,
         },
         {
           status: 200,

@@ -1,11 +1,23 @@
 import mongoose from "mongoose";
 const { Schema } = mongoose;
+mongoose.Promise = global.Promise;
 
 const tickets = new Schema({
   paymentIntentId: {
     type: String,
-    require: true,
+    required: true,
+    unique: true,
   },
+  checkoutSessionId: {
+    type: String,
+    required: true,
+    unique: true,
+  },
+  email: String,
+  lastName: String,
+  firstName: String,
+  companyName: String,
+  jobTitle: String,
   createdAt: {
     type: Date,
     default: Date.now,
@@ -14,4 +26,4 @@ const tickets = new Schema({
   deletedAt: Date,
 });
 
-module.exports = mongoose.model("Tickets", tickets);
+module.exports = mongoose.models.Tickets || mongoose.model("Tickets", tickets);
