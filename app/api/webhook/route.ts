@@ -43,14 +43,6 @@ export async function POST(request: NextRequest, response: NextResponse) {
               }
             );
           });
-        return NextResponse.json(
-          {
-            paymentIntentId,
-          },
-          {
-            status: 200,
-          }
-        );
       } catch (error: any) {
         return NextResponse.json(
           {
@@ -61,6 +53,14 @@ export async function POST(request: NextRequest, response: NextResponse) {
           }
         );
       }
+      return NextResponse.json(
+        {
+          paymentIntentId,
+        },
+        {
+          status: 200,
+        }
+      );
     }
   } catch (error: any) {
     return NextResponse.json(
