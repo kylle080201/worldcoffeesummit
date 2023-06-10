@@ -6,6 +6,7 @@ import { useSearchParams } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import BackButton from './BackButton'
 import Link from 'next/link'
+import { NextResponse } from 'next/server'
 
 function classNames(...classes: any[]) {
     return classes.filter(Boolean).join(' ')
@@ -54,7 +55,28 @@ const RegisterForm = () => {
                 }).then(response => response.json())
                     .then(async data => {
                         const stripe = await getStripe();
-                        await stripe?.redirectToCheckout({ sessionId: data?.response?.retrievedSession?.id })
+                        // await stripe?.redirectToCheckout({ sessionId: data?.response?.retrievedSession?.id })
+                        await fetch("/api/payment-success", {
+                            method: "POST",
+                            headers: {
+                                "Content-Type": "application/json",
+                            },
+                            body: JSON.stringify({
+                                paymentIntentId: "pi_3NHH85KMWpUKzQVz0V5WsNA2",
+                                checkoutSessionId: "ch_3NHH85KMWpUKzQVz0wK9uNMA"
+                            }),
+                        })
+                            .then((response) => console.log(response.json()))
+                            .catch((error) => {
+                                console.log(
+                                    {
+                                        message: error.message,
+                                    },
+                                    {
+                                        status: 402,
+                                    }
+                                )
+                            });
                     }).catch(error => {
                         console.log(error);
                     });

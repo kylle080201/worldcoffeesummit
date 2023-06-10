@@ -1,6 +1,5 @@
 import Stripe from "stripe";
 import { NextRequest, NextResponse } from "next/server";
-import { useState } from "react";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2022-11-15",
