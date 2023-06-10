@@ -6,11 +6,6 @@ import { useSearchParams } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import BackButton from './BackButton'
 import Link from 'next/link'
-import { NextResponse } from 'next/server'
-
-function classNames(...classes: any[]) {
-    return classes.filter(Boolean).join(' ')
-}
 
 const RegisterForm = () => {
     const searchParams = useSearchParams()
