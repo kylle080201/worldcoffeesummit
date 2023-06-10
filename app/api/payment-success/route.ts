@@ -8,9 +8,9 @@ export async function POST(request: NextRequest, response: NextResponse) {
   const checkoutSessionId = req.checkoutSessionId;
   try {
     await connectMongo();
-    const message = "Successfully connected";
-    // const newTicket = new Tickets({ paymentIntentId, checkoutSessionId });
-    // const ticket = await newTicket.save();
+
+    const newTicket = new Tickets({ paymentIntentId, checkoutSessionId });
+    const ticket = await newTicket.save();
 
     // if (ticket) {
     //   try {
@@ -35,7 +35,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
     //   } catch (error) {}
     // }
 
-    return NextResponse.json({ message });
+    return NextResponse.json({ ticket });
   } catch (error: any) {
     return NextResponse.json(error.message);
   }
