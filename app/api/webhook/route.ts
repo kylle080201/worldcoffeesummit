@@ -19,7 +19,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
 
   try {
     event = stripe.webhooks.constructEvent(body, header, secret);
-    if (event.type === "payment_intent.succeeded") {
+    if (event.type === "charge.succeeded") {
       const paymentIntentId = await req.data.object.payment_intent;
 
       try {
