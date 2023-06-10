@@ -8,7 +8,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
 
 let formData;
 
-export async function POST(request: NextRequest, response: Response) {
+export async function POST(request: NextRequest, response: NextResponse) {
   const req = await request.json();
   const line_items = [req.line_items];
   formData = [req.formData];
