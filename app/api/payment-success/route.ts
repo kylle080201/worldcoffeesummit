@@ -33,8 +33,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
     //       });
     //   } catch (error) {}
     // }
-    response = ticket;
-    return NextResponse.json({ response });
+    return NextResponse.json({ ticket });
   } catch (error: any) {
     return NextResponse.json(error.message);
   }

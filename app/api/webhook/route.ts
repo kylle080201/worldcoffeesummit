@@ -23,7 +23,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
       const paymentIntentId = await req.data.object.payment_intent;
 
       try {
-        const res = await fetch("/api/payment-success", {
+        await fetch("/api/payment-success", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -31,10 +31,17 @@ export async function POST(request: NextRequest, response: NextResponse) {
           body: JSON.stringify({
             paymentIntentId,
           }),
-        });
+        })
+          .then((res) => res.json())
+          .then(async (data) => {
+            response = data;
+          })
+          .catch((error) => {
+            console.log(error);
+          });
         return NextResponse.json(
           {
-            res,
+            response,
           },
           {
             status: 200,
