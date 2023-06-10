@@ -20,8 +20,8 @@ export async function POST(request: NextRequest, response: NextResponse) {
   try {
     event = stripe.webhooks.constructEvent(body, header, secret);
     if (event.type === "checkout.session.completed") {
-      const paymentIntentId = req.data.object.payment_intent;
-      const checkoutSessionId = req.data.object.id;
+      const paymentIntentId = await req.data.object.payment_intent;
+      const checkoutSessionId = await req.data.object.id;
 
       try {
         await fetch("/api/payment-success", {
