@@ -1,5 +1,7 @@
 import Stripe from "stripe";
 import { NextRequest, NextResponse } from "next/server";
+import connectMongo from "../../../utils/mongodb";
+import Tickets from "../../../models/tickets";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2022-11-15",
@@ -20,48 +22,22 @@ export async function POST(request: NextRequest, response: NextResponse) {
   try {
     event = stripe.webhooks.constructEvent(body, header, secret);
     if (event.type === "checkout.session.completed") {
+      await connectMongo();
       const paymentIntentId = await req.data.object.payment_intent;
       const checkoutSessionId = await req.data.object.id;
-      try {
-        const res = await fetch("/api/payment-success", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            paymentIntentId,
-            checkoutSessionId,
-          }),
-        })
-          .then((response) => response.json())
-          .catch((error) => {
-            return NextResponse.json(
-              {
-                message: error.message,
-              },
-              {
-                status: 400,
-              }
-            );
-          });
-        return NextResponse.json(
-          {
-            res,
-          },
-          {
-            status: 200,
-          }
-        );
-      } catch (error: any) {
-        return NextResponse.json(
-          {
-            message: error.message,
-          },
-          {
-            status: 400,
-          }
-        );
-      }
+
+      const ticket = await Tickets.create({
+        paymentIntentId,
+      });
+
+      return NextResponse.json(
+        {
+          ticket,
+        },
+        {
+          status: 400,
+        }
+      );
     }
   } catch (error: any) {
     return NextResponse.json(
