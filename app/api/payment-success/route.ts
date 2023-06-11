@@ -34,7 +34,9 @@ export async function POST(request: NextRequest, response: NextResponse) {
     //       });
     //   } catch (error) {}
     // }
-    return NextResponse.json(ticket);
+    return NextResponse.json({
+      response: ticket,
+    });
   } catch (error: any) {
     return NextResponse.json(error.message);
   }
