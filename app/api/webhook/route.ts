@@ -28,13 +28,8 @@ export async function POST(request: NextRequest, response: NextResponse) {
           paymentIntentId,
           checkoutSessionId,
         }),
-      });
-      if (response.ok) {
-        const data = await response.json();
-        return data;
-      } else {
-        throw new Error("Failed to insert to the database.");
-      }
+      }).then(async (res) => res.json());
+      return response.json();
     } catch (error: any) {
       return error.message;
     }
