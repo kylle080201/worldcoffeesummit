@@ -26,16 +26,15 @@ export async function POST(request: NextRequest, response: NextResponse) {
       const paymentIntentId = await req.data.object.payment_intent;
       const checkoutSessionId = await req.data.object.id;
 
-      const ticket = await Tickets.create({
-        paymentIntentId,
-      });
+      const newTicket = new Tickets({ paymentIntentId, checkoutSessionId });
+      const ticket = await newTicket.save();
 
       return NextResponse.json(
         {
           ticket,
         },
         {
-          status: 400,
+          status: 200,
         }
       );
     }
