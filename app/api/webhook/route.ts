@@ -22,8 +22,9 @@ export async function POST(request: NextRequest, response: NextResponse) {
     if (event.type === "checkout.session.completed") {
       const paymentIntentId = await req.data.object.payment_intent;
       const checkoutSessionId = await req.data.object.id;
+      let resData;
 
-      const data = await fetch("/api/payment-success", {
+      await fetch("/api/payment-success", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -32,11 +33,25 @@ export async function POST(request: NextRequest, response: NextResponse) {
           paymentIntentId,
           checkoutSessionId,
         }),
-      }).then((res) => res.json());
+      })
+        .then((response) => response.json())
+        .then(async (data) => {
+          resData = data;
+        })
+        .catch((error) => {
+          return NextResponse.json(
+            {
+              message: error.message,
+            },
+            {
+              status: 400,
+            }
+          );
+        });
 
       return NextResponse.json(
         {
-          data,
+          resData,
         },
         {
           status: 200,
