@@ -21,7 +21,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
     event = stripe.webhooks.constructEvent(body, header, secret);
     if (event.type === "charge.succeeded") {
       const paymentIntentId = await req.data.object.payment_intent;
-
+      const eventType = event.type;
       try {
         await fetch("/api/payment-success", {
           method: "POST",
@@ -56,6 +56,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
       return NextResponse.json(
         {
           paymentIntentId,
+          eventType,
         },
         {
           status: 200,
