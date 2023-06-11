@@ -18,23 +18,26 @@ export async function POST(request: NextRequest, response: NextResponse) {
   });
 
   async function insertToDb(paymentIntentId: any, checkoutSessionId: any) {
-    await fetch("/api/payment-success", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        paymentIntentId,
-        checkoutSessionId,
-      }),
-    })
-      .then((response) => response.json())
-      .then(async (data) => {
-        return data;
-      })
-      .catch((error) => {
-        console.log(error);
+    try {
+      const response = await fetch("/api/payment-success", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          paymentIntentId,
+          checkoutSessionId,
+        }),
       });
+      if (response.ok) {
+        const data = await response.json();
+        return data;
+      } else {
+        throw new Error("Failed to insert to the database.");
+      }
+    } catch (error: any) {
+      return error.message;
+    }
   }
 
   try {
