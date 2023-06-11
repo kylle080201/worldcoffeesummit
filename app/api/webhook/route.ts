@@ -19,7 +19,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
 
   try {
     event = stripe.webhooks.constructEvent(body, header, secret);
-    if (event.type === "checkout.session.completed") {
+    if (event.type === "charge.succeeded") {
       const paymentIntentId = await req.data.object.payment_intent;
       const checkoutSessionId = req.data.object.id;
 
@@ -34,19 +34,18 @@ export async function POST(request: NextRequest, response: NextResponse) {
         }),
       })
         .then((res) => res.json())
-        .then(async (data) => {
-          return NextResponse.json(
-            {
-              data,
-            },
-            {
-              status: 200,
-            }
-          );
-        })
         .catch((error) => {
           console.log(error);
         });
+      return NextResponse.json(
+        {
+          paymentIntentId,
+          checkoutSessionId,
+        },
+        {
+          status: 200,
+        }
+      );
     }
   } catch (error: any) {
     return NextResponse.json(
