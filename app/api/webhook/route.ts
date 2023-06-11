@@ -17,9 +17,13 @@ export async function POST(request: NextRequest, response: NextResponse) {
     secret,
   });
 
-  async function insertToDb(paymentIntentId: any, checkoutSessionId: any) {
-    try {
-      const response = await fetch("/api/payment-success", {
+  try {
+    event = stripe.webhooks.constructEvent(body, header, secret);
+    if (event.type === "checkout.session.completed") {
+      const paymentIntentId = await req.data.object.payment_intent;
+      const checkoutSessionId = await req.data.object.id;
+
+      const data = await fetch("/api/payment-success", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -29,19 +33,6 @@ export async function POST(request: NextRequest, response: NextResponse) {
           checkoutSessionId,
         }),
       }).then((res) => res.json());
-      return await response.json();
-    } catch (error: any) {
-      return error.message;
-    }
-  }
-
-  try {
-    event = stripe.webhooks.constructEvent(body, header, secret);
-    if (event.type === "checkout.session.completed") {
-      const paymentIntentId = await req.data.object.payment_intent;
-      const checkoutSessionId = await req.data.object.id;
-
-      const data = await insertToDb(paymentIntentId, checkoutSessionId);
 
       return NextResponse.json(
         {
