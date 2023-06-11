@@ -5,10 +5,12 @@ import Tickets from "../../../models/tickets";
 export async function POST(request: NextRequest, response: NextResponse) {
   const req = await request.json();
   const paymentIntentId = req.paymentIntentId;
+  const checkoutSessionId = req.checkoutSessionId;
   try {
     await connectMongo();
 
-    const ticket = await Tickets.create({ paymentIntentId });
+    const newTicket = new Tickets({ paymentIntentId, checkoutSessionId });
+    const ticket = await newTicket.save();
 
     // if (ticket) {
     //   try {
