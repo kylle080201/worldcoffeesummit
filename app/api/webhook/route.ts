@@ -17,30 +17,37 @@ export async function POST(request: NextRequest, response: NextResponse) {
     secret,
   });
 
+  async function insertToDb(paymentIntentId: any, checkoutSessionId: any) {
+    await fetch("/api/payment-success", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        paymentIntentId,
+        checkoutSessionId,
+      }),
+    })
+      .then((response) => response.json())
+      .then(async (data) => {
+        return data;
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
+
   try {
     event = stripe.webhooks.constructEvent(body, header, secret);
-    if (event.type === "payment_intent.succeeded") {
+    if (event.type === "checkout.session.completed") {
       const paymentIntentId = await req.data.object.payment_intent;
       const checkoutSessionId = await req.data.object.id;
 
-      await fetch("/api/payment-success", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          paymentIntentId,
-          checkoutSessionId,
-        }),
-      })
-        .then((res) => res.json())
-        .catch((error) => {
-          console.log(error);
-        });
+      const data = await insertToDb(paymentIntentId, checkoutSessionId);
+
       return NextResponse.json(
         {
-          paymentIntentId,
-          checkoutSessionId,
+          data,
         },
         {
           status: 200,
