@@ -8,11 +8,6 @@ const tickets = new Schema({
     required: true,
     unique: true,
   },
-  checkoutSessionId: {
-    type: String,
-    required: true,
-    unique: true,
-  },
   email: String,
   lastName: String,
   firstName: String,
