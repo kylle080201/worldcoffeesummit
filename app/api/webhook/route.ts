@@ -22,7 +22,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
     if (req.type === "checkout.session.completed") {
       const paymentIntentId = await req.data.object.payment_intent;
       const eventType = req.type;
-      await fetch("/api/payment-success", {
+      const res = await fetch("/api/payment-success", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -46,6 +46,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
         {
           paymentIntentId,
           eventType,
+          res,
         },
         {
           status: 200,
