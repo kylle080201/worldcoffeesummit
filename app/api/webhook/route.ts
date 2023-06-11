@@ -22,37 +22,26 @@ export async function POST(request: NextRequest, response: NextResponse) {
     if (req.type === "checkout.session.completed") {
       const paymentIntentId = await req.data.object.payment_intent;
       const eventType = req.type;
-      try {
-        await fetch("/api/payment-success", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            paymentIntentId,
-          }),
-        })
-          .then((res) => res.json())
-          .catch((error) => {
-            return NextResponse.json(
-              {
-                message: error.message,
-              },
-              {
-                status: 402,
-              }
-            );
-          });
-      } catch (error: any) {
-        return NextResponse.json(
-          {
-            message: error.message,
-          },
-          {
-            status: 402,
-          }
-        );
-      }
+      await fetch("/api/payment-success", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          paymentIntentId,
+        }),
+      })
+        .then((res) => res.json())
+        .catch((error) => {
+          return NextResponse.json(
+            {
+              message: error.message,
+            },
+            {
+              status: 402,
+            }
+          );
+        });
       return NextResponse.json(
         {
           paymentIntentId,
