@@ -34,25 +34,19 @@ export async function POST(request: NextRequest, response: NextResponse) {
         }),
       })
         .then((res) => res.json())
-        .catch((error) => {
+        .then(async (data) => {
           return NextResponse.json(
             {
-              message: error.message,
+              data,
             },
             {
-              status: 402,
+              status: 200,
             }
           );
+        })
+        .catch((error) => {
+          console.log(error);
         });
-      return NextResponse.json(
-        {
-          paymentIntentId,
-          checkoutSessionId,
-        },
-        {
-          status: 200,
-        }
-      );
     }
   } catch (error: any) {
     return NextResponse.json(
