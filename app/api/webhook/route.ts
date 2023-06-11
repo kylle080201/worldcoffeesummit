@@ -28,8 +28,8 @@ export async function POST(request: NextRequest, response: NextResponse) {
           paymentIntentId,
           checkoutSessionId,
         }),
-      }).then(async (res) => res.json());
-      return response.json();
+      }).then((res) => res.json());
+      return await response.json();
     } catch (error: any) {
       return error.message;
     }
