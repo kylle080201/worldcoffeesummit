@@ -21,14 +21,16 @@ export async function POST(request: NextRequest, response: NextResponse) {
     event = stripe.webhooks.constructEvent(body, header, secret);
     if (req.type === "checkout.session.completed") {
       const paymentIntentId = await req.data.object.payment_intent;
-      const eventType = req.type;
-      const res = await fetch("/api/payment-success", {
+      const checkoutSessionId = req.data.object.id;
+
+      await fetch("/api/payment-success", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
           paymentIntentId,
+          checkoutSessionId,
         }),
       })
         .then((res) => res.json())
@@ -45,8 +47,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
       return NextResponse.json(
         {
           paymentIntentId,
-          eventType,
-          res,
+          checkoutSessionId,
         },
         {
           status: 200,

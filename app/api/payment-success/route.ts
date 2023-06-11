@@ -8,8 +8,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
   try {
     await connectMongo();
 
-    const newTicket = new Tickets({ paymentIntentId });
-    const ticket = await newTicket.save();
+    const ticket = await Tickets.create({ paymentIntentId });
 
     // if (ticket) {
     //   try {
