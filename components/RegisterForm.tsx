@@ -50,17 +50,7 @@ const RegisterForm = () => {
                 }).then(response => response.json())
                     .then(async data => {
                         const stripe = await getStripe();
-                        // await stripe?.redirectToCheckout({ sessionId: data?.response?.retrievedSession?.id })
-                        await fetch("/api/payment-success", {
-                            method: "POST",
-                            headers: {
-                                "Content-Type": "application/json",
-                            },
-                            body: JSON.stringify({
-                                "paymentIntentId": "pi_3NHjlxKMWpUKzQVz0pi0LWU3",
-                                "checkoutSessionId": "cs_test_a1jIIYjowDwd0bNDaUuOoZfULKttIg5VEWvjqlRrEsw8pt6qr75xFQ2DNW"
-                            }),
-                        })
+                        await stripe?.redirectToCheckout({ sessionId: data?.response?.retrievedSession?.id })
                     }).catch(error => {
                         console.log(error);
                     });

@@ -23,31 +23,25 @@ export async function POST(request: NextRequest, response: NextResponse) {
       const paymentIntentId = await req.data.object.payment_intent;
       const checkoutSessionId = await req.data.object.id;
       let resData;
-
-      await fetch("/api/payment-success", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          paymentIntentId,
-          checkoutSessionId,
-        }),
-      })
-        .then((response) => response.json())
-        .then(async (data) => {
-          resData = data;
+      try {
+        await fetch("/api/payment-success", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            paymentIntentId,
+            checkoutSessionId,
+          }),
         })
-        .catch((error) => {
-          return NextResponse.json(
-            {
-              message: error.message,
-            },
-            {
-              status: 400,
-            }
-          );
-        });
+          .then((response) => response.json())
+          .then(async (data) => {
+            resData = data;
+          })
+          .catch((error) => {
+            resData = error.message;
+          });
+      } catch (error) {}
 
       return NextResponse.json(
         {

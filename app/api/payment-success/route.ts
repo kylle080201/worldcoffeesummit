@@ -5,18 +5,13 @@ import Tickets from "../../../models/tickets";
 export async function POST(request: NextRequest, response: NextResponse) {
   const req = await request.json();
   const paymentIntentId = req.paymentIntentId;
-  const checkoutSessionId = req.checkoutSessionId;
   try {
-    console.log("Connecting to MONGODB");
     await connectMongo();
-    console.log("Conntected");
 
-    console.log("Creating document");
     const ticket = await Tickets.create({
       paymentIntentId,
-      checkoutSessionId,
     });
-    console.log("Document created");
+
     // if (ticket) {
     //   try {
     //     await fetch("/api/checkout-sessions", {
