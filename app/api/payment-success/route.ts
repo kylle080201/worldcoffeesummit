@@ -1,6 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
+import Stripe from "stripe";
 import Tickets from "../../../models/tickets";
 import connectMongo from "../../../utils/mongodb";
+
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
+  apiVersion: "2022-11-15",
+});
 
 export async function POST(request: NextRequest, res: NextResponse) {
   const req = await request.json();
@@ -36,6 +41,7 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
   const req = await request.json();
   const checkoutSessionId = req.checkoutSessionId;
   const formData = req.decryptedFormData;
+  const priceId = req.priceId;
   try {
     await connectMongo();
     const getTickets = await Tickets.find({
