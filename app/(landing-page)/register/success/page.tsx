@@ -2,10 +2,10 @@ import PaymentSuccess from "../../../../components/PaymentSuccess"
 import RegistrationSteps from "../../../../components/RegistrationSteps"
 import { decryptData } from "../../../../utils/encryptor";
 
-export default function Page({ searchParams }: any) {
+export default function Success({ searchParams }: any) {
     const checkoutSessionId = searchParams.session_id;
     const encryptedFormData = searchParams.buyer_data;
-    const decryptedFormData = JSON.parse(decryptData(encryptedFormData)!)
+    const decryptedFormData = decryptData(encryptedFormData)
 
     const steps = [
         { id: '01', name: 'Choose an Event', status: 'complete' },
@@ -17,7 +17,8 @@ export default function Page({ searchParams }: any) {
     return (
         <>
             <RegistrationSteps steps={steps} />
-            <PaymentSuccess checkoutSessionId={checkoutSessionId} decryptedFormData={decryptedFormData} />
+            {decryptedFormData ? <PaymentSuccess checkoutSessionId={checkoutSessionId} decryptedFormData={JSON.parse(decryptedFormData)} /> : null}
+
         </>
     )
 }
