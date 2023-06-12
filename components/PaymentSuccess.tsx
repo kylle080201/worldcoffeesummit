@@ -29,28 +29,29 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData }: any) {
     }, [])
 
     const patchData = async () => {
-        try {
-            await fetch(`${origin}/api/payment-success`, {
-                method: 'PATCH',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(
-                    {
-                        checkoutSessionId,
-                        decryptedFormData
-                    }
-                )
-            }).then(response => response.json())
-                .then(async data => {
-                    setRes(data)
-                }).catch(error => {
-                    console.log(error);
-                });
-        } catch (error: any) {
-            console.log(error)
+        if (origin) {
+            try {
+                await fetch(`${origin}/api/payment-success`, {
+                    method: 'PATCH',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(
+                        {
+                            checkoutSessionId,
+                            decryptedFormData
+                        }
+                    )
+                }).then(response => response.json())
+                    .then(async data => {
+                        setRes(data)
+                    }).catch(error => {
+                        console.log(error);
+                    });
+            } catch (error: any) {
+                console.log(error)
+            }
         }
-
     }
 
     if (Object.keys(res).length === 0) {
