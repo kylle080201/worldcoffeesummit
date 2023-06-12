@@ -1,6 +1,13 @@
+import { error } from "console";
+import PaymentSuccess from "../../../../components/PaymentSuccess"
 import RegistrationSteps from "../../../../components/RegistrationSteps"
+import { decryptData } from "../../../../utils/encryptor";
 
-export default function Success() {
+export default async function Page({ searchParams }: any) {
+    const checkoutSessionId = searchParams.session_id;
+    const encryptedFormData = searchParams.buyer_data;
+    const decryptedFormData = JSON.parse(decryptData(encryptedFormData)!)
+
     const steps = [
         { id: '01', name: 'Choose an Event', status: 'complete' },
         { id: '02', name: 'Choose a ticket', status: 'complete' },
@@ -11,6 +18,7 @@ export default function Success() {
     return (
         <>
             <RegistrationSteps steps={steps} />
+            <PaymentSuccess checkoutSessionId={checkoutSessionId} decryptedFormData={decryptedFormData} />
         </>
     )
 }

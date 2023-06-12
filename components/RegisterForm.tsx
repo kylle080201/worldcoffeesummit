@@ -13,6 +13,7 @@ const RegisterForm = () => {
     const [origin, setOrigin] = useState('')
     const [openTermsAndConditions, setOpenTermsAndConditions] = useState(false)
     const [openLetterOfInvitation, setOpenLetterOfInvitation] = useState(false)
+
     useEffect(() => {
         if (typeof window !== "undefined") {
             setOrigin(window.location.origin)

@@ -1,25 +1,24 @@
 import { NextRequest, NextResponse } from "next/server";
 import Tickets from "../../../models/tickets";
 import Stripe from "stripe";
+import { encryptData } from "../../../utils/encryptor";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2022-11-15",
 });
 
-let formData;
-
 export async function POST(request: NextRequest, response: NextResponse) {
   const req = await request.json();
   const line_items = [req.line_items];
-  formData = [req.formData];
+  const formData = JSON.stringify(req.formData);
   const origin = req.origin;
-
+  const encryptedFormData = encryptData(formData);
   try {
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
       payment_method_types: ["card"],
       line_items,
-      success_url: `${origin}/register/success?session_id={CHECKOUT_SESSION_ID}`,
+      success_url: `${origin}/register/success?session_id={CHECKOUT_SESSION_ID}&buyer_data=${encryptedFormData}`,
       cancel_url: `${origin}/register`,
     });
     const retrievedSession = await stripe.checkout.sessions.retrieve(

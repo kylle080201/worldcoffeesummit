@@ -1,43 +1,91 @@
 import { NextRequest, NextResponse } from "next/server";
-import connectMongo from "../../../utils/mongodb";
 import Tickets from "../../../models/tickets";
+import connectMongo from "../../../utils/mongodb";
 
-export async function POST(request: NextRequest, response: NextResponse) {
+export async function POST(request: NextRequest, res: NextResponse) {
   const req = await request.json();
-  const paymentIntentId = req.paymentIntentId;
+  const checkoutSessionId = req.checkoutSessionId;
   try {
     await connectMongo();
-
-    const ticket = await Tickets.create({
-      paymentIntentId,
+    const data = await Tickets.findOne({
+      checkoutSessionId,
+      deletedAt: { $exists: false },
     });
+    const id = data._id;
+    return NextResponse.json(
+      {
+        id,
+      },
+      {
+        status: 200,
+      }
+    );
+  } catch (error) {
+    return NextResponse.json(
+      {
+        error,
+      },
+      {
+        status: 400,
+      }
+    );
+  }
+}
 
-    // if (ticket) {
-    //   try {
-    //     await fetch("/api/checkout-sessions", {
-    //       method: "PATCH",
-    //       headers: {
-    //         "Content-Type": "application/json",
-    //       },
-    //       body: JSON.stringify(ticket),
-    //     })
-    //       .then((response) => response.json())
-    //       .catch((error) => {
-    //         return NextResponse.json(
-    //           {
-    //             message: error.message,
-    //           },
-    //           {
-    //             status: 402,
-    //           }
-    //         );
-    //       });
-    //   } catch (error) {}
-    // }
-    return NextResponse.json({
-      response: ticket,
+export async function PATCH(request: NextRequest, res: NextResponse) {
+  const req = await request.json();
+  const checkoutSessionId = req.checkoutSessionId;
+  const formData = req.decryptedFormData;
+  try {
+    await connectMongo();
+    const getTickets = await Tickets.find({
+      checkoutSessionId,
+      deletedAt: { $exists: false },
     });
-  } catch (error: any) {
-    return NextResponse.json(error.message);
+    if (getTickets.length === 1) {
+      const res = await Tickets.findByIdAndUpdate(
+        getTickets[0]._id,
+        {
+          $set: formData,
+        },
+        { new: true }
+      );
+      // if (res) {
+      //   let nodemailer = require("nodemailer");
+      //   const transporter = nodemailer.createTransport({
+      //     service: "gmail",
+      //     auth: {
+      //       user,
+      //       password
+      //     }
+      //   });
+      // }
+      return NextResponse.json(
+        {
+          res,
+        },
+        {
+          status: 200,
+        }
+      );
+    } else {
+      return NextResponse.json(
+        {
+          error: "Duplicate Session Id",
+        },
+        {
+          status: 400,
+        }
+      );
+    }
+  } catch (error) {
+    return NextResponse.json(
+      {
+        error,
+      },
+      {
+        status: 400,
+      }
+    );
   }
 }
