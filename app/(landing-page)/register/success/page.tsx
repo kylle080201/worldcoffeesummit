@@ -2,7 +2,7 @@ import PaymentSuccess from "../../../../components/PaymentSuccess"
 import RegistrationSteps from "../../../../components/RegistrationSteps"
 import { decryptData } from "../../../../utils/encryptor";
 
-export default async function Page({ searchParams }: any) {
+async function Page({ searchParams }: any) {
     const checkoutSessionId = searchParams.session_id;
     const encryptedFormData = searchParams.buyer_data;
     const decryptedFormData = JSON.parse(decryptData(encryptedFormData)!)
@@ -21,3 +21,5 @@ export default async function Page({ searchParams }: any) {
         </>
     )
 }
+
+export default Page
