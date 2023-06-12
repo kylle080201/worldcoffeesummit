@@ -22,7 +22,7 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData }: any) {
     const [src, setSrc] = useState<string>('')
     const patchData = async () => {
         try {
-            await fetch('api/payment-success', {
+            await fetch('/api/payment-success', {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json'
