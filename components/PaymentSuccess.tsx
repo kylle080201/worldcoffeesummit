@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import 'crypto-js/enc-utf8';
 import QRCode from "qrcode"
 
@@ -20,9 +20,17 @@ interface IResponseData {
 function PaymentSuccess({ checkoutSessionId, decryptedFormData }: any) {
     const [res, setRes] = useState<IResponseData>(Object)
     const [src, setSrc] = useState<string>('')
+    const [origin, setOrigin] = useState('')
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            setOrigin(window.location.origin)
+        }
+    }, [])
+
     const patchData = async () => {
         try {
-            await fetch('/api/payment-success', {
+            await fetch(`${origin}/api/payment-success`, {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json'

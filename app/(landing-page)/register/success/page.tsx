@@ -1,4 +1,3 @@
-import { error } from "console";
 import PaymentSuccess from "../../../../components/PaymentSuccess"
 import RegistrationSteps from "../../../../components/RegistrationSteps"
 import { decryptData } from "../../../../utils/encryptor";
