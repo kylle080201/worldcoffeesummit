@@ -10,7 +10,7 @@ function Navbar() {
         { name: 'Speakers', href: '/#speakers' },
         { name: 'Agenda', href: '/#agenda' },
         { name: 'Venue', href: '/#venue' },
-        { name: 'Partners', href: '/app#partners' },
+        { name: 'Partners', href: '/#partners' },
         { name: 'Exhibition', href: '/#exhibition' },
         { name: 'FAQ', href: '/#faq' },
     ]
