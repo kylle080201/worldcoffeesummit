@@ -10,7 +10,6 @@ import { IResponseData } from '../types/responseData';
 
 function PaymentSuccess({ checkoutSessionId, decryptedFormData, priceId }: any) {
     const [res, setRes] = useState<IResponseData>(Object)
-    const [src, setSrc] = useState<string>('')
     const [origin, setOrigin] = useState('')
 
     useEffect(() => {
@@ -48,44 +47,6 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, priceId }: any) 
             patchData();
         }
     }, [origin, checkoutSessionId, decryptedFormData, priceId, res]);
-
-    // const patchData = async () => {
-    //     if (origin) {
-    //         try {
-    //             await fetch(`${origin}/api/payment-success`, {
-    //                 method: 'PATCH',
-    //                 headers: {
-    //                     'Content-Type': 'application/json'
-    //                 },
-    //                 body: JSON.stringify(
-    //                     {
-    //                         checkoutSessionId,
-    //                         decryptedFormData,
-    //                         priceId
-    //                     }
-    //                 )
-    //             }).then(response => response.json())
-    //                 .then(async data => {
-    //                     setRes(data)
-    //                 }).catch(error => {
-    //                     console.log(error);
-    //                 });
-    //         } catch (error: any) {
-    //             console.log(error)
-    //         }
-    //     }
-    // }
-
-    // if (Object.keys(res).length === 0) {
-    //     patchData()
-    // }
-
-    if (res) {
-        const data = JSON.stringify(res?.res?._id);
-        if (data) {
-            QRCode.toDataURL(data).then(setSrc)
-        }
-    }
 
     return (
         <>
