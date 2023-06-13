@@ -4,20 +4,9 @@ import 'crypto-js/enc-utf8';
 import QRCode from "qrcode"
 import Link from 'next/link';
 import { ArrowLongRightIcon } from '@heroicons/react/24/outline';
+import { IResponseData } from '../types/responseData';
 
-interface IResponseData {
-    res: {
-        checkoutSessionId: string,
-        companyName: string,
-        createdAt: string,
-        email: string,
-        firstName: string,
-        jobTitle: string,
-        lastName: string,
-        paymentIntentId: string,
-        _id: string,
-    }
-}
+
 
 function PaymentSuccess({ checkoutSessionId, decryptedFormData, priceId }: any) {
     const [res, setRes] = useState<IResponseData>(Object)
@@ -33,33 +22,63 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, priceId }: any) 
     const patchData = async () => {
         if (origin) {
             try {
-                await fetch(`${origin}/api/payment-success`, {
+                const response = await fetch(`${origin}/api/payment-success`, {
                     method: 'PATCH',
                     headers: {
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify(
-                        {
-                            checkoutSessionId,
-                            decryptedFormData,
-                            priceId
-                        }
-                    )
-                }).then(response => response.json())
-                    .then(async data => {
-                        setRes(data)
-                    }).catch(error => {
-                        console.log(error);
-                    });
-            } catch (error: any) {
-                console.log(error)
+                    body: JSON.stringify({
+                        checkoutSessionId,
+                        decryptedFormData,
+                        priceId
+                    })
+                });
+
+                const data = await response.json();
+                setRes(data);
+            } catch (error) {
+                console.log(error);
             }
         }
-    }
+    };
 
-    if (Object.keys(res).length === 0) {
-        patchData()
-    }
+    useEffect(() => {
+
+        if (Object.keys(res).length === 0) {
+            patchData();
+        }
+    }, [origin, checkoutSessionId, decryptedFormData, priceId, res]);
+
+    // const patchData = async () => {
+    //     if (origin) {
+    //         try {
+    //             await fetch(`${origin}/api/payment-success`, {
+    //                 method: 'PATCH',
+    //                 headers: {
+    //                     'Content-Type': 'application/json'
+    //                 },
+    //                 body: JSON.stringify(
+    //                     {
+    //                         checkoutSessionId,
+    //                         decryptedFormData,
+    //                         priceId
+    //                     }
+    //                 )
+    //             }).then(response => response.json())
+    //                 .then(async data => {
+    //                     setRes(data)
+    //                 }).catch(error => {
+    //                     console.log(error);
+    //                 });
+    //         } catch (error: any) {
+    //             console.log(error)
+    //         }
+    //     }
+    // }
+
+    // if (Object.keys(res).length === 0) {
+    //     patchData()
+    // }
 
     if (res) {
         const data = JSON.stringify(res?.res?._id);
@@ -80,7 +99,7 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, priceId }: any) 
                             Thank you for registering for World Coffee Summit London 2023
                         </h2>
                         <h3 className="mt-6 text-lg font-bold tracking-tight text-lime-700 sm:text-2xl">
-                            Check your email for further instructions.
+                            Check the email you used in the Registration Form for further instructions.
                         </h3>
                         <div className="flex items-center justify-center mt-10 gap-x-6">
                             <Link href="/" className="flex content-center font-semibold leading-6 text-gray-900 hover:underline text-md">
@@ -91,12 +110,12 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, priceId }: any) 
                             Didn&apos;t receive an email?
                         </p>
                         <div className="flex items-center justify-center mt-4 gap-x-6">
-                            <a
-                                href="#"
+                            <button
+                                onClick={(() => patchData())}
                                 className="rounded-md bg-lime-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                             >
                                 Resend Email
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>

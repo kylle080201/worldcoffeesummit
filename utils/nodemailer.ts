@@ -1,0 +1,255 @@
+import nodemailer from "nodemailer";
+import QRCode from "qrcode";
+import { Readable } from "stream";
+
+const user = process.env.EMAIL;
+const pass = process.env.EMAIL_PASS;
+
+export const transporter = nodemailer.createTransport({
+  service: "gmail",
+  auth: {
+    user,
+    pass,
+  },
+});
+
+// export const mailer = async (data: any) => {
+//   let src: any;
+//   const id = data?.id;
+
+//   QRCode.toDataURL(id)
+//     .then((dataUrl: string) => {
+//       src = dataUrl;
+//     })
+//     .catch((error: any) => {
+//       console.error("Error generating QR code:", error);
+//     });
+
+//   await transporter.sendMail({
+//     from: "noreply@worldcoffeealliance.com",
+//     to: `kv.madrigal08@gmail.com`,
+//     subject: "Thank you for registering for World Coffee Summit London 2023",
+//     ...generateEmailContent(data),
+//     attachDataUrls: true,
+//     attachments: [
+//       {
+//         filename: "e-badge.png",
+//         content: src?.split(",")[1], // Extract the base64 content after the comma
+//         encoding: "base64",
+//       },
+//     ],
+//   });
+// };
+
+export const mailer = async (data: any) => {
+  const id = data.id;
+  const firstName =
+    data.firstName.charAt(0).toUpperCase() + data.firstName.slice(1);
+  const lastName =
+    data.lastName.charAt(0).toUpperCase() + data.lastName.slice(1);
+  const jobTitle =
+    data.jobTitle.charAt(0).toUpperCase() + data.jobTitle.slice(1);
+  const companyName =
+    data.companyName.charAt(0).toUpperCase() + data.companyName.slice(1);
+
+  const qrData = `ID: ${id}\nFull name: ${firstName} ${lastName}\nJob Title: ${jobTitle}\nCompany: ${companyName}`;
+
+  let src: string | undefined;
+  try {
+    src = await QRCode.toDataURL(qrData);
+  } catch (error: any) {
+    console.error("Error generating QR code:", error);
+  }
+
+  const buffer = Buffer.from(src!.split(",")[1], "base64");
+  const attachmentStream = new Readable();
+  attachmentStream.push(buffer);
+  attachmentStream.push(null);
+
+  const attachments = [
+    {
+      filename: "e-badge.png",
+      content: attachmentStream,
+    },
+  ];
+
+  await transporter.sendMail({
+    from: "noreply@worldcoffeealliance.com",
+    to: "kv.madrigal08@gmail.com",
+    subject: "Thank you for registering for World Coffee Summit London 2023",
+    ...generateEmailContent(data),
+    attachments: attachments,
+  });
+};
+
+const generateEmailContent = (data: any) => {
+  const text = `${data.firstName} ${data.lastName}, \nThank you for registering as a delegate for World Coffee Summit, we look forward to welcoming you to Queen Elizabeth II Centre, London on 13 September 2023. \n \n<b>What you need to know:</b> \n \n<b>When?</b> \n13th September 2023 – 8:00 – 18:30 \n \n<b>Where?</b> \nThe St James Hall at QEII Centre, Broad Sanctuary, London SW1P 3EE \n \nFor the most up to date information about World Coffee Summit, why not follow us on <a target='_blank' href='https://www.linkedin.com/company/worldcoffeealliance/'>LinkedIn</a> and <a target='_blank' href='https://twitter.com/WCoffeeAlliance'>Twitter</a> to see daily developments, event highlights and industry news. \n \nRemember to download and print off your <b>e-badge</b> in advance to gain access to the event, and don’t forget to recycle it afterwards! \n \nWhy not have your colleagues and industry peers join you by <a target='_blank' href='http://www.worldcoffeesummit.net/'>sharing this link?</a> \n \nIf you have any other queries, please don’t hesitate to get in touch by emailing <u>info@worldcoffeealliance.com</u> \n \nSee you soon! \nThe Team @ World Coffee Summit`;
+
+  const html = `<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style type="text/css">
+        body,
+        table,
+        td,
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table {
+            border-collapse: collapse !important;
+        }
+
+        body {
+            height: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+        }
+
+        @media screen and (max-width: 525px) {
+            .wrapper {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            .responsive-table {
+                width: 100% !important;
+            }
+
+            .padding {
+                padding: 10px 5% 15px 5% !important;
+            }
+
+            .section-padding {
+                padding: 0 15px 50px 15px !important;
+            }
+        }
+
+        .form-container {
+            margin-bottom: 24px;
+            padding: 20px;
+            border: 1px dashed #ccc;
+        }
+
+        .form-heading {
+            color: #2a2a2a;
+            font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+            font-weight: 400;
+            text-align: left;
+            line-height: 20px;
+            font-size: 18px;
+            margin: 0 0 8px;
+            padding: 0;
+        }
+
+        .form-answer {
+            color: #2a2a2a;
+            font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+            font-weight: 300;
+            text-align: left;
+            line-height: 20px;
+            font-size: 16px;
+            margin: 0 0 24px;
+            padding: 0;
+        }
+
+        div[style*="margin: 16px 0;"] {
+            margin: 0 !important;
+        }
+        
+        .header-image {
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body style="margin: 0 !important; padding: 0 !important; background: #fff">
+    <div style="
+        display: none;
+        font-size: 1px;
+        color: #fefefe;
+        line-height: 1px;
+        max-height: 0px;
+        max-width: 0px;
+        opacity: 0;
+        overflow: hidden;
+      "></div>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td bgcolor="#ffffff" align="center" style="padding: 10px 15px 30px 15px" class="section-padding">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 500px"
+                    class="responsive-table">
+                    <tr>
+                        <td>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td style="
+                              padding: 0 0 0 0;
+                              font-size: 16px;
+                              line-height: 25px;
+                              color: #232323;
+                            " class="padding message-content">
+                                                    <div class="header-image">
+                                                        <img src="https://worldcoffeealliance.com/wp-content/uploads/2023/06/Picture1.jpg" />
+                                                    </div>
+                                                    
+                                                    <div class="form-container"><p> Hi ${data.firstName} ${data.lastName},</p> 
+                                                        
+                                                        <p>Thank you for registering as a delegate for World Coffee Summit,
+                                                        we look forward to welcoming you to Queen Elizabeth II Centre, London on 13 September 2023. 
+                                                        <b>What you need to know:</b></p>
+                                                        
+                                                        <p><b>When?</b><br>
+                                                        13th September 2023 – 8:00 – 18:30
+                                                        </p>
+                                                        
+                                                        <p><b>Where?</b><br>
+                                                        The St James Hall at QEII Centre, Broad Sanctuary, London SW1P 3EE 
+                                                        </p>
+                                                        <p>For the most up to date information about World
+                                                        Coffee Summit, why not follow us on <a target='_blank'
+                                                            href='https://www.linkedin.com/company/worldcoffeealliance/'>LinkedIn</a> and <a target='_blank'
+                                                            href='https://twitter.com/WCoffeeAlliance'>Twitter</a> to see daily developments, event highlights and industry
+                                                        news.</p>
+                                                         
+                                                        <p>Remember to download and print off your <b>e-badge</b> (see attachment below) in advance to gain access to the event, and
+                                                        don’t forget to recycle it afterwards!</p>
+                                                        <p>Why not have your colleagues and industry peers join you by <a
+                                                            target='_blank' href='http://www.worldcoffeesummit.net/'>sharing this link?</a></p>
+                                                        <p>If you have any other queries, please don’t hesitate to get in touch by emailing <u>info@worldcoffeealliance.com</u></p>
+                                                        
+                                                        <p>See you soon!<br>
+                                                        <b>The Team @ World Coffee Summit</b></p>
+                                                        
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>`;
+
+  return {
+    text,
+    html,
+  };
+};

@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
 import Tickets from "../../../models/tickets";
 import connectMongo from "../../../utils/mongodb";
+import { mailer } from "../../../utils/nodemailer";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2022-11-15",
@@ -56,16 +57,7 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
         },
         { new: true }
       );
-      // if (res) {
-      //   let nodemailer = require("nodemailer");
-      //   const transporter = nodemailer.createTransport({
-      //     service: "gmail",
-      //     auth: {
-      //       user,
-      //       password
-      //     }
-      //   });
-      // }
+      mailer(res);
       return NextResponse.json(
         {
           res,
