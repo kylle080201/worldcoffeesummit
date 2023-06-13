@@ -75,7 +75,7 @@ export const mailer = async (data: any) => {
 
   await transporter.sendMail({
     from: "noreply@worldcoffeealliance.com",
-    to: "kv.madrigal08@gmail.com",
+    to: data.email,
     subject: "Thank you for registering for World Coffee Summit London 2023",
     ...generateEmailContent({ lastName, firstName }),
     attachments: attachments,
