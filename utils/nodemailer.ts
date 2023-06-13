@@ -43,6 +43,7 @@ export const transporter = nodemailer.createTransport({
 
 export const mailer = async (data: any) => {
   const id = data.id;
+  const email = data.email;
   const firstName =
     data.firstName.charAt(0).toUpperCase() + data.firstName.slice(1);
   const lastName =
@@ -75,7 +76,7 @@ export const mailer = async (data: any) => {
 
   await transporter.sendMail({
     from: "noreply@worldcoffeealliance.com",
-    to: data.email,
+    to: `${email}`,
     subject: "Thank you for registering for World Coffee Summit London 2023",
     ...generateEmailContent({ lastName, firstName }),
     attachments: attachments,
