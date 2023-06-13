@@ -1,7 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import 'crypto-js/enc-utf8';
-import QRCode from "qrcode"
 import Link from 'next/link';
 import { ArrowLongRightIcon } from '@heroicons/react/24/outline';
 import { IResponseData } from '../types/responseData';
@@ -33,9 +32,9 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, priceId }: any) 
             });
 
             const data = await response.json();
-            setRes(data);
-        } catch (error) {
-            console.log(error);
+            return data
+        } catch (error: any) {
+            return error
         }
     };
 
@@ -78,7 +77,6 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, priceId }: any) 
                     </div>
                 </div>
             </div>
-            {/* {src ? <img className='w-60' src={src} /> : <span>Generating QR Code...</span>} */}
         </>
     )
 }

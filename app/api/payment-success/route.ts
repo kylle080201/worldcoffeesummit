@@ -57,10 +57,11 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
         },
         { new: true }
       );
-      mailer(res);
+      const mailRes = await mailer(res);
       return NextResponse.json(
         {
           res,
+          mailRes,
         },
         {
           status: 200,
