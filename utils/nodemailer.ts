@@ -14,16 +14,17 @@ export const transporter = nodemailer.createTransport({
 });
 
 export const mailer = async (data: any) => {
-  const id = data.id;
-  const email = data.email;
+  const reqData = await data;
+  const id = reqData.id;
+  const email = reqData.email;
   const firstName =
-    data.firstName.charAt(0).toUpperCase() + data.firstName.slice(1);
+    reqData.firstName.charAt(0).toUpperCase() + reqData.firstName.slice(1);
   const lastName =
-    data.lastName.charAt(0).toUpperCase() + data.lastName.slice(1);
+    reqData.lastName.charAt(0).toUpperCase() + reqData.lastName.slice(1);
   const jobTitle =
-    data.jobTitle.charAt(0).toUpperCase() + data.jobTitle.slice(1);
+    reqData.jobTitle.charAt(0).toUpperCase() + reqData.jobTitle.slice(1);
   const companyName =
-    data.companyName.charAt(0).toUpperCase() + data.companyName.slice(1);
+    reqData.companyName.charAt(0).toUpperCase() + reqData.companyName.slice(1);
 
   const qrData = `ID: ${id}\nFull name: ${firstName} ${lastName}\nJob Title: ${jobTitle}\nCompany: ${companyName}`;
 
