@@ -13,34 +13,6 @@ export const transporter = nodemailer.createTransport({
   },
 });
 
-// export const mailer = async (data: any) => {
-//   let src: any;
-//   const id = data?.id;
-
-//   QRCode.toDataURL(id)
-//     .then((dataUrl: string) => {
-//       src = dataUrl;
-//     })
-//     .catch((error: any) => {
-//       console.error("Error generating QR code:", error);
-//     });
-
-//   await transporter.sendMail({
-//     from: "noreply@worldcoffeealliance.com",
-//     to: `kv.madrigal08@gmail.com`,
-//     subject: "Thank you for registering for World Coffee Summit London 2023",
-//     ...generateEmailContent(data),
-//     attachDataUrls: true,
-//     attachments: [
-//       {
-//         filename: "e-badge.png",
-//         content: src?.split(",")[1], // Extract the base64 content after the comma
-//         encoding: "base64",
-//       },
-//     ],
-//   });
-// };
-
 export const mailer = async (data: any) => {
   const id = data.id;
   const email = data.email;
@@ -75,8 +47,8 @@ export const mailer = async (data: any) => {
   ];
 
   await transporter.sendMail({
-    from: "noreply@worldcoffeealliance.com",
-    to: `${email}`,
+    from: user,
+    to: email,
     subject: "Thank you for registering for World Coffee Summit London 2023",
     ...generateEmailContent({ lastName, firstName }),
     attachments: attachments,
