@@ -6,13 +6,13 @@ import { SocialIcon } from 'react-social-icons'
 
 function Navbar() {
     const navigation = [
-        { name: 'Overview', href: '#overview' },
-        { name: 'Speakers', href: '#speakers' },
-        { name: 'Agenda', href: '#agenda' },
-        { name: 'Venue', href: '#venue' },
-        { name: 'Partners', href: '#partners' },
-        { name: 'Exhibition', href: '#exhibition' },
-        { name: 'FAQ', href: '#faq' },
+        { name: 'Overview', href: '/#overview' },
+        { name: 'Speakers', href: '/#speakers' },
+        { name: 'Agenda', href: '/#agenda' },
+        { name: 'Venue', href: '/#venue' },
+        { name: 'Partners', href: '/app#partners' },
+        { name: 'Exhibition', href: '/#exhibition' },
+        { name: 'FAQ', href: '/#faq' },
     ]
     return (
         <Disclosure as="nav" className="w-full bg-white shadow">

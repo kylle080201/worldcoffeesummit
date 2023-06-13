@@ -10,7 +10,7 @@ export default function RegistrationChoice() {
                 </div>
                 <div className='flex flex-col mx-auto mt-6 gap-y-4 sm:gap-x-6 sm:flex-row max-w-7xl'>
                     <div className='items-center w-full'>
-                        <Link href="/register/summit" className="h-full  flex rounded-md shadow-md hover:shadow-2xl flex-col  bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2023/06/WC-SUMMIT.jpg')] py-20 bg-cover mlg:flex-col">
+                        <Link href="/register/tickets/#summit" className="h-full  flex rounded-md shadow-md hover:shadow-2xl flex-col  bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2023/06/WC-SUMMIT.jpg')] py-20 bg-cover mlg:flex-col">
                             <div className="self-center px-12 text-center sm:px-20">
                                 <div>
                                     <p className="py-6 text-2xl font-bold tracking-tight text-white sm:py-12 sm:text-4xl ">World Coffee Summit London</p>
@@ -19,7 +19,7 @@ export default function RegistrationChoice() {
                         </Link>
                     </div>
                     <div className='items-center w-full'>
-                        <Link href="/register/exhibition" className="h-full flex rounded-md shadow-md hover:shadow-2xl hover:cursor-pointer flex-col bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2023/06/WC-EXHIBIT.jpg')] py-20 bg-cover mlg:flex-col">
+                        <Link href="/register/tickets/#exhibition" className="h-full flex rounded-md shadow-md hover:shadow-2xl hover:cursor-pointer flex-col bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2023/06/WC-EXHIBIT.jpg')] py-20 bg-cover mlg:flex-col">
                             <div className="self-center px-12 text-center sm:px-20">
                                 <div>
                                     <p className="py-6 text-2xl font-bold tracking-tight text-white sm:py-12 sm:text-4xl">World Coffee Exhibition London</p>
