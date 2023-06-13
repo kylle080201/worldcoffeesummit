@@ -19,34 +19,31 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, priceId }: any) 
     }, [])
 
     const patchData = async () => {
-        if (origin) {
-            try {
-                const response = await fetch(`${origin}/api/payment-success`, {
-                    method: 'PATCH',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        checkoutSessionId,
-                        decryptedFormData,
-                        priceId
-                    })
-                });
+        try {
+            const response = await fetch(`${origin}/api/payment-success`, {
+                method: 'PATCH',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    checkoutSessionId,
+                    decryptedFormData,
+                    priceId
+                })
+            });
 
-                const data = await response.json();
-                setRes(data);
-            } catch (error) {
-                console.log(error);
-            }
+            const data = await response.json();
+            setRes(data);
+        } catch (error) {
+            console.log(error);
         }
     };
 
     useEffect(() => {
-
-        if (Object.keys(res).length === 0) {
+        if (origin) {
             patchData();
         }
-    }, [origin, checkoutSessionId, decryptedFormData, priceId, res]);
+    }, [origin]);
 
     return (
         <>
