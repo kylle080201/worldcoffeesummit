@@ -77,13 +77,13 @@ export const mailer = async (data: any) => {
     from: "noreply@worldcoffeealliance.com",
     to: "kv.madrigal08@gmail.com",
     subject: "Thank you for registering for World Coffee Summit London 2023",
-    ...generateEmailContent(data),
+    ...generateEmailContent({ lastName, firstName }),
     attachments: attachments,
   });
 };
 
-const generateEmailContent = (data: any) => {
-  const text = `${data.firstName} ${data.lastName}, \nThank you for registering as a delegate for World Coffee Summit, we look forward to welcoming you to Queen Elizabeth II Centre, London on 13 September 2023. \n \n<b>What you need to know:</b> \n \n<b>When?</b> \n13th September 2023 – 8:00 – 18:30 \n \n<b>Where?</b> \nThe St James Hall at QEII Centre, Broad Sanctuary, London SW1P 3EE \n \nFor the most up to date information about World Coffee Summit, why not follow us on <a target='_blank' href='https://www.linkedin.com/company/worldcoffeealliance/'>LinkedIn</a> and <a target='_blank' href='https://twitter.com/WCoffeeAlliance'>Twitter</a> to see daily developments, event highlights and industry news. \n \nRemember to download and print off your <b>e-badge</b> in advance to gain access to the event, and don’t forget to recycle it afterwards! \n \nWhy not have your colleagues and industry peers join you by <a target='_blank' href='http://www.worldcoffeesummit.net/'>sharing this link?</a> \n \nIf you have any other queries, please don’t hesitate to get in touch by emailing <u>info@worldcoffeealliance.com</u> \n \nSee you soon! \nThe Team @ World Coffee Summit`;
+const generateEmailContent = ({ lastName, firstName }: any) => {
+  const text = `${firstName} ${lastName}, \nThank you for registering as a delegate for World Coffee Summit, we look forward to welcoming you to Queen Elizabeth II Centre, London on 13 September 2023. \n \n<b>What you need to know:</b> \n \n<b>When?</b> \n13th September 2023 – 8:00 – 18:30 \n \n<b>Where?</b> \nThe St James Hall at QEII Centre, Broad Sanctuary, London SW1P 3EE \n \nFor the most up to date information about World Coffee Summit, why not follow us on <a target='_blank' href='https://www.linkedin.com/company/worldcoffeealliance/'>LinkedIn</a> and <a target='_blank' href='https://twitter.com/WCoffeeAlliance'>Twitter</a> to see daily developments, event highlights and industry news. \n \nRemember to download and print off your <b>e-badge</b> in advance to gain access to the event, and don’t forget to recycle it afterwards! \n \nWhy not have your colleagues and industry peers join you by <a target='_blank' href='http://www.worldcoffeesummit.net/'>sharing this link?</a> \n \nIf you have any other queries, please don’t hesitate to get in touch by emailing <u>info@worldcoffeealliance.com</u> \n \nSee you soon! \nThe Team @ World Coffee Summit`;
 
   const html = `<!DOCTYPE html>
 <html>
@@ -203,7 +203,7 @@ const generateEmailContent = (data: any) => {
                                                         <img src="https://worldcoffeealliance.com/wp-content/uploads/2023/06/Picture1.jpg" />
                                                     </div>
                                                     
-                                                    <div class="form-container"><p> Hi ${data.firstName} ${data.lastName},</p> 
+                                                    <div class="form-container"><p> Hi ${firstName} ${lastName},</p> 
                                                         
                                                         <p>Thank you for registering as a delegate for World Coffee Summit,
                                                         we look forward to welcoming you to Queen Elizabeth II Centre, London on 13 September 2023. 
