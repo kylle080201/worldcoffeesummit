@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import html2canvas from 'html2canvas';
 import { IResponseData } from '../types/responseData';
 import QRCode from "qrcode";
+import { redirect } from 'next/navigation';
 
 function Ebadge({ checkoutSessionId }: any) {
     const [buyerData, setBuyerData] = useState<IResponseData>(Object)
@@ -42,7 +43,9 @@ function Ebadge({ checkoutSessionId }: any) {
         const divElement = document.getElementById('e-badge');
 
         if (divElement) {
-            const canvas = await html2canvas(divElement);
+            const canvas = await html2canvas(divElement, {
+                scale: 4, // Increase the scale to render at a higher resolution
+            });
             const dataURL = canvas.toDataURL('image/png');
             const link = document.createElement('a');
             link.href = dataURL;
@@ -50,11 +53,6 @@ function Ebadge({ checkoutSessionId }: any) {
             link.click();
         }
     };
-
-    // useEffect(() => {
-    //     // Call the function to capture the <div> and generate a downloadable PNG
-    //     downloadAsPNG();
-    // }, []);
 
     return (
         <>
