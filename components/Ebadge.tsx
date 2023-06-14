@@ -99,7 +99,7 @@ function Ebadge({ checkoutSessionId }: any) {
                                         {buyerData.res.jobTitle.charAt(0).toUpperCase() + buyerData.res.jobTitle.slice(1)}
                                     </h2>
                                     <h2 className="text-lg font-semibold leading-8 text-gray-900 ">
-                                        {buyerData.res.jobTitle.charAt(0).toUpperCase() + buyerData.res.jobTitle.slice(1)}
+                                        {buyerData.res.companyName.charAt(0).toUpperCase() + buyerData.res.companyName.slice(1)}
                                     </h2>
                                     <h3 className="mt-4 text-lg leading-8 text-gray-600">
                                         {buyerData.res.event === 'Summit' ? 'Delegate to the Summit' : 'Visitor to the Exhibition'}
