@@ -93,13 +93,13 @@ function Ebadge({ checkoutSessionId }: any) {
                                         13 September 2023
                                     </h1>
                                     <h1 className="mt-6 text-2xl font-semibold leading-8 text-gray-900 ">
-                                        {buyerData.res.firstName} {buyerData.res.lastName}
+                                        {buyerData.res.firstName.charAt(0).toUpperCase() + buyerData.res.firstName.slice(1)} {buyerData.res.lastName.charAt(0).toUpperCase() + buyerData.res.lastName.slice(1)}
                                     </h1>
                                     <h2 className="text-lg leading-8 text-gray-900">
-                                        {buyerData.res.jobTitle}
+                                        {buyerData.res.jobTitle.charAt(0).toUpperCase() + buyerData.res.jobTitle.slice(1)}
                                     </h2>
                                     <h2 className="text-lg font-semibold leading-8 text-gray-900 ">
-                                        {buyerData.res.companyName}
+                                        {buyerData.res.jobTitle.charAt(0).toUpperCase() + buyerData.res.jobTitle.slice(1)}
                                     </h2>
                                     <h3 className="mt-4 text-lg leading-8 text-gray-600">
                                         {buyerData.res.event === 'Summit' ? 'Delegate to the Summit' : 'Visitor to the Exhibition'}

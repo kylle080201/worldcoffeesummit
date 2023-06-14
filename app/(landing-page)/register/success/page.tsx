@@ -4,9 +4,6 @@ import { decryptData } from "../../../../utils/encryptor";
 import { redirect } from 'next/navigation'
 
 export default function Success({ searchParams }: any) {
-    if (Object.keys(searchParams).length === 0) {
-        redirect('/')
-    }
     const checkoutSessionId = searchParams.session_id;
     const priceId = searchParams.price_id;
     const encryptedFormData = searchParams.buyer_data;
