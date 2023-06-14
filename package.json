@@ -23,6 +23,7 @@
     "eslint-config-next": "^13.4.4",
     "heroicons": "^2.0.13",
     "html-react-parser": "^4.0.0",
+    "html2canvas": "^1.4.1",
     "micro": "^10.0.1",
     "mongoose": "^7.0.4",
     "next": "^13.4.4",

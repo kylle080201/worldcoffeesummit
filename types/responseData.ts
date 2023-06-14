@@ -8,6 +8,7 @@ export interface IResponseData {
     jobTitle: string;
     lastName: string;
     paymentIntentId: string;
+    event: string;
     _id: string;
   };
 }

@@ -13,14 +13,13 @@ export async function POST(request: NextRequest, res: NextResponse) {
   const checkoutSessionId = req.checkoutSessionId;
   try {
     await connectMongo();
-    const data = await Tickets.findOne({
+    const res = await Tickets.findOne({
       checkoutSessionId,
       deletedAt: { $exists: false },
     });
-    const id = data._id;
     return NextResponse.json(
       {
-        id,
+        res,
       },
       {
         status: 200,
@@ -39,10 +38,13 @@ export async function POST(request: NextRequest, res: NextResponse) {
 }
 
 export async function PATCH(request: NextRequest, res: NextResponse) {
+  const origin = request.headers.get("origin");
   const req = await request.json();
   const checkoutSessionId = req.checkoutSessionId;
   const formData = req.decryptedFormData;
   const priceId = req.priceId;
+  const event =
+    priceId === "price_1NCfrUKMWpUKzQVzcTWldasd" ? "Exhibition" : "Summit";
   try {
     await connectMongo();
     const getTickets = await Tickets.find({
@@ -54,10 +56,12 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
         getTickets[0]._id,
         {
           $set: formData,
+          event,
         },
         { new: true }
       );
-      await mailer(res);
+
+      await mailer(res, event, checkoutSessionId, origin);
       return NextResponse.json(
         {
           res,
@@ -69,7 +73,7 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
     } else {
       return NextResponse.json(
         {
-          error: "Duplicate Session Id",
+          error: "Invalid Session ID",
         },
         {
           status: 400,

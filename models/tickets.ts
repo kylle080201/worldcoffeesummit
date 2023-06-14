@@ -13,6 +13,10 @@ const tickets = new Schema({
     required: true,
     unique: true,
   },
+  event: {
+    type: String,
+    enum: ["Summit", "Exhibition"],
+  },
   email: String,
   lastName: String,
   firstName: String,
