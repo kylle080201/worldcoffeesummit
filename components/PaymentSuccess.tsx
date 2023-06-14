@@ -56,11 +56,8 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, priceId }: any) 
                             Thank you for registering for World Coffee Summit London 2023
                         </h2>
                         <h3 className="mt-6 text-lg font-bold tracking-tight text-lime-700 sm:text-2xl">
-                            Check the email you used in the Registration Form for further instructions.
+                            Check the email you used in the Registration Form for further instructions. You can also download your e-Badge below
                         </h3>
-                        {Object.keys(res).length !== 0 ? <Link target={'_blank'} href={`/print-out?session_id=${checkoutSessionId}`} className="max-w-xl mx-auto mt-12 text-lg leading-8 text-gray-900 underline">
-                            Download your e-Badge here
-                        </Link> : <p className="max-w-xl mx-auto mt-12 text-lg leading-8 text-gray-900">Generating your e-Badge download link ...</p>}
 
                         <div className="flex items-center justify-center mt-10 gap-x-6">
                             <Link href="/" className="flex content-center font-semibold leading-6 text-gray-900 hover:underline text-md">
