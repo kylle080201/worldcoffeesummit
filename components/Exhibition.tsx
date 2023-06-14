@@ -92,12 +92,14 @@ export default function Exhibition() {
                             <p className="text-lg font-bold tracking-tight text-white sm:text-2xl">13th September 2023</p>
                             <p className="text-lg font-bold tracking-tight text-white sm:text-2xl">Queen Elizabeth ll Centre, Westminster Hall</p>
                             <p className="mt-16 text-xl leading-8 text-justify text-white sm:mt-52">
-                                Welcome to the world of rustic flavors and sensient aroma of coffee origin From the historic forests of the
-                                Ethiopian plateaus to the Central Highlands of Vietnam, each participant, showcasing and sharing their sumptuous
-                                profile of luxurious taste and of out of this world experience The overpowering notes of nuts, caramel with
-                                honey like sweetness of El Salvador coffee with mild body and acidity of a Burundi cup will bring one’s senses to a
-                                standstill in an ecstatic fit, one feels as if there is no tomorrow In this <span className='font-semibold '>World Coffee Exhibition</span> once you joined
-                                the crowd of nosy cuppers and curious score crunching roasters, your life would never be the same again
+
+                                Welcome to the world of rustic flavours and sensient aroma of coffee origin. From the historic forests of the
+                                Ethiopian plateaus to the Central Highlands of Vietnam, each participant, showcasing and sharing
+                                their sumptuous profile of luxurious taste and of out of this world experience The overpowering
+                                notes of nuts, caramel with honey like sweetness of these coffee origins will bring one’s senses
+                                to a standstill in an ecstatic fit, one feels as if there is no tomorrow In this <span className='font-semibold '>World Coffee
+                                    Exhibition London 2023</span>, once you joined the crowd of nosy cuppers and curious score crunching
+                                roasters, your life would never be the same again
                             </p>
                             <p className="mt-4 text-lg font-bold tracking-tight text-white sm:text-2xl">Join us celebrate coffee.</p>
                         </div>
@@ -108,7 +110,7 @@ export default function Exhibition() {
 
                     <div className="w-full rounded-lg">
                         <dd className="mt-2 text-xl leading-7 text-gray-900">
-                            <span>There will also be a co-located World Coffee Exhibition at the Westminster Hall, adjacent to the conference, where around 15 Exhibitors from coffee origin countries including Ethiopia, Vietnam, Philippines, El Salvador,  Peru. Honduras and Papua New Guinea will showcase their coffee and distribute coffee samples. We will also conduct morning and afternoon cupping sessions by an independent coffee lab and 2 panel discussions on the recent SCA cupping protocol and EU due diligence legislations. This is not a big trade show but a bespoke event where coffee buyers, roasters traders and producers pre-qualified) meet to do business.</span>
+                            <span>World Coffee Exhibition will be held at the Westminster Hall, adjacent to the conference, where around 15 Exhibitors from coffee origin countries will showcase their coffee and distribute coffee samples. There will also be two cupping sessions organised by an independent coffee lab and 2 panel discussions on the recent SCA cupping protocol and EU due diligence legislations. This is not a big trade show but a bespoke event where green coffee buyers, roasters and traders meet coffee farmers and producers (pre-qualified) to do business and celebrate coffee.</span>
                         </dd>
                     </div>
 
