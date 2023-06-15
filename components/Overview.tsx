@@ -5,19 +5,19 @@ import CountDown from './CountDown'
 export default function Overview() {
     return (
         <>
-            <div id="overview" className="flex flex-col bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2023/06/OVERVIEW-HERO-BG-scaled.jpg')] py-12 sm:py-20 bg-cover bg-center mlg:flex-col">
-                <div className="self-center w-full text-center content-center">
-                    <div className='flex flex-col md:flex-row content-center w-full max-w-7xl mx-auto px-12'>
+            <div id="overview" className="flex flex-col bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2023/06/OVERVIEW-HERO-BG-scaled.jpg')] py-8 sm:py-12 bg-cover bg-center mlg:flex-col">
+                <div className="content-center self-center w-full text-center">
+                    <div className='flex flex-col content-center w-full px-12 mx-auto md:flex-row max-w-7xl'>
                         <div className='my-auto md:ml-32'>
                             <p className="text-4xl font-bold tracking-tight text-lime-700 sm:text-6xl">World Coffee Summit London</p>
-                            <p className="text-4xl mt-4 tracking-tight text-yellow-900 sm:text-6xl">& World Coffee Exhibition</p>
+                            <p className="mt-4 text-4xl tracking-tight text-yellow-900 sm:text-6xl">& World Coffee Exhibition</p>
                         </div>
-                        <div className='h-max my-auto mx-auto flex-shrink-0'>
+                        <div className='flex-shrink-0 mx-auto my-auto h-max'>
                             <img className='w-[15rem]' src='https://worldcoffeealliance.com/wp-content/uploads/2021/08/WCA_new_logo.png'></img>
                         </div>
                     </div>
 
-                    <p className="mt-6 text-lg font-semibold tracking-tight text-gray-900 sm:text-2xl">Delivering Collaborative Change: Impact of Regenerative Solutions</p>
+                    <p className="text-lg font-semibold tracking-tight text-gray-900 sm:text-2xl">Delivering Collaborative Change: Impact of Regenerative Solutions</p>
                     <div className='flex flex-col items-center justify-center max-w-5xl mx-auto mt-6 sm:flex-row sm:gap-x-2 gap-y-2'>
                         <div>
                             <img className='w-[17rem]' src='https://worldcoffeealliance.com/wp-content/uploads/2023/06/QEII-CENTRE.png' />
@@ -29,7 +29,7 @@ export default function Overview() {
                         <CountDown />
                         <div className="flex flex-row items-center justify-center pt-6 ml-4 text-center md:-mr-52">
                             <div>
-                                <Link target={'_blank'} rel='noreferer' className='flex-shrink-0 px-6 py-2 mx-auto text-lg font-bold tracking-tight bg-yellow-500 text-gray-900 hover:underline h-max sm:text-2xl' href="/register">Register Now
+                                <Link target={'_blank'} rel='noreferer' className='flex-shrink-0 px-6 py-2 mx-auto text-lg font-bold tracking-tight text-gray-900 bg-yellow-500 hover:underline h-max sm:text-2xl' href="/register">Register Now
                                 </Link>
                             </div>
                         </div>
