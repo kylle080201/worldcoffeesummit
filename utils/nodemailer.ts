@@ -25,7 +25,7 @@ export const mailer = async (
     reqData.lastName.charAt(0).toUpperCase() + reqData.lastName.slice(1);
 
   try {
-    await transporter.sendMail({
+    const isEmailSent = await transporter.sendMail({
       from: user,
       to: email,
       subject:
@@ -40,6 +40,7 @@ export const mailer = async (
         event,
       }),
     });
+    return isEmailSent;
   } catch (error: any) {
     console.log(error);
   }

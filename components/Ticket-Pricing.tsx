@@ -8,93 +8,169 @@ function TicketPricing() {
 
     const summit = [
         {
-            title: "NGO/Cooperatives, Coffee Associations, Academic Pass",
-            item_price: 499,
+            title: "NGO/Academic Pass",
+            item_price: 799,
+            description: "Eligible for representatives of NGOs, cooperatives, coffee associations,  regulators, governments, public sector, and academia.",
             line_items: [
                 {
-                    price: 'price_1NCfrUKMWpUKzQVzcTWlkQsK',
-                    quantity: 1
+                    price: 'price_1NJHE6KMWpUKzQVzCuDgzvYo',
+                    quantity: 1,
+                    tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
                 }
             ]
         },
         {
-            title: "Standard Corporate Pass - Corporate Representatives",
+            title: "Standard Corporate Pass",
+            description: "Eligible for corporate representatives.",
             item_price: 1249,
-            link: "https://buy.stripe.com/bIYdTL38x71SeYM289"
+            line_items: [
+                {
+                    price: 'price_1NJHFNKMWpUKzQVzaqQZ4lLL',
+                    quantity: 1,
+                    tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
+                }
+            ]
         },
         {
-            title: "Consultants, Start-ups, Service Providers",
+            title: "Service Provider Pass",
+            description: "Required for for-profit consultancies, start-ups, technology and service providers.",
             item_price: 1499,
-            link: "https://buy.stripe.com/cN25nf5gFgCs6sg146"
+            line_items: [
+                {
+                    price: 'price_1NJHGiKMWpUKzQVzMf7Jo8V3',
+                    quantity: 1,
+                    tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
+                }
+            ]
         },
     ]
     const exhibition = [
         {
-            title: "Coffee Roasters, Traders and Coffee Buyers only",
+            title: "Standard Visitor Pass",
+            description: "Eligible for coffee roasters, green coffee buyers and coffee traders (Imp& Exp)",
             item_price: 149,
-            link: "https://buy.stripe.com/test_cN21851gj7NKb9S6op"
+            line_items: [
+                {
+                    price: 'price_1NJHHMKMWpUKzQVzKrcFYdIk',
+                    quantity: 1,
+                    tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
+                }
+            ]
         },
     ]
 
     return (
         <div className="z-40 py-24 bg-white sm:py-32">
-            <div id="summit" className="content-center px-6 mx-auto max-w-7xl lg:px-8">
-                <div className="max-w-2xl mx-auto sm:text-center">
-                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">As delegate to the Summit</h2>
-                </div>
-                <div className='mt-4 sm:mt-12'>
-                    {summit.map((delegate: any) => (
-                        <div key={delegate.title} className="flex flex-col items-center content-center justify-between w-full max-w-2xl p-4 mx-auto my-auto mt-2 gap-x-4 sm:items-start sm:flex-row justify-items-start sm:p-8 rounded-3xl ring-1 ring-gray-500 sm:mt-4 lg:mx-0 lg:flex lg:max-w-none">
-                            <div className='w-10/12 my-auto text-lg font-semibold text-gray-900 sm:text-2xl'><p>{delegate.title}</p></div>
-                            <div className='my-auto text-lg font-semibold sm:text-2xl'><p>£{delegate.item_price}.00</p></div>
-                            <div className='my-auto justify-self-center mx:auto'>
-                                <Link
-                                    href={{
-                                        pathname: '/register/form',
-                                        query: {
-                                            line_items: JSON.stringify(delegate.line_items)
-                                        }
-                                    }}
-                                    type="button"
-                                    className="block w-full px-3 py-2 text-sm font-semibold text-center text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                                >
-                                    Register
-                                </Link>
+            <div className="max-w-5xl mx-auto sm:text-center">
+                <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">Unsure what pass you fall Under?</h2>
+                <h3 className="text-lg tracking-tight text-red-700 sm:text-2xl">Contact us at <a className='underline' href='mailto:info@worldcoffeealliance.com'>info@worldcoffeealliance.com</a> and we&apos;ll help you pick the correct registration pass.</h3>
+            </div>
 
-                            </div>
-                        </div>
-                    ))}
+            <div id="summit" className="flow-root px-6 mx-auto mt-12 rounded-md max-w-7xl">
+                <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                    <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
+                        <table className="min-w-full divide-y divide-gray-300">
+                            <thead>
+                                <tr className='bg-gray-100'>
+                                    <th scope="col" className="py-3.5 pl-4 pr-3 w-1/4 text-left sm:text-2xl text-lg font-semibold text-gray-900 sm:pl-3">
+                                        Delegate to the summit
+                                    </th>
+                                    <th scope="col" className="px-3 py-3.5 w-2/4 text-left text-lg font-semibold text-gray-900">
+
+                                    </th>
+                                    <th scope="col" className="py-3.5 pl-4 w-1/12 pr-3 text-left sm:text-2xl text-lg font-semibold text-gray-900 sm:pl-3">
+                                        Price
+                                    </th>
+                                    <th scope="col" className="py-3.5 pl-4 pr-3 text-left sm:text-2xl text-lg font-semibold text-gray-900 sm:pl-3">
+
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody className="bg-white">
+                                {summit.map((delegate) => (
+                                    <tr key={delegate.title} className="even:bg-gray-100">
+                                        <td className="flex-wrap px-3 py-4 font-semibold text-gray-900 text-md">{delegate.title}</td>
+                                        <td className="flex-wrap px-3 py-4 text-gray-900 text-md">{delegate.description}</td>
+                                        <td className="px-3 py-4 text-gray-900 text-md">£{delegate.item_price}.00</td>
+                                        <td className="px-3 py-4">
+                                            <div className='my-auto justify-self-center mx:auto'>
+                                                <Link
+                                                    href={{
+                                                        pathname: '/register/form',
+                                                        query: {
+                                                            line_items: JSON.stringify(delegate.line_items)
+                                                        }
+                                                    }}
+                                                    type="button"
+                                                    className="block w-full px-3 py-2 text-sm font-semibold text-center text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                                >
+                                                    Register
+                                                </Link>
+
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
 
-            <div id="exhibition" className="content-center md:mt-20 mt-12 px-6 mx-auto max-w-7xl lg:px-8">
-                <div className="max-w-2xl mx-auto sm:text-center">
-                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">As visitor to the Exhibition</h2>
-                </div>
-                <div className='mt-4 sm:mt-12'>
-                    {exhibition.map((delegate: any) => (
-                        <div key={delegate.title} className="flex flex-col items-center content-center justify-between w-full max-w-2xl p-4 mx-auto my-auto mt-2 gap-x-4 sm:items-start sm:flex-row justify-items-start sm:p-8 rounded-3xl ring-1 ring-gray-500 sm:mt-4 lg:mx-0 lg:flex lg:max-w-none">
-                            <div className='w-10/12 my-auto text-lg font-semibold text-gray-900 sm:text-2xl'><p>{delegate.title}</p></div>
-                            <div className='my-auto text-lg font-semibold sm:text-2xl'><p>£{delegate.item_price}.00</p></div>
-                            <div className='my-auto justify-self-center mx:auto'>
-                                <Link
-                                    href={{
-                                        pathname: '/register/form',
-                                        query: {
-                                            line_items: JSON.stringify(delegate.line_items)
-                                        }
-                                    }}
-                                    type="button"
-                                    className="block w-full px-3 py-2 text-sm font-semibold text-center text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                                >
-                                    Register
-                                </Link>
+            <div id="exhibition" className="flow-root px-6 mx-auto mt-20 rounded-md max-w-7xl">
+                <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                    <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
+                        <table className="min-w-full divide-y divide-gray-300">
+                            <thead>
+                                <tr className='bg-gray-100'>
+                                    <th scope="col" className="py-3.5 w-1/4 pl-4 pr-3 text-left sm:text-2xl text-lg font-semibold text-gray-900 sm:pl-3">
+                                        Visitor to Exhibition
+                                    </th>
+                                    <th scope="col" className="px-3 w-2/4 py-3.5 text-left text-lg font-semibold text-gray-900">
 
-                            </div>
-                        </div>
-                    ))}
+                                    </th>
+                                    <th scope="col" className="py-3.5 pl-4 w-1/12 pr-3 text-left sm:text-2xl text-lg font-semibold text-gray-900 sm:pl-3">
+                                        Price
+                                    </th>
+                                    <th scope="col" className="py-3.5 pl-4 pr-3 text-left sm:text-2xl text-lg font-semibold text-gray-900 sm:pl-3">
+
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody className="bg-white">
+                                {exhibition.map((visitor) => (
+                                    <tr key={visitor.title} className="even:bg-gray-100">
+                                        <td className="flex-wrap px-3 py-4 font-semibold text-gray-900 text-md">{visitor.title}</td>
+                                        <td className="flex-wrap px-3 py-4 text-gray-900 text-md">{visitor.description}</td>
+                                        <td className="px-3 py-4 text-gray-900 text-md">£{visitor.item_price}.00</td>
+                                        <td className="px-3 py-4">
+                                            <div className='my-auto justify-self-center mx:auto'>
+                                                <Link
+                                                    href={{
+                                                        pathname: '/register/form',
+                                                        query: {
+                                                            line_items: JSON.stringify(visitor.line_items)
+                                                        }
+                                                    }}
+                                                    type="button"
+                                                    className="block w-full px-3 py-2 text-sm font-semibold text-center text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                                >
+                                                    Register
+                                                </Link>
+
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                <BackButton />
+            </div>
+            <div className="max-w-5xl mx-auto mt-12 sm:text-center">
+                <h3 className="text-sm tracking-tight text-red-700 sm:text-md">Notice: GSG Ltd reserves the right to exclude and refund registration that does not belong to the correct category pass</h3>
             </div>
         </div>
     )

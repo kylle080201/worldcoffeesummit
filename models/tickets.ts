@@ -21,7 +21,10 @@ const tickets = new Schema({
   lastName: String,
   firstName: String,
   companyName: String,
+  mobileNumber: String,
   jobTitle: String,
+  country: String,
+  isEmailAccepted: Boolean,
   createdAt: {
     type: Date,
     default: Date.now,

@@ -1,7 +1,6 @@
 import PaymentSuccess from "../../../../components/PaymentSuccess"
 import RegistrationSteps from "../../../../components/RegistrationSteps"
 import { decryptData } from "../../../../utils/encryptor";
-import { redirect } from 'next/navigation'
 
 export default function Success({ searchParams }: any) {
     const checkoutSessionId = searchParams.session_id;
@@ -10,11 +9,9 @@ export default function Success({ searchParams }: any) {
     const decryptedFormData = decryptData(encryptedFormData)
 
     const steps = [
-        { id: '01', name: 'Choose an Event', status: 'complete' },
-        { id: '02', name: 'Choose a ticket', status: 'complete' },
-        { id: '03', name: 'Registration Details', status: 'complete' },
-        { id: '04', name: 'Checkout', status: 'complete' },
-        { id: '05', name: 'Complete', status: 'current' },
+        { id: '1', name: 'Choose a Pass', status: 'complete' },
+        { id: '2', name: 'Personal Information', status: 'complete' },
+        { id: '3', name: 'Payment', status: 'complete' },
     ]
     return (
         <>

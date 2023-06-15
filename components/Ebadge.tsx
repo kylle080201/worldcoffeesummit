@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import html2canvas from 'html2canvas';
 import { IResponseData } from '../types/responseData';
 import QRCode from "qrcode";
+import { ArrowDownTrayIcon } from '@heroicons/react/24/outline';
 
 function Ebadge({ checkoutSessionId }: any) {
     const [buyerData, setBuyerData] = useState<IResponseData>(Object)
@@ -109,14 +110,15 @@ function Ebadge({ checkoutSessionId }: any) {
                     <div className="flex items-center justify-center mt-4 gap-x-6">
                         <button
                             onClick={(() => downloadAsPNG())}
-                            className="rounded-md bg-lime-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                            className="rounded-md gap-x-2 flex items-center bg-lime-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                         >
                             Download e-Badge
+                            <ArrowDownTrayIcon className='w-6' />
                         </button>
                     </div>
                 </>
                 :
-                <div className='mx-auto max-w-7xl'>
+                <div className='max-w-5xl mx-auto'>
                     <h1 className="text-2xl font-semibold leading-8 text-gray-900 ">
                         Generating e-Badge ...
                     </h1>

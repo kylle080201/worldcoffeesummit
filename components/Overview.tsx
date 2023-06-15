@@ -17,7 +17,8 @@ export default function Overview() {
                         </div>
                     </div>
 
-                    <p className="text-lg font-semibold tracking-tight text-gray-900 sm:text-2xl">Delivering Collaborative Change: Impact of Regenerative Solutions</p>
+                    <p className="text-lg font-semibold tracking-tight text-gray-900 sm:text-2xl">Delivering Collaborative Change:</p>
+                    <p className="text-lg font-semibold tracking-tight text-gray-900 sm:text-2xl">Impact of Regenerative Solutions</p>
                     <div className='flex flex-col items-center justify-center max-w-5xl mx-auto mt-6 sm:flex-row sm:gap-x-2 gap-y-2'>
                         <div>
                             <img className='w-[17rem]' src='https://worldcoffeealliance.com/wp-content/uploads/2023/06/QEII-CENTRE.png' />

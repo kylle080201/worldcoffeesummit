@@ -10,6 +10,7 @@ import Link from 'next/link'
 const RegisterForm = () => {
     const searchParams = useSearchParams()
     const [isAgree, setIsAgree] = useState(false)
+    const [countries, setCountries] = useState(false)
     const [origin, setOrigin] = useState('')
     const [openTermsAndConditions, setOpenTermsAndConditions] = useState(false)
     const [openLetterOfInvitation, setOpenLetterOfInvitation] = useState(false)
@@ -67,26 +68,19 @@ const RegisterForm = () => {
                 <div className="max-w-screen-md px-4 py-8 mx-auto mb-12 lg:py-16">
                     <h2 className="mb-4 text-4xl font-bold tracking-tight text-center text-gray-900 dark:text-white"><span className='text-lime-700'>Registration</span> Form</h2>
                     <form className="space-y-8" onSubmit={handleSubmit(onSubmit)}>
-
-                        <div>
-                            <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email</label>
-                            <input {...register('email')} type='email' className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
-                        </div>
-
                         <div className='flex gap-4'>
+                            <div className='w-1/2'>
+                                <label htmlFor="firstName" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">First Name</label>
+                                <input {...register('firstName')} className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                            </div>
                             <div className='w-1/2'>
                                 <label htmlFor="lastName" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Last Name</label>
                                 <input {...register('lastName')} className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
                             </div>
-                            <div className='w-1/2'>
-                                <label htmlFor="firstName" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">First Name</label>
-                                <input {...register('firstName')} className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
-
-                            </div>
                         </div>
 
                         <div>
-                            <label htmlFor="companyName" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Company Name</label>
+                            <label htmlFor="companyName" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Company</label>
                             <input {...register('companyName')} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
 
                         </div>
@@ -94,8 +88,24 @@ const RegisterForm = () => {
                         <div>
                             <label htmlFor="jobTitle" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Job Title</label>
                             <input {...register('jobTitle')} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
-
                         </div>
+
+                        <div className='flex gap-4'>
+                            <div className='w-1/2'>
+                                <label htmlFor="mobileNumber" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Mobile Number</label>
+                                <input {...register('mobileNumber')} type='number' className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                            </div>
+                            <div className='w-1/2'>
+                                <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email Address</label>
+                                <input {...register('email')} type='email' className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                            </div>
+                        </div>
+
+                        <div className='w-1/2'>
+                            <label htmlFor="country" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Country</label>
+                            <input {...register('country')} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                        </div>
+
                         <fieldset>
                             <div className="space-y-5">
                                 <div className="relative flex items-start">
@@ -123,11 +133,6 @@ const RegisterForm = () => {
                         </fieldset>
                         <div className="flex justify-end">
                             <input type="submit" className="flex justify-center px-3 py-2 text-sm font-semibold text-white border border-transparent rounded-md shadow-sm bg-lime-700 hover:cursor-pointer hover:bg-lime-900 focus:outline-none"
-                            // className={classNames(
-                            //     isAgree ? ' bg-lime-700 hover:cursor-pointer hover:bg-lime-900 focus:outline-none'
-                            //         : ' bg-gray-400 focus:outline-none',
-                            //     'flex justify-center  px-3 py-2 font-semibold text-sm text-white border border-transparent rounded-md shadow-sm'
-                            // )} 
                             />
                         </div>
                     </form>
