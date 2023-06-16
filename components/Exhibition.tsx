@@ -168,7 +168,7 @@ export default function Exhibition() {
                         </div>
                     </div>
                     <div>
-                        <p className="text-lg leading-7 text-gray-600">For exhibition queries please email <Link href={"https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=mavis@worldcoffeealliance.com&su=Exhibition%20query"} target="_blank" className="text-yellow-900 underline hover:underline-offset-4"> mavis@worldcoffeealliance.com</Link></p>
+                        <p className="text-lg leading-7 text-gray-600">For exhibition queries please email <Link href={"mailto:info@worldcoffeealliance.com"} target="_blank" className="text-yellow-900 underline hover:underline-offset-4"> mavis@worldcoffeealliance.com</Link></p>
                     </div>
                 </div>
             </div>
