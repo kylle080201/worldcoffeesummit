@@ -5,20 +5,22 @@ import CountDown from './CountDown'
 export default function Overview() {
     return (
         <>
-            <div id="overview" className="flex flex-col bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2023/06/OVERVIEW-HERO-BG-scaled.jpg')] py-8 sm:py-12 bg-cover bg-center mlg:flex-col">
+            <div id="overview" className="flex flex-col bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2023/06/OVERVIEW-HERO-BG-scaled.jpg')] pt-2 sm:py-4 pb-6 sm:pb-12 bg-cover bg-center mlg:flex-col">
                 <div className="content-center self-center w-full text-center">
-                    <div className='flex flex-col content-center w-full px-12 mx-auto md:flex-row max-w-7xl'>
-                        <div className='my-auto md:ml-32'>
-                            <p className="text-4xl font-bold tracking-tight text-lime-700 sm:text-6xl">World Coffee Summit London</p>
-                            <p className="mt-4 text-4xl tracking-tight text-yellow-900 sm:text-6xl">& World Coffee Exhibition</p>
+                    <div className='flex justify-between w-full px-12 mx-auto'>
+                        <div className='flex-shrink-0 my-auto h-max'>
+                            <img className='w-[12rem]' src='https://worldcoffeealliance.com/wp-content/uploads/2021/08/WCA_new_logo.png'></img>
                         </div>
-                        <div className='flex-shrink-0 mx-auto my-auto h-max'>
-                            <img className='w-[15rem]' src='https://worldcoffeealliance.com/wp-content/uploads/2021/08/WCA_new_logo.png'></img>
+                        <div className='flex-shrink-0 my-auto h-max'>
+                            <img className='w-[15rem]' src='https://worldcoffeealliance.com/wp-content/uploads/2023/05/world-coffee-summit-high-resolution-logo-color-on-transparent-background.png'></img>
                         </div>
                     </div>
-
-                    <p className="text-lg font-semibold tracking-tight text-gray-900 sm:text-2xl">Delivering Collaborative Change:</p>
-                    <p className="text-lg font-semibold tracking-tight text-gray-900 sm:text-2xl">Impact of Regenerative Solutions</p>
+                    <div className='flex-shrink-0 px-12 py-6 my-auto'>
+                        <p className="text-4xl font-bold tracking-tight text-lime-700 sm:text-6xl">World Coffee Summit London</p>
+                        <p className="mt-4 text-4xl tracking-tight text-yellow-900 sm:text-6xl">& World Coffee Exhibition</p>
+                    </div>
+                    <p className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Delivering Collaborative Change: Impact</p>
+                    <p className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">of Innovation and Regenerative Solutions</p>
                     <div className='flex flex-col items-center justify-center max-w-5xl mx-auto mt-6 sm:flex-row sm:gap-x-2 gap-y-2'>
                         <div>
                             <img className='w-[17rem]' src='https://worldcoffeealliance.com/wp-content/uploads/2023/06/QEII-CENTRE.png' />
@@ -37,13 +39,13 @@ export default function Overview() {
                     </div>
                 </div>
             </div>
-            <div className='justify-center px-12 py-12 bg-white sm:py-20 mlg:flex-row mmd:flex-col msm:flex-col sm:px-20' >
+            <div className='justify-center px-12 py-12 mx-auto bg-white sm:py-20 mlg:flex-row max-w-7xl mmd:flex-col msm:flex-col sm:px-20' >
                 <p className="mt-6 text-2xl font-bold tracking-tight text-center text-gray-900 sm:text-4xl">OVERVIEW</p>
                 <p className="mt-4 text-xl leading-8 text-gray-900 sm:mt-8">
-                    With the looming implementation of the EU due diligence legislations, the global coffee industry is faced with regulatory compliance that will have dramatic impact on businesses. Against the backdrop of rising cost, climate change and sustainability issues, this business event will tackle and flesh out how to navigate its complexities and find collaborative and regenerative solutions for the future of coffee.
+                    With the looming implementation of the EU due diligence legislation, the global coffee industry is faced with regulatory compliance that will have dramatic impact on businesses. Against the backdrop of rising cost, climate change and sustainability issues, this business event will tackle and flesh out how to navigate its complexities and find collaborative and regenerative solutions for the future of coffee.
                 </p>
                 <p className="mt-4 text-xl leading-8 text-gray-900 sm:mt-8">
-                    This event will deep dive into the relationship between adoption of Regenerative Agriculture and ESG Investing, its benefits and challenges, including its strategies and funding infrastructure. Transforming from conventional agriculture to regenerative will require some collaboration, incentives, government grants and private funding to be climate positive, scalable, and operational.
+                    This event will deep dive into the role of sustainable supply chain and innovation to secure transparency and traceability from farm to cup, the adoption of Regenerative Agriculture practices within the carbon credits framework and how ESG and Impact Investing will finance this transition. Transforming from conventional agriculture to regenerative will require some collaboration, global climate roadmap, incentives, government grants and private funding to be climate positive, scalable, and operational.
                 </p>
             </div>
         </>

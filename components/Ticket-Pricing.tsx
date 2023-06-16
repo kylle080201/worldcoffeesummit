@@ -9,7 +9,9 @@ function TicketPricing() {
     const summit = [
         {
             title: "NGO/Academic Pass",
-            item_price: 799,
+            old_price: 699,
+            item_price: 499,
+            early_bird: 'Early bird until 15 July 2023. YOU SAVE £200',
             description: "Eligible for representatives of NGOs, cooperatives, coffee associations,  regulators, governments, public sector, and academia.",
             line_items: [
                 {
@@ -21,8 +23,10 @@ function TicketPricing() {
         },
         {
             title: "Standard Corporate Pass",
+            old_price: 1275,
+            item_price: 975,
+            early_bird: 'Early bird until 15 July 2023. YOU SAVE £300',
             description: "Eligible for corporate representatives.",
-            item_price: 1249,
             line_items: [
                 {
                     price: 'price_1NJHFNKMWpUKzQVzaqQZ4lLL',
@@ -33,8 +37,10 @@ function TicketPricing() {
         },
         {
             title: "Service Provider Pass",
+            old_price: 1550,
+            item_price: 1150,
             description: "Required for for-profit consultancies, start-ups, technology and service providers.",
-            item_price: 1499,
+            early_bird: 'Early bird until 15 July 2023. YOU SAVE £400',
             line_items: [
                 {
                     price: 'price_1NJHGiKMWpUKzQVzMf7Jo8V3',
@@ -47,8 +53,10 @@ function TicketPricing() {
     const exhibition = [
         {
             title: "Standard Visitor Pass",
+            old_price: 149,
+            item_price: 129,
             description: "Eligible for coffee roasters, green coffee buyers and coffee traders (Imp& Exp)",
-            item_price: 149,
+            early_bird: 'Early bird until 15 July 2023. YOU SAVE £20',
             line_items: [
                 {
                     price: 'price_1NJHHMKMWpUKzQVzKrcFYdIk',
@@ -90,8 +98,8 @@ function TicketPricing() {
                                 {summit.map((delegate) => (
                                     <tr key={delegate.title} className="even:bg-gray-100">
                                         <td className="flex-wrap px-3 py-4 font-semibold text-gray-900 text-md">{delegate.title}</td>
-                                        <td className="flex-wrap px-3 py-4 text-gray-900 text-md">{delegate.description}</td>
-                                        <td className="px-3 py-4 text-gray-900 text-md">£{delegate.item_price}.00</td>
+                                        <td className="flex-wrap px-3 py-4 text-gray-900 text-md">{delegate.description}<br /><span className='text-lime-700 font-medium'>{delegate.early_bird}</span></td>
+                                        <td className="px-3 py-4 text-gray-900 text-md"><span className=' line-through text-red-700'>£{delegate.old_price}.00</span> <br /> <span className=' font-bold'>£{delegate.item_price}.00</span></td>
                                         <td className="px-3 py-4">
                                             <div className='my-auto justify-self-center mx:auto'>
                                                 <Link
@@ -142,8 +150,8 @@ function TicketPricing() {
                                 {exhibition.map((visitor) => (
                                     <tr key={visitor.title} className="even:bg-gray-100">
                                         <td className="flex-wrap px-3 py-4 font-semibold text-gray-900 text-md">{visitor.title}</td>
-                                        <td className="flex-wrap px-3 py-4 text-gray-900 text-md">{visitor.description}</td>
-                                        <td className="px-3 py-4 text-gray-900 text-md">£{visitor.item_price}.00</td>
+                                        <td className="flex-wrap px-3 py-4 text-gray-900 text-md">{visitor.description}<br /><span className='text-lime-700 font-medium'>{visitor.early_bird}</span></td>
+                                        <td className="px-3 py-4 text-gray-900 text-md"><span className=' line-through text-red-700'>£{visitor.old_price}.00</span> <br /> <span className=' font-bold'>£{visitor.item_price}.00</span></td>
                                         <td className="px-3 py-4">
                                             <div className='my-auto justify-self-center mx:auto'>
                                                 <Link

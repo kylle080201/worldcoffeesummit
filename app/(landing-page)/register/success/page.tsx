@@ -12,6 +12,7 @@ export default function Success({ searchParams }: any) {
         { id: '1', name: 'Choose a Pass', status: 'complete' },
         { id: '2', name: 'Personal Information', status: 'complete' },
         { id: '3', name: 'Payment', status: 'complete' },
+        { id: '4', name: 'Confirmation', status: 'current' },
     ]
     return (
         <>

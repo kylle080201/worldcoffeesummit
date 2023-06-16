@@ -4,6 +4,7 @@ import 'crypto-js/enc-utf8';
 import Link from 'next/link';
 import { ArrowLongRightIcon } from '@heroicons/react/24/outline';
 import { IResponseData } from '../types/responseData';
+import { SocialIcon } from 'react-social-icons';
 
 
 
@@ -48,36 +49,60 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, priceId }: any) 
         <>
             <div className="bg-white">
                 <div className="flex-shrink-0 max-w-3xl px-6 py-20 mx-auto sm:px-6 sm:py-32 lg:px-8 md:max-w-7xl">
-                    <div className='max-w-5xl mx-auto'>
-                        <img src="https://worldcoffeealliance.com/wp-content/uploads/2023/06/confirmation-cover.jpg" />
+                    <div className='max-w-5xl'>
+                        <img className='w-[50rem]' src="https://worldcoffeealliance.com/wp-content/uploads/2023/05/world-coffee-summit-high-resolution-logo-color-on-transparent-background.png" />
                     </div>
-                    <div className="justify-center max-w-2xl mx-auto mt-6 text-center md:mt-12">
+                    <div className="mt-6 justify-left md:mt-12">
                         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                            Thank you for registering for World Coffee Summit London 2023
+                            REGISTRATION CONFIRMED
                         </h2>
-                        <h3 className="mt-6 mb-12 text-lg font-bold tracking-tight text-lime-700 sm:text-2xl">
-                            Check the email you used in the Registration Form for further instructions. You can also download your e-Badge below
+                        <h3 className="my-6 text-lg tracking-tight text-gray-900 sm:text-2xl">
+                            Thank you for registering to attend the World Coffee Summit London 2023.
+                        </h3>
+                        <h3 className="my-6 text-lg tracking-tight text-gray-900 sm:text-2xl">
+                            An e-mail confirmation will be with you shortly with further instructions
                         </h3>
                         {Object.keys(res).length !== 0 ? <Link target={'_blank'} href={`/print-out?session_id=${checkoutSessionId}`} className="max-w-xl mx-auto text-lg font-bold leading-8 text-gray-900 underline">
                             Download your e-Badge here
-                        </Link> : <p className="max-w-xl mx-auto text-lg leading-8 text-gray-900">Generating your e-Badge download link ...</p>}
-
-                        <div className="flex items-center justify-center mt-10 gap-x-6">
-                            <Link href="/" className="flex content-center font-semibold leading-6 text-gray-900 hover:underline text-md">
-                                Back to home <span aria-hidden="true"> <ArrowLongRightIcon className="mx-auto ml-2 w-7 h-7" aria-hidden="true" /> </span>
+                        </Link> : <p className="max-w-xl text-lg leading-8 text-gray-900">Generating your e-Badge download link ...</p>}
+                        <h3 className="mt-6 text-lg font-bold tracking-tight text-lime-700 sm:text-2xl">
+                            Event Dates:
+                        </h3>
+                        <h4 className="text-lg tracking-tight text-gray-900 sm:text-2xl">
+                            Wednesday 13 September 2023
+                        </h4>
+                        <h3 className="mt-6 text-lg font-bold tracking-tight text-lime-700 sm:text-2xl">
+                            Location:
+                        </h3>
+                        <h4 className="text-lg tracking-tight text-gray-900 sm:text-2xl">
+                            QEII Centre
+                        </h4>
+                        <div className='flex items-center my-auto mt-6 gap-x-4'>
+                            <p className="max-w-xl text-lg leading-8 text-gray-900">
+                                Didn&apos;t receive an email?
+                            </p>
+                            <div className="flex justify-center gap-x-6">
+                                <button
+                                    onClick={(() => patchData())}
+                                    className="rounded-md bg-lime-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                >
+                                    Resend Email
+                                </button>
+                            </div>
+                        </div>
+                        <h4 className="mt-6 text-lg tracking-tight text-gray-900 sm:text-2xl">
+                            Tell your colleagues and industry peers join you
+                        </h4>
+                        <div className='flex mt-3 gap-x-4'>
+                            <SocialIcon url="https://www.linkedin.com/company/worldcoffeealliance/" style={{ height: 50, width: 50 }} target='_blank' />
+                            <SocialIcon url="https://twitter.com/WCoffeeAlliance" style={{ height: 50, width: 50 }} target='_blank' />
+                        </div>
+                        <div className="flex mt-10 gap-x-6">
+                            <Link href="/" className="flex content-center text-2xl font-semibold leading-6 text-gray-900 hover:underline">
+                                Back to home <span aria-hidden="true"> <ArrowLongRightIcon className="mx-auto ml-2 h-7" aria-hidden="true" /> </span>
                             </Link>
                         </div>
-                        <p className="max-w-xl mx-auto mt-12 text-lg leading-8 text-gray-900">
-                            Didn&apos;t receive an email?
-                        </p>
-                        <div className="flex items-center justify-center mt-4 gap-x-6">
-                            <button
-                                onClick={(() => patchData())}
-                                className="rounded-md bg-lime-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                            >
-                                Resend Email
-                            </button>
-                        </div>
+
                     </div>
                 </div>
             </div>

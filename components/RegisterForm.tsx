@@ -10,7 +10,6 @@ import Link from 'next/link'
 const RegisterForm = () => {
     const searchParams = useSearchParams()
     const [isAgree, setIsAgree] = useState(false)
-    const [countries, setCountries] = useState(false)
     const [origin, setOrigin] = useState('')
     const [openTermsAndConditions, setOpenTermsAndConditions] = useState(false)
     const [openLetterOfInvitation, setOpenLetterOfInvitation] = useState(false)
@@ -24,12 +23,16 @@ const RegisterForm = () => {
     const {
         register,
         handleSubmit,
+        watch,
         formState: { errors },
     } = useForm();
 
     const onSubmit = (data: any) => {
+        const { email, confirmEmail } = data;
         if (data) {
-            redirectToCheckout(data)
+            if (email === confirmEmail) {
+                redirectToCheckout(data)
+            }
         }
     }
 
@@ -62,11 +65,12 @@ const RegisterForm = () => {
         }
     }
 
+    const watchEmail = watch('email');
     return (
         <>
             <div className="z-40 py-24 bg-white sm:py-32">
                 <div className="max-w-screen-md px-4 py-8 mx-auto mb-12 lg:py-16">
-                    <h2 className="mb-4 text-4xl font-bold tracking-tight text-center text-gray-900 dark:text-white"><span className='text-lime-700'>Registration</span> Form</h2>
+                    <h2 className="mb-4 text-4xl font-bold tracking-tight text-center text-gray-900 dark:text-white"><span className='text-lime-700'>Personal</span> Information</h2>
                     <form className="space-y-8" onSubmit={handleSubmit(onSubmit)}>
                         <div className='flex gap-4'>
                             <div className='w-1/2'>
@@ -96,14 +100,23 @@ const RegisterForm = () => {
                                 <input {...register('mobileNumber')} type='number' className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
                             </div>
                             <div className='w-1/2'>
-                                <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email Address</label>
-                                <input {...register('email')} type='email' className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                                <label htmlFor="country" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Country</label>
+                                <input {...register('country')} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
                             </div>
                         </div>
 
-                        <div className='w-1/2'>
-                            <label htmlFor="country" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Country</label>
-                            <input {...register('country')} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                        <div className='flex gap-4'>
+                            <div className='w-1/2'>
+                                <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email Address</label>
+                                <input {...register('email')} type='email' className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                            </div>
+                            <div className='w-1/2'>
+                                <label htmlFor="confirmEmail" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Confirm Email Address</label>
+                                <input {...register('confirmEmail', {
+                                    validate: (value) => value === watchEmail,
+                                })} type='email' className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                                {errors.confirmEmail && errors.confirmEmail.type === 'validate' && <span className='text-red-700'>Emails do not match</span>}
+                            </div>
                         </div>
 
                         <fieldset>
