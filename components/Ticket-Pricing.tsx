@@ -2,7 +2,6 @@
 import React from 'react'
 
 import Link from 'next/link'
-import BackButton from './BackButton';
 
 function TicketPricing() {
 
@@ -15,7 +14,7 @@ function TicketPricing() {
             description: "Eligible for representatives of non-profit NGOs, cooperatives, regulators, governments, public sector, and academia.",
             line_items: [
                 {
-                    price: 'price_1NJHE6KMWpUKzQVzCuDgzvYo',
+                    price: 'price_1NJtDrKMWpUKzQVzaeAB5uD1',
                     quantity: 1,
                     tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
                 }
@@ -29,7 +28,7 @@ function TicketPricing() {
             description: "Eligible for corporate representatives.",
             line_items: [
                 {
-                    price: 'price_1NJHFNKMWpUKzQVzaqQZ4lLL',
+                    price: 'price_1NJtFJKMWpUKzQVzoUQO7Dwj',
                     quantity: 1,
                     tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
                 }
@@ -43,7 +42,7 @@ function TicketPricing() {
             early_bird: 'Early bird until 15 July 2023. YOU SAVE £400',
             line_items: [
                 {
-                    price: 'price_1NJHGiKMWpUKzQVzMf7Jo8V3',
+                    price: 'price_1NJtFiKMWpUKzQVzsO2NBrm9',
                     quantity: 1,
                     tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
                 }
@@ -59,7 +58,7 @@ function TicketPricing() {
             early_bird: 'Early bird until 15 July 2023. YOU SAVE £20',
             line_items: [
                 {
-                    price: 'price_1NJHHMKMWpUKzQVzKrcFYdIk',
+                    price: 'price_1NJtGKKMWpUKzQVzGyIldRNk',
                     quantity: 1,
                     tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
                 }

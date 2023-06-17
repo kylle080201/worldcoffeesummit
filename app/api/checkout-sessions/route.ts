@@ -16,6 +16,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
   const encryptedFormData = encryptData(formData);
   try {
     const session = await stripe.checkout.sessions.create({
+      allow_promotion_codes: true,
       invoice_creation: {
         enabled: true,
       },
