@@ -28,7 +28,7 @@ export const mailer = async (
 
   try {
     const isEmailSent = await transporter.sendMail({
-      from: `World Coffee Alliance Sales <${user}>`,
+      from: `World Coffee Alliance Events <${user}>`,
       to: email,
       subject:
         event === "Summit"
