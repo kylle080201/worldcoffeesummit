@@ -25,13 +25,16 @@ export async function POST(request: NextRequest, response: NextResponse) {
       await connectMongo();
       const paymentIntentId = await req.data.object.payment_intent;
       const checkoutSessionId = await req.data.object.id;
+      const invoiceId = await req.data.object.invoice;
 
       const newTicket = new Tickets({ paymentIntentId, checkoutSessionId });
       const ticket = await newTicket.save();
 
+      const invoice = await stripe.invoices.sendInvoice(invoiceId);
       return NextResponse.json(
         {
           ticket,
+          invoice,
         },
         {
           status: 200,

@@ -31,7 +31,7 @@ export const mailer = async (
       subject:
         event === "Summit"
           ? "Thank you for registering for World Coffee Summit London 2023"
-          : "Subject: Thank you for registering for World Coffee Exhibition London 2023",
+          : "Thank you for registering for World Coffee Exhibition London 2023",
       ...generateEmailContent({
         lastName,
         firstName,

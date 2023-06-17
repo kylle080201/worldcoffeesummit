@@ -16,6 +16,9 @@ export async function POST(request: NextRequest, response: NextResponse) {
   const encryptedFormData = encryptData(formData);
   try {
     const session = await stripe.checkout.sessions.create({
+      invoice_creation: {
+        enabled: true,
+      },
       customer_email: req.formData.email,
       mode: "payment",
       payment_method_types: ["card"],

@@ -50,7 +50,7 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, priceId }: any) 
             <div className="bg-white">
                 <div className="flex-shrink-0 max-w-3xl px-6 py-20 mx-auto sm:px-6 sm:py-32 lg:px-8 md:max-w-7xl">
                     <div className='max-w-5xl'>
-                        <img className='w-[50rem]' src="https://worldcoffeealliance.com/wp-content/uploads/2023/05/world-coffee-summit-high-resolution-logo-color-on-transparent-background.png" />
+                        <img className='w-[40rem]' src="https://worldcoffeealliance.com/wp-content/uploads/2023/05/world-coffee-summit-high-resolution-logo-color-on-transparent-background.png" />
                     </div>
                     <div className="mt-6 justify-left md:mt-12">
                         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -62,9 +62,9 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, priceId }: any) 
                         <h3 className="my-6 text-lg tracking-tight text-gray-900 sm:text-2xl">
                             An e-mail confirmation will be with you shortly with further instructions
                         </h3>
-                        {Object.keys(res).length !== 0 ? <Link target={'_blank'} href={`/print-out?session_id=${checkoutSessionId}`} className="max-w-xl mx-auto text-lg font-bold leading-8 text-gray-900 underline">
+                        {Object.keys(res).length !== 0 ? <Link target={'_blank'} href={`/print-out?session_id=${checkoutSessionId}`} className="max-w-xl mx-auto text-lg font-bold leading-8 text-gray-900 underline sm:text-2xl">
                             Download your e-Badge here
-                        </Link> : <p className="max-w-xl text-lg leading-8 text-gray-900">Generating your e-Badge download link ...</p>}
+                        </Link> : <p className="max-w-xl text-lg leading-8 text-gray-900 sm:text-2xl">Generating your e-Badge download link ...</p>}
                         <h3 className="mt-6 text-lg font-bold tracking-tight text-lime-700 sm:text-2xl">
                             Event Dates:
                         </h3>
@@ -78,7 +78,7 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, priceId }: any) 
                             QEII Centre
                         </h4>
                         <div className='flex items-center my-auto mt-6 gap-x-4'>
-                            <p className="max-w-xl text-lg leading-8 text-gray-900">
+                            <p className="max-w-xl text-lg leading-8 text-gray-900 sm:text-2xl">
                                 Didn&apos;t receive an email?
                             </p>
                             <div className="flex justify-center gap-x-6">

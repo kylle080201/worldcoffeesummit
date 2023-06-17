@@ -7,18 +7,16 @@ export default function Overview() {
         <>
             <div id="overview" className="flex flex-col bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2023/06/OVERVIEW-HERO-BG-scaled.jpg')] pt-2 sm:py-4 pb-6 sm:pb-12 bg-cover bg-center mlg:flex-col">
                 <div className="content-center self-center w-full text-center">
-                    <div className='flex justify-between w-full px-12 mx-auto'>
-                        <div className='flex-shrink-0 my-auto h-max'>
+                    <div className='grid w-full grid-cols-1 px-16 lg:grid-cols-7 justify-items-stretch'>
+                        <div className='py-6 my-auto lg:col-span-6 lg:ml-52'>
+                            <p className="text-4xl font-bold tracking-tight text-lime-700 sm:text-6xl">World Coffee Summit London</p>
+                            <p className="mt-4 text-4xl tracking-tight text-yellow-900 sm:text-6xl">& World Coffee Exhibition</p>
+                        </div>
+                        <div className='flex-shrink-0 my-auto h-max justify-self-center lg:justify-self-end'>
                             <img className='w-[12rem]' src='https://worldcoffeealliance.com/wp-content/uploads/2021/08/WCA_new_logo.png'></img>
                         </div>
-                        <div className='flex-shrink-0 my-auto h-max'>
-                            <img className='w-[15rem]' src='https://worldcoffeealliance.com/wp-content/uploads/2023/05/world-coffee-summit-high-resolution-logo-color-on-transparent-background.png'></img>
-                        </div>
                     </div>
-                    <div className='flex-shrink-0 px-12 py-6 my-auto'>
-                        <p className="text-4xl font-bold tracking-tight text-lime-700 sm:text-6xl">World Coffee Summit London</p>
-                        <p className="mt-4 text-4xl tracking-tight text-yellow-900 sm:text-6xl">& World Coffee Exhibition</p>
-                    </div>
+
                     <p className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Delivering Collaborative Change: Impact</p>
                     <p className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">of Innovation and Regenerative Solutions</p>
                     <div className='flex flex-col items-center justify-center max-w-5xl mx-auto mt-6 sm:flex-row sm:gap-x-2 gap-y-2'>

@@ -93,14 +93,6 @@ export default function Exhibition() {
                             <p className="text-lg font-bold tracking-tight text-white sm:text-2xl">Queen Elizabeth ll Centre, Westminster Hall</p>
                             <p className="mx-auto mt-16 text-xl leading-8 text-justify text-white max-w-7xl sm:mt-52">
 
-                                Welcome to the world of rustic flavours and sensient aroma of coffee origin. From the historic forests of the
-                                Ethiopian plateaus to the Central Highlands of Vietnam, each participant, showcasing and sharing
-                                their sumptuous profile of luxurious taste and of out of this world experience The overpowering
-                                notes of nuts, caramel with honey like sweetness of these coffee origins will bring one’s senses
-                                to a standstill in an ecstatic fit, one feels as if there is no tomorrow In this <span className='font-semibold '>World Coffee
-                                    Exhibition London 2023</span>, once you joined the crowd of nosy cuppers and curious score crunching
-                                roasters, your life would never be the same again
-
                                 Welcome to the world of rustic flavors and sensient aroma of coffee
                                 origin. From the historic forests of the Ethiopian plateau to the
                                 far-flung South American mountains and African horn, witness each

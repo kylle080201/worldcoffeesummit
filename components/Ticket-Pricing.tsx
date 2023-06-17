@@ -12,7 +12,7 @@ function TicketPricing() {
             old_price: 699,
             item_price: 499,
             early_bird: 'Early bird until 15 July 2023. YOU SAVE £200',
-            description: "Eligible for representatives of NGOs, cooperatives, coffee associations,  regulators, governments, public sector, and academia.",
+            description: "Eligible for representatives of non-profit NGOs, cooperatives, regulators, governments, public sector, and academia.",
             line_items: [
                 {
                     price: 'price_1NJHE6KMWpUKzQVzCuDgzvYo',
@@ -81,7 +81,7 @@ function TicketPricing() {
                             <thead>
                                 <tr className='bg-gray-100'>
                                     <th scope="col" className="py-3.5 pl-4 pr-3 w-1/4 text-left sm:text-2xl text-lg font-semibold text-gray-900 sm:pl-3">
-                                        Delegate to the summit
+                                        Delegate to summit
                                     </th>
                                     <th scope="col" className="px-3 py-3.5 w-2/4 text-left text-lg font-semibold text-gray-900">
 
@@ -98,8 +98,8 @@ function TicketPricing() {
                                 {summit.map((delegate) => (
                                     <tr key={delegate.title} className="even:bg-gray-100">
                                         <td className="flex-wrap px-3 py-4 font-semibold text-gray-900 text-md">{delegate.title}</td>
-                                        <td className="flex-wrap px-3 py-4 text-gray-900 text-md">{delegate.description}<br /><span className='text-lime-700 font-medium'>{delegate.early_bird}</span></td>
-                                        <td className="px-3 py-4 text-gray-900 text-md"><span className=' line-through text-red-700'>£{delegate.old_price}.00</span> <br /> <span className=' font-bold'>£{delegate.item_price}.00</span></td>
+                                        <td className="flex-wrap px-3 py-4 text-gray-900 text-md">{delegate.description}<br /><span className='font-medium text-red-700'>{delegate.early_bird}</span></td>
+                                        <td className="px-3 py-4 text-gray-900 text-md"><span className='text-red-700 line-through '>£{delegate.old_price}.00</span> <br /> <span className='font-bold '>£{delegate.item_price}.00</span></td>
                                         <td className="px-3 py-4">
                                             <div className='my-auto justify-self-center mx:auto'>
                                                 <Link
@@ -150,8 +150,8 @@ function TicketPricing() {
                                 {exhibition.map((visitor) => (
                                     <tr key={visitor.title} className="even:bg-gray-100">
                                         <td className="flex-wrap px-3 py-4 font-semibold text-gray-900 text-md">{visitor.title}</td>
-                                        <td className="flex-wrap px-3 py-4 text-gray-900 text-md">{visitor.description}<br /><span className='text-lime-700 font-medium'>{visitor.early_bird}</span></td>
-                                        <td className="px-3 py-4 text-gray-900 text-md"><span className=' line-through text-red-700'>£{visitor.old_price}.00</span> <br /> <span className=' font-bold'>£{visitor.item_price}.00</span></td>
+                                        <td className="flex-wrap px-3 py-4 text-gray-900 text-md">{visitor.description}<br /><span className='font-medium text-red-700'>{visitor.early_bird}</span></td>
+                                        <td className="px-3 py-4 text-gray-900 text-md"><span className='text-red-700 line-through '>£{visitor.old_price}.00</span> <br /> <span className='font-bold '>£{visitor.item_price}.00</span></td>
                                         <td className="px-3 py-4">
                                             <div className='my-auto justify-self-center mx:auto'>
                                                 <Link
