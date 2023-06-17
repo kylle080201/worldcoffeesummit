@@ -4,7 +4,9 @@ const user = process.env.EMAIL;
 const pass = process.env.EMAIL_PASS;
 
 export const transporter = nodemailer.createTransport({
-  service: "gmail",
+  host: "mail.four.mnnet.co.uk",
+  port: 587,
+  secure: false,
   auth: {
     user,
     pass,
@@ -26,7 +28,7 @@ export const mailer = async (
 
   try {
     const isEmailSent = await transporter.sendMail({
-      from: user,
+      from: `World Coffee Alliance Sales <${user}>`,
       to: email,
       subject:
         event === "Summit"
