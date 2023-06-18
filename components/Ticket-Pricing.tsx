@@ -16,7 +16,7 @@ function TicketPricing() {
                 {
                     price: 'price_1NKJxLKMWpUKzQVzw2fISbHg',
                     quantity: 1,
-                    tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
+                    tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
             ]
         },
@@ -30,7 +30,7 @@ function TicketPricing() {
                 {
                     price: 'price_1NKJxHKMWpUKzQVzMY0ToUIs',
                     quantity: 1,
-                    tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
+                    tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
             ]
         },
@@ -44,7 +44,7 @@ function TicketPricing() {
                 {
                     price: 'price_1NKJxCKMWpUKzQVzKKXQgTyo',
                     quantity: 1,
-                    tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
+                    tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
             ]
         },
@@ -60,7 +60,7 @@ function TicketPricing() {
                 {
                     price: 'price_1NEpCRKMWpUKzQVzFKnpP0KE',
                     quantity: 1,
-                    tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
+                    tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
             ]
         },
