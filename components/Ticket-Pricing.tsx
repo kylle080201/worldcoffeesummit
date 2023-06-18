@@ -58,7 +58,7 @@ function TicketPricing() {
             early_bird: 'Early bird until 15 July 2023. YOU SAVE £20',
             line_items: [
                 {
-                    price: 'price_1NKKFrKMWpUKzQVzyniaN2FP',
+                    price: 'price_1NKJx7KMWpUKzQVz35GIoPwh',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
