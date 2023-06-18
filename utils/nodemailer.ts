@@ -373,10 +373,7 @@ const generateEmailContent = ({
                                                         <p>See you soon!<br>
                                                             <b>The Team @ World Coffee Summit</b>
                                                         </p>
-                                                        <div style='text-align: center;'>
-                                                            <!-- insert your custom barcode setting your data in the GET parameter "data" -->
-                                                            <img src='https://barcode.tec-it.com/barcode.ashx?data=${url}&code=QRCode&eclevel=L'/>
-                                                        </div>
+                                                        <p>${url}</p>
                                                     </div>
                                                 </td>
                                             </tr>
