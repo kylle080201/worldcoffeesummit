@@ -59,7 +59,7 @@ const firstRow = [
         name: 'H.E. Teodoro L. Locsin, Jr',
         company: "Philippines' ambassador to the United Kingdom",
         imageUrl:
-            'https://worldcoffeealliance.com/wp-content/uploads/2023/06/DFAs_Teddy_Locsin_Jr_2021_08_13_16_12_31.jpg',
+            'https://worldcoffeealliance.com/wp-content/uploads/2023/06/H.E.-Ambassador-Teodoro-L-Locsin-Jr-square.jpg',
     },
     {
         name: 'Paul Rooke',

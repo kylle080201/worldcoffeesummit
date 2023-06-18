@@ -20,7 +20,11 @@ export async function POST(request: NextRequest, response: NextResponse) {
   });
 
   try {
-    event = stripe.webhooks.constructEvent(JSON.stringify(req), header, secret);
+    event = stripe.webhooks.constructEvent(
+      JSON.stringify(req),
+      signature,
+      secret
+    );
     if (event.type === "checkout.session.completed") {
       await connectMongo();
       const paymentIntentId = await req.data.object.payment_intent;

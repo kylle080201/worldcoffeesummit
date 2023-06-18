@@ -44,7 +44,7 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
   const formData = req.decryptedFormData;
   const priceId = req.priceId;
   const event =
-    priceId === "price_1NJtGKKMWpUKzQVzGyIldasd" ? "Exhibition" : "Summit";
+    priceId === "price_1NJtGKKMWpUKzQVzGyIldRNk" ? "Exhibition" : "Summit";
   try {
     await connectMongo();
     const getTickets = await Tickets.find({
@@ -61,7 +61,7 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
         { new: true }
       );
       if (!res.isEmailAccepted || res.isEmailAccepted === false) {
-        const mailerRes = await mailer(res, event, checkoutSessionId, origin);
+        const mailerRes = await mailer(res, checkoutSessionId, origin);
         if (mailerRes?.accepted?.length ?? 0 > 0) {
           await Tickets.findByIdAndUpdate(res._id, {
             $set: {
