@@ -16,7 +16,7 @@ function TicketPricing() {
                 {
                     price: 'price_1NKJxLKMWpUKzQVzw2fISbHg',
                     quantity: 1,
-                    tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
+                    tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
             ]
         },
@@ -30,7 +30,7 @@ function TicketPricing() {
                 {
                     price: 'price_1NKJxHKMWpUKzQVzMY0ToUIs',
                     quantity: 1,
-                    tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
+                    tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
             ]
         },
@@ -44,7 +44,7 @@ function TicketPricing() {
                 {
                     price: 'price_1NKJxCKMWpUKzQVzKKXQgTyo',
                     quantity: 1,
-                    tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
+                    tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
             ]
         },
@@ -58,9 +58,9 @@ function TicketPricing() {
             early_bird: 'Early bird until 15 July 2023. YOU SAVE £20',
             line_items: [
                 {
-                    price: 'price_1NJtGKKMWpUKzQVzGyIldRNk',
+                    price: 'price_1NKKbVKMWpUKzQVz4kCOYOE0',
                     quantity: 1,
-                    tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
+                    tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
             ]
         },
