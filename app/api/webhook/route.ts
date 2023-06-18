@@ -9,7 +9,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2022-11-15",
 });
 
-const secret = process.env.STRIPE_WEBHOOK_SECRET;
+const secret = process.env.STRIPE_WEBHOOK_SECRET!;
 
 export async function POST(request: Request, response: NextResponse) {
   let event: Stripe.Event;
@@ -19,39 +19,37 @@ export async function POST(request: Request, response: NextResponse) {
   const paymentIntentId = await req.data.object.payment_intent;
   const checkoutSessionId = await req.data.object.id;
 
-  if (signature && secret) {
-    try {
-      event = stripe.webhooks.constructEvent(body, signature, secret);
-      if (event.type === "checkout.session.completed") {
-        await connectMongo();
+  try {
+    event = stripe.webhooks.constructEvent(body, signature, secret);
+    if (event.type === "checkout.session.completed") {
+      await connectMongo();
 
-        const newTicket = new Tickets({ paymentIntentId, checkoutSessionId });
-        const ticket = await newTicket.save();
+      const newTicket = new Tickets({ paymentIntentId, checkoutSessionId });
+      const ticket = await newTicket.save();
 
-        return NextResponse.json(
-          {
-            ticket,
-            signature,
-            paymentIntentId,
-            checkoutSessionId,
-          },
-          {
-            status: 200,
-          }
-        );
-      }
-    } catch (error: any) {
       return NextResponse.json(
         {
-          message: error.message,
+          ticket,
           signature,
           paymentIntentId,
           checkoutSessionId,
         },
         {
-          status: 400,
+          status: 200,
         }
       );
     }
+  } catch (error: any) {
+    return NextResponse.json(
+      {
+        message: error.message,
+        signature,
+        paymentIntentId,
+        checkoutSessionId,
+      },
+      {
+        status: 400,
+      }
+    );
   }
 }
