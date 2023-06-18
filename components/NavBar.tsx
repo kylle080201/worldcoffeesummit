@@ -59,7 +59,7 @@ function Navbar() {
                                     <div className="flex flex-col items-start">
                                         <div className='flex items-center flex-shrink-0'>
                                             <div className='flex-shrink-0 hidden md:inline-flex'>
-                                                <a href='mailto:info@worldcoffeealliance.com' className='mr-2 font-semibold underline text-md'>Get in touch</a>
+                                                <a href='mailto:events@worldcoffeesummit.net' className='mr-2 font-semibold underline text-md'>Get in touch</a>
                                             </div>
 
                                             <div className='flex gap-x-2'>
@@ -98,7 +98,7 @@ function Navbar() {
                         </div>
                         <div className='items-center justify-center pb-4 pl-3'>
                             <div className='flex-shrink-0 '>
-                                <a href='mailto:events@worldcoffeealliance.com' className='mr-2 font-semibold underline text-md'>Get in touch</a>
+                                <a href='mailto:events@worldcoffeesummit.net' className='mr-2 font-semibold underline text-md'>Get in touch</a>
                             </div>
 
                             <div className='flex gap-x-2'>

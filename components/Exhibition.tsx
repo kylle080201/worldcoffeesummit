@@ -84,11 +84,11 @@ export default function Exhibition() {
     return (
         <>
             <div id="exhibition">
-                <div id="overview" className="flex flex-col bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2023/06/EXHIBITION-BG-scaled.jpg')] py-20 bg-cover bg-center mlg:flex-col">
+                <div id="overview" className="flex flex-col bg-opacity-10 bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2023/06/EXHIBITION-BG-scaled.jpg')] py-20 bg-cover bg-center mlg:flex-col">
                     <div className="self-center px-12 text-center sm:px-20">
                         <div>
                             <p className="text-4xl font-bold tracking-tight text-white sm:text-6xl">World Coffee Exhibition London 2023</p>
-                            <p className="mt-6 text-lg font-bold tracking-tight text-white sm:text-2xl">SUSTAINABILITY BEYOND COMPLIANCE</p>
+                            <p className="mt-6 text-lg font-bold tracking-tight text-white sm:text-2xl">COFFEE BEYOND SUSTAINABILITY</p>
                             <p className="text-lg font-bold tracking-tight text-white sm:text-2xl">13th September 2023</p>
                             <p className="text-lg font-bold tracking-tight text-white sm:text-2xl">Queen Elizabeth ll Centre, Westminster Hall</p>
                             <p className="mx-auto mt-16 text-xl leading-8 text-justify text-white max-w-7xl sm:mt-52">
@@ -117,50 +117,8 @@ export default function Exhibition() {
                             <span>World Coffee Exhibition will be held at the Westminster Hall, adjacent to the conference, where around 15 Exhibitors from coffee origin countries will showcase their coffee and distribute coffee samples. There will also be two cupping sessions organised by an independent coffee lab and 2 panel discussions on the recent SCA cupping protocol and EU due diligence legislations. This is not a big trade show but a bespoke event where green coffee buyers, roasters and traders meet coffee farmers and producers (pre-qualified) to do business and celebrate coffee.</span>
                         </dd>
                     </div>
-
-                </div>
-
-                <div className='justify-center px-12 py-20 mx-auto bg-white mlg:flex-row mmd:flex-col msm:flex-col sm:px-20 sm:max-w-5xl' >
-                    <h2 className="text-4xl font-bold tracking-tight text-gray-900">Exhibitors</h2>
-                    <div className="w-full rounded-lg">
-                        <dd className="mt-2 text-xl leading-7 text-gray-900">
-                            <span>Become an exhibitor at World Coffee Exhibition and display your company’s message in front of Green coffee buyers and roasters with key decision makers in the coffee industry.</span>
-                        </dd>
-                    </div>
-                    <div className='mt-12'>
-                        <div>
-                            <p className="text-lg font-bold tracking-tight text-gray-900 sm:text-2xl">BENEFITS: Why exhibit at World Coffee Summit London?</p>
-                            <ul role="list" className="mt-12">
-                                {benefits.map((event, eventIdx) => (
-                                    <li key={event.id}>
-                                        <div className="relative pb-8">
-                                            {eventIdx !== benefits.length - 1 ? (
-                                                <span className="absolute left-4 top-4 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true" />
-                                            ) : null}
-                                            <div className="relative flex space-x-3">
-                                                <div>
-                                                    <span
-                                                        className='flex items-center justify-center w-8 h-8 bg-yellow-900 rounded-full ring-8 ring-white'
-                                                    >
-                                                        <event.icon className="w-5 h-5 text-white" aria-hidden="true" />
-                                                    </span>
-                                                </div>
-                                                <div className="flex justify-between flex-1 min-w-0 pl-2 space-x-4 sm:pl-4">
-                                                    <div className='flex flex-col'>
-                                                        <p className="text-gray-900 text-md sm:text-lg">
-                                                            {event.description}{' '}
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
                     <div>
-                        <p className="text-lg leading-7 text-gray-600">For exhibition queries please email <Link href={"mailto:info@worldcoffeealliance.com"} target="_blank" className="text-yellow-900 underline hover:underline-offset-4"> mavis@worldcoffeealliance.com</Link></p>
+                        <p className="mt-12 text-lg leading-7 text-gray-600">For exhibition queries please email <Link href={"mailto:info@worldcoffeealliance.com"} target="_blank" className="text-yellow-900 underline hover:underline-offset-4"> mavis@worldcoffeealliance.com</Link></p>
                     </div>
                 </div>
             </div>

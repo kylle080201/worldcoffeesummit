@@ -194,13 +194,10 @@ const generateEmailContent = ({
                                                             src="https://worldcoffeealliance.com/wp-content/uploads/2023/06/Confirmation-Banner.jpg" />
                                                     </div>
                                                     <div class="form-container">
-                                                        <p> Hi ${firstName} ${lastName},</p>
+                                                        <p> Hi ${firstName},</p>
                                                         <p>Thank you for registering as a delegate for World Coffee
                                                             Summit London 2023. We look forward to welcoming you to
                                                             Queen Elizabeth II Centre, London on 13 September 2023. </p>
-                                                        <p>
-                                                            <b>What you need to know:</b>
-                                                        </p>
                                                         <p>Please show the QR code below to collect your badge.</p>
                                                         <div class="qr-code">
                                                             <div>
@@ -214,6 +211,9 @@ const generateEmailContent = ({
                                                                 <div>Delegate to Summit</div>
                                                             </div>
                                                         </div>
+                                                        <p>
+                                                            <b>What you need to know:</b>
+                                                        </p>
                                                         <p><b>When?</b><br> 13th September 2023 – 8:00 – 18:30 </p>
                                                         <p><b>Where?</b><br> The St James Hall at QEII Centre, Broad
                                                             Sanctuary, London SW1P 3EE </p>
@@ -224,9 +224,6 @@ const generateEmailContent = ({
                                                                 href='https://twitter.com/WCoffeeAlliance'>Twitter</a>
                                                             to see daily developments, event highlights and industry
                                                             news.</p>
-                                                        <p>Remember to download and print off your <b>e-badge</b> in
-                                                            advance to gain access to the event, and don’t forget to
-                                                            recycle it afterwards!</p>
                                                         <p>Why not have your colleagues and industry peers join you by
                                                             <a target='_blank'
                                                                 href='http://www.worldcoffeesummit.net/'>sharing this
@@ -383,13 +380,8 @@ const generateEmailContent = ({
                                                             src="https://worldcoffeealliance.com/wp-content/uploads/2023/06/Confirmation-Banner.jpg" />
                                                     </div>
                                                     <div class="form-container">
-                                                        <p> Hi ${firstName} ${lastName},</p>
-                                                        <p>Thank you for registering as a visitor to World Coffee
-                                                            Exhibition London 2023. We look forward to welcoming you to
-                                                            Queen Elizabeth II Centre, London on 13 September 2023.</p>
-                                                        <p>
-                                                            <b>What you need to know:</b>
-                                                        </p>
+                                                        <p> Hi ${firstName},</p>
+                                                        <p>Thank you for registering as a Visitor to World Coffee Exhibition London 2023. We look forward to welcoming you to Queen Elizabeth II Centre, London on 13 September 2023. </p>
                                                         <p>Please show the QR code below to collect your badge.</p>
                                                         <div class="qr-code">
                                                             <div>
@@ -403,9 +395,11 @@ const generateEmailContent = ({
                                                                 <div>Visitor to Exhibition</div>
                                                             </div>
                                                         </div>
+                                                        <p>
+                                                            <b>What you need to know:</b>
+                                                        </p>
                                                         <p><b>When?</b><br> 13th September 2023 – 8:00 – 18:30 </p>
-                                                        <p><b>Where?</b><br> The Westminster Hall at QEII Centre, Broad
-                                                            Sanctuary, London SW1P 3EE </p>
+                                                        <p><b>Where?</b><br> The St James’s Hall at QEII Centre, Broad Sanctuary, London SW1P 3EE </p>
                                                         <p>For the most up to date information about World Coffee
                                                             Summit, why not follow us on <a target='_blank'
                                                                 href='https://www.linkedin.com/company/worldcoffeealliance/'>LinkedIn</a>
@@ -413,11 +407,6 @@ const generateEmailContent = ({
                                                                 href='https://twitter.com/WCoffeeAlliance'>Twitter</a>
                                                             to see daily developments, event highlights and industry
                                                             news.</p>
-                                                        <p>Remember to download and print off your <b>e-badge</b> in
-                                                            advance to gain access to the event, and don’t forget to
-                                                            recycle it afterwards!</p>
-                                                        <p><i>N.B. THIS TICKET CANNOT BE USED TO ACCESS THE WORLD COFFEE
-                                                                SUMMIT.</i></p>
                                                         <p>Why not have your colleagues and industry peers join you by
                                                             <a target='_blank'
                                                                 href='http://www.worldcoffeesummit.net/'>sharing this

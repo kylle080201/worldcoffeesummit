@@ -4,7 +4,7 @@ const timeline = [
     {
         id: 1,
         title: "Navigating complexities of Regulatory Compliance",
-        description: "Our panel of experts and global speakers will examine and assess the impact of the EU due diligence legislations in the light of Climate change. Discussions will also pivot around Regenerative Agricultural practices in promoting carbon capture and sequestration within the framework of carbon credits infrastructure. There will be discussions around  financial opportunities in ESG and Impact Investing to fund innovative supply chain transformation and solutions that is scalable and more resilient.",
+        description: "Our panel of experts and global speakers will examine and assess the impact of the EU due diligence legislation in the light of Climate change. Discussions will also pivot around Regenerative Agricultural practices in promoting carbon capture and sequestration within the framework of carbon credits infrastructure. There will be discussions around  financial opportunities in ESG and Impact Investing to fund innovative supply chain transformation and solutions that is scalable and more resilient.",
         icon: CursorArrowRippleIcon,
         iconBackground: 'bg-lime-700',
     },
