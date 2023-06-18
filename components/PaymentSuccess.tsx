@@ -50,7 +50,7 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, priceId }: any) 
             <div className="bg-white">
                 <div className="flex-shrink-0 max-w-3xl px-6 py-20 mx-auto sm:px-6 sm:py-32 lg:px-8 md:max-w-7xl">
                     <div className='max-w-5xl'>
-                        <img className='w-[25rem]' src="https://worldcoffeealliance.com/wp-content/uploads/2023/05/world-coffee-summit-high-resolution-logo-color-on-transparent-background.png" />
+                        <img className='w-[20rem]' src="https://worldcoffeealliance.com/wp-content/uploads/2023/05/world-coffee-summit-high-resolution-logo-color-on-transparent-background.png" />
                     </div>
                     {res?.res?.event ?
                         <div className="mt-6 justify-left md:mt-12">

@@ -88,7 +88,7 @@ function FAQ() {
                                     </dt>
                                     <Disclosure.Panel as="dd" className="pr-12 mt-2">
                                         <p className="text-lg leading-7 text-gray-600"><span className='font-bold text-yellow-900'>World Coffee Alliance (WCA)</span> is a leading network alliance of coffee professionals, market research consultants and stakeholders across the global coffee value chain. We assist global SMEs and work very closely with coffee cooperatives, governments, investors, technology companies, and industry stakeholders. We offer secure access to all business intelligence, market research, global information, data, and trends in the coffee sector.</p>
-                                        <p className="mt-4 text-lg leading-7 text-gray-600">Please find more information here <Link href={'www.worldcoffeealliance.com'} target={'_blank'}></Link>www.worldcoffeealliance.com</p>
+                                        <p className="mt-4 text-lg leading-7 text-gray-600">Please find more information here <Link href={'https://www.worldcoffeealliance.com'} className='text-yellow-900 underline hover:underline-offset-4' target={'_blank'}>www.worldcoffeealliance.com</Link></p>
                                     </Disclosure.Panel>
                                 </>
                             )}
@@ -110,7 +110,7 @@ function FAQ() {
                                         </Disclosure.Button>
                                     </dt>
                                     <Disclosure.Panel as="dd" className="pr-12 mt-2">
-                                        <p className="text-lg leading-7 text-gray-600"><span className='font-bold text-yellow-900'>World Coffee Alliance (WCA)</span> is a leading network alliance of coffee professionals, market research consultants and stakeholders across the global coffee value chain. We assist global SMEs and work very closely with coffee cooperatives, governments, investors, technology companies, and industry stakeholders. We offer secure access to all business intelligence, market research, global information, data, and trends in the coffee sector.</p>
+                                        <p className="text-lg leading-7 text-gray-600">This event will deep dive into impact of the latest EU Due diligence, the relationship between adoption of Regenerative Agriculture within the carbon credits framework. The discussions will pivot around mitigating climate change and how it is going to be governed and financed. Transforming from conventional agriculture to regenerative will require some innovative technologies and solutions, collaboration, incentives, government grants and private and public funding to be climate positive, scalable, and operational.</p>
                                     </Disclosure.Panel>
                                 </>
                             )}
@@ -145,7 +145,7 @@ function FAQ() {
                                 <>
                                     <dt>
                                         <Disclosure.Button className="flex items-start justify-between w-full text-left text-gray-900">
-                                            <span className="text-lg font-semibold leading-7">WHY IS THIS SUMMIT IMPORTANT? </span>
+                                            <span className="text-lg font-semibold leading-7">WHAT IS THE RELATIONSHIP OF WORLD COFFEE SUMMIT AND WORLD COFFEE EXHIBTIION?</span>
                                             <span className="flex items-center ml-6 h-7">
                                                 {open ? (
                                                     <MinusSmallIcon className="w-6 h-6" aria-hidden="true" />
@@ -259,7 +259,7 @@ function FAQ() {
                                     </dt>
                                     <Disclosure.Panel as="dd" className="pr-12 mt-2">
                                         {whoAttends.map((item) => (
-                                            <p key={item.id} className="text-lg leading-7 text-gray-600">{item.description}</p>
+                                            <p key={item.id} className="mt-4 text-lg leading-7 text-gray-600">{item.description}</p>
                                         ))}
                                     </Disclosure.Panel>
                                 </>
