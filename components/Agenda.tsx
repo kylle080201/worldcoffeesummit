@@ -4,14 +4,14 @@ const timeline = [
     {
         id: 1,
         title: "Navigating complexities of Regulatory Compliance",
-        description: "Our panel of experts and global speakers will examine and assess the impact of the EU due diligence legislations in the light of Climate change. Discussions will also pivot around Regenerative Agricultural practices in promoting carbon capture and sequestration including financial opportunities in ESG Investing to fund supply chain transformation and solutions that is scalable and more resilient.",
+        description: "Our panel of experts and global speakers will examine and assess the impact of the EU due diligence legislations in the light of Climate change. Discussions will also pivot around Regenerative Agricultural practices in promoting carbon capture and sequestration within the framework of carbon credits infrastructure. There will be discussions around  financial opportunities in ESG and Impact Investing to fund innovative supply chain transformation and solutions that is scalable and more resilient.",
         icon: CursorArrowRippleIcon,
         iconBackground: 'bg-lime-700',
     },
     {
         id: 2,
-        title: "Continuing engagement with Governments",
-        description: "How to ensure that engagement from companies and governments on enforcing forest governance on forest-coffee frontier, and that an industry-wide commitment to zero-deforestation is upheld.",
+        title: "Continuing engagement with Governments and the role of Innovation",
+        description: "How to ensure that engagement from companies and governments on empowering stakeholders through technology and science-based approach in enforcing forest governance on forest-coffee frontier, and that an industry-wide commitment to zero-deforestation is upheld.",
         icon: ArrowRightCircleIcon,
         iconBackground: 'bg-lime-700',
     },
@@ -49,7 +49,7 @@ export default function Agenda() {
                 <h2 className="text-4xl font-bold tracking-tight text-white">AGENDA HIGHLIGHTS</h2>
                 <div className="w-full rounded-lg">
                     <dd className="mt-2 text-xl leading-7 text-white">
-                        <span >This one-day high-level business conference will bring together Governments, Public Institutions, Financial Institutions, Coffee Farmers, Cooperatives, Roasters and Importers, global brands, NGOs and civil societies to identify the main areas of collaboration, exploring innovative and regenerative solutions to face the challenges of regulatory compliance and climate change. </span>
+                        <span >This one-day high-level business conference will bring together Governments, Public Institutions, Financial Institutions, Coffee Farmers, Cooperatives, Roasters and Importers, global brands, NGOs and civil societies to identify the main areas of collaboration, exploring innovative technology and regenerative solutions to face the challenges of regulatory compliance and climate change.</span>
                     </dd>
                 </div>
                 <ul role="list" className="mt-12">
