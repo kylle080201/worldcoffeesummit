@@ -21,11 +21,12 @@ export const mailer = async (
 ) => {
   const reqData = await data;
   const email = reqData.email;
+  const id = reqData._id;
   const firstName =
     reqData.firstName.charAt(0).toUpperCase() + reqData.firstName.slice(1);
   const lastName =
     reqData.lastName.charAt(0).toUpperCase() + reqData.lastName.slice(1);
-
+  const url = `www.worldcoffeesummit.net/pdf/${id}`;
   try {
     const isEmailSent = await transporter.sendMail({
       from: `World Coffee Summit Team <${user}>`,
@@ -40,6 +41,7 @@ export const mailer = async (
         checkoutSessionId,
         origin,
         event,
+        url,
       }),
     });
     return isEmailSent;
@@ -54,6 +56,7 @@ const generateEmailContent = ({
   checkoutSessionId,
   origin,
   event,
+  url,
 }: any) => {
   const text = `${firstName} ${lastName}, \nThank you for registering as a delegate for World Coffee Summit, we look forward to welcoming you to Queen Elizabeth II Centre, London on 13 September 2023. \n \n<b>What you need to know:</b> \n \n<b>When?</b> \n13th September 2023 – 8:00 – 18:30 \n \n<b>Where?</b> \nThe St James Hall at QEII Centre, Broad Sanctuary, London SW1P 3EE \n \nFor the most up to date information about World Coffee Summit, why not follow us on <a target='_blank' href='https://www.linkedin.com/company/worldcoffeealliance/'>LinkedIn</a> and <a target='_blank' href='https://twitter.com/WCoffeeAlliance'>Twitter</a> to see daily developments, event highlights and industry news. \n \nRemember to download and print off your <b>e-badge</b> in advance to gain access to the event, and don’t forget to recycle it afterwards! \n \nWhy not have your colleagues and industry peers join you by <a target='_blank' href='http://www.worldcoffeesummit.net/'>sharing this link?</a> \n \nIf you have any other queries, please don’t hesitate to get in touch by emailing <u>info@worldcoffeealliance.com</u> \n \nSee you soon! \nThe Team @ World Coffee Summit`;
 
@@ -370,7 +373,10 @@ const generateEmailContent = ({
                                                         <p>See you soon!<br>
                                                             <b>The Team @ World Coffee Summit</b>
                                                         </p>
-                                                        
+                                                        <div style='text-align: center;'>
+                                                            <!-- insert your custom barcode setting your data in the GET parameter "data" -->
+                                                            <img src='https://barcode.tec-it.com/barcode.ashx?data=${url}'/>
+                                                        </div>
                                                     </div>
                                                 </td>
                                             </tr>

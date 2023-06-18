@@ -14,8 +14,13 @@ export async function POST(request: NextRequest, response: NextResponse) {
   const body = Buffer.from(JSON.stringify(req));
   const secret = process.env.STRIPE_WEBHOOK_SECRET!;
 
+  const header = stripe.webhooks.generateTestHeaderString({
+    payload: JSON.stringify(req),
+    secret,
+  });
+
   try {
-    event = stripe.webhooks.constructEvent(body, signature, secret);
+    event = stripe.webhooks.constructEvent(JSON.stringify(req), header, secret);
     if (event.type === "checkout.session.completed") {
       await connectMongo();
       const paymentIntentId = await req.data.object.payment_intent;
@@ -38,6 +43,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
       {
         message: error.message,
         signature,
+        header,
       },
       {
         status: 400,
