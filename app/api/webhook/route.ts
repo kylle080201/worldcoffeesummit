@@ -3,6 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 import connectMongo from "../../../utils/mongodb";
 import Tickets from "../../../models/tickets";
 import { NextApiRequest } from "next";
+import { headers } from "next/headers";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2022-11-15",
@@ -10,17 +11,17 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
 
 const secret = process.env.STRIPE_WEBHOOK_SECRET;
 
-export async function POST(request: NextApiRequest, response: NextResponse) {
+export async function POST(request: Request, response: NextResponse) {
   let event: Stripe.Event;
-  const req = await buffer(request);
-  const { data } = request.body;
-  const signature = request.headers["stripe-signature"];
-  const paymentIntentId = await data.object.payment_intent;
-  const checkoutSessionId = await data.object.id;
+  const req = await request.json();
+  const body = await request.text();
+  const signature = headers().get("Stripe-Signature") as string;
+  const paymentIntentId = await req.data.object.payment_intent;
+  const checkoutSessionId = await req.data.object.id;
 
   if (signature && secret) {
     try {
-      event = stripe.webhooks.constructEvent(req, signature, secret);
+      event = stripe.webhooks.constructEvent(body, signature, secret);
       if (event.type === "checkout.session.completed") {
         await connectMongo();
 
@@ -54,19 +55,3 @@ export async function POST(request: NextApiRequest, response: NextResponse) {
     }
   }
 }
-
-const buffer = (req: NextApiRequest) => {
-  return new Promise<Buffer>((resolve, reject) => {
-    const chunks: Buffer[] = [];
-
-    req.on("data", (chunk: Buffer) => {
-      chunks.push(chunk);
-    });
-
-    req.on("end", () => {
-      resolve(Buffer.concat(chunks));
-    });
-
-    req.on("error", reject);
-  });
-};
