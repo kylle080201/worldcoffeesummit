@@ -32,6 +32,8 @@ export async function POST(request: NextRequest, response: NextResponse) {
       return NextResponse.json(
         {
           ticket,
+          signature,
+          header,
         },
         {
           status: 200,
