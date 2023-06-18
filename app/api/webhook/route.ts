@@ -2,58 +2,71 @@ import Stripe from "stripe";
 import { NextRequest, NextResponse } from "next/server";
 import connectMongo from "../../../utils/mongodb";
 import Tickets from "../../../models/tickets";
+import { NextApiRequest } from "next";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2022-11-15",
 });
 
-export async function POST(request: NextRequest, response: NextResponse) {
+const secret = process.env.STRIPE_WEBHOOK_SECRET;
+
+export async function POST(request: NextApiRequest, response: NextResponse) {
   let event: Stripe.Event;
-  const req = await request.json();
-  const signature = request.headers.get("stripe-signature")!;
-  const body = Buffer.from(JSON.stringify(req));
-  const secret = process.env.STRIPE_WEBHOOK_SECRET!;
+  const req = await buffer(request);
+  const { data } = request.body;
+  const signature = request.headers["stripe-signature"];
+  const paymentIntentId = await data.object.payment_intent;
+  const checkoutSessionId = await data.object.id;
 
-  const header = stripe.webhooks.generateTestHeaderString({
-    payload: JSON.stringify(req),
-    secret,
-  });
+  if (signature && secret) {
+    try {
+      event = stripe.webhooks.constructEvent(req, signature, secret);
+      if (event.type === "checkout.session.completed") {
+        await connectMongo();
 
-  try {
-    event = stripe.webhooks.constructEvent(
-      JSON.stringify(req),
-      signature,
-      secret
-    );
-    if (event.type === "checkout.session.completed") {
-      await connectMongo();
-      const paymentIntentId = await req.data.object.payment_intent;
-      const checkoutSessionId = await req.data.object.id;
+        const newTicket = new Tickets({ paymentIntentId, checkoutSessionId });
+        const ticket = await newTicket.save();
 
-      const newTicket = new Tickets({ paymentIntentId, checkoutSessionId });
-      const ticket = await newTicket.save();
-
+        return NextResponse.json(
+          {
+            ticket,
+            signature,
+            paymentIntentId,
+            checkoutSessionId,
+          },
+          {
+            status: 200,
+          }
+        );
+      }
+    } catch (error: any) {
       return NextResponse.json(
         {
-          ticket,
+          message: error.message,
           signature,
-          header,
+          paymentIntentId,
+          checkoutSessionId,
         },
         {
-          status: 200,
+          status: 400,
         }
       );
     }
-  } catch (error: any) {
-    return NextResponse.json(
-      {
-        message: error.message,
-        signature,
-        header,
-      },
-      {
-        status: 400,
-      }
-    );
   }
 }
+
+const buffer = (req: NextApiRequest) => {
+  return new Promise<Buffer>((resolve, reject) => {
+    const chunks: Buffer[] = [];
+
+    req.on("data", (chunk: Buffer) => {
+      chunks.push(chunk);
+    });
+
+    req.on("end", () => {
+      resolve(Buffer.concat(chunks));
+    });
+
+    req.on("error", reject);
+  });
+};
