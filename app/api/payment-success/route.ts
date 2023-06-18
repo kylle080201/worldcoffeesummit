@@ -44,7 +44,7 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
   const formData = req.decryptedFormData;
   const priceId = req.priceId;
   const event =
-    priceId === "price_1NJHHMKMWpUKzQVzKrcFYdIk" ? "Exhibition" : "Summit";
+    priceId === "price_1NEpCRKMWpUKzQVzFKnpP0KE" ? "Exhibition" : "Summit";
   try {
     await connectMongo();
     const getTickets = await Tickets.find({

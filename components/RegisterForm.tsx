@@ -68,8 +68,8 @@ const RegisterForm = () => {
     const watchEmail = watch('email');
     return (
         <>
-            <div className="z-40 py-24 bg-white sm:py-32">
-                <div className="max-w-screen-md px-4 py-8 mx-auto mb-12 lg:py-16">
+            <div className="z-40 py-12 bg-white sm:py-20">
+                <div className="max-w-screen-md px-4 mx-auto mb-12">
                     <h2 className="mb-4 text-4xl font-bold tracking-tight text-center text-gray-900 dark:text-white"><span className='text-lime-700'>Personal</span> Information</h2>
                     <form className="space-y-8" onSubmit={handleSubmit(onSubmit)}>
                         <div className='flex gap-4'>

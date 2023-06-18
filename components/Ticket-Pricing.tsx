@@ -14,7 +14,7 @@ function TicketPricing() {
             description: "Eligible for representatives of non-profit NGOs, cooperatives, regulators, governments, public sector, and academia.",
             line_items: [
                 {
-                    price: 'price_1NJtDrKMWpUKzQVzaeAB5uD1',
+                    price: 'price_1NKJxLKMWpUKzQVzw2fISbHg',
                     quantity: 1,
                     tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
                 }
@@ -28,7 +28,7 @@ function TicketPricing() {
             description: "Eligible for corporate representatives.",
             line_items: [
                 {
-                    price: 'price_1NJtFJKMWpUKzQVzoUQO7Dwj',
+                    price: 'price_1NKJxHKMWpUKzQVzMY0ToUIs',
                     quantity: 1,
                     tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
                 }
@@ -42,7 +42,7 @@ function TicketPricing() {
             early_bird: 'Early bird until 15 July 2023. YOU SAVE £400',
             line_items: [
                 {
-                    price: 'price_1NJtFiKMWpUKzQVzsO2NBrm9',
+                    price: 'price_1NKJxCKMWpUKzQVzKKXQgTyo',
                     quantity: 1,
                     tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
                 }
@@ -58,7 +58,7 @@ function TicketPricing() {
             early_bird: 'Early bird until 15 July 2023. YOU SAVE £20',
             line_items: [
                 {
-                    price: 'price_1NJtGKKMWpUKzQVzGyIldRNk',
+                    price: 'price_1NEpCRKMWpUKzQVzFKnpP0KE',
                     quantity: 1,
                     tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
                 }
@@ -67,7 +67,7 @@ function TicketPricing() {
     ]
 
     return (
-        <div className="z-40 py-24 bg-white sm:py-32">
+        <div className="z-40 py-12 bg-white sm:py-20">
             <div className="max-w-5xl mx-auto sm:text-center">
                 <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">Unsure what pass you fall Under?</h2>
                 <h3 className="text-lg tracking-tight text-red-700 sm:text-2xl">Contact us at <a className='underline' href='mailto:info@worldcoffeealliance.com'>info@worldcoffeealliance.com</a> and we&apos;ll help you pick the correct registration pass.</h3>

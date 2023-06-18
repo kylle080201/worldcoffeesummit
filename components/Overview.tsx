@@ -12,9 +12,9 @@ export default function Overview() {
                             <p className="text-4xl font-bold tracking-tight text-lime-700 sm:text-6xl">World Coffee Summit London</p>
                             <p className="mt-4 text-4xl tracking-tight text-yellow-900 sm:text-6xl">& World Coffee Exhibition</p>
                         </div>
-                        <div className='flex-shrink-0 my-auto h-max justify-self-center lg:justify-self-end'>
+                        <Link href={'worldcoffealliance.com'} target='_blank' className='flex-shrink-0 my-auto h-max justify-self-center lg:justify-self-end'>
                             <img className='w-[12rem]' src='https://worldcoffeealliance.com/wp-content/uploads/2021/08/WCA_new_logo.png'></img>
-                        </div>
+                        </Link>
                     </div>
 
                     <p className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Delivering Collaborative Change: Impact</p>

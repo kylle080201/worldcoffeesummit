@@ -18,7 +18,7 @@ function Navbar() {
         <Disclosure as="nav" className="w-full bg-white shadow">
             {({ open }) => (
                 <>
-                    <div className="justify-center w-full px-8 mx-auto max-w-7xl">
+                    <div className="justify-center flex-shrink-0 w-full px-8 mx-auto max-w-7xl">
                         <div className="flex w-full h-16 sm:h-32">
                             <div className="flex w-full sm:justify-between">
                                 <div className="flex items-center mr-2 -ml-2 sm:hidden">
@@ -36,26 +36,26 @@ function Navbar() {
                                 <div className="flex items-center">
                                     <Link href='/'>
                                         <img
-                                            className="hidden h-auto sm:w-64 lg:block"
+                                            className="flex-shrink-0 hidden w-32 h-auto lg:w-64 md:flex"
                                             src="https://worldcoffeealliance.com/wp-content/uploads/2023/05/world-coffee-summit-high-resolution-logo-color-on-transparent-background.png"
                                             alt="WCS Logo"
                                         />
                                     </Link>
                                 </div>
 
-                                <div className="hidden sm:flex ">
+                                <div className="hidden max-w-5xl mx-auto sm:flex">
                                     {navigation.map((item) => (
                                         <Link
                                             key={item.name}
                                             href={item.href}
-                                            className='inline-flex items-end px-2 pb-4 font-bold text-gray-900 text-md sm:px-4 hover:border-b-2 hover:border-lime-700'
+                                            className='inline-flex items-end px-2 pb-4 text-sm font-bold text-gray-900 lg:text-md sm:px-4 hover:border-b-2 hover:border-lime-700'
                                         >
                                             {item.name}
                                         </Link>
                                     ))}
                                 </div>
 
-                                <div className="hidden my-auto sm:flex">
+                                <div className="hidden my-auto lg:flex">
                                     <div className="flex flex-col items-start">
                                         <div className='flex items-center flex-shrink-0'>
                                             <div className='flex-shrink-0 hidden md:inline-flex'>
