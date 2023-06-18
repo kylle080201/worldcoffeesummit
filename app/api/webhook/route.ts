@@ -37,6 +37,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
     return NextResponse.json(
       {
         message: error.message,
+        signature,
       },
       {
         status: 400,

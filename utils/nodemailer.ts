@@ -179,8 +179,6 @@ const generateEmailContent = ({
                                                     </div>
                                                     <div class="form-container">
                                                         <p> Hi ${firstName} ${lastName},</p>
-                                                        <a target="_blank" href="${origin}/print-out?session_id=${checkoutSessionId}"><b>Click this link to download your
-                                                            e-Badge</b></a>
                                                         <p>Thank you for registering as a delegate for World Coffee
                                                             Summit London 2023. We look forward to welcoming you to
                                                             Queen Elizabeth II Centre, London on 13 September 2023. </p>
@@ -346,8 +344,6 @@ const generateEmailContent = ({
                                                     </div>
                                                     <div class="form-container">
                                                         <p> Hi ${firstName} ${lastName},</p>
-                                                       <a target="_blank" href="${origin}/print-out?session_id=${checkoutSessionId}"><b>Click this link to download your
-                                                            e-Badge</b></a>
                                                         <p>Thank you for registering as a visitor to World Coffee Exhibition London 2023. We look forward to welcoming you to Queen Elizabeth II Centre, London on 13 September 2023.</p>
                                                         <p>
                                                             <b>What you need to know:</b>

@@ -16,7 +16,13 @@ export async function POST(request: NextRequest, response: NextResponse) {
   const encryptedFormData = encryptData(formData);
   try {
     const session = await stripe.checkout.sessions.create({
-      // allow_promotion_codes: true,
+      custom_text: {
+        submit: {
+          message:
+            "GLOBAL STRATAGEM GROUP LTD (VAT NO: 440 5676 94) is the operator of World Coffee Alliance (WCA)",
+        },
+      },
+      allow_promotion_codes: true,
       customer_email: req.formData.email,
       mode: "payment",
       payment_method_types: ["card"],
