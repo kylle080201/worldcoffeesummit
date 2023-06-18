@@ -224,7 +224,7 @@ function FAQ() {
                                 <>
                                     <dt>
                                         <Disclosure.Button className="flex items-start justify-between w-full text-left text-gray-900">
-                                            <span className="text-lg font-semibold leading-7">WHAT DO YOU EXPECT FROM THIS SUMMIT AS AN ATTENDEE?</span>
+                                            <span className="text-lg font-semibold leading-7">WHAT MAKES THIS EVENT DIFFERENT?</span>
                                             <span className="flex items-center ml-6 h-7">
                                                 {open ? (
                                                     <MinusSmallIcon className="w-6 h-6" aria-hidden="true" />
@@ -236,7 +236,7 @@ function FAQ() {
                                     </dt>
                                     <Disclosure.Panel as="dd" className="pr-12 mt-2">
                                         <p className="text-lg leading-7 text-gray-600"><span className='font-bold'>Focused and highly-researched agenda designed for actionable insights and practical implementation</span> – the content of the agenda and event structure reflects current concerns of stakeholders on the cost and unintended consequences, providing actionable plans on how to navigate the latest EU due diligence Directive.</p>
-                                        <p className="text-lg leading-7 text-gray-600"><span className='font-bold'>Thought Leadership and providing genuine discussion</span> – the speakers’ line-up which reflects the different sector they represent have been designed to build a more inclusive and in-depth discussion and healthy exchange. The agenda and timings have been built to provide meaningful engagement beyond corporate mantras and hollow sustainability initiatives. High level Speakers have been selected to reflect their vast experience and expertise and we expect interactive participation of the targeted attendees on a Q& A format towards a more active participation.</p>
+                                        <p className="mt-4 text-lg leading-7 text-gray-600"><span className='font-bold'>Thought Leadership and providing genuine discussion</span> – the speakers’ line-up which reflects the different sector they represent have been designed to build a more inclusive and in-depth discussion and healthy exchange. The agenda and timings have been built to provide meaningful engagement beyond corporate mantras and hollow sustainability initiatives. High level Speakers have been selected to reflect their vast experience and expertise and we expect interactive participation of the targeted attendees on a Q& A format towards a more active participation.</p>
                                     </Disclosure.Panel>
                                 </>
                             )}
