@@ -8,7 +8,7 @@ import { SocialIcon } from 'react-social-icons';
 
 
 
-async function PaymentSuccess({ checkoutSessionId, decryptedFormData, priceId }: any) {
+function PaymentSuccess({ checkoutSessionId, decryptedFormData, priceId }: any) {
     const [res, setRes] = useState<IResponseData>(Object)
     const [origin, setOrigin] = useState('')
 
