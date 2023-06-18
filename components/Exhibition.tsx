@@ -84,7 +84,7 @@ export default function Exhibition() {
     return (
         <>
             <div id="exhibition">
-                <div id="overview" className="flex flex-col bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2023/05/OVERVIEW-HERO-SECTION-BG.jpg')] py-20 bg-cover mlg:flex-col">
+                <div id="overview" className="flex flex-col bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2023/06/EXHIBITION-BG-scaled.jpg')] py-20 bg-cover bg-center mlg:flex-col">
                     <div className="self-center px-12 text-center sm:px-20">
                         <div>
                             <p className="text-4xl font-bold tracking-tight text-white sm:text-6xl">World Coffee Exhibition London 2023</p>
