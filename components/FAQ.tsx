@@ -10,20 +10,20 @@ const faqs = [
         answer:
             "This event will deep dive into impact of the latest EU Due diligence, the relationship between adoption of Regenerative Agriculture against the backdrop of climate change and how it is going to be governed and financed by ESG Investments. Transforming from conventional agriculture to regenerative will require some collaboration, incentives, government grants and private and public funding to be climate positive, scalable, and operational.",
     },
+    // {
+    //     id: 2,
+    //     question: "WHEN IS THE EVENT TAKING PLACE?",
+    //     answer:
+    //         "The World Coffee Summit London with the co-located World Coffee Exhibition London is on Wednesday 13 September 2023.",
+    // },
+    // {
+    //     id: 3,
+    //     question: "WHERE IS THE VENUE FOR THIS IN-PERSON EVENT?",
+    //     answer:
+    //         "The World Coffee Summit London will be held at St. James’s Hall of Queen Elizabeth ll Centre, and the co-located World Coffee Exhibition will be held at the Westminster Hall at the Queen Elizabeth ll Centre.",
+    // },
     {
         id: 2,
-        question: "WHEN IS THE EVENT TAKING PLACE?",
-        answer:
-            "The World Coffee Summit London with the co-located World Coffee Exhibition London is on Wednesday 13 September 2023.",
-    },
-    {
-        id: 3,
-        question: "WHERE IS THE VENUE FOR THIS IN-PERSON EVENT?",
-        answer:
-            "The World Coffee Summit London will be held at St. James’s Hall of Queen Elizabeth ll Centre, and the co-located World Coffee Exhibition will be held at the Westminster Hall at the Queen Elizabeth ll Centre.",
-    },
-    {
-        id: 4,
         question: "WHO WILL ATTEND THIS EVENT?",
         answer:
             "Attendees include:",
@@ -63,13 +63,13 @@ const faqs = [
         ]
     },
     {
-        id: 5,
+        id: 3,
         question: "WILL THERE ALSO BE A COFFEE EXHIBITION TO MEET COFFEE PRODUCERS AND BUYERS?",
         answer:
             "As part of WCA’s campaign to highlight and promote some of the leading coffee countries origin, we are inviting Coffee producers and exporters from countries of coffee origin as, to showcase their coffee and distribute coffee samples.  We will have two cupping sessions conducted by an Independent Coffee Lab to provide cupping score results and 2 panels discussing latest trends in SCA cupping protocols. This will help around 100 green coffee buyers and roasters delegates from the UK and European green coffee buyers, traders, and guests to decide if they want to do business with the 12  country of origin Exhibitors.",
     },
     {
-        id: 6,
+        id: 4,
         question: "WHAT IS THE HIGHLIGHT OF THIS EVENT?",
         answer:
             "We will have Keynotes from various UK Government Ministers and various ambassadors, from Ethiopia, India, Japan, Vietnam, Switzerland, Philippines and El Salvador, promoting their country not only as a coffee origin but also as a Tourism and Investment destination",
@@ -81,7 +81,7 @@ const faqs = [
         ]
     },
     {
-        id: 7,
+        id: 5,
         question: "WHY ATTEND?",
         answer:
             "This event is a close door event and not open to the public which means that the networking will be intense, and engagement will be personal.",

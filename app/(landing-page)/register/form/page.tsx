@@ -3,11 +3,10 @@ import RegistrationSteps from "../../../../components/RegistrationSteps";
 
 export default function FormPage() {
     const steps = [
-        { id: '01', name: 'Choose an Event', status: 'complete' },
-        { id: '02', name: 'Choose a ticket', status: 'complete' },
-        { id: '03', name: 'Registration Details', status: 'current' },
-        { id: '04', name: 'Checkout', status: 'upcoming' },
-        { id: '05', name: 'Complete', status: 'upcoming' },
+        { id: '1', name: 'Choose a Pass', status: 'complete' },
+        { id: '2', name: 'Personal Information', status: 'current' },
+        { id: '3', name: 'Payment', status: 'upcoming' },
+        { id: '4', name: 'Confirmation', status: 'upcoming' },
     ]
     return (
         <>
