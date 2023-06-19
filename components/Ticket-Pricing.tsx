@@ -60,7 +60,7 @@ function TicketPricing() {
                 {
                     price: 'price_1NJtGKKMWpUKzQVzGyIldRNk',
                     quantity: 1,
-                    tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
+                    tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
                 }
             ]
         },
