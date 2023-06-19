@@ -44,13 +44,6 @@ export const mailer = async (
         jobTitle,
         companyName,
       }),
-      attachments: [
-        {
-          filename: "qr-code.jpg",
-          path: `https://barcode.tec-it.com/barcode.ashx?data=www.worldcoffeesummit.net/pdf/${id}&code=QRCode&eclevel=L`,
-          cid: "qr-code", //same cid value as in the html img src
-        },
-      ],
     });
     return isEmailSent;
   } catch (error: any) {
@@ -209,7 +202,7 @@ const generateEmailContent = ({
                                                         <div class="qr-code">
                                                             <div>
                                                                 <img
-                                                                    src='cid:qr-code' />
+                                                                    src='https://barcode.tec-it.com/barcode.ashx?data=www.worldcoffeesummit.net/pdf/${id}&code=QRCode&eclevel=L' />
                                                             </div>
                                                             <div class="qr-info">
                                                                 <div>${firstName} ${lastName}</div>
@@ -393,7 +386,7 @@ const generateEmailContent = ({
                                                         <div class="qr-code">
                                                             <div>
                                                                 <img
-                                                                    src='cid:qr-code' />
+                                                                    src='https://barcode.tec-it.com/barcode.ashx?data=www.worldcoffeesummit.net/pdf/${id}&code=QRCode&eclevel=L' />
                                                             </div>
                                                             <div class="qr-info">
                                                                 <div>${firstName} ${lastName}</div>
