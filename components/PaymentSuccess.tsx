@@ -64,7 +64,7 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, priceId }: any) 
                                 An e-mail confirmation will be with you shortly with further instructions
                             </h3>
                             <h3 className="mt-6 text-lg font-bold tracking-tight text-lime-700 sm:text-2xl">
-                                Event Dates:
+                                Event Date:
                             </h3>
                             <h4 className="text-lg tracking-tight text-gray-900 sm:text-2xl">
                                 Wednesday 13 September 2023
