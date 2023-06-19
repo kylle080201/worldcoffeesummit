@@ -53,7 +53,7 @@ const firstRow = [
         name: 'H.E. Mrs. Carmen María Gallardo',
         company: 'Ambassador from the Republic of El Salvador to the United Kingdom',
         imageUrl:
-            'https://worldcoffeealliance.com/wp-content/uploads/2023/05/Picture2.jpg',
+            'https://worldcoffeealliance.com/wp-content/uploads/2023/06/Carmen-Maria-Gallardo.jpg',
     },
     {
         name: 'H.E. Teodoro L. Locsin, Jr',

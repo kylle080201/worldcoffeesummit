@@ -61,7 +61,7 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, priceId }: any) 
                                 Thank you for registering to attend the World Coffee {res?.res?.event} London 2023.
                             </h3>
                             <h3 className="my-6 text-lg tracking-tight text-gray-900 sm:text-2xl">
-                                An e-mail confirmation will be with you shortly with further instructions
+                                An email confirmation will be with you shortly with further instructions
                             </h3>
                             <h3 className="mt-6 text-lg font-bold tracking-tight text-lime-700 sm:text-2xl">
                                 Event Date:

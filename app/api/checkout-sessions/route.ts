@@ -23,6 +23,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
         },
       },
       allow_promotion_codes: true,
+      currency: "GBP",
       customer_email: req.formData.email,
       mode: "payment",
       payment_method_types: ["card"],
