@@ -12,14 +12,21 @@ const secret = process.env.STRIPE_WEBHOOK_SECRET!;
 export async function POST(request: NextRequest, response: NextResponse) {
   try {
     let event: Stripe.Event;
-    const req = await request.json();
-    const body = await request.text();
     const signature = request.headers.get("stripe-signature")!;
-    const paymentIntentId = await req.data.object.payment_intent;
-    const checkoutSessionId = await req.data.object.id;
+    const payload = await request.text();
 
-    event = stripe.webhooks.constructEvent(body, signature, secret);
+    event = stripe.webhooks.constructEvent(payload, signature, secret);
+    interface EventDataObject {
+      payment_intent: string;
+      id: string;
+    }
+    // Access the required data from the event object
+    const eventData = event.data.object as EventDataObject;
+    const paymentIntentId = eventData.payment_intent;
+    const checkoutSessionId = eventData.id;
+
     if (event.type === "checkout.session.completed") {
+      // Handle the checkout session completed event
       await connectMongo();
 
       const newTicket = new Tickets({ paymentIntentId, checkoutSessionId });
