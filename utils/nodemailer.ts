@@ -4,7 +4,7 @@ const user = process.env.EMAIL;
 const pass = process.env.EMAIL_PASS;
 
 export const transporter = nodemailer.createTransport({
-  host: "mail.four.mnnet.co.uk",
+  host: "four.mnnet.co.uk",
   port: 587,
   secure: false,
   auth: {
