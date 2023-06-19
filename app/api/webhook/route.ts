@@ -10,14 +10,14 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
 const secret = process.env.STRIPE_WEBHOOK_SECRET!;
 
 export async function POST(request: NextRequest, response: NextResponse) {
-  let event: Stripe.Event;
-  const req = await request.json();
-  const body = await request.text();
-  const signature = request.headers.get("stripe-signature") as string;
-  const paymentIntentId = await req.data.object.payment_intent;
-  const checkoutSessionId = await req.data.object.id;
-
   try {
+    let event: Stripe.Event;
+    const req = await request.json();
+    const body = await request.text();
+    const signature = request.headers.get("stripe-signature")!;
+    const paymentIntentId = await req.data.object.payment_intent;
+    const checkoutSessionId = await req.data.object.id;
+
     event = stripe.webhooks.constructEvent(body, signature, secret);
     if (event.type === "checkout.session.completed") {
       await connectMongo();
@@ -29,8 +29,6 @@ export async function POST(request: NextRequest, response: NextResponse) {
         {
           ticket,
           signature,
-          paymentIntentId,
-          checkoutSessionId,
         },
         {
           status: 200,
@@ -38,16 +36,19 @@ export async function POST(request: NextRequest, response: NextResponse) {
       );
     }
   } catch (error: any) {
+    const errorMessage =
+      error instanceof Error ? error.message : "Unknown error";
+    // On error, log and return the error message.
+    if (!(error instanceof Error)) console.log(error);
+    console.log(`❌ Error message: ${errorMessage}`);
+
     return NextResponse.json(
       {
-        message: error.message,
-        signature,
-        paymentIntentId,
-        checkoutSessionId,
+        error: {
+          message: `Webhook Error: ${errorMessage}`,
+        },
       },
-      {
-        status: 400,
-      }
+      { status: 400 }
     );
   }
 }
