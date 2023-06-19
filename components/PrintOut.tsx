@@ -11,7 +11,7 @@ export default function PrintOut() {
                         You are now registered!
                     </h2>
                     <h2 className="mt-12 text-2xl font-bold tracking-tight text-white sm:text-4xl">
-                        We are expecting you on the day of the event, see you there!
+                        See you at QEII Centre on 13th September 2023!
                     </h2>
                     <p className="max-w-xl mx-auto mt-6 text-lg leading-8 text-indigo-100">
                         Please only use the qr code on the day of the event.

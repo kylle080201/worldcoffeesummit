@@ -14,7 +14,7 @@ function TicketPricing() {
             description: "Eligible for representatives of non-profit NGOs, cooperatives, regulators, governments, public sector, and academia.",
             line_items: [
                 {
-                    price: 'price_1NKjM2KMWpUKzQVzb9sMCivH',
+                    price: 'price_1NKJxLKMWpUKzQVzw2fISbHg',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
@@ -28,7 +28,7 @@ function TicketPricing() {
             description: "Eligible for corporate representatives.",
             line_items: [
                 {
-                    price: 'price_1NKjLIKMWpUKzQVzNtNVLv1g',
+                    price: 'price_1NKJxHKMWpUKzQVzMY0ToUIs',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
@@ -42,7 +42,7 @@ function TicketPricing() {
             early_bird: 'Early bird until 15 July 2023. YOU SAVE £400',
             line_items: [
                 {
-                    price: 'price_1NKiolKMWpUKzQVzEjuQ8OUo',
+                    price: 'price_1NKJxCKMWpUKzQVzKKXQgTyo',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
@@ -58,7 +58,7 @@ function TicketPricing() {
             early_bird: 'Early bird until 15 July 2023. YOU SAVE £20',
             line_items: [
                 {
-                    price: 'price_1NKKbVKMWpUKzQVz4kCOYOE0',
+                    price: 'price_1NKJx7KMWpUKzQVz35GIoPwh',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
