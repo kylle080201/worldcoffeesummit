@@ -335,6 +335,7 @@ function FAQ() {
                                     </dt>
                                     <Disclosure.Panel as="dd" className="pr-12 mt-2">
                                         <p className="text-lg leading-7 text-gray-600">Please check the <Link href='https://www.gov.uk/browse/visas-immigration' target='_blank' className='text-yellow-900 underline hover:underline-offset-4'>United Kingdom Visa Portal website</Link> for visa-related information in the United Kingdom.</p>
+                                        <p className="mt-4 text-lg leading-7 text-gray-600">If you need any invitation letter for visa application, please contact Mavis at <Link href={'mailto:mavis@worldcoffeealliance.com'} target='_blank' className='text-yellow-900 underline hover:underline-offset-4'>mavis@worldcoffeealliance.com</Link></p>
                                     </Disclosure.Panel>
                                 </>
                             )}
