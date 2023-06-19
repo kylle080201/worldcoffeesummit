@@ -2,8 +2,7 @@ import Stripe from "stripe";
 import { NextRequest, NextResponse } from "next/server";
 import connectMongo from "../../../utils/mongodb";
 import Tickets from "../../../models/tickets";
-import { NextApiRequest } from "next";
-import { headers } from "next/headers";
+import { buffer } from "micro";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2022-11-15",
@@ -14,7 +13,7 @@ const secret = process.env.STRIPE_WEBHOOK_SECRET!;
 export async function POST(request: NextRequest, response: NextResponse) {
   let event: Stripe.Event;
   const req = await request.json();
-  const body = await request.text();
+  const body = await buffer(request);
   const signature = request.headers.get("stripe-signature") as string;
   const paymentIntentId = await req.data.object.payment_intent;
   const checkoutSessionId = await req.data.object.id;
