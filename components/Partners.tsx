@@ -19,6 +19,11 @@ export default function Partners() {
             className: 'w-[40rem] mx-auto'
         },
         {
+            href: 'https://www.eda.admin.ch/london',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/06/Swiss-embassy-logo.jpg',
+            className: 'w-[30rem] mx-auto'
+        },
+        {
             href: 'https://www.uk.emb-japan.go.jp/itprtop_en/index.html',
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/06/JAPANESE-EMBASSY-UK.jpg',
             className: 'w-[20rem] mx-auto'
