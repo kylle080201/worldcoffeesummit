@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
+import { isConstructorDeclaration } from "typescript";
 import Tickets from "../../../models/tickets";
 import connectMongo from "../../../utils/mongodb";
 import { mailer } from "../../../utils/nodemailer";
