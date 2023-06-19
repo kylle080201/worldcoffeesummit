@@ -393,7 +393,7 @@ const generateEmailContent = ({
                                                         <div class="qr-code">
                                                             <div>
                                                                 <img
-                                                                    src='https://barcode.tec-it.com/barcode.ashx?data=www.worldcoffeesummit.net/pdf/${id}&code=QRCode&eclevel=L' />
+                                                                    src='cid:qr-code' />
                                                             </div>
                                                             <div class="qr-info">
                                                                 <div>${firstName} ${lastName}</div>
