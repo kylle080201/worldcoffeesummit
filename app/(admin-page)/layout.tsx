@@ -12,7 +12,11 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <head></head>
+            <head>
+                <link rel="icon" href=
+                    "https://worldcoffeealliance.com/wp-content/uploads/2023/06/world-coffee-summit-icon.png"
+                    type="image/x-icon" />
+            </head>
             <body>
                 {children}
                 <Footer />
