@@ -195,14 +195,12 @@ const generateEmailContent = ({
                                                     </div>
                                                     <div class="form-container">
                                                         <p> Hi ${firstName},</p>
-                                                        <p>Thank you for registering as a delegate for World Coffee
-                                                            Summit London 2023. We look forward to welcoming you to
-                                                            Queen Elizabeth II Centre, London on 13 September 2023. </p>
+                                                        <p>Thank you for registering as a Delegate to World Coffee Summit London 2023. We look forward to welcoming you to Queen Elizabeth II Centre, London on 13 September 2023. </p>
                                                         <p>Please show the QR code below to collect your badge.</p>
                                                         <div class="qr-code">
                                                             <div>
-                                                                <img
-                                                                    src='https://barcode.tec-it.com/barcode.ashx?data=www.worldcoffeesummit.net/pdf/${id}&code=QRCode&eclevel=L' />
+                                                                <img alt="QR Code"
+                                                                    src="https://barcode.tec-it.com/barcode.ashx?data=www.worldcoffeesummit.net/pdf/${id}&code=QRCode&eclevel=L" />
                                                             </div>
                                                             <div class="qr-info">
                                                                 <div>${firstName} ${lastName}</div>
@@ -214,22 +212,19 @@ const generateEmailContent = ({
                                                         <p>
                                                             <b>What you need to know:</b>
                                                         </p>
-                                                        <p><b>When?</b><br> 13th September 2023 – 8:00 – 18:30 </p>
-                                                        <p><b>Where?</b><br> The St James Hall at QEII Centre, Broad
-                                                            Sanctuary, London SW1P 3EE </p>
-                                                        <p>For the most up to date information about World Coffee
-                                                            Summit, why not follow us on <a target='_blank'
+                                                        <p><b>When?</b><br> 13th September 2023 - 8:00 - 18:30 </p>
+                                                        <p><b>Where?</b><br> The St James’s Hall at QEII Centre, Broad Sanctuary, London SW1P 3EE </p>
+                                                        <p>For the most up to date information about World Coffee Summit, why not follow us on
+                                                         <a target='_blank'
                                                                 href='https://www.linkedin.com/company/worldcoffeealliance/'>LinkedIn</a>
                                                             and <a target='_blank'
                                                                 href='https://twitter.com/WCoffeeAlliance'>Twitter</a>
-                                                            to see daily developments, event highlights and industry
-                                                            news.</p>
+                                                            to see daily developments, event highlights and industry news.</p>
                                                         <p>Why not have your colleagues and industry peers join you by
                                                             <a target='_blank'
                                                                 href='http://www.worldcoffeesummit.net/'>sharing this
                                                                 link?</a></p>
-                                                        <p>If you have any other queries, please don’t hesitate to get
-                                                            in touch by emailing <u>events@worldcoffeealliance.com</u>
+                                                        <p>If you have any other queries, please don’t hesitate to get in touch by emailing <a href="mailto:events@worldcoffeealliance.com">events@worldcoffeealliance.com</a>
                                                         </p>
                                                         <p>See you soon!<br>
                                                             <b>The Team @ World Coffee Summit</b>
@@ -385,8 +380,8 @@ const generateEmailContent = ({
                                                         <p>Please show the QR code below to collect your badge.</p>
                                                         <div class="qr-code">
                                                             <div>
-                                                                <img
-                                                                    src='https://barcode.tec-it.com/barcode.ashx?data=www.worldcoffeesummit.net/pdf/${id}&code=QRCode&eclevel=L' />
+                                                                <img alt="QR Code"
+                                                                    src="https://barcode.tec-it.com/barcode.ashx?data=www.worldcoffeesummit.net/pdf/${id}&code=QRCode&eclevel=L" />
                                                             </div>
                                                             <div class="qr-info">
                                                                 <div>${firstName} ${lastName}</div>
@@ -398,21 +393,19 @@ const generateEmailContent = ({
                                                         <p>
                                                             <b>What you need to know:</b>
                                                         </p>
-                                                        <p><b>When?</b><br> 13th September 2023 – 8:00 – 18:30 </p>
-                                                        <p><b>Where?</b><br> The St James’s Hall at QEII Centre, Broad Sanctuary, London SW1P 3EE </p>
-                                                        <p>For the most up to date information about World Coffee
-                                                            Summit, why not follow us on <a target='_blank'
+                                                        <p><b>When?</b><br> 13th September 2023 - 8:00 - 17:00 </p>
+                                                        <p><b>Where?</b><br>The Westminster Hall at QEII Centre, Broad Sanctuary, London SW1P 3EE</p>
+                                                        <p>For the most up to date information about World Coffee Summit and World Coffee Exhibition, why not follow us on <a target='_blank'
                                                                 href='https://www.linkedin.com/company/worldcoffeealliance/'>LinkedIn</a>
                                                             and <a target='_blank'
                                                                 href='https://twitter.com/WCoffeeAlliance'>Twitter</a>
-                                                            to see daily developments, event highlights and industry
-                                                            news.</p>
+                                                            to see daily developments, event highlights and industry news.</p>
                                                         <p>Why not have your colleagues and industry peers join you by
                                                             <a target='_blank'
                                                                 href='http://www.worldcoffeesummit.net/'>sharing this
                                                                 link?</a></p>
                                                         <p>If you have any other queries, please don’t hesitate to get
-                                                            in touch by emailing <u>events@worldcoffeealliance.com</u>
+                                                            in touch by emailing <a href="mailto:events@worldcoffeealliance.com">events@worldcoffeealliance.com</a>
                                                         </p>
                                                         <p>See you soon!<br>
                                                             <b>The Team @ World Coffee Summit</b>
