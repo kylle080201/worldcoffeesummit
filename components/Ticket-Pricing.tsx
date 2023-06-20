@@ -22,13 +22,13 @@ function TicketPricing() {
         },
         {
             title: "Standard Corporate Pass",
-            old_price: 1275,
-            item_price: 975,
+            old_price: 1150,
+            item_price: 785,
             early_bird: 'Early bird until 15 July 2023. YOU SAVE £300',
             description: "Eligible for corporate representatives.",
             line_items: [
                 {
-                    price: 'price_1NKJxHKMWpUKzQVzMY0ToUIs',
+                    price: 'price_1NL3BZKMWpUKzQVzLZrHkY7r',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
@@ -36,13 +36,13 @@ function TicketPricing() {
         },
         {
             title: "Service Provider Pass",
-            old_price: 1550,
-            item_price: 1150,
+            old_price: 1350,
+            item_price: 975,
             description: "Required for for-profit consultancies, start-ups, technology and service providers.",
             early_bird: 'Early bird until 15 July 2023. YOU SAVE £400',
             line_items: [
                 {
-                    price: 'price_1NKJxCKMWpUKzQVzKKXQgTyo',
+                    price: 'price_1NL3BsKMWpUKzQVz3HcTYbCn',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
@@ -99,7 +99,7 @@ function TicketPricing() {
                                     <tr key={delegate.title} className="even:bg-gray-100">
                                         <td className="flex-wrap px-3 py-4 font-semibold text-gray-900 text-md">{delegate.title}</td>
                                         <td className="flex-wrap px-3 py-4 text-gray-900 text-md">{delegate.description}<br /><span className='font-medium text-red-700'>{delegate.early_bird}</span></td>
-                                        <td className="px-3 py-4 text-gray-900 text-md"><span className='text-red-700 line-through '>£{delegate.old_price}.00</span> <br /> <span className='font-bold '>£{delegate.item_price}.00</span></td>
+                                        <td className="px-3 py-4 text-red-700 text-md"><span className='text-gray-900 line-through '>£{delegate.old_price}.00</span> <br /> <span className='font-bold '>£{delegate.item_price}.00</span></td>
                                         <td className="px-3 py-4">
                                             <div className='my-auto justify-self-center mx:auto'>
                                                 <Link
@@ -151,7 +151,7 @@ function TicketPricing() {
                                     <tr key={visitor.title} className="even:bg-gray-100">
                                         <td className="flex-wrap px-3 py-4 font-semibold text-gray-900 text-md">{visitor.title}</td>
                                         <td className="flex-wrap px-3 py-4 text-gray-900 text-md">{visitor.description}<br /><span className='font-medium text-red-700'>{visitor.early_bird}</span></td>
-                                        <td className="px-3 py-4 text-gray-900 text-md"><span className='text-red-700 line-through '>£{visitor.old_price}.00</span> <br /> <span className='font-bold '>£{visitor.item_price}.00</span></td>
+                                        <td className="px-3 py-4 text-red-700 text-md"><span className='text-gray-900 line-through '>£{visitor.old_price}.00</span> <br /> <span className='font-bold '>£{visitor.item_price}.00</span></td>
                                         <td className="px-3 py-4">
                                             <div className='my-auto justify-self-center mx:auto'>
                                                 <Link
