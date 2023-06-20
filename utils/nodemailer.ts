@@ -14,11 +14,7 @@ export const transporter = nodemailer.createTransport({
   },
 });
 
-export const mailer = async (
-  data: any,
-  checkoutSessionId: any,
-  origin: any
-) => {
+export const mailer = async (data: any) => {
   const reqData = await data;
   const event = reqData.event;
   const email = reqData.email;
@@ -29,9 +25,7 @@ export const mailer = async (
   const id = reqData._id;
   const jobTitle = reqData.jobTitle;
   const companyName = reqData.companyName;
-  const qrSrc = await QRCode.toDataURL(
-    `https://www.worldcoffeesummit.net/pdf/${id}`
-  );
+
   try {
     const isEmailSent = await transporter.sendMail({
       from: `World Coffee Summit Team <${user}>`,
@@ -44,7 +38,7 @@ export const mailer = async (
         lastName,
         firstName,
         event,
-        qrSrc,
+        id,
         jobTitle,
         companyName,
       }),
@@ -59,7 +53,7 @@ const generateEmailContent = ({
   lastName,
   firstName,
   event,
-  qrSrc,
+  id,
   jobTitle,
   companyName,
 }: any) => {
@@ -204,7 +198,7 @@ const generateEmailContent = ({
                                                         <div class="qr-code">
                                                             <div>
                                                                 <img alt="QR Code"
-                                                                    src="${qrSrc}" />
+                                                                    src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.worldcoffeesummit.net/pdf/${id}" />
                                                             </div>
                                                             <div class="qr-info">
                                                                 <div>${firstName} ${lastName}</div>
@@ -385,7 +379,7 @@ const generateEmailContent = ({
                                                         <div class="qr-code">
                                                             <div>
                                                                 <img alt="QR Code"
-                                                                    src="${qrSrc}" />
+                                                                    src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.worldcoffeesummit.net/pdf/${id}" />
                                                             </div>
                                                             <div class="qr-info">
                                                                 <div>${firstName} ${lastName}</div>
