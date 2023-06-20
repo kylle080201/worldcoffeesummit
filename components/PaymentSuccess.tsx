@@ -80,7 +80,7 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, priceId }: any) 
                             </h4>
                             <div className='flex items-center my-auto mt-6 gap-x-4'>
                                 <p className="max-w-xl text-lg leading-8 text-gray-900 sm:text-2xl">
-                                    Still didn&apos;t receive and email?
+                                    Still didn&apos;t receive an email?
                                 </p>
                                 <div className="flex justify-center gap-x-6">
                                     <button
