@@ -28,7 +28,7 @@ function TicketPricing() {
             description: "Eligible for corporate representatives.",
             line_items: [
                 {
-                    price: 'price_1NKJxHKMWpUKzQVzMY0ToUIs',
+                    price: 'price_1NL2JsKMWpUKzQVzWf64T1u9',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
@@ -42,7 +42,7 @@ function TicketPricing() {
             early_bird: 'Early bird until 15 July 2023. YOU SAVE £400',
             line_items: [
                 {
-                    price: 'price_1NKJxCKMWpUKzQVzKKXQgTyo',
+                    price: 'price_1NKiolKMWpUKzQVzEjuQ8OUo',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
