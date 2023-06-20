@@ -1,4 +1,5 @@
 import nodemailer from "nodemailer";
+import QRCode from "qrcode";
 
 const user = process.env.EMAIL;
 const pass = process.env.EMAIL_PASS;
@@ -60,7 +61,7 @@ const generateEmailContent = ({
   companyName,
 }: any) => {
   const text = `${firstName} ${lastName}, \nThank you for registering as a delegate for World Coffee Summit, we look forward to welcoming you to Queen Elizabeth II Centre, London on 13 September 2023. \n \n<b>What you need to know:</b> \n \n<b>When?</b> \n13th September 2023 – 8:00 – 18:30 \n \n<b>Where?</b> \nThe St James Hall at QEII Centre, Broad Sanctuary, London SW1P 3EE \n \nFor the most up to date information about World Coffee Summit, why not follow us on <a target='_blank' href='https://www.linkedin.com/company/worldcoffeealliance/'>LinkedIn</a> and <a target='_blank' href='https://twitter.com/WCoffeeAlliance'>Twitter</a> to see daily developments, event highlights and industry news. \n \nRemember to download and print off your <b>e-badge</b> in advance to gain access to the event, and don’t forget to recycle it afterwards! \n \nWhy not have your colleagues and industry peers join you by <a target='_blank' href='http://www.worldcoffeesummit.net/'>sharing this link?</a> \n \nIf you have any other queries, please don’t hesitate to get in touch by emailing <u>events@worldcoffeealliance.com</u> \n \nSee you soon! \nThe Team @ World Coffee Summit`;
-
+  const qrUrl = QRCode.toDataURL(`https://www.worldcoffeesummit.net/pdf/${id}`);
   const html =
     event === "Summit"
       ? `<!DOCTYPE html>
@@ -191,7 +192,7 @@ const generateEmailContent = ({
                             " class="padding message-content">
                                                     <div class="header-image">
                                                         <img width="500%"
-                                                            src="https://worldcoffeealliance.com/wp-content/uploads/2023/06/Confirmation-Banner.jpg" />
+                                                            src="${qrUrl}" />
                                                     </div>
                                                     <div class="form-container">
                                                         <p> Hi ${firstName},</p>
