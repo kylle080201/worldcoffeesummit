@@ -75,9 +75,12 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, priceId }: any) 
                             <h4 className="text-lg tracking-tight text-gray-900 sm:text-2xl">
                                 QEII Centre
                             </h4>
+                            <h4 className="mt-6 text-lg tracking-tight text-gray-900 sm:text-2xl">
+                                Didn&apos;t receive an email? Please check your spam/junk mail.
+                            </h4>
                             <div className='flex items-center my-auto mt-6 gap-x-4'>
                                 <p className="max-w-xl text-lg leading-8 text-gray-900 sm:text-2xl">
-                                    Didn&apos;t receive an email?
+                                    Still didn&apos;t receive and email?
                                 </p>
                                 <div className="flex justify-center gap-x-6">
                                     <button
