@@ -397,7 +397,7 @@ const generateEmailContent = ({
                                                                 <div>${firstName} ${lastName}</div>
                                                                 <div>${jobTitle}</div>
                                                                 <div>${companyName}</div>
-                                                                <div>Delegate to Summit</div>
+                                                                <div>Visitor to Exhibition</div>
                                                             </div>
                                                         </div>
                                                         <p>
