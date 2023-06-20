@@ -8,13 +8,13 @@ function TicketPricing() {
     const summit = [
         {
             title: "NGO/Academic Pass",
-            old_price: 699,
-            item_price: 499,
+            old_price: 695,
+            item_price: 495,
             early_bird: 'Early bird until 15 July 2023. YOU SAVE £200',
             description: "Eligible for representatives of non-profit NGOs, cooperatives, regulators, governments, public sector, and academia.",
             line_items: [
                 {
-                    price: 'price_1NKJxLKMWpUKzQVzw2fISbHg',
+                    price: 'price_1NL5ygKMWpUKzQVznBPOCOPr',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
@@ -22,13 +22,13 @@ function TicketPricing() {
         },
         {
             title: "Standard Corporate Pass",
-            old_price: 1150,
-            item_price: 785,
-            early_bird: 'Early bird until 15 July 2023. YOU SAVE £300',
+            old_price: 1145,
+            item_price: 795,
+            early_bird: 'Early bird until 15 July 2023. YOU SAVE £350',
             description: "Eligible for corporate representatives.",
             line_items: [
                 {
-                    price: 'price_1NL3BZKMWpUKzQVzLZrHkY7r',
+                    price: 'price_1NL5xuKMWpUKzQVzFcO5gToF',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
@@ -36,10 +36,10 @@ function TicketPricing() {
         },
         {
             title: "Service Provider Pass",
-            old_price: 1350,
-            item_price: 975,
+            old_price: 1345,
+            item_price: 995,
             description: "Required for for-profit consultancies, start-ups, technology and service providers.",
-            early_bird: 'Early bird until 15 July 2023. YOU SAVE £400',
+            early_bird: 'Early bird until 15 July 2023. YOU SAVE £350',
             line_items: [
                 {
                     price: 'price_1NL3BsKMWpUKzQVz3HcTYbCn',
@@ -52,13 +52,13 @@ function TicketPricing() {
     const exhibition = [
         {
             title: "Standard Visitor Pass",
-            old_price: 149,
-            item_price: 129,
+            old_price: 145,
+            item_price: 125,
             description: "Eligible for coffee roasters, green coffee buyers and coffee traders (Imp& Exp)",
             early_bird: 'Early bird until 15 July 2023. YOU SAVE £20',
             line_items: [
                 {
-                    price: 'price_1NKJx7KMWpUKzQVz35GIoPwh',
+                    price: 'price_1NL5puKMWpUKzQVzGgXt59vX',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
