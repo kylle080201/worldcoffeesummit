@@ -42,6 +42,18 @@ export const mailer = async (data: any) => {
         jobTitle,
         companyName,
       }),
+      attachments: [
+        {
+          filename: "qr-code.jpg", // Replace with your image file name
+          path: `https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://www.worldcoffeesummit.net/pdf/${id}`, // Replace with the actual path of your image file
+          cid: "qr-code-cid", // Optional: unique content ID to reference the image in the email body
+        },
+        {
+          filename: "qr-code-downloadable.jpg", // Replace with your image file name
+          path: `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.worldcoffeesummit.net/pdf/${id}`, // Replace with the actual path of your image file
+          contentDisposition: "attachment", // Makes the attachment downloadable
+        },
+      ],
     });
     return isEmailSent;
   } catch (error: any) {
@@ -147,7 +159,7 @@ const generateEmailContent = ({
         .qr-code {
             display: flex;
             flex-direction: row;
-            gap: 10px;
+            gap: 20px;
         }
 
         .qr-code .qr-info {
@@ -188,17 +200,17 @@ const generateEmailContent = ({
                               color: #232323;
                             " class="padding message-content">
                                                     <div class="header-image">
-                                                        <img width="500%"
+                                                        <img width="500"
                                                             src="https://worldcoffeealliance.com/wp-content/uploads/2023/06/Confirmation-Banner.jpg" />
                                                     </div>
                                                     <div class="form-container">
                                                         <p> Hi ${firstName},</p>
                                                         <p>Thank you for registering as a Delegate to World Coffee Summit London 2023. We look forward to welcoming you to Queen Elizabeth II Centre, London on 13 September 2023. </p>
-                                                        <p>Please show the QR code below to collect your badge.</p>
+                                                        <p>To collect your badge, please show and scan the QR code below or attached.</p>
                                                         <div class="qr-code">
                                                             <div>
                                                                 <img alt="QR Code"
-                                                                    src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.worldcoffeesummit.net/pdf/${id}" />
+                                                                    src="cid:qr-code-cid" />
                                                             </div>
                                                             <div class="qr-info">
                                                                 <div>${firstName} ${lastName}</div>
@@ -369,23 +381,23 @@ const generateEmailContent = ({
                               color: #232323;
                             " class="padding message-content">
                                                     <div class="header-image">
-                                                        <img width="500%"
+                                                        <img width="500"
                                                             src="https://worldcoffeealliance.com/wp-content/uploads/2023/06/Confirmation-Banner.jpg" />
                                                     </div>
                                                     <div class="form-container">
                                                         <p> Hi ${firstName},</p>
                                                         <p>Thank you for registering as a Visitor to World Coffee Exhibition London 2023. We look forward to welcoming you to Queen Elizabeth II Centre, London on 13 September 2023. </p>
-                                                        <p>Please show the QR code below to collect your badge.</p>
+                                                        <p>To collect your badge, please show and scan the QR code below or attached.</p>
                                                         <div class="qr-code">
                                                             <div>
                                                                 <img alt="QR Code"
-                                                                    src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.worldcoffeesummit.net/pdf/${id}" />
+                                                                    src="cid:qr-code-cid" />
                                                             </div>
                                                             <div class="qr-info">
                                                                 <div>${firstName} ${lastName}</div>
                                                                 <div>${jobTitle}</div>
                                                                 <div>${companyName}</div>
-                                                                <div>Visitor to Exhibition</div>
+                                                                <div>Delegate to Summit</div>
                                                             </div>
                                                         </div>
                                                         <p>
