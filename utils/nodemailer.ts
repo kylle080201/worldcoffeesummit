@@ -39,15 +39,11 @@ export const mailer = async (data: any) => {
         firstName,
         event,
         id,
+        email,
         jobTitle,
         companyName,
       }),
       attachments: [
-        {
-          filename: "qr-code.jpg", // Replace with your image file name
-          path: `https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://www.worldcoffeesummit.net/pdf/${id}`, // Replace with the actual path of your image file
-          cid: "qr-code-cid", // Optional: unique content ID to reference the image in the email body
-        },
         {
           filename: "qr-code-downloadable.jpg", // Replace with your image file name
           path: `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.worldcoffeesummit.net/pdf/${id}`, // Replace with the actual path of your image file
@@ -66,6 +62,7 @@ const generateEmailContent = ({
   firstName,
   event,
   id,
+  email,
   jobTitle,
   companyName,
 }: any) => {
@@ -73,7 +70,7 @@ const generateEmailContent = ({
 
   const html =
     event === "Summit"
-      ? `<!DOCTYPE html>
+      ? `
 <html>
 
 <head>
@@ -210,12 +207,13 @@ const generateEmailContent = ({
                                                         <div class="qr-code">
                                                             <div>
                                                                 <img alt="QR Code"
-                                                                    src="cid:qr-code-cid" />
+                                                                    src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.worldcoffeesummit.net/pdf/${id}" />
                                                             </div>
                                                             <div class="qr-info">
                                                                 <div>${firstName} ${lastName}</div>
                                                                 <div>${jobTitle}</div>
                                                                 <div>${companyName}</div>
+                                                                <div>${email}</div>
                                                                 <div>Delegate to Summit</div>
                                                             </div>
                                                         </div>
@@ -391,12 +389,13 @@ const generateEmailContent = ({
                                                         <div class="qr-code">
                                                             <div>
                                                                 <img alt="QR Code"
-                                                                    src="cid:qr-code-cid" />
+                                                                    src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.worldcoffeesummit.net/pdf/${id}" />
                                                             </div>
                                                             <div class="qr-info">
                                                                 <div>${firstName} ${lastName}</div>
                                                                 <div>${jobTitle}</div>
                                                                 <div>${companyName}</div>
+                                                                <div>${email}</div>
                                                                 <div>Visitor to Exhibition</div>
                                                             </div>
                                                         </div>
