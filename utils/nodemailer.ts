@@ -192,7 +192,7 @@ const generateEmailContent = ({
                             " class="padding message-content">
                                                     <div class="header-image">
                                                         <img width="500%"
-                                                            src="${qrUrl}" />
+                                                            src="https://worldcoffeealliance.com/wp-content/uploads/2023/06/Confirmation-Banner.jpg" />
                                                     </div>
                                                     <div class="form-container">
                                                         <p> Hi ${firstName},</p>
@@ -201,7 +201,7 @@ const generateEmailContent = ({
                                                         <div class="qr-code">
                                                             <div>
                                                                 <img alt="QR Code"
-                                                                    src="https://barcode.tec-it.com/barcode.ashx?data=www.worldcoffeesummit.net/pdf/${id}&code=QRCode&eclevel=L" />
+                                                                    src="${qrUrl}" />
                                                             </div>
                                                             <div class="qr-info">
                                                                 <div>${firstName} ${lastName}</div>
@@ -373,7 +373,7 @@ const generateEmailContent = ({
                             " class="padding message-content">
                                                     <div class="header-image">
                                                         <img width="500%"
-                                                            src="${qrUrl}" />
+                                                            src="https://worldcoffeealliance.com/wp-content/uploads/2023/06/Confirmation-Banner.jpg" />
                                                     </div>
                                                     <div class="form-container">
                                                         <p> Hi ${firstName},</p>
@@ -382,7 +382,7 @@ const generateEmailContent = ({
                                                         <div class="qr-code">
                                                             <div>
                                                                 <img alt="QR Code"
-                                                                    src="https://barcode.tec-it.com/barcode.ashx?data=www.worldcoffeesummit.net/pdf/${id}&code=QRCode&eclevel=L" />
+                                                                    src="${qrUrl}" />
                                                             </div>
                                                             <div class="qr-info">
                                                                 <div>${firstName} ${lastName}</div>
