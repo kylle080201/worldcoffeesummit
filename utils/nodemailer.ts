@@ -198,7 +198,7 @@ const generateEmailContent = ({
                                                         <div class="qr-code">
                                                             <div>
                                                                 <img alt="QR Code"
-                                                                    src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${id}" />
+                                                                    src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.worldcoffeesummit.net/pdf/${id}" />
                                                             </div>
                                                             <div class="qr-info">
                                                                 <div>${firstName} ${lastName}</div>
@@ -379,7 +379,7 @@ const generateEmailContent = ({
                                                         <div class="qr-code">
                                                             <div>
                                                                 <img alt="QR Code"
-                                                                    src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${id}" />
+                                                                    src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.worldcoffeesummit.net/pdf/${id}" />
                                                             </div>
                                                             <div class="qr-info">
                                                                 <div>${firstName} ${lastName}</div>
