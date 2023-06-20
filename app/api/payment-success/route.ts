@@ -62,7 +62,7 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
         { new: true }
       );
       if (!res.isEmailAccepted || res.isEmailAccepted === false) {
-        const mailerRes = await mailer(res, checkoutSessionId, origin);
+        const mailerRes = await mailer(res);
         if (mailerRes?.accepted?.length ?? 0 > 0) {
           await Tickets.findByIdAndUpdate(res._id, {
             $set: {
