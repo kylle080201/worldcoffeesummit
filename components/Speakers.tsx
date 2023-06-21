@@ -24,7 +24,7 @@ const firstRow = [
             'https://worldcoffeealliance.com/wp-content/uploads/2023/05/DR-LEONARD-MIZZI.jpg',
     },
     {
-        name: 'Vanusia Nogueria',
+        name: 'Vanusia Nogueira',
         role: 'Executive Director',
         company: 'International Coffee Organization(ICO)',
         imageUrl:
