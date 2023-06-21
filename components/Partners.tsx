@@ -19,6 +19,11 @@ export default function Partners() {
             className: 'w-[40rem] mx-auto'
         },
         {
+            href: 'https://www.ethioembassy.org.uk/',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/06/ETHIOPIA-EMBASSY.png',
+            className: 'w-[25rem] mx-auto'
+        },
+        {
             href: 'https://www.eda.admin.ch/london',
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/06/Swiss-embassy-logo.jpg',
             className: 'w-[30rem] mx-auto'
