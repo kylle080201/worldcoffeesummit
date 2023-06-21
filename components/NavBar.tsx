@@ -48,17 +48,17 @@ function Navbar() {
                                         <Link
                                             key={item.name}
                                             href={item.href}
-                                            className='inline-flex items-end px-2 pb-4 text-sm font-bold text-gray-900 lg:text-md sm:px-4 hover:border-b-2 hover:border-lime-700'
+                                            className='inline-flex items-end px-2 pb-4 text-sm font-bold text-gray-900 lg:text-md lg:px-4 hover:border-b-2 hover:border-lime-700'
                                         >
                                             {item.name}
                                         </Link>
                                     ))}
                                 </div>
 
-                                <div className="hidden my-auto lg:flex">
+                                <div className="hidden my-auto sm:flex">
                                     <div className="flex flex-col items-start">
-                                        <div className='flex items-center flex-shrink-0'>
-                                            <div className='flex-shrink-0 hidden md:inline-flex'>
+                                        <div className='flex flex-wrap items-center'>
+                                            <div className='flex-wrap'>
                                                 <a href='mailto:events@worldcoffeealliance.com' className='mr-2 font-semibold underline text-md'>Get in touch</a>
                                             </div>
 
@@ -97,7 +97,7 @@ function Navbar() {
                             ))}
                         </div>
                         <div className='items-center justify-center pb-4 pl-3'>
-                            <div className='flex-shrink-0 '>
+                            <div className='flex-wrap'>
                                 <a href='mailto:events@worldcoffeealliance.com' className='mr-2 font-semibold underline text-md'>Get in touch</a>
                             </div>
 
