@@ -49,7 +49,7 @@ export default function Agenda() {
                 <h2 className="text-4xl font-bold tracking-tight text-white">AGENDA HIGHLIGHTS</h2>
                 <div className="w-full rounded-lg">
                     <dd className="mt-2 text-xl leading-7 text-white">
-                        <span >This one-day high-level business conference will bring together Governments, Public Institutions, Financial Institutions, Coffee Farmers, Cooperatives, Roasters and Importers, global brands, NGOs and civil societies to identify the main areas of collaboration, exploring innovative technology and regenerative solutions to face the challenges of regulatory compliance and climate change.</span>
+                        <span >This one-day high-level business conference will bring together Governments, Public Institutions, Financial Institutions, Global Investors, Coffee Farmers, Cooperatives, Roasters and Importers, global brands, NGOs and civil societies to identify the main areas of collaboration, exploring innovative technology and regenerative solutions to face the challenges of regulatory compliance and climate change.</span>
                     </dd>
                 </div>
                 <ul role="list" className="mt-12">
