@@ -62,6 +62,12 @@ const firstRow = [
             'https://worldcoffeealliance.com/wp-content/uploads/2023/06/H.E.-Ambassador-Teodoro-L-Locsin-Jr-square.jpg',
     },
     {
+        name: 'H.E. Mr Manoah Esipisu',
+        company: "High Commissioner of the Republic of Kenya to the United Kingdom",
+        imageUrl:
+            'https://worldcoffeealliance.com/wp-content/uploads/2023/06/HE-Mr-Manoah-Esipisu.webp',
+    },
+    {
         name: 'Paul Rooke',
         role: 'Executive Director',
         company: 'British Coffee Association (BCA)',
