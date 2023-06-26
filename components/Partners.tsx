@@ -34,6 +34,11 @@ export default function Partners() {
             className: 'w-[20rem] mx-auto'
         },
         {
+            href: 'https://en.wikipedia.org/wiki/Embassy_of_El_Salvador,_London',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/06/EU_REINO-UNIDO.png',
+            className: 'w-[25rem] mx-auto'
+        },
+        {
             href: 'https://www.fairtrade.net/',
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2020/08/FBM_INT_VERT_RGB_POS.png',
             className: 'w-[10rem] mx-auto'
