@@ -20,8 +20,8 @@ export default function Partners() {
         },
         {
             href: 'https://www.ethioembassy.org.uk/',
-            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/06/ETHIOPIA-EMBASSY.png',
-            className: 'w-[25rem] mx-auto'
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/06/ETHIOPIA-EMBASSY-LOGO.jpg',
+            className: 'w-[15rem] mx-auto'
         },
         {
             href: 'https://www.eda.admin.ch/london',
