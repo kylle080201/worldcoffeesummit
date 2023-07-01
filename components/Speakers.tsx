@@ -62,6 +62,12 @@ const firstRow = [
             'https://worldcoffeealliance.com/wp-content/uploads/2023/06/HE-Mr-Manoah-Esipisu.webp',
     },
     {
+        name: ' H.E. Guisell Morales-Echaverry',
+        company: "Ambassador of the Republic of Nicaragua to the United Kingdom",
+        imageUrl:
+            'https://worldcoffeealliance.com/wp-content/uploads/2023/07/H.E.-Guisell-Morales-Echaverry-portrait.png',
+    },
+    {
         name: 'Paul Rooke',
         role: 'Executive Director',
         company: 'British Coffee Association (BCA)',
@@ -102,6 +108,13 @@ const firstRow = [
         company: 'Systemiq',
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/05/KATHERINE-SODULKA.png',
+    },
+    {
+        name: 'Gert van der Bijl',
+        role: 'Senior EU Policy Advisor',
+        company: 'Solidaridad',
+        imageUrl:
+            'https://worldcoffeealliance.com/wp-content/uploads/2023/07/Gert-van-der-Bijl-portrait-scaled.jpg',
     },
 ]
 
