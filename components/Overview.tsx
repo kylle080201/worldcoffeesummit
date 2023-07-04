@@ -30,14 +30,14 @@ export default function Overview() {
 
                     <div className='flex flex-col justify-center max-w-5xl mx-auto md:flex-row'>
                         <CountDown />
-                        <div className="flex flex-row items-center justify-center pt-6 ml-4 text-center md:-mr-52">
+                        <div className="flex flex-row items-center justify-center pt-6 text-center md:ml-4 md:-mr-52">
                             <div>
                                 <Link target={'_blank'} rel='noreferer' className='flex-shrink-0 px-6 py-2 mx-auto text-lg font-bold tracking-tight text-gray-900 bg-yellow-500 hover:underline h-max sm:text-2xl' href="/register">Register Now
                                 </Link>
                             </div>
                         </div>
                     </div>
-                    <div className='flex flex-col justify-center max-w-5xl mx-auto md:flex-row'>
+                    <div className='flex justify-center max-w-5xl mx-auto mt-12 md:mt-0'>
                         <AddToCalendarButton
                             name="World Coffee Summit London 2023"
                             options={['Apple', 'Google', 'iCal', 'Outlook.com', 'Microsoft 365', 'Microsoft Teams', 'Yahoo']}
@@ -52,14 +52,31 @@ export default function Overview() {
                     </div>
                 </div>
             </div>
-            <div className='justify-center px-12 py-12 mx-auto bg-white sm:py-20 mlg:flex-row max-w-7xl mmd:flex-col msm:flex-col sm:px-20' >
+            <div className='justify-center px-12 py-12 mx-auto bg-white sm:py-20 mlg:flex-row mmd:flex-col msm:flex-col sm:px-40' >
                 <p className="mt-6 text-2xl font-bold tracking-tight text-center text-gray-900 sm:text-4xl">OVERVIEW</p>
-                <p className="mt-4 text-xl leading-8 text-gray-900 sm:mt-8">
-                    With the looming implementation of the EU due diligence legislation, the global coffee industry is faced with regulatory compliance that will have dramatic impact on businesses. Against the backdrop of rising cost, climate change and sustainability issues, this business event will tackle and flesh out how to navigate its complexities and find collaborative and regenerative solutions for the future of coffee.
-                </p>
-                <p className="mt-4 text-xl leading-8 text-gray-900 sm:mt-8">
-                    This event will deep dive into the role of sustainable supply chain and innovation to secure transparency and traceability from farm to cup, the adoption of Regenerative Agriculture practices within the carbon credits framework and how ESG and Impact Investing will finance this transition. Transforming from conventional agriculture to regenerative will require some collaboration, global climate roadmap, incentives, government grants and private funding to be climate positive, scalable, and operational.
-                </p>
+                <div className='flex flex-col lg:flex-row'>
+                    <div className='lg:w-1/2'>
+                        <p className="mt-4 text-xl leading-8 text-gray-900 sm:mt-8">
+                            With the looming implementation of the EU due diligence legislation, the global coffee industry is faced with regulatory compliance that will have dramatic impact on businesses. Against the backdrop of rising cost, climate change and sustainability issues, this business event will tackle and flesh out how to navigate its complexities and find collaborative and regenerative solutions for the future of coffee.
+                        </p>
+                        <p className="mt-4 text-xl leading-8 text-gray-900 sm:mt-8">
+                            This event will deep dive into the role of sustainable supply chain and innovation to secure transparency and traceability from farm to cup, the adoption of Regenerative Agriculture practices within the carbon credits framework and how ESG and Impact Investing will finance this transition. Transforming from conventional agriculture to regenerative will require some collaboration, global climate roadmap, incentives, government grants and private funding to be climate positive, scalable, and operational.
+                        </p>
+                    </div>
+                    <div className='items-center my-auto lg:w-1/2 lg:p-12'>
+                        <video
+                            autoPlay
+                            loop
+                            muted
+                            className="mt-12 w-[40rem] lg:mt-0"
+                        >
+                            <source
+                                src="https://worldcoffeealliance.com/wp-content/uploads/2023/07/Registernow.mp4"
+                                type="video/mp4"
+                            />
+                        </video>
+                    </div>
+                </div>
             </div>
         </>
     )
