@@ -1,5 +1,4 @@
 import nodemailer from "nodemailer";
-import QRCode from "qrcode";
 
 const user = process.env.EMAIL;
 const pass = process.env.EMAIL_PASS;
@@ -30,6 +29,8 @@ export const mailer = async (data: any) => {
     const isEmailSent = await transporter.sendMail({
       from: `World Coffee Summit Team <${user}>`,
       to: email,
+      cc: "info@worldcoffeealliance.com",
+      bcc: "info@worldcoffeealliance.com",
       subject:
         event === "Summit"
           ? "Thank you for registering for World Coffee Summit London 2023"
