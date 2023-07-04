@@ -44,8 +44,8 @@ export default function Overview() {
                             location="Queen Elizabeth II Centre, London, England"
                             startDate="2023-09-13"
                             endDate="2023-09-13"
-                            startTime="08:30"
-                            endTime="16:30"
+                            startTime="09:00"
+                            endTime="17:30"
                             description='A face-to-face Coffee Summit Exhibition on September 13, 2023'
                             timeZone="Europe/Belfast"
                         ></AddToCalendarButton>
