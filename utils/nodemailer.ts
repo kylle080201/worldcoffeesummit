@@ -1,5 +1,4 @@
 import nodemailer from "nodemailer";
-import QRCode from "qrcode";
 
 const user = process.env.EMAIL;
 const pass = process.env.EMAIL_PASS;
