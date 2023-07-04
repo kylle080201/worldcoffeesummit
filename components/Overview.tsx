@@ -1,6 +1,8 @@
+"use client"
 import Link from 'next/link'
 import React from 'react'
 import CountDown from './CountDown'
+import { AddToCalendarButton } from 'add-to-calendar-button-react';
 
 export default function Overview() {
     return (
@@ -34,6 +36,19 @@ export default function Overview() {
                                 </Link>
                             </div>
                         </div>
+                    </div>
+                    <div className='flex flex-col justify-center max-w-5xl mx-auto md:flex-row'>
+                        <AddToCalendarButton
+                            name="World Coffee Summit London 2023"
+                            options={['Apple', 'Google', 'iCal', 'Outlook.com', 'Microsoft 365', 'Microsoft Teams', 'Yahoo']}
+                            location="Queen Elizabeth II Centre, London, England"
+                            startDate="2023-09-13"
+                            endDate="2023-09-13"
+                            startTime="08:30"
+                            endTime="16:30"
+                            description='A face-to-face Coffee Summit Exhibition on September 13, 2023'
+                            timeZone="Europe/Belfast"
+                        ></AddToCalendarButton>
                     </div>
                 </div>
             </div>
