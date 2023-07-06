@@ -5,7 +5,7 @@ export default function Venue() {
     return (
         <div className="py-20 overflow-hidden bg-gray-100 " id='venue'>
             <div className="mx-auto lg:flex md:max-w-7xl">
-                <div className="flex-shrink-0 mx-auto md:max-w-7xl">
+                <div className="flex-shrink-0 mx-12 lg:mx-0 md:max-w-7xl">
                     <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                         THE VENUE
                     </p>
@@ -63,7 +63,7 @@ export default function Venue() {
                         </div>
                     </div>
                 </div>
-                <div className="flex-shrink-0 w-1/2 max-w-5xl mx-auto mt-12 md:mt-0 md:ml-16">
+                <div className="flex-shrink-0 w-1/2 max-w-5xl mx-12 mt-12 lg:mx-0 md:mt-0 lg:ml-16">
                     <img
                         src="https://worldcoffeealliance.com/wp-content/uploads/2023/06/sustainable-foods-QE2-2.jpg"
                         alt="QE II"
