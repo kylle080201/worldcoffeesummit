@@ -46,16 +46,17 @@ export default function Overview() {
                             endDate="2023-09-13"
                             startTime="09:00"
                             endTime="17:30"
+                            trigger="click"
                             description='A face-to-face Coffee Summit Exhibition on September 13, 2023'
                             timeZone="Europe/Belfast"
                         ></AddToCalendarButton>
                     </div>
                 </div>
             </div>
-            <div className='justify-center px-12 py-12 mx-auto bg-white sm:py-20 mlg:flex-row mmd:flex-col msm:flex-col sm:px-40' >
+            <div className='justify-center py-12 mx-auto bg-white max-w-7xl sm:py-20' >
                 <p className="mt-6 text-2xl font-bold tracking-tight text-center text-gray-900 sm:text-4xl">OVERVIEW</p>
-                <div className='flex flex-col lg:flex-row'>
-                    <div className='lg:w-1/2'>
+                <div className='flex flex-col'>
+                    <div className='px-12 lg:px-0'>
                         <p className="mt-4 text-xl leading-8 text-gray-900 sm:mt-8">
                             With the looming implementation of the EU due diligence legislation, the global coffee industry is faced with regulatory compliance that will have dramatic impact on businesses. Against the backdrop of rising cost, climate change and sustainability issues, this business event will tackle and flesh out how to navigate its complexities and find collaborative and regenerative solutions for the future of coffee.
                         </p>
@@ -63,12 +64,12 @@ export default function Overview() {
                             This event will deep dive into the role of sustainable supply chain and innovation to secure transparency and traceability from farm to cup, the adoption of Regenerative Agriculture practices within the carbon credits framework and how ESG and Impact Investing will finance this transition. Transforming from conventional agriculture to regenerative will require some collaboration, global climate roadmap, incentives, government grants and private funding to be climate positive, scalable, and operational.
                         </p>
                     </div>
-                    <div className='items-center my-auto lg:w-1/2 lg:p-12'>
+                    <div className='items-center px-24 my-auto'>
                         <video
                             autoPlay
                             loop
                             muted
-                            className="mt-12 w-[40rem] lg:mt-0"
+                            className="w-full mt-12"
                         >
                             <source
                                 src="https://worldcoffeealliance.com/wp-content/uploads/2023/07/Registernow.mp4"
