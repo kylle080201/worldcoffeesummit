@@ -1,3 +1,4 @@
+import { CalendarDaysIcon, ChatBubbleOvalLeftEllipsisIcon, UserIcon, UsersIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 import React from 'react'
 
@@ -6,24 +7,31 @@ function WhyAttend() {
         {
             id: 1,
             title: "ONE DAY",
-            description: "Focused and condensed event to provide value and efficiency."
+            description: "Focused and condensed event to provide value and efficiency.",
+            icon: CalendarDaysIcon
         },
         {
             id: 2,
             title: "RELEVANT AGENDA",
-            description: "Debate and discuss sustainability and finance issues that matter and learn how to implement policies through Keynotes and panel discussions."
+            description: "Debate and discuss sustainability and finance issues that matter and learn how to implement policies through Keynotes and panel discussions.",
+            icon: ChatBubbleOvalLeftEllipsisIcon
         },
         {
             id: 3,
             title: "EXPERT SPEAKERS",
-            description: "Gain valuable insights from global leaders, governments and leading EU policy and funding practitioners in the fields of sustainability and regulations."
+            description: "Gain valuable insights from global leaders, governments and leading EU policy and funding practitioners in the fields of sustainability and regulations.",
+            icon: UserIcon
         },
         {
             id: 4,
             title: "NETWORK",
-            description: "Connect and get engage with your cross-sector peers to explore sustainability beyond compliance and future of collaboration and broaden your contact list."
+            description: "Connect and get engage with your cross-sector peers to explore sustainability beyond compliance and future of collaboration and broaden your contact list.",
+            icon: UsersIcon
         }
     ]
+    function classNames(...classes: any[]) {
+        return classes.filter(Boolean).join(' ')
+    }
     return (
         <div id="why-attend" className="flex flex-col bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2023/07/shutterstock_536617741-scaled.jpg')] bg-center bg-cover">
             <div className='w-full py-40 bg-gray-50/70'>
@@ -34,7 +42,16 @@ function WhyAttend() {
                     <div className='grid grid-cols-1 mx-auto mt-20 max-w-7xl gap-x-6 gap-y-20 lg:grid-cols-4 lg:gap-x-8'>
                         {WhyAttend.map((item) => (
                             <div key={item.id} className='flex-col text-lg lg:text-2xl'>
-                                <div className='font-bold'>
+                                <div className='justify-center'>
+                                    <span
+                                        className={classNames(
+                                            item.icon,
+                                        )}
+                                    >
+                                        <item.icon className="w-24 mx-auto" aria-hidden="true" />
+                                    </span>
+                                </div>
+                                <div className='mt-8 font-bold'>
                                     {item.title}
                                 </div>
                                 <div className='mx-8 mt-8 lg:mx-0'>
