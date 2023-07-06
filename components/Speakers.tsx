@@ -10,7 +10,7 @@ const speakers = [
         role: 'Director-General',
         company: 'Food and Agriculture Organization (FAO)',
         imageUrl:
-            'https://worldcoffeealliance.com/wp-content/uploads/2023/05/DR-DONGYU-QU.jpg',
+            'https://worldcoffeealliance.com/wp-content/uploads/2023/07/DG_banner-Bio.png',
 
     },
     {
