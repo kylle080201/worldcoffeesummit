@@ -7,7 +7,7 @@ import Link from 'next/link'
 const speakers = [
     {
         name: 'Dr. Dongyu Qu',
-        role: 'Directoral-General',
+        role: 'Director-General',
         company: 'Food and Agriculture Organization (FAO)',
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/05/DR-DONGYU-QU.jpg',
@@ -1120,7 +1120,7 @@ export default function Speakers() {
                                     </div>
                                     <div className="overflow-auto text-sm sm:text-md sm:mt-5 max-h-60">
                                         <p className="mt-2 text-gray-600">
-                                            No Bio Available
+                                            H.E. Guisell Morales-Echaverry is the Ambassador Extraordinary and Plenipotentiary of Nicaragua to United Kingdom of Great Britain and Norther Ireland since January 2015. She is also appointed Concurrent Ambassador to Ireland (since September 2016) and Iceland (since November 2018). She is the Permanent Representative of Nicaragua to International Maritime Organization and Representative of Nicaragua to the International Cocoa Organization, the International Sugar Organization and the International Coffee Organisation. In 2012, she was appointed by the Nicaraguan Ministry of Foreign Affairs to serve as Chargée d’Affaires at the Embassy of Nicaragua to United Kingdom. H.E. Guisell Morales-Echaverry was also appointed by the Nicaraguan Supreme Court of Justice as Arbitrator Judge for Conflict Resolution Directorate (DIRAC). From 2006 to 2009, she had been Country Director for Cid Gallup Latin American – International Social Research and Survey Firm. She had been Funder and Senior Partner at “Nicaragua Leagal Office” From 1995 to 2001, and Senior Partner at “Vivas Lugo and Associates from 2001 to 2006. From 1979 to 1994, she worked at the Nicaraguan Ministry of Interior as Chief of Staff, Member of the Minister Special Auxiliary Staff, Advisor to General Secretary and Legal Advisor. H. E. Morales-Echaverry graduated from the Universidad Centro Americana with a Master’s in International Relations in 1994 and she holds a Law degree from the Universidad Nacional Autónoma de Nicaragua. She was authorized by the Nicaraguan Supreme Court of Justice to exert as Lawyer and Notary, in 1990.
                                         </p>
                                     </div>
                                     <div className="mt-5 sm:mt-6">
@@ -1309,7 +1309,7 @@ export default function Speakers() {
                                     </div>
                                     <div className="overflow-auto text-sm sm:text-md sm:mt-5 max-h-60">
                                         <p className="mt-2 text-gray-600">
-                                            No Bio Available
+                                            William Kennedy is versatile financial journalist and newsroom manager with 20 years experience of reporting, writing and editing. He oversees Bloomberg&apos;s global coverage of energy and commodities.
                                         </p>
 
                                     </div>
