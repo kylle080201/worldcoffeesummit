@@ -6,9 +6,9 @@ import Link from 'next/link'
 
 const speakers = [
     {
-        name: 'Dr. Dongyu Qu',
+        name: 'Dr. Qu Dongyu',
         role: 'Director-General',
-        company: 'Food and Agriculture Organization (FAO)',
+        company: 'Food and Agriculture Organization of the United Nations (FAO)',
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/07/DG_banner-Bio.png',
 
