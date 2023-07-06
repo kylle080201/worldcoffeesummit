@@ -5,6 +5,7 @@ import Overview from "../../components/Overview";
 import Speakers from "../../components/Speakers";
 import Exhibition from "../../components/Exhibition";
 import Partners from "../../components/Partners";
+import WhyAttend from "../../components/WhyAttend";
 
 export default function HomePage() {
     return (
@@ -13,6 +14,7 @@ export default function HomePage() {
                 <Overview />
                 <Speakers />
                 <Agenda />
+                <WhyAttend />
                 <Venue />
                 <Partners />
                 <Exhibition />
