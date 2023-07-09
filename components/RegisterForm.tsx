@@ -138,7 +138,7 @@ const RegisterForm = () => {
                                             I agree
                                         </label>
                                         <p id="comments-description" className="text-gray-500">
-                                            By ticking this checkbox you agree to the <button type='button' onClick={() => { setOpenTermsAndConditions(!openTermsAndConditions) }} className='underline text-lime-700'>terms and conditions</button>.
+                                            By ticking this checkbox you agree to the <button type='button' onClick={() => { setOpenTermsAndConditions(!openTermsAndConditions) }} className='underline text-lime-700'>terms and conditions</button> and <Link target={'_blank'} href={'/privacy-policy'} className='underline text-lime-700'>privacy policy</Link>.
                                         </p>
                                     </div>
                                 </div>
