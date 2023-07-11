@@ -23,7 +23,7 @@ const speakers = [
     {
         name: 'Dr. Leonard Mizzi',
         role: 'Head of Unit, INTPA',
-        company: 'European Commission (EU)',
+        company: 'European Commission (EC)',
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/05/DR-LEONARD-MIZZI.jpg',
     },
