@@ -83,8 +83,8 @@ function TicketPricing() {
                                     <th scope="col" className="py-3.5 pl-4 pr-3 w-1/4 text-left sm:text-2xl text-lg font-semibold text-gray-900 sm:pl-3">
                                         Delegate to Summit
                                     </th>
-                                    <th scope="col" className="px-3 py-3.5 w-2/4 text-left text-lg font-semibold text-gray-900">
-
+                                    <th scope="col" className="px-3 py-3.5 w-2/4 text-left text-lg sm:text-2xl font-semibold text-red-700">
+                                        (Can access the Exhibition)
                                     </th>
                                     <th scope="col" className="py-3.5 pl-4 w-1/12 pr-3 text-left sm:text-2xl text-lg font-semibold text-gray-900 sm:pl-3">
                                         Price
@@ -135,8 +135,8 @@ function TicketPricing() {
                                     <th scope="col" className="py-3.5 w-1/4 pl-4 pr-3 text-left sm:text-2xl text-lg font-semibold text-gray-900 sm:pl-3">
                                         Visitor to Exhibition
                                     </th>
-                                    <th scope="col" className="px-3 w-2/4 py-3.5 text-left text-lg font-semibold text-gray-900">
-
+                                    <th scope="col" className="px-3 w-2/4 py-3.5 text-left sm:text-2xl text-lg font-semibold text-red-700">
+                                        (No access to the Summit)
                                     </th>
                                     <th scope="col" className="py-3.5 pl-4 w-1/12 pr-3 text-left sm:text-2xl text-lg font-semibold text-gray-900 sm:pl-3">
                                         Price
