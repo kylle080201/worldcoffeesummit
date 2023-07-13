@@ -48,6 +48,11 @@ export default function Partners() {
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/06/SYSTEMIQ-Logo-white-copy1x.png',
             className: 'w-[25rem] bg-gray-900 p-2 mx-auto'
         },
+        {
+            href: 'https://www.systemiq.earth/',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/07/Logo.png',
+            className: 'w-[20rem] p-2 mx-auto'
+        },
     ]
     return (
         <>
