@@ -6,14 +6,15 @@ import Link from 'next/link'
 
 const speakers = [
     {
+        key: '0',
         name: 'Dr. Qu Dongyu',
         role: 'Director-General',
         company: 'Food and Agriculture Organization of the United Nations (FAO)',
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/07/DG_banner-Bio.png',
-
     },
     {
+        key: '1',
         name: 'Anthony Hobley',
         role: 'Executive Fellow; Co-Chair, Advisory Board',
         company: 'World Economic Forum; Carbon Tracker Initiative',
@@ -21,6 +22,7 @@ const speakers = [
             'https://worldcoffeealliance.com/wp-content/uploads/2023/06/ANTHONY-HOBLEY-PHOTO.jpg',
     },
     {
+        key: '2',
         name: 'Dr. Leonard Mizzi',
         role: 'Head of Unit, INTPA',
         company: 'European Commission (EC)',
@@ -28,50 +30,57 @@ const speakers = [
             'https://worldcoffeealliance.com/wp-content/uploads/2023/05/DR-LEONARD-MIZZI.jpg',
     },
     {
+        key: '3',
         name: 'Vanusia Nogueira',
         role: 'Executive Director',
         company: 'International Coffee Organization(ICO)',
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2022/07/VANUSIA-NOGUEIRA_ICO-Square-scaled.jpg',
     },
-
     {
+        key: '4',
         name: 'H.E. Teferi Melesse Desta',
         company: 'Ethiopian Ambassador to the United Kingdom',
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/05/TEFERI-MELESSE-DESTA.jpg',
     },
     {
+        key: '5',
         name: 'H.E. Markus Leitner',
         company: 'Ambassador of Switzerland to the United Kingdom',
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/05/MARKUS-LEITNER.jpg',
     },
     {
+        key: '6',
         name: 'H.E. Hajime Hayashi',
         company: 'Ambassador Extraordinary and Plenipotentiary of Japan to the United Kingdom of Great Britain and Northern Ireland',
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/05/HAYASHU-HAJIME-1.jpg',
     },
     {
+        key: '7',
         name: 'H.E. Mrs. Carmen María Gallardo',
         company: 'Ambassador from the Republic of El Salvador to the United Kingdom',
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/06/Carmen-Maria-Gallardo.jpg',
     },
     {
+        key: '8',
         name: 'H.E. Mr Manoah Esipisu',
         company: "High Commissioner of the Republic of Kenya to the United Kingdom",
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/06/HE-Mr-Manoah-Esipisu.webp',
     },
     {
+        key: '9',
         name: ' H.E. Guisell Morales-Echaverry',
         company: "Ambassador of the Republic of Nicaragua to the United Kingdom",
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/07/H.E.-Guisell-Morales-Echaverry-portrait.png',
     },
     {
+        key: '10',
         name: 'Paul Rooke',
         role: 'Executive Director',
         company: 'British Coffee Association (BCA)',
@@ -79,6 +88,7 @@ const speakers = [
             'https://worldcoffeealliance.com/wp-content/uploads/2023/05/PAUL-ROOKE.jpg',
     },
     {
+        key: '11',
         name: 'Melissa Duncan',
         role: 'Executive Director',
         company: 'Fairtrade International',
@@ -86,6 +96,7 @@ const speakers = [
             'https://worldcoffeealliance.com/wp-content/uploads/2023/02/preferred-Melissa-Duncan.jpg',
     },
     {
+        key: '12',
         name: 'William Kennedy',
         role: 'Senior Executive Editor',
         company: 'Bloomberg',
@@ -93,6 +104,7 @@ const speakers = [
             'https://worldcoffeealliance.com/wp-content/uploads/2023/05/WILLIAM-KENNEDY.jpg',
     },
     {
+        key: '13',
         name: 'Nigel Hunt',
         role: 'Senior Correspondent',
         company: 'Reuters',
@@ -100,6 +112,7 @@ const speakers = [
             'https://worldcoffeealliance.com/wp-content/uploads/2023/06/NIGEL-HUNT-THOMSON-REUTERS.jpg',
     },
     {
+        key: '14',
         name: 'Anna R Rios',
         role: 'Climate Change Senior Specialist',
         company: 'Inter-American Development Bank (IADB)',
@@ -107,6 +120,7 @@ const speakers = [
             'https://worldcoffeealliance.com/wp-content/uploads/2023/05/ANNA-R-RIOS.jpg',
     },
     {
+        key: '15',
         name: 'Katherine Stodulka',
         role: 'Partner, Director, Blended Finance',
         company: 'Systemiq',
@@ -114,11 +128,28 @@ const speakers = [
             'https://worldcoffeealliance.com/wp-content/uploads/2023/05/KATHERINE-SODULKA.png',
     },
     {
+        key: '16',
         name: 'Gert van der Bijl',
         role: 'Senior EU Policy Advisor',
         company: 'Solidaridad',
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/07/Gert-van-der-Bijl-portrait-scaled.jpg',
+    },
+    {
+        key: '17',
+        name: 'Dr. Martina Bozzola',
+        role: 'Senior Advisor Sustainability and Livelihood',
+        company: 'International Trade Centre (UN/WTO)',
+        imageUrl:
+            'https://worldcoffeealliance.com/wp-content/uploads/2023/07/Bozzola.Martina-scaled.jpg',
+    },
+    {
+        key: '18',
+        name: 'Dr. Alvaro Lario',
+        role: 'President',
+        company: 'International Fund of Agricultural Development (IFAD) ',
+        imageUrl:
+            'https://worldcoffeealliance.com/wp-content/uploads/2023/07/mut5673199979946008165-1.jpg',
     },
 ]
 
@@ -140,7 +171,8 @@ export default function Speakers() {
     const [openSpeaker14, setOpenSpeaker14] = useState(false)
     const [openSpeaker15, setOpenSpeaker15] = useState(false)
     const [openSpeaker16, setOpenSpeaker16] = useState(false)
-
+    const [openSpeaker17, setOpenSpeaker17] = useState(false)
+    const [openSpeaker18, setOpenSpeaker18] = useState(false)
     return (
         <>
             <div className="px-12 py-20 bg-gray-100 sm:px-20" id='speakers'>
@@ -167,7 +199,21 @@ export default function Speakers() {
                                 </div>
                             </a>
                         </li>
-
+                        {/* speaker 18 */}
+                        <li>
+                            <a onClick={() => { setOpenSpeaker18(!openSpeaker18) }} className="flex flex-col gap-6 hover:cursor-pointer">
+                                <div className='flex-shrink-0 mx-auto'>
+                                    <Image className="rounded-md w-[30rem] " src={speakers[18].imageUrl} alt={speakers[18].name} width={160} height={160} />
+                                </div>
+                                <div className="flex mx-auto text-center">
+                                    <div>
+                                        <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[18].name}</p>
+                                        <p className="leading-7 text-gray-700 text-md">{speakers[18].role}</p>
+                                        <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[18].company}</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
                         {/* speaker 1 */}
                         <li>
                             <a onClick={() => { setOpenSpeaker1(!openSpeaker1) }} className="flex flex-col gap-6 hover:cursor-pointer">
@@ -404,6 +450,21 @@ export default function Speakers() {
                                         <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[16].name}</p>
                                         <p className="leading-7 text-gray-700 text-md">{speakers[16].role}</p>
                                         <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[16].company}</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        {/* speaker 17 */}
+                        <li>
+                            <a onClick={() => { setOpenSpeaker17(!openSpeaker17) }} className="flex flex-col gap-6 hover:cursor-pointer">
+                                <div className='flex-shrink-0 mx-auto'>
+                                    <Image className="rounded-md w-[30rem] " src={speakers[17].imageUrl} alt={speakers[17].name} width={160} height={160} />
+                                </div>
+                                <div className="flex mx-auto text-center">
+                                    <div>
+                                        <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[17].name}</p>
+                                        <p className="leading-7 text-gray-700 text-md">{speakers[17].role}</p>
+                                        <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[17].company}</p>
                                     </div>
                                 </div>
                             </a>
@@ -1575,6 +1636,144 @@ export default function Speakers() {
                                             type="button"
                                             className="inline-flex justify-center max-w-5xl px-3 py-2 text-sm font-semibold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-700"
                                             onClick={() => setOpenSpeaker16(!openSpeaker16)}
+                                        >
+                                            Back
+                                        </button>
+                                    </div>
+                                </Dialog.Panel>
+                            </Transition.Child>
+                        </div>
+                    </div>
+                </Dialog>
+            </ Transition.Root >
+            {/* speaker 17 */}
+            <Transition.Root show={openSpeaker17} as={Fragment}>
+                <Dialog as="div" className="relative z-10" onClose={setOpenSpeaker1}>
+                    <Transition.Child
+                        as={Fragment}
+                        enter="ease-out duration-300"
+                        enterFrom="opacity-0"
+                        enterTo="opacity-100"
+                        leave="ease-in duration-200"
+                        leaveFrom="opacity-100"
+                        leaveTo="opacity-0"
+                    >
+                        <div className="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-50" />
+                    </Transition.Child>
+
+                    <div className="fixed inset-0 z-10 overflow-y-auto">
+                        <div className="flex justify-center min-h-full p-4 text-center sm:items-center sm:p-0">
+                            <Transition.Child
+                                as={Fragment}
+                                enter="ease-out duration-300"
+                                enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                                enterTo="opacity-100 translate-y-0 sm:scale-100"
+                                leave="ease-in duration-200"
+                                leaveFrom="opacity-100 translate-y-0 sm:scale-100"
+                                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                            >
+                                <Dialog.Panel className="relative px-4 pt-5 pb-4 text-left transition-all transform bg-white rounded-lg shadow-xl h-max sm:my-8 sm:w-full sm:max-w-4xl sm:p-6">
+                                    <div className='flex flex-col h-max'>
+                                        <div className='flex-shrink-0 mx-auto'>
+                                            <Image className="rounded-md w-[20rem] " src={speakers[17].imageUrl} alt={speakers[17].name} width={160} height={160} />
+                                        </div>
+                                        <div className="flex mx-auto text-center">
+                                            <div>
+                                                <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[17].name}</p>
+                                                <p className="leading-7 text-gray-700 text-md">{speakers[17].role}</p>
+                                                <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[17].company}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="overflow-auto text-sm sm:text-md sm:mt-5 max-h-60">
+                                        <p className="mt-2 text-gray-600">
+                                            Dr. Martina Bozzola is Senior Advisor in Sustainability and Livelihood within the Alliances for Action Team at the International Trade Centre, a joint agency of the United Nations and the WTO. She coordinates the pilots on accompanying measures to the EU corporate sustainability due diligence directive (CS3D). Martina is also Senior Lecturer in Economics of Agriculture, Food and Health at Queen’s University Belfast. Previously, Martina worked as Research Associate at ETH Zurich, as Max-Weber-Fellow at the European University Institute in Florence, and obtained her Ph.D. in International Economics from the Graduate Institute in Geneva. Her areas of expertise are sustainability in agri-food value chains, climate change economics, and international trade and development.Martina is one of the lead authors of the <Link target={'_blank'} href={'https://intracen.org/resources/publications/the-coffee-guide-fourth-edition'}>4th Edition of the Coffee Guide</Link>. She advised and wrote on sustainable agriculture aspects.
+                                        </p>
+                                    </div>
+                                    <div className="mt-5 sm:mt-6">
+                                        <button
+                                            type="button"
+                                            className="inline-flex justify-center max-w-5xl px-3 py-2 text-sm font-semibold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-700"
+                                            onClick={() => setOpenSpeaker17(!openSpeaker17)}
+                                        >
+                                            Back
+                                        </button>
+                                    </div>
+                                </Dialog.Panel>
+                            </Transition.Child>
+                        </div>
+                    </div>
+                </Dialog>
+            </ Transition.Root >
+            {/* speaker 18 */}
+            <Transition.Root show={openSpeaker18} as={Fragment}>
+                <Dialog as="div" className="relative z-10" onClose={setOpenSpeaker1}>
+                    <Transition.Child
+                        as={Fragment}
+                        enter="ease-out duration-300"
+                        enterFrom="opacity-0"
+                        enterTo="opacity-100"
+                        leave="ease-in duration-200"
+                        leaveFrom="opacity-100"
+                        leaveTo="opacity-0"
+                    >
+                        <div className="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-50" />
+                    </Transition.Child>
+
+                    <div className="fixed inset-0 z-10 overflow-y-auto">
+                        <div className="flex justify-center min-h-full p-4 text-center sm:items-center sm:p-0">
+                            <Transition.Child
+                                as={Fragment}
+                                enter="ease-out duration-300"
+                                enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                                enterTo="opacity-100 translate-y-0 sm:scale-100"
+                                leave="ease-in duration-200"
+                                leaveFrom="opacity-100 translate-y-0 sm:scale-100"
+                                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                            >
+                                <Dialog.Panel className="relative px-4 pt-5 pb-4 text-left transition-all transform bg-white rounded-lg shadow-xl h-max sm:my-8 sm:w-full sm:max-w-4xl sm:p-6">
+                                    <div className='flex flex-col h-max'>
+                                        <div className='flex-shrink-0 mx-auto'>
+                                            <Image className="rounded-md w-[20rem] " src={speakers[18].imageUrl} alt={speakers[18].name} width={160} height={160} />
+                                        </div>
+                                        <div className="flex mx-auto text-center">
+                                            <div>
+                                                <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[18].name}</p>
+                                                <p className="leading-7 text-gray-700 text-md">{speakers[18].role}</p>
+                                                <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[18].company}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="overflow-auto text-sm sm:text-md sm:mt-5 max-h-60">
+                                        <p className="mt-2 text-gray-600">
+                                            Alvaro Lario is President of the International Fund of Agricultural Development
+                                            (IFAD). A seasoned international development finance leader, he has more than
+                                            20 years of experience across academia, private sector asset management, World
+                                            Bank Group and the United Nations, including as Associate Vice-President of
+                                            Financial Operations at IFAD.
+                                        </p>
+                                        <p className="mt-2 text-gray-600">
+                                            Under his stewardship, IFAD became the first United Nations Fund to enter the
+                                            capital markets and obtain a credit rating, enabling the IFAD to expand resource
+                                            mobilization efforts to the private sector.
+                                        </p>
+                                        <p className="mt-2 text-gray-600">
+                                            Before joining the Fund in early 2018, he was the Treasury Capital Markets Lead
+                                            and Principal Portfolio Officer at the International Finance Corporation, part of
+                                            the World Bank Group, where he focused on local capital markets development
+                                            and emerging markets investments.
+                                        </p>
+                                        <p className="mt-2 text-gray-600">
+                                            President Lario received a PhD in Financial Economics from the Complutense
+                                            University of Madrid after completing a Master of Research in Economics at the
+                                            London Business School and a Master of Finance from Princeton University.
+                                        </p>
+                                    </div>
+                                    <div className="mt-5 sm:mt-6">
+                                        <button
+                                            type="button"
+                                            className="inline-flex justify-center max-w-5xl px-3 py-2 text-sm font-semibold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-700"
+                                            onClick={() => setOpenSpeaker18(!openSpeaker18)}
                                         >
                                             Back
                                         </button>
