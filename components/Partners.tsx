@@ -49,7 +49,7 @@ export default function Partners() {
             className: 'w-[25rem] bg-gray-900 p-2 mx-auto'
         },
         {
-            href: 'https://www.systemiq.earth/',
+            href: 'https://www.solidaridadnetwork.org/region/europe/',
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/07/Logo.png',
             className: 'w-[20rem] p-2 mx-auto'
         },
