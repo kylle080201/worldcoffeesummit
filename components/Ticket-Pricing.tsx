@@ -10,7 +10,7 @@ function TicketPricing() {
             title: "NGO/Academic Pass",
             old_price: 695,
             item_price: 495,
-            early_bird: 'Early bird until 15 July 2023. YOU SAVE £200',
+            early_bird: 'Early bird until 31 August 2023. YOU SAVE £200',
             description: "Eligible for representatives of non-profit NGOs, cooperatives, regulators, governments, public sector, and academia.",
             line_items: [
                 {
@@ -24,7 +24,7 @@ function TicketPricing() {
             title: "Standard Corporate Pass",
             old_price: 1145,
             item_price: 795,
-            early_bird: 'Early bird until 15 July 2023. YOU SAVE £350',
+            early_bird: 'Early bird until 31 August 2023. YOU SAVE £350',
             description: "Eligible for corporate representatives.",
             line_items: [
                 {
@@ -39,7 +39,7 @@ function TicketPricing() {
             old_price: 1345,
             item_price: 995,
             description: "Required for for-profit consultancies, start-ups, technology and service providers.",
-            early_bird: 'Early bird until 15 July 2023. YOU SAVE £350',
+            early_bird: 'Early bird until 31 August 2023. YOU SAVE £350',
             line_items: [
                 {
                     price: 'price_1NL3BsKMWpUKzQVz3HcTYbCn',
@@ -54,8 +54,8 @@ function TicketPricing() {
             title: "Standard Visitor Pass",
             old_price: 145,
             item_price: 125,
-            description: "Eligible for coffee roasters, green coffee buyers and coffee traders (Imp& Exp)",
-            early_bird: 'Early bird until 15 July 2023. YOU SAVE £20',
+            description: "Eligible for green coffee buyers and coffee roasters",
+            early_bird: 'Early bird until 31 August 2023. YOU SAVE £20',
             line_items: [
                 {
                     price: 'price_1NL5puKMWpUKzQVzGgXt59vX',

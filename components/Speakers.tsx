@@ -106,7 +106,7 @@ const speakers = [
     {
         key: '13',
         name: 'Nigel Hunt',
-        role: 'Senior Correspondent',
+        role: 'Global Soft Commodities Correspondent',
         company: 'Reuters',
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/06/NIGEL-HUNT-THOMSON-REUTERS.jpg',
