@@ -6,12 +6,12 @@ export default function Partners() {
         {
             href: 'https://icocoffee.org/',
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/06/ICO.jpg',
-            className: 'w-[40rem] mx-auto'
+            className: 'w-[35rem] mx-auto'
         },
         {
             href: 'https://britishcoffeeassociation.org/',
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/06/BCA_PrimaryLogo_Large-scaled.jpg',
-            className: 'w-[40rem] mx-auto'
+            className: 'w-[35rem] mx-auto'
         },
         {
             href: 'https://www.reuters.com/',
@@ -50,8 +50,18 @@ export default function Partners() {
         },
         {
             href: 'https://www.solidaridadnetwork.org/region/europe/',
-            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/07/Logo.png',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/07/Logo-e1690540671905.png',
             className: 'w-[20rem] p-2 mx-auto'
+        },
+        {
+            href: 'https://www.impact-finance.com/',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/07/Logo-Black-and-White.jpg',
+            className: 'w-[50rem] p-2 mx-auto'
+        },
+        {
+            href: 'https://intracen.org/',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/07/ITC-Alliances-for-action.png',
+            className: 'w-[40rem] p-2 mx-auto'
         },
     ]
     return (
