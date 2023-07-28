@@ -88,11 +88,10 @@ export default function Exhibition() {
                     <div className="self-center px-12 text-center sm:px-20">
                         <div>
                             <p className="text-4xl font-bold tracking-tight text-white sm:text-6xl">World Coffee Exhibition London 2023</p>
-                            <p className="mt-6 text-lg font-bold tracking-tight text-white sm:text-2xl">COFFEE BEYOND SUSTAINABILITY</p>
                             <p className="text-lg font-bold tracking-tight text-white sm:text-2xl">13th September 2023</p>
                             <p className="text-lg font-bold tracking-tight text-white sm:text-2xl">Queen Elizabeth ll Centre, Westminster Hall</p>
-                            <p className="mx-auto mt-16 text-xl leading-8 text-justify text-white max-w-7xl sm:mt-52">
-
+                            <p className="my-12 text-2xl font-bold tracking-tight text-orange-400 sm:my-24 sm:text-4xl">EXHIBIT WITH PURPOSE</p>
+                            <p className="mx-auto text-xl leading-8 text-justify text-white max-w-7xl">
                                 Welcome to the world of rustic flavors and sensient aroma of coffee
                                 origin. From the historic forests of the Ethiopian plateau to the
                                 far-flung South American mountains and African horn, witness each

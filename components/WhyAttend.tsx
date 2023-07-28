@@ -1,4 +1,4 @@
-import { CalendarDaysIcon, ChatBubbleOvalLeftEllipsisIcon, UserIcon, UsersIcon } from '@heroicons/react/24/outline'
+import { CalendarDaysIcon, ChatBubbleOvalLeftEllipsisIcon, ChatBubbleLeftRightIcon, LinkIcon, UserIcon, UsersIcon, BanknotesIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 import React from 'react'
 
@@ -6,27 +6,33 @@ function WhyAttend() {
     const WhyAttend = [
         {
             id: 1,
-            title: "ONE DAY",
-            description: "Focused and condensed event to provide value and efficiency.",
-            icon: CalendarDaysIcon
-        },
-        {
-            id: 2,
-            title: "RELEVANT AGENDA",
-            description: "Debate and discuss sustainability and finance issues that matter and learn how to implement policies through Keynotes and panel discussions.",
-            icon: ChatBubbleOvalLeftEllipsisIcon
-        },
-        {
-            id: 3,
-            title: "EXPERT SPEAKERS",
-            description: "Gain valuable insights from global leaders, governments and leading EU policy and funding practitioners in the fields of sustainability and regulations.",
+            title: "INSPIRING HIGH-LEVEL SPEAKERS",
+            description: "Gain valuable insights from global industry leaders, top Thought leaders, governments and leading EU policy and funding practitioners who are shaping the future of coffee and related commodities.",
             icon: UserIcon
         },
         {
+            id: 2,
+            title: "UNIQUE APPROACH",
+            description: "Connect Coffee, Innovation and Climate Finance towards sustainability beyond compliance.",
+            icon: LinkIcon
+        },
+        {
+            id: 3,
+            title: "INSIGHTFUL AGENDA",
+            description: "Debate and discuss the latest EUDR, exploring opportunities in Carbon Credits, ESG/ Impact Investing and Innovation.",
+            icon: ChatBubbleLeftRightIcon
+        },
+        {
             id: 4,
-            title: "NETWORK",
-            description: "Connect and get engage with your cross-sector peers to explore sustainability beyond compliance and future of collaboration and broaden your contact list.",
+            title: "NETWORK OPPORTUNITIES",
+            description: "Connect and get engaged with your cross-sector peers to share best practices and explore future of collaboration and broaden your contact list.",
             icon: UsersIcon
+        },
+        {
+            id: 4,
+            title: "EXHIBITION WITH PURPOSE",
+            description: "Real buyers meeting real coffee farmers and cooperatives from countries of origin doing real business and sharing their stories.",
+            icon: BanknotesIcon
         }
     ]
     function classNames(...classes: any[]) {
@@ -34,12 +40,12 @@ function WhyAttend() {
     }
     return (
         <div id="why-attend" className="flex flex-col bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2023/07/shutterstock_536617741-scaled.jpg')] bg-center bg-cover">
-            <div className='w-full py-40 bg-gray-50/70'>
-                <div className='mx-auto text-center max-w-7xl'>
+            <div className='w-full pt-40 bg-gray-50/70'>
+                <div className='px-24 mx-auto text-center'>
                     <h1 className='text-2xl font-bold lg:text-4xl'>
-                        WHY ATTEND?
+                        WHAT CAN YOU EXPECT?
                     </h1>
-                    <div className='grid grid-cols-1 mx-auto mt-20 max-w-7xl gap-x-6 gap-y-20 lg:grid-cols-4 lg:gap-x-8'>
+                    <div className='grid grid-cols-1 mx-auto mt-20 gap-x-6 gap-y-20 lg:grid-cols-5 lg:gap-x-8'>
                         {WhyAttend.map((item) => (
                             <div key={item.id} className='flex-col text-lg lg:text-2xl'>
                                 <div className='justify-center'>
@@ -61,10 +67,19 @@ function WhyAttend() {
                         ))}
                     </div>
                 </div>
-                <div className="flex flex-row items-center justify-center mt-20 text-center">
+                <div className="flex flex-row items-center justify-center mt-4 text-center gap-x-4">
                     <div>
                         <Link target={'_blank'} rel='noreferer' className='flex-shrink-0 px-6 py-2 mx-auto text-lg font-bold tracking-tight text-gray-900 bg-yellow-500 hover:underline h-max sm:text-2xl' href="/register">Register Now
                         </Link>
+                    </div>
+                    <div className='text-lg font-bold underline sm:text-2xl'>
+                        <Link target={'_blank'} rel='noreferer' href="/">WWW.WORLDCOFFEESUMMIT.NET
+                        </Link>
+                    </div>
+                </div>
+                <div className="flex flex-row items-center w-full mt-12 bg-lime-700">
+                    <div className='py-4 mx-auto text-lg font-bold text-center text-white sm:text-2xl'>
+                        EARLY BIRD DISCOUNT UNTIL 31ST AUGUST 2023
                     </div>
                 </div>
             </div>
