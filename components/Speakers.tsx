@@ -151,6 +151,22 @@ const speakers = [
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/07/mut5673199979946008165-1.jpg',
     },
+    {
+        key: '19',
+        name: 'Professor Mark Maslin',
+        role: 'Earth System Science',
+        company: 'University College London (UCL), Natural History Museum of Denmark',
+        imageUrl:
+            'https://worldcoffeealliance.com/wp-content/uploads/2023/07/Mark-Maslin2.jpg',
+    },
+    {
+        key: '20',
+        name: 'Cedric Lombard',
+        role: 'Founder and Co-CEO',
+        company: 'Impact Finance',
+        imageUrl:
+            'https://worldcoffeealliance.com/wp-content/uploads/2023/07/CLO2.png',
+    },
 ]
 
 export default function Speakers() {
@@ -173,6 +189,8 @@ export default function Speakers() {
     const [openSpeaker16, setOpenSpeaker16] = useState(false)
     const [openSpeaker17, setOpenSpeaker17] = useState(false)
     const [openSpeaker18, setOpenSpeaker18] = useState(false)
+    const [openSpeaker19, setOpenSpeaker19] = useState(false)
+    const [openSpeaker20, setOpenSpeaker20] = useState(false)
     return (
         <>
             <div className="px-12 py-20 bg-gray-100 sm:px-20" id='speakers'>
@@ -255,6 +273,21 @@ export default function Speakers() {
                                         <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[3].name}</p>
                                         <p className="leading-7 text-gray-700 text-md">{speakers[3].role}</p>
                                         <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[3].company}</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        {/* speaker 19 */}
+                        <li>
+                            <a onClick={() => { setOpenSpeaker19(!openSpeaker19) }} className="flex flex-col gap-6 hover:cursor-pointer">
+                                <div className='flex-shrink-0 mx-auto'>
+                                    <Image className="rounded-md w-[30rem] " src={speakers[19].imageUrl} alt={speakers[19].name} width={160} height={160} />
+                                </div>
+                                <div className="flex mx-auto text-center">
+                                    <div>
+                                        <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[19].name}</p>
+                                        <p className="leading-7 text-gray-700 text-md">{speakers[19].role}</p>
+                                        <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[19].company}</p>
                                     </div>
                                 </div>
                             </a>
@@ -450,6 +483,21 @@ export default function Speakers() {
                                         <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[16].name}</p>
                                         <p className="leading-7 text-gray-700 text-md">{speakers[16].role}</p>
                                         <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[16].company}</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        {/* speaker 20 */}
+                        <li>
+                            <a onClick={() => { setOpenSpeaker20(!openSpeaker20) }} className="flex flex-col gap-6 hover:cursor-pointer">
+                                <div className='flex-shrink-0 mx-auto'>
+                                    <Image className="rounded-md w-[30rem] " src={speakers[20].imageUrl} alt={speakers[20].name} width={160} height={160} />
+                                </div>
+                                <div className="flex mx-auto text-center">
+                                    <div>
+                                        <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[20].name}</p>
+                                        <p className="leading-7 text-gray-700 text-md">{speakers[20].role}</p>
+                                        <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[20].company}</p>
                                     </div>
                                 </div>
                             </a>
@@ -1774,6 +1822,145 @@ export default function Speakers() {
                                             type="button"
                                             className="inline-flex justify-center max-w-5xl px-3 py-2 text-sm font-semibold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-700"
                                             onClick={() => setOpenSpeaker18(!openSpeaker18)}
+                                        >
+                                            Back
+                                        </button>
+                                    </div>
+                                </Dialog.Panel>
+                            </Transition.Child>
+                        </div>
+                    </div>
+                </Dialog>
+            </ Transition.Root >
+            {/* speaker 19 */}
+            <Transition.Root show={openSpeaker19} as={Fragment}>
+                <Dialog as="div" className="relative z-10" onClose={setOpenSpeaker1}>
+                    <Transition.Child
+                        as={Fragment}
+                        enter="ease-out duration-300"
+                        enterFrom="opacity-0"
+                        enterTo="opacity-100"
+                        leave="ease-in duration-200"
+                        leaveFrom="opacity-100"
+                        leaveTo="opacity-0"
+                    >
+                        <div className="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-50" />
+                    </Transition.Child>
+
+                    <div className="fixed inset-0 z-10 overflow-y-auto">
+                        <div className="flex justify-center min-h-full p-4 text-center sm:items-center sm:p-0">
+                            <Transition.Child
+                                as={Fragment}
+                                enter="ease-out duration-300"
+                                enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                                enterTo="opacity-100 translate-y-0 sm:scale-100"
+                                leave="ease-in duration-200"
+                                leaveFrom="opacity-100 translate-y-0 sm:scale-100"
+                                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                            >
+                                <Dialog.Panel className="relative px-4 pt-5 pb-4 text-left transition-all transform bg-white rounded-lg shadow-xl h-max sm:my-8 sm:w-full sm:max-w-4xl sm:p-6">
+                                    <div className='flex flex-col h-max'>
+                                        <div className='flex-shrink-0 mx-auto'>
+                                            <Image className="rounded-md w-[20rem] " src={speakers[19].imageUrl} alt={speakers[19].name} width={160} height={160} />
+                                        </div>
+                                        <div className="flex mx-auto text-center">
+                                            <div>
+                                                <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[19].name}</p>
+                                                <p className="leading-7 text-gray-700 text-md">{speakers[19].role}</p>
+                                                <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[19].company}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="overflow-auto text-sm sm:text-md sm:mt-5 max-h-60">
+                                        <p className="mt-2 text-gray-600">
+                                            Mark Maslin FRGS, FRSA is a Professor of Earth System Science at UCL and the Natural History Museum of Denmark. He is also Strategy Advisor to Lansons, Net Zero Now, Sheep Inc and CSR Board member of Sopra Steria.
+                                        </p>
+                                        <p className="mt-2 text-gray-600">
+                                            Mark is a leading scientist with particular interest in understanding climate change and sustainability.  He has published over 190 papers in journals such as Science, Nature, and The Lancet. He has received research, consultancy and training funding worth over £75m from government, charities, NGOs and the private sector.  He was recently named the <span className='underline'>Number 1 Global Sustainability thought leader and influencer of 2023</span>.
+                                        </p>
+                                        <p className="mt-2 text-gray-600">
+                                            Mark has written 10 books and over 60 popular articles and regularly appears on radio and television, including BBC One David Attenborough’s ‘Climate Change: the facts’. His books include ‘Climate Change: A Very Short Introduction’ (2021), ‘The Cradle of Humanity’ (2019), ‘The Human Planet’ with Simon Lewis (2018/2022) and his latest book is ‘How to save our planet: the facts’ (2021).
+                                        </p>
+                                    </div>
+                                    <div className="mt-5 sm:mt-6">
+                                        <button
+                                            type="button"
+                                            className="inline-flex justify-center max-w-5xl px-3 py-2 text-sm font-semibold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-700"
+                                            onClick={() => setOpenSpeaker19(!openSpeaker19)}
+                                        >
+                                            Back
+                                        </button>
+                                    </div>
+                                </Dialog.Panel>
+                            </Transition.Child>
+                        </div>
+                    </div>
+                </Dialog>
+            </ Transition.Root >
+            {/* speaker 20 */}
+            <Transition.Root show={openSpeaker20} as={Fragment}>
+                <Dialog as="div" className="relative z-10" onClose={setOpenSpeaker1}>
+                    <Transition.Child
+                        as={Fragment}
+                        enter="ease-out duration-300"
+                        enterFrom="opacity-0"
+                        enterTo="opacity-100"
+                        leave="ease-in duration-200"
+                        leaveFrom="opacity-100"
+                        leaveTo="opacity-0"
+                    >
+                        <div className="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-50" />
+                    </Transition.Child>
+
+                    <div className="fixed inset-0 z-10 overflow-y-auto">
+                        <div className="flex justify-center min-h-full p-4 text-center sm:items-center sm:p-0">
+                            <Transition.Child
+                                as={Fragment}
+                                enter="ease-out duration-300"
+                                enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                                enterTo="opacity-100 translate-y-0 sm:scale-100"
+                                leave="ease-in duration-200"
+                                leaveFrom="opacity-100 translate-y-0 sm:scale-100"
+                                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                            >
+                                <Dialog.Panel className="relative px-4 pt-5 pb-4 text-left transition-all transform bg-white rounded-lg shadow-xl h-max sm:my-8 sm:w-full sm:max-w-4xl sm:p-6">
+                                    <div className='flex flex-col h-max'>
+                                        <div className='flex-shrink-0 mx-auto'>
+                                            <Image className="rounded-md w-[20rem] " src={speakers[20].imageUrl} alt={speakers[20].name} width={160} height={160} />
+                                        </div>
+                                        <div className="flex mx-auto text-center">
+                                            <div>
+                                                <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[20].name}</p>
+                                                <p className="leading-7 text-gray-700 text-md">{speakers[20].role}</p>
+                                                <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[20].company}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="overflow-auto text-sm sm:text-md sm:mt-5 max-h-60">
+                                        <p className="mt-2 text-gray-600">
+                                            • Founder and Co-CEO at Impact Finance since 2010 (Asset Manager specialized in impact investing in Regenerative Businesses in Latin America)
+                                        </p>
+                                        <p className="mt-2 text-gray-600">
+                                            • Founder and Chief Investment Officer at Symbiotics between 2005 and 2010 (Broker and Asset Manager specialized in investing in microfinance)
+                                        </p>
+                                        <p className="mt-2 text-gray-600">
+                                            • Founder and Vice Chairman at Sustainable Finance Geneva between 2008 and 2012 (Association of professionals in Geneva interested and investing in sustainable finance and impact investing)
+                                        </p>
+                                        <p className="mt-2 text-gray-600">
+                                            • Founder and Chief Investment Officer at BlueOrchard between 2001 and 2004 (Asset Manager specialized in investing in microfinance and sold to Schroders in 2019)
+                                        </p>
+                                        <p className="mt-2 text-gray-600">
+                                            • Consultant at United Nation Conference on Trade and Development, the Virtual Market for Microfinance 1999 to 2000
+                                        </p>
+                                        <p className="mt-2 text-gray-600">
+                                            • Master in International Relations at the Graduate Institute of International and Development Studies
+                                        </p>
+                                    </div>
+                                    <div className="mt-5 sm:mt-6">
+                                        <button
+                                            type="button"
+                                            className="inline-flex justify-center max-w-5xl px-3 py-2 text-sm font-semibold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-700"
+                                            onClick={() => setOpenSpeaker20(!openSpeaker20)}
                                         >
                                             Back
                                         </button>
