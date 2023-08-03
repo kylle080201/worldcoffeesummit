@@ -58,10 +58,10 @@ export default function Overview() {
                 <div className='flex flex-col'>
                     <div className='px-12'>
                         <p className="mt-4 text-xl leading-8 text-gray-900 sm:mt-8">
-                            With the looming implementation of the EU due diligence legislation, the global coffee industry is faced with regulatory compliance that will have dramatic impact on businesses. Against the backdrop of rising cost, climate change and sustainability issues, this business event will tackle and flesh out how to navigate its complexities and find collaborative and regenerative solutions for the future of coffee.
+                            With the looming implementation of the EUDR and CSDDD, the global coffee industry is faced with regulatory compliance that will have a dramatic impact on businesses. Against the backdrop of rising costs, climate change and sustainability issues, this business event will tackle and flesh out how to navigate its complexities and find collaborative and regenerative solutions for the future of coffee and other related commodities.
                         </p>
                         <p className="mt-4 text-xl leading-8 text-gray-900 sm:mt-8">
-                            This event will deep dive into the role of sustainable supply chain and innovation to secure transparency and traceability from farm to cup, the adoption of Regenerative Agriculture practices within the carbon credits framework and how ESG and Impact Investing will finance this transition. Transforming from conventional agriculture to regenerative will require some collaboration, global climate roadmap, incentives, government grants and private funding to be climate positive, scalable, and operational.
+                            This must-attend business event will deep dive into the role of sustainable supply chain and innovation to secure transparency and traceability from farm to cup. Transforming from conventional agriculture to regenerative will require some collaboration, a global climate roadmap, incentives, government grants and private funding to be climate positive, scalable, and operational. Our panels and global high-level speakers will explore the adoption of Regenerative Agriculture best practices within the carbon credits framework and how ESG and Impact Investing will finance this transition.
                         </p>
                     </div>
                     <div className='items-center px-24 my-auto'>
