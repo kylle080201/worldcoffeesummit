@@ -167,6 +167,22 @@ const speakers = [
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/07/CLO2.png',
     },
+    {
+        key: '21',
+        name: 'Juan Cabrera',
+        role: 'Vice Chair; Vice President for the UK; Co-Founder',
+        company: 'IoD Natural Resources Group; Government Blockchain Association (GBA); Euroyen Group',
+        imageUrl:
+            'https://worldcoffeealliance.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-03-at-10.14.08.jpeg',
+    },
+    {
+        key: '22',
+        name: 'Jo Paisley',
+        role: 'President',
+        company: 'GARP Risk Institute (GRI)',
+        imageUrl:
+            'https://worldcoffeealliance.com/wp-content/uploads/2023/08/Jo_Paisley_GARP.jpg',
+    },
 ]
 
 export default function Speakers() {
@@ -191,6 +207,8 @@ export default function Speakers() {
     const [openSpeaker18, setOpenSpeaker18] = useState(false)
     const [openSpeaker19, setOpenSpeaker19] = useState(false)
     const [openSpeaker20, setOpenSpeaker20] = useState(false)
+    const [openSpeaker21, setOpenSpeaker21] = useState(false)
+    const [openSpeaker22, setOpenSpeaker22] = useState(false)
     return (
         <>
             <div className="px-12 py-20 bg-gray-100 sm:px-20" id='speakers'>
@@ -513,6 +531,36 @@ export default function Speakers() {
                                         <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[20].name}</p>
                                         <p className="leading-7 text-gray-700 text-md">{speakers[20].role}</p>
                                         <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[20].company}</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        {/* speaker 21 */}
+                        <li>
+                            <a onClick={() => { setOpenSpeaker21(!openSpeaker21) }} className="flex flex-col gap-6 hover:cursor-pointer">
+                                <div className='flex-shrink-0 mx-auto'>
+                                    <Image className="rounded-md w-[30rem] " src={speakers[21].imageUrl} alt={speakers[21].name} width={160} height={160} />
+                                </div>
+                                <div className="flex mx-auto text-center">
+                                    <div>
+                                        <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[21].name}</p>
+                                        <p className="leading-7 text-gray-700 text-md">{speakers[21].role}</p>
+                                        <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[21].company}</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        {/* speaker 22 */}
+                        <li>
+                            <a onClick={() => { setOpenSpeaker22(!openSpeaker22) }} className="flex flex-col gap-6 hover:cursor-pointer">
+                                <div className='flex-shrink-0 mx-auto'>
+                                    <Image className="rounded-md w-[30rem] " src={speakers[22].imageUrl} alt={speakers[22].name} width={160} height={160} />
+                                </div>
+                                <div className="flex mx-auto text-center">
+                                    <div>
+                                        <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[22].name}</p>
+                                        <p className="leading-7 text-gray-700 text-md">{speakers[22].role}</p>
+                                        <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[22].company}</p>
                                     </div>
                                 </div>
                             </a>
@@ -1971,6 +2019,137 @@ export default function Speakers() {
                     </div>
                 </Dialog>
             </ Transition.Root >
+            {/* speaker 21 */}
+            <Transition.Root show={openSpeaker21} as={Fragment}>
+                <Dialog as="div" className="relative z-10" onClose={setOpenSpeaker1}>
+                    <Transition.Child
+                        as={Fragment}
+                        enter="ease-out duration-300"
+                        enterFrom="opacity-0"
+                        enterTo="opacity-100"
+                        leave="ease-in duration-200"
+                        leaveFrom="opacity-100"
+                        leaveTo="opacity-0"
+                    >
+                        <div className="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-50" />
+                    </Transition.Child>
+
+                    <div className="fixed inset-0 z-10 overflow-y-auto">
+                        <div className="flex justify-center min-h-full p-4 text-center sm:items-center sm:p-0">
+                            <Transition.Child
+                                as={Fragment}
+                                enter="ease-out duration-300"
+                                enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                                enterTo="opacity-100 translate-y-0 sm:scale-100"
+                                leave="ease-in duration-200"
+                                leaveFrom="opacity-100 translate-y-0 sm:scale-100"
+                                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                            >
+                                <Dialog.Panel className="relative px-4 pt-5 pb-4 text-left transition-all transform bg-white rounded-lg shadow-xl h-max sm:my-8 sm:w-full sm:max-w-4xl sm:p-6">
+                                    <div className='flex flex-col h-max'>
+                                        <div className='flex-shrink-0 mx-auto'>
+                                            <Image className="rounded-md w-[20rem] " src={speakers[21].imageUrl} alt={speakers[21].name} width={160} height={160} />
+                                        </div>
+                                        <div className="flex mx-auto text-center">
+                                            <div>
+                                                <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[21].name}</p>
+                                                <p className="leading-7 text-gray-700 text-md">{speakers[21].role}</p>
+                                                <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[21].company}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="overflow-auto text-sm sm:text-md sm:mt-5 max-h-60">
+                                        <p className="mt-2 text-gray-600">
+                                            Juan is a highly esteemed professional with over 35 years of expertise in the global trading and consulting sector, specialising in providing bespoke consultancy and trade services to an extensive clientele that includes global organisations, top-tier corporations, governments, family offices, and world leaders. Juan&apos;s reputation is firmly rooted in his expansive global network.
+                                        </p>
+                                        <p className="mt-2 text-gray-600">
+                                            Juan is currently the Vice Chair of IoD Natural Resources Gourp. He is also the vice president of Government Blockchain Association (GBA) UK and a GBA Global certified blockchain advisor. As the Co-Founder (Since 1998) of the Euroyen Group (In 2018, evolved into a Decentralised Autonomous Organisation (DAO) with global digital jurisdiction), Juan has successfully diversified his offerings, from precious metals to advanced tech-based sectors. This move, combined with his background in the oil industry and international trade, has allowed Juan to penetrate multiple industries and provide comprehensive services.
+                                        </p>
+                                        <p className="mt-2 text-gray-600">
+                                            Juan stands out for his professional integrity and confidentiality, understanding the importance of protecting sensitive information. His reliability and trustworthiness are cornerstones of his professional persona, facilitating strong and enduring relationships with clients and partners.
+                                        </p>
+                                        <p className="mt-2 text-gray-600">
+                                            In his personal time, Juan pursues diverse interests including advanced (PADI) scuba diving, hunting, fishing, surfing, sailing, karate, and is currently learning Aikido.
+                                        </p>
+                                    </div>
+                                    <div className="mt-5 sm:mt-6">
+                                        <button
+                                            type="button"
+                                            className="inline-flex justify-center max-w-5xl px-3 py-2 text-sm font-semibold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-700"
+                                            onClick={() => setOpenSpeaker21(!openSpeaker21)}
+                                        >
+                                            Back
+                                        </button>
+                                    </div>
+                                </Dialog.Panel>
+                            </Transition.Child>
+                        </div>
+                    </div>
+                </Dialog>
+            </ Transition.Root >
+            {/* speaker 22 */}
+            <Transition.Root show={openSpeaker22} as={Fragment}>
+                <Dialog as="div" className="relative z-10" onClose={setOpenSpeaker1}>
+                    <Transition.Child
+                        as={Fragment}
+                        enter="ease-out duration-300"
+                        enterFrom="opacity-0"
+                        enterTo="opacity-100"
+                        leave="ease-in duration-200"
+                        leaveFrom="opacity-100"
+                        leaveTo="opacity-0"
+                    >
+                        <div className="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-50" />
+                    </Transition.Child>
+
+                    <div className="fixed inset-0 z-10 overflow-y-auto">
+                        <div className="flex justify-center min-h-full p-4 text-center sm:items-center sm:p-0">
+                            <Transition.Child
+                                as={Fragment}
+                                enter="ease-out duration-300"
+                                enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                                enterTo="opacity-100 translate-y-0 sm:scale-100"
+                                leave="ease-in duration-200"
+                                leaveFrom="opacity-100 translate-y-0 sm:scale-100"
+                                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                            >
+                                <Dialog.Panel className="relative px-4 pt-5 pb-4 text-left transition-all transform bg-white rounded-lg shadow-xl h-max sm:my-8 sm:w-full sm:max-w-4xl sm:p-6">
+                                    <div className='flex flex-col h-max'>
+                                        <div className='flex-shrink-0 mx-auto'>
+                                            <Image className="rounded-md w-[20rem] " src={speakers[22].imageUrl} alt={speakers[22].name} width={160} height={160} />
+                                        </div>
+                                        <div className="flex mx-auto text-center">
+                                            <div>
+                                                <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[22].name}</p>
+                                                <p className="leading-7 text-gray-700 text-md">{speakers[22].role}</p>
+                                                <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[22].company}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="overflow-auto text-sm sm:text-md sm:mt-5 max-h-60">
+                                        <p className="mt-2 text-gray-600">
+                                            Jo Paisley has worked on a variety of risk areas at GRI, including stress testing, operational resilience, model risk management, and climate risk. Jo’s career began at the Bank of England where she worked in various economist roles, ran the Statistics Division, and spent the last part of her career in supervision. Her last role was as a Director of the Supervisory Risk Specialist Division within the Prudential Regulation Authority. This area provided deep technical risk expertise to front line supervisors across all risk disciplines, covering banking and insurance. She was also heavily involved in the design and execution of the U.K.’s first concurrent stress test in 2014.
+                                        </p>
+                                        <p className="mt-2 text-gray-600">
+                                            Jo left the Bank in 2015 and joined HSBC as their Global Head of Stress Testing, where she was responsible for ensuring that they met all their regulatory stress testing requirements around the world. She has also worked as an independent stress testing consultant, advising firms on how to get the most value out of stress testing. Jo studied Philosophy, Politics, and Economics at Magdalen College, Oxford, before completing her MPhil in Economics at Nuffield College, Oxford.
+                                        </p>
+                                    </div>
+                                    <div className="mt-5 sm:mt-6">
+                                        <button
+                                            type="button"
+                                            className="inline-flex justify-center max-w-5xl px-3 py-2 text-sm font-semibold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-700"
+                                            onClick={() => setOpenSpeaker22(!openSpeaker22)}
+                                        >
+                                            Back
+                                        </button>
+                                    </div>
+                                </Dialog.Panel>
+                            </Transition.Child>
+                        </div>
+                    </div>
+                </Dialog>
+            </ Transition.Root >
+            
         </>
 
     )
