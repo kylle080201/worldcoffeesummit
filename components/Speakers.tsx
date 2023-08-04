@@ -170,8 +170,8 @@ const speakers = [
     {
         key: '21',
         name: 'Juan Cabrera',
-        role: 'Vice Chair; Vice President for the UK; Co-Founder',
-        company: 'IoD Natural Resources Group; Government Blockchain Association (GBA); Euroyen Group',
+        role: 'Vice Chair; Vice President for the UK',
+        company: 'IoD Natural Resources Group; Government Blockchain Association (GBA)',
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-03-at-10.14.08.jpeg',
     },
