@@ -14,7 +14,7 @@ function TicketPricing() {
             description: "Eligible for representatives of non-profit NGOs, cooperatives, regulators, governments, public sector, and academia.",
             line_items: [
                 {
-                    price: 'price_1NL5ygKMWpUKzQVznBPOCOPr',
+                    price: 'price_1NbMmoKMWpUKzQVzowWiEFhL',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
