@@ -71,7 +71,6 @@ function TicketPricing() {
             <div className="max-w-5xl mx-auto sm:text-center">
                 <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">Unsure what pass you fall Under?</h2>
                 <h3 className="text-lg tracking-tight text-red-700 sm:text-2xl">Contact us at <a className='underline' href='mailto:info@worldcoffeealliance.com'>info@worldcoffeealliance.com</a> and we&apos;ll help you pick the correct registration pass.</h3>
-                <h3 className="text-lg tracking-tight text-red-700 sm:text-2xl"><span className='font-bold'>PLEASE NOTE</span>: Discounts cannot be combined with Early Bird Pricing or any other discount or offer.</h3>
             </div>
 
             <div id="summit" className="flow-root px-6 mx-auto mt-12 rounded-md max-w-7xl">
