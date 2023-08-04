@@ -63,6 +63,21 @@ export default function Partners() {
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/07/ITC-Alliances-for-action.png',
             className: 'w-[40rem] p-2 mx-auto'
         },
+        {
+            href: 'https://www.iod.com/',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/08/IOD-Orange-logo.png',
+            className: 'w-[12rem] p-2 mx-auto'
+        },
+        {
+            href: 'https://gbaglobal.org/',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/08/gba.png',
+            className: 'w-[20rem] p-2 mx-auto'
+        },
+        {
+            href: 'https://www.garp.org/',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/08/GARP_Logo_RGB-2.png',
+            className: 'w-[20rem] p-2 mx-auto'
+        },
     ]
     return (
         <>
