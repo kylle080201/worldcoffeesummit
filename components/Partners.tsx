@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 
 export default function Partners() {
-    const partners = [
+    const supporters = [
         {
             href: 'https://icocoffee.org/',
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/06/ICO.jpg',
@@ -58,10 +58,18 @@ export default function Partners() {
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/07/Logo-Black-and-White.jpg',
             className: 'w-[50rem] p-2 mx-auto'
         },
+    ]
+
+    const partners = [
         {
             href: 'https://intracen.org/',
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/07/ITC-Alliances-for-action.png',
             className: 'w-[40rem] p-2 mx-auto'
+        },
+        {
+            href: 'https://www.garp.org/',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/08/GARP_Logo_RGB-2.png',
+            className: 'w-[20rem] p-2 mx-auto'
         },
         {
             href: 'https://www.iod.com/',
@@ -74,26 +82,43 @@ export default function Partners() {
             className: 'w-[20rem] p-2 mx-auto'
         },
         {
-            href: 'https://www.garp.org/',
-            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/08/GARP_Logo_RGB-2.png',
+            href: 'https://www.coffeeinstitute.org/',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/08/CQI-2.png',
             className: 'w-[20rem] p-2 mx-auto'
         },
     ]
     return (
         <>
-            <div className='w-full py-20 bg-white ' id='partners'>
-                <div className="max-w-2xl mx-auto text-center">
-                    <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">SUPPORTED BY:</p>
+            <div className='w-full py-20 bg-white' id='partners'>
+                <div className='mb-20'>
+                    <div className="max-w-2xl mx-auto text-center">
+                        <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">EVENT PARTNERS:</p>
+                    </div>
+                    <div className='grid items-center justify-center grid-cols-1 gap-4 mx-auto mt-12 sm:grid-cols-3 sm:gap-12 sm:flex-row sm:max-w-7xl'>
+                        {partners.map((partner) => (
+                            <Link key={partner.href} href={partner.href} target='_blank' rel='noreferer'>
+                                <div className='items-center flex-shrink-0 h-full p-4'>
+                                    <img className={partner.className} src={partner.imgSrc}>
+                                    </img>
+                                </div>
+                            </Link>
+                        ))}
+                    </div>
                 </div>
-                <div className='grid items-center justify-center grid-cols-1 gap-4 mx-auto mt-12 sm:grid-cols-3 sm:gap-12 sm:flex-row sm:max-w-7xl'>
-                    {partners.map((partner) => (
-                        <Link key={partner.href} href={partner.href} target='_blank' rel='noreferer'>
-                            <div className='items-center flex-shrink-0 h-full p-4'>
-                                <img className={partner.className} src={partner.imgSrc}>
-                                </img>
-                            </div>
-                        </Link>
-                    ))}
+                <div>
+                    <div className="max-w-2xl mx-auto text-center">
+                        <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">SUPPORTED BY:</p>
+                    </div>
+                    <div className='grid items-center justify-center grid-cols-1 gap-4 mx-auto mt-12 sm:grid-cols-3 sm:gap-12 sm:flex-row sm:max-w-7xl'>
+                        {supporters.map((supporter) => (
+                            <Link key={supporter.href} href={supporter.href} target='_blank' rel='noreferer'>
+                                <div className='items-center flex-shrink-0 h-full p-4'>
+                                    <img className={supporter.className} src={supporter.imgSrc}>
+                                    </img>
+                                </div>
+                            </Link>
+                        ))}
+                    </div>
                 </div>
             </div>
         </>
