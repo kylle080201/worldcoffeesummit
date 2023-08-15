@@ -1,6 +1,7 @@
 import { LinkIcon, ChatBubbleLeftRightIcon, UserGroupIcon, EyeDropperIcon, PresentationChartLineIcon, CheckBadgeIcon, CheckCircleIcon, ClockIcon } from '@heroicons/react/24/solid'
 import Link from 'next/link'
 import React from 'react'
+import Exhibitors from './Exhibitors'
 
 export default function Exhibition() {
     const benefits = [
@@ -109,14 +110,15 @@ export default function Exhibition() {
                     </div>
                 </div>
 
-                <div className='justify-center px-12 py-6 mx-auto bg-white mlg:flex-row mmd:flex-col msm:flex-col sm:px-20 sm:max-w-5xl' >
+                <div className='justify-center py-6 bg-white mlg:flex-row mmd:flex-col msm:flex-col sm:px-20 ' >
 
-                    <div className="w-full rounded-lg">
+                    <div className="w-full px-12 mx-auto sm:max-w-5xl">
                         <dd className="mt-2 text-xl leading-7 text-gray-900">
                             <span>World Coffee Exhibition will be held at the Westminster Hall, adjacent to the conference, where around 15 Exhibitors from coffee origin countries will showcase their coffee and distribute coffee samples. There will also be two cupping sessions organised by an independent coffee lab and 2 panel discussions on the recent SCA cupping protocol and EU due diligence legislation. This is not a big trade show but a bespoke event where green coffee buyers, roasters and traders meet coffee farmers and producers (pre-qualified) to do business and celebrate coffee.</span>
                         </dd>
                     </div>
-                    <div>
+                    <Exhibitors />
+                    <div className="w-full px-12 mx-auto sm:max-w-5xl">
                         <p className="mt-12 text-lg leading-7 text-gray-600">For exhibition queries please email <Link href={"mailto:info@worldcoffeealliance.com"} target="_blank" className="text-yellow-900 underline hover:underline-offset-4"> mavis@worldcoffeealliance.com</Link></p>
                     </div>
                 </div>
