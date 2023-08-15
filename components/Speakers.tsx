@@ -77,7 +77,7 @@ const speakers = [
         name: ' H.E. Guisell Morales-Echaverry',
         company: "Ambassador of the Republic of Nicaragua to the United Kingdom",
         imageUrl:
-            'https://worldcoffeealliance.com/wp-content/uploads/2023/07/H.E.-Guisell-Morales-Echaverry-portrait.png',
+            'https://worldcoffeealliance.com/wp-content/uploads/2023/08/H.E.-Guisell-Morales-Echaverry.jpeg',
     },
     {
         key: '10',
