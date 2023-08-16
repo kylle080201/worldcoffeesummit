@@ -8,6 +8,7 @@ export default function Exhibitors() {
     const UGANDA = 'https://worldcoffeealliance.com/wp-content/uploads/2023/08/Flag_of_Uganda.png'
     const BURUNDI = 'https://worldcoffeealliance.com/wp-content/uploads/2023/08/Flag_of_Burundi.png'
     const TANZANIA = 'https://worldcoffeealliance.com/wp-content/uploads/2023/08/Flag_of_Tanzania.png'
+    const KENYA = 'https://worldcoffeealliance.com/wp-content/uploads/2023/08/Flag_of_Kenya.png'
 
     const exhibitors = [
         {
@@ -54,6 +55,11 @@ export default function Exhibitors() {
             name: 'Megnacio Company Ltd',
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/08/Megnacio-Company-Ltd.jpg',
             flag: TANZANIA
+        },
+        {
+            name: 'Rumani Agencies Ltd',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/08/Rumani-Agencies-Ltd-1.png',
+            flag: KENYA
         },
     ]
     return (
