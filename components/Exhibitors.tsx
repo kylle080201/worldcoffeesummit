@@ -57,7 +57,7 @@ export default function Exhibitors() {
             flag: TANZANIA
         },
         {
-            name: 'Rumani Agencies Ltd',
+            name: 'Rumani Coffee Agencies Ltd',
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/08/Rumani-Agencies-Ltd-1.png',
             flag: KENYA
         },
