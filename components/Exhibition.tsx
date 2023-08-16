@@ -110,8 +110,7 @@ export default function Exhibition() {
                     </div>
                 </div>
 
-                <div className='justify-center py-6 bg-white mlg:flex-row mmd:flex-col msm:flex-col sm:px-20 ' >
-
+                <div className='justify-center py-6 bg-white mlg:flex-row mmd:flex-col msm:flex-col sm:px-20 pb-20' >
                     <div className="w-full px-12 mx-auto sm:max-w-5xl">
                         <dd className="mt-2 text-xl leading-7 text-gray-900">
                             <span>World Coffee Exhibition will be held at the Westminster Hall, adjacent to the conference, where around 15 Exhibitors from coffee origin countries will showcase their coffee and distribute coffee samples. There will also be two cupping sessions organised by an independent coffee lab and 2 panel discussions on the recent SCA cupping protocol and EU due diligence legislation. This is not a big trade show but a bespoke event where green coffee buyers, roasters and traders meet coffee farmers and producers (pre-qualified) to do business and celebrate coffee.</span>
