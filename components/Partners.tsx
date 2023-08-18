@@ -86,6 +86,11 @@ export default function Partners() {
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/08/CQI-2.png',
             className: 'w-[20rem] p-2 mx-auto'
         },
+        {
+            href: 'https://www.wbaforum.org/',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/08/servlet.png',
+            className: 'w-[13rem] p-2 mx-auto'
+        },
     ]
     return (
         <>
