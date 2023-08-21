@@ -61,6 +61,11 @@ export default function Exhibitors() {
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/08/Rumani-Agencies-Ltd-1.png',
             flag: KENYA
         },
+        {
+            name: 'Zillion Agribusiness Ltd',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/08/Zillion-Agribusiness-Logo-scaled.jpg',
+            flag: KENYA
+        },
     ]
     return (
         <>

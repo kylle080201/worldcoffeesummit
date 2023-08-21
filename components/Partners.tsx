@@ -89,9 +89,23 @@ export default function Partners() {
         {
             href: 'https://www.wbaforum.org/',
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/08/servlet.png',
-            className: 'w-[13rem] p-2 mx-auto'
+            className: 'w-[12rem] p-2 mx-auto'
+        },
+        {
+            href: 'https://beantale.com/',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/08/image001.png',
+            className: 'w-[11rem] p-2 mx-auto'
         },
     ]
+
+    const mediaPartners = [
+        {
+            href: 'https://teamblockchain.net/',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/08/Screenshot-2023-08-17-at-10.36.35.png',
+            className: 'w-[20rem] p-2 mx-auto'
+        },
+    ]
+
     return (
         <>
             <div className='w-full py-20 bg-white' id='partners'>
@@ -101,6 +115,21 @@ export default function Partners() {
                     </div>
                     <div className='grid items-center justify-center grid-cols-1 gap-4 mx-auto mt-12 sm:grid-cols-3 sm:gap-12 sm:flex-row sm:max-w-7xl'>
                         {partners.map((partner) => (
+                            <Link key={partner.href} href={partner.href} target='_blank' rel='noreferer'>
+                                <div className='items-center flex-shrink-0 h-full p-4'>
+                                    <img className={partner.className} src={partner.imgSrc}>
+                                    </img>
+                                </div>
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+                <div className='mb-20'>
+                    <div className="max-w-2xl mx-auto text-center">
+                        <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">MEDIA PARTNERS</p>
+                    </div>
+                    <div className='grid items-center justify-center grid-cols-1 gap-4 mx-auto mt-12 sm:grid-cols-3 sm:gap-12 sm:flex-row sm:max-w-7xl'>
+                        {mediaPartners.map((partner) => (
                             <Link key={partner.href} href={partner.href} target='_blank' rel='noreferer'>
                                 <div className='items-center flex-shrink-0 h-full p-4'>
                                     <img className={partner.className} src={partner.imgSrc}>
