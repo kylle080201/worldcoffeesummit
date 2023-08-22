@@ -183,6 +183,14 @@ const speakers = [
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/08/Jo_Paisley_GARP.jpg',
     },
+    {
+        key: '23',
+        name: 'The Rt. Hon John Gummer, Lord Deben',
+        role: 'Former Chairman',
+        company: 'UK Climate Change Committee (The CCC)',
+        imageUrl:
+            'https://worldcoffeealliance.com/wp-content/uploads/2023/08/Lord-Deben-Photo-2019-adj-003-scaled-1.jpg',
+    },
 ]
 
 export default function Speakers() {
@@ -209,6 +217,7 @@ export default function Speakers() {
     const [openSpeaker20, setOpenSpeaker20] = useState(false)
     const [openSpeaker21, setOpenSpeaker21] = useState(false)
     const [openSpeaker22, setOpenSpeaker22] = useState(false)
+    const [openSpeaker23, setOpenSpeaker23] = useState(false)
     return (
         <>
             <div className="px-12 py-20 bg-gray-100 sm:px-20" id='speakers'>
@@ -276,6 +285,21 @@ export default function Speakers() {
                                         <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[2].name}</p>
                                         <p className="leading-7 text-gray-700 text-md">{speakers[2].role}</p>
                                         <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[2].company}</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        {/* speaker 23 */}
+                        <li>
+                            <a onClick={() => { setOpenSpeaker23(!openSpeaker23) }} className="flex flex-col gap-6 hover:cursor-pointer">
+                                <div className='flex-shrink-0 mx-auto'>
+                                    <Image className="rounded-md w-[30rem] " src={speakers[23].imageUrl} alt={speakers[23].name} width={160} height={160} />
+                                </div>
+                                <div className="flex mx-auto text-center">
+                                    <div>
+                                        <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[23].name}</p>
+                                        <p className="leading-7 text-gray-700 text-md">{speakers[23].role}</p>
+                                        <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[23].company}</p>
                                     </div>
                                 </div>
                             </a>
@@ -2158,6 +2182,65 @@ export default function Speakers() {
                                             type="button"
                                             className="inline-flex justify-center max-w-5xl px-3 py-2 text-sm font-semibold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-700"
                                             onClick={() => setOpenSpeaker22(!openSpeaker22)}
+                                        >
+                                            Back
+                                        </button>
+                                    </div>
+                                </Dialog.Panel>
+                            </Transition.Child>
+                        </div>
+                    </div>
+                </Dialog>
+            </ Transition.Root >
+            {/* speaker 22 */}
+            <Transition.Root show={openSpeaker23} as={Fragment}>
+                <Dialog as="div" className="relative z-10" onClose={setOpenSpeaker23}>
+                    <Transition.Child
+                        as={Fragment}
+                        enter="ease-out duration-300"
+                        enterFrom="opacity-0"
+                        enterTo="opacity-100"
+                        leave="ease-in duration-200"
+                        leaveFrom="opacity-100"
+                        leaveTo="opacity-0"
+                    >
+                        <div className="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-50" />
+                    </Transition.Child>
+
+                    <div className="fixed inset-0 z-10 overflow-y-auto">
+                        <div className="flex justify-center min-h-full p-4 text-center sm:items-center sm:p-0">
+                            <Transition.Child
+                                as={Fragment}
+                                enter="ease-out duration-300"
+                                enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                                enterTo="opacity-100 translate-y-0 sm:scale-100"
+                                leave="ease-in duration-200"
+                                leaveFrom="opacity-100 translate-y-0 sm:scale-100"
+                                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                            >
+                                <Dialog.Panel className="relative px-4 pt-5 pb-4 text-left transition-all transform bg-white rounded-lg shadow-xl h-max sm:my-8 sm:w-full sm:max-w-4xl sm:p-6">
+                                    <div className='flex flex-col h-max'>
+                                        <div className='flex-shrink-0 mx-auto'>
+                                            <Image className="rounded-md w-[20rem] " src={speakers[23].imageUrl} alt={speakers[23].name} width={160} height={160} />
+                                        </div>
+                                        <div className="flex mx-auto text-center">
+                                            <div>
+                                                <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[23].name}</p>
+                                                <p className="leading-7 text-gray-700 text-md">{speakers[23].role}</p>
+                                                <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[23].company}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="overflow-auto text-sm sm:text-md sm:mt-5 max-h-60">
+                                        <p className="mt-2 text-gray-600">
+                                            The Rt. Hon John Gummer, Lord Deben, is the founder and Chairman of Sancroft International, a consultancy that advises both businesses and investors on all areas of Sustainability and ESG. Between 2012 and 2023 he was Chairman of the UK’s Independent Climate Change Committee. Lord Deben was also the UK’s longest serving Secretary of State for the Environment (1993-97) having previously been Minister of Agriculture, Fisheries, and Food. His sixteen years of top-level ministerial experience also include Minister for London, Employment Minister, and Paymaster General in HM Treasury. Lord Deben is currently Chairman of Valpak Ltd and of PIMFA, the trade body representing financial advisers and wealth managers. Throughout his political, business, and personal life Lord Deben has consistently championed an accord between sustainability and business sense.
+                                        </p>
+                                    </div>
+                                    <div className="mt-5 sm:mt-6">
+                                        <button
+                                            type="button"
+                                            className="inline-flex justify-center max-w-5xl px-3 py-2 text-sm font-semibold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-700"
+                                            onClick={() => setOpenSpeaker23(!openSpeaker23)}
                                         >
                                             Back
                                         </button>

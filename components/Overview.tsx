@@ -3,6 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import CountDown from './CountDown'
 import { AddToCalendarButton } from 'add-to-calendar-button-react';
+import AgendaHighlights from './AgendaHighlights';
 
 export default function Overview() {
     return (
@@ -79,6 +80,7 @@ export default function Overview() {
                     </div>
                 </div>
             </div>
+            <AgendaHighlights />
         </>
     )
 }
