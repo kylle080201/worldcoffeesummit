@@ -274,21 +274,6 @@ export default function Speakers() {
                                 </div>
                             </a>
                         </li>
-                        {/* speaker 2 */}
-                        <li>
-                            <a onClick={() => { setOpenSpeaker2(!openSpeaker2) }} className="flex flex-col gap-6 hover:cursor-pointer">
-                                <div className='flex-shrink-0 mx-auto'>
-                                    <Image className="rounded-md w-[30rem] " src={speakers[2].imageUrl} alt={speakers[2].name} width={160} height={160} />
-                                </div>
-                                <div className="flex mx-auto text-center">
-                                    <div>
-                                        <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[2].name}</p>
-                                        <p className="leading-7 text-gray-700 text-md">{speakers[2].role}</p>
-                                        <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[2].company}</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
                         {/* speaker 23 */}
                         <li>
                             <a onClick={() => { setOpenSpeaker23(!openSpeaker23) }} className="flex flex-col gap-6 hover:cursor-pointer">
@@ -300,6 +285,21 @@ export default function Speakers() {
                                         <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[23].name}</p>
                                         <p className="leading-7 text-gray-700 text-md">{speakers[23].role}</p>
                                         <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[23].company}</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        {/* speaker 2 */}
+                        <li>
+                            <a onClick={() => { setOpenSpeaker2(!openSpeaker2) }} className="flex flex-col gap-6 hover:cursor-pointer">
+                                <div className='flex-shrink-0 mx-auto'>
+                                    <Image className="rounded-md w-[30rem] " src={speakers[2].imageUrl} alt={speakers[2].name} width={160} height={160} />
+                                </div>
+                                <div className="flex mx-auto text-center">
+                                    <div>
+                                        <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[2].name}</p>
+                                        <p className="leading-7 text-gray-700 text-md">{speakers[2].role}</p>
+                                        <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[2].company}</p>
                                     </div>
                                 </div>
                             </a>
