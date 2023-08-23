@@ -46,7 +46,7 @@ export default function AgendaHighlights() {
     return (
         <div className="flow-root px-12 py-20 sm:px-20 bg-lime-700">
             <div className='mx-auto sm:max-w-5xl'>
-                <h2 className="text-4xl font-bold tracking-tight text-white">AGENDA HIGHLIGHTS</h2>
+                <h2 className="text-4xl font-bold tracking-tight text-white">SUMMIT HIGHLIGHTS</h2>
                 <div className="w-full rounded-lg">
                     <dd className="mt-2 text-xl leading-7 text-white">
                         <span >This one-day high-level business conference will bring together Governments, Public Institutions, Financial Institutions, Global Investors, Technology Providers, Coffee Farmers, Cooperatives, Roasters and Importers, global brands, NGOs and civil societies to identify the main areas of collaboration, exploring innovative technology and regenerative solutions to face the challenges of regulatory compliance and climate change.</span>

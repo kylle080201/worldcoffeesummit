@@ -104,6 +104,11 @@ export default function Partners() {
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/08/Screenshot-2023-08-17-at-10.36.35.png',
             className: 'w-[20rem] p-2 mx-auto'
         },
+        {
+            href: 'https://www.thesustainableinvestor.org.uk/',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/08/The-sustainable-investor-horizonal-logo.png',
+            className: 'w-[25rem] p-2 mx-auto'
+        },
     ]
 
     return (

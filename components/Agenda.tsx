@@ -8,10 +8,10 @@ function Agenda() {
               {/* agenda 1 */}
               <div className='mt-12'>
                   <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
-                      <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                      <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
                           8:00 am
                       </div>
-                      <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                      <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
                           Registration and Coffee
                       </div>
                   </div>
@@ -84,7 +84,7 @@ function Agenda() {
                           9:40 am
                       </div>
                       <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                          Question & Answer
+                          Q & A
                       </div>
                   </div>
               </div>
@@ -221,7 +221,7 @@ function Agenda() {
                           12:25 pm
                       </div>
                       <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                          Question & Answer
+                          Q & A
                       </div>
                   </div>
               </div>
@@ -262,7 +262,6 @@ function Agenda() {
                           <h3 className=''><span className='font-medium'>H.E. Markus Leitner, Ambassador of Switzerland to the United Kingdom</span> </h3>
                           <h3 className=''><span className='font-medium'>H.E. Teferi Melesse Desta, Ethiopian Ambassador to the United Kingdom</span> </h3>
                           <h3 className=''><span className='font-medium'>Juan Cabrera,</span> <span className=' italic'>Vice Chair; Vice President for the UK; Business Consultant</span>, <span className='font-medium'>IoD Natural Resources Group; Government Blockchain Association (GBA); WBAF</span></h3>
-                          <h3 className=''><span className='font-medium'>Katherine Stodulka,</span> <span className=' italic'>Partner; Director</span>, <span className='font-medium'>Systemiq; Blended Finance</span></h3>
                       </div>
                   </div>
               </div>
@@ -274,7 +273,7 @@ function Agenda() {
                           2:35 pm
                       </div>
                       <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                          Question & Answer
+                          Q & A
                       </div>
                   </div>
               </div>
@@ -358,8 +357,20 @@ function Agenda() {
                           <h3>Speakers:</h3>
                           <h3 className=''><span className='font-medium'>Melissa Duncan,</span> <span className=' italic'>Executive Director</span>, <span className='font-medium'>Fairtrade International</span></h3>
                           <h3 className=''><span className='font-medium'>Anna R Rios,</span> <span className=' italic'>Climate Change Senior Specialist</span>, <span className='font-medium'>Inter-American Development Bank (IADB)</span></h3>
-                          <h3 className=''><span className='font-medium'>Katherine Stodulka,</span> <span className=' italic'>Founder and Co-CEO</span>, <span className='font-medium'>Impact Finance</span></h3>
+                          <h3 className=''><span className='font-medium'>Cedric Lombard,</span> <span className=' italic'>Founder and Co-CEO</span>, <span className='font-medium'>Impact Finance</span></h3>
                           <h3 className=''><span className='font-medium'>Katherine Stodulka,</span> <span className=' italic'>Partner; Director</span>, <span className='font-medium'>Systemiq; Blended Finance</span></h3>
+                      </div>
+                  </div>
+              </div>
+
+              {/* agenda */}
+              <div className='mt-8'>
+                  <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
+                      <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                          4:55 pm
+                      </div>
+                      <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                          Q & A
                       </div>
                   </div>
               </div>
@@ -368,7 +379,7 @@ function Agenda() {
               <div className='mt-8'>
                   <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                       <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                          4:55 pm
+                          5:05 pm
                       </div>
                       <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                           AGRI-FINANCE KEYNOTE
@@ -382,10 +393,10 @@ function Agenda() {
               {/* agenda 24 */}
               <div className='mt-8'>
                   <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
-                      <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
-                          5:05 pm
+                      <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                          5:15 pm
                       </div>
-                      <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
+                      <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                           Closing Keynote
                       </div>
                   </div>
@@ -395,7 +406,7 @@ function Agenda() {
               <div className='mt-8'>
                   <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                       <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                          5:15 pm
+                          5:25 pm
                       </div>
                       <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                           THANK YOU SPEECH
@@ -409,10 +420,10 @@ function Agenda() {
               {/* agenda 24 */}
               <div className='mt-8'>
                   <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
-                      <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                      <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
                           5:20 pm
                       </div>
-                      <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                      <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
                           Networking Drinks
                       </div>
                   </div>
