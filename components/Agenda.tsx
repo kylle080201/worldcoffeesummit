@@ -28,7 +28,7 @@ function Agenda() {
                       </div>
                   </div>
                   <div className='mt-4 px-2 max-w-3xl'>
-                      <h3 className=''><span className='font-medium'>Anthony Hobley</span>, <span className=' italic'>Senior Strategic Advisor; Former Executive Fellow; Co-Chair, Advisory Board</span>, <span className='font-medium'>Inevitable Policy Response; World Economic Forum; Carbon Tracker Initiative</span></h3>
+                      <h3 className=''><span className='font-bold'>Anthony Hobley</span>, <span className=' italic'>Senior Strategic Advisor; Former Executive Fellow; Co-Chair, Advisory Board</span>, <span className='font-bold'>Inevitable Policy Response; World Economic Forum; Carbon Tracker Initiative</span></h3>
                   </div>
               </div>
 
@@ -43,7 +43,7 @@ function Agenda() {
                       </div>
                   </div>
                   <div className='mt-4 px-2 max-w-3xl'>
-                      <h3 className=''><span className='font-medium'>The Rt. Hon John Gummer, Lord Deben,</span> <span className=' italic'>Former Chairman</span>, <span className='font-medium'>UK Climate Change Committee (The CCC)</span></h3>
+                      <h3 className=''><span className='font-bold'>The Rt. Hon John Gummer, Lord Deben,</span> <span className=' italic'>Former Chairman</span>, <span className='font-bold'>UK Climate Change Committee (The CCC)</span></h3>
                   </div>
               </div>
 
@@ -58,7 +58,7 @@ function Agenda() {
                       </div>
                   </div>
                   <div className='mt-4 px-2 max-w-3xl'>
-                      <h3 className=''><span className='font-medium'>Dr. Qu Dongyu,</span> <span className=' italic'>Director-General</span>, <span className='font-medium'>Food and Agriculture Organization of the United Nations (FAO)</span></h3>
+                      <h3 className=''><span className='font-bold'>Dr. Qu Dongyu,</span> <span className=' italic'>Director-General</span>, <span className='font-bold'>Food and Agriculture Organization of the United Nations (FAO)</span></h3>
                   </div>
               </div>
 
@@ -69,11 +69,11 @@ function Agenda() {
                           9:30 am
                       </div>
                       <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                          Opening Remark
+                          Opening Remarks
                       </div>
                   </div>
                   <div className='mt-4 px-2 max-w-3xl'>
-                      <h3 className=''><span className='font-medium'>Dr. Leonard Mizzi,</span> <span className=' italic'>Head of Unit, INTPA</span>, <span className='font-medium'>European Commission</span></h3>
+                      <h3 className=''><span className='font-bold'>Dr. Leonard Mizzi,</span> <span className=' italic'>Head of Unit, INTPA</span>, <span className='font-bold'>European Commission</span></h3>
                   </div>
               </div>
 
@@ -100,7 +100,7 @@ function Agenda() {
                       </div>
                   </div>
                   <div className='mt-4 px-2 max-w-3xl'>
-                      <h3 className=''><span className='font-medium'>Vanusia Nogueira,</span> <span className=' italic'>Executive Director</span>, <span className='font-medium'>International Coffee Organization (ICO) </span></h3>
+                      <h3 className=''><span className='font-bold'>Vanusia Nogueira,</span> <span className=' italic'>Executive Director</span>, <span className='font-bold'>International Coffee Organization (ICO) </span></h3>
                   </div>
                 </div>
 
@@ -115,7 +115,7 @@ function Agenda() {
                       </div>
                   </div>
                   <div className='mt-4 px-2 max-w-3xl'>
-                      <h3 className=''><span className='font-medium'>Professor Mark Maslin,</span> <span className=' italic'>Earth System Science</span>, <span className='font-medium'>University College London (UCL), Natural History Museum of Denmark </span></h3>
+                      <h3 className=''><span className='font-bold'>Professor Mark Maslin,</span> <span className=' italic'>Earth System Science</span>, <span className='font-bold'>University College London (UCL), Natural History Museum of Denmark </span></h3>
                   </div>
               </div>
 
@@ -130,7 +130,7 @@ function Agenda() {
                       </div>
                   </div>
                   <div className='mt-4 px-2 max-w-3xl'>
-                      <h3 className=''><span className='font-medium'>H.E. Hajime Hayashi, Ambassador Extraordinary and Plenipotentiary of Japan to the United Kingdom of Great Britain and Northern Ireland</span></h3>
+                      <h3 className=''><span className='font-bold'>H.E. Hajime Hayashi, Ambassador Extraordinary and Plenipotentiary of Japan to the United Kingdom of Great Britain and Northern Ireland</span></h3>
                   </div>
               </div>
 
@@ -157,7 +157,7 @@ function Agenda() {
                       </div>
                   </div>
                   <div className='mt-4 px-2 max-w-3xl'>
-                      <h3 className=''><span className='font-medium'>H.E. Mrs. Carmen María Gallardo, Ambassador from the Republic of El Salvador to the United Kingdom</span></h3>
+                      <h3 className=''><span className='font-bold'>H.E. Mrs. Carmen María Gallardo, Ambassador from the Republic of El Salvador to the United Kingdom</span></h3>
                   </div>
               </div>
               
@@ -203,13 +203,13 @@ function Agenda() {
                       </ul>
                       <div className='mt-2'>
                           <h3>Moderator:</h3>
-                          <h3 className=''><span className='font-medium'>Nigel Hunt,</span> <span className=' italic'>Global Soft Commodities Correspondent</span>, <span className='font-medium'>Thomson Reuters</span></h3>
+                          <h3 className=''><span className='font-bold'>Nigel Hunt,</span> <span className=' italic'>Global Soft Commodities Correspondent</span>, <span className='font-bold'>Thomson Reuters</span></h3>
                       </div>
                       <div className='mt-2'>
                           <h3>Speakers:</h3>
-                          <h3 className=''><span className='font-medium'>Paul Rooke,</span> <span className=' italic'>Executive Director</span>, <span className='font-medium'>British Coffee Association (BCA)</span></h3>
-                          <h3 className=''><span className='font-medium'>Gert van der Bijl,</span> <span className=' italic'>Senior EU Policy Advisor</span>, <span className='font-medium'>Solidaridad</span></h3>
-                          <h3 className=''><span className='font-medium'>Dr. Martina Bozzola,</span> <span className=' italic'>Senior Advisor Sustainability and Livelihood</span>, <span className='font-medium'>International Trade Centre (UN/WTO)</span></h3>
+                          <h3 className=''><span className='font-bold'>Paul Rooke,</span> <span className=' italic'>Executive Director</span>, <span className='font-bold'>British Coffee Association (BCA)</span></h3>
+                          <h3 className=''><span className='font-bold'>Gert van der Bijl,</span> <span className=' italic'>Senior EU Policy Advisor</span>, <span className='font-bold'>Solidaridad</span></h3>
+                          <h3 className=''><span className='font-bold'>Dr. Martina Bozzola,</span> <span className=' italic'>Senior Advisor Sustainability and Livelihood</span>, <span className='font-bold'>International Trade Centre (UN/WTO)</span></h3>
                       </div>
                   </div>
               </div>
@@ -259,9 +259,9 @@ function Agenda() {
                       </ul>
                       <div className='mt-2'>
                           <h3>Speakers:</h3>
-                          <h3 className=''><span className='font-medium'>H.E. Markus Leitner, Ambassador of Switzerland to the United Kingdom</span> </h3>
-                          <h3 className=''><span className='font-medium'>H.E. Teferi Melesse Desta, Ethiopian Ambassador to the United Kingdom</span> </h3>
-                          <h3 className=''><span className='font-medium'>Juan Cabrera,</span> <span className=' italic'>Vice Chair; Vice President for the UK; Business Consultant</span>, <span className='font-medium'>IoD Natural Resources Group; Government Blockchain Association (GBA); WBAF</span></h3>
+                          <h3 className=''><span className='font-bold'>H.E. Markus Leitner, Ambassador of Switzerland to the United Kingdom</span> </h3>
+                          <h3 className=''><span className='font-bold'>H.E. Teferi Melesse Desta, Ethiopian Ambassador to the United Kingdom</span> </h3>
+                          <h3 className=''><span className='font-bold'>Juan Cabrera,</span> <span className=' italic'>Vice Chair; Vice President for the UK; Business Consultant</span>, <span className='font-bold'>IoD Natural Resources Group; Government Blockchain Association (GBA); WBAF</span></h3>
                       </div>
                   </div>
               </div>
@@ -289,7 +289,7 @@ function Agenda() {
                       </div>
                   </div>
                   <div className='mt-4 px-2 max-w-3xl'>
-                      <h3 className=''><span className='font-medium'>H.E. Mr Manoah Esipisu, High Commissioner of the Republic of Kenya to the United Kingdom</span></h3>
+                      <h3 className=''><span className='font-bold'>H.E. Mr Manoah Esipisu, High Commissioner of the Republic of Kenya to the United Kingdom</span></h3>
                   </div>
               </div>
 
@@ -316,7 +316,7 @@ function Agenda() {
                       </div>
                   </div>
                   <div className='mt-4 px-2 max-w-3xl'>
-                      <h3 className=''><span className='font-medium'>H.E. Guisell Morales-Echaverry, Ambassador of the Republic of Nicaragua to the United Kingdom</span></h3>
+                      <h3 className=''><span className='font-bold'>H.E. Guisell Morales-Echaverry, Ambassador of the Republic of Nicaragua to the United Kingdom</span></h3>
                   </div>
               </div>
 
@@ -343,7 +343,7 @@ function Agenda() {
                       </div>
                   </div>
                   <div className='mt-4 px-2 max-w-3xl'>
-                      <h3 className=''><span className='font-medium'>Jo Paisley,</span> <span className=' italic'>President</span>, <span className='font-medium'>GARP Risk Institute (GRI)</span></h3>
+                      <h3 className=''><span className='font-bold'>Jo Paisley,</span> <span className=' italic'>President</span>, <span className='font-bold'>GARP Risk Institute (GRI)</span></h3>
                   </div>
               </div>
 
@@ -366,14 +366,14 @@ function Agenda() {
                       </ul>
                       <div className='mt-2'>
                           <h3>Moderator:</h3>
-                          <h3 className=''><span className='font-medium'>William Kennedy,</span> <span className=' italic'>Senior Executive Editor</span>, <span className='font-medium'>Bloomberg</span></h3>
+                          <h3 className=''><span className='font-bold'>William Kennedy,</span> <span className=' italic'>Senior Executive Editor</span>, <span className='font-bold'>Bloomberg</span></h3>
                       </div>
                       <div className='mt-2'>
                           <h3>Speakers:</h3>
-                          <h3 className=''><span className='font-medium'>Melissa Duncan,</span> <span className=' italic'>Executive Director</span>, <span className='font-medium'>Fairtrade International</span></h3>
-                          <h3 className=''><span className='font-medium'>Anna R Rios,</span> <span className=' italic'>Climate Change Senior Specialist</span>, <span className='font-medium'>Inter-American Development Bank (IADB)</span></h3>
-                          <h3 className=''><span className='font-medium'>Cedric Lombard,</span> <span className=' italic'>Founder and Co-CEO</span>, <span className='font-medium'>Impact Finance</span></h3>
-                          <h3 className=''><span className='font-medium'>Katherine Stodulka,</span> <span className=' italic'>Partner; Director</span>, <span className='font-medium'>Systemiq; Blended Finance</span></h3>
+                          <h3 className=''><span className='font-bold'>Melissa Duncan,</span> <span className=' italic'>Executive Director</span>, <span className='font-bold'>Fairtrade International</span></h3>
+                          <h3 className=''><span className='font-bold'>Anna R Rios,</span> <span className=' italic'>Climate Change Senior Specialist</span>, <span className='font-bold'>Inter-American Development Bank (IADB)</span></h3>
+                          <h3 className=''><span className='font-bold'>Cedric Lombard,</span> <span className=' italic'>Founder and Co-CEO</span>, <span className='font-bold'>Impact Finance</span></h3>
+                          <h3 className=''><span className='font-bold'>Katherine Stodulka,</span> <span className=' italic'>Partner; Director</span>, <span className='font-bold'>Systemiq; Blended Finance</span></h3>
                       </div>
                   </div>
               </div>
@@ -401,7 +401,7 @@ function Agenda() {
                       </div>
                   </div>
                   <div className='mt-4 px-2 max-w-3xl'>
-                      <h3 className=''><span className='font-medium'>Dr. Alvaro Lario,</span> <span className=' italic'>President</span>, <span className='font-medium'>International Fund of Agricultural Development (IFAD)</span></h3>
+                      <h3 className=''><span className='font-bold'>Dr. Alvaro Lario,</span> <span className=' italic'>President</span>, <span className='font-bold'>International Fund of Agricultural Development (IFAD)</span></h3>
                   </div>
               </div>
 
@@ -428,7 +428,7 @@ function Agenda() {
                       </div>
                   </div>
                   <div className='mt-4 px-2 max-w-3xl'>
-                      <h3 className=''><span className='font-medium'>Joseph de Villiers,</span> <span className=' italic'>CEO and Founder</span>, <span className='font-medium'>World Coffee Alliance (WCA)</span></h3>
+                      <h3 className=''><span className='font-bold'>Joseph de Villiers,</span> <span className=' italic'>CEO and Founder</span>, <span className='font-bold'>World Coffee Alliance (WCA)</span></h3>
                   </div>
               </div>
 
