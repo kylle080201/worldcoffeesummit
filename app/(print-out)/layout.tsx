@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'World Coffee Summit 2023',
-  description: 'A face-to-face Coffee Summit Exhibition on September 13, 2023',
+  description: 'An in-person high-level summit connects Coffee, Climate Change and Finance on 13th September 2023',
 }
 import './globals.css';
 
