@@ -77,11 +77,6 @@ function WhyAttend() {
                         </Link>
                     </div>
                 </div>
-                <div className="flex flex-row items-center w-full mt-12 bg-lime-700">
-                    <div className='py-4 mx-auto text-lg font-bold text-center text-white sm:text-2xl'>
-                        EARLY BIRD DISCOUNT UNTIL 31ST AUGUST 2023
-                    </div>
-                </div>
             </div>
         </div>
     )
