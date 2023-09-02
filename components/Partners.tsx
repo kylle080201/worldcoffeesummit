@@ -4,6 +4,11 @@ import React from 'react'
 export default function Partners() {
     const sponsors = [
         {
+            href: 'https://www.guillam.co.uk/',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/09/1.Guillam-Coffee-House.png',
+            className: 'w-[12rem] p-2 mx-auto'
+        },
+        {
             href: 'https://intracen.org/',
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/07/ITC-Alliances-for-action.png',
             className: 'w-[40rem] p-2 mx-auto'
@@ -12,11 +17,6 @@ export default function Partners() {
             href: 'http://www.agricultureauthority.go.ke/',
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/09/3.Agriculture-and-Food-Authority.png',
             className: 'w-[20rem] p-2 mx-auto bg-gray-200 rounded-md'
-        },
-        {
-            href: 'https://www.guillam.co.uk/',
-            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/09/1.Guillam-Coffee-House.png',
-            className: 'w-[12rem] p-2 mx-auto'
         },
         {
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/09/4.Agriculture-and-Food-Authority-Coffee-Directorate.png',
