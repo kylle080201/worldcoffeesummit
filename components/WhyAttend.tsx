@@ -40,7 +40,7 @@ function WhyAttend() {
     }
     return (
         <div id="why-attend" className="flex flex-col bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2023/07/shutterstock_536617741-scaled.jpg')] bg-center bg-cover">
-            <div className='w-full pt-40 bg-gray-50/70'>
+            <div className='w-full py-40 bg-gray-50/70'>
                 <div className='px-24 mx-auto text-center'>
                     <h1 className='text-2xl font-bold lg:text-4xl'>
                         WHAT CAN YOU EXPECT?
