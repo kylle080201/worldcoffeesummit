@@ -191,6 +191,30 @@ const speakers = [
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/08/Lord-Deben-Photo-2019-adj-003-scaled-1.jpg',
     },
+    {
+        key: '24',
+        name: 'Abdelrahman Fathalla',
+        role: 'Founder',
+        company: 'Guillam Coffee House',
+        imageUrl:
+            'https://worldcoffeealliance.com/wp-content/uploads/2023/09/IMG_6956-scaled.jpg',
+    },
+    {
+        key: '25',
+        name: 'Dejene Dadi Dika',
+        role: 'General Manager',
+        company: 'Oromia Coffee Farmers Cooperatives Union(OCFCU)',
+        imageUrl:
+            'https://worldcoffeealliance.com/wp-content/uploads/2023/09/20221227_091347.jpg',
+    },
+    {
+        key: '26',
+        name: 'Shooka Bidarian',
+        role: 'Creative Producer & Presenter',
+        company: 'Manoto TV',
+        imageUrl:
+            'https://worldcoffeealliance.com/wp-content/uploads/2023/09/ShookaB.jpeg',
+    },
 ]
 
 export default function Speakers() {
@@ -218,6 +242,9 @@ export default function Speakers() {
     const [openSpeaker21, setOpenSpeaker21] = useState(false)
     const [openSpeaker22, setOpenSpeaker22] = useState(false)
     const [openSpeaker23, setOpenSpeaker23] = useState(false)
+    const [openSpeaker24, setOpenSpeaker24] = useState(false)
+    const [openSpeaker25, setOpenSpeaker25] = useState(false)
+    const [openSpeaker26, setOpenSpeaker26] = useState(false)
     return (
         <>
             <div className="px-12 py-20 bg-gray-100 sm:px-20" id='speakers'>
@@ -585,6 +612,51 @@ export default function Speakers() {
                                         <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[22].name}</p>
                                         <p className="leading-7 text-gray-700 text-md">{speakers[22].role}</p>
                                         <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[22].company}</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        {/* speaker 24 */}
+                        <li>
+                            <a onClick={() => { setOpenSpeaker24(!openSpeaker24) }} className="flex flex-col gap-6 hover:cursor-pointer">
+                                <div className='flex-shrink-0 mx-auto'>
+                                    <Image className="rounded-md w-[30rem] " src={speakers[24].imageUrl} alt={speakers[24].name} width={160} height={160} />
+                                </div>
+                                <div className="flex mx-auto text-center">
+                                    <div>
+                                        <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[24].name}</p>
+                                        <p className="leading-7 text-gray-700 text-md">{speakers[24].role}</p>
+                                        <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[24].company}</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        {/* speaker 25 */}
+                        <li>
+                            <a onClick={() => { setOpenSpeaker25(!openSpeaker25) }} className="flex flex-col gap-6 hover:cursor-pointer">
+                                <div className='flex-shrink-0 mx-auto'>
+                                    <Image className="rounded-md w-[30rem] " src={speakers[25].imageUrl} alt={speakers[25].name} width={160} height={160} />
+                                </div>
+                                <div className="flex mx-auto text-center">
+                                    <div>
+                                        <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[25].name}</p>
+                                        <p className="leading-7 text-gray-700 text-md">{speakers[25].role}</p>
+                                        <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[25].company}</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        {/* speaker 26 */}
+                        <li>
+                            <a onClick={() => { setOpenSpeaker26(!openSpeaker26) }} className="flex flex-col gap-6 hover:cursor-pointer">
+                                <div className='flex-shrink-0 mx-auto'>
+                                    <Image className="rounded-md w-[30rem] " src={speakers[26].imageUrl} alt={speakers[26].name} width={160} height={160} />
+                                </div>
+                                <div className="flex mx-auto text-center">
+                                    <div>
+                                        <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[26].name}</p>
+                                        <p className="leading-7 text-gray-700 text-md">{speakers[26].role}</p>
+                                        <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[26].company}</p>
                                     </div>
                                 </div>
                             </a>
@@ -2192,7 +2264,7 @@ export default function Speakers() {
                     </div>
                 </Dialog>
             </ Transition.Root >
-            {/* speaker 22 */}
+            {/* speaker 23 */}
             <Transition.Root show={openSpeaker23} as={Fragment}>
                 <Dialog as="div" className="relative z-10" onClose={setOpenSpeaker23}>
                     <Transition.Child
@@ -2251,7 +2323,196 @@ export default function Speakers() {
                     </div>
                 </Dialog>
             </ Transition.Root >
-            
+            {/* speaker 24 */}
+            <Transition.Root show={openSpeaker24} as={Fragment}>
+                <Dialog as="div" className="relative z-10" onClose={setOpenSpeaker24}>
+                    <Transition.Child
+                        as={Fragment}
+                        enter="ease-out duration-300"
+                        enterFrom="opacity-0"
+                        enterTo="opacity-100"
+                        leave="ease-in duration-200"
+                        leaveFrom="opacity-100"
+                        leaveTo="opacity-0"
+                    >
+                        <div className="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-50" />
+                    </Transition.Child>
+
+                    <div className="fixed inset-0 z-10 overflow-y-auto">
+                        <div className="flex justify-center min-h-full p-4 text-center sm:items-center sm:p-0">
+                            <Transition.Child
+                                as={Fragment}
+                                enter="ease-out duration-300"
+                                enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                                enterTo="opacity-100 translate-y-0 sm:scale-100"
+                                leave="ease-in duration-200"
+                                leaveFrom="opacity-100 translate-y-0 sm:scale-100"
+                                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                            >
+                                <Dialog.Panel className="relative px-4 pt-5 pb-4 text-left transition-all transform bg-white rounded-lg shadow-xl h-max sm:my-8 sm:w-full sm:max-w-4xl sm:p-6">
+                                    <div className='flex flex-col h-max'>
+                                        <div className='flex-shrink-0 mx-auto'>
+                                            <Image className="rounded-md w-[20rem] " src={speakers[24].imageUrl} alt={speakers[24].name} width={160} height={160} />
+                                        </div>
+                                        <div className="flex mx-auto text-center">
+                                            <div>
+                                                <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[24].name}</p>
+                                                <p className="leading-7 text-gray-700 text-md">{speakers[24].role}</p>
+                                                <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[24].company}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="overflow-auto text-sm sm:text-md sm:mt-5 max-h-60">
+                                        <p className="mt-2 text-gray-600">
+                                            Abdelrahman Fathalla is the founder of Guillam Coffee House. After persuing an undergraduate degree in Economics at the University of Bath he undertook a masters’ in Finance at Imperial College London. Abdelrahman started his career in Investment Banking where he worked across a few firms in different roles before quitting to set up the first Guillam Coffee House just before the covid lockdowns started. In his free time Abdelrahman enjoys reading and working out. He is a Black belt in Judo and is an aspiring, but mediocre, chess player.
+                                        </p>
+                                    </div>
+                                    <div className="mt-5 sm:mt-6">
+                                        <button
+                                            type="button"
+                                            className="inline-flex justify-center max-w-5xl px-3 py-2 text-sm font-semibold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-700"
+                                            onClick={() => setOpenSpeaker24(!openSpeaker24)}
+                                        >
+                                            Back
+                                        </button>
+                                    </div>
+                                </Dialog.Panel>
+                            </Transition.Child>
+                        </div>
+                    </div>
+                </Dialog>
+            </ Transition.Root >
+            {/* speaker 25 */}
+            <Transition.Root show={openSpeaker25} as={Fragment}>
+                <Dialog as="div" className="relative z-10" onClose={setOpenSpeaker25}>
+                    <Transition.Child
+                        as={Fragment}
+                        enter="ease-out duration-300"
+                        enterFrom="opacity-0"
+                        enterTo="opacity-100"
+                        leave="ease-in duration-200"
+                        leaveFrom="opacity-100"
+                        leaveTo="opacity-0"
+                    >
+                        <div className="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-50" />
+                    </Transition.Child>
+
+                    <div className="fixed inset-0 z-10 overflow-y-auto">
+                        <div className="flex justify-center min-h-full p-4 text-center sm:items-center sm:p-0">
+                            <Transition.Child
+                                as={Fragment}
+                                enter="ease-out duration-300"
+                                enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                                enterTo="opacity-100 translate-y-0 sm:scale-100"
+                                leave="ease-in duration-200"
+                                leaveFrom="opacity-100 translate-y-0 sm:scale-100"
+                                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                            >
+                                <Dialog.Panel className="relative px-4 pt-5 pb-4 text-left transition-all transform bg-white rounded-lg shadow-xl h-max sm:my-8 sm:w-full sm:max-w-4xl sm:p-6">
+                                    <div className='flex flex-col h-max'>
+                                        <div className='flex-shrink-0 mx-auto'>
+                                            <Image className="rounded-md w-[20rem] " src={speakers[25].imageUrl} alt={speakers[25].name} width={160} height={160} />
+                                        </div>
+                                        <div className="flex mx-auto text-center">
+                                            <div>
+                                                <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[25].name}</p>
+                                                <p className="leading-7 text-gray-700 text-md">{speakers[25].role}</p>
+                                                <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[25].company}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="overflow-auto text-sm sm:text-md sm:mt-5 max-h-60">
+                                        <p className="mt-2 text-gray-600">
+                                            Mr. Dejene Dadi is the General Manager of Africa&apos;s largest Coffee Growers Union. The Oromia Coffee Farmers Cooperators Union. (OCFCU) have 557,186 coffee producer members The Union is the successful history of Ethiopia, exporting traceable, Fairtrade, Organic, and various eight certified coffees around the world. Mr. Dejene has more than 20 years of experience in a variety of roles in government, non-governmental organizations and private businesses. He has demonstrated the ability to build strong teams and work effectively with a variety of departments to implement new tasks and procedures and meet all milestones.
+                                        </p>
+                                        <p className="mt-2 text-gray-600">
+                                            He is volunteer for Fairtrade Africa board committee for Audit and Risk management since 2022.
+                                        </p>
+                                    </div>
+                                    <div className="mt-5 sm:mt-6">
+                                        <button
+                                            type="button"
+                                            className="inline-flex justify-center max-w-5xl px-3 py-2 text-sm font-semibold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-700"
+                                            onClick={() => setOpenSpeaker25(!openSpeaker25)}
+                                        >
+                                            Back
+                                        </button>
+                                    </div>
+                                </Dialog.Panel>
+                            </Transition.Child>
+                        </div>
+                    </div>
+                </Dialog>
+            </ Transition.Root >
+            {/* speaker 26 */}
+            <Transition.Root show={openSpeaker26} as={Fragment}>
+                <Dialog as="div" className="relative z-10" onClose={setOpenSpeaker26}>
+                    <Transition.Child
+                        as={Fragment}
+                        enter="ease-out duration-300"
+                        enterFrom="opacity-0"
+                        enterTo="opacity-100"
+                        leave="ease-in duration-200"
+                        leaveFrom="opacity-100"
+                        leaveTo="opacity-0"
+                    >
+                        <div className="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-50" />
+                    </Transition.Child>
+
+                    <div className="fixed inset-0 z-10 overflow-y-auto">
+                        <div className="flex justify-center min-h-full p-4 text-center sm:items-center sm:p-0">
+                            <Transition.Child
+                                as={Fragment}
+                                enter="ease-out duration-300"
+                                enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                                enterTo="opacity-100 translate-y-0 sm:scale-100"
+                                leave="ease-in duration-200"
+                                leaveFrom="opacity-100 translate-y-0 sm:scale-100"
+                                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                            >
+                                <Dialog.Panel className="relative px-4 pt-5 pb-4 text-left transition-all transform bg-white rounded-lg shadow-xl h-max sm:my-8 sm:w-full sm:max-w-4xl sm:p-6">
+                                    <div className='flex flex-col h-max'>
+                                        <div className='flex-shrink-0 mx-auto'>
+                                            <Image className="rounded-md w-[20rem] " src={speakers[26].imageUrl} alt={speakers[26].name} width={160} height={160} />
+                                        </div>
+                                        <div className="flex mx-auto text-center">
+                                            <div>
+                                                <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[26].name}</p>
+                                                <p className="leading-7 text-gray-700 text-md">{speakers[26].role}</p>
+                                                <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[26].company}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="overflow-auto text-sm sm:text-md sm:mt-5 max-h-60">
+                                        <p className="mt-2 text-gray-600">
+                                            BA, MSc, FRSA - TV presenter and producer, creating environmental, sustainability, and climate change content for English and Farsi-speaking audiences worldwide.
+                                            She is also a Climate Reality Foundation Mentor and Leader. As part of this, she led the 100% Committed Campaign in Europe. She has presented climate change solutions to world-leading companies and individuals on three continents.
+                                        </p>
+                                        <p className="mt-2 text-gray-600">
+                                            Her work focuses on the interconnection between human health and a healthy environment. She presented and produced the first-ever climate change documentary in Farsi based on her experiences at COP26 in Glasgow. She is the writer, producer, and presenter of the 2022 documentary ‘Tears Of Extinction’ which examines how we could save the Asiatic Cheetah from Extinction.
+                                        </p>
+                                        <p className="mt-2 text-gray-600">
+                                            She is a passionate climate activist and believes that taking care of the environment is the responsibility of every individual on Earth.
+                                        </p>
+                                        <p className="mt-2 text-gray-600">
+                                            In 2021 she was awarded the highly prestigious Alfredo Sirkis Memorial Green Ring Award, by Al Gore.
+                                        </p>
+                                    </div>
+                                    <div className="mt-5 sm:mt-6">
+                                        <button
+                                            type="button"
+                                            className="inline-flex justify-center max-w-5xl px-3 py-2 text-sm font-semibold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-700"
+                                            onClick={() => setOpenSpeaker26(!openSpeaker26)}
+                                        >
+                                            Back
+                                        </button>
+                                    </div>
+                                </Dialog.Panel>
+                            </Transition.Child>
+                        </div>
+                    </div>
+                </Dialog>
+            </ Transition.Root >
         </>
 
     )

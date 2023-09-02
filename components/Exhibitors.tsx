@@ -9,6 +9,7 @@ export default function Exhibitors() {
     const BURUNDI = 'https://worldcoffeealliance.com/wp-content/uploads/2023/08/Flag_of_Burundi.png'
     const TANZANIA = 'https://worldcoffeealliance.com/wp-content/uploads/2023/08/Flag_of_Tanzania.png'
     const KENYA = 'https://worldcoffeealliance.com/wp-content/uploads/2023/08/Flag_of_Kenya.png'
+    const NICARAGUA = 'https://worldcoffeealliance.com/wp-content/uploads/2023/09/Flag_of_Nicaragua.png'
 
     const exhibitors = [
         {
@@ -65,6 +66,11 @@ export default function Exhibitors() {
             name: 'Zillion Agribusiness Ltd',
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/08/Zillion-Agribusiness-Logo-scaled.jpg',
             flag: KENYA
+        },
+        {
+            name: 'Ético, the Ethical Trading Company',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/09/Etico-logo-flat.png',
+            flag: NICARAGUA
         },
     ]
     return (
