@@ -2,6 +2,28 @@ import Link from 'next/link'
 import React from 'react'
 
 export default function Partners() {
+    const sponsors = [
+        {
+            href: 'https://intracen.org/',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/07/ITC-Alliances-for-action.png',
+            className: 'w-[40rem] p-2 mx-auto'
+        },
+        {
+            href: 'http://www.agricultureauthority.go.ke/',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/09/3.Agriculture-and-Food-Authority.png',
+            className: 'w-[20rem] p-2 mx-auto bg-gray-200 rounded-md'
+        },
+        {
+            href: 'https://www.guillam.co.uk/',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/09/1.Guillam-Coffee-House.png',
+            className: 'w-[12rem] p-2 mx-auto'
+        },
+        {
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/09/4.Agriculture-and-Food-Authority-Coffee-Directorate.png',
+            className: 'w-[13rem] p-2 mx-auto'
+        },
+    ]
+
     const supporters = [
         {
             href: 'https://icocoffee.org/',
@@ -62,11 +84,6 @@ export default function Partners() {
 
     const partners = [
         {
-            href: 'https://intracen.org/',
-            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/07/ITC-Alliances-for-action.png',
-            className: 'w-[40rem] p-2 mx-auto'
-        },
-        {
             href: 'https://www.garp.org/',
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/08/GARP_Logo_RGB-2.png',
             className: 'w-[20rem] p-2 mx-auto'
@@ -96,6 +113,11 @@ export default function Partners() {
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/08/image001.png',
             className: 'w-[11rem] p-2 mx-auto'
         },
+        {
+            href: 'https://www.theinstituteofcoffee.com/',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/09/Logo-Double-Text-L4.png',
+            className: 'w-[11rem] p-2 mx-auto'
+        },
     ]
 
     const mediaPartners = [
@@ -114,6 +136,26 @@ export default function Partners() {
     return (
         <>
             <div className='w-full py-20 bg-white' id='partners'>
+                <div className='mb-20'>
+                    <div className="max-w-2xl mx-auto text-center">
+                        <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">SPONSORS</p>
+                    </div>
+                    <div className='grid items-center justify-center grid-cols-1 gap-4 mx-auto mt-12 sm:grid-cols-3 sm:gap-12 sm:flex-row sm:max-w-7xl'>
+                        {sponsors.map((sponsor) => (
+                            sponsor.href ? 
+                            <Link key={sponsor.href} href={sponsor.href} target='_blank' rel='noreferer'>
+                                <div className='items-center flex-shrink-0 h-full p-4'>
+                                    <img className={sponsor.className} src={sponsor.imgSrc}>
+                                    </img>
+                                </div>
+                            </Link> : 
+                                <div key={sponsor.href} className='items-center flex-shrink-0 h-full p-4'>
+                                    <img className={sponsor.className} src={sponsor.imgSrc}>
+                                    </img>
+                                </div>
+                        ))}
+                    </div>
+                </div>
                 <div className='mb-20'>
                     <div className="max-w-2xl mx-auto text-center">
                         <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">EVENT PARTNERS</p>
