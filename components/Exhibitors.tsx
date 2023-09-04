@@ -80,7 +80,7 @@ export default function Exhibitors() {
                     <div className="max-w-2xl mx-auto text-center">
                         <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">EXHIBITORS</p>
                     </div>
-                    <div className='grid px-4 lg:px-0 items-center justify-center grid-cols-1 gap-2 mx-auto mt-12 md:grid-cols-2 2xl:grid-cols-4 sm:gap-4 sm:flex-row'>
+                    <div className='grid px-4 lg:px-0 items-center justify-center grid-cols-1 gap-2 mx-auto mt-12 md:grid-cols-4 sm:gap-4 sm:flex-row'>
                         {exhibitors.map((exhibitor) => (
                             <div key={exhibitor.imgSrc} className='flex flex-col w-full border-2 border-lime-700 rounded-md flex-shrink-0 h-[32rem] p-4'>
                                 <div className='p-2 border-b-2 border-lime-700 h-[26rem] items-center flex'>
