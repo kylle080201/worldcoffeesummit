@@ -263,7 +263,7 @@ export default function Speakers() {
                     </div>
                     <ul
                         role="list"
-                        className="grid grid-cols-1 mx-auto mt-20 max-w-7xl gap-x-6 gap-y-20 sm:grid-cols-2 2xl:grid-cols-4 lg:gap-x-8"
+                        className="grid grid-cols-1 mx-auto mt-20 max-w-7xl gap-x-6 gap-y-20 md:grid-cols-4 lg:gap-x-8"
                     >
                         {/* speaker 0 */}
                         <li>
