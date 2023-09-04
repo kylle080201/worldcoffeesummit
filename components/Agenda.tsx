@@ -374,6 +374,9 @@ function Agenda() {
                   <div className='mt-4 px-2 max-w-3xl'>
                       <h3 className=''><span className='font-bold'>Shooka Bidarian,</span> <span className=' italic'>Creative Producer & Presenter</span>, <span className='font-bold'>Manoto TV</span></h3>
                   </div>
+                  <div className='mt-4 px-2 max-w-3xl'>
+                      <h3 className=''><span className='font-bold'>Abdelrahman Fathalla,</span> <span className=' italic'>Founder</span>, <span className='font-bold'>Guillam Coffee House</span></h3>
+                  </div>
               </div>
 
               {/* agenda 21 */}
