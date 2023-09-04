@@ -10,7 +10,7 @@ function TicketPricing() {
             title: "NGO/Academic Pass",
             old_price: 695,
             item_price: 495,
-            early_bird: 'Early bird until 31 August 2023. YOU SAVE £200',
+            early_bird: 'Flash Sale until 10 September 2023. YOU SAVE £200',
             description: "Eligible for representatives of non-profit NGOs, cooperatives, regulators, governments, public sector, and academia.",
             line_items: [
                 {
@@ -24,7 +24,7 @@ function TicketPricing() {
             title: "Standard Corporate Pass",
             old_price: 1145,
             item_price: 795,
-            early_bird: 'Early bird until 31 August 2023. YOU SAVE £350',
+            early_bird: 'Flash Sale until 10 September 2023. YOU SAVE £350',
             description: "Eligible for corporate representatives.",
             line_items: [
                 {
@@ -39,7 +39,7 @@ function TicketPricing() {
             old_price: 1345,
             item_price: 995,
             description: "Required for for-profit consultancies, start-ups, technology and service providers.",
-            early_bird: 'Early bird until 31 August 2023. YOU SAVE £350',
+            early_bird: 'Flash Sale until 10 September 2023. YOU SAVE £350',
             line_items: [
                 {
                     price: 'price_1NL3BsKMWpUKzQVz3HcTYbCn',
@@ -55,10 +55,23 @@ function TicketPricing() {
             old_price: 145,
             item_price: 125,
             description: "Eligible for green coffee buyers and coffee roasters",
-            early_bird: 'Early bird until 31 August 2023. YOU SAVE £20',
+            early_bird: 'Flash Sale until 10 September 2023. YOU SAVE £20',
             line_items: [
                 {
                     price: 'price_1NL5puKMWpUKzQVzGgXt59vX',
+                    quantity: 1,
+                    tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
+                }
+            ]
+        },
+        {
+            title: "Public Visitor Pass",
+            item_price: 10,
+            description: "Eligible for coffee lovers and enthusiasts",
+            early_bird: 'Limited Tickets Only',
+            line_items: [
+                {
+                    price: 'price_1NmS2AKMWpUKzQVz8sjZgWrf',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
@@ -69,8 +82,10 @@ function TicketPricing() {
     return (
         <div className="z-40 py-12 bg-white sm:py-20">
             <div className="max-w-5xl mx-auto sm:text-center">
-                <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">Unsure what pass you fall Under?</h2>
-                <h3 className="text-lg tracking-tight text-red-700 sm:text-2xl">Contact us at <a className='underline' href='mailto:info@worldcoffeealliance.com'>info@worldcoffeealliance.com</a> and we&apos;ll help you pick the correct registration pass.</h3>
+                <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">FLASH SALE</h2>
+                <h3 className="text-lg font-medium tracking-tight text-gray-900 sm:text-2xl">(For August Holiday Returnees)</h3>
+                <h3 className="text-lg font-bold tracking-tight text-red-700 sm:text-2xl">Limited Time Only</h3>
+                <h3 className="text-lg font-bold tracking-tight text-red-700 sm:text-2xl">4 - 10th September 2023</h3>
             </div>
 
             <div id="summit" className="flow-root px-6 mx-auto mt-12 rounded-md max-w-7xl">
@@ -150,7 +165,12 @@ function TicketPricing() {
                                     <tr key={visitor.title} className="even:bg-gray-100">
                                         <td className="flex-wrap px-3 py-4 font-semibold text-gray-900 text-md">{visitor.title}</td>
                                         <td className="flex-wrap px-3 py-4 text-gray-900 text-md">{visitor.description}<br /><span className='font-medium text-red-700'>{visitor.early_bird}</span></td>
-                                        <td className="px-3 py-4 text-red-700 text-md"><span className='text-gray-900 line-through '>£{visitor.old_price}.00</span> <br /> <span className='font-bold '>£{visitor.item_price}.00</span></td>
+                                        {visitor.old_price ? 
+                                        (<td className="px-3 py-4 text-red-700 text-md"><span className='text-gray-900 line-through '>£{visitor.old_price}.00</span> <br /> <span className='font-bold '>£{visitor.item_price}.00</span></td>)
+                                            :
+                                            (<td className="px-3 py-4 text-gray-900 font-bold text-md">£{visitor.item_price}.00</td>)
+                                    }
+                                        
                                         <td className="px-3 py-4">
                                             <div className='my-auto justify-self-center mx:auto'>
                                                 <Link

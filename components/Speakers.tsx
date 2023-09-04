@@ -215,6 +215,14 @@ const speakers = [
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/09/ShookaB.jpeg',
     },
+    {
+        key: '27',
+        name: 'Clive de Ruig',
+        role: 'President',
+        company: 'ICE Benchmark Administration',
+        imageUrl:
+            'https://worldcoffeealliance.com/wp-content/uploads/2023/09/Clive-de-Ruig-Headshot.jpg',
+    },
 ]
 
 export default function Speakers() {
@@ -245,6 +253,7 @@ export default function Speakers() {
     const [openSpeaker24, setOpenSpeaker24] = useState(false)
     const [openSpeaker25, setOpenSpeaker25] = useState(false)
     const [openSpeaker26, setOpenSpeaker26] = useState(false)
+    const [openSpeaker27, setOpenSpeaker27] = useState(false)
     return (
         <>
             <div className="px-12 py-20 bg-gray-100 sm:px-20" id='speakers'>
@@ -254,7 +263,7 @@ export default function Speakers() {
                     </div>
                     <ul
                         role="list"
-                        className="grid grid-cols-1 mx-auto mt-20 max-w-7xl gap-x-6 gap-y-20 md:grid-cols-4 lg:gap-x-8"
+                        className="grid grid-cols-1 mx-auto mt-20 max-w-7xl gap-x-6 gap-y-20 sm:grid-cols-2 2xl:grid-cols-4 lg:gap-x-8"
                     >
                         {/* speaker 0 */}
                         <li>
@@ -342,6 +351,21 @@ export default function Speakers() {
                                         <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[3].name}</p>
                                         <p className="leading-7 text-gray-700 text-md">{speakers[3].role}</p>
                                         <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[3].company}</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        {/* speaker 27 */}
+                        <li>
+                            <a onClick={() => { setOpenSpeaker27(!openSpeaker27) }} className="flex flex-col gap-6 hover:cursor-pointer">
+                                <div className='flex-shrink-0 mx-auto'>
+                                    <Image className="rounded-md w-[30rem] " src={speakers[27].imageUrl} alt={speakers[27].name} width={160} height={160} />
+                                </div>
+                                <div className="flex mx-auto text-center">
+                                    <div>
+                                        <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[27].name}</p>
+                                        <p className="leading-7 text-gray-700 text-md">{speakers[27].role}</p>
+                                        <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[27].company}</p>
                                     </div>
                                 </div>
                             </a>
@@ -616,21 +640,6 @@ export default function Speakers() {
                                 </div>
                             </a>
                         </li>
-                        {/* speaker 24 */}
-                        <li>
-                            <a onClick={() => { setOpenSpeaker24(!openSpeaker24) }} className="flex flex-col gap-6 hover:cursor-pointer">
-                                <div className='flex-shrink-0 mx-auto'>
-                                    <Image className="rounded-md w-[30rem] " src={speakers[24].imageUrl} alt={speakers[24].name} width={160} height={160} />
-                                </div>
-                                <div className="flex mx-auto text-center">
-                                    <div>
-                                        <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[24].name}</p>
-                                        <p className="leading-7 text-gray-700 text-md">{speakers[24].role}</p>
-                                        <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[24].company}</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
                         {/* speaker 25 */}
                         <li>
                             <a onClick={() => { setOpenSpeaker25(!openSpeaker25) }} className="flex flex-col gap-6 hover:cursor-pointer">
@@ -657,6 +666,21 @@ export default function Speakers() {
                                         <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[26].name}</p>
                                         <p className="leading-7 text-gray-700 text-md">{speakers[26].role}</p>
                                         <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[26].company}</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        {/* speaker 24 */}
+                        <li>
+                            <a onClick={() => { setOpenSpeaker24(!openSpeaker24) }} className="flex flex-col gap-6 hover:cursor-pointer">
+                                <div className='flex-shrink-0 mx-auto'>
+                                    <Image className="rounded-md w-[30rem] " src={speakers[24].imageUrl} alt={speakers[24].name} width={160} height={160} />
+                                </div>
+                                <div className="flex mx-auto text-center">
+                                    <div>
+                                        <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[24].name}</p>
+                                        <p className="leading-7 text-gray-700 text-md">{speakers[24].role}</p>
+                                        <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[24].company}</p>
                                     </div>
                                 </div>
                             </a>
@@ -2503,6 +2527,65 @@ export default function Speakers() {
                                             type="button"
                                             className="inline-flex justify-center max-w-5xl px-3 py-2 text-sm font-semibold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-700"
                                             onClick={() => setOpenSpeaker26(!openSpeaker26)}
+                                        >
+                                            Back
+                                        </button>
+                                    </div>
+                                </Dialog.Panel>
+                            </Transition.Child>
+                        </div>
+                    </div>
+                </Dialog>
+            </ Transition.Root >
+            {/* speaker 26 */}
+            <Transition.Root show={openSpeaker27} as={Fragment}>
+                <Dialog as="div" className="relative z-10" onClose={setOpenSpeaker27}>
+                    <Transition.Child
+                        as={Fragment}
+                        enter="ease-out duration-300"
+                        enterFrom="opacity-0"
+                        enterTo="opacity-100"
+                        leave="ease-in duration-200"
+                        leaveFrom="opacity-100"
+                        leaveTo="opacity-0"
+                    >
+                        <div className="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-50" />
+                    </Transition.Child>
+
+                    <div className="fixed inset-0 z-10 overflow-y-auto">
+                        <div className="flex justify-center min-h-full p-4 text-center sm:items-center sm:p-0">
+                            <Transition.Child
+                                as={Fragment}
+                                enter="ease-out duration-300"
+                                enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                                enterTo="opacity-100 translate-y-0 sm:scale-100"
+                                leave="ease-in duration-200"
+                                leaveFrom="opacity-100 translate-y-0 sm:scale-100"
+                                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                            >
+                                <Dialog.Panel className="relative px-4 pt-5 pb-4 text-left transition-all transform bg-white rounded-lg shadow-xl h-max sm:my-8 sm:w-full sm:max-w-4xl sm:p-6">
+                                    <div className='flex flex-col h-max'>
+                                        <div className='flex-shrink-0 mx-auto'>
+                                            <Image className="rounded-md w-[20rem] " src={speakers[27].imageUrl} alt={speakers[27].name} width={160} height={160} />
+                                        </div>
+                                        <div className="flex mx-auto text-center">
+                                            <div>
+                                                <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[27].name}</p>
+                                                <p className="leading-7 text-gray-700 text-md">{speakers[27].role}</p>
+                                                <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[27].company}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="overflow-auto text-sm sm:text-md sm:mt-5 max-h-60">
+                                        <p className="mt-2 text-gray-600">
+                                            Clive became President of ICE Benchmark Administration (IBA) in 2022. IBA is one of the world’s most experienced administrators of regulated benchmarks, offering robust benchmark and data administration services. Prior to IBA, Clive was Chief Operating Officer of ICE Futures Europe since October 2017. ICE Futures Europe is Europe’s largest and most diversified futures exchange and the home to benchmark contracts in energy, carbon, soft commodities and financial futures. He was previously Head of Cross Business Solutions and joined ICE in 2008 through theCreditex acquisition. From 2009 to 2017 Clive was the Global Head of ICE Link, a middleware technology service focused on enabling customers to achieve operational risk reduction and trade processing efficiencies in their Credit Derivative business. Clive also led the OTC Financial Sales Team from 2011 helping establish and grow ICE’s market leading CDS Clearing business. Prior to joining T-Zero, the precursor to ICE Link in 2005, Clive worked at GFI and Telerate in London and the Continental Grain Company of New York and Egon Oldenforff in Hong Kong.
+                                        </p>
+                                    </div>
+                                    <div className="mt-5 sm:mt-6">
+                                        <button
+                                            type="button"
+                                            className="inline-flex justify-center max-w-5xl px-3 py-2 text-sm font-semibold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-700"
+                                            onClick={() => setOpenSpeaker27(!openSpeaker27)}
                                         >
                                             Back
                                         </button>

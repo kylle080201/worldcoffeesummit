@@ -12,7 +12,7 @@ function Agenda() {
                           8:00 am
                       </div>
                       <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
-                          Registration and Coffee
+                          Registration and Coffee (Abbey Hall)
                       </div>
                   </div>
               </div>
@@ -24,11 +24,11 @@ function Agenda() {
                           9:00 am
                       </div>
                       <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                          Welcome Address
+                          Welcome Address from Summit Chair
                       </div>
                   </div>
                   <div className='mt-4 px-2 max-w-3xl'>
-                      <h3 className=''><span className='font-bold'>Anthony Hobley</span>, <span className=' italic'>Senior Strategic Advisor; Former Executive Fellow; Co-Chair, Advisory Board</span>, <span className='font-bold'>Inevitable Policy Response; World Economic Forum; Carbon Tracker Initiative</span></h3>
+                      <h3 className=''><span className='font-bold'>Anthony Hobley</span>, <span className='italic'>Senior Strategic Advisor, Climate Change,</span>, <span className='font-bold'>Howden Capital; Inevitable Policy Response;</span ><span className='italic'> Former Executive Fellow,</span> <span className='font-bold'>World Economic Forum (WEF)</span></h3>
                   </div>
               </div>
 
@@ -73,7 +73,7 @@ function Agenda() {
                       </div>
                   </div>
                   <div className='mt-4 px-2 max-w-3xl'>
-                      <h3 className=''><span className='font-bold'>Dr. Leonard Mizzi,</span> <span className=' italic'>Head of Unit, INTPA</span>, <span className='font-bold'>European Commission</span></h3>
+                      <h3 className=''><span className='font-bold'>Dr. Leonard Mizzi,</span> <span className=' italic'>Head of Unit, INTPA</span>, <span className='font-bold'>European Commission (EC)</span></h3>
                   </div>
               </div>
 
@@ -96,7 +96,7 @@ function Agenda() {
                           9:50 am
                       </div>
                       <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                          Coffee Industry Keynote
+                          World Coffee Industry Keynote
                       </div>
                   </div>
                   <div className='mt-4 px-2 max-w-3xl'>
@@ -115,7 +115,7 @@ function Agenda() {
                       </div>
                   </div>
                   <div className='mt-4 px-2 max-w-3xl'>
-                      <h3 className=''><span className='font-bold'>Professor Mark Maslin,</span> <span className=' italic'>Earth System Science</span>, <span className='font-bold'>University College London (UCL), Natural History Museum of Denmark </span></h3>
+                      <h3 className=''><span className='font-bold'>Professor Mark Maslin,</span> <span className=' italic'>Earth System Science</span>, <span className='font-bold'>University College London (UCL); Natural History Museum of Denmark </span></h3>
                   </div>
               </div>
 
@@ -130,7 +130,7 @@ function Agenda() {
                       </div>
                   </div>
                   <div className='mt-4 px-2 max-w-3xl'>
-                      <h3 className=''><span className='font-bold'>H.E. Hajime Hayashi, Ambassador Extraordinary and Plenipotentiary of Japan to the United Kingdom of Great Britain and Northern Ireland</span></h3>
+                      <h3 className=''><span className='font-bold'>H.E. Hajime Hayashi,</span> <span className='italic'>Ambassador Extraordinary and Plenipotentiary of <span className='font-bold'>Japan</span> to the United Kingdom of Great Britain and Northern Ireland</span></h3>
                   </div>
               </div>
 
@@ -141,35 +141,41 @@ function Agenda() {
                           10:25 am
                       </div>
                       <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                          Presentation
-                      </div>
-                  </div>
-              </div>
-
-              {/* agenda 10 */}
-              <div className='mt-8'>
-                  <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
-                      <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                          10:35 am
-                      </div>
-                      <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                           Government Keynote
                       </div>
                   </div>
                   <div className='mt-4 px-2 max-w-3xl'>
-                      <h3 className=''><span className='font-bold'>H.E. Mrs. Carmen María Gallardo, Ambassador from the Republic of El Salvador to the United Kingdom</span></h3>
+                      <h3 className=''><span className='font-bold'>H.E. Mrs. Carmen María Gallardo,</span> <span className='italic'>Ambassador from the Republic of <span className='font-bold'>El Salvador</span> to the United Kingdom</span></h3>
                   </div>
               </div>
               
-              {/* agenda 11 */}
+              {/* agenda 10 */}
               <div className='mt-8'>
                   <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                       <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
-                          10:45 am
+                          10:35 am
                       </div>
                       <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
                           Networking Coffee Break
                       </div>
+                  </div>
+              </div>
+
+              {/* agenda 11 */}
+              <div className='mt-8'>
+                  <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
+                      <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                          11:05 am
+                      </div>
+                      <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                          Farmer’s Journey – Fireside
+                      </div>
+                  </div>
+                  <div className='mt-4 px-2 max-w-3xl'>
+                      <h3 className=''><span className='font-bold'>Shooka Bidarian,</span> <span className=' italic'>Creative Producer & Presenter</span>, <span className='font-bold'>Manoto TV</span></h3>
+                  </div>
+                  <div className='mt-4 px-2 max-w-3xl'>
+                      <h3 className=''><span className='font-bold'>Dejene Dadi Dika,</span> <span className=' italic'>General Manager</span>, <span className='font-bold'>Oromia Coffee Farmers Cooperatives Union (OCFCU), Ethiopia</span></h3>
                   </div>
               </div>
 
@@ -180,8 +186,23 @@ function Agenda() {
                           11:15 am
                       </div>
                       <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                          Solution Presentation
+                          Q & A
                       </div>
+                  </div>
+              </div>
+
+              {/* agenda 11 */}
+              <div className='mt-8'>
+                  <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
+                      <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                          11:25 am
+                      </div>
+                      <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                          Global Solution Keynote
+                      </div>
+                  </div>
+                  <div className='mt-4 px-2 max-w-3xl'>
+                      <h3 className=''><span className='font-bold'>Clive de Ruig,</span> <span className=' italic'>President</span>, <span className='font-bold'>ICE Benchmark Administration</span></h3>
                   </div>
               </div>
 
@@ -189,28 +210,30 @@ function Agenda() {
               <div className='mt-8'>
                   <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                       <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                          11:25 am
+                          11:35 am
                       </div>
                       <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                          PANEL ONE: &ldquo;<span className='italic font-normal'>Towards Climate-Positive Regenerative Solutions to Achieve Net Zero</span>&rdquo;
+                          PANEL ONE: &ldquo;<span className='italic font-normal'>Towards Climate-Positive Regenerative Solutions to Achieve Net Zero.</span>&rdquo;
                       </div>
                   </div>
                   <div className='mt-4 px-2 max-w-3xl'>
                       <ul className="list-disc pl-6">
                           <li>How do the recent EU Corporate Sustainability Due Diligence Directive (CSDDD) and EUDR impact agriculture and specifically the coffee industry?</li>
-                          <li>How can we avoid reputational damage in terms of deforestation claims? </li>
-                          <li>How do we ensure that our data sets are reliable and trustable in sustainable sourcing from the coffee origin and forecasting the future?</li>
+                          <li>How can we avoid reputational damage in terms of deforestation claims?</li>
+                          <li>How do we ensure that our data sets are reliable and trustable in sustainable and ethical sourcing from the coffee origin and forecasting the future?</li>
                       </ul>
                       <div className='mt-2'>
                           <h3>Moderator:</h3>
                           <h3 className=''><span className='font-bold'>Nigel Hunt,</span> <span className=' italic'>Global Soft Commodities Correspondent</span>, <span className='font-bold'>Thomson Reuters</span></h3>
                       </div>
-                      <div className='mt-2'>
+                      <ul className='mt-2 list-disc'>
                           <h3>Speakers:</h3>
-                          <h3 className=''><span className='font-bold'>Paul Rooke,</span> <span className=' italic'>Executive Director</span>, <span className='font-bold'>British Coffee Association (BCA)</span></h3>
-                          <h3 className=''><span className='font-bold'>Gert van der Bijl,</span> <span className=' italic'>Senior EU Policy Advisor</span>, <span className='font-bold'>Solidaridad</span></h3>
-                          <h3 className=''><span className='font-bold'>Dr. Martina Bozzola,</span> <span className=' italic'>Senior Advisor Sustainability and Livelihood</span>, <span className='font-bold'>International Trade Centre (UN/WTO)</span></h3>
-                      </div>
+                          <div className='pl-6'>
+                              <li className=''><span className='font-bold'>Paul Rooke,</span> <span className=' italic'>Executive Director</span>, <span className='font-bold'>British Coffee Association (BCA)</span></li>
+                              <li className=''><span className='font-bold'>Gert van der Bijl,</span> <span className=' italic'>Senior EU Policy Advisor</span>, <span className='font-bold'>Solidaridad</span></li>
+                              <li className=''><span className='font-bold'>Dr. Martina Bozzola,</span> <span className=' italic'>Senior Advisor Sustainability and Livelihood</span>, <span className='font-bold'>International Trade Centre (UN/WTO)</span></li>
+                          </div>
+                      </ul>
                   </div>
               </div>
 
@@ -252,17 +275,20 @@ function Agenda() {
                   </div>
                   <div className='mt-4 px-2 max-w-3xl'>
                       <ul className="list-disc pl-6">
-                          <li>How do you balance economic and ecological well-being which has emerged as a critical concern for governments worldwide? </li>
-                          <li>How was technological innovation evidenced to exert a moderating effect to reduce the negative environmental consequences associated with natural resource consumption? </li>
+                          <li>How do you balance economic and ecological well-being which has emerged as a critical concern for governments worldwide?</li>
+                          <li>What is the role of women in building a wider gender equality adoption to protect human capital?</li>
                           <li>How can farmers benefit from the voluntary carbon credit infrastructure as an incentive to adopt agroforestry and biodiversity initiatives?</li>
-                          <li>How developed countries can assist emerging nations in strategizing their future environmental development policies including the Bond market framework to comply with the commitments made under the PCCA and SDG. </li>
                       </ul>
-                      <div className='mt-2'>
+                      
+                      <ul className='mt-2 list-disc'>
                           <h3>Speakers:</h3>
-                          <h3 className=''><span className='font-bold'>H.E. Markus Leitner, Ambassador of Switzerland to the United Kingdom</span> </h3>
-                          <h3 className=''><span className='font-bold'>H.E. Teferi Melesse Desta, Ethiopian Ambassador to the United Kingdom</span> </h3>
-                          <h3 className=''><span className='font-bold'>Juan Cabrera,</span> <span className=' italic'>Vice Chair; Vice President for the UK; Business Consultant</span>, <span className='font-bold'>IoD Natural Resources Group; Government Blockchain Association (GBA); WBAF</span></h3>
-                      </div>
+                          <div className='pl-6'>
+                              <li className=''><span className='font-bold'>Anthony Hobley</span>, <span className='italic'>Senior Strategic Advisor, Climate Change,</span>, <span className='font-bold'>Howden Capital; Inevitable Policy Response;</span ><span className='italic'> Former Executive Fellow,</span> <span className='font-bold'>World Economic Forum (WEF)</span></li>
+                              <li className=''><span className='font-bold'>H.E. Markus Leitner, Ambassador of Switzerland to the United Kingdom</span> </li>
+                              <li className=''><span className='font-bold'>H.E. Teferi Melesse Desta, Ethiopian Ambassador to the United Kingdom</span> </li>
+                              <li className=''><span className='font-bold'>Juan Cabrera,</span> <span className=' italic'>Vice Chair; Vice President for the UK; Business Consultant</span>, <span className='font-bold'>IoD Natural Resources Group; Government Blockchain Association (GBA); WBAF</span></li>
+                          </div>
+                      </ul>
                   </div>
               </div>
 
@@ -270,7 +296,7 @@ function Agenda() {
               <div className='mt-8'>
                   <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                       <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                          2:35 pm
+                          2:45 pm
                       </div>
                       <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                           Q & A
@@ -282,30 +308,18 @@ function Agenda() {
               <div className='mt-8'>
                   <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                       <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                          2:45 pm
+                          2:55 pm
                       </div>
                       <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                           Government Keynote
                       </div>
                   </div>
                   <div className='mt-4 px-2 max-w-3xl'>
-                      <h3 className=''><span className='font-bold'>H.E. Mr Manoah Esipisu, High Commissioner of the Republic of Kenya to the United Kingdom</span></h3>
+                      <h3 className=''><span className='font-bold'>H.E. Mr Manoah Esipisu,</span> <span className='italic'>High Commissioner of the Republic of <span className='font-bold'>Kenya</span> to the United Kingdom</span></h3>
                   </div>
               </div>
 
               {/* agenda 19 */}
-              <div className='mt-8'>
-                  <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
-                      <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                          2:55 pm
-                      </div>
-                      <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                          Presentation
-                      </div>
-                  </div>
-              </div>
-
-              {/* agenda 18 */}
               <div className='mt-8'>
                   <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                       <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
@@ -316,7 +330,7 @@ function Agenda() {
                       </div>
                   </div>
                   <div className='mt-4 px-2 max-w-3xl'>
-                      <h3 className=''><span className='font-bold'>H.E. Guisell Morales-Echaverry, Ambassador of the Republic of Nicaragua to the United Kingdom</span></h3>
+                      <h3 className=''><span className='font-bold'>H.E. Guisell Morales-Echaverry,</span> <span className='italic'>Ambassador of the Republic of <span className='font-bold'>Nicaragua</span> to the United Kingdom</span></h3>
                   </div>
               </div>
 
@@ -347,11 +361,38 @@ function Agenda() {
                   </div>
               </div>
 
+              {/* agenda 21 */}
+              <div className='mt-8'>
+                  <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
+                      <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                          3:55 pm
+                      </div>
+                      <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                          FOUNDER’S JOURNEY
+                      </div>
+                  </div>
+                  <div className='mt-4 px-2 max-w-3xl'>
+                      <h3 className=''><span className='font-bold'>Shooka Bidarian,</span> <span className=' italic'>Creative Producer & Presenter</span>, <span className='font-bold'>Manoto TV</span></h3>
+                  </div>
+              </div>
+
+              {/* agenda 21 */}
+              <div className='mt-8'>
+                  <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
+                      <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                          4:05 pm
+                      </div>
+                      <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                          Q & A
+                      </div>
+                  </div>
+              </div>
+
               {/* agenda 22 */}
               <div className='mt-8'>
                   <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                       <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                          3:55 PM
+                          4:15 PM
                       </div>
                       <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                           PANEL TWO: &ldquo;<span className='italic font-normal'>INNOVATIVE AND IMPACT INVESTING TOWARDS SUSTAINABILITY</span>&rdquo;
@@ -368,13 +409,15 @@ function Agenda() {
                           <h3>Moderator:</h3>
                           <h3 className=''><span className='font-bold'>William Kennedy,</span> <span className=' italic'>Senior Executive Editor</span>, <span className='font-bold'>Bloomberg</span></h3>
                       </div>
-                      <div className='mt-2'>
+                      <ul className='mt-2 list-disc'>
                           <h3>Speakers:</h3>
-                          <h3 className=''><span className='font-bold'>Melissa Duncan,</span> <span className=' italic'>Executive Director</span>, <span className='font-bold'>Fairtrade International</span></h3>
-                          <h3 className=''><span className='font-bold'>Anna R Rios,</span> <span className=' italic'>Climate Change Senior Specialist</span>, <span className='font-bold'>Inter-American Development Bank (IADB)</span></h3>
-                          <h3 className=''><span className='font-bold'>Cedric Lombard,</span> <span className=' italic'>Founder and Co-CEO</span>, <span className='font-bold'>Impact Finance</span></h3>
-                          <h3 className=''><span className='font-bold'>Katherine Stodulka,</span> <span className=' italic'>Partner; Director</span>, <span className='font-bold'>Systemiq; Blended Finance</span></h3>
-                      </div>
+                          <div className='pl-6'>
+                              <li className=''><span className='font-bold'>Melissa Duncan,</span> <span className=' italic'>Executive Director</span>, <span className='font-bold'>Fairtrade International</span></li>
+                              <li className=''><span className='font-bold'>Anna R Rios,</span> <span className=' italic'>Climate Change Senior Specialist</span>, <span className='font-bold'>Inter-American Development Bank (IADB)</span></li>
+                              <li className=''><span className='font-bold'>Cedric Lombard,</span> <span className=' italic'>Founder and Co-CEO</span>, <span className='font-bold'>Impact Finance</span></li>
+                              <li className=''><span className='font-bold'>Katherine Stodulka,</span> <span className=' italic'>Partner, Director;</span>, <span className='font-bold'>Blended Finance, Systemiq</span></li>
+                          </div>
+                      </ul>
                   </div>
               </div>
 
@@ -382,7 +425,7 @@ function Agenda() {
               <div className='mt-8'>
                   <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                       <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                          4:55 pm
+                          5:15 pm
                       </div>
                       <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                           Q & A
@@ -394,10 +437,10 @@ function Agenda() {
               <div className='mt-8'>
                   <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                       <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                          5:05 pm
+                          5:25 pm
                       </div>
                       <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                          AGRI-FINANCE KEYNOTE
+                          CLOSING REMARKS
                       </div>
                   </div>
                   <div className='mt-4 px-2 max-w-3xl'>
@@ -405,23 +448,11 @@ function Agenda() {
                   </div>
               </div>
 
-              {/* agenda 24 */}
-              <div className='mt-8'>
-                  <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
-                      <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                          5:15 pm
-                      </div>
-                      <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                          Closing Keynote
-                      </div>
-                  </div>
-              </div>
-
               {/* agenda 25 */}
               <div className='mt-8'>
                   <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                       <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                          5:25 pm
+                          5:35 pm
                       </div>
                       <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                           THANK YOU SPEECH
@@ -436,7 +467,7 @@ function Agenda() {
               <div className='mt-8'>
                   <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                       <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
-                          5:30 pm
+                          5:40 pm
                       </div>
                       <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
                           Networking Drinks
