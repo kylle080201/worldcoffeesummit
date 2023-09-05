@@ -2,12 +2,23 @@ import Link from 'next/link'
 import React from 'react'
 
 export default function Partners() {
-    const sponsors = [
+    const goldSponsors = [
+        {
+            href: 'https://www.ice.com/index',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/09/ICE_logo_Rmark_rgb-1.png',
+            className: 'w-[10rem] p-2 mx-auto'
+        },
+    ]
+
+    const silverSponsors = [
         {
             href: 'https://www.guillam.co.uk/',
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/09/1.Guillam-Coffee-House.png',
             className: 'w-[12rem] p-2 mx-auto'
-        },
+        }
+    ]
+
+    const coSponsors = [
         {
             href: 'https://intracen.org/',
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/07/ITC-Alliances-for-action.png',
@@ -16,13 +27,14 @@ export default function Partners() {
         {
             href: 'http://www.agricultureauthority.go.ke/',
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/09/3.Agriculture-and-Food-Authority.png',
-            className: 'w-[20rem] p-2 mx-auto bg-gray-200 rounded-md'
+            className: 'w-[20rem] p-2 mx-auto'
         },
         {
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/09/4.Agriculture-and-Food-Authority-Coffee-Directorate.png',
             className: 'w-[13rem] p-2 mx-auto'
         },
     ]
+    
 
     const supporters = [
         {
@@ -140,8 +152,15 @@ export default function Partners() {
                     <div className="max-w-2xl mx-auto text-center">
                         <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">SPONSORS</p>
                     </div>
-                    <div className='grid items-center justify-center grid-cols-1 gap-4 mx-auto mt-12 sm:grid-cols-3 sm:gap-12 sm:flex-row sm:max-w-7xl'>
-                        {sponsors.map((sponsor) => (
+
+                    <div className="max-w-2xl mx-auto text-center mt-12">
+                        <div className="inline-flex items-center justify-center w-full">
+                            <hr className="w-full h-px bg-gray-400 border-0" />
+                            <span className="absolute px-3 text-2xl sm:text-4xl font-bold tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">Gold Sponsor</span>
+                        </div>
+                    </div>
+                    <div className='grid items-center justify-center grid-cols-1 gap-4 mx-auto sm:gap-12 sm:flex-row sm:max-w-7xl mt-4'>
+                        {goldSponsors.map((sponsor) => (
                             sponsor.href ? 
                             <Link key={sponsor.href} href={sponsor.href} target='_blank' rel='noreferer'>
                                 <div className='items-center flex-shrink-0 h-full p-4'>
@@ -149,6 +168,50 @@ export default function Partners() {
                                     </img>
                                 </div>
                             </Link> : 
+                                <div key={sponsor.href} className='items-center flex-shrink-0 h-full p-4'>
+                                    <img className={sponsor.className} src={sponsor.imgSrc}>
+                                    </img>
+                                </div>
+                        ))}
+                    </div>
+
+                    <div className="max-w-2xl mx-auto text-center mt-6">
+                        <div className="inline-flex items-center justify-center w-full">
+                            <hr className="w-full h-px bg-gray-400 border-0" />
+                            <span className="absolute px-3 text-2xl sm:text-4xl font-bold tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">Silver Sponsor</span>
+                        </div>
+                    </div>
+                    <div className='grid items-center justify-center grid-cols-1 gap-4 mx-auto sm:gap-12 sm:flex-row sm:max-w-7x mt-4'>
+                        {silverSponsors.map((sponsor) => (
+                            sponsor.href ?
+                                <Link key={sponsor.href} href={sponsor.href} target='_blank' rel='noreferer'>
+                                    <div className='items-center flex-shrink-0 h-full p-4'>
+                                        <img className={sponsor.className} src={sponsor.imgSrc}>
+                                        </img>
+                                    </div>
+                                </Link> :
+                                <div key={sponsor.href} className='items-center flex-shrink-0 h-full p-4'>
+                                    <img className={sponsor.className} src={sponsor.imgSrc}>
+                                    </img>
+                                </div>
+                        ))}
+                    </div>
+
+                    <div className="max-w-2xl mx-auto text-center mt-6">
+                        <div className="inline-flex items-center justify-center w-full">
+                            <hr className="w-full h-px bg-gray-400 border-0" />
+                            <span className="absolute px-3 text-2xl sm:text-4xl font-bold tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">Co Sponsors</span>
+                        </div>
+                    </div>
+                    <div className='grid items-center justify-center grid-cols-1 gap-4 mx-auto sm:grid-cols-3 sm:gap-12 sm:flex-row sm:max-w-7xl mt-4'>
+                        {coSponsors.map((sponsor) => (
+                            sponsor.href ?
+                                <Link key={sponsor.href} href={sponsor.href} target='_blank' rel='noreferer'>
+                                    <div className='items-center flex-shrink-0 h-full p-4'>
+                                        <img className={sponsor.className} src={sponsor.imgSrc}>
+                                        </img>
+                                    </div>
+                                </Link> :
                                 <div key={sponsor.href} className='items-center flex-shrink-0 h-full p-4'>
                                     <img className={sponsor.className} src={sponsor.imgSrc}>
                                     </img>
