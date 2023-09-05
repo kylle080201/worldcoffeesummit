@@ -20,14 +20,14 @@ export default function Partners() {
 
     const coSponsors = [
         {
+            href: 'http://www.agricultureauthority.go.ke/',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/09/3.Agriculture-and-Food-Authority.png',
+            className: 'w-[20rem] p-2 mx-auto bg-gray-300 rounded-md'
+        },
+        {
             href: 'https://intracen.org/',
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/07/ITC-Alliances-for-action.png',
             className: 'w-[40rem] p-2 mx-auto'
-        },
-        {
-            href: 'http://www.agricultureauthority.go.ke/',
-            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/09/3.Agriculture-and-Food-Authority.png',
-            className: 'w-[20rem] p-2 mx-auto'
         },
         {
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/09/4.Agriculture-and-Food-Authority-Coffee-Directorate.png',
