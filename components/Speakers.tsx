@@ -17,7 +17,7 @@ const speakers = [
         key: '1',
         name: 'Anthony Hobley',
         role: 'Senior Strategic Advisor, Climate Change; Former Executive Fellow',
-        company: 'Inevitable Policy Response; World Economic Forum; Carbon Tracker Initiative; World Economic Forum (WEF)',
+        company: 'Inevitable Policy Response; World Economic Forum (WEF)',
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/06/ANTHONY-HOBLEY-PHOTO.jpg',
     },
