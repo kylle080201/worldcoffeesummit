@@ -28,7 +28,7 @@ function Agenda() {
                       </div>
                   </div>
                   <div className='mt-4 px-2 max-w-3xl'>
-                      <h3 className=''><span className='font-bold'>Anthony Hobley</span>, <span className='italic'>Senior Strategic Advisor, Climate Change,</span>, <span className='font-bold'>Howden Capital; Inevitable Policy Response;</span ><span className='italic'> Former Executive Fellow,</span> <span className='font-bold'>World Economic Forum (WEF)</span></h3>
+                      <h3 className=''><span className='font-bold'>Anthony Hobley</span>, <span className='italic'>Senior Strategic Advisor, Climate Change,</span> <span className='font-bold'>Howden Capital; Inevitable Policy Response;</span ><span className='italic'> Former Executive Fellow,</span> <span className='font-bold'>World Economic Forum (WEF)</span></h3>
                   </div>
               </div>
 
@@ -96,7 +96,7 @@ function Agenda() {
                           9:50 am
                       </div>
                       <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                          World Coffee Industry Keynote
+                          Global Coffee Leader Keynote
                       </div>
                   </div>
                   <div className='mt-4 px-2 max-w-3xl'>
@@ -172,7 +172,7 @@ function Agenda() {
                       </div>
                   </div>
                   <div className='mt-4 px-2 max-w-3xl'>
-                      <h3 className=''><span className='font-bold'>Shooka Bidarian,</span> <span className=' italic'>Creative Producer & Presenter</span>, <span className='font-bold'>Manoto TV</span></h3>
+                      <h3 className=''><span className='font-bold'>Shooka Bidarian,</span> <span className=' italic'>Environmental Correspondent</span>, <span className='font-bold'>Manoto TV</span></h3>
                   </div>
                   <div className='mt-4 px-2 max-w-3xl'>
                       <h3 className=''><span className='font-bold'>Dejene Dadi Dika,</span> <span className=' italic'>General Manager</span>, <span className='font-bold'>Oromia Coffee Farmers Cooperatives Union (OCFCU), Ethiopia</span></h3>
@@ -283,7 +283,7 @@ function Agenda() {
                       <ul className='mt-2 list-disc'>
                           <h3>Speakers:</h3>
                           <div className='pl-6'>
-                              <li className=''><span className='font-bold'>Anthony Hobley</span>, <span className='italic'>Senior Strategic Advisor, Climate Change,</span>, <span className='font-bold'>Howden Capital; Inevitable Policy Response;</span ><span className='italic'> Former Executive Fellow,</span> <span className='font-bold'>World Economic Forum (WEF)</span></li>
+                              <li className=''><span className='font-bold'>Anthony Hobley</span>, <span className='italic'>Senior Strategic Advisor, Climate Change,</span> <span className='font-bold'>Howden Capital; Inevitable Policy Response;</span ><span className='italic'> Former Executive Fellow,</span> <span className='font-bold'>World Economic Forum (WEF)</span></li>
                               <li className=''><span className='font-bold'>H.E. Markus Leitner, Ambassador of Switzerland to the United Kingdom</span> </li>
                               <li className=''><span className='font-bold'>H.E. Teferi Melesse Desta, Ethiopian Ambassador to the United Kingdom</span> </li>
                               <li className=''><span className='font-bold'>Juan Cabrera,</span> <span className=' italic'>Vice Chair; Vice President for the UK; Business Consultant</span>, <span className='font-bold'>IoD Natural Resources Group; Government Blockchain Association (GBA); WBAF</span></li>
@@ -372,7 +372,7 @@ function Agenda() {
                       </div>
                   </div>
                   <div className='mt-4 px-2 max-w-3xl'>
-                      <h3 className=''><span className='font-bold'>Shooka Bidarian,</span> <span className=' italic'>Creative Producer & Presenter</span>, <span className='font-bold'>Manoto TV</span></h3>
+                      <h3 className=''><span className='font-bold'>Shooka Bidarian,</span> <span className=' italic'>Environmental Correspondent</span>, <span className='font-bold'>Manoto TV</span></h3>
                   </div>
                   <div className='mt-4 px-2 max-w-3xl'>
                       <h3 className=''><span className='font-bold'>Abdelrahman Fathalla,</span> <span className=' italic'>Founder</span>, <span className='font-bold'>Guillam Coffee House</span></h3>
