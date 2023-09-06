@@ -281,7 +281,6 @@ function Agenda() {
                       </ul>
 
                       <div className='mt-2'>
-                          <h3>Moderator:</h3>
                           <h3 className=''><span className='font-bold'>Anthony Hobley,</span> <span className=' italic'>Senior Strategic Advisor, Inevitable Policy Response; Former Executive Fellow</span>, <span className='font-bold'>World Economic Forum (WEF)-Summit Chair (Moderator)</span></h3>
                       </div>
                       
