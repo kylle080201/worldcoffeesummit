@@ -16,8 +16,10 @@ const speakers = [
     {
         key: '1',
         name: 'Anthony Hobley',
-        role: 'Senior Strategic Advisor, Climate Change; Former Executive Fellow',
-        company: 'Inevitable Policy Response; World Economic Forum (WEF)',
+        role: 'Senior Strategic Advisor',
+        role2: 'Former Executive Fellow',
+        company: 'Inevitable Policy Response',
+        company2: 'World Economic Forum (WEF)',
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/06/ANTHONY-HOBLEY-PHOTO.jpg',
     },
@@ -291,6 +293,8 @@ export default function Speakers() {
                                         <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[1].name}</p>
                                         <p className="leading-7 text-gray-700 text-md">{speakers[1].role}</p>
                                         <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[1].company}</p>
+                                        <p className="leading-7 text-gray-700 text-md">{speakers[1].role2}</p>
+                                        <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[1].company2}</p>
                                     </div>
                                 </div>
                             </a>

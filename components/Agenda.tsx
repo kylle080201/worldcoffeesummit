@@ -265,27 +265,31 @@ function Agenda() {
               <div className='mt-8'>
                   <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                       <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                          1:35 pm
+                          1:45 pm
                       </div>
                       <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-4'>
                         <h3>
-                              GOVERNMENT, INVESTMENT AND INNOVATION ROUNDTABLE: &ldquo;<span className='italic font-normal'>Towards a more collaborative approach to building an innovative and sustainable investment framework to protect human capital and natural resources</span>&rdquo;
+                              GOVERNMENT, INVESTMENT AND INNOVATION ROUNDTABLE: &ldquo;<span className='italic font-normal'>Towards a more collaborative approach to building an innovative and sustainable investment framework to protect natural resources</span>&rdquo;
                         </h3>
                       </div>
                   </div>
                   <div className='mt-4 px-2 max-w-3xl'>
                       <ul className="list-disc pl-6">
                           <li>How do you balance economic and ecological well-being which has emerged as a critical concern for governments worldwide?</li>
-                          <li>What is the role of women in building a wider gender equality adoption to protect human capital?</li>
-                          <li>How can farmers benefit from the voluntary carbon credit infrastructure as an incentive to adopt agroforestry and biodiversity initiatives?</li>
+                          <li>How does innovation spur investments that will lead to a more sustainable and transparent supply chain to promote ethical sourcing?</li>
+                          <li>How do governments of the global north share their innovative technologies to the developing nations in the global south to adopt relevant policies in making efficient use of their natural resources? </li>
                       </ul>
+
+                      <div className='mt-2'>
+                          <h3>Moderator:</h3>
+                          <h3 className=''><span className='font-bold'>Anthony Hobley,</span> <span className=' italic'>Senior Strategic Advisor, Inevitable Policy Response; Former Executive Fellow</span>, <span className='font-bold'>World Economic Forum (WEF)-Summit Chair (Moderator)</span></h3>
+                      </div>
                       
                       <ul className='mt-2 list-disc'>
                           <h3>Speakers:</h3>
                           <div className='pl-6'>
-                              <li className=''><span className='font-bold'>Anthony Hobley</span>, <span className='italic'>Senior Strategic Advisor, Climate Change,</span> <span className='font-bold'>Howden Capital; Inevitable Policy Response;</span ><span className='italic'> Former Executive Fellow,</span> <span className='font-bold'>World Economic Forum (WEF)</span></li>
-                              <li className=''><span className='font-bold'>H.E. Markus Leitner, Ambassador of Switzerland to the United Kingdom</span> </li>
                               <li className=''><span className='font-bold'>H.E. Teferi Melesse Desta, Ethiopian Ambassador to the United Kingdom</span> </li>
+                              <li className=''><span className='font-bold'>H.E. Markus Leitner, Ambassador of Switzerland to the United Kingdom</span> </li>
                               <li className=''><span className='font-bold'>Juan Cabrera,</span> <span className=' italic'>Vice Chair; Vice President for the UK; Business Consultant</span>, <span className='font-bold'>IoD Natural Resources Group; Government Blockchain Association (GBA); WBAF</span></li>
                           </div>
                       </ul>
