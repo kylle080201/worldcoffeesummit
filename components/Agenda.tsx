@@ -28,7 +28,7 @@ function Agenda() {
                       </div>
                   </div>
                   <div className='mt-4 px-2 max-w-3xl'>
-                      <h3 className=''><span className='font-bold'>Anthony Hobley</span>, <span className='italic'>Senior Strategic Advisor, Climate Change,</span> <span className='font-bold'>Howden Capital; Inevitable Policy Response;</span ><span className='italic'> Former Executive Fellow,</span> <span className='font-bold'>World Economic Forum (WEF)</span></h3>
+                      <h3 className=''><span className='font-bold'>Anthony Hobley</span>, <span className='italic'>Senior Strategic Advisor,</span> <span className='font-bold'>Inevitable Policy Response;</span ><span className='italic'> Former Executive Fellow,</span> <span className='font-bold'>World Economic Forum (WEF)</span></h3>
                   </div>
               </div>
 
