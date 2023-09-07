@@ -46,7 +46,7 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
   const priceId = req.priceId;
   const event =
     priceId === "price_1NL5puKMWpUKzQVzGgXt59vX" ||
-    "price_1NmS2AKMWpUKzQVz8sjZgWrf"
+    priceId === "price_1NmS2AKMWpUKzQVz8sjZgWrf"
       ? "Exhibition"
       : "Summit";
   try {
