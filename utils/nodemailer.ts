@@ -403,7 +403,7 @@ const generateEmailContent = ({
                                                         <p>
                                                             <b>What you need to know:</b>
                                                         </p>
-                                                        <p><b>When?</b><br> 13th September 2023 - 8:00 - 17:00 </p>
+                                                        <p><b>When?</b><br> 13th September 2023 - 9:00 - 17:00 </p>
                                                         <p><b>Where?</b><br>The Westminster Hall at QEII Centre, Broad Sanctuary, London SW1P 3EE</p>
                                                         <p>For the most up to date information about World Coffee Summit and World Coffee Exhibition, why not follow us on <a target='_blank'
                                                                 href='https://www.linkedin.com/company/worldcoffeealliance/'>LinkedIn</a>
