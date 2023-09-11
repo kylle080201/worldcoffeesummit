@@ -288,7 +288,7 @@ function Agenda() {
                           <h3>Speakers:</h3>
                           <div className='pl-6'>
                               <li className=''><span className='font-bold'>Baroness Sandy Verma,</span> <span className=' italic'>Member UK House of
-                                  Lords</span></li>
+                                  Lords, Former Minister for Energy & Climate Change and International Development</span></li>
                               <li className=''><span className='font-bold'>H.E. Teferi Melesse Desta, Ethiopian Ambassador to the United Kingdom</span> </li>
                               <li className=''><span className='font-bold'>H.E. Markus Leitner, Ambassador of Switzerland to the United Kingdom</span> </li>
                               <li className=''><span className='font-bold'>Juan Cabrera,</span> <span className=' italic'>Vice Chair; Vice President for the UK; Business Consultant</span>, <span className='font-bold'>IoD Natural Resources Group; Government Blockchain Association (GBA); WBAF</span></li>
