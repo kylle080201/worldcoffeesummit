@@ -62,7 +62,7 @@ function TicketPricing() {
         },
         {
             title: "Public Visitor Pass",
-            item_price: 10,
+            old_price: 10,
             description: "Eligible for coffee lovers and enthusiasts",
             line_items: [
                 {
@@ -101,7 +101,7 @@ function TicketPricing() {
                                     <tr key={delegate.title} className="even:bg-gray-100">
                                         <td className="flex-wrap px-3 py-4 font-semibold text-gray-900 text-md">{delegate.title}</td>
                                         <td className="flex-wrap px-3 py-4 text-gray-900 text-md">{delegate.description}<br /></td>
-                                        <td className="px-3 py-4 text-gray-900 font-bold text-md">£{delegate.item_price}.00</td>
+                                        <td className="px-3 py-4 text-gray-900 font-bold text-md">£{delegate.old_price}.00</td>
                                         <td className="px-3 py-4">
                                             <div className='my-auto justify-self-center mx:auto'>
                                                 <Link
@@ -153,7 +153,7 @@ function TicketPricing() {
                                     <tr key={visitor.title} className="even:bg-gray-100">
                                         <td className="flex-wrap px-3 py-4 font-semibold text-gray-900 text-md">{visitor.title}</td>
                                         <td className="flex-wrap px-3 py-4 text-gray-900 text-md">{visitor.description}<br /></td>
-                                        <td className="px-3 py-4 text-gray-900 font-bold text-md">£{visitor.item_price}.00</td>
+                                        <td className="px-3 py-4 text-gray-900 font-bold text-md">£{visitor.old_price}.00</td>
                                         
                                         <td className="px-3 py-4">
                                             <div className='my-auto justify-self-center mx:auto'>
