@@ -229,7 +229,7 @@ const speakers = [
         key: '28',
         name: 'Alp Somyurek',
         role: 'UK Representative',
-        company: 'UK Representative',
+        company: 'Turkish Coffee Culture And Research Association',
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/09/Alp-Somyurek.jpg',
     },
