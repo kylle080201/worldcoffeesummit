@@ -62,7 +62,7 @@ function TicketPricing() {
         },
         {
             title: "Public Visitor Pass",
-            item_price: 10,
+            old_price: 10,
             description: "Eligible for coffee lovers and enthusiasts",
             line_items: [
                 {
