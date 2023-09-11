@@ -225,6 +225,22 @@ const speakers = [
         imageUrl:
             'https://worldcoffeealliance.com/wp-content/uploads/2023/09/Clive-de-Ruig-Headshot.jpg',
     },
+    {
+        key: '28',
+        name: 'Alp Somyurek',
+        role: 'UK Representative',
+        company: 'UK Representative',
+        imageUrl:
+            'https://worldcoffeealliance.com/wp-content/uploads/2023/09/Alp-Somyurek.jpg',
+    },
+    {
+        key: '29',
+        name: 'Baroness Sandy Verma',
+        role: 'Member UK House of Lords',
+        company: 'Former Minister for Energy & Climate Change and International Development',
+        imageUrl:
+            'https://worldcoffeealliance.com/wp-content/uploads/2023/09/baroness-verma-photo.jpg',
+    },
 ]
 
 export default function Speakers() {
@@ -256,6 +272,9 @@ export default function Speakers() {
     const [openSpeaker25, setOpenSpeaker25] = useState(false)
     const [openSpeaker26, setOpenSpeaker26] = useState(false)
     const [openSpeaker27, setOpenSpeaker27] = useState(false)
+    const [openSpeaker28, setOpenSpeaker28] = useState(false)
+    const [openSpeaker29, setOpenSpeaker29] = useState(false)
+
     return (
         <>
             <div className="px-12 py-20 bg-gray-100 sm:px-20" id='speakers'>
@@ -325,6 +344,21 @@ export default function Speakers() {
                                         <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[23].name}</p>
                                         <p className="leading-7 text-gray-700 text-md">{speakers[23].role}</p>
                                         <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[23].company}</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        {/* speaker 29 */}
+                        <li>
+                            <a onClick={() => { setOpenSpeaker29(!openSpeaker29) }} className="flex flex-col gap-6 hover:cursor-pointer">
+                                <div className='flex-shrink-0 mx-auto'>
+                                    <Image className="rounded-md w-[30rem] " src={speakers[29].imageUrl} alt={speakers[29].name} width={160} height={160} />
+                                </div>
+                                <div className="flex mx-auto text-center">
+                                    <div>
+                                        <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[29].name}</p>
+                                        <p className="leading-7 text-gray-700 text-md">{speakers[29].role}</p>
+                                        <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[29].company}</p>
                                     </div>
                                 </div>
                             </a>
@@ -685,6 +719,21 @@ export default function Speakers() {
                                         <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[24].name}</p>
                                         <p className="leading-7 text-gray-700 text-md">{speakers[24].role}</p>
                                         <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[24].company}</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        {/* speaker 28 */}
+                        <li>
+                            <a onClick={() => { setOpenSpeaker28(!openSpeaker28) }} className="flex flex-col gap-6 hover:cursor-pointer">
+                                <div className='flex-shrink-0 mx-auto'>
+                                    <Image className="rounded-md w-[30rem] " src={speakers[28].imageUrl} alt={speakers[28].name} width={160} height={160} />
+                                </div>
+                                <div className="flex mx-auto text-center">
+                                    <div>
+                                        <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[28].name}</p>
+                                        <p className="leading-7 text-gray-700 text-md">{speakers[28].role}</p>
+                                        <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[28].company}</p>
                                     </div>
                                 </div>
                             </a>
@@ -2541,7 +2590,7 @@ export default function Speakers() {
                     </div>
                 </Dialog>
             </ Transition.Root >
-            {/* speaker 26 */}
+            {/* speaker 27 */}
             <Transition.Root show={openSpeaker27} as={Fragment}>
                 <Dialog as="div" className="relative z-10" onClose={setOpenSpeaker27}>
                     <Transition.Child
@@ -2590,6 +2639,152 @@ export default function Speakers() {
                                             type="button"
                                             className="inline-flex justify-center max-w-5xl px-3 py-2 text-sm font-semibold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-700"
                                             onClick={() => setOpenSpeaker27(!openSpeaker27)}
+                                        >
+                                            Back
+                                        </button>
+                                    </div>
+                                </Dialog.Panel>
+                            </Transition.Child>
+                        </div>
+                    </div>
+                </Dialog>
+            </ Transition.Root >
+            {/* speaker 28 */}
+            <Transition.Root show={openSpeaker28} as={Fragment}>
+                <Dialog as="div" className="relative z-10" onClose={setOpenSpeaker28}>
+                    <Transition.Child
+                        as={Fragment}
+                        enter="ease-out duration-300"
+                        enterFrom="opacity-0"
+                        enterTo="opacity-100"
+                        leave="ease-in duration-200"
+                        leaveFrom="opacity-100"
+                        leaveTo="opacity-0"
+                    >
+                        <div className="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-50" />
+                    </Transition.Child>
+
+                    <div className="fixed inset-0 z-10 overflow-y-auto">
+                        <div className="flex justify-center min-h-full p-4 text-center sm:items-center sm:p-0">
+                            <Transition.Child
+                                as={Fragment}
+                                enter="ease-out duration-300"
+                                enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                                enterTo="opacity-100 translate-y-0 sm:scale-100"
+                                leave="ease-in duration-200"
+                                leaveFrom="opacity-100 translate-y-0 sm:scale-100"
+                                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                            >
+                                <Dialog.Panel className="relative px-4 pt-5 pb-4 text-left transition-all transform bg-white rounded-lg shadow-xl h-max sm:my-8 sm:w-full sm:max-w-4xl sm:p-6">
+                                    <div className='flex flex-col h-max'>
+                                        <div className='flex-shrink-0 mx-auto'>
+                                            <Image className="rounded-md w-[20rem] " src={speakers[28].imageUrl} alt={speakers[28].name} width={160} height={160} />
+                                        </div>
+                                        <div className="flex mx-auto text-center">
+                                            <div>
+                                                <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[28].name}</p>
+                                                <p className="leading-7 text-gray-700 text-md">{speakers[28].role}</p>
+                                                <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[28].company}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="overflow-auto text-sm sm:text-md sm:mt-5 max-h-60">
+                                        <p className="mt-2 text-gray-600">
+                                            Alp Somyurek is a coffee and history enthusiast with over a decade of experience in the US and UK coffee industries. Following C-level positions in consumer electronics, Alp oversaw the development of the world’s first automatic Turkish coffee machine between 2012 and 2014. Since then, he has been actively promoting Turkish coffee as the world&apos;s oldest coffee-cooking method worldwide. Together with the Turkish Coffee Culture and Research Association he actively took part in the listing of Turkish Coffee as UNESCO&apos;s Intangible Cultural Heritage in 2013. Alp is the author of a recently published book “Damn Coffee! History Made in the Coffeehouse” which combines his passion, knowledge, and research of coffee with its historical significance, delving into the captivating world of coffee and its profound role in today’s civilisation.
+                                        </p>
+                                    </div>
+                                    <div className="mt-5 sm:mt-6">
+                                        <button
+                                            type="button"
+                                            className="inline-flex justify-center max-w-5xl px-3 py-2 text-sm font-semibold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-700"
+                                            onClick={() => setOpenSpeaker28(!openSpeaker28)}
+                                        >
+                                            Back
+                                        </button>
+                                    </div>
+                                </Dialog.Panel>
+                            </Transition.Child>
+                        </div>
+                    </div>
+                </Dialog>
+            </ Transition.Root >
+            {/* speaker 29 */}
+            <Transition.Root show={openSpeaker29} as={Fragment}>
+                <Dialog as="div" className="relative z-10" onClose={setOpenSpeaker29}>
+                    <Transition.Child
+                        as={Fragment}
+                        enter="ease-out duration-300"
+                        enterFrom="opacity-0"
+                        enterTo="opacity-100"
+                        leave="ease-in duration-200"
+                        leaveFrom="opacity-100"
+                        leaveTo="opacity-0"
+                    >
+                        <div className="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-50" />
+                    </Transition.Child>
+
+                    <div className="fixed inset-0 z-10 overflow-y-auto">
+                        <div className="flex justify-center min-h-full p-4 text-center sm:items-center sm:p-0">
+                            <Transition.Child
+                                as={Fragment}
+                                enter="ease-out duration-300"
+                                enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                                enterTo="opacity-100 translate-y-0 sm:scale-100"
+                                leave="ease-in duration-200"
+                                leaveFrom="opacity-100 translate-y-0 sm:scale-100"
+                                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                            >
+                                <Dialog.Panel className="relative px-4 pt-5 pb-4 text-left transition-all transform bg-white rounded-lg shadow-xl h-max sm:my-8 sm:w-full sm:max-w-4xl sm:p-6">
+                                    <div className='flex flex-col h-max'>
+                                        <div className='flex-shrink-0 mx-auto'>
+                                            <Image className="rounded-md w-[20rem] " src={speakers[29].imageUrl} alt={speakers[29].name} width={160} height={160} />
+                                        </div>
+                                        <div className="flex mx-auto text-center">
+                                            <div>
+                                                <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{speakers[29].name}</p>
+                                                <p className="leading-7 text-gray-700 text-md">{speakers[29].role}</p>
+                                                <p className="font-semibold leading-7 text-gray-900 text-md">{speakers[29].company}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="overflow-auto text-sm sm:text-md sm:mt-5 max-h-60">
+                                        <p className="mt-2 text-gray-600">
+                                            Baroness Verma is a highly influential, both as an outward facing global business leader and within the numerous political positions she has held
+                                        </p>
+                                        <p className="mt-2 text-gray-600">
+                                            Since entering the House of Lords in 2006, she has held several key Ministerial appointments, in Government and opposition. Baroness Verma is adept at leading teams from the front, strong in strategy development and transformational change. She has significant experience in chairing committees both in the private and public sectors. 
+                                        </p>
+                                        <p className="mt-2 text-gray-600">
+                                            Baroness Verma is self-assured, confident in decision making and wise enough to build strong teams around her.
+                                        </p>
+                                        <p className="mt-2 text-gray-600">
+                                            A strong and committed advocate of diversity and inclusion, she is involved in a wealth of influential initiatives to create a more inclusive working environment and society. She has led from the front specifically on gender and race discriminations, both in her political position as well as in her many roles on committees. Baroness Verma was the Prime Minister’s Ministerial global champion for tackling violence against women and girls when was a government minister.
+                                        </p>
+                                        <p className="mt-2 text-gray-600">
+                                            Baroness Verma has received numerous accolades over the years, as a business leader, politician and champion on rights and access to opportunities. She doesn’t shy away from being forthright and honest but has always embraced the art of cooperative support as the most successful way to achieve results.  
+                                        </p>
+                                        <p className="mt-2 text-gray-600">
+                                            She co-founded Powerful Women, when as an energy minister she saw the lack of senior women in the energy sector, which has helped changed the way women are supported in the sector.
+                                        </p>
+                                        <p className="mt-2 text-gray-600">
+                                            She is Chair of UN Women UK, the national committee of UN Women the only UN organisation that focuses specifically on women and girls.
+                                        </p>
+                                        <p className="mt-2 text-gray-600">
+                                            She is Chancellor of Roehampton University and sits on the governing council of Southampton University.
+                                        </p>
+                                        <p className="mt-2 text-gray-600">
+                                            She is Chancellor of Roehampton University and sits on the governing council of Southampton University.
+                                        </p>
+                                        <p className="mt-2 text-gray-600">
+                                            Baroness Verma is an independent director on the Afrinex Stock Exchange of Mauritius
+                                            And an advisor on a number of business bodies.
+                                        </p>
+                                    </div>
+                                    <div className="mt-5 sm:mt-6">
+                                        <button
+                                            type="button"
+                                            className="inline-flex justify-center max-w-5xl px-3 py-2 text-sm font-semibold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-700"
+                                            onClick={() => setOpenSpeaker29(!openSpeaker29)}
                                         >
                                             Back
                                         </button>

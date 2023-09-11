@@ -287,6 +287,8 @@ function Agenda() {
                       <ul className='mt-2 list-disc'>
                           <h3>Speakers:</h3>
                           <div className='pl-6'>
+                              <li className=''><span className='font-bold'>Baroness Sandy Verma,</span> <span className=' italic'>Member UK House of
+                                  Lords, Ex. Minister International Development</span></li>
                               <li className=''><span className='font-bold'>H.E. Teferi Melesse Desta, Ethiopian Ambassador to the United Kingdom</span> </li>
                               <li className=''><span className='font-bold'>H.E. Markus Leitner, Ambassador of Switzerland to the United Kingdom</span> </li>
                               <li className=''><span className='font-bold'>Juan Cabrera,</span> <span className=' italic'>Vice Chair; Vice President for the UK; Business Consultant</span>, <span className='font-bold'>IoD Natural Resources Group; Government Blockchain Association (GBA); WBAF</span></li>
@@ -446,6 +448,20 @@ function Agenda() {
                           5:25 pm
                       </div>
                       <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                          Turkish Coffee Culture Keynote
+                      </div>
+                  </div>
+                  <div className='mt-4 px-2 max-w-3xl'>
+                      <h3 className=''><span className='font-bold'>Alp Somyurek,</span> <span className=' italic'>UK Representative</span>, <span className='font-bold'>Turkish Coffee Culture and Research Association</span></h3>
+                  </div>
+              </div>
+
+              <div className='mt-8'>
+                  <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
+                      <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                          5:30 pm
+                      </div>
+                      <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                           CLOSING REMARKS
                       </div>
                   </div>
@@ -458,7 +474,7 @@ function Agenda() {
               <div className='mt-8'>
                   <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                       <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                          5:35 pm
+                          5:40 pm
                       </div>
                       <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                           THANK YOU SPEECH
@@ -473,10 +489,10 @@ function Agenda() {
               <div className='mt-8'>
                   <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                       <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
-                          5:40 pm
+                          5:45 pm
                       </div>
                       <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
-                          Networking Drinks
+                          Networking Drinks (Abbey Hall)
                       </div>
                   </div>
               </div>
