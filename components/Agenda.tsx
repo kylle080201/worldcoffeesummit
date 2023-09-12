@@ -232,6 +232,7 @@ function Agenda() {
                               <li className=''><span className='font-bold'>Paul Rooke,</span> <span className=' italic'>Executive Director</span>, <span className='font-bold'>British Coffee Association (BCA)</span></li>
                               <li className=''><span className='font-bold'>Gert van der Bijl,</span> <span className=' italic'>Senior EU Policy Advisor</span>, <span className='font-bold'>Solidaridad</span></li>
                               <li className=''><span className='font-bold'>Dr. Martina Bozzola,</span> <span className=' italic'>Senior Advisor Sustainability and Livelihood</span>, <span className='font-bold'>International Trade Centre (UN/WTO)</span></li>
+                              <li className=''><span className='font-bold'>Thomas Vaassen,</span> <span className=' italic'>Co-founder and CEO </span>, <span className='font-bold'>Meridia</span></li>
                           </div>
                       </ul>
                   </div>
