@@ -1,13 +1,32 @@
+/* eslint-disable @next/next/no-img-element */
 "use client"
 import { PrinterIcon } from '@heroicons/react/24/outline'
 import { ArrowLongRightIcon } from '@heroicons/react/24/solid'
+import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import ReactToPrint from 'react-to-print';
-import { json } from 'stream/consumers'
+
+interface buyerDataDto {
+  _id: string;
+  paymentIntentId: string;
+  checkoutSessionId: string;
+  createdAt: string;
+  __v: number;
+  companyName: string;
+  country: string;
+  email: string;
+  event: string;
+  firstName: string;
+  jobTitle: string;
+  lastName: string;
+  mobileNumber: string;
+  isEmailAccepted: boolean;
+}
+
 
 function PrintablePage({id}: {id: string}) {
-  const [buyerData, setBuyerData] = useState({})
+  const [buyerData, setBuyerData] = useState<buyerDataDto>({} as buyerDataDto)
   const [origin, setOrigin] = useState('')
 
     useEffect(() => {
@@ -18,7 +37,7 @@ function PrintablePage({id}: {id: string}) {
 
   const getBuyerData = async () => {
     try {
-        await fetch(`/api/get-registrant`, {
+        await fetch(`${origin}/api/get-registrant`, {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json'
@@ -28,7 +47,7 @@ function PrintablePage({id}: {id: string}) {
           }),
         }).then(response => response.json())
             .then(async data => {
-                setBuyerData(data)
+                setBuyerData(data.res)
             }).catch(error => {
                 console.log(JSON.stringify(error));
             });
@@ -41,19 +60,148 @@ function PrintablePage({id}: {id: string}) {
     if(buyerData) {
       getBuyerData()
     }
-  }, [buyerData])
-  
+  }, [])
+
   return (
-      <div style={{height: '842px', width: '595px'}} className="grid grid-cols-2 justify-self-center mx-auto border p-4 border-gray-900">
-        <div className=' border-b-2 h-full'>hello {id}</div>
-        <div className=' border-b-2 border-l-2 h-full'>world</div>
+    <>
+      {Object.keys(buyerData).length != 0 ?
+        <div style={{height: '842px', width: '595px'}} className="justify-self-center mx-auto border border-gray-900 h-full p-4">
+          <div className='flex h-1/3'>
+            <div className='border-b-2 border-dashed border-gray-700 p-4 w-1/2'>
+              <div className='text-center font-bold text-lg w-full min-w-full h-full min-h-full'>
+                <div className='pt-12'> 
+                  This is your personal entry badge for
+                </div>
+                <div className='mt-2'>
+                  World Coffee Summit 2023
+                </div>
+              </div>
+            </div>
+            <div className='border-b-2 border-l-2 border-dashed border-gray-700 p-4 w-1/2'>
+              <div className='text-left font-bold text-lg'>
+              <div className=''> 
+                  For quick and easy access to Innovation Zero 2023 please:
+                </div>
+                <div className='mt-2'>
+                  - Print this e-badge to A4
+                </div>
+                <div className='mt-2'>
+                  - Fold along the dotted line
+                </div>
+                <div className='mt-2'>
+                  - Bring along to the event
+                </div>
+                <div className='mt-2'>
+                  - A lanyard will be provided at the entrance
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <div className=' border-b-2 h-full'>hello</div>
-        <div className=' border-b-2 border-l-2 h-full'>world</div>
+          <div className='flex h-1/3'>
+            <div className='border-b-2 border-dashed border-gray-700 p-4 w-1/2'>
+              <div className='text-center font-bold text-lg w-full min-w-full h-full min-h-full'>
+                <div className='flex justify-center mx-auto'> 
+                  <Image
+                    src='https://worldcoffeealliance.com/wp-content/uploads/2023/05/world-coffee-summit-high-resolution-logo-color-on-transparent-background.png'
+                    alt='WCS 2023'
+                    width={125}
+                    height={125}
+                  />
+                </div>
+                <div className='mt-2 font-medium capitalize'>
+                  {buyerData.firstName} {buyerData.lastName}
+                </div>
+                <div className='font-medium'>
+                  {buyerData.jobTitle}
+                </div>
+                <div className='font-medium'>
+                  {buyerData.companyName}
+                </div>
+                <div className='mt-2'>
+                  <img
+                    src={`https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://www.worldcoffeesummit.net/pdf/${buyerData._id}`}
+                    alt='QR Code badge'
+                    width={50}
+                    height={50}
+                    className='mx-auto'
+                  />
+                </div>
+                <div className='italic font-normal mt-4'>
+                  {buyerData.event === 'Summit' ? 'Summit Delegate' : 'Exhibition Visitor'}
+                </div>
+              </div>
+            </div>
+            <div className='border-b-2 border-l-2 border-dashed border-gray-700 p-4 w-1/2'>
+              <div className='text-center font-bold text-lg w-full min-w-full h-full min-h-full'>
+                <div className='flex justify-center mx-auto'> 
+                  <Image
+                    src='https://worldcoffeealliance.com/wp-content/uploads/2023/05/world-coffee-summit-high-resolution-logo-color-on-transparent-background.png'
+                    alt='WCS 2023'
+                    width={125}
+                    height={125}
+                  />
+                </div>
+                <div className='mt-2 font-medium capitalize'>
+                  {buyerData.firstName} {buyerData.lastName}
+                </div>
+                <div className='font-medium'>
+                  {buyerData.jobTitle}
+                </div>
+                <div className='font-medium'>
+                  {buyerData.companyName}
+                </div>
+                <div className='mt-2'>
+                  <img
+                    src={`https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://www.worldcoffeesummit.net/pdf/${buyerData._id}`}
+                    alt='QR Code badge'
+                    width={50}
+                    height={50}
+                    className='mx-auto'
+                  />
+                </div>
+                <div className='italic font-normal mt-4'>
+                  {buyerData.event === 'Summit' ? 'Summit Delegate' : 'Exhibition Visitor'}
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <div className=' h-full'>hello</div>
-        <div className=' border-l-2 h-full'>world</div>
-      </div>
+          <div className='flex h-1/3'>
+            <div className='border-dashed border-gray-700 p-4 w-1/2'>
+              <div className='text-center font-bold text-lg w-full min-w-full h-full min-h-full'>
+                <div className='pt-12'> 
+                  This is your personal entry badge for
+                </div>
+                <div className='mt-2'>
+                  World Coffee Summit 2023
+                </div>
+              </div>
+            </div>
+            <div className='border-l-2 border-dashed border-gray-700 p-4 w-1/2'>
+              <div className='text-left font-bold text-lg'>
+              <div className=''> 
+                  For quick and easy access to Innovation Zero 2023 please:
+                </div>
+                <div className='mt-2'>
+                  - Print this e-badge to A4
+                </div>
+                <div className='mt-2'>
+                  - Fold along the dotted line
+                </div>
+                <div className='mt-2'>
+                  - Bring along to the event
+                </div>
+                <div className='mt-2'>
+                  - A lanyard will be provided at the entrance
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      : <div>loading...</div>}
+    </>
+      
   )
 }
 
