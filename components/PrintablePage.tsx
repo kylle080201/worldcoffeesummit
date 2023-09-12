@@ -4,8 +4,9 @@ import { PrinterIcon } from '@heroicons/react/24/outline'
 import { ArrowLongRightIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import ReactToPrint from 'react-to-print';
+import Ebadge from './Ebadge'
 
 interface buyerDataDto {
   _id: string;
@@ -28,6 +29,7 @@ interface buyerDataDto {
 function PrintablePage({id}: {id: string}) {
   const [buyerData, setBuyerData] = useState<buyerDataDto>({} as buyerDataDto)
   const [origin, setOrigin] = useState('')
+  const eBadge = useRef(null);
 
     useEffect(() => {
         if (typeof window !== "undefined") {
@@ -64,12 +66,30 @@ function PrintablePage({id}: {id: string}) {
 
   return (
     <>
+      <ReactToPrint
+        trigger={() => {
+          return (
+            <button className='block w-full px-6 py-4 text-md font-semibold text-center text-white rounded-md mb-4 shadow-sm bg-lime-700 hover:bg-lime-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'>
+              <span>
+                <PrinterIcon className='inline-block w-7 h-7 mr-2 -mt-1' aria-hidden='true' />
+              </span>
+              Print
+            </button>
+          )
+        }}
+        content={() => eBadge.current}
+        documentTitle='WCS 2023 E-badge'
+        pageStyle={`@page {
+          size: A4;
+          margin: 0;
+        }`}
+      />
       {Object.keys(buyerData).length != 0 ?
-        <div style={{height: '842px', width: '595px'}} className="justify-self-center mx-auto border border-gray-900 h-full p-4">
+        <div ref={eBadge} className="justify-self-center mx-auto border w-[21cm] h-[29.7cm] p-4">
           <div className='flex h-1/3'>
             <div className='border-b-2 border-dashed border-gray-700 p-4 w-1/2'>
               <div className='text-center font-bold text-lg w-full min-w-full h-full min-h-full'>
-                <div className='pt-12'> 
+                <div className='pt-24'> 
                   This is your personal entry badge for
                 </div>
                 <div className='mt-2'>
@@ -79,7 +99,7 @@ function PrintablePage({id}: {id: string}) {
             </div>
             <div className='border-b-2 border-l-2 border-dashed border-gray-700 p-4 w-1/2'>
               <div className='text-left font-bold text-lg'>
-              <div className=''> 
+              <div className='mt-8'> 
                   For quick and easy access to Innovation Zero 2023 please:
                 </div>
                 <div className='mt-2'>
@@ -100,16 +120,16 @@ function PrintablePage({id}: {id: string}) {
 
           <div className='flex h-1/3'>
             <div className='border-b-2 border-dashed border-gray-700 p-4 w-1/2'>
-              <div className='text-center font-bold text-lg w-full min-w-full h-full min-h-full'>
+              <div className='text-center font-bold text-xl w-full min-w-full h-full min-h-full'>
                 <div className='flex justify-center mx-auto'> 
                   <Image
                     src='https://worldcoffeealliance.com/wp-content/uploads/2023/05/world-coffee-summit-high-resolution-logo-color-on-transparent-background.png'
                     alt='WCS 2023'
-                    width={125}
-                    height={125}
+                    width={200}
+                    height={200}
                   />
                 </div>
-                <div className='mt-2 font-medium capitalize'>
+                <div className='mt-4 font-medium capitalize'>
                   {buyerData.firstName} {buyerData.lastName}
                 </div>
                 <div className='font-medium'>
@@ -118,12 +138,12 @@ function PrintablePage({id}: {id: string}) {
                 <div className='font-medium'>
                   {buyerData.companyName}
                 </div>
-                <div className='mt-2'>
+                <div className='mt-4'>
                   <img
                     src={`https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://www.worldcoffeesummit.net/pdf/${buyerData._id}`}
                     alt='QR Code badge'
-                    width={50}
-                    height={50}
+                    width={75}
+                    height={75}
                     className='mx-auto'
                   />
                 </div>
@@ -133,16 +153,16 @@ function PrintablePage({id}: {id: string}) {
               </div>
             </div>
             <div className='border-b-2 border-l-2 border-dashed border-gray-700 p-4 w-1/2'>
-              <div className='text-center font-bold text-lg w-full min-w-full h-full min-h-full'>
+              <div className='text-center font-bold text-xl w-full min-w-full h-full min-h-full'>
                 <div className='flex justify-center mx-auto'> 
                   <Image
                     src='https://worldcoffeealliance.com/wp-content/uploads/2023/05/world-coffee-summit-high-resolution-logo-color-on-transparent-background.png'
                     alt='WCS 2023'
-                    width={125}
-                    height={125}
+                    width={200}
+                    height={200}
                   />
                 </div>
-                <div className='mt-2 font-medium capitalize'>
+                <div className='mt-4 font-medium capitalize'>
                   {buyerData.firstName} {buyerData.lastName}
                 </div>
                 <div className='font-medium'>
@@ -151,12 +171,12 @@ function PrintablePage({id}: {id: string}) {
                 <div className='font-medium'>
                   {buyerData.companyName}
                 </div>
-                <div className='mt-2'>
+                <div className='mt-4'>
                   <img
                     src={`https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://www.worldcoffeesummit.net/pdf/${buyerData._id}`}
                     alt='QR Code badge'
-                    width={50}
-                    height={50}
+                    width={75}
+                    height={75}
                     className='mx-auto'
                   />
                 </div>
