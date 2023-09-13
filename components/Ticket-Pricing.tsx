@@ -60,18 +60,18 @@ function TicketPricing() {
                 }
             ]
         },
-        {
-            title: "Public Visitor Pass",
-            old_price: 10,
-            description: "Eligible for coffee lovers and enthusiasts",
-            line_items: [
-                {
-                    price: 'price_1NmS2AKMWpUKzQVz8sjZgWrf',
-                    quantity: 1,
-                    tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
-                }
-            ]
-        },
+        // {
+        //     title: "Public Visitor Pass",
+        //     old_price: 10,
+        //     description: "Eligible for coffee lovers and enthusiasts",
+        //     line_items: [
+        //         {
+        //             price: 'price_1NmS2AKMWpUKzQVz8sjZgWrf',
+        //             quantity: 1,
+        //             tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
+        //         }
+        //     ]
+        // },
     ]
 
     return (
