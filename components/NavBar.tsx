@@ -68,15 +68,6 @@ function Navbar() {
                                                 <SocialIcon url="https://www.youtube.com/channel/UCbUTtqgxTtQj9nkKTAf_AQg" style={{ height: 40, width: 40 }} target='_blank' />
                                             </div>
                                         </div>
-                                        <div className='mt-4 '>
-                                            <Link
-                                                href={'/register'}
-                                                type="button"
-                                                className="relative inline-flex gap-x-1.5 rounded-md bg-lime-700 hover:bg-lime-800 px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
-                                            >
-                                                Register Now
-                                            </Link>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -105,17 +96,6 @@ function Navbar() {
                                 <SocialIcon url="https://www.linkedin.com/company/worldcoffeealliance/" style={{ height: 40, width: 40 }} target='_blank' />
                                 <SocialIcon url="https://twitter.com/WCoffeeAlliance" style={{ height: 40, width: 40 }} target='_blank' />
                                 <SocialIcon url="https://www.youtube.com/channel/UCbUTtqgxTtQj9nkKTAf_AQg" style={{ height: 40, width: 40 }} target='_blank' />
-                            </div>
-                        </div>
-                        <div className="items-center justify-center pb-4 pl-3">
-                            <div className="flex-shrink-0">
-                                <Link
-                                    href={'/register'}
-                                    type="button"
-                                    className="relative inline-flex items-center gap-x-1.5 rounded-md bg-yellow-900 hover:bg-lime-700 px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                                >
-                                    Register Now
-                                </Link>
                             </div>
                         </div>
                     </Disclosure.Panel>

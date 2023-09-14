@@ -68,10 +68,6 @@ function WhyAttend() {
                     </div>
                 </div>
                 <div className="flex flex-row items-center justify-center mt-4 text-center gap-x-4">
-                    <div>
-                        <Link target={'_blank'} rel='noreferer' className='flex-shrink-0 px-6 py-2 mx-auto text-lg font-bold tracking-tight text-gray-900 bg-yellow-500 hover:underline h-max sm:text-2xl' href="/register">Register Now
-                        </Link>
-                    </div>
                     <div className='text-lg font-bold underline sm:text-2xl'>
                         <Link target={'_blank'} rel='noreferer' href="/">WWW.WORLDCOFFEESUMMIT.NET
                         </Link>
