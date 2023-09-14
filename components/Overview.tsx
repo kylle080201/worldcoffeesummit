@@ -28,30 +28,6 @@ export default function Overview() {
                         </div>
                         <p className="px-6 py-2 font-bold tracking-tight text-white text-md mx-aut h-max bg-lime-700 w-fit sm:text-lg">13 September 2023 </p>
                     </div>
-
-                    <div className='flex flex-col justify-center max-w-5xl mx-auto md:flex-row'>
-                        <CountDown />
-                        <div className="flex flex-row items-center justify-center pt-6 text-center md:ml-4 md:-mr-52">
-                            <div>
-                                <Link target={'_blank'} rel='noreferer' className='flex-shrink-0 px-6 py-2 mx-auto text-lg font-bold tracking-tight text-gray-900 bg-yellow-500 hover:underline h-max sm:text-2xl' href="/register">Register Now
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='flex justify-center max-w-5xl mx-auto mt-12 md:mt-0'>
-                        <AddToCalendarButton
-                            name="World Coffee Summit London 2023"
-                            options={['Apple', 'Google', 'iCal', 'Outlook.com', 'Microsoft 365', 'Microsoft Teams', 'Yahoo']}
-                            location="Queen Elizabeth II Centre, London, England"
-                            startDate="2023-09-13"
-                            endDate="2023-09-13"
-                            startTime="09:00"
-                            endTime="17:30"
-                            trigger="click"
-                            description='A face-to-face Coffee Summit Exhibition on September 13, 2023'
-                            timeZone="Europe/Belfast"
-                        ></AddToCalendarButton>
-                    </div>
                 </div>
             </div>
             <div className='justify-center py-12 mx-auto bg-white max-w-7xl sm:py-20' >
