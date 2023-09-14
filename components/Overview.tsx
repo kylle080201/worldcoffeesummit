@@ -9,7 +9,7 @@ export default function Overview() {
     return (
         <>
             <div id="overview" className="flex flex-col bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2023/06/OVERVIEW-HERO-BG-scaled.jpg')] pt-2 sm:py-4 pb-6 sm:pb-12 bg-cover bg-center mlg:flex-col">
-                <div className="content-center self-center w-full text-center">
+                <div className="content-center self-center w-full text-center sm:py-20 py-12">
                     <div className='grid w-full grid-cols-1 px-16 lg:grid-cols-7 justify-items-stretch'>
                         <div className='py-6 my-auto lg:col-span-6 lg:ml-52'>
                             <p className="text-4xl font-bold tracking-tight text-lime-700 sm:text-6xl">World Coffee Summit London</p>
