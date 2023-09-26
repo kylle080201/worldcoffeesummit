@@ -4,12 +4,6 @@ import connectMongo from "../../../utils/mongodb";
 import Downloads from "../../../models/downloads";
 import { mailer } from "../../../utils/magazineMailer";
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: "2022-11-15",
-});
-
-const secret = process.env.STRIPE_WEBHOOK_SECRET!;
-
 export async function POST(request: NextRequest, response: NextResponse) {
   try {
     const req = await request.json();
@@ -17,8 +11,10 @@ export async function POST(request: NextRequest, response: NextResponse) {
 
     const newDownload = new Downloads(req.data);
     const downloads = await newDownload.save();
-    
-    mailer(downloads)
+
+    if(downloads) {
+      await mailer(downloads)
+    }
 
     return NextResponse.json(
       {

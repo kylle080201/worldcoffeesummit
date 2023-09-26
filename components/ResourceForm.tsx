@@ -38,10 +38,11 @@ const ResourceForm = () => {
                         data
                     }
                 )
-            }).then(() => router.push('/resources/download/world-coffee-magazine-2023'))
-              .catch(error => {
-                  console.log(error);
-              });
+            }).then(response => response.json())
+            .then(() => router.push('/resources/download/world-coffee-magazine-2023'))
+            .catch(error => {
+                console.log(error);
+            });
         } catch (error) {
           console.log(error)
         }
