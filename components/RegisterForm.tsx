@@ -6,6 +6,7 @@ import { useSearchParams } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import BackButton from './BackButton'
 import Link from 'next/link'
+import { ClockIcon } from '@heroicons/react/24/outline'
 
 const RegisterForm = () => {
     const searchParams = useSearchParams()
@@ -13,6 +14,7 @@ const RegisterForm = () => {
     const [origin, setOrigin] = useState('')
     const [openTermsAndConditions, setOpenTermsAndConditions] = useState(false)
     const [openLetterOfInvitation, setOpenLetterOfInvitation] = useState(false)
+    const [openNotice, setOpenNotice] = useState(false)
 
     useEffect(() => {
         if (typeof window !== "undefined") {
@@ -28,12 +30,13 @@ const RegisterForm = () => {
     } = useForm();
 
     const onSubmit = (data: any) => {
-        const { email, confirmEmail } = data;
-        if (data) {
-            if (email === confirmEmail) {
-                redirectToCheckout(data)
-            }
-        }
+        // const { email, confirmEmail } = data;
+        // if (data) {
+        //     if (email === confirmEmail) {
+        //         redirectToCheckout(data)
+        //     }
+        // }
+        setOpenNotice(!openNotice)
     }
 
     const redirectToCheckout = async (formData: any) => {
@@ -344,7 +347,65 @@ const RegisterForm = () => {
                         </div>
                     </Dialog>
                 </ Transition.Root>
+
+                {/* event notice  */}
+                < Transition.Root show={openNotice} as={Fragment}>
+                    <Dialog as="div" className="relative z-10" onClose={setOpenNotice}>
+                        <Transition.Child
+                            as={Fragment}
+                            enter="ease-out duration-300"
+                            enterFrom="opacity-0"
+                            enterTo="opacity-100"
+                            leave="ease-in duration-200"
+                            leaveFrom="opacity-100"
+                            leaveTo="opacity-0"
+                        >
+                            <div className="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-50" />
+                        </Transition.Child>
+
+                        <div className="fixed inset-0 z-10 overflow-y-auto">
+                            <div className="flex justify-center min-h-full p-4 text-center sm:items-center sm:p-0">
+                                <Transition.Child
+                                    as={Fragment}
+                                    enter="ease-out duration-300"
+                                    enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                                    enterTo="opacity-100 translate-y-0 sm:scale-100"
+                                    leave="ease-in duration-200"
+                                    leaveFrom="opacity-100 translate-y-0 sm:scale-100"
+                                    leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                                >
+                                    <Dialog.Panel className="relative px-4 pt-5 pb-4 text-left transition-all transform bg-white rounded-lg shadow-xl h-max sm:my-8 sm:w-full sm:max-w-4xl sm:p-6">
+                                        <Dialog.Title className="py-4 font-semibold leading-6 text-gray-900 text-md sm:text-xl">
+                                            Registration Closed
+                                        </Dialog.Title>
+                                        <hr />
+                                        <div className='overflow-auto max-h-80'>
+                                            <div className="text-sm sm:text-md sm:mt-5 flex flex-col">
+                                                <p className="py-8 flex mx-auto">
+                                                   <ClockIcon height={150} className='text-red-500'/>
+                                                </p>
+                                                <p className="mt-2 text-red-500 text-center text-xl">
+                                                   Registration for World Coffee Summit & Exhibition London 2023 has been closed. We hope to see you in 2024! Stay Tuned!
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div className="mt-5 sm:mt-6">
+                                            <button
+                                                type="button"
+                                                className="inline-flex justify-center max-w-5xl px-3 py-2 text-sm font-semibold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-700"
+                                                onClick={() => setOpenNotice(!openNotice)}
+                                            >
+                                                Back
+                                            </button>
+                                        </div>
+                                    </Dialog.Panel>
+                                </Transition.Child>
+                            </div>
+                        </div>
+                    </Dialog>
+                </ Transition.Root>
             </div>
+
 
         </>
     )
