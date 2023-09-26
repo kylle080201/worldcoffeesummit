@@ -1,8 +1,10 @@
 "use client"
 import { Disclosure } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, ClockIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 import { SocialIcon } from 'react-social-icons'
+import React, { Fragment, useState } from 'react'
+import { Dialog, Transition } from '@headlessui/react'
 
 function Navbar() {
     const navigation = [
@@ -13,7 +15,9 @@ function Navbar() {
         { name: 'Partners', href: '/#partners' },
         { name: 'Exhibition', href: '/#exhibition' },
         { name: 'FAQ', href: '/#faq' },
+        { name: 'Resources', href: '/resources' },
     ]
+    const [openNotice, setOpenNotice] = useState(false)
     return (
         <Disclosure as="nav" className="w-full bg-white shadow">
             {({ open }) => (
@@ -69,13 +73,12 @@ function Navbar() {
                                             </div>
                                         </div>
                                         <div className='mt-4 '>
-                                            <Link
-                                                href={'/register'}
-                                                type="button"
+                                            <button
+                                                onClick={() => setOpenNotice(!openNotice)}
                                                 className="relative inline-flex gap-x-1.5 rounded-md bg-lime-700 hover:bg-lime-800 px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
                                             >
                                                 Register Now
-                                            </Link>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -108,6 +111,63 @@ function Navbar() {
                             </div>
                         </div>
                     </Disclosure.Panel>
+
+                    {/* event notice  */}
+                    < Transition.Root show={openNotice} as={Fragment}>
+                        <Dialog as="div" className="relative z-10" onClose={setOpenNotice}>
+                            <Transition.Child
+                                as={Fragment}
+                                enter="ease-out duration-300"
+                                enterFrom="opacity-0"
+                                enterTo="opacity-100"
+                                leave="ease-in duration-200"
+                                leaveFrom="opacity-100"
+                                leaveTo="opacity-0"
+                            >
+                                <div className="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-50" />
+                            </Transition.Child>
+
+                            <div className="fixed inset-0 z-10 overflow-y-auto">
+                                <div className="flex justify-center min-h-full p-4 text-center sm:items-center sm:p-0">
+                                    <Transition.Child
+                                        as={Fragment}
+                                        enter="ease-out duration-300"
+                                        enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                                        enterTo="opacity-100 translate-y-0 sm:scale-100"
+                                        leave="ease-in duration-200"
+                                        leaveFrom="opacity-100 translate-y-0 sm:scale-100"
+                                        leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                                    >
+                                        <Dialog.Panel className="relative px-4 pt-5 pb-4 text-left transition-all transform bg-white rounded-lg shadow-xl h-max sm:my-8 sm:w-full sm:max-w-4xl sm:p-6">
+                                            <Dialog.Title className="py-4 font-semibold leading-6 text-gray-900 text-md sm:text-xl">
+                                                Registration Closed
+                                            </Dialog.Title>
+                                            <hr />
+                                            <div className='overflow-auto max-h-80'>
+                                                <div className="text-sm sm:text-md sm:mt-5 flex flex-col">
+                                                    <p className="py-8 flex mx-auto">
+                                                    <ClockIcon height={150} className='text-red-500'/>
+                                                    </p>
+                                                    <p className="mt-2 font-medium text-center text-xl">
+                                                    Registration for World Coffee Summit & Exhibition London 2023 has been closed. We hope to see you in 2024! Stay Tuned!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div className="mt-5 sm:mt-6">
+                                                <button
+                                                    type="button"
+                                                    className="inline-flex justify-center max-w-5xl px-3 py-2 text-sm font-semibold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-700"
+                                                    onClick={() => setOpenNotice(!openNotice)}
+                                                >
+                                                    Back
+                                                </button>
+                                            </div>
+                                        </Dialog.Panel>
+                                    </Transition.Child>
+                                </div>
+                            </div>
+                        </Dialog>
+                    </ Transition.Root>
                 </>
             )}
         </Disclosure>

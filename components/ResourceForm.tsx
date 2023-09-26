@@ -1,23 +1,124 @@
 "use client"
 import React, { Fragment, useEffect, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
+import { useSearchParams } from 'next/navigation'
+import { useForm } from 'react-hook-form'
+import BackButton from './BackButton'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
-
-export default function Footer() {
+const ResourceForm = () => {
+    const router = useRouter()
+    const [isAgree, setIsAgree] = useState(false)
+    const [origin, setOrigin] = useState('')
     const [openTermsAndConditions, setOpenTermsAndConditions] = useState(false)
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            setOrigin(window.location.origin)
+        }
+    }, [])
+
+    const {
+        register,
+        handleSubmit,
+        formState: { errors },  
+    } = useForm();
+
+    const onSubmit = async (data: any) => {
+      if (data) {
+        try {
+            await fetch('/api/download-magazine', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(
+                    {
+                        data
+                    }
+                )
+            }).then(() => router.push('/resources/download/world-coffee-magazine-2023'))
+              .catch(error => {
+                  console.log(error);
+              });
+        } catch (error) {
+          console.log(error)
+        }
+      }
+    }
+
     return (
         <>
-            <footer>
-                <div className="absolute bottom-0 w-full py-4 text-center bg-gray-200" >
-                    ©2023
-                    <a className="font-bold" rel="noopener noreferrer" href="https://worldcoffeealliance.com/" target={"_blank"}> World Coffee Alliance </a>
-                    | All Rights Reserved | <Link href="/privacy-policy" target='_blank' className='underline'>Privacy Policy</Link> | <button type='button' onClick={() => { setOpenTermsAndConditions(!openTermsAndConditions) }} className='underline'>Terms and Conditions</button>
-                </div>
-            </footer>
+            <div className="z-40 py-12 bg-white sm:py-20">
+                <div className="max-w-screen-md px-4 mx-auto mb-12">
+                    <h2 className="mb-8 text-4xl font-bold tracking-tight text-center text-gray-900 dark:text-white">Download <span className='text-lime-700'>World Coffee Magazine 2023</span></h2>
+                    <form className="space-y-8" onSubmit={handleSubmit(onSubmit)}>
+                        <div>
+                            <label htmlFor="firstName" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">First Name</label>
+                            <input {...register('firstName')} className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                        </div>
+                        
+                        <div>
+                            <label htmlFor="lastName" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Last Name</label>
+                            <input {...register('lastName')} className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                        </div>
 
-            {/* terms and conditions */}
-            < Transition.Root show={openTermsAndConditions} as={Fragment}>
+                        <div>
+                            <label htmlFor="jobTitle" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Job Title</label>
+                            <input {...register('jobTitle')} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                        </div>
+
+                        <div>
+                            <label htmlFor="companyName" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Company</label>
+                            <input {...register('companyName')} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                        </div>
+
+                        <div>
+                            <label htmlFor="mobileNumber" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Mobile Number</label>
+                            <input {...register('mobileNumber')} type='number' className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                        </div>
+
+                        <div>
+                            <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email Address</label>
+                            <input {...register('email')} type='email' className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                        </div>
+
+                        <fieldset>
+                            <div className="space-y-5">
+                                <div className="relative flex items-start">
+                                    <div className="flex items-center h-6">
+                                        <input
+                                            required
+                                            onChange={() => (setIsAgree(!isAgree))}
+                                            id="agree"
+                                            aria-describedby="terms-and-conditions"
+                                            name="agree"
+                                            type="checkbox"
+                                            className="w-4 h-4 border-gray-300 rounded text-lime-700 focus:ring-lime-700"
+                                        />
+                                    </div>
+                                    <div className="ml-3 text-sm leading-6">
+                                        <label htmlFor="agree" className="font-medium text-gray-900">
+                                            I agree
+                                        </label>
+                                        <p id="comments-description" className="text-gray-500">
+                                            By ticking this box, you agree to the <button type='button' onClick={() => { setOpenTermsAndConditions(!openTermsAndConditions) }} className='underline text-lime-700'>Terms and Conditions</button> of GSG Ltd, owner of World Coffee Alliance and organiser of World Coffee Summit 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div className="flex justify-end">
+                            <input type="submit" className="flex justify-center px-3 py-2 text-sm font-semibold text-white border border-transparent rounded-md shadow-sm bg-lime-700 hover:cursor-pointer hover:bg-lime-900 focus:outline-none"
+                            />
+                        </div>
+                    </form>
+                    <BackButton />
+                </div >
+
+                {/* terms and conditions */}
+                < Transition.Root show={openTermsAndConditions} as={Fragment}>
                     <Dialog as="div" className="relative z-10" onClose={setOpenTermsAndConditions}>
                         <Transition.Child
                             as={Fragment}
@@ -152,6 +253,10 @@ export default function Footer() {
                         </div>
                     </Dialog>
                 </ Transition.Root >
+            </div>
         </>
     )
 }
+
+
+export default ResourceForm
