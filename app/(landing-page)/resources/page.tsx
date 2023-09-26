@@ -1,9 +1,9 @@
-import ResourceForm from "../../../components/ResourceForm"
+import DownloadResources from "../../../components/DownloadResources"
 
 export default function Resources() {
     return (
         <>
-            <ResourceForm />
+            <DownloadResources />
         </>
     )
 }
