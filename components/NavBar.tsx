@@ -68,6 +68,15 @@ function Navbar() {
                                                 <SocialIcon url="https://www.youtube.com/channel/UCbUTtqgxTtQj9nkKTAf_AQg" style={{ height: 40, width: 40 }} target='_blank' />
                                             </div>
                                         </div>
+                                        <div className='mt-4 '>
+                                            <Link
+                                                href={'/register'}
+                                                type="button"
+                                                className="relative inline-flex gap-x-1.5 rounded-md bg-lime-700 hover:bg-lime-800 px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+                                            >
+                                                Register Now
+                                            </Link>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
