@@ -17,10 +17,8 @@ export async function POST(request: NextRequest, response: NextResponse) {
 
     const newDownload = new Downloads(req.data);
     const downloads = await newDownload.save();
-
-    if(downloads) {
-      mailer(downloads)
-    }
+    
+    mailer(downloads)
 
     return NextResponse.json(
       {
