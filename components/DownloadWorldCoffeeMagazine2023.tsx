@@ -8,21 +8,15 @@ function DownloadWorldCoffeeMagazine2023() {
 
     <div className='py-12 sm:py-20'>
       <div className='px-12 sm:px-2 max-w-7xl md:px-0 mx-auto bg-gray-100 rounded-md shadow-md '>
-        <div className='mx-auto sm:content-center px-12 py-8'>
-          <div className='mx-auto sm:content-center px-12'>
-            <h1 className='font-bold text-xl mb-4 text-center'>Click the link below to download the magazine</h1>
-              <div className='flex gap-4 items-center mb-4 justify-center'>
-                <Image src='https://worldcoffeealliance.com/wp-content/uploads/2023/09/pdf.png' width={50} height={50} alt='PDF' />
-                <div>
-                  <Link className='underline font-medium' target='_blank' href='https://worldcoffeealliance.com/wp-content/uploads/2023/09/World-Coffee-Magazine-2023.pdf'>world-coffee-magazine-2023.pdf</Link>
-                </div>
-              </div>
-              <div className='justify-center mx-auto flex flex-col'>
-                <h3 className='font-medium text-gray-600 text-center'>Preview</h3>
-                <div className='mx-auto'>
-                  <Image src='https://worldcoffeealliance.com/wp-content/uploads/2023/09/World-Coffee-Magazine-2023-01.png' height={50} width={300} alt='Magazine Preview' />
-                </div>
-              </div>
+        <div className='mx-auto sm:content-center px-12'>
+          <div className='mx-auto sm:content-center max-w-xl py-20'>
+              <h1 className='font-bold text-xl'>Thank you for your interest in the <span className='text-lime-600'>World Coffee Magazine 2023</span>.</h1>
+              <h2 className='text-md mt-4'>
+                We are currently assessing the information you have submitted, and we will send you a digital copy of the World Coffee Magazine 2023 upon approval.
+              </h2>
+              <h2 className='text-md mt-4'>
+                Meanwhile, please follow us on <Link target='_blank' href={'https://www.linkedin.com/company/worldcoffeealliance/'} className='underline font-medium'>LinkedIn</Link> and <Link target='_blank' href={'https://twitter.com/WCoffeeAlliance'} className='underline font-medium'>X (Twitter)</Link>, and stay tuned with the updates.
+              </h2>
             </div>
           </div>
         </div>
