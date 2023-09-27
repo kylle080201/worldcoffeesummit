@@ -1532,21 +1532,21 @@ const ResourceForm = () => {
 
                         <div>
                             <label htmlFor="mobileNumber" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Mobile Number</label>
-                            <div className="relative mt-2 rounded-md shadow-sm">
-                                <div className="absolute inset-y-0 left-0 flex items-center">
-                                <Controller
-                                    control={control}
-                                    {...register('countryCode')}
-                                    render={({ field }) => (
-                                        <select {...field} className="h-full rounded-md border-0 bg-transparent py-0 pl-3 pr-7 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm">
-                                            {countryCodes.map((country) => (
-                                                <option key={country.code} value={country.dial_code} >{country.code} ({country.dial_code})</option>
-                                            ))}
-                                        </select>
-                                      )}
-                                />
+                            <div className="relative mt-2 rounded-md">
+                                <div className='flex gap-4'>
+                                    <Controller
+                                        control={control}
+                                        {...register('countryCode')}
+                                        render={({ field }) => (
+                                            <select {...field} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light">
+                                                {countryCodes.map((country) => (
+                                                    <option key={country.code} value={country.dial_code} >{country.name} ({country.dial_code})</option>
+                                                ))}
+                                            </select>
+                                        )}
+                                    /> 
+                                    <input {...register('mobileNumber')} type='number' className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
                                 </div>
-                                <input {...register('mobileNumber')} type='number' className="block w-full pt-3 pb-3 pr-3 pl-36 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
                             </div>
                         </div>
 
