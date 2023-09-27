@@ -28,7 +28,7 @@ export const mailer = async (data: any) => {
   try {
     const isEmailSent = await transporter.sendMail({
       from: `World Coffee Summit Team <${user}>`,
-      to: "kyllemadrigal08@gmail.com",
+      to: "info@worldcoffeealliance.com",
       subject: "World Coffee Magazine 2023 Download",
       html: `
       <div>Hi Mavis,</div>
