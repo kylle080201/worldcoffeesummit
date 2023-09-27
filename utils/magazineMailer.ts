@@ -21,13 +21,14 @@ export const mailer = async (data: any) => {
     reqData.lastName.charAt(0).toUpperCase() + reqData.lastName.slice(1);
   const jobTitle = reqData.jobTitle;
   const companyName = reqData.companyName;
+  const countryCode = reqData.countryCode;
   const mobileNumber = reqData.mobileNumber;
   const email = reqData.email;
 
   try {
     const isEmailSent = await transporter.sendMail({
       from: `World Coffee Summit Team <${user}>`,
-      to: "info@worldcoffeealliance.com",
+      to: "kyllemadrigal08@gmail.com",
       subject: "World Coffee Magazine 2023 Download",
       html: `
       <div>Hi Mavis,</div>
@@ -39,7 +40,7 @@ export const mailer = async (data: any) => {
           <div>Last Name: ${lastName}</div>
           <div>Job Title: ${jobTitle}</div>
           <div>Company Name: ${companyName}</div>
-          <div>Mobile Number: ${mobileNumber}</div>
+          <div>Mobile Number: ${countryCode} ${mobileNumber}</div>
           <div>Email: ${email}</div>
       </div>
       `

@@ -2,7 +2,7 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { useSearchParams } from 'next/navigation'
-import { useForm } from 'react-hook-form'
+import { useForm, Controller } from 'react-hook-form'
 import BackButton from './BackButton'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
@@ -11,7 +11,1461 @@ const ResourceForm = () => {
     const router = useRouter()
     const [isAgree, setIsAgree] = useState(false)
     const [origin, setOrigin] = useState('')
-    const [openTermsAndConditions, setOpenTermsAndConditions] = useState(false)
+
+    const countryCodes = [
+        {
+            "name": "Afghanistan",
+            "dial_code": "+93",
+            "emoji": "🇦🇫",
+            "code": "AF"
+        },
+        {
+            "name": "Aland Islands",
+            "dial_code": "+358",
+            "emoji": "🇦🇽",
+            "code": "AX"
+        },
+        {
+            "name": "Albania",
+            "dial_code": "+355",
+            "emoji": "🇦🇱",
+            "code": "AL"
+        },
+        {
+            "name": "Algeria",
+            "dial_code": "+213",
+            "emoji": "🇩🇿",
+            "code": "DZ"
+        },
+        {
+            "name": "AmericanSamoa",
+            "dial_code": "+1684",
+            "emoji": "🇦🇸",
+            "code": "AS"
+        },
+        {
+            "name": "Andorra",
+            "dial_code": "+376",
+            "emoji": "🇦🇩",
+            "code": "AD"
+        },
+        {
+            "name": "Angola",
+            "dial_code": "+244",
+            "emoji": "🇦🇴",
+            "code": "AO"
+        },
+        {
+            "name": "Anguilla",
+            "dial_code": "+1264",
+            "emoji": "🇦🇮",
+            "code": "AI"
+        },
+        {
+            "name": "Antarctica",
+            "dial_code": "+672",
+            "emoji": "🇦🇶",
+            "code": "AQ"
+        },
+        {
+            "name": "Antigua and Barbuda",
+            "dial_code": "+1268",
+            "emoji": "🇦🇬",
+            "code": "AG"
+        },
+        {
+            "name": "Argentina",
+            "dial_code": "+54",
+            "emoji": "🇦🇷",
+            "code": "AR"
+        },
+        {
+            "name": "Armenia",
+            "dial_code": "+374",
+            "emoji": "🇦🇲",
+            "code": "AM"
+        },
+        {
+            "name": "Aruba",
+            "dial_code": "+297",
+            "emoji": "🇦🇼",
+            "code": "AW"
+        },
+        {
+            "name": "Australia",
+            "dial_code": "+61",
+            "emoji": "🇦🇺",
+            "code": "AU"
+        },
+        {
+            "name": "Austria",
+            "dial_code": "+43",
+            "emoji": "🇦🇹",
+            "code": "AT"
+        },
+        {
+            "name": "Azerbaijan",
+            "dial_code": "+994",
+            "emoji": "🇦🇿",
+            "code": "AZ"
+        },
+        {
+            "name": "Bahamas",
+            "dial_code": "+1242",
+            "emoji": "🇧🇸",
+            "code": "BS"
+        },
+        {
+            "name": "Bahrain",
+            "dial_code": "+973",
+            "emoji": "🇧🇭",
+            "code": "BH"
+        },
+        {
+            "name": "Bangladesh",
+            "dial_code": "+880",
+            "emoji": "🇧🇩",
+            "code": "BD"
+        },
+        {
+            "name": "Barbados",
+            "dial_code": "+1246",
+            "emoji": "🇧🇧",
+            "code": "BB"
+        },
+        {
+            "name": "Belarus",
+            "dial_code": "+375",
+            "emoji": "🇧🇾",
+            "code": "BY"
+        },
+        {
+            "name": "Belgium",
+            "dial_code": "+32",
+            "emoji": "🇧🇪",
+            "code": "BE"
+        },
+        {
+            "name": "Belize",
+            "dial_code": "+501",
+            "emoji": "🇧🇿",
+            "code": "BZ"
+        },
+        {
+            "name": "Benin",
+            "dial_code": "+229",
+            "emoji": "🇧🇯",
+            "code": "BJ"
+        },
+        {
+            "name": "Bermuda",
+            "dial_code": "+1441",
+            "emoji": "🇧🇲",
+            "code": "BM"
+        },
+        {
+            "name": "Bhutan",
+            "dial_code": "+975",
+            "emoji": "🇧🇹",
+            "code": "BT"
+        },
+        {
+            "name": "Bolivia, Plurinational State of",
+            "dial_code": "+591",
+            "emoji": "🇧🇴",
+            "code": "BO"
+        },
+        {
+            "name": "Bosnia and Herzegovina",
+            "dial_code": "+387",
+            "emoji": "🇧🇦",
+            "code": "BA"
+        },
+        {
+            "name": "Botswana",
+            "dial_code": "+267",
+            "emoji": "🇧🇼",
+            "code": "BW"
+        },
+        {
+            "name": "Brazil",
+            "dial_code": "+55",
+            "emoji": "🇧🇷",
+            "code": "BR"
+        },
+        {
+            "name": "British Indian Ocean Territory",
+            "dial_code": "+246",
+            "emoji": "🇮🇴",
+            "code": "IO"
+        },
+        {
+            "name": "Brunei Darussalam",
+            "dial_code": "+673",
+            "emoji": "🇧🇳",
+            "code": "BN"
+        },
+        {
+            "name": "Bulgaria",
+            "dial_code": "+359",
+            "emoji": "🇧🇬",
+            "code": "BG"
+        },
+        {
+            "name": "Burkina Faso",
+            "dial_code": "+226",
+            "emoji": "🇧🇫",
+            "code": "BF"
+        },
+        {
+            "name": "Burundi",
+            "dial_code": "+257",
+            "emoji": "🇧🇮",
+            "code": "BI"
+        },
+        {
+            "name": "Cambodia",
+            "dial_code": "+855",
+            "emoji": "🇰🇭",
+            "code": "KH"
+        },
+        {
+            "name": "Cameroon",
+            "dial_code": "+237",
+            "emoji": "🇨🇲",
+            "code": "CM"
+        },
+        {
+            "name": "Canada",
+            "dial_code": "+1",
+            "emoji": "🇨🇦",
+            "code": "CA"
+        },
+        {
+            "name": "Cape Verde",
+            "dial_code": "+238",
+            "emoji": "🇨🇻",
+            "code": "CV"
+        },
+        {
+            "name": "Cayman Islands",
+            "dial_code": "+345",
+            "emoji": "🇰🇾",
+            "code": "KY"
+        },
+        {
+            "name": "Central African Republic",
+            "dial_code": "+236",
+            "emoji": "🇨🇫",
+            "code": "CF"
+        },
+        {
+            "name": "Chad",
+            "dial_code": "+235",
+            "emoji": "🇹🇩",
+            "code": "TD"
+        },
+        {
+            "name": "Chile",
+            "dial_code": "+56",
+            "emoji": "🇨🇱",
+            "code": "CL"
+        },
+        {
+            "name": "China",
+            "dial_code": "+86",
+            "emoji": "🇨🇳",
+            "code": "CN"
+        },
+        {
+            "name": "Christmas Island",
+            "dial_code": "+61",
+            "emoji": "🇨🇽",
+            "code": "CX"
+        },
+        {
+            "name": "Cocos (Keeling) Islands",
+            "dial_code": "+61",
+            "emoji": "🇨🇨",
+            "code": "CC"
+        },
+        {
+            "name": "Colombia",
+            "dial_code": "+57",
+            "emoji": "🇨🇴",
+            "code": "CO"
+        },
+        {
+            "name": "Comoros",
+            "dial_code": "+269",
+            "emoji": "🇰🇲",
+            "code": "KM"
+        },
+        {
+            "name": "Congo",
+            "dial_code": "+242",
+            "emoji": "🇨🇬",
+            "code": "CG"
+        },
+        {
+            "name": "Congo, The Democratic Republic of the Congo",
+            "dial_code": "+243",
+            "emoji": "🇨🇩",
+            "code": "CD"
+        },
+        {
+            "name": "Cook Islands",
+            "dial_code": "+682",
+            "emoji": "🇨🇰",
+            "code": "CK"
+        },
+        {
+            "name": "Costa Rica",
+            "dial_code": "+506",
+            "emoji": "🇨🇷",
+            "code": "CR"
+        },
+        {
+            "name": "Cote d'Ivoire",
+            "dial_code": "+225",
+            "emoji": "🇨🇮",
+            "code": "CI"
+        },
+        {
+            "name": "Croatia",
+            "dial_code": "+385",
+            "emoji": "🇭🇷",
+            "code": "HR"
+        },
+        {
+            "name": "Cuba",
+            "dial_code": "+53",
+            "emoji": "🇨🇺",
+            "code": "CU"
+        },
+        {
+            "name": "Cyprus",
+            "dial_code": "+357",
+            "emoji": "🇨🇾",
+            "code": "CY"
+        },
+        {
+            "name": "Czech Republic",
+            "dial_code": "+420",
+            "emoji": "🇨🇿",
+            "code": "CZ"
+        },
+        {
+            "name": "Denmark",
+            "dial_code": "+45",
+            "emoji": "🇩🇰",
+            "code": "DK"
+        },
+        {
+            "name": "Djibouti",
+            "dial_code": "+253",
+            "emoji": "🇩🇯",
+            "code": "DJ"
+        },
+        {
+            "name": "Dominica",
+            "dial_code": "+1767",
+            "emoji": "🇩🇲",
+            "code": "DM"
+        },
+        {
+            "name": "Dominican Republic",
+            "dial_code": "+1849",
+            "emoji": "🇩🇴",
+            "code": "DO"
+        },
+        {
+            "name": "Ecuador",
+            "dial_code": "+593",
+            "emoji": "🇪🇨",
+            "code": "EC"
+        },
+        {
+            "name": "Egypt",
+            "dial_code": "+20",
+            "emoji": "🇪🇬",
+            "code": "EG"
+        },
+        {
+            "name": "El Salvador",
+            "dial_code": "+503",
+            "emoji": "🇸🇻",
+            "code": "SV"
+        },
+        {
+            "name": "Equatorial Guinea",
+            "dial_code": "+240",
+            "emoji": "🇬🇶",
+            "code": "GQ"
+        },
+        {
+            "name": "Eritrea",
+            "dial_code": "+291",
+            "emoji": "🇪🇷",
+            "code": "ER"
+        },
+        {
+            "name": "Estonia",
+            "dial_code": "+372",
+            "emoji": "🇪🇪",
+            "code": "EE"
+        },
+        {
+            "name": "Ethiopia",
+            "dial_code": "+251",
+            "emoji": "🇪🇹",
+            "code": "ET"
+        },
+        {
+            "name": "Falkland Islands (Malvinas)",
+            "dial_code": "+500",
+            "emoji": "🇫🇰",
+            "code": "FK"
+        },
+        {
+            "name": "Faroe Islands",
+            "dial_code": "+298",
+            "emoji": "🇫🇴",
+            "code": "FO"
+        },
+        {
+            "name": "Fiji",
+            "dial_code": "+679",
+            "emoji": "🇫🇯",
+            "code": "FJ"
+        },
+        {
+            "name": "Finland",
+            "dial_code": "+358",
+            "emoji": "🇫🇮",
+            "code": "FI"
+        },
+        {
+            "name": "France",
+            "dial_code": "+33",
+            "emoji": "🇫🇷",
+            "code": "FR"
+        },
+        {
+            "name": "French Guiana",
+            "dial_code": "+594",
+            "emoji": "🇬🇫",
+            "code": "GF"
+        },
+        {
+            "name": "French Polynesia",
+            "dial_code": "+689",
+            "emoji": "🇵🇫",
+            "code": "PF"
+        },
+        {
+            "name": "Gabon",
+            "dial_code": "+241",
+            "emoji": "🇬🇦",
+            "code": "GA"
+        },
+        {
+            "name": "Gambia",
+            "dial_code": "+220",
+            "emoji": "🇬🇲",
+            "code": "GM"
+        },
+        {
+            "name": "Georgia",
+            "dial_code": "+995",
+            "emoji": "🇬🇪",
+            "code": "GE"
+        },
+        {
+            "name": "Germany",
+            "dial_code": "+49",
+            "emoji": "🇩🇪",
+            "code": "DE"
+        },
+        {
+            "name": "Ghana",
+            "dial_code": "+233",
+            "emoji": "🇬🇭",
+            "code": "GH"
+        },
+        {
+            "name": "Gibraltar",
+            "dial_code": "+350",
+            "emoji": "🇬🇮",
+            "code": "GI"
+        },
+        {
+            "name": "Greece",
+            "dial_code": "+30",
+            "emoji": "🇬🇷",
+            "code": "GR"
+        },
+        {
+            "name": "Greenland",
+            "dial_code": "+299",
+            "emoji": "🇬🇱",
+            "code": "GL"
+        },
+        {
+            "name": "Grenada",
+            "dial_code": "+1473",
+            "emoji": "🇬🇩",
+            "code": "GD"
+        },
+        {
+            "name": "Guadeloupe",
+            "dial_code": "+590",
+            "emoji": "🇬🇵",
+            "code": "GP"
+        },
+        {
+            "name": "Guam",
+            "dial_code": "+1671",
+            "emoji": "🇬🇺",
+            "code": "GU"
+        },
+        {
+            "name": "Guatemala",
+            "dial_code": "+502",
+            "emoji": "🇬🇹",
+            "code": "GT"
+        },
+        {
+            "name": "Guernsey",
+            "dial_code": "+44",
+            "emoji": "🇬🇬",
+            "code": "GG"
+        },
+        {
+            "name": "Guinea",
+            "dial_code": "+224",
+            "emoji": "🇬🇳",
+            "code": "GN"
+        },
+        {
+            "name": "Guinea-Bissau",
+            "dial_code": "+245",
+            "emoji": "🇬🇼",
+            "code": "GW"
+        },
+        {
+            "name": "Guyana",
+            "dial_code": "+595",
+            "emoji": "🇬🇾",
+            "code": "GY"
+        },
+        {
+            "name": "Haiti",
+            "dial_code": "+509",
+            "emoji": "🇭🇹",
+            "code": "HT"
+        },
+        {
+            "name": "Holy See (Vatican City State)",
+            "dial_code": "+379",
+            "emoji": "🇻🇦",
+            "code": "VA"
+        },
+        {
+            "name": "Honduras",
+            "dial_code": "+504",
+            "emoji": "🇭🇳",
+            "code": "HN"
+        },
+        {
+            "name": "Hong Kong",
+            "dial_code": "+852",
+            "emoji": "🇭🇰",
+            "code": "HK"
+        },
+        {
+            "name": "Hungary",
+            "dial_code": "+36",
+            "emoji": "🇭🇺",
+            "code": "HU"
+        },
+        {
+            "name": "Iceland",
+            "dial_code": "+354",
+            "emoji": "🇮🇸",
+            "code": "IS"
+        },
+        {
+            "name": "India",
+            "dial_code": "+91",
+            "emoji": "🇮🇳",
+            "code": "IN"
+        },
+        {
+            "name": "Indonesia",
+            "dial_code": "+62",
+            "emoji": "🇮🇩",
+            "code": "ID"
+        },
+        {
+            "name": "Iran, Islamic Republic of Persian Gulf",
+            "dial_code": "+98",
+            "emoji": "🇮🇷",
+            "code": "IR"
+        },
+        {
+            "name": "Iraq",
+            "dial_code": "+964",
+            "emoji": "🇮🇷",
+            "code": "IQ"
+        },
+        {
+            "name": "Ireland",
+            "dial_code": "+353",
+            "emoji": "🇮🇪",
+            "code": "IE"
+        },
+        {
+            "name": "Isle of Man",
+            "dial_code": "+44",
+            "emoji": "🇮🇲",
+            "code": "IM"
+        },
+        {
+            "name": "Israel",
+            "dial_code": "+972",
+            "emoji": "🇮🇱",
+            "code": "IL"
+        },
+        {
+            "name": "Italy",
+            "dial_code": "+39",
+            "emoji": "🇮🇹",
+            "code": "IT"
+        },
+        {
+            "name": "Jamaica",
+            "dial_code": "+1876",
+            "emoji": "🇯🇲",
+            "code": "JM"
+        },
+        {
+            "name": "Japan",
+            "dial_code": "+81",
+            "emoji": "🇯🇵",
+            "code": "JP"
+        },
+        {
+            "name": "Jersey",
+            "dial_code": "+44",
+            "emoji": "🇯🇪",
+            "code": "JE"
+        },
+        {
+            "name": "Jordan",
+            "dial_code": "+962",
+            "emoji": "🇯🇴",
+            "code": "JO"
+        },
+        {
+            "name": "Kazakhstan",
+            "dial_code": "+77",
+            "emoji": "🇰🇿",
+            "code": "KZ"
+        },
+        {
+            "name": "Kenya",
+            "dial_code": "+254",
+            "emoji": "🇰🇪",
+            "code": "KE"
+        },
+        {
+            "name": "Kiribati",
+            "dial_code": "+686",
+            "emoji": "🇰🇮",
+            "code": "KI"
+        },
+        {
+            "name": "Korea, Democratic People's Republic of Korea",
+            "dial_code": "+850",
+            "emoji": "🇰🇵",
+            "code": "KP"
+        },
+        {
+            "name": "Korea, Republic of South Korea",
+            "dial_code": "+82",
+            "emoji": "🇰🇷",
+            "code": "KR"
+        },
+        {
+            "name": "Kuwait",
+            "dial_code": "+965",
+            "emoji": "🇰🇼",
+            "code": "KW"
+        },
+        {
+            "name": "Kyrgyzstan",
+            "dial_code": "+996",
+            "emoji": "🇰🇬",
+            "code": "KG"
+        },
+        {
+            "name": "Laos",
+            "dial_code": "+856",
+            "emoji": "🇱🇦",
+            "code": "LA"
+        },
+        {
+            "name": "Latvia",
+            "dial_code": "+371",
+            "emoji": "🇱🇻",
+            "code": "LV"
+        },
+        {
+            "name": "Lebanon",
+            "dial_code": "+961",
+            "emoji": "🇱🇧",
+            "code": "LB"
+        },
+        {
+            "name": "Lesotho",
+            "dial_code": "+266",
+            "emoji": "🇱🇸",
+            "code": "LS"
+        },
+        {
+            "name": "Liberia",
+            "dial_code": "+231",
+            "emoji": "🇱🇷",
+            "code": "LR"
+        },
+        {
+            "name": "Libyan Arab Jamahiriya",
+            "dial_code": "+218",
+            "emoji": "🇱🇾",
+            "code": "LY"
+        },
+        {
+            "name": "Liechtenstein",
+            "dial_code": "+423",
+            "emoji": "🇱🇮",
+            "code": "LI"
+        },
+        {
+            "name": "Lithuania",
+            "dial_code": "+370",
+            "emoji": "🇱🇹",
+            "code": "LT"
+        },
+        {
+            "name": "Luxembourg",
+            "dial_code": "+352",
+            "emoji": "🇱🇺",
+            "code": "LU"
+        },
+        {
+            "name": "Macao",
+            "dial_code": "+853",
+            "emoji": "🇲🇴",
+            "code": "MO"
+        },
+        {
+            "name": "Macedonia",
+            "dial_code": "+389",
+            "emoji": "🇲🇰",
+            "code": "MK"
+        },
+        {
+            "name": "Madagascar",
+            "dial_code": "+261",
+            "emoji": "🇲🇬",
+            "code": "MG"
+        },
+        {
+            "name": "Malawi",
+            "dial_code": "+265",
+            "emoji": "🇲🇼",
+            "code": "MW"
+        },
+        {
+            "name": "Malaysia",
+            "dial_code": "+60",
+            "emoji": "🇲🇾",
+            "code": "MY"
+        },
+        {
+            "name": "Maldives",
+            "dial_code": "+960",
+            "emoji": "🇲🇻",
+            "code": "MV"
+        },
+        {
+            "name": "Mali",
+            "dial_code": "+223",
+            "emoji": "🇲🇱",
+            "code": "ML"
+        },
+        {
+            "name": "Malta",
+            "dial_code": "+356",
+            "emoji": "🇲🇹",
+            "code": "MT"
+        },
+        {
+            "name": "Marshall Islands",
+            "dial_code": "+692",
+            "emoji": "🇲🇭",
+            "code": "MH"
+        },
+        {
+            "name": "Martinique",
+            "dial_code": "+596",
+            "emoji": "🇲🇶",
+            "code": "MQ"
+        },
+        {
+            "name": "Mauritania",
+            "dial_code": "+222",
+            "emoji": "🇲🇷",
+            "code": "MR"
+        },
+        {
+            "name": "Mauritius",
+            "dial_code": "+230",
+            "emoji": "🇲🇺",
+            "code": "MU"
+        },
+        {
+            "name": "Mayotte",
+            "dial_code": "+262",
+            "emoji": "🇾🇹",
+            "code": "YT"
+        },
+        {
+            "name": "Mexico",
+            "dial_code": "+52",
+            "emoji": "🇲🇽",
+            "code": "MX"
+        },
+        {
+            "name": "Micronesia, Federated States of Micronesia",
+            "dial_code": "+691",
+            "emoji": "🇫🇲",
+            "code": "FM"
+        },
+        {
+            "name": "Moldova",
+            "dial_code": "+373",
+            "emoji": "🇲🇩",
+            "code": "MD"
+        },
+        {
+            "name": "Monaco",
+            "dial_code": "+377",
+            "emoji": "🇲🇨",
+            "code": "MC"
+        },
+        {
+            "name": "Mongolia",
+            "dial_code": "+976",
+            "emoji": "🇲🇳",
+            "code": "MN"
+        },
+        {
+            "name": "Montenegro",
+            "dial_code": "+382",
+            "emoji": "🇲🇪",
+            "code": "ME"
+        },
+        {
+            "name": "Montserrat",
+            "dial_code": "+1664",
+            "emoji": "🇲🇸",
+            "code": "MS"
+        },
+        {
+            "name": "Morocco",
+            "dial_code": "+212",
+            "emoji": "🇲🇦",
+            "code": "MA"
+        },
+        {
+            "name": "Mozambique",
+            "dial_code": "+258",
+            "emoji": "🇲🇿",
+            "code": "MZ"
+        },
+        {
+            "name": "Myanmar",
+            "dial_code": "+95",
+            "emoji": "🇲🇲",
+            "code": "MM"
+        },
+        {
+            "name": "Namibia",
+            "emoji": "🇳🇦",
+            "dial_code": "+264",
+            "code": "NA"
+        },
+        {
+            "name": "Nauru",
+            "dial_code": "+674",
+            "emoji": "🇳🇷",
+            "code": "NR"
+        },
+        {
+            "name": "Nepal",
+            "dial_code": "+977",
+            "emoji": "🇳🇵",
+            "code": "NP"
+        },
+        {
+            "name": "Netherlands",
+            "dial_code": "+31",
+            "emoji": "🇳🇱",
+            "code": "NL"
+        },
+        {
+            "name": "Netherlands Antilles",
+            "dial_code": "+599",
+            "emoji": "🇧🇶",
+            "code": "AN"
+        },
+        {
+            "name": "New Caledonia",
+            "dial_code": "+687",
+            "emoji": "🇳🇨",
+            "code": "NC"
+        },
+        {
+            "name": "New Zealand",
+            "dial_code": "+64",
+            "emoji": "🇳🇿",
+            "code": "NZ"
+        },
+        {
+            "name": "Nicaragua",
+            "dial_code": "+505",
+            "emoji": "🇳🇮",
+            "code": "NI"
+        },
+        {
+            "name": "Niger",
+            "dial_code": "+227",
+            "emoji": "🇳🇪",
+            "code": "NE"
+        },
+        {
+            "name": "Nigeria",
+            "dial_code": "+234",
+            "emoji": "🇳🇬",
+            "code": "NG"
+        },
+        {
+            "name": "Niue",
+            "dial_code": "+683",
+            "emoji": "🇳🇺",
+            "code": "NU"
+        },
+        {
+            "name": "Norfolk Island",
+            "dial_code": "+672",
+            "emoji": "🇳🇫",
+            "code": "NF"
+        },
+        {
+            "name": "Northern Mariana Islands",
+            "dial_code": "+1670",
+            "emoji": "🇲🇵",
+            "code": "MP"
+        },
+        {
+            "name": "Norway",
+            "dial_code": "+47",
+            "emoji": "🇳🇴",
+            "code": "NO"
+        },
+        {
+            "name": "Oman",
+            "dial_code": "+968",
+            "emoji": "🇴🇲",
+            "code": "OM"
+        },
+        {
+            "name": "Pakistan",
+            "dial_code": "+92",
+            "emoji": "🇵🇰",
+            "code": "PK"
+        },
+        {
+            "name": "Palau",
+            "dial_code": "+680",
+            "emoji": "🇵🇼",
+            "code": "PW"
+        },
+        {
+            "name": "Palestinian Territory, Occupied",
+            "dial_code": "+970",
+            "emoji": "🇵🇸",
+            "code": "PS"
+        },
+        {
+            "name": "Panama",
+            "dial_code": "+507",
+            "emoji": "🇵🇦",
+            "code": "PA"
+        },
+        {
+            "name": "Papua New Guinea",
+            "dial_code": "+675",
+            "emoji": "🇵🇬",
+            "code": "PG"
+        },
+        {
+            "name": "Paraguay",
+            "dial_code": "+595",
+            "emoji": "🇵🇾",
+            "code": "PY"
+        },
+        {
+            "name": "Peru",
+            "dial_code": "+51",
+            "emoji": "🇵🇪",
+            "code": "PE"
+        },
+        {
+            "name": "Philippines",
+            "dial_code": "+63",
+            "emoji": "🇵🇭",
+            "code": "PH"
+        },
+        {
+            "name": "Pitcairn",
+            "dial_code": "+872",
+            "emoji": "🇵🇳",
+            "code": "PN"
+        },
+        {
+            "name": "Poland",
+            "dial_code": "+48",
+            "emoji": "🇵🇱",
+            "code": "PL"
+        },
+        {
+            "name": "Portugal",
+            "dial_code": "+351",
+            "emoji": "🇵🇹",
+            "code": "PT"
+        },
+        {
+            "name": "Puerto Rico",
+            "dial_code": "+1939",
+            "emoji": "🇵🇷",
+            "code": "PR"
+        },
+        {
+            "name": "Qatar",
+            "dial_code": "+974",
+            "emoji": "🇶🇦",
+            "code": "QA"
+        },
+        {
+            "name": "Romania",
+            "dial_code": "+40",
+            "emoji": "🇷🇴",
+            "code": "RO"
+        },
+        {
+            "name": "Russia",
+            "dial_code": "+7",
+            "emoji": "🇷🇺",
+            "code": "RU"
+        },
+        {
+            "name": "Rwanda",
+            "dial_code": "+250",
+            "emoji": "🇷🇼",
+            "code": "RW"
+        },
+        {
+            "name": "Reunion",
+            "dial_code": "+262",
+            "emoji": "🇷🇪",
+            "code": "RE"
+        },
+        {
+            "name": "Saint Barthelemy",
+            "dial_code": "+590",
+            "emoji": "🇧🇱",
+            "code": "BL"
+        },
+        {
+            "name": "Saint Helena, Ascension and Tristan Da Cunha",
+            "dial_code": "+290",
+            "emoji": "🇸🇭",
+            "code": "SH"
+        },
+        {
+            "name": "Saint Kitts and Nevis",
+            "dial_code": "+1869",
+            "emoji": "🇰🇳",
+            "code": "KN"
+        },
+        {
+            "name": "Saint Lucia",
+            "dial_code": "+1758",
+            "emoji": "🇱🇨",
+            "code": "LC"
+        },
+        {
+            "name": "Saint Martin",
+            "dial_code": "+590",
+            "emoji": "🇲🇫",
+            "code": "MF"
+        },
+        {
+            "name": "Saint Pierre and Miquelon",
+            "dial_code": "+508",
+            "emoji": "🇵🇲",
+            "code": "PM"
+        },
+        {
+            "name": "Saint Vincent and the Grenadines",
+            "dial_code": "+1784",
+            "emoji": "🇻🇨",
+            "code": "VC"
+        },
+        {
+            "name": "Samoa",
+            "dial_code": "+685",
+            "emoji": "🇼🇸",
+            "code": "WS"
+        },
+        {
+            "name": "San Marino",
+            "dial_code": "+378",
+            "emoji": "🇸🇲",
+            "code": "SM"
+        },
+        {
+            "name": "Sao Tome and Principe",
+            "dial_code": "+239",
+            "emoji": "🇸🇹",
+            "code": "ST"
+        },
+        {
+            "name": "Saudi Arabia",
+            "dial_code": "+966",
+            "emoji": "🇸🇦",
+            "code": "SA"
+        },
+        {
+            "name": "Senegal",
+            "dial_code": "+221",
+            "emoji": "🇸🇳",
+            "code": "SN"
+        },
+        {
+            "name": "Serbia",
+            "dial_code": "+381",
+            "emoji": "🇷🇸",
+            "code": "RS"
+        },
+        {
+            "name": "Seychelles",
+            "dial_code": "+248",
+            "emoji": "🇸🇨",
+            "code": "SC"
+        },
+        {
+            "name": "Sierra Leone",
+            "dial_code": "+232",
+            "emoji": "🇸🇱",
+            "code": "SL"
+        },
+        {
+            "name": "Singapore",
+            "dial_code": "+65",
+            "emoji": "🇸🇬",
+            "code": "SG"
+        },
+        {
+            "name": "Slovakia",
+            "dial_code": "+421",
+            "emoji": "🇸🇰",
+            "code": "SK"
+        },
+        {
+            "name": "Slovenia",
+            "dial_code": "+386",
+            "emoji": "🇸🇮",
+            "code": "SI"
+        },
+        {
+            "name": "Solomon Islands",
+            "dial_code": "+677",
+            "emoji": "🇸🇧",
+            "code": "SB"
+        },
+        {
+            "name": "Somalia",
+            "dial_code": "+252",
+            "emoji": "🇸🇴",
+            "code": "SO"
+        },
+        {
+            "name": "South Africa",
+            "dial_code": "+27",
+            "emoji": "🇿🇦",
+            "code": "ZA"
+        },
+        {
+            "name": "South Sudan",
+            "dial_code": "+211",
+            "emoji": "🇸🇸",
+            "code": "SS"
+        },
+        {
+            "name": "South Georgia and the South Sandwich Islands",
+            "dial_code": "+500",
+            "emoji": "🇬🇸",
+            "code": "GS"
+        },
+        {
+            "name": "Spain",
+            "dial_code": "+34",
+            "emoji": "🇪🇸",
+            "code": "ES"
+        },
+        {
+            "name": "Sri Lanka",
+            "dial_code": "+94",
+            "emoji": "🇱🇰",
+            "code": "LK"
+        },
+        {
+            "name": "Sudan",
+            "dial_code": "+249",
+            "emoji": "🇸🇩",
+            "code": "SD"
+        },
+        {
+            "name": "Suriname",
+            "dial_code": "+597",
+            "emoji": "🇸🇷",
+            "code": "SR"
+        },
+        {
+            "name": "Svalbard and Jan Mayen",
+            "dial_code": "+47",
+            "emoji": "🇸🇯",
+            "code": "SJ"
+        },
+        {
+            "name": "Swaziland",
+            "dial_code": "+268",
+            "emoji": "🇸🇿",
+            "code": "SZ"
+        },
+        {
+            "name": "Sweden",
+            "dial_code": "+46",
+            "emoji": "🇸🇪",
+            "code": "SE"
+        },
+        {
+            "name": "Switzerland",
+            "dial_code": "+41",
+            "emoji": "🇨🇭",
+            "code": "CH"
+        },
+        {
+            "name": "Syrian Arab Republic",
+            "dial_code": "+963",
+            "emoji": "🇸🇾",
+            "code": "SY"
+        },
+        {
+            "name": "Taiwan",
+            "dial_code": "+886",
+            "emoji": "🇹🇼",
+            "code": "TW"
+        },
+        {
+            "name": "Tajikistan",
+            "dial_code": "+992",
+            "emoji": "🇹🇯",
+            "code": "TJ"
+        },
+        {
+            "name": "Tanzania, United Republic of Tanzania",
+            "dial_code": "+255",
+            "emoji": "🇹🇿",
+            "code": "TZ"
+        },
+        {
+            "name": "Thailand",
+            "dial_code": "+66",
+            "emoji": "🇹🇭",
+            "code": "TH"
+        },
+        {
+            "name": "Timor-Leste",
+            "dial_code": "+670",
+            "emoji": "🇹🇱",
+            "code": "TL"
+        },
+        {
+            "name": "Togo",
+            "dial_code": "+228",
+            "emoji": "🇹🇬",
+            "code": "TG"
+        },
+        {
+            "name": "Tokelau",
+            "dial_code": "+690",
+            "emoji": "🇹🇰",
+            "code": "TK"
+        },
+        {
+            "name": "Tonga",
+            "dial_code": "+676",
+            "emoji": "🇹🇴",
+            "code": "TO"
+        },
+        {
+            "name": "Trinidad and Tobago",
+            "dial_code": "+1868",
+            "emoji": "🇹🇹",
+            "code": "TT"
+        },
+        {
+            "name": "Tunisia",
+            "dial_code": "+216",
+            "emoji": "🇹🇳",
+            "code": "TN"
+        },
+        {
+            "name": "Turkey",
+            "dial_code": "+90",
+            "emoji": "🇹🇷",
+            "code": "TR"
+        },
+        {
+            "name": "Turkmenistan",
+            "dial_code": "+993",
+            "emoji": "🇹🇲",
+            "code": "TM"
+        },
+        {
+            "name": "Turks and Caicos Islands",
+            "dial_code": "+1649",
+            "emoji": "🇹🇨",
+            "code": "TC"
+        },
+        {
+            "name": "Tuvalu",
+            "dial_code": "+688",
+            "emoji": "🇹🇻",
+            "code": "TV"
+        },
+        {
+            "name": "Uganda",
+            "dial_code": "+256",
+            "emoji": "🇺🇬",
+            "code": "UG"
+        },
+        {
+            "name": "Ukraine",
+            "dial_code": "+380",
+            "emoji": "🇺🇦",
+            "code": "UA"
+        },
+        {
+            "name": "United Arab Emirates",
+            "dial_code": "+971",
+            "emoji": "🇦🇪",
+            "code": "AE"
+        },
+        {
+            "name": "United Kingdom",
+            "dial_code": "+44",
+            "emoji": "🇬🇧",
+            "code": "GB"
+        },
+        {
+            "name": "United States",
+            "dial_code": "+1",
+            "emoji": "🇺🇸",
+            "code": "US"
+        },
+        {
+            "name": "Uruguay",
+            "dial_code": "+598",
+            "emoji": "🇺🇾",
+            "code": "UY"
+        },
+        {
+            "name": "Uzbekistan",
+            "dial_code": "+998",
+            "emoji": "🇺🇿",
+            "code": "UZ"
+        },
+        {
+            "name": "Vanuatu",
+            "dial_code": "+678",
+            "emoji": "🇻🇺",
+            "code": "VU"
+        },
+        {
+            "name": "Venezuela, Bolivarian Republic of Venezuela",
+            "dial_code": "+58",
+            "emoji": "🇻🇪",
+            "code": "VE"
+        },
+        {
+            "name": "Vietnam",
+            "dial_code": "+84",
+            "emoji": "🇻🇳",
+            "code": "VN"
+        },
+        {
+            "name": "Virgin Islands, British",
+            "dial_code": "+1284",
+            "emoji": "🇻🇬",
+            "code": "VG"
+        },
+        {
+            "name": "Virgin Islands, U.S.",
+            "dial_code": "+1340",
+            "emoji": "🇻🇮",
+            "code": "VI"
+        },
+        {
+            "name": "Wallis and Futuna",
+            "dial_code": "+681",
+            "emoji": "🇼🇫",
+            "code": "WF"
+        },
+        {
+            "name": "Yemen",
+            "dial_code": "+967",
+            "emoji": "🇾🇪",
+            "code": "YE"
+        },
+        {
+            "name": "Zambia",
+            "dial_code": "+260",
+            "emoji": "🇿🇲",
+            "code": "ZM"
+        },
+        {
+            "name": "Zimbabwe",
+            "dial_code": "+263",
+            "emoji": "🇿🇼",
+            "code": "ZW"
+        }
+    ]
 
     useEffect(() => {
         if (typeof window !== "undefined") {
@@ -23,6 +1477,7 @@ const ResourceForm = () => {
         register,
         handleSubmit,
         formState: { errors },  
+        control
     } = useForm();
 
     const onSubmit = async (data: any) => {
@@ -77,7 +1532,22 @@ const ResourceForm = () => {
 
                         <div>
                             <label htmlFor="mobileNumber" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Mobile Number</label>
-                            <input {...register('mobileNumber')} type='number' className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                            <div className="relative mt-2 rounded-md shadow-sm">
+                                <div className="absolute inset-y-0 left-0 flex items-center">
+                                <Controller
+                                    control={control}
+                                    {...register('countryCode')}
+                                    render={({ field }) => (
+                                        <select {...field} className="h-full rounded-md border-0 bg-transparent py-0 pl-3 pr-7 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm">
+                                            {countryCodes.map((country) => (
+                                                <option key={country.code} value={country.dial_code} >{country.code} ({country.dial_code})</option>
+                                            ))}
+                                        </select>
+                                      )}
+                                />
+                                </div>
+                                <input {...register('mobileNumber')} type='number' className="block w-full pt-3 pb-3 pr-3 pl-36 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                            </div>
                         </div>
 
                         <div>
@@ -104,7 +1574,7 @@ const ResourceForm = () => {
                                             I agree
                                         </label>
                                         <p id="comments-description" className="text-gray-500">
-                                            By ticking this box, you agree to the <button type='button' onClick={() => { setOpenTermsAndConditions(!openTermsAndConditions) }} className='underline text-lime-700'>Terms and Conditions</button> of GSG Ltd, owner of World Coffee Alliance and organiser of World Coffee Summit 
+                                            By ticking this box, you agree to the <Link href="/privacy-policy" target='_blank' className='underline text-lime-600'>Privacy Policy</Link> of GSG Ltd, owner of World Coffee Alliance and organiser of World Coffee Summit 
                                         </p>
                                     </div>
                                 </div>
@@ -117,143 +1587,6 @@ const ResourceForm = () => {
                     </form>
                     <BackButton />
                 </div >
-
-                {/* terms and conditions */}
-                < Transition.Root show={openTermsAndConditions} as={Fragment}>
-                    <Dialog as="div" className="relative z-10" onClose={setOpenTermsAndConditions}>
-                        <Transition.Child
-                            as={Fragment}
-                            enter="ease-out duration-300"
-                            enterFrom="opacity-0"
-                            enterTo="opacity-100"
-                            leave="ease-in duration-200"
-                            leaveFrom="opacity-100"
-                            leaveTo="opacity-0"
-                        >
-                            <div className="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-50" />
-                        </Transition.Child>
-
-                        <div className="fixed inset-0 z-10 overflow-y-auto">
-                            <div className="flex justify-center min-h-full p-4 text-center sm:items-center sm:p-0">
-                                <Transition.Child
-                                    as={Fragment}
-                                    enter="ease-out duration-300"
-                                    enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                                    enterTo="opacity-100 translate-y-0 sm:scale-100"
-                                    leave="ease-in duration-200"
-                                    leaveFrom="opacity-100 translate-y-0 sm:scale-100"
-                                    leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                                >
-                                    <Dialog.Panel className="relative px-4 pt-5 pb-4 text-left transition-all transform bg-white rounded-lg shadow-xl h-max sm:my-8 sm:w-full sm:max-w-4xl sm:p-6">
-                                        <Dialog.Title className="py-4 font-semibold leading-6 text-gray-900 text-md sm:text-xl">
-                                            Terms and Condition
-                                        </Dialog.Title>
-                                        <div className='overflow-auto max-h-80'>
-                                            <div className="text-sm sm:mt-5">
-                                                <p className="text-gray-600 ">
-                                                    <span className='font-semibold'>Global Stratagem Group Ltd</span> is the registered owner of <span className='font-semibold'>World Coffee Alliance (WCA)</span> and organizer of <span className='font-semibold'>World Coffee Summit London</span> and <span className='font-semibold'>World Coffee Exhibition London</span>. By ticking this box (and any third party platform provider acting on our behalf) you consent to allow  us to use your personal information for analysing visitor traffic with a view to improving the event experience for event delegates.
-                                                </p>
-                                                <p className="mt-2 text-gray-600">
-                                                    By registering,  your personal information will be shared with the exhibitor or sponsor to allow them to engage with you and provide some more information of what they offer, and what they can help you with in terms of solutions and services. Once registered, your full contact details will be shared directly with another attendee, sponsor or exhibitor and they may follow-up and use your details for marketing and networking purposes.
-                                                </p>
-                                                <p className="mt-2 text-gray-600">
-                                                    For more information on how we use your data, please visit our <Link href="/privacy-policy" target='_blank' className='underline'>privacy policy</Link>.
-                                                </p>
-
-                                                <p className="mt-8 text-gray-600">
-                                                    <span className='font-semibold'>1. PAYMENTS:</span> Delegates, Visitors and Sponsors/Exhibitors to World Coffee Summit & Exhibition London shall pay the full price upon clicking the registration button online at <Link href="www.worldcoffeesummit.net" target='_blank' className='underline'>www.worldcoffeesummit.net</Link>, and by ticking the box provided or in case of Sponsor and/or Exhibitor by signed contract agreement, hereby agrees and accepts the terms and conditions provided herein by Global Stratagem Group Ltd. By clicking the Register button provided on <Link href="www.worldcoffeesummit.net" target='_blank' className='underline'>www.worldcoffeesummit.net</Link>, all payments are non-refundable. Global Stratagem Group Ltd. reserves the right to cancel the booking without notice and retain any payments in full including payment terms provided by third party including Stripe.
-                                                </p>
-                                                <p className="mt-4 font-semibold text-gray-600">
-                                                    2. CANCELLATION OR TERMINATION:
-                                                </p>
-                                                <p className="mt-2 text-gray-600">
-                                                    <span className='font-semibold'>a. Cancellation/Postponement by Organiser. </span> Global Stratagem Group Ltd. reserves the right to cancel or postpone all or any part of this events for any reason whatsoever. In the event that Global Stratagem Group Ltd. cancels or postpones these events, Delegates to the Summit, Visitors to the Exhibition and Sponsor/Exhibitor will be credited towards a rescheduled date. If the Delegate, Visitor or Sponsor/Exhibitor is unable to attend the rescheduled event, the Delegate, Visitor and Sponsor/Exhibitor will receive a 100% credit, valid for one year from date of issuance and represent payments made towards a future Global Stratagem Group Ltd. event. In the event that the Summit and Exhibition is cancelled or postponed due to a fortuitous event, Act of God and those beyond its reasonable control, including but not limited to, natural or public disaster, other emergency, acts of terrorism, strike, adverse weather, and other natural disasters, industrial and labour dispute, power and internet failure or disconnection or acts or omissions of providers of telecommunications and electricity services, epidemic, venue construction, insufficient participation, market fluctuations, government regulation or pandemic policy in-person restriction, or other similar reasons, which will make the event impossible or impracticable to hold, in which case, there will be no refund available to Delegate, Visitor or Sponsor/Exhibitor. A change in the name of the Event does not constitute a cancellation by Global Stratagem Group Ltd.
-                                                </p>
-                                                <p className="mt-2 text-gray-600">
-                                                    <span className='font-semibold'>b. Cancellation by Sponsor. </span> In the event that Delegate, Visitor or Sponsor/Exhibitor cancels this event booking provided by Global Stratagem Group Ltd. with written notice of cancellation not less than eight (8 weeks) prior to the date of the event, the cancellation fee payable therewith shall be the amount equal to 50% of the total contract price. Any cancellation received less than eight (8) weeks prior the event shall be deemed to be breach of this Agreement by Sponsor/Exhibitor and, accordingly the full amount otherwise payable hereunder shall immediately be paid to Global Stratagem Group Ltd. The parties intend by this provision to agree in advance to the settlement of all damages to Global Stratagem Group Ltd. that will arise from Sponsor’s or Exhibitor’s cancellation. All fees are deemed fully earned and non-refundable when due. Termination by Sponsor/Exhibitor must be in writing and will be effective upon receipt by Global Stratagem Group Ltd. of an email addressed to <Link href={"mailto:info@globalstratagemgroup.com"} target='_blank' className='underline'>info@globalstratagemgroup.com</Link> or <Link href={"mailto:info@worldcoffeealliance.com"} target='_blank' className='underline'>info@worldcoffeealliance.com</Link>. Sponsor/Exhibitor acknowledges the difficulty in determining a precise value for services rendered and expenses incurred by Global Stratagem Group Ltd. for the Summit/Exhibition, and of ascertaining damages incurred by Global Stratagem Group Ltd. If Sponsor/Exhibitor terminates this Agreement or Sponsor/Exhibitor’s participation in the event; the amounts due from Sponsor/Exhibitor under this Agreement as of the effective date of any termination by Sponsor/Exhibitor belong to Global Stratagem Group Ltd. and represent an agreed measure of compensation and are not to be deemed or construed as a forfeiture or penalty.
-                                                </p>
-                                                <p className="mt-2 text-gray-600">
-                                                    <span className='font-semibold'>c. Termination by Organizer. </span> Global Stratagem Group Ltd. reserves the right to terminate this Agreement immediately by written notice to Delegate, Visitor and Sponsor in the event of breach or anticipatory breach by Delegate, Visitor or Sponsor/Exhibitor of any of the terms and conditions set forth herein, in any addendum hereto or in the Manual, including failure to make any payment when due under the terms of this Agreement. Global Stratagem Group Ltd. is expressly authorized (but has no obligation) to resell or dispose oof Registration tickets of Delegate or Visitor passes or Sponsor/Exhibitor package signed up or  or made available by reason of action taken under this paragraph in such manner as it may deem best, and without releasing the Delegate, Visitor and Sponsor/Exhibitor from any liability hereunder Global Stratagem Group Ltd. reserves the right to re-name or the Event or change the date and time on which it is held without penalty.
-                                                </p>
-                                                <p className="mt-4 text-gray-600">
-                                                    <span className='font-semibold'>3. ALTERATION TO THE ADVERTISED PACKAGE: </span> Whilst every reasonable effort will be made to adhere to the advertised Sponsorship/Exhibitor packages that appears on Global Stratagem Group Ltd. main corporate website and/or event website (<Link href="www.worldcoffeesummit.net" target='_blank' className='underline'>www.worldcoffeesummit.net</Link>) or any other related literature therewith including Sponsorship Media Kit (PTT/PDF) or Program, List of Speakers and Panellist, Event Brochure in relation thereto, such package and program, including confirmed speakers which Global Stratagem Group Ltd do not guarantee appearance of confirmed speakers at the Event for one reason or another, and maybe altered or parts thereof modified or omitted or platform or venue changed, dates and time changed for any cause whatsoever, which Global Stratagem Group Ltd. in its absolute discretion, shall consider to be just and reasonable within the circumstances. Global Stratagem Group Ltd. reserves the right to change the event venue, event date, program, speakers, panellists and topics as it deems necessary without penalty. Furthermore, Global Stratagem Group Ltd. will not be responsible for re-scheduling any Summit or Exhibition, which were due to be held at the event, which is postponed or cancelled. The Delegate, Visitor or Exhibitors and Sponsors are strongly advised to procure extensive personal insurance coverage, including his entourage through its own insurance brokers to protect against any losses incurred in connection with the postponement or cancellation of the event.
-                                                </p>
-
-                                                <p className="mt-4 text-gray-600">
-                                                    <span className='font-semibold'>4. LIABILITY: </span> In making arrangements with third parties including venue and any of its third parties contracted, who have been retained by Global Stratagem Group Ltd to set up and operate this Summit (remote or in situ) on online platforms like Zoom, Go Webinar, FB or YouTube Livestream and other Webinar providers software or apps etc., the private company organizer or venue hired to operate and facilitate this Event, is solely responsible including but not limited to all hardware and software faults, disconnection, internet failure, outage including other negligent acts or omissions. Global Stratagem Group Ltd. acts solely as the Sponsor’s agent and does so on the express condition that no liability of any kind howsoever caused shall attach to Global Stratagem Group Ltd. in connection with or arising out of such arrangements. Global Stratagem Group Ltd. reserves the right to change without prior notice, the Summit and/or Exhibition providers, dates, speakers, summit program, topics and roundtable and panel speakers/participants within reason should circumstances warrant such change. No liability is attached to Global Stratagem Group Ltd. should change be effected for any reason whatsoever and howsoever.
-                                                </p>
-
-                                                <p className="mt-4 text-gray-600">
-                                                    <span className='font-semibold'>5. INFORMATION AND COPYRIGHT. </span> All information supplied by Global Stratagem Group Ltd. in relation to this event is for use by the Sponsor/Exhibitor only for the purposes of this event. All copyrights and trademarks in this project belong to Global Stratagem Group Ltd. and cannot be passed to any third parties for any purpose whatsoever (excepted all copyrights and trademark of the Sponsor that remain Sponsor’s sole and exclusive property)
-                                                </p>
-
-                                                <p className="mt-4 text-gray-600">
-                                                    <span className='font-semibold'>6. PRODUCT DEMONSTRATION. </span> Sponsor and/or Exhibitors shall be solely responsible for all technical setup, equipment, cable, server or satellite installation and operational personnel for any product demonstration or corporate presentation at the event. Whilst all efforts will be extended to the Sponsor/Exhibitor to facilitate technical product presentation, Global Stratagem Group Ltd. cannot be held responsible for any technical faults whatsoever which causes delay, interruption or cancellation of any presentation or product demonstration. Sponsor will be liable for all damages or liability of any kind or for any loss, damage or injury to persons or any property during the show from any cause whatsoever by reason of use, occupation and enjoyment of exhibit or conference space.
-                                                </p>
-
-                                                <p className="mt-4 text-gray-600">
-                                                    <span className='font-semibold'>7. PROHIBITION OF TRANSFER: </span> The Sponsor or Exhibitor may not assign, transfer, access, sublet or share possession of any part of this Terms and Conditions and all areas and facilities including speaking slots at the event allocated to the Exhibitor and/or Sponsor, or use any materials of any nature other than that which the Sponsor/Exhibitor are allowed by Global Stratagem Group Ltd. to be exhibited in or distributed from any area other than specified by Global Stratagem Group Ltd. This does not apply to subsidiaries, agents or principals of Sponsor/Exhibitor, which are notified in writing to Global Stratagem Group Ltd. at the time of the Booking.
-                                                </p>
-
-                                                <p className="mt-4 text-gray-600">
-                                                    <span className='font-semibold'>8. INDEMNITY: </span> The Sponsor and or Exhibitor hereby indemnifies and holds Global Stratagem Group Ltd. harmless from and against any and all claims, damages and expenses arising in any way from the act, omission or negligence of the Sponsor or its employees, representatives or agents.
-                                                </p>
-
-                                                <p className="mt-4 text-gray-600">
-                                                    <span className='font-semibold'>9. CONFIDENTIALITY: </span> All information supplied by Global Stratagem Group Ltd. in connection with this Agreement and Event, including the names of Speakers and Participants, special package and price agreed with Sponsor, is confidential and for Sponsor use only. Subject to the rules of GDPR and other UK existing privacy law and regulations, the parties agree that such Information may not be conveyed to any third party for any purpose. Reciprocally, all information supplied by the Sponsor or Exhibitor to Global Stratagem Group Ltd in connection with this Agreement and event, is confidential and shall be used by Global Stratagem Group Ltd. only to the extent necessary to the performance of the terms and conditions herein specified, or otherwise allowed by Sponsor /Exhibitor and the parties agree that such Information may not be conveyed to any third party for any purpose.
-                                                </p>
-
-                                                <p className="mt-4 text-gray-600">
-                                                    <span className='font-semibold'>10. INTEGRATION: </span> This Agreement constitutes the sole and exclusive Agreement between the parties and supersedes any and all prior oral or written and all contemporaneous oral Agreements, promises, or understandings among them, pertaining to the transactions contemplated in this Agreement. The parties herein agree that no express or implied representations, warranties, or inducements have been made by with each party herein named except as set forth in this agreement.
-                                                </p>
-
-                                                <p className="mt-4 font-semibold text-gray-600">
-                                                    11. MISCELLANEOUS:
-                                                </p>
-                                                <p className="mt-2 text-gray-600">
-                                                    <span className='font-semibold'>a. </span> The terms and conditions herein provided may not be modified without the expressed written consent of the Chief Executive Officer and Founder or General Counsel of Global Stratagem Group Ltd. b) Should Sponsor’s behaviour, at any point for any reason, including but not limited to payment, delay in provision of necessary information or excessive alterations to the requirements have any effect to the smooth operation of this event, Global Stratagem Group Ltd. maintains the right to cancel Sponsor’s Booking by written notification. Global Stratagem Group Ltd. shall also be entitled to deduct any costs associated with Sponsor’s order at this point.
-                                                </p>
-                                                <p className="mt-2 text-gray-600">
-                                                    <span className='font-semibold'>b. </span> Should a portion of the Agreement price be at the time of acceptance or at anytime in the future be subject to state, federal, local taxation, VAT or other applicable sales tax, Global Stratagem Group Ltd. reserves the right to add such charges to the final invoice or recover such sums from the Sponsor at the time when they become due.
-                                                </p>
-                                                <p className="mt-2 text-gray-600">
-                                                    <span className='font-semibold'>c. </span> This contract shall be governed and construed by and in accordance with the laws of the United Kingdom and Wales to the exclusive jurisdiction of whose courts the parties hereby agree to submit. However, Global Stratagem Group Ltd. only is entitled to waive this right and submit to the jurisdiction of the courts in which the Sponsor’s office is located.
-                                                </p>
-                                                <p className="mt-2 text-gray-600">
-                                                    <span className='font-semibold'>d. </span> If Sponsor or Exhibitor fails to pay any amounts when due, or if Global Stratagem Group Ltd. retains a Solicitor, Barrister or an Attorney to protect its interests under this Agreement, Sponsor shall pay any and all costs and expenses incurred by Global Stratagem Group Ltd. in enforcing any term of, or collecting under, this Agreement, including reasonable Legal fees, collection fees and any expenses. If any provision of this Agreement is deemed unenforceable, the remaining terms shall be enforceable to the fullest extent of the law. All parties expressly waive all rights to trial by jury.
-                                                </p>
-                                                <p className="mt-2 text-gray-600">
-                                                    <span className='font-semibold'>e. </span> Sponsor or Exhibitor agrees that in case of litigation, Global Stratagem Group Ltd. will not be able to mitigate its losses for any less than fifty (50%) of the Agreement value.
-                                                </p>
-                                                <p className="mt-2 text-gray-600">
-                                                    <span className='font-semibold'>f. </span> Notwithstanding anything contained herein to the contrary, in the event of any default by Global Stratagem Group Ltd. under the terms or provisions of this Agreement, Global Stratagem Ltd. liability shall never exceed the amount already paid by the Sponsor under this Agreement.
-                                                </p>
-                                                <p className="mt-2 text-gray-600">
-                                                    <span className='font-semibold'>g. </span> The Sponsor or Exhibitor agrees to abide by the rules of all venue facilities including those provided by the venue owners or those provided for the Summit by Global Stratagem Group Ltd. staff and organisers in relation to this Agreement.
-                                                </p>
-                                                <p className="mt-2 text-gray-600">
-                                                    <span className='font-semibold'>h. </span> The official representative of Sponsor and/or Exhibitor warrants and represents that he or she is specifically authorized by the Sponsor and/or Exhibitor to execute this Agreement and bind the Sponsor and/or Exhibitor to the obligations under this Agreement. The Sponsor and/or Exhibitor acknowledges that Global Stratagem Group Ltd. has relied on such representation.
-                                                </p>
-                                                <p className="mt-2 text-gray-600">
-                                                    <span className='font-semibold'>i. </span> . This Agreement shall be binding upon all parties upon execution and delivery either by clicking the box of this terms and conditions to the other party of this Agreement. Delivery by email or facsimile transmittal shall constitute delivery hereof.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div className="mt-5 sm:mt-6">
-                                            <button
-                                                type="button"
-                                                className="inline-flex justify-center max-w-5xl px-3 py-2 text-sm font-semibold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-700"
-                                                onClick={() => setOpenTermsAndConditions(!openTermsAndConditions)}
-                                            >
-                                                Back
-                                            </button>
-                                        </div>
-                                    </Dialog.Panel>
-                                </Transition.Child>
-                            </div>
-                        </div>
-                    </Dialog>
-                </ Transition.Root >
             </div>
         </>
     )
