@@ -1529,6 +1529,22 @@ const ResourceForm = () => {
                             <label htmlFor="companyName" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Company</label>
                             <input {...register('companyName')} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
                         </div>
+                        
+                        <div>
+                            <label htmlFor="country" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Country</label>
+                            <Controller
+                                control={control}
+                                {...register('country')}
+                                render={({ field }) => (
+                                    <select {...field} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required>
+                                        <option value="" selected disabled hidden>Select Country</option>
+                                        {countryCodes.map((country) => (
+                                            <option key={country.code} >{country.name}</option>
+                                        ))}
+                                    </select>
+                                )}
+                            /> 
+                        </div>
 
                         <div>
                             <label htmlFor="mobileNumber" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Mobile Number</label>
@@ -1538,7 +1554,8 @@ const ResourceForm = () => {
                                         control={control}
                                         {...register('countryCode')}
                                         render={({ field }) => (
-                                            <select {...field} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light">
+                                            <select {...field} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required>
+                                                <option value="" disabled selected hidden>Select Country Code</option>
                                                 {countryCodes.map((country) => (
                                                     <option key={country.code} value={country.dial_code} >{country.name} ({country.dial_code})</option>
                                                 ))}

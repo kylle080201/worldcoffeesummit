@@ -7,6 +7,7 @@ const downloads = new Schema({
   lastName: String,
   jobTitle: String,
   companyName: String,
+  country: String,
   countryCode: String,
   mobileNumber: String,
   email: String,
