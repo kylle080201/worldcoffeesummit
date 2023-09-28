@@ -33,7 +33,7 @@ export const mailer = async (data: any) => {
       subject: "World Coffee Magazine 2023 Download",
       html: `
       <div>Hi Mavis,</div>
-      <div>${firstName} ${lastName} has just downloaded the World Coffee Magazine 2023.</div>
+      <div>${firstName} ${lastName} has just submitted the request to download the World Coffee Magazine 2023.</div>
       <br/>
       <div>Here are the Information: </div>
       <div>
