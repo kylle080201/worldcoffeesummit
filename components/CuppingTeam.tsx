@@ -31,7 +31,7 @@ function CuppingTeam() {
     },
   ]
   return (
-    <div className='px-12 py-20 bg-gray-100 sm:px-2'>
+    <div className='px-12 py-20 bg-gray-100 sm:px-2 rounded-md'>
       <div className='mx-auto sm:content-center'>
         <h2 className="text-4xl font-bold text-center tracking-tight">CUPPING TEAM</h2>
         <ul
