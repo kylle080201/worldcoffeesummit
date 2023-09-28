@@ -598,7 +598,7 @@ export default function Speakers() {
                             </a>
                         </li>
                         {/* speaker 15 */}
-                        <li>
+                        <li className='hidden'>
                             <a onClick={() => { setOpenSpeaker15(!openSpeaker15) }} className="flex flex-col gap-6 hover:cursor-pointer">
                                 <div className='flex-shrink-0 mx-auto'>
                                     <Image className="rounded-md w-[30rem] " src={speakers[15].imageUrl} alt={speakers[15].name} width={160} height={160} />
@@ -718,7 +718,7 @@ export default function Speakers() {
                             </a>
                         </li>
                         {/* speaker 24 */}
-                        <li>
+                        <li className='hidden'>
                             <a onClick={() => { setOpenSpeaker24(!openSpeaker24) }} className="flex flex-col gap-6 hover:cursor-pointer">
                                 <div className='flex-shrink-0 mx-auto'>
                                     <Image className="rounded-md w-[30rem] " src={speakers[24].imageUrl} alt={speakers[24].name} width={160} height={160} />
