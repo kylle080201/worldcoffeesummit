@@ -9,7 +9,6 @@ function DownloadResources() {
         <div className='text-center mx-auto mt-12 sm:mt-20'>
           <h1 className='font-bold text-lg sm:text-2xl mb-4'>RESOURCES</h1>
         </div>
-        
         <div className='px-12 sm:px-2 max-w-7xl md:px-0 mx-auto bg-gray-100 rounded-md shadow-md'>
           <div className='mx-auto sm:content-center px-12 py-8'>
             <h1 className='font-bold text-lg mb-4'>World Coffee Magazine 2023</h1>
