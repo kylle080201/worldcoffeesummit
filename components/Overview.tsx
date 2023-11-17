@@ -45,7 +45,7 @@ export default function Overview() {
                         <video
                             autoPlay
                             loop
-                            muted
+                            controls
                             className="w-full mt-12"
                         >
                             <source
