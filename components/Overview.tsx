@@ -4,11 +4,12 @@ import React from 'react'
 import CountDown from './CountDown'
 import { AddToCalendarButton } from 'add-to-calendar-button-react';
 import AgendaHighlights from './AgendaHighlights';
+import Image from 'next/image';
 
 export default function Overview() {
     return (
         <>
-            <div id="overview" className="flex flex-col bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2023/06/OVERVIEW-HERO-BG-scaled.jpg')] pt-2 sm:py-4 pb-6 sm:pb-12 bg-cover bg-center mlg:flex-col">
+            {/* <div id="overview" className="flex flex-col bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2023/06/OVERVIEW-HERO-BG-scaled.jpg')] pt-2 sm:py-4 pb-6 sm:pb-12 bg-cover bg-center mlg:flex-col">
                 <div className="content-center self-center w-full text-center sm:py-20 py-12">
                     <div className='grid w-full grid-cols-1 px-16 lg:grid-cols-7 justify-items-stretch'>
                         <div className='py-6 my-auto lg:col-span-6 lg:ml-52'>
@@ -29,6 +30,11 @@ export default function Overview() {
                         <p className="px-6 py-2 font-bold tracking-tight text-white text-md mx-aut h-max bg-lime-700 w-fit sm:text-lg">13 September 2023 </p>
                     </div>
                 </div>
+            </div> */}
+            <div className='w-screen h-max'>
+                <Link href={'https://us06web.zoom.us/webinar/register/3117011005959/WN_SR-qB_0IT46KE_7D2LXsDQ'} target='_blank'>
+                    <Image src={'https://worldcoffeealliance.com/wp-content/uploads/2023/11/Poster-NEW-NEW-scaled.jpg'} alt={'WCA EUDR Webinar Poster'} width={1665} height={2960} className=' w-full' />
+                </Link>
             </div>
             <div className='justify-center py-12 mx-auto bg-white max-w-7xl sm:py-20' >
                 <p className="mt-6 text-2xl font-bold tracking-tight text-center text-gray-900 sm:text-4xl">OVERVIEW</p>
