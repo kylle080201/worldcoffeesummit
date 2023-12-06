@@ -19,8 +19,8 @@ export default function Overview() {
                     <div className="content-center self-center text-center pr-24 w-4/6">
                         <div className='w-full px-16 justify-items-stretch'>
                             <div className='py-6 my-auto'>
-                                <p className="text-4xl font-bold tracking-tight text-white sm:text-6xl">World Coffee Summit</p>
-                                <p className="text-4xl font-bold tracking-tight text-white sm:text-6xl">& Exhibition London</p>
+                                <p className="text-4xl font-bold tracking-tight text-white sm:text-6xl">World Coffee Summit &</p>
+                                <p className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Exhibition London</p>
                             </div>
                         </div>
 
