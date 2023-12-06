@@ -7,7 +7,7 @@ const CountDown = () => {
     const [hours, setHours] = useState("00");
     const [minutes, setMinutes] = useState("00");
     const [seconds, setSeconds] = useState("00");
-    const target = new Date("09/13/2023 08:30:00");
+    const target = new Date("10/16/2024 09:00:00");
 
     function addLeadingZeros(num: any, totalLength: any) {
         return String(num).padStart(totalLength, '0');

@@ -5,8 +5,10 @@ import Link from 'next/link'
 import { SocialIcon } from 'react-social-icons'
 import React, { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
+import { useRouter } from 'next/navigation'
 
 function Navbar() {
+    const router = useRouter()
     const navigation = [
         { name: 'Overview', href: '/#overview' },
         { name: 'Speakers', href: '/#speakers' },
@@ -22,7 +24,7 @@ function Navbar() {
         <Disclosure as="nav" className="w-full bg-white shadow">
             {({ open }) => (
                 <>
-                    <div className="justify-center flex-shrink-0 w-full px-8 mx-auto max-w-7xl">
+                    <div className="justify-center flex-shrink-0 w-full mx-auto max-w-7xl">
                         <div className="flex w-full h-16 sm:h-32">
                             <div className="flex w-full sm:justify-between">
                                 <div className="flex items-center mr-2 -ml-2 sm:hidden">
@@ -70,14 +72,15 @@ function Navbar() {
                                                 <SocialIcon url="https://www.linkedin.com/company/worldcoffeealliance/" style={{ height: 40, width: 40 }} target='_blank' />
                                                 <SocialIcon url="https://twitter.com/WCoffeeAlliance" style={{ height: 40, width: 40 }} target='_blank' />
                                                 <SocialIcon url="https://www.youtube.com/channel/UCbUTtqgxTtQj9nkKTAf_AQg" style={{ height: 40, width: 40 }} target='_blank' />
+                                                <SocialIcon url="https://www.instagram.com/worldcoffeealliancehq/" style={{ height: 40, width: 40 }} target='_blank' />
                                             </div>
                                         </div>
                                         <div className='mt-4 '>
                                             <button
-                                                onClick={() => setOpenNotice(!openNotice)}
+                                                onClick={() => router.push('/interest')}
                                                 className="relative inline-flex gap-x-1.5 rounded-md bg-lime-700 hover:bg-lime-800 px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
                                             >
-                                                Register Now
+                                                Register Interest
                                             </button>
                                         </div>
                                     </div>
