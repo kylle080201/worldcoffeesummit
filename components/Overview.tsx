@@ -20,7 +20,7 @@ export default function Overview() {
                         <div className='w-full px-16 justify-items-stretch'>
                             <div className='py-6 my-auto'>
                                 <p className="text-4xl font-bold tracking-tight text-white sm:text-6xl">World Coffee Summit</p>
-                                <p className="text-4xl font-bold tracking-tight text-white sm:text-6xl">& World Coffee Exhibition</p>
+                                <p className="text-4xl font-bold tracking-tight text-white sm:text-6xl">& Exhibition London</p>
                             </div>
                         </div>
 
