@@ -183,32 +183,6 @@ const InterestForm = () => {
                             </div>
                           </fieldset>
                         </div>
-
-                        <fieldset>
-                            <div className="space-y-5">
-                                <div className="relative flex items-start">
-                                    <div className="flex items-center h-6">
-                                        <input
-                                            required
-                                            onChange={() => (setIsAgree(!isAgree))}
-                                            id="agree"
-                                            aria-describedby="terms-and-conditions"
-                                            name="agree"
-                                            type="checkbox"
-                                            className="w-4 h-4 border-gray-300 rounded text-lime-700 focus:ring-lime-700"
-                                        />
-                                    </div>
-                                    <div className="ml-3 text-sm leading-6">
-                                        <label htmlFor="agree" className="font-medium text-gray-900">
-                                            I agree
-                                        </label>
-                                        <p id="comments-description" className="text-gray-500">
-                                            By ticking this checkbox you agree to the <button type='button' onClick={() => { setOpenTermsAndConditions(!openTermsAndConditions) }} className='underline text-lime-700'>terms and conditions</button> and <Link target={'_blank'} href={'/privacy-policy'} className='underline text-lime-700'>privacy policy</Link>.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </fieldset>
                         <div className="flex justify-end">
                             <input type="submit" className="flex justify-center px-3 py-2 text-sm font-semibold text-white border border-transparent rounded-md shadow-sm bg-lime-700 hover:cursor-pointer hover:bg-lime-900 focus:outline-none"
                             />

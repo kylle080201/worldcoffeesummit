@@ -9,51 +9,52 @@ import Image from 'next/image';
 export default function Overview() {
     return (
         <>
-            <div id="overview" className="flex bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2023/12/Original-cover-photo.jpg')] pt-2 sm:py-4 pb-6 sm:pb-12 bg-cover bg-center mlg:flex-col">
-                <div className="content-center self-center text-center sm:py-20 py-12 w-4/6">
-                    <div className='w-full px-16 justify-items-stretch'>
-                        <div className='py-6 my-auto'>
-                            <p className="text-4xl font-bold tracking-tight text-white sm:text-6xl">World Coffee Summit London</p>
-                            <p className="text-4xl font-bold tracking-tight text-white sm:text-6xl">& World Coffee Exhibition</p>
-                        </div>
-                    </div>
-
-                    <p className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Leveraging Scalable Technology</p>
-                    <p className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Towards A Net Positive Economy</p>
-                    <div className='flex flex-col items-center justify-center max-w-5xl mx-auto mt-6 sm:flex-row sm:gap-x-2 gap-y-2'>
-                        <div>
-                            <img className='w-[17rem]' src='https://worldcoffeealliance.com/wp-content/uploads/2023/06/QEII-CENTRE.png' />
-                        </div>
-                        <p className="px-6 py-2 font-bold tracking-tight text-white text-md mx-aut h-max bg-lime-700 w-fit sm:text-lg">16-17 October 2024</p>
-                    </div>
-                    <CountDown />
-                    <div className='flex justify-center max-w-5xl mx-auto mt-12 md:mt-0'>
-                        <AddToCalendarButton
-                            name="World Coffee Summit London & World Coffee Exhibition 2024"
-                            options={['Apple', 'Google', 'iCal', 'Outlook.com', 'Microsoft 365', 'Microsoft Teams', 'Yahoo']}
-                            location="Queen Elizabeth II Centre, London, England"
-                            startDate="2024-10-16"
-                            endDate="2024-10-16"
-                            startTime="09:00"
-                            endTime="17:30"
-                            trigger="click"
-                            description='A face-to-face Coffee Summit Exhibition on September 13, 2023'
-                            timeZone="Europe/Belfast"
-                        ></AddToCalendarButton>
-                    </div>
+            <div id="overview" className="flex flex-col bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2023/12/Original-cover-photo-1.jpg')] pt-2 sm:py-4 pb-6 sm:pb-12 bg-cover bg-center mlg:flex-col">
+                <div className='flex justify-end'>
+                    <Link href={'https://www.worldcoffeealliance.com'} target='_blank' className='px-4'>
+                        <img className='w-[12rem]' src='https://worldcoffeealliance.com/wp-content/uploads/2021/08/WCA_new_logo.png'></img>
+                    </Link>
                 </div>
-                <div className='w-2/6 pr-12'>
-                    <div className='flex flex-col items-end'>
-                        <div>
-                            <Link href={'https://www.worldcoffeealliance.com'} target='_blank' className='flex-shrink-0 my-auto h-max'>
-                                <img className='w-[12rem]' src='https://worldcoffeealliance.com/wp-content/uploads/2021/08/WCA_new_logo.png'></img>
-                            </Link>
+                <div className='flex flex-col lg:flex-row'>
+                    <div className="content-center self-center text-center pr-24 w-4/6">
+                        <div className='w-full px-16 justify-items-stretch'>
+                            <div className='py-6 my-auto'>
+                                <p className="text-4xl font-bold tracking-tight text-white sm:text-6xl">World Coffee Summit</p>
+                                <p className="text-4xl font-bold tracking-tight text-white sm:text-6xl">& World Coffee Exhibition</p>
+                            </div>
                         </div>
-                        
-                        <div className='mt-24'>
-                            <Link rel='noreferer' className='flex-shrink-0 flex w-full text-center justify-self-end px-6 py-2 mx-auto text-2xl font-bold tracking-tight text-gray-900 bg-yellow-500 hover:underline h-max sm:text-4xl' href="/interest">
-                                REGISTER INTEREST
-                            </Link>
+
+                        <p className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Leveraging Scalable Technology</p>
+                        <p className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Towards A Net Positive Economy</p>
+                        <div className='flex flex-col items-center justify-center max-w-5xl mx-auto mt-6 sm:flex-row sm:gap-x-2 gap-y-2'>
+                            <div>
+                                <img className='w-[17rem]' src='https://worldcoffeealliance.com/wp-content/uploads/2023/06/QEII-CENTRE.png' />
+                            </div>
+                            <p className="px-6 py-2 font-bold tracking-tight text-white text-md mx-aut h-max bg-lime-700 w-fit sm:text-lg">16-17 October 2024</p>
+                        </div>
+                        <CountDown />
+                        <div className='flex justify-center max-w-5xl mx-auto mt-12 md:mt-0'>
+                            <AddToCalendarButton
+                                name="World Coffee Summit London & World Coffee Exhibition 2024"
+                                options={['Apple', 'Google', 'iCal', 'Outlook.com', 'Microsoft 365', 'Microsoft Teams', 'Yahoo']}
+                                location="Queen Elizabeth II Centre, London, England"
+                                startDate="2024-10-16"
+                                endDate="2024-10-16"
+                                startTime="09:00"
+                                endTime="17:30"
+                                trigger="click"
+                                description='A face-to-face Coffee Summit Exhibition on September 13, 2023'
+                                timeZone="Europe/Belfast"
+                            ></AddToCalendarButton>
+                        </div>
+                    </div>
+                    <div className='content-center self-center text-center md:py-0 w-2/6'>
+                        <div className='flex flex-col lg:pr-24 items-center'>
+                            <div className='md:mx-auto'>
+                                <Link rel='noreferer' className='flex-shrink-0 flex w-full text-center justify-self-end sm:px-6 py-2 mx-auto text-lg font-bold tracking-tight text-gray-900 bg-yellow-500 hover:underline h-max sm:text-2xl' href="/interest">
+                                    REGISTER INTEREST
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
