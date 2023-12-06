@@ -9,7 +9,7 @@ import Image from 'next/image';
 export default function Overview() {
     return (
         <>
-            <div id="overview" className="flex flex-col bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2023/12/Original-cover-photo-1.jpg')] pt-2 sm:py-4 pb-6 sm:pb-12 bg-cover bg-center mlg:flex-col">
+            <div id="overview" className="flex flex-col bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2023/12/Original-cover-photo-1-e1701886017889.jpg')] pt-2 sm:py-4 pb-6 sm:pb-12 bg-cover bg-center mlg:flex-col">
                 <div className='flex justify-end'>
                     <Link href={'https://www.worldcoffeealliance.com'} target='_blank' className='px-4'>
                         <img className='w-[12rem]' src='https://worldcoffeealliance.com/wp-content/uploads/2021/08/WCA_new_logo.png'></img>
