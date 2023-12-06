@@ -16,7 +16,7 @@ export default function Overview() {
                     </Link>
                 </div>
                 <div className='flex flex-col lg:flex-row'>
-                    <div className="content-center self-center text-center pr-24 w-4/6">
+                    <div className="content-center self-center text-center lg:pr-24 w-4/6">
                         <div className='w-full px-16 justify-items-stretch'>
                             <div className='py-6 my-auto'>
                                 <p className="text-4xl font-bold tracking-tight text-white sm:text-6xl">World Coffee Summit</p>
