@@ -50,7 +50,7 @@ const InterestForm = () => {
     const notificationMethods = [
       "Exhibiting/Sponsorship Opportunities",
       "Speaking Opportunities",
-      "Attending as a Visitor",
+      "Attending as a Delegate/Visitor",
       "Media Partner/Supporter",
       "Press Passes"
     ]
