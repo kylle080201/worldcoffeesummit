@@ -19,18 +19,18 @@ export default function Overview() {
                     <div className="content-center self-center text-center lg:pr-24 w-4/6">
                         <div className='w-full px-4 lg:px-16 justify-items-stretch'>
                             <div className='py-6 my-auto'>
-                                <p className="text-2xl font-bold tracking-tight text-white md:text-6xl">World Coffee Summit</p>
-                                <p className="text-2xl font-bold tracking-tight text-white md:text-6xl">& Exhibition London <span className='text-red-600'>2024</span></p>
+                                <p style={{ textShadow: "2px 6px 4px #6b7280", fontFamily: 'Arial' }} className="text-2xl font-bold tracking-tight text-white md:text-6xl">World Coffee Summit &</p>
+                                <p style={{ textShadow: "2px 6px 4px #6b7280", fontFamily: 'Arial' }} className="text-2xl font-bold tracking-tight text-white md:text-6xl">Exhibition London <span className='text-red-600'>2024</span></p>
                             </div>
                         </div>
 
-                        <p className="text-lg font-semibold tracking-tight text-gray-900 md:text-4xl">Leveraging Scalable Technology</p>
-                        <p className="text-lg font-semibold tracking-tight text-gray-900 md:text-4xl">Towards A Net Positive Economy</p>
+                        <p style={{ fontFamily: 'Arial' }} className="text-lg font-semibold tracking-tight text-gray-900 md:text-4xl ">Leveraging Scalable Technology</p>
+                        <p style={{ fontFamily: 'Arial' }} className="text-lg font-semibold tracking-tight text-gray-900 md:text-4xl">Towards A Net Positive Economy</p>
                         <div className='flex flex-col items-center justify-center max-w-5xl mx-auto mt-6 sm:flex-row sm:gap-x-2 gap-y-2'>
                             <div>
                                 <img className='w-[17rem]' src='https://worldcoffeealliance.com/wp-content/uploads/2023/06/QEII-CENTRE.png' />
                             </div>
-                            <p className="px-6 py-2 font-bold tracking-tight text-white text-md mx-aut h-max bg-lime-700 w-fit sm:text-lg">16-17 October 2024</p>
+                            <p className="px-4 py-1 font-bold tracking-tight text-white text-md mx-aut h-max bg-lime-700 w-fit sm:text-3xl">16-17 October 2024</p>
                         </div>
                         <CountDown />
                         <div className='flex justify-center max-w-5xl mx-auto mt-12 md:mt-0'>
@@ -48,10 +48,10 @@ export default function Overview() {
                             ></AddToCalendarButton>
                         </div>
                     </div>
-                    <div className='content-center self-center text-center md:py-0 w-2/6'>
-                        <div className='flex flex-col lg:pr-24 items-center'>
-                            <div className='md:mx-auto'>
-                                <Link rel='noreferer' className='flex-shrink-0 flex text-center w- justify-self-end sm:px-6 py-2 mx-auto text-lg font-bold tracking-tight text-gray-900 bg-yellow-500 hover:underline h-max md:text-2xl' href="/interest">
+                    <div className='content-center self-center text-center lg:-ml-24 md:py-0 w-2/6'>
+                        <div className='flex flex-col lg:mt-72 items-start'>
+                            <div className='mx-auto lg:mx-0'>
+                                <Link rel='noreferer' className='flex-shrink-0 flex text-center sm:px-4 py-2 mx-auto font-bold tracking-tight text-gray-900 bg-yellow-500 hover:underline h-max text-2xl lg:text-5xl' href="/interest">
                                     REGISTER <br/> INTEREST
                                 </Link>
                             </div>
