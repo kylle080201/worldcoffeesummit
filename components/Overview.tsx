@@ -20,7 +20,7 @@ export default function Overview() {
                         <div className='w-full px-4 lg:px-16 justify-items-stretch'>
                             <div className='py-6 my-auto'>
                                 <p className="text-2xl font-bold tracking-tight text-white md:text-6xl">World Coffee Summit</p>
-                                <p className="text-2xl font-bold tracking-tight text-white md:text-6xl">& Exhibition London</p>
+                                <p className="text-2xl font-bold tracking-tight text-white md:text-6xl">& Exhibition London <span className='text-red-600'>2024</span></p>
                             </div>
                         </div>
 
@@ -51,8 +51,8 @@ export default function Overview() {
                     <div className='content-center self-center text-center md:py-0 w-2/6'>
                         <div className='flex flex-col lg:pr-24 items-center'>
                             <div className='md:mx-auto'>
-                                <Link rel='noreferer' className='flex-shrink-0 flex w-full text-center justify-self-end sm:px-6 py-2 mx-auto text-lg font-bold tracking-tight text-gray-900 bg-yellow-500 hover:underline h-max md:text-2xl' href="/interest">
-                                    REGISTER INTEREST
+                                <Link rel='noreferer' className='flex-shrink-0 flex text-center w- justify-self-end sm:px-6 py-2 mx-auto text-lg font-bold tracking-tight text-gray-900 bg-yellow-500 hover:underline h-max md:text-2xl' href="/interest">
+                                    REGISTER <br/> INTEREST
                                 </Link>
                             </div>
                         </div>
