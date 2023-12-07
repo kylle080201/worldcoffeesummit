@@ -9,7 +9,7 @@ import Image from 'next/image';
 export default function Overview() {
     return (
         <>
-            <div id="overview" className="flex flex-col bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2023/12/Original-cover-photo-1-e1701886017889.jpg')] pt-2 sm:py-4 pb-6 sm:pb-12 bg-cover bg-center mlg:flex-col">
+            <div id="overview" className="flex flex-col bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2023/12/Original-cover-photo-2-scaled.jpg')] pt-2 sm:py-4 pb-6 sm:pb-12 bg-cover bg-center mlg:flex-col">
                 <div className='flex justify-end'>
                     <Link href={'https://www.worldcoffeealliance.com'} target='_blank' className='px-4'>
                         <img className='w-[12rem]' src='https://worldcoffeealliance.com/wp-content/uploads/2021/08/WCA_new_logo.png'></img>
@@ -17,15 +17,15 @@ export default function Overview() {
                 </div>
                 <div className='flex flex-col lg:flex-row'>
                     <div className="content-center self-center text-center lg:pr-24 w-4/6">
-                        <div className='w-full px-16 justify-items-stretch'>
+                        <div className='w-full px-4 lg:px-16 justify-items-stretch'>
                             <div className='py-6 my-auto'>
-                                <p className="text-4xl font-bold tracking-tight text-white sm:text-6xl">World Coffee Summit</p>
-                                <p className="text-4xl font-bold tracking-tight text-white sm:text-6xl">& Exhibition London</p>
+                                <p className="text-2xl font-bold tracking-tight text-white md:text-6xl">World Coffee Summit</p>
+                                <p className="text-2xl font-bold tracking-tight text-white md:text-6xl">& Exhibition London</p>
                             </div>
                         </div>
 
-                        <p className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Leveraging Scalable Technology</p>
-                        <p className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Towards A Net Positive Economy</p>
+                        <p className="text-lg font-semibold tracking-tight text-gray-900 md:text-4xl">Leveraging Scalable Technology</p>
+                        <p className="text-lg font-semibold tracking-tight text-gray-900 md:text-4xl">Towards A Net Positive Economy</p>
                         <div className='flex flex-col items-center justify-center max-w-5xl mx-auto mt-6 sm:flex-row sm:gap-x-2 gap-y-2'>
                             <div>
                                 <img className='w-[17rem]' src='https://worldcoffeealliance.com/wp-content/uploads/2023/06/QEII-CENTRE.png' />
@@ -51,7 +51,7 @@ export default function Overview() {
                     <div className='content-center self-center text-center md:py-0 w-2/6'>
                         <div className='flex flex-col lg:pr-24 items-center'>
                             <div className='md:mx-auto'>
-                                <Link rel='noreferer' className='flex-shrink-0 flex w-full text-center justify-self-end sm:px-6 py-2 mx-auto text-lg font-bold tracking-tight text-gray-900 bg-yellow-500 hover:underline h-max sm:text-2xl' href="/interest">
+                                <Link rel='noreferer' className='flex-shrink-0 flex w-full text-center justify-self-end sm:px-6 py-2 mx-auto text-lg font-bold tracking-tight text-gray-900 bg-yellow-500 hover:underline h-max md:text-2xl' href="/interest">
                                     REGISTER INTEREST
                                 </Link>
                             </div>
