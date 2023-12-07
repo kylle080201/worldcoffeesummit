@@ -64,7 +64,7 @@ const InterestForm = () => {
     const {
         register,
         handleSubmit,
-        formState: { errors },
+        formState: { errors, isSubmitting },
         control
     } = useForm();
 
@@ -184,8 +184,8 @@ const InterestForm = () => {
                           </fieldset>
                         </div>
                         <div className="flex justify-end">
-                            <input type="submit" className="flex justify-center px-3 py-2 text-sm font-semibold text-white border border-transparent rounded-md shadow-sm bg-lime-700 hover:cursor-pointer hover:bg-lime-900 focus:outline-none"
-                            />
+                            <button type="submit" disabled={isSubmitting} className="flex justify-center disabled:bg-lime-700/40 px-3 py-2 text-sm font-semibold text-white border border-transparent rounded-md shadow-sm enabled:bg-lime-700 enabled:hover:bg-lime-900 focus:outline-none"
+                            >Submit</button>
                         </div>
                     </form>
                     <BackButton />
