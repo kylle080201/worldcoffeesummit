@@ -120,7 +120,7 @@ export default function Exhibition() {
                     </div>
                     <ExhibitionAgenda />
                     <CuppingTeam />
-                    {/* <Exhibitors /> */}
+                    <Exhibitors />
                     <div className="w-full px-12 mx-auto sm:max-w-5xl">
                         <p className="mt-12 text-lg leading-7 text-gray-600">For exhibition queries please email <Link href={"mailto:info@worldcoffeealliance.com"} target="_blank" className="text-yellow-900 underline hover:underline-offset-4"> mavis@worldcoffeealliance.com</Link></p>
                     </div>
