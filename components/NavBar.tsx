@@ -43,7 +43,7 @@ function Navbar() {
                                     <Link href='/'>
                                         <img
                                             className="flex-shrink-0 hidden w-32 h-auto lg:w-64 md:flex"
-                                            src="https://worldcoffeealliance.com/wp-content/uploads/2023/05/world-coffee-summit-high-resolution-logo-color-on-transparent-background.png"
+                                            src="https://worldcoffeealliance.com/wp-content/uploads/2024/04/world-coffee-innovation-summit-high-resolution-logo-transparent.png"
                                             alt="WCS Logo"
                                         />
                                     </Link>
