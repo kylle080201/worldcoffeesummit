@@ -9,14 +9,14 @@ export default function Overview() {
     return (
         <>
             <div id="overview" className="bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2024/04/WCIS_Poster-full-cropped-resized-width-1.jpg')] pt-2 sm:py-24 pb-6 sm:pb-12 bg-cover bg-center lg:bg-right-bottom mlg:flex-col px-12">
-                <div className='flex flex-col lg:flex-row-reverse items-center lg:-ml-16'>
+                <div className='flex flex-col lg:flex-row-reverse  lg:-ml-16'>
                     <div className='flex flex-col items-center lg:items-end lg:justify-between w-full lg:w-1/4'>
                         <Link href={'https://www.worldcoffeealliance.com'} target='_blank' className='px-4'>
                             <img className='w-[15rem]' src='https://worldcoffeealliance.com/wp-content/uploads/2021/08/WCA_new_logo.png'></img>
                         </Link>
                     </div>
-                    <div className='flex flex-col lg:flex-row w-3/4'>
-                        <div className="content-center self-center text-center ">
+                    <div className='flex flex-col lg:flex-row w-3/4 mx-auto'>
+                        <div className="content-center self-center text-center">
                             <div className='w-full px-4 lg:px-16 justify-items-stretch'>
                                 <div className='py-6 my-auto'>
                                     <p className="text-2xl font-bold tracking-tight text-[#674E46] md:text-6xl">REDEFINING SHARED VALUE</p>
@@ -50,7 +50,7 @@ export default function Overview() {
                                     {/* <Link rel='noreferer' className='flex-shrink-0 flex text-center sm:px-4 py-2 mx-auto font-bold tracking-tight text-[#674E46] bg-yellow-500 hover:underline h-max text-2xl lg:text-5xl' href="/interest">
                                         SAVE THE DATE
                                     </Link> */}
-                                    <p className='flex-shrink-0 flex text-center sm:px-4 py-2 mx-auto font-bold tracking-tight text-[#674E46] bg-yellow-500 h-max text-2xl lg:text-5xl'>
+                                    <p className='flex-shrink-0 flex text-center sm:px-4 py-2 mx-auto font-bold tracking-tight text-[#674E46] bg-yellow-500 h-max text-lg lg:text-2xl'>
                                         SAVE THE DATE
                                     </p>
                                 </div>
@@ -59,11 +59,11 @@ export default function Overview() {
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-col md:flex-row gap-4 w-full md:justify-between justify-center mt-12 lg:mt-32'>
-                        <div className='text-lg lg:text-4xl font-bold text-[#674E46]'>
+                <div className='flex flex-col md:flex-row gap-4 w-full md:justify-between justify-center mt-12 lg:mt-44'>
+                        <div className='text-lg lg:text-2xl font-bold text-[#674E46]'>
                             WWW.WORLDCOFFEEINNOVATIONSUMMIT.COM
                         </div>
-                        <div className='text-lg lg:text-4xl font-bold text-[#674E46]'>
+                        <div className='text-lg lg:text-2xl font-bold text-[#674E46]'>
                             #WCIS24
                         </div>
                 </div>
