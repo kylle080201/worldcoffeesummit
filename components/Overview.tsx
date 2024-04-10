@@ -11,7 +11,7 @@ export default function Overview() {
             <div id="overview" className="bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2024/04/WCIS_Poster-full-cropped-resized-width-1.jpg')] pt-2 sm:py-24 pb-6 sm:pb-12 bg-cover bg-center lg:bg-right-bottom mlg:flex-col px-12">
                 <div className='flex flex-col lg:flex-row-reverse  lg:-ml-16'>
                     <div className='flex flex-col items-center lg:items-end lg:justify-between w-full lg:w-1/4'>
-                        <Link href={'https://www.worldcoffeealliance.com'} target='_blank' className='px-4'>
+                        <Link href={'https://www.worldcoffeealliance.com'} target='_blank' className='px-4 lg:-mt-16'>
                             <img className='w-[15rem]' src='https://worldcoffeealliance.com/wp-content/uploads/2021/08/WCA_new_logo.png'></img>
                         </Link>
                     </div>

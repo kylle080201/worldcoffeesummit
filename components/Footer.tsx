@@ -10,7 +10,7 @@ export default function Footer() {
         <>
             <footer>
                 <div className="absolute bottom-0 w-full py-4 text-center bg-gray-200" >
-                    ©2023
+                    ©2024
                     <a className="font-bold" rel="noopener noreferrer" href="https://worldcoffeealliance.com/" target={"_blank"}> World Coffee Alliance </a>
                     | All Rights Reserved | <Link href="/privacy-policy" target='_blank' className='underline'>Privacy Policy</Link> | <button type='button' onClick={() => { setOpenTermsAndConditions(!openTermsAndConditions) }} className='underline'>Terms and Conditions</button>
                 </div>
