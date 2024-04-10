@@ -4,32 +4,31 @@ import React from 'react'
 import CountDown from './CountDown'
 import { AddToCalendarButton } from 'add-to-calendar-button-react';
 import AgendaHighlights from './AgendaHighlights';
-import Image from 'next/image';
 
 export default function Overview() {
     return (
         <>
-            <div id="overview" className="bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2024/04/WCIS_Poster-full-cropped-resized.jpg')] pt-2 sm:py-24 pb-6 sm:pb-12 bg-cover bg-center lg:bg-right mlg:flex-col px-12">
-                <div className='flex flex-col lg:flex-row-reverse'>
-                    <div className='flex flex-col items-center lg:items-end lg:justify-between w-full lg:w-1/2'>
+            <div id="overview" className="bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2024/04/WCIS_Poster-full-cropped-resized-width-1.jpg')] pt-2 sm:py-24 pb-6 sm:pb-12 bg-cover bg-center lg:bg-right-bottom mlg:flex-col px-12">
+                <div className='flex flex-col lg:flex-row-reverse items-center lg:-ml-16'>
+                    <div className='flex flex-col items-center lg:items-end lg:justify-between w-full lg:w-1/4'>
                         <Link href={'https://www.worldcoffeealliance.com'} target='_blank' className='px-4'>
                             <img className='w-[15rem]' src='https://worldcoffeealliance.com/wp-content/uploads/2021/08/WCA_new_logo.png'></img>
                         </Link>
                     </div>
-                    <div className='flex flex-col lg:flex-row'>
-                        <div className="content-center self-center text-center lg:px-12">
+                    <div className='flex flex-col lg:flex-row w-3/4'>
+                        <div className="content-center self-center text-center ">
                             <div className='w-full px-4 lg:px-16 justify-items-stretch'>
                                 <div className='py-6 my-auto'>
-                                    <p style={{ textShadow: "2px 6px 4px #6b7280", fontFamily: 'Oswald' }} className="text-2xl font-bold tracking-tight text-[#674E46] md:text-6xl">REDEFINING SHARED VALUE</p>
+                                    <p className="text-2xl font-bold tracking-tight text-[#674E46] md:text-6xl">REDEFINING SHARED VALUE</p>
                                 </div>
                             </div>
-                            <p style={{ fontFamily: 'Oswald' }} className="text-lg font-semibold tracking-tight text-white md:text-4xl">INNOVATION TOWARDS</p>
-                            <p style={{ fontFamily: 'Oswald' }} className="text-lg font-semibold tracking-tight text-white md:text-4xl">A NET POSITIVE FUTURE</p>
+                            <p className="text-lg font-semibold tracking-tight text-white md:text-4xl">INNOVATION TOWARDS</p>
+                            <p className="text-lg font-semibold tracking-tight text-white md:text-4xl">A NET POSITIVE FUTURE</p>
                             <div className='flex flex-col items-center justify-center max-w-5xl mx-auto mt-6 sm:flex-row sm:gap-x-2 gap-y-2'>
                                 <div>
                                     <img className='w-[17rem]' src='https://worldcoffeealliance.com/wp-content/uploads/2023/06/QEII-CENTRE.png' />
                                 </div>
-                                <p style={{ fontFamily: 'Oswald' }} className="px-4 py-1 font-bold tracking-tight text-white text-md mx-aut h-max bg-lime-700 w-fit sm:text-3xl">16-17 October 2024</p>
+                                <p className="px-4 py-1 font-bold tracking-tight text-white text-md mx-aut h-max bg-lime-700 w-fit sm:text-3xl">16-17 October 2024</p>
                             </div>
                             <CountDown />
                             <div  className='flex  justify-center max-w-5xl mx-auto mt-12 md:mt-0'>
@@ -46,22 +45,25 @@ export default function Overview() {
                                     timeZone="Europe/Belfast"
                                 ></AddToCalendarButton>
                             </div>
-                            <div className='flex flex-col items-center mt-12'>
+                            <div className='flex flex-col items-center mt-4'>
                                 <div className='mx-auto lg:mx-0'>
-                                    <Link style={{ fontFamily: 'Oswald' }} rel='noreferer' className='flex-shrink-0 flex text-center sm:px-4 py-2 mx-auto font-bold tracking-tight text-[#674E46] bg-yellow-500 hover:underline h-max text-2xl lg:text-5xl' href="/interest">
+                                    {/* <Link rel='noreferer' className='flex-shrink-0 flex text-center sm:px-4 py-2 mx-auto font-bold tracking-tight text-[#674E46] bg-yellow-500 hover:underline h-max text-2xl lg:text-5xl' href="/interest">
                                         SAVE THE DATE
-                                    </Link>
+                                    </Link> */}
+                                    <p className='flex-shrink-0 flex text-center sm:px-4 py-2 mx-auto font-bold tracking-tight text-[#674E46] bg-yellow-500 h-max text-2xl lg:text-5xl'>
+                                        SAVE THE DATE
+                                    </p>
                                 </div>
                             </div>
                             
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-col md:flex-row gap-4 w-full md:justify-between justify-center mt-24'>
-                        <div style={{ fontFamily: 'Oswald' }} className='text-lg lg:text-4xl font-bold text-[#674E46]'>
+                <div className='flex flex-col md:flex-row gap-4 w-full md:justify-between justify-center mt-12 lg:mt-32'>
+                        <div className='text-lg lg:text-4xl font-bold text-[#674E46]'>
                             WWW.WORLDCOFFEEINNOVATIONSUMMIT.COM
                         </div>
-                        <div style={{ fontFamily: 'Oswald' }} className='text-lg lg:text-4xl font-bold text-[#674E46]'>
+                        <div className='text-lg lg:text-4xl font-bold text-[#674E46]'>
                             #WCIS24
                         </div>
                 </div>

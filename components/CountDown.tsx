@@ -45,7 +45,7 @@ const CountDown = () => {
                 null
             ) : (
                 <>
-                    <div style={{ fontFamily: 'Oswald' }} className="flex-col py-8 justify-self-center">
+                    <div className="flex-col py-8  justify-self-center">
                         <div className="flex flex-row justify-center w-full mx-auto text-center">
                             <div className="flex flex-col">
                                 <div className="flex flex-col p-2 mr-1 bg-white rounded-md md:p-4">
