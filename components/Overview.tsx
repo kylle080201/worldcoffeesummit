@@ -9,7 +9,7 @@ import Image from 'next/image';
 export default function Overview() {
     return (
         <>
-            <div id="overview" className="bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2024/04/WCIS_Poster-full.jpg')] pt-2 sm:py-24 pb-6 sm:pb-12 bg-cover bg-right mlg:flex-col px-12">
+            <div id="overview" className="bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2024/04/WCIS_Poster-full-cropped-resized.jpg')] pt-2 sm:py-24 pb-6 sm:pb-12 bg-cover bg-right mlg:flex-col px-12">
                 <div className='flex'>
                     <div className='flex flex-col lg:flex-row'>
                         <div className="content-center self-center text-center lg:px-12">
