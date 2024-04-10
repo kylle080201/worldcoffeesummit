@@ -9,27 +9,21 @@ import Image from 'next/image';
 export default function Overview() {
     return (
         <>
-            <div id="overview" className="flex flex-col bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2024/04/WCIS_Poster_Raw-copy.jpg')] pt-2 sm:py-4 pb-6 sm:pb-12 bg-cover bg-center mlg:flex-col">
-                <div className='flex justify-end'>
-                    <Link href={'https://www.worldcoffeealliance.com'} target='_blank' className='px-4'>
-                        <img className='w-[15rem]' src='https://worldcoffeealliance.com/wp-content/uploads/2021/08/WCA_new_logo.png'></img>
-                    </Link>
-                </div>
+            <div id="overview" className="flex bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2024/04/WCIS_Poster-full.jpg')] pt-2 sm:py-24 pb-6 sm:pb-12 bg-cover bg-right mlg:flex-col px-12">
                 <div className='flex flex-col lg:flex-row'>
                     <div className="content-center self-center text-center lg:px-12">
                         <div className='w-full px-4 lg:px-16 justify-items-stretch'>
                             <div className='py-6 my-auto'>
-                                <p style={{ textShadow: "2px 6px 4px #6b7280", fontFamily: 'Oswald' }} className="text-2xl font-bold tracking-tight text-yellow-900 md:text-6xl">REDEFINING SHARED VALUE</p>
+                                <p style={{ textShadow: "2px 6px 4px #6b7280", fontFamily: 'Oswald' }} className="text-2xl font-bold tracking-tight text-[#674E46] md:text-6xl">REDEFINING SHARED VALUE</p>
                             </div>
                         </div>
-
                         <p style={{ fontFamily: 'Oswald' }} className="text-lg font-semibold tracking-tight text-white md:text-4xl">INNOVATION TOWARDS</p>
                         <p style={{ fontFamily: 'Oswald' }} className="text-lg font-semibold tracking-tight text-white md:text-4xl">A NET POSITIVE FUTURE</p>
                         <div className='flex flex-col items-center justify-center max-w-5xl mx-auto mt-6 sm:flex-row sm:gap-x-2 gap-y-2'>
                             <div>
                                 <img className='w-[17rem]' src='https://worldcoffeealliance.com/wp-content/uploads/2023/06/QEII-CENTRE.png' />
                             </div>
-                            <p className="px-4 py-1 font-bold tracking-tight text-white text-md mx-aut h-max bg-lime-700 w-fit sm:text-3xl">16-17 October 2024</p>
+                            <p style={{ fontFamily: 'Oswald' }} className="px-4 py-1 font-bold tracking-tight text-white text-md mx-aut h-max bg-lime-700 w-fit sm:text-3xl">16-17 October 2024</p>
                         </div>
                         <CountDown />
                         <div  className='flex  justify-center max-w-5xl mx-auto mt-12 md:mt-0'>
@@ -46,24 +40,28 @@ export default function Overview() {
                                 timeZone="Europe/Belfast"
                             ></AddToCalendarButton>
                         </div>
-                        <div className='flex flex-col items-center mt-24'>
+                        <div className='flex flex-col items-center mt-12'>
                             <div className='mx-auto lg:mx-0'>
-                                <Link style={{ fontFamily: 'Oswald' }} rel='noreferer' className='flex-shrink-0 flex text-center sm:px-4 py-2 mx-auto font-bold tracking-tight text-yellow-900 bg-yellow-500 hover:underline h-max text-2xl lg:text-5xl' href="/interest">
+                                <Link style={{ fontFamily: 'Oswald' }} rel='noreferer' className='flex-shrink-0 flex text-center sm:px-4 py-2 mx-auto font-bold tracking-tight text-[#674E46] bg-yellow-500 hover:underline h-max text-2xl lg:text-5xl' href="/interest">
                                     SAVE THE DATE
                                 </Link>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div className='flex flex-col md:flex-row gap-4 w-full md:justify-between justify-center mt-24 px-12 md:px-32'>
-                        <div className='text-lg lg:text-4xl font-bold text-yellow-900'>
+                        <div style={{ fontFamily: 'Oswald' }} className='text-lg mt-24 lg:text-4xl font-bold text-[#674E46]'>
                             WWW.WORLDCOFFEEINNOVATIONSUMMIT.COM
                         </div>
-                        <div className='text-lg lg:text-4xl font-bold text-yellow-900'>
-                            #WCIS24
-                        </div>
+                    </div>
+                </div>
+                <div className='flex flex-col items-end justify-between w-1/2'>
+                    <Link href={'https://www.worldcoffeealliance.com'} target='_blank' className='px-4'>
+                        <img className='w-[15rem]' src='https://worldcoffeealliance.com/wp-content/uploads/2021/08/WCA_new_logo.png'></img>
+                    </Link>
+                    <div style={{ fontFamily: 'Oswald' }} className='text-lg lg:text-4xl font-bold px-4 text-[#674E46]'>
+                        #WCIS24
+                    </div>
                 </div>
             </div>
+            
             <div className='justify-center py-12 mx-auto bg-white max-w-7xl sm:py-20' >
                 <p className="mt-6 text-2xl font-bold tracking-tight text-center text-gray-900 sm:text-4xl">2024 OVERVIEW</p>
                 <div className='flex flex-col'>
@@ -72,7 +70,7 @@ export default function Overview() {
                             The future of coffee is replete with overwhelming promises, and highly targeted and science-based digital and technology innovation. However, reality does not paint a rosy picture. With the difficult challenges of Climate change, soil and water depletion, lowering supply, decrease in global coffee prices and increasing consumer demand for sustainable coffee, the perpetuation of poverty-stricken smallholder farmers, something has to change.
                         </p>
                         <p className="mt-4 text-xl leading-8 text-gray-900 sm:mt-8">
-                            <span className='font-bold'>World Coffee Innovation Summit 2024</span> <span className='font-bold italic'>“Redefining Shared Value: Innovation Towards a Net Positive Future”</span> will convene global leaders and stakeholders to showcase various scalable innovations, their impact on traceability and sustainability, their capabilities to mitigate climate and financial risks, and fostering regenerative solutions. By integrating a shared value approach within the corporate business model, innovative solutions will drive not only business but also environmental and social value for farming communities. This net-positive economic approach helps to create a sustainable future for coffee and contributes to the overall well-being of society.
+                            <span className='font-bold'>World Coffee Innovation Summit 2024</span> <span className='font-bold italic'>“Redefining Shared Value: Innovation Towards a Net Positive Future”</span> will convene global leaders, stakeholders and innovators to showcase various scalable innovations, their impact on traceability and sustainability, their capabilities to mitigate climate and financial risks, and fostering regenerative solutions. By integrating a shared value approach within the corporate business model, innovative solutions will drive not only business but also environmental and social value for farming communities. This net-positive economic approach helps to create a sustainable future for coffee and contributes to the overall well-being of society.
                         </p>
                     </div>
                     <div className='items-center px-24 my-auto'>
