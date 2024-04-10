@@ -9,8 +9,13 @@ import Image from 'next/image';
 export default function Overview() {
     return (
         <>
-            <div id="overview" className="bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2024/04/WCIS_Poster-full-cropped-resized.jpg')] pt-2 sm:py-24 pb-6 sm:pb-12 bg-cover bg-right mlg:flex-col px-12">
-                <div className='flex'>
+            <div id="overview" className="bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2024/04/WCIS_Poster-full-cropped-resized.jpg')] pt-2 sm:py-24 pb-6 sm:pb-12 bg-cover bg-center lg:bg-right mlg:flex-col px-12">
+                <div className='flex flex-col lg:flex-row-reverse'>
+                    <div className='flex flex-col items-center lg:items-end lg:justify-between w-full lg:w-1/2'>
+                        <Link href={'https://www.worldcoffeealliance.com'} target='_blank' className='px-4'>
+                            <img className='w-[15rem]' src='https://worldcoffeealliance.com/wp-content/uploads/2021/08/WCA_new_logo.png'></img>
+                        </Link>
+                    </div>
                     <div className='flex flex-col lg:flex-row'>
                         <div className="content-center self-center text-center lg:px-12">
                             <div className='w-full px-4 lg:px-16 justify-items-stretch'>
@@ -50,11 +55,6 @@ export default function Overview() {
                             </div>
                             
                         </div>
-                    </div>
-                    <div className='flex flex-col items-end justify-between w-1/2'>
-                        <Link href={'https://www.worldcoffeealliance.com'} target='_blank' className='px-4'>
-                            <img className='w-[15rem]' src='https://worldcoffeealliance.com/wp-content/uploads/2021/08/WCA_new_logo.png'></img>
-                        </Link>
                     </div>
                 </div>
                 <div className='flex flex-col md:flex-row gap-4 w-full md:justify-between justify-center mt-24'>
