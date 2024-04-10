@@ -4,7 +4,7 @@ function Agenda() {
   return (
     <>
         <div id="agenda" className='py-20 max-w-5xl mx-auto'>
-              <h2 className="text-4xl font-bold text-center tracking-tight">AGENDA</h2>
+              <h2 className="text-4xl font-bold text-center tracking-tight">2023 AGENDA</h2>
               {/* agenda 1 */}
               <div className='mt-12'>
                   <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
