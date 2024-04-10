@@ -78,7 +78,7 @@ export default function Exhibitors() {
             <div className='w-full pt-20  bg-white' id='partners'>
                 <div>
                     <div className="max-w-2xl mx-auto text-center">
-                        <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">EXHIBITORS</p>
+                        <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">2023 EXHIBITORS</p>
                     </div>
                     <div className='grid px-4 lg:px-0 items-center justify-center grid-cols-1 gap-2 mx-auto mt-12 md:grid-cols-4 sm:gap-4 sm:flex-row'>
                         {exhibitors.map((exhibitor) => (

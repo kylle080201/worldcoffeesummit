@@ -19,7 +19,7 @@ export default function RootLayout({
           type="image/x-icon" />
         <meta property="og:title" content="World Coffee Summit 2023" />
         <meta property="og:description" content="An in-person high-level summit connects Coffee, Climate Change and Finance on 13th September 2023" />
-        <meta property="og:image" content="https://worldcoffeealliance.com/wp-content/uploads/2023/08/WCS-LinkedIn-Banner.png" />
+        <meta property="og:image" content="https://worldcoffeealliance.com/wp-content/uploads/2024/04/world-coffee-innovation-summit-high-resolution-logo-transparent-1.png" />
       </head>
       <body>
         <Navbar />

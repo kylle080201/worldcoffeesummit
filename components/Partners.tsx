@@ -150,7 +150,7 @@ export default function Partners() {
             <div className='w-full py-20 bg-white' id='partners'>
                 <div className='mb-20'>
                     <div className="max-w-2xl mx-auto text-center">
-                        <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">SPONSORS</p>
+                        <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">2023 SPONSORS</p>
                     </div>
 
                     <div className="max-w-2xl mx-auto text-center mt-12">
@@ -221,7 +221,7 @@ export default function Partners() {
                 </div>
                 <div className='mb-20'>
                     <div className="max-w-2xl mx-auto text-center">
-                        <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">EVENT PARTNERS</p>
+                        <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">2023 EVENT PARTNERS</p>
                     </div>
                     <div className='grid items-center justify-center grid-cols-1 gap-4 mx-auto mt-12 sm:grid-cols-3 sm:gap-12 sm:flex-row sm:max-w-7xl'>
                         {partners.map((partner) => (
@@ -236,7 +236,7 @@ export default function Partners() {
                 </div>
                 <div className='mb-20'>
                     <div className="max-w-2xl mx-auto text-center">
-                        <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">MEDIA PARTNERS</p>
+                        <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">2023 MEDIA PARTNERS</p>
                     </div>
                     <div className='grid items-center justify-center grid-cols-1 gap-4 mx-auto mt-12 sm:grid-cols-3 sm:gap-12 sm:flex-row sm:max-w-7xl'>
                         {mediaPartners.map((partner) => (
