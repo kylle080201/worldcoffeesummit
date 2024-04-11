@@ -50,7 +50,7 @@ export default function Overview() {
                                     {/* <Link rel='noreferer' className='flex-shrink-0 flex text-center sm:px-4 py-2 mx-auto font-bold tracking-tight text-[#674E46] bg-yellow-500 hover:underline h-max text-2xl lg:text-5xl' href="/interest">
                                         SAVE THE DATE
                                     </Link> */}
-                                    <p className='flex-shrink-0 flex text-center sm:px-4 py-2 mx-auto font-bold tracking-tight text-[#674E46] bg-yellow-500 h-max text-lg lg:text-2xl'>
+                                    <p className='flex-shrink-0 flex text-center px-4 py-2 mx-auto font-bold tracking-tight text-[#674E46] bg-yellow-500 h-max text-lg lg:text-2xl'>
                                         SAVE THE DATE
                                     </p>
                                 </div>
@@ -60,10 +60,10 @@ export default function Overview() {
                     </div>
                 </div>
                 <div className='flex flex-col md:flex-row gap-4 w-full md:justify-between justify-center mt-12 lg:mt-44'>
-                        <div className='text-lg lg:text-2xl font-bold text-[#674E46]'>
+                        <div className='text-sm lg:text-2xl font-bold text-[#674E46]'>
                             WWW.WORLDCOFFEEINNOVATIONSUMMIT.COM
                         </div>
-                        <div className='text-lg lg:text-2xl font-bold text-[#674E46]'>
+                        <div className='text-sm lg:text-2xl font-bold text-[#674E46]'>
                             #WCIS24
                         </div>
                 </div>
