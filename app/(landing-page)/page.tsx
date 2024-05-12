@@ -6,18 +6,21 @@ import Exhibition from "../../components/Exhibition";
 import Partners from "../../components/Partners";
 import WhyAttend from "../../components/WhyAttend";
 import Agenda from "../../components/Agenda";
+import SpeakerSlider from "../../components/LoopedSpeakers";
+import SummitInTheNews from "../../components/SummitInTheNews";
 
 export default function HomePage() {
     return (
         <>
             <div>
                 <Overview />
-                <Speakers />
+                <SpeakerSlider />
                 {/* <Agenda /> */}
                 <WhyAttend />
                 <Venue />
                 <Partners />
                 {/* <Exhibition /> */}
+                <SummitInTheNews />
                 <FAQ />
             </div>
         </>

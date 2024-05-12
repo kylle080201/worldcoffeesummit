@@ -6,6 +6,8 @@ import { AddToCalendarButton } from 'add-to-calendar-button-react';
 import AgendaHighlights from './AgendaHighlights';
 
 import KeyThemes from './KeyThemes';
+import ImageCarousel from './ImageCarousel';
+import Testimonials from './LoopedTestimonials';
 
 export default function Overview() {
     return (
@@ -71,7 +73,13 @@ export default function Overview() {
                 </div>
             </div>
 
-            <div className='w-full bg-gray-100'>
+            <div className='py-24'>
+                <ImageCarousel />
+            </div>
+
+            <Testimonials />
+
+            <div className='w-full'>
                 <div className='flex md:flex-row flex-col max-w-7xl m-auto py-12 md:py-20'>
                     <div className="text-2xl leading-8 text-gray-900 w-full md:w-1/2">
                         As the leading summit that connects Coffee, Climate change and Finance through Innovation, World Coffee Innovation Summit is a must-attend for those invested in advancing nature-positive, resilient agriculture and food systems. Join 1,000 international agri-food professionals in London for two days of discussions and networking.
@@ -91,22 +99,24 @@ export default function Overview() {
                     </div>
                 </div>
             </div>
-            
-            <div className='justify-center py-12 mx-auto max-w-7xl bg-white sm:py-20' >
-                <p className="mt-12 text-2xl font-bold tracking-tight text-center text-gray-900 sm:text-4xl">2024 OVERVIEW</p>
-                <div className='flex flex-col'>
-                    <div className='px-12'>
-                        <p className="mt-4 text-xl leading-8 text-gray-900 sm:mt-8">
-                            The future of coffee is replete with overwhelming promises, and highly targeted and science-based digital and technology innovation. However, reality does not paint a rosy picture. With the difficult challenges of Climate change, soil and water depletion, lowering supply, decrease in global coffee prices and increasing consumer demand for sustainable coffee, the perpetuation of poverty-stricken smallholder farmers, something has to change.
-                        </p>
-                        <p className="mt-4 text-xl leading-8 text-gray-900 sm:mt-8">
-                            <span className='font-bold'>World Coffee Innovation Summit 2024</span> <span className='font-bold italic'>“Redefining Shared Value: Innovation Towards a Net Positive Future”</span> will convene global leaders, stakeholders and innovators to showcase various scalable innovations, their impact on traceability and sustainability, their capabilities to mitigate climate and financial risks, and fostering regenerative solutions. By integrating a shared value approach within the corporate business model, innovative solutions will drive not only business but also environmental and social value for farming communities. This net-positive economic approach helps to create a sustainable future for coffee and contributes to the overall well-being of society.
-                        </p>
+            <div className='w-full bg-gray-100'>
+                <div className='justify-center py-12 mx-auto max-w-7xl sm:py-20' >
+                    <p className="mt-12 text-2xl font-bold tracking-tight text-center text-gray-900 sm:text-4xl">2024 OVERVIEW</p>
+                    <div className='flex flex-col'>
+                        <div className='px-12'>
+                            <p className="mt-4 text-xl leading-8 text-gray-900 sm:mt-8">
+                                The future of coffee is replete with overwhelming promises, and highly targeted and science-based digital and technology innovation. However, reality does not paint a rosy picture. With the difficult challenges of Climate change, soil and water depletion, lowering supply, decrease in global coffee prices and increasing consumer demand for sustainable coffee, the perpetuation of poverty-stricken smallholder farmers, something has to change.
+                            </p>
+                            <p className="mt-4 text-xl leading-8 text-gray-900 sm:mt-8">
+                                <span className='font-bold'>World Coffee Innovation Summit 2024</span> <span className='font-bold italic'>“Redefining Shared Value: Innovation Towards a Net Positive Future”</span> will convene global leaders, stakeholders and innovators to showcase various scalable innovations, their impact on traceability and sustainability, their capabilities to mitigate climate and financial risks, and fostering regenerative solutions. By integrating a shared value approach within the corporate business model, innovative solutions will drive not only business but also environmental and social value for farming communities. This net-positive economic approach helps to create a sustainable future for coffee and contributes to the overall well-being of society.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
+            
             {/* <AgendaHighlights /> */}
-            <div className='w-full bg-gray-100 py-24'>
+            <div className='w-full py-24'>
                 <KeyThemes />
             </div>
         </>

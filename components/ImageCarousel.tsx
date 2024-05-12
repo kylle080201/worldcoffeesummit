@@ -53,7 +53,7 @@ const slideImages = [
   },
 ];
 
-const DemoCarousel = () => {
+const ImageCarousel = () => {
 
   return (
       <Carousel showArrows={true}>
@@ -97,4 +97,4 @@ const DemoCarousel = () => {
   );
 };
 
-export default DemoCarousel;
+export default ImageCarousel;
