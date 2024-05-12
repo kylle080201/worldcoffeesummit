@@ -1,3 +1,4 @@
+"use client"
 import FAQ from "../../components/FAQ";
 import Venue from "../../components/Venue";
 import Overview from "../../components/Overview";
@@ -8,6 +9,8 @@ import WhyAttend from "../../components/WhyAttend";
 import Agenda from "../../components/Agenda";
 import SpeakerSlider from "../../components/LoopedSpeakers";
 import SummitInTheNews from "../../components/SummitInTheNews";
+import ImageCarousel from "../../components/ImageCarousel";
+import Testimonials from "../../components/LoopedTestimonials";
 
 export default function HomePage() {
     return (
@@ -15,6 +18,8 @@ export default function HomePage() {
             <div>
                 <Overview />
                 <SpeakerSlider />
+                <ImageCarousel />
+                <Testimonials />
                 {/* <Agenda /> */}
                 <WhyAttend />
                 <Venue />

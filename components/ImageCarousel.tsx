@@ -56,7 +56,8 @@ const slideImages = [
 const ImageCarousel = () => {
 
   return (
-      <Carousel showArrows={true}>
+    <div className='py-24 max-w-7xl mx-auto'>
+       <Carousel showArrows={true}>
           <div>
               <img src={slideImages[0].url} alt="Slide 1" />
           </div>
@@ -94,6 +95,8 @@ const ImageCarousel = () => {
               <img src={slideImages[11].url} alt="Slide 12" />
           </div>
       </Carousel>
+    </div>
+     
   );
 };
 

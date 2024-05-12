@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image'
+import { Carousel } from 'react-responsive-carousel';
 
 type Testimonial = {
   text: string,
@@ -26,59 +27,47 @@ const testimonials = [
 ];
 
 const Testimonials = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const sliderRef = useRef<HTMLDivElement>(null);
-
-  // Create a temporary array by concatenating the original testimonials array multiple times
-  const tempTestimonials: Testimonial[] = [];
-  const numIterations = 5; // Number of times to repeat the testimonials
-  for (let i = 0; i < numIterations; i++) {
-    tempTestimonials.push(...testimonials);
-  }
-
-  useEffect(() => {
-    const slider = sliderRef.current;
-    if (slider) {
-      let position = 0;
-      const sliderWidth = slider.offsetWidth;
-      const numTestimonials = tempTestimonials.length;
-
-      slider.style.transition = 'none'; // Disable transition initially
-
-      const moveSlider = () => {
-        position -= 1; // Decrement position to move right
-        if (Math.abs(position) >= sliderWidth) {
-          position += sliderWidth; // Reset position when reaching the end
-          setCurrentIndex((currentIndex + 1) % numTestimonials); // Move to the next testimonial
-        }
-        slider.style.transform = `translateX(${position}px)`; // Apply transformation
-      };
-
-      const intervalId = setInterval(moveSlider, 15); // Move slider every 15 milliseconds
-
-      return () => {
-        clearInterval(intervalId); // Clean up the interval on component unmount
-      };
-    }
-  }, [tempTestimonials, currentIndex]);
 
   return (
     <div className='w-full bg-gray-100 py-24'>
-      <div className="relative overflow-hidden max-w-7xl flex mx-auto h-[400px]">
-        <div ref={sliderRef} className="flex absolute top-0 left-0">
-          {tempTestimonials.map((testimonial, index) => (
-            <div key={index} className="w-[500px] px-2 ">
-              <div className="testimonial-item bg-white shadow rounded hover:shadow-lg">
-                <div className='p-8'>
-                  <p className="italic">{testimonial.text}</p>
-                </div>
-              </div>
+      <Carousel className='max-w-5xl mx-auto' showArrows={true} showStatus={false}>
+        <div className="">
+          <div className="testimonial-item bg-white shadow rounded hover:shadow-lg h-[200px]">
+            <div className='p-12'>
+              <p className="italic">&ldquo;{testimonials[0].text}&ldquo;</p>
             </div>
-          ))}
+          </div>
         </div>
-      </div>
+        <div className="">
+          <div className="testimonial-item bg-white shadow rounded hover:shadow-lg h-[200px]">
+            <div className='p-12'>
+              <p className="italic">&ldquo;{testimonials[1].text}&ldquo;</p>
+            </div>
+          </div>
+        </div>
+        <div className="">
+          <div className="testimonial-item bg-white shadow rounded hover:shadow-lg h-[200px]">
+            <div className='p-12'>
+              <p className="italic">&ldquo;{testimonials[2].text}&ldquo;</p>
+            </div>
+          </div>
+        </div>
+        <div className="">
+          <div className="testimonial-item bg-white shadow rounded hover:shadow-lg h-[200px]">
+            <div className='p-12'>
+              <p className="italic">&ldquo;{testimonials[3].text}&ldquo;</p>
+            </div>
+          </div>
+        </div>
+        <div className="">
+          <div className="testimonial-item bg-white shadow rounded hover:shadow-lg h-[200px]">
+            <div className='p-12'>
+              <p className="italic">&ldquo;{testimonials[4].text}&ldquo;</p>
+            </div>
+          </div>
+        </div>
+      </Carousel>
     </div>
-    
   );
 };
 

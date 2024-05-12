@@ -73,12 +73,6 @@ export default function Overview() {
                 </div>
             </div>
 
-            <div className='py-24'>
-                <ImageCarousel />
-            </div>
-
-            <Testimonials />
-
             <div className='w-full'>
                 <div className='flex md:flex-row flex-col max-w-7xl m-auto py-12 md:py-20'>
                     <div className="text-2xl leading-8 text-gray-900 w-full md:w-1/2">
@@ -99,6 +93,7 @@ export default function Overview() {
                     </div>
                 </div>
             </div>
+
             <div className='w-full bg-gray-100'>
                 <div className='justify-center py-12 mx-auto max-w-7xl sm:py-20' >
                     <p className="mt-12 text-2xl font-bold tracking-tight text-center text-gray-900 sm:text-4xl">2024 OVERVIEW</p>
