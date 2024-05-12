@@ -13,11 +13,11 @@ export default function HomePage() {
             <div>
                 <Overview />
                 <Speakers />
-                <Agenda />
+                {/* <Agenda /> */}
                 <WhyAttend />
                 <Venue />
                 <Partners />
-                <Exhibition />
+                {/* <Exhibition /> */}
                 <FAQ />
             </div>
         </>

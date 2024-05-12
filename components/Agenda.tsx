@@ -2,8 +2,8 @@ import React from 'react'
 
 function Agenda() {
   return (
-    <>
-        <div id="agenda" className='py-20 max-w-5xl mx-auto'>
+    <div id="agenda" className='w-full bg-gray-100'>
+        <div className='py-20 max-w-5xl mx-auto'>
               <h2 className="text-4xl font-bold text-center tracking-tight">2023 AGENDA</h2>
               {/* agenda 1 */}
               <div className='mt-12'>
@@ -498,7 +498,7 @@ function Agenda() {
                   </div>
               </div>
         </div>
-    </>
+    </div>
   )
 }
 

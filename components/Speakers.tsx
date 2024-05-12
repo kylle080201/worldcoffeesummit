@@ -3,6 +3,7 @@ import Image from 'next/image'
 import React, { Fragment, useEffect, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import Link from 'next/link'
+import SlideShow from './SlideShow'
 
 const speakers = [
     {
@@ -286,7 +287,7 @@ export default function Speakers() {
 
     return (
         <>
-            <div className="px-12 py-20 bg-gray-100 sm:px-20" id='speakers'>
+            <div className="px-12 py-20 sm:px-20" id='speakers'>
                 <div className="mx-auto sm:content-center">
                     <div className="max-w-2xl mx-auto text-center">
                         <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">2023 Speakers</p>
@@ -2879,6 +2880,9 @@ export default function Speakers() {
                     </div>
                 </Dialog>
             </ Transition.Root >
+            <div className='py-24'>
+                <SlideShow />
+            </div>
         </>
 
     )
