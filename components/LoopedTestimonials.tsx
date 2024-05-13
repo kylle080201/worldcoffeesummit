@@ -29,7 +29,10 @@ const testimonials = [
 const Testimonials = () => {
 
   return (
-    <div className='w-full bg-gray-100 py-24'>
+    <div className='w-full bg-gray-100 py-24 flex flex-col gap-12'>
+      <div className='flex w-full justify-center'>
+        <h2 className="text-4xl font-bold tracking-tight">WHAT OUR DELEGATES SAY</h2>
+      </div>
       <Carousel className='max-w-5xl mx-auto' showArrows={true} showStatus={false}>
         <div className="">
           <div className="testimonial-item bg-white shadow rounded hover:shadow-lg h-[200px]">

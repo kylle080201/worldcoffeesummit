@@ -20,12 +20,10 @@ export default function HomePage() {
                 <SpeakerSlider />
                 <ImageCarousel />
                 <Testimonials />
-                {/* <Agenda /> */}
+                <SummitInTheNews />
                 <WhyAttend />
                 <Venue />
                 <Partners />
-                {/* <Exhibition /> */}
-                <SummitInTheNews />
                 <FAQ />
             </div>
         </>

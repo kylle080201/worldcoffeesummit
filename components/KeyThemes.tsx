@@ -48,13 +48,16 @@ function KeyThemes() {
   const themesColumn2 = keyThemes.slice(5);
   return (
     <div className='mx-auto sm:max-w-7xl'>
-      <h2 className="text-4xl font-bold tracking-tight">KEY THEMES</h2>
+      <div className='flex w-full justify-center'>
+        <h2 className="text-4xl font-bold tracking-tight">2024 KEY THEMES</h2>
+      </div>
+      
       <div className='grid grid-cols-2 gap-12 mt-12'>
         {/* Column 1 */}
         <div className="col-span-1">
           <ul className="list-disc flex flex-col gap-4 ml-6">
             {themesColumn1.map(theme => (
-              <li key={theme.title}>
+              <li key={theme.title} className="text-xl">
                 <strong>{theme.title}:</strong> {theme.description}
               </li>
             ))}
@@ -64,7 +67,7 @@ function KeyThemes() {
         <div className="col-span-1">
           <ul className="list-disc flex flex-col gap-4 ml-6">
             {themesColumn2.map(theme => (
-              <li key={theme.title}>
+              <li key={theme.title} className="text-xl">
                 <strong>{theme.title}:</strong> {theme.description}
               </li>
             ))}

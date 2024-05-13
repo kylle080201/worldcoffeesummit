@@ -237,7 +237,7 @@ const SpeakerSlider = () => {
   }, [tempTestimonials, currentIndex]);
 
   return (
-    <div className='w-full bg-gray-100 py-24'>
+    <div id='speakers' className='w-full bg-gray-100 py-24'>
       <div className="relative overflow-hidden max-w-7xl flex mx-auto h-[450px]">
         <div ref={sliderRef} className="flex absolute top-0 left-0">
           {tempTestimonials.map((testimonial, index) => (
