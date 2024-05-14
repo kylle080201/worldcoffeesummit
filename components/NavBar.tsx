@@ -11,7 +11,7 @@ function Navbar() {
     const router = useRouter()
     const navigation = [
         { name: 'Overview', href: '/#overview' },
-        { name: 'Speakers', href: '/#speakers' },
+        { name: 'Speakers', href: '/speakers' },
         { name: 'Agenda', href: '/agenda' },
         { name: 'Venue', href: '/#venue' },
         { name: 'Partners', href: '/#partners' },

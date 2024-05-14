@@ -76,7 +76,7 @@ export default function Overview() {
             <div className='w-full'>
                 <div className='flex md:flex-row flex-col max-w-7xl m-auto py-12 md:py-20'>
                     <div className="text-2xl leading-8 text-gray-900 w-full md:w-1/2">
-                        As the leading summit that connects Coffee, Climate change and Finance through Innovation, World Coffee Innovation Summit is a must-attend for those invested in advancing nature-positive, resilient agriculture and food systems. Join 1,000 international agri-food professionals in London for two days of discussions and networking.
+                        As the leading summit that connects <strong>COFFEE</strong>, <strong>CLIMATE CHANGE</strong> and <strong>FINANCE</strong> through <strong>INNOVATION</strong>, the World Coffee Innovation Summit is a must-attend for those who invested in advancing nature-positive, resilient agriculture and food systems for a net positive future in coffee sector. Join global coffee, climate and finance leaders and agri-food innovators in London for two days of in-depth discussions and cross-sector networking.
                     </div>
                     <div className='items-center px-12 my-auto w-full md:w-1/2'>
                         <video

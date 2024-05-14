@@ -238,7 +238,10 @@ const SpeakerSlider = () => {
 
   return (
     <div id='speakers' className='w-full bg-gray-100 py-24'>
-      <div className="relative overflow-hidden max-w-7xl flex mx-auto h-[450px]">
+      <div className='flex w-full justify-center'>
+        <h2 className="text-4xl font-bold tracking-tight">2023 SPEAKERS</h2>
+      </div>
+      <div className="relative mt-12 overflow-hidden max-w-7xl flex mx-auto h-[450px]">
         <div ref={sliderRef} className="flex absolute top-0 left-0">
           {tempTestimonials.map((testimonial, index) => (
             <div key={index} className="w-[300px] px-2 ">
