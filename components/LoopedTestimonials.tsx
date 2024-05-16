@@ -37,35 +37,35 @@ const Testimonials = () => {
         <div className="">
           <div className="testimonial-item items-center flex bg-white shadow rounded hover:shadow-lg h-[500px]">
             <div className='p-12'>
-              <p className="italic text-2xl">&ldquo;{testimonials[0].text}&ldquo;</p>
+              <p className="italic text-4xl">&ldquo;{testimonials[0].text}&ldquo;</p>
             </div>
           </div>
         </div>
         <div className="">
           <div className="testimonial-item items-center flex bg-white shadow rounded hover:shadow-lg h-[500px]">
             <div className='p-12'>
-              <p className="italic text-2xl">&ldquo;{testimonials[1].text}&ldquo;</p>
+              <p className="italic text-4xl">&ldquo;{testimonials[1].text}&ldquo;</p>
             </div>
           </div>
         </div>
         <div className="">
           <div className="testimonial-item items-center flex bg-white shadow rounded hover:shadow-lg h-[500px]">
             <div className='p-12'>
-              <p className="italic text-2xl">&ldquo;{testimonials[2].text}&ldquo;</p>
+              <p className="italic text-4xl">&ldquo;{testimonials[2].text}&ldquo;</p>
             </div>
           </div>
         </div>
         <div className="">
           <div className="testimonial-item items-center flex bg-white shadow rounded hover:shadow-lg h-[500px]">
             <div className='p-12'>
-              <p className="italic text-2xl">&ldquo;{testimonials[3].text}&ldquo;</p>
+              <p className="italic text-4xl">&ldquo;{testimonials[3].text}&ldquo;</p>
             </div>
           </div>
         </div>
         <div className="">
           <div className="testimonial-item items-center flex bg-white shadow rounded hover:shadow-lg h-[500px]">
             <div className='p-12'>
-              <p className="italic text-2xl">&ldquo;{testimonials[4].text}&ldquo;</p>
+              <p className="italic text-4xl">&ldquo;{testimonials[4].text}&ldquo;</p>
             </div>
           </div>
         </div>
