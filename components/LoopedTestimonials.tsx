@@ -1,14 +1,14 @@
 "use client"
 
-import React, { useEffect, useRef, useState } from 'react';
-import Image from 'next/image'
+import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/solid';
+import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 
 type Testimonial = {
   text: string,
 }
 
-const testimonials = [
+const testimonials: Testimonial[] = [
   {
     text: 'It’s been a critically important event. I’ve learned more about coffee than I’ve ever thought I would have learned, but I also learned about many of the innovations and the work going on to ensure that in years to come, that we will still have coffee, it would still be affordable and available. I think that the coffee industry has a lot to teach all the other sectors of the economy that have gone through the same process.',
   },
@@ -26,49 +26,63 @@ const testimonials = [
   },
 ];
 
-const Testimonials = () => {
+const CustomPrevArrow = ({ onClick, hasPrev }: { onClick: any, hasPrev: any }) => (
+  <button
+    className={`absolute top-1/2 transform -translate-y-1/2 left-4 bg-lime-700 text-white p-2 rounded-full z-10 ${!hasPrev && 'opacity-50 cursor-not-allowed'}`}
+    onClick={onClick}
+    disabled={!hasPrev}
+  >
+    <ArrowLeftIcon width={17} />
+  </button>
+);
 
+const CustomNextArrow = ({ onClick, hasNext }: { onClick: any, hasNext: any }) => (
+  <button
+    className={`absolute top-1/2 transform -translate-y-1/2 right-4 bg-lime-700 text-white p-2 rounded-full z-10 ${!hasNext && 'opacity-50 cursor-not-allowed'}`}
+    onClick={onClick}
+    disabled={!hasNext}
+  >
+    <ArrowRightIcon width={17} />
+  </button>
+);
+
+const CustomIndicator = ({ onClick, isSelected, index }: { onClick: any, isSelected: any, index: any }) => (
+  <li
+    className={`inline-block w-3 h-3 mx-1 bg-gray-300 rounded-full cursor-pointer ${isSelected ? 'bg-yellow-900' : ''}`}
+    onClick={onClick}
+  />
+);
+
+const Testimonials = () => {
   return (
     <div className='w-full bg-gray-100 py-24 flex flex-col gap-12'>
       <div className='flex w-full justify-center'>
         <h2 className="text-4xl font-bold tracking-tight">&ldquo;WHAT OUR DELEGATES SAY&ldquo;</h2>
       </div>
-      <Carousel className='max-w-5xl mx-auto' showArrows={true} showStatus={false}>
-        <div className="">
-          <div className="testimonial-item items-center flex bg-white shadow rounded hover:shadow-lg h-[500px]">
-            <div className='p-12'>
-              <p className="italic text-4xl">&ldquo;{testimonials[0].text}&ldquo;</p>
+      <Carousel
+        className='max-w-5xl mx-auto relative'
+        showArrows={true}
+        showStatus={false}
+        swipeable={true}
+        renderArrowPrev={(clickHandler, hasPrev) => (
+          <CustomPrevArrow onClick={clickHandler} hasPrev={hasPrev} />
+        )}
+        renderArrowNext={(clickHandler, hasNext) => (
+          <CustomNextArrow onClick={clickHandler} hasNext={hasNext} />
+        )}
+        renderIndicator={(clickHandler, isSelected, index) => (
+          <CustomIndicator onClick={clickHandler} isSelected={isSelected} index={index} />
+        )}
+      >
+        {testimonials.map((testimonial, index) => (
+          <div key={index} className="">
+            <div className="testimonial-item items-center flex shadow rounded hover:shadow-lg h-[500px]">
+              <div className='py-12 px-20'>
+                <p className="italic text-4xl">&ldquo;{testimonial.text}&ldquo;</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="">
-          <div className="testimonial-item items-center flex bg-white shadow rounded hover:shadow-lg h-[500px]">
-            <div className='p-12'>
-              <p className="italic text-4xl">&ldquo;{testimonials[1].text}&ldquo;</p>
-            </div>
-          </div>
-        </div>
-        <div className="">
-          <div className="testimonial-item items-center flex bg-white shadow rounded hover:shadow-lg h-[500px]">
-            <div className='p-12'>
-              <p className="italic text-4xl">&ldquo;{testimonials[2].text}&ldquo;</p>
-            </div>
-          </div>
-        </div>
-        <div className="">
-          <div className="testimonial-item items-center flex bg-white shadow rounded hover:shadow-lg h-[500px]">
-            <div className='p-12'>
-              <p className="italic text-4xl">&ldquo;{testimonials[3].text}&ldquo;</p>
-            </div>
-          </div>
-        </div>
-        <div className="">
-          <div className="testimonial-item items-center flex bg-white shadow rounded hover:shadow-lg h-[500px]">
-            <div className='p-12'>
-              <p className="italic text-4xl">&ldquo;{testimonials[4].text}&ldquo;</p>
-            </div>
-          </div>
-        </div>
+        ))}
       </Carousel>
     </div>
   );

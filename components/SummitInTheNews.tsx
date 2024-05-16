@@ -12,7 +12,7 @@ function SummitInTheNews() {
             <div className="testimonial-item bg-white shadow rounded hover:shadow-lg">
               <div className='p-8 flex flex-col gap-8'>
                 <div>
-                  <p className="font-bold text-2xl tracking-tight text-gray-900">Bloomberg</p>
+                  <p className="font-bold text-2xl tracking-tight text-gray-900">BLOOMBERG</p>
                   <p>The coffee industry navigates tracing beans from global farms to European cafes amidst new sustainability regulations, a complex challenge. <Link target={'_blank'} className='underline' href={'https://www.bloomberg.com/news/newsletters/2023-09-15/global-food-roundup-coffee-world-prepares-for-eu-deforestation-rules'}>Read the whole article here</Link></p>
                 </div>
                 <div className='mx-auto'>
@@ -25,7 +25,7 @@ function SummitInTheNews() {
             <div className="testimonial-item bg-white shadow rounded hover:shadow-lg">
               <div className='p-8 flex flex-col gap-8'>
                 <div>
-                  <p className="font-bold text-2xl tracking-tight text-gray-900">Reuters</p>
+                  <p className="font-bold text-2xl tracking-tight text-gray-900">REUTERS</p>
                   <p>The European Commission said on Wednesday that financial institutions are not backing the EU&apos;s new deforestation law, which has faced a backlash from producing countries concerned it will create unfair trade barriers. <Link target={'_blank'} className='underline' href={'https://www.reuters.com/sustainability/land-use-biodiversity/eu-says-financial-firms-unwilling-support-new-deforestation-law-2023-09-13/'}>Read the whole article here</Link></p>
                 </div>
                 <div className='mx-auto'>
@@ -38,7 +38,7 @@ function SummitInTheNews() {
             <div className="testimonial-item bg-white shadow rounded hover:shadow-lg">
               <div className='p-8 flex flex-col gap-8'>
                 <div>
-                  <p className="font-bold text-2xl tracking-tight text-gray-900">Africa Intelligence</p>
+                  <p className="font-bold text-2xl tracking-tight text-gray-900">AFRICA INTELLIGENCE</p>
                   <p>Africa&apos;s largest coffee producer is set to bear the brunt of Brussels&apos;s new traceability directives. Consequently, it has begun to turn its attention to India and China. <Link target={'_blank'} className='underline' href={'https://www.africaintelligence.com/eastern-africa-and-the-horn/2023/12/06/new-eu-rules-prompt-coffee-sector-to-seek-fresh-markets,110116331-art'}>Read the whole article here</Link></p>
                 </div>
                 <div className='mx-auto'>

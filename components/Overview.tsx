@@ -74,19 +74,19 @@ export default function Overview() {
             </div>
 
             <div className='w-full'>
-                <div className='flex md:flex-row flex-col max-w-7xl m-auto py-12 md:py-20'>
+                <div className='flex md:flex-row flex-col max-w-7xl m-auto py-12 md:py-20 gap-12'>
                     <div className="text-2xl leading-8 text-gray-900 w-full text-justify md:w-1/2">
                         As the leading summit that connects <strong>COFFEE</strong>, <strong>CLIMATE CHANGE</strong> and <strong>FINANCE</strong> through <strong>INNOVATION</strong>, the World Coffee Innovation Summit is a must-attend for those who invested in advancing nature-positive, resilient agriculture and food systems for a net positive future in coffee sector. Join global coffee, climate and finance leaders and agri-food innovators in London for two days of in-depth discussions and cross-sector networking.
                     </div>
-                    <div className='items-center px-12 my-auto w-full md:w-1/2'>
+                    <div className='items-center my-auto w-full md:w-1/2'>
                         <video
-                            autoPlay
                             loop
                             controls
                             className="w-full"
+                            poster='https://worldcoffeealliance.com/wp-content/uploads/2024/05/Thumbnail.jpg'
                         >
                             <source
-                                src="https://worldcoffeealliance.com/wp-content/uploads/2023/11/y2mate.com-World-Coffee-Summit-Exhibition-London-2023-Highlights_1080p.mp4"
+                                src="https://worldcoffeealliance.com/wp-content/uploads/2024/05/World-Coffee-Innovation-Summit.mp4"
                                 type="video/mp4"
                             />
                         </video>

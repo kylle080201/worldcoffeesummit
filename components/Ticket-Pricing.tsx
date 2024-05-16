@@ -8,12 +8,13 @@ function TicketPricing() {
     const summit = [
         {
             title: "NGO/Academic Pass",
-            old_price: 695,
-            item_price: 495,
-            description: "Eligible for representatives of non-profit NGOs, cooperatives, regulators, governments, public sector, and academia.",
+            old_price: 1195,
+            item_price: 795,
+            description: "Eligible for representatives from non-profit NGOs, farmers cooperatives, regulators, governments, public sector, and academia.",
+            earlyBird: "Book before Monday 8th July 2024 to Save £400.00",
             line_items: [
                 {
-                    price: 'price_1NlCWYKMWpUKzQVzPmiwKJq2',
+                    price: 'price_1PGwuzKMWpUKzQVziwJkTR7F',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
@@ -21,12 +22,13 @@ function TicketPricing() {
         },
         {
             title: "Standard Corporate Pass",
-            old_price: 1145,
-            item_price: 795,
+            old_price: 1795,
+            item_price: 1295,
             description: "Eligible for corporate representatives.",
+            earlyBird: "Book before Monday 8th July 2024 to Save £500.00",
             line_items: [
                 {
-                    price: 'price_1NlCXFKMWpUKzQVzlxbhdmTD',
+                    price: 'price_1PGwvYKMWpUKzQVzl8ZKucou',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
@@ -34,12 +36,13 @@ function TicketPricing() {
         },
         {
             title: "Service Provider Pass",
-            old_price: 1345,
-            item_price: 995,
+            old_price: 2095,
+            item_price: 1495,
             description: "Required for for-profit consultancies, start-ups, technology and service providers.",
+            earlyBird: "Book before Monday 8th July 2024 to Save £600.00",
             line_items: [
                 {
-                    price: 'price_1NlCXfKMWpUKzQVzej5ZIrvA',
+                    price: 'price_1PGwvyKMWpUKzQVzW6v1DAa1',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
@@ -86,7 +89,7 @@ function TicketPricing() {
                                         Delegate to Summit
                                     </th>
                                     <th scope="col" className="px-3 py-3.5 w-2/4 text-left text-lg sm:text-2xl font-semibold text-red-700">
-                                        (Can access the Exhibition)
+                                        
                                     </th>
                                     <th scope="col" className="py-3.5 pl-4 w-1/12 pr-3 text-left sm:text-2xl text-lg font-semibold text-gray-900 sm:pl-3">
                                         Price
@@ -100,8 +103,12 @@ function TicketPricing() {
                                 {summit.map((delegate) => (
                                     <tr key={delegate.title} className="even:bg-gray-100">
                                         <td className="flex-wrap px-3 py-4 font-semibold text-gray-900 text-md">{delegate.title}</td>
-                                        <td className="flex-wrap px-3 py-4 text-gray-900 text-md">{delegate.description}<br /></td>
-                                        <td className="px-3 py-4 text-gray-900 font-bold text-md">£{delegate.old_price}.00</td>
+                                        <td className="flex-wrap px-3 py-4 text-gray-900 text-md">
+                                            {delegate.description}
+                                            <br />
+                                            <h3 className="text-sm tracking-tight text-red-700 sm:text-md">{delegate.earlyBird}</h3>
+                                        </td>
+                                        <td className="px-3 py-4 text-gray-900 font-bold text-md"><span className='text-red-700 line-through text-xs mr-2'>£{delegate.old_price}.00</span>£{delegate.item_price}.00</td>
                                         <td className="px-3 py-4">
                                             <div className='my-auto justify-self-center mx:auto'>
                                                 <Link
@@ -169,10 +176,8 @@ function TicketPricing() {
                                                 >
                                                     Register
                                                 </Link>
-
                                             </div>
                                         </td>
-
                                     </tr>
                                 ))}
                             </tbody>
