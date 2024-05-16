@@ -23,6 +23,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "www.reuters.com",
       },
+      {
+        protocol: "https",
+        hostname: "www.africaintelligence.com",
+      },
     ],
   },
   webpack: (config) => {

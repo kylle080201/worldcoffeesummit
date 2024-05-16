@@ -6,7 +6,7 @@ const keyThemes = [
     description: "Navigating climate policy and regulatory risks as a pathway towards a positive impact on the ground"
   },
   {
-    title: "COFFEE INNOVATION & GENOMICS",
+    title: "COFFEE SCIENCE & INNOVATION",
     description: "Unlocking the potential of Genomics in coffee breeding and other climate science breakthroughs for a more climate resilient variety in the international market."
   },
   {
