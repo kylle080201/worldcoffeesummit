@@ -1,8 +1,7 @@
-"use client"
-
 import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/solid';
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 type Testimonial = {
   text: string,
@@ -60,7 +59,7 @@ const Testimonials = () => {
         <h2 className="text-4xl font-bold tracking-tight">&ldquo;WHAT OUR DELEGATES SAY&ldquo;</h2>
       </div>
       <Carousel
-        className='max-w-5xl mx-auto relative'
+        className='max-w-5xl mx-auto relative shadow-none'
         showArrows={true}
         showStatus={false}
         swipeable={true}
@@ -76,7 +75,7 @@ const Testimonials = () => {
       >
         {testimonials.map((testimonial, index) => (
           <div key={index} className="">
-            <div className="testimonial-item items-center flex shadow rounded hover:shadow-lg h-[500px]">
+            <div className="testimonial-item items-center flex shadow-none rounded hover:shadow-lg h-[500px]">
               <div className='py-12 px-20'>
                 <p className="italic text-4xl">&ldquo;{testimonial.text}&ldquo;</p>
               </div>

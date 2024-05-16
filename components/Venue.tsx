@@ -5,19 +5,13 @@ export default function Venue() {
     return (
         <div className="py-20 overflow-hidden bg-gray-100 " id='venue'>
             <div className="mx-auto lg:flex md:max-w-7xl">
-                <div className="flex-shrink-0 mx-12 lg:mx-0 md:max-w-7xl">
+                <div className="flex-shrink-0 mx-12 lg:mx-0 md:w-2/5">
                     <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                         THE VENUE
                     </p>
-                    <div className='mt-12'>
-                        <p className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
-                            Summit: St. James&apos;s Hall
-                        </p>
-                        <p className="mt-6 text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
-                            Exhibition: Westminster Hall
-                        </p>
-                    </div>
-
+                    <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                        SUMMIT
+                    </p>
                     <div className='mt-12'>
                         <p className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
                             QEII Centre
@@ -49,36 +43,37 @@ export default function Venue() {
                                 <ArrowLongRightIcon className="self-center mx-auto mt-2 w-7 h-7" aria-hidden="true" />
                             </Link>
                         </div>
-                        <div className='flex flex-col'>
-                            <Link
-                                href="https://qeiicentre.london/about/sustainability/"
-                                target='_blank'
-                                className='py-2 border-lime-700 hover:border-b-2'
-                            >
-                                <div className='rounded-md flex bg-lime-700  px-3.5 py-2.5 text-lg font-semibold text-white shadow-sm '>
-                                    Sustainability
-                                </div>
-                                <ArrowLongRightIcon className="self-center mx-auto mt-2 w-7 h-7" aria-hidden="true" />
-                            </Link>
-                        </div>
                     </div>
                 </div>
-                <div className="flex-shrink-0 w-1/2 max-w-5xl mx-12 mt-12 lg:mx-0 md:mt-0 lg:ml-16">
+                <div className="flex-shrink-0 max-w-5xl mx-12 mt-12 lg:mx-0 md:mt-0 lg:ml-16 w-3/5">
                     <img
-                        src="https://worldcoffeealliance.com/wp-content/uploads/2023/06/sustainable-foods-QE2-2.jpg"
+                        src="https://worldcoffeealliance.com/wp-content/uploads/2024/05/qeii-vac2021-071021-hires-1039-1080x675.jpg.webp"
                         alt="QE II"
                         className="w-full h-full rounded-lg shadow-lg bg-white/5"
                     />
                 </div>
             </div>
-            <div className="items-center px-6 mx-auto mt-20 max-w-7xl">
-                <Link href={"https://www.google.com/maps/place/Queen+Elizabeth+II+Centre/@51.5005231,-0.1292871,19z/data=!4m6!3m5!1s0x487604c4cb112d93:0x39efdcc690b64ca3!8m2!3d51.5005006!4d-0.1290725!16zL20vMDgwbDQx"} target="_blank">
+            <div className="mx-auto lg:flex md:max-w-7xl mt-12 gap-12">
+                <div className="flex-shrink-0 max-w-5xl mx-12 mt-12 lg:mx-0 md:mt-0 w-3/5">
                     <img
-                        src="https://worldcoffeealliance.com/wp-content/uploads/2023/05/QEII-GMAPS.png"
-                        alt="QE II Map"
-                        className="rounded-lg shadow-lg bg-white/5 hover:shadow-2xl"
+                        src="https://worldcoffeealliance.com/wp-content/uploads/2024/05/11c55634acb3faa3c15d13127891b37e.jpeg"
+                        alt="house of Lords"
+                        className="w-full h-full rounded-lg shadow-lg bg-white/5"
                     />
-                </Link>
+                </div>
+                <div className="flex-shrink-0 mx-12 lg:mx-0 md:w-2/5">
+                    <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                        Networking Soirée
+                    </p>
+                    <div className='mt-12 flex flex-col gap-6'>
+                        <p className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+                            House of Lords of the United Kingdom
+                        </p>
+                        <p className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+                            Houses of Parliament, Parliament Sq, London SW1A 0PW
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     )

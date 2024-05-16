@@ -29,10 +29,13 @@ export default function Overview() {
                             <p className="text-lg font-semibold tracking-tight text-white md:text-4xl">INNOVATION TOWARDS</p>
                             <p className="text-lg font-semibold tracking-tight text-white md:text-4xl">A NET POSITIVE FUTURE</p>
                             <div className='flex flex-col items-center justify-center max-w-5xl mx-auto mt-6 sm:flex-row sm:gap-x-2 gap-y-2'>
+                                <p className="px-4 py-1 font-bold tracking-tight text-white text-md mx-aut h-max bg-lime-700 w-fit sm:text-3xl">16-17 October 2024</p>
                                 <div>
                                     <img className='w-[17rem]' src='https://worldcoffeealliance.com/wp-content/uploads/2023/06/QEII-CENTRE.png' />
                                 </div>
-                                <p className="px-4 py-1 font-bold tracking-tight text-white text-md mx-aut h-max bg-lime-700 w-fit sm:text-3xl">16-17 October 2024</p>
+                                <div>
+                                    <img className='w-[12rem]' src='https://worldcoffeealliance.com/wp-content/uploads/2024/05/House_of_Lords_logo_2020.svg.png' />
+                                </div>
                             </div>
                             <CountDown />
                             <div  className='flex  justify-center max-w-5xl mx-auto mt-12 md:mt-0'>
