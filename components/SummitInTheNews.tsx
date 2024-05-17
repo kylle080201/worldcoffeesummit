@@ -5,10 +5,10 @@ import React from 'react'
 function SummitInTheNews() {
   return (
     <div className='w-full py-24 md:px-0 px-12'>
-      <div className="relative  max-w-7xl mx-auto">
+      <div className="relative max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold leading-10 tracking-tight text-gray-900">World Coffee Innovation Summit in The News</h2>
-        <div className='flex gap-8'>
-          <div className="flex w-[500px] h-full mt-12">
+        <div className='flex md:flex-row flex-col gap-8'>
+          <div className="flex w-full md:w-[500px] h-full mt-12">
             <div className="testimonial-item bg-white shadow rounded hover:shadow-lg">
               <div className='p-8 flex flex-col gap-8'>
                 <div>
@@ -21,7 +21,7 @@ function SummitInTheNews() {
               </div>
             </div>
           </div>
-          <div className="flex w-[500px] h-full mt-12">
+          <div className="flex w-full md:w-[500px] h-full mt-12">
             <div className="testimonial-item bg-white shadow rounded hover:shadow-lg">
               <div className='p-8 flex flex-col gap-8'>
                 <div>
@@ -34,7 +34,7 @@ function SummitInTheNews() {
               </div>
             </div>
           </div>
-          <div className="flex w-[500px] h-full mt-12">
+          <div className="flex w-full md:w-[500px] h-full mt-12">
             <div className="testimonial-item bg-white shadow rounded hover:shadow-lg">
               <div className='p-8 flex flex-col gap-8'>
                 <div>

@@ -7,10 +7,7 @@ export default function Venue() {
             <div className="mx-auto lg:flex md:max-w-7xl">
                 <div className="flex-shrink-0 mx-12 lg:mx-0 md:w-2/5">
                     <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                        THE VENUE
-                    </p>
-                    <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                        SUMMIT
+                        THE SUMMIT VENUE
                     </p>
                     <div className='mt-12'>
                         <p className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
@@ -63,14 +60,20 @@ export default function Venue() {
                 </div>
                 <div className="flex-shrink-0 mx-12 lg:mx-0 md:w-2/5">
                     <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                        Networking Soirée
+                        THE NETWORKING SOIRÉE VENUE
                     </p>
-                    <div className='mt-12 flex flex-col gap-6'>
+                    <p className="mt-12 text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+                        Address:
+                    </p>
+                    <div className='mt-6 flex flex-col'>
                         <p className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
-                            House of Lords of the United Kingdom
+                            Houses of Parliament
                         </p>
                         <p className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
-                            Houses of Parliament, Parliament Sq, London SW1A 0PW
+                            Parliament Sq
+                        </p>
+                        <p className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+                            London SW1A 0PW
                         </p>
                     </div>
                 </div>

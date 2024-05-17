@@ -27,7 +27,7 @@ const testimonials: Testimonial[] = [
 
 const CustomPrevArrow = ({ onClick, hasPrev }: { onClick: any, hasPrev: any }) => (
   <button
-    className={`absolute top-1/2 transform -translate-y-1/2 left-4 bg-lime-700 text-white p-2 rounded-full z-10 ${!hasPrev && 'opacity-50 cursor-not-allowed'}`}
+    className={`md:visible invisible absolute top-1/2 transform -translate-y-1/2 left-4 bg-lime-700 text-white p-2 rounded-full z-10 ${!hasPrev && 'opacity-50 cursor-not-allowed'}`}
     onClick={onClick}
     disabled={!hasPrev}
   >
@@ -37,7 +37,7 @@ const CustomPrevArrow = ({ onClick, hasPrev }: { onClick: any, hasPrev: any }) =
 
 const CustomNextArrow = ({ onClick, hasNext }: { onClick: any, hasNext: any }) => (
   <button
-    className={`absolute top-1/2 transform -translate-y-1/2 right-4 bg-lime-700 text-white p-2 rounded-full z-10 ${!hasNext && 'opacity-50 cursor-not-allowed'}`}
+    className={`md:visible invisible absolute top-1/2 transform -translate-y-1/2 right-4 bg-lime-700 text-white p-2 rounded-full z-10 ${!hasNext && 'opacity-50 cursor-not-allowed'}`}
     onClick={onClick}
     disabled={!hasNext}
   >
@@ -54,12 +54,12 @@ const CustomIndicator = ({ onClick, isSelected, index }: { onClick: any, isSelec
 
 const Testimonials = () => {
   return (
-    <div className='w-full bg-gray-100 py-24 flex flex-col gap-12'>
+    <div className='w-full bg-gray-100 py-24 md:px-0 px-4 flex flex-col gap-12'>
       <div className='flex w-full justify-center'>
-        <h2 className="text-4xl font-bold tracking-tight">&ldquo;WHAT OUR DELEGATES SAY&ldquo;</h2>
+        <h2 className="text-4xl font-bold tracking-tight text-center md:text-left">&ldquo;WHAT OUR DELEGATES SAY&ldquo;</h2>
       </div>
       <Carousel
-        className='max-w-5xl mx-auto relative shadow-none'
+        className='md:max-w-5xl w-full mx-auto relative shadow-none'
         showArrows={true}
         showStatus={false}
         swipeable={true}
@@ -74,10 +74,10 @@ const Testimonials = () => {
         )}
       >
         {testimonials.map((testimonial, index) => (
-          <div key={index} className="">
-            <div className="testimonial-item items-center flex shadow-none rounded hover:shadow-lg h-[500px]">
-              <div className='py-12 px-20'>
-                <p className="italic text-4xl">&ldquo;{testimonial.text}&ldquo;</p>
+          <div key={index} className="w-full flex justify-center items-center md:h-max">
+            <div className="testimonial-item flex flex-col shadow-none rounded h-[700px] md:h-[500px]">
+              <div className='flex h-full items-center py-6 px-4 md:py-12 md:px-20'>
+                <p className="italic  my-auto text-2xl text-justify md:text-left">&ldquo;{testimonial.text}&ldquo;</p>
               </div>
             </div>
           </div>
