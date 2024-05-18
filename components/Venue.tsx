@@ -58,14 +58,11 @@ export default function Venue() {
                         className="w-full h-full rounded-lg shadow-lg bg-white/5"
                     />
                 </div>
-                <div className="flex-shrink-0 mx-12 lg:mx-0 md:w-2/5">
+                <div className="flex-shrink-0 flex flex-col mx-12 lg:mx-0 md:w-2/5 gap-12">
                     <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                         THE NETWORKING SOIRÉE VENUE
                     </p>
-                    <p className="mt-12 text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
-                        Address:
-                    </p>
-                    <div className='mt-6 flex flex-col'>
+                    <div className='flex flex-col h-full'>
                         <p className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
                             Houses of Parliament
                         </p>
