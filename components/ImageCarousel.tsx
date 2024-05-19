@@ -57,7 +57,7 @@ const ImageCarousel = () => {
 
   return (
     <div className='py-24 max-w-7xl mx-auto flex flex-col gap-12'>
-      <div className='flex w-full justify-center'>
+      <div className='flex w-full text-center justify-center'>
         <h2 className="text-4xl font-bold tracking-tight">2023 SUMMIT HIGHLIGHTS</h2>
       </div>
       <Carousel showArrows={true} infiniteLoop interval={3000} autoPlay>

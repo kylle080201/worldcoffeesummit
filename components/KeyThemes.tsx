@@ -51,9 +51,9 @@ function KeyThemes() {
       <div className='flex w-full justify-center'>
         <h2 className="text-4xl font-bold tracking-tight">2024 KEY THEMES</h2>
       </div>
-      <div className='mt-12 flex gap-8 md:flex-row flex-col'>
+      <div className='mt-12 flex gap-4 md:gap-8 md:flex-row flex-col md:px-0 px-12'>
         {/* Column 1 */}
-        <div className="w-1/2">
+        <div className="md:w-1/2 w-full">
           <ul className="list-disc flex flex-col gap-4 ml-6">
             {themesColumn1.map(theme => (
               <li key={theme.title} className="text-xl">
@@ -63,7 +63,7 @@ function KeyThemes() {
           </ul>
         </div>
         {/* Column 2 */}
-        <div className="w-1/2">
+        <div className="md:w-1/2 w-full">
           <ul className="list-disc flex flex-col gap-4 ml-6">
             {themesColumn2.map(theme => (
               <li key={theme.title} className="text-xl">
