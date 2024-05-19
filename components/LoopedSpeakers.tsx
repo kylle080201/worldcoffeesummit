@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image'
+import Speakers2024 from './2024Speakers';
 
 type Testimonial = {
   title: string,
@@ -238,6 +239,7 @@ const SpeakerSlider = () => {
 
   return (
     <div id='speakers' className='w-full bg-gray-100 py-24'>
+      <Speakers2024 />
       <div className='flex w-full justify-center'>
         <h2 className="text-4xl font-bold tracking-tight">2023 SPEAKERS</h2>
       </div>

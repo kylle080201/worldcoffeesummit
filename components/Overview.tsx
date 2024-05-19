@@ -105,10 +105,10 @@ export default function Overview() {
                     <p className="mt-12 text-2xl font-bold tracking-tight text-center text-gray-900 sm:text-4xl">2024 OVERVIEW</p>
                     <div className='flex flex-col'>
                         <div className='px-12'>
-                            <p className="mt-4 text-xl leading-8 text-gray-900 sm:mt-8">
+                            <p className="mt-4 text-xl leading-8 text-gray-900 sm:mt-8 text-justify">
                                 The future of coffee is replete with overwhelming promises, and highly targeted and science-based digital and technology innovation. However, reality does not paint a rosy picture. With the difficult challenges of Climate change, soil and water depletion, lowering supply, decrease in global coffee prices and increasing consumer demand for sustainable coffee, the perpetuation of poverty-stricken smallholder farmers, something has to change.
                             </p>
-                            <p className="mt-4 text-xl leading-8 text-gray-900 sm:mt-8">
+                            <p className="mt-4 text-xl leading-8 text-gray-900 sm:mt-8 text-justify">
                                 <span className='font-bold'>World Coffee Innovation Summit 2024</span> <span className='font-bold italic'>“Redefining Shared Value: Innovation Towards a Net Positive Future”</span> will convene global leaders, stakeholders and innovators to showcase various scalable innovations, their impact on traceability and sustainability, their capabilities to mitigate climate and financial risks, and fostering regenerative solutions. By integrating a shared value approach within the corporate business model, innovative solutions will drive not only business but also environmental and social value for farming communities. This net-positive economic approach helps to create a sustainable future for coffee and contributes to the overall well-being of society.
                             </p>
                         </div>

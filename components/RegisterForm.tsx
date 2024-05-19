@@ -30,13 +30,13 @@ const RegisterForm = () => {
     } = useForm();
 
     const onSubmit = (data: any) => {
-        // const { email, confirmEmail } = data;
-        // if (data) {
-        //     if (email === confirmEmail) {
-        //         redirectToCheckout(data)
-        //     }
-        // }
-        setOpenNotice(!openNotice)
+        const { email, confirmEmail } = data;
+        if (data) {
+            if (email === confirmEmail) {
+                redirectToCheckout(data)
+            }
+        }
+        // setOpenNotice(!openNotice)
     }
 
     const redirectToCheckout = async (formData: any) => {

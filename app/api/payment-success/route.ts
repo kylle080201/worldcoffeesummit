@@ -45,7 +45,7 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
   const formData = req.decryptedFormData;
   const priceId = req.priceId;
   const event =
-    priceId === "price_1NlCYBKMWpUKzQVzXSUajrFy" ||
+    priceId === "price_1NJtGKKMWpUKzQVzGyIldRNk" ||
     priceId === "price_1NmS2AKMWpUKzQVz8sjZgWrf"
       ? "Exhibition"
       : "Summit";
