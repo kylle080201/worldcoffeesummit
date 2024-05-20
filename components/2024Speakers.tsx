@@ -221,8 +221,8 @@ function Speakers2024() {
             {speakers.map((speaker) => (
               <li onClick={() => setSelectedSpeaker(speaker)} key={speaker.key} className='relative border rounded-md bg-lime-700 shadow-md hover:shadow-lg'>
                 <a className="flex flex-col gap-2 hover:cursor-pointer">
-                  <div className='flex-shrink-0 mx-auto'>
-                    <Image className="w-[30rem] rounded-t-md" src={speaker.imageUrl} alt={speaker.name} width={160} height={160} />
+                  <div className='mx-auto'>
+                    <Image className="w-[40rem] rounded-t-md" src={speaker.imageUrl} alt={speaker.name} width={160} height={160} />
                   </div>
                   <div className="flex text-left p-4">
                     <div className='mt-6'>
@@ -232,7 +232,7 @@ function Speakers2024() {
                     </div>
                   </div>
                 </a>
-                <div className='flex hover:cursor-pointer items-center absolute w-[5rem] h-[5rem] top-64 right-4 bg-white p-2 rounded-md shadow-md'>
+                <div className='flex hover:cursor-pointer items-center absolute w-[5rem] top-[34rem] h-[5rem] md:top-64 right-4 bg-white p-2 rounded-md shadow-md'>
                   <Image src={speaker.companyIcon} alt={`${speaker.company} logo`} width={speaker.iconWidth} height={speaker.iconHeight} className="my-auto mx-auto" />
                 </div>
               </li>
