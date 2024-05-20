@@ -65,7 +65,7 @@ function Navbar() {
                                     <div className="flex flex-col items-start">
                                         <div className='flex flex-wrap items-center'>
                                             <div className='flex-wrap'>
-                                                <a href='mailto:events@worldcoffeealliance.com' className='mr-2 font-semibold underline text-md'>Get in touch</a>
+                                                <Link href='mailto:events@worldcoffeealliance.com' className='mr-2 font-semibold underline text-md text-gray-900'>Get in touch</Link>
                                             </div>
 
                                             <div className='flex gap-x-2'>
@@ -116,7 +116,7 @@ function Navbar() {
                         </div>
                         <div className='items-center justify-center pb-4 pl-3'>
                             <div className='flex-wrap'>
-                                <a href='mailto:events@worldcoffeealliance.com' className='mr-2 font-semibold underline text-md'>Get in touch</a>
+                                <Link href='mailto:events@worldcoffeealliance.com' className='mr-2 font-semibold underline text-md text-gray-900'>Get in touch</Link>
                             </div>
 
                             <div className='flex gap-x-2'>
