@@ -15,6 +15,18 @@ const nextConfig = {
         protocol: "https",
         hostname: "plus.unsplash.com",
       },
+      {
+        protocol: "https",
+        hostname: "assets.bwbx.io",
+      },
+      {
+        protocol: "https",
+        hostname: "www.reuters.com",
+      },
+      {
+        protocol: "https",
+        hostname: "www.africaintelligence.com",
+      },
     ],
   },
   webpack: (config) => {

@@ -11,11 +11,11 @@ function Navbar() {
     const router = useRouter()
     const navigation = [
         { name: 'Overview', href: '/#overview' },
-        { name: 'Speakers', href: '/#speakers' },
-        { name: 'Agenda', href: '/#agenda' },
+        { name: 'Speakers', href: '/speakers' },
+        { name: 'Agenda', href: '/agenda' },
         { name: 'Venue', href: '/#venue' },
         { name: 'Partners', href: '/#partners' },
-        { name: 'Exhibition', href: '/#exhibition' },
+        { name: 'Exhibition', href: '/exhibition' },
         { name: 'FAQ', href: '/#faq' },
         { name: 'Resources', href: '/resources' },
     ]
@@ -24,7 +24,7 @@ function Navbar() {
         <Disclosure as="nav" className="w-full bg-white shadow">
             {({ open }) => (
                 <>
-                    <div className="justify-center flex-shrink-0 w-full mx-auto max-w-7xl">
+                    <div className="justify-center flex-shrink-0 w-full mx-auto px-12">
                         <div className="flex w-full h-16 sm:h-32">
                             <div className="flex w-full sm:justify-between">
                                 <div className="flex items-center mr-2 -ml-2 sm:hidden">
@@ -75,13 +75,25 @@ function Navbar() {
                                                 <SocialIcon url="https://www.instagram.com/worldcoffeealliancehq/" style={{ height: 40, width: 40 }} target='_blank' />
                                             </div>
                                         </div>
-                                        <div className='mt-4 '>
+                                        <div className='mt-4 flex gap-2'>
                                             <button
                                                 onClick={() => router.push('/interest')}
                                                 className="relative inline-flex gap-x-1.5 rounded-md bg-lime-700 hover:bg-lime-800 px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
                                             >
                                                 Register Interest
                                             </button>
+                                            {/* <button
+                                                onClick={() => router.push('/register')}
+                                                className="relative inline-flex gap-x-1.5 rounded-md bg-lime-700 hover:bg-lime-800 px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+                                            >
+                                                Register Now
+                                            </button>
+                                            <button
+                                                onClick={() => router.push('/interest')}
+                                                className="relative inline-flex gap-x-1.5 rounded-md bg-yellow-900 hover:bg-yellow-800 px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+                                            >
+                                                Exhibit/Sponsor
+                                            </button> */}
                                         </div>
                                     </div>
                                 </div>

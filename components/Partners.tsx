@@ -145,6 +145,19 @@ export default function Partners() {
         },
     ]
 
+    const press = [
+        {
+            href: 'https://www.reuters.com/',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/06/Reuters-2020-horizontal-full-color-preferred-1-1.png',
+            className: 'w-[20rem] mx-auto'
+        },
+        {
+            href: 'https://www.bloomberg.com/',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/Bloomberg-LLP-logo.webp',
+            className: 'w-[20rem] mx-auto'
+        },
+    ]
+
     return (
         <>
             <div className='w-full py-20 bg-white' id='partners'>
@@ -205,6 +218,28 @@ export default function Partners() {
                     </div>
                     <div className='grid items-center justify-center grid-cols-1 gap-4 mx-auto sm:grid-cols-3 sm:gap-12 sm:flex-row sm:max-w-7xl mt-4'>
                         {coSponsors.map((sponsor) => (
+                            sponsor.href ?
+                                <Link key={sponsor.href} href={sponsor.href} target='_blank' rel='noreferer'>
+                                    <div className='items-center flex-shrink-0 h-full p-4'>
+                                        <img className={sponsor.className} src={sponsor.imgSrc}>
+                                        </img>
+                                    </div>
+                                </Link> :
+                                <div key={sponsor.href} className='items-center flex-shrink-0 h-full p-4'>
+                                    <img className={sponsor.className} src={sponsor.imgSrc}>
+                                    </img>
+                                </div>
+                        ))}
+                    </div>
+
+                    <div className="max-w-2xl mx-auto text-center mt-6">
+                        <div className="inline-flex items-center justify-center w-full">
+                            <hr className="w-full h-px bg-gray-400 border-0" />
+                            <span className="absolute px-3 text-2xl sm:text-4xl font-bold tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">Press</span>
+                        </div>
+                    </div>
+                    <div className='grid items-center justify-center grid-cols-1 gap-4 mx-auto sm:grid-cols-2 sm:gap-12 sm:flex-row sm:max-w-7xl mt-4'>
+                        {press.map((sponsor) => (
                             sponsor.href ?
                                 <Link key={sponsor.href} href={sponsor.href} target='_blank' rel='noreferer'>
                                     <div className='items-center flex-shrink-0 h-full p-4'>

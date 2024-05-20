@@ -8,12 +8,13 @@ function TicketPricing() {
     const summit = [
         {
             title: "NGO/Academic Pass",
-            old_price: 695,
-            item_price: 495,
-            description: "Eligible for representatives of non-profit NGOs, cooperatives, regulators, governments, public sector, and academia.",
+            old_price: 1195,
+            item_price: 795,
+            description: "Eligible for representatives from non-profit NGOs, farmers cooperatives, regulators, governments, public sector, and academia.",
+            earlyBird: "Book before Monday 8th July 2024 to Save £400.00",
             line_items: [
                 {
-                    price: 'price_1NlCWYKMWpUKzQVzPmiwKJq2',
+                    price: 'price_1PGwuzKMWpUKzQVziwJkTR7F',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
@@ -21,12 +22,13 @@ function TicketPricing() {
         },
         {
             title: "Standard Corporate Pass",
-            old_price: 1145,
-            item_price: 795,
+            old_price: 1795,
+            item_price: 1295,
             description: "Eligible for corporate representatives.",
+            earlyBird: "Book before Monday 8th July 2024 to Save £500.00",
             line_items: [
                 {
-                    price: 'price_1NlCXFKMWpUKzQVzlxbhdmTD',
+                    price: 'price_1PGwvYKMWpUKzQVzl8ZKucou',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
@@ -34,45 +36,64 @@ function TicketPricing() {
         },
         {
             title: "Service Provider Pass",
-            old_price: 1345,
-            item_price: 995,
+            old_price: 2095,
+            item_price: 1495,
             description: "Required for for-profit consultancies, start-ups, technology and service providers.",
+            earlyBird: "Book before Monday 8th July 2024 to Save £600.00",
             line_items: [
                 {
-                    price: 'price_1NlCXfKMWpUKzQVzej5ZIrvA',
+                    price: 'price_1PGwvyKMWpUKzQVzW6v1DAa1',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
             ]
         },
-    ]
-    const exhibition = [
         {
-            title: "Standard Visitor Pass",
-            old_price: 145,
-            item_price: 125,
-            description: "Eligible for green coffee buyers and coffee roasters",
+            title: "Networking Soirée Pass",
+            item_price: 225,
+            description: "Networking Soirée at House of Lords 16th October 2024 Early Evening Wines and Hors d’oeuvres",
+            earlyBird: "Limited tickets only! First come, first serve!",
             line_items: [
+                // {
+                //     price: 'price_1PGx2vKMWpUKzQVz1rtJmCf0',
+                //     quantity: 1,
+                //     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
+                // }
                 {
-                    price: 'price_1NlCYBKMWpUKzQVzXSUajrFy',
+                    price: 'price_1NJtGKKMWpUKzQVzGyIldRNk',
                     quantity: 1,
-                    tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
+                    tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
                 }
             ]
         },
-        // {
-        //     title: "Public Visitor Pass",
-        //     old_price: 10,
-        //     description: "Eligible for coffee lovers and enthusiasts",
-        //     line_items: [
-        //         {
-        //             price: 'price_1NmS2AKMWpUKzQVz8sjZgWrf',
-        //             quantity: 1,
-        //             tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
-        //         }
-        //     ]
-        // },
     ]
+    // const exhibition = [
+    //     {
+    //         title: "Networking Soirée Pass",
+    //         old_price: 145,
+    //         item_price: 125,
+    //         description: "Networking Soirée at House of Lords 16th October 2024 Early Evening Wines and Hors d’oeuvres",
+    //         line_items: [
+    //             {
+    //                 price: 'price_1NlCYBKMWpUKzQVzXSUajrFy',
+    //                 quantity: 1,
+    //                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
+    //             }
+    //         ]
+    //     },
+    //     // {
+    //     //     title: "Public Visitor Pass",
+    //     //     old_price: 10,
+    //     //     description: "Eligible for coffee lovers and enthusiasts",
+    //     //     line_items: [
+    //     //         {
+    //     //             price: 'price_1NmS2AKMWpUKzQVz8sjZgWrf',
+    //     //             quantity: 1,
+    //     //             tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
+    //     //         }
+    //     //     ]
+    //     // },
+    // ]
 
     return (
         <div className="z-40 py-12 bg-white sm:py-20">
@@ -80,28 +101,16 @@ function TicketPricing() {
                 <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                     <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
                         <table className="min-w-full divide-y divide-gray-300">
-                            <thead>
-                                <tr className='bg-gray-100'>
-                                    <th scope="col" className="py-3.5 pl-4 pr-3 w-1/4 text-left sm:text-2xl text-lg font-semibold text-gray-900 sm:pl-3">
-                                        Delegate to Summit
-                                    </th>
-                                    <th scope="col" className="px-3 py-3.5 w-2/4 text-left text-lg sm:text-2xl font-semibold text-red-700">
-                                        (Can access the Exhibition)
-                                    </th>
-                                    <th scope="col" className="py-3.5 pl-4 w-1/12 pr-3 text-left sm:text-2xl text-lg font-semibold text-gray-900 sm:pl-3">
-                                        Price
-                                    </th>
-                                    <th scope="col" className="py-3.5 pl-4 pr-3 text-left sm:text-2xl text-lg font-semibold text-gray-900 sm:pl-3">
-
-                                    </th>
-                                </tr>
-                            </thead>
                             <tbody className="bg-white">
                                 {summit.map((delegate) => (
-                                    <tr key={delegate.title} className="even:bg-gray-100">
+                                    <tr key={delegate.title} className="odd:bg-gray-100">
                                         <td className="flex-wrap px-3 py-4 font-semibold text-gray-900 text-md">{delegate.title}</td>
-                                        <td className="flex-wrap px-3 py-4 text-gray-900 text-md">{delegate.description}<br /></td>
-                                        <td className="px-3 py-4 text-gray-900 font-bold text-md">£{delegate.old_price}.00</td>
+                                        <td className="flex-wrap px-3 py-4 text-gray-900 text-md">
+                                            {delegate.description}
+                                            <br />
+                                            <h3 className="text-sm tracking-tight text-red-700 sm:text-md">{delegate.earlyBird}</h3>
+                                        </td>
+                                        <td className="px-3 py-4 text-gray-900 font-bold text-md">{delegate.old_price && <span className='text-red-700 line-through text-xs mr-2'>£{delegate.old_price}.00</span>}£{delegate.item_price}.00</td>
                                         <td className="px-3 py-4">
                                             <div className='my-auto justify-self-center mx:auto'>
                                                 <Link
@@ -128,26 +137,10 @@ function TicketPricing() {
                 </div>
             </div>
 
-            <div id="exhibition" className="flow-root px-6 mx-auto mt-20 rounded-md max-w-7xl">
+            {/* <div id="exhibition" className="flow-root px-6 mx-auto mt-20 rounded-md max-w-7xl">
                 <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                     <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
                         <table className="min-w-full divide-y divide-gray-300">
-                            <thead>
-                                <tr className='bg-gray-100'>
-                                    <th scope="col" className="py-3.5 w-1/4 pl-4 pr-3 text-left sm:text-2xl text-lg font-semibold text-gray-900 sm:pl-3">
-                                        Visitor to Exhibition
-                                    </th>
-                                    <th scope="col" className="px-3 w-2/4 py-3.5 text-left sm:text-2xl text-lg font-semibold text-red-700">
-                                        (No access to the Summit)
-                                    </th>
-                                    <th scope="col" className="py-3.5 pl-4 w-1/12 pr-3 text-left sm:text-2xl text-lg font-semibold text-gray-900 sm:pl-3">
-                                        Price
-                                    </th>
-                                    <th scope="col" className="py-3.5 pl-4 pr-3 text-left sm:text-2xl text-lg font-semibold text-gray-900 sm:pl-3">
-
-                                    </th>
-                                </tr>
-                            </thead>
                             <tbody className="bg-white">
                                 {exhibition.map((visitor) => (
                                     <tr key={visitor.title} className="even:bg-gray-100">
@@ -169,17 +162,15 @@ function TicketPricing() {
                                                 >
                                                     Register
                                                 </Link>
-
                                             </div>
                                         </td>
-
                                     </tr>
                                 ))}
                             </tbody>
                         </table>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className="max-w-5xl mx-auto mt-12 sm:text-center">
                 <h3 className="text-sm tracking-tight text-red-700 sm:text-md">Notice: GSG Ltd reserves the right to exclude and refund registration that does not belong to the correct category pass</h3>
             </div>

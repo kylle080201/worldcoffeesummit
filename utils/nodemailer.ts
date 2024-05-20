@@ -199,11 +199,12 @@ const generateEmailContent = ({
                             " class="padding message-content">
                                                     <div class="header-image">
                                                         <img width="500"
-                                                            src="https://worldcoffeealliance.com/wp-content/uploads/2023/06/Confirmation-Banner.jpg" />
+                                                            src="https://worldcoffeealliance.com/wp-content/uploads/2024/05/Registration-banner-scaled.jpg" />
                                                     </div>
                                                     <div class="form-container">
                                                         <p> Hi ${firstName},</p>
-                                                        <p>Thank you for registering as a Delegate to World Coffee Summit London 2023. We look forward to welcoming you to Queen Elizabeth II Centre, London on 13 September 2023. </p>
+                                                        <p>Thank you for registering as a Delegate to World Coffee Innovation Summit London 2024. </p>
+                                                        <p>We look forward to welcoming you in London on 16-17th October 2024. </p>
                                                         <p>To collect your badge, please show and scan the QR code below or attached.</p>
                                                         <div class="qr-code">
                                                             <div>
@@ -218,12 +219,15 @@ const generateEmailContent = ({
                                                                 <div>Delegate to Summit</div>
                                                             </div>
                                                         </div>
+                                                        <p><b>WHY NOT JOIN OUR “NETWORKING SOIRÉE” AT UK HOUSE OF LORDS ON 16TH OCTOBER 2024 EARLY EVENING?</b><span style="color: red;"> Limited tickets only! First come, first serve!</span></p>
+                                                        <a href="http://localhost:3000/register/form?line_items=%5B%7B%22price%22%3A%22price_1NJtGKKMWpUKzQVzGyIldRNk%22%2C%22quantity%22%3A1%2C%22tax_rates%22%3A%5B%22txr_1NCgheKMWpUKzQVzZ761hX9q%22%5D%7D%5D"><b>Register here</b></a>
                                                         <p>
                                                             <b>What you need to know:</b>
                                                         </p>
-                                                        <p><b>When?</b><br> 13th September 2023 - 8:00 - 18:30 </p>
-                                                        <p><b>Where?</b><br> The St James’s Hall at QEII Centre, Broad Sanctuary, London SW1P 3EE </p>
-                                                        <p>For the most up to date information about World Coffee Summit, why not follow us on
+                                                        <p><b>When?</b><br> 16-17th October 2024 </p>
+                                                        <p><b>Where?</b><br> Summit: 4th Floor at QEII Centre, Broad Sanctuary, London SW1P 3EE 
+                                                        Networking Soirée: UK House of Lords, Houses of Parliament, Parliament Sq, London SW1A 0PW</p>
+                                                        <p>For the most up to date information about World Coffee Innovation Summit London 2024, why not follow us on
                                                          <a target='_blank'
                                                                 href='https://www.linkedin.com/company/worldcoffeealliance/'>LinkedIn</a>
                                                             and <a target='_blank'
@@ -381,11 +385,13 @@ const generateEmailContent = ({
                             " class="padding message-content">
                                                     <div class="header-image">
                                                         <img width="500"
-                                                            src="https://worldcoffeealliance.com/wp-content/uploads/2023/06/Confirmation-Banner.jpg" />
+                                                            src="https://worldcoffeealliance.com/wp-content/uploads/2024/05/Registration-banner-scaled.jpg" />
                                                     </div>
                                                     <div class="form-container">
                                                         <p> Hi ${firstName},</p>
-                                                        <p>Thank you for registering as a Visitor to World Coffee Exhibition London 2023. We look forward to welcoming you to Queen Elizabeth II Centre, London on 13 September 2023. </p>
+                                                        <p>Thank you for registering as a guest at our Networking Soirée at The UK House of Lords on 16th October 2024.</p>
+                                                        <p>Please make sure you have already registered your pass to World Coffee Innovation Summit London 2024, as the Networking Soirée is exclusively for registered delegate to the summit only. If not, <a href="http://localhost:3000/register/form?line_items=%5B%7B%22price%22%3A%22price_1NJtGKKMWpUKzQVzGyIldRNk%22%2C%22quantity%22%3A1%2C%22tax_rates%22%3A%5B%22txr_1NCgheKMWpUKzQVzZ761hX9q%22%5D%7D%5D">register here</a></p>
+                                                        <p>We look forward to welcoming you in London on 16-17th October 2024.</p>
                                                         <p>To collect your badge, please show and scan the QR code below or attached.</p>
                                                         <div class="qr-code">
                                                             <div>
@@ -403,9 +409,11 @@ const generateEmailContent = ({
                                                         <p>
                                                             <b>What you need to know:</b>
                                                         </p>
-                                                        <p><b>When?</b><br> 13th September 2023 - 9:00 - 17:00 </p>
-                                                        <p><b>Where?</b><br>The Westminster Hall at QEII Centre, Broad Sanctuary, London SW1P 3EE</p>
-                                                        <p>For the most up to date information about World Coffee Summit and World Coffee Exhibition, why not follow us on <a target='_blank'
+                                                        <p><b>When?</b><br> 16-17th October 2024 </p>
+                                                        <p><b>Where?</b><br> Summit: 4th Floor at QEII Centre, Broad Sanctuary, London SW1P 3EE 
+                                                        Networking Soirée: UK House of Lords, Houses of Parliament, Parliament Sq, London SW1A 0PW</p>
+                                                        <p>For the most up to date information about World Coffee Innovation Summit London 2024, why not follow us on
+                                                        <a target='_blank'
                                                                 href='https://www.linkedin.com/company/worldcoffeealliance/'>LinkedIn</a>
                                                             and <a target='_blank'
                                                                 href='https://twitter.com/WCoffeeAlliance'>Twitter</a>
@@ -414,8 +422,7 @@ const generateEmailContent = ({
                                                             <a target='_blank'
                                                                 href='http://www.worldcoffeesummit.net/'>sharing this
                                                                 link?</a></p>
-                                                        <p>If you have any other queries, please don’t hesitate to get
-                                                            in touch by emailing <a href="mailto:events@worldcoffeealliance.com">events@worldcoffeealliance.com</a>
+                                                        <p>If you have any other queries, please don’t hesitate to get in touch by emailing <a href="mailto:events@worldcoffeealliance.com">events@worldcoffeealliance.com</a>
                                                         </p>
                                                         <p>See you soon!<br>
                                                             <b>The Team @ World Coffee Summit</b>
