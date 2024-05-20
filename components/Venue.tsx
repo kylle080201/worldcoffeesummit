@@ -53,7 +53,7 @@ export default function Venue() {
             <div className="mx-auto lg:flex md:max-w-7xl mt-12 gap-12">
                 <div className="flex-shrink-0 max-w-5xl mx-12 mt-12 lg:mx-0 md:mt-0 w-3/5">
                     <img
-                        src="https://worldcoffeealliance.com/wp-content/uploads/2024/05/11c55634acb3faa3c15d13127891b37e.jpeg"
+                        src="https://worldcoffeealliance.com/wp-content/uploads/2024/05/11c55634acb3faa3c15d13127891b37e-e1716190907215.jpeg"
                         alt="house of Lords"
                         className="w-full h-full rounded-lg shadow-lg bg-white/5"
                     />
