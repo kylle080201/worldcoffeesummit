@@ -14,9 +14,9 @@ function TicketPricing() {
             earlyBird: "Book before Monday 8th July 2024 to Save £400.00",
             line_items: [
                 {
-                    price: 'price_1PGwuzKMWpUKzQVziwJkTR7F',
+                    price: 'price_1PIjFIKMWpUKzQVzQGc0HKy6',
                     quantity: 1,
-                    tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
+                    tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
                 }
             ]
         },
@@ -28,9 +28,9 @@ function TicketPricing() {
             earlyBird: "Book before Monday 8th July 2024 to Save £500.00",
             line_items: [
                 {
-                    price: 'price_1PGwvYKMWpUKzQVzl8ZKucou',
+                    price: 'price_1PIjG5KMWpUKzQVzeUZtVCkL',
                     quantity: 1,
-                    tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
+                    tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
                 }
             ]
         },
@@ -42,9 +42,9 @@ function TicketPricing() {
             earlyBird: "Book before Monday 8th July 2024 to Save £600.00",
             line_items: [
                 {
-                    price: 'price_1PGwvyKMWpUKzQVzW6v1DAa1',
+                    price: 'price_1PIjGeKMWpUKzQVzflAosWt5',
                     quantity: 1,
-                    tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
+                    tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
                 }
             ]
         },
@@ -56,9 +56,9 @@ function TicketPricing() {
             earlyBird: "Limited tickets only! First come, first serve!",
             line_items: [
                 {
-                    price: 'price_1PIiS4KMWpUKzQVz4RptL8TA',
+                    price: 'price_1PIjEYKMWpUKzQVzArTdM3x0',
                     quantity: 1,
-                    tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
+                    tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
                 }
             ]
         },

@@ -221,7 +221,7 @@ const generateEmailContent = ({
                                                                 </div>
                                                             </div>
                                                             <p><b>WHY NOT JOIN OUR “NETWORKING SOIRÉE” AT UK HOUSE OF LORDS ON 16TH OCTOBER 2024 EARLY EVENING?</b><span style="color: red;"> Limited tickets only! First come, first serve!</span></p>
-                                                            <a href="http://localhost:3000/register/form?line_items=%5B%7B%22price%22%3A%22price_1PIiS4KMWpUKzQVz4RptL8TA%22%2C%22quantity%22%3A1%2C%22tax_rates%22%3A%5B%22txr_1NCgheKMWpUKzQVzZ761hX9q%22%5D%7D%5D"><b>Register here</b></a>
+                                                            <a href="http://localhost:3000/register/form?line_items=%5B%7B%22price%22%3A%22price_1PIjEYKMWpUKzQVzArTdM3x0%22%2C%22quantity%22%3A1%2C%22tax_rates%22%3A%5B%22txr_1NCgheKMWpUKzQVzZ761hX9q%22%5D%7D%5D"><b>Register here</b></a>
                                                             <p>
                                                                 <b>What you need to know:</b>
                                                             </p>
@@ -390,7 +390,7 @@ const generateEmailContent = ({
                                                         <div class="form-container">
                                                             <p> Hi ${firstName},</p>
                                                             <p>Thank you for registering as a guest at our Networking Soirée at The UK House of Lords on 16th October 2024.</p>
-                                                            <p>Please make sure you have already registered your pass to World Coffee Innovation Summit London 2024, as the Networking Soirée is exclusively for registered delegate to the summit only. If not, <a href="http://localhost:3000/register/form?line_items=%5B%7B%22price%22%3A%22price_1PIiS4KMWpUKzQVz4RptL8TA%22%2C%22quantity%22%3A1%2C%22tax_rates%22%3A%5B%22txr_1NCgheKMWpUKzQVzZ761hX9q%22%5D%7D%5D">register here</a></p>
+                                                            <p>Please make sure you have already registered your pass to World Coffee Innovation Summit London 2024, as the Networking Soirée is exclusively for registered delegate to the summit only. If not, <a href="http://localhost:3000/register/form?line_items=%5B%7B%22price%22%3A%22price_1PIjEYKMWpUKzQVzArTdM3x0%22%2C%22quantity%22%3A1%2C%22tax_rates%22%3A%5B%22txr_1NCgheKMWpUKzQVzZ761hX9q%22%5D%7D%5D">register here</a></p>
                                                             <p>We look forward to welcoming you in London on 16-17th October 2024.</p>
                                                             <p>To collect your badge, please show and scan the QR code below or attached.</p>
                                                             <div class="qr-code">
@@ -573,7 +573,7 @@ const generateEmailContent = ({
                                                         <div class="form-container">
                                                             <p> Hi ${firstName},</p>
                                                             <p>Thank you for registering as a Delegate to World Coffee Innovation Summit London 2024 and a guest of our Networking Soirée at The UK House of Lords.</p>
-                                                            <p>Please make sure you have already registered your pass to World Coffee Innovation Summit London 2024, as the Networking Soirée is exclusively for registered delegate to the summit only. If not, <a href="http://localhost:3000/register/form?line_items=%5B%7B%22price%22%3A%22price_1PIiS4KMWpUKzQVz4RptL8TA%22%2C%22quantity%22%3A1%2C%22tax_rates%22%3A%5B%22txr_1NCgheKMWpUKzQVzZ761hX9q%22%5D%7D%5D">register here</a></p>
+                                                            <p>Please make sure you have already registered your pass to World Coffee Innovation Summit London 2024, as the Networking Soirée is exclusively for registered delegate to the summit only. If not, <a href="http://localhost:3000/register/form?line_items=%5B%7B%22price%22%3A%22price_1PIjEYKMWpUKzQVzArTdM3x0%22%2C%22quantity%22%3A1%2C%22tax_rates%22%3A%5B%22txr_1NCgheKMWpUKzQVzZ761hX9q%22%5D%7D%5D">register here</a></p>
                                                             <p>We look forward to welcoming you in London on 16-17th October 2024.</p>
                                                             <p>To collect your badge, please show and scan the QR code below or attached.</p>
                                                             <div class="qr-code">
