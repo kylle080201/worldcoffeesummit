@@ -50,19 +50,15 @@ function TicketPricing() {
         },
         {
             title: "Networking Soirée Pass",
-            item_price: 225,
-            description: "Networking Soirée at House of Lords 16th October 2024 Early Evening Wines and Hors d’oeuvres",
+            old_price: 225,
+            item_price: 185,
+            description: "Wines and Hors d’oeuvres",
             earlyBird: "Limited tickets only! First come, first serve!",
             line_items: [
-                // {
-                //     price: 'price_1PGx2vKMWpUKzQVz1rtJmCf0',
-                //     quantity: 1,
-                //     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
-                // }
                 {
-                    price: 'price_1NJtGKKMWpUKzQVzGyIldRNk',
+                    price: 'price_1PIiS4KMWpUKzQVz4RptL8TA',
                     quantity: 1,
-                    tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
+                    tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
             ]
         },
@@ -100,17 +96,20 @@ function TicketPricing() {
             <div id="summit" className="flow-root px-6 mx-auto mt-12 rounded-md max-w-7xl">
                 <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                     <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
-                        <table className="min-w-full divide-y divide-gray-300">
+                        <div className="max-w-5xl mx-auto sm:text-center">
+                            <h3 className="text-4xl tracking-tight text-red-700 sm:text-md font-bold">Super Early Bird Offer ends on 7th July 2024</h3>
+                        </div>
+                        <table className="min-w-full divide-y divide-gray-300 mt-6">
                             <tbody className="bg-white">
                                 {summit.map((delegate) => (
                                     <tr key={delegate.title} className="odd:bg-gray-100">
-                                        <td className="flex-wrap px-3 py-4 font-semibold text-gray-900 text-md">{delegate.title}</td>
-                                        <td className="flex-wrap px-3 py-4 text-gray-900 text-md">
+                                        <td className="flex-wrap px-3 py-4 font-semibold text-gray-900 text-lg">{delegate.title}</td>
+                                        <td className="flex-wrap px-3 py-4 text-gray-900 text-lg">
                                             {delegate.description}
                                             <br />
-                                            <h3 className="text-sm tracking-tight text-red-700 sm:text-md">{delegate.earlyBird}</h3>
+                                            <h3 className="text-sm tracking-tight text-red-700 sm:text-lg">{delegate.earlyBird}</h3>
                                         </td>
-                                        <td className="px-3 py-4 text-gray-900 font-bold text-md">{delegate.old_price && <span className='text-red-700 line-through text-xs mr-2'>£{delegate.old_price}.00</span>}£{delegate.item_price}.00</td>
+                                        <td className="px-3 py-4 text-gray-900 font-bold text-lg">{delegate.old_price && <span className='text-red-700 line-through text-xs mr-2'>£{delegate.old_price}.00</span>}£{delegate.item_price}.00</td>
                                         <td className="px-3 py-4">
                                             <div className='my-auto justify-self-center mx:auto'>
                                                 <Link
@@ -125,10 +124,8 @@ function TicketPricing() {
                                                 >
                                                     Register
                                                 </Link>
-
                                             </div>
                                         </td>
-
                                     </tr>
                                 ))}
                             </tbody>
@@ -172,7 +169,7 @@ function TicketPricing() {
                 </div>
             </div> */}
             <div className="max-w-5xl mx-auto mt-12 sm:text-center">
-                <h3 className="text-sm tracking-tight text-red-700 sm:text-md">Notice: GSG Ltd reserves the right to exclude and refund registration that does not belong to the correct category pass</h3>
+                <h3 className="text-sm tracking-tight text-red-700 sm:text-md">Notice: We reserves the right to exclude and refund registration that does not belong to the correct category pass</h3>
             </div>
         </div>
     )

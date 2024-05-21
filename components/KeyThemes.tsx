@@ -47,33 +47,36 @@ function KeyThemes() {
   const themesColumn1 = keyThemes.slice(0, 5);
   const themesColumn2 = keyThemes.slice(5);
   return (
-    <div className='mx-auto sm:max-w-7xl'>
-      <div className='flex w-full justify-center'>
-        <h2 className="text-4xl font-bold tracking-tight">2024 KEY THEMES</h2>
-      </div>
-      <div className='mt-12 flex gap-4 md:gap-8 md:flex-row flex-col md:px-0 px-12'>
-        {/* Column 1 */}
-        <div className="md:w-1/2 w-full">
-          <ul className="list-disc flex flex-col gap-4 ml-6">
-            {themesColumn1.map(theme => (
-              <li key={theme.title} className="text-xl">
-                <strong>{theme.title}:</strong> {theme.description}
-              </li>
-            ))}
-          </ul>
+    <div className='w-full py-24 bg-gray-100'>
+      <div className='mx-auto sm:max-w-7xl'>
+        <div className='flex w-full justify-center'>
+          <h2 className="text-4xl font-bold tracking-tight">2024 KEY THEMES</h2>
         </div>
-        {/* Column 2 */}
-        <div className="md:w-1/2 w-full">
-          <ul className="list-disc flex flex-col gap-4 ml-6">
-            {themesColumn2.map(theme => (
-              <li key={theme.title} className="text-xl">
-                <strong>{theme.title}:</strong> {theme.description}
-              </li>
-            ))}
-          </ul>
+        <div className='mt-12 flex gap-4 md:gap-8 md:flex-row flex-col md:px-0 px-12'>
+          {/* Column 1 */}
+          <div className="md:w-1/2 w-full">
+            <ul className="list-disc flex flex-col gap-4 ml-6">
+              {themesColumn1.map(theme => (
+                <li key={theme.title} className="text-xl">
+                  <strong>{theme.title}:</strong> {theme.description}
+                </li>
+              ))}
+            </ul>
+          </div>
+          {/* Column 2 */}
+          <div className="md:w-1/2 w-full">
+            <ul className="list-disc flex flex-col gap-4 ml-6">
+              {themesColumn2.map(theme => (
+                <li key={theme.title} className="text-xl">
+                  <strong>{theme.title}:</strong> {theme.description}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </div>
+    
   );
 }
 

@@ -4,7 +4,7 @@ import { decryptData } from "../../../../utils/encryptor";
 
 export default function Success({ searchParams }: any) {
     const checkoutSessionId = searchParams.session_id;
-    const priceId = searchParams.price_id;
+    const line_items = searchParams.line_items;
     const encryptedFormData = searchParams.buyer_data;
     const decryptedFormData = decryptData(encryptedFormData)
 
@@ -17,7 +17,7 @@ export default function Success({ searchParams }: any) {
     return (
         <>
             <RegistrationSteps steps={steps} />
-            {decryptedFormData ? <PaymentSuccess checkoutSessionId={checkoutSessionId} priceId={priceId} decryptedFormData={JSON.parse(decryptedFormData)} /> : null}
+            {decryptedFormData ? <PaymentSuccess checkoutSessionId={checkoutSessionId} line_items={line_items} decryptedFormData={JSON.parse(decryptedFormData)} /> : null}
         </>
     )
 }

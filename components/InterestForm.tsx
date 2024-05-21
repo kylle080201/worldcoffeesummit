@@ -47,18 +47,10 @@ const InterestForm = () => {
       "Other"
     ]
 
-    // const notificationMethods = [
-    //   "Exhibiting",
-    //   "Sponsorship",
-    // ]
-
     const notificationMethods = [
-        "Exhibiting/Sponsorship Opportunities",
-        "Speaking Opportunities (Sponsored)",
-        "Attending as a Delegate/Visitor",
-        "Media Partner/Supporter",
-        "Press Passes"
-      ]
+      "Exhibiting",
+      "Sponsorship",
+    ]
 
     useEffect(() => {
         if (typeof window !== "undefined") {

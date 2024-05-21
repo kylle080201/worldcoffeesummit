@@ -2,13 +2,14 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import getStripe from '../get_stripe'
-import { useSearchParams } from 'next/navigation'
+import { useRouter, useSearchParams } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import BackButton from './BackButton'
 import Link from 'next/link'
 import { ClockIcon } from '@heroicons/react/24/outline'
 
 const RegisterForm = () => {
+    const router = useRouter()
     const searchParams = useSearchParams()
     const [isAgree, setIsAgree] = useState(false)
     const [origin, setOrigin] = useState('')
@@ -40,32 +41,9 @@ const RegisterForm = () => {
     }
 
     const redirectToCheckout = async (formData: any) => {
-        const line_items = JSON.parse(searchParams?.get('line_items')!)[0];
-        if (line_items) {
-            try {
-                await fetch('/api/checkout-sessions', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(
-                        {
-                            line_items,
-                            formData,
-                            origin
-                        }
-                    )
-                }).then(response => response.json())
-                    .then(async data => {
-                        const stripe = await getStripe();
-                        await stripe?.redirectToCheckout({ sessionId: data?.response?.retrievedSession?.id })
-                    }).catch(error => {
-                        console.log(error);
-                    });
-            } catch (error) {
-                alert(error)
-            }
-        }
+        const line_items = searchParams?.get('line_items') as string;
+        const encryptedFormData = JSON.stringify(formData)
+        router.push(`/register/form/networking-soiree?line_items=${line_items}&formData=${encryptedFormData}`)
     }
 
     const watchEmail = watch('email');

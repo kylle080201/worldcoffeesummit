@@ -18,41 +18,6 @@ function Speakers2024() {
   const speakers = [
     {
       key: '0',
-      name: 'Sylvia J. Megret',
-      role: 'President and CEO',
-      company: 'ACDI/VOCA',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/SYLVIA-SQUARE.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/ACDIVOCA-logo-gray-tag.png",
-      iconWidth: 100,
-      iconHeight: 100,
-      bio: `
-        Qu Dongyu, who took office on 1 August 2019 as Director-General of the Food and Agriculture Organization of the United Nations, has spent his life working on how to make sure the world is fed.
-        Born in 1963 to a rice-growing family in China’s Hunan Province, Qu studied horticultural science at Hunan Agricultural University and then plant breeding and genetics at the Chinese Academy of Agricultural Sciences. He later added environmental science to his knowledge portfolio while earning a PhD at Wageningen University, in the Netherlands.
-        He then progressed through a range of national and international activities, engaged simultaneously in science and management, all during a time when China’s reform and opening-up process led the country to dramatically reduce poverty and hunger in a country with 20 percent of the global population, 9 percent of the world’s cultivated land, and where over 90 percent of the rural population is engaged in small holder farm operations working less than 3 hectares.
-        His vision is founded on the belief that freedom from hunger is a basic human right, and that in the 21st century we have the capability to eradicate chronic food insecurity. While challenges loom, Qu’s cardinal principle is that “problems can also be the source of progress”.
-        Before coming to FAO, Qu served as China’s Vice Minister of Agriculture and Rural Affairs, where one of his achievements was to promote inclusive and innovative development and make sure information and communication technologies (ICT) were available in rural areas so that more than 400 million farmers could use their smartphones as a new farming tool.
-        That vision has been consistent across a professional career that includes periods in central and local government, in and leading research institutes, and as a human resources leader at the China Three Gorges Project Development Corporation, a $40 billion investment project.
-        Among his national initiatives has been to improve reporting of wholesale prices for agricultural products in China and foster the establishment of more than 100 specialty production areas geared to making local comparative advantages work to the benefit of local farmers. As Vice Governor of Ningxia Hui Autonomous Region, one of China’s landlocked and poorest areas, Qu formulated action plans aimed at poverty reduction, disaster reduction and prevention, women empowerment, agritourism and mutual learning platforms designed to boost trust between ethnic groups.
-        Qu says he represents the combination of an “Asian soul” and a “global mind”. Recognized for scientific innovation as a young scholar, Qu has for 30 years been involved in international exchanges and orchestrated major events including the World Potato Congress, the International Rice Congress and the International Conference on Plant Protection, and participated in multilateral initiatives such as the World Trade Organization and the G20 as well as numerous bilateral initiatives involving Asia, Africa and Latin America. He has also directly helped design flagship South-South Cooperation projects with FAO and the World Bank.
-        His motto is “Simple life, but not simple work”.
-        He is married, and has one daughter.
-      `
-    },
-    {
-      key: '1',
-      name: 'T.J. Ryan',
-      role: 'Chief of Party of the Philippine Coffee Advancement and Farm Enterprise Project',
-      company: 'ACDI/VOCA',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/TJ-SQUARE.png',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/ACDIVOCA-logo-gray-tag.png",
-      iconWidth: 100,
-      iconHeight: 100,
-      bio: `
-      T.J. Ryan is the chief of party of the Philippine Coffee Advancement and Farm Enterprise Project, funded by the United States Department of Agriculture. He has over 30 years of experience in international development, including project and program management with a focus on agriculture and agribusiness development. T.J. served as a Peace Corps volunteer in Benin and has lived in West, Southern, and East Africa and Ecuador. Since joining ACDI/VOCA in 2002, T.J. has focused on developing cocoa and coffee sector programs around the world, providing technical oversight, and managing partnerships throughout these value chains. He holds an MBA in international business from Johns Hopkins University and is fluent in English, French, and Spanish, with a working knowledge of Portuguese. 
-      `
-    },
-    {
-      key: '2',
       name: 'Dr. Florika Fink-Hooijer',
       role: 'Director-General, Environment Department',
       company: 'European Commission',
@@ -77,7 +42,59 @@ function Speakers2024() {
       `
     },
     {
+      key: '1',
+      name: 'The Rt. Hon John Gummer, Lord Deben',
+      role: 'Former Chairman',
+      company: 'UK Climate Change Committee (The CCC)',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2023/08/Lord-Deben-Photo-2019-adj-003-scaled-1.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/House_of_Lords_logo_2020.svg.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+      The Rt. Hon John Gummer, Lord Deben, is the founder and Chairman of Sancroft International, a consultancy that advises both businesses and investors on all areas of Sustainability and ESG. Between 2012 and 2023 he was Chairman of the UK’s Independent Climate Change Committee. Lord Deben was also the UK’s longest serving Secretary of State for the Environment (1993-97) having previously been Minister of Agriculture, Fisheries, and Food. His sixteen years of top-level ministerial experience also include Minister for London, Employment Minister, and Paymaster General in HM Treasury. Lord Deben is currently Chairman of Valpak Ltd and of PIMFA, the trade body representing financial advisers and wealth managers. Throughout his political, business, and personal life Lord Deben has consistently championed an accord between sustainability and business sense.
+      `
+    },
+    {
+      key: '2',
+      name: 'Sylvia J. Megret',
+      role: 'President and Chief Executive Officer',
+      company: 'ACDI/VOCA',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/SYLVIA-SQUARE.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/ACDIVOCA-logo-gray-tag.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+      Sylvia J. Megret serves as president and CEO of ACDI/VOCA. As a global development executive with 30 years of experience, she promotes the organization’s mission and lives its values in support of inclusive, sustainable development worldwide. Sylvia joined ACDI/VOCA in December 2016, first serving as chief operating officer (COO) and later as president and COO from February 2021 to April of 2022. She also served as interim CEO from December 2017 to June 2018.
+      Sylvia has proven expertise convening diverse teams that bridge functions, cultures, and international borders. She is also skilled at identifying and institutionalizing effective teams and systems for maximum efficiency and success.
+      Sylvia is currently board chair of the Fundación ACDI/VOCA Latin America (FAVLA). She also serves as a board member of the Society of International Development’s U.S. Chapter (SID-US) and as the 2022 SID-US conference chair. Sylvia led ACDI/VOCA’s role as a founding member of the Coalition for Racial and Ethnic Equity in International Development (CREED) and is also a founding member of Chief (Washington).
+      She holds a master’s degree in international development from American University and a bachelor’s degree in political science and French from the University of Michigan. She is fluent in English and French, and her work has taken her from Africa to Asia, Latin America, and the Caribbean.      
+      `
+    },
+    {
       key: '3',
+      name: 'Jennifer “Vern” Long',
+      role: 'Chief Executive Officer',
+      company: 'World Coffee Research',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/JENNIFER-SQUARE-scaled.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/WCR-primary-logo-all-black.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+        Vern Long is the Chief Executive Officer of World Coffee Research (WCR). WCR unites the 
+        global coffee industry to drive science-based agricultural solutions to urgently secure a 
+        diverse and sustainable supply of quality coffee today and for generations to come. In close 
+        collaboration with the WCR Board and member companies, Dr. Long and the WCR executive 
+        leadership team are harnessing the collective power of the coffee industry to deepen public 
+        and private investment and engagement in coffee R&D in response to the significant 
+        innovation gap in coffee agriculture. A plant breeder by training, Long has over 25 years of 
+        experience in global collaborative crop improvement and seed systems initiatives aligning 
+        public sector and industry goals. She is deeply motivated by the transformative power of 
+        agricultural R&D to achieve the coffee industry’s sustainability priorities. A dual citizen of 
+        Canada and the U.S., she holds a Ph.D. in plant breeding from Cornell University.
+      `
+    },
+    {
+      key: '4',
       name: 'Sophie Aujean',
       role: 'Director Global Advocacy',
       company: 'Fairtrade International',
@@ -90,49 +107,23 @@ function Speakers2024() {
       `
     },
     {
-      key: '4',
-      name: 'Ashley Olson Onyango',
-      role: 'Head of Financial Inclusion and AgriTech',
-      company: 'GSMA',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/ASHLEY-SQUARE-scaled.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/image0011.png",
-      iconWidth: 100,
-      iconHeight: 100,
-      bio: `
-      Ashley joined the GSMA in 2021 as the Head of Financial Inclusion and AgriTech.  Prior to joining GSMA, Ashley had been living and working in East Africa, championing financial inclusion and the development of agrifood systems across sub-Saharan Africa for over 11 years.  During this time, Ashley designed and managed funds, investing in agribusinesses and fintechs across the continent, with Root Capital and Africa Enterprise Challenge Fund (AECF), to catalyze innovation and growth for wide impact.  Ashley has played key roles in driving and supporting gender lens investing in her work.  She also worked with Mastercard Foundation and Financial Sector Deepening Africa (FSDA), managing large multi-million-dollar programmes, partnering and working with a wide array of implementing partners and key stakeholders in the industry.
- 	
-      Ashley holds a BSc in Management and Finance from the University of Minnesota – Twin Cities (United States) and an MBA from IESE Business School (Spain).
-
-      `
-    },
-    {
       key: '5',
-      name: 'The Rt. Hon John Gummer, Lord Deben',
-      role: 'Founder and Chairman',
-      company: 'Sancroft International',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2023/08/Lord-Deben-Photo-2019-adj-003-scaled-1.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/House_of_Lords_logo_2020.svg.png",
+      name: 'Tim Scharrer',
+      role: 'COO and Regional Director Europe and North America',
+      company: 'Volcafe',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/TIM-SQUARE.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/logo@2x-1.png",
       iconWidth: 100,
       iconHeight: 100,
       bio: `
-      The Rt. Hon John Gummer, Lord Deben, is the founder and Chairman of Sancroft International, a consultancy that advises both businesses and investors on all areas of Sustainability and ESG. Between 2012 and 2023 he was Chairman of the UK’s Independent Climate Change Committee. Lord Deben was also the UK’s longest serving Secretary of State for the Environment (1993-97) having previously been Minister of Agriculture, Fisheries, and Food. His sixteen years of top-level ministerial experience also include Minister for London, Employment Minister, and Paymaster General in HM Treasury. Lord Deben is currently Chairman of Valpak Ltd and of PIMFA, the trade body representing financial advisers and wealth managers. Throughout his political, business, and personal life Lord Deben has consistently championed an accord between sustainability and business sense.
+      Appointed Chief Operating Officer and member of the Senior Leadership Team of Volcafe in 2023, Tim assumes global oversight of Volcafe’s Sustainability and Supply Chain functions. In his capacity as Regional Director Europe and North America, Tim leads our destination businesses in those regions. 
+      Tim brings over 30 years of experience in green coffee trading and operations management, from both coffee merchants and the roasting industry. Tim started his career with an apprenticeship as a wholesale and international trade specialist.
+      
+      He went on to work in various coffee producing countries, including eight years at Volcafe in Colombia (Carcafe), and in the coffee trade in a variety of roles and markets. Prior to re-joining Volcafe, Tim was the Managing Director of SCTC (Starbucks Coffee Trading Company), where he worked for over 15 years. 
       `
     },
     {
       key: '6',
-      name: 'Paul Rooke',
-      role: 'Executive Director',
-      company: 'British Coffee Association',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/PAUL-SQUARE.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2023/06/BCA_PrimaryLogo_Large-scaled.jpg",
-      iconWidth: 100,
-      iconHeight: 100,
-      bio: `
-      Paul Rooke is Executive Director of the British Coffee Association, responsible for managing and leading the Association, developing key relationships and representing the Association on policy, media and technical issues.  An agricultural graduate, he has over 25 year’s experience in trade associations covering policy, technical and contractual issues. From 2013-2019 has was the President of CELCAA, the European Liaison Committee for the Agricultural and Agri-food Trade, He is a former Chairman of DG Agri’s Civil Dialogue Group for International Aspects of Agriculture of the EU’s High Level Forum for a Better Functioning Supply Chain and DG Trade’s Expert Group on EU Trade Agreements.
-      `
-    },
-    {
-      key: '7',
       name: 'Pablo von Waldenfels',
       role: 'Director Corporate Responsibility',
       company: 'Tchibo GmbH',
@@ -165,42 +156,45 @@ function Speakers2024() {
       `
     },
     {
-      key: '8',
-      name: 'Tim Scharrer',
-      role: 'Chief Operating Officer and Member of the Senior Leadership Team',
-      company: 'Volcafe',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/TIM-SQUARE.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/logo@2x-1.png",
+      key: '7',
+      name: 'Paul Rooke',
+      role: 'Executive Director',
+      company: 'British Coffee Association (BCA)',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/PAUL-SQUARE.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2023/06/BCA_PrimaryLogo_Large-scaled.jpg",
       iconWidth: 100,
       iconHeight: 100,
       bio: `
-      Appointed Chief Operating Officer and member of the Senior Leadership Team of Volcafe in 2023, Tim assumes global oversight of Volcafe’s Sustainability and Supply Chain functions. In his capacity as Regional Director Europe and North America, Tim leads our destination businesses in those regions. 
-      Tim brings over 30 years of experience in green coffee trading and operations management, from both coffee merchants and the roasting industry. Tim started his career with an apprenticeship as a wholesale and international trade specialist.
-      
-      He went on to work in various coffee producing countries, including eight years at Volcafe in Colombia (Carcafe), and in the coffee trade in a variety of roles and markets. Prior to re-joining Volcafe, Tim was the Managing Director of SCTC (Starbucks Coffee Trading Company), where he worked for over 15 years. 
+      Paul Rooke is Executive Director of the British Coffee Association, responsible for managing and leading the Association, developing key relationships and representing the Association on policy, media and technical issues.  An agricultural graduate, he has over 25 year’s experience in trade associations covering policy, technical and contractual issues. From 2013-2019 has was the President of CELCAA, the European Liaison Committee for the Agricultural and Agri-food Trade, He is a former Chairman of DG Agri’s Civil Dialogue Group for International Aspects of Agriculture of the EU’s High Level Forum for a Better Functioning Supply Chain and DG Trade’s Expert Group on EU Trade Agreements.
+      `
+    },
+    {
+      key: '8',
+      name: 'Ashley Olson Onyango',
+      role: 'Head of Financial Inclusion & AgriTech',
+      company: 'GSMA (Mobile for Development)',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/ASHLEY-SQUARE-scaled.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/image0011.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+      Ashley joined the GSMA in 2021 as the Head of Financial Inclusion and AgriTech.  Prior to joining GSMA, Ashley had been living and working in East Africa, championing financial inclusion and the development of agrifood systems across sub-Saharan Africa for over 11 years.  During this time, Ashley designed and managed funds, investing in agribusinesses and fintechs across the continent, with Root Capital and Africa Enterprise Challenge Fund (AECF), to catalyze innovation and growth for wide impact.  Ashley has played key roles in driving and supporting gender lens investing in her work.  She also worked with Mastercard Foundation and Financial Sector Deepening Africa (FSDA), managing large multi-million-dollar programmes, partnering and working with a wide array of implementing partners and key stakeholders in the industry.
+ 	
+      Ashley holds a BSc in Management and Finance from the University of Minnesota – Twin Cities (United States) and an MBA from IESE Business School (Spain).
+
       `
     },
     {
       key: '9',
-      name: 'Jennifer “Vern” Long',
-      role: 'Chief Executive Officer',
-      company: 'World Coffee Research',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/JENNIFER-SQUARE-scaled.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/WCR-primary-logo-all-black.png",
+      name: 'T.J. Ryan',
+      role: 'Chief of Party of Philippine Coffee Advancement and Farm Enterprise Project',
+      company: 'ACDI/VOCA',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/TJ-SQUARE.png',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/ACDIVOCA-logo-gray-tag.png",
       iconWidth: 100,
       iconHeight: 100,
       bio: `
-        Vern Long is the Chief Executive Officer of World Coffee Research (WCR). WCR unites the 
-        global coffee industry to drive science-based agricultural solutions to urgently secure a 
-        diverse and sustainable supply of quality coffee today and for generations to come. In close 
-        collaboration with the WCR Board and member companies, Dr. Long and the WCR executive 
-        leadership team are harnessing the collective power of the coffee industry to deepen public 
-        and private investment and engagement in coffee R&D in response to the significant 
-        innovation gap in coffee agriculture. A plant breeder by training, Long has over 25 years of 
-        experience in global collaborative crop improvement and seed systems initiatives aligning 
-        public sector and industry goals. She is deeply motivated by the transformative power of 
-        agricultural R&D to achieve the coffee industry’s sustainability priorities. A dual citizen of 
-        Canada and the U.S., she holds a Ph.D. in plant breeding from Cornell University.
+      T.J. Ryan is the chief of party of the Philippine Coffee Advancement and Farm Enterprise Project, funded by the United States Department of Agriculture. He has over 30 years of experience in international development, including project and program management with a focus on agriculture and agribusiness development. T.J. served as a Peace Corps volunteer in Benin and has lived in West, Southern, and East Africa and Ecuador. Since joining ACDI/VOCA in 2002, T.J. has focused on developing cocoa and coffee sector programs around the world, providing technical oversight, and managing partnerships throughout these value chains. He holds an MBA in international business from Johns Hopkins University and is fluent in English, French, and Spanish, with a working knowledge of Portuguese. 
       `
     },
   ];

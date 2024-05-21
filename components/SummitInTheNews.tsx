@@ -4,7 +4,7 @@ import React from 'react'
 
 function SummitInTheNews() {
   return (
-    <div className='w-full py-24 md:px-0 px-12'>
+    <div className='w-full bg-gray-100 py-24 md:px-0 px-12'>
       <div className="relative max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold leading-10 tracking-tight text-gray-900">World Coffee Innovation Summit in The News</h2>
         <div className='flex md:flex-row flex-col gap-8'>

@@ -43,12 +43,13 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
   const req = await request.json();
   const checkoutSessionId = req.checkoutSessionId;
   const formData = req.decryptedFormData;
-  const priceId = req.priceId;
-  const event =
-    priceId === "price_1NJtGKKMWpUKzQVzGyIldRNk" ||
-    priceId === "price_1NmS2AKMWpUKzQVz8sjZgWrf"
-      ? "Exhibition"
-      : "Summit";
+  const line_items = JSON.parse(req.line_items);
+  const event = line_items.length > 1 ? 
+  "Summit and Networking Soirée" : 
+  (line_items[0].price === "price_1PIiS4KMWpUKzQVz4RptL8TA" ? 
+  "Networking Soirée" : 
+  "Summit");
+
   try {
     await connectMongo();
     const getTickets = await Tickets.find({

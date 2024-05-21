@@ -11,12 +11,16 @@ import SpeakerSlider from "../../components/LoopedSpeakers";
 import SummitInTheNews from "../../components/SummitInTheNews";
 import ImageCarousel from "../../components/ImageCarousel";
 import Testimonials from "../../components/LoopedTestimonials";
+import Speakers2024 from "../../components/2024Speakers";
+import KeyThemes from "../../components/KeyThemes";
 
 export default function HomePage() {
     return (
         <>
             <div>
                 <Overview />
+                <Speakers2024 />
+                <KeyThemes />
                 <SpeakerSlider />
                 <ImageCarousel />
                 <Testimonials />
