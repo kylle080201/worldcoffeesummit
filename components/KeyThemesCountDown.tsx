@@ -45,13 +45,13 @@ const KeyThemesCountDown = () => {
                 null
             ) : (
                 <>
-                    <div className="flex-col justify-self-center">
-                        <div className="flex flex-row mx-auto text-center">
-                          <div className="text-red-500 font-bold text-4xl">
+                    <div className="flex-col justify-self-center mt-6">
+                        <div className="flex flex-row mx-auto text-center gap-4">
+                          {/* <div className="text-red-500 font-bold text-4xl">
                             {days} : {hours} : {minutes} : {seconds}
-                          </div>
+                          </div> */}
                             
-                            {/* <div className="flex flex-col">
+                            <div className="flex flex-col bg-gray-100 border shadow-md rounded-md p-4">
                                 <div className="flex flex-col p-2 mr-1 rounded-md">
                                     <h2 className="font-bold text-center text-md text-red-500 md:text-4xl">
                                         {days}
@@ -62,7 +62,7 @@ const KeyThemesCountDown = () => {
                                 </div>
                             </div>
 
-                            <div className="flex flex-col">
+                            <div className="flex flex-col bg-gray-100 border shadow-md rounded-md p-4">
                                 <div className="flex flex-col p-2 mx-1 rounded-md">
                                     <h2 className="font-bold text-center text-md text-red-500 md:text-4xl">
                                         {hours}
@@ -73,7 +73,7 @@ const KeyThemesCountDown = () => {
                                 </div>
                             </div>
 
-                            <div className="flex flex-col">
+                            <div className="flex flex-col bg-gray-100 border shadow-md rounded-md p-4">
                                 <div className="flex flex-col p-2 mx-1rounded-md">
                                     <h2 className="font-bold text-center text-md text-red-500 md:text-4xl">
                                         {minutes}
@@ -84,7 +84,7 @@ const KeyThemesCountDown = () => {
                                 </div>
                             </div>
 
-                            <div className="flex flex-col">
+                            <div className="flex flex-col bg-gray-100 border shadow-md rounded-md p-4">
                                 <div className="flex flex-col p-2 ml-1 rounded-md">
                                     <h2 className="font-bold text-center text-md text-red-500 md:text-4xl">
                                         {seconds}
@@ -93,7 +93,7 @@ const KeyThemesCountDown = () => {
                                 <div className="p-2 rounded-r-md">
                                     <p className="text-base font-semibold text-red-500 md:text-md">Seconds</p>
                                 </div>
-                            </div> */}
+                            </div>
 
                         </div>
                     </div >
