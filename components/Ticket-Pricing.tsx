@@ -99,17 +99,20 @@ function TicketPricing() {
                         <div className="max-w-5xl mx-auto sm:text-center">
                             <h3 className="text-4xl tracking-tight text-red-700 sm:text-md font-bold">Super Early Bird Offer ends on 7th July 2024</h3>
                         </div>
-                        <table className="min-w-full divide-y divide-gray-300 mt-6">
+                        <table className="min-w-full divide-y divide-gray-300 mt-12">
                             <tbody className="bg-white">
                                 {summit.map((delegate) => (
                                     <tr key={delegate.title} className="odd:bg-gray-100">
-                                        <td className="flex-wrap px-3 py-4 font-semibold text-gray-900 text-lg">{delegate.title}</td>
+                                        <td className="flex-wrap px-3 py-4 font-semibold text-gray-900 text-lg whitespace-nowrap">{delegate.title}</td>
                                         <td className="flex-wrap px-3 py-4 text-gray-900 text-lg">
                                             {delegate.description}
                                             <br />
-                                            <h3 className="text-sm tracking-tight text-red-700 sm:text-lg">{delegate.earlyBird}</h3>
+                                            <h3 className="text-sm tracking-tight text-red-700 sm:text-lg font-bold">{delegate.earlyBird}</h3>
                                         </td>
-                                        <td className="px-3 py-4 text-gray-900 font-bold text-lg">{delegate.old_price && <span className='text-red-700 line-through text-xs mr-2'>£{delegate.old_price}.00</span>}£{delegate.item_price}.00</td>
+                                        <td className="px-3 py-4 text-gray-900 font-bold text-lg">
+                                            {delegate.old_price && <span className='text-red-700 line-through mr-2'>£{delegate.old_price}.00</span>}
+                                            £{delegate.item_price}.00
+                                        </td>
                                         <td className="px-3 py-4">
                                             <div className='my-auto justify-self-center mx:auto'>
                                                 <Link
@@ -133,6 +136,7 @@ function TicketPricing() {
                     </div>
                 </div>
             </div>
+
 
             {/* <div id="exhibition" className="flow-root px-6 mx-auto mt-20 rounded-md max-w-7xl">
                 <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -169,7 +173,7 @@ function TicketPricing() {
                 </div>
             </div> */}
             <div className="max-w-5xl mx-auto mt-12 sm:text-center">
-                <h3 className="text-sm tracking-tight text-red-700 sm:text-md">Notice: We reserves the right to exclude and refund registration that does not belong to the correct category pass</h3>
+                <h3 className="text-sm tracking-tight text-red-700 sm:text-md">Notice: Please make sure you choose the correct pass per specification. We reserve the right to exclude and refund registration that does not belong to the correct category pass</h3>
             </div>
         </div>
     )
