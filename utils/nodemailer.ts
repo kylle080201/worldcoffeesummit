@@ -27,7 +27,7 @@ export const mailer = async (data: any) => {
 
   try {
     const isEmailSent = await transporter.sendMail({
-      from: `World Coffee Summit Team <${user}>`,
+      from: `World Coffee Innovation Summit Team <${user}>`,
       to: email,
       cc: "info@worldcoffeealliance.com",
       bcc: "info@worldcoffeealliance.com",
@@ -36,7 +36,7 @@ export const mailer = async (data: any) => {
         event === "Summit"
           ? "Thank you for registering for World Coffee Innovation Summit London 16-17th October 2024"
           : "Thank you for registering for our Networking Soirée" :
-          "Thank you for registering for our Networking Soirée and World Coffee Innovation Summit London 16-17th October 2024",
+          "Thank you for registering for World Coffee Innovation Summit London 16-17th October 2024",
       ...generateEmailContent({
         lastName,
         firstName,
@@ -220,19 +220,19 @@ const generateEmailContent = ({
                                                                     <div>Delegate to Summit</div>
                                                                 </div>
                                                             </div>
-                                                            <p><b>WHY NOT JOIN OUR “NETWORKING SOIRÉE” AT UK HOUSE OF LORDS ON 16TH OCTOBER 2024 EARLY EVENING?</b><span style="color: red;"> Limited tickets only! First come, first serve!</span></p>
+                                                            <p><b>WHY NOT JOIN OUR “NETWORKING SOIRÉE” AT UK HOUSE OF LORDS ON 16TH OCTOBER 2024 EARLY EVENING?</b><span style="color: red;"> <b>Limited tickets only! First come, first serve!</b></span></p>
                                                             <a href="http://localhost:3000/register/form?line_items=%5B%7B%22price%22%3A%22price_1PIjEYKMWpUKzQVzArTdM3x0%22%2C%22quantity%22%3A1%2C%22tax_rates%22%3A%5B%22txr_1NCgheKMWpUKzQVzZ761hX9q%22%5D%7D%5D"><b>Register here</b></a>
                                                             <p>
                                                                 <b>What you need to know:</b>
                                                             </p>
                                                             <p><b>When?</b><br> 16-17th October 2024 </p>
-                                                            <p><b>Where?</b><br> Summit: 4th Floor at QEII Centre, Broad Sanctuary, London SW1P 3EE 
-                                                            Networking Soirée: UK House of Lords, Houses of Parliament, Parliament Sq, London SW1A 0PW</p>
+                                                            <p><b>Where?</b><br> <b>Summit</b>: 4th Floor at QEII Centre, Broad Sanctuary, London SW1P 3EE 
+                                                            <br><b>Networking Soirée</b>: UK House of Lords, Houses of Parliament, Parliament Sq, London SW1A 0PW</p>
                                                             <p>For the most up to date information about World Coffee Innovation Summit London 2024, why not follow us on
                                                             <a target='_blank'
                                                                     href='https://www.linkedin.com/company/worldcoffeealliance/'>LinkedIn</a>
                                                                 and <a target='_blank'
-                                                                    href='https://twitter.com/WCoffeeAlliance'>Twitter</a>
+                                                                    href='https://twitter.com/WCoffeeAlliance'>X/Twitter</a>
                                                                 to see daily developments, event highlights and industry news.</p>
                                                             <p>Why not have your colleagues and industry peers join you by
                                                                 <a target='_blank'
@@ -241,7 +241,7 @@ const generateEmailContent = ({
                                                             <p>If you have any other queries, please don’t hesitate to get in touch by emailing <a href="mailto:events@worldcoffeealliance.com">events@worldcoffeealliance.com</a>
                                                             </p>
                                                             <p>See you soon!<br>
-                                                                <b>The Team @ World Coffee Summit</b>
+                                                                <b>The Team @ World Coffee Innovation Summit</b>
                                                             </p>
                                                         </div>
                                                     </td>
@@ -409,13 +409,13 @@ const generateEmailContent = ({
                                                                 <b>What you need to know:</b>
                                                             </p>
                                                             <p><b>When?</b><br> 16-17th October 2024 </p>
-                                                            <p><b>Where?</b><br> Summit: 4th Floor at QEII Centre, Broad Sanctuary, London SW1P 3EE 
-                                                            Networking Soirée: UK House of Lords, Houses of Parliament, Parliament Sq, London SW1A 0PW</p>
+                                                            <p><b>Where?</b><br><b>Summit</b>: 4th Floor at QEII Centre, Broad Sanctuary, London SW1P 3EE 
+                                                            <br><b>Networking Soirée</b>: UK House of Lords, Houses of Parliament, Parliament Sq, London SW1A 0PW</p>
                                                             <p>For the most up to date information about World Coffee Innovation Summit London 2024, why not follow us on
                                                             <a target='_blank'
                                                                     href='https://www.linkedin.com/company/worldcoffeealliance/'>LinkedIn</a>
                                                                 and <a target='_blank'
-                                                                    href='https://twitter.com/WCoffeeAlliance'>Twitter</a>
+                                                                    href='https://twitter.com/WCoffeeAlliance'>X/Twitter</a>
                                                                 to see daily developments, event highlights and industry news.</p>
                                                             <p>Why not have your colleagues and industry peers join you by
                                                                 <a target='_blank'
@@ -424,7 +424,7 @@ const generateEmailContent = ({
                                                             <p>If you have any other queries, please don’t hesitate to get in touch by emailing <a href="mailto:events@worldcoffeealliance.com">events@worldcoffeealliance.com</a>
                                                             </p>
                                                             <p>See you soon!<br>
-                                                                <b>The Team @ World Coffee Summit</b>
+                                                                <b>The Team @ World Coffee Innovation Summit</b>
                                                             </p>
                                                         </div>
                                                     </td>
@@ -573,7 +573,6 @@ const generateEmailContent = ({
                                                         <div class="form-container">
                                                             <p> Hi ${firstName},</p>
                                                             <p>Thank you for registering as a Delegate to World Coffee Innovation Summit London 2024 and a guest of our Networking Soirée at The UK House of Lords.</p>
-                                                            <p>Please make sure you have already registered your pass to World Coffee Innovation Summit London 2024, as the Networking Soirée is exclusively for registered delegate to the summit only. If not, <a href="http://localhost:3000/register/form?line_items=%5B%7B%22price%22%3A%22price_1PIjEYKMWpUKzQVzArTdM3x0%22%2C%22quantity%22%3A1%2C%22tax_rates%22%3A%5B%22txr_1NCgheKMWpUKzQVzZ761hX9q%22%5D%7D%5D">register here</a></p>
                                                             <p>We look forward to welcoming you in London on 16-17th October 2024.</p>
                                                             <p>To collect your badge, please show and scan the QR code below or attached.</p>
                                                             <div class="qr-code">
@@ -586,6 +585,7 @@ const generateEmailContent = ({
                                                                     <div>${jobTitle}</div>
                                                                     <div>${companyName}</div>
                                                                     <div>${email}</div>
+                                                                    <div>Delegate to Summit</div>
                                                                     <div>Guest to Networking Soirée</div>
                                                                 </div>
                                                             </div>
@@ -593,13 +593,13 @@ const generateEmailContent = ({
                                                                 <b>What you need to know:</b>
                                                             </p>
                                                             <p><b>When?</b><br> 16-17th October 2024 </p>
-                                                            <p><b>Where?</b><br> Summit: 4th Floor at QEII Centre, Broad Sanctuary, London SW1P 3EE 
-                                                            Networking Soirée: UK House of Lords, Houses of Parliament, Parliament Sq, London SW1A 0PW</p>
+                                                            <p><b>Where?</b><br> <b>Summit</b>: 4th Floor at QEII Centre, Broad Sanctuary, London SW1P 3EE 
+                                                            <br><b>Networking Soirée</b>: UK House of Lords, Houses of Parliament, Parliament Sq, London SW1A 0PW</p>
                                                             <p>For the most up to date information about World Coffee Innovation Summit London 2024, why not follow us on
                                                             <a target='_blank'
                                                                     href='https://www.linkedin.com/company/worldcoffeealliance/'>LinkedIn</a>
                                                                 and <a target='_blank'
-                                                                    href='https://twitter.com/WCoffeeAlliance'>Twitter</a>
+                                                                    href='https://twitter.com/WCoffeeAlliance'>X/Twitter</a>
                                                                 to see daily developments, event highlights and industry news.</p>
                                                             <p>Why not have your colleagues and industry peers join you by
                                                                 <a target='_blank'
@@ -608,7 +608,7 @@ const generateEmailContent = ({
                                                             <p>If you have any other queries, please don’t hesitate to get in touch by emailing <a href="mailto:events@worldcoffeealliance.com">events@worldcoffeealliance.com</a>
                                                             </p>
                                                             <p>See you soon!<br>
-                                                                <b>The Team @ World Coffee Summit</b>
+                                                                <b>The Team @ World Coffee Innovation Summit</b>
                                                             </p>
                                                         </div>
                                                     </td>

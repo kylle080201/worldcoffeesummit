@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { ArrowLongRightIcon } from '@heroicons/react/24/outline';
 import { IResponseData } from '../types/responseData';
 import { SocialIcon } from 'react-social-icons';
+import NetworkingSoiree from './NetworkingSoiree';
 
 
 
@@ -58,11 +59,30 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, line_items }: an
                                 REGISTRATION CONFIRMED
                             </h2>
                             <h3 className="my-6 text-lg tracking-tight text-gray-900 sm:text-2xl">
-                                Thank you for registering to attend the {res?.res?.event === "Summit and Networking Soirée" ? "Networking Soirée and World Coffee Innovation Summit London 2024" : res?.res?.event === "Summit" ? "World Coffee Innovation Summit London 2024" : "Networking Soirée" }.
+                                Thank you for registering to attend the {res?.res?.event === "Summit and Networking Soirée" ? "World Coffee Innovation Summit and Networking Soirée London" : res?.res?.event === "Summit" ? "World Coffee Innovation Summit London 2024" : "Networking Soirée" }.
                             </h3>
                             <h3 className="my-6 text-lg tracking-tight text-gray-900 sm:text-2xl">
                                 An email confirmation will be with you shortly with further instructions
                             </h3>
+                            {
+                                res?.res?.event === "Summit" && 
+                                    <div className="flex font-bold flex-col gap-2 text-lg tracking-tight text-gray-900 sm:text-2xl">
+                                    <div>
+                                        WHY NOT JOIN OUR &ldquo;NETWORKING SOIRÉE&ldquo; AT UK HOUSE OF LORDS ON 16TH OCTOBER 2024 EARLY EVENING?
+                                    </div>
+                                    <div className="text-red-500">
+                                        LIMITED TICKETS ONLY! FIRST COME, FIRST SERVE!
+                                    </div>
+                                    <Link className=' underline text-yellow-900' href={'/register/form?line_items=%5B%7B"price"%3A"price_1PIjEYKMWpUKzQVzArTdM3x0"%2C"quantity"%3A1%2C"tax_rates"%3A%5B"txr_1NCgheKMWpUKzQVzZ761hX9q"%5D%7D%5D'}>Register Here</Link>
+                                </div>
+                            }
+                            {
+                                res?.res?.event === "Networking Soirée" && 
+                                <h3 className="my-6 text-lg tracking-tight text-gray-900 sm:text-2xl">
+                                    Please make sure you have already registered your pass to World Coffee Innovation Summit London 2024, as the Networking Soirée is exclusively for registered delegate to the summit only. <Link className='underline text-yellow-900' href={'/register/form?line_items=%5B%7B"price"%3A"price_1PIjEYKMWpUKzQVzArTdM3x0"%2C"quantity"%3A1%2C"tax_rates"%3A%5B"txr_1NCgheKMWpUKzQVzZ761hX9q"%5D%7D%5D'}>Register Here</Link>
+                                </h3>
+                            }
+                            
                             <h3 className="mt-6 text-lg font-bold tracking-tight text-lime-700 sm:text-2xl">
                                 Event Date:
                             </h3>
