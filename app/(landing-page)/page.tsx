@@ -19,7 +19,7 @@ export default function HomePage() {
         <>
             <div>
                 <Overview />
-                <Speakers2024 />
+                {/* <Speakers2024 /> */}
                 <KeyThemes />
                 <SpeakerSlider />
                 <ImageCarousel />
