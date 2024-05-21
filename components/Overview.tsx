@@ -3,11 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import CountDown from './CountDown'
 import { AddToCalendarButton } from 'add-to-calendar-button-react';
-import AgendaHighlights from './AgendaHighlights';
 
-import KeyThemes from './KeyThemes';
-import ImageCarousel from './ImageCarousel';
-import Testimonials from './LoopedTestimonials';
 
 export default function Overview() {
     return (
@@ -57,12 +53,9 @@ export default function Overview() {
                             </div>
                             <div className='flex flex-col items-center mt-4'>
                                 <div className='mx-auto lg:mx-0'>
-                                    {/* <Link rel='noreferer' className='flex-shrink-0 flex text-center sm:px-4 py-2 mx-auto font-bold tracking-tight text-[#674E46] bg-yellow-500 hover:underline h-max text-2xl lg:text-5xl' href="/interest">
-                                        SAVE THE DATE
-                                    </Link> */}
-                                    <p className='flex-shrink-0 flex text-center px-4 py-2 mx-auto font-bold tracking-tight text-[#674E46] bg-yellow-500 h-max text-lg lg:text-2xl'>
-                                        SAVE THE DATE
-                                    </p>
+                                    <Link rel='noreferer' className='flex-shrink-0 flex text-center px-4 py-2 mx-auto font-bold tracking-tight text-[#674E46] bg-yellow-500 h-max text-lg lg:text-2xl' href="/register">
+                                        REGISTER NOW
+                                    </Link>
                                 </div>
                             </div>
                             
@@ -117,9 +110,6 @@ export default function Overview() {
             </div>
             
             {/* <AgendaHighlights /> */}
-            <div className='w-full py-24'>
-                <KeyThemes />
-            </div>
         </>
     )
 }

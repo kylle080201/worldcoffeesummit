@@ -169,7 +169,7 @@ export default function Partners() {
                     <div className="max-w-2xl mx-auto text-center mt-12">
                         <div className="inline-flex items-center justify-center w-full">
                             <hr className="w-full h-px bg-gray-400 border-0" />
-                            <span className="absolute px-3 text-2xl sm:text-4xl font-bold tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">Gold Sponsor</span>
+                            <span className="absolute px-3 text-2xl sm:text-4xl font-bold tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Gold Sponsor</span>
                         </div>
                     </div>
                     <div className='grid items-center justify-center grid-cols-1 gap-4 mx-auto sm:gap-12 sm:flex-row sm:max-w-7xl mt-4'>
@@ -191,7 +191,7 @@ export default function Partners() {
                     <div className="max-w-2xl mx-auto text-center mt-6">
                         <div className="inline-flex items-center justify-center w-full">
                             <hr className="w-full h-px bg-gray-400 border-0" />
-                            <span className="absolute px-3 text-2xl sm:text-4xl font-bold tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">Silver Sponsor</span>
+                            <span className="absolute px-3 text-2xl sm:text-4xl font-bold tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Silver Sponsor</span>
                         </div>
                     </div>
                     <div className='grid items-center justify-center grid-cols-1 gap-4 mx-auto sm:gap-12 sm:flex-row sm:max-w-7x mt-4'>
@@ -213,7 +213,7 @@ export default function Partners() {
                     <div className="max-w-2xl mx-auto text-center mt-6">
                         <div className="inline-flex items-center justify-center w-full">
                             <hr className="w-full h-px bg-gray-400 border-0" />
-                            <span className="absolute px-3 text-2xl sm:text-4xl font-bold tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">Co Sponsors</span>
+                            <span className="absolute px-3 text-2xl sm:text-4xl font-bold tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Co Sponsors</span>
                         </div>
                     </div>
                     <div className='grid items-center justify-center grid-cols-1 gap-4 mx-auto sm:grid-cols-3 sm:gap-12 sm:flex-row sm:max-w-7xl mt-4'>
@@ -235,7 +235,7 @@ export default function Partners() {
                     <div className="max-w-2xl mx-auto text-center mt-6">
                         <div className="inline-flex items-center justify-center w-full">
                             <hr className="w-full h-px bg-gray-400 border-0" />
-                            <span className="absolute px-3 text-2xl sm:text-4xl font-bold tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">Press</span>
+                            <span className="absolute px-3 text-2xl sm:text-4xl font-bold tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Press</span>
                         </div>
                     </div>
                     <div className='grid items-center justify-center grid-cols-1 gap-4 mx-auto sm:grid-cols-2 sm:gap-12 sm:flex-row sm:max-w-7xl mt-4'>

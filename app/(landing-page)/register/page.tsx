@@ -13,7 +13,7 @@ export default function Register() {
                         <EnvelopeIcon width={80} color="#4d7c0f" /> 
                     </div>
                     <div>
-                        <Link href={"mailto:sales@worldcoffeealliance.com"} target="_blank" className="text-yellow-900 text-2xl underline hover:underline-offset-4 font-bold"> sales@worldcoffeealliance.com</Link>
+                        <Link href={"mailto:sales@worldcoffeealliance.com"} className="text-yellow-900 text-2xl underline hover:underline-offset-4 font-bold"> sales@worldcoffeealliance.com</Link>
                     </div>
                 </div>
                 <div className="w-1/2 flex flex-col items-center gap-6 justify-center border-2 rounded-md shadow-md hover:shadow-xl p-8">
@@ -21,7 +21,7 @@ export default function Register() {
                         <ComputerDesktopIcon width={80} color="#4d7c0f" /> 
                     </div>
                     <div>
-                        <Link href={"/register/tickets"} target="_blank" className="text-yellow-900 text-2xl underline hover:underline-offset-4 font-bold">Register Online Now</Link>
+                        <Link href={"/register/tickets"} className="text-yellow-900 text-2xl underline hover:underline-offset-4 font-bold">Register Online Now</Link>
                     </div>
                 </div>
             </div>

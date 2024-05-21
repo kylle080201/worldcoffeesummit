@@ -56,50 +56,51 @@ const slideImages = [
 const ImageCarousel = () => {
 
   return (
-    <div className='py-24 max-w-7xl mx-auto flex flex-col gap-12'>
-      <div className='flex w-full text-center justify-center'>
-        <h2 className="text-4xl font-bold tracking-tight">2023 SUMMIT HIGHLIGHTS</h2>
+    <div className='w-full bg-gray-100'>
+      <div className='py-24 max-w-7xl mx-auto flex flex-col gap-12'>
+        <div className='flex w-full text-center justify-center'>
+          <h2 className="text-4xl font-bold tracking-tight">2023 SUMMIT HIGHLIGHTS</h2>
+        </div>
+        <Carousel showArrows={true} infiniteLoop interval={3000} autoPlay>
+          <div>
+              <img src={slideImages[0].url} alt="Slide 1" />
+          </div>
+          <div>
+              <img src={slideImages[1].url} alt="Slide 2" />
+          </div>
+          <div>
+              <img src={slideImages[2].url} alt="Slide 3" />
+          </div>
+          <div>
+              <img src={slideImages[3].url} alt="Slide 4" />
+          </div>
+          <div>
+              <img src={slideImages[4].url} alt="Slide 5" />
+          </div>
+          <div>
+              <img src={slideImages[5].url} alt="Slide 6" />
+          </div>
+          <div>
+              <img src={slideImages[6].url} alt="Slide 7" />
+          </div>
+          <div>
+              <img src={slideImages[7].url} alt="Slide 8" />
+          </div>
+          <div>
+              <img src={slideImages[8].url} alt="Slide 9" />
+          </div>
+          <div>
+              <img src={slideImages[9].url} alt="Slide 10" />
+          </div>
+          <div>
+              <img src={slideImages[10].url} alt="Slide 11" />
+          </div>
+          <div>
+              <img src={slideImages[11].url} alt="Slide 12" />
+          </div>
+        </Carousel>
       </div>
-      <Carousel showArrows={true} infiniteLoop interval={3000} autoPlay>
-        <div>
-            <img src={slideImages[0].url} alt="Slide 1" />
-        </div>
-        <div>
-            <img src={slideImages[1].url} alt="Slide 2" />
-        </div>
-        <div>
-            <img src={slideImages[2].url} alt="Slide 3" />
-        </div>
-        <div>
-            <img src={slideImages[3].url} alt="Slide 4" />
-        </div>
-        <div>
-            <img src={slideImages[4].url} alt="Slide 5" />
-        </div>
-        <div>
-            <img src={slideImages[5].url} alt="Slide 6" />
-        </div>
-        <div>
-            <img src={slideImages[6].url} alt="Slide 7" />
-        </div>
-        <div>
-            <img src={slideImages[7].url} alt="Slide 8" />
-        </div>
-        <div>
-            <img src={slideImages[8].url} alt="Slide 9" />
-        </div>
-        <div>
-            <img src={slideImages[9].url} alt="Slide 10" />
-        </div>
-        <div>
-            <img src={slideImages[10].url} alt="Slide 11" />
-        </div>
-        <div>
-            <img src={slideImages[11].url} alt="Slide 12" />
-        </div>
-      </Carousel>
     </div>
-     
   );
 };
 

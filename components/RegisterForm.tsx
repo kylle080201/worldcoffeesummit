@@ -2,13 +2,14 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import getStripe from '../get_stripe'
-import { useSearchParams } from 'next/navigation'
+import { useRouter, useSearchParams } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import BackButton from './BackButton'
 import Link from 'next/link'
 import { ClockIcon } from '@heroicons/react/24/outline'
 
 const RegisterForm = () => {
+    const router = useRouter()
     const searchParams = useSearchParams()
     const [isAgree, setIsAgree] = useState(false)
     const [origin, setOrigin] = useState('')
@@ -36,36 +37,44 @@ const RegisterForm = () => {
                 redirectToCheckout(data)
             }
         }
+        
         // setOpenNotice(!openNotice)
     }
 
     const redirectToCheckout = async (formData: any) => {
-        const line_items = JSON.parse(searchParams?.get('line_items')!)[0];
-        if (line_items) {
-            try {
-                await fetch('/api/checkout-sessions', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(
-                        {
-                            line_items,
-                            formData,
-                            origin
-                        }
-                    )
-                }).then(response => response.json())
-                    .then(async data => {
-                        const stripe = await getStripe();
-                        await stripe?.redirectToCheckout({ sessionId: data?.response?.retrievedSession?.id })
-                    }).catch(error => {
-                        console.log(error);
-                    });
-            } catch (error) {
-                alert(error)
+        const line_items = searchParams?.get('line_items') as string;
+        const parsedLineItems = JSON.parse(line_items)
+        const encryptedFormData = JSON.stringify(formData)
+        if(parsedLineItems[0].price === "price_1PIjEYKMWpUKzQVzArTdM3x0") {
+            if (line_items) {
+                try {
+                    await fetch('/api/checkout-sessions', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(
+                            {
+                                line_items: parsedLineItems,
+                                formData,
+                                origin
+                            }
+                        )
+                    }).then(response => response.json())
+                        .then(async data => {
+                            const stripe = await getStripe();
+                            await stripe?.redirectToCheckout({ sessionId: data?.response?.retrievedSession?.id })
+                        }).catch(error => {
+                            console.log(error);
+                        });
+                } catch (error) {
+                    alert(error)
+                }
             }
+        } else {
+            router.push(`/register/form/networking-soiree?line_items=${line_items}&formData=${encryptedFormData}`)
         }
+        
     }
 
     const watchEmail = watch('email');
@@ -73,51 +82,51 @@ const RegisterForm = () => {
         <>
             <div className="z-40 py-12 bg-white sm:py-20">
                 <div className="max-w-screen-md px-4 mx-auto mb-12">
-                    <h2 className="mb-4 text-4xl font-bold tracking-tight text-center text-gray-900 dark:text-white"><span className='text-lime-700'>Personal</span> Information</h2>
+                    <h2 className="mb-4 text-4xl font-bold tracking-tight text-center text-gray-900"><span className='text-lime-700'>Personal</span> Information</h2>
                     <form className="space-y-8" onSubmit={handleSubmit(onSubmit)}>
                         <div className='flex gap-4'>
                             <div className='w-1/2'>
-                                <label htmlFor="firstName" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">First Name</label>
-                                <input {...register('firstName')} className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                                <label htmlFor="firstName" className="block mb-2 text-sm font-medium text-gray-900">First Name</label>
+                                <input {...register('firstName')} className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" required />
                             </div>
                             <div className='w-1/2'>
-                                <label htmlFor="lastName" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Last Name</label>
-                                <input {...register('lastName')} className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                                <label htmlFor="lastName" className="block mb-2 text-sm font-medium text-gray-900">Last Name</label>
+                                <input {...register('lastName')} className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" required />
                             </div>
                         </div>
 
                         <div>
-                            <label htmlFor="companyName" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Company</label>
-                            <input {...register('companyName')} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                            <label htmlFor="companyName" className="block mb-2 text-sm font-medium text-gray-900">Company</label>
+                            <input {...register('companyName')} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500" required />
 
                         </div>
 
                         <div>
-                            <label htmlFor="jobTitle" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Job Title</label>
-                            <input {...register('jobTitle')} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                            <label htmlFor="jobTitle" className="block mb-2 text-sm font-medium text-gray-900">Job Title</label>
+                            <input {...register('jobTitle')} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500" required />
                         </div>
 
                         <div className='flex gap-4'>
                             <div className='w-1/2'>
-                                <label htmlFor="mobileNumber" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Mobile Number</label>
-                                <input {...register('mobileNumber')} type='number' className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                                <label htmlFor="mobileNumber" className="block mb-2 text-sm font-medium text-gray-900">Mobile Number</label>
+                                <input {...register('mobileNumber')} type='number' className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500" required />
                             </div>
                             <div className='w-1/2'>
-                                <label htmlFor="country" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Country</label>
-                                <input {...register('country')} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                                <label htmlFor="country" className="block mb-2 text-sm font-medium text-gray-900">Country</label>
+                                <input {...register('country')} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500" required />
                             </div>
                         </div>
 
                         <div className='flex gap-4'>
                             <div className='w-1/2'>
-                                <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email Address</label>
-                                <input {...register('email')} type='email' className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                                <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900">Email Address</label>
+                                <input {...register('email')} type='email' className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500" required />
                             </div>
                             <div className='w-1/2'>
-                                <label htmlFor="confirmEmail" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Confirm Email Address</label>
+                                <label htmlFor="confirmEmail" className="block mb-2 text-sm font-medium text-gray-900">Confirm Email Address</label>
                                 <input {...register('confirmEmail', {
                                     validate: (value) => value === watchEmail,
-                                })} type='email' className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                                })} type='email' className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500" required />
                                 {errors.confirmEmail && errors.confirmEmail.type === 'validate' && <span className='text-red-700'>Emails do not match</span>}
                             </div>
                         </div>

@@ -8,7 +8,7 @@ import { SocialIcon } from 'react-social-icons';
 
 
 
-function PaymentSuccess({ checkoutSessionId, decryptedFormData, priceId }: any) {
+function PaymentSuccess({ checkoutSessionId, decryptedFormData, line_items }: any) {
     const [res, setRes] = useState<IResponseData>(Object)
     const [origin, setOrigin] = useState('')
 
@@ -28,7 +28,7 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, priceId }: any) 
                 body: JSON.stringify({
                     checkoutSessionId,
                     decryptedFormData,
-                    priceId
+                    line_items
                 })
             });
 
@@ -44,13 +44,13 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, priceId }: any) 
             patchData();
         }
     }, [origin]);
-
+    console.log(res?.res?.event)
     return (
         <>
             <div className="bg-white">
                 <div className="flex-shrink-0 max-w-3xl px-6 py-20 mx-auto sm:px-6 sm:py-32 lg:px-8 md:max-w-7xl">
                     <div className='max-w-5xl'>
-                        <img className='w-[20rem]' src="https://worldcoffeealliance.com/wp-content/uploads/2023/05/world-coffee-summit-high-resolution-logo-color-on-transparent-background.png" />
+                        <img className='w-[20rem]' src="https://worldcoffeealliance.com/wp-content/uploads/2024/04/world-coffee-innovation-summit-high-resolution-logo-transparent-1.png" />
                     </div>
                     {res?.res?.event ?
                         <div className="mt-6 justify-left md:mt-12">
@@ -58,7 +58,7 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, priceId }: any) 
                                 REGISTRATION CONFIRMED
                             </h2>
                             <h3 className="my-6 text-lg tracking-tight text-gray-900 sm:text-2xl">
-                                Thank you for registering to attend the World Coffee {res?.res?.event} London 2023.
+                                Thank you for registering to attend the {res?.res?.event === "Summit and Networking Soirée" ? "Networking Soirée and World Coffee Innovation Summit London 2024" : res?.res?.event === "Summit" ? "World Coffee Innovation Summit London 2024" : "Networking Soirée" }.
                             </h3>
                             <h3 className="my-6 text-lg tracking-tight text-gray-900 sm:text-2xl">
                                 An email confirmation will be with you shortly with further instructions
@@ -67,13 +67,16 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, priceId }: any) 
                                 Event Date:
                             </h3>
                             <h4 className="text-lg tracking-tight text-gray-900 sm:text-2xl">
-                                Wednesday 13 September 2023
+                                16-17th October 2024
                             </h4>
                             <h3 className="mt-6 text-lg font-bold tracking-tight text-lime-700 sm:text-2xl">
                                 Location:
                             </h3>
                             <h4 className="text-lg tracking-tight text-gray-900 sm:text-2xl">
-                                QEII Centre
+                                <b>Summit</b>: 4th Floor at QEII Centre, Broad Sanctuary, London SW1P 3EE
+                            </h4>
+                            <h4 className="text-lg tracking-tight text-gray-900 sm:text-2xl">
+                                <b>Networking Soirée</b>: UK House of Lords, Houses of Parliament, Parliament Sq, London SW1A 0PW
                             </h4>
                             <h4 className="mt-6 text-lg tracking-tight text-gray-900 sm:text-2xl">
                                 Didn&apos;t receive an email? Please check your spam/junk mail.

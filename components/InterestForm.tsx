@@ -47,18 +47,10 @@ const InterestForm = () => {
       "Other"
     ]
 
-    // const notificationMethods = [
-    //   "Exhibiting",
-    //   "Sponsorship",
-    // ]
-
     const notificationMethods = [
-        "Exhibiting/Sponsorship Opportunities",
-        "Speaking Opportunities (Sponsored)",
-        "Attending as a Delegate/Visitor",
-        "Media Partner/Supporter",
-        "Press Passes"
-      ]
+      "Exhibiting",
+      "Sponsorship",
+    ]
 
     useEffect(() => {
         if (typeof window !== "undefined") {
@@ -99,33 +91,33 @@ const InterestForm = () => {
         <>
             <div className="z-40 py-12 bg-white sm:py-20">
                 <div className="max-w-screen-md px-4 mx-auto mb-12">
-                    <h2 className="mb-4 text-4xl font-bold tracking-tight text-center text-gray-900 dark:text-white"><span className='text-lime-700'>Personal</span> Information</h2>
+                    <h2 className="mb-4 text-4xl font-bold tracking-tight text-center text-gray-900"><span className='text-lime-700'>Personal</span> Information</h2>
                     <form className="space-y-8" onSubmit={handleSubmit(onSubmit)}>
                         <div className='flex gap-4'>
                             <div className='w-1/2'>
-                                <label htmlFor="firstName" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">First Name</label>
-                                <input {...register('firstName')} className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                                <label htmlFor="firstName" className="block mb-2 text-sm font-medium text-gray-900">First Name</label>
+                                <input {...register('firstName')} className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" required />
                             </div>
                             <div className='w-1/2'>
-                                <label htmlFor="lastName" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Last Name</label>
-                                <input {...register('lastName')} className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                                <label htmlFor="lastName" className="block mb-2 text-sm font-medium text-gray-900">Last Name</label>
+                                <input {...register('lastName')} className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" required />
                             </div>
                         </div>
 
                         <div className='flex gap-4'>
                             <div className='w-1/2'>
-                              <label htmlFor="companyName" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Company Name</label>
-                              <input {...register('companyName')} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                              <label htmlFor="companyName" className="block mb-2 text-sm font-medium text-gray-900">Company Name</label>
+                              <input {...register('companyName')} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500" required />
                             </div>
                             <div className='w-1/2'>
-                              <label htmlFor="jobTitle" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Job Title</label>
-                              <input {...register('jobTitle')} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                              <label htmlFor="jobTitle" className="block mb-2 text-sm font-medium text-gray-900">Job Title</label>
+                              <input {...register('jobTitle')} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500" required />
                             </div>
                         </div>
 
                         <div>
-                            <label htmlFor="sector" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Sector</label>
-                            <select {...register('sector')} onChange={(e) => setSelectedSector(e.target.value)} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required>
+                            <label htmlFor="sector" className="block mb-2 text-sm font-medium text-gray-900">Sector</label>
+                            <select {...register('sector')} onChange={(e) => setSelectedSector(e.target.value)} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500" required>
                               <option selected value={''} disabled>Please select</option>
                               {
                                 sectors.map((sector) => (
@@ -136,24 +128,24 @@ const InterestForm = () => {
                         </div>
 
                         <div>
-                            <label htmlFor="otherSector" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Other sector</label>
-                            <input {...register('otherSector')} disabled={selectedSector !== 'Other'} required={selectedSector === 'Other'} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light disabled:bg-gray-200" />
+                            <label htmlFor="otherSector" className="block mb-2 text-sm font-medium text-gray-900">Other sector</label>
+                            <input {...register('otherSector')} disabled={selectedSector !== 'Other'} required={selectedSector === 'Other'} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 disabled:bg-gray-200" />
                         </div>
 
                         <div>
-                            <label htmlFor="businessEmail" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Business Email Address</label>
-                            <input {...register('businessEmail')} type='email' className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                            <label htmlFor="businessEmail" className="block mb-2 text-sm font-medium text-gray-900">Business Email Address</label>
+                            <input {...register('businessEmail')} type='email' className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500" required />
                         </div>
 
                         <div>
-                            <label htmlFor="mobileNumber" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Mobile Number</label>
+                            <label htmlFor="mobileNumber" className="block mb-2 text-sm font-medium text-gray-900">Mobile Number</label>
                             <div className="relative mt-2 rounded-md">
                                 <div className='flex gap-4'>
                                     <Controller
                                         control={control}
                                         {...register('countryCode')}
                                         render={({ field }) => (
-                                            <select {...field} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required>
+                                            <select {...field} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500" required>
                                                 <option value="" disabled selected hidden>Select Country Code</option>
                                                 {countryCodes.map((country) => (
                                                     <option key={country.code} value={country.dial_code} >{country.name} ({country.dial_code})</option>
@@ -161,7 +153,7 @@ const InterestForm = () => {
                                             </select>
                                         )}
                                     /> 
-                                    <input {...register('phoneNumber')} type='number' className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
+                                    <input {...register('phoneNumber')} type='number' className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500" required />
                                 </div>
                             </div>
                         </div>
