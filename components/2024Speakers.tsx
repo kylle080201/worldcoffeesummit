@@ -203,37 +203,59 @@ function Speakers2024() {
 
   return (
     <>
-      <div className="px-12 py-20 sm:px-20" id='speakers'>
-        <div className="mx-auto sm:content-center">
-          <div className="max-w-2xl mx-auto text-center">
+      <div className="px-12 py-20 sm:px-20" id="speakers">
+    <div className="mx-auto sm:content-center">
+        <div className="max-w-2xl mx-auto text-center">
             <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">2024 SPEAKERS</p>
-          </div>
-          <ul
-            role="list"
-            className="grid grid-cols-1 mx-auto mt-20 max-w-7xl gap-x-6 gap-y-20 md:grid-cols-4 lg:gap-x-8"
-          >
-            {speakers.map((speaker) => (
-              <li onClick={() => setSelectedSpeaker(speaker)} key={speaker.key} className='relative border rounded-md bg-lime-700 shadow-md hover:shadow-lg'>
-                <a className="flex flex-col gap-2 hover:cursor-pointer">
-                  <div className='mx-auto'>
-                    <Image className="w-[40rem] rounded-t-md" src={speaker.imageUrl} alt={speaker.name} width={160} height={160} />
-                  </div>
-                  <div className="flex text-left p-4">
-                    <div className='mt-6'>
-                      <p className="text-lg font-semibold leading-8 tracking-tight text-white md:text-2xl">{speaker.name}</p>
-                      <p className="leading-7 text-white text-sm">{speaker.role}</p>
-                      <p className="font-semibold leading-7 text-white text-md">{speaker.company}</p>
-                    </div>
-                  </div>
-                </a>
-                <div className='flex hover:cursor-pointer items-center absolute w-[5rem] top-[34rem] h-[5rem] md:top-64 right-4 bg-white p-2 rounded-md shadow-md'>
-                  <Image src={speaker.companyIcon} alt={`${speaker.company} logo`} width={speaker.iconWidth} height={speaker.iconHeight} className="my-auto mx-auto" />
-                </div>
-              </li>
-            ))}
-          </ul>
         </div>
-      </div>
+        <ul
+            role="list"
+            className="grid grid-cols-1 mx-auto mt-20 max-w-7xl gap-x-6 gap-y-20 md:grid-cols-2 lg:grid-cols-4 lg:gap-x-8"
+        >
+            {speakers.map((speaker) => (
+                <li
+                    onClick={() => setSelectedSpeaker(speaker)}
+                    key={speaker.key}
+                    className="relative border rounded-md bg-lime-700 shadow-md hover:shadow-lg"
+                >
+                    <a className="flex flex-col gap-2 hover:cursor-pointer">
+                        <div className="relative">
+                            <Image
+                                className="w-full rounded-t-md"
+                                src={speaker.imageUrl}
+                                alt={speaker.name}
+                                width={160}
+                                height={160}
+                            />
+                            <div className="absolute w-20 h-20 right-4 top-4/4 transform -translate-y-1/2 bg-white p-2 rounded-md shadow-md">
+                                <div className='flex items-center h-full'>
+                                  <Image
+                                    src={speaker.companyIcon}
+                                    alt={`${speaker.company} logo`}
+                                    width={speaker.iconWidth}
+                                    height={speaker.iconHeight}
+                                    className="my-auto mx-auto"
+                                  />
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div className="flex text-left p-4">
+                            <div className="mt-6">
+                                <p className="text-lg font-semibold leading-8 tracking-tight text-white md:text-2xl">
+                                    {speaker.name}
+                                </p>
+                                <p className="leading-7 text-white text-sm">{speaker.role}</p>
+                                <p className="font-semibold leading-7 text-white text-md">{speaker.company}</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            ))}
+        </ul>
+    </div>
+</div>
+
       {selectedSpeaker && (
         <Transition.Root show={Boolean(selectedSpeaker)} as={Fragment}>
           <Dialog as="div" className="relative z-10" onClose={() => setSelectedSpeaker(null)}>
