@@ -3,11 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import CountDown from './CountDown'
 import { AddToCalendarButton } from 'add-to-calendar-button-react';
-import AgendaHighlights from './AgendaHighlights';
 
-import KeyThemes from './KeyThemes';
-import ImageCarousel from './ImageCarousel';
-import Testimonials from './LoopedTestimonials';
 
 export default function Overview() {
     return (
