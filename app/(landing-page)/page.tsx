@@ -24,7 +24,7 @@ export default function HomePage() {
                 <SpeakerSlider />
                 <ImageCarousel />
                 <Testimonials />
-                <SummitInTheNews />
+                {/* <SummitInTheNews /> */}
                 <WhyAttend />
                 <Venue />
                 <Partners />
