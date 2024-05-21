@@ -1,4 +1,5 @@
 import React from 'react'
+import KeyThemesCountDown from './KeyThemesCountDown';
 
 const keyThemes = [
   {
@@ -14,7 +15,7 @@ const keyThemes = [
     description: "Investing in scalable nature-positive production and incorporating it into climate strategy across the sustainable supply chain. "
   },
   {
-    title: "NATURE CAPITAL & NATURE-BASED SOLUTIONS",
+    title: "NATURE CAPITAL, BIODIVERSITY & NATURE-BASED SOLUTIONS",
     description: "Finding solutions to address societal challenges involving actions to protect, sustainably manage and restore natural and modified ecosystems, benefiting people, business and nature at the same time."
   },
   {
@@ -47,10 +48,15 @@ function KeyThemes() {
   const themesColumn1 = keyThemes.slice(0, 5);
   const themesColumn2 = keyThemes.slice(5);
   return (
-    <div className='w-full py-24 bg-gray-100'>
+    <div className='w-full py-24 px-0 md:px-12'>
       <div className='mx-auto sm:max-w-7xl'>
         <div className='flex w-full justify-center'>
           <h2 className="text-4xl font-bold tracking-tight">2024 KEY THEMES</h2>
+        </div>
+        <div className='flex flex-col'>
+          <span className='text-red-500 text-4xl font-bold'>EUDR COUNTDOWN</span>
+          <span className='text-red-500 text-4xl font-bold'>30 DECEMBER 2024</span>
+          <KeyThemesCountDown />
         </div>
         <div className='mt-12 flex gap-4 md:gap-8 md:flex-row flex-col md:px-0 px-12'>
           {/* Column 1 */}
@@ -76,7 +82,6 @@ function KeyThemes() {
         </div>
       </div>
     </div>
-    
   );
 }
 
