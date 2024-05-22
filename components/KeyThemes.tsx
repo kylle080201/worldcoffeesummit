@@ -48,7 +48,7 @@ function KeyThemes() {
   const themesColumn1 = keyThemes.slice(0, 5);
   const themesColumn2 = keyThemes.slice(5);
   return (
-    <div className='w-full py-24 px-0 md:px-12'>
+    <div className='w-full bg-gray-100 py-24 px-0 md:px-12'>
       <div className='mx-auto sm:max-w-7xl'>
         <div className='flex flex-col items-center md:mt-0'>
           <span className='text-red-500 text-4xl font-bold'>EUDR COUNTDOWN</span>

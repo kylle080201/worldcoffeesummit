@@ -238,7 +238,7 @@ const SpeakerSlider = () => {
   }, [tempTestimonials, currentIndex]);
 
   return (
-    <div id='speakers' className='w-full py-24 bg-gray-100'>
+    <div id='speakers' className='w-full py-24'>
       <div className='flex w-full justify-center'>
         <h2 className="text-4xl font-bold tracking-tight">2023 SPEAKERS</h2>
       </div>
