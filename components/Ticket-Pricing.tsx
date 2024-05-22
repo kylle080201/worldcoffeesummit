@@ -52,8 +52,8 @@ function TicketPricing() {
             title: "Networking Soirée Pass",
             old_price: 225,
             item_price: 185,
-            description: "Wines and Hors d’oeuvres",
-            earlyBird: "Limited tickets only! First come, first serve!",
+            description: "At House of Lords 16th October 2024 Early Evening Wines and Hors d'oeuvres",
+            earlyBird: "Exclusive for Summit Attendees! Limited tickets only! First come, first serve!",
             line_items: [
                 {
                     price: 'price_1PIjEYKMWpUKzQVzArTdM3x0',
@@ -173,7 +173,7 @@ function TicketPricing() {
                 </div>
             </div> */}
             <div className="max-w-5xl mx-auto mt-12 sm:text-center">
-                <h3 className="text-sm tracking-tight text-red-700 sm:text-md">Notice: Please make sure you choose the correct pass per specification. We reserve the right to exclude and refund registration that does not belong to the correct category pass</h3>
+                <h3 className="text-2xl tracking-tight text-red-700 sm:text-md"><span className='font-bold'>NOTICE</span>: Please make sure you choose the correct pass per specification. We reserve the right to exclude and refund registration that does not belong to the correct category pass</h3>
             </div>
         </div>
     )

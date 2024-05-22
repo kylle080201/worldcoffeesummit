@@ -18,7 +18,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
       custom_text: {
         submit: {
           message:
-            "GLOBAL STRATAGEM GROUP LTD (VAT NO: GB 440 5676 94) is the operator of World Coffee Alliance (WCA) and the organiser of World Coffee Summit and World Coffee Exhibition London 2023",
+            "GLOBAL STRATAGEM GROUP LTD (VAT NO: GB 440 5676 94) is the operator of World Coffee Alliance (WCA) and the organiser of World Coffee Innovation Summit London 2024",
         },
       },
       allow_promotion_codes: true,
