@@ -14,7 +14,7 @@ function TicketPricing() {
             earlyBird: "Book before Monday 8th July 2024 to Save £400.00",
             line_items: [
                 {
-                    price: 'price_1NbMmoKMWpUKzQVzowWiEFhL',
+                    price: 'price_1PGwuzKMWpUKzQVziwJkTR7F',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
@@ -28,7 +28,7 @@ function TicketPricing() {
             earlyBird: "Book before Monday 8th July 2024 to Save £500.00",
             line_items: [
                 {
-                    price: 'price_1NL2JsKMWpUKzQVzWf64T1u9',
+                    price: 'price_1PGwvYKMWpUKzQVzl8ZKucou',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
@@ -42,7 +42,7 @@ function TicketPricing() {
             earlyBird: "Book before Monday 8th July 2024 to Save £600.00",
             line_items: [
                 {
-                    price: 'price_1NKiolKMWpUKzQVzEjuQ8OUo',
+                    price: 'price_1PGwvyKMWpUKzQVzW6v1DAa1',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
@@ -58,7 +58,7 @@ function TicketPricing() {
         earlyBird: "Exclusive for Summit Attendees! Limited tickets only! First come, first serve!",
         line_items: [
             {
-                price: 'price_1PJBswKMWpUKzQVzwpjd4nKo',
+                price: 'price_1PIiS4KMWpUKzQVz4RptL8TA',
                 quantity: 1,
                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
             }

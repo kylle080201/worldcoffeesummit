@@ -46,7 +46,7 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
   const line_items = JSON.parse(req.line_items);
   const event = line_items.length > 1 ? 
   "Summit and Networking Soirée" : 
-  (line_items[0].price === "price_1PJBswKMWpUKzQVzwpjd4nKo" ? 
+  (line_items[0].price === "price_1PIiS4KMWpUKzQVz4RptL8TA" ? 
   "Networking Soirée" : 
   "Summit");
 

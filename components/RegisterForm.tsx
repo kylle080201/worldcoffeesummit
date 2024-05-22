@@ -45,7 +45,7 @@ const RegisterForm = () => {
         const line_items = searchParams?.get('line_items') as string;
         const parsedLineItems = JSON.parse(line_items)
         const encryptedFormData = JSON.stringify(formData)
-        if(parsedLineItems[0].price === "price_1PJBswKMWpUKzQVzwpjd4nKo") {
+        if(parsedLineItems[0].price === "price_1PIiS4KMWpUKzQVz4RptL8TA") {
             if (line_items) {
                 try {
                     await fetch('/api/checkout-sessions', {
