@@ -13,6 +13,7 @@ import ImageCarousel from "../../components/ImageCarousel";
 import Testimonials from "../../components/LoopedTestimonials";
 import Speakers2024 from "../../components/2024Speakers";
 import KeyThemes from "../../components/KeyThemes";
+import Attendees2023 from "../../components/2023Attendees";
 
 export default function HomePage() {
     return (
@@ -24,6 +25,7 @@ export default function HomePage() {
                 <SpeakerSlider />
                 <ImageCarousel />
                 <Testimonials />
+                <Attendees2023 />
                 {/* <SummitInTheNews /> */}
                 <WhyAttend />
                 <Venue />
