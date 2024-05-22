@@ -70,7 +70,7 @@ function Navbar() {
 
                                             <div className='flex gap-x-2'>
                                                 <SocialIcon url="https://www.linkedin.com/company/worldcoffeealliance/" style={{ height: 40, width: 40 }} target='_blank' />
-                                                <SocialIcon url="https://twitter.com/WCoffeeAlliance" style={{ height: 40, width: 40 }} target='_blank' />
+                                                <SocialIcon url="https://www.x.com/WCoffeeAlliance" style={{ height: 40, width: 40 }} target='_blank' />
                                                 <SocialIcon url="https://www.youtube.com/channel/UCbUTtqgxTtQj9nkKTAf_AQg" style={{ height: 40, width: 40 }} target='_blank' />
                                                 <SocialIcon url="https://www.instagram.com/worldcoffeealliancehq/" style={{ height: 40, width: 40 }} target='_blank' />
                                             </div>
@@ -115,7 +115,7 @@ function Navbar() {
 
                             <div className='flex gap-x-2'>
                                 <SocialIcon url="https://www.linkedin.com/company/worldcoffeealliance/" style={{ height: 40, width: 40 }} target='_blank' />
-                                <SocialIcon url="https://twitter.com/WCoffeeAlliance" style={{ height: 40, width: 40 }} target='_blank' />
+                                <SocialIcon url="https://www.x.com/WCoffeeAlliance" style={{ height: 40, width: 40 }} target='_blank' />
                                 <SocialIcon url="https://www.youtube.com/channel/UCbUTtqgxTtQj9nkKTAf_AQg" style={{ height: 40, width: 40 }} target='_blank' />
                             </div>
                         </div>

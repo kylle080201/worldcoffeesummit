@@ -310,7 +310,7 @@ function FAQ() {
                                         <p className="mt-4 text-lg leading-7 text-gray-600">If you want to keep update on the development of this event, follow us on our social media</p>
                                         <div className='flex mt-4 gap-x-2'>
                                             <SocialIcon url="https://www.linkedin.com/company/worldcoffeealliance/" style={{ height: 40, width: 40 }} target='_blank' />
-                                            <SocialIcon url="https://twitter.com/WCoffeeAlliance" style={{ height: 40, width: 40 }} target='_blank' />
+                                            <SocialIcon url="https://www.x.com/WCoffeeAlliance" style={{ height: 40, width: 40 }} target='_blank' />
                                             <SocialIcon url="https://www.youtube.com/channel/UCbUTtqgxTtQj9nkKTAf_AQg" style={{ height: 40, width: 40 }} target='_blank' />
                                         </div>
                                     </Disclosure.Panel>
