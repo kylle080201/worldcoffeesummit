@@ -10,7 +10,7 @@ function Attendees2023() {
       <div className='flex items-center p-2 max-w-7xl mx-auto'>
         <div className='p-2 rounded-md'>
           <img
-            src="https://worldcoffeealliance.com/wp-content/uploads/2024/05/2023-ATTENDEES-INCLUDE-scaled.jpg"
+            src="https://worldcoffeealliance.com/wp-content/uploads/2024/05/2023-ATTENDEES-INCLUDE-1.jpg"
             alt="2023 Attendees"
             className="w-full h-full mx-auto rounded-lg shadow-lg bg-white/5"
           />

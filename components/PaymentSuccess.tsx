@@ -59,7 +59,7 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, line_items }: an
                                 REGISTRATION CONFIRMED
                             </h2>
                             <h3 className="my-6 text-lg tracking-tight text-gray-900 sm:text-2xl">
-                                Thank you for registering to attend the {res?.res?.event === "Summit and Networking Soirée" ? "World Coffee Innovation Summit and Networking Soirée London 2024" : res?.res?.event === "Summit" ? "World Coffee Innovation Summit London 2024" : "Networking Soirée at UK House of Lords on 16th October 2024." }.
+                                Thank you for registering to attend the {res?.res?.event === "Summit and Networking Soirée" ? "World Coffee Innovation Summit and Networking Soirée London 2024" : res?.res?.event === "Summit" ? "World Coffee Innovation Summit London 2024" : "Networking Soirée at UK House of Lords on 16th October 2024" }.
                             </h3>
                             <h3 className="my-6 text-lg tracking-tight text-gray-900 sm:text-2xl">
                                 An email confirmation will be with you shortly with further instructions
