@@ -13,7 +13,7 @@ export default function NetworkingSoiree() {
   const line_items = JSON.parse(searchParams?.get('line_items') as string) as T_Line_Items[];
   const formData = JSON.parse(searchParams?.get('formData') as string);
   const networkingSoireeTicket = {
-    price: 'price_1PJBswKMWpUKzQVzwpjd4nKo',
+    price: 'price_1PIiS4KMWpUKzQVz4RptL8TA',
     quantity: 1,
     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
   }
