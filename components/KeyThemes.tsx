@@ -50,13 +50,13 @@ function KeyThemes() {
   return (
     <div className='w-full py-24 px-0 md:px-12'>
       <div className='mx-auto sm:max-w-7xl'>
-        <div className='flex w-full justify-center'>
-          <h2 className="text-4xl font-bold tracking-tight">2024 KEY THEMES</h2>
-        </div>
-        <div className='flex flex-col items-center md:items-start mt-6 md:mt-0'>
+        <div className='flex flex-col items-center md:mt-0'>
           <span className='text-red-500 text-4xl font-bold'>EUDR COUNTDOWN</span>
           <span className='text-red-500 text-4xl font-bold'>30 DECEMBER 2024</span>
           <KeyThemesCountDown />
+        </div>
+        <div className='flex w-full justify-center mt-6'>
+          <h2 className="text-4xl font-bold tracking-tight">2024 KEY THEMES</h2>
         </div>
         <div className='mt-12 flex gap-4 md:gap-8 md:flex-row flex-col md:px-0 px-12'>
           {/* Column 1 */}

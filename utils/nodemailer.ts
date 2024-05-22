@@ -35,7 +35,7 @@ export const mailer = async (data: any) => {
         event === "Summit" || event === "Networking Soirée" ?
         event === "Summit"
           ? "Thank you for registering for World Coffee Innovation Summit London 16-17th October 2024"
-          : "Thank you for registering for our Networking Soirée" :
+          : "Thank you for registering for Networking Soirée at UK House of Lords on 16th October 2024" :
           "Thank you for registering for World Coffee Innovation Summit London 16-17th October 2024",
       ...generateEmailContent({
         lastName,
