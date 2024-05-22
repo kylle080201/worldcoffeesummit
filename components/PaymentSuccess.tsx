@@ -45,7 +45,7 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, line_items }: an
             patchData();
         }
     }, [origin]);
-    console.log(res?.res?.event)
+    
     return (
         <>
             <div className="bg-white">
@@ -59,7 +59,7 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, line_items }: an
                                 REGISTRATION CONFIRMED
                             </h2>
                             <h3 className="my-6 text-lg tracking-tight text-gray-900 sm:text-2xl">
-                                Thank you for registering to attend the {res?.res?.event === "Summit and Networking Soirée" ? "World Coffee Innovation Summit and Networking Soirée London" : res?.res?.event === "Summit" ? "World Coffee Innovation Summit London 2024" : "Networking Soirée" }.
+                                Thank you for registering to attend the {res?.res?.event === "Summit and Networking Soirée" ? "World Coffee Innovation Summit and Networking Soirée London 2024" : res?.res?.event === "Summit" ? "World Coffee Innovation Summit London 2024" : "Networking Soirée at UK House of Lords on 16th October 2024" }.
                             </h3>
                             <h3 className="my-6 text-lg tracking-tight text-gray-900 sm:text-2xl">
                                 An email confirmation will be with you shortly with further instructions
@@ -73,13 +73,13 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, line_items }: an
                                     <div className="text-red-500">
                                         LIMITED TICKETS ONLY! FIRST COME, FIRST SERVE!
                                     </div>
-                                    <Link className=' underline text-yellow-900' href={'/register/form?line_items=%5B%7B"price"%3A"price_1PIjEYKMWpUKzQVzArTdM3x0"%2C"quantity"%3A1%2C"tax_rates"%3A%5B"txr_1NCgheKMWpUKzQVzZ761hX9q"%5D%7D%5D'}>Register Here</Link>
+                                    <Link className=' underline text-yellow-900' href={'/register/tickets'}>Register Here</Link>
                                 </div>
                             }
                             {
                                 res?.res?.event === "Networking Soirée" && 
                                 <h3 className="my-6 text-lg tracking-tight text-gray-900 sm:text-2xl">
-                                    Please make sure you have already registered your pass to World Coffee Innovation Summit London 2024, as the Networking Soirée is exclusively for registered delegate to the summit only. <Link className='underline text-yellow-900' href={'/register/form?line_items=%5B%7B"price"%3A"price_1PIjEYKMWpUKzQVzArTdM3x0"%2C"quantity"%3A1%2C"tax_rates"%3A%5B"txr_1NCgheKMWpUKzQVzZ761hX9q"%5D%7D%5D'}>Register Here</Link>
+                                    Please make sure you have already registered your pass to World Coffee Innovation Summit London 2024, as the Networking Soirée is exclusively for registered delegate to the summit only. <Link className='underline text-yellow-900' href={'/register/tickets'}>Register Here</Link>
                                 </h3>
                             }
                             
@@ -87,7 +87,7 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, line_items }: an
                                 Event Date:
                             </h3>
                             <h4 className="text-lg tracking-tight text-gray-900 sm:text-2xl">
-                                16-17th October 2024
+                                { res?.res?.event === "Networking Soirée" ? "16th October 2024" : "16-17th October 2024" }
                             </h4>
                             <h3 className="mt-6 text-lg font-bold tracking-tight text-lime-700 sm:text-2xl">
                                 Location:

@@ -53,12 +53,9 @@ export default function Overview() {
                             </div>
                             <div className='flex flex-col items-center mt-4'>
                                 <div className='mx-auto lg:mx-0'>
-                                    {/* <Link rel='noreferer' className='flex-shrink-0 flex text-center px-4 py-2 mx-auto font-bold tracking-tight text-[#674E46] bg-yellow-500 h-max text-lg lg:text-2xl' href="/register">
+                                    <Link rel='noreferer' className='flex-shrink-0 flex text-center px-4 py-2 mx-auto font-bold tracking-tight text-[#674E46] bg-yellow-500 h-max text-lg lg:text-2xl' href="/register">
                                         REGISTER NOW
-                                    </Link> */}
-                                    <div className='flex-shrink-0 flex text-center px-4 py-2 mx-auto font-bold tracking-tight text-[#674E46] bg-yellow-500 h-max text-lg lg:text-2xl'>
-                                        SAVE THE DATE
-                                    </div>
+                                    </Link>
                                 </div>
                             </div>
                             
@@ -78,7 +75,7 @@ export default function Overview() {
             <div className='w-full md:px-0 px-12'>
                 <div className='flex md:flex-row flex-col max-w-7xl m-auto py-12 md:py-20 gap-12'>
                     <div className="text-2xl leading-8 text-gray-900 w-full text-justify md:w-1/2">
-                        As the leading summit that connects <strong>COFFEE</strong>, <strong>CLIMATE CHANGE</strong> and <strong>FINANCE</strong> through <strong>INNOVATION</strong>, the World Coffee Innovation Summit is a must-attend for those who invested in advancing nature-positive, resilient agriculture and food systems for a net positive future in coffee sector. Join global coffee, climate and finance leaders and agri-food innovators in London for two days of in-depth discussions and cross-sector networking.
+                        As the leading solution-driven summit that connects <strong>COFFEE</strong>, <strong>CLIMATE CHANGE</strong> and <strong>FINANCE</strong> through <strong>INNOVATION</strong>, the World Coffee Innovation Summit is a must-attend for those who invested in advancing nature-positive, resilient agriculture and food systems for a net positive future in coffee sector. Join global coffee, climate and finance leaders and agri-food innovators in London for two days of in-depth discussions and cross-sector networking.
                     </div>
                     <div className='items-center my-auto w-full md:w-1/2'>
                         <video
