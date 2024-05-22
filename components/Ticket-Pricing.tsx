@@ -48,21 +48,22 @@ function TicketPricing() {
                 }
             ]
         },
-        {
-            title: "Networking Soirée Pass",
-            old_price: 225,
-            item_price: 185,
-            description: "Wines and Hors d’oeuvres",
-            earlyBird: "Limited tickets only! First come, first serve!",
-            line_items: [
-                {
-                    price: 'price_1PIjEYKMWpUKzQVzArTdM3x0',
-                    quantity: 1,
-                    tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
-                }
-            ]
-        },
+        
     ]
+    const networkingSoiree = {
+        title: "Networking Soirée Pass",
+        old_price: 225,
+        item_price: 185,
+        description: "At House of Lords 16th October 2024 Early Evening Wines and Hors d'oeuvres",
+        earlyBird: "Exclusive for Summit Attendees! Limited tickets only! First come, first serve!",
+        line_items: [
+            {
+                price: 'price_1PIjEYKMWpUKzQVzArTdM3x0',
+                quantity: 1,
+                tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
+            }
+        ]
+    }
     // const exhibition = [
     //     {
     //         title: "Networking Soirée Pass",
@@ -131,6 +132,36 @@ function TicketPricing() {
                                         </td>
                                     </tr>
                                 ))}
+                                <tr className="odd:bg-gray-100">
+                                        <td className="flex-wrap px-3 py-4 font-semibold text-gray-900 text-lg whitespace-nowrap">{networkingSoiree.title}</td>
+                                        <td className="flex-wrap px-3 py-4 text-gray-900 text-lg">
+                                            At House of Lords 16th October 2024 Early Evening
+                                            <br />
+                                            Wines and Hors d&apos;oeuvres
+                                            <br />
+                                            <h3 className="text-sm tracking-tight text-red-700 sm:text-lg font-bold">Exclusive for Summit Attendees!<br />Limited tickets only! First come, first serve!</h3>
+                                        </td>
+                                        <td className="px-3 py-4 text-gray-900 font-bold text-lg">
+                                            {networkingSoiree.old_price && <span className='text-red-700 line-through mr-2'>£{networkingSoiree.old_price}.00</span>}
+                                            £{networkingSoiree.item_price}.00
+                                        </td>
+                                        <td className="px-3 py-4">
+                                            <div className='my-auto justify-self-center mx:auto'>
+                                                <Link
+                                                    href={{
+                                                        pathname: '/register/form',
+                                                        query: {
+                                                            line_items: JSON.stringify(networkingSoiree.line_items)
+                                                        }
+                                                    }}
+                                                    type="button"
+                                                    className="block w-full px-3 py-2 text-sm font-semibold text-center text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                                >
+                                                    Register
+                                                </Link>
+                                            </div>
+                                        </td>
+                                    </tr>
                             </tbody>
                         </table>
                     </div>
@@ -173,7 +204,7 @@ function TicketPricing() {
                 </div>
             </div> */}
             <div className="max-w-5xl mx-auto mt-12 sm:text-center">
-                <h3 className="text-sm tracking-tight text-red-700 sm:text-md">Notice: Please make sure you choose the correct pass per specification. We reserve the right to exclude and refund registration that does not belong to the correct category pass</h3>
+                <h3 className="tracking-tight text-red-700 sm:text-lg"><span className='font-bold'>NOTICE</span>: Please make sure you choose the correct pass per specification. We reserve the right to exclude and refund registration that does not belong to the correct category pass</h3>
             </div>
         </div>
     )

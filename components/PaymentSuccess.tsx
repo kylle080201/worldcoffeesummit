@@ -119,7 +119,7 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, line_items }: an
                             </h4>
                             <div className='flex mt-3 gap-x-4'>
                                 <SocialIcon url="https://www.linkedin.com/company/worldcoffeealliance/" style={{ height: 50, width: 50 }} target='_blank' />
-                                <SocialIcon url="https://twitter.com/WCoffeeAlliance" style={{ height: 50, width: 50 }} target='_blank' />
+                                <SocialIcon url="https://www.x.com/WCoffeeAlliance" style={{ height: 50, width: 50 }} target='_blank' />
                             </div>
                             <div className="flex mt-10 gap-x-6">
                                 <Link href="/" className="flex content-center text-2xl font-semibold leading-6 text-gray-900 hover:underline">
