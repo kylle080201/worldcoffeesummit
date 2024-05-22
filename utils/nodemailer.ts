@@ -24,7 +24,6 @@ export const mailer = async (data: any) => {
   const id = reqData._id;
   const jobTitle = reqData.jobTitle;
   const companyName = reqData.companyName;
-    console.log(origin)
   try {
     const isEmailSent = await transporter.sendMail({
       from: `World Coffee Innovation Summit Team <${user}>`,
