@@ -14,9 +14,9 @@ function TicketPricing() {
             earlyBird: "Book before Monday 8th July 2024 to Save £400.00",
             line_items: [
                 {
-                    price: 'price_1PIjFIKMWpUKzQVzQGc0HKy6',
+                    price: 'price_1NbMmoKMWpUKzQVzowWiEFhL',
                     quantity: 1,
-                    tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
+                    tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
             ]
         },
@@ -28,9 +28,9 @@ function TicketPricing() {
             earlyBird: "Book before Monday 8th July 2024 to Save £500.00",
             line_items: [
                 {
-                    price: 'price_1PIjG5KMWpUKzQVzeUZtVCkL',
+                    price: 'price_1NL2JsKMWpUKzQVzWf64T1u9',
                     quantity: 1,
-                    tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
+                    tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
             ]
         },
@@ -42,9 +42,9 @@ function TicketPricing() {
             earlyBird: "Book before Monday 8th July 2024 to Save £600.00",
             line_items: [
                 {
-                    price: 'price_1PIjGeKMWpUKzQVzflAosWt5',
+                    price: 'price_1NKiolKMWpUKzQVzEjuQ8OUo',
                     quantity: 1,
-                    tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
+                    tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
             ]
         },
@@ -58,39 +58,12 @@ function TicketPricing() {
         earlyBird: "Exclusive for Summit Attendees! Limited tickets only! First come, first serve!",
         line_items: [
             {
-                price: 'price_1PIjEYKMWpUKzQVzArTdM3x0',
+                price: 'price_1PJBswKMWpUKzQVzwpjd4nKo',
                 quantity: 1,
-                tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
+                tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
             }
         ]
     }
-    // const exhibition = [
-    //     {
-    //         title: "Networking Soirée Pass",
-    //         old_price: 145,
-    //         item_price: 125,
-    //         description: "Networking Soirée at House of Lords 16th October 2024 Early Evening Wines and Hors d’oeuvres",
-    //         line_items: [
-    //             {
-    //                 price: 'price_1NlCYBKMWpUKzQVzXSUajrFy',
-    //                 quantity: 1,
-    //                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
-    //             }
-    //         ]
-    //     },
-    //     // {
-    //     //     title: "Public Visitor Pass",
-    //     //     old_price: 10,
-    //     //     description: "Eligible for coffee lovers and enthusiasts",
-    //     //     line_items: [
-    //     //         {
-    //     //             price: 'price_1NmS2AKMWpUKzQVz8sjZgWrf',
-    //     //             quantity: 1,
-    //     //             tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
-    //     //         }
-    //     //     ]
-    //     // },
-    // ]
 
     return (
         <div className="z-40 py-12 bg-white sm:py-20">

@@ -12,15 +12,10 @@ export default function NetworkingSoiree() {
   const searchParams = useSearchParams()
   const line_items = JSON.parse(searchParams?.get('line_items') as string) as T_Line_Items[];
   const formData = JSON.parse(searchParams?.get('formData') as string);
-  // const networkingSoireeTicket = {
-  //   price: 'price_1PIiS4KMWpUKzQVz4RptL8TA',
-  //   quantity: 1,
-  //   tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
-  // }
   const networkingSoireeTicket = {
-    price: 'price_1PIjEYKMWpUKzQVzArTdM3x0',
+    price: 'price_1PIiS4KMWpUKzQVz4RptL8TA',
     quantity: 1,
-    tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'],
+    tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
   }
   const handleConfirm = async () => {
     line_items.push(networkingSoireeTicket)
