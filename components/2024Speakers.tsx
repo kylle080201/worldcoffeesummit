@@ -3,7 +3,6 @@ import React, { Fragment, useState } from 'react'
 import Image from 'next/image'
 
 interface T_Speaker {
-  key: string;
   name: string;
   role: string;
   company: string;
@@ -17,7 +16,6 @@ interface T_Speaker {
 function Speakers2024() {
   const speakers = [
     {
-      key: '0',
       name: 'Dr. Florika Fink-Hooijer',
       role: 'Director-General, Environment Department',
       company: 'European Commission',
@@ -42,7 +40,6 @@ function Speakers2024() {
       `
     },
     {
-      key: '1',
       name: 'The Rt. Hon John Gummer, Lord Deben',
       role: 'Former Chairman',
       company: 'UK Climate Change Committee (The CCC)',
@@ -55,7 +52,6 @@ function Speakers2024() {
       `
     },
     {
-      key: '2',
       name: 'Sylvia J. Megret',
       role: 'President and Chief Executive Officer',
       company: 'ACDI/VOCA',
@@ -71,7 +67,6 @@ function Speakers2024() {
       `
     },
     {
-      key: '3',
       name: 'Jennifer “Vern” Long',
       role: 'Chief Executive Officer',
       company: 'World Coffee Research',
@@ -94,7 +89,19 @@ function Speakers2024() {
       `
     },
     {
-      key: '4',
+      name: 'Andrea Geremicca',
+      role: 'Director General',
+      company: 'European Institute of Innovation for Sustainability (EIIS)',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/ANDREA-SQUARE.jpeg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/Logo-EIIS_Colour.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+      Andrea Geremicca is the Director General of the European Institute of Innovation for Sustainability (EIIS). 
+      He is an adjunct professor at LUISS and LUMSA, where he teaches Innovation for Sustainability, and a faculty member at Singularity University, where he specializes in innovation for sustainability and foresight. Andrea attended the Harvard Business School Exc in Boston, focusing on driving innovation in large organizations. He contributes to the Harvard Business Review, writing about future scenarios and emerging macro trends. He has delivered two TEDx Talks, in 2018 and 2021. In 2018, Andrea had the honor of lecturing at Harvard Kennedy School and Sciences Po in Paris. Additionally, he authored two books in 2022 and 2023, which have become essential texts in the business faculties of two universities.      
+      `
+    },
+    {
       name: 'Sophie Aujean',
       role: 'Director Global Advocacy',
       company: 'Fairtrade International',
@@ -107,7 +114,6 @@ function Speakers2024() {
       `
     },
     {
-      key: '5',
       name: 'Tim Scharrer',
       role: 'COO and Regional Director Europe and North America',
       company: 'Volcafe',
@@ -123,7 +129,6 @@ function Speakers2024() {
       `
     },
     {
-      key: '6',
       name: 'Pablo von Waldenfels',
       role: 'Director Corporate Responsibility',
       company: 'Tchibo GmbH',
@@ -156,7 +161,6 @@ function Speakers2024() {
       `
     },
     {
-      key: '7',
       name: 'Paul Rooke',
       role: 'Executive Director',
       company: 'British Coffee Association (BCA)',
@@ -169,7 +173,6 @@ function Speakers2024() {
       `
     },
     {
-      key: '8',
       name: 'Ashley Olson Onyango',
       role: 'Head of Financial Inclusion & AgriTech',
       company: 'GSMA (Mobile for Development)',
@@ -185,7 +188,6 @@ function Speakers2024() {
       `
     },
     {
-      key: '9',
       name: 'T.J. Ryan',
       role: 'Chief of Party of Philippine Coffee Advancement and Farm Enterprise Project',
       company: 'ACDI/VOCA',
@@ -215,7 +217,7 @@ function Speakers2024() {
             {speakers.map((speaker) => (
                 <li
                     onClick={() => setSelectedSpeaker(speaker)}
-                    key={speaker.key}
+                    key={speaker.name}
                     className="relative border rounded-md bg-lime-700 shadow-md hover:shadow-lg"
                 >
                     <a className="flex flex-col gap-2 hover:cursor-pointer">

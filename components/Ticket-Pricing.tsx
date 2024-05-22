@@ -139,7 +139,7 @@ function TicketPricing() {
                                             <br />
                                             Wines and Hors d&apos;oeuvres
                                             <br />
-                                            <h3 className="text-sm tracking-tight text-red-700 sm:text-lg font-bold">Exclusive for Summit Attendees!<br />Limited tickets only! First come, first serve!</h3>
+                                            <h3 className="text-sm tracking-tight text-red-700 sm:text-lg font-bold">Exclusive for Summit Attendees!<br />Limited tickets only! First come, first serve!<br />Book before Monday 8th July 2024 to Save £40.00</h3>
                                         </td>
                                         <td className="px-3 py-4 text-gray-900 font-bold text-lg">
                                             {networkingSoiree.old_price && <span className='text-red-700 line-through mr-2'>£{networkingSoiree.old_price}.00</span>}
