@@ -56,7 +56,7 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
       checkoutSessionId,
       deletedAt: { $exists: false },
     });
-    if (getTickets.length === 1) {
+    if (getTickets.length > 0) {
       const res = await Tickets.findByIdAndUpdate(
         getTickets[0]._id,
         {
