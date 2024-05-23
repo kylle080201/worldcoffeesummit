@@ -82,10 +82,10 @@ export default function Overview() {
                             loop
                             controls
                             className="w-full"
-                            poster='https://worldcoffeealliance.com/wp-content/uploads/2024/05/Thumbnail.jpg'
+                            poster='https://worldcoffeealliance.com/wp-content/uploads/2024/05/WCIS24-Register-Now-Thumbnail.jpg'
                         >
                             <source
-                                src="https://worldcoffeealliance.com/wp-content/uploads/2024/05/World-Coffee-Innovation-Summit.mp4"
+                                src="https://worldcoffeealliance.com/wp-content/uploads/2024/05/WCIS24-Register-Now.mp4"
                                 type="video/mp4"
                             />
                         </video>

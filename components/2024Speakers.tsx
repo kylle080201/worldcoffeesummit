@@ -67,7 +67,7 @@ function Speakers2024() {
       `
     },
     {
-      name: 'Jennifer “Vern” Long',
+      name: 'Dr. Jennifer “Vern” Long',
       role: 'Chief Executive Officer',
       company: 'World Coffee Research',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/JENNIFER-SQUARE-scaled.jpg',
@@ -170,6 +170,18 @@ function Speakers2024() {
       iconHeight: 100,
       bio: `
       Paul Rooke is Executive Director of the British Coffee Association, responsible for managing and leading the Association, developing key relationships and representing the Association on policy, media and technical issues.  An agricultural graduate, he has over 25 year’s experience in trade associations covering policy, technical and contractual issues. From 2013-2019 has was the President of CELCAA, the European Liaison Committee for the Agricultural and Agri-food Trade, He is a former Chairman of DG Agri’s Civil Dialogue Group for International Aspects of Agriculture of the EU’s High Level Forum for a Better Functioning Supply Chain and DG Trade’s Expert Group on EU Trade Agreements.
+      `
+    },
+    {
+      name: 'Dominic Robinson',
+      role: 'CEO',
+      company: 'Soil Association Certification',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/DOMINIC-SQUARE-scaled.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/soil-association.jpg",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+      Dominic Robinson joined Soil Association Certification Ltd as CEO in 2022. Over his career he has worked across forestry, water and sustainable land management sectors, with a continued focus on utilising nature-based solutions to drive change. In his pursuit to drive environmental impact he has headed up the National Conifer Collection at Bedgebury, Kent, led the Environment and Planning functions for Forestry England, before then moving to Severn Trent Water. Today he is at the helm of the UK’s leading certification body in sustainable standards in the UK, seeking to grow the UK Organic market and the protection and sustainable utilisation of global forestry resources. SA Cert provides organic certification for farming, food, healthy, beauty and textiles and outside the UK, SA Cert is one of the leading forestry certification bodies for FSC and PEFC standards, operating in over 60 countries and protecting over 28m hectares of the earth’s forests. The unifying mission behind Dominic’s approach has been to ensure that SA Cert utilises its reputation for high integrity to provide trust for consumers and expertise for businesses, to enable organisations around the world to deliver a global impact to address the climate, health and biodiversity crises.
       `
     },
     {
