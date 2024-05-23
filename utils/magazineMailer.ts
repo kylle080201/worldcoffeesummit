@@ -28,7 +28,7 @@ export const mailer = async (data: any) => {
 
   try {
     const isNotificationEmailSent = await transporter.sendMail({
-      from: `World Coffee Summit Team <${user}>`,
+      from: `World Coffee Innovation Summit Team <${user}>`,
       to: "info@worldcoffeealliance.com",
       subject: "World Coffee Magazine 2023 Download",
       html: `
@@ -49,7 +49,7 @@ export const mailer = async (data: any) => {
     });
 
     const isConfirmationEmailSent = await transporter.sendMail({
-      from: `World Coffee Summit Team <${user}>`,
+      from: `World Coffee Innovation Summit Team <${user}>`,
       to: `${email}`,
       subject: "World Coffee Magazine 2023 Download",
       html: `
@@ -62,7 +62,7 @@ export const mailer = async (data: any) => {
       <div>Meanwhile, please follow us on <a style="text-decoration: underline;" target="_blank" href="https://www.linkedin.com/company/worldcoffeealliance/">LinkedIn</a> and <a style="text-decoration: underline;" target="_blank" href="https://twitter.com/WCoffeeAlliance">X (Twitter)</a> , and stay tuned with the updates.</div>
       <br/>
       <div>Best regards,</div>
-      <div>World Coffee Summit Team</div>
+      <div>World Coffee Innovation Summit Team</div>
       `
     });
     return {isNotificationEmailSent, isConfirmationEmailSent};
