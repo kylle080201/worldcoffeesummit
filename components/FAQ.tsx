@@ -68,8 +68,14 @@ function FAQ() {
     return (
         <div className="pt-12 pb-20 my-auto sm:pt-20 bg-gray-100 sm:pb-28" id="faq">
             <div className="mx-auto lg:px-8">
-                <div className="px-20 mx-auto divide-y sm:px-60 divide-gray-900/10">
-                    <h2 className="text-3xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
+                <div className='px-20 mx-auto sm:px-60'>
+                    <h2 className="text-3xl  font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
+                    <div className='text-2xl leading-7 mx-auto w-full mt-12'>
+                        To be updated
+                    </div>
+                </div>
+                
+                <div className="px-20 mx-auto divide-y sm:px-60">
                     <dl className="mt-10 space-y-6 divide-y divide-gray-900/10">
                         <Disclosure as="div" className="pt-6">
                             {({ open }) => (
@@ -341,9 +347,6 @@ function FAQ() {
                             )}
                         </Disclosure>
                     </dl>
-                </div>
-                <div className='text-2xl font-semibold leading-7 px-20 mx-auto w-full text-center mt-12'>
-                    To be updated
                 </div>
             </div>
         </div >

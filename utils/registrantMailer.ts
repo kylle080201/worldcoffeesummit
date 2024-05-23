@@ -30,10 +30,10 @@ export const registrantMailer = async (data: any) => {
 
   try {
     const isNotificationEmailSent = await transporter.sendMail({
-      from: `World Coffee Summit Team <${user}>`,
+      from: `World Coffee Innovation Summit Team <${user}>`,
       to: "info@worldcoffeealliance.com",
       // to: "kv.madrigal08@gmail.com",
-      subject: "World Coffee Summit & Exhibition London 2024 Register Interest",
+      subject: "Exhibit/Sponsor at World Coffee Innovation Summit London 2024",
       html: `
       <div>Hi Mavis,</div>
       <div>${firstName} ${lastName} has just registered their interest.</div>
