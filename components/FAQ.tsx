@@ -342,6 +342,9 @@ function FAQ() {
                         </Disclosure>
                     </dl>
                 </div>
+                <div className='text-2xl font-semibold leading-7 px-20 mx-auto w-full text-center mt-12'>
+                    To be updated
+                </div>
             </div>
         </div >
     )

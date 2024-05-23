@@ -208,8 +208,7 @@ const generateEmailContent = ({
                                                             <p>To collect your badge, please show and scan the QR code below or attached.</p>
                                                             <div class="qr-code">
                                                                 <div>
-                                                                    <img alt="QR Code"
-                                                                    src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.worldcoffeeinnovationsummit.com/pdf/${id}" />create-qr-code/?size=150x150&data=https://www.worldcoffeeinnovationsummit.com/pdf/${id}" />
+                                                                <img alt="QR Code" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.worldcoffeeinnovationsummit.com/pdf/${id}" />
                                                                 </div>
                                                                 <div class="qr-info">
                                                                     <div>${firstName} ${lastName}</div>
@@ -394,8 +393,7 @@ const generateEmailContent = ({
                                                             <p>To collect your badge, please show and scan the QR code below or attached.</p>
                                                             <div class="qr-code">
                                                                 <div>
-                                                                    <img alt="QR Code"
-                                                                        src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.worldcoffeeinnovationsummit.com/pdf/${id}" />
+                                                                    <img alt="QR Code" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.worldcoffeeinnovationsummit.com/pdf/${id}" />
                                                                 </div>
                                                                 <div class="qr-info">
                                                                     <div>${firstName} ${lastName}</div>
