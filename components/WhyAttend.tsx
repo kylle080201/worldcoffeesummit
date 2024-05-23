@@ -45,6 +45,9 @@ function WhyAttend() {
                     <h1 className='text-2xl font-bold lg:text-4xl'>
                         WHAT CAN YOU EXPECT?
                     </h1>
+                    <div className='text-2xl leading-7 px-20 mx-auto w-full text-center mt-12'>
+                        To be updated
+                    </div>
                     <div className='grid grid-cols-1 mx-auto mt-20 gap-x-6 gap-y-20 lg:grid-cols-5 lg:gap-x-8'>
                         {WhyAttend.map((item) => (
                             <div key={item.id} className='flex-col text-lg lg:text-2xl'>
@@ -69,12 +72,9 @@ function WhyAttend() {
                 </div>
                 <div className="flex flex-row items-center justify-center mt-4 text-center gap-x-4">
                     <div className='text-lg font-bold underline sm:text-2xl'>
-                        <Link target={'_blank'} rel='noreferer' href="/">WWW.WORLDCOFFEEINNOVATIONSUMMIT.NET
+                        <Link target={'_blank'} rel='noreferer' href="/">WWW.WORLDCOFFEEINNOVATIONSUMMIT.COM
                         </Link>
                     </div>
-                </div>
-                <div className='text-2xl font-semibold leading-7 px-20 mx-auto w-full text-center mt-12'>
-                    To be updated
                 </div>
                 {/* <div className="flex flex-row items-center w-full mt-12 bg-lime-700">
                     <div className='py-4 mx-auto text-lg font-bold text-center text-white sm:text-2xl'>
