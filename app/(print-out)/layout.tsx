@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'World Coffee Summit 2023',
-  description: 'An in-person high-level summit connects Coffee, Climate Change and Finance on 13th September 2023',
+  title: 'World Coffee Innovation Summit 2024',
+  description: 'As the leading summit that connects COFFEE, CLIMATE CHANGE and FINANCE through INNOVATION, the World Coffee Innovation Summit is a must-attend for those who invested in advancing nature-positive, resilient agriculture and food systems for a net positive future in coffee sector. Join global coffee, climate and finance leaders and agri-food innovators in London for two days of in-depth discussions and cross-sector networking.',
 }
 import './globals.css';
 

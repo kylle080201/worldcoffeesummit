@@ -89,6 +89,28 @@ function Speakers2024() {
       `
     },
     {
+      name: 'Chris Southworth',
+      role: 'Secretary General',
+      company: 'ICC United Kingdom',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/Headshot-Chris-Southworth.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/ICC_United_Kingdom_BLACK_RGB_300dpi.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+        Vern Long is the Chief Executive Officer of World Coffee Research (WCR). WCR unites the 
+        global coffee industry to drive science-based agricultural solutions to urgently secure a 
+        diverse and sustainable supply of quality coffee today and for generations to come. In close 
+        collaboration with the WCR Board and member companies, Dr. Long and the WCR executive 
+        leadership team are harnessing the collective power of the coffee industry to deepen public 
+        and private investment and engagement in coffee R&D in response to the significant 
+        innovation gap in coffee agriculture. A plant breeder by training, Long has over 25 years of 
+        experience in global collaborative crop improvement and seed systems initiatives aligning 
+        public sector and industry goals. She is deeply motivated by the transformative power of 
+        agricultural R&D to achieve the coffee industry’s sustainability priorities. A dual citizen of 
+        Canada and the U.S., she holds a Ph.D. in plant breeding from Cornell University.
+      `
+    },
+    {
       name: 'Andrea Geremicca',
       role: 'Director General',
       company: 'European Institute of Innovation for Sustainability (EIIS)',
@@ -203,12 +225,12 @@ function Speakers2024() {
       name: 'T.J. Ryan',
       role: 'Chief of Party of Philippine Coffee Advancement and Farm Enterprise Project',
       company: 'ACDI/VOCA',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/TJ-SQUARE.png',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/T.J.-Ryan-photo.jpg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/ACDIVOCA-logo-gray-tag.png",
       iconWidth: 100,
       iconHeight: 100,
       bio: `
-      T.J. Ryan is the chief of party of the Philippine Coffee Advancement and Farm Enterprise Project, funded by the United States Department of Agriculture. He has over 30 years of experience in international development, including project and program management with a focus on agriculture and agribusiness development. T.J. served as a Peace Corps volunteer in Benin and has lived in West, Southern, and East Africa and Ecuador. Since joining ACDI/VOCA in 2002, T.J. has focused on developing cocoa and coffee sector programs around the world, providing technical oversight, and managing partnerships throughout these value chains. He holds an MBA in international business from Johns Hopkins University and is fluent in English, French, and Spanish, with a working knowledge of Portuguese. 
+      T.J. Ryan has over 30 years of experience in international development and has lived and worked in Africa, South America, and Asia. Over the last 23 years at ACDI/VOCA, he has focused on agribusiness development in the coffee and cocoa sectors by providing technical oversight and managing projects and partnerships with public, private and civil society entities throughout these value chains. He recently completed five years as the project director for ACDI/VOCA on the USDA funded PhilCAFE project which successfully strengthened the coffee sector in the Philippines. Mr. Ryan holds an MBA in international business from Johns Hopkins University and is fluent in English, French, and Spanish. 
       `
     },
   ];
