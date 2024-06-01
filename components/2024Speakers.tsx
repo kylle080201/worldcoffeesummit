@@ -42,7 +42,7 @@ function Speakers2024() {
     {
       name: 'The Rt. Hon John Gummer, Lord Deben',
       role: 'Former Chairman',
-      company: 'UK Climate Change Committee (The CCC)',
+      company: 'UK Climate Change Committee (The CCC), House of Lords',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2023/08/Lord-Deben-Photo-2019-adj-003-scaled-1.jpg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/House_of_Lords_logo_2020.svg.png",
       iconWidth: 100,
@@ -86,6 +86,18 @@ function Speakers2024() {
         public sector and industry goals. She is deeply motivated by the transformative power of 
         agricultural R&D to achieve the coffee industry’s sustainability priorities. A dual citizen of 
         Canada and the U.S., she holds a Ph.D. in plant breeding from Cornell University.
+      `
+    },
+    {
+      name: 'Dr. Parmesh Shah',
+      role: 'Global Lead for Data-Driven Digital Agriculture and Innovations',
+      company: 'The World Bank',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/06/PARMESH-SQUARE.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/06/THE-WORLD-BANK.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+      Parmesh Shah is the Global Lead for Data-Driven Digital Agriculture and Innovations at the World Bank. He provides leadership to the Bank’s work in these areas and supports the development of global knowledge and learning. His current areas of interest are making markets and public services work for the poor, social entrepreneurship, digital and data-based innovations in agriculture and rural development, climate-smart agriculture, Agriculture and technology-enabled start-ups, innovation, promotion of on-farm, off-farm and digital jobs and public-private and people partnerships for rural poverty reduction. He is currently involved in developing a global program on scaling up data-driven digital agriculture involving data platforms and establishing ecosystems for innovation, entrepreneurship, and incubation. He holds a D Phil in Development Studies from the Institute of Development Studies at the University of Sussex, an MBA from the Indian Institute of Management, Ahmedabad, and a B. Tech degree in Agricultural Engineering from Pantnagar in India.
       `
     },
     {
