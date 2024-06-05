@@ -42,7 +42,8 @@ function Speakers2024() {
     {
       name: 'The Rt. Hon John Gummer, Lord Deben',
       role: 'Former Chairman',
-      company: 'UK Climate Change Committee (The CCC), House of Lords',
+      company: 'UK Climate Change Committee (The CCC)',
+      company2: "House of Lords",
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2023/08/Lord-Deben-Photo-2019-adj-003-scaled-1.jpg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/House_of_Lords_logo_2020.svg.png",
       iconWidth: 100,
@@ -295,6 +296,7 @@ function Speakers2024() {
                                 </p>
                                 <p className="leading-7 text-white text-sm">{speaker.role}</p>
                                 <p className="font-semibold leading-7 text-white text-md">{speaker.company}</p>
+                                {speaker.company2 && <p className="font-semibold leading-7 text-white text-md">{speaker.company2}</p>}
                             </div>
                         </div>
                     </a>
