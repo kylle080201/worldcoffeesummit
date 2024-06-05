@@ -63,13 +63,16 @@ export default function Venue() {
                         THE NETWORKING SOIRÉE VENUE
                     </p>
                     <div className='flex flex-col h-full'>
-                        <p className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+                        <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                            House of Lords
+                        </p>
+                        <p className="text-2xl tracking-tight text-gray-900 sm:text-4xl">
                             Houses of Parliament
                         </p>
-                        <p className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+                        <p className="text-2xl tracking-tight text-gray-900 sm:text-4xl">
                             Parliament Sq
                         </p>
-                        <p className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+                        <p className="text-2xl tracking-tight text-gray-900 sm:text-4xl">
                             London SW1A 0PW
                         </p>
                     </div>
