@@ -149,6 +149,20 @@ function Speakers2024() {
       `
     },
     {
+      name: 'Manfred Borer',
+      role: 'Co-Founder & Chief Executive officer',
+      company: 'Koltiva',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/06/MB-Profile-Pic-scaled.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/06/Logo-Koltiva-header.webp",
+      iconWidth: 50,
+      iconHeight: 50,
+      bio: `
+      Industry leader Manfred Borer Co-founded PT Koltiva Indonesia in 2013 and successfully established Koltiva AG in Switzerland together with the founders. Under his direction, he spearheads the company’s growth in supporting some of the largest multinational companies in 61 countries by digitizing and verifying global supply chains to be more traceable, reliable, and sustainable, from Seed to Table. He brings forward the human-centred technology with its professional services ‘Boots on the Ground’ and empowerment method that helps more than 1,170,000 smallholder producers and business users to improve their livelihoods in rural areas.
+
+      Prior to founding Koltiva, Manfred has over 20 years of experience in entrepreneurship and 16 years in rural development and working alongside multinational companies’ agriculture supply chains.
+      `
+    },
+    {
       name: 'Tim Scharrer',
       role: 'COO and Regional Director Europe and North America',
       company: 'Volcafe',
