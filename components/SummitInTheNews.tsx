@@ -7,10 +7,10 @@ function SummitInTheNews() {
     <div className='w-full bg-gray-100 py-24 md:px-0 px-12'>
       <div className="relative max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold leading-10 tracking-tight text-gray-900">World Coffee Innovation Summit in The News</h2>
-        <div className='flex md:flex-row flex-col gap-8'>
+        <div className='flex md:flex-row flex-col gap-8 '>
           <div className="flex w-full md:w-[500px] h-full mt-12">
             <div className="testimonial-item bg-white shadow rounded hover:shadow-lg">
-              <div className='p-8 flex flex-col gap-8'>
+              <div className='p-8 flex flex-col gap-8 h-full'>
                 <div>
                   <p className="font-bold text-2xl tracking-tight text-gray-900">BLOOMBERG</p>
                   <p>The coffee industry navigates tracing beans from global farms to European cafes amidst new sustainability regulations, a complex challenge. <Link target={'_blank'} className='underline' href={'https://www.bloomberg.com/news/newsletters/2023-09-15/global-food-roundup-coffee-world-prepares-for-eu-deforestation-rules'}>Read the whole article here</Link></p>
@@ -21,7 +21,7 @@ function SummitInTheNews() {
               </div>
             </div>
           </div>
-          <div className="flex w-full md:w-[500px] h-full mt-12">
+          {/* <div className="flex w-full md:w-[500px] h-full mt-12">
             <div className="testimonial-item bg-white shadow rounded hover:shadow-lg">
               <div className='p-8 flex flex-col gap-8'>
                 <div>
@@ -33,10 +33,10 @@ function SummitInTheNews() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="flex w-full md:w-[500px] h-full mt-12">
             <div className="testimonial-item bg-white shadow rounded hover:shadow-lg">
-              <div className='p-8 flex flex-col gap-8'>
+              <div className='p-8 flex flex-col gap-8 h-full'>
                 <div>
                   <p className="font-bold text-2xl tracking-tight text-gray-900">AFRICA INTELLIGENCE</p>
                   <p>Africa&apos;s largest coffee producer is set to bear the brunt of Brussels&apos;s new traceability directives. Consequently, it has begun to turn its attention to India and China. <Link target={'_blank'} className='underline' href={'https://www.africaintelligence.com/eastern-africa-and-the-horn/2023/12/06/new-eu-rules-prompt-coffee-sector-to-seek-fresh-markets,110116331-art'}>Read the whole article here</Link></p>

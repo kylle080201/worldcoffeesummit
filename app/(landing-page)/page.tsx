@@ -26,7 +26,7 @@ export default function HomePage() {
                 <ImageCarousel />
                 <Testimonials />
                 <Attendees2023 />
-                {/* <SummitInTheNews /> */}
+                <SummitInTheNews />
                 <WhyAttend />
                 <Venue />
                 <Partners />
