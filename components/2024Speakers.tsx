@@ -102,6 +102,22 @@ function Speakers2024() {
       `
     },
     {
+      name: 'Jari Partanen',
+      role: 'Board Director',
+      company: 'EBRD',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/06/Partanen_Jari_potretti.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/06/Ebrd-logo-regular-blue-english.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: `
+      Mr Jari Partanen is the EBRD Board Director for Finland, Norway, Latvia, Lebanon.   He joined the Bank in September 2021.  
+      Prior to the EBRD, Jari had a long-term position as State Secretary (Vice Minister) with a wide and strong record in the fields of finance and finance markets, economy, sustainable growth, SME policy, agribusiness (EU CAP), transport and infrastructure policies and regulation. 
+      He held leadership roles in government and international institutes including during Finland´s Presidency of the Council of the European Union and European Neighbourhood Instrument Cross Border Cooperation Programme, specialising in Finland and European Union legislative processes. 
+      He holds a MA in Law and has received the Cross of Knight, First Class of the Order of the White Rose of Finland.
+
+      `
+    },
+    {
       name: 'Chris Southworth',
       role: 'Secretary General',
       company: 'ICC United Kingdom',
