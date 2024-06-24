@@ -106,7 +106,7 @@ function Speakers2024() {
       role: 'Board Director',
       company: 'EBRD',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/06/Partanen_Jari_potretti.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/06/Ebrd-logo-regular-blue-english.png",
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/06/Ebrd-logo-regular-blue-english-e1719190097501.png",
       iconWidth: 120,
       iconHeight: 120,
       bio: `
@@ -168,14 +168,31 @@ function Speakers2024() {
       name: 'Manfred Borer',
       role: 'Co-Founder & Chief Executive officer',
       company: 'Koltiva',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/06/MB-Profile-Pic-scaled.jpg',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/06/Manfred-Borer-CEO-and-Co-Founder-KOLTIVA.jpg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/06/Logo-Koltiva-header.webp",
       iconWidth: 50,
       iconHeight: 50,
       bio: `
-      Industry leader Manfred Borer Co-founded PT Koltiva Indonesia in 2013 and successfully established Koltiva AG in Switzerland together with the founders. Under his direction, he spearheads the company’s growth in supporting some of the largest multinational companies in 61 countries by digitizing and verifying global supply chains to be more traceable, reliable, and sustainable, from Seed to Table. He brings forward the human-centred technology with its professional services ‘Boots on the Ground’ and empowerment method that helps more than 1,170,000 smallholder producers and business users to improve their livelihoods in rural areas.
-
-      Prior to founding Koltiva, Manfred has over 20 years of experience in entrepreneurship and 16 years in rural development and working alongside multinational companies’ agriculture supply chains.
+      Manfred Borer has been with Koltiva Indonesia since 2013 and has successfully established
+      Koltiva AG in Switzerland, together with The Founders.
+      Under his direction, Koltiva builds a technology-enabled service company that supports some
+      of the largest multinational companies in 61 countries by digitizing and verifying global supply
+      chains to enhance traceability, inclusiveness, and sustainability. From Seed to Table.
+      He also spearheads the company's significant growth in scaling up to more than 1,300,000
+      producers and business users, uplifting producers' income, and bringing responsible finance
+      and environmental protection to underserved communities in rural areas. In addition, he
+      strengthens Koltiva's positioning to be the world's leading tech company in building ethical,
+      transparent, and sustainable supply chains with several exceptional award-winning
+      milestones such as Top Innovator Tropical Forest Commodities Challenge 2021 by Uplink and
+      World Economic Forum.
+      Prior to founding Koltiva, Manfred has over 20 years of experience in entrepreneurship and 16
+      years in rural development and working alongside multinational companies’ agriculture supply
+      chains.
+      Manfred grew up on a smallholder farm in Switzerland, then vocational training as a carpenter,
+      and started his career in 1994 as owner-manager of a construction company in his home
+      region. After his first 10-years start-up experience, he graduated as a Business Process
+      Manager with an Engineering Degree from the University of Applied Sciences Northwestern
+      Switzerland, majoring in Plant Management.
       `
     },
     {
