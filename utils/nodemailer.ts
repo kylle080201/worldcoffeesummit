@@ -219,7 +219,7 @@ const generateEmailContent = ({
                                                                 </div>
                                                             </div>
                                                             <p><b>WHY NOT JOIN OUR “NETWORKING SOIRÉE” AT UK HOUSE OF LORDS ON 16TH OCTOBER 2024 EARLY EVENING?</b><span style="color: red;"> <b>Limited tickets only! First come, first serve!</b></span></p>
-                                                            <a href="https://www.worldcoffeeinnovationsummit.com/register/tickets"><b>Register here</b></a>
+                                                            <a href="https://www.worldcoffeeinnovationsummit.com/register"><b>Register here</b></a>
                                                             <p>
                                                                 <b>What you need to know:</b>
                                                             </p>
@@ -388,7 +388,7 @@ const generateEmailContent = ({
                                                         <div class="form-container">
                                                             <p> Hi ${firstName},</p>
                                                             <p>Thank you for registering as a guest at our Networking Soirée at The UK House of Lords on 16th October 2024.</p>
-                                                            <p>Please make sure you have already registered your pass to World Coffee Innovation Summit London 2024, as the Networking Soirée is exclusively for registered delegate to the summit only. If not, <a href="https://www.worldcoffeeinnovationsummit.com/register/tickets">register here</a></p>
+                                                            <p>Please make sure you have already registered your pass to World Coffee Innovation Summit London 2024, as the Networking Soirée is exclusively for registered delegate to the summit only. If not, <a href="https://www.worldcoffeeinnovationsummit.com/register">register here</a></p>
                                                             <p>We look forward to welcoming you in London on 16-17th October 2024.</p>
                                                             <p>To collect your badge, please show and scan the QR code below or attached.</p>
                                                             <div class="qr-code">

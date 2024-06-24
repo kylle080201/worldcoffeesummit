@@ -73,13 +73,13 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, line_items }: an
                                     <div className="text-red-500">
                                         LIMITED TICKETS ONLY! FIRST COME, FIRST SERVE!
                                     </div>
-                                    <Link className=' underline text-yellow-900' href={'/register/tickets'}>Register Here</Link>
+                                    <Link className=' underline text-yellow-900' href={'/register'}>Register Here</Link>
                                 </div>
                             }
                             {
                                 res?.res?.event === "Networking Soirée" && 
                                 <h3 className="my-6 text-lg tracking-tight text-gray-900 sm:text-2xl">
-                                    Please make sure you have already registered your pass to World Coffee Innovation Summit London 2024, as the Networking Soirée is exclusively for registered delegate to the summit only. <Link className='underline text-yellow-900' href={'/register/tickets'}>Register Here</Link>
+                                    Please make sure you have already registered your pass to World Coffee Innovation Summit London 2024, as the Networking Soirée is exclusively for registered delegate to the summit only. <Link className='underline text-yellow-900' href={'/register'}>Register Here</Link>
                                 </h3>
                             }
                             
