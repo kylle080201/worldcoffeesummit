@@ -158,8 +158,8 @@ function Speakers2024() {
       company: 'Fairtrade International',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/SOPHIE-SQUARE.jpg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2020/08/FBM_INT_VERT_RGB_POS.png",
-      iconWidth: 50,
-      iconHeight: 50,
+      iconWidth: 60,
+      iconHeight: 60,
       bio: `
       Sophie is an advocacy expert, with more than 15 years of experience in human rights and sustainable development. She joined Fairtrade International as Director of Global Advocacy in October 2022. Previously, she was working as EU Representative for WaterAid, on access to water, sanitation and hygiene in developing countries, with a focus on global health and climate adaptation. She also worked for ILGA-Europe, advocating on the human rights of LGBTI people, and beforehand, within the European Commission and the European Parliament. She has volunteered for 13 years for Amnesty International on the human rights situation in Tunisia, Syria and Lebanon. She holds a master’s degree in human rights law.
       `
@@ -170,8 +170,8 @@ function Speakers2024() {
       company: 'Koltiva',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/06/Manfred-Borer-CEO-and-Co-Founder-KOLTIVA.jpg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/06/Logo-Koltiva-header.webp",
-      iconWidth: 50,
-      iconHeight: 50,
+      iconWidth: 100,
+      iconHeight: 100,
       bio: `
       Manfred Borer has been with Koltiva Indonesia since 2013 and has successfully established
       Koltiva AG in Switzerland, together with The Founders.
@@ -300,124 +300,123 @@ function Speakers2024() {
   return (
     <>
       <div className="px-12 py-20 sm:px-20" id="speakers">
-    <div className="mx-auto sm:content-center">
-        <div className="max-w-2xl mx-auto text-center">
-            <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">2024 SPEAKERS</p>
-        </div>
-        <ul
+        <div className="mx-auto sm:content-center">
+          <div className="max-w-2xl mx-auto text-center">
+              <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">2024 SPEAKERS</p>
+          </div>
+          <ul
             role="list"
             className="grid grid-cols-1 mx-auto mt-20 max-w-7xl gap-x-6 gap-y-20 md:grid-cols-2 lg:grid-cols-4 lg:gap-x-8"
-        >
+          >
             {speakers.map((speaker) => (
-                <li
-                    onClick={() => setSelectedSpeaker(speaker)}
-                    key={speaker.name}
-                    className="relative border rounded-md bg-lime-700 shadow-md hover:shadow-lg"
-                >
-                    <a className="flex flex-col gap-2 hover:cursor-pointer">
-                        <div className="relative">
-                            <Image
-                                className="w-full rounded-t-md"
-                                src={speaker.imageUrl}
-                                alt={speaker.name}
-                                width={160}
-                                height={160}
-                            />
-                            <div className="absolute w-20 h-20 right-4 top-4/4 transform -translate-y-1/2 bg-white p-2 rounded-md shadow-md">
-                                <div className='flex items-center h-full'>
-                                  <Image
-                                    src={speaker.companyIcon}
-                                    alt={`${speaker.company} logo`}
-                                    width={speaker.iconWidth}
-                                    height={speaker.iconHeight}
-                                    className="my-auto mx-auto"
-                                  />
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div className="flex text-left p-4">
-                            <div className="mt-6">
-                                <p className="text-lg font-semibold leading-8 tracking-tight text-white md:text-2xl">
-                                    {speaker.name}
-                                </p>
-                                <p className="leading-7 text-white text-sm">{speaker.role}</p>
-                                <p className="font-semibold leading-7 text-white text-md">{speaker.company}</p>
-                                {speaker.company2 && <p className="font-semibold leading-7 text-white text-md">{speaker.company2}</p>}
-                            </div>
-                        </div>
-                    </a>
-                </li>
-            ))}
-        </ul>
-    </div>
-</div>
-
-      {selectedSpeaker && (
-        <Transition.Root show={Boolean(selectedSpeaker)} as={Fragment}>
-          <Dialog as="div" className="relative z-10" onClose={() => setSelectedSpeaker(null)}>
-            <Transition.Child
-              as={Fragment}
-              enter="ease-out duration-300"
-              enterFrom="opacity-0"
-              enterTo="opacity-100"
-              leave="ease-in duration-200"
-              leaveFrom="opacity-100"
-              leaveTo="opacity-0"
-            >
-              <div className="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-50" />
-            </Transition.Child>
-
-            <div className="fixed inset-0 z-10 overflow-y-auto">
-              <div className="flex justify-center min-h-full p-4 text-center sm:items-center sm:p-0">
-                <Transition.Child
-                  as={Fragment}
-                  enter="ease-out duration-300"
-                  enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                  enterTo="opacity-100 translate-y-0 sm:scale-100"
-                  leave="ease-in duration-200"
-                  leaveFrom="opacity-100 translate-y-0 sm:scale-100"
-                  leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                >
-                  <Dialog.Panel className="relative px-4 pt-5 pb-4 text-left transition-all transform bg-white rounded-lg shadow-xl h-max sm:my-8 sm:w-full sm:max-w-4xl sm:p-6">
-                    <div className='flex flex-col h-max'>
-                      <div className='flex-shrink-0 mx-auto'>
-                        <Image className="rounded-md w-[20rem]" src={selectedSpeaker.imageUrl} alt={selectedSpeaker.name} width={160} height={160} />
-                      </div>
-                      <div className='flex justify-center p-2'>
-                        <div className='bg-white p-2 rounded-md'>
-                          <Image src={selectedSpeaker.companyIcon} alt={`${selectedSpeaker.company} logo`} width={100} height={100} />
+              <li
+                onClick={() => setSelectedSpeaker(speaker)}
+                key={speaker.name}
+                className="relative border rounded-md bg-lime-700 shadow-md hover:shadow-lg"
+              >
+                <a className="flex flex-col gap-2 hover:cursor-pointer">
+                  <div className="relative">
+                      <Image
+                        className="w-full rounded-t-md"
+                        src={speaker.imageUrl}
+                        alt={speaker.name}
+                        width={160}
+                        height={160}
+                      />
+                      <div className="absolute w-24 h-24 right-4 top-4/4 transform -translate-y-1/2 bg-white p-2 rounded-md shadow-md">
+                        <div className='flex items-center h-full'>
+                          <Image
+                            src={speaker.companyIcon}
+                            alt={`${speaker.company} logo`}
+                            width={speaker.iconWidth}
+                            height={speaker.iconHeight}
+                            className="my-auto mx-auto"
+                          />
                         </div>
                       </div>
-                      <div className="flex mx-auto text-center">
-                        <div>
-                          <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{selectedSpeaker.name}</p>
-                          <p className="leading-7 text-gray-700 text-md">{selectedSpeaker.role}</p>
-                          <p className="font-semibold leading-7 text-gray-900 text-md">{selectedSpeaker.company}</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="overflow-auto text-sm sm:text-md sm:mt-5 max-h-60">
-                      <p className="mt-2 text-gray-600">
-                        {selectedSpeaker.bio}
+                  </div>
+                  <div className="flex text-left p-4">
+                    <div className="mt-6">
+                      <p className="text-lg font-semibold leading-8 tracking-tight text-white md:text-2xl">
+                          {speaker.name}
                       </p>
+                      <p className="leading-7 text-white text-sm">{speaker.role}</p>
+                      <p className="font-semibold leading-7 text-white text-md">{speaker.company}</p>
+                      {speaker.company2 && <p className="font-semibold leading-7 text-white text-md">{speaker.company2}</p>}
                     </div>
-                    <div className="mt-5 sm:mt-6">
-                      <button
-                        type="button"
-                        className="inline-flex justify-center max-w-5xl px-3 py-2 text-sm font-semibold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-700"
-                        onClick={() => setSelectedSpeaker(null)}
-                      >
-                        Back
-                      </button>
+                  </div>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+    </div>
+
+    {selectedSpeaker && (
+      <Transition.Root show={Boolean(selectedSpeaker)} as={Fragment}>
+        <Dialog as="div" className="relative z-10" onClose={() => setSelectedSpeaker(null)}>
+          <Transition.Child
+            as={Fragment}
+            enter="ease-out duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="ease-in duration-200"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <div className="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-50" />
+          </Transition.Child>
+
+          <div className="fixed inset-0 z-10 overflow-y-auto">
+            <div className="flex justify-center min-h-full p-4 text-center sm:items-center sm:p-0">
+              <Transition.Child
+                as={Fragment}
+                enter="ease-out duration-300"
+                enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                enterTo="opacity-100 translate-y-0 sm:scale-100"
+                leave="ease-in duration-200"
+                leaveFrom="opacity-100 translate-y-0 sm:scale-100"
+                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+              >
+                <Dialog.Panel className="relative px-4 pt-5 pb-4 text-left transition-all transform bg-white rounded-lg shadow-xl h-max sm:my-8 sm:w-full sm:max-w-4xl sm:p-6">
+                  <div className='flex flex-col h-max'>
+                    <div className='flex-shrink-0 mx-auto'>
+                      <Image className="rounded-md w-[20rem]" src={selectedSpeaker.imageUrl} alt={selectedSpeaker.name} width={160} height={160} />
                     </div>
-                  </Dialog.Panel>
-                </Transition.Child>
-              </div>
+                    <div className='flex justify-center p-2'>
+                      <div className='bg-white p-2 rounded-md'>
+                        <Image src={selectedSpeaker.companyIcon} alt={`${selectedSpeaker.company} logo`} width={100} height={100} />
+                      </div>
+                    </div>
+                    <div className="flex mx-auto text-center">
+                      <div>
+                        <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{selectedSpeaker.name}</p>
+                        <p className="leading-7 text-gray-700 text-md">{selectedSpeaker.role}</p>
+                        <p className="font-semibold leading-7 text-gray-900 text-md">{selectedSpeaker.company}</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="overflow-auto text-sm sm:text-md sm:mt-5 max-h-60">
+                    <p className="mt-2 text-gray-600">
+                      {selectedSpeaker.bio}
+                    </p>
+                  </div>
+                  <div className="mt-5 sm:mt-6">
+                    <button
+                      type="button"
+                      className="inline-flex justify-center max-w-5xl px-3 py-2 text-sm font-semibold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-700"
+                      onClick={() => setSelectedSpeaker(null)}
+                    >
+                      Back
+                    </button>
+                  </div>
+                </Dialog.Panel>
+              </Transition.Child>
             </div>
-          </Dialog>
-        </Transition.Root>
-      )}
+          </div>
+        </Dialog>
+      </Transition.Root>
+    )}
     </>
   );
 }
