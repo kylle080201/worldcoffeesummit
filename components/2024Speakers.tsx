@@ -118,6 +118,18 @@ function Speakers2024() {
       `
     },
     {
+      name: 'Graham Turnock',
+      role: 'Special Advisor',
+      company: 'European Space Agency (ESA)',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/06/GTimage.png',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/06/ESA_logo_2020_Deep-e1719391553788.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: `
+      Graham Turnock is Special Advisor to the European Space Agency.  He currently leads the ESA Accelerator programme, an initiative aimed at speeding up the adoption of space solutions to problems of sustainability on Earth and in Space.  He has over 30 years’ experience in public administration including almost 20 as a UK senior civil servant and was Chief Executive Officer of the UK Space Agency from 2017-2021.  He holds a PhD in particle physics from Cambridge University and CERN.
+      `
+    },
+    {
       name: 'Chris Southworth',
       role: 'Secretary General',
       company: 'ICC United Kingdom',
