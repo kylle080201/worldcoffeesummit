@@ -165,6 +165,18 @@ function Speakers2024() {
       `
     },
     {
+      name: 'Paul Rooke',
+      role: 'Executive Director',
+      company: 'British Coffee Association (BCA)',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/PAUL-SQUARE.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2023/06/BCA_PrimaryLogo_Large-scaled.jpg",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+      Paul Rooke is Executive Director of the British Coffee Association, responsible for managing and leading the Association, developing key relationships and representing the Association on policy, media and technical issues.  An agricultural graduate, he has over 25 year’s experience in trade associations covering policy, technical and contractual issues. From 2013-2019 has was the President of CELCAA, the European Liaison Committee for the Agricultural and Agri-food Trade, He is a former Chairman of DG Agri’s Civil Dialogue Group for International Aspects of Agriculture of the EU’s High Level Forum for a Better Functioning Supply Chain and DG Trade’s Expert Group on EU Trade Agreements.
+      `
+    },
+    {
       name: 'Sophie Aujean',
       role: 'Director Global Advocacy',
       company: 'Fairtrade International',
@@ -255,15 +267,14 @@ function Speakers2024() {
       `
     },
     {
-      name: 'Paul Rooke',
-      role: 'Executive Director',
-      company: 'British Coffee Association (BCA)',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/PAUL-SQUARE.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2023/06/BCA_PrimaryLogo_Large-scaled.jpg",
+      name: 'Laurent Sagarra',
+      role: 'Vice President Sustainability',
+      company: 'JDE Peet’s',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/LaurentAlexandreSagarraVicePresidentSustainabilityJDEPeets.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/07/JDE_Peets_box_logo.svg",
       iconWidth: 100,
       iconHeight: 100,
       bio: `
-      Paul Rooke is Executive Director of the British Coffee Association, responsible for managing and leading the Association, developing key relationships and representing the Association on policy, media and technical issues.  An agricultural graduate, he has over 25 year’s experience in trade associations covering policy, technical and contractual issues. From 2013-2019 has was the President of CELCAA, the European Liaison Committee for the Agricultural and Agri-food Trade, He is a former Chairman of DG Agri’s Civil Dialogue Group for International Aspects of Agriculture of the EU’s High Level Forum for a Better Functioning Supply Chain and DG Trade’s Expert Group on EU Trade Agreements.
       `
     },
     {
