@@ -69,12 +69,16 @@ const RegisterForm = () => {
         }
     }
 
-    const onSubmit = (data: any) => {
-        const { email, confirmEmail } = data;
-        if (data) {
-            if (email === confirmEmail) {
-                redirectToCheckout(data)
+    const onSubmit = async (data: any) => {
+        try {
+            const { email, confirmEmail } = data;
+            if (data) {
+                if (email === confirmEmail) {
+                    await redirectToCheckout(data)
+                }
             }
+        } catch (error) {
+            console.log(error)
         }
         
         // setOpenNotice(!openNotice)
