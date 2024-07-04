@@ -35,7 +35,6 @@ const RegisterForm = () => {
     } = useForm();
 
     const redirectToCheckout = async (formData: User) => {
-        console.log(formData)
         try {
             const line_items = searchParams?.get('line_items') as string;
             const parsedLineItems = JSON.parse(line_items)
