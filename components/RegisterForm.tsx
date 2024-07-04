@@ -8,13 +8,31 @@ import BackButton from './BackButton'
 import Link from 'next/link'
 import { ClockIcon } from '@heroicons/react/24/outline'
 
+interface User {
+    firstName: string;
+    lastName: string;
+    companyName: string;
+    jobTitle: string;
+    mobileNumber: string;
+    country: string;
+    email: string;
+    confirmEmail: string;
+}
+
 const RegisterForm = () => {
     const router = useRouter()
     const searchParams = useSearchParams()
     const [isAgree, setIsAgree] = useState(false)
+    const [origin, setOrigin] = useState('')
     const [openTermsAndConditions, setOpenTermsAndConditions] = useState(false)
     const [openLetterOfInvitation, setOpenLetterOfInvitation] = useState(false)
     const [openNotice, setOpenNotice] = useState(false)
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            setOrigin(window.location.origin)
+        }
+    }, [])
 
     const {
         register,
@@ -23,7 +41,7 @@ const RegisterForm = () => {
         formState: { errors },
     } = useForm();
 
-    const redirectToCheckout = async (formData: any) => {
+    const redirectToCheckout = async (formData: User) => {
         try {
             const line_items = searchParams?.get('line_items') as string;
             const parsedLineItems = JSON.parse(line_items)
@@ -39,7 +57,8 @@ const RegisterForm = () => {
                             body: JSON.stringify(
                                 {
                                     line_items: parsedLineItems,
-                                    formData
+                                    formData,
+                                    origin
                                 }
                             )
                         }).then(response => response.json())
@@ -54,7 +73,7 @@ const RegisterForm = () => {
                     }
                 }
             } else {
-                router.push(`/register/form/networking-soiree?line_items=${line_items}&formData=${encryptedFormData}`)
+                router.push(`/register/form/networking-soiree?line_items=${line_items}&formData=${encodeURIComponent(encryptedFormData)}`)
             }
         } catch (error) {
             console.log(error)
@@ -86,23 +105,23 @@ const RegisterForm = () => {
                         <div className='flex gap-4'>
                             <div className='w-1/2'>
                                 <label htmlFor="firstName" className="block mb-2 text-sm font-medium text-gray-900">First Name</label>
-                                <input {...register('firstName')} className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" required />
+                                <input type="text" {...register('firstName', { required: true, pattern: /^[a-zA-Z0-9\s&@#*!]+$/ })} className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" required />
                             </div>
                             <div className='w-1/2'>
                                 <label htmlFor="lastName" className="block mb-2 text-sm font-medium text-gray-900">Last Name</label>
-                                <input {...register('lastName')} className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" required />
+                                <input type="text" {...register('lastName', { required: true, pattern: /^[a-zA-Z0-9\s&@#*!]+$/ })} className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" required />
                             </div>
                         </div>
 
                         <div>
                             <label htmlFor="companyName" className="block mb-2 text-sm font-medium text-gray-900">Company</label>
-                            <input {...register('companyName')} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500" required />
+                            <input type={"text"} {...register('companyName', { required: true, pattern: /^[a-zA-Z0-9\s&@#*!]+$/ })} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500" required />
 
                         </div>
 
                         <div>
                             <label htmlFor="jobTitle" className="block mb-2 text-sm font-medium text-gray-900">Job Title</label>
-                            <input {...register('jobTitle')} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500" required />
+                            <input type={"text"} {...register('jobTitle', { required: true, pattern: /^[a-zA-Z0-9\s&@#*!]+$/ })} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500" required />
                         </div>
 
                         <div className='flex gap-4'>
@@ -112,7 +131,7 @@ const RegisterForm = () => {
                             </div>
                             <div className='w-1/2'>
                                 <label htmlFor="country" className="block mb-2 text-sm font-medium text-gray-900">Country</label>
-                                <input {...register('country')} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500" required />
+                                <input {...register('country', { required: true, pattern: /^[a-zA-Z0-9\s&@#*!]+$/ })} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500" required />
                             </div>
                         </div>
 
