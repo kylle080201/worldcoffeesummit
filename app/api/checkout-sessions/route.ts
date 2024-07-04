@@ -11,7 +11,6 @@ export async function POST(request: NextRequest, response: NextResponse) {
   const req = await request.json();
   const line_items = JSON.stringify(req.line_items);
   const formData = JSON.stringify(req.formData);
-  const origin = req.origin;
   const encryptedFormData = encryptData(formData);
   try {
     const session = await stripe.checkout.sessions.create({
@@ -27,14 +26,14 @@ export async function POST(request: NextRequest, response: NextResponse) {
       mode: "payment",
       payment_method_types: ["card"],
       line_items: JSON.parse(line_items),
-      success_url: `${origin}/register/success?session_id={CHECKOUT_SESSION_ID}&line_items=${line_items}&buyer_data=${encryptedFormData}`,
-      cancel_url: `${origin}/register`,
+      success_url: `https://www.worldcoffeeinnovationsummit.com/register/success?session_id={CHECKOUT_SESSION_ID}&line_items=${line_items}&buyer_data=${encryptedFormData}`,
+      cancel_url: `https://www.worldcoffeeinnovationsummit.com/register`,
     });
     const retrievedSession = await stripe.checkout.sessions.retrieve(
       session?.id
     );
     return NextResponse.json({
-      response: { retrievedSession, origin },
+      response: { retrievedSession },
     });
   } catch (error: any) {
     return NextResponse.json({
