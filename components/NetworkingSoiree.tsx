@@ -11,7 +11,7 @@ interface T_Line_Items {
 export default function NetworkingSoiree() {
   const searchParams = useSearchParams()
   const line_items = JSON.parse(searchParams?.get('line_items') as string) as T_Line_Items[];
-  const formData = JSON.parse(searchParams?.get('formData') as string);
+  const formData = JSON.parse(decodeURIComponent(searchParams?.get('formData') as string));
   const networkingSoireeTicket = {
     price: 'price_1PIiS4KMWpUKzQVz4RptL8TA',
     quantity: 1,
