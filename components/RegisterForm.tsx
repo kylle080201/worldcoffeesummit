@@ -18,7 +18,9 @@ const RegisterForm = () => {
     const [openNotice, setOpenNotice] = useState(false)
 
     useEffect(() => {
-        setOrigin(window.location.origin)
+        if (typeof window !== "undefined") {
+            setOrigin(window.location.origin)
+        }
     }, [])
 
     const {
@@ -29,39 +31,42 @@ const RegisterForm = () => {
     } = useForm();
 
     const redirectToCheckout = async (formData: any) => {
-        const line_items = searchParams?.get('line_items') as string;
-        const parsedLineItems = JSON.parse(line_items)
-        const encryptedFormData = JSON.stringify(formData)
-        if(parsedLineItems[0].price === "price_1PIiS4KMWpUKzQVz4RptL8TA") {
-            if (line_items) {
-                try {
-                    await fetch('/api/checkout-sessions', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify(
-                            {
-                                line_items: parsedLineItems,
-                                formData,
-                                origin
-                            }
-                        )
-                    }).then(response => response.json())
-                        .then(async data => {
-                            const stripe = await getStripe();
-                            await stripe?.redirectToCheckout({ sessionId: data?.response?.retrievedSession?.id })
-                        }).catch(error => {
-                            console.log(error);
-                        });
-                } catch (error) {
-                    alert(error)
+        try {
+            const line_items = searchParams?.get('line_items') as string;
+            const parsedLineItems = JSON.parse(line_items)
+            const encryptedFormData = JSON.stringify(formData)
+            if(parsedLineItems[0]?.price === "price_1PIiS4KMWpUKzQVz4RptL8TA") {
+                if (line_items) {
+                    try {
+                        await fetch('/api/checkout-sessions', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify(
+                                {
+                                    line_items: parsedLineItems,
+                                    formData,
+                                    origin
+                                }
+                            )
+                        }).then(response => response.json())
+                            .then(async data => {
+                                const stripe = await getStripe();
+                                await stripe?.redirectToCheckout({ sessionId: data?.response?.retrievedSession?.id })
+                            }).catch(error => {
+                                console.log(error);
+                            });
+                    } catch (error) {
+                        alert(error)
+                    }
                 }
+            } else {
+                router.push(`/register/form/networking-soiree?line_items=${line_items}&formData=${encryptedFormData}`)
             }
-        } else {
-            router.push(`/register/form/networking-soiree?line_items=${line_items}&formData=${encryptedFormData}`)
+        } catch (error) {
+            console.log(error)
         }
-        
     }
 
     const onSubmit = (data: any) => {
