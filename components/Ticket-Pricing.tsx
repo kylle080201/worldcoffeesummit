@@ -179,6 +179,9 @@ function TicketPricing() {
             <div className="max-w-5xl mx-auto mt-12 sm:text-center">
                 <h3 className="tracking-tight text-red-700 sm:text-lg"><span className='font-bold'>NOTICE</span>: Please make sure you choose the correct pass per specification. We reserve the right to exclude and refund registration that does not belong to the correct category pass</h3>
             </div>
+            <div className="px-12 mt-12 text-center sm:text-right w-full">
+                <h3 className="tracking-tight text-red-700 sm:text-lg">If you have problems registering, please email us at <Link href={"mailto:mavis@worldcoffeealliance.com"} target="_blank" className="underline hover:underline-offset-4"> mavis@worldcoffeealliance.com</Link></h3>
+            </div>
         </div>
     )
 }
