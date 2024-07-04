@@ -23,9 +23,16 @@ const RegisterForm = () => {
     const router = useRouter()
     const searchParams = useSearchParams()
     const [isAgree, setIsAgree] = useState(false)
+    const [origin, setOrigin] = useState('')
     const [openTermsAndConditions, setOpenTermsAndConditions] = useState(false)
     const [openLetterOfInvitation, setOpenLetterOfInvitation] = useState(false)
     const [openNotice, setOpenNotice] = useState(false)
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            setOrigin(window.location.origin)
+        }
+    }, [])
 
     const {
         register,
@@ -50,7 +57,8 @@ const RegisterForm = () => {
                             body: JSON.stringify(
                                 {
                                     line_items: parsedLineItems,
-                                    formData
+                                    formData,
+                                    origin
                                 }
                             )
                         }).then(response => response.json())
