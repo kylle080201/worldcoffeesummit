@@ -18,9 +18,7 @@ const RegisterForm = () => {
     const [openNotice, setOpenNotice] = useState(false)
 
     useEffect(() => {
-        if (typeof window !== "undefined") {
-            setOrigin(window.location.origin)
-        }
+        setOrigin(window.location.origin)
     }, [])
 
     const {
@@ -29,17 +27,6 @@ const RegisterForm = () => {
         watch,
         formState: { errors },
     } = useForm();
-
-    const onSubmit = (data: any) => {
-        const { email, confirmEmail } = data;
-        if (data) {
-            if (email === confirmEmail) {
-                redirectToCheckout(data)
-            }
-        }
-        
-        // setOpenNotice(!openNotice)
-    }
 
     const redirectToCheckout = async (formData: any) => {
         const line_items = searchParams?.get('line_items') as string;
@@ -75,6 +62,17 @@ const RegisterForm = () => {
             router.push(`/register/form/networking-soiree?line_items=${line_items}&formData=${encryptedFormData}`)
         }
         
+    }
+
+    const onSubmit = (data: any) => {
+        const { email, confirmEmail } = data;
+        if (data) {
+            if (email === confirmEmail) {
+                redirectToCheckout(data)
+            }
+        }
+        
+        // setOpenNotice(!openNotice)
     }
 
     const watchEmail = watch('email');
@@ -151,6 +149,9 @@ const RegisterForm = () => {
                                         </label>
                                         <p id="comments-description" className="text-gray-500">
                                             By ticking this checkbox you agree to the <button type='button' onClick={() => { setOpenTermsAndConditions(!openTermsAndConditions) }} className='underline text-lime-700'>terms and conditions</button> and <Link target={'_blank'} href={'/privacy-policy'} className='underline text-lime-700'>privacy policy</Link>.
+                                        </p>
+                                        <p id="comments-description" className="text-gray-500">
+                                            If you have problems registering, please email us at <Link href={"mailto:mavis@worldcoffeealliance.com"} target="_blank" className="text-yellow-900 underline hover:underline-offset-4"> mavis@worldcoffeealliance.com</Link>
                                         </p>
                                     </div>
                                 </div>
