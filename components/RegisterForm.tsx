@@ -150,9 +150,6 @@ const RegisterForm = () => {
                                         <p id="comments-description" className="text-gray-500">
                                             By ticking this checkbox you agree to the <button type='button' onClick={() => { setOpenTermsAndConditions(!openTermsAndConditions) }} className='underline text-lime-700'>terms and conditions</button> and <Link target={'_blank'} href={'/privacy-policy'} className='underline text-lime-700'>privacy policy</Link>.
                                         </p>
-                                        <p id="comments-description" className="text-gray-500">
-                                            If you have problems registering, please email us at <Link href={"mailto:mavis@worldcoffeealliance.com"} target="_blank" className="text-yellow-900 underline hover:underline-offset-4"> mavis@worldcoffeealliance.com</Link>
-                                        </p>
                                     </div>
                                 </div>
                             </div>
