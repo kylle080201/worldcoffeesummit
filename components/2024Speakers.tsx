@@ -102,22 +102,6 @@ function Speakers2024() {
       `
     },
     {
-      name: 'Jari Partanen',
-      role: 'Board Director',
-      company: 'EBRD',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/06/Partanen_Jari_potretti.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/06/Ebrd-logo-regular-blue-english-e1719190097501.png",
-      iconWidth: 120,
-      iconHeight: 120,
-      bio: `
-      Mr Jari Partanen is the EBRD Board Director for Finland, Norway, Latvia, Lebanon.   He joined the Bank in September 2021.  
-      Prior to the EBRD, Jari had a long-term position as State Secretary (Vice Minister) with a wide and strong record in the fields of finance and finance markets, economy, sustainable growth, SME policy, agribusiness (EU CAP), transport and infrastructure policies and regulation. 
-      He held leadership roles in government and international institutes including during Finland´s Presidency of the Council of the European Union and European Neighbourhood Instrument Cross Border Cooperation Programme, specialising in Finland and European Union legislative processes. 
-      He holds a MA in Law and has received the Cross of Knight, First Class of the Order of the White Rose of Finland.
-
-      `
-    },
-    {
       name: 'Graham Turnock',
       role: 'Special Advisor',
       company: 'European Space Agency (ESA)',
@@ -127,96 +111,6 @@ function Speakers2024() {
       iconHeight: 120,
       bio: `
       Graham Turnock is Special Advisor to the European Space Agency.  He currently leads the ESA Accelerator programme, an initiative aimed at speeding up the adoption of space solutions to problems of sustainability on Earth and in Space.  He has over 30 years’ experience in public administration including almost 20 as a UK senior civil servant and was Chief Executive Officer of the UK Space Agency from 2017-2021.  He holds a PhD in particle physics from Cambridge University and CERN.
-      `
-    },
-    {
-      name: 'Chris Southworth',
-      role: 'Secretary General',
-      company: 'ICC United Kingdom',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/Headshot-Chris-Southworth.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/ICC_United_Kingdom_BLACK_RGB_300dpi.png",
-      iconWidth: 100,
-      iconHeight: 100,
-      bio: `
-        Vern Long is the Chief Executive Officer of World Coffee Research (WCR). WCR unites the 
-        global coffee industry to drive science-based agricultural solutions to urgently secure a 
-        diverse and sustainable supply of quality coffee today and for generations to come. In close 
-        collaboration with the WCR Board and member companies, Dr. Long and the WCR executive 
-        leadership team are harnessing the collective power of the coffee industry to deepen public 
-        and private investment and engagement in coffee R&D in response to the significant 
-        innovation gap in coffee agriculture. A plant breeder by training, Long has over 25 years of 
-        experience in global collaborative crop improvement and seed systems initiatives aligning 
-        public sector and industry goals. She is deeply motivated by the transformative power of 
-        agricultural R&D to achieve the coffee industry’s sustainability priorities. A dual citizen of 
-        Canada and the U.S., she holds a Ph.D. in plant breeding from Cornell University.
-      `
-    },
-    {
-      name: 'Andrea Geremicca',
-      role: 'Director General',
-      company: 'European Institute of Innovation for Sustainability (EIIS)',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/ANDREA-SQUARE.jpeg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/Logo-EIIS_Colour.png",
-      iconWidth: 100,
-      iconHeight: 100,
-      bio: `
-      Andrea Geremicca is the Director General of the European Institute of Innovation for Sustainability (EIIS). 
-      He is an adjunct professor at LUISS and LUMSA, where he teaches Innovation for Sustainability, and a faculty member at Singularity University, where he specializes in innovation for sustainability and foresight. Andrea attended the Harvard Business School Exc in Boston, focusing on driving innovation in large organizations. He contributes to the Harvard Business Review, writing about future scenarios and emerging macro trends. He has delivered two TEDx Talks, in 2018 and 2021. In 2018, Andrea had the honor of lecturing at Harvard Kennedy School and Sciences Po in Paris. Additionally, he authored two books in 2022 and 2023, which have become essential texts in the business faculties of two universities.      
-      `
-    },
-    {
-      name: 'Paul Rooke',
-      role: 'Executive Director',
-      company: 'British Coffee Association (BCA)',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/PAUL-SQUARE.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2023/06/BCA_PrimaryLogo_Large-scaled.jpg",
-      iconWidth: 100,
-      iconHeight: 100,
-      bio: `
-      Paul Rooke is Executive Director of the British Coffee Association, responsible for managing and leading the Association, developing key relationships and representing the Association on policy, media and technical issues.  An agricultural graduate, he has over 25 year’s experience in trade associations covering policy, technical and contractual issues. From 2013-2019 has was the President of CELCAA, the European Liaison Committee for the Agricultural and Agri-food Trade, He is a former Chairman of DG Agri’s Civil Dialogue Group for International Aspects of Agriculture of the EU’s High Level Forum for a Better Functioning Supply Chain and DG Trade’s Expert Group on EU Trade Agreements.
-      `
-    },
-    {
-      name: 'Sophie Aujean',
-      role: 'Director Global Advocacy',
-      company: 'Fairtrade International',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/SOPHIE-SQUARE.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2020/08/FBM_INT_VERT_RGB_POS.png",
-      iconWidth: 60,
-      iconHeight: 60,
-      bio: `
-      Sophie is an advocacy expert, with more than 15 years of experience in human rights and sustainable development. She joined Fairtrade International as Director of Global Advocacy in October 2022. Previously, she was working as EU Representative for WaterAid, on access to water, sanitation and hygiene in developing countries, with a focus on global health and climate adaptation. She also worked for ILGA-Europe, advocating on the human rights of LGBTI people, and beforehand, within the European Commission and the European Parliament. She has volunteered for 13 years for Amnesty International on the human rights situation in Tunisia, Syria and Lebanon. She holds a master’s degree in human rights law.
-      `
-    },
-    {
-      name: 'Manfred Borer',
-      role: 'Co-Founder & Chief Executive officer',
-      company: 'Koltiva',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/06/Manfred-Borer-CEO-and-Co-Founder-KOLTIVA.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/06/Logo-Koltiva-header.webp",
-      iconWidth: 100,
-      iconHeight: 100,
-      bio: `
-      Manfred Borer has been with Koltiva Indonesia since 2013 and has successfully established
-      Koltiva AG in Switzerland, together with The Founders.
-      Under his direction, Koltiva builds a technology-enabled service company that supports some
-      of the largest multinational companies in 61 countries by digitizing and verifying global supply
-      chains to enhance traceability, inclusiveness, and sustainability. From Seed to Table.
-      He also spearheads the company's significant growth in scaling up to more than 1,300,000
-      producers and business users, uplifting producers' income, and bringing responsible finance
-      and environmental protection to underserved communities in rural areas. In addition, he
-      strengthens Koltiva's positioning to be the world's leading tech company in building ethical,
-      transparent, and sustainable supply chains with several exceptional award-winning
-      milestones such as Top Innovator Tropical Forest Commodities Challenge 2021 by Uplink and
-      World Economic Forum.
-      Prior to founding Koltiva, Manfred has over 20 years of experience in entrepreneurship and 16
-      years in rural development and working alongside multinational companies’ agriculture supply
-      chains.
-      Manfred grew up on a smallholder farm in Switzerland, then vocational training as a carpenter,
-      and started his career in 1994 as owner-manager of a construction company in his home
-      region. After his first 10-years start-up experience, he graduated as a Business Process
-      Manager with an Engineering Degree from the University of Applied Sciences Northwestern
-      Switzerland, majoring in Plant Management.
       `
     },
     {
@@ -278,15 +172,109 @@ function Speakers2024() {
       `
     },
     {
-      name: 'Dominic Robinson',
-      role: 'CEO',
-      company: 'Soil Association Certification',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/DOMINIC-SQUARE-scaled.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/soil-association.jpg",
+      name: 'Manfred Borer',
+      role: 'Co-Founder & Chief Executive officer',
+      company: 'Koltiva',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/06/Manfred-Borer-CEO-and-Co-Founder-KOLTIVA.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/06/Logo-Koltiva-header.webp",
       iconWidth: 100,
       iconHeight: 100,
       bio: `
-      Dominic Robinson joined Soil Association Certification Ltd as CEO in 2022. Over his career he has worked across forestry, water and sustainable land management sectors, with a continued focus on utilising nature-based solutions to drive change. In his pursuit to drive environmental impact he has headed up the National Conifer Collection at Bedgebury, Kent, led the Environment and Planning functions for Forestry England, before then moving to Severn Trent Water. Today he is at the helm of the UK’s leading certification body in sustainable standards in the UK, seeking to grow the UK Organic market and the protection and sustainable utilisation of global forestry resources. SA Cert provides organic certification for farming, food, healthy, beauty and textiles and outside the UK, SA Cert is one of the leading forestry certification bodies for FSC and PEFC standards, operating in over 60 countries and protecting over 28m hectares of the earth’s forests. The unifying mission behind Dominic’s approach has been to ensure that SA Cert utilises its reputation for high integrity to provide trust for consumers and expertise for businesses, to enable organisations around the world to deliver a global impact to address the climate, health and biodiversity crises.
+      Manfred Borer has been with Koltiva Indonesia since 2013 and has successfully established
+      Koltiva AG in Switzerland, together with The Founders.
+      Under his direction, Koltiva builds a technology-enabled service company that supports some
+      of the largest multinational companies in 61 countries by digitizing and verifying global supply
+      chains to enhance traceability, inclusiveness, and sustainability. From Seed to Table.
+      He also spearheads the company's significant growth in scaling up to more than 1,300,000
+      producers and business users, uplifting producers' income, and bringing responsible finance
+      and environmental protection to underserved communities in rural areas. In addition, he
+      strengthens Koltiva's positioning to be the world's leading tech company in building ethical,
+      transparent, and sustainable supply chains with several exceptional award-winning
+      milestones such as Top Innovator Tropical Forest Commodities Challenge 2021 by Uplink and
+      World Economic Forum.
+      Prior to founding Koltiva, Manfred has over 20 years of experience in entrepreneurship and 16
+      years in rural development and working alongside multinational companies’ agriculture supply
+      chains.
+      Manfred grew up on a smallholder farm in Switzerland, then vocational training as a carpenter,
+      and started his career in 1994 as owner-manager of a construction company in his home
+      region. After his first 10-years start-up experience, he graduated as a Business Process
+      Manager with an Engineering Degree from the University of Applied Sciences Northwestern
+      Switzerland, majoring in Plant Management.
+      `
+    },
+    {
+      name: 'Jari Partanen',
+      role: 'Board Director',
+      company: 'EBRD',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/06/Partanen_Jari_potretti.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/06/Ebrd-logo-regular-blue-english-e1719190097501.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: `
+      Mr Jari Partanen is the EBRD Board Director for Finland, Norway, Latvia, Lebanon.   He joined the Bank in September 2021.  
+      Prior to the EBRD, Jari had a long-term position as State Secretary (Vice Minister) with a wide and strong record in the fields of finance and finance markets, economy, sustainable growth, SME policy, agribusiness (EU CAP), transport and infrastructure policies and regulation. 
+      He held leadership roles in government and international institutes including during Finland´s Presidency of the Council of the European Union and European Neighbourhood Instrument Cross Border Cooperation Programme, specialising in Finland and European Union legislative processes. 
+      He holds a MA in Law and has received the Cross of Knight, First Class of the Order of the White Rose of Finland.
+
+      `
+    },
+    {
+      name: 'Andrea Geremicca',
+      role: 'Director General',
+      company: 'European Institute of Innovation for Sustainability (EIIS)',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/ANDREA-SQUARE.jpeg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/Logo-EIIS_Colour.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+      Andrea Geremicca is the Director General of the European Institute of Innovation for Sustainability (EIIS). 
+      He is an adjunct professor at LUISS and LUMSA, where he teaches Innovation for Sustainability, and a faculty member at Singularity University, where he specializes in innovation for sustainability and foresight. Andrea attended the Harvard Business School Exc in Boston, focusing on driving innovation in large organizations. He contributes to the Harvard Business Review, writing about future scenarios and emerging macro trends. He has delivered two TEDx Talks, in 2018 and 2021. In 2018, Andrea had the honor of lecturing at Harvard Kennedy School and Sciences Po in Paris. Additionally, he authored two books in 2022 and 2023, which have become essential texts in the business faculties of two universities.      
+      `
+    },
+    {
+      name: 'Chris Southworth',
+      role: 'Secretary General',
+      company: 'ICC United Kingdom',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/Headshot-Chris-Southworth.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/ICC_United_Kingdom_BLACK_RGB_300dpi.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+        Vern Long is the Chief Executive Officer of World Coffee Research (WCR). WCR unites the 
+        global coffee industry to drive science-based agricultural solutions to urgently secure a 
+        diverse and sustainable supply of quality coffee today and for generations to come. In close 
+        collaboration with the WCR Board and member companies, Dr. Long and the WCR executive 
+        leadership team are harnessing the collective power of the coffee industry to deepen public 
+        and private investment and engagement in coffee R&D in response to the significant 
+        innovation gap in coffee agriculture. A plant breeder by training, Long has over 25 years of 
+        experience in global collaborative crop improvement and seed systems initiatives aligning 
+        public sector and industry goals. She is deeply motivated by the transformative power of 
+        agricultural R&D to achieve the coffee industry’s sustainability priorities. A dual citizen of 
+        Canada and the U.S., she holds a Ph.D. in plant breeding from Cornell University.
+      `
+    },
+    {
+      name: 'Sophie Aujean',
+      role: 'Director Global Advocacy',
+      company: 'Fairtrade International',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/SOPHIE-SQUARE.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2020/08/FBM_INT_VERT_RGB_POS.png",
+      iconWidth: 60,
+      iconHeight: 60,
+      bio: `
+      Sophie is an advocacy expert, with more than 15 years of experience in human rights and sustainable development. She joined Fairtrade International as Director of Global Advocacy in October 2022. Previously, she was working as EU Representative for WaterAid, on access to water, sanitation and hygiene in developing countries, with a focus on global health and climate adaptation. She also worked for ILGA-Europe, advocating on the human rights of LGBTI people, and beforehand, within the European Commission and the European Parliament. She has volunteered for 13 years for Amnesty International on the human rights situation in Tunisia, Syria and Lebanon. She holds a master’s degree in human rights law.
+      `
+    },
+    {
+      name: 'Paul Rooke',
+      role: 'Executive Director',
+      company: 'British Coffee Association (BCA)',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/PAUL-SQUARE.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2023/06/BCA_PrimaryLogo_Large-scaled.jpg",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+      Paul Rooke is Executive Director of the British Coffee Association, responsible for managing and leading the Association, developing key relationships and representing the Association on policy, media and technical issues.  An agricultural graduate, he has over 25 year’s experience in trade associations covering policy, technical and contractual issues. From 2013-2019 has was the President of CELCAA, the European Liaison Committee for the Agricultural and Agri-food Trade, He is a former Chairman of DG Agri’s Civil Dialogue Group for International Aspects of Agriculture of the EU’s High Level Forum for a Better Functioning Supply Chain and DG Trade’s Expert Group on EU Trade Agreements.
       `
     },
     {
@@ -305,6 +293,18 @@ function Speakers2024() {
       `
     },
     {
+      name: 'Dominic Robinson',
+      role: 'CEO',
+      company: 'Soil Association Certification',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/DOMINIC-SQUARE-scaled.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/soil-association.jpg",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+      Dominic Robinson joined Soil Association Certification Ltd as CEO in 2022. Over his career he has worked across forestry, water and sustainable land management sectors, with a continued focus on utilising nature-based solutions to drive change. In his pursuit to drive environmental impact he has headed up the National Conifer Collection at Bedgebury, Kent, led the Environment and Planning functions for Forestry England, before then moving to Severn Trent Water. Today he is at the helm of the UK’s leading certification body in sustainable standards in the UK, seeking to grow the UK Organic market and the protection and sustainable utilisation of global forestry resources. SA Cert provides organic certification for farming, food, healthy, beauty and textiles and outside the UK, SA Cert is one of the leading forestry certification bodies for FSC and PEFC standards, operating in over 60 countries and protecting over 28m hectares of the earth’s forests. The unifying mission behind Dominic’s approach has been to ensure that SA Cert utilises its reputation for high integrity to provide trust for consumers and expertise for businesses, to enable organisations around the world to deliver a global impact to address the climate, health and biodiversity crises.
+      `
+    },
+    {
       name: 'T.J. Ryan',
       role: 'Chief of Party of Philippine Coffee Advancement and Farm Enterprise Project',
       company: 'ACDI/VOCA',
@@ -314,6 +314,36 @@ function Speakers2024() {
       iconHeight: 100,
       bio: `
       T.J. Ryan has over 30 years of experience in international development and has lived and worked in Africa, South America, and Asia. Over the last 23 years at ACDI/VOCA, he has focused on agribusiness development in the coffee and cocoa sectors by providing technical oversight and managing projects and partnerships with public, private and civil society entities throughout these value chains. He recently completed five years as the project director for ACDI/VOCA on the USDA funded PhilCAFE project which successfully strengthened the coffee sector in the Philippines. Mr. Ryan holds an MBA in international business from Johns Hopkins University and is fluent in English, French, and Spanish. 
+      `
+    },
+    {
+      name: 'Peter Nestor',
+      role: 'Global Head of Human Rights',
+      company: 'Novartis',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/peter-nestor.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/07/novartis.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+      Peter has been the Global Head of Human Rights since 2020. He is a member of the Ethics and Compliance Leadership Team in the Ethics, Risk, and Compliance function.
+
+      Prior to his current appointment, Peter served as Manager, Human Rights from 2019 to 2020.
+
+      Before joining Novartis, Peter was Director, Human Rights at BSR, a non-profit corporate responsibility advisory firm based in the US. Prior to that, Peter was an attorney at Jones Day, an international law firm.  
+
+      Peter received his juris doctor law degree from the University of Washington in 2008 (US). In 2001, he received his bachelor’s degree in Political Science from Middlebury College (US). 
+      `
+    },
+    {
+      name: 'Josep Garí',
+      role: 'Head of Climate, Forests & Land',
+      company: 'United Nations / UNDP',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/Josep-GARI.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/07/UNDP_Logo_Blue.png",
+      iconWidth: 40,
+      iconHeight: 40,
+      bio: `
+      Josep Garí leads the Climate, Forests & Land practice at the UN agency for sustainable development (UNDP). He manages a portfolio of projects and partnerships to assist countries implement the Paris Agreement, including financial instruments for the conservation & restoration of forests, national policy schemes that integrate the climate, agricultural and finance sectors, and tailored support to indigenous peoples for their climate and bioeconomy roles. In 2019 he set up the UNDP-Lavazza partnership for deforestation-free coffee, which has served to pilot national blueprints for sustainable coffee production & trade in Latin America. Josep has worked in international cooperation for over two decades, equally serving in multilateral diplomatic negotiations for agricultural and environmental affairs. He holds a DPhil in Political Ecology from the University of Oxford and is a Fellow of the World Academy of Art & Science.
       `
     },
   ];
