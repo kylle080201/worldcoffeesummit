@@ -346,6 +346,16 @@ function Speakers2024() {
       Josep Garí leads the Climate, Forests & Land practice at the UN agency for sustainable development (UNDP). He manages a portfolio of projects and partnerships to assist countries implement the Paris Agreement, including financial instruments for the conservation & restoration of forests, national policy schemes that integrate the climate, agricultural and finance sectors, and tailored support to indigenous peoples for their climate and bioeconomy roles. In 2019 he set up the UNDP-Lavazza partnership for deforestation-free coffee, which has served to pilot national blueprints for sustainable coffee production & trade in Latin America. Josep has worked in international cooperation for over two decades, equally serving in multilateral diplomatic negotiations for agricultural and environmental affairs. He holds a DPhil in Political Ecology from the University of Oxford and is a Fellow of the World Academy of Art & Science.
       `
     },
+    {
+      name: 'Juliette Caulkins',
+      role: 'Executive Director',
+      company: 'B Lab Europe',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/1654108650921.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/07/B-Lab-Europe-Country-Partners-Logos-1.webp",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: ``
+    },
   ];
 
   const [selectedSpeaker, setSelectedSpeaker] = useState<T_Speaker | null>(null);
