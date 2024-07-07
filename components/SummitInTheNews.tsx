@@ -21,7 +21,7 @@ function SummitInTheNews() {
               </div>
             </div>
           </div>
-          {/* <div className="flex w-full md:w-[500px] h-full mt-12">
+          <div className="flex w-full md:w-[500px] h-full mt-12">
             <div className="testimonial-item bg-white shadow rounded hover:shadow-lg">
               <div className='p-8 flex flex-col gap-8'>
                 <div>
@@ -33,7 +33,7 @@ function SummitInTheNews() {
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
           <div className="flex w-full md:w-[500px] h-full mt-12">
             <div className="testimonial-item bg-white shadow rounded hover:shadow-lg">
               <div className='p-8 flex flex-col gap-8 h-full'>
