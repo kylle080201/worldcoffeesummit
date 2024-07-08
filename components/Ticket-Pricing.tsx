@@ -8,13 +8,13 @@ function TicketPricing() {
     const summit = [
         {
             title: "NGO/Academic Pass",
-            old_price: 1195,
-            item_price: 795,
+            old_price: 1095,
+            item_price: 895,
             description: "Eligible for representatives from non-profit NGOs, farmers cooperatives, regulators, governments, public sector, and academia.",
-            earlyBird: "Book before Monday 8th July 2024 to Save £400.00",
+            earlyBird: "Book before 7th September 2024 to Save £200.00",
             line_items: [
                 {
-                    price: 'price_1PGwuzKMWpUKzQVziwJkTR7F',
+                    price: 'price_1Pa5oaKMWpUKzQVzidgLR3r4',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
@@ -23,12 +23,12 @@ function TicketPricing() {
         {
             title: "Standard Corporate Pass",
             old_price: 1795,
-            item_price: 1295,
+            item_price: 1495,
             description: "Eligible for corporate representatives.",
-            earlyBird: "Book before Monday 8th July 2024 to Save £500.00",
+            earlyBird: "Book before 7th September 2024 to Save £300.00",
             line_items: [
                 {
-                    price: 'price_1PGwvYKMWpUKzQVzl8ZKucou',
+                    price: 'price_1Pa5pcKMWpUKzQVzAqNtI9NE',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
@@ -36,13 +36,13 @@ function TicketPricing() {
         },
         {
             title: "Service Provider Pass",
-            old_price: 2095,
-            item_price: 1495,
+            old_price: 1995,
+            item_price: 1695,
             description: "Required for for-profit consultancies, start-ups, technology and service providers.",
-            earlyBird: "Book before Monday 8th July 2024 to Save £600.00",
+            earlyBird: "Book before 7th September 2024 to Save £300.00",
             line_items: [
                 {
-                    price: 'price_1PGwvyKMWpUKzQVzW6v1DAa1',
+                    price: 'price_1Pa5qDKMWpUKzQVzgHK5XrmV',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
@@ -112,7 +112,7 @@ function TicketPricing() {
                                             <br />
                                             Wines and Hors d&apos;oeuvres
                                             <br />
-                                            <h3 className="text-sm tracking-tight text-red-700 sm:text-lg font-bold">Exclusive for Summit Attendees!<br />Limited tickets only! First come, first serve!<br />Book before Monday 8th July 2024 to Save £40.00</h3>
+                                            <h3 className="text-sm tracking-tight text-red-700 sm:text-lg font-bold">Exclusive for Summit Attendees!<br />Limited tickets only! First come, first serve!<br />Book before 7th September 2024 to Save £40.00</h3>
                                         </td>
                                         <td className="px-3 py-4 text-gray-900 font-bold text-lg">
                                             {networkingSoiree.old_price && <span className='text-red-700 line-through mr-2'>£{networkingSoiree.old_price}.00</span>}
