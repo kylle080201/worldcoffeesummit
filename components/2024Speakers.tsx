@@ -114,6 +114,18 @@ function Speakers2024() {
       `
     },
     {
+      name: 'H. E. Alex Assanvo',
+      role: 'Executive Secretary',
+      company: 'Cȏte d’Ivoire Ghana Cocoa Initiative (CIGCI)',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/alex-assanvo.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/07/cote-divoire-ghana-cocoa-initiative.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: `
+      Graham Turnock is Special Advisor to the European Space Agency.  He currently leads the ESA Accelerator programme, an initiative aimed at speeding up the adoption of space solutions to problems of sustainability on Earth and in Space.  He has over 30 years’ experience in public administration including almost 20 as a UK senior civil servant and was Chief Executive Officer of the UK Space Agency from 2017-2021.  He holds a PhD in particle physics from Cambridge University and CERN.
+      `
+    },
+    {
       name: 'Tim Scharrer',
       role: 'COO and Regional Director Europe and North America',
       company: 'Volcafe',
