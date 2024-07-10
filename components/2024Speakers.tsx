@@ -362,11 +362,14 @@ function Speakers2024() {
       name: 'Juliette Caulkins',
       role: 'Executive Director',
       company: 'B Lab Europe',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/1654108650921.jpg',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/juliette-caulkins-scaled.jpg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/07/B-Lab-Europe-Country-Partners-Logos-1.webp",
-      iconWidth: 100,
-      iconHeight: 100,
-      bio: ``
+      iconWidth: 140,
+      iconHeight: 140,
+      bio: `Juliette Caulkins is the Executive Director of B Lab Europe, a not-for-profit and social enterprise transforming the global economy. B Lab creates standards, policies, tools, and programs for business, and certifies companies—known as B Corps—who are leading the way.
+      Juliette has spent her career bridging the gap between the public and private sector to accelerate systemic change. She has over twenty-five years of experience building resilience and accountability into organizations and demonstrating that business and social purpose go hand in hand. Having led multicultural teams at international corporations and NGOs like UTZ, Mars, Nike and IKEA, Juliette is passionate about equipping and empowering courageous leaders to use business as a force for good.
+      She now leads a pan-European network that equips and empowers courageous leaders to measure and improve their impact, collaborate across sectors and transition from shareholder primacy to stakeholder governance. Fun fact: As a certified Chinese Tea Master, she’s always up for a good cup of tea!
+      `
     },
   ];
 
