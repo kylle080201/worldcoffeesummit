@@ -72,7 +72,7 @@ function Speakers2024() {
       role: 'Chief Executive Officer',
       company: 'World Coffee Research',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/JENNIFER-SQUARE-scaled.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/WCR-primary-logo-all-black.png",
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/07/WCR-primary-logo.png",
       iconWidth: 100,
       iconHeight: 100,
       bio: `
@@ -369,6 +369,17 @@ function Speakers2024() {
       bio: `Juliette Caulkins is the Executive Director of B Lab Europe, a not-for-profit and social enterprise transforming the global economy. B Lab creates standards, policies, tools, and programs for business, and certifies companies—known as B Corps—who are leading the way.
       Juliette has spent her career bridging the gap between the public and private sector to accelerate systemic change. She has over twenty-five years of experience building resilience and accountability into organizations and demonstrating that business and social purpose go hand in hand. Having led multicultural teams at international corporations and NGOs like UTZ, Mars, Nike and IKEA, Juliette is passionate about equipping and empowering courageous leaders to use business as a force for good.
       She now leads a pan-European network that equips and empowers courageous leaders to measure and improve their impact, collaborate across sectors and transition from shareholder primacy to stakeholder governance. Fun fact: As a certified Chinese Tea Master, she’s always up for a good cup of tea!
+      `
+    },
+    {
+      name: 'Grainne Lynch',
+      role: 'Business Transformation Lead',
+      company: 'IBM Consulting',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/Grainne-Lynch-Profile-pic-2024.jpeg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/07/IBM_logo®_pos_blue60_RGB.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `My mission is to enhance the visibility, transparency, and efficiency of supply chains, and to ensure positive environmental and social impact. I am obsessed with innovation and collaboration, and I leverage my expertise in traceability and sustainability to create value for my clients and stakeholders. Being a leader in this space - encouraging and influencing others to think and act is where the magic happens to achieve my mission.
       `
     },
   ];

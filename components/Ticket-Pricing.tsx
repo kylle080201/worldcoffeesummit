@@ -38,7 +38,7 @@ function TicketPricing() {
             title: "Service Provider Pass",
             old_price: 1995,
             item_price: 1695,
-            description: "Required for for-profit consultancies, start-ups, technology and service providers.",
+            description: "Required for for-profit consultancies, technology, solution and service providers.",
             earlyBird: "Book before 7th September 2024 to Save £300.00",
             line_items: [
                 {
@@ -67,9 +67,9 @@ function TicketPricing() {
 
     return (
         <div className="z-40 py-12 bg-white sm:py-20">
-            <div id="summit" className="flow-root px-6 mx-auto mt-12 rounded-md w-max">
+            <div id="summit" className="flow-root px-6 mx-auto mt-12 rounded-md max-w-7xl">
                 <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-                    <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
+                    <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8 ">
                         <div className="max-w-5xl mx-auto sm:text-center">
                             <h3 className="text-4xl tracking-tight text-red-700 sm:text-md font-bold">Early Bird Offer ends on 6th September 2024</h3>
                         </div>
@@ -83,10 +83,10 @@ function TicketPricing() {
                                             <br />
                                             <h3 className="text-sm tracking-tight text-red-700 sm:text-lg font-bold">{delegate.earlyBird}</h3>
                                         </td>
-                                        <td className="flex-wrap py-4 text-gray-900 font-bold ">
-                                            <div className='h-full text-lg flex w-full'>
-                                                <div className='flex shrink-0'>
-                                                    {delegate.old_price && <span className='text-red-700 mr-2'><span className='line-through'>£{delegate.old_price}.00</span> + VAT</span> }
+                                        <td className="flex-wrap px-3 py-4 text-gray-900 font-bold ">
+                                            <div className='h-full text-lg w-full'>
+                                                <div className='shrink-0'>
+                                                    {delegate.old_price && <span className='text-red-700 mr-2 line-through'>£{delegate.old_price}.00</span> }
                                                 </div>
                                                 <div>
                                                     £{delegate.item_price}.00
@@ -112,6 +112,35 @@ function TicketPricing() {
                                     </tr>
                                 ))}
                                 <tr className="odd:bg-gray-100">
+                                    <td className="flex-wrap px-3 py-4 font-semibold text-gray-900 text-lg whitespace-nowrap">Start-up Pass</td>
+                                    <td className="flex-wrap px-3 py-4 text-gray-900 text-lg">
+                                        Only eligible for early-stage innovators who have not secured their first Series A funding round
+                                        <h3 className="text-sm tracking-tight text-red-700 sm:text-lg font-bold">Book before 7th September 2024 to Save £300.00 </h3>
+                                        Please contact <Link href={"mailto:mavis@worldcoffeealliance.com"} target="_blank" className="text-yellow-900 underline hover:underline-offset-4">mavis@worldcoffeealliance.com</Link>
+                                    </td>
+                                    <td className="flex-wrap px-3 py-4 text-gray-900 font-bold ">
+                                        <div className='h-full text-lg flex flex-col w-full'>
+                                            <div className='flex shrink-0'>
+                                                <span className='text-red-700 mr-2 line-through'>£1295.00</span> 
+                                            </div>
+                                            <div>
+                                                £995.00
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td className="px-3 py-4">
+                                        <div className='my-auto justify-self-center mx:auto'>
+                                            <Link 
+                                                href={"mailto:mavis@worldcoffeealliance.com"} 
+                                                target="_blank" 
+                                                className="block w-full px-3 py-2 text-sm font-semibold text-center text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+                                            > 
+                                                Get in touch
+                                            </Link>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr className="odd:bg-gray-100">
                                     <td className="flex-wrap px-3 py-4 font-semibold text-gray-900 text-lg whitespace-nowrap">{networkingSoiree.title}</td>
                                     <td className="flex-wrap px-3 py-4 text-gray-900 text-lg">
                                         At House of Lords 16th October 2024 Early Evening
@@ -120,10 +149,10 @@ function TicketPricing() {
                                         <br />
                                         <h3 className="text-sm tracking-tight text-red-700 sm:text-lg font-bold">Exclusive for Summit Attendees!<br />Limited tickets only! First come, first serve!<br />Book before 7th September 2024 to Save £40.00</h3>
                                     </td>
-                                    <td className="flex-wrap py-4 text-gray-900 font-bold ">
-                                        <div className='h-full text-lg flex w-full'>
+                                    <td className="flex-wrap px-3 py-4 text-gray-900 font-bold ">
+                                        <div className='h-full text-lg flex flex-col w-full'>
                                             <div className='flex shrink-0'>
-                                                {networkingSoiree.old_price && <span className='text-red-700 mr-2'><span className='line-through'>£{networkingSoiree.old_price}.00</span> + VAT</span> }
+                                                {networkingSoiree.old_price && <span className='text-red-700 mr-2 line-through'>£{networkingSoiree.old_price}.00</span> }
                                             </div>
                                             <div>
                                                 £{networkingSoiree.item_price}.00
@@ -143,35 +172,6 @@ function TicketPricing() {
                                                 className="block w-full px-3 py-2 text-sm font-semibold text-center text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                                             >
                                                 Register
-                                            </Link>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr className="odd:bg-gray-100">
-                                    <td className="flex-wrap px-3 py-4 font-semibold text-gray-900 text-lg whitespace-nowrap">Start-up Pass</td>
-                                    <td className="flex-wrap px-3 py-4 text-gray-900 text-lg">
-                                        Only eligible for early-stage innovators who have not secure their first Series A funding round
-                                        <h3 className="text-sm tracking-tight text-red-700 sm:text-lg font-bold">Book before 7th September 2024 to Save £300.00 </h3>
-                                        Please contact <Link href={"mailto:mavis@worldcoffeealliance.com"} target="_blank" className="text-yellow-900 underline hover:underline-offset-4">mavis@worldcoffeealliance.com</Link>
-                                    </td>
-                                    <td className="flex-wrap py-4 text-gray-900 font-bold ">
-                                        <div className='h-full text-lg flex w-full'>
-                                            <div className='flex shrink-0'>
-                                                <span className='text-red-700 mr-2'><span className='line-through'>£1295.00</span> + VAT</span> 
-                                            </div>
-                                            <div>
-                                                £995.00
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td className="px-3 py-4">
-                                        <div className='my-auto justify-self-center mx:auto'>
-                                            <Link 
-                                                href={"mailto:mavis@worldcoffeealliance.com"} 
-                                                target="_blank" 
-                                                className="block w-full px-3 py-2 text-sm font-semibold text-center text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
-                                            > 
-                                                Get in touch
                                             </Link>
                                         </div>
                                     </td>
