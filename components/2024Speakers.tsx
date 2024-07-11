@@ -72,7 +72,7 @@ function Speakers2024() {
       role: 'Chief Executive Officer',
       company: 'World Coffee Research',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/JENNIFER-SQUARE-scaled.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/WCR-primary-logo-all-black.png",
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/07/WCR-primary-logo.png",
       iconWidth: 100,
       iconHeight: 100,
       bio: `
