@@ -371,6 +371,17 @@ function Speakers2024() {
       She now leads a pan-European network that equips and empowers courageous leaders to measure and improve their impact, collaborate across sectors and transition from shareholder primacy to stakeholder governance. Fun fact: As a certified Chinese Tea Master, she’s always up for a good cup of tea!
       `
     },
+    {
+      name: 'Grainne Lynch',
+      role: 'Business Transformation Lead',
+      company: 'IBM Consulting',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/Grainne-Lynch-Profile-pic-2024.jpeg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/07/IBM_logo®_pos_blue60_RGB.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `My mission is to enhance the visibility, transparency, and efficiency of supply chains, and to ensure positive environmental and social impact. I am obsessed with innovation and collaboration, and I leverage my expertise in traceability and sustainability to create value for my clients and stakeholders. Being a leader in this space - encouraging and influencing others to think and act is where the magic happens to achieve my mission.
+      `
+    },
   ];
 
   const [selectedSpeaker, setSelectedSpeaker] = useState<T_Speaker | null>(null);
