@@ -184,6 +184,21 @@ function Speakers2024() {
       `
     },
     {
+      name: 'Roberto Alonso Vega Alfaro',
+      role: 'VP of Global Coffee Agronomy, R&D and Sustainability',
+      company: 'Starbucks',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/World-Coffee-Innovation-Sumit-London.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/07/STARBUCKS-LOGO.jpg",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: `
+      Roberto Vega is a seasoned sustainability practitioner with over 30 years of experience in the financial and agricultural sectors, working across the globe. Having lived in Costa Rica, France, Germany, and Switzerland, Roberto brings a wealth of international perspectives to his work. With formal education in Business (MBA), Environmental Governance and Policy Making (Executive Master), and Sustainability, he possesses a robust skill set encompassing financial analysis, project implementation, and environmental and social policy expertise.
+      Fluent in Spanish, French, and English, with advanced knowledge of German, Roberto has effectively navigated diverse cultural and linguistic landscapes in his professional journey. His career spans various projects in developing markets, particularly in Latin America, APAC, and Africa, where he has demonstrated a keen understanding of local contexts and challenges.
+      Roberto's extensive experience in stakeholder management has been pivotal in representing companies across multiple platforms and initiatives. He has collaborated with a wide range of organizations, including private and public sectors, as well as civil society organizations (CSOs), fostering partnerships for sustainable development.
+      Roberto is currently serving as the VP of Sustainability, Agronomy, and R&D at Starbucks.
+      `
+    },
+    {
       name: 'Manfred Borer',
       role: 'Co-Founder & Chief Executive officer',
       company: 'Koltiva',
@@ -283,6 +298,19 @@ function Speakers2024() {
       company: 'British Coffee Association (BCA)',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/PAUL-SQUARE.jpg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2023/06/BCA_PrimaryLogo_Large-scaled.jpg",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+      Paul Rooke is Executive Director of the British Coffee Association, responsible for managing and leading the Association, developing key relationships and representing the Association on policy, media and technical issues.  An agricultural graduate, he has over 25 year’s experience in trade associations covering policy, technical and contractual issues. From 2013-2019 has was the President of CELCAA, the European Liaison Committee for the Agricultural and Agri-food Trade, He is a former Chairman of DG Agri’s Civil Dialogue Group for International Aspects of Agriculture of the EU’s High Level Forum for a Better Functioning Supply Chain and DG Trade’s Expert Group on EU Trade Agreements.
+      `
+    },
+    {
+      name: 'Dr. James Gimase',
+      role: 'Chief Research Scientist',
+      company: 'Coffee Research Institute',
+      company2: 'Kenya Agricultural and Livestock Research Organization (KALRO)',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/James-Gimase-passport-photo.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/07/KALRO.png",
       iconWidth: 100,
       iconHeight: 100,
       bio: `

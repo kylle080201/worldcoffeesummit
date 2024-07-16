@@ -7,7 +7,7 @@ function Attendees2023() {
       <div className='flex w-full justify-center'>
         <h2 className="text-4xl font-bold tracking-tight text-center md:text-left">2023 ATTENDEES INCLUDE:</h2>
       </div>
-      <div className='flex items-center p-2 max-w-7xl mx-auto'>
+      <div className='flex items-center p-2 max-w-4xl mx-auto'>
         <div className='p-2 rounded-md'>
           <img
             src="https://worldcoffeealliance.com/wp-content/uploads/2024/05/2023-ATTENDEES-INCLUDE-1.jpg"
