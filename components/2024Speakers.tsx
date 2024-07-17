@@ -103,7 +103,7 @@ function Speakers2024() {
     },
     {
       name: 'Graham Turnock',
-      role: 'Special Advisor',
+      role: 'Integrated Accelerator Team Leader, Special Advisor',
       company: 'European Space Agency (ESA)',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/06/GTimage.png',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/06/ESA_logo_2020_Deep-e1719391553788.png",
@@ -278,6 +278,19 @@ function Speakers2024() {
         public sector and industry goals. She is deeply motivated by the transformative power of 
         agricultural R&D to achieve the coffee industry’s sustainability priorities. A dual citizen of 
         Canada and the U.S., she holds a Ph.D. in plant breeding from Cornell University.
+      `
+    },
+    {
+      name: 'Thomas Bagge',
+      role: 'Chief Executive Officer',
+      company: 'Digital Container Shipping Association (DCSA)',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/Ze9atkmNsf2sHgce_ThomasBaggeSquareWEB.png.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/07/DCSA_logo-1.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+        Thomas Bagge is the CEO of the Digital Container Shipping Association (DCSA). Before joining DCSA, he lead numerous large-scale change initiatives at A.P Möller Maersk, focusing on technology, process optimization, and personnel management. 
+        With over two decades of experience in transportation and logistics, Thomas possesses a profound understanding of customer needs, industry dynamics, and the complexities of digitizing container shipping. He holds qualifications in Applied Finance and an Executive MBA from Copenhagen Business School, supplemented by executive courses from IMD and Berkeley.
       `
     },
     {
