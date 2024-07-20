@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 interface T_Speaker {
   name: string;
-  role: string;
+  role?: string;
   company: string;
   iconWidth: number;
   iconHeight: number;
@@ -50,6 +50,17 @@ function Speakers2024() {
       iconHeight: 100,
       bio: `
       The Rt. Hon John Gummer, Lord Deben, is the founder and Chairman of Sancroft International, a consultancy that advises both businesses and investors on all areas of Sustainability and ESG. Between 2012 and 2023 he was Chairman of the UK’s Independent Climate Change Committee. Lord Deben was also the UK’s longest serving Secretary of State for the Environment (1993-97) having previously been Minister of Agriculture, Fisheries, and Food. His sixteen years of top-level ministerial experience also include Minister for London, Employment Minister, and Paymaster General in HM Treasury. Lord Deben is currently Chairman of Valpak Ltd and of PIMFA, the trade body representing financial advisers and wealth managers. Throughout his political, business, and personal life Lord Deben has consistently championed an accord between sustainability and business sense.
+      `
+    },
+    {
+      name: 'H.E. Johnston Busingye',
+      company: 'High Commissioner for the Republic of Rwanda to the United Kingdom',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/HC-Potrait.jpeg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/07/Coat_of_arms_of_Rwanda.svg",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+      Johnston Busingye, appointed as Rwanda's High Commissioner to the Court of Saint James in August 2021, has a diverse background in law and justice. He began his career as a Legal Officer at Uganda Airlines and later served as the Director of Airports in Rwanda. Busingye played a key role in reopening the international airport post-war and genocide against the Tutsi in 1994. He then practiced as an advocate and served as the National Prosecutor, contributing to justice sector reforms. As Secretary General for the Ministry of Justice, he oversaw various justice-related services. Busingye later served as the President of the High Court in Rwanda and as Principal Judge of the East African Court of Justice. During his tenure as Minister of Justice and Attorney General (2013-2021), he significantly contributed to transforming Rwanda's justice system. Busingye is married to Phoebe Murerwa and is a father of six children.
       `
     },
     {
