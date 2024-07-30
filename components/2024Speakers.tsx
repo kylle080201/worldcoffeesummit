@@ -140,7 +140,7 @@ function Speakers2024() {
       name: 'Tim Scharrer',
       role: 'COO and Regional Director Europe and North America',
       company: 'Volcafe',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/TIM-SQUARE.jpg',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/Tim_Scharrer_COO_RD_1600x1200.jpg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/logo@2x-1.png",
       iconWidth: 100,
       iconHeight: 100,
@@ -187,11 +187,12 @@ function Speakers2024() {
       name: 'Laurent Sagarra',
       role: 'Vice President Sustainability',
       company: 'JDE Peet’s',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/LaurentAlexandreSagarraVicePresidentSustainabilityJDEPeets.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/07/JDE_Peets_box_logo.svg",
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/Lauran-Photo.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/07/Logo.png",
       iconWidth: 100,
       iconHeight: 100,
       bio: `
+        Laurent Alexandre Sagarra is a Vice President Sustainability at JDE Peet's, leading the company towards a better future through sustainable growth. With a background in quality and sustainability management across various industries, Laurent has a strong expertise in developing and implementing strategies to ensure product quality, food safety, and compliance. With a Ph.D. in Entomology-Plant Protection and a degree in Agronomy, Laurent is well-equipped to drive business growth while maintaining a focus on sustainability and mutual value creation.
       `
     },
     {
@@ -278,17 +279,14 @@ function Speakers2024() {
       iconWidth: 100,
       iconHeight: 100,
       bio: `
-        Vern Long is the Chief Executive Officer of World Coffee Research (WCR). WCR unites the 
-        global coffee industry to drive science-based agricultural solutions to urgently secure a 
-        diverse and sustainable supply of quality coffee today and for generations to come. In close 
-        collaboration with the WCR Board and member companies, Dr. Long and the WCR executive 
-        leadership team are harnessing the collective power of the coffee industry to deepen public 
-        and private investment and engagement in coffee R&D in response to the significant 
-        innovation gap in coffee agriculture. A plant breeder by training, Long has over 25 years of 
-        experience in global collaborative crop improvement and seed systems initiatives aligning 
-        public sector and industry goals. She is deeply motivated by the transformative power of 
-        agricultural R&D to achieve the coffee industry’s sustainability priorities. A dual citizen of 
-        Canada and the U.S., she holds a Ph.D. in plant breeding from Cornell University.
+       Chris Southworth is Secretary General at the International Chamber of Commerce UK and a regular voice for business in the international media speaking on a wide range of business issues including trade, sustainability, international priorities and government policy. 
+
+        He is Co-Chair of Commonwealth Legal Reform and Digitalisation programme launched by Commonwealth Trade Ministers in June 2023, a member of the Legal Reform Advisory Board at the ICC Digital Standards Initiative and co-founder of the UK Centre for Digital Trade and Innovation. He is also a member of the ICC World Council as well as the International Advisory Board of the Queen Mary-UNIDROIT Institute of Transnational Commercial Law. 
+
+        Chris is a leading international expert on creating modern digital trade ecosystems and a regular speaker at international conferences and events. He is the founder of the ICC Digital Trade Roadmap, helped initiate the Electronic Trade Documents Act 2023 and helped secure the 2021 G7 Ministerial Commitment to remove legal barriers to handle commercial trade documents in digital form. He is also a leading industry adviser to the UK government on the digitalisation of trade and works closely with the Department for Business and Trade, Her Majesty’s Revenue and Customs, Cabinet Office and the Department for Science, Innovation and Technology.  
+
+        Prior to joining ICC, he was Executive Director for Global Partnerships, at the British Chambers of Commerce, Head of the International Chambers of Commerce Unit at UK Trade and Investment (UKTI) and a Senior Policy Advisor to Lord Heseltine, former Deputy Prime Minister, for his independent review of UK competitiveness. In 2011 he was advisor to the Minister for Trade and Investment for the government review of mid-size businesses and consequent establishment of the mid-size business export programme. Former roles have encompassed deregulatory and social enterprise policy at the Department for Business.
+
       `
     },
     {
