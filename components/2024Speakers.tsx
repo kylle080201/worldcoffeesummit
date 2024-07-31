@@ -303,6 +303,19 @@ function Speakers2024() {
       `
     },
     {
+      name: 'Claire Elsdon',
+      role: 'Global Director, Capital Markets',
+      company: 'CDP',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/Claire-Elsdon-profile-pic-2023.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/07/pngegg.png",
+      iconWidth: 60,
+      iconHeight: 60,
+      bio: `
+      Claire Elsdon leads the Global Capital Markets and Environmental Data Sales teams at CDP, the non-profit that runs the world’s environmental disclosure system. She defines engagement strategy with financial institutions and other capital markets actors including institutional investors, banks, insurers and private equity and debt houses on a global basis, enabling them to request, utilise and apply critical climate, water and forest impact data from the companies they finance. Claire led CDP's role in delivering disclosure solutions for the Bank of England's CBES exercise and has spearheaded CDP's highly innovative sustainable supplier financing solution, most recently culminating in the Vodafone/Citi collaboration.     
+      Prior to CDP, Claire worked for over a decade broking Pan-European Equities to UK based Institutional Investors at HSBC, Merrill Lynch and JP Morgan before moving to Tanzania to establish Africa's leading social enterprise focusing on community motorcycle safety solutions.
+      `
+    },
+    {
       name: 'Sophie Aujean',
       role: 'Director Global Advocacy',
       company: 'Fairtrade International',
