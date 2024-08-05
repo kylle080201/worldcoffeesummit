@@ -16,6 +16,20 @@ interface T_Speaker {
 function Speakers2024() {
   const speakers = [
     {
+      name: 'Ngozi Okonjo-Iweala',
+      role: 'Director-General',
+      company: 'World Trade Organization (WTO)',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/Ngozi-Okonjo-Iweala-1-scaled.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/World_Trade_Organization-Logo.wine_.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+        Dr Ngozi Okonjo-Iweala took office as WTO Director-General on 1 March 2021. She is a global finance expert, an economist and international development professional with over 40 years of experience working in Asia, Africa, Europe, Latin America and North America. Dr Okonjo-Iweala was formerly Chair of the Board of Gavi, the Vaccine Alliance. She was previously on the Boards of Standard Chartered PLC and Twitter Inc. She was appointed as African Union (AU) Special Envoy to mobilise international financial support for the fight against COVID-19 and WHO Special Envoy for Access to COVID-19 Tools Accelerator. She is a skilled negotiator and has brokered numerous agreements which have produced win-win outcomes in negotiations. She is regarded as an effective consensus builder and an honest broker enjoying the trust and confidence of governments and other stakeholders.
+        Previously, Dr Okonjo-Iweala twice served as Nigeria's Finance Minister (2003-2006 and 2011-2015) and briefly acted as Foreign Minister in 2006, the first woman to hold both positions. She distinguished herself by carrying out major reforms which improved the effectiveness of these two Ministries and the functioning of the government machinery. She had a 25-year career at the World Bank as a development economist, rising to the No. 2 position of Managing Director, Operations. As a development economist and Finance Minister, Dr Okonjo-Iweala steered her country through various reforms ranging from macroeconomic to trade, financial and real sector issues.
+
+      `
+    },
+    {
       name: 'Dr. Florika Fink-Hooijer',
       role: 'Director-General, Environment Department',
       company: 'European Commission',
@@ -57,25 +71,10 @@ function Speakers2024() {
       company: 'High Commissioner for the Republic of Rwanda to the United Kingdom',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/HC-Potrait.jpeg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/07/Coat_of_arms_of_Rwanda.svg",
-      iconWidth: 100,
-      iconHeight: 100,
+      iconWidth: 60,
+      iconHeight: 60,
       bio: `
       Johnston Busingye, appointed as Rwanda's High Commissioner to the Court of Saint James in August 2021, has a diverse background in law and justice. He began his career as a Legal Officer at Uganda Airlines and later served as the Director of Airports in Rwanda. Busingye played a key role in reopening the international airport post-war and genocide against the Tutsi in 1994. He then practiced as an advocate and served as the National Prosecutor, contributing to justice sector reforms. As Secretary General for the Ministry of Justice, he oversaw various justice-related services. Busingye later served as the President of the High Court in Rwanda and as Principal Judge of the East African Court of Justice. During his tenure as Minister of Justice and Attorney General (2013-2021), he significantly contributed to transforming Rwanda's justice system. Busingye is married to Phoebe Murerwa and is a father of six children.
-      `
-    },
-    {
-      name: 'Sylvia J. Megret',
-      role: 'President and Chief Executive Officer',
-      company: 'ACDI/VOCA',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/SYLVIA-SQUARE.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/ACDIVOCA-logo-gray-tag.png",
-      iconWidth: 100,
-      iconHeight: 100,
-      bio: `
-      Sylvia J. Megret serves as president and CEO of ACDI/VOCA. As a global development executive with 30 years of experience, she promotes the organization’s mission and lives its values in support of inclusive, sustainable development worldwide. Sylvia joined ACDI/VOCA in December 2016, first serving as chief operating officer (COO) and later as president and COO from February 2021 to April of 2022. She also served as interim CEO from December 2017 to June 2018.
-      Sylvia has proven expertise convening diverse teams that bridge functions, cultures, and international borders. She is also skilled at identifying and institutionalizing effective teams and systems for maximum efficiency and success.
-      Sylvia is currently board chair of the Fundación ACDI/VOCA Latin America (FAVLA). She also serves as a board member of the Society of International Development’s U.S. Chapter (SID-US) and as the 2022 SID-US conference chair. Sylvia led ACDI/VOCA’s role as a founding member of the Coalition for Racial and Ethnic Equity in International Development (CREED) and is also a founding member of Chief (Washington).
-      She holds a master’s degree in international development from American University and a bachelor’s degree in political science and French from the University of Michigan. She is fluent in English and French, and her work has taken her from Africa to Asia, Latin America, and the Caribbean.      
       `
     },
     {
@@ -98,6 +97,21 @@ function Speakers2024() {
         public sector and industry goals. She is deeply motivated by the transformative power of 
         agricultural R&D to achieve the coffee industry’s sustainability priorities. A dual citizen of 
         Canada and the U.S., she holds a Ph.D. in plant breeding from Cornell University.
+      `
+    },
+    {
+      name: 'Sylvia J. Megret',
+      role: 'President and Chief Executive Officer',
+      company: 'ACDI/VOCA',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/SYLVIA-SQUARE.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/ACDIVOCA-logo-gray-tag.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+      Sylvia J. Megret serves as president and CEO of ACDI/VOCA. As a global development executive with 30 years of experience, she promotes the organization’s mission and lives its values in support of inclusive, sustainable development worldwide. Sylvia joined ACDI/VOCA in December 2016, first serving as chief operating officer (COO) and later as president and COO from February 2021 to April of 2022. She also served as interim CEO from December 2017 to June 2018.
+      Sylvia has proven expertise convening diverse teams that bridge functions, cultures, and international borders. She is also skilled at identifying and institutionalizing effective teams and systems for maximum efficiency and success.
+      Sylvia is currently board chair of the Fundación ACDI/VOCA Latin America (FAVLA). She also serves as a board member of the Society of International Development’s U.S. Chapter (SID-US) and as the 2022 SID-US conference chair. Sylvia led ACDI/VOCA’s role as a founding member of the Coalition for Racial and Ethnic Equity in International Development (CREED) and is also a founding member of Chief (Washington).
+      She holds a master’s degree in international development from American University and a bachelor’s degree in political science and French from the University of Michigan. She is fluent in English and French, and her work has taken her from Africa to Asia, Latin America, and the Caribbean.      
       `
     },
     {
@@ -244,7 +258,7 @@ function Speakers2024() {
     {
       name: 'Jari Partanen',
       role: 'Board Director',
-      company: 'EBRD',
+      company: 'European Bank for Reconstruction and Development (EBRD)',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/06/Partanen_Jari_potretti.jpg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/06/Ebrd-logo-regular-blue-english-e1719190097501.png",
       iconWidth: 120,
