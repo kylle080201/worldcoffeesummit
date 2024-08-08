@@ -16,7 +16,7 @@ interface T_Speaker {
 function Speakers2024() {
   const speakers = [
     {
-      name: 'Ngozi Okonjo-Iweala',
+      name: 'Dr. Ngozi Okonjo-Iweala',
       role: 'Director-General',
       company: 'World Trade Organization (WTO)',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/Ngozi-Okonjo-Iweala-1-scaled.jpg',
