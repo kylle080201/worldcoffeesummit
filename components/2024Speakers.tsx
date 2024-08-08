@@ -227,6 +227,18 @@ function Speakers2024() {
       `
     },
     {
+      name: 'Piet Van Asten',
+      role: 'Head of Sustainable Production Systems',
+      company: 'Olam Food Ingredients (ofi)',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/piet-van-asten.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/image00111.png",
+      iconWidth: 50,
+      iconHeight: 50,
+      bio: `
+      Transforming agriculture to (re-)build livelihoods and nature requires knowledge, resources and motivation from farmers. Piet is driving the Regenerative Agriculture agenda across ofi through co-creation and co-investment from farmers to customers. He joined Olam in 2017 to co-create, adapt and apply technologies, approaches and services that improve the productivity, profitability, and carbon footprint of ofi’s coffee estates as well as its (smallholder) farmer network. He holds a PhD from Wageningen with a strong focus on agronomy, farming systems, livelihoods and rural innovation. Prior to his work at ofi, he worked for 20 years as a CGIAR scientist on agricultural systems, based out of Africa.
+      `
+    },
+    {
       name: 'Manfred Borer',
       role: 'Co-Founder & Chief Executive officer',
       company: 'Koltiva',
