@@ -227,7 +227,7 @@ function Speakers2024() {
       `
     },
     {
-      name: 'Piet Van Asten',
+      name: 'Piet van Asten',
       role: 'Head of Sustainable Production Systems',
       company: 'Olam Food Ingredients (ofi)',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/piet-van-asten.jpg',
