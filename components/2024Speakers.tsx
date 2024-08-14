@@ -227,7 +227,7 @@ function Speakers2024() {
       `
     },
     {
-      name: 'Piet Van Asten',
+      name: 'Piet van Asten',
       role: 'Head of Sustainable Production Systems',
       company: 'Olam Food Ingredients (ofi)',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/piet-van-asten.jpg',
@@ -270,6 +270,21 @@ function Speakers2024() {
       `
     },
     {
+      name: 'Franco Costantini',
+      role: 'CEO',
+      company: 'Regenagri',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/Franco-Costantini-Headshot-scaled.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/image_regenagri_logo_full__002_.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+      Franco has worked for about 20 years in sustainability across different sectors and specializing in the design, development and implementation of certifications and impact programmes.
+      Franco is the CEO of Regenagri, an organisation that he initiated in 2019. Currently he focuses on innovation and stakeholders’ engagement.
+      
+      Franco holds a Master of Business Administration MBA, a post-grad Research Master (M.Res) in Fluid Dynamics and a Master of Engineering (M.Eng) in Mechanical Engineering.
+      `
+    },
+    {
       name: 'Jari Partanen',
       role: 'Board Director',
       company: 'European Bank for Reconstruction and Development (EBRD)',
@@ -284,6 +299,16 @@ function Speakers2024() {
       He holds a MA in Law and has received the Cross of Knight, First Class of the Order of the White Rose of Finland.
 
       `
+    },
+    {
+      name: 'Barney Reynolds',
+      role: 'Partner ',
+      company: 'A&O Shearman',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/reynolds_b_hires.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/AOShearman_Wordmark_Progress-Green_RGB.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: ``
     },
     {
       name: 'Andrea Geremicca',
