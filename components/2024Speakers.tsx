@@ -139,6 +139,24 @@ function Speakers2024() {
       `
     },
     {
+      name: 'Owen Hewlett',
+      role: 'Chief Technical Officer',
+      company: 'Gold Standard',
+      role2: 'Technical Council Member',
+      company2: 'SBTi',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/A7404215.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/GS_Logo_Secondary.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: `
+      Owen is Chief Technical Officer at the Gold Standard Foundation, a leading climate, nature and sustainable development standards system and thought leader. Owen’s expertise and work encompasses the accounting, reporting, funding and policy behind credible corporate and government action, with a focus on the market and non-market mechanisms that support them.
+
+      Owen joined Gold Standard in 2014 and leads all aspects of the Foundation’s standards, assurance and technical policy and best practices work. 
+
+      Owen is also a member of the SBTi Technical Council and the Greenhouse Gas Protocol Advisory Committee for Land Sector and Removals.
+      `
+    },
+    {
       name: 'H. E. Alex Assanvo',
       role: 'Executive Secretary',
       company: 'Cȏte d’Ivoire Ghana Cocoa Initiative (CIGCI)',
@@ -239,6 +257,18 @@ function Speakers2024() {
       `
     },
     {
+      name: 'Jonathan Sullivan',
+      role: 'Vice President Commercial & Sustainability',
+      company: 'Agmatix',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/Jonathan-Sullivan-Headshot-1.png',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/agmatix_logo_New_RGB-Vertical_1.png",
+      iconWidth: 50,
+      iconHeight: 50,
+      bio: `
+      Jonathan Sullivan joined Agmatix in 2023 and leads the company’s commercial efforts including the new offering in sustainability and regenerative agriculture. Having a history across the corporate and sustainability sectors, Jonathan is driven to help business be the catalyst for positive impact on the planet. Previously, Jonathan lead sustainability strategy work at PepsiCo, ocean sustainability efforts at OceanX and worked with several Agri-food and CPG clients while a consultant at McKinsey & Company.  Jonathan is a graduate of the Royal Military College and Australian Defence Force Academy, has an MBA from the University of Queensland, and has studied Sustainable Supply Chains at the University of Cambridge. 
+      `
+    },
+    {
       name: 'Manfred Borer',
       role: 'Co-Founder & Chief Executive officer',
       company: 'Koltiva',
@@ -308,7 +338,7 @@ function Speakers2024() {
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/AOShearman_Wordmark_Progress-Green_RGB.png",
       iconWidth: 120,
       iconHeight: 120,
-      bio: ``
+      bio: `Barney Reynolds is Global Co-Head of Financial Institutions, and of the Financial Services Regulatory Group, at A&O Shearman. He is one of the world's leading financial institution practitioners, specialising in all areas of banking, fund management, financial markets and financial infrastructure, crypto, insurance/reinsurance, AML and sanctions. He has particular expertise in UK and EU regulation. He has additional familiarity with the regime of Abu Dhabi Global Market (ADGM), which he conceived and established. He advises on navigating legal and regulatory systems worldwide. He is known as a pathfinder for giving strategic advice to financial services firms on how to plot the most efficient course through law and regulation; on the use of legal reasoning to achieve legal and regulatory certainty; and in engaging productively with the regulators and government officials. Barney is a noted commercial thinker on law and regulation, assisting firms in planning for and managing emerging risks from legal and regulatory change. He has helped numerous clients with business transformation. Barney advised the UK government and numerous businesses in the context of the legal and other implications of leaving the EU, and how to navigate them. He is interviewed and published widely and is frequently called to give evidence before Parliamentary Committees.`
     },
     {
       name: 'Andrea Geremicca',
@@ -547,6 +577,7 @@ function Speakers2024() {
                       </p>
                       <p className="leading-7 text-white text-sm">{speaker.role}</p>
                       <p className="font-semibold leading-7 text-white text-md">{speaker.company}</p>
+                      <p className="leading-7 text-white text-sm">{speaker.role2}</p>
                       {speaker.company2 && <p className="font-semibold leading-7 text-white text-md">{speaker.company2}</p>}
                     </div>
                   </div>
