@@ -14,7 +14,7 @@ function Navbar() {
         { name: 'Speakers', href: '/#speakers' },
         { name: 'Agenda', href: '/agenda' },
         { name: 'Venue', href: '/#venue' },
-        { name: 'Partners', href: '/#partners' },
+        { name: 'Partners', href: '/partners' },
         { name: 'FAQ', href: '/#faq' },
         { name: 'Resources', href: '/resources' },
     ]

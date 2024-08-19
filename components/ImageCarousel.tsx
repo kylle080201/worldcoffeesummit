@@ -57,7 +57,7 @@ const ImageCarousel = () => {
 
   return (
     <div className='w-full bg-gray-100'>
-      <div className='py-24 max-w-7xl mx-auto flex flex-col gap-12'>
+      <div className='py-24 px-2 max-w-4xl mx-auto flex flex-col gap-12'>
         <div className='flex w-full text-center justify-center'>
           <h2 className="text-4xl font-bold tracking-tight">2023 SUMMIT HIGHLIGHTS</h2>
         </div>

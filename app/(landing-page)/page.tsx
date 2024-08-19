@@ -29,7 +29,7 @@ export default function HomePage() {
                 <SummitInTheNews />
                 <WhyAttend />
                 <Venue />
-                <Partners />
+                {/* <Partners /> */}
                 <FAQ />
             </div>
         </>
