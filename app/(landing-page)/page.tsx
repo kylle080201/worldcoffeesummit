@@ -22,15 +22,15 @@ export default function HomePage() {
                 <Overview />
                 <Speakers2024 />
                 <KeyThemes />
-                <SpeakerSlider />
+                {/* <SpeakerSlider /> */}
                 <ImageCarousel />
                 <Testimonials />
                 <Attendees2023 />
                 <SummitInTheNews />
                 <WhyAttend />
                 <Venue />
-                {/* <Partners /> */}
-                <FAQ />
+                <Partners />
+                {/* <FAQ /> */}
             </div>
         </>
     )

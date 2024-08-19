@@ -80,7 +80,7 @@ function Speakers2024() {
     {
       name: 'Dr. Helge Elisabeth Zeitler',
       role: 'Director for UN, EU',
-      company: 'Director for UN, EU',
+      company: 'German Federal Ministry for Economic Cooperation and Development (BMZ)',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/Helge-Zeitler-frei-verwendbar.jpg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/bmz-bundesministerium-fuer-wirtschaftliche-zusammenarbeit-und-entwicklung-logo-vector.svg",
       iconWidth: 100,

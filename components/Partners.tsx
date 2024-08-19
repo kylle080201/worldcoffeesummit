@@ -38,12 +38,12 @@ export default function Partners() {
         {
             href: '',
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2021/02/ROAST-LOGO-MEDIA-PARTNER.jpg',
-            className: 'w-[15rem] p-2 mx-auto'
+            className: 'w-[12rem] p-2 mx-auto'
         },
         {
             href: '',
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/perfect-daily-grind.png',
-            className: 'w-[15rem] p-2 mx-auto'
+            className: 'w-[12rem] p-2 mx-auto'
         },
     ]
 
@@ -65,13 +65,12 @@ export default function Partners() {
             <div className='w-full py-20 bg-white' id='partners'>
                 <div className='mb-20'>
                     <div className="max-w-2xl mx-auto text-center">
-                        <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">SPONSORS</p>
+                        <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">Partners</p>
                     </div>
 
                     <div className="max-w-2xl mx-auto text-center mt-12">
                         <div className="inline-flex items-center justify-center w-full">
-                            <hr className="w-full h-px bg-gray-400 border-0" />
-                            <span className="absolute px-3 text-2xl sm:text-4xl font-bold tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Gold Sponsor</span>
+                            <span className="absolute px-3 text-lg sm:text-2xl font-bold tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Gold Sponsor</span>
                         </div>
                     </div>
                     <div className='grid items-center justify-center grid-cols-1 gap-4 mx-auto sm:gap-12 sm:flex-row sm:max-w-7xl mt-4'>
@@ -92,8 +91,7 @@ export default function Partners() {
 
                     <div className="max-w-2xl mx-auto text-center mt-6">
                         <div className="inline-flex items-center justify-center w-full">
-                            <hr className="w-full h-px bg-gray-400 border-0" />
-                            <span className="absolute px-3 text-2xl sm:text-4xl font-bold tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Silver Sponsor</span>
+                            <span className="absolute px-3 text-lg sm:text-2xl font-bold tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Silver Sponsor</span>
                         </div>
                     </div>
                     <div className='grid items-center justify-center grid-cols-1 gap-4 mx-auto sm:gap-12 sm:flex-row sm:max-w-7x mt-4'>
@@ -114,8 +112,7 @@ export default function Partners() {
 
                     <div className="max-w-2xl mx-auto text-center mt-6">
                         <div className="inline-flex items-center justify-center w-full">
-                            <hr className="w-full h-px bg-gray-400 border-0" />
-                            <span className="absolute px-3 text-2xl sm:text-4xl font-bold tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Bronze Sponsor</span>
+                            <span className="absolute px-3 text-lg sm:text-2xl font-bold tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Bronze Sponsor</span>
                         </div>
                     </div>
                     <div className='grid items-center justify-center grid-cols-1 gap-4 mx-auto sm:gap-12 sm:flex-row sm:max-w-7x mt-4'>
@@ -136,8 +133,7 @@ export default function Partners() {
 
                     <div className="max-w-2xl mx-auto text-center mt-6">
                         <div className="inline-flex items-center justify-center w-full">
-                            <hr className="w-full h-px bg-gray-400 border-0" />
-                            <span className="absolute px-3 text-2xl sm:text-4xl font-bold tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Co Sponsor</span>
+                            <span className="absolute px-3 text-lg sm:text-2xl font-bold tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Co Sponsor</span>
                         </div>
                     </div>
                     <div className='grid items-center justify-center gap-4 mx-auto sm:gap-12 sm:flex-row sm:max-w-7xl mt-4'>
@@ -158,8 +154,7 @@ export default function Partners() {
 
                     <div className="max-w-2xl mx-auto text-center mt-6">
                         <div className="inline-flex items-center justify-center w-full">
-                            <hr className="w-full h-px bg-gray-400 border-0" />
-                            <span className="absolute px-3 text-2xl sm:text-4xl font-bold tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Cross-industry Partners</span>
+                            <span className="absolute px-3 text-lg sm:text-2xl font-bold tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Cross-industry Partners</span>
                         </div>
                     </div>
                     <div className='flex items-center justify-center gap-4 mx-auto sm:flex-row sm:max-w-7xl mt-4'>
@@ -180,7 +175,7 @@ export default function Partners() {
                 </div>
                 <div className='mb-20'>
                     <div className="max-w-2xl mx-auto text-center">
-                        <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">MEDIA PARTNERS</p>
+                        <p className="text-lg sm:text-2xl font-bold tracking-tight text-gray-900">Media Partners</p>
                     </div>
                     <div className='flex items-center justify-center gap-4 mx-auto mt-12 sm:flex-row sm:max-w-7xl'>
                         {mediaPartners.map((partner) => (
