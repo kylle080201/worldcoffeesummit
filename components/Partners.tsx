@@ -133,7 +133,7 @@ export default function Partners() {
 
                     <div className="max-w-2xl mx-auto text-center mt-6">
                         <div className="inline-flex items-center justify-center w-full">
-                            <span className="absolute px-3 text-lg sm:text-2xl font-bold tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Co Sponsor</span>
+                            <span className="absolute px-3 text-lg sm:text-2xl font-bold tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Co-Sponsor</span>
                         </div>
                     </div>
                     <div className='grid items-center justify-center gap-4 mx-auto sm:gap-12 sm:flex-row sm:max-w-7xl mt-4'>
