@@ -30,7 +30,7 @@ export default function HomePage() {
                 <WhyAttend />
                 <Venue />
                 <Partners />
-                {/* <FAQ /> */}
+                <FAQ />
             </div>
         </>
     )
