@@ -78,6 +78,18 @@ function Speakers2024() {
       `
     },
     {
+      name: 'Dr. Helge Elisabeth Zeitler',
+      role: 'Director for UN, EU',
+      company: 'German Federal Ministry for Economic Cooperation and Development (BMZ)',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/Helge-Zeitler-frei-verwendbar-2.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/bmz-bundesministerium-fuer-wirtschaftliche-zusammenarbeit-und-entwicklung-logo-vector.svg",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+      A lawyer by training, Dr. Helge Elisabeth Zeitler has been since April 2024 Director for  UN and EU affairs, also covering G7/20 and trade, at the German Federal Ministry for Economic Cooperation and Development. Prior to this post, she held different positions in the international directorate of the European Commission’s Environment Department, with topics ranging from deforestation-free supply chains and international water policy to environmental cooperation at the UN and under various multilateral agreements. Helge Zeitler also served in the past at the EU Delegation to the UN in New York, at the UN International Criminal Tribunal for Rwanda in Tanzania and at the German Foreign Ministry.
+      `
+    },
+    {
       name: 'Dr. Jennifer “Vern” Long',
       role: 'Chief Executive Officer',
       company: 'World Coffee Research',
@@ -139,6 +151,25 @@ function Speakers2024() {
       `
     },
     {
+      name: 'Chris Southworth',
+      role: 'Secretary General',
+      company: 'International Chamber of Commerce (ICC) United Kingdom',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/Headshot-Chris-Southworth.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/ICC_United_Kingdom_BLACK_RGB_300dpi.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+       Chris Southworth is Secretary General at the International Chamber of Commerce UK and a regular voice for business in the international media speaking on a wide range of business issues including trade, sustainability, international priorities and government policy. 
+
+        He is Co-Chair of Commonwealth Legal Reform and Digitalisation programme launched by Commonwealth Trade Ministers in June 2023, a member of the Legal Reform Advisory Board at the ICC Digital Standards Initiative and co-founder of the UK Centre for Digital Trade and Innovation. He is also a member of the ICC World Council as well as the International Advisory Board of the Queen Mary-UNIDROIT Institute of Transnational Commercial Law. 
+
+        Chris is a leading international expert on creating modern digital trade ecosystems and a regular speaker at international conferences and events. He is the founder of the ICC Digital Trade Roadmap, helped initiate the Electronic Trade Documents Act 2023 and helped secure the 2021 G7 Ministerial Commitment to remove legal barriers to handle commercial trade documents in digital form. He is also a leading industry adviser to the UK government on the digitalisation of trade and works closely with the Department for Business and Trade, Her Majesty’s Revenue and Customs, Cabinet Office and the Department for Science, Innovation and Technology.  
+
+        Prior to joining ICC, he was Executive Director for Global Partnerships, at the British Chambers of Commerce, Head of the International Chambers of Commerce Unit at UK Trade and Investment (UKTI) and a Senior Policy Advisor to Lord Heseltine, former Deputy Prime Minister, for his independent review of UK competitiveness. In 2011 he was advisor to the Minister for Trade and Investment for the government review of mid-size businesses and consequent establishment of the mid-size business export programme. Former roles have encompassed deregulatory and social enterprise policy at the Department for Business.
+
+      `
+    },
+    {
       name: 'Owen Hewlett',
       role: 'Chief Technical Officer',
       company: 'Gold Standard',
@@ -168,6 +199,18 @@ function Speakers2024() {
       H. E. Alex Assanvo is the first Executive Secretary of the Cȏte d'Ivoire-Ghana Cocoa Initiative (CIGCI). This unique partnership was set up as the result of the presidents of the world’s top cocoa producers, Côte d’Ivoire and Ghana, coming together to address market challenges one by one, faced by the countries, so that the cocoa price eventually reflects the social value of the product and ensures a decent income for farmers. 
       Before his appointment, Assanvo was Global Director of Corporate Affairs and Sustainability at Mars. He began his international development career with the German development agency (GIZ) as a Rural Development Expert between 2002 and 2006 in Dakar, Senegal. 
       He moved on to Fairtrade Labelling International (FLO), in Germany in 2006 as Head for Africa and the Strategic Lead for Cocoa and Cotton. He later joined the Sustainability and Procurement team at Kraft Foods, now Mondelēz International, from October 2011 to 2013 as the Cocoa Development Manager in charge of the Cocoa Life Programme.
+      `
+    },
+    {
+      name: 'Claude Bizimana',
+      role: 'Chief Executive Officer (CEO)',
+      company: 'National Agricultural Export Development Board (NAEB), Rwanda',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/Claude-Bizimana.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/NAEB-logo.jpg",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: `
+      Claude Bizimana is the Chief Executive Officer (CEO) of the National Agricultural Export Development Board (NAEB), a commercial public institution in Rwanda in charge of exports of agricultural and livestock products. With over 20 years of experience as a lecturer and researcher in one of Rwanda’s most prominent academic institutions, Claude Bizimana led different initiatives at national, regional and continental levels, including the country office of the Comprehensive Africa Agriculture Development Program, the most ambitious and comprehensive agricultural reform effort ever undertaken in Africa made by African Heads of States and Governments. As the CEO of NAEB, Claude Bizimana thrives to establish relations and cooperation with regional and international organisations with the aim of improving operations in the coffee value chain and collaboration among stakeholders, especially those who grow and produce the raw product.
       `
     },
     {
@@ -221,12 +264,13 @@ function Speakers2024() {
       name: 'Laurent Sagarra',
       role: 'Vice President Sustainability',
       company: 'JDE Peet’s',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/Lauran-Photo.jpg',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/laurent-sagarra-scaled.jpg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/07/Logo.png",
       iconWidth: 100,
       iconHeight: 100,
       bio: `
-        Laurent Alexandre Sagarra is a Vice President Sustainability at JDE Peet's, leading the company towards a better future through sustainable growth. With a background in quality and sustainability management across various industries, Laurent has a strong expertise in developing and implementing strategies to ensure product quality, food safety, and compliance. With a Ph.D. in Entomology-Plant Protection and a degree in Agronomy, Laurent is well-equipped to drive business growth while maintaining a focus on sustainability and mutual value creation.
+        Laurent is Vice President of Sustainability at JDE Peet’s, leading the company towards a better future through sustainable growth. He has worked in the Food & Beverage industry for over 20 years focused on quality and sustainability management and has extensive expertise in developing and implementing strategies to ensure product quality, food safety, and compliance. Laurent joined JDE Peet’s in 2017 as Director Global Consumer, Quality & Technology. Prior to joining JDE Peet’s, Laurent held various leadership positions including at Tata Global Beverages where he was Head of Product Innovation, Compliance and Quality. He also held senior quality and food safety roles at Salins Group and Kraft Europe (now part of Mondelez). He started his career at Pernod Ricard, implementing and researching agricultural programs in Bulgaria, Mexico, Poland, China and Trinidad and Tobago.
+        Laurent has a Ph.D. in Entomology-Plant Protection from McGill University and a degree in Agronomy from ESA, L'Ecole Supérieure des Agricultures in Angers, France.
       `
     },
     {
@@ -331,6 +375,19 @@ function Speakers2024() {
       `
     },
     {
+      name: 'Rick van der Kamp',
+      role: 'Global Lead for Markets, Value Chains and Rural Finance',
+      company: 'International Fund for Agriculture Development (IFAD)',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/rick-van-der-kamp-2.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/E_g_web.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: `
+      Rick van der Kamp is the International Fund for Agriculture Development (IFAD)’s global lead for markets, value chains and rural finance, based out of its headquarters in Rome. He has over 20 years of experience in agribusiness, markets and value chains, and rural finance projects, in particular in cocoa, coffee and agro-inputs. A Dutch national, he has Masters in Physics & Development Studies (Eindhoven University of Technology) and in Economics (University of London, UK). 
+      Rick started his career in management consulting with Accenture in London, focusing on financial management for manufacturing and services. After four years, he decided to shift his focus to international development, and worked in agribusiness, value chains and microfinance across Africa, Latin America, Eastern Europe and Southeast Asia. Before IFAD, he spent 11 years with IFC (agribusiness advisory services), some time at FMO and he ran an agricultural markets development program in Nepal. Besides running a number of coffee projects in Central America, he managed IFC's agri-finance program in Indonesia, and coordinated IFC’s ag-tech offering. Currently, part of his responsibilities is to expand IFAD’s work with private sector partners. 
+      `
+    },
+    {
       name: 'Barney Reynolds',
       role: 'Partner ',
       company: 'A&O Shearman',
@@ -351,25 +408,6 @@ function Speakers2024() {
       bio: `
       Andrea Geremicca is the Director General of the European Institute of Innovation for Sustainability (EIIS). 
       He is an adjunct professor at LUISS and LUMSA, where he teaches Innovation for Sustainability, and a faculty member at Singularity University, where he specializes in innovation for sustainability and foresight. Andrea attended the Harvard Business School Exc in Boston, focusing on driving innovation in large organizations. He contributes to the Harvard Business Review, writing about future scenarios and emerging macro trends. He has delivered two TEDx Talks, in 2018 and 2021. In 2018, Andrea had the honor of lecturing at Harvard Kennedy School and Sciences Po in Paris. Additionally, he authored two books in 2022 and 2023, which have become essential texts in the business faculties of two universities.      
-      `
-    },
-    {
-      name: 'Chris Southworth',
-      role: 'Secretary General',
-      company: 'ICC United Kingdom',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/Headshot-Chris-Southworth.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/ICC_United_Kingdom_BLACK_RGB_300dpi.png",
-      iconWidth: 100,
-      iconHeight: 100,
-      bio: `
-       Chris Southworth is Secretary General at the International Chamber of Commerce UK and a regular voice for business in the international media speaking on a wide range of business issues including trade, sustainability, international priorities and government policy. 
-
-        He is Co-Chair of Commonwealth Legal Reform and Digitalisation programme launched by Commonwealth Trade Ministers in June 2023, a member of the Legal Reform Advisory Board at the ICC Digital Standards Initiative and co-founder of the UK Centre for Digital Trade and Innovation. He is also a member of the ICC World Council as well as the International Advisory Board of the Queen Mary-UNIDROIT Institute of Transnational Commercial Law. 
-
-        Chris is a leading international expert on creating modern digital trade ecosystems and a regular speaker at international conferences and events. He is the founder of the ICC Digital Trade Roadmap, helped initiate the Electronic Trade Documents Act 2023 and helped secure the 2021 G7 Ministerial Commitment to remove legal barriers to handle commercial trade documents in digital form. He is also a leading industry adviser to the UK government on the digitalisation of trade and works closely with the Department for Business and Trade, Her Majesty’s Revenue and Customs, Cabinet Office and the Department for Science, Innovation and Technology.  
-
-        Prior to joining ICC, he was Executive Director for Global Partnerships, at the British Chambers of Commerce, Head of the International Chambers of Commerce Unit at UK Trade and Investment (UKTI) and a Senior Policy Advisor to Lord Heseltine, former Deputy Prime Minister, for his independent review of UK competitiveness. In 2011 he was advisor to the Minister for Trade and Investment for the government review of mid-size businesses and consequent establishment of the mid-size business export programme. Former roles have encompassed deregulatory and social enterprise policy at the Department for Business.
-
       `
     },
     {

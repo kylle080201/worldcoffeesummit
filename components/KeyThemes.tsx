@@ -40,7 +40,11 @@ const keyThemes = [
   },
   {
     title: "CROSS-SECTOR COLLABORATION",
-    description: "Sharing best practices and innovations with other sectors and accelerating progress towards a net positive future"
+    description: "Sharing best practices and innovations with other sectors and accelerating progress towards a net positive future."
+  },
+  {
+    title: "DIGITALISING GLOBAL TRADE",
+    description: "Transforming infrastructure and communication ecosystem to generate data-driven, sustainable digital platforms to promote online and e-trade transaction adoption."
   },
 ]
 

@@ -22,7 +22,7 @@ export default function HomePage() {
                 <Overview />
                 <Speakers2024 />
                 <KeyThemes />
-                <SpeakerSlider />
+                {/* <SpeakerSlider /> */}
                 <ImageCarousel />
                 <Testimonials />
                 <Attendees2023 />
@@ -30,7 +30,6 @@ export default function HomePage() {
                 <WhyAttend />
                 <Venue />
                 <Partners />
-                <FAQ />
             </div>
         </>
     )
