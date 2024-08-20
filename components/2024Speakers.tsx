@@ -375,6 +375,19 @@ function Speakers2024() {
       `
     },
     {
+      name: 'Rick van der Kamp',
+      role: 'Global Lead for Markets, Value Chains and Rural Finance',
+      company: 'International Fund for Agriculture Development (IFAD)',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/rick-van-der-kamp.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/E_g_web.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: `
+      Rick van der Kamp is the International Fund for Agriculture Development (IFAD)’s global lead for markets, value chains and rural finance, based out of its headquarters in Rome. He has over 20 years of experience in agribusiness, markets and value chains, and rural finance projects, in particular in cocoa, coffee and agro-inputs. A Dutch national, he has Masters in Physics & Development Studies (Eindhoven University of Technology) and in Economics (University of London, UK). 
+      Rick started his career in management consulting with Accenture in London, focusing on financial management for manufacturing and services. After four years, he decided to shift his focus to international development, and worked in agribusiness, value chains and microfinance across Africa, Latin America, Eastern Europe and Southeast Asia. Before IFAD, he spent 11 years with IFC (agribusiness advisory services), some time at FMO and he ran an agricultural markets development program in Nepal. Besides running a number of coffee projects in Central America, he managed IFC's agri-finance program in Indonesia, and coordinated IFC’s ag-tech offering. Currently, part of his responsibilities is to expand IFAD’s work with private sector partners. 
+      `
+    },
+    {
       name: 'Barney Reynolds',
       role: 'Partner ',
       company: 'A&O Shearman',
@@ -408,6 +421,19 @@ function Speakers2024() {
       bio: `
         Thomas Bagge is the CEO of the Digital Container Shipping Association (DCSA). Before joining DCSA, he lead numerous large-scale change initiatives at A.P Möller Maersk, focusing on technology, process optimization, and personnel management. 
         With over two decades of experience in transportation and logistics, Thomas possesses a profound understanding of customer needs, industry dynamics, and the complexities of digitizing container shipping. He holds qualifications in Applied Finance and an Executive MBA from Copenhagen Business School, supplemented by executive courses from IMD and Berkeley.
+      `
+    },
+    {
+      name: 'Claire Elsdon',
+      role: 'Global Director, Capital Markets',
+      company: 'CDP',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/Claire-Elsdon-profile-pic-2023.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/07/pngegg.png",
+      iconWidth: 60,
+      iconHeight: 60,
+      bio: `
+      Claire Elsdon leads the Global Capital Markets and Environmental Data Sales teams at CDP, the non-profit that runs the world’s environmental disclosure system. She defines engagement strategy with financial institutions and other capital markets actors including institutional investors, banks, insurers and private equity and debt houses on a global basis, enabling them to request, utilise and apply critical climate, water and forest impact data from the companies they finance. Claire led CDP's role in delivering disclosure solutions for the Bank of England's CBES exercise and has spearheaded CDP's highly innovative sustainable supplier financing solution, most recently culminating in the Vodafone/Citi collaboration.     
+      Prior to CDP, Claire worked for over a decade broking Pan-European Equities to UK based Institutional Investors at HSBC, Merrill Lynch and JP Morgan before moving to Tanzania to establish Africa's leading social enterprise focusing on community motorcycle safety solutions.
       `
     },
     {
