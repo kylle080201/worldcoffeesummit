@@ -93,7 +93,7 @@ export default function Partners() {
                     <div className="max-w-2xl mx-auto text-center mt-12">
                         <div className="inline-flex items-center justify-center w-full">
                             <hr className="w-80 h-px bg-gray-400 border-0" />
-                            <span className="absolute px-3 text-lg sm:text-2xl font-bold tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Silver Sponsor</span>
+                            <span className="absolute px-3 text-lg sm:text-2xl tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Silver Sponsor</span>
                         </div>
                     </div>
                     <div className='grid items-center justify-center grid-cols-1 gap-4 mx-auto sm:gap-12 sm:flex-row sm:max-w-7x mt-6'>
@@ -115,7 +115,7 @@ export default function Partners() {
                     <div className="max-w-2xl mx-auto text-center mt-12">
                         <div className="inline-flex items-center justify-center w-full">
                             <hr className="w-80 h-px bg-gray-400 border-0" />
-                            <span className="absolute px-3 text-lg sm:text-2xl font-bold tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Bronze Sponsor</span>
+                            <span className="absolute px-3 text-lg sm:text-2xl tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Bronze Sponsor</span>
                         </div>
                     </div>
                     <div className='grid items-center justify-center grid-cols-1 gap-4 mx-auto sm:gap-12 sm:flex-row sm:max-w-7x mt-6'>
@@ -137,7 +137,7 @@ export default function Partners() {
                     <div className="max-w-2xl mx-auto text-center mt-12">
                         <div className="inline-flex items-center justify-center w-full">
                             <hr className="w-80 h-px bg-gray-400 border-0" />
-                            <span className="absolute px-3 text-lg sm:text-2xl font-bold tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Co-Sponsor</span>
+                            <span className="absolute px-3 text-lg sm:text-2xl tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Co-Sponsor</span>
                         </div>
                     </div>
                     <div className='grid items-center justify-center gap-4 mx-auto sm:gap-12 sm:flex-row sm:max-w-7xl mt-6'>
@@ -159,7 +159,7 @@ export default function Partners() {
                     <div className="max-w-2xl mx-auto text-center mt-12">
                         <div className="inline-flex items-center justify-center w-full">
                             <hr className="w-80 h-px bg-gray-400 border-0" />
-                            <span className="absolute px-3 text-lg sm:text-2xl font-bold tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Cross-industry Partners</span>
+                            <span className="absolute px-3 text-lg sm:text-2xl tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Cross-industry Partners</span>
                         </div>
                     </div>
                     <div className='flex items-center justify-center gap-4 mx-auto sm:flex-row sm:max-w-7xl mt-6'>
@@ -179,9 +179,9 @@ export default function Partners() {
                     </div>
                 </div>
                 <div className='mb-20'>
-                    <div className="max-w-2xl mx-auto text-center">
+                    <div className="inline-flex items-center justify-center w-full">
                         <hr className="w-80 h-px bg-gray-400 border-0" />
-                        <p className="text-lg sm:text-2xl font-bold tracking-tight text-gray-900">Media Partners</p>
+                        <span className="absolute px-3 text-lg sm:text-2xl tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Media Partners</span>
                     </div>
                     <div className='flex items-center justify-center gap-4 mx-auto sm:flex-row sm:max-w-7xl'>
                         {mediaPartners.map((partner) => (
