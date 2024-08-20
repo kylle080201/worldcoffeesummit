@@ -180,6 +180,7 @@ export default function Partners() {
                 </div>
                 <div className='mb-20'>
                     <div className="max-w-2xl mx-auto text-center">
+                        <hr className="w-80 h-px bg-gray-400 border-0" />
                         <p className="text-lg sm:text-2xl font-bold tracking-tight text-gray-900">Media Partners</p>
                     </div>
                     <div className='flex items-center justify-center gap-4 mx-auto sm:flex-row sm:max-w-7xl'>
