@@ -82,7 +82,7 @@ function Speakers2024() {
       role: 'Director for UN, EU',
       company: 'German Federal Ministry for Economic Cooperation and Development (BMZ)',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/Helge-Zeitler-frei-verwendbar-2.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/bmz-bundesministerium-fuer-wirtschaftliche-zusammenarbeit-und-entwicklung-logo-vector.svg",
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/bmz-1.png",
       iconWidth: 100,
       iconHeight: 100,
       bio: `
@@ -659,14 +659,14 @@ function Speakers2024() {
                     </div>
                     <div className='flex justify-center p-2'>
                       <div className='bg-white p-2 rounded-md'>
-                        <Image src={selectedSpeaker.companyIcon} alt={`${selectedSpeaker.company} logo`} width={100} height={100} />
+                        <Image src={selectedSpeaker.companyIcon} alt={`${selectedSpeaker.company} logo`} width={140} height={140} />
                       </div>
                     </div>
                     <div className="flex mx-auto text-center">
                       <div>
-                        <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{selectedSpeaker.name}</p>
+                        <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-lg">{selectedSpeaker.name}</p>
                         <p className="leading-7 text-gray-700 text-md">{selectedSpeaker.role}</p>
-                        <p className="font-semibold leading-7 text-gray-900 text-md">{selectedSpeaker.company}</p>
+                        <p className="font-semibold leading-7 text-gray-900 text-2xl">{selectedSpeaker.company}</p>
                       </div>
                     </div>
                   </div>

@@ -4,7 +4,7 @@ import React from 'react'
 export default function Partners() {
     const goldSponsors = [
         {
-            href: 'https://www.ice.com/index',
+            href: '',
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/09/ICE_logo_Rmark_rgb-1.png',
             className: 'w-[10rem] p-2 mx-auto'
         },
@@ -185,12 +185,17 @@ export default function Partners() {
                     </div>
                     <div className='flex items-center justify-center gap-4 mx-auto sm:flex-row sm:max-w-7xl'>
                         {mediaPartners.map((partner) => (
+                            partner.href ?
                             <Link key={partner.href} href={partner.href} target='_blank' rel='noreferer'>
                                 <div className='items-center flex-shrink-0 h-full p-4'>
                                     <img className={partner.className} src={partner.imgSrc}>
                                     </img>
                                 </div>
-                            </Link>
+                            </Link> :
+                            <div key={partner.href} className='items-center flex-shrink-0 h-full p-4'>
+                                <img className={partner.className} src={partner.imgSrc}>
+                                </img>
+                            </div>
                         ))}
                     </div>
                 </div>
