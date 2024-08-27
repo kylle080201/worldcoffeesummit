@@ -55,6 +55,11 @@ export default function Partners() {
         },
         {
             href: '',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2020/08/FBM_INT_VERT_RGB_POS.png',
+            className: 'w-[7rem] mx-auto py-8'
+        },
+        {
+            href: '',
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/B-Lab-Europe-Country-Partners-Logos-1.webp',
             className: 'w-[12rem] mx-auto'
         },
