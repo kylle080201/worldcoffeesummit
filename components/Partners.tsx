@@ -56,7 +56,7 @@ export default function Partners() {
         {
             href: '',
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2020/08/FBM_INT_VERT_RGB_POS.png',
-            className: 'w-[9rem] mx-auto py-8'
+            className: 'w-[6rem] mx-auto py-8'
         },
         {
             href: '',
