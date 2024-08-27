@@ -383,11 +383,7 @@ function Speakers2024() {
       iconWidth: 120,
       iconHeight: 120,
       bio: `
-      Mr Jari Partanen is the EBRD Board Director for Finland, Norway, Latvia, Lebanon.   He joined the Bank in September 2021.  
-      Prior to the EBRD, Jari had a long-term position as State Secretary (Vice Minister) with a wide and strong record in the fields of finance and finance markets, economy, sustainable growth, SME policy, agribusiness (EU CAP), transport and infrastructure policies and regulation. 
-      He held leadership roles in government and international institutes including during Finland´s Presidency of the Council of the European Union and European Neighbourhood Instrument Cross Border Cooperation Programme, specialising in Finland and European Union legislative processes. 
-      He holds a MA in Law and has received the Cross of Knight, First Class of the Order of the White Rose of Finland.
-
+      Evan Paul is the Senior Director of Innovation for Nature at Salesforce, bringing over two decades of experience in digital innovation and environmental impact. Formerly the Head of Product at GuideStar.org, Evan led the development of the United States' largest impact reporting program for charities. He also co-founded SeaSketch.org, a pioneering platform for participatory marine conservation planning. Evan is passionate about using software to embed consideration of nature into the flow of work for large enterprises.
       `
     },
     {
