@@ -375,6 +375,18 @@ function Speakers2024() {
       `
     },
     {
+      name: 'Evan Paul',
+      role: 'Senior Director, Innovation for Nature',
+      company: 'Salesforce',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/evan-paul-scaled.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/salesforce-with-type-logo.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: `
+      Evan Paul is the Senior Director of Innovation for Nature at Salesforce, bringing over two decades of experience in digital innovation and environmental impact. Formerly the Head of Product at GuideStar.org, Evan led the development of the United States' largest impact reporting program for charities. He also co-founded SeaSketch.org, a pioneering platform for participatory marine conservation planning. Evan is passionate about using software to embed consideration of nature into the flow of work for large enterprises.
+      `
+    },
+    {
       name: 'Rick van der Kamp',
       role: 'Global Lead for Markets, Value Chains and Rural Finance',
       company: 'International Fund for Agriculture Development (IFAD)',
@@ -389,13 +401,30 @@ function Speakers2024() {
     },
     {
       name: 'Barney Reynolds',
-      role: 'Partner ',
+      role: 'Partner',
       company: 'A&O Shearman',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/reynolds_b_hires.jpg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/AOShearman_Wordmark_Progress-Green_RGB.png",
       iconWidth: 120,
       iconHeight: 120,
       bio: `Barney Reynolds is Global Co-Head of Financial Institutions, and of the Financial Services Regulatory Group, at A&O Shearman. He is one of the world's leading financial institution practitioners, specialising in all areas of banking, fund management, financial markets and financial infrastructure, crypto, insurance/reinsurance, AML and sanctions. He has particular expertise in UK and EU regulation. He has additional familiarity with the regime of Abu Dhabi Global Market (ADGM), which he conceived and established. He advises on navigating legal and regulatory systems worldwide. He is known as a pathfinder for giving strategic advice to financial services firms on how to plot the most efficient course through law and regulation; on the use of legal reasoning to achieve legal and regulatory certainty; and in engaging productively with the regulators and government officials. Barney is a noted commercial thinker on law and regulation, assisting firms in planning for and managing emerging risks from legal and regulatory change. He has helped numerous clients with business transformation. Barney advised the UK government and numerous businesses in the context of the legal and other implications of leaving the EU, and how to navigate them. He is interviewed and published widely and is frequently called to give evidence before Parliamentary Committees.`
+    },
+    {
+      name: 'Joy Macknight',
+      role: 'Journalist, Former Editor',
+      company: 'The Banker',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/Joy-Macknight-12-of-19.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/ftlogo-v1_brand-ft-logo-landscape-coloured.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: `Joy Macknight is a freelance journalist and former editor of The Banker, part of the
+      Financial Times group. She joined The Banker in August 2015 as transaction
+      banking and technology editor, was promoted to deputy editor in September 2016
+      and then to managing editor in April 2019, before becoming the first female editor in
+      the publication’s history in March 2021. Previously, she was features editor at Profit
+      &amp; Loss, editorial director at Treasury Today and editor at gtnews. She also worked as
+      staff writer on Banking Technology and IBM Computer Today, as well as a freelancer
+      on Computer Weekly.`
     },
     {
       name: 'Andrea Geremicca',
