@@ -304,7 +304,7 @@ function Speakers2024() {
       name: 'William Kennedy',
       role: 'Senior Executive Editor, Energy and Commodities',
       company: 'Bloomberg',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/1698834401209.jpg',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/1698834401209-copy.jpg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/og-image-generic-lp.png",
       iconWidth: 80,
       iconHeight: 80,
