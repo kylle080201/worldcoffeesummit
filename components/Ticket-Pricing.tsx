@@ -48,7 +48,20 @@ function TicketPricing() {
                 }
             ]
         },
-        
+        {
+            title: "Start-up Pass",
+            old_price: 1295,
+            item_price: 995,
+            description: "Only eligible for early-stage innovators who have not secured their first Series A funding round.",
+            earlyBird: "Book before 4th October 2024 to Save £300.00",
+            line_items: [
+                {
+                    price: 'price_1PgHs9KMWpUKzQVzEluhrJOy',
+                    quantity: 1,
+                    tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
+                }
+            ]
+        },
     ]
     const networkingSoiree = {
         title: "Networking Soirée Pass",
@@ -111,7 +124,7 @@ function TicketPricing() {
                                         </td>
                                     </tr>
                                 ))}
-                                <tr className="odd:bg-gray-100">
+                                {/* <tr className="odd:bg-gray-100">
                                     <td className="flex-wrap px-3 py-4 font-semibold text-gray-900 text-lg whitespace-nowrap">Start-up Pass</td>
                                     <td className="flex-wrap px-3 py-4 text-gray-900 text-lg">
                                         Only eligible for early-stage innovators who have not secured their first Series A funding round
@@ -139,7 +152,7 @@ function TicketPricing() {
                                             </Link>
                                         </div>
                                     </td>
-                                </tr>
+                                </tr> */}
                                 <tr className="odd:bg-gray-100">
                                     <td className="flex-wrap px-3 py-4 font-semibold text-gray-900 text-lg whitespace-nowrap">{networkingSoiree.title}</td>
                                     <td className="flex-wrap px-3 py-4 text-gray-900 text-lg">
