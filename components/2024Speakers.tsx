@@ -451,19 +451,6 @@ function Speakers2024() {
       on Computer Weekly.`
     },
     {
-      name: 'Andrea Geremicca',
-      role: 'Director General',
-      company: 'European Institute of Innovation for Sustainability (EIIS)',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/ANDREA-SQUARE.jpeg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/Logo-EIIS_Colour.png",
-      iconWidth: 100,
-      iconHeight: 100,
-      bio: `
-      Andrea Geremicca is the Director General of the European Institute of Innovation for Sustainability (EIIS). 
-      He is an adjunct professor at LUISS and LUMSA, where he teaches Innovation for Sustainability, and a faculty member at Singularity University, where he specializes in innovation for sustainability and foresight. Andrea attended the Harvard Business School Exc in Boston, focusing on driving innovation in large organizations. He contributes to the Harvard Business Review, writing about future scenarios and emerging macro trends. He has delivered two TEDx Talks, in 2018 and 2021. In 2018, Andrea had the honor of lecturing at Harvard Kennedy School and Sciences Po in Paris. Additionally, he authored two books in 2022 and 2023, which have become essential texts in the business faculties of two universities.      
-      `
-    },
-    {
       name: 'Thomas Bagge',
       role: 'Chief Executive Officer',
       company: 'Digital Container Shipping Association (DCSA)',
