@@ -78,6 +78,17 @@ function Speakers2024() {
       `
     },
     {
+      name: 'Jennifer Jordan-Saifi',
+      role: 'CEO',
+      company: 'Sustainable Markets Initiative (SMI)',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/22528718_838080056365805_8175573996594075365_o-1.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/logo-sustainable-markets-seal-version.jpg",
+      iconWidth: 80,
+      iconHeight: 80,
+      bio: `
+      `
+    },
+    {
       name: 'Dr. Helge Elisabeth Zeitler',
       role: 'Director for UN, EU',
       company: 'German Federal Ministry for Economic Cooperation and Development (BMZ)',
