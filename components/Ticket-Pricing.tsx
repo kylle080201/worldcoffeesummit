@@ -11,7 +11,7 @@ function TicketPricing() {
             old_price: 1095,
             item_price: 895,
             description: "Eligible for representatives from non-profit NGOs, farmers cooperatives, regulators, governments, public sector, and academia.",
-            earlyBird: "Book before 7th September 2024 to Save £200.00",
+            earlyBird: "Book before 4th October 2024 to Save £200.00",
             line_items: [
                 {
                     price: 'price_1Pa5oaKMWpUKzQVzidgLR3r4',
@@ -25,7 +25,7 @@ function TicketPricing() {
             old_price: 1795,
             item_price: 1495,
             description: "Eligible for corporate representatives.",
-            earlyBird: "Book before 7th September 2024 to Save £300.00",
+            earlyBird: "Book before 4th October 2024 to Save £300.00",
             line_items: [
                 {
                     price: 'price_1Pa5pcKMWpUKzQVzAqNtI9NE',
@@ -39,7 +39,7 @@ function TicketPricing() {
             old_price: 1995,
             item_price: 1695,
             description: "Required for for-profit consultancies, technology, solution and service providers.",
-            earlyBird: "Book before 7th September 2024 to Save £300.00",
+            earlyBird: "Book before 4th October 2024 to Save £300.00",
             line_items: [
                 {
                     price: 'price_1Pa5qDKMWpUKzQVzgHK5XrmV',
@@ -53,10 +53,10 @@ function TicketPricing() {
             old_price: 1295,
             item_price: 995,
             description: "Only eligible for early-stage innovators who have not secured their first Series A funding round.",
-            earlyBird: "Book before 7th September 2024 to Save £300.00",
+            earlyBird: "Book before 4th October 2024 to Save £300.00",
             line_items: [
                 {
-                    price: 'price_1PizgaKMWpUKzQVzyeHjLad7',
+                    price: 'price_1PgHs9KMWpUKzQVzEluhrJOy',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
@@ -84,7 +84,7 @@ function TicketPricing() {
                 <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                     <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8 ">
                         <div className="max-w-5xl mx-auto sm:text-center">
-                            <h3 className="text-4xl tracking-tight text-red-700 sm:text-md font-bold">Early Bird Offer ends on 6th September 2024</h3>
+                            <h3 className="text-4xl tracking-tight text-red-700 sm:text-md font-bold">Early Bird Offer ends on 3rd October 2024</h3>
                         </div>
                         <table className="min-w-full divide-y divide-gray-300 mt-12">
                             <tbody className="bg-white">
@@ -128,7 +128,7 @@ function TicketPricing() {
                                     <td className="flex-wrap px-3 py-4 font-semibold text-gray-900 text-lg whitespace-nowrap">Start-up Pass</td>
                                     <td className="flex-wrap px-3 py-4 text-gray-900 text-lg">
                                         Only eligible for early-stage innovators who have not secured their first Series A funding round
-                                        <h3 className="text-sm tracking-tight text-red-700 sm:text-lg font-bold">Book before 7th September 2024 to Save £300.00 </h3>
+                                        <h3 className="text-sm tracking-tight text-red-700 sm:text-lg font-bold">Book before 4th October 2024 to Save £300.00 </h3>
                                         Please contact <Link href={"mailto:mavis@worldcoffeealliance.com"} target="_blank" className="text-yellow-900 underline hover:underline-offset-4">mavis@worldcoffeealliance.com</Link>
                                     </td>
                                     <td className="flex-wrap px-3 py-4 text-gray-900 font-bold ">
@@ -160,7 +160,7 @@ function TicketPricing() {
                                         <br />
                                         Wines and Hors d&apos;oeuvres
                                         <br />
-                                        <h3 className="text-sm tracking-tight text-red-700 sm:text-lg font-bold">Exclusive for Summit Attendees!<br />Limited tickets only! First come, first serve!<br />Book before 7th September 2024 to Save £40.00</h3>
+                                        <h3 className="text-sm tracking-tight text-red-700 sm:text-lg font-bold">Exclusive for Summit Attendees!<br />Limited tickets only! First come, first serve!<br />Book before 4th October 2024 to Save £40.00</h3>
                                     </td>
                                     <td className="flex-wrap px-3 py-4 text-gray-900 font-bold ">
                                         <div className='h-full text-lg flex flex-col w-full'>
