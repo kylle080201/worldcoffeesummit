@@ -452,7 +452,7 @@ function Speakers2024() {
     {
       name: 'Joy Macknight',
       role: 'Journalist, Former Editor',
-      company: 'The Banker',
+      company: 'Financial Times - The Banker',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/Joy-Macknight-12-of-19.jpg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/ftlogo-v1_brand-ft-logo-landscape-coloured.png",
       iconWidth: 120,
@@ -519,7 +519,7 @@ function Speakers2024() {
     {
       name: 'Marie Kemplay',
       role: 'Deputy Editor',
-      company: 'Sustainable Views',
+      company: 'Financial Times Sustainable views',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/MK010924.jpg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/09/SustainableViews_Tagline_Horizontal_Full-Colour_RGB.png",
       iconWidth: 100,
