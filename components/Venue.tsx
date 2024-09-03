@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Venue() {
     return (
-        <div className="py-20 overflow-hidden bg-gray-100 " id='venue'>
+        <div className="py-20 overflow-hidden" id='venue'>
             <div className="mx-auto lg:flex md:max-w-7xl">
                 <div className="flex-shrink-0 mx-12 lg:mx-0 md:w-2/5">
                     <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">
