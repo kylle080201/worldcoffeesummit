@@ -123,18 +123,15 @@ function Speakers2024() {
       `
     },
     {
-      name: 'Sylvia J. Megret',
-      role: 'President and Chief Executive Officer',
-      company: 'ACDI/VOCA',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/SYLVIA-SQUARE.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/ACDIVOCA-logo-gray-tag.png",
-      iconWidth: 100,
-      iconHeight: 100,
+      name: 'Graham Turnock',
+      role: 'Integrated Accelerator Team Leader, Special Advisor',
+      company: 'European Space Agency (ESA)',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/06/GTimage.png',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/06/ESA_logo_2020_Deep-e1719391553788.png",
+      iconWidth: 120,
+      iconHeight: 120,
       bio: `
-      Sylvia J. Megret serves as president and CEO of ACDI/VOCA. As a global development executive with 30 years of experience, she promotes the organization’s mission and lives its values in support of inclusive, sustainable development worldwide. Sylvia joined ACDI/VOCA in December 2016, first serving as chief operating officer (COO) and later as president and COO from February 2021 to April of 2022. She also served as interim CEO from December 2017 to June 2018.
-      Sylvia has proven expertise convening diverse teams that bridge functions, cultures, and international borders. She is also skilled at identifying and institutionalizing effective teams and systems for maximum efficiency and success.
-      Sylvia is currently board chair of the Fundación ACDI/VOCA Latin America (FAVLA). She also serves as a board member of the Society of International Development’s U.S. Chapter (SID-US) and as the 2022 SID-US conference chair. Sylvia led ACDI/VOCA’s role as a founding member of the Coalition for Racial and Ethnic Equity in International Development (CREED) and is also a founding member of Chief (Washington).
-      She holds a master’s degree in international development from American University and a bachelor’s degree in political science and French from the University of Michigan. She is fluent in English and French, and her work has taken her from Africa to Asia, Latin America, and the Caribbean.      
+      Graham Turnock is Special Advisor to the European Space Agency.  He currently leads the ESA Accelerator programme, an initiative aimed at speeding up the adoption of space solutions to problems of sustainability on Earth and in Space.  He has over 30 years’ experience in public administration including almost 20 as a UK senior civil servant and was Chief Executive Officer of the UK Space Agency from 2017-2021.  He holds a PhD in particle physics from Cambridge University and CERN.
       `
     },
     {
@@ -150,15 +147,34 @@ function Speakers2024() {
       `
     },
     {
-      name: 'Graham Turnock',
-      role: 'Integrated Accelerator Team Leader, Special Advisor',
-      company: 'European Space Agency (ESA)',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/06/GTimage.png',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/06/ESA_logo_2020_Deep-e1719391553788.png",
-      iconWidth: 120,
-      iconHeight: 120,
+      name: 'Karla Canavan',
+      role: 'Vice President, Commodity Trade and Finance, Markets',
+      company: 'World Wildlife Fund (WWF)',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/Kc.png',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/09/WWF-Logo.png",
+      iconWidth: 100,
+      iconHeight: 100,
       bio: `
-      Graham Turnock is Special Advisor to the European Space Agency.  He currently leads the ESA Accelerator programme, an initiative aimed at speeding up the adoption of space solutions to problems of sustainability on Earth and in Space.  He has over 30 years’ experience in public administration including almost 20 as a UK senior civil servant and was Chief Executive Officer of the UK Space Agency from 2017-2021.  He holds a PhD in particle physics from Cambridge University and CERN.
+      Karla brings 25 years of experience in agribusiness supply chains, trading, investment, wealth management, and finance. Passionate about sustainability, Karla developed her deep understanding of the food and energy value chains through her 20-year career in agribusiness giants Cargill and Bunge. She worked directly with producers and end users to determine logistics, pricing, and marketing, granting her the firsthand field experience that underpins her knowledge of product traceability, social and environmental impact, and profitability factors that are necessary to optimize the food supply chain from farm to table.
+
+      She has been active in sustainability markets since 2007 developing the origination strategy for Bunge and directly managing projects which included REDD+, emission reductions, impact investing, clean energy, structured finance, sustainable agriculture, sustainable farming, renewables, waste management, conservation finance, and supply chain optimization, among others. Karla has traded derivatives, stocks, currencies, agricultural commodities, biofuels, and carbon among others. Karla’s global Markets expertise has led her to be an apt trend identifier.
+
+      She has a deep understanding of the value chains of grains (corn, wheat), oilseeds (soybeans, canola, sunflower), tree crops (oil palm, cocoa, coffee), biofuels and feed markets. She has managed projects and teams globally with emphasis on emerging and development markets across geographies including Latin America, Africa, South East Asia, India, and China.
+      `
+    },
+    {
+      name: 'Sylvia J. Megret',
+      role: 'President and Chief Executive Officer',
+      company: 'ACDI/VOCA',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/SYLVIA-SQUARE.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/ACDIVOCA-logo-gray-tag.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+      Sylvia J. Megret serves as president and CEO of ACDI/VOCA. As a global development executive with 30 years of experience, she promotes the organization’s mission and lives its values in support of inclusive, sustainable development worldwide. Sylvia joined ACDI/VOCA in December 2016, first serving as chief operating officer (COO) and later as president and COO from February 2021 to April of 2022. She also served as interim CEO from December 2017 to June 2018.
+      Sylvia has proven expertise convening diverse teams that bridge functions, cultures, and international borders. She is also skilled at identifying and institutionalizing effective teams and systems for maximum efficiency and success.
+      Sylvia is currently board chair of the Fundación ACDI/VOCA Latin America (FAVLA). She also serves as a board member of the Society of International Development’s U.S. Chapter (SID-US) and as the 2022 SID-US conference chair. Sylvia led ACDI/VOCA’s role as a founding member of the Coalition for Racial and Ethnic Equity in International Development (CREED) and is also a founding member of Chief (Washington).
+      She holds a master’s degree in international development from American University and a bachelor’s degree in political science and French from the University of Michigan. She is fluent in English and French, and her work has taken her from Africa to Asia, Latin America, and the Caribbean.      
       `
     },
     {
@@ -498,6 +514,18 @@ function Speakers2024() {
       iconHeight: 100,
       bio: `
       Paul Rooke is Executive Director of the British Coffee Association, responsible for managing and leading the Association, developing key relationships and representing the Association on policy, media and technical issues.  An agricultural graduate, he has over 25 year’s experience in trade associations covering policy, technical and contractual issues. From 2013-2019 has was the President of CELCAA, the European Liaison Committee for the Agricultural and Agri-food Trade, He is a former Chairman of DG Agri’s Civil Dialogue Group for International Aspects of Agriculture of the EU’s High Level Forum for a Better Functioning Supply Chain and DG Trade’s Expert Group on EU Trade Agreements.
+      `
+    },
+    {
+      name: 'Marie Kemplay',
+      role: 'Deputy Editor',
+      company: 'Sustainable Views',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/MK010924.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/09/SustainableViews_Tagline_Horizontal_Full-Colour_RGB.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+      Marie Kemplay is deputy editor of Sustainable Views, a service from the Financial Times, which covers the ever-expanding framework of rules, policy and litigation impacting businesses across environmental, social and governance issues. Marie’s background is in financial journalism — she was previously capital markets editor on The Banker, has reported on private equity at PitchBook News and was interim editor of Banking Risk and Regulation. Her financial markets experience informs her coverage of broader sustainability issues. That is, she brings a deep understanding of the importance of creating the right financial structures and investment environments in order for businesses and governments to achieve key transition objectives, such as reduced carbon emissions and nature restoration.
       `
     },
     {
