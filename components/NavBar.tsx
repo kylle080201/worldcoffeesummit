@@ -13,7 +13,7 @@ function Navbar() {
         { name: 'Overview', href: '/#overview' },
         { name: 'Speakers', href: '/#speakers' },
         { name: 'Agenda', href: '/agenda' },
-        { name: 'Venue', href: '/#venue' },
+        // { name: 'Venue', href: '/#venue' },
         { name: 'Partners', href: '/#partners' },
         { name: 'FAQ', href: '/faq' },
         { name: 'Resources', href: '/resources' },

@@ -28,7 +28,7 @@ export default function HomePage() {
                 {/* <Attendees2023 /> */}
                 <SummitInTheNews />
                 <WhyAttend />
-                {/* <Venue /> */}
+                <Venue />
                 <Partners />
             </div>
         </>
