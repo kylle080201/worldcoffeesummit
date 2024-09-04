@@ -66,16 +66,16 @@ const PrevArrow = (props: any) => {
 
 const WhoYoullMeet: React.FC = () => {
   const settings = {
-    dots: false, // No navigation dots
-    infinite: true, // Infinite loop
-    speed: 500, // Speed of slide transition
-    slidesToShow: 6, // Show 6 logos at a time
-    slidesToScroll: 1, // Scroll by 1 logo
-    // autoplay: true,
-    autoplaySpeed: 2000, // Move every 0.5 seconds
-    cssEase: "linear", // Smooth scrolling
-    nextArrow: <NextArrow />, // Custom next arrow
-    prevArrow: <PrevArrow />, // Custom prev arrow
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000, 
+    cssEase: "linear",
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
     pauseOnHover: false,
     responsive: [
       {
