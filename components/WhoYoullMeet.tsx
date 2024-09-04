@@ -12,7 +12,7 @@ const logos = [
   { name: 'JDE Peet’s', url: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/Logo.png', height: 120, width: 120 },
   { name: 'Tchibo GmbH', url: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/Tchibo_Logo-hor_Gold-dark_sRGB-scaled.jpg', height: 120, width: 120 },
   { name: 'Volcafe', url: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/logo@2x-1.png', height: 120, width: 120 },
-  { name: 'Olam Food Ingredients', url: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/image00111.png', height: 120, width: 120 },
+  { name: 'Olam Food Ingredients', url: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/image00111.png', height: 80, width: 80 },
   { name: 'European Space Agency', url: 'https://worldcoffeealliance.com/wp-content/uploads/2024/06/ESA_logo_2020_Deep-e1719391553788.png', height: 120, width: 120 },
   { name: 'German Federal Ministry for Economic Cooperation and Development (BMZ)', url: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/bmz-1.png', height: 120, width: 120 },
   { name: 'House of Lords', url: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/House_of_Lords_logo_2020.svg.png', height: 120, width: 120 },
