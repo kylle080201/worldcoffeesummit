@@ -14,7 +14,7 @@ const logos = [
   { name: 'Volcafe', url: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/logo@2x-1.png', height: 160, width: 160 },
   { name: 'Olam Food Ingredients', url: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/image00111.png', height: 80, width: 80 },
   { name: 'European Space Agency', url: 'https://worldcoffeealliance.com/wp-content/uploads/2024/06/ESA_logo_2020_Deep-e1719391553788.png', height: 150, width: 150 },
-  { name: 'German Federal Ministry for Economic Cooperation and Development (BMZ)', url: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/bmz-1.png', height: 150, width: 150 },
+  { name: 'German Federal Ministry for Economic Cooperation and Development (BMZ)', url: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/bmz-1.png', height: 170, width: 170 },
   { name: 'House of Lords', url: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/House_of_Lords_logo_2020.svg.png', height: 150, width: 150 },
   { name: 'Coat of Arms', url: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/Coat_of_arms_of_Rwanda.svg', height: 100, width: 100 },
   { name: 'World Coffee Research', url: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/WCR-primary-logo.png', height: 160, width: 160 },
@@ -26,7 +26,7 @@ const logos = [
   { name: 'CDP', url: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/pngegg.png', height: 150, width: 150 },
   { name: 'National Agricultural Export Development Board', url: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/NAEB-logo.jpg', height: 150, width: 150 },
   { name: 'International Fund for Agriculture Development', url: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/E_g_web.png', height: 150, width: 150 },
-  { name: 'International Chamber of Commerce', url: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/ICC_United_Kingdom_BLACK_RGB_300dpi.png', height: 150, width: 150 },
+  { name: 'International Chamber of Commerce', url: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/ICC_United_Kingdom_BLACK_RGB_300dpi.png', height: 130, width: 130 },
   { name: 'A&O Shearman', url: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/AOShearman_Wordmark_Progress-Green_RGB.png', height: 150, width: 150 },
   { name: 'B Lab Europe', url: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/B-Lab-Europe-Country-Partners-Logos-1.webp', height: 120, width: 120 },
   { name: 'GSMA', url: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/image0011.png', height: 150, width: 150 },
@@ -107,8 +107,8 @@ const WhoYoullMeet: React.FC = () => {
   return (
     <div className="py-20 overflow-hidden ">
       <div className="max-w-7xl my-6 mx-auto">
-        <div className="max-w-2xl mx-auto text-center">
-          <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">Who You&apos;ll meet</p>
+        <div className='flex w-full text-center justify-center'>
+          <h2 className="text-4xl font-bold tracking-tight">WHO YOU&apos;LL MEET</h2>
         </div>
         <Slider {...settings} className="h-max mt-12" >
           {logos.map((logo, index) => (
