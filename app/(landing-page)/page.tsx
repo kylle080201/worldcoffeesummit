@@ -14,6 +14,7 @@ import Testimonials from "../../components/LoopedTestimonials";
 import Speakers2024 from "../../components/2024Speakers";
 import KeyThemes from "../../components/KeyThemes";
 import Attendees2023 from "../../components/2023Attendees";
+import WhoYoullMeet from "../../components/WhoYoullMeet";
 
 export default function HomePage() {
     return (
@@ -30,6 +31,7 @@ export default function HomePage() {
                 <WhyAttend />
                 {/* <Venue /> */}
                 <Partners />
+                <WhoYoullMeet />
             </div>
         </>
     )

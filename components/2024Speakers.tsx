@@ -630,7 +630,7 @@ function Speakers2024() {
       <div className="px-12 py-20 sm:px-20" id="speakers">
         <div className="mx-auto sm:content-center">
           <div className="max-w-2xl mx-auto text-center">
-              <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">2024 SPEAKERS</p>
+            <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">2024 SPEAKERS</p>
           </div>
           <ul
             role="list"
