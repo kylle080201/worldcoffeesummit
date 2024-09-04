@@ -5,7 +5,6 @@ import Image from 'next/image'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
 const logos = [
   { name: 'European Commission', url: 'https://worldcoffeealliance.com/wp-content/uploads/2020/12/LOGO-CE_Vertical_EN_quadri_HR.png', height: 120, width: 120 },
   { name: 'Sustainable Markets Initiative', url: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/logo-sustainable-markets-seal-version.jpg', height: 120, width: 120 },
@@ -106,7 +105,7 @@ const WhoYoullMeet: React.FC = () => {
   };
 
   return (
-    <div className="py-20 overflow-hidden bg-gray-100 ">
+    <div className="py-20 overflow-hidden ">
       <div className="max-w-5xl my-6 mx-auto">
         <div className="max-w-2xl mx-auto text-center">
           <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">Who You&apos;ll meet</p>
