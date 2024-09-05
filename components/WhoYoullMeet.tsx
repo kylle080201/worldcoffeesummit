@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 const logos = [
   { name: 'European Commission', url: 'https://worldcoffeealliance.com/wp-content/uploads/2020/12/LOGO-CE_Vertical_EN_quadri_HR.png', height: 150, width: 150 },
   { name: 'Sustainable Markets Initiative', url: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/logo-sustainable-markets-seal-version.jpg', height: 150, width: 150 },
-  { name: 'Starbucks', url: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/STARBUCKS-LOGO.jpg', height: 120, width: 120 },
+  { name: 'Starbucks', url: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/SbuxSiren_TM_4C.png', height: 80, width: 80 },
   { name: 'JDE Peet’s', url: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/Logo.png', height: 90, width: 90 },
   { name: 'Tchibo GmbH', url: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/Tchibo_Logo-hor_Gold-dark_sRGB-scaled.jpg', height: 150, width: 150 },
   { name: 'Volcafe', url: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/logo@2x-1.png', height: 160, width: 160 },
@@ -97,7 +97,7 @@ const WhoYoullMeet: React.FC = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
@@ -116,7 +116,7 @@ const WhoYoullMeet: React.FC = () => {
               key={index}
               className="p-2"
             >
-              <div className="p-2 bg-white flex items-center w-48 h-36 justify-center shadow rounded-md">
+              <div className="p-2 mx-2 bg-white flex items-center w-48 h-36 justify-center shadow rounded-md">
                 <Image
                   src={logo.url}
                   alt={logo.name}
