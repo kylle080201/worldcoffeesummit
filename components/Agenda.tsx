@@ -8,6 +8,40 @@ function Agenda() {
                 {/* agenda 1 */}
 
                 <h2 className="mt-8 text-2xl font-bold text-center tracking-tight">DAY ONE- Wednesday 16th OCTOBER 2024</h2>
+
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            KEYNOTE
+                        </div>
+                    </div>
+                    <div className='mt-4 px-2 max-w-3xl'>
+                        <h3 className=''><span className='font-bold'>Jennifer Jordan-Saifi</span>, <span className='italic'>CEO,</span> <span className='font-bold'>Sustainable Markets Initiative (SMI)</span></h3>
+                    </div>
+                </div>
+
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            FIRESIDE CHAT
+                        </div>
+                    </div>
+                    <div className='mt-2'>
+                        <h3>Chair:</h3>
+                        <h3 className=''><span className='font-bold'>Joy Macknight,</span> <span className=' italic'>Journalist, Former Editor</span>, <span className='font-bold'>Financial Times - The Banker</span></h3>
+                    </div>
+                    <div className='mt-2'>
+                        <h3>Speaker:</h3>
+                        <h3 className=''><span className='font-bold'>Lord Deben hosted by Joy MacKnight,</span> <span className='font-bold'>Journalist and former Editor of The Banker</span></h3>
+                    </div>
+                </div>
+
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
@@ -50,6 +84,20 @@ function Agenda() {
                                 <li className=''><span className='font-bold'>Mr Claude BIZIMANA,</span> <span className=' italic'>Chief Executive Officer</span>, <span className='font-bold'>National Agricultural Export Development Board (NAEB), Rwanda</span></li>
                             </div>
                         </ul>
+                    </div>
+                </div>
+
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            GOVERNMENT KEYNOTE
+                        </div>
+                    </div>
+                    <div className='mt-4 px-2 max-w-3xl'>
+                        <h3 className=''><span className='font-bold'>H.E. Johnston Busingye</span>, <span className='font-bold'>High Commissioner for the Republic of Rwanda to the United Kingdom</span></h3>
                     </div>
                 </div>
 
@@ -247,6 +295,20 @@ function Agenda() {
                 </div>
 
                 <h2 className="mt-8 text-2xl font-bold text-center tracking-tight">DAY TWO– Thursday 16th OCTOBER 2024</h2>
+
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            OPENING KEYNOTE
+                        </div>
+                    </div>
+                    <div className='mt-4 px-2 max-w-3xl'>
+                        <h3 className=''><span className='font-bold'>Dr. Ngozi Okonjo-Iweala</span>, <span className='italic'>Director-General,</span> <span className='font-bold'>World Trade Organization (WTO)</span></h3>
+                    </div>
+                </div>
 
                 {/* agenda 9 */}
                 <div className='mt-8'>
