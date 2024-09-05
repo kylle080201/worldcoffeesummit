@@ -2,7 +2,7 @@ import React from 'react'
 
 function Agenda() {
     return (
-        <div id="agenda" className='w-full bg-gray-100'>
+        <div id="agenda" className='w-full'>
             <div className='py-20 max-w-5xl mx-auto'>
                 <h2 className="text-4xl font-bold text-center tracking-tight">AGENDA</h2>
                 {/* agenda 1 */}
@@ -46,7 +46,7 @@ function Agenda() {
                         <ul className='mt-2 list-disc'>
                             <h3>Speakers:</h3>
                             <div className='pl-6'>
-                                <li className=''><span className='font-bold'>Laurent Sagarra,</span> <span className=' italic'>Vice President Sustainability</span>, <span className='font-bold'>Koltiva</span></li>
+                                <li className=''><span className='font-bold'>Laurent Sagarra,</span> <span className=' italic'>Vice President Sustainability</span>, <span className='font-bold'>JDE Peet&apos;s</span></li>
                                 <li className=''><span className='font-bold'>Mr Claude BIZIMANA,</span> <span className=' italic'>Chief Executive Officer</span>, <span className='font-bold'>National Agricultural Export Development Board (NAEB), Rwanda</span></li>
                             </div>
                         </ul>
@@ -79,12 +79,6 @@ function Agenda() {
                         </div>
                     </div>
                     <div className='mt-4 px-2 max-w-3xl'>
-                        <div className='mt-2'>
-                            <h3>This panel will explore the absence or lack thereof of effective social infrastructure that leads to extreme poverty, especially in many coffee-producing countries. In the highly volatile coffee marketplace and lack of access to finance, smallholder farmers and their families are incredibly vulnerable.</h3>
-                        </div>
-                        <div className='mt-2'>
-                            <h3>This instability of coffee prices has a direct impact on access to education, housing, food, healthcare, and other necessities. Food systems worldwide are now under threat. In addition, the recent inflationary prices of tools, fertilizers and other expenses including transporting their produce to millers have become unaffordable. On top of these basic needs, the industry also faces several sustainability challenges, including deforestation, water scarcity, biodiversity and climate change.</h3>
-                        </div>
                         <ul className='mt-2 list-disc'>
                             <div className='pl-6'>
                                 <li>How do you build a truly sustainable supply chain from crop to cup?</li>
@@ -119,12 +113,6 @@ function Agenda() {
                         </div>
                     </div>
                     <div className='mt-4 px-2 max-w-3xl'>
-                        <div className='mt-2'>
-                            <h3>Climate change poses an existential threat to the global coffee industry. It is making a profound impact on agricultural production including coffee across the globe. Increasing average temperatures, more frequent droughts and heat waves, and inclement weather patterns threaten countries in coffee-producing areas over the next 50 years.</h3>
-                        </div>
-                        <div className='mt-2'>
-                            <h3>This panel will explore the value and ramifications of Scope 3 in the climate change disclosure and certification platforms, navigating the various challenges in their execution, and whether it will have a serious impact on corporate climate action strategies. Speakers will share their insights on ESG, human rights, child labour and the social and financial impact of CSRD and CSDDD in bringing systemic change.</h3>
-                        </div>
                         <ul className='mt-2 list-disc'>
                             <div className='pl-6'>
                                 <li>What are some of the risks and opportunities arising from social and environmental issues that EU law requires for all large companies to disclose?</li>
@@ -178,12 +166,6 @@ function Agenda() {
                         </div>
                     </div>
                     <div className='mt-4 px-2 max-w-3xl'>
-                        <div className='mt-2'>
-                            <h3>Regenerative Coffee Agriculture is a new coffee farming approach led by restorative principles and practices that are centred around optimizing soil and plant health; reducing greenhouse gas (GHG) emissions; improving waste and water usage.</h3>
-                        </div>
-                        <div className='mt-2'>
-                            <h3>This panel will explore how this approach creates opportunities to reduce greenhouse gas emissions and enhance carbon storage on farms, while increasing farm income through diversification. Regenerative agriculture offers the further advantage of flexibility, based on principles that apply to both small- and large-scale production across many diverse conditions.</h3>
-                        </div>
                         <ul className='mt-2 list-disc'>
                             <div className='pl-6'>
                                 <li>How do you define Regenerative Agriculture in the general sense and in the context of coffee production?</li>
@@ -234,12 +216,6 @@ function Agenda() {
                         </div>
                     </div>
                     <div className='mt-4 px-2 max-w-3xl'>
-                        <div className='mt-2'>
-                            <h3>This panel will explore the various innovations in agricultural science and allied areas being developed to help smallholder farmers face the challenges of climate change, biodiversity loss, and sustainable finance.</h3>
-                        </div>
-                        <div className='mt-2'>
-                            <h3>The absence or lack of effective social infrastructure, which leads to extreme poverty, especially in many coffee-producing countries, provides a compelling reason why there is a need to find solutions through innovation. In the highly volatile coffee marketplace and lack of access to finance, smallholder farmers and their families are incredibly vulnerable. This instability of coffee prices has a direct impact on access to education, housing, food, healthcare, and other necessities.</h3>
-                        </div>
                         <ul className='mt-2 list-disc'>
                             <div className='pl-6'>
                                 <li>What are the most promising and impactful innovations and technologies emerging from research laboratories, where potential investors can engage early for commercialization?</li>
@@ -297,12 +273,6 @@ function Agenda() {
                         </div>
                     </div>
                     <div className='mt-4 px-2 max-w-3xl'>
-                        <div className='mt-2'>
-                            <h3>In the simplest sense, traceability means being able to track and trace food products throughout the entire supply chain. For coffee, this entails finding out the country of origin, how it was grown and processed, how much growers were compensated, how the beans were roasted and how long ago, and how it reaches the consumer, either online or in coffee shops.</h3>
-                        </div>
-                        <div className='mt-2'>
-                            <h3>However, the conversion of coffee production to sun-grown coffee is a major source of deforestation since forests are cleared to make room for coffee plants. Some estimates suggest that every cup of coffee consumed destroys roughly one square inch of rainforest, making coffee a leading cause of rainforest destruction. This inevitably leads to biodiversity loss and depleted soil health, which makes coffee and farmers extremely vulnerable to the effects of climate change.</h3>
-                        </div>
                         <ul className='mt-2 list-disc'>
                             <div className='pl-6'>
                                 <li>What are some major breakthroughs in coffee science and plant breeding for crop protection?</li>
@@ -367,12 +337,6 @@ function Agenda() {
                         </div>
                     </div>
                     <div className='mt-4 px-2 max-w-3xl'>
-                        <div className='mt-2'>
-                            <h3>The coffee industry has seen a surge in global consumption and growing demand for speciality coffee, putting increasing pressure on coffee farmers to scale up production and innovate at the farm level. However, one significant obstacle stands in their way – the lack of access to finance.</h3>
-                        </div>
-                        <div className='mt-2'>
-                            <h3>This panel will explore the relevance of impact finance in coffee production as capital required to fund coffee infrastructure has become scarce in recent years. For most coffee producers around the world, securing sufficient funds to meet the rising expectations has become increasingly challenging. This panel will discuss the reasons behind this financial struggle and its impact on coffee farmers and the industry as a whole. It will also delve into the intricacies of Climate capital, Nature-Based solutions, and Fintech as future enablers of innovations toward a net positive future.</h3>
-                        </div>
                         <ul className='mt-2 list-disc'>
                             <div className='pl-6'>
                                 <li>What is the role or impact of green finance in removing barriers that exclude people, especially smallholder farmers, as they face high costs of living and production?</li>
@@ -476,15 +440,6 @@ function Agenda() {
                         </div>
                     </div>
                     <div className='mt-4 px-2 max-w-3xl'>
-                        <div className='mt-2'>
-                            <h3>Trade digitalization plays a pivotal role in enhancing the efficacy of border controls and trade administration procedures, thereby reducing trade costs and fortifying the resilience of global supply chains. It has emerged as a transformative force, leveraging information and communication technologies (ICT) and digital solutions to revolutionize traditional trade processes.</h3>
-                        </div>
-                        <div className='mt-2'>
-                            <h3>During the pandemic, global food security was impacted by bottlenecks in shipments of containers around the world due to inefficiency, lack of robust communications, and failure to provide a common digital platform.</h3>
-                        </div>
-                        <div className='mt-2'>
-                            <h3>This panel will delve into why a growing number of businesses and governments are now promoting “paperless trade” and fostering legal recognition and exchange of trade-related data and documents in electronic form, not only to promote food security but also to achieve cost savings. An electronic bill of lading could save $6.5 billion in direct costs and enable $40 billion in global trade.</h3>
-                        </div>
                         <ul className='mt-2 list-disc'>
                             <div className='pl-6'>
                                 <li>How do you explore the complex interlinkages between climate change and international trade?</li>
@@ -500,7 +455,7 @@ function Agenda() {
                         </ul>
                         <div className='mt-2'>
                             <h3>Chair:</h3>
-                            <h3 className=''><span className='font-bold'>Dr. Helge Elisabeth Zeitler</span>, <span className='italic'>Director for UN, EU, BMZ</span></h3>
+                            <h3 className=''><span className='font-bold'>Dr. Helge Elisabeth Zeitler</span>, <span className='italic'>Director for UN, EU</span>, <span className='font-bold'>German Federal Ministry for Economic Cooperation and Development (BMZ)</span></h3>
                         </div>
                         <div className='mt-2'>
                             <h3>Speakers:</h3>
