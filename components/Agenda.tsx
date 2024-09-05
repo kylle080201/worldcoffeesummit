@@ -4,7 +4,7 @@ function Agenda() {
     return (
         <div id="agenda" className='w-full'>
             <div className='py-20 max-w-5xl mx-auto'>
-                <h2 className="text-4xl font-bold text-center tracking-tight">AGENDA <span className='text-sm h-full align-top'>*</span></h2>
+                <h2 className="text-4xl font-bold text-center tracking-tight">PROVISIONAL AGENDA</h2>
                 {/* agenda 1 */}
 
                 <h2 className="mt-8 text-2xl font-bold text-center tracking-tight">DAY ONE- Wednesday 16th OCTOBER 2024</h2>
@@ -481,9 +481,6 @@ function Agenda() {
                             CLOSING REMARKS
                         </div>
                     </div>
-                </div>
-                <div className='text-xs mt-4'>
-                    *Subject to change
                 </div>
             </div>
         </div>
