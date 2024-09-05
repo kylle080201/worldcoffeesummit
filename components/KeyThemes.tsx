@@ -1,3 +1,5 @@
+"use client"
+import { useRouter } from 'next/navigation';
 import React from 'react'
 import KeyThemesCountDown from './KeyThemesCountDown';
 import WhoYoullMeet from './WhoYoullMeet';
@@ -52,8 +54,9 @@ const keyThemes = [
 function KeyThemes() {
   const themesColumn1 = keyThemes.slice(0, 5);
   const themesColumn2 = keyThemes.slice(5);
+  const router = useRouter()
   return (
-    <div className='w-full bg-gray-100 py-24 px-0 md:px-12'>
+    <div className='w-full px-0 md:px-12 bg-gray-100 py-20'>
       <div className='mx-auto sm:max-w-7xl'>
         <div className='flex flex-col items-center md:mt-0'>
           <span className='text-red-500 text-4xl font-bold'>EUDR COUNTDOWN</span>
@@ -84,6 +87,15 @@ function KeyThemes() {
               ))}
             </ul>
           </div>
+        </div>
+        <div className='mt-8 w-full flex'>
+          <button
+            type="button"
+            className="mx-auto inline-flex justify-center max-w-5xl px-6 py-4 text-2xl font-semibold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-700"
+            onClick={() => router.push("/agenda")}
+          >
+            See Full Agenda
+          </button>
         </div>
       </div>
     </div>
