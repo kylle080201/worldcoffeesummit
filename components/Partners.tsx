@@ -167,7 +167,7 @@ export default function Partners() {
                             <span className="absolute px-3 text-lg sm:text-2xl tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Cross-industry Partners</span>
                         </div>
                     </div>
-                    <div className='flex items-center justify-center gap-4 mx-auto sm:flex-row sm:max-w-7xl mt-6'>
+                    <div className='flex flex-col items-center justify-center gap-4 mx-auto sm:flex-row sm:max-w-7xl mt-6'>
                         {crossIndustryPartners.map((sponsor) => (
                             sponsor.href ?
                                 <Link key={sponsor.href} href={sponsor.href} target='_blank' rel='noreferer'>
@@ -188,7 +188,7 @@ export default function Partners() {
                         <hr className="w-80 h-px bg-gray-400 border-0" />
                         <span className="absolute px-3 text-lg sm:text-2xl tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Media Partners</span>
                     </div>
-                    <div className='flex items-center justify-center gap-4 mx-auto sm:flex-row sm:max-w-7xl'>
+                    <div className='flex flex-col items-center justify-center gap-4 mx-auto sm:flex-row sm:max-w-7xl'>
                         {mediaPartners.map((partner) => (
                             partner.href ?
                             <Link key={partner.href} href={partner.href} target='_blank' rel='noreferer'>

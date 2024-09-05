@@ -301,18 +301,20 @@ function Speakers2024() {
       `
     },
     {
-      name: 'Roberto Alonso Vega Alfaro',
-      role: 'VP of Global Coffee Agronomy, R&D and Sustainability',
+      name: 'Ritesh Sharan',
+      role: 'Director, Global Farmer Support Centers & Hacienda Alsacia',
       company: 'Starbucks',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/World-Coffee-Innovation-Sumit-London.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/07/STARBUCKS-LOGO.jpg",
-      iconWidth: 120,
-      iconHeight: 120,
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/ritesh_sharan_square_cropped.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/09/SbuxSiren_TM_4C.png",
+      iconWidth: 65,
+      iconHeight: 65,
       bio: `
-      Roberto Vega is a seasoned sustainability practitioner with over 30 years of experience in the financial and agricultural sectors, working across the globe. Having lived in Costa Rica, France, Germany, and Switzerland, Roberto brings a wealth of international perspectives to his work. With formal education in Business (MBA), Environmental Governance and Policy Making (Executive Master), and Sustainability, he possesses a robust skill set encompassing financial analysis, project implementation, and environmental and social policy expertise.
-      Fluent in Spanish, French, and English, with advanced knowledge of German, Roberto has effectively navigated diverse cultural and linguistic landscapes in his professional journey. His career spans various projects in developing markets, particularly in Latin America, APAC, and Africa, where he has demonstrated a keen understanding of local contexts and challenges.
-      Roberto's extensive experience in stakeholder management has been pivotal in representing companies across multiple platforms and initiatives. He has collaborated with a wide range of organizations, including private and public sectors, as well as civil society organizations (CSOs), fostering partnerships for sustainable development.
-      Roberto is currently serving as the VP of Sustainability, Agronomy, and R&D at Starbucks.
+      Ritesh Sharan has worked across the globe in the commodities and coffee industries. From trading cocoa and cashew in Nigeria to managing Arabica coffee operations in Indonesia, he’s gained hands-on experience in sourcing and building smallholder coffee clusters to improve quality and support local farmers. As Specialty Coffee Operations Director in New York, he was responsible for sourcing Asian Arabica coffee, spearheading the creation of smallholder coffee clusters across Indonesia and supporting similar efforts in Papua New Guinea and Timor. These initiatives have consistently focused on improving farm profitability, producing high-quality Arabica coffee, and fostering community prosperity.
+ 
+      In 2021, Ritesh joined Starbucks’ trading team, where he has managed strategic supplier relationships and coffee sourcing across six origins in Central and South America. Currently, as director of the Global Farmer Support Centers & Hacienda Alsacia, he oversees 10 centers worldwide as well as Starbuck’s only coffee farm – Hacienda Alsacia in Costa Rica, ensuring farmers receive the support they need to improve their practices, enhance quality, and build financial resiliency.
+      
+      Originally from India, he speaks English and Hindi, with some Spanish and Bahasa Indonesia. He holds an MBA from IE Business School in Madrid, a Master’s in HR from XLRI, and a bachelor’s in engineering from MSRIT, Bangalore.
+      In his free time, Ritesh enjoys singing, Indian cooking, new tech, and reading fantasy fiction. He and his wife Aditi, a sustainability professional, love to travel. His go-to coffee? A nitro cold brew with sweet cream or a short cappuccino with an extra shot.
       `
     },
     {
@@ -630,7 +632,7 @@ function Speakers2024() {
       <div className="px-12 py-20 sm:px-20" id="speakers">
         <div className="mx-auto sm:content-center">
           <div className="max-w-2xl mx-auto text-center">
-              <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">2024 SPEAKERS</p>
+            <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">2024 SPEAKERS</p>
           </div>
           <ul
             role="list"

@@ -37,6 +37,7 @@
     "react-responsive-carousel": "^3.2.23",
     "react-slick": "^0.29.0",
     "react-social-icons": "^6.16.0",
+    "slick-carousel": "^1.8.1",
     "stripe": "^12.7.0",
     "typescript": "4.9.3"
   },
