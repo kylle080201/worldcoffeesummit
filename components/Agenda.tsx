@@ -38,7 +38,7 @@ function Agenda() {
                     </div>
                     <div className='mt-2'>
                         <h3>Speaker:</h3>
-                        <h3 className=''><span className='font-bold'>Lord Deben hosted by Joy MacKnight,</span> <span className='font-bold'>Journalist and former Editor of The Banker</span></h3>
+                        <h3 className=''><span className='font-bold'>The Rt. Hon John Gummer, Lord Deben,</span> <span className=' italic'>Former Chairman</span>, <span className='font-bold'>UK Climate Change Committee (The CCC)</span></h3>
                     </div>
                 </div>
 
