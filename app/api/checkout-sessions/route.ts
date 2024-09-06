@@ -4,7 +4,7 @@ import Stripe from "stripe";
 import { encryptData } from "../../../utils/encryptor";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: "2022-11-15",
+  apiVersion: "2024-06-20" as any,
 });
 
 export async function POST(request: NextRequest, response: NextResponse) {
