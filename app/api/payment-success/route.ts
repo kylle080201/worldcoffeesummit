@@ -5,10 +5,6 @@ import Tickets from "../../../models/tickets";
 import connectMongo from "../../../utils/mongodb";
 import { mailer } from "../../../utils/nodemailer";
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: "2022-11-15",
-});
-
 export async function POST(request: NextRequest, res: NextResponse) {
   const req = await request.json();
   const checkoutSessionId = req.checkoutSessionId;
