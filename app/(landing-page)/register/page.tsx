@@ -12,9 +12,9 @@ export default function Tickets() {
     ]
     return (
         <>
-            {/* <RegistrationSteps steps={steps} />
-            <TicketPricing /> */}
-            <TicketPricingMaintenance />
+            <RegistrationSteps steps={steps} />
+            <TicketPricing />
+            {/* <TicketPricingMaintenance /> */}
         </>
     )
 }
