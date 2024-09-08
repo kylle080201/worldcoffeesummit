@@ -1,5 +1,6 @@
 import RegistrationSteps from "../../../components/RegistrationSteps"
 import TicketPricing from "../../../components/Ticket-Pricing"
+import TicketPricingMaintenance from "../../../components/TicketPricingMaintenance"
 
 
 export default function Tickets() {
@@ -11,8 +12,9 @@ export default function Tickets() {
     ]
     return (
         <>
-            <RegistrationSteps steps={steps} />
-            <TicketPricing />
+            {/* <RegistrationSteps steps={steps} />
+            <TicketPricing /> */}
+            <TicketPricingMaintenance />
         </>
     )
 }
