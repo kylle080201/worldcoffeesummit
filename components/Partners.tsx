@@ -51,22 +51,27 @@ export default function Partners() {
         {
             href: '',
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/SMI_logo_Green-text.png',
-            className: 'w-[14rem] mx-auto py-8'
+            className: 'w-[16rem] mx-auto py-8'
         },
         {
             href: '',
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/ICC_United_Kingdom_BLACK_RGB_300dpi.png',
-            className: 'w-[12rem] mx-auto py-8'
+            className: 'w-[8rem] mx-auto py-8'
         },
         {
             href: '',
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2020/08/FBM_INT_VERT_RGB_POS.png',
-            className: 'w-[7rem] mx-auto py-8'
+            className: 'w-[5rem] mx-auto py-8'
+        },
+        {
+            href: '',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/image0011.png',
+            className: 'w-[11rem] mx-auto py-8'
         },
         {
             href: '',
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/B-Lab-Europe-Country-Partners-Logos-1.webp',
-            className: 'w-[12rem] mx-auto'
+            className: 'w-[9rem] mx-auto'
         },
     ]
 
