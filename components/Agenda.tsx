@@ -15,11 +15,11 @@ function Agenda() {
 
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                            KEYNOTE
+                            INSPIRATIONAL KEYNOTE
                         </div>
                     </div>
-                    <div className='mt-4 px-2 max-w-3xl'>
-                        <h3 className=''><span className='font-bold'>Jennifer Jordan-Saifi</span>, <span className='italic'>CEO,</span> <span className='font-bold'>Sustainable Markets Initiative (SMI)</span></h3>
+                    <div className='mt-4 px-2 max-w-5xl'>
+                        <h3 className=''><span className='font-bold'>Jennifer Jordan-Saifi</span>, <span className='italic'>CEO,</span> <span className='font-bold'>Sustainable Markets Initiative (SMI)</span> on behalf of <span className='font-bold'>His Majesty King Charles III</span></h3>
                     </div>
                 </div>
 

@@ -50,6 +50,11 @@ export default function Partners() {
     const crossIndustryPartners = [
         {
             href: '',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/SMI_logo_Green-text.png',
+            className: 'w-[14rem] mx-auto py-8'
+        },
+        {
+            href: '',
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/ICC_United_Kingdom_BLACK_RGB_300dpi.png',
             className: 'w-[12rem] mx-auto py-8'
         },
@@ -81,17 +86,17 @@ export default function Partners() {
                     </div>
                     <div className='grid items-center justify-center grid-cols-1 gap-4 mx-auto sm:gap-12 sm:flex-row sm:max-w-7xl mt-6'>
                         {goldSponsors.map((sponsor) => (
-                            sponsor.href ? 
-                            <Link key={sponsor.href} href={sponsor.href} target='_blank' rel='noreferer'>
-                                <div className='items-center flex-shrink-0 h-full p-4'>
+                            sponsor.href ?
+                                <Link key={sponsor.href} href={sponsor.href} target='_blank' rel='noreferer'>
+                                    <div className='items-center flex-shrink-0 h-full p-4'>
+                                        <img className={sponsor.className} src={sponsor.imgSrc}>
+                                        </img>
+                                    </div>
+                                </Link> :
+                                <div key={sponsor.href} className='items-center flex-shrink-0 h-full p-4'>
                                     <img className={sponsor.className} src={sponsor.imgSrc}>
                                     </img>
                                 </div>
-                            </Link> : 
-                            <div key={sponsor.href} className='items-center flex-shrink-0 h-full p-4'>
-                                <img className={sponsor.className} src={sponsor.imgSrc}>
-                                </img>
-                            </div>
                         ))}
                     </div>
 
@@ -191,16 +196,16 @@ export default function Partners() {
                     <div className='flex flex-col items-center justify-center gap-4 mx-auto sm:flex-row sm:max-w-7xl'>
                         {mediaPartners.map((partner) => (
                             partner.href ?
-                            <Link key={partner.href} href={partner.href} target='_blank' rel='noreferer'>
-                                <div className='items-center flex-shrink-0 h-full p-4'>
+                                <Link key={partner.href} href={partner.href} target='_blank' rel='noreferer'>
+                                    <div className='items-center flex-shrink-0 h-full p-4'>
+                                        <img className={partner.className} src={partner.imgSrc}>
+                                        </img>
+                                    </div>
+                                </Link> :
+                                <div key={partner.href} className='items-center flex-shrink-0 h-full p-4'>
                                     <img className={partner.className} src={partner.imgSrc}>
                                     </img>
                                 </div>
-                            </Link> :
-                            <div key={partner.href} className='items-center flex-shrink-0 h-full p-4'>
-                                <img className={partner.className} src={partner.imgSrc}>
-                                </img>
-                            </div>
                         ))}
                     </div>
                 </div>

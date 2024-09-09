@@ -82,10 +82,17 @@ function Speakers2024() {
       role: 'CEO',
       company: 'Sustainable Markets Initiative (SMI)',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/22528718_838080056365805_8175573996594075365_o-1.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/logo-sustainable-markets-seal-version.jpg",
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/09/SMI_logo_Green-text.png",
       iconWidth: 80,
       iconHeight: 80,
       bio: `
+      Jennifer Jordan-Saifi, M.V.O., MBA is Chief Executive Officer of the Sustainable Markets Initiative, a global organisation that mobilises the private sector to put sustainability at the heart of global value creation.
+
+      His Majesty King Charles III, a champion of sustainability for over 50 years, launched the Sustainable Markets Initiative (when he was Prince of Wales) in 2020. 
+
+      From 2018 to 2023, Ms. Jordan-Saifi served as Assistant Private Secretary to The King covering foreign affairs, the Commonwealth, and supporting His Majesty’s sustainability leadership on the world stage. In this role, she established the Sustainable Markets Initiative, developed its guiding mandates, the Terra Carta and Astra Carta, and its storytelling platform RETV.  
+
+      Working for the Government of Canada (2008-2018), Ms. Jordan-Saifi led on a wide range of foreign policy priorities and initiatives, including United Nations Strategic Policy and Reform and as negotiator for the Sustainable Development Goals. From 2000-2008 she served with the ICRC, the UN, international/local NGOs and as a journalist in the Middle East building local capacity to enable social enterprise, market development, and community-based design.
       `
     },
     {
