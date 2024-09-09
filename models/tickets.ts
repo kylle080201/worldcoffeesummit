@@ -5,7 +5,7 @@ mongoose.Promise = global.Promise;
 const tickets = new Schema({
   paymentIntentId: {
     type: String,
-    required: true,
+    required: false,
     unique: true,
   },
   checkoutSessionId: {
