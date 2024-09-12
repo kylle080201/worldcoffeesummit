@@ -294,7 +294,7 @@ function Agenda() {
                     </div>
                 </div>
 
-                <h2 className="mt-8 text-2xl font-bold text-center tracking-tight">DAY TWO– Thursday 16th OCTOBER 2024</h2>
+                <h2 className="mt-8 text-2xl font-bold text-center tracking-tight">DAY TWO– Thursday 17th OCTOBER 2024</h2>
 
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
