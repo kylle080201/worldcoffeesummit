@@ -70,6 +70,11 @@ export default function Partners() {
         },
         {
             href: '',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/soil-association.jpg',
+            className: 'w-[9rem] mx-auto py-8'
+        },
+        {
+            href: '',
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/B-Lab-Europe-Country-Partners-Logos-1.webp',
             className: 'w-[9rem] mx-auto'
         },
@@ -177,7 +182,7 @@ export default function Partners() {
                             <span className="absolute px-3 text-lg sm:text-2xl tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Cross-industry Partners</span>
                         </div>
                     </div>
-                    <div className='flex flex-col items-center justify-center gap-4 mx-auto sm:flex-row sm:max-w-7xl mt-6'>
+                    <div className='flex flex-wrap flex-col items-center justify-center gap-4 mx-auto sm:flex-row sm:max-w-7xl mt-6'>
                         {crossIndustryPartners.map((sponsor) => (
                             sponsor.href ?
                                 <Link key={sponsor.href} href={sponsor.href} target='_blank' rel='noreferer'>
