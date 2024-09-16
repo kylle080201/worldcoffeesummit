@@ -129,12 +129,11 @@ function Agenda() {
                     <div className='mt-4 px-2 max-w-3xl'>
                         <ul className='mt-2 list-disc'>
                             <div className='pl-6'>
-                                <li>How do you build a truly sustainable supply chain from crop to cup?</li>
-                                <li>How do you meet the complex challenges, community dynamics and socio-economic conditions in many coffee and cocoa-growing countries?</li>
-                                <li>How do you stimulate economic development, improve the lives of coffee producers and provide environmental benefits?</li>
-                                <li>How do you prioritize areas where action has the biggest overall impact, considering actions from companies’ operations and across their value chain?</li>
-                                <li>How do you reduce the environmental impact of coffee/cocoa production to achieve Net Zero target?</li>
-                                <li>How do you reassure consumers that ethical sourcing is key to sustainability future?</li>
+                                <li>What do we mean by sustainability in the coffee sector – is this primarily a environmental issue or a social one? Are they equally as important?</li>
+                                <li>What are the biggest priority issues for building a sustainable coffee supply chain?</li>
+                                <li>What are the main environmental risk areas within the coffee supply chain – and how are these being addressed? What are trickiest challenges?</li>
+                                <li>Can producing coffee sustainably also produce social benefits?</li>
+                                <li>How can coffee producers and suppliers best communicate with consumers about sustainability issues? What are the risks of getting it wrong? </li>
                             </div>
                         </ul>
                         <div className='mt-2'>
@@ -146,6 +145,7 @@ function Agenda() {
                             <div className='pl-6'>
                                 <li className=''><span className='font-bold'>Tim Scharrer</span>, <span className=' italic'>COO and Regional Director Europe and North America</span>, <span className='font-bold'>Volcafe</span></li>
                                 <li className=''><span className='font-bold'>T.J. Ryan</span>, <span className=' italic'>Chief of Party of Philippine Coffee Advancement and Farm Enterprise Project</span>, <span className='font-bold'>ACDI/VOCA</span></li>
+                                <li className=''><span className='font-bold'>Chloé Rotureau</span>, <span className=' italic'>Partner & Ethics & Sustainability Specialist- Raw Material Sourcing</span>, <span className='font-bold'>John Lewis Partnership (John Lewis and Waitrose)</span></li>
                             </div>
                         </ul>
                     </div>
@@ -449,11 +449,15 @@ function Agenda() {
                     </div>
                     <div className='mt-4 px-2 max-w-3xl'>
                         <div className='mt-2'>
-                            <h3>Carbon markets are carbon pricing mechanisms enabling governments and non-state actors to trade greenhouse gas emission credits. The aims are to achieve climate targets and implement climate actions cost-effectively. Integrating biodiversity targets into corporate sustainability strategy is crucial. Ensuring that smallholder farmers can effectively participate in carbon markets can help improve production, adapt to climate change, and increase income. Carbon markets have shown great potential to finance climate action on coffee farms and achieve carbon neutrality if small-scale farmers are able to participate.</h3>
+                            <h3>Decarbonising commercial agriculture, from the production level to the business and finance partners along the value chains, is a key frontline for climate action. Carbon finance – as the ensemble of financial instruments to underpin global decarbonisation – is a necessary component of the equation. Policy-based innovations in some pioneer countries in the Global South are already helping decarbonise the production and supply side. Businesses and financiers are also considering carbon finance to further a virtuous cycle, including “below value-chain mitigation” (BVCM). This session will explore the emerging initiatives, the challenges and the options to decarbonise the coffee sector, including the mechanisms needed to ensure environmental integrity and social equity along the process.</h3>
                         </div>
-                        <div className='mt-2'>
-                            <h3>This panel will delve into how carbon and biodiversity markets work as both voluntary and mandatory mechanisms driving innovation on sustainable impact on global emissions, carbon accounting, and auditing for carbon sequestration and climate change mitigation.</h3>
-                        </div>
+                        <ul className='mt-2 list-disc'>
+                            <div className='pl-6'>
+                                <li>How to decarbonise commodity chains</li>
+                                <li>Options and issues with “below value-chain mitigation” (BVCM)</li>
+                                <li>How to incorporate carbon markets in net-zero corporate pathways, with environmental integrity and social equity.</li>
+                            </div>
+                        </ul>
                         <div className='mt-2'>
                             <h3>Chair:</h3>
                             <h3 className=''><span className='font-bold'>Josep Garí</span>, <span className='italic'>Head of Climate, Forests & Land</span>, <span className='font-bold'>United Nations / UNDP</span></h3>

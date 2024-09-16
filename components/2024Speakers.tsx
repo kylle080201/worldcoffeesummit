@@ -553,6 +553,20 @@ function Speakers2024() {
       `
     },
     {
+      name: 'Chloé Rotureau',
+      role: 'Partner & Ethics & Sustainability Specialist- Raw Material Sourcing',
+      company: 'John Lewis Partnership (John Lewis and Waitrose)',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/chloe_rotureau.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/09/John_Lewis_Partnership.jpg",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+      Chloé has over a decade experience in sustainability across different sectors, geographies and products. 
+      At the John Lewis Partnership Chloé leads on the responsible sourcing of coffee and cocoa through improved sourcing practices and transformational projects with supply chain partners.
+      Chloé is passionate about building economically resilient supply chains that deliver social and environmental value for producers through innovation and collaboration.
+      `
+    },
+    {
       name: 'Dominic Robinson',
       role: 'CEO',
       company: 'Soil Association Certification',
