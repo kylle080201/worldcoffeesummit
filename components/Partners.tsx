@@ -8,6 +8,11 @@ export default function Partners() {
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/09/ICE_logo_Rmark_rgb-1.png',
             className: 'w-[10rem] p-2 mx-auto'
         },
+        {
+            href: '',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/osapiens-Logo-horizontal-gradient-black-RM.svg',
+            className: 'w-[16rem] p-2 mx-auto'
+        },
     ]
 
     const silverSponsors = [
@@ -94,7 +99,7 @@ export default function Partners() {
                             <span className="absolute px-3 text-lg sm:text-2xl tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Gold Sponsor</span>
                         </div>
                     </div>
-                    <div className='grid items-center justify-center grid-cols-1 gap-4 mx-auto sm:gap-12 sm:flex-row sm:max-w-7xl mt-6'>
+                    <div className='flex flex-wrap flex-col items-center justify-center gap-4 mx-auto sm:flex-row sm:max-w-7xl mt-6'>
                         {goldSponsors.map((sponsor) => (
                             sponsor.href ?
                                 <Link key={sponsor.href} href={sponsor.href} target='_blank' rel='noreferer'>
