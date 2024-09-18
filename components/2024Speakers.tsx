@@ -16,6 +16,27 @@ interface T_Speaker {
 function Speakers2024() {
   const speakers = [
     {
+      name: 'Dr. Qu Dongyu',
+      role: 'Director-General',
+      company: 'Food and Agriculture Organization of the United Nations (FAO)',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2023/05/DR-DONGYU-QU.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/09/fao-logo-en.svg",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+        Qu Dongyu, who took office on 1 August 2019 as Director-General of the Food and Agriculture Organization of the United Nations, has spent his life working on how to make sure the world is fed.
+        Born in 1963 to a rice-growing family in China’s Hunan Province, Qu studied horticultural science at Hunan Agricultural University and then plant breeding and genetics at the Chinese Academy of Agricultural Sciences. He later added environmental science to his knowledge portfolio while earning a PhD at Wageningen University, in the Netherlands.
+        He then progressed through a range of national and international activities, engaged simultaneously in science and management, all during a time when China’s reform and opening-up process led the country to dramatically reduce poverty and hunger in a country with 20 percent of the global population, 9 percent of the world’s cultivated land, and where over 90 percent of the rural population is engaged in small holder farm operations working less than 3 hectares.
+        His vision is founded on the belief that freedom from hunger is a basic human right, and that in the 21st century we have the capability to eradicate chronic food insecurity. While challenges loom, Qu’s cardinal principle is that “problems can also be the source of progress”.
+        Before coming to FAO, Qu served as China’s Vice Minister of Agriculture and Rural Affairs, where one of his achievements was to promote inclusive and innovative development and make sure information and communication technologies (ICT) were available in rural areas so that more than 400 million farmers could use their smartphones as a new farming tool.
+        That vision has been consistent across a professional career that includes periods in central and local government, in and leading research institutes, and as a human resources leader at the China Three Gorges Project Development Corporation, a $40 billion investment project.
+        Among his national initiatives has been to improve reporting of wholesale prices for agricultural products in China and foster the establishment of more than 100 specialty production areas geared to making local comparative advantages work to the benefit of local farmers. As Vice Governor of Ningxia Hui Autonomous Region, one of China’s landlocked and poorest areas, Qu formulated action plans aimed at poverty reduction, disaster reduction and prevention, women empowerment, agritourism and mutual learning platforms designed to boost trust between ethnic groups.
+        Qu says he represents the combination of an “Asian soul” and a “global mind”. Recognized for scientific innovation as a young scholar, Qu has for 30 years been involved in international exchanges and orchestrated major events including the World Potato Congress, the International Rice Congress and the International Conference on Plant Protection, and participated in multilateral initiatives such as the World Trade Organization and the G20 as well as numerous bilateral initiatives involving Asia, Africa and Latin America. He has also directly helped design flagship South-South Cooperation projects with FAO and the World Bank.
+        His motto is “Simple life, but not simple work”.
+        He is married, and has one daughter.
+      `
+    },
+    {
       name: 'Dr. Ngozi Okonjo-Iweala',
       role: 'Director-General',
       company: 'World Trade Organization (WTO)',
@@ -350,6 +371,16 @@ function Speakers2024() {
       `
     },
     {
+      name: 'Patrick Lanz',
+      role: 'EUDR Product Director',
+      company: 'osapiens',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/patrick-lanz.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/09/osapiens-Logo-horizontal-gradient-black-RM.svg",
+      iconWidth: 80,
+      iconHeight: 80,
+      bio: ``
+    },
+    {
       name: 'Jonathan Sullivan',
       role: 'Vice President Commercial & Sustainability',
       company: 'Agmatix',
@@ -557,7 +588,7 @@ function Speakers2024() {
       role: 'Partner & Ethics & Sustainability Specialist- Raw Material Sourcing',
       company: 'John Lewis Partnership (John Lewis and Waitrose)',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/chloe_rotureau.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/09/John_Lewis_Partnership.jpg",
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/09/JLP_Partnership_logo_Black_CMYK-1-1.png",
       iconWidth: 100,
       iconHeight: 100,
       bio: `
