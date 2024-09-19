@@ -28,19 +28,34 @@ export async function POST(request: NextRequest, response: NextResponse) {
     if (event.type === "checkout.session.completed") {
       // Handle the checkout session completed event
       await connectMongo();
-
-      const newTicket = new Tickets({ paymentIntentId, checkoutSessionId });
-      const ticket = await newTicket.save();
-
-      return NextResponse.json(
-        {
-          ticket,
-          signature,
-        },
-        {
-          status: 200,
-        }
-      );
+      if(paymentIntentId) {
+        const newTicket = new Tickets({ paymentIntentId, checkoutSessionId });
+        const ticket = await newTicket.save();
+  
+        return NextResponse.json(
+          {
+            ticket,
+            signature,
+          },
+          {
+            status: 200,
+          }
+        );
+      } else {
+        const newTicket = new Tickets({ checkoutSessionId });
+        const ticket = await newTicket.save();
+  
+        return NextResponse.json(
+          {
+            ticket,
+            signature,
+          },
+          {
+            status: 200,
+          }
+        );
+      }
+      
     }
   } catch (error: any) {
     const errorMessage =
