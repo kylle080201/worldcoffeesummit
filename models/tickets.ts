@@ -6,7 +6,7 @@ const tickets = new Schema({
   paymentIntentId: {
     type: String,
     required: false,
-    unique: true,
+    unique: false,
   },
   checkoutSessionId: {
     type: String,
