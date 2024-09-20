@@ -419,6 +419,7 @@ function Agenda() {
                             <div className='pl-6'>
                                 <li className=''><span className='font-bold'>Ashley Olson Onyango</span>, <span className='italic'>Head of Financial Inclusion & AgriTech</span>, <span className='font-bold'>GSMA</span></li>
                                 <li className=''><span className='font-bold'>Jari Partanen</span>, <span className='italic'>Board Director for Finland, Norway, Latvia, Lebanon</span>, <span className='font-bold'>EBRD</span></li>
+                                <li className=''><span className='font-bold'>Richard Jones</span>, <span className='italic'>INED and Chair of Risk</span>, <span className='font-bold'>FCMB Bank</span></li>
                             </div>
                         </ul>
                     </div>
@@ -535,6 +536,7 @@ function Agenda() {
                                 <li className=''><span className='font-bold'>Karla Canavan</span>, <span className='italic'>Vice President, Commodity Trade and Finance, Markets</span>, <span className='font-bold'>WWF</span></li>
                                 <li className=''><span className='font-bold'>H. E. Alex Assanvo</span>, <span className='italic'>Executive Secretary</span>, <span className='font-bold'>Cȏte d’Ivoire Ghana Cocoa Initiative (CIGCI)</span></li>
                                 <li className=''><span className='font-bold'>Thomas Bagge</span>, <span className='italic'>Chief Executive Officer</span>, <span className='font-bold'>Digital Container Shipping Association (DCSA)</span></li>
+                                <li className=''><span className='font-bold'>N L N Swaroop</span>, <span className='italic'>Global Product Head – Sustainability, Innovation, FIs, Asset distribution & Capital Management, Global Trade Solutions</span>, <span className='font-bold'>HSBC</span></li>
                             </div>
                         </ul>
                     </div>
@@ -550,6 +552,9 @@ function Agenda() {
                         <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
                             CLOSING REMARKS
                         </div>
+                    </div>
+                    <div className='mt-4 px-2 max-w-5xl'>
+                        <h3 className=''><span className='font-bold'>Dr. Qu Dongyu</span>, <span className='italic'>Director-General</span>, <span className='font-bold'>Food and Agriculture Organization of the United Nations (FAO)</span></h3>
                     </div>
                 </div>
             </div>

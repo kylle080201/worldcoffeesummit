@@ -455,6 +455,21 @@ function Speakers2024() {
       `
     },
     {
+      name: 'N L N Swaroop',
+      role: 'Global Product Head – Sustainability, Innovation, FIs, Asset distribution & Capital Management, Global Trade Solutions',
+      company: 'HSBC',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/nln-swaroop.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/09/hsbc.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: `
+      N L N Swaroop is Global Product Head for Sustainable Trade Finance, Innovation, Financial Institutions, Capital Management and Asset Distribution at HSBC.
+      Swaroop has c.18 years of rich experience across Banking and Insurance in varied roles ranging from risk underwriting, trade financing, business development, general management and coverage banking across India and the UK.
+      Swaroop is an active industry voice in the areas of sustainable trade, trade as an investible asset class and is a strong advocate of innovation in trade and commerce. He is the Vice Chair of International Chamber of Commerce (ICC), UK Sustainability Committee and a member of the ITFA Board leading Institutional Investors in Trade Finance Ecosystem (ITFIE) Committee.
+      Swaroop is a Chemical engineer, holds a master’s degree in management from Faculty of Management Studies (FMS), University of Delhi and has a Post Graduate Certification from University of Cambridge in Sustainable Value Chains. He is an active researcher and thought leader, has several papers to his credit and is a regular speaker at various international forums on sustainability and trade.
+      `
+    },
+    {
       name: 'Evan Paul',
       role: 'Senior Director, Innovation for Nature',
       company: 'Salesforce',
@@ -505,6 +520,16 @@ function Speakers2024() {
       &amp; Loss, editorial director at Treasury Today and editor at gtnews. She also worked as
       staff writer on Banking Technology and IBM Computer Today, as well as a freelancer
       on Computer Weekly.`
+    },
+    {
+      name: 'Richard Jones',
+      role: 'INED and Chair of Risk',
+      company: 'FCMB Bank',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/Richard-Jones.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/09/fcmb_logo.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: `Richard has lived and worked in many Emerging Markets, specialising in trade finance and transactional banking as an International Manager at HSBC. As CEO of Crown Agents Bank built a leading SSA/EM focussed wholesale bank which he sold to a leading SSA focussed PE fund.  He is currently an INED and Chair of Risk at FCMB UK, a leading provider of SSA and EM trade finance. He has also recently co-authored global research on SME green finance for the World Bank Group.`
     },
     {
       name: 'Thomas Bagge',
