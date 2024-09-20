@@ -88,17 +88,6 @@ function Speakers2024() {
       `
     },
     {
-      name: 'H.E. Johnston Busingye',
-      company: 'High Commissioner for the Republic of Rwanda to the United Kingdom',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/HC-Potrait.jpeg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/07/Coat_of_arms_of_Rwanda.svg",
-      iconWidth: 60,
-      iconHeight: 60,
-      bio: `
-      Johnston Busingye, appointed as Rwanda's High Commissioner to the Court of Saint James in August 2021, has a diverse background in law and justice. He began his career as a Legal Officer at Uganda Airlines and later served as the Director of Airports in Rwanda. Busingye played a key role in reopening the international airport post-war and genocide against the Tutsi in 1994. He then practiced as an advocate and served as the National Prosecutor, contributing to justice sector reforms. As Secretary General for the Ministry of Justice, he oversaw various justice-related services. Busingye later served as the President of the High Court in Rwanda and as Principal Judge of the East African Court of Justice. During his tenure as Minister of Justice and Attorney General (2013-2021), he significantly contributed to transforming Rwanda's justice system. Busingye is married to Phoebe Murerwa and is a father of six children.
-      `
-    },
-    {
       name: 'Jennifer Jordan-Saifi',
       role: 'CEO',
       company: 'Sustainable Markets Initiative (SMI)',
@@ -117,6 +106,17 @@ function Speakers2024() {
       `
     },
     {
+      name: 'H.E. Johnston Busingye',
+      company: 'High Commissioner for the Republic of Rwanda to the United Kingdom',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/HC-Potrait.jpeg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/07/Coat_of_arms_of_Rwanda.svg",
+      iconWidth: 60,
+      iconHeight: 60,
+      bio: `
+      Johnston Busingye, appointed as Rwanda's High Commissioner to the Court of Saint James in August 2021, has a diverse background in law and justice. He began his career as a Legal Officer at Uganda Airlines and later served as the Director of Airports in Rwanda. Busingye played a key role in reopening the international airport post-war and genocide against the Tutsi in 1994. He then practiced as an advocate and served as the National Prosecutor, contributing to justice sector reforms. As Secretary General for the Ministry of Justice, he oversaw various justice-related services. Busingye later served as the President of the High Court in Rwanda and as Principal Judge of the East African Court of Justice. During his tenure as Minister of Justice and Attorney General (2013-2021), he significantly contributed to transforming Rwanda's justice system. Busingye is married to Phoebe Murerwa and is a father of six children.
+      `
+    },
+    {
       name: 'Dr. Helge Elisabeth Zeitler',
       role: 'Director for UN, EU',
       company: 'German Federal Ministry for Economic Cooperation and Development (BMZ)',
@@ -126,6 +126,26 @@ function Speakers2024() {
       iconHeight: 100,
       bio: `
       A lawyer by training, Dr. Helge Elisabeth Zeitler has been since April 2024 Director for  UN and EU affairs, also covering G7/20 and trade, at the German Federal Ministry for Economic Cooperation and Development. Prior to this post, she held different positions in the international directorate of the European Commission’s Environment Department, with topics ranging from deforestation-free supply chains and international water policy to environmental cooperation at the UN and under various multilateral agreements. Helge Zeitler also served in the past at the EU Delegation to the UN in New York, at the UN International Criminal Tribunal for Rwanda in Tanzania and at the German Foreign Ministry.
+      `
+    },
+    {
+      name: 'Antti Rautavaara',
+      role: 'Special Envoy for Water',
+      company: 'Ministry for Foreign Affairs of Finland',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/Antti-Rautavaara-omakuva-042023-väri-nelio-.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/09/UM-vesilogo.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+      Mr. Antti Rautavaara is Finland's Special Envoy for Water.
+
+      As Special Envoy he is an advocate of Water at the Political Department of Foreign Ministry uniting Finnish water society to work Together with national and international partners towards Water Secure World by 2030.
+
+      Antti holds strong hands on experience of international water affairs in political, peace mediation, development and humanitarian contexts. He has been seasoned through long-term posts in Sweden, China, Ethiopia and Nepal.
+
+      He is well aware of insights of water affairs at the Horn of Africa through his tenure as First Secretary at the Embassy of Finland in Addis Ababa, Ethiopia. In China he was with UNDP based at Tumen River Commission serving five northeastern Asia countries. He has also acted as UNICEF WASH Chief leading the humanitarian coordination and response for over 4 million people in Nepal during Gorkha Earthquake 2015.
+
+      Mr. Rautavaara holds a MSc from Aalto-university (Helsinki) and a Certificate from the Royal Institute of Technology (Stockholm).
       `
     },
     {
