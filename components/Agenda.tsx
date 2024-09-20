@@ -318,6 +318,21 @@ function Agenda() {
 
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            GOVERNMENT KEYNOTE
+                        </div>
+                    </div>
+                    <div className='mt-4 px-2 max-w-3xl'>
+                        <h3 className=''><span className='font-bold'>Antti Rautavaara</span>, <span className='italic'>Special Envoy for Water</span>, <span className='font-bold'>Ministry for Foreign Affairs of Finland</span ></h3>
+                    </div>
+                </div>
+
+                {/* agenda 9 */}
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                             COFFEE SCIENCE KEYNOTE
                         </div>
                     </div>
