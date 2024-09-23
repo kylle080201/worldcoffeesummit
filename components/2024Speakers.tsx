@@ -195,100 +195,6 @@ function Speakers2024() {
       `
     },
     {
-      name: 'Karla Canavan',
-      role: 'Vice President, Commodity Trade and Finance, Markets',
-      company: 'World Wildlife Fund (WWF)',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/Kc.png',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/09/WWF-Logo.png",
-      iconWidth: 100,
-      iconHeight: 100,
-      bio: `
-      Karla brings 25 years of experience in agribusiness supply chains, trading, investment, wealth management, and finance. Passionate about sustainability, Karla developed her deep understanding of the food and energy value chains through her 20-year career in agribusiness giants Cargill and Bunge. She worked directly with producers and end users to determine logistics, pricing, and marketing, granting her the firsthand field experience that underpins her knowledge of product traceability, social and environmental impact, and profitability factors that are necessary to optimize the food supply chain from farm to table.
-
-      She has been active in sustainability markets since 2007 developing the origination strategy for Bunge and directly managing projects which included REDD+, emission reductions, impact investing, clean energy, structured finance, sustainable agriculture, sustainable farming, renewables, waste management, conservation finance, and supply chain optimization, among others. Karla has traded derivatives, stocks, currencies, agricultural commodities, biofuels, and carbon among others. Karla’s global Markets expertise has led her to be an apt trend identifier.
-
-      She has a deep understanding of the value chains of grains (corn, wheat), oilseeds (soybeans, canola, sunflower), tree crops (oil palm, cocoa, coffee), biofuels and feed markets. She has managed projects and teams globally with emphasis on emerging and development markets across geographies including Latin America, Africa, South East Asia, India, and China.
-      `
-    },
-    {
-      name: 'Sylvia J. Megret',
-      role: 'President and Chief Executive Officer',
-      company: 'ACDI/VOCA',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/SYLVIA-SQUARE.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/ACDIVOCA-logo-gray-tag.png",
-      iconWidth: 100,
-      iconHeight: 100,
-      bio: `
-      Sylvia J. Megret serves as president and CEO of ACDI/VOCA. As a global development executive with 30 years of experience, she promotes the organization’s mission and lives its values in support of inclusive, sustainable development worldwide. Sylvia joined ACDI/VOCA in December 2016, first serving as chief operating officer (COO) and later as president and COO from February 2021 to April of 2022. She also served as interim CEO from December 2017 to June 2018.
-      Sylvia has proven expertise convening diverse teams that bridge functions, cultures, and international borders. She is also skilled at identifying and institutionalizing effective teams and systems for maximum efficiency and success.
-      Sylvia is currently board chair of the Fundación ACDI/VOCA Latin America (FAVLA). She also serves as a board member of the Society of International Development’s U.S. Chapter (SID-US) and as the 2022 SID-US conference chair. Sylvia led ACDI/VOCA’s role as a founding member of the Coalition for Racial and Ethnic Equity in International Development (CREED) and is also a founding member of Chief (Washington).
-      She holds a master’s degree in international development from American University and a bachelor’s degree in political science and French from the University of Michigan. She is fluent in English and French, and her work has taken her from Africa to Asia, Latin America, and the Caribbean.      
-      `
-    },
-    {
-      name: 'Chris Southworth',
-      role: 'Secretary General',
-      company: 'International Chamber of Commerce (ICC) United Kingdom',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/Headshot-Chris-Southworth.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/ICC_United_Kingdom_BLACK_RGB_300dpi.png",
-      iconWidth: 100,
-      iconHeight: 100,
-      bio: `
-       Chris Southworth is Secretary General at the International Chamber of Commerce UK and a regular voice for business in the international media speaking on a wide range of business issues including trade, sustainability, international priorities and government policy. 
-
-        He is Co-Chair of Commonwealth Legal Reform and Digitalisation programme launched by Commonwealth Trade Ministers in June 2023, a member of the Legal Reform Advisory Board at the ICC Digital Standards Initiative and co-founder of the UK Centre for Digital Trade and Innovation. He is also a member of the ICC World Council as well as the International Advisory Board of the Queen Mary-UNIDROIT Institute of Transnational Commercial Law. 
-
-        Chris is a leading international expert on creating modern digital trade ecosystems and a regular speaker at international conferences and events. He is the founder of the ICC Digital Trade Roadmap, helped initiate the Electronic Trade Documents Act 2023 and helped secure the 2021 G7 Ministerial Commitment to remove legal barriers to handle commercial trade documents in digital form. He is also a leading industry adviser to the UK government on the digitalisation of trade and works closely with the Department for Business and Trade, Her Majesty’s Revenue and Customs, Cabinet Office and the Department for Science, Innovation and Technology.  
-
-        Prior to joining ICC, he was Executive Director for Global Partnerships, at the British Chambers of Commerce, Head of the International Chambers of Commerce Unit at UK Trade and Investment (UKTI) and a Senior Policy Advisor to Lord Heseltine, former Deputy Prime Minister, for his independent review of UK competitiveness. In 2011 he was advisor to the Minister for Trade and Investment for the government review of mid-size businesses and consequent establishment of the mid-size business export programme. Former roles have encompassed deregulatory and social enterprise policy at the Department for Business.
-
-      `
-    },
-    {
-      name: 'Owen Hewlett',
-      role: 'Chief Technical Officer',
-      company: 'Gold Standard',
-      role2: 'Technical Council Member',
-      company2: 'SBTi',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/A7404215.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/GS_Logo_Secondary.png",
-      iconWidth: 120,
-      iconHeight: 120,
-      bio: `
-      Owen is Chief Technical Officer at the Gold Standard Foundation, a leading climate, nature and sustainable development standards system and thought leader. Owen’s expertise and work encompasses the accounting, reporting, funding and policy behind credible corporate and government action, with a focus on the market and non-market mechanisms that support them.
-
-      Owen joined Gold Standard in 2014 and leads all aspects of the Foundation’s standards, assurance and technical policy and best practices work. 
-
-      Owen is also a member of the SBTi Technical Council and the Greenhouse Gas Protocol Advisory Committee for Land Sector and Removals.
-      `
-    },
-    {
-      name: 'H. E. Alex Assanvo',
-      role: 'Executive Secretary',
-      company: 'Cȏte d’Ivoire Ghana Cocoa Initiative (CIGCI)',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/alex-assanvo.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/07/cote-divoire-ghana-cocoa-initiative.png",
-      iconWidth: 120,
-      iconHeight: 120,
-      bio: `
-      H. E. Alex Assanvo is the first Executive Secretary of the Cȏte d'Ivoire-Ghana Cocoa Initiative (CIGCI). This unique partnership was set up as the result of the presidents of the world’s top cocoa producers, Côte d’Ivoire and Ghana, coming together to address market challenges one by one, faced by the countries, so that the cocoa price eventually reflects the social value of the product and ensures a decent income for farmers. 
-      Before his appointment, Assanvo was Global Director of Corporate Affairs and Sustainability at Mars. He began his international development career with the German development agency (GIZ) as a Rural Development Expert between 2002 and 2006 in Dakar, Senegal. 
-      He moved on to Fairtrade Labelling International (FLO), in Germany in 2006 as Head for Africa and the Strategic Lead for Cocoa and Cotton. He later joined the Sustainability and Procurement team at Kraft Foods, now Mondelēz International, from October 2011 to 2013 as the Cocoa Development Manager in charge of the Cocoa Life Programme.
-      `
-    },
-    {
-      name: 'Claude Bizimana',
-      role: 'Chief Executive Officer (CEO)',
-      company: 'National Agricultural Export Development Board (NAEB), Rwanda',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/Claude-Bizimana.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/NAEB-logo.jpg",
-      iconWidth: 120,
-      iconHeight: 120,
-      bio: `
-      Claude Bizimana is the Chief Executive Officer (CEO) of the National Agricultural Export Development Board (NAEB), a commercial public institution in Rwanda in charge of exports of agricultural and livestock products. With over 20 years of experience as a lecturer and researcher in one of Rwanda’s most prominent academic institutions, Claude Bizimana led different initiatives at national, regional and continental levels, including the country office of the Comprehensive Africa Agriculture Development Program, the most ambitious and comprehensive agricultural reform effort ever undertaken in Africa made by African Heads of States and Governments. As the CEO of NAEB, Claude Bizimana thrives to establish relations and cooperation with regional and international organisations with the aim of improving operations in the coffee value chain and collaboration among stakeholders, especially those who grow and produce the raw product.
-      `
-    },
-    {
       name: 'Tim Scharrer',
       role: 'COO and Regional Director Europe and North America',
       company: 'Volcafe',
@@ -388,6 +294,100 @@ function Speakers2024() {
       bio: `
       William Kennedy is a versatile financial journalist and newsroom manager with 20 years experience of reporting, writing and editing. He oversees Bloomberg's global coverage of energy and commodities.
       William leads a team of more than 150 journalists delivers breaking news, analysis and enterprise reporting on the oil, gas, mining, utility, renewable energy and agriculture industries as well as commodity markets -- everything from OPEC meetings to Brazilian crop reports.
+      `
+    },
+    {
+      name: 'Karla Canavan',
+      role: 'Vice President, Commodity Trade and Finance, Markets',
+      company: 'World Wildlife Fund (WWF)',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/Kc.png',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/09/WWF-Logo.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+      Karla brings 25 years of experience in agribusiness supply chains, trading, investment, wealth management, and finance. Passionate about sustainability, Karla developed her deep understanding of the food and energy value chains through her 20-year career in agribusiness giants Cargill and Bunge. She worked directly with producers and end users to determine logistics, pricing, and marketing, granting her the firsthand field experience that underpins her knowledge of product traceability, social and environmental impact, and profitability factors that are necessary to optimize the food supply chain from farm to table.
+
+      She has been active in sustainability markets since 2007 developing the origination strategy for Bunge and directly managing projects which included REDD+, emission reductions, impact investing, clean energy, structured finance, sustainable agriculture, sustainable farming, renewables, waste management, conservation finance, and supply chain optimization, among others. Karla has traded derivatives, stocks, currencies, agricultural commodities, biofuels, and carbon among others. Karla’s global Markets expertise has led her to be an apt trend identifier.
+
+      She has a deep understanding of the value chains of grains (corn, wheat), oilseeds (soybeans, canola, sunflower), tree crops (oil palm, cocoa, coffee), biofuels and feed markets. She has managed projects and teams globally with emphasis on emerging and development markets across geographies including Latin America, Africa, South East Asia, India, and China.
+      `
+    },
+    {
+      name: 'Sylvia J. Megret',
+      role: 'President and Chief Executive Officer',
+      company: 'ACDI/VOCA',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/SYLVIA-SQUARE.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/ACDIVOCA-logo-gray-tag.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+      Sylvia J. Megret serves as president and CEO of ACDI/VOCA. As a global development executive with 30 years of experience, she promotes the organization’s mission and lives its values in support of inclusive, sustainable development worldwide. Sylvia joined ACDI/VOCA in December 2016, first serving as chief operating officer (COO) and later as president and COO from February 2021 to April of 2022. She also served as interim CEO from December 2017 to June 2018.
+      Sylvia has proven expertise convening diverse teams that bridge functions, cultures, and international borders. She is also skilled at identifying and institutionalizing effective teams and systems for maximum efficiency and success.
+      Sylvia is currently board chair of the Fundación ACDI/VOCA Latin America (FAVLA). She also serves as a board member of the Society of International Development’s U.S. Chapter (SID-US) and as the 2022 SID-US conference chair. Sylvia led ACDI/VOCA’s role as a founding member of the Coalition for Racial and Ethnic Equity in International Development (CREED) and is also a founding member of Chief (Washington).
+      She holds a master’s degree in international development from American University and a bachelor’s degree in political science and French from the University of Michigan. She is fluent in English and French, and her work has taken her from Africa to Asia, Latin America, and the Caribbean.      
+      `
+    },
+    {
+      name: 'Chris Southworth',
+      role: 'Secretary General',
+      company: 'International Chamber of Commerce (ICC) United Kingdom',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/Headshot-Chris-Southworth.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/ICC_United_Kingdom_BLACK_RGB_300dpi.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+       Chris Southworth is Secretary General at the International Chamber of Commerce UK and a regular voice for business in the international media speaking on a wide range of business issues including trade, sustainability, international priorities and government policy. 
+
+        He is Co-Chair of Commonwealth Legal Reform and Digitalisation programme launched by Commonwealth Trade Ministers in June 2023, a member of the Legal Reform Advisory Board at the ICC Digital Standards Initiative and co-founder of the UK Centre for Digital Trade and Innovation. He is also a member of the ICC World Council as well as the International Advisory Board of the Queen Mary-UNIDROIT Institute of Transnational Commercial Law. 
+
+        Chris is a leading international expert on creating modern digital trade ecosystems and a regular speaker at international conferences and events. He is the founder of the ICC Digital Trade Roadmap, helped initiate the Electronic Trade Documents Act 2023 and helped secure the 2021 G7 Ministerial Commitment to remove legal barriers to handle commercial trade documents in digital form. He is also a leading industry adviser to the UK government on the digitalisation of trade and works closely with the Department for Business and Trade, Her Majesty’s Revenue and Customs, Cabinet Office and the Department for Science, Innovation and Technology.  
+
+        Prior to joining ICC, he was Executive Director for Global Partnerships, at the British Chambers of Commerce, Head of the International Chambers of Commerce Unit at UK Trade and Investment (UKTI) and a Senior Policy Advisor to Lord Heseltine, former Deputy Prime Minister, for his independent review of UK competitiveness. In 2011 he was advisor to the Minister for Trade and Investment for the government review of mid-size businesses and consequent establishment of the mid-size business export programme. Former roles have encompassed deregulatory and social enterprise policy at the Department for Business.
+
+      `
+    },
+    {
+      name: 'Owen Hewlett',
+      role: 'Chief Technical Officer',
+      company: 'Gold Standard',
+      role2: 'Technical Council Member',
+      company2: 'SBTi',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/A7404215.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/GS_Logo_Secondary.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: `
+      Owen is Chief Technical Officer at the Gold Standard Foundation, a leading climate, nature and sustainable development standards system and thought leader. Owen’s expertise and work encompasses the accounting, reporting, funding and policy behind credible corporate and government action, with a focus on the market and non-market mechanisms that support them.
+
+      Owen joined Gold Standard in 2014 and leads all aspects of the Foundation’s standards, assurance and technical policy and best practices work. 
+
+      Owen is also a member of the SBTi Technical Council and the Greenhouse Gas Protocol Advisory Committee for Land Sector and Removals.
+      `
+    },
+    {
+      name: 'H. E. Alex Assanvo',
+      role: 'Executive Secretary',
+      company: 'Cȏte d’Ivoire Ghana Cocoa Initiative (CIGCI)',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/alex-assanvo.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/07/cote-divoire-ghana-cocoa-initiative.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: `
+      H. E. Alex Assanvo is the first Executive Secretary of the Cȏte d'Ivoire-Ghana Cocoa Initiative (CIGCI). This unique partnership was set up as the result of the presidents of the world’s top cocoa producers, Côte d’Ivoire and Ghana, coming together to address market challenges one by one, faced by the countries, so that the cocoa price eventually reflects the social value of the product and ensures a decent income for farmers. 
+      Before his appointment, Assanvo was Global Director of Corporate Affairs and Sustainability at Mars. He began his international development career with the German development agency (GIZ) as a Rural Development Expert between 2002 and 2006 in Dakar, Senegal. 
+      He moved on to Fairtrade Labelling International (FLO), in Germany in 2006 as Head for Africa and the Strategic Lead for Cocoa and Cotton. He later joined the Sustainability and Procurement team at Kraft Foods, now Mondelēz International, from October 2011 to 2013 as the Cocoa Development Manager in charge of the Cocoa Life Programme.
+      `
+    },
+    {
+      name: 'Claude Bizimana',
+      role: 'Chief Executive Officer (CEO)',
+      company: 'National Agricultural Export Development Board (NAEB), Rwanda',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/Claude-Bizimana.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/NAEB-logo.jpg",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: `
+      Claude Bizimana is the Chief Executive Officer (CEO) of the National Agricultural Export Development Board (NAEB), a commercial public institution in Rwanda in charge of exports of agricultural and livestock products. With over 20 years of experience as a lecturer and researcher in one of Rwanda’s most prominent academic institutions, Claude Bizimana led different initiatives at national, regional and continental levels, including the country office of the Comprehensive Africa Agriculture Development Program, the most ambitious and comprehensive agricultural reform effort ever undertaken in Africa made by African Heads of States and Governments. As the CEO of NAEB, Claude Bizimana thrives to establish relations and cooperation with regional and international organisations with the aim of improving operations in the coffee value chain and collaboration among stakeholders, especially those who grow and produce the raw product.
       `
     },
     {
@@ -523,6 +523,16 @@ function Speakers2024() {
       iconWidth: 120,
       iconHeight: 120,
       bio: `Barney Reynolds is Global Co-Head of Financial Institutions, and of the Financial Services Regulatory Group, at A&O Shearman. He is one of the world's leading financial institution practitioners, specialising in all areas of banking, fund management, financial markets and financial infrastructure, crypto, insurance/reinsurance, AML and sanctions. He has particular expertise in UK and EU regulation. He has additional familiarity with the regime of Abu Dhabi Global Market (ADGM), which he conceived and established. He advises on navigating legal and regulatory systems worldwide. He is known as a pathfinder for giving strategic advice to financial services firms on how to plot the most efficient course through law and regulation; on the use of legal reasoning to achieve legal and regulatory certainty; and in engaging productively with the regulators and government officials. Barney is a noted commercial thinker on law and regulation, assisting firms in planning for and managing emerging risks from legal and regulatory change. He has helped numerous clients with business transformation. Barney advised the UK government and numerous businesses in the context of the legal and other implications of leaving the EU, and how to navigate them. He is interviewed and published widely and is frequently called to give evidence before Parliamentary Committees.`
+    },
+    {
+      name: 'Tripurari Prasad',
+      role: 'Investment Manager',
+      company: 'Climate Asset Management',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/Tripurari-Prasad_Colour_1-1.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/09/CAM_REGISTERED_Wordmark_RGB_Primary.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: `Tripurari has over 15 years of experience in carbon markets, nature-based solutions, and the oil & gas sectors. He is part of the Investment Team, Nature Based Carbon Strategy at Climate Asset Management. Earlier, he served as Director at HSBC, where he led the group's Carbon Solutions offering and origination. With a career that includes pivotal roles at Southpole and Shell, Tripurari has led impact investments in carbon projects across Asia, Africa, and Latin America, covering Nature-based Solutions, household devices, and technical removals.  Alongside his regular duties, Tripurari serves as an expert adviser to Verra for their program development.`
     },
     {
       name: 'Joy Macknight',
