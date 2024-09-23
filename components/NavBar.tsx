@@ -16,7 +16,6 @@ function Navbar() {
         { name: 'Venue', href: '/venue' },
         { name: 'Partners', href: '/#partners' },
         { name: 'FAQ', href: '/faq' },
-        { name: 'Resources', href: '/resources' },
     ]
     const [openNotice, setOpenNotice] = useState(false)
     return (
