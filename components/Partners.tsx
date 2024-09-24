@@ -65,13 +65,13 @@ export default function Partners() {
         },
         {
             href: '',
-            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2020/08/FBM_INT_VERT_RGB_POS.png',
-            className: 'w-[5rem] mx-auto py-8'
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/ITFA_Logo_Positive-2-e1727183762852.png',
+            className: 'w-[6rem] mx-auto py-8'
         },
         {
             href: '',
-            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/image0011.png',
-            className: 'w-[11rem] mx-auto py-8'
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2020/08/FBM_INT_VERT_RGB_POS.png',
+            className: 'w-[5rem] mx-auto py-8'
         },
         {
             href: '',

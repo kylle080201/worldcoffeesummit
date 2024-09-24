@@ -508,9 +508,9 @@ function Speakers2024() {
       company: 'International Trade Forfaiting Association (ITFA)',
       company2: 'Sumitomo Mitsui Banking Corporation(SMBC)',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/sean-edwards.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/09/ITFA_Logo_Positive-2.png",
-      iconWidth: 120,
-      iconHeight: 120,
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/09/ITFA_Logo_Positive-2-e1727183762852.png",
+      iconWidth: 100,
+      iconHeight: 100,
       bio: `
       He is Special Adviser to the Trade Finance Department of the bank and a member of its Trade Innovation Unit. 
 
