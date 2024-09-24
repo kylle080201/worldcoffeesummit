@@ -56,6 +56,20 @@ function Agenda() {
                     </div>
                 </div>
 
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            GLOBAL BENCHMARKING KEYNOTE
+                        </div>
+                    </div>
+                    <div className='mt-4 px-2 max-w-3xl'>
+                        <h3 className=''><span className='font-bold'>Clive de Ruig</span>, <span className='italic'>President,</span> <span className='font-bold'>ICE Benchmark Administration (IBA)</span ></h3>
+                    </div>
+                </div>
+
                 {/* agenda 2 */}
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
@@ -211,7 +225,7 @@ function Agenda() {
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                            ACCELERATING REGENERATIVE AGRICULTURE PRACTICES FOR CROP PROTECTION AND SUSTAINABLE OUTCOMES
+                            ACCELERATING REGENERATIVE AGRICULTURE PRACTICES FOR SUSTAINABLE OUTCOMES
                         </div>
                     </div>
                     <div className='mt-4 px-2 max-w-3xl'>
@@ -225,6 +239,10 @@ function Agenda() {
                                 <li>Large landowners and institutional investors play a crucial role in catalysing the transition to sustainable agriculture. What strategies are institutional investors employing to demonstrate the value of regenerative agriculture to landowners and how are they supporting this transition?</li>
                             </div>
                         </ul>
+                        <div className='mt-2'>
+                            <h3>Chair:</h3>
+                            <h3 className=''><span className='font-bold'>Tripurari Prasad</span>, <span className='italic'>Investment Manager</span>, <span className='font-bold'>Climate Asset Management</span></h3>
+                        </div>
                         <div className='mt-2'>
                             <h3>Speakers:</h3>
                         </div>
