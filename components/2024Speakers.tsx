@@ -149,6 +149,18 @@ function Speakers2024() {
       `
     },
     {
+      name: 'Clive de Ruig',
+      role: 'President',
+      company: 'ICE Benchmark Administration (IBA)',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2023/09/Clive-de-Ruig-Headshot.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2023/09/ICE_logo_Rmark_rgb-1.png",
+      iconWidth: 80,
+      iconHeight: 80,
+      bio: `
+      Clive became President of ICE Benchmark Administration (IBA) in 2022. IBA is one of the world’s most experienced administrators of regulated benchmarks, offering robust benchmark and data administration services. Prior to IBA, Clive was Chief Operating Officer of ICE Futures Europe since October 2017. ICE Futures Europe is Europe’s largest and most diversified futures exchange and the home to benchmark contracts in energy, carbon, soft commodities and financial futures. He was previously Head of Cross Business Solutions and joined ICE in 2008 through theCreditex acquisition. From 2009 to 2017 Clive was the Global Head of ICE Link, a middleware technology service focused on enabling customers to achieve operational risk reduction and trade processing efficiencies in their Credit Derivative business. Clive also led the OTC Financial Sales Team from 2011 helping establish and grow ICE’s market leading CDS Clearing business. Prior to joining T-Zero, the precursor to ICE Link in 2005, Clive worked at GFI and Telerate in London and the Continental Grain Company of New York and Egon Oldenforff in Hong Kong.
+      `
+    },
+    {
       name: 'Dr. Jennifer “Vern” Long',
       role: 'Chief Executive Officer',
       company: 'World Coffee Research',
@@ -297,6 +309,59 @@ function Speakers2024() {
       `
     },
     {
+      name: 'Patrick Lanz',
+      role: 'EUDR Product Director',
+      company: 'osapiens',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/patrick-lanz.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/09/osapiens-Logo-horizontal-gradient-black-RM.svg",
+      iconWidth: 80,
+      iconHeight: 80,
+      bio: ``
+    },
+    {
+      name: 'Jonathan Sullivan',
+      role: 'Vice President Commercial & Sustainability',
+      company: 'Agmatix',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/Jonathan-Sullivan-Headshot-1.png',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/agmatix_logo_New_RGB-Vertical_1.png",
+      iconWidth: 50,
+      iconHeight: 50,
+      bio: `
+      Jonathan Sullivan joined Agmatix in 2023 and leads the company’s commercial efforts including the new offering in sustainability and regenerative agriculture. Having a history across the corporate and sustainability sectors, Jonathan is driven to help business be the catalyst for positive impact on the planet. Previously, Jonathan lead sustainability strategy work at PepsiCo, ocean sustainability efforts at OceanX and worked with several Agri-food and CPG clients while a consultant at McKinsey & Company.  Jonathan is a graduate of the Royal Military College and Australian Defence Force Academy, has an MBA from the University of Queensland, and has studied Sustainable Supply Chains at the University of Cambridge. 
+      `
+    },
+    {
+      name: 'Manfred Borer',
+      role: 'Co-Founder & Chief Executive officer',
+      company: 'Koltiva',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/06/Manfred-Borer-CEO-and-Co-Founder-KOLTIVA.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/06/Logo-Koltiva-header.webp",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+      Manfred Borer has been with Koltiva Indonesia since 2013 and has successfully established
+      Koltiva AG in Switzerland, together with The Founders.
+      Under his direction, Koltiva builds a technology-enabled service company that supports some
+      of the largest multinational companies in 61 countries by digitizing and verifying global supply
+      chains to enhance traceability, inclusiveness, and sustainability. From Seed to Table.
+      He also spearheads the company's significant growth in scaling up to more than 1,300,000
+      producers and business users, uplifting producers' income, and bringing responsible finance
+      and environmental protection to underserved communities in rural areas. In addition, he
+      strengthens Koltiva's positioning to be the world's leading tech company in building ethical,
+      transparent, and sustainable supply chains with several exceptional award-winning
+      milestones such as Top Innovator Tropical Forest Commodities Challenge 2021 by Uplink and
+      World Economic Forum.
+      Prior to founding Koltiva, Manfred has over 20 years of experience in entrepreneurship and 16
+      years in rural development and working alongside multinational companies’ agriculture supply
+      chains.
+      Manfred grew up on a smallholder farm in Switzerland, then vocational training as a carpenter,
+      and started his career in 1994 as owner-manager of a construction company in his home
+      region. After his first 10-years start-up experience, he graduated as a Business Process
+      Manager with an Engineering Degree from the University of Applied Sciences Northwestern
+      Switzerland, majoring in Plant Management.
+      `
+    },
+    {
       name: 'Karla Canavan',
       role: 'Vice President, Commodity Trade and Finance, Markets',
       company: 'World Wildlife Fund (WWF)',
@@ -391,59 +456,6 @@ function Speakers2024() {
       `
     },
     {
-      name: 'Patrick Lanz',
-      role: 'EUDR Product Director',
-      company: 'osapiens',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/patrick-lanz.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/09/osapiens-Logo-horizontal-gradient-black-RM.svg",
-      iconWidth: 80,
-      iconHeight: 80,
-      bio: ``
-    },
-    {
-      name: 'Jonathan Sullivan',
-      role: 'Vice President Commercial & Sustainability',
-      company: 'Agmatix',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/Jonathan-Sullivan-Headshot-1.png',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/agmatix_logo_New_RGB-Vertical_1.png",
-      iconWidth: 50,
-      iconHeight: 50,
-      bio: `
-      Jonathan Sullivan joined Agmatix in 2023 and leads the company’s commercial efforts including the new offering in sustainability and regenerative agriculture. Having a history across the corporate and sustainability sectors, Jonathan is driven to help business be the catalyst for positive impact on the planet. Previously, Jonathan lead sustainability strategy work at PepsiCo, ocean sustainability efforts at OceanX and worked with several Agri-food and CPG clients while a consultant at McKinsey & Company.  Jonathan is a graduate of the Royal Military College and Australian Defence Force Academy, has an MBA from the University of Queensland, and has studied Sustainable Supply Chains at the University of Cambridge. 
-      `
-    },
-    {
-      name: 'Manfred Borer',
-      role: 'Co-Founder & Chief Executive officer',
-      company: 'Koltiva',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/06/Manfred-Borer-CEO-and-Co-Founder-KOLTIVA.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/06/Logo-Koltiva-header.webp",
-      iconWidth: 100,
-      iconHeight: 100,
-      bio: `
-      Manfred Borer has been with Koltiva Indonesia since 2013 and has successfully established
-      Koltiva AG in Switzerland, together with The Founders.
-      Under his direction, Koltiva builds a technology-enabled service company that supports some
-      of the largest multinational companies in 61 countries by digitizing and verifying global supply
-      chains to enhance traceability, inclusiveness, and sustainability. From Seed to Table.
-      He also spearheads the company's significant growth in scaling up to more than 1,300,000
-      producers and business users, uplifting producers' income, and bringing responsible finance
-      and environmental protection to underserved communities in rural areas. In addition, he
-      strengthens Koltiva's positioning to be the world's leading tech company in building ethical,
-      transparent, and sustainable supply chains with several exceptional award-winning
-      milestones such as Top Innovator Tropical Forest Commodities Challenge 2021 by Uplink and
-      World Economic Forum.
-      Prior to founding Koltiva, Manfred has over 20 years of experience in entrepreneurship and 16
-      years in rural development and working alongside multinational companies’ agriculture supply
-      chains.
-      Manfred grew up on a smallholder farm in Switzerland, then vocational training as a carpenter,
-      and started his career in 1994 as owner-manager of a construction company in his home
-      region. After his first 10-years start-up experience, he graduated as a Business Process
-      Manager with an Engineering Degree from the University of Applied Sciences Northwestern
-      Switzerland, majoring in Plant Management.
-      `
-    },
-    {
       name: 'Franco Costantini',
       role: 'CEO',
       company: 'Regenagri',
@@ -487,6 +499,33 @@ function Speakers2024() {
       Swaroop has c.18 years of rich experience across Banking and Insurance in varied roles ranging from risk underwriting, trade financing, business development, general management and coverage banking across India and the UK.
       Swaroop is an active industry voice in the areas of sustainable trade, trade as an investible asset class and is a strong advocate of innovation in trade and commerce. He is the Vice Chair of International Chamber of Commerce (ICC), UK Sustainability Committee and a member of the ITFA Board leading Institutional Investors in Trade Finance Ecosystem (ITFIE) Committee.
       Swaroop is a Chemical engineer, holds a master’s degree in management from Faculty of Management Studies (FMS), University of Delhi and has a Post Graduate Certification from University of Cambridge in Sustainable Value Chains. He is an active researcher and thought leader, has several papers to his credit and is a regular speaker at various international forums on sustainability and trade.
+      `
+    },
+    {
+      name: 'Sean Edwards',
+      role: 'Chairman',
+      role2: 'Head of Legal',
+      company: 'International Trade Forfaiting Association (ITFA)',
+      company2: 'Sumitomo Mitsui Banking Corporation(SMBC)',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/sean-edwards.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/09/ITFA_Logo_Positive-2.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: `
+      He is Special Adviser to the Trade Finance Department of the bank and a member of its Trade Innovation Unit. 
+
+      Sean is Chairman of the International Trade & Forfaiting Association (ITFA).
+      He is a draftsman of the Uniform Rules for Forfaiting (URF), its counterpart for digital payment obligations, the Unform Rules for Transferable Electronic Payment Obligations (URTEPO) and the Standard Definitions for Techniques of Supply Chain Finance published by ITFA, ICC, FCI, BAFT and the EBA.
+
+      He is a former member of the Executive Committee of the ICC Banking Commission and the ICC Working Group on Digitalisation in Trade Finance.
+      Sean is a member of the World Trade Organisation (WTO) Trade Finance Expert Group.
+
+      He is a non-executive director of Swiss fintech, KomGo S.A.
+      Sean has been appointed to the advisory board of the Centre for Digital Trade and Innovation (C4DTI), a joint venture of the UK Government, ICC UK and Tees Valley Combined Authority.
+
+      He is a member of the Working Group of the Commonwealth Connectivity Agenda established by The Commonwealth.
+
+      Sean has written for all the major trade finance magazines and is on the editorial board of Global Trade Review (GTR). He has presented at many conferences.
       `
     },
     {
