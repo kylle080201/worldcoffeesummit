@@ -54,8 +54,8 @@ function Speakers2024() {
       name: 'Sarah Nelen',
       role: 'Acting Director Green Diplomacy and Multilateralism(ENV. F), Directorate-General for Environment',
       company: 'European Commission',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/FLORIKA-SQUARE-scaled.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2020/12/LOGO-CE_Vertical_EN_quadri_HR.png",
+      imageUrl: '',
+      companyIcon: "",
       iconWidth: 100,
       iconHeight: 100,
       bio: `
@@ -568,6 +568,16 @@ function Speakers2024() {
       iconWidth: 120,
       iconHeight: 120,
       bio: `Tripurari has over 15 years of experience in carbon markets, nature-based solutions, and the oil & gas sectors. He is part of the Investment Team, Nature Based Carbon Strategy at Climate Asset Management. Earlier, he served as Director at HSBC, where he led the group's Carbon Solutions offering and origination. With a career that includes pivotal roles at Southpole and Shell, Tripurari has led impact investments in carbon projects across Asia, Africa, and Latin America, covering Nature-based Solutions, household devices, and technical removals.  Alongside his regular duties, Tripurari serves as an expert adviser to Verra for their program development.`
+    },
+    {
+      name: 'Surath Sengupta',
+      role: 'Managing Director, Head of Trade and Working Capital Innovation & Transformation',
+      company: 'Lloyds Banking Group',
+      imageUrl: '',
+      companyIcon: "",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: ``
     },
     {
       name: 'Joy Macknight',
