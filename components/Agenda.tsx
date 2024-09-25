@@ -62,7 +62,7 @@ function Agenda() {
 
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                            GLOBAL BENCHMARKING KEYNOTE
+                            GLOBAL BENCHMARK KEYNOTE
                         </div>
                     </div>
                     <div className='mt-4 px-2 max-w-3xl'>
