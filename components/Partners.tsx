@@ -37,6 +37,11 @@ export default function Partners() {
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/image_regenagri_logo_full__002_.png',
             className: 'w-[22rem] p-2 mx-auto rounded-md'
         },
+        {
+            href: '',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/NAEB-logo.jpg',
+            className: 'w-[11rem] p-2 mx-auto rounded-md'
+        },
     ]
 
     const mediaPartners = [
@@ -165,7 +170,7 @@ export default function Partners() {
                             <span className="absolute px-3 text-lg sm:text-2xl tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Co-Sponsor</span>
                         </div>
                     </div>
-                    <div className='grid items-center justify-center gap-4 mx-auto sm:gap-12 sm:flex-row sm:max-w-7xl mt-6'>
+                    <div className='flex flex-wrap flex-col items-center justify-center gap-4 mx-auto sm:flex-row sm:max-w-7xl mt-6'>
                         {coSponsors.map((sponsor) => (
                             sponsor.href ?
                                 <Link key={sponsor.href} href={sponsor.href} target='_blank' rel='noreferer'>
