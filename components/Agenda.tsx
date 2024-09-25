@@ -52,7 +52,7 @@ function Agenda() {
                         </div>
                     </div>
                     <div className='mt-4 px-2 max-w-3xl'>
-                        <h3 className=''><span className='font-bold'>Dr. Florika Fink-Hooijer</span>, <span className='italic'>Director-General, Environment Department,</span> <span className='font-bold'>European Commission</span ></h3>
+                        <h3 className=''><span className='font-bold'>Sarah Nelen</span>, <span className='italic'>Acting Director Green Diplomacy and Multilateralism(ENV. F), Directorate-General for Environment</span> <span className='font-bold'>European Commission</span ></h3>
                     </div>
                 </div>
 

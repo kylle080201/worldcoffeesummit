@@ -51,27 +51,23 @@ function Speakers2024() {
       `
     },
     {
-      name: 'Dr. Florika Fink-Hooijer',
-      role: 'Director-General, Environment Department',
+      name: 'Sarah Nelen',
+      role: 'Acting Director Green Diplomacy and Multilateralism(ENV. F), Directorate-General for Environment',
       company: 'European Commission',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/FLORIKA-SQUARE-scaled.jpg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2020/12/LOGO-CE_Vertical_EN_quadri_HR.png",
       iconWidth: 100,
       iconHeight: 100,
       bio: `
-        Dr. Florika Fink-Hooijer is the Director-General of the Environment 
-        Department of the European Commission. 
-        Having occupied various senior management positions in the European 
-        Commission, Florika is recognized for her strong management and 
-        leadership skills and her in-depth experience in EU policy making & 
-        shaping. 
-        A lawyer by training, Florika brings a proven record of accomplishment 
-        in foreign external and security policy as well as in humanitarian aid and 
-        disaster risk reduction. She has extensive experience in leading complex 
-        inter-institutional and intergovernmental negotiations.
-        In her current role, she is responsible for implementing the European 
-        Green Deal objectives in particular the areas of Circular Economy, 
-        Biodiversity and Zero Pollution
+      Sarah Nelen is Acting Director Green Diplomacy and Multilateralism in the Environment Directorate-General of the European Commission where she also is Head of Unit responsible for the EU’s deforestation legislation. 
+
+      Previously, she was Deputy Head of Cabinet of Executive Vice-President Frans Timmermans responsible for the European Green Deal, the EU’s growth strategy to become a circular economy and the world’s first climate-neutral continent by 2050 while protecting nature.
+
+      Sarah has more than 23 years of work experience in European policy making and negotiations, mainly in the areas of sustainability, justice and home affairs and external relations. 
+
+      From 2010 to 2017 she worked at political level in different Cabinets, first five years in the team of the first President of the European Council, Mr Herman Van Rompuy where she was antici, with a horizontal role. Next, she rejoined the European Commission, advising First Vice-President Timmermans on the circular economy, sustainable development and gender equality before she became Head of Unit in 2017 in the European Commission's Environment Department. There she was responsible for waste management & secondary materials and negotiated the EU’s single use plastic legislation. 
+
+      Before joining the European Commission in 2001 in the Department for Justice and Home Affairs, Sarah was a researcher at the Katholieke Universiteit Leuven where she obtained previously a Master in Political Science. She also studied at the Facultés Universitaires Saint Louis in Brussels, the University of Leicester and she is a College of Europe alumnus.
       `
     },
     {
