@@ -54,8 +54,8 @@ function Speakers2024() {
       name: 'Sarah Nelen',
       role: 'Acting Director Green Diplomacy and Multilateralism(ENV. F), Directorate-General for Environment',
       company: 'European Commission',
-      imageUrl: '',
-      companyIcon: "",
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/sarah-nelen.png',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2020/12/LOGO-CE_Vertical_EN_quadri_HR.png",
       iconWidth: 100,
       iconHeight: 100,
       bio: `
@@ -129,9 +129,9 @@ function Speakers2024() {
       role: 'Special Envoy for Water',
       company: 'Ministry for Foreign Affairs of Finland',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/Antti-Rautavaara-omakuva-042023-väri-nelio-.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/09/UM-vesilogo.png",
-      iconWidth: 100,
-      iconHeight: 100,
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/09/UM_logo_blue_en_horizontal_RGB.png",
+      iconWidth: 120,
+      iconHeight: 120,
       bio: `
       Mr. Antti Rautavaara is Finland's Special Envoy for Water.
 
@@ -573,8 +573,8 @@ function Speakers2024() {
       name: 'Surath Sengupta',
       role: 'Managing Director, Head of Trade and Working Capital Innovation & Transformation',
       company: 'Lloyds Banking Group',
-      imageUrl: '',
-      companyIcon: "",
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/surath-sengupta.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/09/lloyds-logo@logotyp.us_.png",
       iconWidth: 120,
       iconHeight: 120,
       bio: ``
