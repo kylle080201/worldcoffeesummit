@@ -11,8 +11,41 @@ function Agenda() {
 
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
-                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
+                            7:00 - 9:00
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
+                            MORNING COFFEE & REGISTRATION
+                        </div>
+                    </div>
+                </div>
 
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            9:00
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            A SUMMIT INSPIRATIONAL MESSAGE
+                        </div>
+                    </div>
+                </div>
+
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            9:10
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            SHORT INTRO BY SUMMIT CHAIR
+                        </div>
+                    </div>
+                </div>
+
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            9:15
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                             INSPIRATIONAL KEYNOTE
@@ -26,7 +59,21 @@ function Agenda() {
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            7:00 - 9:00
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            OPENING ADDRESS
+                        </div>
+                    </div>
+                    <div className='mt-4 px-2 max-w-5xl'>
+                        <h3 className=''><span className='font-bold'>Dr. Alvaro Lario</span>, <span className='italic'>President,</span> <span className='font-bold'>, International Fund of Agricultural Development (IFAD)</span></h3>
+                    </div>
+                </div>
 
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            9:35
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                             FIRESIDE
@@ -45,7 +92,7 @@ function Agenda() {
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-
+                            9:50
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                             EU GOVERNMENT KEYNOTE
@@ -59,7 +106,7 @@ function Agenda() {
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-
+                            10:00
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                             GLOBAL BENCHMARK KEYNOTE
@@ -74,7 +121,7 @@ function Agenda() {
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-
+                            10:10 
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                             EUDR COUNTDOWN: REGULATORY COMPLIANCE FOR A SUSTAINABLE AND GREEN ECONOMY
@@ -104,8 +151,19 @@ function Agenda() {
 
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
-                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
+                            11:00
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
+                            NETWORKING COFFEE BREAK
+                        </div>
+                    </div>
+                </div>
 
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            11:30
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                             GOVERNMENT KEYNOTE
@@ -120,7 +178,7 @@ function Agenda() {
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-
+                            11:40
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                             SOLUTION PROVIDER PRESENTATION
@@ -135,7 +193,7 @@ function Agenda() {
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-
+                            11:50
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                             BUILDING TRUST ACROSS THE CROP TO CUP SUPPLY CHAIN
@@ -166,10 +224,36 @@ function Agenda() {
                     </div>
                 </div>
 
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
+                            12:30
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
+                            NETWORKING LUNCH
+                        </div>
+                    </div>
+                </div>
+
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            13:30
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            INNOVATIVE SOLUTION KEYNOTE
+                        </div>
+                    </div>
+                    <div className='mt-4 px-2 max-w-5xl'>
+                        <h3 className=''><span className='font-bold'>Patrik Lanz</span>, <span className='italic'>EUDR Product Director,</span> <span className='font-bold'>osapiens</span></h3>
+                    </div>
+                </div>
+
                 {/* agenda 5 */}
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            13:40
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                             NAVIGATING SCOPE 3 AND CLIMATE CHANGE DISCLOSURE & REPORTING (CSRD & CS3D)
@@ -205,6 +289,7 @@ function Agenda() {
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            14:20
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                             SOLUTION PRESENTATION
@@ -223,6 +308,7 @@ function Agenda() {
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            14:30
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                             ACCELERATING REGENERATIVE AGRICULTURE PRACTICES FOR SUSTAINABLE OUTCOMES
@@ -273,10 +359,22 @@ function Agenda() {
                     </div>
                 </div>
 
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
+                            15:20
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
+                            NETWORKING COFFEE BREAK
+                        </div>
+                    </div>
+                </div>
+
                 {/* agenda 8 */}
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            15:50
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                             INNOVATING FOR BIODIVERSITY AND SUSTAINABLE ECONOMY
@@ -299,6 +397,11 @@ function Agenda() {
                         <ul className='mt-2 list-disc'>
                             <div className='pl-6'>
                                 <li className=''>
+                                    <span className='font-bold'>Surath Sengupta</span>,
+                                    <span className='italic'> Managing Director, Head of Trade and Working Capital Innovation & Transformation</span>,
+                                    <span className='font-bold'> Lloyds Banking Group</span>
+                                </li>
+                                <li className=''>
                                     <span className='font-bold'>Dr. Parmesh Shah</span>,
                                     <span className='italic'> Global Lead, Data-Driven, Digital Agriculture and Innovations</span>,
                                     <span className='font-bold'> The World Bank</span>
@@ -313,15 +416,59 @@ function Agenda() {
                     </div>
                 </div>
 
-                <h2 className="mt-8 text-2xl font-bold text-center tracking-tight">DAY TWO– Thursday 17th OCTOBER 2024</h2>
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            16:30
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            GLOBAL INNOVATORS PANEL
+                        </div>
+                    </div>
+                </div>
+
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
+                            17:00
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
+                            END OF DAY 1 SUMMIT
+                        </div>
+                    </div>
+                </div>
 
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-
+                            18:30 - 20:30
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                            OPENING KEYNOTE
+                            NETWORKING SOIREE” AT THE UK HOUSE OF LORDS
+                        </div>
+                    </div>
+                </div>
+
+                <h2 className="mt-8 text-2xl font-bold text-center tracking-tight">DAY TWO– Thursday 17th OCTOBER 2024</h2>
+
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
+                            7:00 - 9:00
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
+                            MORNING COFFEE & REGISTRATION
+                        </div>
+                    </div>
+                </div>
+
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            9:00
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            OPENING INSTITUTIONAL KEYNOTE
                         </div>
                     </div>
                     <div className='mt-4 px-2 max-w-3xl'>
@@ -333,7 +480,7 @@ function Agenda() {
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-
+                            9:10
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                             GOVERNMENT KEYNOTE
@@ -348,7 +495,7 @@ function Agenda() {
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-
+                            9:20
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                             COFFEE SCIENCE KEYNOTE
@@ -359,10 +506,50 @@ function Agenda() {
                     </div>
                 </div>
 
-                {/* agenda 10 */}
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            9:30
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            GLOBAL LEADERS FORUM (TBC)
+                        </div>
+                    </div>
+                    <div className='mt-4 px-2 max-w-3xl'>
+                        <ul className='mt-2 list-disc'>
+                            <div className='pl-6'>
+                                <li>An organisation is only as good as the leader that shapes their future through richness of ideas, novelty of approaches and cross-sharing of perspectives, to what extent does government or business translates these ideas into impactful actions to benefit the organisation they serve?</li>
+                                <li>How do you as a leader, harness the power of technology and innovation to bring positive change and curate global impact?</li>
+                                <li>What is the most strategic and toughest management role that you have played that required resilience and a sense of purpose?</li>
+                                <li>How do we orchestrate the global leaders to share the biggest responsibility to commit themselves to achieve Net Zero and SDGs?</li>
+                            </div>
+                        </ul>
+                        <div className='mt-2'>
+                            <h3>Chair:</h3>
+                            <h3 className=''><span className='font-bold'>Joy Macknight</span>, <span className='italic'>Journalist, Former Editor</span>, <span className='font-bold'>Financial Times - The Banker</span></h3>
+                        </div>
+                        <ul className='mt-2 list-disc'>
+                            <h3>Speakers:</h3>
+                            <div className='pl-6'>
+                                <li className=''>
+                                    <span className='font-bold'>Sarah Nelen</span>,
+                                    <span className='italic'> Acting Director Green Diplomacy and Multilateralism(ENV. F), Directorate-General for Environment</span>,
+                                    <span className='font-bold'> European Commission</span>
+                                </li>
+                                <li className=''>
+                                    <span className='font-bold'>Antii Rautavaara</span>,
+                                    <span className='italic'> Special Envoy for Water</span>,
+                                    <span className='font-bold'> Ministry of Foreign Affairs of Finland</span>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            10:10
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                             LEVERAGING SCALABLE TECHNOLOGY TO DELIVER TRACEABILITY
@@ -404,10 +591,21 @@ function Agenda() {
                     </div>
                 </div>
 
-                {/* agenda 11 */}
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
+                            10:50
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
+                            NETWORKING COFFEE BREAK 
+                        </div>
+                    </div>
+                </div>
+
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            11:20
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                             GEO-SPATIAL INNOVATION KEYNOTE
@@ -422,11 +620,10 @@ function Agenda() {
                     </div>
                 </div>
 
-
-                {/* agenda 12 */}
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            11:30
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                             FUNDING SCALABLE INNOVATIONS FOR NET POSITIVE SOCIAL IMPACT
@@ -458,14 +655,24 @@ function Agenda() {
                     </div>
                 </div>
 
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
+                            12:10
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
+                            NETWORKING LUNCH
+                        </div>
+                    </div>
+                </div>
 
-                {/* agenda 13 */}
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            13:10
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                            KEYNOTE
+                            ADVOCACY KEYNOTE
                         </div>
                     </div>
                     <div className='mt-4 px-2 max-w-3xl'>
@@ -477,6 +684,7 @@ function Agenda() {
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            13:20
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                             INNOVATIONS DRIVING CLIMATE ACTION & CARBON MARKETS STANDARDS
@@ -519,10 +727,32 @@ function Agenda() {
                     </div>
                 </div>
 
-                {/* agenda 15 */}
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            14:00
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            FARMERS PANEL
+                        </div>
+                    </div>
+                </div>
+
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
+                            14:30
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
+                            NETWORKING COFFEE BREAK
+                        </div>
+                    </div>
+                </div>
+
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            15:00
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                             CROSS-INDUSTRY KEYNOTE
@@ -538,6 +768,7 @@ function Agenda() {
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            15:10
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                             TRANSFORMING GLOBAL TRADE TO DELIVER FOOD SECURITY
@@ -575,19 +806,28 @@ function Agenda() {
                     </div>
                 </div>
 
-
-                {/* agenda 17 */}
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
-
+                            15:50 
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
-                            CLOSING REMARKS
+                            CLOSING KEYNOTE
                         </div>
                     </div>
                     <div className='mt-4 px-2 max-w-5xl'>
                         <h3 className=''><span className='font-bold'>Dr. Qu Dongyu</span>, <span className='italic'>Director-General</span>, <span className='font-bold'>Food and Agriculture Organization of the United Nations (FAO)</span></h3>
+                    </div>
+                </div>
+
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
+                            16:00
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
+                            END OF SUMMIT
+                        </div>
                     </div>
                 </div>
             </div>
