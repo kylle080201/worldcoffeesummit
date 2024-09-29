@@ -52,6 +52,11 @@ export default function Partners() {
         },
         {
             href: '',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/Daily-Coffee-News_Logo.png',
+            className: 'w-[14rem] p-2 mx-auto'
+        },
+        {
+            href: '',
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/perfect-daily-grind.png',
             className: 'w-[12rem] p-2 mx-auto'
         },

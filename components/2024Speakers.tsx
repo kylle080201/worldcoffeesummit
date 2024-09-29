@@ -71,6 +71,33 @@ function Speakers2024() {
       `
     },
     {
+      name: 'Dr. Alvaro Lario ',
+      role: 'President',
+      company: 'International Fund of Agricultural Development (IFAD)',
+      company2: "House of Lords",
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/mut5673199979946008165-1.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/09/E_g_web.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+      Alvaro Lario is President of the International Fund of Agricultural Development
+      (IFAD). A seasoned international development finance leader, he has more than
+      20 years of experience across academia, private sector asset management, World
+      Bank Group and the United Nations, including as Associate Vice-President of
+      Financial Operations at IFAD.
+      Under his stewardship, IFAD became the first United Nations Fund to enter the
+      capital markets and obtain a credit rating, enabling the IFAD to expand resource
+      mobilization efforts to the private sector.
+      Before joining the Fund in early 2018, he was the Treasury Capital Markets Lead
+      and Principal Portfolio Officer at the International Finance Corporation, part of
+      the World Bank Group, where he focused on local capital markets development
+      and emerging markets investments.
+      President Lario received a PhD in Financial Economics from the Complutense
+      University of Madrid after completing a Master of Research in Economics at the
+      London Business School and a Master of Finance from Princeton University.
+      `
+    },
+    {
       name: 'The Rt. Hon John Gummer, Lord Deben',
       role: 'Former Chairman',
       company: 'UK Climate Change Committee (The CCC)',
@@ -573,11 +600,11 @@ function Speakers2024() {
       name: 'Surath Sengupta',
       role: 'Managing Director, Head of Trade and Working Capital Innovation & Transformation',
       company: 'Lloyds Banking Group',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/surath-sengupta.jpg',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/surath-sengupta.jpeg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/09/lloyds-logo@logotyp.us_.png",
       iconWidth: 120,
       iconHeight: 120,
-      bio: ``
+      bio: `Surath is a strategic and focused banking leader with over 25 years of experience, having held senior positions across the globe most notably in UK, Hong Kong and India. Currently he leads Innovation and Transformation for Working Capital and Trade at Lloyds Banking Group. Prior to this, he was on the global board of HSBC’s Trade and Receivables Finance business. Surath is also the Vice-Chair of the International Chambers of Commerce global Banking Commission and is regularly represented in numerous publications both print and across social media.`
     },
     {
       name: 'Joy Macknight',
