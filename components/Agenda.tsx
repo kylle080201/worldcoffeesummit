@@ -12,7 +12,7 @@ function Agenda() {
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
-                            7:00 - 9:00
+                            7:00 - 9:25
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
                             MORNING COFFEE & REGISTRATION
@@ -142,7 +142,7 @@ function Agenda() {
                             <h3>Speakers:</h3>
                             <div className='pl-6'>
                                 <li className=''><span className='font-bold'>Laurent Sagarra,</span> <span className=' italic'>Vice President Sustainability</span>, <span className='font-bold'>JDE Peet&apos;s</span></li>
-                                <li className=''><span className='font-bold'>Mr Claude BIZIMANA,</span> <span className=' italic'>Chief Executive Officer</span>, <span className='font-bold'>National Agricultural Export Development Board (NAEB), Rwanda</span></li>
+                                <li className=''><span className='font-bold'>Claude BIZIMANA,</span> <span className=' italic'>Chief Executive Officer</span>, <span className='font-bold'>National Agricultural Export Development Board (NAEB), Rwanda</span></li>
                                 <li className=''><span className='font-bold'>Patrick Lanz,</span> <span className=' italic'>EUDR Product Director</span>, <span className='font-bold'>osapiens</span></li>
                             </div>
                         </ul>
@@ -170,13 +170,13 @@ function Agenda() {
                         </div>
                     </div>
                     <div className='mt-4 px-2 max-w-3xl'>
-                        <h3 className=''><span className='font-bold'>H.E. Johnston Busingye</span>, <span className='font-bold'>High Commissioner for the Republic of Rwanda to the United Kingdom</span></h3>
+                        <h3 className=''><span className='font-bold'>H.E. Johnston Busingye</span>, <span className=' italic'>High Commissio</span>, <span className='font-bold'>The Republic of Rwanda to the United Kingdom</span></h3>
                     </div>
                 </div>
 
                 {/* agenda 3 */}
                 <div className='mt-8'>
-                    <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
                             11:40
                         </div>
@@ -202,7 +202,7 @@ function Agenda() {
                     <div className='mt-4 px-2 max-w-3xl'>
                         <ul className='mt-2 list-disc'>
                             <div className='pl-6'>
-                                <li>What do we mean by sustainability in the coffee sector – is this primarily a environmental issue or a social one? Are they equally as important?</li>
+                                <li>What do we mean by sustainability in the coffee sector – is this primarily na environmental issue or a social one? Are they equally as important?</li>
                                 <li>What are the biggest priority issues for building a sustainable coffee supply chain?</li>
                                 <li>What are the main environmental risk areas within the coffee supply chain – and how are these being addressed? What are trickiest challenges?</li>
                                 <li>Can producing coffee sustainably also produce social benefits?</li>
@@ -219,6 +219,7 @@ function Agenda() {
                                 <li className=''><span className='font-bold'>Tim Scharrer</span>, <span className=' italic'>COO and Regional Director Europe and North America</span>, <span className='font-bold'>Volcafe</span></li>
                                 <li className=''><span className='font-bold'>T.J. Ryan</span>, <span className=' italic'>Chief of Party of Philippine Coffee Advancement and Farm Enterprise Project</span>, <span className='font-bold'>ACDI/VOCA</span></li>
                                 <li className=''><span className='font-bold'>Chloé Rotureau</span>, <span className=' italic'>Partner & Ethics & Sustainability Specialist- Raw Material Sourcing</span>, <span className='font-bold'>John Lewis Partnership (John Lewis and Waitrose)</span></li>
+                                <li className=''><span className='font-bold'>Ed Mitchard</span>, <span className=' italic'>Chief Scientist & Co-Founder</span>, <span className='font-bold'>Space Intelligence</span></li>
                             </div>
                         </ul>
                     </div>
@@ -262,9 +263,9 @@ function Agenda() {
                     <div className='mt-4 px-2 max-w-3xl'>
                         <ul className='mt-2 list-disc'>
                             <div className='pl-6'>
-                                <li>What are some of the risks and opportunities arising from social and environmental issues that EU law requires for all large companies to disclose?</li>
-                                <li>How do they help investors, civil society, consumers and other stakeholders to evaluate sustainability performance of companies?</li>
-                                <li>How does sustainability reporting allow businesses to identify redundancies and inefficiencies, reallocate resources and realign internal systems?</li>
+                                <li>With climate change increasingly affecting the coffee industry and agriculture more broadly, what do you believe are the key elements that businesses should focus on when disclosing environmental and social risks under the CSRD? What do you believe are the biggest challenges companies face in implementing?</li>
+                                <li>With the technology landscape rapidly transforming, what are the developments you are excited about? How can remote sensing technologies and digital platforms enhance the accuracy and transparency of scope 3 reporting?</li>
+                                <li>How do you think the Corporate Sustainability Reporting Directive (CSRD) and Corporate Sustainability Due Diligence Directive (CS3D) will drive meaningful change in corporate climate action strategies? What do we need to ensure to fully recognise this?</li>
                                 <li>How can remote sensing and digital tools enhance organisations’ ability to understand Scope 3 emission and impact of nature-related risks and provide detailed nature and biodiversity data?</li>
                                 <li>How does this data help meet the increasing demands from investors and regulators and the EU’s Corporate Sustainability Reporting Directive (CSRD), while optimising cost and efficiency?</li>
                             </div>
@@ -383,12 +384,11 @@ function Agenda() {
                     <div className='mt-4 px-2 max-w-3xl'>
                         <ul className='mt-2 list-disc'>
                             <div className='pl-6'>
-                                <li>What are the most promising and impactful innovations and technologies emerging from research laboratories, where potential investors can engage early for commercialization?</li>
-                                <li>What are some of the best practices that have proven effective in other supply chains, and what are the mechanisms for successful technology transfer evolving?</li>
-                                <li>Why is the role of capital markets critical in funding this ESG transition?</li>
-                                <li>Why is biodiversity so important in the agroforestry landscape to boost coffee bean production?</li>
-                                <li>How can effective partnerships between universities, cross-industry, and investors, including angel investors, pursue the agenda of innovation and acceleration towards Net Zero?</li>
-                                <li>What are the key measurable indicators that determine the success of these collaborations?</li>
+                                <li>What are the most promising and impact-outcomes innovation and data-driven technologies where potential investors can investigate towards early engagement and commercialization?</li>
+                                <li>What are the some of the best practices that have been proven effective in other supply chains and what are the mechanisms for successful technology transfer evolving?</li>
+                                <li>Why is the role of trade finance critical in funding this ESG transition?</li>
+                                <li>How can a resilient supply chain support biodiversity initiative including nature capital in the agroforestry landscape help boost coffee bean production?</li>
+                                <li>What does the sustainability future look like from where you are coming from?</li>
                             </div>
                         </ul>
                         <div className='mt-2'>
@@ -440,10 +440,10 @@ function Agenda() {
 
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
-                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
                             18:30 - 20:30
                         </div>
-                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                        <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
                             NETWORKING SOIREE” AT THE UK HOUSE OF LORDS
                         </div>
                     </div>
@@ -691,9 +691,6 @@ function Agenda() {
                         </div>
                     </div>
                     <div className='mt-4 px-2 max-w-3xl'>
-                        <div className='mt-2'>
-                            <h3>Decarbonising commercial agriculture, from the production level to the business and finance partners along the value chains, is a key frontline for climate action. Carbon finance – as the ensemble of financial instruments to underpin global decarbonisation – is a necessary component of the equation. Policy-based innovations in some pioneer countries in the Global South are already helping decarbonise the production and supply side. Businesses and financiers are also considering carbon finance to further a virtuous cycle, including “below value-chain mitigation” (BVCM). This session will explore the emerging initiatives, the challenges and the options to decarbonise the coffee sector, including the mechanisms needed to ensure environmental integrity and social equity along the process.</h3>
-                        </div>
                         <ul className='mt-2 list-disc'>
                             <div className='pl-6'>
                                 <li>How to decarbonise commodity chains</li>
@@ -771,21 +768,18 @@ function Agenda() {
                             15:10
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                            TRANSFORMING GLOBAL TRADE TO DELIVER FOOD SECURITY
+                            TRANSFORMING GLOBAL TRADE TO DELIVER SUSTAINABILITY
                         </div>
                     </div>
                     <div className='mt-4 px-2 max-w-3xl'>
                         <ul className='mt-2 list-disc'>
                             <div className='pl-6'>
-                                <li>How do you explore the complex interlinkages between climate change and international trade?</li>
-                                <li>How do you integrate global supply chains, from source to destination, across networks of processing, warehousing, and logistic facilities?</li>
-                                <li>How do you achieve sustainable global trade for climate action and food security?</li>
-                                <li>Is digitalization the answer to making supply chains disruption-proof?</li>
-                                <li>How do you create digital standards for the container shipping industry?</li>
-                                <li>How do you set up an interoperable global trade ecosystem?</li>
-                                <li>How does paperless trade impact climate change?</li>
-                                <li>How can producers manage transportation bottlenecks, disruptions on global trade routes, and interruptions caused by geopolitical instability?</li>
-                                <li>Is global trade ready for digital standards and disruptive innovation?</li>
+                                <li>What is the current state of the sectors you represent and what are some of the challenges in the overall global trade digitalisation?</li>
+                                <li>What are some solutions or innovations in digitalisation being implemented to address these challenges to reduce GHG emissions and how do they relate to the overall Net Zero target?</li>
+                                <li>How do you see the role of international trade rules including at the WTO in making global trade paperless, climate-neutral and sustainable?</li>
+                                <li>What are some of the best practices you can share that the coffee industry can learn?</li>
+                                <li>How can banks and finance institutions facilitate implementing this systemic change in global trade to deliver sustainability?</li>
+                                <li>What is the future of global trade? Is global trade ready for digital standardisation and disruptive innovation?</li>
                             </div>
                         </ul>
                         <div className='mt-2'>
@@ -801,6 +795,7 @@ function Agenda() {
                                 <li className=''><span className='font-bold'>H. E. Alex Assanvo</span>, <span className='italic'>Executive Secretary</span>, <span className='font-bold'>Cȏte d’Ivoire Ghana Cocoa Initiative (CIGCI)</span></li>
                                 <li className=''><span className='font-bold'>Thomas Bagge</span>, <span className='italic'>Chief Executive Officer</span>, <span className='font-bold'>Digital Container Shipping Association (DCSA)</span></li>
                                 <li className=''><span className='font-bold'>N L N Swaroop</span>, <span className='italic'>Global Product Head – Sustainability, Innovation, FIs, Asset distribution & Capital Management, Global Trade Solutions</span>, <span className='font-bold'>HSBC</span></li>
+                                <li className=''><span className='font-bold'>Thomas Bagge</span>, <span className='italic'>Chief Executive Officer</span>, <span className='font-bold'>Digital Container Shipping Association (DCSA)</span></li>
                             </div>
                         </ul>
                     </div>
