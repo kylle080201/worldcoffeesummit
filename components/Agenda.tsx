@@ -12,7 +12,7 @@ function Agenda() {
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
-                            7:00 - 9:25
+                            9:25
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
                             MORNING COFFEE & REGISTRATION
@@ -170,7 +170,7 @@ function Agenda() {
                         </div>
                     </div>
                     <div className='mt-4 px-2 max-w-3xl'>
-                        <h3 className=''><span className='font-bold'>H.E. Johnston Busingye</span>, <span className=' italic'>High Commissio</span>, <span className='font-bold'>The Republic of Rwanda to the United Kingdom</span></h3>
+                        <h3 className=''><span className='font-bold'>H.E. Johnston Busingye</span>, <span className='font-bold'>High Commissioner for the Republic of Rwanda to the United Kingdom</span></h3>
                     </div>
                 </div>
 
@@ -266,8 +266,6 @@ function Agenda() {
                                 <li>With climate change increasingly affecting the coffee industry and agriculture more broadly, what do you believe are the key elements that businesses should focus on when disclosing environmental and social risks under the CSRD? What do you believe are the biggest challenges companies face in implementing?</li>
                                 <li>With the technology landscape rapidly transforming, what are the developments you are excited about? How can remote sensing technologies and digital platforms enhance the accuracy and transparency of scope 3 reporting?</li>
                                 <li>How do you think the Corporate Sustainability Reporting Directive (CSRD) and Corporate Sustainability Due Diligence Directive (CS3D) will drive meaningful change in corporate climate action strategies? What do we need to ensure to fully recognise this?</li>
-                                <li>How can remote sensing and digital tools enhance organisations’ ability to understand Scope 3 emission and impact of nature-related risks and provide detailed nature and biodiversity data?</li>
-                                <li>How does this data help meet the increasing demands from investors and regulators and the EU’s Corporate Sustainability Reporting Directive (CSRD), while optimising cost and efficiency?</li>
                             </div>
                         </ul>
                         <div className='mt-2'>
@@ -410,6 +408,13 @@ function Agenda() {
                                     <span className='font-bold'>Piet Van Asten</span>,
                                     <span className='italic'> Head of Sustainable Production Systems</span>,
                                     <span className='font-bold'> Olam Food Ingredients (ofi)</span>
+                                </li>
+                                <li className=''>
+                                    <span className='font-bold'>Sean Edwards</span>,
+                                    <span className='italic'> Chairman</span>,
+                                    <span className='font-bold'> International Trade Forfaiting Association (ITFA)</span>,
+                                    <span className='italic'> Head of Legal</span>,
+                                    <span className='font-bold'> Sumitomo Mitsui Banking Corporation(SMBC)</span>
                                 </li>
                             </div>
                         </ul>
@@ -793,7 +798,6 @@ function Agenda() {
                             <div className='pl-6'>
                                 <li className=''><span className='font-bold'>Karla Canavan</span>, <span className='italic'>Vice President, Commodity Trade and Finance, Markets</span>, <span className='font-bold'>WWF</span></li>
                                 <li className=''><span className='font-bold'>H. E. Alex Assanvo</span>, <span className='italic'>Executive Secretary</span>, <span className='font-bold'>Cȏte d’Ivoire Ghana Cocoa Initiative (CIGCI)</span></li>
-                                <li className=''><span className='font-bold'>Thomas Bagge</span>, <span className='italic'>Chief Executive Officer</span>, <span className='font-bold'>Digital Container Shipping Association (DCSA)</span></li>
                                 <li className=''><span className='font-bold'>N L N Swaroop</span>, <span className='italic'>Global Product Head – Sustainability, Innovation, FIs, Asset distribution & Capital Management, Global Trade Solutions</span>, <span className='font-bold'>HSBC</span></li>
                                 <li className=''><span className='font-bold'>Thomas Bagge</span>, <span className='italic'>Chief Executive Officer</span>, <span className='font-bold'>Digital Container Shipping Association (DCSA)</span></li>
                             </div>
