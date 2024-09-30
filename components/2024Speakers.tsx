@@ -74,7 +74,6 @@ function Speakers2024() {
       name: 'Dr. Alvaro Lario ',
       role: 'President',
       company: 'International Fund of Agricultural Development (IFAD)',
-      company2: "House of Lords",
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/mut5673199979946008165-1.jpg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/09/E_g_web.png",
       iconWidth: 100,
