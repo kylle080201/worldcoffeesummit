@@ -696,6 +696,19 @@ function Speakers2024() {
       `
     },
     {
+      name: 'Ed Mitchard',
+      role: 'Chief Scientist & Co-Founder',
+      company: 'Space Intelligence',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/Ed-Mitchard-headshot-Sep-2022-1.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/09/SpaceIntelligence-FC-logo-2.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+      Ed Mitchard has spent ~20 years using satellite data to map changes in world's forests and peatlands. As a professor at Edinburgh University he published over 100 scientific papers, raised $8 million in research funding, and measured >15,000 trees across 13 countries. He has advised governments on how to monitor their forests, been deeply involved in the evolution of carbon standards, including Verra’s VCS and the Plan Vivo Standard, and supported the development and implementation of supply chain standards including the EUDR. 
+      In 2017 he co-founded Space Intelligence with Dr Murray Collins, to bring high accuracy satellite-derived maps to nature based solutions projects and commodity monitoring. Space Intelligence has grown to 60 employees, providing high accuracy maps of landcover, deforestation, forest degradation and forest carbon storage around the world.
+      `
+    },
+    {
       name: 'Ashley Olson Onyango',
       role: 'Head of Financial Inclusion & AgriTech',
       company: 'GSMA (Mobile for Development)',
