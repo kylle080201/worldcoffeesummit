@@ -390,15 +390,14 @@ function Agenda() {
                             </div>
                         </ul>
                         <div className='mt-2'>
+                        <h3>Chair:</h3>
+                            <h3 className=''><span className='font-bold'>Surath Sengupta</span>, <span className='italic'>Managing Director, Head of Trade and Working Capital Innovation & Transformation</span>, <span className='font-bold'>Lloyds Banking Group</span></h3>
+                        </div>
+                        <div className='mt-2'>
                             <h3>Speakers:</h3>
                         </div>
                         <ul className='mt-2 list-disc'>
                             <div className='pl-6'>
-                                <li className=''>
-                                    <span className='font-bold'>Surath Sengupta</span>,
-                                    <span className='italic'> Managing Director, Head of Trade and Working Capital Innovation & Transformation</span>,
-                                    <span className='font-bold'> Lloyds Banking Group</span>
-                                </li>
                                 <li className=''>
                                     <span className='font-bold'>Dr. Parmesh Shah</span>,
                                     <span className='italic'> Global Lead, Data-Driven, Digital Agriculture and Innovations</span>,
