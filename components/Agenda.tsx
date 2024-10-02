@@ -652,7 +652,7 @@ function Agenda() {
                             <h3>Speakers:</h3>
                             <div className='pl-6'>
                                 <li className=''><span className='font-bold'>Ashley Olson Onyango</span>, <span className='italic'>Head of Financial Inclusion & AgriTech</span>, <span className='font-bold'>GSMA</span></li>
-                                <li className=''><span className='font-bold'>Jari Partanen</span>, <span className='italic'>Board Director for Finland, Norway, Latvia, Lebanon</span>, <span className='font-bold'>EBRD</span></li>
+                                <li className=''><span className='font-bold'>Jari Partanen</span>, <span className='italic'>Former Board Director</span>, <span className='font-bold'>EBRD</span></li>
                                 <li className=''><span className='font-bold'>Richard Jones</span>, <span className='italic'>INED and Chair of Risk</span>, <span className='font-bold'>FCMB Bank</span></li>
                             </div>
                         </ul>
