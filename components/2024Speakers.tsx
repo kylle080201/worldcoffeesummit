@@ -494,7 +494,7 @@ function Speakers2024() {
     },
     {
       name: 'Jari Partanen',
-      role: 'Board Director',
+      role: 'Former Board Director',
       company: 'European Bank for Reconstruction and Development (EBRD)',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/06/Partanen_Jari_potretti.jpg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/06/Ebrd-logo-regular-blue-english-e1719190097501.png",
@@ -705,6 +705,21 @@ function Speakers2024() {
       bio: `
       Ed Mitchard has spent ~20 years using satellite data to map changes in world's forests and peatlands. As a professor at Edinburgh University he published over 100 scientific papers, raised $8 million in research funding, and measured >15,000 trees across 13 countries. He has advised governments on how to monitor their forests, been deeply involved in the evolution of carbon standards, including Verra’s VCS and the Plan Vivo Standard, and supported the development and implementation of supply chain standards including the EUDR. 
       In 2017 he co-founded Space Intelligence with Dr Murray Collins, to bring high accuracy satellite-derived maps to nature based solutions projects and commodity monitoring. Space Intelligence has grown to 60 employees, providing high accuracy maps of landcover, deforestation, forest degradation and forest carbon storage around the world.
+      `
+    },
+    {
+      name: 'Newerly Gutierrez Falla',
+      role: 'FARMER',
+      company: "",
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/10/Newerly-Gutierrez-Falla.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/10/VARIABLE-TERCERA-1.jpg",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+      Newerley Gutierrez is a fifth-generation Colombian coffee farmer, born at Finca Monteverde in Rioblanco, Tolima. Newerley has studied Agricultural Monitoring Systems at the University of Tolima, and Management and Local Development at the University Autónoma de Manizales. In addition to his academic studies, Newerley is also a Q-Grader and a SENA specialty coffee production technician. He is currently the General Manager and CEO of his company, Café 100 Años SAS. 
+      Newerley’s first job in the coffee industry was on his family’s farm, Finca Monteverde. Since then, Newerley had held numerous roles supporting coffee producers to improve the quality of their coffee. Some of these roles include serving as Cooperative Education Coordinator for the Cooperativa de Caficultores del Sur del Tolima (CAFISUR), Quality Analyst for the Association of Specialty Coffee Producers of Herrera Tolima, and as Quality Analyst for CI Virmax Café (now Caravela Coffee). Feeling passionate about teaching the next generation of coffee professionals about coffee quality and cupping, Newerley then decided to join the Servicio Nacional de Aprendizaje, Tolima Region (SENA, Tolima Region) as a Coffee Cupping Instructor. In one year at SENA, Newerley supported more than 30 producer organizations, training youth in coffee growing and cupping best practices – many of whom continue to positively impact the coffee industry and work as coffee professionals today. From SENA, Newerley then moved on to serve as Quality Director for Selecto Exportadores and CI Kyoto Lohas Beans. 
+      With his expansive knowledge of coffee and nearly 20 years of experience in the coffee industry since leaving his family’s farm, Newerley returned to Finca Monteverde, where he supported his family with the production, processing, and commercialization of the coffees from their farm. Finca Monteverde has sold their coffee globally, winning many national barista championships, including in Colombia, Ireland, Vietnam, and Ukraine, and have been finalists on several occasions in the world championships (Ukraine 2nd place in the Ibrik World Cup, 4th place in filtered coffees in Japan, 5th place in filtered coffees in Taiwan, 2nd place in good spirit in Ukraine, etc.). 
+      Now the General Manager and CEO of his company, Café 100 Años SAS, Newerley continues to positively impact the coffee industry through exportation of Colombian coffee and support to more than 35 farms to improve and differentiate their coffees in the market. Through Café 100 Años SAS, Newerley continues to advise and support coffee growers in Colombia, Venezuela, and Panama.
       `
     },
     {
