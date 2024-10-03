@@ -90,9 +90,9 @@ export default function Partners() {
         },
         {
             href: '',
-            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/B-Lab-Europe-Country-Partners-Logos-1.webp',
-            className: 'w-[9rem] mx-auto'
-        },
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/DCSA_logo-1.png',
+            className: 'w-[9rem] mx-auto py-8'
+        }
     ]
 
     return (

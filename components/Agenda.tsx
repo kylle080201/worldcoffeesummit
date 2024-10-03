@@ -4,7 +4,7 @@ function Agenda() {
     return (
         <div id="agenda" className='w-full'>
             <div className='py-20 max-w-5xl mx-auto'>
-                <h2 className="text-4xl font-bold text-center tracking-tight">PROVISIONAL AGENDA</h2>
+                <h2 className="text-4xl font-bold text-center tracking-tight">AGENDA</h2>
                 {/* agenda 1 */}
 
                 <h2 className="mt-8 text-2xl font-bold text-center tracking-tight">DAY ONE- Wednesday 16th OCTOBER 2024</h2>
@@ -736,6 +736,9 @@ function Agenda() {
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                             FARMERS PANEL
                         </div>
+                    </div>
+                    <div className='mt-4 px-2 max-w-3xl'>
+                        <h3 className=''><span className='font-bold'>Newerly Gutierrez Falla</span>, <span className='italic'>FARMER</span></h3>
                     </div>
                 </div>
 
