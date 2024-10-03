@@ -737,6 +737,9 @@ function Agenda() {
                             FARMERS PANEL
                         </div>
                     </div>
+                    <div className='mt-4 px-2 max-w-3xl'>
+                        <h3 className=''><span className='font-bold'>Newerly Gutierrez Falla</span>, <span className='italic'>FARMER</span></h3>
+                    </div>
                 </div>
 
                 <div className='mt-8'>
