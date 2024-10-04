@@ -85,6 +85,7 @@ function TicketPricing() {
                     <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8 ">
                         <div className="max-w-5xl mx-auto sm:text-center">
                             <h3 className="text-4xl tracking-tight text-red-700 sm:text-md font-bold">Early Bird Offer ends on 3rd October 2024</h3>
+                            <h5 className="text-lg tracking-tight text-red-700 sm:text-md font-bold mt-2">Due to early technical issues, we are extending Early Bird Offer to 7th October 2024</h5>
                         </div>
                         <table className="min-w-full divide-y divide-gray-300 mt-12">
                             <tbody className="bg-white">
