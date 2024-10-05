@@ -586,6 +586,19 @@ function Speakers2024() {
       bio: `Barney Reynolds is Global Co-Head of Financial Institutions, and of the Financial Services Regulatory Group, at A&O Shearman. He is one of the world's leading financial institution practitioners, specialising in all areas of banking, fund management, financial markets and financial infrastructure, crypto, insurance/reinsurance, AML and sanctions. He has particular expertise in UK and EU regulation. He has additional familiarity with the regime of Abu Dhabi Global Market (ADGM), which he conceived and established. He advises on navigating legal and regulatory systems worldwide. He is known as a pathfinder for giving strategic advice to financial services firms on how to plot the most efficient course through law and regulation; on the use of legal reasoning to achieve legal and regulatory certainty; and in engaging productively with the regulators and government officials. Barney is a noted commercial thinker on law and regulation, assisting firms in planning for and managing emerging risks from legal and regulatory change. He has helped numerous clients with business transformation. Barney advised the UK government and numerous businesses in the context of the legal and other implications of leaving the EU, and how to navigate them. He is interviewed and published widely and is frequently called to give evidence before Parliamentary Committees.`
     },
     {
+      name: 'Claire Elsdon',
+      role: 'Global Director, Capital Markets',
+      company: 'CDP',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/Claire-Elsdon-profile-pic-2023.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/07/pngegg.png",
+      iconWidth: 60,
+      iconHeight: 60,
+      bio: `
+      Claire Elsdon leads the Global Capital Markets and Environmental Data Sales teams at CDP, the non-profit that runs the world’s environmental disclosure system. She defines engagement strategy with financial institutions and other capital markets actors including institutional investors, banks, insurers and private equity and debt houses on a global basis, enabling them to request, utilise and apply critical climate, water and forest impact data from the companies they finance. Claire led CDP's role in delivering disclosure solutions for the Bank of England's CBES exercise and has spearheaded CDP's highly innovative sustainable supplier financing solution, most recently culminating in the Vodafone/Citi collaboration.     
+      Prior to CDP, Claire worked for over a decade broking Pan-European Equities to UK based Institutional Investors at HSBC, Merrill Lynch and JP Morgan before moving to Tanzania to establish Africa's leading social enterprise focusing on community motorcycle safety solutions.
+      `
+    },
+    {
       name: 'Tripurari Prasad',
       role: 'Investment Manager',
       company: 'Climate Asset Management',
@@ -646,19 +659,6 @@ function Speakers2024() {
       `
     },
     {
-      name: 'Claire Elsdon',
-      role: 'Global Director, Capital Markets',
-      company: 'CDP',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/Claire-Elsdon-profile-pic-2023.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/07/pngegg.png",
-      iconWidth: 60,
-      iconHeight: 60,
-      bio: `
-      Claire Elsdon leads the Global Capital Markets and Environmental Data Sales teams at CDP, the non-profit that runs the world’s environmental disclosure system. She defines engagement strategy with financial institutions and other capital markets actors including institutional investors, banks, insurers and private equity and debt houses on a global basis, enabling them to request, utilise and apply critical climate, water and forest impact data from the companies they finance. Claire led CDP's role in delivering disclosure solutions for the Bank of England's CBES exercise and has spearheaded CDP's highly innovative sustainable supplier financing solution, most recently culminating in the Vodafone/Citi collaboration.     
-      Prior to CDP, Claire worked for over a decade broking Pan-European Equities to UK based Institutional Investors at HSBC, Merrill Lynch and JP Morgan before moving to Tanzania to establish Africa's leading social enterprise focusing on community motorcycle safety solutions.
-      `
-    },
-    {
       name: 'Sophie Aujean',
       role: 'Director Global Advocacy',
       company: 'Fairtrade International',
@@ -692,6 +692,18 @@ function Speakers2024() {
       iconHeight: 100,
       bio: `
       Marie Kemplay is deputy editor of Sustainable Views, a service from the Financial Times, which covers the ever-expanding framework of rules, policy and litigation impacting businesses across environmental, social and governance issues. Marie’s background is in financial journalism — she was previously capital markets editor on The Banker, has reported on private equity at PitchBook News and was interim editor of Banking Risk and Regulation. Her financial markets experience informs her coverage of broader sustainability issues. That is, she brings a deep understanding of the importance of creating the right financial structures and investment environments in order for businesses and governments to achieve key transition objectives, such as reduced carbon emissions and nature restoration.
+      `
+    },
+    {
+      name: 'James Chamberlayne',
+      role: 'Director, Sustainable Finance Program',
+      company: 'CDP',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/10/1704964526576.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/10/pngegg.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+      James Chamberlayne is the director of CDP’s Sustainable Finance Program, Capital Markets, which facilitates real-economy engagement, disclosure and data insights tailored specifically to serve the needs of banks and financial institutions. Before this, he led the UK and worldwide supply chain team at CDP working with large multinationals in their efforts to build sustainable supply chains. Before CDP, James worked in India, as head of sustainability and social impact for a company in the agriculture commodities sector and has a background in International and sustainable development.
       `
     },
     {
