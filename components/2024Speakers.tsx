@@ -619,6 +619,16 @@ function Speakers2024() {
       bio: `Surath is a strategic and focused banking leader with over 25 years of experience, having held senior positions across the globe most notably in UK, Hong Kong and India. Currently he leads Innovation and Transformation for Working Capital and Trade at Lloyds Banking Group. Prior to this, he was on the global board of HSBC’s Trade and Receivables Finance business. Surath is also the Vice-Chair of the International Chambers of Commerce global Banking Commission and is regularly represented in numerous publications both print and across social media.`
     },
     {
+      name: 'Randy Jagt',
+      role: 'Future of Food Global Lead & Strategy Partner',
+      company: 'Deloitte',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/10/Jagt_Randy-6.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/10/Deloitte_Logo.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: `Randy is the Global Future of Food leader for Deloitte. Across the Deloitte network, we help clients to accelerate the transformation to responsible and future-proof business models. This includes core transformation themes like personalized and healthy nutrition, responsible production, food ecosystem, and industry 4.0 transformation. As a Senior Strategy Partner, Randy works with companies across the food value chain. He is deeply passionate about realizing strategic and purpose driven transformations at scale with clients and necessary coalitions. In the past 20+ years, Randy has advised executives and leaders on strategy-led transformations of several Fortune 500 clients across ingredient suppliers, consumer products, agriculture and food retail.`
+    },
+    {
       name: 'Joy Macknight',
       role: 'Journalist, Former Editor',
       company: 'Financial Times - The Banker',
