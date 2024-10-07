@@ -68,6 +68,11 @@ export default function Partners() {
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/perfect-daily-grind.png',
             className: 'w-[12rem] p-2 mx-auto'
         },
+        {
+            href: '',
+            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/10/Comunicaffe_Logo_EN_Retina_2023.png',
+            className: 'w-[12rem] p-2 mx-auto'
+        },
     ]
 
     const crossIndustryPartners = [

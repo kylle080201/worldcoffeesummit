@@ -202,7 +202,7 @@ function Agenda() {
                     <div className='mt-4 px-2 max-w-3xl'>
                         <ul className='mt-2 list-disc'>
                             <div className='pl-6'>
-                                <li>What do we mean by sustainability in the coffee sector – is this primarily na environmental issue or a social one? Are they equally as important?</li>
+                                <li>What do we mean by sustainability in the coffee sector – is this primarily an environmental issue or a social one? Are they equally as important?</li>
                                 <li>What are the biggest priority issues for building a sustainable coffee supply chain?</li>
                                 <li>What are the main environmental risk areas within the coffee supply chain – and how are these being addressed? What are trickiest challenges?</li>
                                 <li>Can producing coffee sustainably also produce social benefits?</li>
@@ -704,7 +704,7 @@ function Agenda() {
                         </ul>
                         <div className='mt-2'>
                             <h3>Chair:</h3>
-                            <h3 className=''><span className='font-bold'>Josep Garí</span>, <span className='italic'>Head of Climate, Forests & Land</span>, <span className='font-bold'>United Nations / UNDP</span></h3>
+                            <h3 className=''><span className='font-bold'>James Chamberlayne</span>, <span className='italic'>Director, Sustainable Finance Program</span>, <span className='font-bold'>CDP</span></h3>
                         </div>
                         <ul className='mt-2 list-disc'>
                             <h3>Speakers:</h3>
@@ -721,7 +721,9 @@ function Agenda() {
                                     <span className='font-bold'> Salesforce</span>
                                 </li>
                                 <li className=''>
-                                    <span className='font-bold'>Lavazza</span>
+                                    <span className='font-bold'>Josep Garí</span>,
+                                    <span className='italic'> Head of Climate, Forests & Land</span>,
+                                    <span className='font-bold'> United Nations / UNDP</span>
                                 </li>
                             </div>
                         </ul>
@@ -737,9 +739,19 @@ function Agenda() {
                             FARMERS PANEL
                         </div>
                     </div>
-                    <div className='mt-4 px-2 max-w-3xl'>
-                        <h3 className=''><span className='font-bold'>Newerly Gutierrez Falla</span>, <span className='italic'>FARMER</span></h3>
-                    </div>
+                    <ul className='mt-2 list-disc'>
+                        <h3>Speakers:</h3>
+                        <div className='pl-6'>
+                            <li className=''>
+                                <span className='font-bold'>Newerly Gutierrez Falla</span>,
+                                <span className='italic'> Colombian Farmer</span>,
+                            </li>
+                            <li className=''>
+                                <span className='font-bold'>Rusatira Emmanuel</span>,
+                                <span className='italic'> Rwandan Farmer</span>
+                            </li>
+                        </div>
+                    </ul>
                 </div>
 
                 <div className='mt-8'>

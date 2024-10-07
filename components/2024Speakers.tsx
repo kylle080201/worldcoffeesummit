@@ -721,7 +721,7 @@ function Speakers2024() {
     },
     {
       name: 'Newerly Gutierrez Falla',
-      role: 'FARMER',
+      role: 'Colombion Farmer',
       company: "",
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/10/Newerly-Gutierrez-Falla.jpg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/10/VARIABLE-TERCERA-1.jpg",
@@ -733,6 +733,16 @@ function Speakers2024() {
       With his expansive knowledge of coffee and nearly 20 years of experience in the coffee industry since leaving his family’s farm, Newerley returned to Finca Monteverde, where he supported his family with the production, processing, and commercialization of the coffees from their farm. Finca Monteverde has sold their coffee globally, winning many national barista championships, including in Colombia, Ireland, Vietnam, and Ukraine, and have been finalists on several occasions in the world championships (Ukraine 2nd place in the Ibrik World Cup, 4th place in filtered coffees in Japan, 5th place in filtered coffees in Taiwan, 2nd place in good spirit in Ukraine, etc.). 
       Now the General Manager and CEO of his company, Café 100 Años SAS, Newerley continues to positively impact the coffee industry through exportation of Colombian coffee and support to more than 35 farms to improve and differentiate their coffees in the market. Through Café 100 Años SAS, Newerley continues to advise and support coffee growers in Colombia, Venezuela, and Panama.
       `
+    },
+    {
+      name: 'Rusatira Emmanuel',
+      role: 'Rwandan Farmer',
+      company: "",
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/10/rusatira-emmanuel.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/10/LOGO-DARK-REAL-1.webp",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: ``
     },
     {
       name: 'Ashley Olson Onyango',
