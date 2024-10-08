@@ -13,7 +13,7 @@ export default function NetworkingSoiree() {
   const line_items = JSON.parse(searchParams?.get('line_items') as string) as T_Line_Items[];
   const formData = JSON.parse(decodeURIComponent(searchParams?.get('formData') as string));
   const networkingSoireeTicket = {
-    price: 'price_1PIiS4KMWpUKzQVz4RptL8TA',
+    price: 'price_1PGx2vKMWpUKzQVz1rtJmCf0',
     quantity: 1,
     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
   }
@@ -78,7 +78,7 @@ export default function NetworkingSoiree() {
       <div className="flex w-full h-[100vh] justify-center items-center text-center px-12 bg-gray-100">
         <div className="flex flex-col gap-6 text-4xl max-w-7xl my-auto">
           <div>
-            Why not join our <span className="font-bold">Networking Soirée</span> at UK House of Lords on 16th October 2024 early evening for <span className="font-bold">£185.00</span> per person?
+            Why not join our <span className="font-bold">Networking Soirée</span> at UK House of Lords on 16th October 2024 early evening for <span className="font-bold">£225.00</span> per person?
           </div>
           <div>
             Wines and Hors d’oeuvres included.

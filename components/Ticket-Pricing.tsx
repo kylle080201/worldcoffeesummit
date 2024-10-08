@@ -14,7 +14,7 @@ function TicketPricing() {
             earlyBird: "Book before 8th October 2024 to Save £200.00",
             line_items: [
                 {
-                    price: 'price_1Pa5oaKMWpUKzQVzidgLR3r4',
+                    price: 'price_1Q7RRxKMWpUKzQVzIyknghNg',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
@@ -28,7 +28,7 @@ function TicketPricing() {
             earlyBird: "Book before 8th October 2024 to Save £300.00",
             line_items: [
                 {
-                    price: 'price_1Pa5pcKMWpUKzQVzAqNtI9NE',
+                    price: 'price_1Q7RWxKMWpUKzQVzTfM6nbR6',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
@@ -42,7 +42,7 @@ function TicketPricing() {
             earlyBird: "Book before 8th October 2024 to Save £300.00",
             line_items: [
                 {
-                    price: 'price_1Pa5qDKMWpUKzQVzgHK5XrmV',
+                    price: 'price_1Q7RYZKMWpUKzQVzY8ch6ldu',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
@@ -56,7 +56,7 @@ function TicketPricing() {
             earlyBird: "Book before 8th October 2024 to Save £300.00",
             line_items: [
                 {
-                    price: 'price_1PgHs9KMWpUKzQVzEluhrJOy',
+                    price: 'price_1Q7RZyKMWpUKzQVzBt4b61hl',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
@@ -71,7 +71,7 @@ function TicketPricing() {
         earlyBird: "Exclusive for Summit Attendees! Limited tickets only! First come, first serve!",
         line_items: [
             {
-                price: 'price_1PIiS4KMWpUKzQVz4RptL8TA',
+                price: 'price_1PGx2vKMWpUKzQVz1rtJmCf0',
                 quantity: 1,
                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
             }
@@ -83,9 +83,6 @@ function TicketPricing() {
             <div id="summit" className="flow-root px-6 mx-auto mt-12 rounded-md max-w-7xl">
                 <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                     <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8 ">
-                        <div className="max-w-5xl mx-auto sm:text-center">
-                            <h3 className="text-4xl tracking-tight text-red-700 sm:text-md font-bold">Due to early technical issues, we are extending Early Bird Offer to 7th October 2024</h3>
-                        </div>
                         <table className="min-w-full divide-y divide-gray-300 mt-12">
                             <tbody className="bg-white">
                                 {summit.map((delegate) => (
@@ -94,15 +91,18 @@ function TicketPricing() {
                                         <td className="flex-wrap px-3 py-4 text-gray-900 text-lg">
                                             {delegate.description}
                                             <br />
-                                            <h3 className="text-sm tracking-tight text-red-700 sm:text-lg font-bold">{delegate.earlyBird}</h3>
+                                            {/* <h3 className="text-sm tracking-tight text-red-700 sm:text-lg font-bold">{delegate.earlyBird}</h3> */}
                                         </td>
                                         <td className="flex-wrap px-3 py-4 text-gray-900 font-bold ">
                                             <div className='h-full text-lg w-full'>
-                                                <div className='shrink-0'>
+                                                {/* <div className='shrink-0'>
                                                     {delegate.old_price && <span className='text-red-700 mr-2 line-through'>£{delegate.old_price}.00</span> }
                                                 </div>
                                                 <div>
                                                     £{delegate.item_price}.00
+                                                </div> */}
+                                                <div>
+                                                    £{delegate.old_price}.00
                                                 </div>
                                             </div>
                                         </td>
@@ -160,15 +160,18 @@ function TicketPricing() {
                                         <br />
                                         Wines and Hors d&apos;oeuvres
                                         <br />
-                                        <h3 className="text-sm tracking-tight text-red-700 sm:text-lg font-bold">Exclusive for Summit Attendees!<br />Limited tickets only! First come, first serve!<br />Book before 8th October 2024 to Save £40.00</h3>
+                                        {/* <h3 className="text-sm tracking-tight text-red-700 sm:text-lg font-bold">Exclusive for Summit Attendees!<br />Limited tickets only! First come, first serve!<br />Book before 8th October 2024 to Save £40.00</h3> */}
                                     </td>
                                     <td className="flex-wrap px-3 py-4 text-gray-900 font-bold ">
                                         <div className='h-full text-lg flex flex-col w-full'>
-                                            <div className='flex shrink-0'>
+                                            {/* <div className='flex shrink-0'>
                                                 {networkingSoiree.old_price && <span className='text-red-700 mr-2 line-through'>£{networkingSoiree.old_price}.00</span> }
                                             </div>
                                             <div>
                                                 £{networkingSoiree.item_price}.00
+                                            </div> */}
+                                            <div>
+                                                £{networkingSoiree.old_price}.00
                                             </div>
                                         </div>
                                     </td>
