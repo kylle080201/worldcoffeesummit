@@ -41,7 +41,7 @@ function Agenda() {
                         </div>
                     </div>
                     <div className='mt-4 px-2 max-w-5xl'>
-                        <h3 className=''><span className='font-bold'>Joy MacKnight</span>, <span className='italic'>Journalist, Former Editor</span>, <span className='font-bold'>Financial Times (FT) - The Banker</span></h3>
+                        <h3 className=''><span className='font-bold'>Joy Macknight</span>, <span className='italic'>Journalist, Former Editor</span>, <span className='font-bold'>Financial Times (FT) - The Banker</span></h3>
                     </div>
                 </div>
 
@@ -134,7 +134,7 @@ function Agenda() {
                             <div className='pl-6'>
                                 <li className=''><span className='font-bold'>Laurent Sagarra,</span> <span className=' italic'>Vice President Sustainability</span>, <span className='font-bold'>JDE Peet&apos;s</span></li>
                                 <li className=''><span className='font-bold'>Mr Claude BIZIMANA,</span> <span className=' italic'>Chief Executive Officer</span>, <span className='font-bold'>National Agricultural Export Development Board (NAEB), Rwanda</span></li>
-                                <li className=''><span className='font-bold'>Patrick Lanz,</span> <span className=' italic'>EUDR Product Director</span>, <span className='font-bold'>osapiens</span></li>
+                                <li className=''><span className='font-bold'>Patrik Lanz,</span> <span className=' italic'>EUDR Product Director</span>, <span className='font-bold'>osapiens</span></li>
                             </div>
                         </ul>
                     </div>
@@ -450,7 +450,7 @@ function Agenda() {
                         </div>
                     </div>
                     <div className='mt-4 px-2 max-w-3xl'>
-                        <h3 className=''><span className='font-bold'>Sean Edwardsa</span>, <span className='italic'>Chairman,</span> <span className='font-bold'>INTERNATIONAL TRADE AND FORFAITING ASSOCIATION (ITFA)</span></h3>
+                        <h3 className=''><span className='font-bold'>Sean Edwards</span>, <span className='italic'>Chairman,</span> <span className='font-bold'>INTERNATIONAL TRADE AND FORFAITING ASSOCIATION (ITFA)</span></h3>
                     </div>
                 </div>
 
