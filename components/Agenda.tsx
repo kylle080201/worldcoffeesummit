@@ -510,11 +510,6 @@ function Agenda() {
                             <div className='pl-6'>
                                 <li className=''>
                                     <span className='font-bold'>Sarah Nelen</span>,
-                                    <span className='italic'> Acting Director Green Diplomacy and Multilateralism(ENV. F), Directorate-General for Environment</span>,
-                                    <span className='font-bold'> European Commission</span>
-                                </li>
-                                <li className=''>
-                                    <span className='font-bold'>Sarah Nelen</span>,
                                     <span className='italic'> Acting Director Green Diplomacy and Multilateralism (ENV. F), Directorate-General for Environment</span>,
                                     <span className='font-bold'> European Commission</span>
                                 </li>
