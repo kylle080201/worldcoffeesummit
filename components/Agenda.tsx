@@ -723,7 +723,7 @@ function Agenda() {
                         <ul className='mt-2 list-disc'>
                             <div className='pl-6'>
                                 <li>What is the most impactful policy-based innovations currently driving the decarbonisation of commercial agriculture, particularly in commodity chains like coffee, and how can these be scaled in other sectors or regions?</li>
-                                <li>How can businesses effectively incorporate below value-chain mitigation (BVCM) strategies into their decarbonisation efforts while maintaining environmental integrity and addressing potential challenges with social equity?</li>
+                                <li>How can businesses effectively incorporate beyond value-chain mitigation (BVCM) strategies into their decarbonisation efforts while maintaining environmental integrity and addressing potential challenges with social equity?</li>
                                 <li>What are the key financial instruments in carbon finance that can be leveraged to support decarbonisation in the agricultural sector, and how can these ensure both financial viability and long-term sustainability of carbon markets?</li>
                                 <li>In the context of the coffee sector, what mechanisms or safeguards are needed to integrate carbon markets into corporate net-zero pathways while ensuring transparency, accountability, and alignment with global decarbonisation goals?</li>
                             </div>
