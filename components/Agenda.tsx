@@ -6,7 +6,7 @@ function Agenda() {
             <div className='py-20 max-w-5xl mx-auto'>
                 <h2 className="text-4xl font-bold text-center tracking-tight">AGENDA</h2>
 
-                <h2 className="mt-8 text-2xl font-bold text-center tracking-tight">DAY ONE- Wednesday 16th OCTOBER 2024</h2>
+                <h2 className="mt-8 text-2xl font-bold text-center tracking-tight">DAY ONE- Wednesday 16th October 2024</h2>
 
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
