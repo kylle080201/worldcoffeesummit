@@ -128,12 +128,12 @@ function Agenda() {
                     </div>
                     <div className='mt-4 px-2 max-w-3xl'>
                         <ul className="list-disc pl-6">
-                            <li>•	How does the EUDR legislation impact reduction of EU’s contribution to greenhouse gases (GHG) emissions and promote deforestation free-supply chain?</li>
-                            <li>•	How does the penalty provisions on the legislation affected preparation for by the big operators and what does compliance look like after deadline 30 December 2024?</li>
-                            <li>•	What are some of the logistical challenges taking shape in terms of putting together the data required for compliance and what are best practice solutions available for the Operators?</li>
-                            <li>•	What are some of the “unintended consequences” or structural risks that have so far hindered or changed the current landscape in investment opportunities toward a greener and more sustainable global trade?</li>
-                            <li>•	What are the solutions that are available in the market and how do they address the need for accurate data and how do they simplify compliance?</li>
-                            <li>•	Now that the EU just published a 12-month phased-in period – from 30 December 2024 to 30 December 2025, what are some of the ramifications and financial implications of this delay and what happens now? What is the future of green deal?</li>
+                            <li>How does the EUDR legislation impact reduction of EU’s contribution to greenhouse gases (GHG) emissions and promote deforestation free-supply chain?</li>
+                            <li>How does the penalty provisions on the legislation affected preparation for by the big operators and what does compliance look like after deadline 30 December 2024?</li>
+                            <li>What are some of the logistical challenges taking shape in terms of putting together the data required for compliance and what are best practice solutions available for the Operators?</li>
+                            <li>What are some of the “unintended consequences” or structural risks that have so far hindered or changed the current landscape in investment opportunities toward a greener and more sustainable global trade?</li>
+                            <li>What are the solutions that are available in the market and how do they address the need for accurate data and how do they simplify compliance?</li>
+                            <li>Now that the EU just published a 12-month phased-in period – from 30 December 2024 to 30 December 2025, what are some of the ramifications and financial implications of this delay and what happens now? What is the future of green deal?</li>
                         </ul>
                         <div className='mt-2'>
                             <h3>Chair:</h3>
@@ -141,16 +141,18 @@ function Agenda() {
                                 <span className='font-bold'>William Kennedy</span>, <span className='italic'>Senior Executive Editor, Energy and Commodities</span>, <span className='font-bold'>Bloomberg</span>
                             </h3>
                         </div>
-                        <ul className='mt-2 list-disc pl-6'>
+                        
+                        <ul className='mt-2 list-disc'>
                             <h3>Speakers:</h3>
-                            <li><span className='font-bold'>Laurent Sagarra</span>, <span className='italic'>Vice President Sustainability</span>, <span className='font-bold'>JDE Peet’s</span></li>
-                            <li><span className='font-bold'>Claude Bizimana</span>, <span className='italic'>CEO</span>, <span className='font-bold'>National Agricultural Export Development Board (NAEB), Rwanda</span></li>
-                            <li><span className='font-bold'>Karla Canavan</span>, <span className='italic'>Vice President, Commodity Trade and Finance</span>, <span className='font-bold'>Markets, WWF</span></li>
-                            <li><span className='font-bold'>Patrick Lanz</span>, <span className='italic'>EUDR Product Director</span>, <span className='font-bold'>osapiens</span></li>
+                            <div className='pl-6'>
+                                <li><span className='font-bold'>Laurent Sagarra</span>, <span className='italic'>Vice President Sustainability</span>, <span className='font-bold'>JDE Peet’s</span></li>
+                                <li><span className='font-bold'>Claude Bizimana</span>, <span className='italic'>CEO</span>, <span className='font-bold'>National Agricultural Export Development Board (NAEB), Rwanda</span></li>
+                                <li><span className='font-bold'>Karla Canavan</span>, <span className='italic'>Vice President, Commodity Trade and Finance Markets</span>, <span className='font-bold'>WWF</span></li>
+                                <li><span className='font-bold'>Patrick Lanz</span>, <span className='italic'>EUDR Product Director</span>, <span className='font-bold'>osapiens</span></li>
+                            </div>
                         </ul>
                     </div>
                 </div>
-
 
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
@@ -368,17 +370,17 @@ function Agenda() {
                     <div className='mt-2'>
                         <h3>Chair:</h3>
                         <h3 className=''>
-                            <span className='font-bold'>T.J. Ryan</span>, <span className='italic'>Chief of Party of Philippine Coffee Advancement and Farm Enterprise Project</span>, <span className='bold'>ACDI/VOCA</span>
+                            <span className='font-bold'>T.J. Ryan</span>, <span className='italic'>Chief of Party of Philippine Coffee Advancement and Farm Enterprise Project</span>, <span className='font-bold'>ACDI/VOCA</span>
                         </h3>
                     </div>
                     <ul className='mt-2 list-disc'>
                         <h3>Speakers:</h3>
                         <div className='pl-6'>
                             <li className=''>
-                                <span className='font-bold'>Newerly Gutierrez Falla</span>, <span className='bold'>Colombian Farmer</span>
+                                <span className='font-bold'>Newerly Gutierrez Falla</span>, <span className='font-bold'>Colombian Farmer</span>
                             </li>
                             <li className=''>
-                                <span className='font-bold'>Andrew Gatera</span>, <span className='bold'>Rwandan Farmer & Exporter</span>
+                                <span className='font-bold'>Andrew Gatera</span>, <span className='font-bold'>Rwandan Farmer & Exporter</span>
                             </li>
                         </div>
                     </ul>
@@ -506,7 +508,7 @@ function Agenda() {
                                 </li>
                                 <li className=''>
                                     <span className='font-bold'>H.E. Johnston Busingye</span>,
-                                    <span className='font-bold'>High Commissioner for the Republic of Rwanda to the United Kingdom</span>
+                                    <span className='font-bold'> High Commissioner for the Republic of Rwanda to the United Kingdom</span>
                                 </li>
                             </div>
                         </ul>
@@ -765,7 +767,7 @@ function Agenda() {
                         </div>
                     </div>
                     <div className='mt-4 px-2 max-w-3xl'>
-                        <h3 className=''><span className='font-bold'>Chris Southworth</span>, <span className='italic'>Secretary General</span>, <span className='font-bold'>ICC United Kingdom</span> / <span className='bold'>Co-founder, Centre for Digital Trade and Innovation</span></h3>
+                        <h3 className=''><span className='font-bold'>Chris Southworth</span>, <span className='italic'>Secretary General</span>, <span className='font-bold'>ICC United Kingdom</span> / <span className='italic'>Co-founder</span>, <span className='font-bold'> Centre for Digital Trade and Innovation</span></h3>
                     </div>
                 </div>
 
