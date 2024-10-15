@@ -123,17 +123,17 @@ function Agenda() {
                             10:00
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                            EUDR COUNTDOWN: REGULATORY COMPLIANCE FOR A SUSTAINABLE AND GREEN ECONOMY
+                            EUDR: REGULATORY COMPLIANCE FOR A SUSTAINABLE AND GREEN ECONOMY
                         </div>
                     </div>
                     <div className='mt-4 px-2 max-w-3xl'>
                         <ul className="list-disc pl-6">
-                            <li>How does the EUDR legislation impact reduction of EU’s contribution to greenhouse gases (GHG) emissions and promote deforestation free-supply chain?</li>
-                            <li>How does the penalty provisions on the legislation affect preparation by big operators, and what does compliance look like after the deadline of 30 December 2024?</li>
-                            <li>What are the logistical challenges in gathering the data required for compliance, and what are best practices for operators?</li>
-                            <li>What are the “unintended consequences” or structural risks hindering investment opportunities towards greener global trade?</li>
-                            <li>What market solutions exist to simplify compliance with accurate data?</li>
-                            <li>With the 12-month phased-in period from 30 December 2024 to 30 December 2025, what are the ramifications of this delay for the future of the Green Deal?</li>
+                            <li>•	How does the EUDR legislation impact reduction of EU’s contribution to greenhouse gases (GHG) emissions and promote deforestation free-supply chain?</li>
+                            <li>•	How does the penalty provisions on the legislation affected preparation for by the big operators and what does compliance look like after deadline 30 December 2024?</li>
+                            <li>•	What are some of the logistical challenges taking shape in terms of putting together the data required for compliance and what are best practice solutions available for the Operators?</li>
+                            <li>•	What are some of the “unintended consequences” or structural risks that have so far hindered or changed the current landscape in investment opportunities toward a greener and more sustainable global trade?</li>
+                            <li>•	What are the solutions that are available in the market and how do they address the need for accurate data and how do they simplify compliance?</li>
+                            <li>•	Now that the EU just published a 12-month phased-in period – from 30 December 2024 to 30 December 2025, what are some of the ramifications and financial implications of this delay and what happens now? What is the future of green deal?</li>
                         </ul>
                         <div className='mt-2'>
                             <h3>Chair:</h3>
@@ -183,7 +183,7 @@ function Agenda() {
                             11:40
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                            SOLUTION PROVIDER PRESENTATION
+                            PRESENTATION: INCLUSIVE, CLIMATE SMART, AND TRACEABLE SUPPLY CHAINS
                         </div>
                     </div>
                     <div className='mt-4 px-2 max-w-3xl'>
@@ -348,9 +348,9 @@ function Agenda() {
                         </div>
                         <ul className='mt-2 list-disc'>
                             <div className='pl-6'>
-                                <li className=''><span className='font-bold'>Fredrick Leather</span>, <span className='italic'>Chief of Party - Kenya</span>, <span className='font-bold'>Rainforest Alliance</span></li>
-                                <li className=''><span className='font-bold'>Stephen Dutton</span>, <span className='italic'>Global Sustainability Lead - Coffee</span>, <span className='font-bold'>Olam</span></li>
-                                <li className=''><span className='font-bold'>Lloyd Andrew</span>, <span className='italic'>Chief Operating Officer</span>, <span className='font-bold'>Grounded</span></li>
+                                <li className=''><span className='font-bold'>Dr. Parmesh Shah</span>, <span className='italic'>Global Lead for Data-Driven Digital Agriculture and Innovations</span>, <span className='font-bold'>The World Bank</span></li>
+                                <li className=''><span className='font-bold'>Piet van Asten</span>, <span className='italic'>Head of Sustainable Production Systems</span>, <span className='font-bold'>Olam Food Ingredients (ofi)</span></li>
+                                <li className=''><span className='font-bold'>Sean Edwards</span>, <span className='italic'>Chairman</span>, <span className='font-bold'>International Trade Forfaiting Association (ITFA)</span></li>
                             </div>
                         </ul>
                     </div>
@@ -368,17 +368,17 @@ function Agenda() {
                     <div className='mt-2'>
                         <h3>Chair:</h3>
                         <h3 className=''>
-                            <span className='font-bold'>T.J. Ryan</span>, <span className='italic'>Chief of Party of Philippine Coffee Advancement and Farm Enterprise Project, ACDI/VOCA</span>
+                            <span className='font-bold'>T.J. Ryan</span>, <span className='italic'>Chief of Party of Philippine Coffee Advancement and Farm Enterprise Project</span>, <span className='bold'>ACDI/VOCA</span>
                         </h3>
                     </div>
                     <ul className='mt-2 list-disc'>
                         <h3>Speakers:</h3>
                         <div className='pl-6'>
                             <li className=''>
-                                <span className='font-bold'>Newerly Gutierrez Falla</span>, <span className='italic'>Colombian Farmer</span>
+                                <span className='font-bold'>Newerly Gutierrez Falla</span>, <span className='bold'>Colombian Farmer</span>
                             </li>
                             <li className=''>
-                                <span className='font-bold'>Andrew Gatera</span>, <span className='italic'>Rwandan Farmer & Exporter</span>
+                                <span className='font-bold'>Andrew Gatera</span>, <span className='bold'>Rwandan Farmer & Exporter</span>
                             </li>
                         </div>
                     </ul>
@@ -407,7 +407,7 @@ function Agenda() {
                 </div>
 
 
-                <h2 className="mt-8 text-2xl font-bold text-center tracking-tight">DAY TWO– Thursday 17th OCTOBER 2024</h2>
+                <h2 className="mt-8 text-2xl font-bold text-center tracking-tight">DAY TWO– Thursday 17th October 2024</h2>
 
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
@@ -475,7 +475,7 @@ function Agenda() {
                             9:25
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                            GLOBAL LEADERS FORUM: CRAFTING THE FUTURE OF SUSTAINABLE GLOBAL COLLABORATION (TBC)
+                            GLOBAL LEADERS FORUM: CRAFTING THE FUTURE OF SUSTAINABLE GLOBAL COLLABORATION
                         </div>
                     </div>
                     <div className='mt-4 px-2 max-w-3xl'>
@@ -506,8 +506,7 @@ function Agenda() {
                                 </li>
                                 <li className=''>
                                     <span className='font-bold'>H.E. Johnston Busingye</span>,
-                                    <span className='italic'> High Commissioner</span>,
-                                    <span className='font-bold'> The Republic of Rwanda to the United Kingdom</span>
+                                    <span className='font-bold'>High Commissioner for the Republic of Rwanda to the United Kingdom</span>
                                 </li>
                             </div>
                         </ul>
@@ -520,7 +519,7 @@ function Agenda() {
                             10:05
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                            COFFEE SCIENCE KEYNOTE
+                            KEYNOTE: THE POWER OF SCIENCE TO DRIVE ON-FARM PRODUCTIVITY AND CLIMATE RESILIENCE GAINS FOR FARMERS AND REDUCE SUPPLY RISK FOR THE INDUSTRY
                         </div>
                     </div>
                     <div className='mt-4 px-2 max-w-3xl'>
@@ -534,7 +533,7 @@ function Agenda() {
                             10:15
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                            AGRI-DATA SOLUTION PRESENTATION
+                            PRESENTATION: SCALING REGENERATIVE AGRICULTURE IN COFFEE PRODUCTION: BUILDING RESILIENCE FROM FARM TO CUP
                         </div>
                     </div>
                     <div className='mt-4 px-2 max-w-3xl'>
@@ -623,7 +622,7 @@ function Agenda() {
                             11:45
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                            PRESENTATION: “AUTOMATION AS A GAME-CHANGER: SIMPLIFYING THE EU GREEN DEAL FOR BUSINESSES”
+                            KEYNOTE: AUTOMATION AS A GAME-CHANGER: SIMPLIFYING THE EU GREEN DEAL FOR BUSINESSES
                         </div>
                     </div>
                     <div className='mt-4 px-2 max-w-3xl'>
@@ -766,7 +765,7 @@ function Agenda() {
                         </div>
                     </div>
                     <div className='mt-4 px-2 max-w-3xl'>
-                        <h3 className=''><span className='font-bold'>Chris Southworth</span>, <span className='italic'>Secretary General</span>, <span className='font-bold'>ICC United Kingdom</span> / <span className='italic'>Co-founder, Centre for Digital Trade and Innovation</span></h3>
+                        <h3 className=''><span className='font-bold'>Chris Southworth</span>, <span className='italic'>Secretary General</span>, <span className='font-bold'>ICC United Kingdom</span> / <span className='bold'>Co-founder, Centre for Digital Trade and Innovation</span></h3>
                     </div>
                 </div>
 

@@ -745,11 +745,11 @@ function Speakers2024() {
       `
     },
     {
-      name: 'Rusatira Emmanuel',
-      role: 'Rwandan Farmer',
+      name: 'Andrew Gatera',
+      role: 'Rwandan Farmer and Exporter',
       company: "",
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/10/rusatira-emmanuel.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/10/LOGO-DARK-REAL-1.webp",
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/10/Andrew-Gatera-scaled.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/10/1one-cup-logo-1-2.png",
       iconWidth: 100,
       iconHeight: 100,
       bio: ``
