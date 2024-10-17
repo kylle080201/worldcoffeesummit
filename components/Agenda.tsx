@@ -670,7 +670,6 @@ function Agenda() {
                                 <li className=''><span className='font-bold'>Ashley Olson Onyango</span>, <span className='italic'>Head of Financial Inclusion & AgriTech</span>, <span className='font-bold'>GSMA</span></li>
                                 <li className=''><span className='font-bold'>Jari Partanen</span>, <span className='italic'>Former Board Director</span>, <span className='font-bold'>European Bank for Reconstruction and Development (EBRD)</span></li>
                                 <li className=''><span className='font-bold'>Richard Jones</span>, <span className='italic'>INED and Chair of Risk</span>, <span className='font-bold'>FCMB Bank</span></li>
-                                <li className=''><span className='font-bold'>Juan Cabrera</span>, <span className='italic'>Senator and Head of Investor Relations, UK</span>, <span className='font-bold'>World Business Angels Investment Forum (WBAF)</span></li>
                             </div>
                         </ul>
                     </div>

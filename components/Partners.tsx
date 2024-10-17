@@ -106,11 +106,6 @@ export default function Partners() {
             imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/DCSA_logo-1.png',
             className: 'w-[9rem] mx-auto py-8'
         },
-        {
-            href: '',
-            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/10/WBAF.png',
-            className: 'w-[6rem] mx-auto py-8'
-        },
     ]
 
     return (
