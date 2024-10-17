@@ -755,25 +755,6 @@ function Speakers2024() {
       bio: ``
     },
     {
-      name: 'Juan Cabrera',
-      role: 'Senator and Head of Investor Relations, UK',
-      company: 'World Business Angels Investment Forum (WBAF)',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/10/WhatsApp-Image-2023-08-03-at-10.14.08.jpeg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/10/WBAF.png",
-      iconWidth: 100,
-      iconHeight: 100,
-      bio: `
-      Juan is a highly esteemed professional with over 35 years of expertise in the global trading and consulting sector, specialising in providing bespoke consultancy and trade services to an extensive clientele that includes global organisations, top-tier corporations, governments, family offices, and world leaders. Juan's reputation is firmly rooted in his expansive global network.
-
-      Juan is currently the Vice Chair of IoD Natural Resources Gourp. He is also the vice president of Government Blockchain Association (GBA) UK and a GBA Global certified blockchain advisor. As the Co-Founder (Since 1998) of the Euroyen Group (In 2018, evolved into a Decentralised Autonomous Organisation (DAO) with global digital jurisdiction), Juan has successfully diversified his offerings, from precious metals to advanced tech-based sectors. This move, combined with his background in the oil industry and international trade, has allowed Juan to penetrate multiple industries and provide comprehensive services.
-
-      Juan stands out for his professional integrity and confidentiality, understanding the importance of protecting sensitive information. His reliability and trustworthiness are cornerstones of his professional persona, facilitating strong and enduring relationships with clients and partners.
-
-      In his personal time, Juan pursues diverse interests including advanced (PADI) scuba diving, hunting, fishing, surfing, sailing, karate, and is currently learning Aikido.
-
-      `
-    },
-    {
       name: 'Ashley Olson Onyango',
       role: 'Head of Financial Inclusion & AgriTech',
       company: 'GSMA (Mobile for Development)',
