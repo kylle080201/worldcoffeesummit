@@ -36,8 +36,8 @@ export default function Overview() {
                                     </div>
                                 </div>
                             </div>
-                            <CountDown />
-                            <div  className='flex  justify-center max-w-5xl mx-auto mt-12 md:mt-0'>
+                            {/* <CountDown /> */}
+                            {/* <div  className='flex  justify-center max-w-5xl mx-auto mt-12 md:mt-0'>
                                 <AddToCalendarButton
                                     name="World Coffee Summit London & World Coffee Exhibition 2024"
                                     options={['Apple', 'Google', 'iCal', 'Outlook.com', 'Yahoo']}
@@ -57,12 +57,12 @@ export default function Overview() {
                                         REGISTER NOW
                                     </Link>
                                 </div>
-                            </div>
+                            </div> */}
                             
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-col md:flex-row gap-4 w-full md:justify-between justify-center mt-12 lg:mt-44'>
+                <div className='flex flex-col md:flex-row gap-4 w-full md:justify-between justify-center pt-[16rem] mt-12 lg:mt-44'>
                         <div className='text-sm lg:text-2xl font-bold text-[#674E46]'>
                             WWW.WORLDCOFFEEINNOVATIONSUMMIT.COM
                         </div>
