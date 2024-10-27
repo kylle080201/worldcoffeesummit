@@ -12,7 +12,7 @@ function Navbar() {
     const navigation = [
         { name: 'Overview', href: '/#overview' },
         { name: 'Speakers', href: '/#speakers' },
-        { name: 'Agenda', href: '/agenda' },
+        // { name: 'Agenda', href: '/agenda' },
         { name: 'Venue', href: '/venue' },
         { name: 'Partners', href: '/#partners' },
         { name: 'FAQ', href: '/faq' },
