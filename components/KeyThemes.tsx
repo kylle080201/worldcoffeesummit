@@ -88,15 +88,6 @@ function KeyThemes() {
             </ul>
           </div>
         </div>
-        <div className='mt-8 w-full flex'>
-          <button
-            type="button"
-            className="mx-auto inline-flex justify-center max-w-5xl px-6 py-4 text-2xl font-semibold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-700"
-            onClick={() => router.push("/agenda")}
-          >
-            See Full Agenda
-          </button>
-        </div>
       </div>
     </div>
   );
