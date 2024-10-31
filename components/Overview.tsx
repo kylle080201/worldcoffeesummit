@@ -90,7 +90,7 @@ export default function Overview() {
                     className="w-full"
                     poster='https://worldcoffeealliance.com/wp-content/uploads/2024/10/Thumbnail.png'
                     disablePictureInPicture
-                    controlsList="nodownload nofullscreen noremoteplayback"
+                    controlsList="nodownload noremoteplayback"
                     onContextMenu={(e) => e.preventDefault()}
                 >
                     <source
