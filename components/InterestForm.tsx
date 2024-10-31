@@ -48,8 +48,9 @@ const InterestForm = () => {
     ]
 
     const notificationMethods = [
-      "Exhibiting",
-      "Sponsorship",
+      "Sponsor",
+      "Exhibitor",
+      "Delegate",
     ]
 
     useEffect(() => {
@@ -159,7 +160,7 @@ const InterestForm = () => {
                         </div>
                         
                         <div>
-                          <label className="text-base font-semibold text-gray-900">I&apos;m interested in</label>
+                          <label className="text-base font-semibold text-gray-900">I&apos;m interested in attending as a</label>
                           <fieldset className="mt-4">
                             <div className="space-y-4">
                               {notificationMethods.map((notificationMethod) => (
