@@ -1494,7 +1494,7 @@ const ResourceForm = () => {
                     }
                 )
             }).then(response => response.json())
-            .then(() => router.push('/resources/download/world-coffee-magazine-2023'))
+            .then(() => router.push('/resources/download/world-coffee-innovation-summit-2024-magazine'))
             .catch(error => {
                 console.log(error);
             });
