@@ -1508,7 +1508,7 @@ const ResourceForm = () => {
         <>
             <div className="z-40 py-12 bg-white sm:py-20">
                 <div className="max-w-screen-md px-4 mx-auto mb-12">
-                    <h2 className="mb-8 text-4xl font-bold tracking-tight text-center text-gray-900">Download <span className='text-lime-700'>World Coffee Magazine 2024 Issue 2</span></h2>
+                    <h2 className="mb-8 text-3xl font-bold tracking-tight text-center text-gray-900">Download <span className='text-lime-700'>World Coffee Magazine 2024 Issue 2</span></h2>
                     <form className="space-y-8" onSubmit={handleSubmit(onSubmit)}>
                         <div>
                             <label htmlFor="firstName" className="block mb-2 text-sm font-medium text-gray-900">First Name</label>
