@@ -12,7 +12,7 @@ function DownloadResources() {
         
         <div className='px-12 sm:px-2 max-w-7xl md:px-0 mx-auto bg-gray-100 rounded-md shadow-md'>
           <div className='mx-auto sm:content-center px-12 py-8'>
-            <h1 className='font-bold text-lg mb-4'>World Coffee Innovation Summit 2024 Magazine</h1>
+            <h1 className='font-bold text-lg mb-4'>World Coffee Magazine 2024 Issue 2</h1>
             <Link href={'/resources/form'} className="flex max-w-[10rem] my-4 justify-center px-3 py-2 text-sm font-semibold text-white border border-transparent rounded-md shadow-sm bg-lime-700 hover:cursor-pointer hover:bg-lime-900 focus:outline-none">
               Download
             </Link>

@@ -20,7 +20,7 @@ function DownloadWorldCoffeeInnovationSummit2024() {
         <div className='px-12 sm:px-2 max-w-7xl md:px-0 mx-auto bg-gray-100 rounded-md shadow-md '>
           <div className='mx-auto sm:content-center px-12'>
             <div className='mx-auto sm:content-center max-w-xl py-20'>
-              <h1 className='font-bold text-xl'>Thank you for your interest in the <span className='text-lime-600'>World Coffee Innovation Summit 2024</span>.</h1>
+              <h1 className='font-bold text-xl'>Thank you for your interest in the <span className='text-lime-600'>World Coffee Magazine 2024 Issue 2</span>.</h1>
               <h2 className='text-md mt-4'>
                 Please kindly wait for the file to open. If the file did not open, click <a href='https://worldcoffeealliance.com/wp-content/uploads/2024/10/World-Coffee-Magazine-Issue-2-2024.pdf' target='_blank' className='underline font-medium'>here</a>.
               </h2>
