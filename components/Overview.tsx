@@ -73,23 +73,31 @@ export default function Overview() {
             </div>
 
             <div className='w-full md:px-0 px-12'>
-                <div className='flex md:flex-row flex-col max-w-7xl m-auto py-12 md:py-20 gap-12'>
-                    <div className="text-2xl leading-8 text-gray-900 w-full text-justify md:w-1/2">
-                        As the leading solution-driven summit that connects <strong>COFFEE</strong>, <strong>CLIMATE CHANGE</strong> and <strong>FINANCE</strong> through <strong>INNOVATION</strong>, the World Coffee Innovation Summit is a must-attend for those who invested in advancing nature-positive, resilient agriculture and food systems for a net positive future in coffee sector. Join global coffee, climate and finance leaders and agri-food innovators in London for two days of in-depth discussions and cross-sector networking.
-                    </div>
-                    <div className='items-center my-auto w-full md:w-1/2'>
-                        <video
-                            loop
-                            controls
-                            className="w-full"
-                        >
-                            <source
-                                src="https://worldcoffeealliance.com/wp-content/uploads/2024/05/WCIS24-Register-Now.mp4"
-                                type="video/mp4"
-                            />
-                        </video>
+                <div className='justify-center mx-auto max-w-7xl'>
+                    <p className="mt-12 text-2xl font-bold tracking-tight text-center sm:text-4xl text-yellow-900">2024 SUMMIT HIGHLIGHTS</p>
+                    <div className='flex flex-col max-w-full m-auto md:py-8'>
+                        <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
+                            As the leading solution-driven summit that connects <strong>COFFEE</strong>, <strong>CLIMATE CHANGE</strong> and <strong>FINANCE</strong> through <strong>INNOVATION</strong>, the World Coffee Innovation Summit is a must-attend for those who invested in advancing nature-positive, resilient agriculture and food systems for a net positive future in coffee sector. Join global coffee, climate and finance leaders and agri-food innovators in London for two days of in-depth discussions and cross-sector networking.
+                        </div>
                     </div>
                 </div>
+            </div>
+
+            <div className='items-center pb-12 sm:pb-20 mx-auto my-auto w-full flex flex-col max-w-7xl'>
+                <video
+                    loop
+                    controls
+                    className="w-full"
+                    poster='https://worldcoffeealliance.com/wp-content/uploads/2024/10/Thumbnail.png'
+                    disablePictureInPicture
+                    controlsList="nodownload noremoteplayback"
+                    onContextMenu={(e) => e.preventDefault()}
+                >
+                    <source
+                        src="https://worldcoffeealliance.com/wp-content/uploads/2024/10/World-Coffee-Innovation-Summit-London-16-17th-October-2024-Highlights-1-1.mp4"
+                        type="video/mp4"
+                    />
+                </video>
             </div>
 
             <div className='w-full bg-gray-100'>

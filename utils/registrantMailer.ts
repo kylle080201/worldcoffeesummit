@@ -33,7 +33,7 @@ export const registrantMailer = async (data: any) => {
       from: `World Coffee Innovation Summit Team <${user}>`,
       to: "info@worldcoffeealliance.com",
       // to: "kv.madrigal08@gmail.com",
-      subject: "Exhibit/Sponsor at World Coffee Innovation Summit London 2024",
+      subject: "Register Interest at World Coffee Innovation Summit London 2025",
       html: `
       <div>Hi Mavis,</div>
       <div>${firstName} ${lastName} has just registered their interest.</div>

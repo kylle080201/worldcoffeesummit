@@ -30,10 +30,10 @@ export const mailer = async (data: any) => {
     const isNotificationEmailSent = await transporter.sendMail({
       from: `World Coffee Innovation Summit Team <${user}>`,
       to: "info@worldcoffeealliance.com",
-      subject: "World Coffee Magazine 2023 Download",
+      subject: "World Coffee Magazine 2024 Issue 2 Download",
       html: `
       <div>Hi Mavis,</div>
-      <div>${firstName} ${lastName} has just submitted the request to download the World Coffee Magazine 2023.</div>
+      <div>${firstName} ${lastName} has just submitted the request to download the World Coffee Magazine 2024 Issue 2.</div>
       <br/>
       <div>Here are the Information: </div>
       <div>
@@ -51,13 +51,13 @@ export const mailer = async (data: any) => {
     const isConfirmationEmailSent = await transporter.sendMail({
       from: `World Coffee Innovation Summit Team <${user}>`,
       to: `${email}`,
-      subject: "World Coffee Magazine 2023 Download",
+      subject: "World Coffee Magazine 2024 Issue 2 Download",
       html: `
       <h1 style="font-weight: bold;">Hi ${firstName},</h1>
       <br/>
-      <div>Thank you for your interest in the World Coffee Magazine 2023.</div>
+      <div>Thank you for your interest in the World Coffee Magazine 2024 Issue 2.</div>
       <br/>
-      <div>We are currently assessing the information you have submitted, and we will send you a digital copy of the World Coffee Magazine 2023 upon approval.</div>
+      <div>If you are unable to download the magazine online, please contact us at<a href={"mailto:info@worldcoffeealliance.com"} target="_blank"> info@worldcoffeealliance.com</a></div>
       <br/>
       <div>Meanwhile, please follow us on <a style="text-decoration: underline;" target="_blank" href="https://www.linkedin.com/company/worldcoffeealliance/">LinkedIn</a> and <a style="text-decoration: underline;" target="_blank" href="https://twitter.com/WCoffeeAlliance">X (Twitter)</a> , and stay tuned with the updates.</div>
       <br/>
