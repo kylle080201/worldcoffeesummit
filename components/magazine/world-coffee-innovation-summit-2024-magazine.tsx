@@ -6,7 +6,7 @@ function DownloadWorldCoffeeInnovationSummit2024() {
   useEffect(() => {
     const downloadTimeout = setTimeout(() => {
       window.open(
-        'https://worldcoffeealliance.com/wp-content/uploads/2024/10/World-Coffee-Magazine-Issue-2-2024.pdf',
+        'https://worldcoffeealliance.com/wp-content/uploads/2024/10/World-Coffee-Magazine-2024-Issue-2.pdf',
         '_blank'
       );
     }, 1000); // Add a slight delay to ensure rendering
