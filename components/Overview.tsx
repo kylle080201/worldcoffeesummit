@@ -83,11 +83,12 @@ export default function Overview() {
                 </div>
             </div>
 
-            <div className='items-center my-auto w-full flex flex-col'>
+            <div className='items-center pb-12 sm:pb-20 mx-auto my-auto w-full flex flex-col max-w-7xl'>
                 <video
                     loop
                     controls
                     className="w-full"
+                    poster='https://worldcoffeealliance.com/wp-content/uploads/2024/10/Thumbnail.png'
                 >
                     <source
                         src="https://worldcoffeealliance.com/wp-content/uploads/2024/10/World-Coffee-Innovation-Summit-London-16-17th-October-2024-Highlights-1-1.mp4"

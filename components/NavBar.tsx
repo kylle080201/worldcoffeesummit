@@ -82,11 +82,17 @@ function Navbar() {
                                             >
                                                 Register Now
                                             </button> */}
-                                            <button
+                                            {/* <button
                                                 onClick={() => router.push('/interest')}
                                                 className="relative inline-flex gap-x-1.5 rounded-md bg-yellow-900 hover:bg-yellow-800 px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
                                             >
                                                 Exhibit/Sponsor
+                                            </button> */}
+                                            <button
+                                                onClick={() => router.push('/interest')}
+                                                className="relative inline-flex gap-x-1.5 rounded-md bg-lime-900 hover:bg-lime-800 px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+                                            >
+                                                Interest
                                             </button>
                                         </div>
                                     </div>
