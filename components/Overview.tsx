@@ -89,6 +89,9 @@ export default function Overview() {
                     controls
                     className="w-full"
                     poster='https://worldcoffeealliance.com/wp-content/uploads/2024/10/Thumbnail.png'
+                    disablePictureInPicture
+                    controlsList="nodownload nofullscreen noremoteplayback"
+                    onContextMenu={(e) => e.preventDefault()}
                 >
                     <source
                         src="https://worldcoffeealliance.com/wp-content/uploads/2024/10/World-Coffee-Innovation-Summit-London-16-17th-October-2024-Highlights-1-1.mp4"
