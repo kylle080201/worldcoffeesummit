@@ -1591,7 +1591,7 @@ const ResourceForm = () => {
                                             I agree
                                         </label>
                                         <p id="comments-description" className="text-gray-500">
-                                            By ticking this box, you agree to the <Link href="/privacy-policy" target='_blank' className='underline text-lime-600'>Privacy Policy</Link> of GSG Ltd, owner of World Coffee Alliance and organiser of World Coffee Summit 
+                                            By ticking this box, you agree to the <Link href="/privacy-policy" target='_blank' className='underline text-lime-600'>Privacy Policy</Link> of GSG Ltd
                                         </p>
                                     </div>
                                 </div>
