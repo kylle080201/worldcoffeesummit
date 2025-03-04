@@ -54,7 +54,7 @@ const CustomIndicator = ({ onClick, isSelected, index }: { onClick: any, isSelec
 
 const Testimonials = () => {
   return (
-    <div className='w-full py-24 md:px-0 px-4 flex flex-col gap-12'>
+    <div className='w-full py-24 md:px-0 px-4 flex flex-col gap-12 bg-gray-100'>
       <div className='flex w-full justify-center'>
         <h2 className="text-4xl font-bold tracking-tight text-center md:text-left">&ldquo;WHAT OUR DELEGATES SAY&ldquo;</h2>
       </div>
