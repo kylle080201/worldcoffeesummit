@@ -17,7 +17,7 @@ export default function Overview() {
                             <img className='w-[15rem]' src='https://worldcoffeealliance.com/wp-content/uploads/2021/08/WCA_new_logo.png'></img>
                         </Link>
                     </div>
-                    <div>
+                    <div className='flex flex-col items-center lg:items-end lg:justify-between'>
                         <Link href='/'>
                             <img
                                 className="flex-shrink-0 hidden w-[17rem] h-auto lg:w-[44rem] md:flex"
@@ -28,7 +28,7 @@ export default function Overview() {
                     </div>
                 </div>
                 <div className='relative flex flex-col lg:flex-row w-3/4 mx-auto items-end'>
-                    <div className='content-center -ml-[12rem] self-center text-center p-6 mt-[40rem]'>
+                    <div className='content-center -ml-[12rem] self-center text-center p-6 mt-[40rem] lg:ml-0'>
                         <button onClick={() => router.push("/interest")} className="bg-yellow-400 w-[19rem] text-black font-bold py-4 px-6 text-2xl shadow-md">
                             REGISTER INTEREST
                         </button>
