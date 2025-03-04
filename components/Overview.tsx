@@ -3,9 +3,11 @@ import Link from 'next/link'
 import React from 'react'
 import CountDown from './CountDown'
 import { AddToCalendarButton } from 'add-to-calendar-button-react';
+import { useRouter } from 'next/navigation';
 
 
 export default function Overview() {
+    const router = useRouter()
     return (
         <>
             <div id="overview" className="bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2025/03/WCIS-2025-POSTER.png')] pt-2 sm:py-24 pb-6 sm:pb-12 bg-cover bg-center lg:bg-right-bottom mlg:flex-col px-12">
@@ -27,7 +29,7 @@ export default function Overview() {
                 </div>
                 <div className='relative flex flex-col lg:flex-row w-3/4 mx-auto items-end'>
                     <div className='content-center -ml-[12rem] self-center text-center p-6 mt-[40rem]'>
-                        <button className="bg-yellow-400 w-[19rem] text-black font-bold py-4 px-6 text-2xl shadow-md">
+                        <button onClick={() => router.push("/interest")} className="bg-yellow-400 w-[19rem] text-black font-bold py-4 px-6 text-2xl shadow-md">
                             REGISTER INTEREST
                         </button>
                     </div>
