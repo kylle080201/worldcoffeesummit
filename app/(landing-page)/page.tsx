@@ -25,7 +25,7 @@ export default function HomePage() {
                 <KeyThemes />
                 <WhoYoullMeet />
                 {/* <SpeakerSlider /> */}
-                <ImageCarousel />
+                {/* <ImageCarousel /> */}
                 <Testimonials />
                 {/* <Attendees2023 /> */}
                 <SummitInTheNews />
