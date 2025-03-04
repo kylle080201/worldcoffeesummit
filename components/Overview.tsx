@@ -3,9 +3,11 @@ import Link from 'next/link'
 import React from 'react'
 import CountDown from './CountDown'
 import { AddToCalendarButton } from 'add-to-calendar-button-react';
+import { useRouter } from 'next/navigation';
 
 
 export default function Overview() {
+    const router = useRouter()
     return (
         <>
             <div id="overview" className="bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2025/03/WCIS-2025-POSTER.png')] pt-2 sm:py-24 pb-6 sm:pb-12 bg-cover bg-center lg:bg-right-bottom mlg:flex-col px-12">
@@ -15,7 +17,7 @@ export default function Overview() {
                             <img className='w-[15rem]' src='https://worldcoffeealliance.com/wp-content/uploads/2021/08/WCA_new_logo.png'></img>
                         </Link>
                     </div>
-                    <div>
+                    <div className='flex flex-col items-center lg:items-end lg:justify-between'>
                         <Link href='/'>
                             <img
                                 className="flex-shrink-0 hidden w-[17rem] h-auto lg:w-[44rem] md:flex"
@@ -26,8 +28,8 @@ export default function Overview() {
                     </div>
                 </div>
                 <div className='relative flex flex-col lg:flex-row w-3/4 mx-auto items-end'>
-                    <div className='content-center -ml-[12rem] self-center text-center p-6 mt-[40rem]'>
-                        <button className="bg-yellow-400 w-[19rem] text-black font-bold py-4 px-6 text-2xl shadow-md">
+                    <div className='content-center -ml-[12rem] self-center text-center p-6 mt-[40rem] lg:ml-0'>
+                        <button onClick={() => router.push("/interest")} className="bg-yellow-400 w-[19rem] text-black font-bold py-4 px-6 text-2xl shadow-md">
                             REGISTER INTEREST
                         </button>
                     </div>
