@@ -27,8 +27,8 @@ export default function Overview() {
                         </Link>
                     </div>
                 </div>
-                <div className='relative flex flex-col lg:flex-row w-3/4 mx-auto items-end'>
-                    <div className='content-center -ml-[12rem] self-center text-center p-6 mt-[40rem] lg:ml-0'>
+                <div className='relative flex flex-col gap-4 lg:flex-row w-3/4 mx-auto items-end'>
+                    <div className='content-center -ml-[15rem] self-center pb-16 text-center mt-[44rem] lg:ml-0'>
                         <button onClick={() => router.push("/interest")} className="bg-yellow-400 w-[19rem] text-black font-bold py-4 px-6 text-2xl shadow-md">
                             REGISTER INTEREST
                         </button>
@@ -38,7 +38,7 @@ export default function Overview() {
                     <div className="content-center self-center text-center bg-orange-200/70 p-6 mt-[24rem]">
                         <div className='w-full lg:px-16 justify-items-stretch'>
                             <div className='py-6 my-auto'>
-                                <p className="text-2xl font-bold tracking-tight text-white md:text-[8rem]">
+                                <p className="text-2xl font-bold tracking-tight text-white md:text-[6rem]">
                                     SAVE THE DATE
                                 </p>
                             </div>
@@ -114,7 +114,7 @@ export default function Overview() {
                     </div>
                 </div>
             </div>
-            
+
             {/* <AgendaHighlights /> */}
         </>
     )
