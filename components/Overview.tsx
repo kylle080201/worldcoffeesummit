@@ -10,7 +10,7 @@ export default function Overview() {
     const router = useRouter()
     return (
         <>
-            <div id="overview" className="bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2025/03/WCIS-2025-POSTER.png')] pt-2 sm:py-24 pb-6 sm:pb-12 bg-cover bg-center lg:bg-right-bottom mlg:flex-col px-12">
+            <div id="overview" className="bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2025/03/WCIS-2025-POSTER.png')] pt-2 sm:py-24 pb-6 sm:pb-12 bg-cover bg-center mlg:flex-col px-12">
                 <div className='flex flex-col lg:flex-row-reverse justify-between'>
                     <div className='flex flex-col items-center lg:items-end lg:justify-between w-full'>
                         <Link href={'https://www.worldcoffeealliance.com'} target='_blank' className='px-4 lg:-mt-16'>
