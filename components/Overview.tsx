@@ -8,8 +8,8 @@ export default function Overview() {
         {/* V1 */}
             <div
                 id="overview"
-                className="relative bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2025/03/Original-Picture-v2.png')] bg-cover bg-center pt-2 sm:py-24 pb-6 sm:pb-12 px-6 md:px-12 before:absolute before:inset-0 before:bg-black before:opacity-30 before:z-0"
-                // className="relative bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2025/03/Original-Picture-v1.jpg')] bg-cover bg-center pt-2 sm:py-24 pb-6 sm:pb-12 px-6 md:px-12 before:absolute before:inset-0 before:bg-black before:opacity-30 before:z-0"
+                // className="relative bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2025/03/Original-Picture-v2.png')] bg-cover bg-center pt-2 sm:py-24 pb-6 sm:pb-12 px-6 md:px-12 before:absolute before:inset-0 before:bg-black before:opacity-30 before:z-0"
+                className="relative bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2025/03/Original-Picture-v1.jpg')] bg-cover bg-center pt-2 sm:py-24 pb-6 sm:pb-12 px-6 md:px-12 before:absolute before:inset-0 before:bg-black before:opacity-30 before:z-0"
             >
                 {/* Icon in the top right corner */}
                 <div className="absolute top-6 right-6 z-10">
