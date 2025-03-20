@@ -30,7 +30,7 @@ export default function Overview() {
 
                     <div className="flex flex-col sm:flex-row gap-4 mt-[4rem] md:mt-[5rem] xl:mt-[25rem]">
                         <Link href="/interest">
-                            <button className="bg-orange-400 text-yellow-900 hover:bg-orange-500 hover:drop-shadow-xl font-bold text-lg md:text-xl xl:text-5xl py-1 md:py-2 xl:py-3 px-6 rounded-md">
+                            <button className="bg-orange-400 text-yellow-900 hover:underline hover:drop-shadow-xl font-bold text-lg md:text-xl xl:text-5xl py-1 md:py-2 xl:py-3 px-6 rounded-md">
                                 SAVE THE DATE & REGISTER YOUR INTEREST
                             </button>
                         </Link>
