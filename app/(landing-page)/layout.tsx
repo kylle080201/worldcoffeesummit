@@ -5,6 +5,7 @@ export const metadata = {
   title: 'World Coffee Innovation Summit London',
   description: 'As the leading summit that connects COFFEE, CLIMATE CHANGE and FINANCE through INNOVATION, the World Coffee Innovation Summit is a must-attend for those who invested in advancing nature-positive, resilient agriculture and food systems for a net positive future in coffee sector. Join global coffee, climate and finance leaders and agri-food innovators in London for two days of in-depth discussions and cross-sector networking.',
 }
+import { Toaster } from 'react-hot-toast'
 
 export default function RootLayout({
   children,
@@ -22,6 +23,7 @@ export default function RootLayout({
         <meta property="og:image" content="https://worldcoffeealliance.com/wp-content/uploads/2024/04/world-coffee-innovation-summit-high-resolution-logo-transparent-1.png" />
       </head>
       <body>
+        <Toaster />
         <Navbar />
         {children}
         <Footer />
