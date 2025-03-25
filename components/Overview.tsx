@@ -25,12 +25,12 @@ export default function Overview() {
                         THE BIGGER PICTURE
                     </h1>
                     <p className="mt-2 text-lg sm:text-2xl md:text-4xl font-bold max-w-3xl drop-shadow-xl">
-                        CRAFTING A RESILIENT ECO-SYSTEM MODEL FOR SHARED PROSPERITY
+                        CRAFTING AN ECOSYSTEM BUSINESS MODEL FOR SHARED PROSPERITY
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 mt-[4rem] md:mt-[5rem] xl:mt-[25rem]">
                         <Link href="/interest">
-                            <button className="bg-[#e1be77ae] text-yellow-900 hover:underline hover:drop-shadow-xl font-bold text-lg md:text-xl xl:text-5xl py-1 md:py-2 xl:py-3 px-6 rounded-md">
+                            <button className="bg-[#FFC000] text-yellow-900 hover:underline hover:drop-shadow-xl font-bold text-lg md:text-xl xl:text-5xl py-1 md:py-2 xl:py-3 px-6 rounded-md">
                                 SAVE THE DATE & REGISTER YOUR INTEREST
                             </button>
                         </Link>
