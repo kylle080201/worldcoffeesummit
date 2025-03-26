@@ -48,7 +48,7 @@ export default function Overview() {
                     {/* Footer Links */}
                     <div className="mt-10 flex flex-col md:flex-row justify-between w-full text-xs md:text-2xl font-bold text-white px-6">
                         <p>WWW.WORLDCOFFEEINNOVATIONSUMMIT.COM</p>
-                        <p>#WCIS24</p>
+                        <p>#WCIS25</p>
                     </div>
                 </div>
             </div>
