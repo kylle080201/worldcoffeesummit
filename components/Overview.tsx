@@ -57,7 +57,7 @@ export default function Overview() {
             <div className='w-full md:px-0 px-12 py-12 sm:py-20'>
                 <div className='justify-center mx-auto max-w-7xl'>
                     <p className=" text-2xl font-bold tracking-tight text-center sm:text-4xl text-yellow-900">2025 SUMMIT OVERVIEW</p>
-                    <div className='flex flex-col gap-8 max-w-full m-auto'>
+                    <div className='flex flex-col gap-8 max-w-full m-auto mt-8'>
                         <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
                             In a time of unprecedented challenges and transformation in the global coffee sector,
                             the World Coffee Innovation Summit 2025 in London brings together visionary
@@ -79,21 +79,21 @@ export default function Overview() {
                         </div>
 
                         <ul className="list-disc flex flex-col gap-4 ml-12">
-                            <li className="text-lg leading-7 text-gray-600">
+                            <li className="text-2xl leading-8 text-gray-900 w-full text-justify">
                                 Unlock inclusive growth across the entire coffee value chain.
                             </li>
 
-                            <li className="text-lg leading-7 text-gray-600">
+                            <li className="text-2xl leading-8 text-gray-900 w-full text-justify">
                                 Integrate innovation, sustainability, and equity at the heart of business
                                 models.
                             </li>
 
-                            <li className="text-lg leading-7 text-gray-600">
+                            <li className="text-2xl leading-8 text-gray-900 w-full text-justify">
                                 Align market opportunities with the urgent need for climate adaptation, farmer
                                 income improvement, and ethical sourcing.
                             </li>
 
-                            <li className="text-lg leading-7 text-gray-600">
+                            <li className="text-2xl leading-8 text-gray-900 w-full text-justify">
                                 Build a truly collaborative platform where corporates, producers, investors,
                                 innovators and governments co-create solutions rather than act in silos.
                             </li>
