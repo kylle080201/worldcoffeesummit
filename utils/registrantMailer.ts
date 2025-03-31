@@ -29,11 +29,11 @@ export const registrantMailer = async (data: any) => {
   const phoneNumber = reqData.phoneNumber;
 
   try {
-    const isNotificationEmailSent = await transporter.sendMail({
+    const isSentToWca = await transporter.sendMail({
       from: `World Coffee Innovation Summit Team <${user}>`,
       to: "info@worldcoffeealliance.com",
       // to: "kv.madrigal08@gmail.com",
-      subject: "Register Interest at World Coffee Innovation Summit London 2025",
+      subject: "World Coffee Innovation Summit London 2025: Thank you for registering your interest!",
       html: `
       <div>Hi Mavis,</div>
       <div>${firstName} ${lastName} has just registered their interest.</div>
@@ -51,7 +51,25 @@ export const registrantMailer = async (data: any) => {
       </div>
       `
     });
-    return isNotificationEmailSent;
+
+    const isSentToREgistrant = await transporter.sendMail({
+      from: `World Coffee Innovation Summit Team <${user}>`,
+      to: businessEmail,
+      subject: "World Coffee Innovation Summit London 2025: Thank you for registering your interest!",
+      html: `
+      <div>Hello ${firstName},</div>
+      <br/>
+      <div>Thank you for registering your interest in attending the World Coffee Innovation Summit London 2025.</div>
+      <br/>
+      <div>Our team will be in touch shortly.</div>
+      <br/>
+      <div>Any questions, feel free to reach out to info@worldcoffeealliance.com directly.</div>
+      <br/>
+      <div>Best regards,</div>
+      <div>The Team @ World Coffee Innovation Summit</div>
+      `
+    });
+    return {isSentToWca, isSentToREgistrant};
   } catch (error: any) {
     console.log(error);
   }

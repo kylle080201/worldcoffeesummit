@@ -7,6 +7,7 @@ import BackButton from './BackButton'
 import Link from 'next/link'
 import { ClockIcon } from '@heroicons/react/24/outline'
 import { countryCodes } from './ResourceForm'
+import toast from 'react-hot-toast'
 
 const InterestForm = () => {
     const router = useRouter()
@@ -80,7 +81,12 @@ const InterestForm = () => {
             )
         }).then(response => response.json())
             .then(async data => {
-              router.push('/interest/success')
+                if(data.registrants) {
+                    router.push('/interest/success')
+                } else {
+                    toast.error(`Failed to submit information, try again`);
+                }
+              
             }).catch(error => {
                 console.log(error);
             });
