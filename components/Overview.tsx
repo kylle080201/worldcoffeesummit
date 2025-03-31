@@ -52,6 +52,102 @@ export default function Overview() {
                     </div>
                 </div>
             </div>
+            
+            {/* 2025 SUMMIT OVERVIEW */}
+            <div className='w-full md:px-0 px-12 py-12 sm:py-20'>
+                <div className='justify-center mx-auto max-w-7xl'>
+                    <p className=" text-2xl font-bold tracking-tight text-center sm:text-4xl text-yellow-900">2025 SUMMIT OVERVIEW</p>
+                    <div className='flex flex-col gap-8 max-w-full m-auto'>
+                        <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
+                            In a time of unprecedented challenges and transformation in the global coffee sector,
+                            the World Coffee Innovation Summit 2025 in London brings together visionary
+                            leaders, global brands and corporates, innovators, producers, policymakers, and
+                            investors to reimagine the future of coffee through the lens of shared prosperity,
+                            resilience, and systemic collaboration.
+                        </div>
+
+                        <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
+                            Under the theme <strong>&quot;THE BIGGER PICTURE- CRAFTING AN ECOSYSTEM
+                            BUSINESS MODEL FOR SHARED PROSPERITY&quot;</strong>, this year&#39;s summit will explore
+                            how the coffee &amp; cocoa industries can move beyond fragmented initiatives and
+                            transactional relationships to embrace a holistic ecosystem business model- one that
+                            prioritises long-term value creation for all stakeholders, from farmers to consumers.
+                        </div>
+
+                        <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
+                            This two-day high-level gathering will focus on crafting actionable strategies to:
+                        </div>
+
+                        <ul className="list-disc flex flex-col gap-4 ml-12">
+                            <li className="text-lg leading-7 text-gray-600">
+                                Unlock inclusive growth across the entire coffee value chain.
+                            </li>
+
+                            <li className="text-lg leading-7 text-gray-600">
+                                Integrate innovation, sustainability, and equity at the heart of business
+                                models.
+                            </li>
+
+                            <li className="text-lg leading-7 text-gray-600">
+                                Align market opportunities with the urgent need for climate adaptation, farmer
+                                income improvement, and ethical sourcing.
+                            </li>
+
+                            <li className="text-lg leading-7 text-gray-600">
+                                Build a truly collaborative platform where corporates, producers, investors,
+                                innovators and governments co-create solutions rather than act in silos.
+                            </li>
+                        </ul>
+
+                        <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
+                            This summit will provide a unique, closed-door environment for honest dialogue, bold
+                            ideas, and strategic partnerships to emerge- recognizing that no single actor can
+                            solve the coffee sector’s challenges alone.
+                        </div>
+
+                        <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
+                            Together, we will ask the crucial question: What will it take to shift from transactional
+                            business-as-usual to a shared, sustainable, and prosperous ecosystem model?
+                        </div>
+
+                        <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
+                            Join us in London to see the bigger picture, shape the future of coffee, and drive
+                            meaningful change at scale.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* 2024 SUMMIT HIGHLIGHT */}
+            <div className='w-full md:px-0 px-12 bg-gray-100 py-12 sm:py-20'>
+                <div className='w-full md:px-0 px-12'>
+                    <div className='justify-center mx-auto max-w-7xl'>
+                        <p className="text-2xl font-bold tracking-tight text-center sm:text-4xl text-yellow-900">2024 SUMMIT HIGHLIGHTS</p>
+                        <div className='flex flex-col max-w-full m-auto md:py-8'>
+                            <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
+                                As the leading solution-driven summit that connects <strong>COFFEE</strong>, <strong>CLIMATE CHANGE</strong> and <strong>FINANCE</strong> through <strong>INNOVATION</strong>, the World Coffee Innovation Summit is a must-attend for those who invested in advancing nature-positive, resilient agriculture and food systems for a net positive future in coffee sector. Join global coffee, climate and finance leaders and agri-food innovators in London for two days of in-depth discussions and cross-sector networking.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='items-center mx-auto my-auto w-full flex flex-col max-w-7xl'>
+                    <video
+                        loop
+                        controls
+                        className="w-full"
+                        poster='https://worldcoffeealliance.com/wp-content/uploads/2024/10/Thumbnail.png'
+                        disablePictureInPicture
+                        controlsList="nodownload noremoteplayback"
+                        onContextMenu={(e) => e.preventDefault()}
+                    >
+                        <source
+                            src="https://worldcoffeealliance.com/wp-content/uploads/2024/10/World-Coffee-Innovation-Summit-London-16-17th-October-2024-Highlights-1-1.mp4"
+                            type="video/mp4"
+                        />
+                    </video>
+                </div>
+            </div>
         </>
     )
 }
