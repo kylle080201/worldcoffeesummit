@@ -105,7 +105,7 @@ const WhoYoullMeet: React.FC = () => {
   };
 
   return (
-    <div className="py-20 overflow-hidden ">
+    <div className="py-20 overflow-hidden bg-gray-100">
       <div className="max-w-7xl my-6 mx-auto">
         <div className='flex w-full text-center justify-center'>
           <h2 className="text-4xl font-bold tracking-tight">WHO YOU&apos;LL MEET</h2>

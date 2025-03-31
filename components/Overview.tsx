@@ -54,7 +54,7 @@ export default function Overview() {
             </div>
             
             {/* 2025 SUMMIT OVERVIEW */}
-            <div className='w-full md:px-0 px-12 py-12 sm:py-20'>
+            <div className='w-full md:px-0 px-12 py-12 sm:py-20 bg-gray-100'>
                 <div className='justify-center mx-auto max-w-7xl'>
                     <p className=" text-2xl font-bold tracking-tight text-center sm:text-4xl text-yellow-900">2025 SUMMIT OVERVIEW</p>
                     <div className='flex flex-col gap-8 max-w-full m-auto mt-8'>
@@ -119,7 +119,7 @@ export default function Overview() {
             </div>
 
             {/* 2024 SUMMIT HIGHLIGHT */}
-            <div className='w-full md:px-0 px-12 bg-gray-100 py-12 sm:py-20'>
+            <div className='w-full md:px-0 px-12 py-12 sm:py-20'>
                 <div className='w-full md:px-0 px-12'>
                     <div className='justify-center mx-auto max-w-7xl'>
                         <p className="text-2xl font-bold tracking-tight text-center sm:text-4xl text-yellow-900">2024 SUMMIT HIGHLIGHTS</p>

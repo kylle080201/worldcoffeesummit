@@ -56,7 +56,7 @@ function KeyThemes() {
   const themesColumn2 = keyThemes.slice(5);
   const router = useRouter()
   return (
-    <div className='w-full px-0 md:px-12 bg-gray-100 py-20'>
+    <div className='w-full px-0 md:px-12 py-20'>
       <div className='mx-auto sm:max-w-7xl'>
         {/* <div className='flex flex-col items-center md:mt-0'>
           <span className='text-red-500 text-4xl font-bold'>EUDR COUNTDOWN</span>
