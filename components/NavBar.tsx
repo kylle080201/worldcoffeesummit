@@ -30,7 +30,7 @@ function Navbar() {
                                     {/* Mobile menu button */}
                                     <Link href='/'>
                                         <img
-                                            className="flex-shrink-0 w-32 h-auto lg:w-64"
+                                            className="flex-shrink-0 flex md:hidden w-32 h-auto lg:w-64"
                                             src="https://worldcoffeealliance.com/wp-content/uploads/2024/04/world-coffee-innovation-summit-high-resolution-logo-transparent-1.png"
                                             alt="WCS Logo"
                                         />
