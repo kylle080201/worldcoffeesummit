@@ -78,7 +78,7 @@ export default function Overview() {
                             This two-day high-level gathering will focus on crafting actionable strategies to:
                         </div>
 
-                        <ul className="list-disc flex flex-col gap-4 ml-12">
+                        <ul className="list-disc flex flex-col ml-12">
                             <li className="text-2xl leading-8 text-gray-900 w-full text-justify">
                                 Unlock inclusive growth across the entire coffee value chain.
                             </li>
