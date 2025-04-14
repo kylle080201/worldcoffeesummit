@@ -67,7 +67,7 @@ export default function Overview() {
                         </div>
 
                         <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
-                            Under the theme <strong>&ldquo;THE BIGGER PICTURE— CRAFTING AN ECOSYSTEM BUSINESS MODEL FOR SHARED PROSPERITY&ldquo;</strong>, the summit challenges the coffee &amp; cocoa industries to move beyond fragmented initiatives and transactional relations to embrace a holistic, collaborative ecosystem business model—one that prioritizes long-term value creation for all stakeholders, from farmers to consumers.
+                            Under the theme <strong>&ldquo;THE BIGGER PICTURE INTO CRAFTING AN ECOSYSTEM BUSINESS MODEL FOR SHARED PROSPERITY&ldquo;</strong>, the summit challenges the coffee &amp; cocoa industries to move beyond fragmented initiatives and transactional relations to embrace a holistic, collaborative ecosystem business model—one that prioritizes long-term value creation for all stakeholders, from farmers to consumers.
                         </div>
 
                         <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
