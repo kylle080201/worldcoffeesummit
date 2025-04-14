@@ -867,7 +867,7 @@ function Speakers2024() {
 
   return (
     <>
-      <div className="px-12 py-20 sm:px-20 bg-gray-100" id="speakers">
+      <div className="px-12 py-20 sm:px-20" id="speakers">
         <div className="mx-auto sm:content-center">
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">2024 SPEAKERS</p>
