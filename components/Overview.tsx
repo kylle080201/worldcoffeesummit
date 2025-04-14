@@ -1,6 +1,7 @@
 "use client"
 import Link from 'next/link'
 import React from 'react'
+import KeyThemes from './KeyThemes'
 
 export default function Overview() {
     return (
@@ -118,8 +119,10 @@ export default function Overview() {
                 </div>
             </div>
 
+            <KeyThemes />
+
             {/* 2024 SUMMIT HIGHLIGHT */}
-            <div className='w-full md:px-0 px-12 py-12 sm:py-20'>
+            <div className='w-full md:px-0 px-12 py-12 sm:py-20 bg-gray-100'>
                 <div className='w-full md:px-0 px-12'>
                     <div className='justify-center mx-auto max-w-7xl'>
                         <p className="text-2xl font-bold tracking-tight text-center sm:text-4xl text-yellow-900">2024 SUMMIT HIGHLIGHTS</p>

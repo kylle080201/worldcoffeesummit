@@ -22,7 +22,6 @@ export default function HomePage() {
             <div>
                 <Overview />
                 <Speakers2024 />
-                <KeyThemes />
                 <WhoYoullMeet />
                 {/* <SpeakerSlider /> */}
                 {/* <ImageCarousel /> */}
