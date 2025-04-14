@@ -68,7 +68,7 @@ function KeyThemes() {
   const themesColumn2 = keyThemes.slice(7);
   const router = useRouter()
   return (
-    <div className='w-full px-0 md:px-12 py-20'>
+    <div className='w-full px-0 md:px-8 py-12'>
       <div className='mx-auto sm:max-w-7xl'>
         {/* <div className='flex flex-col items-center md:mt-0'>
           <span className='text-red-500 text-4xl font-bold'>EUDR COUNTDOWN</span>
@@ -109,7 +109,7 @@ function KeyThemes() {
           </div>
         </div>
       </div>
-      <div className='mt-8 w-full flex'>
+      {/* <div className='mt-8 w-full flex'>
         <button
           type="button"
           className="mx-auto inline-flex justify-center max-w-5xl px-6 py-4 text-2xl font-semibold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-700"
@@ -117,7 +117,7 @@ function KeyThemes() {
         >
           See Full Agenda
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }
