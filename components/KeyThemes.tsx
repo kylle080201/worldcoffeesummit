@@ -75,7 +75,7 @@ function KeyThemes() {
           <span className='text-red-500 text-4xl font-bold'>30 DECEMBER 2024</span>
           <KeyThemesCountDown />
         </div> */}
-        <div className='flex w-full justify-center mt-6'>
+        <div className='flex w-full justify-center'>
           <h2 className="text-4xl font-bold tracking-tight">KEY THEMES</h2>
         </div>
         <div className='mt-12 flex gap-4 md:gap-8 md:flex-row flex-col md:px-0 px-12'>
