@@ -53,71 +53,49 @@ export default function Overview() {
                     </div>
                 </div>
             </div>
-            
+
             {/* 2025 SUMMIT OVERVIEW */}
             <div className='w-full md:px-0 px-12 py-12 sm:py-20 bg-gray-100'>
                 <div className='justify-center mx-auto max-w-7xl'>
-                    <p className=" text-2xl font-bold tracking-tight text-center sm:text-4xl text-yellow-900">2025 SUMMIT OVERVIEW</p>
+                    <p className="text-2xl font-bold tracking-tight text-center sm:text-4xl text-yellow-900">
+                        2025 SUMMIT OVERVIEW
+                    </p>
+
                     <div className='flex flex-col gap-8 max-w-full m-auto mt-8'>
                         <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
-                            In a time of unprecedented challenges and transformation in the global coffee sector,
-                            the World Coffee Innovation Summit 2025 in London brings together visionary
-                            leaders, global brands and corporates, innovators, producers, policymakers, and
-                            investors to reimagine the future of coffee through the lens of shared prosperity,
-                            resilience, and systemic collaboration.
+                            In a time of unprecedented disruption and transformation, the World Coffee Innovation Summit 2025 in London convenes global visionary leaders, global brands and corporates, innovators, producers, policymakers, and investors to reimagine the future of coffee through shared prosperity, resilience, and systemic collaboration.
                         </div>
 
                         <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
-                            Under the theme <strong>&quot;THE BIGGER PICTURE- CRAFTING AN ECOSYSTEM
-                            BUSINESS MODEL FOR SHARED PROSPERITY&quot;</strong>, this year&#39;s summit will explore
-                            how the coffee &amp; cocoa industries can move beyond fragmented initiatives and
-                            transactional relationships to embrace a holistic ecosystem business model- one that
-                            prioritises long-term value creation for all stakeholders, from farmers to consumers.
+                            Under the theme <strong>&ldquo;THE BIGGER PICTURE— CRAFTING AN ECOSYSTEM BUSINESS MODEL FOR SHARED PROSPERITY&ldquo;</strong>, the summit challenges the coffee &amp; cocoa industries to move beyond fragmented initiatives and transactional relations to embrace a holistic, collaborative ecosystem business model—one that prioritizes long-term value creation for all stakeholders, from farmers to consumers.
                         </div>
 
                         <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
-                            This two-day high-level gathering will focus on crafting actionable strategies to:
+                            This two-day, high-level, closed-door gathering will focus on:
                         </div>
 
                         <ul className="list-disc flex flex-col ml-12">
                             <li className="text-2xl leading-8 text-gray-900 w-full text-justify">
-                                Unlock inclusive growth across the entire coffee value chain.
+                                Unlocking inclusive growth across the entire coffee value chain.
                             </li>
-
                             <li className="text-2xl leading-8 text-gray-900 w-full text-justify">
-                                Integrate innovation, sustainability, and equity at the heart of business
-                                models.
+                                Embedding innovation, equity and sustainability into business models.
                             </li>
-
                             <li className="text-2xl leading-8 text-gray-900 w-full text-justify">
-                                Align market opportunities with the urgent need for climate adaptation, farmer
-                                income improvement, and ethical sourcing.
+                                Aligning climate action, farmer income improvement and ethical sourcing with market opportunities.
                             </li>
-
                             <li className="text-2xl leading-8 text-gray-900 w-full text-justify">
-                                Build a truly collaborative platform where corporates, producers, investors,
-                                innovators and governments co-create solutions rather than act in silos.
+                                Co-creating bold, scalable solutions across industries based on trust.
                             </li>
                         </ul>
 
                         <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
-                            This summit will provide a unique, closed-door environment for honest dialogue, bold
-                            ideas, and strategic partnerships to emerge- recognizing that no single actor can
-                            solve the coffee sector’s challenges alone.
-                        </div>
-
-                        <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
-                            Together, we will ask the crucial question: What will it take to shift from transactional
-                            business-as-usual to a shared, sustainable, and prosperous ecosystem model?
-                        </div>
-
-                        <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
-                            Join us in London to see the bigger picture, shape the future of coffee, and drive
-                            meaningful change at scale.
+                            Join us in London to shift from transactional thinking to ecosystem leadership and shape the future of coffee together.
                         </div>
                     </div>
                 </div>
             </div>
+
 
             <KeyThemes />
 
@@ -125,12 +103,12 @@ export default function Overview() {
             <div className='w-full md:px-0 px-12 py-12 sm:py-20 bg-gray-100'>
                 <div className='w-full md:px-0 px-12'>
                     <div className='justify-center mx-auto max-w-7xl'>
-                        <p className="text-2xl font-bold tracking-tight text-center sm:text-4xl text-yellow-900">2024 SUMMIT HIGHLIGHTS</p>
-                        <div className='flex flex-col max-w-full m-auto md:py-8'>
+                        <p className="text-2xl font-bold tracking-tight text-center sm:text-4xl text-yellow-900 md:pb-8">2024 SUMMIT HIGHLIGHTS</p>
+                        {/* <div className='flex flex-col max-w-full m-auto md:py-8'>
                             <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
                                 As the leading solution-driven summit that connects <strong>COFFEE</strong>, <strong>CLIMATE CHANGE</strong> and <strong>FINANCE</strong> through <strong>INNOVATION</strong>, the World Coffee Innovation Summit is a must-attend for those who invested in advancing nature-positive, resilient agriculture and food systems for a net positive future in coffee sector. Join global coffee, climate and finance leaders and agri-food innovators in London for two days of in-depth discussions and cross-sector networking.
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
