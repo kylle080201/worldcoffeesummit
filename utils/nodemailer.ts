@@ -193,7 +193,7 @@ const generateEmailContent = ({
                                 " class="padding message-content">
                                                         <div class="header-image">
                                                             <img width="500"
-                                                                src="https://worldcoffeealliance.com/wp-content/uploads/2024/05/Registration-banner-scaled.jpg" />
+                                                                src="https://worldcoffeealliance.com/wp-content/uploads/2025/04/Confirmation-Email-Banner-scaled.jpg" />
                                                         </div>
                                                         <div class="form-container">
                                                             <p> Hi ${firstName},</p>
