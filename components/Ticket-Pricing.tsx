@@ -10,7 +10,7 @@ function TicketPricing() {
             title: "Academics",
             old_price: 1095,
             item_price: 299,
-            description: "Eligible for representatives from non-profit NGOs, farmers cooperatives, regulators, governments, public sector, and academia.",
+            description: "Eligible only for professors and full- time Masters, PhDs and post-graduates(including students)",
             earlyBird: "Book before 8th October 2024 to Save £200.00",
             line_items: [
                 {
@@ -24,7 +24,7 @@ function TicketPricing() {
             title: "NGOs, Co-operatives, Policy Makers",
             old_price: 1795,
             item_price: 599,
-            description: "Eligible for corporate representatives.",
+            description: "Eligible for non-profits and NGOs, farmer-cooperatives, Policy Makers & Government Bodies",
             earlyBird: "Book before 8th October 2024 to Save £300.00",
             line_items: [
                 {
@@ -38,7 +38,7 @@ function TicketPricing() {
             title: "Corporates",
             old_price: 1995,
             item_price: 899,
-            description: "Required for for-profit consultancies, technology, solution and service providers.",
+            description: "Eligible for multinational/ conglomerate companies, F&B & Agri-Commodity Brands, retailers, traders ",
             earlyBird: "Book before 8th October 2024 to Save £300.00",
             line_items: [
                 {
@@ -52,7 +52,7 @@ function TicketPricing() {
             title: "Start Ups",
             old_price: 1295,
             item_price: 699,
-            description: "Only eligible for early-stage innovators who have not secured their first Series A funding round.",
+            description: "Eligible only for early-stage innovators, Independent Consultants/ Service Providers",
             earlyBird: "Book before 8th October 2024 to Save £300.00",
             line_items: [
                 {
@@ -66,7 +66,7 @@ function TicketPricing() {
             title: "Service Providers",
             old_price: 1295,
             item_price: 1099,
-            description: "Only eligible for early-stage innovators who have not secured their first Series A funding round.",
+            description: "Eligible for for-profit consultancies, mature start-ups, technology and service providers, including Private Equity Firms and Asset Managers/Brokers, Angel and Venture Capital Investors/ Banks/ Financial Institutions",
             earlyBird: "Book before 8th October 2024 to Save £300.00",
             line_items: [
                 {
@@ -117,7 +117,7 @@ function TicketPricing() {
                                                     £{delegate.item_price}.00
                                                 </div> */}
                                                 <div>
-                                                    £{delegate.item_price}.00
+                                                    £{delegate.item_price}.00 + 20% VAT
                                                 </div>
                                             </div>
                                         </td>
