@@ -14,10 +14,10 @@ export default function Tickets() {
     ]
     return (
         <>
-            {/* <RegistrationSteps steps={steps} />
-            <TicketPricing /> */}
+            {/* <RegistrationSteps steps={steps} /> */}
+            <TicketPricing />
             {/* <TicketPricingMaintenance /> */}
-            <div className="flex flex-col items-center h-screen bg-lime-700">
+            {/* <div className="flex flex-col items-center h-screen bg-lime-700">
                 <div className="px-6 my-auto sm:px-6 sm:py-32 lg:px-8">
                     <div className="max-w-2xl mx-auto text-center">
                         <h2 className="text-2xl font-bold tracking-tight text-white sm:text-4xl">
@@ -31,7 +31,7 @@ export default function Tickets() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }

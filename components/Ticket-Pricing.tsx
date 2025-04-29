@@ -7,62 +7,77 @@ function TicketPricing() {
 
     const summit = [
         {
-            title: "NGO/Academic Pass",
+            title: "Academics",
             old_price: 1095,
-            item_price: 895,
+            item_price: 299,
             description: "Eligible for representatives from non-profit NGOs, farmers cooperatives, regulators, governments, public sector, and academia.",
             earlyBird: "Book before 8th October 2024 to Save £200.00",
             line_items: [
                 {
-                    price: 'price_1Q7RRxKMWpUKzQVzIyknghNg',
+                    price: 'price_1RJ3cYKMWpUKzQVzk2sR6LGo',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
             ]
         },
         {
-            title: "Standard Corporate Pass",
+            title: "NGOs, Co-operatives, Policy Makers",
             old_price: 1795,
-            item_price: 1495,
+            item_price: 599,
             description: "Eligible for corporate representatives.",
             earlyBird: "Book before 8th October 2024 to Save £300.00",
             line_items: [
                 {
-                    price: 'price_1Q7RWxKMWpUKzQVzTfM6nbR6',
+                    price: 'price_1RJ3crKMWpUKzQVzn1ia1jtp',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
             ]
         },
         {
-            title: "Service Provider Pass",
+            title: "Corporates",
             old_price: 1995,
-            item_price: 1695,
+            item_price: 899,
             description: "Required for for-profit consultancies, technology, solution and service providers.",
             earlyBird: "Book before 8th October 2024 to Save £300.00",
             line_items: [
                 {
-                    price: 'price_1Q7RYZKMWpUKzQVzY8ch6ldu',
+                    price: 'price_1RJ3d6KMWpUKzQVzmvuy3Xfc',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
             ]
         },
         {
-            title: "Start-up Pass",
+            title: "Start Ups",
             old_price: 1295,
-            item_price: 995,
+            item_price: 699,
             description: "Only eligible for early-stage innovators who have not secured their first Series A funding round.",
             earlyBird: "Book before 8th October 2024 to Save £300.00",
             line_items: [
                 {
-                    price: 'price_1Q7RZyKMWpUKzQVzBt4b61hl',
+                    price: 'price_1RJ3dMKMWpUKzQVz4b6c2UKj',
+                    quantity: 1,
+                    tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
+                }
+            ]
+        },
+        {
+            title: "Service Providers",
+            old_price: 1295,
+            item_price: 1099,
+            description: "Only eligible for early-stage innovators who have not secured their first Series A funding round.",
+            earlyBird: "Book before 8th October 2024 to Save £300.00",
+            line_items: [
+                {
+                    price: 'price_1RJ3e6KMWpUKzQVzMFo1JodF',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
             ]
         },
     ]
+
     const networkingSoiree = {
         title: "Networking Soirée Pass",
         old_price: 225,
@@ -102,7 +117,7 @@ function TicketPricing() {
                                                     £{delegate.item_price}.00
                                                 </div> */}
                                                 <div>
-                                                    £{delegate.old_price}.00
+                                                    £{delegate.item_price}.00
                                                 </div>
                                             </div>
                                         </td>
@@ -153,45 +168,6 @@ function TicketPricing() {
                                         </div>
                                     </td>
                                 </tr> */}
-                                <tr className="odd:bg-gray-100">
-                                    <td className="flex-wrap px-3 py-4 font-semibold text-gray-900 text-lg whitespace-nowrap">{networkingSoiree.title}</td>
-                                    <td className="flex-wrap px-3 py-4 text-gray-900 text-lg">
-                                        At House of Lords 16th October 2024 Early Evening
-                                        <br />
-                                        Wines and Hors d&apos;oeuvres
-                                        <br />
-                                        {/* <h3 className="text-sm tracking-tight text-red-700 sm:text-lg font-bold">Exclusive for Summit Attendees!<br />Limited tickets only! First come, first serve!<br />Book before 8th October 2024 to Save £40.00</h3> */}
-                                    </td>
-                                    <td className="flex-wrap px-3 py-4 text-gray-900 font-bold ">
-                                        <div className='h-full text-lg flex flex-col w-full'>
-                                            {/* <div className='flex shrink-0'>
-                                                {networkingSoiree.old_price && <span className='text-red-700 mr-2 line-through'>£{networkingSoiree.old_price}.00</span> }
-                                            </div>
-                                            <div>
-                                                £{networkingSoiree.item_price}.00
-                                            </div> */}
-                                            <div>
-                                                £{networkingSoiree.old_price}.00
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td className="px-3 py-4 flex-wrap ">
-                                        <div className='my-auto justify-self-center mx:auto'>
-                                            <Link
-                                                href={{
-                                                    pathname: '/register/form',
-                                                    query: {
-                                                        line_items: JSON.stringify(networkingSoiree.line_items)
-                                                    }
-                                                }}
-                                                type="button"
-                                                className="block w-full px-3 py-2 text-sm font-semibold text-center text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                                            >
-                                                Register
-                                            </Link>
-                                        </div>
-                                    </td>
-                                </tr>
                             </tbody>
                         </table>
                     </div>

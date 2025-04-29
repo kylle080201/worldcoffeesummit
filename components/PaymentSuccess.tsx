@@ -59,44 +59,23 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, line_items }: an
                                 REGISTRATION CONFIRMED
                             </h2>
                             <h3 className="my-6 text-lg tracking-tight text-gray-900 sm:text-2xl">
-                                Thank you for registering to attend the {res?.res?.event === "Summit and Networking Soirée" ? "World Coffee Innovation Summit and Networking Soirée London 2024" : res?.res?.event === "Summit" ? "World Coffee Innovation Summit London 2024" : "Networking Soirée at UK House of Lords on 16th October 2024" }.
+                                Thank you for registering to attend the World Coffee Innovation Summit London 2025.
                             </h3>
                             <h3 className="my-6 text-lg tracking-tight text-gray-900 sm:text-2xl">
-                                An email confirmation will be with you shortly with further instructions
+                                An email confirmation will be with you shortly with further instructions.
                             </h3>
-                            {
-                                res?.res?.event === "Summit" && 
-                                    <div className="flex font-bold flex-col gap-2 text-lg tracking-tight text-gray-900 sm:text-2xl">
-                                    <div>
-                                        WHY NOT JOIN OUR &ldquo;NETWORKING SOIRÉE&ldquo; AT UK HOUSE OF LORDS ON 16TH OCTOBER 2024 EARLY EVENING?
-                                    </div>
-                                    <div className="text-red-500">
-                                        LIMITED TICKETS ONLY! FIRST COME, FIRST SERVE!
-                                    </div>
-                                    <Link className=' underline text-yellow-900' href={'/register'}>Register Here</Link>
-                                </div>
-                            }
-                            {
-                                res?.res?.event === "Networking Soirée" && 
-                                <h3 className="my-6 text-lg tracking-tight text-gray-900 sm:text-2xl">
-                                    Please make sure you have already registered your pass to World Coffee Innovation Summit London 2024, as the Networking Soirée is exclusively for registered delegate to the summit only. <Link className='underline text-yellow-900' href={'/register'}>Register Here</Link>
-                                </h3>
-                            }
                             
                             <h3 className="mt-6 text-lg font-bold tracking-tight text-lime-700 sm:text-2xl">
                                 Event Date:
                             </h3>
                             <h4 className="text-lg tracking-tight text-gray-900 sm:text-2xl">
-                                { res?.res?.event === "Networking Soirée" ? "16th October 2024" : "16-17th October 2024" }
+                                23-24 October 2025
                             </h4>
                             <h3 className="mt-6 text-lg font-bold tracking-tight text-lime-700 sm:text-2xl">
                                 Location:
                             </h3>
                             <h4 className="text-lg tracking-tight text-gray-900 sm:text-2xl">
-                                <b>Summit</b>: 4th Floor at QEII Centre, Broad Sanctuary, London SW1P 3EE
-                            </h4>
-                            <h4 className="text-lg tracking-tight text-gray-900 sm:text-2xl">
-                                <b>Networking Soirée</b>: UK House of Lords, Houses of Parliament, Parliament Sq, London SW1A 0PW
+                                Queen Elizabeth II Centre
                             </h4>
                             <h4 className="mt-6 text-lg tracking-tight text-gray-900 sm:text-2xl">
                                 Didn&apos;t receive an email? Please check your spam/junk mail.
