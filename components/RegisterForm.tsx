@@ -427,8 +427,6 @@ const RegisterForm = () => {
                     </Dialog>
                 </ Transition.Root>
             </div>
-
-
         </>
     )
 }
