@@ -29,7 +29,7 @@ export const mailer = async (data: any) => {
       from: `World Coffee Innovation Summit Team <${user}>`,
       to: email,
       cc: "info@worldcoffeealliance.com",
-      bcc: "info@worldcoffeealliance.com",
+      bcc: "events@worldcoffeealliance.com",
       subject: "Thank you for registering for World Coffee Innovation Summit London 23-24 October 2025",
       ...generateEmailContent({
         lastName,
