@@ -39,12 +39,12 @@ export default function Overview() {
 
                     <div className="flex flex-col sm:flex-row gap-4 mt-6">
                         <Link href="/register">
-                            <button className="bg-[#FFC000] text-white hover:underline hover:drop-shadow-xl font-bold text-lg md:text-xl xl:text-5xl py-1 md:py-2 xl:py-3 px-6 rounded-md">
+                            <button className="bg-[#FFC000] text-white hover:underline hover:drop-shadow-xl font-bold text-lg md:text-xl xl:text-5xl py-2 md:py-4 xl:py-6 px-6 rounded-md">
                                 REGISTER NOW
                             </button>
                         </Link>
                         <Link href="/interest">
-                            <button className="bg-lime-700 text-white hover:underline hover:drop-shadow-xl font-bold text-lg md:text-xl xl:text-5xl py-1 md:py-2 xl:py-3 px-6 rounded-md">
+                            <button className="bg-lime-700 text-white hover:underline hover:drop-shadow-xl font-bold text-lg md:text-xl xl:text-5xl py-2 md:py-4 xl:py-6 px-6 rounded-md">
                                 SPONSOR/EXHIBIT
                             </button>
                         </Link>

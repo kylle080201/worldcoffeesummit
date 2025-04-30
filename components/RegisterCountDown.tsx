@@ -7,7 +7,7 @@ const RegisterCountDown = () => {
     const [hours, setHours] = useState("00");
     const [minutes, setMinutes] = useState("00");
     const [seconds, setSeconds] = useState("00");
-    const target = new Date("05/30/2025 09:00:00");
+    const target = new Date("05/31/2025 12:00:00");
 
     function addLeadingZeros(num: any, totalLength: any) {
         return String(num).padStart(totalLength, '0');
