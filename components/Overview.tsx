@@ -28,8 +28,16 @@ export default function Overview() {
                     <p className="mt-2 text-lg sm:text-2xl md:text-4xl font-bold max-w-3xl drop-shadow-xl">
                         CRAFTING AN ECOSYSTEM BUSINESS MODEL FOR SHARED PROSPERITY
                     </p>
+                    
+                    {/* Event Logos - Smaller Size */}
+                    <div className="flex flex-col sm:flex-row items-center bg-[#e1be77ae] p-2 md:p-4w xl:p-6 rounded-md shadow-md gap-4 mt-[4rem] md:mt-[5rem] xl:mt-[25rem]">
+                        <div className="p-2 bg-lime-700 rounded-md w-fit text-md md:text-xl xl:text-3xl font-bold tracking-wide">
+                            23-24 October 2025 <span className="block sm:inline">| London</span>
+                        </div>
+                        <img className="w-[12rem] md:w-[16rem] xl:w-[20rem]" src="https://worldcoffeealliance.com/wp-content/uploads/2023/06/QEII-CENTRE.png" alt="QEII Centre" />
+                    </div>
 
-                    <div className="flex flex-col sm:flex-row gap-4 mt-[4rem] md:mt-[5rem] xl:mt-[25rem]">
+                    <div className="flex flex-col sm:flex-row gap-4 mt-6">
                         <Link href="/register">
                             <button className="bg-[#FFC000] text-white hover:underline hover:drop-shadow-xl font-bold text-lg md:text-xl xl:text-5xl py-1 md:py-2 xl:py-3 px-6 rounded-md">
                                 REGISTER NOW
@@ -42,19 +50,11 @@ export default function Overview() {
                         </Link>
                     </div>
 
-                    {/* Event Logos - Smaller Size */}
-                    <div className="mt-6 flex flex-col sm:flex-row items-center bg-[#e1be77ae] p-2 md:p-4w xl:p-6 rounded-md shadow-md gap-4">
-                        <div className="p-2 bg-lime-700 rounded-md w-fit text-md md:text-xl xl:text-3xl font-bold tracking-wide">
-                            23-24 October 2025 <span className="block sm:inline">| London</span>
-                        </div>
-                        <img className="w-[12rem] md:w-[16rem] xl:w-[20rem]" src="https://worldcoffeealliance.com/wp-content/uploads/2023/06/QEII-CENTRE.png" alt="QEII Centre" />
-                    </div>
-
                     {/* Footer Links */}
-                    <div className="mt-10 flex flex-col md:flex-row justify-between w-full text-xs md:text-2xl font-bold text-white px-6">
+                    {/* <div className="mt-10 flex flex-col md:flex-row justify-between w-full text-xs md:text-2xl font-bold text-white px-6">
                         <p>WWW.WORLDCOFFEEINNOVATIONSUMMIT.COM</p>
                         <p>#WCIS25</p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
