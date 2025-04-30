@@ -155,11 +155,6 @@ const InterestForm = () => {
                         </div>
 
                         <div>
-                            <label htmlFor="businessEmail" className="block mb-2 text-sm font-medium text-gray-900">Business Email Address</label>
-                            <input {...register('businessEmail')} type='email' className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500" required />
-                        </div>
-
-                        <div>
                             <label htmlFor="mobileNumber" className="block mb-2 text-sm font-medium text-gray-900">Mobile Number</label>
                             <div className="relative mt-2 rounded-md">
                                 <div className='flex gap-4'>
@@ -178,6 +173,11 @@ const InterestForm = () => {
                                     <input {...register('phoneNumber')} type='number' className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500" required />
                                 </div>
                             </div>
+                        </div>
+
+                        <div>
+                            <label htmlFor="businessEmail" className="block mb-2 text-sm font-medium text-gray-900">Business Email Address</label>
+                            <input {...register('businessEmail')} type='email' className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500" required />
                         </div>
                         
                         <div>
