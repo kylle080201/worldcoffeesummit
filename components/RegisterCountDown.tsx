@@ -1,7 +1,7 @@
 "use client"
 import { useEffect, useState } from "react";
 
-const CountDown = () => {
+const RegisterCountDown = () => {
     const [eventTime, setEventTime] = useState(false);
     const [days, setDays] = useState("00");
     const [hours, setHours] = useState("00");
@@ -45,49 +45,41 @@ const CountDown = () => {
                 null
             ) : (
                 <>
-                    <div className="flex-col py-8  justify-self-center">
+                    <div className="flex-col justify-self-center">
                         <div className="flex flex-row justify-center w-full mx-auto text-center">
                             <div className="flex flex-col">
-                                <div className="flex flex-col p-2 mr-1 bg-white rounded-md md:p-4">
+                                <div className="flex flex-col p-2 mr-1 rounded-md md:p-4">
                                     <h2 className="font-bold text-center text-md text-lime-700 md:text-4xl">
                                         {days}
+                                        <span className="text-sm font-normal">days</span>
                                     </h2>
-                                </div>
-                                <div className="p-2 rounded-l-md">
-                                    <p className="text-base font-semibold text-white md:text-md">Days</p>
                                 </div>
                             </div>
 
                             <div className="flex flex-col">
-                                <div className="flex flex-col p-2 mx-1 bg-white rounded-md md:p-4">
+                                <div className="flex flex-col p-2 mx-1 rounded-md md:p-4">
                                     <h2 className="font-bold text-center text-md text-lime-700 md:text-4xl">
                                         {hours}
+                                        <span className="text-sm font-normal">hrs</span>
                                     </h2>
-                                </div>
-                                <div className="p-2 ">
-                                    <p className="text-base font-semibold text-white md:text-md">Hours</p>
                                 </div>
                             </div>
 
                             <div className="flex flex-col">
-                                <div className="flex flex-col p-2 mx-1 bg-white rounded-md md:p-4">
+                                <div className="flex flex-col p-2 mx-1 rounded-md md:p-4">
                                     <h2 className="font-bold text-center text-md text-lime-700 md:text-4xl">
                                         {minutes}
+                                        <span className="text-sm font-normal">mins</span>
                                     </h2>
-                                </div>
-                                <div className="p-2 ">
-                                    <p className="text-base font-semibold text-white md:text-md">Minutes</p>
                                 </div>
                             </div>
 
                             <div className="flex flex-col">
-                                <div className="flex flex-col p-2 ml-1 bg-white rounded-md md:p-4">
+                                <div className="flex flex-col p-2 ml-1 rounded-md md:p-4">
                                     <h2 className="font-bold text-center text-md text-lime-700 md:text-4xl">
                                         {seconds}
+                                        <span className="text-sm font-normal">seconds</span>
                                     </h2>
-                                </div>
-                                <div className="p-2 rounded-r-md">
-                                    <p className="text-base font-semibold text-white md:text-md">Seconds</p>
                                 </div>
                             </div>
 
@@ -99,4 +91,4 @@ const CountDown = () => {
     );
 };
 
-export default CountDown;
+export default RegisterCountDown;

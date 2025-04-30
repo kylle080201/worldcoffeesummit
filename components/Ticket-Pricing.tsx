@@ -2,6 +2,7 @@
 import React from 'react'
 
 import Link from 'next/link'
+import RegisterCountDown from './RegisterCountDown'
 
 function TicketPricing() {
 
@@ -97,6 +98,20 @@ function TicketPricing() {
         <div className="z-40 py-12 bg-white sm:py-20">
             <div id="summit" className="flow-root px-6 mx-auto mt-12 rounded-md max-w-7xl">
                 <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                    
+                    <div className='flex px-12 w-full'>
+                        <div className='flex flex-col text-black font-bold w-1/2 justify-center items-center'>
+                            <h1 className='mx-auto text-2xl xl:text-4xl'>PRE-LAUNCH PRICING</h1>
+                            <h1 className='mx-auto text-red-500 xl:text-2xl text-lg'>(LIMITED AVAILABILITY)</h1>
+                        </div>
+                        <div className='flex flex-col gap-2 w-1/2'>
+                            <div className='p-2 bg-red-500 text-white w-max text-2xl xl:text-4xl font-bold px-24 justify-center items-center text-center rounded-xl whitespace-normal line-clamp-2'>
+                                TICKET PRICES INCREASE <br/>
+                                AFTER 30 MAY 2025
+                            </div>
+                            <RegisterCountDown />
+                        </div>
+                    </div>
                     <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8 ">
                         <table className="min-w-full divide-y divide-gray-300 mt-12">
                             <tbody className="bg-white">

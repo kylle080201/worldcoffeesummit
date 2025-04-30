@@ -36,6 +36,13 @@ export default function Overview() {
                             </button>
                         </Link>
                     </div>
+                    <div className="flex flex-col sm:flex-row gap-4 mt-4">
+                        <Link href="/register">
+                            <button className="bg-[#FFC000] text-yellow-900 hover:underline hover:drop-shadow-xl font-bold text-lg md:text-xl xl:text-5xl py-1 md:py-2 xl:py-3 px-6 rounded-md">
+                                REGISTER NOW
+                            </button>
+                        </Link>
+                    </div>
 
                     {/* Event Logos - Smaller Size */}
                     <div className="mt-6 flex flex-col sm:flex-row items-center bg-[#e1be77ae] p-2 md:p-4w xl:p-6 rounded-md shadow-md gap-4">
@@ -43,7 +50,6 @@ export default function Overview() {
                             23-24 October 2025 <span className="block sm:inline">| London</span>
                         </div>
                         <img className="w-[12rem] md:w-[16rem] xl:w-[20rem]" src="https://worldcoffeealliance.com/wp-content/uploads/2023/06/QEII-CENTRE.png" alt="QEII Centre" />
-                        <img className="w-[8rem] md:w-[10rem] xl:w-[12rem]" src="https://worldcoffeealliance.com/wp-content/uploads/2024/05/House_of_Lords_logo_2020.svg.png" alt="House of Lords" />
                     </div>
 
                     {/* Footer Links */}
