@@ -45,7 +45,7 @@ export default function Overview() {
                         </Link>
                         <Link href="/interest">
                             <button className="bg-lime-700 text-white hover:underline hover:drop-shadow-xl font-bold text-lg md:text-xl xl:text-5xl py-1 md:py-2 xl:py-3 px-6 rounded-md">
-                                REGISTER INTEREST
+                                SPONSOR/EXHIBIT
                             </button>
                         </Link>
                     </div>
