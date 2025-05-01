@@ -71,7 +71,7 @@ function TicketPricing() {
             earlyBird: "Book before 8th October 2024 to Save £300.00",
             line_items: [
                 {
-                    price: 'price_1RJ3e6KMWpUKzQVzMFo1JodF',
+                    price: 'price_1RJHMAKMWpUKzQVzmHoSWU6L',
                     quantity: 1,
                     tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
                 }
