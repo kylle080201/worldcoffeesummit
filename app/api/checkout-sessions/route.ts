@@ -29,6 +29,9 @@ export async function POST(request: NextRequest, response: NextResponse) {
       line_items: JSON.parse(line_items),
       success_url: `${origin}/register/success?session_id={CHECKOUT_SESSION_ID}&line_items=${line_items}&buyer_data=${encryptedFormData}`,
       cancel_url: `${origin}/register`,
+      metadata: {
+        cc_email: 'events@worldcoffeealliance.com',
+      },
     });
     const retrievedSession = await stripe.checkout.sessions.retrieve(
       session?.id
