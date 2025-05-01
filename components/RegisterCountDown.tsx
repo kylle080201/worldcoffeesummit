@@ -7,29 +7,36 @@ const RegisterCountDown = () => {
     const [hours, setHours] = useState("00");
     const [minutes, setMinutes] = useState("00");
     const [seconds, setSeconds] = useState("00");
-    const target = new Date("05/31/2025 12:00:00");
-
-    function addLeadingZeros(num: any, totalLength: any) {
-        return String(num).padStart(totalLength, '0');
-    }
+    const [localizedDate, setLocalizedDate] = useState("");
+    
+    // Use ISO format (YYYY-MM-DD) which is unambiguous
+    const target = new Date("2025-05-31T23:59:00");
 
     useEffect(() => {
+        // Set the localized date string once when component mounts
+        setLocalizedDate(target.toLocaleDateString(undefined, { 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit'
+        }));
+
         const interval = setInterval(() => {
             const now = new Date();
             const difference = target.getTime() - now.getTime();
 
             const d = Math.floor(difference / (1000 * 60 * 60 * 24));
-            setDays(addLeadingZeros(d, 2))
-            const h = Math.floor(
-                (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-            );
-            setHours(addLeadingZeros(h, 2));
+            setDays(String(d).padStart(2, '0'));
+            
+            const h = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            setHours(String(h).padStart(2, '0'));
 
             const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-            setMinutes(addLeadingZeros(m, 2));
+            setMinutes(String(m).padStart(2, '0'));
 
             const s = Math.floor((difference % (1000 * 60)) / 1000);
-            setSeconds(addLeadingZeros(s, 2));
+            setSeconds(String(s).padStart(2, '0'));
 
             if (d <= 0 && h <= 0 && m <= 0 && s <= 0) {
                 setEventTime(true);
@@ -37,57 +44,35 @@ const RegisterCountDown = () => {
         }, 1000);
 
         return () => clearInterval(interval);
-    });
+    }, []);
 
     return (
-        <>
-            {eventTime ? (
-                null
-            ) : (
-                <>
-                    <div className="flex-col justify-self-center">
-                        <div className="flex flex-row justify-center w-full mx-auto text-center">
-                            <div className="flex flex-col">
-                                <div className="flex flex-col p-2 mr-1 rounded-md md:p-4">
-                                    <h2 className="font-bold text-center text-md text-lime-700 md:text-4xl">
-                                        {days}
-                                        <span className="text-sm font-normal">days</span>
-                                    </h2>
-                                </div>
-                            </div>
+        <div className="flex flex-col items-center">
+            {/* Display the localized date */}
+            <div className="mb-4 text-lg font-medium text-gray-700">
+                Event ends on: {localizedDate}
+            </div>
 
-                            <div className="flex flex-col">
+            {/* Countdown timer */}
+            {!eventTime && (
+                <div className="flex-col justify-self-center">
+                    <div className="flex flex-row justify-center w-full mx-auto text-center">
+                        {[days, hours, minutes, seconds].map((value, index) => (
+                            <div key={index} className="flex flex-col">
                                 <div className="flex flex-col p-2 mx-1 rounded-md md:p-4">
                                     <h2 className="font-bold text-center text-md text-lime-700 md:text-4xl">
-                                        {hours}
-                                        <span className="text-sm font-normal">hrs</span>
+                                        {value}
+                                        <span className="text-sm font-normal">
+                                            {['days', 'hrs', 'mins', 'seconds'][index]}
+                                        </span>
                                     </h2>
                                 </div>
                             </div>
-
-                            <div className="flex flex-col">
-                                <div className="flex flex-col p-2 mx-1 rounded-md md:p-4">
-                                    <h2 className="font-bold text-center text-md text-lime-700 md:text-4xl">
-                                        {minutes}
-                                        <span className="text-sm font-normal">mins</span>
-                                    </h2>
-                                </div>
-                            </div>
-
-                            <div className="flex flex-col">
-                                <div className="flex flex-col p-2 ml-1 rounded-md md:p-4">
-                                    <h2 className="font-bold text-center text-md text-lime-700 md:text-4xl">
-                                        {seconds}
-                                        <span className="text-sm font-normal">seconds</span>
-                                    </h2>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div >
-                </>
+                        ))}
+                    </div>
+                </div>
             )}
-        </>
+        </div>
     );
 };
 

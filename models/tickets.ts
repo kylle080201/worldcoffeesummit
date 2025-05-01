@@ -16,7 +16,9 @@ const tickets = new Schema({
   event: {
     type: String,
     enum: ["Summit", "Exhibition"],
+    required: false,
   },
+  ticketName: String,
   email: String,
   lastName: String,
   firstName: String,

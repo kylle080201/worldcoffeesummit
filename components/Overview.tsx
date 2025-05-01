@@ -37,7 +37,7 @@ export default function Overview() {
                         <img className="w-[12rem] md:w-[16rem] xl:w-[20rem]" src="https://worldcoffeealliance.com/wp-content/uploads/2023/06/QEII-CENTRE.png" alt="QEII Centre" />
                     </div>
 
-                    <div className="flex flex-col sm:flex-row gap-4 mt-6">
+                    <div className="flex flex-col sm:flex-row gap-4 mt-4">
                         <Link href="/register">
                             <button className="bg-[#FFC000] text-white hover:underline hover:drop-shadow-xl font-bold text-lg md:text-xl xl:text-5xl py-2 md:py-4 xl:py-6 px-6 rounded-md">
                                 REGISTER NOW

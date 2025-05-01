@@ -40,11 +40,8 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
   const checkoutSessionId = req.checkoutSessionId;
   const formData = req.decryptedFormData;
   const line_items = JSON.parse(req.line_items);
-  const event = line_items.length > 1 ? 
-  "Summit and Networking Soirée" : 
-  (line_items[0].price === "price_1PGx2vKMWpUKzQVz1rtJmCf0" ? 
-  "Networking Soirée" : 
-  "Summit");
+
+  const ticket = line_items[0].title
 
   try {
     await connectMongo();
@@ -57,7 +54,7 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
         getTickets[0]._id,
         {
           $set: formData,
-          event,
+          ticket,
         },
         { new: true }
       );
