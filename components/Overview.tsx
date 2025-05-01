@@ -30,14 +30,14 @@ export default function Overview() {
                     </p>
                     
                     {/* Event Logos - Smaller Size */}
-                    <div className="flex flex-col sm:flex-row items-center bg-[#e1be77ae] p-2 md:p-4w xl:p-6 rounded-md shadow-md gap-4 mt-[4rem] md:mt-[5rem] xl:mt-[25rem]">
+                    <div className="flex flex-col sm:flex-row items-center bg-[#e1be77ae] p-2 rounded-md shadow-md gap-2 mt-[4rem] md:mt-[5rem] xl:mt-[25rem]">
                         <div className="p-2 bg-lime-700 rounded-md w-fit text-md md:text-xl xl:text-3xl font-bold tracking-wide">
                             23-24 October 2025 <span className="block sm:inline">| London</span>
                         </div>
                         <img className="w-[12rem] md:w-[16rem] xl:w-[20rem]" src="https://worldcoffeealliance.com/wp-content/uploads/2023/06/QEII-CENTRE.png" alt="QEII Centre" />
                     </div>
 
-                    <div className="flex flex-col sm:flex-row gap-4 mt-4">
+                    <div className="flex flex-col sm:flex-row gap-4 mt-8">
                         <Link href="/register">
                             <button className="bg-[#FFC000] text-white hover:underline hover:drop-shadow-xl font-bold text-lg md:text-xl xl:text-5xl py-2 md:py-4 xl:py-6 px-6 rounded-md">
                                 REGISTER NOW

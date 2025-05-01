@@ -48,10 +48,6 @@ const RegisterCountDown = () => {
 
     return (
         <div className="flex flex-col items-center">
-            {/* Display the localized date */}
-            <div className="mb-4 text-lg font-medium text-gray-700">
-                Event ends on: {localizedDate}
-            </div>
 
             {/* Countdown timer */}
             {!eventTime && (
