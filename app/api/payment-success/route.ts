@@ -40,8 +40,28 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
   const checkoutSessionId = req.checkoutSessionId;
   const formData = req.decryptedFormData;
   const line_items = JSON.parse(req.line_items);
+  let ticket 
+  switch (line_items[0].price) {
+    case "price_1RJ3cYKMWpUKzQVzk2sR6LGo":
+      ticket = "Academics"
+      break;
 
-  const ticket = line_items[0].title
+    case "price_1RJ3crKMWpUKzQVzn1ia1jtp":
+      ticket = "Academics"
+      break;
+
+    case "price_1RJ3d6KMWpUKzQVzmvuy3Xfc":
+      ticket = "Academics"
+      break;
+
+    case "price_1RJ3dMKMWpUKzQVz4b6c2UKj":
+      ticket = "Academics"
+      break;
+
+    case "price_1RJHMAKMWpUKzQVzmHoSWU6L":
+      ticket = "Academics"
+      break;
+  }
 
   try {
     await connectMongo();

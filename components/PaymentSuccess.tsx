@@ -7,8 +7,6 @@ import { IResponseData } from '../types/responseData';
 import { SocialIcon } from 'react-social-icons';
 import NetworkingSoiree from './NetworkingSoiree';
 
-
-
 function PaymentSuccess({ checkoutSessionId, decryptedFormData, line_items }: any) {
     const [res, setRes] = useState<IResponseData>(Object)
     const [origin, setOrigin] = useState('')
@@ -53,7 +51,7 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, line_items }: an
                     <div className='max-w-5xl'>
                         <img className='w-[20rem]' src="https://worldcoffeealliance.com/wp-content/uploads/2024/04/world-coffee-innovation-summit-high-resolution-logo-transparent-1.png" />
                     </div>
-                    {res?.res?.event ?
+                    {res?.res?.ticket ?
                         <div className="mt-6 justify-left md:mt-12">
                             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                                 REGISTRATION CONFIRMED
