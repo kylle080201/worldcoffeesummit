@@ -4,63 +4,63 @@ const user = process.env.EMAIL;
 const pass = process.env.EMAIL_PASS;
 
 export const transporter = nodemailer.createTransport({
-  host: "mail.four.mnnet.co.uk",
-  port: 587,
-  secure: false,
-  auth: {
-    user,
-    pass,
-  },
+    host: "mail.four.mnnet.co.uk",
+    port: 587,
+    secure: false,
+    auth: {
+        user,
+        pass,
+    },
 });
 
 export const mailer = async (data: any) => {
-  const reqData = await data;
-  const event = reqData.event;
-  const email = reqData.email;
-  const firstName =
-    reqData.firstName.charAt(0).toUpperCase() + reqData.firstName.slice(1);
-  const lastName =
-    reqData.lastName.charAt(0).toUpperCase() + reqData.lastName.slice(1);
-  const id = reqData._id;
-  const jobTitle = reqData.jobTitle;
-  const companyName = reqData.companyName;
-  try {
-    const isEmailSent = await transporter.sendMail({
-      from: `World Coffee Innovation Summit Team <${user}>`,
-      to: email,
-      cc: "info@worldcoffeealliance.com",
-      subject: "Thank you for registering for World Coffee Innovation Summit London 23-24 October 2025",
-      ...generateEmailContent({
-        lastName,
-        firstName,
-        event,
-        id,
-        email,
-        jobTitle,
-        companyName,
-      }),
-      attachments: [
-        {
-          filename: "qr-code-downloadable.jpg", // Replace with your image file name
-          path: `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.worldcoffeeinnovationsummit.com/pdf/${id}`, // Replace with the actual path of your image file
-          contentDisposition: "attachment", // Makes the attachment downloadable
-        },
-      ],
-    });
-    return isEmailSent;
-  } catch (error: any) {
-    console.log(error);
-  }
+    const reqData = await data;
+    const ticketName = reqData.ticketName;
+    const email = reqData.email;
+    const firstName =
+        reqData.firstName.charAt(0).toUpperCase() + reqData.firstName.slice(1);
+    const lastName =
+        reqData.lastName.charAt(0).toUpperCase() + reqData.lastName.slice(1);
+    const id = reqData._id;
+    const jobTitle = reqData.jobTitle;
+    const companyName = reqData.companyName;
+    try {
+        const isEmailSent = await transporter.sendMail({
+            from: `World Coffee Innovation Summit Team <${user}>`,
+            to: email,
+            cc: "info@worldcoffeealliance.com",
+            subject: "Thank you for registering for World Coffee Innovation Summit London 23-24 October 2025",
+            ...generateEmailContent({
+                lastName,
+                firstName,
+                ticketName,
+                id,
+                email,
+                jobTitle,
+                companyName,
+            }),
+            attachments: [
+                {
+                    filename: "qr-code-downloadable.jpg", // Replace with your image file name
+                    path: `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.worldcoffeeinnovationsummit.com/pdf/${id}`, // Replace with the actual path of your image file
+                    contentDisposition: "attachment", // Makes the attachment downloadable
+                },
+            ],
+        });
+        return isEmailSent;
+    } catch (error: any) {
+        console.log(error);
+    }
 };
 
 const generateEmailContent = ({
-  lastName,
-  firstName,
-  event,
-  id,
-  email,
-  jobTitle,
-  companyName,
+    lastName,
+    firstName,
+    ticketName,
+    id,
+    email,
+    jobTitle,
+    companyName,
 }: any) => {
 
 
@@ -208,7 +208,7 @@ const generateEmailContent = ({
                                                                     <div>${jobTitle}</div>
                                                                     <div>${companyName}</div>
                                                                     <div>${email}</div>
-                                                                    <div>Delegate to Summit</div>
+                                                                    <div>${ticketName}</div>
                                                                 </div>
                                                             </div>
                                                             <p>
@@ -248,7 +248,7 @@ const generateEmailContent = ({
 
     </html>`
 
-  return {
-    html,
-  };
+    return {
+        html,
+    };
 };

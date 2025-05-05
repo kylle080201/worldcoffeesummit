@@ -40,26 +40,26 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
   const checkoutSessionId = req.checkoutSessionId;
   const formData = req.decryptedFormData;
   const line_items = JSON.parse(req.line_items);
-  let ticket 
+  let ticketName 
   switch (line_items[0].price) {
     case "price_1RJ3cYKMWpUKzQVzk2sR6LGo":
-      ticket = "Academics"
+      ticketName = "Academics"
       break;
 
     case "price_1RJ3crKMWpUKzQVzn1ia1jtp":
-      ticket = "Academics"
+      ticketName = "Academics"
       break;
 
     case "price_1RJ3d6KMWpUKzQVzmvuy3Xfc":
-      ticket = "Academics"
+      ticketName = "Academics"
       break;
 
     case "price_1RJ3dMKMWpUKzQVz4b6c2UKj":
-      ticket = "Academics"
+      ticketName = "Academics"
       break;
 
     case "price_1RJHMAKMWpUKzQVzmHoSWU6L":
-      ticket = "Academics"
+      ticketName = "Academics"
       break;
   }
 
@@ -69,15 +69,17 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
       checkoutSessionId,
       deletedAt: { $exists: false },
     });
+    
     if (getTickets.length > 0) {
       const res = await Tickets.findByIdAndUpdate(
         getTickets[0]._id,
         {
           $set: formData,
-          ticket,
+          ticketName,
         },
         { new: true }
       );
+
       if (!res.isEmailAccepted || res.isEmailAccepted === false) {
         const mailerRes = await mailer(res);
         if (mailerRes?.accepted?.length ?? 0 > 0) {

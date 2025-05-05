@@ -9,7 +9,7 @@ export interface IResponseData {
     lastName: string;
     paymentIntentId: string;
     event: string;
-    ticket: string | null;
+    ticketName: string | null;
     _id: string;
   };
 }
