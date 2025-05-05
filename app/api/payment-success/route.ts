@@ -47,19 +47,19 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
       break;
 
     case "price_1RJ3crKMWpUKzQVzn1ia1jtp":
-      ticketName = "Academics"
+      ticketName = "NGOs, Co-operatives, Policy Makers"
       break;
 
     case "price_1RJ3d6KMWpUKzQVzmvuy3Xfc":
-      ticketName = "Academics"
+      ticketName = "Corporates"
       break;
 
     case "price_1RJ3dMKMWpUKzQVz4b6c2UKj":
-      ticketName = "Academics"
+      ticketName = "Start Ups"
       break;
 
     case "price_1RJHMAKMWpUKzQVzmHoSWU6L":
-      ticketName = "Academics"
+      ticketName = "Service Providers"
       break;
   }
 
