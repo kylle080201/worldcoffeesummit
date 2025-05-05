@@ -42,23 +42,23 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
   const line_items = JSON.parse(req.line_items);
   let ticketName 
   switch (line_items[0].price) {
-    case "price_1RJH4DKMWpUKzQVz53DZXaE5":
+    case "price_1RLRZdKMWpUKzQVzxEOPwVBA":
       ticketName = "Academics"
       break;
 
-    case "price_1RJHLkKMWpUKzQVz2m0cjN5R":
+    case "price_1RLRZlKMWpUKzQVzgSliqTFF":
       ticketName = "NGOs, Co-operatives, Policy Makers"
       break;
 
-    case "price_1RJHLYKMWpUKzQVzFS993eOR":
+    case "price_1RLRZqKMWpUKzQVz95VMOZXV":
       ticketName = "Corporates"
       break;
 
-    case "price_1RJHKqKMWpUKzQVzqUg2mW67":
+    case "price_1RLRZyKMWpUKzQVzqcVJiEhj":
       ticketName = "Start Ups"
       break;
 
-    case "price_1RJHMAKMWpUKzQVzmHoSWU6L":
+    case "price_1RLRaAKMWpUKzQVzBBMzfwO1":
       ticketName = "Service Providers"
       break;
   }
