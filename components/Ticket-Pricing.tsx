@@ -56,7 +56,7 @@ export const summit = [
         earlyBird: "Book before 8th October 2024 to Save £300.00",
         line_items: [
             {
-                price: 'price_1RJ3e6KMWpUKzQVzMFo1JodF',
+                price: 'price_1RJ3dMKMWpUKzQVz4b6c2UKj',
                 quantity: 1,
                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
             }
@@ -70,7 +70,7 @@ export const summit = [
         earlyBird: "Book before 8th October 2024 to Save £300.00",
         line_items: [
             {
-                price: 'price_1RLRaAKMWpUKzQVzBBMzfwO1',
+                price: 'price_1RJ3e6KMWpUKzQVzMFo1JodF',
                 quantity: 1,
                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
             }
