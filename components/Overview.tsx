@@ -9,9 +9,21 @@ export default function Overview() {
             {/* V1 */}
             <div
                 id="overview"
-                className="relative bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2025/03/Original-Picture-v1.jpg')] bg-cover bg-center pt-2 sm:py-24 pb-6 sm:pb-12 px-6 md:px-12 before:absolute before:inset-0 before:bg-black before:opacity-30 before:z-0"
-                style={{ aspectRatio: '16/9' }} // Force 16:9 aspect ratio
+                className="relative pt-2 sm:py-24 pb-6 sm:pb-12 px-6 md:px-12 overflow-hidden"
+                style={{ aspectRatio: '16/9' }}
             >
+                {/* Background Video */}
+                <video
+                    className="absolute inset-0 w-full h-full object-cover z-0"
+                    src="https://worldcoffeealliance.com/wp-content/uploads/2024/10/World-Coffee-Innovation-Summit-London-16-17th-October-2024-Highlights-1-1.mp4" // Replace with your video URL
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                />
+
+                {/* Teal Overlay */}
+                <div className="absolute inset-0 bg-teal-700 opacity-50 z-0" />
                 {/* Icon in the top right corner */}
                 <div className="absolute top-6 right-6 z-10">
                     <Link href={"https://worldcoffeealliance.com/"} target='_blank'>
@@ -25,22 +37,21 @@ export default function Overview() {
                     <h1 className="text-[3rem] md:text-[4rem] xl:text-[6rem] font-bold tracking-tight drop-shadow-xl">
                         THE BIGGER PICTURE
                     </h1>
-                    <p className="mt-2 text-lg sm:text-2xl md:text-4xl font-bold max-w-3xl drop-shadow-xl">
+                    <p className="mt-2 text-2xl sm:text-3xl md:text-4xl font-bold max-w-3xl drop-shadow-xl">
                         CRAFTING AN ECOSYSTEM BUSINESS MODEL FOR SHARED PROSPERITY
                     </p>
-                    
+
                     {/* Event Logos - Smaller Size */}
-                    <div className="flex flex-col sm:flex-row items-center bg-[#e1be77ae] p-2 rounded-md shadow-md gap-2 mt-[4rem] md:mt-[5rem] xl:mt-[25rem]">
-                        <div className="p-2 bg-lime-700 rounded-md w-fit text-md md:text-xl xl:text-3xl font-bold tracking-wide">
-                            23-24 October 2025 <span className="block sm:inline">| London</span>
+                    <div className="flex flex-col sm:flex-row items-center  p-2 rounded-md  gap-2 mt-[4rem] md:mt-[5rem] xl:mt-[10rem]">
+                        <div className="p-2 rounded-md w-fit text-lg md:text-2xl xl:text-4xl font-bold tracking-wide">
+                            23-24 October 2025 <span className="block sm:inline">| QEII CENTRE London</span>
                         </div>
-                        <img className="w-[12rem] md:w-[16rem] xl:w-[20rem]" src="https://worldcoffeealliance.com/wp-content/uploads/2023/06/QEII-CENTRE.png" alt="QEII Centre" />
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-4 mt-8">
                         <Link href="/register">
                             <button className="bg-[#FFC000] text-white hover:underline hover:drop-shadow-xl font-bold text-lg md:text-xl xl:text-5xl py-2 md:py-4 xl:py-6 px-6 rounded-md">
-                                REGISTER NOW
+                                BOOK TICKETS
                             </button>
                         </Link>
                         <Link href="/interest">
