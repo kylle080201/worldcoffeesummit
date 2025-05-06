@@ -42,7 +42,7 @@ export default function Overview() {
                     </p>
                     
                     {/* Event Logos - Smaller Size */}
-                    <div className="flex flex-col sm:flex-row items-center p-2 rounded-md  gap-2 mt-[4rem] md:mt-[5rem] xl:mt-[10rem]">
+                    <div className="flex flex-col sm:flex-row items-center p-2 rounded-md shadow-md gap-2 mt-[4rem] md:mt-[5rem] xl:mt-[10rem]">
                         <div className="p-2 rounded-md w-fit text-lg md:text-2xl xl:text-4xl font-bold tracking-wide">
                             23-24 October 2025 <span className="block sm:inline">| QEII CENTRE London</span>
                         </div>
