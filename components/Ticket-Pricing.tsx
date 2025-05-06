@@ -4,6 +4,81 @@ import React from 'react'
 import Link from 'next/link'
 import RegisterCountDown from './RegisterCountDown'
 
+// ORIGINAL
+// export const summit = [
+//     {
+//         title: "Academics",
+//         old_price: 1095,
+//         item_price: 299,
+//         description: "Eligible only for professors and full- time Masters, PhDs and post-graduates(including students)",
+//         earlyBird: "Book before 8th October 2024 to Save £200.00",
+//         line_items: [
+//             {
+//                 price: 'price_1RJ3cYKMWpUKzQVzk2sR6LGo',
+//                 quantity: 1,
+//                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
+
+//             }
+//         ]
+//     },
+//     {
+//         title: "NGOs, Co-operatives, Policy Makers",
+//         old_price: 1795,
+//         item_price: 599,
+//         description: "Eligible for non-profits and NGOs, farmer-cooperatives, Policy Makers & Government Bodies",
+//         earlyBird: "Book before 8th October 2024 to Save £300.00",
+//         line_items: [
+//             {
+//                 price: 'price_1RJ3crKMWpUKzQVzn1ia1jtp',
+//                 quantity: 1,
+//                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
+//             }
+//         ]
+//     },
+//     {
+//         title: "Corporates",
+//         old_price: 1995,
+//         item_price: 899,
+//         description: "Eligible for multinational/ conglomerate companies, F&B & Agri-Commodity Brands, retailers, traders ",
+//         earlyBird: "Book before 8th October 2024 to Save £300.00",
+//         line_items: [
+//             {
+//                 price: 'price_1RJ3d6KMWpUKzQVzmvuy3Xfc',
+//                 quantity: 1,
+//                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
+//             }
+//         ]
+//     },
+//     {
+//         title: "Start Ups",
+//         old_price: 1295,
+//         item_price: 699,
+//         description: "Eligible only for early-stage innovators, Independent Consultants/ Service Providers",
+//         earlyBird: "Book before 8th October 2024 to Save £300.00",
+//         line_items: [
+//             {
+//                 price: 'price_1RJ3dMKMWpUKzQVz4b6c2UKj',
+//                 quantity: 1,
+//                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
+//             }
+//         ]
+//     },
+//     {
+//         title: "Service Providers",
+//         old_price: 1295,
+//         item_price: 1099,
+//         description: "Eligible for for-profit consultancies, mature start-ups, technology and service providers, including Private Equity Firms and Asset Managers/Brokers, Angel and Venture Capital Investors/ Banks/ Financial Institutions",
+//         earlyBird: "Book before 8th October 2024 to Save £300.00",
+//         line_items: [
+//             {
+//                 price: 'price_1RJ3e6KMWpUKzQVzMFo1JodF',
+//                 quantity: 1,
+//                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
+//             }
+//         ]
+//     },
+// ]
+
 export const summit = [
     {
         title: "Academics",
@@ -13,7 +88,7 @@ export const summit = [
         earlyBird: "Book before 8th October 2024 to Save £200.00",
         line_items: [
             {
-                price: 'price_1RJ3cYKMWpUKzQVzk2sR6LGo',
+                price: 'price_1RLRZdKMWpUKzQVzxEOPwVBA',
                 quantity: 1,
                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
 
@@ -28,7 +103,7 @@ export const summit = [
         earlyBird: "Book before 8th October 2024 to Save £300.00",
         line_items: [
             {
-                price: 'price_1RJ3crKMWpUKzQVzn1ia1jtp',
+                price: 'price_1RLn53KMWpUKzQVzP93RGG0I',
                 quantity: 1,
                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
             }
@@ -42,7 +117,7 @@ export const summit = [
         earlyBird: "Book before 8th October 2024 to Save £300.00",
         line_items: [
             {
-                price: 'price_1RJ3d6KMWpUKzQVzmvuy3Xfc',
+                price: 'price_1RLn7BKMWpUKzQVzItm3kmzE',
                 quantity: 1,
                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
             }
@@ -56,7 +131,7 @@ export const summit = [
         earlyBird: "Book before 8th October 2024 to Save £300.00",
         line_items: [
             {
-                price: 'price_1RJ3dMKMWpUKzQVz4b6c2UKj',
+                price: 'price_1RLn8FKMWpUKzQVz5TAnpeGo',
                 quantity: 1,
                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
             }
@@ -70,7 +145,7 @@ export const summit = [
         earlyBird: "Book before 8th October 2024 to Save £300.00",
         line_items: [
             {
-                price: 'price_1RJ3e6KMWpUKzQVzMFo1JodF',
+                price: 'price_1RLn8fKMWpUKzQVzG5ZhHwZM',
                 quantity: 1,
                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
             }
