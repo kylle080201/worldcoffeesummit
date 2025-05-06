@@ -71,7 +71,7 @@ function Navbar() {
                                     <div className="flex flex-col items-start">
                                         <div className='flex flex-wrap items-center'>
                                             <div className='flex-wrap'>
-                                                <Link href='mailto:events@worldcoffeealliance.com' className='mr-2 font-semibold underline text-md text-gray-900'>Get in touch</Link>
+                                                <Link href='mailto:info@worldcoffeealliance.com' className='mr-2 font-semibold underline text-md text-gray-900'>Get in touch</Link>
                                             </div>
 
                                             <div className='flex gap-x-2'>
@@ -82,13 +82,12 @@ function Navbar() {
                                             </div>
                                         </div>
                                         <div className='mt-4 flex gap-2'>
-                                            {/* <button
-                                                disabled
+                                            <button
                                                 onClick={() => router.push('/register')}
-                                                className="relative inline-flex gap-x-1.5 rounded-md bg-lime-700 hover:bg-lime-800 px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+                                                className="relative inline-flex gap-x-1.5 rounded-md bg-lime-700 hover:bg-lime-900 px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
                                             >
                                                 Register Now
-                                            </button> */}
+                                            </button>
                                             {/* <button
                                                 onClick={() => router.push('/interest')}
                                                 className="relative inline-flex gap-x-1.5 rounded-md bg-yellow-900 hover:bg-yellow-800 px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
@@ -97,9 +96,9 @@ function Navbar() {
                                             </button> */}
                                             <button
                                                 onClick={() => router.push('/interest')}
-                                                className="relative inline-flex gap-x-1.5 rounded-md bg-lime-900 hover:bg-lime-800 px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+                                                className="relative inline-flex gap-x-1.5 rounded-md bg-lime-700 hover:bg-lime-900 px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
                                             >
-                                                Register Interest
+                                                Sponsor/Exhibit
                                             </button>
                                         </div>
                                     </div>

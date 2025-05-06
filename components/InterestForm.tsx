@@ -51,7 +51,6 @@ const InterestForm = () => {
     const notificationMethods = [
       "Sponsor",
       "Exhibitor",
-      "Delegate",
     ]
 
     useEffect(() => {
@@ -140,8 +139,19 @@ const InterestForm = () => {
                         </div>
 
                         <div>
-                            <label htmlFor="businessEmail" className="block mb-2 text-sm font-medium text-gray-900">Business Email Address</label>
-                            <input {...register('businessEmail')} type='email' className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500" required />
+                            <label htmlFor="businessEmail" className="block mb-2 text-sm font-medium text-gray-900">Country</label>
+                            <Controller
+                                control={control}
+                                {...register('country')}
+                                render={({ field }) => (
+                                    <select {...field} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500" required>
+                                        <option value="" disabled selected hidden>Select Country</option>
+                                        {countryCodes.map((country) => (
+                                            <option key={country.code} value={country.name} >{country.name}</option>
+                                        ))}
+                                    </select>
+                                )}
+                            /> 
                         </div>
 
                         <div>
@@ -163,6 +173,11 @@ const InterestForm = () => {
                                     <input {...register('phoneNumber')} type='number' className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500" required />
                                 </div>
                             </div>
+                        </div>
+
+                        <div>
+                            <label htmlFor="businessEmail" className="block mb-2 text-sm font-medium text-gray-900">Business Email Address</label>
+                            <input {...register('businessEmail')} type='email' className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500" required />
                         </div>
                         
                         <div>

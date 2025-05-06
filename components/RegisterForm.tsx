@@ -46,34 +46,30 @@ const RegisterForm = () => {
             const line_items = searchParams?.get('line_items') as string;
             const parsedLineItems = JSON.parse(line_items)
             const encryptedFormData = JSON.stringify(formData)
-            if(parsedLineItems[0]?.price === "price_1PGx2vKMWpUKzQVz1rtJmCf0") {
-                if (line_items) {
-                    try {
-                        await fetch('/api/checkout-sessions', {
-                            method: 'POST',
-                            headers: {
-                                'Content-Type': 'application/json'
-                            },
-                            body: JSON.stringify(
-                                {
-                                    line_items: parsedLineItems,
-                                    formData,
-                                    origin
-                                }
-                            )
-                        }).then(response => response.json())
-                            .then(async data => {
-                                const stripe = await getStripe();
-                                await stripe?.redirectToCheckout({ sessionId: data?.response?.retrievedSession?.id })
-                            }).catch(error => {
-                                console.log(error);
-                            });
-                    } catch (error) {
-                        alert(error)
-                    }
+            if (line_items) {
+                try {
+                    await fetch('/api/checkout-sessions', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(
+                            {
+                                line_items: parsedLineItems,
+                                formData,
+                                origin
+                            }
+                        )
+                    }).then(response => response.json())
+                        .then(async data => {
+                            const stripe = await getStripe();
+                            await stripe?.redirectToCheckout({ sessionId: data?.response?.retrievedSession?.id })
+                        }).catch(error => {
+                            console.log(error);
+                        });
+                } catch (error) {
+                    alert(error)
                 }
-            } else {
-                router.push(`/register/form/networking-soiree?line_items=${line_items}&formData=${encodeURIComponent(encryptedFormData)}`)
             }
         } catch (error) {
             console.log(error)
@@ -431,8 +427,6 @@ const RegisterForm = () => {
                     </Dialog>
                 </ Transition.Root>
             </div>
-
-
         </>
     )
 }

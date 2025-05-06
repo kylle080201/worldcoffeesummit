@@ -8,6 +8,7 @@ const registrants = new Schema({
   jobTitle: String,
   companyName: String,
   sector: String,
+  country: String,
   otherSector: String || null,
   businessEmail: String,
   countryCode: String,

@@ -28,27 +28,31 @@ export default function Overview() {
                     <p className="mt-2 text-lg sm:text-2xl md:text-4xl font-bold max-w-3xl drop-shadow-xl">
                         CRAFTING AN ECOSYSTEM BUSINESS MODEL FOR SHARED PROSPERITY
                     </p>
-
-                    <div className="flex flex-col sm:flex-row gap-4 mt-[4rem] md:mt-[5rem] xl:mt-[25rem]">
-                        <Link href="/interest">
-                            <button className="bg-[#FFC000] text-yellow-900 hover:underline hover:drop-shadow-xl font-bold text-lg md:text-xl xl:text-5xl py-1 md:py-2 xl:py-3 px-6 rounded-md">
-                                SAVE THE DATE & REGISTER INTEREST
-                            </button>
-                        </Link>
-                    </div>
-
+                    
                     {/* Event Logos - Smaller Size */}
-                    <div className="mt-6 flex flex-col sm:flex-row items-center bg-[#e1be77ae] p-2 md:p-4w xl:p-6 rounded-md shadow-md gap-4">
+                    <div className="flex flex-col sm:flex-row items-center bg-[#e1be77ae] p-2 rounded-md shadow-md gap-2 mt-[4rem] md:mt-[5rem] xl:mt-[25rem]">
                         <div className="p-2 bg-lime-700 rounded-md w-fit text-md md:text-xl xl:text-3xl font-bold tracking-wide">
                             23-24 October 2025 <span className="block sm:inline">| London</span>
                         </div>
                         <img className="w-[12rem] md:w-[16rem] xl:w-[20rem]" src="https://worldcoffeealliance.com/wp-content/uploads/2023/06/QEII-CENTRE.png" alt="QEII Centre" />
-                        <img className="w-[8rem] md:w-[10rem] xl:w-[12rem]" src="https://worldcoffeealliance.com/wp-content/uploads/2024/05/House_of_Lords_logo_2020.svg.png" alt="House of Lords" />
+                    </div>
+
+                    <div className="flex flex-col sm:flex-row gap-4 mt-8">
+                        <Link href="/register">
+                            <button className="bg-[#FFC000] text-white hover:underline hover:drop-shadow-xl font-bold text-lg md:text-xl xl:text-5xl py-2 md:py-4 xl:py-6 px-6 rounded-md">
+                                REGISTER NOW
+                            </button>
+                        </Link>
+                        <Link href="/interest">
+                            <button className="bg-lime-700 text-white hover:underline hover:drop-shadow-xl font-bold text-lg md:text-xl xl:text-5xl py-2 md:py-4 xl:py-6 px-6 rounded-md">
+                                SPONSOR/EXHIBIT
+                            </button>
+                        </Link>
                     </div>
 
                     {/* Footer Links */}
-                    <div className="mt-10 flex flex-col md:flex-row justify-between w-full text-xs md:text-2xl font-bold text-white px-6">
-                        <p>WWW.WORLDCOFFEEINNOVATIONSUMMIT.COM</p>
+                    <div className="mt-10 flex flex-col md:flex-row justify-end w-full text-xs md:text-2xl font-bold text-white px-6">
+                        {/* <p>WWW.WORLDCOFFEEINNOVATIONSUMMIT.COM</p> */}
                         <p>#WCIS25</p>
                     </div>
                 </div>

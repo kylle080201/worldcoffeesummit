@@ -40,11 +40,53 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
   const checkoutSessionId = req.checkoutSessionId;
   const formData = req.decryptedFormData;
   const line_items = JSON.parse(req.line_items);
-  const event = line_items.length > 1 ? 
-  "Summit and Networking Soirée" : 
-  (line_items[0].price === "price_1PGx2vKMWpUKzQVz1rtJmCf0" ? 
-  "Networking Soirée" : 
-  "Summit");
+  let ticketName 
+
+  // ORIGINAL PRICES
+  switch (line_items[0].price) {
+    case "price_1RJ3cYKMWpUKzQVzk2sR6LGo":
+      ticketName = "Academics"
+      break;
+
+    case "price_1RJ3crKMWpUKzQVzn1ia1jtp":
+      ticketName = "NGOs, Co-operatives, Policy Makers"
+      break;
+
+    case "price_1RJ3d6KMWpUKzQVzmvuy3Xfc":
+      ticketName = "Corporates"
+      break;
+
+    case "price_1RJ3dMKMWpUKzQVz4b6c2UKj":
+      ticketName = "Start Ups"
+      break;
+
+    case "price_1RJ3e6KMWpUKzQVzMFo1JodF":
+      ticketName = "Service Providers"
+      break;
+  }
+
+  // PROD TESTING PRICES
+  // switch (line_items[0].price) {
+  //     case "price_1RLRZdKMWpUKzQVzxEOPwVBA":
+  //       ticketName = "Academics"
+  //       break;
+  
+  //     case "price_1RLn53KMWpUKzQVzP93RGG0I":
+  //       ticketName = "NGOs, Co-operatives, Policy Makers"
+  //       break;
+  
+  //     case "price_1RLn7BKMWpUKzQVzItm3kmzE":
+  //       ticketName = "Corporates"
+  //       break;
+  
+  //     case "price_1RLn8FKMWpUKzQVz5TAnpeGo":
+  //       ticketName = "Start Ups"
+  //       break;
+  
+  //     case "price_1RLn8fKMWpUKzQVzG5ZhHwZM":
+  //       ticketName = "Service Providers"
+  //       break;
+  //   }
 
   try {
     await connectMongo();
@@ -52,15 +94,17 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
       checkoutSessionId,
       deletedAt: { $exists: false },
     });
+    
     if (getTickets.length > 0) {
       const res = await Tickets.findByIdAndUpdate(
         getTickets[0]._id,
         {
           $set: formData,
-          event,
+          ticketName,
         },
         { new: true }
       );
+
       if (!res.isEmailAccepted || res.isEmailAccepted === false) {
         const mailerRes = await mailer(res);
         if (mailerRes?.accepted?.length ?? 0 > 0) {
