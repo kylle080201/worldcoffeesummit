@@ -115,7 +115,7 @@ export default function Overview() {
             <KeyThemes />
 
             {/* 2024 SUMMIT HIGHLIGHT */}
-            <div className='w-full md:px-0 px-12 py-8 sm:py-12 bg-gray-100'>
+            {/* <div className='w-full md:px-0 px-12 py-8 sm:py-12 bg-gray-100'>
                 <div className='w-full md:px-0 px-12'>
                     <div className='justify-center mx-auto max-w-7xl'>
                         <p className="text-2xl font-bold tracking-tight text-center sm:text-4xl text-yellow-900 md:pb-8">2024 SUMMIT HIGHLIGHTS</p>
@@ -124,10 +124,10 @@ export default function Overview() {
                                 As the leading solution-driven summit that connects <strong>COFFEE</strong>, <strong>CLIMATE CHANGE</strong> and <strong>FINANCE</strong> through <strong>INNOVATION</strong>, the World Coffee Innovation Summit is a must-attend for those who invested in advancing nature-positive, resilient agriculture and food systems for a net positive future in coffee sector. Join global coffee, climate and finance leaders and agri-food innovators in London for two days of in-depth discussions and cross-sector networking.
                             </div>
                         </div> */}
-                    </div>
-                </div>
+                    {/* </div>
+                </div> */}
 
-                <div className='items-center mx-auto my-auto w-full flex flex-col max-w-7xl'>
+                {/* <div className='items-center mx-auto my-auto w-full flex flex-col max-w-7xl'>
                     <video
                         loop
                         controls
@@ -142,8 +142,8 @@ export default function Overview() {
                             type="video/mp4"
                         />
                     </video>
-                </div>
-            </div>
+                </div> */}
+            {/* </div> */}
         </>
     )
 }
