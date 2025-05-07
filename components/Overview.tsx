@@ -7,7 +7,7 @@ export default function Overview() {
     return (
         <>
             {/* V1 */}
-            <div
+  <div
   id="overview"
   className="relative pt-2 sm:py-24 pb-6 sm:pb-12 px-6 md:px-12 overflow-hidden"
   style={{ aspectRatio: '16/9' }}
@@ -40,7 +40,7 @@ export default function Overview() {
                     <p className="mt-2 text-2xl sm:text-3xl md:text-4xl font-bold max-w-3xl drop-shadow-xl">
                         CRAFTING AN ECOSYSTEM BUSINESS MODEL FOR SHARED PROSPERITY
                     </p>
-                    
+
                     {/* Event Logos - Smaller Size */}
                     <div className="flex flex-col sm:flex-row items-center p-2 rounded-md  gap-2 mt-[4rem] md:mt-[5rem] xl:mt-[10rem]">
                         <div className="p-2 rounded-md w-fit text-lg md:text-2xl xl:text-4xl font-bold tracking-wide">
