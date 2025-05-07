@@ -85,11 +85,11 @@ export default function Overview() {
                             Under the theme <strong>&ldquo;THE BIGGER PICTURE: CRAFTING AN ECOSYSTEM BUSINESS MODEL FOR SHARED PROSPERITY&ldquo;</strong>, the summit challenges the coffee &amp; cocoa industries to move beyond fragmented initiatives and transactional relations to embrace a holistic, collaborative ecosystem business model—one that prioritizes long-term value creation for all stakeholders, from farmers to consumers.
                         </div>
 
-                        <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
+                        {/* <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
                             This two-day, high-level, closed-door gathering will focus on:
-                        </div>
+                        </div> */}
 
-                        <ul className="list-disc flex flex-col ml-12">
+                        {/* <ul className="list-disc flex flex-col ml-12">
                             <li className="text-2xl leading-8 text-gray-900 w-full text-justify">
                                 Unlocking inclusive growth across the entire coffee value chain.
                             </li>
@@ -102,7 +102,7 @@ export default function Overview() {
                             <li className="text-2xl leading-8 text-gray-900 w-full text-justify">
                                 Co-creating bold, scalable solutions across industries based on trust.
                             </li>
-                        </ul>
+                        </ul> */}
 
                         <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
                             Join us in London to shift from transactional thinking to ecosystem leadership and shape the future of coffee together.
