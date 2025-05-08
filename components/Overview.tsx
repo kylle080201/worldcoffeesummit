@@ -9,7 +9,7 @@ export default function Overview() {
             {/* V1 */}
   <div
   id="overview"
-  className="relative pt-2 sm:py-24 pb-6 sm:pb-12 px-6 md:px-12 overflow-hidden"
+  className="relative pt-2 sm:py-24 pb-6 sm:pb-12  overflow-hidden"
   style={{ aspectRatio: '16/9' }}
 >
   {/* Background Video */}
@@ -32,7 +32,7 @@ export default function Overview() {
                 </div>
 
                 {/* Main Container */}
-                <div className="relative flex flex-col items-center text-center text-white mt-32 md:mt-2 xl:-mt-8">
+                <div className="w-full relative flex flex-col items-center text-center text-white mt-32 md:mt-2 xl:-mt-8">
                     {/* Event Title */}
                     <h1 className="text-[3rem] md:text-[4rem] xl:text-[6rem] font-bold tracking-tight drop-shadow-xl">
                         THE BIGGER PICTURE
@@ -44,7 +44,7 @@ export default function Overview() {
                     {/* Event Logos - Smaller Size */}
                     <div className="flex flex-col sm:flex-row items-center p-2 rounded-md  gap-2 mt-[4rem] md:mt-[5rem] xl:mt-[10rem]">
                         <div className="p-2 rounded-md w-fit text-lg md:text-2xl xl:text-4xl font-bold tracking-wide">
-                            23-24 October 2025 <span className="block sm:inline">| QEII CENTRE London</span>
+                            23-24 October 2025 <span className="block sm:inline">| QEII CENTRE London | #WCIS25</span>
                         </div>
                     </div>
 
@@ -62,11 +62,16 @@ export default function Overview() {
                     </div>
 
                     {/* Footer Links */}
-                    <div className="mt-10 flex flex-col md:flex-row justify-end w-full text-xs md:text-2xl font-bold text-white px-6">
+                    <div className="w-full mt-10 bg-green-700 flex flex-col md:flex-row justify-between items-center  text-xs md:text-2xl font-bold text-white px-2"  style={{ backgroundColor: 'rgb(38 72 51 / 56%)' }}>
                         {/* <p>WWW.WORLDCOFFEEINNOVATIONSUMMIT.COM</p> */}
-                        <p>#WCIS25</p>
+                        <p>200+ Attendees</p>
+                        <p>25+ Countries </p>
+                        <p>60+ Speakers </p>
+                        <p>75%+ Attendance C-Suite, <br /> VP or Director Level </p>
+
                     </div>
                 </div>
+
             </div>
 
             {/* 2025 SUMMIT OVERVIEW */}

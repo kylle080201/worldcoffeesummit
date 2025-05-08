@@ -15,14 +15,17 @@ import Speakers2024 from "../../components/2024Speakers";
 import KeyThemes from "../../components/KeyThemes";
 import Attendees2023 from "../../components/2023Attendees";
 import WhoYoullMeet from "../../components/WhoYoullMeet";
+import WhoIsInTheRoom  from "../../components/WholsInTheRoom";
 
 export default function HomePage() {
     return (
         <>
             <div>
                 <Overview />
+                <WhoIsInTheRoom />
                 <Speakers2024 />
                 <WhoYoullMeet />
+
                 {/* <SpeakerSlider /> */}
                 {/* <ImageCarousel /> */}
                 <Testimonials />
