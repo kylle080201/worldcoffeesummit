@@ -5,6 +5,7 @@ import picture2 from '../images/Picture2.png';
 
 function WhoIsInTheRoom() {
   return (
+
     <>   
      <p className="text-3xl font-bold text-center"> {`WHO'S IN THE ROOM`}</p>
  <div className="flex flex-wrap -mx-4">
