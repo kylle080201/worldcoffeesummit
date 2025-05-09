@@ -61,9 +61,10 @@ export default function Overview() {
                         </Link>
                     </div>
 
-                    {/* Footer Links */}
+                    
 
                 </div>
+                {/* Footer Links */}
                 <div className=" absolute bottom-0 w-full mt-10 bg-green-700 flex flex-col md:flex-row justify-between items-center  text-xs md:text-2xl font-bold text-white px-2"  style={{ backgroundColor: 'rgb(38 72 51 / 56%)' }}>
                         {/* <p>WWW.WORLDCOFFEEINNOVATIONSUMMIT.COM</p> */}
                         <p>200+ Attendees</p>
