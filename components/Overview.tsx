@@ -65,12 +65,16 @@ export default function Overview() {
 
                 </div>
                 {/* Footer Links */}
-                <div className=" absolute bottom-0 w-full mt-10 bg-green-700 flex flex-col md:flex-row justify-between items-center  text-xs md:text-2xl font-bold text-white px-2"  style={{ backgroundColor: 'rgb(38 72 51 / 56%)' }}>
+                <div className=" absolute bottom-0 w-full mt-10 bg-green-700 flex flex-col md:flex-row justify-center gap-12 items-center  text-xs md:text-2xl font-bold text-white px-2"  style={{ backgroundColor: 'rgb(38 72 51)' }}>
                         {/* <p>WWW.WORLDCOFFEEINNOVATIONSUMMIT.COM</p> */}
                         <p>200+ Attendees</p>
                         <p>25+ Countries </p>
                         <p>60+ Speakers </p>
-                        <p>75%+ Attendance C-Suite, <br /> VP or Director Level </p>
+                        <div className="flex items-center"> 
+                            <p className="ml-5">75%+ </p>
+                        <p>Attendance C-Suite, <br/> VP or Director Level </p>
+                        </div>
+                       
                     </div>
 
             </div>
