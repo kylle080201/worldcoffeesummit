@@ -5,7 +5,9 @@ import picture2 from '../images/Picture2.png';
 
 function WhoIsInTheRoom() {
   return (
-    <>    <p className="text-3xl font-bold text-center">WHO'S IN THE ROOM</p>
+
+    <>   
+     <p className="text-3xl font-bold text-center"> {`WHO'S IN THE ROOM`}</p>
  <div className="flex flex-wrap -mx-4">
 
   <div className="w-full md:w-full lg:w-1/2 xl:w-1/2 px-4">
@@ -47,4 +49,4 @@ function WhoIsInTheRoom() {
   )
 }
 
-export default WhoIsInTheRoom
+export default WhoIsInTheRoom;

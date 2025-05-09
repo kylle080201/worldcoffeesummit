@@ -37,7 +37,7 @@ export default function Overview() {
                     <h1 className="text-[3rem] md:text-[4rem] xl:text-[6rem] font-bold tracking-tight drop-shadow-xl">
                         THE BIGGER PICTURE
                     </h1>
-                    <p className="mt-2 text-2xl sm:text-3xl md:text-4xl font-bold max-w-3xl drop-shadow-xl">
+                    <p className=" mt-2 text-2xl sm:text-3xl md:text-4xl font-bold max-w-3xl drop-shadow-xl">
                         CRAFTING AN ECOSYSTEM BUSINESS MODEL FOR SHARED PROSPERITY
                     </p>
 
@@ -61,16 +61,17 @@ export default function Overview() {
                         </Link>
                     </div>
 
-                    {/* Footer Links */}
-                    <div className="w-full mt-10 bg-green-700 flex flex-col md:flex-row justify-between items-center  text-xs md:text-2xl font-bold text-white px-2"  style={{ backgroundColor: 'rgb(38 72 51 / 56%)' }}>
+                    
+
+                </div>
+                {/* Footer Links */}
+                <div className=" absolute bottom-0 w-full mt-10 bg-green-700 flex flex-col md:flex-row justify-between items-center  text-xs md:text-2xl font-bold text-white px-2"  style={{ backgroundColor: 'rgb(38 72 51 / 56%)' }}>
                         {/* <p>WWW.WORLDCOFFEEINNOVATIONSUMMIT.COM</p> */}
                         <p>200+ Attendees</p>
                         <p>25+ Countries </p>
                         <p>60+ Speakers </p>
                         <p>75%+ Attendance C-Suite, <br /> VP or Director Level </p>
-
                     </div>
-                </div>
 
             </div>
 
