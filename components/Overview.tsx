@@ -41,7 +41,7 @@ export default function Overview() {
                         CRAFTING AN ECOSYSTEM BUSINESS MODEL FOR SHARED PROSPERITY <br />
 
                     </p>                        
-                    <h1 className='text-[2rem]'>Unlocking Coffee and Cocoa Synergies Through Innovation</h1>
+                    <h1 className='text-[2rem]'>The Only Global Platform Convening Coffee & Cocoa to Drive Innovation</h1>
 
                     {/* Event Logos - Smaller Size */}
                     <div className="flex flex-col sm:flex-row items-center p-2 rounded-md  gap-2 mt-[4rem] md:mt-[5rem] xl:mt-[10rem]">
