@@ -10,7 +10,6 @@ export default function Overview() {
   <div
   id="overview"
   className="relative pt-2 sm:py-24 pb-6 sm:pb-12  overflow-hidden"
-  style={{ aspectRatio: '16/9' }}
 >
   {/* Background Video */}
   <video
