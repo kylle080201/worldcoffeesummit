@@ -6,7 +6,7 @@ function Agenda() {
             <div className='py-20 max-w-5xl mx-auto'>
                 <h2 className="text-4xl font-bold text-center tracking-tight">AGENDA</h2>
 
-                <h2 className="mt-8 text-2xl font-bold text-center tracking-tight">DAY ONE- Wednesday 16th October 2024</h2>
+                <h2 className="mt-8 text-2xl font-bold text-center tracking-tight">DAY 1, THURSDAY 23RD OCTOBER 2025 <br/>SYSTEM RESET – REIMAGINING VALUE CHAINS, LANDSCAPES & <br/> LEADERSHIP</h2>
 
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
@@ -14,7 +14,7 @@ function Agenda() {
                             8:00 - 9:00
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
-                            MORNING COFFEE & REGISTRATION
+                            REGISTRATION & MORNING COFFEE 
                         </div>
                     </div>
                 </div>
@@ -25,7 +25,7 @@ function Agenda() {
                             9:00
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                            A SUMMIT INSPIRATIONAL VIDEO MESSAGE
+                            OPENING KEYNOTE
                         </div>
                     </div>
                 </div>
@@ -36,7 +36,7 @@ function Agenda() {
                             9:10
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                            SHORT INTRO BY SUMMIT CHAIR
+                            MINISTERIAL KEYNOTE
                         </div>
                     </div>
                     <div className='mt-4 px-2 max-w-5xl'>
@@ -58,6 +58,22 @@ function Agenda() {
                     <div className='mt-4 px-2 max-w-5xl'>
                         <h3 className=''>
                             <span className='font-bold'>Jennifer Jordan-Saifi</span>, <span className='italic'>CEO,</span> <span className='font-bold'>Sustainable Markets Initiative (SMI)</span>
+                        </h3>
+                    </div>
+                </div>
+
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            9:20
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            FIRESIDE: THE FUTURE IS FRAGMENTED – CAN COFFEE & COCOA UNITE THE WORLD?
+                        </div>
+                    </div>
+                    <div className='mt-4 px-2 max-w-5xl'>
+                        <h3 className=''>
+                            <span className='italic'>In a splintered geopolitical landscape, coffee and cocoa have the power to connect economies, ecosystems, and ethics. This session explores bold strategies for navigating disruption with purpose.</span>
                         </h3>
                     </div>
                 </div>
@@ -118,50 +134,58 @@ function Agenda() {
                 </div>
 
                 <div className='mt-8'>
-                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
-                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                            10:00
-                        </div>
-                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                            EUDR: REGULATORY COMPLIANCE FOR A SUSTAINABLE AND GREEN ECONOMY
-                        </div>
-                    </div>
-                    <div className='mt-4 px-2 max-w-3xl'>
-                        <ul className="list-disc pl-6">
-                            <li>How does the EUDR legislation impact reduction of EU’s contribution to greenhouse gases (GHG) emissions and promote deforestation free-supply chain?</li>
-                            <li>How does the penalty provisions on the legislation affected preparation for by the big operators and what does compliance look like after deadline 30 December 2024?</li>
-                            <li>What are some of the logistical challenges taking shape in terms of putting together the data required for compliance and what are best practice solutions available for the Operators?</li>
-                            <li>What are some of the “unintended consequences” or structural risks that have so far hindered or changed the current landscape in investment opportunities toward a greener and more sustainable global trade?</li>
-                            <li>What are the solutions that are available in the market and how do they address the need for accurate data and how do they simplify compliance?</li>
-                            <li>Now that the EU just published a 12-month phased-in period – from 30 December 2024 to 30 December 2025, what are some of the ramifications and financial implications of this delay and what happens now? What is the future of green deal?</li>
-                        </ul>
-                        <div className='mt-2'>
-                            <h3>Chair:</h3>
-                            <h3 className=''>
-                                <span className='font-bold'>William Kennedy</span>, <span className='italic'>Senior Executive Editor, Energy and Commodities</span>, <span className='font-bold'>Bloomberg</span>
-                            </h3>
-                        </div>
-                        
-                        <ul className='mt-2 list-disc'>
-                            <h3>Speakers:</h3>
-                            <div className='pl-6'>
-                                <li><span className='font-bold'>Laurent Sagarra</span>, <span className='italic'>Vice President Sustainability</span>, <span className='font-bold'>JDE Peet’s</span></li>
-                                <li><span className='font-bold'>Claude Bizimana</span>, <span className='italic'>CEO</span>, <span className='font-bold'>National Agricultural Export Development Board (NAEB), Rwanda</span></li>
-                                <li><span className='font-bold'>Karla Canavan</span>, <span className='italic'>Vice President, Commodity Trade and Finance Markets</span>, <span className='font-bold'>WWF</span></li>
-                                <li><span className='font-bold'>Patrick Lanz</span>, <span className='italic'>EUDR Product Director</span>, <span className='font-bold'>osapiens</span></li>
-                            </div>
-                        </ul>
-                    </div>
-                </div>
-
-                <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
-                            11:00
+                            10:00
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
                             NETWORKING COFFEE BREAK
                         </div>
+                    </div>
+                </div>
+
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            10:30
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                           PANEL: TURNING REGULATORY COMPLIANCE INTO BUSINESS STRATEGY- ADAPTING TO EUDR, CSRD & CS3D
+                        </div>
+                    </div>
+                    <div className='mt-4 px-2 max-w-5xl'>
+                        <h3 className=''>
+                            <span className='italic'>Compliance as Catalyst – Rethinking the Regulatory Revolution. Turn EUDR and CS3D from box-ticking into brand-building. Discover how trailblazers are future-proofing business through radical transparency and shared accountability.</span>
+                        </h3>
+                    </div>
+                </div>
+
+
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            11:10
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            SOLUTION PROVIDER PRESENTATION 
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            11:20
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            PANEL: EARTH FIRST – BIODIVERSITY, SOIL & THE BUSINESS OF LIFE
+                        </div>
+                    </div>
+                    <div className='mt-4 px-2 max-w-5xl'>
+                        <h3 className=''>
+                        <span className='italic'>Regeneration is not a trend. It’s survival. Explore how nature-positive strategies are delivering climate resilience, profitability, and purpose at scale.</span>
+                        </h3>
                     </div>
                 </div>
 
@@ -228,10 +252,39 @@ function Agenda() {
                     </div>
                 </div>
 
+                
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            12:00
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                           INNOVATION SPOTLIGHT
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            12:10
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            PANEL: AI-DRIVEN & DIGITAL INNOVATION IN SMART FARMING
+                        </div>
+                    </div>
+                    <div className='mt-4 px-2 max-w-5xl'>
+                        <h3 className=''>
+                            <span className='italic'>Optimizing Ecosystems for Productivity and Climate Resilience. Discover how digital intelligence is enabling hyper-personalized farming, real-time risk reduction, and planetary resilience.</span>
+                        </h3>
+                    </div>
+                </div>
+
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
-                            12:30
+                            12:50
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
                             NETWORKING LUNCH
@@ -273,6 +326,24 @@ function Agenda() {
                     </div>
                 </div>
 
+                 <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            13:50
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            PANEL: SCALING REGENERATIVE AGRICULTURE ACROSS ORIGINS – DE-RISKING TRANSFORMATION: MAKING REGENERATIVE AGRICULTURE INVESTIBLE
+                        </div>
+                    </div>
+                    <div className='mt-4 px-2 max-w-5xl'>
+                        <h3 className=''>
+                            <span className='italic'>Unlocking the potential of regenerative agriculture requires more than pilot projects—it demands </span>, <span className='font-bold'>systemic redesign, risk transfer innovation, </span>
+                            <span className='italic'>and</span> <span className='font-bold'>bold investment strategies.</span>  
+                        </h3>
+                    </div>
+                </div>
+
+
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
@@ -311,6 +382,19 @@ function Agenda() {
                     </div>
                 </div>
 
+                 <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            14:30
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                           SOLUTION PROVIDER PRESENTATION
+                        </div>
+                    </div>
+                </div>
+
+
+
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
@@ -328,33 +412,29 @@ function Agenda() {
                             15:40
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                            INNOVATING FOR BIODIVERSITY AND SUSTAINABLE ECONOMY
+                            PANEL: CRACKING SCOPE 3 – FROM CHAOS TO CLARITY 
                         </div>
                     </div>
-                    <div className='mt-4 px-2 max-w-3xl'>
-                        <ul className='mt-2 list-disc'>
-                            <div className='pl-6'>
-                                <li>What are the most promising and impact-outcomes innovation and data-driven technologies where potential investors can investigate towards early engagement and commercialization?</li>
-                                <li>What are the some of the best practices that have been proven effective in other supply chains, and what are the mechanisms for successful technology transfer evolving?</li>
-                                <li>Why is the role of trade finance critical in funding this ESG transition?</li>
-                                <li>How can a resilient supply chain support biodiversity initiatives, including nature capital in the agroforestry landscape, to help boost coffee bean production?</li>
-                                <li>What does the sustainability future look like from where you are coming from?</li>
-                            </div>
-                        </ul>
-                        <div className='mt-2'>
-                            <h3>Chair:</h3>
-                            <h3 className=''><span className='font-bold'>Surath Sengupta</span>, <span className='italic'>Managing Director, Head of Trade and Working Capital Innovation & Transformation</span>, <span className='font-bold'>Lloyds Banking Group</span></h3>
+                    <div className='mt-4 px-2 max-w-5xl'>
+                        <h3 className=''>
+                           <span className='italic'>The world's toughest climate challenge becomes your company’s next big opportunity. Learn how leaders are decoding, measuring, and monetizing value chain emissions</span>
+                        </h3>
+                    </div>
+                </div>
+
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            16:20
                         </div>
-                        <div className='mt-2'>
-                            <h3>Speakers:</h3>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            PANEL: DIGITALIZING COFFEE & COCOA SUPPLY CHAINS: SUSTAINABILITY, INNOVATION, AND CONSUMER-DRIVEN TRANSFORMATION  
                         </div>
-                        <ul className='mt-2 list-disc'>
-                            <div className='pl-6'>
-                                <li className=''><span className='font-bold'>Dr. Parmesh Shah</span>, <span className='italic'>Global Lead for Data-Driven Digital Agriculture and Innovations</span>, <span className='font-bold'>The World Bank</span></li>
-                                <li className=''><span className='font-bold'>Piet van Asten</span>, <span className='italic'>Head of Sustainable Production Systems</span>, <span className='font-bold'>Olam Food Ingredients (ofi)</span></li>
-                                <li className=''><span className='font-bold'>Sean Edwards</span>, <span className='italic'>Chairman</span>, <span className='font-bold'>International Trade Forfaiting Association (ITFA)</span></li>
-                            </div>
-                        </ul>
+                    </div>
+                    <div className='mt-4 px-2 max-w-5xl'>
+                        <h3 className=''>
+                           <span className='italic'>From bean to barcode— farmers, processors and retailers, from procurement to sourcing strategies to farm-level practices and supplier engagement, explore how tech is transforming FMCG accountability and winning consumer trust.</span>
+                        </h3>
                     </div>
                 </div>
 
@@ -392,7 +472,7 @@ function Agenda() {
                             17:00
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
-                            END OF DAY 1 SUMMIT
+                            NETWORKING DRINKS
                         </div>
                     </div>
                 </div>
@@ -409,15 +489,15 @@ function Agenda() {
                 </div>
 
 
-                <h2 className="mt-8 text-2xl font-bold text-center tracking-tight">DAY TWO– Thursday 17th October 2024</h2>
+                <h2 className="mt-8 text-2xl font-bold text-center tracking-tight">DAY 2, FRIDAY 24TH OCTOBER 2025 <br/>COLLECTIVE AMBITION – FROM VISION TO SYSTEMIC ACTION</h2>
 
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
-                            8:00 - 9:00
+                            8:00
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
-                            MORNING COFFEE & REGISTRATION
+                            MORNING BRIEFING (TBC)
                         </div>
                     </div>
                 </div>
@@ -428,13 +508,8 @@ function Agenda() {
                             9:00
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                            SHORT INTRO BY SUMMIT CHAIR
+                            OPENING KEYNOTE
                         </div>
-                    </div>
-                    <div className='mt-4 px-2 max-w-3xl'>
-                        <h3 className=''>
-                            <span className='font-bold'>Sean Edwards</span>, <span className='italic'>Chairman,</span> <span className='font-bold'>International Trade Forfaiting Association (ITFA)</span>
-                        </h3>
                     </div>
                 </div>
 
@@ -454,6 +529,17 @@ function Agenda() {
                     </div>
                 </div>
 
+                 <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            9:10
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            MINISTERIAL KEYNOTE
+                        </div>
+                    </div>
+                </div>
+
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
@@ -466,6 +552,22 @@ function Agenda() {
                     <div className='mt-4 px-2 max-w-3xl'>
                         <h3 className=''>
                             <span className='font-bold'>Antti Rautavaara</span>, <span className='italic'>Special Envoy for Water</span>, <span className='font-bold'>Ministry for Foreign Affairs of Finland</span>
+                        </h3>
+                    </div>
+                </div>
+
+                 <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            9:20
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            GLOBAL LEADERS FORUM: FIRESIDE– TOWARD A NET POSITIVE WORLD
+                        </div>
+                    </div>
+                    <div className='mt-4 px-2 max-w-3xl'>
+                        <h3 className=''>
+                            <span className='italic'>A bold conversation about flipping the script—from extractive to regenerative, from offsetting to thriving</span>
                         </h3>
                     </div>
                 </div>
@@ -515,6 +617,18 @@ function Agenda() {
                     </div>
                 </div>
 
+                 <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            10:00
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            SOLUTION PROVIDER PRESENTATION
+                        </div>
+                    </div>
+                </div>
+                
+            
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
@@ -528,6 +642,24 @@ function Agenda() {
                         <h3 className=''><span className='font-bold'>Dr. Jennifer “Vern” Long</span>, <span className='italic'>CEO</span>, <span className='font-bold'>World Coffee Research (WCR)</span></h3>
                     </div>
                 </div>
+
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            10:10
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            PANEL: CARBON CONFIDENCE – BUILDING TRUST IN NATURE BASED MARKETS  
+                        </div>
+                    </div>
+                    <div className='mt-4 px-2 max-w-3xl'>
+                        <h3 className=''>
+                            <span className='italic'>Crack the carbon code: What does integrity mean, and how do we scale it in coffee and cocoa?</span>                                                                                                                           
+                        </h3>
+                    </div>
+                </div>
+
+
 
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
@@ -588,6 +720,17 @@ function Agenda() {
                     </div>
                 </div>
 
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            10:50
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            SOLUTION PROVIDER PRESENTATION
+                        </div>
+                    </div>
+                </div>    
+
 
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
@@ -599,6 +742,23 @@ function Agenda() {
                         </div>
                     </div>
                 </div>
+
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            11:20
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            PANEL: DECODING NATURE’S COMPLEXITY
+                        </div>
+                    </div>
+                    <div className='mt-4 px-2 max-w-3xl'>
+                        <h3 className=''>
+                           <span className='italic'>From Natural Capital to Climate Assets: Building a Science-Based Regeneration Economy. How biodiversity, water, and ecosystem services are emerging as key assets in financial and supply chain decisions.</span>
+                        </h3>
+                    </div>
+                </div>
+
 
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
@@ -677,8 +837,25 @@ function Agenda() {
 
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            12:00
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                           NETWORKING ROUNDTABLES 
+                        </div>
+                    </div>
+                    <div className='mt-4 px-2 max-w-3xl'>
+                        <h3 className=''>
+                            <span className='font-bold'>Chatham House dialogues on critical topic issues. <br/>Topics TBC.</span>
+                            </h3>
+                    </div>
+                </div>
+
+
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
-                            12:35
+                            13:00
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
                             NETWORKING LUNCH
@@ -745,6 +922,23 @@ function Agenda() {
                     </div>
                 </div>
 
+                 <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            14:00
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            PANEL: COCOA & COFFEE SYNERGIES – UNITY FOR RESILIENCE 
+                        </div>
+                    </div>
+                    <div className='mt-4 px-2 max-w-3xl'>
+                        <h3 className=''>
+                            <span className='italic'>One planet. Two crops. Endless possibilities. Aligning innovations, infrastructure, and insights across sectors.One planet. Two crops. Endless possibilities. Aligning innovations, infrastructure, and insights across sectors.   </span>
+                        </h3>
+                    </div>
+                </div>
+
+
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
@@ -752,6 +946,28 @@ function Agenda() {
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
                             NETWORKING COFFEE BREAK
+                        </div>
+                    </div>
+                </div>
+
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            14:40
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            SOLUTION PROVIDER PRESENTATION 
+                        </div>
+                    </div>
+                </div>
+
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            14:50
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            CASE STUDY 
                         </div>
                     </div>
                 </div>
@@ -806,6 +1022,33 @@ function Agenda() {
                                 <li className=''><span className='font-bold'>Thomas Bagge</span>, <span className='italic'>Chief Executive Officer</span>, <span className='font-bold'>Digital Container Shipping Association (DCSA)</span></li>
                             </div>
                         </ul>
+                    </div>
+                </div>
+
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            15:10
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            GLOBAL INVESTOR PANEL: BUILDING THE BUSINESS CASE FOR EARTH 
+                        </div>
+                    </div>
+                    <div className='mt-4 px-2 max-w-3xl'>
+                        <h3 className=''>
+                           <span className='italic'>Hard returns meet heart-driven missions. What will it take to mainstream ecosystem-based investment?</span>
+                        </h3>
+                    </div>
+                </div>
+
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            15:50
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            CLOSING REFLECTIONS & CALL TO ACTION 
+                        </div>
                     </div>
                 </div>
 
