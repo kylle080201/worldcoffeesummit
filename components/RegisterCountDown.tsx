@@ -9,11 +9,9 @@ const RegisterCountDown = () => {
     const [seconds, setSeconds] = useState("00");
     const [localizedDate, setLocalizedDate] = useState("");
     
-    // Use ISO format (YYYY-MM-DD) which is unambiguous
-    const target = new Date("2025-05-31T23:59:00");
+    const target = new Date("2025-07-18T23:59:00");
 
     useEffect(() => {
-        // Set the localized date string once when component mounts
         setLocalizedDate(target.toLocaleDateString(undefined, { 
             year: 'numeric', 
             month: 'long', 
