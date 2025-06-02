@@ -435,7 +435,7 @@ function Agenda() {
                         </div>
                     </div>
                     <div className='w-full text-red-600 text-sm font-medium col-span-8 justify-center mx-auto flex items-center px-6 py-2'>
-                        "Subject to change"
+                        *Subject to change*
                     </div>
 
                 </div>
