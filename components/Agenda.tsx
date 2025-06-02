@@ -288,7 +288,7 @@ function Agenda() {
                     </div>
                     <div className='mt-4 px-2 max-w-3xl'>
                         <h3 className=''>
-                            <span className='italic'>A bold conversation about flipping the script—from extractive to regenerative, from offsetting to thriving</span>
+                            <span className='italic'>A bold conversation about flipping the script—from extractive to regenerative, from offsetting to thriving.</span>
                         </h3>
                     </div>
                 </div>
