@@ -4,9 +4,11 @@ function Agenda() {
     return (
         <div id="agenda" className='w-full'>
             <div className='py-20 max-w-5xl mx-auto'>
-                <h2 className="text-4xl font-bold text-center tracking-tight">DRAFT AGENDA</h2>
+                <h2 className="text-4xl font-bold text-center tracking-tight">AGENDA<span className='text-red-600'>*</span></h2>
 
-                <h2 className="mt-8 text-2xl font-bold text-center tracking-tight">DAY 1, THURSDAY 23RD OCTOBER 2025 </h2>
+                <h2 className="mt-8 text-3xl text-lime-600 font-bold text-center tracking-tight">DAY 1, THURSDAY 23RD OCTOBER 2025 </h2>
+                 <h2 className="text-2xl  font-bold text-center tracking-tight">&ldquo; SYSTEM RESET- REIMAGINING VALUE CHAINS & LANDSCAPES &rdquo;</h2>
+
 
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
@@ -205,7 +207,7 @@ function Agenda() {
                     </div>
                     <div className='mt-4 px-2 max-w-5xl'>
                         <h3 className=''>
-                           <span className='italic'>The world&apos;s toughest climate challenge becomes your company&apos;s next big opportunity. Learn how leaders are decoding, measuring, and monetizing value chain emissions</span>
+                           <span className='italic'>The world&apos;s toughest climate challenge becomes your company&apos;s next big opportunity. Learn how leaders are decoding, measuring, and monetizing value chain emissions.</span>
                         </h3>
                     </div>
                 </div>
@@ -238,7 +240,9 @@ function Agenda() {
                 </div>
 
 
-                <h2 className="mt-8 text-2xl font-bold text-center tracking-tight">DAY 2, FRIDAY 24TH OCTOBER 2025 </h2>
+                <h2 className="mt-8 text-3xl text-lime-600 font-bold text-center tracking-tight">DAY 2, FRIDAY 24TH OCTOBER 2025 </h2>
+                <h2 className="text-2xl font-bold  text-center tracking-tight">COLLECTIVE AMBITION – FROM VISION TO SYSTEMIC ACTION</h2>
+
 
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
@@ -354,7 +358,7 @@ function Agenda() {
                     </div>
                     <div className='mt-4 px-2 max-w-3xl'>
                         <h3 className=''>
-                            <span className='italic'>Chatham House dialogues on critical topic issues. <br/>Topics TBC.</span>
+                            <span className='italic'>Chatham House dialogues on critical topic issues. Topics TBC.</span>
                             </h3>
                     </div>
                 </div>
@@ -382,8 +386,19 @@ function Agenda() {
                     </div>
                     <div className='mt-4 px-2 max-w-3xl'>
                         <h3 className=''>
-                            <span className='italic'>One planet. Two crops. Endless possibilities. Aligning innovations, infrastructure, and insights across sectors.One planet. Two crops. Endless possibilities. Aligning innovations, infrastructure, and insights across sectors.   </span>
+                            <span className='italic'>One planet. Two crops. Endless possibilities. Aligning innovations, infrastructure, and insights across sectors.</span>
                         </h3>
+                    </div>
+                </div>
+
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            14:40
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            SOLUTION PROVIDER PRESENTATION
+                        </div>
                     </div>
                 </div>
 
@@ -393,7 +408,7 @@ function Agenda() {
                             14:50
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                            SOLUTION PROVIDER PRESENTATION
+                            CASE STUDY
                         </div>
                     </div>
                 </div>

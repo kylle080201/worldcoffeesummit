@@ -24,7 +24,7 @@ export default function HomePage() {
             <div>
                 <Overview />
                 <WhoIsInTheRoom />
-                {/* <Confirmedspeakers/>*/}
+                {/*<Confirmedspeakers/>*/}
                 <Speakers2024 />
                 <WhoYoullMeet />
 
