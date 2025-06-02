@@ -182,7 +182,9 @@ function TicketPricing() {
                                         <td className="flex-wrap px-3 py-4 font-semibold text-gray-900 text-lg whitespace-nowrap">{delegate.title}</td>
                                         <td className="flex-wrap px-3 py-4 text-gray-900 text-lg">
                                             {delegate.description}
-                                            <br />
+                                            <div className='text-red-700 font-bold'>
+                                                {delegate.earlyBird}
+                                            </div>
                                         </td>
                                         <td className="flex-wrap px-3 py-4 text-gray-900 font-bold">
                                             <div className='h-full text-lg w-full'>
