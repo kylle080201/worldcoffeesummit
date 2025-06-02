@@ -287,7 +287,7 @@ function Agenda() {
                             GLOBAL LEADERS FORUM: FIRESIDE– TOWARD A NET POSITIVE WORLD
                         </div>
                     </div>
-                    <div className='mt-4 px-2 max-w-3xl'>
+                    <div className='mt-4 px-2 max-w-4xl'>
                         <h3 className=''>
                             <span className='italic'>A bold conversation about flipping the script—from extractive to regenerative, from offsetting to thriving.</span>
                         </h3>
