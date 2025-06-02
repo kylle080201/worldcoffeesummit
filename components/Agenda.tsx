@@ -341,7 +341,7 @@ function Agenda() {
                             PANEL: DECODING NATURE’S COMPLEXITY
                         </div>
                     </div>
-                    <div className='mt-4 px-2 max-w-3xl'>
+                    <div className='mt-4 px-2 max-w-4xl'>
                         <h3 className=''>
                            <span className='italic'>From Natural Capital to Climate Assets: Building a Science-Based Regeneration Economy. How biodiversity, water, and ecosystem services are emerging as key assets in financial and supply chain decisions.</span>
                         </h3>
@@ -385,7 +385,7 @@ function Agenda() {
                             PANEL: COCOA & COFFEE SYNERGIES – UNITY FOR RESILIENCE 
                         </div>
                     </div>
-                    <div className='mt-4 px-2 max-w-3xl'>
+                    <div className='mt-4 px-2 max-w-4xl'>
                         <h3 className=''>
                             <span className='italic'>One planet. Two crops. Endless possibilities. Aligning innovations, infrastructure, and insights across sectors.</span>
                         </h3>
