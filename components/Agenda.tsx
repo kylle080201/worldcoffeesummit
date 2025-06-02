@@ -354,7 +354,7 @@ function Agenda() {
                     </div>
                     <div className='mt-4 px-2 max-w-3xl'>
                         <h3 className=''>
-                            <span className='font-bold'>Chatham House dialogues on critical topic issues. <br/>Topics TBC.</span>
+                            <span className='italic'>Chatham House dialogues on critical topic issues. <br/>Topics TBC.</span>
                             </h3>
                     </div>
                 </div>
