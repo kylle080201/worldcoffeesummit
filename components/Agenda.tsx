@@ -7,7 +7,7 @@ function Agenda() {
               <h2 className="relative text-4xl font-bold text-center tracking-tight">AGENDA<span className="font-normal absolute -top-1 text-4xl text-red-600">*</span></h2>
 
 
-                <h2 className="mt-8 text-3xl text-lime-600 font-bold text-center tracking-tight">DAY 1, THURSDAY 23RD OCTOBER 2025 </h2>
+                <h2 className="mt-8 text-3xl text-lime-700 font-bold text-center tracking-tight">DAY 1, THURSDAY 23RD OCTOBER 2025 </h2>
                  <h2 className="text-2xl  font-bold text-center tracking-tight">SYSTEM RESET- REIMAGINING VALUE CHAINS & LANDSCAPES </h2>
 
 
@@ -241,7 +241,7 @@ function Agenda() {
                 </div>
 
 
-                <h2 className="mt-8 text-3xl text-lime-600 font-bold text-center tracking-tight">DAY 2, FRIDAY 24TH OCTOBER 2025 </h2>
+                <h2 className="mt-8 text-3xl text-lime-700 font-bold text-center tracking-tight">DAY 2, FRIDAY 24TH OCTOBER 2025 </h2>
                 <h2 className="text-2xl font-bold  text-center tracking-tight">COLLECTIVE AMBITION – FROM VISION TO SYSTEMIC ACTION</h2>
 
 
