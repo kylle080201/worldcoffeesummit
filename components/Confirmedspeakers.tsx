@@ -139,22 +139,33 @@ export default function Confirmedspeakers() {
       <Slider ref={sliderRef} {...settings}>
         {speakers.map((speaker, index) => (
           <div key={index} className="px-2">
-            <div className="flex flex-col bg-white rounded-lg overflow-hidden shadow-md">
-              {/* Image */}
-              <div className="aspect-[4/5]">
+            <div className="flex flex-col w-72 bg-white rounded-lg overflow-hidden shadow-md h-[450px]"> 
+            {/* Image */}
+            <div className="relative flex-shrink-0 h-1/2">
                 <img
-                  src={speaker.image}
-                  alt={speaker.name}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              {/* Green bottom section */}
-              <div className="bg-green-700 p-4 flex flex-col gap-1">
-                <h3 className="text-lg font-bold text-white">{speaker.name}</h3>
-                <p className="text-white">{speaker.designation}</p>
-                <p className="text-sm text-white">{speaker.organization}</p>
-              </div>
+                src={speaker.image}
+                alt={speaker.name}
+                className="w-full h-full object-cover"
+            />
+            {/* Logo */}
+             <div className="absolute -bottom-5 right-4 bg-white rounded-lg shadow p-2 flex items-center justify-center">
+      <img
+        src="https://softtechs360.com/worldcoffee/wp-content/uploads/2025/06/AXA_Climate_Blue_Horizontal_RVB.png" // Use your actual logo path
+        alt="Logo"
+        className="w-16 h-16 object-contain"
+      />
+    </div>
+  </div>
+
+  {/* Green bottom section */}
+  <div className="flex flex-col justify-center flex-grow bg-[#4D7C0F] p-4">
+    <h3 className="text-lg font-bold text-white">{speaker.name}</h3>
+    <p className="text-white">{speaker.designation}</p>
+    <p className="text-sm font-bold  text-white">{speaker.organization}</p>
+  </div>
             </div>
+
+
           </div>
         ))}
       </Slider>
