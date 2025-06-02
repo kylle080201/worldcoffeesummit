@@ -11,7 +11,7 @@ export const summit = [
         // old_price: 1095,
         item_price: 299,
         description: "Eligible only for professors and full- time Masters, PhDs and post-graduates(including students)",
-        earlyBird: "Save £300 book before 19 July 2025",
+        // earlyBird: "Save £300 book before 19 July 2025",
         line_items: [
             {
                 price: 'price_1RJ3cYKMWpUKzQVzk2sR6LGo',
@@ -26,7 +26,7 @@ export const summit = [
         old_price: 1095,
         item_price: 795,
         description: "Eligible for non-profits and NGOs, farmer-cooperatives, Policy Makers & Government Bodies",
-        earlyBird: "Save £500 book before 19 July 2025",
+        earlyBird: "Save £300 book before 19 July 2025",
         line_items: [
             {
                 price: 'price_1RVYU9KMWpUKzQVzqfgjsVie',
@@ -161,9 +161,10 @@ function TicketPricing() {
             <div id="summit" className="flow-root px-6 mx-auto mt-12 rounded-md max-w-7xl">
                 <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
 
-                    <div className='flex px-12 w-full'>
-                        <div className='flex flex-col text-black font-bold w-1/2 justify-center items-center'>
-                            <h1 className='mx-auto text-2xl xl:text-4xl'>SUPER EARLY BIRD PRICING</h1>
+                    <div className='flex w-full gap-4'>
+                        <div className='flex flex-col text-black font-bold w-1/2 items-center'>
+                            <h1 className='mx-auto text-3xl xl:text-5xl text-lime-700'>GRAB YOUR TICKETS</h1>
+                            <h1 className='mx-auto text-3xl xl:text-5xl'>SUPER EARLY BIRD PRICING</h1>
                             {/* <h1 className='mx-auto text-red-500 xl:text-2xl text-lg'>(LIMITED AVAILABILITY)</h1> */}
                         </div>
                         <div className='flex flex-col gap-2 w-1/2'>
@@ -183,7 +184,7 @@ function TicketPricing() {
                                         <td className="flex-wrap px-3 py-4 text-gray-900 text-lg">
                                             {delegate.description}
                                             <div className='text-red-700 font-bold'>
-                                                {delegate.earlyBird}
+                                                {delegate.earlyBird ?? delegate.earlyBird}
                                             </div>
                                         </td>
                                         <td className="flex-wrap px-3 py-4 text-gray-900 font-bold">
