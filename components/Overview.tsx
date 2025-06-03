@@ -127,10 +127,10 @@ export default function Overview() {
             <KeyThemes />
 <div className="mb-8 w-full flex justify-center">
   <div 
-    className="text-white font-medium bg-lime-700 px-6 py-3 rounded-lg hover:bg-lime-800 cursor-pointer transition duration-300"
+    className="font-bold text-white text-3xl bg-lime-700 px-6 py-3 rounded-lg hover:bg-lime-800 cursor-pointer transition duration-300"
     onClick={() => window.location.href = "/agenda"} // or your desired action
   >
-    Full Agenda
+    FULL AGENDA
   </div>
 </div>
 

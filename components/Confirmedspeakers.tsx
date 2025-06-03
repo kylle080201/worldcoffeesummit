@@ -78,8 +78,8 @@ const speakers: Speaker[] = [
   },
   {
     name: 'Owen Hewlett',
-    designation: 'Chief Technical Officer, Gold Standard; Technical Council Member (SBTi)',
-    organization: '',
+    designation: 'Chief Technical Officer, <strong>Gold Standard;</strong> Technical Council Member, ',
+    organization: '(SBTi)',
     image: 'https://softtechs360.com/worldcoffee/wp-content/uploads/2025/06/Owen.jpg',
      logo: 'https://softtechs360.com/worldcoffee/wp-content/uploads/2025/06/Gold-Standard.png',
      description:'Paul Stewart is TechnoServe’s Global Coffee Director, overseeing a portfolio of partnerships with the world’s leading coffee companies, foundations, and public sector agencies to increase the coffee income of farmers across Africa and Latin America. Over the course of a 23-year career at TechnoServe, Paul has helped build its coffee practice into a recognized leader in “shared value” solutions that reduce poverty for farmers while developing sustainable supply chains for coffee businesses. '
@@ -127,7 +127,7 @@ export default function ConfirmedSpeakers() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 200,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
@@ -231,11 +231,20 @@ export default function ConfirmedSpeakers() {
               </div>
 
               {/* Info */}
-              <div className="flex flex-col justify-center flex-grow bg-[#4D7C0F] p-4">
-                <h3 className="text-lg font-bold text-white">{speaker.name}</h3>
-                <p className="text-white">{speaker.designation}</p>
-                <p className="text-sm font-bold text-white">{speaker.organization}</p>
-              </div>
+<div className="flex flex-col justify-center flex-grow bg-[#4D7C0F] p-4">
+  <h3 className="text-lg font-bold text-white">{speaker.name}</h3>
+  <p className="text-white">
+    {speaker.name === "Owen Hewlett" ? (
+      <>
+        Chief Technical Officer, <strong>Gold Standard</strong>; Technical Council Member,
+      </>
+    ) : (
+      speaker.designation
+    )}
+  </p>
+  <p className="text-sm font-bold text-white">{speaker.organization}</p>
+</div>
+
             </div>
           </div>
         ))}
