@@ -128,6 +128,7 @@ export default function ConfirmedSpeakers() {
     dots: true,
     infinite: true,
     speed: 500,
+    cssEase: "ease-in-out",
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
@@ -298,7 +299,15 @@ export default function ConfirmedSpeakers() {
 
       {/* Speaker info */}
       <h2 id="modal-title" className="text-3xl font-bold mb-2">{selectedSpeaker.name}</h2>
-      <p id="modal-description" className="mb-2 text-gray-700 font-semibold">{selectedSpeaker.designation}</p>
+<p id="modal-description" className="mb-2 text-gray-700 font-semibold">
+  {selectedSpeaker.name === "Owen Hewlett" ? (
+    <>
+      Chief Technical Officer, Gold Standard; Technical Council Member, SBTi
+    </>
+  ) : (
+    selectedSpeaker.designation
+  )}
+</p>
       {selectedSpeaker.organization && (
         <p className="text-gray-600 italic">{selectedSpeaker.organization}</p>
       )}
