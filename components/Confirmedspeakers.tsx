@@ -159,7 +159,7 @@ export default function ConfirmedSpeakers() {
   return (
     
     
-    <div className="relative w-full max-w-7xl mx-auto py-8" id="speakers">
+    <div className="relative w-full max-w-7xl mx-auto py-8" >
                           <div className="my-8  max-w-2xl mx-auto text-center">
                         <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">2025 SPEAKERS</p>
                     </div>
