@@ -124,30 +124,20 @@ export default function ConfirmedSpeakers() {
   // State to track modal open/close and selected speaker
   const [selectedSpeaker, setSelectedSpeaker] = useState<Speaker | null>(null);
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    cssEase: "ease-in-out",
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1000,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-        }
-      },
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 1,
-        }
-      }
-    ]
-  };
+const settings = {
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  speed: 3000,
+  autoplaySpeed: 0,
+  cssEase: "linear",
+  arrows: false,
+  responsive: [
+    { breakpoint: 1024, settings: { slidesToShow: 2 } },
+    { breakpoint: 640, settings: { slidesToShow: 1 } },
+  ],
+};
 
   // Close modal when clicking outside modal content
   const handleOverlayClick = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -159,7 +149,7 @@ export default function ConfirmedSpeakers() {
   return (
     
     
-    <div className="relative w-full max-w-7xl mx-auto py-8" >
+    <div className="relative w-full max-w-7xl mx-auto py-8" id="speakers">
                           <div className="my-8  max-w-2xl mx-auto text-center">
                         <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">2025 SPEAKERS</p>
                     </div>
