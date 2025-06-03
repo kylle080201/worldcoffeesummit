@@ -441,7 +441,7 @@ function Agenda() {
                     </div>
                 </div>
 
-                <div className='mt-8'>
+                <div className='mt-8 mb-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
                             16:00
