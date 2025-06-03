@@ -16,14 +16,14 @@ const speakers: Speaker[] = [
     designation: 'Head of Unity, Sustainable Agri-Food Systems and Fisheries, Directorate-General for International Partnerships (DG INTPA)',
     organization: 'European Commission (EU)',
     image: 'https://softtechs360.com/worldcoffee/wp-content/uploads/2025/06/photo-LM-high-reso.jpg',
-    logo: '',
+    logo: 'https://softtechs360.com/worldcoffee/wp-content/uploads/2025/06/eu.png',
     description:''
   },
   {
     name: 'The Rt. Hon John Gummer, Lord Deben',
     designation: 'Former Chairman',
     organization: 'UK Climate Change Committee (CCC)',
-    image: 'https://softtechs360.com/worldcoffee/wp-content/uploads/2025/06/1549301011565-1.jpg',
+    image: 'https://softtechs360.com/worldcoffee/wp-content/uploads/2025/06/Lord-Deben-Photo-2019-adj-003-scaled-copy.jpg',
     logo: 'https://softtechs360.com/worldcoffee/wp-content/uploads/2025/06/House_of_Lords_logo_2020.svg_.png',
     description:'The Rt. Hon John Gummer, Lord Deben, is the founder and Chairman of Sancroft International, a consultancy that advises both businesses and investors on all areas of Sustainability and ESG. Between 2012 and 2023 he was Chairman of the UK’s Independent Climate Change Committee. Lord Deben was also the UK’s longest serving Secretary of State for the Environment (1993-97) having previously been Minister of Agriculture, Fisheries, and Food. His sixteen years of top-level ministerial experience also include Minister for London, Employment Minister, and Paymaster General in HM Treasury. Lord Deben is currently Chairman of Valpak Ltd and of PIMFA, the trade body representing financial advisers and wealth managers. Throughout his political, business, and personal life Lord Deben has consistently championed an accord between sustainability and business sense.'
   },
@@ -64,7 +64,7 @@ const speakers: Speaker[] = [
     designation: 'Head of Applications and Solutions',
     organization: 'European Space Agency (ESA)',
     image: 'https://softtechs360.com/worldcoffee/wp-content/uploads/2025/06/1549301011565-1.jpg',
-     logo: 'https://softtechs360.com/worldcoffee/wp-content/uploads/2025/06/eu.png',
+     logo: 'https://softtechs360.com/worldcoffee/wp-content/uploads/2025/06/ESA_logo_2020_Deep.png',
      description:''
      
   },
@@ -158,7 +158,7 @@ export default function ConfirmedSpeakers() {
   return (
     
     
-    <div className="relative w-full max-w-7xl mx-auto py-8">
+    <div className="relative w-full max-w-7xl mx-auto py-8" id="speakers">
                           <div className="my-8  max-w-2xl mx-auto text-center">
                         <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">2025 SPEAKERS</p>
                     </div>
