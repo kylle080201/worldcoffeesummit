@@ -13,7 +13,7 @@ interface Speaker {
 const speakers: Speaker[] = [
   {
     name: 'Dr Leonard Mizzi',
-    designation: 'Head of Unity, Sustainable Agri-Food Systems and Fisheries, Directorate-General for International Partnerships (DG INTPA)',
+    designation: 'Head of Unit, Sustainable Agri-Food Systems and Fisheries, Directorate-General for International Partnerships (DG INTPA)',
     organization: 'European Commission (EU)',
     image: 'https://softtechs360.com/worldcoffee/wp-content/uploads/2025/06/photo-LM-high-reso.jpg',
     logo: 'https://softtechs360.com/worldcoffee/wp-content/uploads/2025/06/eu.png',
@@ -79,7 +79,7 @@ const speakers: Speaker[] = [
   {
     name: 'Owen Hewlett',
     designation: 'Chief Technical Officer, <strong>Gold Standard;</strong> Technical Council Member, ',
-    organization: '(SBTi)',
+    organization: '',
     image: 'https://softtechs360.com/worldcoffee/wp-content/uploads/2025/06/Owen.jpg',
      logo: 'https://softtechs360.com/worldcoffee/wp-content/uploads/2025/06/Gold-Standard.png',
      description:'Paul Stewart is TechnoServe’s Global Coffee Director, overseeing a portfolio of partnerships with the world’s leading coffee companies, foundations, and public sector agencies to increase the coffee income of farmers across Africa and Latin America. Over the course of a 23-year career at TechnoServe, Paul has helped build its coffee practice into a recognized leader in “shared value” solutions that reduce poverty for farmers while developing sustainable supply chains for coffee businesses. '
@@ -127,11 +127,11 @@ export default function ConfirmedSpeakers() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 200,
+    speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 1000,
     responsive: [
       {
         breakpoint: 1024,
@@ -236,13 +236,13 @@ export default function ConfirmedSpeakers() {
   <p className="text-white">
     {speaker.name === "Owen Hewlett" ? (
       <>
-        Chief Technical Officer, <strong>Gold Standard</strong>; Technical Council Member,
+        Chief Technical Officer, <strong>Gold Standard</strong>; Technical Council Member, <strong>SBTi</strong>
       </>
     ) : (
       speaker.designation
     )}
   </p>
-  <p className="text-sm font-bold text-white">{speaker.organization}</p>
+  <p className="text-lg font-bold text-white">{speaker.organization}</p>
 </div>
 
             </div>
