@@ -214,7 +214,7 @@ function TicketPricing() {
                     </div>
                 </div>
             </div>
-            <div className="container mx-auto px-8 flex justify-between">
+            <div className="container mb-12 mx-auto px-8 flex justify-between">
 
             <div className="w-full md:w-1/2 lg:w-full  mt-12 sm:text-start">
                 <h3 className="tracking-tight text-red-700 sm:text-lg"><span className='font-bold'>IMPORTANT NOTICE:</span></h3>
@@ -228,7 +228,7 @@ function TicketPricing() {
 
                 <h3 className="tracking-tight  sm:text-lg">If you would like to register a team of 3 or more, please email  <Link href={"mailto:info@worldcoffeealliance.com"} target="_blank" className="underline hover:underline-offset-4"> info@worldcoffeealliance.com</Link> for your discount coupon code before registering.</h3>
             </div> 
-</div>
+           </div>
 
         </div>
     )
