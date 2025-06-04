@@ -124,30 +124,20 @@ export default function ConfirmedSpeakers() {
   // State to track modal open/close and selected speaker
   const [selectedSpeaker, setSelectedSpeaker] = useState<Speaker | null>(null);
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    cssEase: "ease-in-out",
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1000,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-        }
-      },
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 1,
-        }
-      }
-    ]
-  };
+const settings = {
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  speed: 3000,
+  autoplaySpeed: 0,
+  cssEase: "linear",
+  arrows: false,
+  responsive: [
+    { breakpoint: 1024, settings: { slidesToShow: 2 } },
+    { breakpoint: 640, settings: { slidesToShow: 1 } },
+  ],
+};
 
   // Close modal when clicking outside modal content
   const handleOverlayClick = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -232,8 +222,8 @@ export default function ConfirmedSpeakers() {
               </div>
 
               {/* Info */}
-<div className="flex flex-col justify-center flex-grow bg-[#4D7C0F] p-4">
-  <h3 className="text-lg font-bold text-white">{speaker.name}</h3>
+<div className="flex flex-col justify-start flex-grow bg-[#4D7C0F] p-4">
+  <h3 className="mt-4 text-lg font-bold text-white">{speaker.name}</h3>
   <p className="text-white">
     {speaker.name === "Owen Hewlett" ? (
       <>

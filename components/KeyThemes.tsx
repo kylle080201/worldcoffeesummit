@@ -6,66 +6,58 @@ import WhoYoullMeet from './WhoYoullMeet';
 
 const keyThemes = [
   {
-    title: "Geopolitical Disruption & Tariffs",
-    description: "Understanding how geopolitical volatility reshapes global coffee and cocoa markets and exploring innovative ways to build resilience."
+    title: "Geopolitical Disruption & Trade Tariffs",
+    description: "How global instability, trade wars, and shifting alliances are reshaping coffee and cocoa markets, and what resilience looks like in an uncertain world."
   },
   {
-    title: "EUDR Countdown: Compliance & Opportunity",
-    description: "Navigating the EU Deforestation Regulation delay—balancing compliance readiness with supply chain transformation."
+    title: "Regulatory Compliance as Strategy: EUDR, CSRD & CS3D",
+    description: "Beyond box-ticking—how forward-looking companies are turning regulatory compliance into drivers of innovation, brand trust, and long-term competitiveness."
   },
   {
-    title: "EU Omnibus Update (CSRD & CS3D)",
-    description: "Adapting to new ESG reporting frameworks with simplified datapoints and expanded materiality guidance."
+    title: "Earth First: Biodiversity, Soil Health & Climate resilience",
+    description: "Using precision diagnostics and data to enhance soil health, crop and farm management to increase agricultural productivity at scale. "
   },
   {
-    title: "Commodity Price Volatility",
-    description: "Unpacking market dynamics behind coffee and cocoa price swings, and the role of futures trading in amplifying risk."
+    title: "Cracking Scope 3: From Chaos to Clarity ",
+    description: "Unpacking value chain emissions, building internal capability, and aligning with climate targets across sourcing and procurement."
   },
   {
     title: "Coffee & Cocoa Climate Convergence",
-    description: "Creating shared climate-smart strategies for coffee and cocoa to reduce emissions and boost productivity."
+    description: "Bridging strategies across both crops to reduce emissions, improve yields, and align with global climate goals through shared innovation."
   },
   {
-    title: "Supply Chain Automation & AI",
-    description: "Leveraging emerging tech—from digital twins to remote sensing—to build smarter, faster, and more transparent supply chains."
+    title: "Digitalising Supply Chains: The role of Automation & AI",
+    description: "Leveraging emerging tech—from digital twins to remote sensing—to build smarter, faster, and more transparent supply chains"
   },
   {
     title: "Scaling Regenerative Agriculture",
-    description: "Deploying MRV systems to scale up water-efficient, biodiversity-positive, regenerative farming models."
+    description: "Making regen real: deploying MRV tools and incentive models to scale up biodiversity-positive, water-smart, farmer-led practices."
   },
   {
-    title: "Decoding Nature: Investing in NBS",
-    description: "Mobilizing capital and technology to regenerate ecosystems and unlock value through nature-based solutions."
+    title: "Decoding Nature: Investing in Nature-Based Solutions (NBS) ",
+    description: "Mobilising capital and technology to regenerate ecosystems and unlock value through nature-based solutions."
   },
   {
-    title: "Voluntary Carbon Standards",
-    description: "Ensuring transparency and integrity in carbon offset markets through certification and standardization."
+    title: "Voluntary Carbon Markets & Standards",
+    description: "Ensuring credibility and transparency in carbon offset markets through robust certification, traceability, and standardization frameworks."
   },
   {
-    title: "Applied Agronomy: Improving Soil Health",
-    description: "Using precision diagnostics and data to enhance soil health, crop and farm management to increase agricultural productivity at scale."
-  },
-  {
-    title: "Geospatial & Remote Monitoring",
+    title: "Geospatial Intelligence & Remote Monitoring",
     description: "Harnessing Earth observation tools to drive real-time compliance, traceability, and carbon tracking."
   },
   {
-    title: "Insurance Innovation for Climate Risk",
-    description: "Exploring how AI and parametric insurance can protect smallholders and mitigate climate-driven financial risks."
-  },
-  {
-    title: "Digital Trade Infrastructure & Finance",
-    description: "Building a paperless, interoperable system that enhances global trade and finance ecosystem for transparency and sustainability."
-  },
-  {
     title: "Precision Agriculture: Data-Driven Farming for Impact",
-    description: "Harnessing the power of real-time data, sensors, and smart analytics to optimize input use, enhance yields, and promote climate-smart coffee and cocoa farming practices."
-  }
+    description: "Leveraging the power of real-time data, sensors, and smart analytics to optimize input use, enhance yields, and promote climate-smart farming practices."
+  },
+  {
+    title: "Mainstreaming Regenerative Finance",
+    description: "Bridging climate ambition with financial returns—how investors are reshaping portfolios to prioritise nature, resilience, and long-term value creation."
+  },
 ]
 
 function KeyThemes() {
-  const themesColumn1 = keyThemes.slice(0, 7);
-  const themesColumn2 = keyThemes.slice(7);
+  const themesColumn1 = keyThemes.slice(0, 6);
+  const themesColumn2 = keyThemes.slice(6);
   const router = useRouter()
   return (
     <div className='w-full px-0 md:px-8 py-12'>
