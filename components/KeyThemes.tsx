@@ -87,11 +87,11 @@ function KeyThemes() {
           <div className="md:w-1/2 w-full">
             <ul className="list-disc flex flex-col gap-4 ml-6">
               {themesColumn1.map(theme => (
-                <li key={theme.title} className="text-2xl">
+                <li key={theme.title} className="text-[1.375rem]">
                   <strong>{theme.title}</strong>
                   <br/>
                   <div className="text-xl"><strong>{theme.subheading}</strong></div>
-                  <div className="text-xl">
+                  <div className="text-lg">
                     {theme.description}
                   </div>
                 </li>
@@ -102,12 +102,12 @@ function KeyThemes() {
           <div className="md:w-1/2 w-full">
             <ul className="list-disc flex flex-col gap-4 ml-6">
               {themesColumn2.map(theme => (
-                <li key={theme.title} className="text-2xl">
+                <li key={theme.title} className="text-[1.375rem]">
                   <strong>{theme.title}</strong> 
                   <br/>
                   <div className="text-xl">
                     <strong>{theme.subheading}</strong></div>
-                  <div className="text-xl">
+                  <div className="text-lg">
                     {theme.description}
                   </div>
                 </li>
