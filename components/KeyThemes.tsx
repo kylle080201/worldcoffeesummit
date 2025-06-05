@@ -6,52 +6,64 @@ import WhoYoullMeet from './WhoYoullMeet';
 
 const keyThemes = [
   {
-    title: "Geopolitical Disruption & Trade Tariffs",
-    description: "How global instability, trade wars, and shifting alliances are reshaping coffee and cocoa markets, and what resilience looks like in an uncertain world."
+    title: "Geopolitical Disruption & Trade Realignment",
+    subheading:"Redesigning Resilience in a Fragmented World",
+    description: "Explore how escalating geopolitical tensions, trade barriers, and shifting alliances are redrawing the coffee and cocoa landscape, and how value chain actors can reimagine resilience, diversify risk, and strengthen regional collaboration in a multipolar world."
   },
   {
-    title: "Regulatory Compliance as Strategy: EUDR, CSRD & CS3D",
-    description: "Beyond box-ticking—how forward-looking companies are turning regulatory compliance into drivers of innovation, brand trust, and long-term competitiveness."
+    title: "Compliance as Competitive Strategy",
+    subheading:"EUDR, CSRD & CS3D as Catalysts for Innovation and Brand Trust",
+    description: "Compliance is no longer a cost, it’s a catalyst. Learn how leading companies are transforming regulatory obligations into innovation pipelines, supply chain transparency, and deeper consumer trust."
   },
   {
-    title: "Earth First: Biodiversity, Soil Health & Climate resilience",
-    description: "Using precision diagnostics and data to enhance soil health, crop and farm management to increase agricultural productivity at scale. "
+    title: "Earth First: Regenerating Soil, Climate & Biodiversity",
+    subheading:"Data-Driven Stewardship for Long-Term Prosperity",
+    description: "Position nature at the centre of performance. Discover how cutting-edge diagnostics, farm-level intelligence, and biodiversity data are being harnessed to restore ecosystems and enhance productivity at scale."
   },
   {
-    title: "Cracking Scope 3: From Chaos to Clarity ",
-    description: "Unpacking value chain emissions, building internal capability, and aligning with climate targets across sourcing and procurement."
+    title: "Cracking Scope 3: Turning Complexity into Leadership",
+    subheading:"Decoding Emissions Across Value Chains for Real Impact",
+    description: "From ambition to action—unpack the tools, partnerships, and strategies needed to understand, reduce, and monetise Scope 3 emissions across procurement, logistics, and sourcing."
   },
   {
     title: "Coffee & Cocoa Climate Convergence",
-    description: "Bridging strategies across both crops to reduce emissions, improve yields, and align with global climate goals through shared innovation."
+    subheading:"Aligning Two Sectors Around a Shared Climate Agenda",
+    description: "With parallel climate risks and overlapping supply chains, coffee and cocoa offer a unique opportunity for joint solutions. Discover how integrated strategies can accelerate climate adaptation, innovation, and policy influence."
   },
   {
-    title: "Digitalising Supply Chains: The role of Automation & AI",
-    description: "Leveraging emerging tech—from digital twins to remote sensing—to build smarter, faster, and more transparent supply chains"
+    title: "Digitalizing Supply Chains: AI, Automation & Traceability",
+    subheading:"Tech-Driven Accountability from Farm to Shelf",
+    description: "Explore how digital infrastructure—from AI to digital twins—is transforming procurement, supplier engagement, and consumer transparency while improving speed, precision, and integrity in global sourcing."
   },
   {
-    title: "Scaling Regenerative Agriculture",
-    description: "Making regen real: deploying MRV tools and incentive models to scale up biodiversity-positive, water-smart, farmer-led practices."
+    title: "Scaling Regenerative Agriculture Across Origins",
+    subheading:"From Pilot to Practice: Making Regeneration Investible",
+    description: "Understand how MRV systems, farmer incentives, and ecosystem service payments are turning regenerative agriculture into a scalable, measurable, and bankable reality."
   },
   {
-    title: "Decoding Nature: Investing in Nature-Based Solutions (NBS) ",
-    description: "Mobilising capital and technology to regenerate ecosystems and unlock value through nature-based solutions."
+    title: "Decoding Nature: Investing in Nature-Based Solutions (NBS)",
+    subheading:"Regenerating Ecosystems While Creating Economic Value",
+    description: "From watershed restoration to forest conservation, discover how NBS is becoming the next frontier in sustainability investment—mobilising capital to regenerate nature and deliver measurable returns."
   },
   {
-    title: "Voluntary Carbon Markets & Standards",
-    description: "Ensuring credibility and transparency in carbon offset markets through robust certification, traceability, and standardization frameworks."
+    title: "Voluntary Carbon Markets & The Future of Offsets",
+    subheading:"Ensuring Integrity, Traceability, and Real Climate Value",
+    description: "Delve into the evolving world of voluntary carbon markets—how new standards, technologies, and buyer expectations are reshaping credibility and investment potential."
   },
   {
     title: "Geospatial Intelligence & Remote Monitoring",
-    description: "Harnessing Earth observation tools to drive real-time compliance, traceability, and carbon tracking."
+    subheading:"Real-Time Visibility for Compliance, Carbon, and Impact",
+    description: "See how satellites, drones, and machine learning are providing powerful, real-time insights into land use, carbon emissions, and regulatory compliance—enabling faster action and lower risk."
   },
   {
-    title: "Precision Agriculture: Data-Driven Farming for Impact",
-    description: "Leveraging the power of real-time data, sensors, and smart analytics to optimize input use, enhance yields, and promote climate-smart farming practices."
+    title: "Precision Agriculture: The Next Green Revolution",
+    subheading:"Smart Farming for Climate, Yield & Profitability",
+    description: "Unlock the power of precision. From IoT sensors to AI-driven crop models, explore how data-rich farming systems are improving productivity, reducing waste, and aligning with climate goals."
   },
   {
     title: "Mainstreaming Regenerative Finance",
-    description: "Bridging climate ambition with financial returns—how investors are reshaping portfolios to prioritise nature, resilience, and long-term value creation."
+    subheading:"Shaping Portfolios for Resilience, Nature, and Shared Value",
+    description: "Follow the capital as climate finance shifts from risk avoidance to regeneration. Learn how investors, insurers, and brands are redefining ROI by investing in nature-positive, long-term impact strategies."
   },
 ]
 
@@ -75,10 +87,11 @@ function KeyThemes() {
           <div className="md:w-1/2 w-full">
             <ul className="list-disc flex flex-col gap-4 ml-6">
               {themesColumn1.map(theme => (
-                <li key={theme.title} className="text-xl">
+                <li key={theme.title} className="text-2xl">
                   <strong>{theme.title}</strong>
                   <br/>
-                  <div>
+                  <div className="text-xl"><strong>{theme.subheading}</strong></div>
+                  <div className="text-xl">
                     {theme.description}
                   </div>
                 </li>
@@ -89,10 +102,12 @@ function KeyThemes() {
           <div className="md:w-1/2 w-full">
             <ul className="list-disc flex flex-col gap-4 ml-6">
               {themesColumn2.map(theme => (
-                <li key={theme.title} className="text-xl">
+                <li key={theme.title} className="text-2xl">
                   <strong>{theme.title}</strong> 
                   <br/>
-                  <div>
+                  <div className="text-xl">
+                    <strong>{theme.subheading}</strong></div>
+                  <div className="text-xl">
                     {theme.description}
                   </div>
                 </li>
