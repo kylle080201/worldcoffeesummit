@@ -91,7 +91,7 @@ function KeyThemes() {
                   <strong>{theme.title}</strong>
                   <br/>
                   <div className="text-xl"><strong>{theme.subheading}</strong></div>
-                  <div className="text-lg">
+                  <div className="text-lg" >
                     {theme.description}
                   </div>
                 </li>
@@ -107,7 +107,7 @@ function KeyThemes() {
                   <br/>
                   <div className="text-xl">
                     <strong>{theme.subheading}</strong></div>
-                  <div className="text-lg">
+                  <div className="text-lg" >
                     {theme.description}
                   </div>
                 </li>
