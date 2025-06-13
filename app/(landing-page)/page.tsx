@@ -18,14 +18,16 @@ import WhoYoullMeet from "../../components/WhoYoullMeet";
 import WhoIsInTheRoom  from "../../components/WholsInTheRoom";
 import Confirmedspeakers from "../../components/Confirmedspeakers";
 
+
 export default function HomePage() {
     return (
         <>
             <div>
                 <Overview />
                 <WhoIsInTheRoom />
-                {/*  <Confirmedspeakers/>*/}
-                <Speakers2024 />
+
+
+
                 <WhoYoullMeet />
 
                 {/* <SpeakerSlider /> */}

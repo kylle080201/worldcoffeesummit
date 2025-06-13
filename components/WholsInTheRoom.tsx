@@ -1,12 +1,12 @@
 import React from 'react';
 import Image from 'next/image'; 
-import picture1 from '../images/Picture4.png';
+import picture1 from '../images/audience.png';
 import picture2 from '../images/Picture2.png';
 
 function WhoIsInTheRoom() {
   return (
     <>
-      <div className="w-full py-16 bg-gray-100">
+      <div className="w-full py-16 ">
         <p className="text-3xl font-bold text-center mb-8">{`WHO'S IN THE ROOM`}</p>
 
         <div className="flex flex-col lg:flex-row items-center justify-center max-w-screen-xl mx-auto px-4">
