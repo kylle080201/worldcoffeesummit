@@ -55,9 +55,9 @@ function Speakers2024() {
       role: 'Head of Applications and Solutions',
       company: 'European Space Agency (ESA)',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Nick-Appleyard.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/ESA_logo_2020_Deep.png",
-      iconWidth: 100,
-      iconHeight: 100,
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/ESA_logo_2020_Deep-e1749855679567.png",
+      iconWidth: 80,
+      iconHeight: 80,
       bio: ` `
     },
 
@@ -77,8 +77,8 @@ function Speakers2024() {
       company: 'Melitta Group',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Stefan-Dierks.jpg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/UG-Melitta_logo_mit_space_cmyk.jpg",
-      iconWidth: 60,
-      iconHeight: 60,
+      iconWidth: 100,
+      iconHeight: 100,
       bio: ``
     },
     {
@@ -191,8 +191,8 @@ function Speakers2024() {
       company: 'IDH Investment Management',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Roel-Messie-1.jpg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/IDH-logo-kleur_RGB.jpg",
-      iconWidth: 65,
-      iconHeight: 65,
+      iconWidth: 100,
+      iconHeight: 100,
       bio: ` `
     },
     {
@@ -211,8 +211,8 @@ function Speakers2024() {
       company: 'EY',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Taco-Bosman.jpg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/ernst-young-logo-0-min.png",
-      iconWidth: 50,
-      iconHeight: 50,
+      iconWidth: 100,
+      iconHeight: 100,
       bio: `  `
     },
 
