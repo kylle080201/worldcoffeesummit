@@ -87,7 +87,7 @@ const speakers: Speaker[] = [
     {
       name: 'The Rt. Hon John Gummer, Lord Deben',
       designation: 'Former Chairman',
-      organization: 'UK Climate Change Committee (The CCC)<br>House of Lords',
+      organization: 'UK Climate Change Committee (The CCC) House of Lords',
 
       image: 'https://worldcoffeealliance.com/wp-content/uploads/2023/08/Lord-Deben-Photo-2019-adj-003-scaled-1.jpg',
       logo: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/House_of_Lords_logo_2020.svg.png",
@@ -398,8 +398,8 @@ const speakers: Speaker[] = [
     },
     {
       name: 'Owen Hewlett',
-      designation: 'Chief Technical Officer <br> Technical Council Member',
-      organization: 'Gold Standard <br>SBTi',
+      designation: 'Chief Technical Officer Technical Council Member',
+      organization: '[Gold Standard, SBTi]',
       image: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/A7404215.jpg',
       logo: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/GS_Logo_Secondary.png",
       description: `
@@ -478,7 +478,7 @@ const speakers: Speaker[] = [
     {
       name: 'Sean Edwards',
       designation: 'Chairman <br> Head of Legal',
-      organization: 'International Trade Forfaiting Association (ITFA) <br> Sumitomo Mitsui Banking Corporation(SMBC)',
+      organization: 'International Trade Forfaiting Association (ITFA) Sumitomo Mitsui Banking Corporation(SMBC)',
       image: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/sean-edwards.jpg',
       logo: "https://worldcoffeealliance.com/wp-content/uploads/2024/09/ITFA_Logo_Positive-2-e1727183762852.png",
 
@@ -871,13 +871,13 @@ const settings = {
               }
             }}
           >
-            <div className="flex flex-col w-72 bg-white rounded-lg overflow-hidden shadow-md h-[450px]">
+            <div className="flex flex-col w-72 bg-white rounded-lg overflow-hidden shadow-md h-[550px]">
               {/* Image */}
-              <div className="relative flex-shrink-0 h-1/2">
+              <div className="flex-shrink-0 h-[300px] overflow-hidden">
                 <img
                   src={speaker.image}
                   alt={speaker.name}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                   loading="lazy"
                 />
                 {/* Logo overlay */}
