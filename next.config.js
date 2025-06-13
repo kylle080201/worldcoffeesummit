@@ -13,6 +13,10 @@ const nextConfig = {
       },
       {
         protocol: "https",
+        hostname: "softtechs360.com",
+      },
+      {
+        protocol: "https",
         hostname: "plus.unsplash.com",
       },
       {
