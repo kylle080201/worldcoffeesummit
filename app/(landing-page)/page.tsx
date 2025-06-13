@@ -17,7 +17,7 @@ import Attendees2023 from "../../components/2023Attendees";
 import WhoYoullMeet from "../../components/WhoYoullMeet";
 import WhoIsInTheRoom  from "../../components/WholsInTheRoom";
 import Confirmedspeakers from "../../components/Confirmedspeakers";
-import Speakertest from "../../components/2024Speakerstest";
+
 
 export default function HomePage() {
     return (
@@ -26,7 +26,7 @@ export default function HomePage() {
                 <Overview />
                 <WhoIsInTheRoom />
 
-                <Speakertest/>
+
 
                 <WhoYoullMeet />
 
