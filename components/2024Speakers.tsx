@@ -76,7 +76,7 @@ function Speakers2024() {
       role:"Director Sustainability Strategy",
       company: 'Melitta Group',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Stefan-Dierks.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/UG-Melitta_logo_mit_space_cmyk.jpg",
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/UG-Melitta_logo_mit_space_cmyk-e1749857040905.jpg",
       iconWidth: 100,
       iconHeight: 100,
       bio: ``
@@ -190,8 +190,8 @@ function Speakers2024() {
       role: 'Chief Executive Officer',
       company: 'IDH Investment Management',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Roel-Messie-1.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/IDH-logo-kleur_RGB.jpg",
-      iconWidth: 100,
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/IDH-logo-kleur_RGB-e1749856681561.jpg",
+      iconWidth: 240,
       iconHeight: 100,
       bio: ` `
     },
