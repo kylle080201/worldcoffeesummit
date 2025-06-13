@@ -25,7 +25,7 @@ export default function HomePage() {
             <div>
                 <Overview />
                 <WhoIsInTheRoom />
-                <Speakers2024 />
+
                 <Speakertest/>
 
                 <WhoYoullMeet />

@@ -857,59 +857,54 @@ const settings = {
       </button>
 
       {/* Slider */}
-      <Slider ref={sliderRef} {...settings}>
-        {speakers.map((speaker, index) => (
-          <div
-            key={index}
-            className="px-2 cursor-pointer"
-            onClick={() => setSelectedSpeaker(speaker)}
-            role="button"
-            tabIndex={0}
-            onKeyDown={(e) => {
-              if (e.key === "Enter" || e.key === " ") {
-                setSelectedSpeaker(speaker);
-              }
-            }}
-          >
-            <div className="flex flex-col w-72 bg-white rounded-lg overflow-hidden shadow-md h-[550px]">
-              {/* Image */}
-              <div className="flex-shrink-0 h-[300px] overflow-hidden">
-                <img
-                  src={speaker.image}
-                  alt={speaker.name}
-                  className="w-full h-full object-cover object-top"
-                  loading="lazy"
-                />
-                {/* Logo overlay */}
-                <div className="absolute -bottom-5 right-4 bg-white rounded-lg shadow p-2 flex items-center justify-center">
-                  <img
-                    src={speaker.logo}
-                    alt="Logo"
-                    className="w-16 h-16 object-contain"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
+<Slider ref={sliderRef} {...settings}>
+  {speakers.map((speaker, index) => (
+    <div
+      key={index}
+      className="px-2 cursor-pointer"
+      onClick={() => setSelectedSpeaker(speaker)}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          setSelectedSpeaker(speaker);
+        }
+      }}
+    >
+<div className="flex flex-col w-72 bg-white rounded-lg overflow-hidden shadow-md h-[550px] relative">
+  {/* Image Section */}
+  <div className="h-[300px] relative">
+    <img
+      src={speaker.image}
+      alt={speaker.name}
+      className="w-full h-full object-cover object-top"
+      loading="lazy"
+    />
 
-              {/* Info */}
-<div className="flex flex-col justify-start flex-grow bg-[#4D7C0F] p-4">
-  <h3 className="mt-4 text-lg font-bold text-white">{speaker.name}</h3>
-  <p className="text-white">
-    {speaker.name === "Owen Hewlett" ? (
-      <>
-        Chief Technical Officer, <strong>Gold Standard</strong>; Technical Council Member, <strong>SBTi</strong>
-      </>
-    ) : (
-      speaker.designation
-    )}
-  </p>
-  <p className="text-lg font-bold text-white">{speaker.organization}</p>
+    {/* Floating Logo */}
+    <div className="absolute bottom-0 right-4 translate-y-1/2 z-20 bg-white rounded-xl shadow p-4">
+      <img
+        src={speaker.logo}
+        alt="Logo"
+        className="w-12 h-12 object-contain"
+        loading="lazy"
+      />
+    </div>
+  </div>
+
+  {/* Info Section */}
+  <div className="flex flex-col justify-start flex-grow bg-[#4D7C0F] px-4 pt-12 pb-4 text-white">
+    <h3 className="text-lg font-bold">{speaker.name}</h3>
+    <p className="text-sm">{speaker.designation}</p>
+    <p className="text-sm font-semibold">{speaker.organization}</p>
+  </div>
 </div>
 
-            </div>
-          </div>
-        ))}
-      </Slider>
+
+    </div>
+  ))}
+</Slider>
+
 
 {/* Modal */}
 {selectedSpeaker && (

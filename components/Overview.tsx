@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import React from 'react'
 import KeyThemes from './KeyThemes'
+import Speakers2024 from './2024Speakers'
 
 export default function Overview() {
     return (
@@ -122,7 +123,7 @@ export default function Overview() {
                     </div>
                 </div>
             </div>
-
+                <Speakers2024 />
 
             <KeyThemes />
 <div className="mb-8 w-full flex justify-center">
