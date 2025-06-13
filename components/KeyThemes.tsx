@@ -72,7 +72,7 @@ function KeyThemes() {
   const themesColumn2 = keyThemes.slice(6);
   const router = useRouter()
   return (
-    <div className='w-full px-0 md:px-8 py-12'>
+    <div className='my-12 w-full px-0 md:px-8 py-12' style={{ backgroundColor: '#F3F4F6' }}>
       <div className='mx-auto sm:max-w-7xl'>
         {/* <div className='flex flex-col items-center md:mt-0'>
           <span className='text-red-500 text-4xl font-bold'>EUDR COUNTDOWN</span>
@@ -116,6 +116,13 @@ function KeyThemes() {
           </div>
         </div>
       </div>
+      <div className="mb-8 w-full flex justify-center pt-8">
+  <div  className="font-bold text-white text-3xl bg-lime-700 px-6 py-3 rounded-lg hover:bg-lime-800 cursor-pointer transition duration-300"
+    onClick={() => window.location.href = "/agenda"} // or your desired action
+  >
+    FULL AGENDA
+  </div>
+</div>
       {/* <div className='mt-8 w-full flex'>
         <button
           type="button"
