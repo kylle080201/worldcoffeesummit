@@ -131,17 +131,7 @@ function Speakers2024() {
       iconHeight: 120,
       bio: ``
     },
-    {
-      name: 'Andrea Olivar',
-      role: 'Strategy & Quality Director-Latin America',
-      company: 'Solidaridad Network',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Andrea-Olivar-1.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/Solidaridad.png",
-      iconWidth: 100,
-      iconHeight: 100,
-      bio: `
-      `
-    },
+
         {
       name: 'Owen Hewlett',
       role: 'Chief Technical Officer',
@@ -204,6 +194,17 @@ function Speakers2024() {
       iconWidth: 100,
       iconHeight: 100,
       bio: `  `
+    },
+    {
+      name: 'Andrea Olivar',
+      role: 'Strategy & Quality Director-Latin America',
+      company: 'Solidaridad Network',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Andrea-Olivar-1.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/Solidaridad.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `
+      `
     },
     {
       name: 'Taco Bosman',
