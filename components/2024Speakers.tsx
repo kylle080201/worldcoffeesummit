@@ -101,6 +101,17 @@ function Speakers2024() {
       iconHeight: 120,
       bio: ` `
     },
+
+    {
+      name: 'Nicolas Mounard',
+      role: 'Vice President ESG, Sustainability & Traceability',
+      company: 'Barry Callebaut',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Nicolas-Mounard.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/header-logo-bc.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: ` `
+    },
     {
       name: 'Paul Stewart',
       role: 'Global Coffee Director',
@@ -166,16 +177,6 @@ function Speakers2024() {
       bio: `   `
     },
     {
-      name: 'Patrick Gibson',
-      role: 'EO Senior Climate Lead',
-      company: 'UK Space Agency',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Patrick-Gibson.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/full_transparent.png",
-      iconWidth: 100,
-      iconHeight: 100,
-      bio: ` `
-    },
-    {
       name: 'Roel Messie',
       role: 'Chief Executive Officer',
       company: 'IDH Investment Management',
@@ -185,6 +186,17 @@ function Speakers2024() {
       iconHeight: 100,
       bio: ` `
     },
+    {
+      name: 'Patrick Gibson',
+      role: 'EO Senior Climate Lead',
+      company: 'UK Space Agency',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Patrick-Gibson.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/full_transparent.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: ` `
+    },
+
     {
       name: 'James Chamberlayne',
       role: 'Director, Sustainable Finance Program',
