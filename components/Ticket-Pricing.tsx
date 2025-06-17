@@ -8,10 +8,10 @@ import RegisterCountDown from './RegisterCountDown'
 export const summit = [
     {
         title: "Academics",
-        old_price: 1095,
+        // old_price: 1095,
         item_price: 299,
         description: "Eligible only for professors and full- time Masters, PhDs and post-graduates(including students)",
-        earlyBird: "Book before 8th October 2024 to Save £200.00",
+        // earlyBird: "Save £300 book before 19 July 2025",
         line_items: [
             {
                 price: 'price_1RJ3cYKMWpUKzQVzk2sR6LGo',
@@ -23,13 +23,13 @@ export const summit = [
     },
     {
         title: "NGOs, Co-operatives, Policy Makers",
-        old_price: 1795,
-        item_price: 599,
+        old_price: 1095,
+        item_price: 795,
         description: "Eligible for non-profits and NGOs, farmer-cooperatives, Policy Makers & Government Bodies",
-        earlyBird: "Book before 8th October 2024 to Save £300.00",
+        earlyBird: "Save £300 book before 19 July 2025",
         line_items: [
             {
-                price: 'price_1RJ3crKMWpUKzQVzn1ia1jtp',
+                price: 'price_1RVYU9KMWpUKzQVzqfgjsVie',
                 quantity: 1,
                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
             }
@@ -37,13 +37,13 @@ export const summit = [
     },
     {
         title: "Corporates",
-        old_price: 1995,
-        item_price: 899,
-        description: "Eligible for multinational/ conglomerate companies, F&B & Agri-Commodity Brands, retailers, traders ",
-        earlyBird: "Book before 8th October 2024 to Save £300.00",
+        old_price: 1495,
+        item_price: 995,
+        description: "Eligible for multinational/ conglomerate companies, F&B & Agri-Commodity Brands, retailers, traders",
+        earlyBird: "Save £500 book before 19 July 2025",
         line_items: [
             {
-                price: 'price_1RJ3d6KMWpUKzQVzmvuy3Xfc',
+                price: 'price_1RVYTmKMWpUKzQVzL3RTmtL1',
                 quantity: 1,
                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
             }
@@ -52,12 +52,12 @@ export const summit = [
     {
         title: "Start Ups",
         old_price: 1295,
-        item_price: 699,
+        item_price: 995,
         description: "Eligible only for early-stage innovators, Independent Consultants/ Service Providers",
-        earlyBird: "Book before 8th October 2024 to Save £300.00",
+        earlyBird: "Save £300 book before 19 July 2025",
         line_items: [
             {
-                price: 'price_1RJ3dMKMWpUKzQVz4b6c2UKj',
+                price: 'price_1RVYTaKMWpUKzQVzQTsmgVOv',
                 quantity: 1,
                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
             }
@@ -65,13 +65,13 @@ export const summit = [
     },
     {
         title: "Service Providers",
-        old_price: 1295,
-        item_price: 1099,
+        old_price: 1995,
+        item_price: 1495,
         description: "Eligible for for-profit consultancies, mature start-ups, technology and service providers, including Private Equity Firms and Asset Managers/Brokers, Angel and Venture Capital Investors/ Banks/ Financial Institutions",
-        earlyBird: "Book before 8th October 2024 to Save £300.00",
+        earlyBird: "Save £500 book before 19 July 2025",
         line_items: [
-            {
-                price: 'price_1RJ3e6KMWpUKzQVzMFo1JodF',
+            { 
+                price: 'price_1RVYT2KMWpUKzQVzleFRk7vr',
                 quantity: 1,
                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
             }
@@ -161,15 +161,16 @@ function TicketPricing() {
             <div id="summit" className="flow-root px-6 mx-auto mt-12 rounded-md max-w-7xl">
                 <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
 
-                    <div className='flex px-12 w-full'>
-                        <div className='flex flex-col text-black font-bold w-1/2 justify-center items-center'>
-                            <h1 className='mx-auto text-2xl xl:text-4xl'>PRE-LAUNCH PRICING</h1>
-                            <h1 className='mx-auto text-red-500 xl:text-2xl text-lg'>(LIMITED AVAILABILITY)</h1>
+                    <div className='flex w-full gap-4'>
+                        <div className='flex flex-col text-black font-bold w-1/2 items-center'>
+                            <h1 className='mx-auto text-3xl xl:text-5xl text-lime-700'>GRAB YOUR TICKETS</h1>
+                            <h1 className='mx-auto text-3xl xl:text-5xl'>SUPER EARLY BIRD PRICING</h1>
+                            {/* <h1 className='mx-auto text-red-500 xl:text-2xl text-lg'>(LIMITED AVAILABILITY)</h1> */}
                         </div>
                         <div className='flex flex-col gap-2 w-1/2'>
                             <div className='p-2 bg-red-500 text-white w-max text-2xl xl:text-4xl font-bold px-24 justify-center items-center text-center rounded-xl whitespace-normal line-clamp-2'>
                                 TICKET PRICES INCREASE <br />
-                                AFTER 31 MAY 2025
+                                AFTER 18 JULY 2025
                             </div>
                             <RegisterCountDown />
                         </div>
@@ -182,12 +183,17 @@ function TicketPricing() {
                                         <td className="flex-wrap px-3 py-4 font-semibold text-gray-900 text-lg whitespace-nowrap">{delegate.title}</td>
                                         <td className="flex-wrap px-3 py-4 text-gray-900 text-lg">
                                             {delegate.description}
-                                            <br />
+                                            <div className='text-red-700 font-bold'>
+                                                {delegate.earlyBird ?? delegate.earlyBird}
+                                            </div>
                                         </td>
-                                        <td className="flex-wrap px-3 py-4 text-gray-900 font-bold ">
+                                        <td className="flex-wrap px-3 py-4 text-gray-900 font-bold">
                                             <div className='h-full text-lg w-full'>
+                                                <div className='text-red-700 line-through'>
+                                                    {delegate.old_price ? `£${delegate.old_price}.00` : undefined}
+                                                </div>
                                                 <div>
-                                                    £{delegate.item_price}.00 + 20% VAT
+                                                    £{delegate.item_price}.00
                                                 </div>
                                             </div>
                                         </td>
