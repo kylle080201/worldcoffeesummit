@@ -52,9 +52,10 @@ export const summit = [
     {
         title: "Start Ups",
         old_price: 1295,
-        item_price: 795,
+        item_price: 995,
         description: "Eligible only for early-stage innovators, Independent Consultants/ Service Providers",
-        earlyBird: "Save £500 book before 19 July 2025",
+        earlyBird: "Save £300 book before 19 July 2025",
+
         line_items: [
             {
                 price: 'price_1RVYTaKMWpUKzQVzQTsmgVOv',
