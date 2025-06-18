@@ -119,7 +119,7 @@ export default function Overview() {
                         </ul> */}
 
                         <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
-                            Join us in London to shift from transactional thinking to ecosystem leadership and shape the future of coffee together.
+                            Join us in London to shift from transactional thinking to ecosystem leadership and reimagine the future of coffee and cocoa together.
                         </div>
                     </div>
                 </div>

@@ -21,7 +21,7 @@ function Speakers2024() {
       name: 'H.E. Sheikh Mohammed Belal',
       role: 'Managing Director',
       company: 'Common Fund for Commodities (CFC)',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/H.E.-Sheikh-Mohammed-Belal-1.jpg',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/H.E.-Sheikh-Mohammed-Belal-2.jpg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/cfc_new_logo_v5_large.png",
       iconWidth: 100,
       iconHeight: 100,
