@@ -58,7 +58,7 @@ export const summit = [
 
         line_items: [
             {
-                price: 'price_1RVYTaKMWpUKzQVzQTsmgVOv',
+                price: 'price_1Rb9T2KMWpUKzQVzaQhry4yi',
                 quantity: 1,
                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
             }

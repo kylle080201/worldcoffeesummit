@@ -56,7 +56,7 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
       ticketName = "Corporates"
       break;
 
-    case "price_1RVYTaKMWpUKzQVzQTsmgVOv":
+    case "price_1Rb9T2KMWpUKzQVzaQhry4yi":
       ticketName = "Start Ups"
       break;
 
