@@ -112,6 +112,16 @@ function Speakers2024() {
       iconHeight: 120,
       bio: ` `
     },
+      {
+      name: 'Rachel Vujovic',
+      role: 'Director - International Sustainability',
+      company: 'ALDI SOUTH Group',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Rachel-Vujovic-suqare.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/logo.png",
+      iconWidth: 60,
+      iconHeight: 60,
+      bio:''
+  },
     {
       name: 'Paul Stewart',
       role: 'Global Coffee Director',
