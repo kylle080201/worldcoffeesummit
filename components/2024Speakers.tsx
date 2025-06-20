@@ -118,8 +118,8 @@ function Speakers2024() {
       company: 'ALDI SOUTH Group',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Rachel-Vujovic-suqare.jpg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/logo.png",
-      iconWidth: 120,
-      iconHeight: 120,
+      iconWidth: 60,
+      iconHeight: 60,
       bio:''
   },
     {
