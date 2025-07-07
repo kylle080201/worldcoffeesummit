@@ -152,6 +152,16 @@ function Speakers2024() {
       iconHeight: 120,
       bio: ``
     },
+      {
+      name: 'Cleiton Vargas',
+      role: 'SVP Innovation Americas',
+      company: 'Yara International',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Cleiton-Vargas.jpg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/Knowledge_grows_for_A4.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: ``
+    },
 
         {
       name: 'Owen Hewlett',
@@ -174,6 +184,16 @@ function Speakers2024() {
       iconWidth: 120,
       iconHeight: 120,
       bio: ``
+    },
+        {
+      name: 'Rick van der Kamp',
+      role: 'Global Lead for Markets, Value Chains and Rural Finance',
+      company: 'International Fund for Agriculture Development (IFAD)',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Rick-van-der-Kamp.jpg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/E_g_web.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `   `
     },
 
     {
