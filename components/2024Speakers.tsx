@@ -117,7 +117,7 @@ function Speakers2024() {
       role: 'Director - International Sustainability',
       company: 'ALDI SOUTH Group',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Rachel-Vujovic-suqare.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/logo.png",
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/ALDI-SUD.png",
       iconWidth: 60,
       iconHeight: 60,
       bio:''
