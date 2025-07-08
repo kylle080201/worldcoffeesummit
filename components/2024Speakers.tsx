@@ -51,14 +51,14 @@ function Speakers2024() {
       `
     },
     {
-      name: 'Nick Appleyard',
-      role: 'Head of Applications and Solutions',
-      company: 'European Space Agency (ESA)',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Nick-Appleyard.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/ESA_logo_2020_Deep-e1749855679567.png",
-      iconWidth: 80,
-      iconHeight: 80,
-      bio: ` `
+      name: 'Jean Van Wetter',
+      role: 'CEO',
+      company: 'Enabel',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Jean-Van-Wetter.jpg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/enabel-logo-color.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `      `
     },
 
     {
@@ -140,6 +140,17 @@ function Speakers2024() {
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/The-World-Bank.png",
       iconWidth: 100,
       iconHeight: 100,
+      bio: ` `
+    },
+
+    {
+      name: 'Nick Appleyard',
+      role: 'Head of Applications and Solutions',
+      company: 'European Space Agency (ESA)',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Nick-Appleyard.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/ESA_logo_2020_Deep-e1749855679567.png",
+      iconWidth: 80,
+      iconHeight: 80,
       bio: ` `
     },
     {
