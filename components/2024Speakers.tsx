@@ -113,6 +113,16 @@ function Speakers2024() {
       bio: ` `
     },
       {
+      name: 'Thomas Delbar',
+      role: 'Director of Sustainability – Coffee & Ingredients',
+      company: 'Touton group',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Thomas-Delbar.jpg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/Touton-logo-positif-CMJN-scaled.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: ` `
+    },
+      {
       name: 'Rachel Vujovic',
       role: 'Director - International Sustainability',
       company: 'ALDI SOUTH Group',
