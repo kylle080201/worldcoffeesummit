@@ -117,7 +117,7 @@ function Speakers2024() {
       role: 'Director of Sustainability – Coffee & Ingredients',
       company: 'Touton group',
       imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Thomas-Delbar.jpg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/Touton-logo-positif-CMJN-scaled.png",
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/Touton-logo-transparent-background.png",
       iconWidth: 120,
       iconHeight: 120,
       bio: ` `
