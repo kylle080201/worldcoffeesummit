@@ -204,7 +204,7 @@ function Speakers2024() {
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/World-Economic-Forum.png",
       iconWidth: 120,
       iconHeight: 120,
-      bio: ` `
+      bio: ``
     },
     {
       name: 'Claude Bizimana',
