@@ -196,6 +196,16 @@ function Speakers2024() {
       iconHeight: 120,
       bio: ` `
     },
+     {
+      name: 'Felipe Carazo',
+      role: 'Head of Sustainable Commodities,Tropical Forest Alliance',
+      company: 'World Economic Forum',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Felipe-Carazo.jpeg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/World-Economic-Forum.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: ` `
+    },
     {
       name: 'Claude Bizimana',
       role: 'Chief Executive Officer (CEO)',
