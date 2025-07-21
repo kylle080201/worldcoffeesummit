@@ -9,7 +9,7 @@ const RegisterCountDown = () => {
     const [seconds, setSeconds] = useState("00");
     const [localizedDate, setLocalizedDate] = useState("");
     
-    const target = new Date("2025-07-18T23:59:00");
+    const target = new Date("2025-07-31T23:59:00");
 
     useEffect(() => {
         setLocalizedDate(target.toLocaleDateString(undefined, { 
