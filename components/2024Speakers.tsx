@@ -280,7 +280,7 @@ function Speakers2024() {
       role: 'Director, Sustainable Finance Program',
       company: 'CDP',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/James-Chamberlayne.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/10/pngegg.png",
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/cdp.png",
       iconWidth: 100,
       iconHeight: 100,
       bio: `  `
