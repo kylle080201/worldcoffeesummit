@@ -71,6 +71,17 @@ function Speakers2024() {
       iconHeight: 80,
       bio: ` `
     },
+
+    {
+      name: 'Ruchira Joshi',
+      role: 'Director, Global Coffee & Cocoa Sustainability',
+      company: 'Starbucks',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Ruchira-Joshi.jpeg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/Starbucks.png",
+      iconWidth: 80,
+      iconHeight: 80,
+      bio: ` `
+    },
     {
       name: 'Stefan Dierks',
       role:"Director Sustainability Strategy",
@@ -122,7 +133,8 @@ function Speakers2024() {
       iconHeight: 120,
       bio: ` `
     },
-      {
+
+    {
       name: 'Rachel Vujovic',
       role: 'Director - International Sustainability',
       company: 'ALDI SOUTH Group',
@@ -131,7 +143,30 @@ function Speakers2024() {
       iconWidth: 60,
       iconHeight: 60,
       bio:''
-  },
+    },
+
+    {
+      name: 'Cleiton Vargas',
+      role: 'SVP Innovation Americas',
+      company: 'Yara International',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Cleiton-Vargas.jpg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/Knowledge_grows_for_A4.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: ``
+    },
+
+    {
+      name: 'Toby Behrmann',
+      role: 'Head of London Market & Public Private Partnerships',
+      company: 'AXA Climate',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Toby-Behrmann.webp',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/AXA_Climate_Blue_Horizontal_RVB.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: ``
+    },
+
     {
       name: 'Paul Stewart',
       role: 'Global Coffee Director',
@@ -163,26 +198,8 @@ function Speakers2024() {
       iconHeight: 80,
       bio: ` `
     },
-    {
-      name: 'Toby Behrmann',
-      role: 'Head of London Market & Public Private Partnerships',
-      company: 'AXA Climate',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Toby-Behrmann.webp',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/AXA_Climate_Blue_Horizontal_RVB.png",
-      iconWidth: 120,
-      iconHeight: 120,
-      bio: ``
-    },
-      {
-      name: 'Cleiton Vargas',
-      role: 'SVP Innovation Americas',
-      company: 'Yara International',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Cleiton-Vargas.jpg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/Knowledge_grows_for_A4.png",
-      iconWidth: 120,
-      iconHeight: 120,
-      bio: ``
-    },
+
+
     {
       name: 'Felipe Carazo',
       role: 'Head of Sustainable Commodities,Tropical Forest Alliance',

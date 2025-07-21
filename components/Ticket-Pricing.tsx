@@ -11,7 +11,7 @@ export const summit = [
         // old_price: 1095,
         item_price: 299,
         description: "Eligible only for professors and full- time Masters, PhDs and post-graduates(including students)",
-        // earlyBird: "Save £300 book before 19 July 2025",
+        // earlyBird: "Save £300 book before 01 August 2025",
         line_items: [
             {
                 price: 'price_1RJ3cYKMWpUKzQVzk2sR6LGo',
@@ -26,7 +26,7 @@ export const summit = [
         old_price: 1095,
         item_price: 795,
         description: "Eligible for non-profits and NGOs, farmer-cooperatives, Policy Makers & Government Bodies",
-        earlyBird: "Save £300 book before 19 July 2025",
+        earlyBird: "Save £300 book before 01 August 2025",
         line_items: [
             {
                 price: 'price_1RVYU9KMWpUKzQVzqfgjsVie',
@@ -40,7 +40,7 @@ export const summit = [
         old_price: 1495,
         item_price: 995,
         description: "Eligible for multinational/ conglomerate companies, F&B & Agri-Commodity Brands, retailers, traders",
-        earlyBird: "Save £500 book before 19 July 2025",
+        earlyBird: "Save £500 book before 01 August 2025",
         line_items: [
             {
                 price: 'price_1RVYTmKMWpUKzQVzL3RTmtL1',
@@ -54,7 +54,7 @@ export const summit = [
         old_price: 1295,
         item_price: 995,
         description: "Eligible only for early-stage innovators, Independent Consultants/ Service Providers",
-        earlyBird: "Save £300 book before 19 July 2025",
+        earlyBird: "Save £300 book before 01 August 2025",
 
         line_items: [
             {
@@ -69,7 +69,7 @@ export const summit = [
         old_price: 1995,
         item_price: 1495,
         description: "Eligible for for-profit consultancies, mature start-ups, technology and service providers, including Private Equity Firms and Asset Managers/Brokers, Angel and Venture Capital Investors/ Banks/ Financial Institutions",
-        earlyBird: "Save £500 book before 19 July 2025",
+        earlyBird: "Save £500 book before 01 August 2025",
         line_items: [
             { 
                 price: 'price_1RVYT2KMWpUKzQVzleFRk7vr',
@@ -171,7 +171,7 @@ function TicketPricing() {
                         <div className='flex flex-col gap-2 w-1/2'>
                             <div className='p-2 bg-red-500 text-white w-max text-2xl xl:text-4xl font-bold px-24 justify-center items-center text-center rounded-xl whitespace-normal line-clamp-2'>
                                 TICKET PRICES INCREASE <br />
-                                AFTER 18 JULY 2025
+                                AFTER 31 JULY 2025
                             </div>
                             <RegisterCountDown />
                         </div>
