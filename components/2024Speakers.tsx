@@ -76,7 +76,7 @@ function Speakers2024() {
       name: 'Ruchira Joshi',
       role: 'Director, Global Coffee & Cocoa Sustainability',
       company: 'Starbucks',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Ruchira-Joshi.jpeg',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Ruchira-Joshi-1.jpeg',
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/Starbucks.png",
       iconWidth: 80,
       iconHeight: 80,
