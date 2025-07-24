@@ -167,6 +167,17 @@ function Speakers2024() {
       bio: ``
     },
 
+        {
+      name: 'Carolina Castañeda',
+      role: 'Director – Europe',
+      company: 'National Federation of Coffee Growers of Colombia (FNC)',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Carolina-Castaneda.jpeg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/Logos-FNC_Cereza.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: ``
+    },
+
     {
       name: 'Paul Stewart',
       role: 'Global Coffee Director',
