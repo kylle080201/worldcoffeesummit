@@ -157,6 +157,17 @@ function Speakers2024() {
     },
 
     {
+      name: 'Dr. Flávia De Souza Mendes',
+      role: 'Senior Program Manager of Forest and Land Use',
+      company: 'Planet',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Dr.-Flavia-de-Souza-Mendes.jpeg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/512px-Planet_Labs_logo.svg.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: ``
+    },
+
+    {
       name: 'Toby Behrmann',
       role: 'Head of London Market & Public Private Partnerships',
       company: 'AXA Climate',
@@ -205,6 +216,17 @@ function Speakers2024() {
       company: 'European Space Agency (ESA)',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Nick-Appleyard.jpg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/ESA_logo_2020_Deep-e1749855679567.png",
+      iconWidth: 80,
+      iconHeight: 80,
+      bio: ` `
+    },
+
+    {
+      name: 'Frank de Morsier',
+      role: 'Co-Founder and COO',
+      company: 'Picterra',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Frank-de-Morsier.png',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/Picterra.png",
       iconWidth: 80,
       iconHeight: 80,
       bio: ` `
