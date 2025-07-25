@@ -11,6 +11,7 @@ export const summit = [
         // old_price: 1095,
         item_price: 299,
         description: "Eligible only for professors and full- time Masters, PhDs and post-graduates(including students)",
+        limited: "(Limited Availability)",
         // earlyBird: "Save £300 book before 01 August 2025",
         line_items: [
             {
@@ -54,6 +55,7 @@ export const summit = [
         old_price: 1295,
         item_price: 995,
         description: "Eligible only for early-stage innovators, Independent Consultants/ Service Providers",
+         limited: "(Limited Availability)",
         earlyBird: "Save £300 book before 01 August 2025",
 
         line_items: [
@@ -181,7 +183,7 @@ function TicketPricing() {
                             <tbody className="bg-white">
                                 {summit.map((delegate) => (
                                     <tr key={delegate.title} className="odd:bg-gray-100 h-full">
-                                        <td className="flex-wrap px-3 py-4 font-semibold text-gray-900 text-lg whitespace-nowrap">{delegate.title}</td>
+                                        <td className="flex-wrap px-3 py-4 font-semibold text-gray-900 text-lg whitespace-nowrap">{delegate.title} <div className='text-red-700 font-bold'>{delegate.limited ?? delegate.limited}</div></td>
                                         <td className="flex-wrap px-3 py-4 text-gray-900 text-lg">
                                             {delegate.description}
                                             <div className='text-red-700 font-bold'>
