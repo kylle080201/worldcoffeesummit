@@ -266,6 +266,17 @@ function Speakers2024() {
       iconHeight: 120,
       bio: ` `
     },
+
+     {
+      name: 'Marco Albani ',
+      role: 'Co-Founder, co-CEO and President',
+      company: 'Chloris Geospatial',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/image-26-scaled.jpg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/image-25.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: ` `
+    },
  
     {
       name: 'Claude Bizimana',
