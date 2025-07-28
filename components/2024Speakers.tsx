@@ -134,6 +134,17 @@ function Speakers2024() {
       bio: ` `
     },
 
+          {
+      name: 'Piet van Asten',
+      role: 'Head of Sustainable Production Systems',
+      company: 'Olam Food Ingredients (ofi)',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/image-21.jpg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/image-22.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: ` `
+    },
+
     {
       name: 'Rachel Vujovic',
       role: 'Director - International Sustainability',
