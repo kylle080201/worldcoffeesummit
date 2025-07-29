@@ -162,8 +162,8 @@ function Speakers2024() {
       company: 'UCC Europe',
       imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/image-27.jpg',
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/image-28.png",
-      iconWidth: 60,
-      iconHeight: 60,
+      iconWidth: 120,
+      iconHeight: 120,
       bio:''
     },
 
