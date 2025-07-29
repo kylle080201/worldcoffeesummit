@@ -157,6 +157,17 @@ function Speakers2024() {
     },
 
     {
+      name: 'Malcolm Hett',
+      role: 'Director of Sustainability',
+      company: 'UCC Europe',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/image-27.jpg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/image-28.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio:''
+    },
+
+    {
       name: 'Cleiton Vargas',
       role: 'SVP Innovation Americas',
       company: 'Yara International',
