@@ -18,29 +18,39 @@ export default function Partners() {
     const silverSponsors = [
         {
             href: '',
-            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/agmatix_logo_New_RGB-Vertical_1.png',
-            className: 'w-[14rem] p-2 mx-auto'
+            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Planet.png',
+            className: 'w-[16rem] p-2 mx-auto'
+        },
+        {
+            href: '',
+            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Picterra-1.png',
+            className: 'w-[16rem] p-2 mx-auto'
         }
     ]
 
     const bronzeSponsors = [
         {
             href: '',
-            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/06/Logo-Koltiva-header.webp',
-            className: 'w-[16rem] p-2 mx-auto'
+            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Chloris-Geospatial.png',
+            className: 'w-[10rem] p-2 mx-auto'
         }
     ]
 
     const coSponsors = [
         {
             href: '',
-            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/image_regenagri_logo_full__002_.png',
-            className: 'w-[22rem] p-2 mx-auto rounded-md'
+            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Preferred_by_Nature-scaled.png',
+            className: 'w-[16rem] p-2 mx-auto rounded-md'
         },
         {
             href: '',
-            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/NAEB-logo.jpg',
-            className: 'w-[11rem] p-2 mx-auto rounded-md'
+            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Okala.png',
+            className: 'w-[16rem] p-2 mx-auto rounded-md'
+        },
+        {
+            href: '',
+            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/FoodChain-ID.webp',
+            className: 'w-[16rem] p-2 mx-auto rounded-md'
         },
     ]
 
@@ -55,24 +65,20 @@ export default function Partners() {
     const mediaPartners = [
         {
             href: '',
-            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2021/02/ROAST-LOGO-MEDIA-PARTNER.jpg',
-            className: 'w-[12rem] p-2 mx-auto'
+            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Pefect-Daily-Grind-scaled.png',
+            className: 'w-[16rem] p-2 mx-auto'
         },
         {
             href: '',
-            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/Daily-Coffee-News_Logo.png',
-            className: 'w-[14rem] p-2 mx-auto'
+            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Daily-Coffee-News.png',
+            className: 'w-[16rem] p-2 mx-auto'
         },
         {
             href: '',
-            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/perfect-daily-grind.png',
-            className: 'w-[12rem] p-2 mx-auto'
+            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Comunicaffe.png',
+            className: 'w-[16rem] p-2 mx-auto'
         },
-        {
-            href: '',
-            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/10/Comunicaffe_Logo_EN_Retina_2023.png',
-            className: 'w-[12rem] p-2 mx-auto'
-        },
+
     ]
 
     const crossIndustryPartners = [
@@ -116,7 +122,7 @@ export default function Partners() {
                         <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">Partners</p>
                     </div>
 
-                    <div className="max-w-2xl mx-auto text-center mt-8">
+                    {/* <div className="max-w-2xl mx-auto text-center mt-8">
                         <div className="inline-flex items-center justify-center w-full">
                             <hr className="w-80 h-px bg-gray-400 border-0" />
                             <span className="absolute px-3 text-lg sm:text-2xl tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Gold Sponsor</span>
@@ -136,15 +142,15 @@ export default function Partners() {
                                     </img>
                                 </div>
                         ))}
-                    </div>
+                    </div> */}
 
                     <div className="max-w-2xl mx-auto text-center mt-12">
                         <div className="inline-flex items-center justify-center w-full">
                             <hr className="w-80 h-px bg-gray-400 border-0" />
-                            <span className="absolute px-3 text-lg sm:text-2xl tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Silver Sponsor</span>
+                            <span className="absolute px-3 text-lg sm:text-2xl tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Silver Sponsors</span>
                         </div>
                     </div>
-                    <div className='grid items-center justify-center grid-cols-1 gap-4 mx-auto sm:gap-12 sm:flex-row sm:max-w-7x mt-6'>
+                    <div className='flex flex-wrap flex-col items-center justify-center gap-4 mx-auto sm:flex-row sm:max-w-7xl mt-6'>
                         {silverSponsors.map((sponsor) => (
                             sponsor.href ?
                                 <Link key={sponsor.href} href={sponsor.href} target='_blank' rel='noreferer'>
@@ -185,7 +191,7 @@ export default function Partners() {
                     <div className="max-w-2xl mx-auto text-center mt-12">
                         <div className="inline-flex items-center justify-center w-full">
                             <hr className="w-80 h-px bg-gray-400 border-0" />
-                            <span className="absolute px-3 text-lg sm:text-2xl tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Co-Sponsor</span>
+                            <span className="absolute px-3 text-lg sm:text-2xl tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Exhibitors</span>
                         </div>
                     </div>
                     <div className='flex flex-wrap flex-col items-center justify-center gap-4 mx-auto sm:flex-row sm:max-w-7xl mt-6'>
@@ -204,7 +210,7 @@ export default function Partners() {
                         ))}
                     </div>
 
-                    <div className="max-w-2xl mx-auto text-center mt-12">
+                    {/* <div className="max-w-2xl mx-auto text-center mt-12">
                         <div className="inline-flex items-center justify-center w-full">
                             <hr className="w-80 h-px bg-gray-400 border-0" />
                             <span className="absolute px-3 text-lg sm:text-2xl tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Sustainable Coffee Partner</span>
@@ -246,7 +252,8 @@ export default function Partners() {
                                     </img>
                                 </div>
                         ))}
-                    </div>
+                    </div> */}
+
                 </div>
                 <div className='mb-20'>
                     <div className="inline-flex items-center justify-center w-full">

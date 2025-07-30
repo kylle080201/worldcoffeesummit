@@ -167,7 +167,7 @@ function TicketPricing() {
                     <div className='flex w-full gap-4'>
                         <div className='flex flex-col text-black font-bold w-1/2 items-center'>
                             <h1 className='mx-auto text-3xl xl:text-5xl text-lime-700'>GRAB YOUR TICKETS</h1>
-                            <h1 className='mx-auto text-3xl xl:text-5xl'>SUPER EARLY BIRD PRICING</h1>
+                            <h1 className='mx-auto text-3xl xl:text-5xl'>TO WCIS25</h1>
                             {/* <h1 className='mx-auto text-red-500 xl:text-2xl text-lg'>(LIMITED AVAILABILITY)</h1> */}
                         </div>
                         <div className='flex flex-col gap-2 w-1/2'>
