@@ -19,12 +19,12 @@ export default function Partners() {
         {
             href: '',
             imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Planet.png',
-            className: 'w-[11rem] p-2 mx-auto'
+            className: 'w-[16rem] p-2 mx-auto'
         },
         {
             href: '',
             imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Picterra-1.png',
-            className: 'w-[11rem] p-2 mx-auto'
+            className: 'w-[16rem] p-2 mx-auto'
         }
     ]
 
@@ -32,7 +32,7 @@ export default function Partners() {
         {
             href: '',
             imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Chloris-Geospatial.png',
-            className: 'w-[11rem] p-2 mx-auto'
+            className: 'w-[8rem] p-2 mx-auto'
         }
     ]
 
@@ -40,17 +40,17 @@ export default function Partners() {
         {
             href: '',
             imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Preferred_by_Nature-scaled.png',
-            className: 'w-[11rem] p-2 mx-auto rounded-md'
+            className: 'w-[16rem] p-2 mx-auto rounded-md'
         },
         {
             href: '',
             imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Okala.png',
-            className: 'w-[11rem] p-2 mx-auto rounded-md'
+            className: 'w-[16rem] p-2 mx-auto rounded-md'
         },
         {
             href: '',
             imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/FoodChain-ID.webp',
-            className: 'w-[11rem] p-2 mx-auto rounded-md'
+            className: 'w-[16rem] p-2 mx-auto rounded-md'
         },
     ]
 
@@ -66,17 +66,17 @@ export default function Partners() {
         {
             href: '',
             imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Pefect-Daily-Grind-scaled.png',
-            className: 'w-[12rem] p-2 mx-auto'
+            className: 'w-[16rem] p-2 mx-auto'
         },
         {
             href: '',
             imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Daily-Coffee-News.png',
-            className: 'w-[14rem] p-2 mx-auto'
+            className: 'w-[16rem] p-2 mx-auto'
         },
         {
             href: '',
             imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Comunicaffe.png',
-            className: 'w-[12rem] p-2 mx-auto'
+            className: 'w-[16rem] p-2 mx-auto'
         },
 
     ]
@@ -147,7 +147,7 @@ export default function Partners() {
                     <div className="max-w-2xl mx-auto text-center mt-12">
                         <div className="inline-flex items-center justify-center w-full">
                             <hr className="w-80 h-px bg-gray-400 border-0" />
-                            <span className="absolute px-3 text-lg sm:text-2xl tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Silver Sponsor</span>
+                            <span className="absolute px-3 text-lg sm:text-2xl tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Silver Sponsors</span>
                         </div>
                     </div>
                     <div className='flex flex-wrap flex-col items-center justify-center gap-4 mx-auto sm:flex-row sm:max-w-7xl mt-6'>
@@ -191,7 +191,7 @@ export default function Partners() {
                     <div className="max-w-2xl mx-auto text-center mt-12">
                         <div className="inline-flex items-center justify-center w-full">
                             <hr className="w-80 h-px bg-gray-400 border-0" />
-                            <span className="absolute px-3 text-lg sm:text-2xl tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Co-Sponsor</span>
+                            <span className="absolute px-3 text-lg sm:text-2xl tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Co-Sponsors</span>
                         </div>
                     </div>
                     <div className='flex flex-wrap flex-col items-center justify-center gap-4 mx-auto sm:flex-row sm:max-w-7xl mt-6'>
@@ -253,7 +253,7 @@ export default function Partners() {
                                 </div>
                         ))}
                     </div> */}
-                    
+
                 </div>
                 <div className='mb-20'>
                     <div className="inline-flex items-center justify-center w-full">
