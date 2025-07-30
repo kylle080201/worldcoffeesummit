@@ -32,7 +32,7 @@ export default function Partners() {
         {
             href: '',
             imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Chloris-Geospatial.png',
-            className: 'w-[8rem] p-2 mx-auto'
+            className: 'w-[9rem] p-2 mx-auto'
         }
     ]
 
