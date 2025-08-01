@@ -173,7 +173,7 @@ function TicketPricing() {
                         <div className='flex flex-col gap-2 w-1/2'>
                             <div className='p-2 bg-red-500 text-white w-max text-2xl xl:text-4xl font-bold px-24 justify-center items-center text-center rounded-xl whitespace-normal line-clamp-2'>
                                 TICKET PRICES INCREASE <br />
-                                AFTER 30 August 2025
+                                AFTER 29 August 2025
                             </div>
                             <RegisterCountDown />
                         </div>
