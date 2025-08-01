@@ -27,7 +27,7 @@ export const summit = [
         old_price: 1095,
         item_price: 895,
         description: "Eligible for non-profits and NGOs, farmer-cooperatives, Policy Makers & Government Bodies",
-        earlyBird: "Save £300 book before 01 August 2025",
+        earlyBird: "Save £200 book before 30 August 2025",
         line_items: [
             {
                 price: 'price_1Rr80rKMWpUKzQVz5TLvKOvJ',
@@ -41,7 +41,7 @@ export const summit = [
         old_price: 1495,
         item_price: 1095,
         description: "Eligible for multinational/ conglomerate companies, F&B & Agri-Commodity Brands, retailers, traders",
-        earlyBird: "Save £500 book before 01 August 2025",
+        earlyBird: "Save £400 book before 30 August 2025",
         line_items: [
             {
                 price: 'price_1Rr81dKMWpUKzQVzBqtbsbxH',
@@ -56,7 +56,7 @@ export const summit = [
         item_price: 995,
         description: "Eligible only for early-stage innovators, Independent Consultants/ Service Providers",
          limited: "(Limited Availability)",
-        earlyBird: "Save £300 book before 01 August 2025",
+        earlyBird: "Save £300 book before 30 August 2025",
 
         line_items: [
             {
@@ -71,7 +71,7 @@ export const summit = [
         old_price: 1995,
         item_price: 1695,
         description: "Eligible for for-profit consultancies, mature start-ups, technology and service providers, including Private Equity Firms and Asset Managers/Brokers, Angel and Venture Capital Investors/ Banks/ Financial Institutions",
-        earlyBird: "Save £500 book before 01 August 2025",
+        earlyBird: "Save £300 book before 30 August 2025",
         line_items: [
             { 
                 price: 'price_1Rr82DKMWpUKzQVz3mGm7mS2',
@@ -173,7 +173,7 @@ function TicketPricing() {
                         <div className='flex flex-col gap-2 w-1/2'>
                             <div className='p-2 bg-red-500 text-white w-max text-2xl xl:text-4xl font-bold px-24 justify-center items-center text-center rounded-xl whitespace-normal line-clamp-2'>
                                 TICKET PRICES INCREASE <br />
-                                AFTER 31 JULY 2025
+                                AFTER 29 AUGUST 2025
                             </div>
                             <RegisterCountDown />
                         </div>
