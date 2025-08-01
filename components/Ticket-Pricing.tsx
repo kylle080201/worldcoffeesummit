@@ -25,12 +25,12 @@ export const summit = [
     {
         title: "NGOs, Co-operatives, Policy Makers",
         old_price: 1095,
-        item_price: 795,
+        item_price: 895,
         description: "Eligible for non-profits and NGOs, farmer-cooperatives, Policy Makers & Government Bodies",
         earlyBird: "Save £300 book before 01 August 2025",
         line_items: [
             {
-                price: 'price_1RVYU9KMWpUKzQVzqfgjsVie',
+                price: 'price_1Rr80rKMWpUKzQVz5TLvKOvJ',
                 quantity: 1,
                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
             }
@@ -39,12 +39,12 @@ export const summit = [
     {
         title: "Corporates",
         old_price: 1495,
-        item_price: 995,
+        item_price: 1095,
         description: "Eligible for multinational/ conglomerate companies, F&B & Agri-Commodity Brands, retailers, traders",
         earlyBird: "Save £500 book before 01 August 2025",
         line_items: [
             {
-                price: 'price_1RVYTmKMWpUKzQVzL3RTmtL1',
+                price: 'price_1Rr81dKMWpUKzQVzBqtbsbxH',
                 quantity: 1,
                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
             }
@@ -60,7 +60,7 @@ export const summit = [
 
         line_items: [
             {
-                price: 'price_1Rb9T2KMWpUKzQVzaQhry4yi',
+                price: 'price_1Rr82DKMWpUKzQVz3mGm7mS2',
                 quantity: 1,
                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
             }
@@ -69,7 +69,7 @@ export const summit = [
     {
         title: "Service Providers",
         old_price: 1995,
-        item_price: 1495,
+        item_price: 1695,
         description: "Eligible for for-profit consultancies, mature start-ups, technology and service providers, including Private Equity Firms and Asset Managers/Brokers, Angel and Venture Capital Investors/ Banks/ Financial Institutions",
         earlyBird: "Save £500 book before 01 August 2025",
         line_items: [
