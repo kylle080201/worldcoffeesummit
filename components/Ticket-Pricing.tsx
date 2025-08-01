@@ -71,7 +71,7 @@ export const summit = [
         old_price: 1995,
         item_price: 1695,
         description: "Eligible for for-profit consultancies, mature start-ups, technology and service providers, including Private Equity Firms and Asset Managers/Brokers, Angel and Venture Capital Investors/ Banks/ Financial Institutions",
-        earlyBird: "Save £200 book before 30 August 2025",
+        earlyBird: "Save £300 book before 30 August 2025",
         line_items: [
             { 
                 price: 'price_1Rr82DKMWpUKzQVz3mGm7mS2',
