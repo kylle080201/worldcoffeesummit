@@ -74,7 +74,7 @@ export const summit = [
         earlyBird: "Save £500 book before 01 August 2025",
         line_items: [
             { 
-                price: 'price_1RVYT2KMWpUKzQVzleFRk7vr',
+                price: 'price_1Rr82DKMWpUKzQVz3mGm7mS2',
                 quantity: 1,
                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
             }
