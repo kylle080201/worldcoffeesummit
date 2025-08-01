@@ -60,7 +60,7 @@ export const summit = [
 
         line_items: [
             {
-                price: 'price_1Rr82DKMWpUKzQVz3mGm7mS2',
+                price: 'price_1Rb9T2KMWpUKzQVzaQhry4yi',
                 quantity: 1,
                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
             }
@@ -74,7 +74,7 @@ export const summit = [
         earlyBird: "Save £500 book before 01 August 2025",
         line_items: [
             { 
-                price: 'price_1RVYT2KMWpUKzQVzleFRk7vr',
+                price: 'price_1Rr82DKMWpUKzQVz3mGm7mS2',
                 quantity: 1,
                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
             }
@@ -164,24 +164,37 @@ function TicketPricing() {
             <div id="summit" className="flow-root px-6 mx-auto mt-12 rounded-md max-w-7xl">
                 <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
 
-                    
+                    <div className='flex w-full gap-4'>
+                        <div className='flex flex-col text-black font-bold w-1/2 items-center'>
+                            <h1 className='mx-auto text-3xl xl:text-5xl text-lime-700'>GRAB YOUR TICKETS</h1>
+                            <h1 className='mx-auto text-3xl xl:text-5xl'>TO WCIS25</h1>
+                            {/* <h1 className='mx-auto text-red-500 xl:text-2xl text-lg'>(LIMITED AVAILABILITY)</h1> */}
+                        </div>
+                        <div className='flex flex-col gap-2 w-1/2'>
+                            <div className='p-2 bg-red-500 text-white w-max text-2xl xl:text-4xl font-bold px-24 justify-center items-center text-center rounded-xl whitespace-normal line-clamp-2'>
+                                TICKET PRICES INCREASE <br />
+                                AFTER 31 JULY 2025
+                            </div>
+                            <RegisterCountDown />
+                        </div>
+                    </div>
                     <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8 ">
                         <table className="min-w-full divide-y divide-gray-300 mt-12">
                             <tbody className="bg-white">
                                 {summit.map((delegate) => (
                                     <tr key={delegate.title} className="odd:bg-gray-100 h-full">
-                                        <td className="flex-wrap px-3 py-4 font-semibold text-gray-900 text-lg whitespace-nowrap">{delegate.title}</td>
+                                        <td className="flex-wrap px-3 py-4 font-semibold text-gray-900 text-lg whitespace-nowrap">{delegate.title} <div className='text-red-700 font-bold'>{delegate.limited ?? delegate.limited}</div></td>
                                         <td className="flex-wrap px-3 py-4 text-gray-900 text-lg">
                                             {delegate.description}
-                                            {/* <div className='text-red-700 font-bold'>
+                                            <div className='text-red-700 font-bold'>
                                                 {delegate.earlyBird ?? delegate.earlyBird}
-                                            </div> */}
+                                            </div>
                                         </td>
                                         <td className="flex-wrap px-3 py-4 text-gray-900 font-bold">
                                             <div className='h-full text-lg w-full'>
-                                                {/* <div className='text-red-700 line-through'>
+                                                <div className='text-red-700 line-through'>
                                                     {delegate.old_price ? `£${delegate.old_price}.00` : undefined}
-                                                </div> */}
+                                                </div>
                                                 <div>
                                                     £{delegate.item_price}.00
                                                 </div>
