@@ -180,9 +180,9 @@ function Speakers2024() {
 
     {
       name: 'Dr. Flávia De Souza Mendes',
-      role: 'Senior Program Manager of Forest and Land Use',
+      role: 'Senior Program Manager, Forest & Land Use',
       company: 'Planet',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Dr.-Flavia-de-Souza-Mendes.jpeg',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/Dr.-Flavia-de-Souza-Mendes-1.jpeg',
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/512px-Planet_Labs_logo.svg.png",
       iconWidth: 120,
       iconHeight: 120,
