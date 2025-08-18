@@ -222,6 +222,17 @@ function Speakers2024() {
       bio: ` `
     },
     {
+      name: 'Raymond Katta',
+      role: 'Executive Chairman',
+      company: 'Produce Monitoring Board (PMB), Sierra Leone',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/Raymond-Katta.jpeg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/08/PMB-Logo.png",
+      iconWidth: 80,
+      iconHeight: 80,
+      bio: ` `
+    },
+
+    {
       name: 'Ashwini Sebastian',
       role: 'Senior Economist',
       company: 'The World Bank ',
