@@ -180,9 +180,9 @@ function Speakers2024() {
 
     {
       name: 'Dr. Flávia De Souza Mendes',
-      role: 'Senior Program Manager of Forest and Land Use',
+      role: 'Senior Program Manager, Forest & Land Use',
       company: 'Planet',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Dr.-Flavia-de-Souza-Mendes.jpeg',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/Dr.-Flavia-de-Souza-Mendes-1.jpeg',
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/512px-Planet_Labs_logo.svg.png",
       iconWidth: 120,
       iconHeight: 120,
@@ -195,6 +195,17 @@ function Speakers2024() {
       company: 'AXA Climate',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Toby-Behrmann.webp',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/AXA_Climate_Blue_Horizontal_RVB.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: ``
+    },
+
+    {
+      name: 'Tzutzuy Ramirez',
+      role: 'Head of Climate and Nature',
+      company: 'Syngenta Group',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/Tzutzuy-Ramirez.jpeg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/08/Syngenta-Logo-RGB-no-R-mark.png",
       iconWidth: 120,
       iconHeight: 120,
       bio: ``
@@ -221,6 +232,18 @@ function Speakers2024() {
       iconHeight: 80,
       bio: ` `
     },
+
+    {
+      name: 'Raymond Katta',
+      role: 'Executive Chairman',
+      company: 'Produce Monitoring Board (PMB), Sierra Leone',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/Raymond-Katta.jpeg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/08/PMB-Logo.png",
+      iconWidth: 80,
+      iconHeight: 80,
+      bio: ` `
+    },
+
     {
       name: 'Ashwini Sebastian',
       role: 'Senior Economist',
