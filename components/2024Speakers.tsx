@@ -200,6 +200,17 @@ function Speakers2024() {
       bio: ``
     },
 
+    {
+      name: 'Tzutzuy Ramirez',
+      role: 'Head of Climate and Nature',
+      company: 'Syngenta Group',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/Tzutzuy-Ramirez.jpeg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/08/Syngenta-Logo-RGB-no-R-mark.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: ``
+    },
+
         {
       name: 'Carolina Castañeda',
       role: 'Director – Europe',
@@ -221,6 +232,7 @@ function Speakers2024() {
       iconHeight: 80,
       bio: ` `
     },
+
     {
       name: 'Raymond Katta',
       role: 'Executive Chairman',
