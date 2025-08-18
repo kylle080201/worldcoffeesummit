@@ -35,10 +35,11 @@ export default function Venue() {
                                 className='py-2 border-lime-700 hover:border-b-2'
                             >
                                 <div className='rounded-md flex bg-lime-700  px-3.5 py-2.5 text-lg font-semibold text-white shadow-sm '>
-                                    Accomodation
+                                    Suggested Hotels
                                 </div>
                                 <ArrowLongRightIcon className="self-center mx-auto mt-2 w-7 h-7" aria-hidden="true" />
                             </Link>
+                            <p><b>Note:</b>The suggested hotels are for reference only. You don’t need to book through this link — feel free to reserve directly with hotels or use trusted sites like Booking.com or Expedia.</p>
                         </div>
                     </div>
                 </div>
