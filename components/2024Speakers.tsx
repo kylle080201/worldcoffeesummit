@@ -315,7 +315,7 @@ function Speakers2024() {
     {
       name: 'Mauricio Castro Schmitz',
       role: 'Regenerative Agriculture Director ',
-      company: 'The Nature Conservanc',
+      company: 'The Nature Conservancy',
       imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/Mauricio-Castro-Schmitz-scaled.jpg',
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/08/tnc-logo-primary-registered-dark-text.svg",
       iconWidth: 120,
