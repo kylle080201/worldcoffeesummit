@@ -136,7 +136,7 @@ function Speakers2024() {
 
           {
       name: 'Piet van Asten',
-      role: 'Head of Sustainable Production Systems',
+      role: 'SVP - Head Sustainable Production Systems',
       company: 'Olam Food Ingredients (ofi)',
       imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/image-21.jpg',
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/image-22.png",
@@ -221,7 +221,26 @@ function Speakers2024() {
       iconHeight: 120,
       bio: ``
     },
-
+    {
+      name: 'Claude Bizimana',
+      role: 'Chief Executive Officer (CEO)',
+      company: 'National Agricultural Export Development Board (NAEB), Rwanda',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Claude-Bizimana.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/NAEB-logo.jpg",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: ``
+    },
+{
+      name: 'Raymond Katta',
+      role: 'Executive Chairman',
+      company: 'Produce Monitoring Board (PMB), Sierra Leone',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/Raymond-Katta.jpeg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/08/PMB-Logo.png",
+      iconWidth: 80,
+      iconHeight: 80,
+      bio: ` `
+    },
     {
       name: 'Paul Stewart',
       role: 'Global Coffee Director',
@@ -233,16 +252,7 @@ function Speakers2024() {
       bio: ` `
     },
 
-    {
-      name: 'Raymond Katta',
-      role: 'Executive Chairman',
-      company: 'Produce Monitoring Board (PMB), Sierra Leone',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/Raymond-Katta.jpeg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/08/PMB-Logo.png",
-      iconWidth: 80,
-      iconHeight: 80,
-      bio: ` `
-    },
+    
 
     {
       name: 'Ashwini Sebastian',
@@ -311,17 +321,19 @@ function Speakers2024() {
       iconHeight: 120,
       bio: ` `
     },
- 
+
     {
-      name: 'Claude Bizimana',
-      role: 'Chief Executive Officer (CEO)',
-      company: 'National Agricultural Export Development Board (NAEB), Rwanda',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Claude-Bizimana.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/NAEB-logo.jpg",
+      name: 'Mauricio Castro Schmitz',
+      role: 'Regenerative Agriculture Director ',
+      company: 'The Nature Conservancy',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/Mauricio-Castro-Schmitz-scaled.jpg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/08/tnc-logo-primary-registered-dark-text.svg",
       iconWidth: 120,
       iconHeight: 120,
-      bio: ``
+      bio: ` `
     },
+ 
+    
         {
       name: 'Rick van der Kamp',
       role: 'Global Lead for Markets, Value Chains and Rural Finance',
