@@ -136,7 +136,7 @@ function Speakers2024() {
 
           {
       name: 'Piet van Asten',
-      role: 'Head of Sustainable Production Systems',
+      role: 'SVP - Head Sustainable Production Systems',
       company: 'Olam Food Ingredients (ofi)',
       imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/image-21.jpg',
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/image-22.png",
@@ -307,6 +307,17 @@ function Speakers2024() {
       company: 'Chloris Geospatial',
       imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/image-26-scaled.jpg',
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/image-25.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: ` `
+    },
+
+    {
+      name: 'Mauricio Castro Schmitz ',
+      role: 'Regenerative Agriculture Director ',
+      company: 'The Nature Conservanc',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/Mauricio-Castro-Schmitz-scaled.jpg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/08/tnc-logo-primary-registered-dark-text.svg",
       iconWidth: 120,
       iconHeight: 120,
       bio: ` `
