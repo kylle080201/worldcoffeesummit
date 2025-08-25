@@ -255,7 +255,7 @@ function Speakers2024() {
     
 
     {
-      name: 'Ashwini Sebastian',
+      name: 'Ashwini sebastian',
       role: 'Senior Economist',
       company: 'The World Bank ',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Ashwini-Sebastian.webp',
