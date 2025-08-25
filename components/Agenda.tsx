@@ -188,8 +188,7 @@ function Agenda() {
                     </div>
                     <div className='mt-4 px-2 max-w-5xl'>
                         <h3 className=''>
-                            <span className='italic'>Unlocking the potential of regenerative agriculture requires more than pilot projects—it demands </span>, <span className='font-bold'>systemic redesign, risk transfer innovation, </span>
-                            <span className='italic'>and</span> <span className='font-bold'>bold investment strategies.</span>  
+                            <span className='italic'>Unlocking the potential of regenerative agriculture requires more than pilot projects—it demands systemic redesign, risk transfer innovation, bold investment strategies.</span>  
                         </h3>
                     </div>
                 </div>
