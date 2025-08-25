@@ -160,7 +160,7 @@ function Speakers2024() {
       name: 'Malcolm Hett',
       role: 'Director of Sustainability',
       company: 'UCC Europe',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/image-27.jpg',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/image-30.jpg',
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/image-28.png",
       iconWidth: 120,
       iconHeight: 120,
@@ -242,10 +242,10 @@ function Speakers2024() {
       bio: ` `
     },
     {
-      name: 'Paul Stewart',
-      role: 'Global Coffee Director',
+      name: 'Myriam Sainz',
+      role: 'Senior Director Strategic Initiatives',
       company: 'TechnoServe',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Paul-Stewart-headshot-1.jpg',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/image-31.jpg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/ENG_TNSLogoCMYK_Horz_TaglineTM_Color.png",
       iconWidth: 80,
       iconHeight: 80,
