@@ -117,7 +117,7 @@ function Agenda() {
                             11:30
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                           PANEL: DIGITALIZING COFFEE & COCOA SUPPLY CHAINS: SUSTAINABILITY, INNOVATION, AND CONSUMER-DRIVEN TRANSFORMATION
+                           PANEL: DIGITALISING COFFEE & COCOA SUPPLY CHAINS: SUSTAINABILITY, INNOVATION, AND CONSUMER-DRIVEN TRANSFORMATION
                         </div>
                     </div>
                     <div className='mt-4 px-2 max-w-5xl'>
@@ -150,7 +150,7 @@ function Agenda() {
                     </div>
                     <div className='mt-4 px-2 max-w-5xl'>
                         <h3 className=''>
-                            <span className='italic'>Optimizing Ecosystems for Productivity and Climate Resilience. Discover how digital intelligence is enabling hyper-personalized farming, real-time risk reduction, and planetary resilience.</span>
+                            <span className='italic'>Optimising Ecosystems for Productivity and Climate Resilience. Discover how digital intelligence is enabling hyper-personalized farming, real-time risk reduction, and planetary resilience.</span>
                         </h3>
                     </div>
                 </div>
@@ -439,7 +439,7 @@ function Agenda() {
                             14:50
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                            GLOBAL INVESTOR FORUM: BUILDING THE BUSINESS CASE FOR SUSTAINABILITY AND REGENERATION 
+                            GLOBAL INVESTORS FORUM: BUILDING THE BUSINESS CASE FOR SUSTAINABILITY AND REGENERATION 
                         </div>
                     </div>
                     <div className='mt-4 px-2 max-w-3xl'>
