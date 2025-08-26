@@ -125,7 +125,7 @@ export default function Overview() {
                 </div>
             </div>
                 <Speakers2024 />
-                <Speakertest/>
+                {/* <Speakertest/> */}
 
             <KeyThemes />
 
