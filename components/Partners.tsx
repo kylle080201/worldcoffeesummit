@@ -61,7 +61,7 @@ export default function Partners() {
                         {
             href: '',
             imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/biometrio.earth_.svg',
-            className: 'w-[16rem] p-2 mx-auto'
+            className: 'w-[20rem] p-2 mx-auto'
         }
     ]
 
