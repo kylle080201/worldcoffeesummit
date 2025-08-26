@@ -33,6 +33,16 @@ export default function Partners() {
             href: '',
             imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Chloris-Geospatial.png',
             className: 'w-[10rem] p-2 mx-auto'
+        },
+                {
+            href: '',
+            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/Satelligence-blue.svg',
+            className: 'w-[16rem] p-2 mx-auto'
+        },
+                {
+            href: '',
+            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/biometrio.earth_.svg',
+            className: 'w-[16rem] p-2 mx-auto'
         }
     ]
 
@@ -169,10 +179,10 @@ export default function Partners() {
                     <div className="max-w-2xl mx-auto text-center mt-12">
                         <div className="inline-flex items-center justify-center w-full">
                             <hr className="w-80 h-px bg-gray-400 border-0" />
-                            <span className="absolute px-3 text-lg sm:text-2xl tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Bronze Sponsor</span>
+                            <span className="absolute px-3 text-lg sm:text-2xl tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Bronze Sponsors</span>
                         </div>
                     </div>
-                    <div className='grid items-center justify-center grid-cols-1 gap-4 mx-auto sm:gap-12 sm:flex-row sm:max-w-7x mt-6'>
+                    <div className='flex flex-wrap flex-col items-center justify-center gap-4 mx-auto sm:flex-row sm:max-w-7xl mt-6'>
                         {bronzeSponsors.map((sponsor) => (
                             sponsor.href ?
                                 <Link key={sponsor.href} href={sponsor.href} target='_blank' rel='noreferer'>
