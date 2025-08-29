@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image'; 
 import picture1 from '../images/audience.png';
 import picture2 from '../images/Picture2.png';
+import picture3 from '../images/Picture3.png';
 
 function WhoIsInTheRoom() {
   return (
@@ -30,7 +31,7 @@ function WhoIsInTheRoom() {
           <div className="w-full lg:w-1/2 p-2 mt-6 lg:mt-0">
             <div className="relative w-full h-[500px]">
               <Image
-                src={picture2}
+                src={picture3}
                 alt="Who's in the Room Right"
                 fill
                 style={{ objectFit: 'contain' }}
