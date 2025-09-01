@@ -241,6 +241,18 @@ function Speakers2024() {
       iconHeight: 80,
       bio: ` `
     },
+
+    {
+      name: 'Suresh Yadav',
+      role: 'Director, Climate Change and Oceans Directorate (CCO)',
+      company: 'The Commonwealth Secretariat',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Suresh-Yadav.png',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/logo.svg",
+      iconWidth: 80,
+      iconHeight: 80,
+      bio: ` `
+    },
+    
     {
       name: 'Myriam Sainz',
       role: 'Senior Director Strategic Initiatives',
@@ -340,6 +352,17 @@ function Speakers2024() {
       company: 'International Fund for Agriculture Development (IFAD)',
       imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Rick-van-der-Kamp.jpg',
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/E_g_web.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `   `
+    },
+
+    {
+      name: 'Niels Wielaard',
+      role: 'Founder and Director',
+      company: 'Satelligence',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Niels-Wielaard.jpg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/Satelligence_Logo_RGB_FC-5.png",
       iconWidth: 100,
       iconHeight: 100,
       bio: `   `
