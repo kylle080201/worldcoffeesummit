@@ -346,6 +346,17 @@ function Speakers2024() {
     },
 
     {
+      name: 'Niels Wielaard',
+      role: 'Founder and Director',
+      company: 'Satelligence',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Niels-Wielaard.jpg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/08/Satelligence-blue.svg",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `   `
+    },
+
+    {
       name: 'Anup Jagwani',
       role: 'Global Sr. Sector Manager – Agribusiness and Forestry',
       company: 'International Finance Corporation (IFC)',
