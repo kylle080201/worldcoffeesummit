@@ -46,9 +46,15 @@ function Speakers2024() {
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/House_of_Lords_logo_2020.svg.png",
       iconWidth: 100,
       iconHeight: 100,
-      bio: `
-      The Rt. Hon John Gummer, Lord Deben, is the founder and Chairman of Sancroft International, a consultancy that advises both businesses and investors on all areas of Sustainability and ESG. Between 2012 and 2023 he was Chairman of the UK’s Independent Climate Change Committee. Lord Deben was also the UK’s longest serving Secretary of State for the Environment (1993-97) having previously been Minister of Agriculture, Fisheries, and Food. His sixteen years of top-level ministerial experience also include Minister for London, Employment Minister, and Paymaster General in HM Treasury. Lord Deben is currently Chairman of Valpak Ltd and of PIMFA, the trade body representing financial advisers and wealth managers. Throughout his political, business, and personal life Lord Deben has consistently championed an accord between sustainability and business sense.
-      `
+      bio: `  The Rt. Hon John Gummer, Lord Deben, is the founder and Chairman of Sancroft 
+      International, a consultancy that advises both businesses and investors on all areas 
+      of Sustainability and ESG. Between 2012 and 2023 he was Chairman of the UK’s Independent 
+      Climate Change Committee. Lord Deben was also the UK’s longest serving Secretary of State
+       for the Environment (1993-97) having previously been Minister of Agriculture, Fisheries, 
+       and Food. His sixteen years of top-level ministerial experience also include Minister for London, 
+       Employment Minister, and Paymaster General in HM Treasury. Lord Deben is currently Chairman of Valpak 
+       Ltd and of PIMFA, the trade body representing financial advisers and wealth managers. Throughout his political, business, 
+       and personal life Lord Deben has consistently championed an accord between sustainability and business sense.    `
     },
     {
       name: 'Jean Van Wetter',
@@ -58,7 +64,12 @@ function Speakers2024() {
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/enabel-logo-color.png",
       iconWidth: 100,
       iconHeight: 100,
-      bio: `      `
+      bio: ` Jean Van Wetter is the CEO of Enabel, the Belgian agency for international cooperation. 
+
+Together with its Belgian and international partners, Enabel offers solutions addressing pressing global challenges – Climate Change, Social and Economic Inequalities, Urbanisation, Peace and Security, Human Mobility – and promoting Global Citizenship. Enabel has over 20 years' experience in areas ranging from education and health care to agriculture, environmental protection, digitalisation, employment and governance. Enabel’s expertise is eagerly sought-after by partners around the globe – ranging from the Belgian government, European Union institutions, governments of other countries and the private sector. We work with civil society, research institutes as well as businesses.  With over 2,200 staff, Enabel manages about 170 projects in more than twenty countries, in Europe, Africa and the Middle East. 
+
+Jean Van Wetter graduated from the Solvay Brussels School of Economics and Management at the University of Brussels (ULB) and started his career as a strategy consultant for Arthur Andersen before moving into the international cooperation sector. He was the Executive Director of the NGO Humanity and Inclusion/Handicap International and lived in several countries in Africa, Europe and Asia. He is a frequent panelist on issues related to international cooperation and sustainable development goals. He is married and has three children.  
+ `
     },
 
     {
@@ -90,7 +101,15 @@ function Speakers2024() {
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/UG-Melitta_logo_mit_space_cmyk-e1749857040905.jpg",
       iconWidth: 100,
       iconHeight: 100,
-      bio: ``
+      bio: `Melitta Group:
+•	Stefan Dierks is since 2019 Director Sustainability Strategy at Melitta Group. In this role he is responsible for the group-wide coordination and monitoring of the Melitta sustainability transformation process. 
+•	He has 19-years’ sustainability experience across different economic sectors, with a special focus on the coffee value chain. 
+•	Due to his prior professional experience as HR coach and developer, he places a high value on the needs of human beings in transformation processes. 
+•	Along with his engagement in the mentioned sectors, he is engaged in various sector and sustainability associations and initiatives, on global as well as European and German scale. 
+•	Stefan studied Environmental Sciences at the Leuphana Luneburg in Germany. 
+•	He is engaged in different alliances, e.g. as a Board Member of the Global Coffee Platform GCP, Member of the Advisory Board of BAUM e.V., as well as Member of the Board of Trustees of the German Consumer Protection Foundation.
+•	Stefan regularly gives lectures, e.g. at universities and at conferences.
+`
     },
     {
       name: 'Mario Abreu',
@@ -100,7 +119,14 @@ function Speakers2024() {
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/Ferrero-logo.png",
       iconWidth: 100,
       iconHeight: 100,
-      bio: ` `
+      bio: `Mario Abreu has been the Ferrero Group Vice President Sustainability since April 2020, based in Luxembourg. 
+      That role entails securing sustainability is fully embedded in the Group's long-term business strategy. 
+      Prior to Ferrero Mario worked for over 20 years in sustainability for Tetra Pak, 
+      the last 5 of them as their Global VP Sustainability based in Lund, Sweden. 
+      Throughout his time in Tetra Pak he led teams of up to 100 people globally, 
+      developing industry-leading programmes for collection and recycling of beverage cartons. 
+      Earlier Mario worked as a technical and commercial director for paper manufacturing and recycling businesses. In addition, he has served on several boards (FSC International, RSPO, High Conservation Value Resource Network, Proforest Initiative, and ACE Beverage Cartons) and technical advisory groups (Science Based Targets initiative). Mario is a Mechanical Engineer, with a Post-Grad Diploma in Environmental Decision Making, having done sustainability and business trainings at CISL (UK), IMD (CH), Ashridge (UK), the Open University (UK), and Fundaçao Getulio Vargas (BR).`
+ 
     },
     {
       name: 'Raphaelle Peinado',
@@ -110,7 +136,12 @@ function Speakers2024() {
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/Volcafe.png",
       iconWidth: 120,
       iconHeight: 120,
-      bio: ` `
+      bio: ` Appointed Sustainability Director in 2024, Raphaelle oversees Volcafe’s sustainability strategy across the world. She brings over 12 years of experience in sustainability of tropical agricultural commodities, across Latin America and Africa.
+
+Raphaelle holds a bachelor's degree in political science and Spanish literature from McGill University and a master's degree in international development from the London School of Economics.
+
+Prior to joining Volcafe, Raphaelle oversaw the sustainability department in Sucden's cocoa department for over seven years and held the position of Sustainability Manager at Transmar Group for over four years.
+`
     },
 
     {
@@ -131,7 +162,16 @@ function Speakers2024() {
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/Touton-logo-transparent-background.png",
       iconWidth: 120,
       iconHeight: 120,
-      bio: ` `
+      bio: `Thomas Delbar is a senior sustainability executive with nearly two decades of experience leading business-integrated sustainability strategies across the global coffee and ingredients sector. As Director of Sustainability – Coffee & Ingredients at Touton SA, he drives the company’s efforts to embed ESG performance, digital traceability, and responsible sourcing into core business operations.
+With a strong focus on value creation and risk mitigation, Thomas leads the transformation of supply chains into transparent, data-driven ecosystems that meet both regulatory and customer expectations. He has successfully steered the development and deployment of digital tools to monitor sustainability KPIs, track supplier compliance, and support regenerative agriculture programs at scale.
+Thomas is deeply engaged in industry-wide initiatives, contributing to platforms such as the Global Coffee Platform to advance alignment on sustainable procurement and sectoral reporting frameworks. He brings extensive operational experience from Africa and Latin America, where he has led multi-country programs that balance economic performance with environmental and social impact.
+Core Competencies:
+Sustainability Strategy & Governance: Aligning ESG priorities with commercial goals, supplier engagement, and business transformation.
+Digital Supply Chain Innovation: Driving adoption of traceability tools, monitoring systems, and data platforms for impact reporting.
+Certification & Compliance: Expertise in major schemes including Rainforest Alliance, Fairtrade, and Organic, as well as evolving due diligence regulations.
+Stakeholder Engagement: Active contributor in cross-sector forums, value chain coalitions, and public–private partnerships.
+Thomas is a results-oriented leader who bridges sustainability with operational efficiency and business innovation. His mission: to create resilient supply chains that are not only compliant and transparent—but also competitive, future-proof, and value-generating.
+ `
     },
 
           {
@@ -142,7 +182,10 @@ function Speakers2024() {
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/image-22.png",
       iconWidth: 120,
       iconHeight: 120,
-      bio: ` `
+      bio: ` Transforming agriculture to (re-)build livelihoods and nature requires knowledge, 
+      resources and motivation from farmers. Piet is driving the Regenerative Agriculture agenda across ofi through co-creation and co-investment from farmers to customers. He joined Olam in 2017 to co-create, adapt and apply technologies, 
+      approaches and services that improve the productivity, profitability, and carbon footprint of ofi’s coffee estates as well as its (smallholder) farmer network. He holds a PhD from Wageningen with a strong focus on agronomy, farming systems, livelihoods and rural innovation. Prior to his work at ofi, he worked for 20 years as a CGIAR scientist on agricultural systems, based out of Africa.
+`
     },
 
     {
@@ -153,7 +196,10 @@ function Speakers2024() {
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/ALDI-SUD.png",
       iconWidth: 60,
       iconHeight: 60,
-      bio:''
+      bio:`Rachel is leading a set of global sustainability initiatives at the ALDI SOUTH Group, with a focus on driving compliance with the EU Deforestation Regulation (EUDR). She oversees cross-functional teams working across high-impact supply chains—including cocoa, coffee, produce, and seafood—where she navigates the complex intersection of regulatory compliance, traceability, and supplier engagement. She brings a strategic, systems-level approach to building credible and scalable solutions that address both environmental and social risks.
+
+She holds a master’s degree in international political economy from the State University of New York at Buffalo and a bachelor’s degree in political science from Loyola University Chicago. Originally from the United States, she currently lives in Salzburg, Austria with her husband and two children.
+`
     },
 
     {
@@ -175,7 +221,11 @@ function Speakers2024() {
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/Knowledge_grows_for_A4.png",
       iconWidth: 120,
       iconHeight: 120,
-      bio: ``
+      bio: `Cleiton Vargas (born in 1969) has been with Yara for over 30 years and recently took on the 
+      role of Senior Vice President of Innovation for the Americas. Throughout his career at the company, 
+      he has held various positions across different business units, including Commercial, Operations, and Logistics. 
+      Cleiton holds a degree in Agronomic Engineering from the Federal University of Rio Grande do Sul and an MBA in Marketing 
+      from the Escola Superior de Propaganda e Marketing.`
     },
 
     {
@@ -186,7 +236,10 @@ function Speakers2024() {
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/512px-Planet_Labs_logo.svg.png",
       iconWidth: 120,
       iconHeight: 120,
-      bio: ``
+      bio: `Dr. Flávia de Souza Mendes is a forest remote sensing scientist with over 17 years of experience working at the intersection of forests, land use, and environmental policy. She began her career at leading Brazilian institutions such as INPE, where she contributed to national forest monitoring systems and supply chain traceability programs. Her PhD research focused on forest carbon estimation, a field in which she remains deeply engaged through her work on carbon markets and international forest reporting frameworks such as the EU Deforestation Regulation (EUDR).
+
+As Senior Program Manager of Forest & Land Use at Planet, Dr. Mendes leads strategic efforts to develop and scale geospatial solutions for forest monitoring, sustainable land use, and compliance with evolving climate and nature regulations. Her work bridges science, policy, and technology to empower stakeholders across governments, the private sector, and civil society with actionable, high-resolution insights for forest resilience and transparent supply chains.
+`
     },
 
     {
@@ -208,7 +261,10 @@ function Speakers2024() {
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/08/Syngenta-Logo-RGB-no-R-mark.png",
       iconWidth: 120,
       iconHeight: 120,
-      bio: ``
+      bio: `As Head of Climate & Nature, Syngenta Group, Tzutzuy Ramirez oversees the establishment of Syngenta Group's decarbonization agenda and strategic plan for nature-related activities across business units. Additionally, Tzutzuy is Syngenta’s liaison delegate to the World Business Council for Sustainable Development (WBCSD), where she also serves as the company's climate and nature spokesperson. She is also the key account manager for Syngenta Group's largest NGO collaboration with The Nature Conservancy.
+ 
+With a PhD in Biology and 13+ years in the industry, she brings extensive experience across R&D, strategic marketing, and corporate sustainability. Since joining Syngenta Group in 2023, Tzutzuy’s main focuses have been transforming agriculture through sustainable practices and innovative climate solutions.
+`
     },
 
         {
@@ -219,7 +275,10 @@ function Speakers2024() {
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/Logos-FNC_Cereza.png",
       iconWidth: 120,
       iconHeight: 120,
-      bio: ``
+      bio: `Carolina Castañeda has served as Director for Europe at the Federación Nacional de Cafeteros de Colombia B.V.since 2016. She leads a team focused on business development across various coffee segments (green, roasted and freeze dried), with regional coverage spanning Europe, the Middle East, and Africa. With 19 years of experience across different subsidiaries of the FNC, Carolina brings deep industry expertise and a strong commitment to sustainable coffee trade and long term commercial relationships. Before joining the FNC, she worked in finance. She holds Bachelor of Science degrees in both Physics and Economics, as well as a Master’s in Economics from Los Andes University in Colombia. In 2012, she earned a Master’s in Mathematics in Finance from New York University.
+
+Carolina advocates for fair negotiation terms in the coffee sector, seeing them as a fundamental pillar of long-term sustainability.
+`
     },
     {
       name: 'Claude Bizimana',
@@ -229,7 +288,12 @@ function Speakers2024() {
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/NAEB-logo.jpg",
       iconWidth: 120,
       iconHeight: 120,
-      bio: ``
+      bio: `Claude Bizimana is the Chief Executive Officer (CEO) of the National Agricultural Export Development Board (NAEB), 
+      a commercial public institution in Rwanda in charge of exports of agricultural and livestock products. 
+      With over 20 years of experience as a lecturer and researcher in one of Rwanda’s most prominent academic institutions, 
+      Claude Bizimana led different initiatives at national, regional and continental levels, 
+      including the country office of the Comprehensive Africa Agriculture Development Program, 
+      the most ambitious and comprehensive agricultural reform effort ever undertaken in Africa made by African Heads of States and Governments. As the CEO of NAEB, Claude Bizimana thrives to establish relations and cooperation with regional and international organisations with the aim of improving operations in the coffee value chain and collaboration among stakeholders, especially those who grow and produce the raw product.`
     },
 
 
@@ -241,7 +305,14 @@ function Speakers2024() {
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/08/PMB-Logo.png",
       iconWidth: 80,
       iconHeight: 80,
-      bio: ` `
+      bio: `Raymond holds a Bachelor of Arts degree in Liberal Studies from Westfield State University USA (2006), a Master of Science Degree in Human Services, with a Specialization in Organizational Management and Leadership from Springfield College, USA (2007), and a European Master’s degree in human Rights and Democratization from the European Inter-University Center for Human Rights and Democratization, (now Global Campus for Human Rights), in Italy (2015). 
+
+Throughout his career, he has held esteemed Executive and Management positions in both Sierra Leone and the United States. Notable roles include serving as Deputy Executive Secretary at the Human Rights of Commission of Sierra Leone, Program Manager at the Jubilee Association of Maryland Inc., Head of Programmes at the Public Sector Reform Unit (PSRU), and Senior Direct of Programmes at the National Commission for Social Action (NaCSA) before being appointed by his Excellency the President Brigadier Dr. Julius Maada Bio as Executive Chairman of the Produce Monitoring Board on November 14th, 2024, a position he currently holds.
+
+His expertise encompasses a diverse array of specializations with contributions in rights-based programming, strategic and operational planning, organizational transformation, change management, institutional capacity strengthening, impact assessment, project cycle management, resource mobilization, management and public policy.
+
+Mr. Katta is also highly experienced in designing and implementing farm-mapping, geolocation verification, and digital traceability systems to meet international sustainability requirements (including EUDR). Skilled at stakeholder engagement, smallholder onboarding, M&E, and developing and translating policy into operational systems that support market access and reduced deforestation risk.
+ `
     },
     {
       name: 'Suresh Yadav',
@@ -251,7 +322,22 @@ function Speakers2024() {
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/logo.svg",
       iconWidth: 100,
       iconHeight: 100,
-      bio: ` `
+      bio: ` Suresh Yadav is Director for Climate Change, Ocean and Energy Directorate in
+the Commonwealth Sectt., London. Earlier he was Interim Senior Director for
+Trade, Ocean and Natural Resources and he was also the Secretary of the
+Commonwealth AI consortium to promote development of AI and capacity
+building in the Commonwealth countries.
+Prior to this he had worked in the Board of World Bank Group, Washington DC
+as representative of India, Bangladesh, Bhutan and Sri Lanka.
+As a member of IRS in India, he had worked as an Officer on Special Duty to
+President of India and Director to Finance Minister of India. He has also worked
+extensively for DTAA negotiations on behalf of India and global specialist in
+transfer pricing audit of MNEs.
+He is an author of a Book on FDI and passionately work for using AI and
+transformative technologies for development and to use the platform approach
+for attracting finance by the small states.
+He is alumni of IIT Delhi, Indian School of Business, John Hopkins University,
+Duke University and German Development Institute,`
     },
     {
       name: 'Myriam Sainz',
@@ -297,7 +383,11 @@ function Speakers2024() {
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/World-Economic-Forum.png",
       iconWidth: 120,
       iconHeight: 120,
-      bio: ``
+      bio: `Felipe is passionate about fostering science-based, long-term solutions to the developmental and environmental challenges currently facing our planet, capturing both global and on-the-ground perspectives. He brings along more than twenty years of experience developing and overseeing programs and initiatives addressing policy, governance, financial instruments, impact metrics, capacity building, private-public partnerships, south-south cooperation, resource management, rural development, conservation, human wellbeing, integrated landscape management and climate change.
+He currently serves as Head of Sustainable Commodities for the Tropical Forest Alliance housed in the World Economic Forum. In his role, he fosters multi-stakeholder engagement that connects, influence and mainstream good practices into private and public led policy discussions and processes. 
+Previously he served as Executive Director of Fundecor, a ‘think tank’ that has been instrumental for his native country, Costa Rica, to develop and implement sound forest positive practices.  While leading Fundecor, he served as top-level advisor to the Government of Costa Rica. He has also worked at The Nature Conservancy (TNC) and the United Nations Development Program (UNDP) with diverse sustainability strategies across diverse contexts.  
+He holds a bachelor´s Degree in Biology from the Universidad de Costa Rica and a master’s degree in environmental management from the Nicholas School of Environment, Duke University (USA), with a mayor in Resource Economics and Policy.
+`
     },
         {
       name: 'Owen Hewlett',
@@ -309,7 +399,12 @@ function Speakers2024() {
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/GS_Logo_Secondary.png",
       iconWidth: 120,
       iconHeight: 120,
-      bio: ` `
+      bio: `Owen is Chief Technical Officer at the Gold Standard Foundation, a leading climate, nature and sustainable development standards system and thought leader. Owen’s expertise and work encompasses the accounting, reporting, funding and policy behind credible corporate and government action, with a focus on the market and non-market mechanisms that support them.
+
+Owen joined Gold Standard in 2014 and leads all aspects of the Foundation’s standards, assurance and technical policy and best practices work. 
+
+Owen is also a member of the SBTi Technical Council and the Greenhouse Gas Protocol Advisory Committee for Land Sector and Removals.
+ `
     },
 
      {
@@ -343,7 +438,9 @@ function Speakers2024() {
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/E_g_web.png",
       iconWidth: 100,
       iconHeight: 100,
-      bio: `   `
+      bio: `  Rick van der Kamp is the International Fund for Agriculture Development (IFAD)’s global lead for markets, value chains and rural finance, based out of its headquarters in Rome. He has over 20 years of experience in agribusiness, markets and value chains, and rural finance projects, in particular in cocoa, coffee and agro-inputs. A Dutch national, he has Masters in Physics & Development Studies (Eindhoven University of Technology) and in Economics (University of London, UK). 
+Rick started his career in management consulting with Accenture in London, focusing on financial management for manufacturing and services. After four years, he decided to shift his focus to international development, and worked in agribusiness, value chains and microfinance across Africa, Latin America, Eastern Europe and Southeast Asia. Before IFAD, he spent 11 years with IFC (agribusiness advisory services), some time at FMO and he ran an agricultural markets development program in Nepal. Besides running a number of coffee projects in Central America, he managed IFC's agri-finance program in Indonesia, and coordinated IFC’s ag-tech offering. Currently, part of his responsibilities is to expand IFAD’s work with private sector partners. 
+ `
     },
 
     {
@@ -354,7 +451,10 @@ function Speakers2024() {
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/08/Satelligence-blue.svg",
       iconWidth: 100,
       iconHeight: 100,
-      bio: `   `
+      bio: `  Niels is the founder and director of Satelligence, a social enterprise dedicated to tracking deforestation for companies and partners such as Cargill, Unilever, Fairtrade International and Tony’s Chocolonely. He is driven by a commitment to protecting people and the planet through the use of satellite-based analytics, particularly in promoting more sustainable agricultural commodities. 
+
+With over 25 years of experience in tropical commodity production landscapes, Niels is a recognised expert in satellite-based monitoring of forests, agriculture, carbon and water. His expertise has seen him serve as a technical advisor to the European Commission on the implementation of the EU Renewable Energy Directive. He has also been an invited member of the RSPO Working Group on GHG Emissions and a specialist in Monitoring, Reporting, and Verification (MRV) systems for REDD+. Niels earned his MSc in Forestry, specialising in Remote Sensing, from Wageningen University in 2003.
+ `
     },
 
     {
@@ -375,7 +475,22 @@ function Speakers2024() {
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/IDH-logo-kleur_RGB-e1749856681561.jpg",
       iconWidth: 240,
       iconHeight: 100,
-      bio: ` `
+      bio: `Roel Messie is Chief Investment Officer of IDH and leads IDH Invest. IDH is an international
+organisation that convenes, manages and finances large programs with multinational and smaller
+companies, governments and civil society organisations in the agricultural sector around the globe.
+IDH Invest is the integrated investment proposition of IDH, with Investment Development and
+Investment Management as pillars. Investment Development aims to deepen impact by supporting
+agribusinesses to achieve investment readiness and IDH Investment Management manages
+investment vehicles and funds for a more inclusive and sustainable agricultural sector in the Global
+South.
+Roel is also the Chief Executive Officer of IDH Investment Management BV. IDH Investment
+Management, wholly owned by IDH, manages Blended Finance funds with the objective of creating
+a more sustainable and inclusive agricultural sector in the Global South. IDH Investment
+Management is the manager of the IDH Farmfit Fund, a EUR 100 million impact Fund that aims to
+improve the lives of 3 million smallholder farmers.
+Roel joined IDH in 2018 and prior to that, held various management positions in the Dutch
+Entrepreneurial Development Bank (FMO) and worked for ABN AMRO Bank. He has over 30 years
+of investment experience and holds a Master’s Degree in law from the University of Leiden. `
     },
     {
       name: 'Patrick Gibson',
@@ -396,7 +511,13 @@ function Speakers2024() {
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/cdp.png",
       iconWidth: 100,
       iconHeight: 100,
-      bio: `  `
+      bio: `  James Chamberlayne is the director of CDP’s Sustainable Finance Program, 
+      Capital Markets, which facilitates real-economy engagement, disclosure and data 
+      insights tailored specifically to serve the needs of banks and financial institutions. 
+      Before this, he led the UK and worldwide supply chain team at CDP working with large 
+      multinationals in their efforts to build sustainable supply chains. Before CDP, James 
+      worked in India, as head of sustainability and social impact for a company in the agriculture 
+      commodities sector and has a background in International and sustainable development. `
     },
     {
       name: 'Andrea Olivar',
@@ -417,7 +538,12 @@ function Speakers2024() {
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/ernst-young-logo-0-min.png",
       iconWidth: 100,
       iconHeight: 100,
-      bio: `  `
+      bio: ` Dr. Leonard Mizzi is Head of Unit at the European Commission, Directorate-General (DG) for International Partnerships - Sustainable Agri-Food systems and Fisheries, since 1st of January 2017. Prior to this post he was Head of Unit for 10 years in DG Agriculture and Rural Development, first in charge of agri trade and development issues (2007-2014) and from 2015-2016 leading the inter institutional unit hence relations with the European Parliament, Council and consultative bodies and well as steering the Civil Dialogue Groups.
+He is a graduate in Public Administration from the University of Malta (BA Hons First Class); and has degrees from CIHEAM-Montpellier (Master of Science) and a Ph.D in Agricultural economics from the University of Reading (UK). He has been an author of a number of articles and publications on agri food issues and nutrition in the Mediterranean region.
+Dr. Mizzi has a broad working experience in the Maltese public administration and the Maltese private sector. He first worked in the Economic Planning Division of the Office of the Prime Minister (Malta) and from 1996-2006 was the first Director of the Malta Business Bureau in Brussels- the office of the Malta Chamber of Commerce and Enterprise and the Malta Hotels and Restaurants Association. 
+He was also visiting lecturer at the Boston University (Brussels campus), Open University and Malta University. He often lectures at the College of Europe in Bruges.
+His areas of specialisation are global food security governance, agriculture and food and nutrition security, the Mediterranean and Sub Saharan Africa.
+ `
     },
 
   ];
@@ -526,11 +652,20 @@ function Speakers2024() {
                       </div>
                     </div>
                   </div>
-                  <div className="overflow-auto text-sm sm:text-md sm:mt-5 max-h-60">
-                    <p className="mt-2 text-gray-600">
-                      {selectedSpeaker.bio}
-                    </p>
-                  </div>
+<div className="overflow-auto text-sm sm:text-md sm:mt-5 max-h-60">
+  <div className="mt-2 text-gray-600">
+    {Array.isArray(selectedSpeaker.bio) ? (
+      <ul className="list-disc pl-5 space-y-1">
+        {selectedSpeaker.bio.map((point, index) => (
+          <li key={index}>{point}</li>
+        ))}
+      </ul>
+    ) : (
+      <p>{selectedSpeaker.bio}</p>
+    )}
+  </div>
+</div>
+
                   <div className="mt-5 sm:mt-6">
                     <button
                       type="button"
