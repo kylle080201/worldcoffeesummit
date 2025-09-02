@@ -232,6 +232,17 @@ function Speakers2024() {
       bio: ``
     },
 {
+      name: 'Suresh Yadav',
+      role: 'Director, Climate Change and Oceans Directorate (CCO)',
+      company: 'The Commonwealth Secretariat ',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Suresh-Yadav.png',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/logo.svg",
+      iconWidth: 80,
+      iconHeight: 80,
+      bio: ` `
+    },
+
+    {
       name: 'Raymond Katta',
       role: 'Executive Chairman',
       company: 'Produce Monitoring Board (PMB), Sierra Leone',
@@ -253,17 +264,6 @@ function Speakers2024() {
     },
 
     
-
-    {
-      name: 'Ashwini sebastian',
-      role: 'Senior Economist',
-      company: 'The World Bank ',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Ashwini-Sebastian.webp',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/The-World-Bank.png",
-      iconWidth: 100,
-      iconHeight: 100,
-      bio: ` `
-    },
 
     {
       name: 'Nick Appleyard',
