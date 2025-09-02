@@ -231,7 +231,9 @@ function Speakers2024() {
       iconHeight: 120,
       bio: ``
     },
-{
+
+
+    {
       name: 'Raymond Katta',
       role: 'Executive Chairman',
       company: 'Produce Monitoring Board (PMB), Sierra Leone',
@@ -239,6 +241,16 @@ function Speakers2024() {
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/08/PMB-Logo.png",
       iconWidth: 80,
       iconHeight: 80,
+      bio: ` `
+    },
+    {
+      name: 'Suresh Yadav',
+      role: 'Director, Climate Change and Oceans Directorate (CCO)',
+      company: 'The Commonwealth Secretariat ',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Suresh-Yadav.png',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/logo.svg",
+      iconWidth: 100,
+      iconHeight: 100,
       bio: ` `
     },
     {
@@ -253,17 +265,6 @@ function Speakers2024() {
     },
 
     
-
-    {
-      name: 'Ashwini sebastian',
-      role: 'Senior Economist',
-      company: 'The World Bank ',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Ashwini-Sebastian.webp',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/The-World-Bank.png",
-      iconWidth: 100,
-      iconHeight: 100,
-      bio: ` `
-    },
 
     {
       name: 'Nick Appleyard',
@@ -340,6 +341,17 @@ function Speakers2024() {
       company: 'International Fund for Agriculture Development (IFAD)',
       imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Rick-van-der-Kamp.jpg',
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/E_g_web.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `   `
+    },
+
+    {
+      name: 'Niels Wielaard',
+      role: 'Founder and Director',
+      company: 'Satelligence',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Niels-Wielaard.jpg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/08/Satelligence-blue.svg",
       iconWidth: 100,
       iconHeight: 100,
       bio: `   `
