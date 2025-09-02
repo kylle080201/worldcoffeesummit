@@ -231,16 +231,7 @@ function Speakers2024() {
       iconHeight: 120,
       bio: ``
     },
-{
-      name: 'Suresh Yadav',
-      role: 'Director, Climate Change and Oceans Directorate (CCO)',
-      company: 'The Commonwealth Secretariat ',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Suresh-Yadav.png',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/logo.svg",
-      iconWidth: 80,
-      iconHeight: 80,
-      bio: ` `
-    },
+
 
     {
       name: 'Raymond Katta',
@@ -248,6 +239,16 @@ function Speakers2024() {
       company: 'Produce Monitoring Board (PMB), Sierra Leone',
       imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/Raymond-Katta.jpeg',
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/08/PMB-Logo.png",
+      iconWidth: 80,
+      iconHeight: 80,
+      bio: ` `
+    },
+    {
+      name: 'Suresh Yadav',
+      role: 'Director, Climate Change and Oceans Directorate (CCO)',
+      company: 'The Commonwealth Secretariat ',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Suresh-Yadav.png',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/logo.svg",
       iconWidth: 80,
       iconHeight: 80,
       bio: ` `
