@@ -249,8 +249,8 @@ function Speakers2024() {
       company: 'The Commonwealth Secretariat ',
       imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Suresh-Yadav.png',
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/logo.svg",
-      iconWidth: 80,
-      iconHeight: 80,
+      iconWidth: 100,
+      iconHeight: 100,
       bio: ` `
     },
     {
