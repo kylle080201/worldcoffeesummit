@@ -25,7 +25,22 @@ function Speakers2024() {
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/cfc_new_logo_v5_large.png",
       iconWidth: 100,
       iconHeight: 100,
-      bio: ``
+      bio: `Ambassador Sheikh Mohammed Belal, a Bangladeshi diplomat, is the Managing Director of the
+Common Fund for Commodities (CFC), re-elected in 2023 for a second term through 2028. Under his
+leadership, the CFC has deepened its support for smallholders and SMEs, particularly in Least
+Developed and Landlocked Developing Countries, with an emphasis on inclusive and sustainable value
+chains.
+He is the architect of the “Humanizing Value Chains (HVC)” concept—an ambitious vision to embed
+justice, traceability, and innovation into every transaction. HVC aspires to lift millions of smallholders
+from poverty by ensuring they receive a fairer share of global trade.
+Ambassador Belal is also overseeing the launch of the Agricultural Commodity Transformation (ACT)
+Fund, a USD 100 million+ impact vehicle to drive climate-resilient, nature-positive agri-SME growth.
+Before joining the CFC, he served as Bangladesh’s Ambassador to the Netherlands (2014–2020) and
+held senior postings in the USA, Australia, Malaysia, and Uzbekistan. He also chaired the Executive
+Council of the OPCW, represented Bangladesh at over 100 global forums, and is a known champion
+for gender equity in development.
+He holds degrees from the University of Chittagong, Monash University, and Harvard University.
+Ambassador Belal is married, with two children and two grandchildren.`
     },
     {
       name: 'Wagner Albuquerque de Almeida',
@@ -101,15 +116,15 @@ Jean Van Wetter graduated from the Solvay Brussels School of Economics and Manag
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/UG-Melitta_logo_mit_space_cmyk-e1749857040905.jpg",
       iconWidth: 100,
       iconHeight: 100,
-      bio: `Melitta Group:
-•	Stefan Dierks is since 2019 Director Sustainability Strategy at Melitta Group. In this role he is responsible for the group-wide coordination and monitoring of the Melitta sustainability transformation process. 
-•	He has 19-years’ sustainability experience across different economic sectors, with a special focus on the coffee value chain. 
-•	Due to his prior professional experience as HR coach and developer, he places a high value on the needs of human beings in transformation processes. 
-•	Along with his engagement in the mentioned sectors, he is engaged in various sector and sustainability associations and initiatives, on global as well as European and German scale. 
-•	Stefan studied Environmental Sciences at the Leuphana Luneburg in Germany. 
-•	He is engaged in different alliances, e.g. as a Board Member of the Global Coffee Platform GCP, Member of the Advisory Board of BAUM e.V., as well as Member of the Board of Trustees of the German Consumer Protection Foundation.
-•	Stefan regularly gives lectures, e.g. at universities and at conferences.
-`
+      bio:  [
+  "Stefan Dierks is since 2019 Director Sustainability Strategy at Melitta Group. In this role he is responsible for the group-wide coordination and monitoring of the Melitta sustainability transformation process.",
+  "He has 19-years’ sustainability experience across different economic sectors, with a special focus on the coffee value chain.",
+  "Due to his prior professional experience as HR coach and developer, he places a high value on the needs of human beings in transformation processes.",
+  "Along with his engagement in the mentioned sectors, he is engaged in various sector and sustainability associations and initiatives, on global as well as European and German scale.",
+  "Stefan studied Environmental Sciences at the Leuphana Luneburg in Germany.",
+  "He is engaged in different alliances, e.g. as a Board Member of the Global Coffee Platform GCP, Member of the Advisory Board of BAUM e.V., as well as Member of the Board of Trustees of the German Consumer Protection Foundation.",
+  "Stefan regularly gives lectures, e.g. at universities and at conferences."
+],
     },
     {
       name: 'Mario Abreu',
@@ -152,7 +167,28 @@ Prior to joining Volcafe, Raphaelle oversaw the sustainability department in Suc
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/header-logo-bc.png",
       iconWidth: 120,
       iconHeight: 120,
-      bio: ` `
+      bio: `Nicolas was appointed in July 2022 to VP Sustainability & Farming. Since January 2024,
+Nicolas is VP ESG, Sustainability and Traceability, leading the whole sustainability
+agenda of Barry Callebaut, including Forever Chocolate. ESG focus includes overarching
+responsibility over ESG regulations such as EUDR or CSDDD (Corporate Sustainability
+Due Diligence Directive). Nicolas is also a member of the Executive Leadership team.
+Nicolas brings more than 15 years of experience in sustainable food value chains. After 3
+years as financial auditor for Ernst & Young, he joined the leading Fairtrade and organic
+French brand Alter Eco in 2005 where he started as Producer Support Manager and
+became then the Chief Financial Officer in 2007 and the Chief Executive officer from
+2008 to 2012. Alter Eco sells organic and Fairtrade food products such as chocolate,
+coffee, tea, rice or fruit juice in the main French supermarkets.
+In 2013, he joined the UK based coffee and cocoa organization Twin/Twin Trading as
+managing director. The organization’s activities covered ethical coffee and cocoa value
+chain development in Africa and Latin America and sustainable green coffee trading.
+Twin was also the main shareholder of Divine Chocolate in the UK and the USA and
+Nicolas sat, as a consequence, in the Board of Directors of Divine from 2013 to 2016.
+In 2016, he joined the UK based charity Farm Africa as Chief Executive Officer, where he
+stayed until joining Barry Callebaut. Farm Africa is an agriculture and environment NGO
+providing tools and expertise to enable smallholders in East Africa to increase their
+harvests, whether their farm crops, livestock, fish or the forest. Farm Africa has 170 staff
+operating across the eastern African countries of Ethiopia, Kenya, Tanzania and Uganda.
+Nicolas holds an MBA from ESSEC Business School in Paris. `
     },
       {
       name: 'Thomas Delbar',
@@ -210,7 +246,10 @@ She holds a master’s degree in international political economy from the State 
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/image-28.png",
       iconWidth: 120,
       iconHeight: 120,
-      bio:''
+      bio:`Malcolm has worked within some of the world’s top 10 largest coffee companies since his first caffeinated role as a Brand Manager in 2007.
+His experience is mainly on the consumption side of the coffee world, with roles in innovation, marketing, insight – and as a café owner – now working at UCC in Europe since 2021, firstly as Director of Innovation and now as Director of Sustainability.
+With UCC as the Total Coffee Solution behind several well-loved retail and hospitality brands across Europe, Malcolm explores and encourages developing solutions that can deliver against the sustainability goals of UCC’s customers.
+`
     },
 
     {
@@ -415,7 +454,11 @@ Owen is also a member of the SBTi Technical Council and the Greenhouse Gas Proto
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/image-25.png",
       iconWidth: 120,
       iconHeight: 120,
-      bio: ` `
+      bio: `Marco is an experienced sustainability executive, bringing a unique combination of business and science experience, and deep senior-level network in the land use arena.
+He was the first director of the Tropical Forest Alliance at the World Economic Forum, and a Senior Expert with McKinsey & Company’s sustainability practice.
+He has been an ecosystem scientist at Harvard modeling continental-scale forest carbon dynamics.
+
+ `
     },
 
     {
@@ -426,7 +469,22 @@ Owen is also a member of the SBTi Technical Council and the Greenhouse Gas Proto
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/08/tnc-logo-primary-registered-dark-text.svg",
       iconWidth: 120,
       iconHeight: 120,
-      bio: ` `
+      bio: `Mauricio Castro is a seasoned leader with over 20 years of
+global experience in land conservation and sustainable
+development. For two decades, he has been an integral part of
+The Nature Conservancy, an organization that has empowered
+his passion for transforming conventional agriculture and
+livestock into regenerative models. His leadership has led to a
+profound impact on global conservation and the regeneration of
+our environment.
+During his tenure as Chairman of the Forest Stewardship
+Council, Mauricio led its expansion into new global areas and
+contributed to establishing a center in Bonn, Germany. His
+leadership has forged trusted relationships across diverse
+cultures, geographies, and disciplines.
+Mauricio is a passionate sustainability advocate and a
+motivational team builder, making a significant impact on global
+conservation and sustainability efforts. `
     },
  
     
