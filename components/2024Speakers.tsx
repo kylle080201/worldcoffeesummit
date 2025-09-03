@@ -116,15 +116,15 @@ Jean Van Wetter graduated from the Solvay Brussels School of Economics and Manag
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/UG-Melitta_logo_mit_space_cmyk-e1749857040905.jpg",
       iconWidth: 100,
       iconHeight: 100,
-      bio:  [
-  "Stefan Dierks is since 2019 Director Sustainability Strategy at Melitta Group. In this role he is responsible for the group-wide coordination and monitoring of the Melitta sustainability transformation process.",
-  "He has 19-years’ sustainability experience across different economic sectors, with a special focus on the coffee value chain.",
-  "Due to his prior professional experience as HR coach and developer, he places a high value on the needs of human beings in transformation processes.",
-  "Along with his engagement in the mentioned sectors, he is engaged in various sector and sustainability associations and initiatives, on global as well as European and German scale.",
-  "Stefan studied Environmental Sciences at the Leuphana Luneburg in Germany.",
-  "He is engaged in different alliances, e.g. as a Board Member of the Global Coffee Platform GCP, Member of the Advisory Board of BAUM e.V., as well as Member of the Board of Trustees of the German Consumer Protection Foundation.",
-  "Stefan regularly gives lectures, e.g. at universities and at conferences."
-],
+      bio: `Melitta Group:<br/>
+<br/>•	Stefan Dierks is since 2019 Director Sustainability Strategy at Melitta Group. In this role he is responsible for the group-wide coordination and monitoring of the Melitta sustainability transformation process. 
+<br/>•	He has 19-years’ sustainability experience across different economic sectors, with a special focus on the coffee value chain. 
+<br/>•	Due to his prior professional experience as HR coach and developer, he places a high value on the needs of human beings in transformation processes. 
+<br/>•	Along with his engagement in the mentioned sectors, he is engaged in various sector and sustainability associations and initiatives, on global as well as European and German scale. 
+<br/>•	Stefan studied Environmental Sciences at the Leuphana Luneburg in Germany. 
+<br/>•	He is engaged in different alliances, e.g. as a Board Member of the Global Coffee Platform GCP, Member of the Advisory Board of BAUM e.V., as well as Member of the Board of Trustees of the German Consumer Protection Foundation.
+<br/>•	Stefan regularly gives lectures, e.g. at universities and at conferences.
+`
     },
     {
       name: 'Mario Abreu',
@@ -711,17 +711,10 @@ His areas of specialisation are global food security governance, agriculture and
                     </div>
                   </div>
 <div className="overflow-auto text-sm sm:text-md sm:mt-5 max-h-60">
-  <div className="mt-2 text-gray-600">
-    {Array.isArray(selectedSpeaker.bio) ? (
-      <ul className="list-disc pl-5 space-y-1">
-        {selectedSpeaker.bio.map((point, index) => (
-          <li key={index}>{point}</li>
-        ))}
-      </ul>
-    ) : (
-      <p>{selectedSpeaker.bio}</p>
-    )}
-  </div>
+  <div
+    className="mt-2 text-gray-600"
+    dangerouslySetInnerHTML={{ __html: selectedSpeaker.bio }}
+  />
 </div>
 
                   <div className="mt-5 sm:mt-6">
