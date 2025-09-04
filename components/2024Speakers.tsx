@@ -588,7 +588,7 @@ of investment experience and holds a Master’s Degree in law from the Universit
       role: 'Strategy & Quality Director-Latin America',
       company: 'Solidaridad Network',
       imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Andrea-Olivar.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/Solidaridad.png",
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/Logo-full-colour-for-professional-print.jpg",
       iconWidth: 100,
       iconHeight: 100,
       bio: `Andrea Olivar is an expert in sustainability and has been working in the coffee sector for over 15 years. 
