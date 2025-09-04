@@ -116,8 +116,7 @@ Jean Van Wetter graduated from the Solvay Brussels School of Economics and Manag
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/UG-Melitta_logo_mit_space_cmyk-e1749857040905.jpg",
       iconWidth: 100,
       iconHeight: 100,
-      bio: `Melitta Group:<br/>
-<br/>•	Stefan Dierks is since 2019 Director Sustainability Strategy at Melitta Group. In this role he is responsible for the group-wide coordination and monitoring of the Melitta sustainability transformation process. 
+      bio: `•	Stefan Dierks is since 2019 Director Sustainability Strategy at Melitta Group. In this role he is responsible for the group-wide coordination and monitoring of the Melitta sustainability transformation process. 
 <br/>•	He has 19-years’ sustainability experience across different economic sectors, with a special focus on the coffee value chain. 
 <br/>•	Due to his prior professional experience as HR coach and developer, he places a high value on the needs of human beings in transformation processes. 
 <br/>•	Along with his engagement in the mentioned sectors, he is engaged in various sector and sustainability associations and initiatives, on global as well as European and German scale. 
@@ -193,7 +192,7 @@ Nicolas holds an MBA from ESSEC Business School in Paris. `
       {
       name: 'Thomas Delbar',
       role: 'Director of Sustainability – Coffee & Ingredients',
-      company: 'Touton group',
+      company: 'Touton Group',
       imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Thomas-Delbar.jpg',
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/Touton-logo-transparent-background.png",
       iconWidth: 120,
@@ -307,17 +306,14 @@ With a PhD in Biology and 13+ years in the industry, she brings extensive experi
     },
 
         {
-      name: 'Carolina Castañeda',
-      role: 'Director – Europe',
-      company: 'National Federation of Coffee Growers of Colombia (FNC)',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Carolina-Castaneda.jpeg',
+      name: 'Marcela Gaviria Botero',
+      role: 'Director of Alliances & Projects ',
+      company: 'National Federation of Coffee Growers of Colombia (FNC)',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Marcela-Gaviria-Botero.jpeg',
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/Logos-FNC_Cereza.png",
       iconWidth: 120,
       iconHeight: 120,
-      bio: `Carolina Castañeda has served as Director for Europe at the Federación Nacional de Cafeteros de Colombia B.V.since 2016. She leads a team focused on business development across various coffee segments (green, roasted and freeze dried), with regional coverage spanning Europe, the Middle East, and Africa. With 19 years of experience across different subsidiaries of the FNC, Carolina brings deep industry expertise and a strong commitment to sustainable coffee trade and long term commercial relationships. Before joining the FNC, she worked in finance. She holds Bachelor of Science degrees in both Physics and Economics, as well as a Master’s in Economics from Los Andes University in Colombia. In 2012, she earned a Master’s in Mathematics in Finance from New York University.
-
-Carolina advocates for fair negotiation terms in the coffee sector, seeing them as a fundamental pillar of long-term sustainability.
-`
+      bio: ``
     },
     {
       name: 'Claude Bizimana',
@@ -551,6 +547,16 @@ Entrepreneurial Development Bank (FMO) and worked for ABN AMRO Bank. He has over
 of investment experience and holds a Master’s Degree in law from the University of Leiden. `
     },
     {
+      name: 'Saurabh Pratap',
+      role: 'Executive Director, Sustainable Finance',
+      company: 'Standard Chartered Bank',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Saurabh-Pratap.jpg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/sc-lock-up-english-grey-rgb-scaled.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: ` `
+    },
+        {
       name: 'Patrick Gibson',
       role: 'EO Senior Climate Lead',
       company: 'UK Space Agency',
@@ -581,11 +587,13 @@ of investment experience and holds a Master’s Degree in law from the Universit
       name: 'Andrea Olivar',
       role: 'Strategy & Quality Director-Latin America',
       company: 'Solidaridad Network',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Andrea-Olivar-1.jpg',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Andrea-Olivar.jpg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/Solidaridad.png",
       iconWidth: 100,
       iconHeight: 100,
-      bio: `
+      bio: `Andrea Olivar is an expert in sustainability and has been working in the coffee sector for over 15 years. 
+      Andrea is the Director for Strategy and Quality for Solidaridad in Latin America. 
+      Previous to that, she served as Solidaridad’s Global Manager for Coffee, Country Manager for Colombia and as Head of the Sustainable Trade Platform. Andrea also worked for a period of six years as Head of the Coffee Programme at Twin Trading, a British speciality coffee trader. She started her career at Colombian Agency for the promotion of exports (ProColombia), followed by positions at the Fairtrade Foundation and Agrofair in London.
       `
     },
     {
@@ -711,8 +719,7 @@ His areas of specialisation are global food security governance, agriculture and
                     </div>
                   </div>
 <div className="overflow-auto text-sm sm:text-md sm:mt-5 max-h-60">
-  <div
-    className="mt-2 text-gray-600"
+  <div className="mt-2 text-gray-600"
     dangerouslySetInnerHTML={{ __html: selectedSpeaker.bio }}
   />
 </div>
