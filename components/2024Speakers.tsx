@@ -4,8 +4,10 @@ import Image from 'next/image'
 
 interface T_Speaker {
   name: string;
-  role?: string;
+  role: string;
+  role2: string;
   company: string;
+   company2: string;
   iconWidth: number;
   iconHeight: number;
   imageUrl: string;
@@ -384,7 +386,10 @@ Duke University and German Development Institute,`
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/ENG_TNSLogoCMYK_Horz_TaglineTM_Color-scaled.png",
       iconWidth: 80,
       iconHeight: 80,
-      bio: ` `
+      bio: `Myriam leads TechnoServe's work with food and agriculture companies to build inclusive and regenerative supply chains that improve farmer incomes, reduce carbon emissions, and preserve nature. She has spent over 15 years proving that investing in farmers and local supply chains is not only good for the planet but also a powerful lever for business growth.
+With longstanding partners like Nespresso and Unilever, Myriam's work at TechnoServe has impacted over 150,000 farming families and 300 small agricultural businesses, employing hundreds of women and men agronomists in rural communities. These programs also improve soil health and protect nature across more than 200,000 hectares in 15 countries. Looking ahead, Myriam is focused on scaling this model through platform-based approaches for co-investment and effective delivery.
+Before joining TechnoServe, Myriam was a management consultant with McKinsey & Company, advising agribusiness and public sector clients across the Americas and Sub-Saharan Africa.  Myriam holds a Master’s degree from the Georgetown School of Foreign Service and a B.A. in Business Management from Universidad Pontificia Comillas in Madrid. 
+ `
     },
 
     
@@ -754,6 +759,8 @@ His areas of specialisation are global food security governance, agriculture and
                         <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-lg">{selectedSpeaker.name}</p>
                         <p className="leading-7 text-gray-700 text-md">{selectedSpeaker.role}</p>
                         <p className="font-semibold leading-7 text-gray-900 text-2xl">{selectedSpeaker.company}</p>
+                       <p className="leading-7 text-gray-700 text-md">{selectedSpeaker.role2}</p>
+                       <p className="font-semibold leading-7 text-gray-900 text-2xl">{selectedSpeaker.company2}</p>
                       </div>
                     </div>
                   </div>
