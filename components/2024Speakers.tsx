@@ -307,13 +307,15 @@ With a PhD in Biology and 13+ years in the industry, she brings extensive experi
 
         {
       name: 'Marcela Gaviria Botero',
-      role: 'Director of Alliances & Projects ',
+      role: 'Director of Alliances and Projects',
       company: 'National Federation of Coffee Growers of Colombia (FNC)',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Marcela-Gaviria-Botero.jpeg',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Marcela-Gaviria-Botero.jpg',
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/Logos-FNC_Cereza.png",
       iconWidth: 120,
       iconHeight: 120,
-      bio: ``
+      bio: `Marcela Gaviria is the Director of Alliances and Projects at the Colombian Coffee Growers Federation (FNC). She brings over 14 years of experience in sustainability, corporate relations, and international cooperation, having led strategic programs and high-impact partnerships with organizations such as the Nespresso AAA Program (supporting over 16,000 coffee growers), the European Union, Starbucks, and the Howard G. Buffett Foundation. Since 2023, she has led the implementation strategy for the EU Deforestation Regulation (EUDR), positioning Colombia’s coffee sector as a global benchmark for regulatory compliance.
+Prior to her role at the FNC, Marcela worked in international cooperation at Endeavor, where she contributed to initiatives promoting entrepreneurship and economic development. She holds a Master’s degree in International Development from Université Paul-Valéry Montpellier III in France and an MSc in Management from the University of Buckingham.
+`
     },
     {
       name: 'Claude Bizimana',
@@ -378,8 +380,8 @@ Duke University and German Development Institute,`
       name: 'Myriam Sainz',
       role: 'Senior Director Strategic Initiatives',
       company: 'TechnoServe',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/image-31.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/ENG_TNSLogoCMYK_Horz_TaglineTM_Color.png",
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Myriam-Sainz.jpg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/ENG_TNSLogoCMYK_Horz_TaglineTM_Color-scaled.png",
       iconWidth: 80,
       iconHeight: 80,
       bio: ` `
@@ -440,6 +442,17 @@ Owen joined Gold Standard in 2014 and leads all aspects of the Foundation’s st
 
 Owen is also a member of the SBTi Technical Council and the Greenhouse Gas Protocol Advisory Committee for Land Sector and Removals.
  `
+    },
+
+    {
+      name: 'Jack Bugas',
+      role: 'Partner and Associate Director',
+      company: 'Boston Consulting Group (BCG) ',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Jack-Bugas.jpeg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/BCG_MONOGRAM.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio:``
     },
 
      {
@@ -520,6 +533,32 @@ With over 25 years of experience in tropical commodity production landscapes, Ni
       iconWidth: 100,
       iconHeight: 100,
       bio: `   `
+    },
+            {
+      name: 'Sean Edwards',
+      role: 'Chairman',
+      company: 'International Trade Forfaiting Association (ITFA)',
+      role2: 'Head of Legal',
+      company2: 'Sumitomo Mitsui Banking Corporation(SMBC) ',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/sean-edwards.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/09/ITFA_Logo_Positive-2-e1727183762852.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: `He is Special Adviser to the Trade Finance Department of the bank and a member of its Trade Innovation Unit. 
+
+      Sean is Chairman of the International Trade & Forfaiting Association (ITFA).
+      He is a draftsman of the Uniform Rules for Forfaiting (URF), its counterpart for digital payment obligations, the Unform Rules for Transferable Electronic Payment Obligations (URTEPO) and the Standard Definitions for Techniques of Supply Chain Finance published by ITFA, ICC, FCI, BAFT and the EBA.
+
+      He is a former member of the Executive Committee of the ICC Banking Commission and the ICC Working Group on Digitalisation in Trade Finance.
+      Sean is a member of the World Trade Organisation (WTO) Trade Finance Expert Group.
+
+      He is a non-executive director of Swiss fintech, KomGo S.A.
+      Sean has been appointed to the advisory board of the Centre for Digital Trade and Innovation (C4DTI), a joint venture of the UK Government, ICC UK and Tees Valley Combined Authority.
+
+      He is a member of the Working Group of the Commonwealth Connectivity Agenda established by The Commonwealth.
+
+      Sean has written for all the major trade finance magazines and is on the editorial board of Global Trade Review (GTR). He has presented at many conferences.
+    `
     },
     {
       name: 'Roel Messie',
