@@ -5,9 +5,9 @@ import Image from 'next/image'
 interface T_Speaker {
   name: string;
   role: string;
-  role2: string;
   company: string;
-   company2: string;
+  role2?: string;
+  company2?: string;
   iconWidth: number;
   iconHeight: number;
   imageUrl: string;
