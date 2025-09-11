@@ -516,6 +516,17 @@ Rick started his career in management consulting with Accenture in London, focus
     },
 
     {
+      name: 'Mumbi Gitau',
+      role: 'Soft Commodities Reporter',
+      company: 'Bloomberg News',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Mumbi-Gitau-scaled.jpg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/og-image-generic-lp.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `Mumbi Gitau, soft commodities reporter at Bloomberg News, covering global coffee, cocoa, sugar, cotton, and orange juice markets. `
+    },
+
+    {
       name: 'Niels Wielaard',
       role: 'Founder and Director',
       company: 'Satelligence',
