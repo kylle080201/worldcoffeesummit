@@ -90,6 +90,12 @@ export default function Partners() {
             imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Comunicaffe.png',
             className: 'w-[16rem] p-2 mx-auto'
         },
+        {
+            href: '',
+            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/logo-dark.svg',
+            className: 'w-[10rem] p-2 mx-auto'
+        },
+
 
     ]
 
@@ -270,7 +276,7 @@ export default function Partners() {
                 <div className='mb-20'>
                     <div className="inline-flex items-center justify-center w-full">
                         <hr className="w-80 h-px bg-gray-400 border-0" />
-                        <span className="absolute px-3 text-lg sm:text-2xl tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Media Partners</span>
+                        <span className="absolute px-3 text-lg sm:text-2xl tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Media & Marketing Partners</span>
                     </div>
                     <div className='flex flex-col items-center justify-center gap-4 mx-auto sm:flex-row sm:max-w-7xl'>
                         {mediaPartners.map((partner) => (
