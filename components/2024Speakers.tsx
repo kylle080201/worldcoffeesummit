@@ -319,21 +319,21 @@ With a PhD in Biology and 13+ years in the industry, she brings extensive experi
 Prior to her role at the FNC, Marcela worked in international cooperation at Endeavor, where she contributed to initiatives promoting entrepreneurship and economic development. She holds a Master’s degree in International Development from Université Paul-Valéry Montpellier III in France and an MSc in Management from the University of Buckingham.
 `
     },
-    {
-      name: 'Claude Bizimana',
-      role: 'Chief Executive Officer (CEO)',
-      company: 'National Agricultural Export Development Board (NAEB), Rwanda',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Claude-Bizimana.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/NAEB-logo.jpg",
-      iconWidth: 120,
-      iconHeight: 120,
-      bio: `Claude Bizimana is the Chief Executive Officer (CEO) of the National Agricultural Export Development Board (NAEB), 
-      a commercial public institution in Rwanda in charge of exports of agricultural and livestock products. 
-      With over 20 years of experience as a lecturer and researcher in one of Rwanda’s most prominent academic institutions, 
-      Claude Bizimana led different initiatives at national, regional and continental levels, 
-      including the country office of the Comprehensive Africa Agriculture Development Program, 
-      the most ambitious and comprehensive agricultural reform effort ever undertaken in Africa made by African Heads of States and Governments. As the CEO of NAEB, Claude Bizimana thrives to establish relations and cooperation with regional and international organisations with the aim of improving operations in the coffee value chain and collaboration among stakeholders, especially those who grow and produce the raw product.`
-    },
+    // {
+    //   name: 'Claude Bizimana',
+    //   role: 'Chief Executive Officer (CEO)',
+    //   company: 'National Agricultural Export Development Board (NAEB), Rwanda',
+    //   imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Claude-Bizimana.jpg',
+    //   companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/NAEB-logo.jpg",
+    //   iconWidth: 120,
+    //   iconHeight: 120,
+    //   bio: `Claude Bizimana is the Chief Executive Officer (CEO) of the National Agricultural Export Development Board (NAEB), 
+    //   a commercial public institution in Rwanda in charge of exports of agricultural and livestock products. 
+    //   With over 20 years of experience as a lecturer and researcher in one of Rwanda’s most prominent academic institutions, 
+    //   Claude Bizimana led different initiatives at national, regional and continental levels, 
+    //   including the country office of the Comprehensive Africa Agriculture Development Program, 
+    //   the most ambitious and comprehensive agricultural reform effort ever undertaken in Africa made by African Heads of States and Governments. As the CEO of NAEB, Claude Bizimana thrives to establish relations and cooperation with regional and international organisations with the aim of improving operations in the coffee value chain and collaboration among stakeholders, especially those who grow and produce the raw product.`
+    // },
 
 
     {
@@ -549,6 +549,23 @@ With over 25 years of experience in tropical commodity production landscapes, Ni
       iconWidth: 100,
       iconHeight: 100,
       bio: `   `
+    },
+        {
+      name: 'Joy Macknight',
+      role: 'Journalist, Former Editor',
+      company: 'Financial Times - The Banker',
+      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/Joy-Macknight-12-of-19.jpg',
+      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/ftlogo-v1_brand-ft-logo-landscape-coloured.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: `Joy Macknight is a freelance journalist and former editor of The Banker, part of the
+      Financial Times group. She joined The Banker in August 2015 as transaction
+      banking and technology editor, was promoted to deputy editor in September 2016
+      and then to managing editor in April 2019, before becoming the first female editor in
+      the publication’s history in March 2021. Previously, she was features editor at Profit
+      &amp; Loss, editorial director at Treasury Today and editor at gtnews. She also worked as
+      staff writer on Banking Technology and IBM Computer Today, as well as a freelancer
+      on Computer Weekly.`
     },
             {
       name: 'Sean Edwards',
