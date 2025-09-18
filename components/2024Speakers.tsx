@@ -308,16 +308,18 @@ With a PhD in Biology and 13+ years in the industry, she brings extensive experi
     },
 
         {
-      name: 'Marcela Gaviria Botero',
-      role: 'Director of Alliances and Projects',
+      name: 'Mariana Osorio Londoño',
+      role: 'Sustainable Trade Coordinator',
       company: 'National Federation of Coffee Growers of Colombia (FNC)',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Marcela-Gaviria-Botero.jpg',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Mariana-Osorio-Londono-.jpeg',
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/Logos-FNC_Cereza.png",
       iconWidth: 120,
       iconHeight: 120,
-      bio: `Marcela Gaviria is the Director of Alliances and Projects at the Colombian Coffee Growers Federation (FNC). She brings over 14 years of experience in sustainability, corporate relations, and international cooperation, having led strategic programs and high-impact partnerships with organizations such as the Nespresso AAA Program (supporting over 16,000 coffee growers), the European Union, Starbucks, and the Howard G. Buffett Foundation. Since 2023, she has led the implementation strategy for the EU Deforestation Regulation (EUDR), positioning Colombia’s coffee sector as a global benchmark for regulatory compliance.
-Prior to her role at the FNC, Marcela worked in international cooperation at Endeavor, where she contributed to initiatives promoting entrepreneurship and economic development. She holds a Master’s degree in International Development from Université Paul-Valéry Montpellier III in France and an MSc in Management from the University of Buckingham.
-`
+      bio: `Mariana is a Finance and International Relations professional with a specialization in International Cooperation
+and over seven years of experience leading projects in sustainability, social development, and regulatory
+compliance. She has worked on designing ESG strategies, implementing projects with major global brands like
+Nespresso and Nescafé, and developing supply chain traceability solutions. Passionate about challenges that
+combine innovation, social impact, and corporate sustainability.`
     },
     // {
     //   name: 'Claude Bizimana',
@@ -624,6 +626,16 @@ of investment experience and holds a Master’s Degree in law from the Universit
       company: 'Standard Chartered Bank',
       imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Saurabh-Pratap.jpg',
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/sc-lock-up-english-grey-rgb-scaled.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: ` `
+    },
+        {
+      name: 'Ethan Budiansky',
+      role: 'Sustainable Commodities Lead',
+      company: 'Wildlife Conservation Society (WCS)',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Ethan-Budiansky.jpg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/imageedit_1_4178324201.png",
       iconWidth: 100,
       iconHeight: 100,
       bio: ` `
