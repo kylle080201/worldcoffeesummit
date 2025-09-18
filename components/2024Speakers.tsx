@@ -633,7 +633,7 @@ of investment experience and holds a Master’s Degree in law from the Universit
         {
       name: 'Ethan Budiansky',
       role: 'Sustainable Commodities Lead',
-      company: 'Wildlife Conservation Society (WCS)',
+      company: 'Wildlife Conservation Society (WCS)',
       imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Ethan-Budiansky.jpg',
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/imageedit_1_4178324201.png",
       iconWidth: 100,
