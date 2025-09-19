@@ -557,7 +557,7 @@ With over 25 years of experience in tropical commodity production landscapes, Ni
       role: 'Journalist, Former Editor',
       company: 'Financial Times - The Banker',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/Joy-Macknight-12-of-19.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/ftlogo-v1_brand-ft-logo-landscape-coloured.png",
+      companyIcon: "",
       iconWidth: 120,
       iconHeight: 120,
       bio: `Joy Macknight is a freelance journalist and former editor of The Banker, part of the
@@ -634,11 +634,12 @@ of investment experience and holds a Master’s Degree in law from the Universit
       name: 'Ethan Budiansky',
       role: 'Sustainable Commodities Lead',
       company: 'Wildlife Conservation Society (WCS)',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Ethan-Budiansky.jpg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/imageedit_1_4178324201.png",
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Ethan-Budiansky.jpeg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/imageedit_1_4178324201-1.png",
       iconWidth: 100,
       iconHeight: 100,
-      bio: ` `
+      bio: `Ethan Budiansky is the Sustainable Commodities Lead at the Wildlife Conservation Society, working at the intersection of biodiversity, commodity production, healthy landscapes, and livelihoods. He has over 20 years of experience in conservation, corporate engagement, and natural resource management. Previously, he spent 13 years at the World Cocoa Foundation as Sr. Director of Environment, leading the Climate Smart Cocoa Program and Cocoa & Forest Initiative to advance sustainability and address deforestation and climate risks. He also directed agroforestry programs at Trees for the Future and served in the Peace Corps in Senegal. Ethan holds a B.A. in Zoology and dual M.A.s in Sustainable Development and Natural Resource Management.
+ `
     },
         {
       name: 'Patrick Gibson',
