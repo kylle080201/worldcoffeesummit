@@ -557,7 +557,7 @@ With over 25 years of experience in tropical commodity production landscapes, Ni
       role: 'Journalist, Former Editor',
       company: 'Financial Times - The Banker',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/Joy-Macknight-12-of-19.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/ftlogo-v1_brand-ft-logo-landscape-coloured.png",
+      companyIcon: "",
       iconWidth: 120,
       iconHeight: 120,
       bio: `Joy Macknight is a freelance journalist and former editor of The Banker, part of the
