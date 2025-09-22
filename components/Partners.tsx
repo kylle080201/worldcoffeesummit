@@ -46,22 +46,27 @@ export default function Partners() {
         {
             href: '',
             imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Preferred_by_Nature-scaled.png',
-            className: 'w-[16rem] p-2 mx-auto rounded-md'
+            className: 'w-[16rem] px-2 mx-auto rounded-md'
         },
         {
             href: '',
             imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Okala.png',
-            className: 'w-[16rem] p-2 mx-auto rounded-md'
+            className: 'w-[16rem] px-2 mx-auto rounded-md'
         },
         {
             href: '',
             imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/FoodChain-ID.webp',
-            className: 'w-[16rem] p-2 mx-auto rounded-md'
+            className: 'w-[16rem] px-2 mx-auto rounded-md'
         },
-                        {
+         {
             href: '',
             imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/biometrio.earth_.svg',
-            className: 'w-[20rem] p-2 mx-auto'
+            className: 'w-[16rem] px-2 mx-auto'
+        },
+        {
+            href: '',
+            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Ubees-logo-2022_1.avif',
+            className: 'w-[16rem] px-2 mx-auto'
         }
     ]
 
@@ -216,12 +221,12 @@ export default function Partners() {
                         {coSponsors.map((sponsor) => (
                             sponsor.href ?
                                 <Link key={sponsor.href} href={sponsor.href} target='_blank' rel='noreferer'>
-                                    <div className='items-center flex-shrink-0 h-full p-4'>
+                                    <div className='items-center flex-shrink-0 h-full px-2'>
                                         <img className={sponsor.className} src={sponsor.imgSrc}>
                                         </img>
                                     </div>
                                 </Link> :
-                                <div key={sponsor.href} className='items-center flex-shrink-0 h-full p-4'>
+                                <div key={sponsor.href} className='items-center flex-shrink-0 h-full px-2'>
                                     <img className={sponsor.className} src={sponsor.imgSrc}>
                                     </img>
                                 </div>
