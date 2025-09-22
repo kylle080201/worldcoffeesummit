@@ -56,7 +56,7 @@ export default function Partners() {
         {
             href: '',
             imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/FoodChain-ID.webp',
-            className: 'w-[14rem] p-2 mx-auto rounded-md'
+            className: 'w-[12rem] p-2 mx-auto rounded-md'
         },
          {
             href: '',
