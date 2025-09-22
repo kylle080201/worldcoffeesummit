@@ -65,7 +65,7 @@ export default function Partners() {
         },
         {
             href: '',
-            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Ubees-logo-2022-scaled.png',
+            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Ubees-logo-2022_1.avif',
             className: 'w-[16rem] px-2 mx-auto'
         }
     ]
