@@ -46,27 +46,27 @@ export default function Partners() {
         {
             href: '',
             imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Preferred_by_Nature-scaled.png',
-            className: 'w-[16rem] p-2 mx-auto rounded-md'
+            className: 'w-[12rem] p-2 mx-auto rounded-md'
         },
         {
             href: '',
             imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Okala.png',
-            className: 'w-[16rem] p-2 mx-auto rounded-md'
+            className: 'w-[12rem] p-2 mx-auto rounded-md'
         },
         {
             href: '',
             imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/FoodChain-ID.webp',
-            className: 'w-[16rem] p-2 mx-auto rounded-md'
+            className: 'w-[14rem] p-2 mx-auto rounded-md'
         },
          {
             href: '',
             imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/biometrio.earth_.svg',
-            className: 'w-[20rem] p-2 mx-auto'
+            className: 'w-[14rem] p-2 mx-auto'
         },
         {
             href: '',
             imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Ubees-logo-2022-scaled.png',
-            className: 'w-[20rem] p-2 mx-auto'
+            className: 'w-[14rem] p-2 mx-auto'
         }
     ]
 
