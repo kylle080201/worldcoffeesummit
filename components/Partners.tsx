@@ -111,7 +111,7 @@ export default function Partners() {
             className: 'w-[10rem] p-2 mx-auto'
         }
 
-
+//
     ]
 
     const crossIndustryPartners = [
