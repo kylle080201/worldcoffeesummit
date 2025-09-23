@@ -63,16 +63,17 @@ export default function Partners() {
             imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Beefutures_Logo_Web500_positive.png',
             className: 'w-[10rem] px-2 mx-auto'
         },
-                {
-            href: '',
-            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/biometrio.earth_.svg',
-            className: 'w-[16rem] px-2 mx-auto'
-        },
         {
             href: '',
             imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Ubees-logo-2022_1.avif',
-            className: 'w-[12rem] px-2 mx-auto'
+            className: 'w-[14rem] px-2 mx-auto'
+        },
+        {
+            href: '',
+            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/biometrio.earth_.svg',
+            className: 'w-[18rem] px-2 mx-auto'
         }
+
     ]
 
     const sustainableCoffeePartner = [
@@ -103,7 +104,7 @@ export default function Partners() {
         {
             href: '',
             imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/logo-dark.svg',
-            className: 'w-[6rem] p-2 mx-auto'
+            className: 'w-[7rem] p-2 mx-auto'
         },
                 {
             href: '',
