@@ -48,11 +48,21 @@ Ambassador Belal is married, with two children and two grandchildren.`
       name: 'Wagner Albuquerque de Almeida',
       role: 'Global Director- Manufacturing, Agribusiness and Forestry',
       company: 'International Finance Corporation (IFC)',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Wagner-Albuquerque-de-Almeida-1.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/IFC-Logo.png",
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Wagner-Albuquerque-de-Almeida.jpg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/IFC-Logo.svg",
       iconWidth: 100,
       iconHeight: 100,
-      bio: ``
+      bio: `Wagner Albuquerque de Almeida is the Global Director for Manufacturing‚
+Agribusiness, and Forestry (MAF) at IFC, a member of the World Bank and the
+largest global development institution focused on the private sector in emerging
+markets. Based in Washington, DC, Wagner is responsible for managing IFC’s
+investment and advisory services in the manufacturing, agribusiness, and
+forestry sectors, leading a team responsible for an investment portfolio of over
+$12 billion. Since joining IFC in 2010, Wagner has had a variety of roles
+spanning different industries and regions, including Africa, the Middle East and North Africa, Latin
+America and the Caribbean, Europe, Central Asia, and Türkiye.
+Prior to joining IFC, Wagner's career spanned several key positions at prominent global financial
+institutions such as ABN AMRO, Deutsche Bank, and Banco Itau, in addition to his role at Monsanto.`
     },
     {
       name: 'The Rt. Hon John Gummer, Lord Deben',
@@ -546,11 +556,16 @@ With over 25 years of experience in tropical commodity production landscapes, Ni
       name: 'Anup Jagwani',
       role: 'Global Sr. Sector Manager – Agribusiness and Forestry',
       company: 'International Finance Corporation (IFC)',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Anup-Jagwani-1.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/IFC-Logo.png",
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Anup-Jagwani.jpg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/IFC-Logo.svg",
       iconWidth: 100,
       iconHeight: 100,
-      bio: `   `
+      bio: `  Anup Jagwani is the Senior Global Sector Manager for Agribusiness and Forestry at the International Finance Corporation (IFC), a member of the World Bank Group, and the largest development institution focused on the private sector in emerging markets.  
+  
+In this role Anup leads the framing and implementation of the Agribusiness & Forestry sector strategy, including growing IFC’s Agribusiness & Forestry portfolio and creating markets through new initiatives and products. He leads on innovation and the development and rollout of new business lines/products, ensuring the effective delivery of Investment and Advisory projects.
+ 
+Before taking on this role in August 2023, Anup was leading the climate finance and policy team and covered several areas of IFC’s climate business including Paris Alignment; sustainable finance; carbon pricing and carbon credits; climate risk, adaptation and resilience; biodiversity finance and nature-based solutions; stakeholder engagement & disclosure including TCFD and, climate related technical assistance and training programs.
+ `
     },
         {
       name: 'Joy Macknight',

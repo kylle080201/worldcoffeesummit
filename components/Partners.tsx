@@ -105,7 +105,7 @@ export default function Partners() {
             href: '',
             imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/logo-dark.svg',
             className: 'w-[7rem] p-2 mx-auto'
-        },
+        },//
                 {
             href: '',
             imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/TFG-Logo-scaled.png',
