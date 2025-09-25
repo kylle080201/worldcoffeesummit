@@ -132,8 +132,8 @@ function Agenda() {
                             Jack Bugas</b>, Partner and Associate Director, <b>Boston Consulting Group (BCG) </b><br/><br/>
                         
                             <b>Speakers<br/>
-                            Harper McConnell</b>, Global Vice President Sustainability, <b>Mars</b>
-                            <b>Thomas Delbar</b>, Director of Sustainability – Coffee & Ingredients, <b>Touton group </b>
+                            Harper McConnell</b>, Global Vice President Sustainability, <b>Mars<br/>
+                            Thomas Delbar</b>, Director of Sustainability – Coffee & Ingredients, <b>Touton group </b>
 
                         </span>
                         </h3>
