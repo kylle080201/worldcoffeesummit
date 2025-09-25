@@ -426,6 +426,7 @@ Before joining TechnoServe, Myriam was a management consultant with McKinsey & C
       iconWidth: 80,
       iconHeight: 80,
       bio: ` `
+      //
     },
 
 
