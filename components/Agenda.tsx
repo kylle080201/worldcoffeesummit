@@ -131,7 +131,7 @@ function Agenda() {
                        <span><b> Chair<br/>
                             Jack Bugas</b>, Partner and Associate Director, <b>Boston Consulting Group (BCG) </b><br/><br/>
                         
-                            <b>Speakers
+                            <b>Speakers<br/>
                             Harper McConnell</b>, Global Vice President Sustainability, <b>Mars</b>
                             <b>Thomas Delbar</b>, Director of Sustainability – Coffee & Ingredients, <b>Touton group </b>
 
@@ -352,7 +352,7 @@ function Agenda() {
                         Mario Abreu</b>, Group Vice President Sustainability, <b>Ferrero<br/>
                         Anup Jagwani</b>， Global Sr. Sector Manager – Agribusiness and Forestry, <b>International Finance Corporation (IFC)<br/>
                         Raphaelle Peinado</b>, Sustainability Director, <b>Volcafe <br/>
-                        Piet van Asten, SVP - Head Sustainable Production Systems, <b></b>Olam Food Ingredients (ofi)</b>
+                        Piet van Asten</b>, SVP - Head Sustainable Production Systems, <b>Olam Food Ingredients (ofi)</b>
 </span>
                         </h3>
                     </div>
