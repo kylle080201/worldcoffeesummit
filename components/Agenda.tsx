@@ -279,7 +279,7 @@ function Agenda() {
                                 <span><br/><br/><b>Speakers<br/>
                                 Rick van der Kamp</b>, Global Lead for Markets, Value Chains and Rural Finance, <b>International Fund for Agriculture Development (IFAD)<br/>
                                 Stefan Dierks</b>, Director Sustainability Strategy, <b>Melitta Group<br/>
-                                Raymond Katta</b>, Executive Chairman, Produce Monitoring Board (PMB), <b>Sierra Leone</b>
+                                Raymond Katta</b>, Executive Chairman, <b>Produce Monitoring Board (PMB), Sierra Leone</b>
                                 </span>
                        
                         </h3>
