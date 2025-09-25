@@ -55,7 +55,7 @@ function Agenda() {
                     </div>
                     <div className='mt-4 px-2 max-w-5xl'>
                         <h3 className=''>
-                            <span className='italic'><b>H.E. Sheikh Mohammed Belal</b> Managing Director, <b>Common Fund for Commodities (CFC)</b></span>
+                            <span><b>H.E. Sheikh Mohammed Belal</b>, Managing Director, <b>Common Fund for Commodities (CFC)</b></span>
                         </h3>
                     </div>
                 </div>
@@ -72,7 +72,7 @@ function Agenda() {
                     </div>
                     <div className='mt-4 px-2 max-w-5xl'>
                         <h3 className=''>
-                            <span className='italic'><b>Speakers</b><br/>
+                            <span><b>Speakers</b><br/>
                         <b>The Rt. Hon John Gummer, The Lord Deben,</b> Former Chairman, <b>UK Climate Change Committee (CCC) </b></span>
                         </h3>
                     </div>
@@ -89,8 +89,9 @@ function Agenda() {
                     </div>
                     <div className='mt-4 px-2 max-w-5xl'>
                         <h3 className=''>
-                            <span className='italic'>Compliance as Catalyst – Rethinking the Regulatory Revolution. Turn EUDR and CS3D from box-ticking into brand-building. Discover how trailblazers are future-proofing business through radical transparency and shared accountability.
-                                <br/><br/><b>Chair <br/> Mumbi Gitau, </b> Soft Commodities Reporter, <b>Bloomberg News</b><br/><br/>
+                            <span className='italic'>Compliance as Catalyst – Rethinking the Regulatory Revolution. Turn EUDR and CS3D from box-ticking into brand-building. Discover how trailblazers are future-proofing business through radical transparency and shared accountability.</span>
+                              <span>  <br/><br/><b>Chair <br/> Mumbi Gitau, </b> Soft Commodities Reporter, <b>Bloomberg News</b><br/><br/>
+                                
                                 <b>Speakers<br/>
                                 Nicolas Mounard</b>, Vice President ESG, Sustainability & Traceability, <b>Barry Callebaut  </b><br/>
                                <b> Raphaelle Peinado</b>, Sustainability Director, <b>Volcafe </b><br/>
@@ -126,10 +127,10 @@ function Agenda() {
                     </div>
                     <div className='mt-4 px-2 max-w-5xl'>
                         <h3 className=''>
-                        <span className='italic'>From bean to barcode— farmers, processors and retailers, from procurement to sourcing strategies to farm-level practices and supplier engagement, explore how tech is transforming FMCG accountability and winning consumer trust. <br/><br/>
-                       <b> Chair<br/>
+                        <span className='italic'>From bean to barcode— farmers, processors and retailers, from procurement to sourcing strategies to farm-level practices and supplier engagement, explore how tech is transforming FMCG accountability and winning consumer trust. <br/><br/></span>
+                       <span><b> Chair<br/>
                             Jack Bugas</b>, Partner and Associate Director, <b>Boston Consulting Group (BCG) </b><br/><br/>
-
+                        
                             <b>Speakers
                             Harper McConnell</b>, Global Vice President Sustainability, <b>Mars</b>
                             <b>Thomas Delbar</b>, Director of Sustainability – Coffee & Ingredients, <b>Touton group </b>
@@ -152,27 +153,16 @@ function Agenda() {
                     <div className='mt-4 px-2 max-w-5xl'>
                         <h3 className=''>
                             <span className='italic'>Leveraging high-resolution Planet imagery and Picterra’s geoAI, this session explores precise mapping and monitoring of coffee plantations, with use cases from Brazil covering commodity tracking, legal compliance, and biomass-to-carbon estimation.
-
+                            </span> 
+                            <span>
                                 <br/><br/><b>Speakers<br/>
                                 Dr. Flávia de Souza Mendes</b>, Senior Program Manager Forestry and Land Use, <b>Planet Labs GmbH<br/>
-                                Frank de Morsier</b>, <b>COO & Co-founder, Picterra </b>
+                                Frank de Morsier</b>, COO & Co-founder, <b>Picterra </b>
                             </span>
                         </h3>
                     </div>
                 </div>
 
-
-
-                <div className='mt-8'>
-                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
-                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                            12:10
-                        </div>
-                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                           CASE STUDY: SOLUTION IN ACTION 
-                        </div>
-                    </div>
-                </div>
 
                 
                 <div className='mt-8'>
@@ -187,12 +177,12 @@ function Agenda() {
                     <div className='mt-4 px-2 max-w-5xl'>
                         <h3 className=''>
                             <span className='italic'>Optimising Ecosystems for Productivity and Climate Resilience. Discover how digital intelligence is enabling hyper-personalized farming, real-time risk reduction, and planetary resilience.</span>
-                                <br/><br/><b>Speakers<br/>
+                                <span><br/><br/><b>Speakers<br/>
                                 Nick Appleyard</b>, Head of Applications and Solutions, <b>European Space Agency (ESA)<b/><br/>
                                 Wagner Albuquerque de Almeida</b>, Global Director- Manufacturing, <b>Agribusiness and Forestry, International Finance Corporation<b/> (IFC)<br/>
                                 Suresh Yadav</b>, Director, Climate Change and Oceans Directorate (CCO), <b>The Commonwealth Secretariat<b/> <br/>
                                 Mario Abreu</b>, Group Vice President Sustainability, <b>Ferrero</b>
-                     
+                     </span>
                           </h3>
                     </div>
                 </div>
@@ -221,17 +211,16 @@ function Agenda() {
                     <div className='mt-4 px-2 max-w-5xl'>
                         <h3 className=''>
                             <span className='italic'>Unlocking the potential of regenerative agriculture requires more than pilot projects—it demands systemic redesign, risk transfer innovation, bold investment strategies.</span>  
-                         <br/><br/> <b>Chair<br/>
+                        <span> <br/><br/> <b>Chair<br/>
                         Mauricio Castro Schmitz</b>, Regenerative Agriculture Director, <b>The Nature Conservancy 
 
                         <br/><br/>Speakers<br/>
                         Myriam Sainz</b>, Senior Director Strategic Initiatives, <b>TechnoServe<br/>
-                        Piet van Asten</b>, SVP - Head Sustainable Production Systems, <b>Olam Food Ingredients (ofi)<br/><br/>
-
+                        Piet van Asten</b>, SVP - Head Sustainable Production Systems, <b>Olam Food Ingredients (ofi)<br/>
                         Cleiton Vargas</b>, SVP Innovation Americas, <b>Yara International <br/>
                         Tzutzuy Ramirez</b>, Head of Climate and Nature, <b>Syngenta Group<br/>
                         Roel Messie</b>, Chief Executive Officer, <b>IDH Investment Management</b><br/>
-
+                    </span>
                          </h3>
                     </div>
                 </div>
@@ -261,16 +250,16 @@ function Agenda() {
                     <div className='mt-4 px-2 max-w-5xl'>
                         <h3 className=''>
                            <span className='italic'>The world&apos;s toughest climate challenge becomes your company&apos;s next big opportunity. Learn how leaders are decoding, measuring, and monetising value chain emissions.
-
+                            </span>
+                            <span>
                                <br/> <br/><b>Chair<br/>
                                 Taco Bosman</b>, Partner, <b>EY
 
-                                <br/><br/>Speakers
+                                <br/><br/>Speakers<br/>
                                 Patrick Gibson</b>, EO Senior Climate Lead, <b>UK Space Agency<br/>
                                 Mariana Osorio Londoño</b>, Sustainable Trade Coordinator, <b>National Federation of Coffee Growers of Colombia (FNC)<br/>
                                 Malcolm Hett</b>, Director of Sustainability, <b>UCC Europe</b>
-
-</span>
+                            </span>
                         </h3>
                     </div>
                 </div>
@@ -287,11 +276,11 @@ function Agenda() {
                     <div className='mt-4 px-2 max-w-5xl'>
                         <h3 className=''>
                            <span className='italic'>It’s time to put producers at the centre of the conversation, sharing how they navigate climate shocks, shifting trade, and human rights challenges, highlighting the role of finance, sourcing, innovation, and policy in building resilience, improving livelihoods, and shaping more inclusive global strategies.</span>
-                                <br/><br/><b>Speakers<br/>
+                                <span><br/><br/><b>Speakers<br/>
                                 Rick van der Kamp</b>, Global Lead for Markets, Value Chains and Rural Finance, <b>International Fund for Agriculture Development (IFAD)<br/>
                                 Stefan Dierks</b>, Director Sustainability Strategy, <b>Melitta Group<br/>
                                 Raymond Katta</b>, Executive Chairman, Produce Monitoring Board (PMB), <b>Sierra Leone</b>
-
+                                </span>
                        
                         </h3>
                     </div>
@@ -355,16 +344,16 @@ function Agenda() {
                             PANEL: COCOA & COFFEE SYNERGIES – UNITY FOR RESILIENCE
                         </div>
                     </div>
-                    <div className='mt-4 px-2 max-w-4xl'>
+                    <div className='mt-4 px-2 max-w-5xl'>
                         <h3 className=''>
                             <span className='italic'>One planet. Two crops. Endless possibilities. Aligning innovations, infrastructure, and insights across sectors.</span>
-                        <br/><br/><b>Speakers<br/>
+                      <span>  <br/><br/><b>Speakers<br/>
                         Ruchira Joshi</b>, Director, Global Coffee & Cocoa Sustainability, <b>Starbucks<br/>
                         Mario Abreu</b>, Group Vice President Sustainability, <b>Ferrero<br/>
                         Anup Jagwani</b>， Global Sr. Sector Manager – Agribusiness and Forestry, <b>International Finance Corporation (IFC)<br/>
                         Raphaelle Peinado</b>, Sustainability Director, <b>Volcafe <br/>
                         Piet van Asten, SVP - Head Sustainable Production Systems, <b></b>Olam Food Ingredients (ofi)</b>
-
+</span>
                         </h3>
                     </div>
                 </div>
@@ -379,10 +368,10 @@ function Agenda() {
                             PANEL: CARBON CONFIDENCE – BUILDING TRUST IN NATURE-BASED MARKETS 
                         </div>
                     </div>
-                    <div className='mt-4 px-2 max-w-4xl'>
+                    <div className='mt-4 px-2 max-w-5xl'>
                         <h3 className=''>
                             <span className='italic'>Crack the carbon code: What does integrity mean, and how do we scale it in coffee and cocoa?</span>
-                            <br/><br/><b>Chair
+                           <span>  <br/><br/><b>Chair
                             James Chamberlayne</b>, Director, Sustainable Finance Program, <b>CDP
 
                            <br/><br/>Speakers<br/>
@@ -390,7 +379,7 @@ function Agenda() {
                             Stefan Dierks</b>, Director Sustainability Strategy, <b>Melitta Group<br/>
                             Saurabh Pratap</b>, Executive Director, Sustainable Finance, <b>Standard Chartered Bank<br/>
                             Marco Albani, Co-Founder</b>, co-CEO and President, <b>Chloris Geospatial</b>
-
+</span>
                         </h3>
                     </div>
                 </div>
@@ -427,10 +416,11 @@ function Agenda() {
                             PANEL: DECODING NATURE’S COMPLEXITY
                         </div>
                     </div>
-                    <div className='mt-4 px-2 max-w-4xl'>
+                    <div className='mt-4 px-2 max-w-5xl'>
                         <h3 className=''>
                            <span className='italic'>From Natural Capital to Climate Assets: Building a Science-Based Regeneration Economy. How biodiversity, water, and ecosystem services are emerging as key assets in financial and supply chain decisions. 
-                            <br/><br/> <b>Chair <br/>
+                          </span>
+                           <span> <br/><br/> <b>Chair <br/>
                             Felipe Carazo</b>, Head of Sustainable Commodities, Tropical Forest Alliance, <b>World Economic Forum
 
                             <br/> <br/> Speakers <br/>
@@ -450,14 +440,14 @@ function Agenda() {
                             GLOBAL INVESTORS FORUM: BUILDING THE BUSINESS CASE FOR SUSTAINABILITY AND REGENERATION 
                         </div>
                     </div>
-                    <div className='mt-4 px-2 max-w-3xl'>
+                    <div className='mt-4 px-2 max-w-5xl'>
                         <h3 className=''>
                            <span className='italic'><b>Finance is waking up to nature—but is it moving fast enough?</b> This high-level forum explores how ecosystem-based investment models can shift from short-term returns to long-term shared value. The discussion will spotlight practical mechanisms—blended finance, risk mitigation tools, and outcome-based metrics—that can align financial performance with regenerative outcomes and bring ecosystem-based finance into the mainstream. 
-
-                <br/><br/><b>Chair<br/>
+                        </span>
+                <span><br/><br/><b>Chair<br/>
                 Joy Macknight</b>, Journalist, Former Editor, <b>Financial Times - The Banker
 
-                <br/><br/>Speakers
+                <br/><br/>Speakers<br/>
                 Wagner Albuquerque de Almeida</b>, Global Director- Manufacturing, <b>Agribusiness and Forestry, International Finance Corporation (IFC)</b>
 </span>
                         </h3>
