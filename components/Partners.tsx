@@ -23,7 +23,7 @@ export default function Partners() {
         },
         {
             href: '',
-            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Picterra-1.png',
+            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Picterra_Primary_Logo_Dark-1-scaled.png',
             className: 'w-[16rem] p-2 mx-auto'
         }
     ]

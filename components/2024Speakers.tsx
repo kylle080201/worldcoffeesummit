@@ -422,10 +422,11 @@ Before joining TechnoServe, Myriam was a management consultant with McKinsey & C
       role: 'Co-Founder and COO',
       company: 'Picterra',
       imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Frank-de-Morsier.png',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/Picterra.png",
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/Picterra_Primary_Logo_Dark-1-scaled.png",
       iconWidth: 80,
       iconHeight: 80,
       bio: ` `
+      //
     },
 
 
