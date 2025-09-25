@@ -28,7 +28,7 @@ function Agenda() {
                             9:00
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                          WELCOME KEYNOTE
+                          OPENING REMARKS
                         </div>
                     </div>
                 </div>
@@ -36,46 +36,52 @@ function Agenda() {
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                            9:10
+                            9:05
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                              OPENING KEYNOTE
+                              WELCOME ADDRESS
                         </div>
                     </div>
                 </div>
 
-
-                <div className='mt-8'>
+                        <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                            9:20
+                            9:15
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                            FIRESIDE: THE FUTURE IS FRAGMENTED – CAN COFFEE & COCOA UNITE THE WORLD?
+                            OPENING KEYNOTE
                         </div>
                     </div>
                     <div className='mt-4 px-2 max-w-5xl'>
                         <h3 className=''>
-                            <span className='italic'>In a splintered geopolitical landscape, coffee and cocoa have the power to connect economies, ecosystems, and ethics. This session explores bold strategies for navigating disruption with purpose.</span>
+                            <span className='italic'><b>H.E. Sheikh Mohammed Belal</b> Managing Director, <b>Common Fund for Commodities (CFC)</b></span>
                         </h3>
                     </div>
                 </div>
 
-                 <div className='mt-8'>
+
+                <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                            9:40
+                            9:25
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                              PRESENTATION
+                            <b>FIRESIDE: THE BIGGER PICTURE </b>
                         </div>
+                    </div>
+                    <div className='mt-4 px-2 max-w-5xl'>
+                        <h3 className=''>
+                            <span className='italic'><b>Speakers</b><br/>
+                        <b>The Rt. Hon John Gummer, The Lord Deben,</b> Former Chairman, <b>UK Climate Change Committee (CCC) </b></span>
+                        </h3>
                     </div>
                 </div>
 
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                            9:50
+                            9:55
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                             PANEL: TURNING REGULATORY COMPLIANCE INTO BUSINESS STRATEGY- ADAPTING TO EUDR, CSRD & CS3D
@@ -83,7 +89,16 @@ function Agenda() {
                     </div>
                     <div className='mt-4 px-2 max-w-5xl'>
                         <h3 className=''>
-                            <span className='italic'>Compliance as Catalyst – Rethinking the Regulatory Revolution. Turn EUDR and CS3D from box-ticking into brand-building. Discover how trailblazers are future-proofing business through radical transparency and shared accountability.</span>
+                            <span className='italic'>Compliance as Catalyst – Rethinking the Regulatory Revolution. Turn EUDR and CS3D from box-ticking into brand-building. Discover how trailblazers are future-proofing business through radical transparency and shared accountability.
+                                <br/><br/><b>Chair <br/> Mumbi Gitau, </b> Soft Commodities Reporter, <b>Bloomberg News</b><br/><br/>
+                                <b>Speakers<br/>
+                                Nicolas Mounard</b>, Vice President ESG, Sustainability & Traceability, <b>Barry Callebaut  </b><br/>
+                               <b> Raphaelle Peinado</b>, Sustainability Director, <b>Volcafe </b><br/>
+                                <b>Rachel Vujovic</b>, Director - International Sustainability, <b>ALDI SOUTH Group</b><br/>
+                                <b>Andrea Olivar</b>, Strategy & Quality Director-Latin America, <b>Solidaridad Network</b><br/>
+                                <b>Niels Wielaard</b>, Founder and Director, <b>Satelligence </b>
+
+                            </span>
                         </h3>
                     </div>
                 </div>
@@ -91,7 +106,7 @@ function Agenda() {
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
-                            10:50
+                            10:55
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
                             NETWORKING COFFEE BREAK
@@ -99,22 +114,11 @@ function Agenda() {
                     </div>
                 </div>
 
-                <div className='mt-8'>
-                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
-                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                            11:20
-                        </div>
-                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                            SOLUTION PROVIDER PRESENTATION 
-                        </div>
-                    </div>
-                </div>
-
                 
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                            11:30
+                            11:25
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                            PANEL: DIGITALISING COFFEE & COCOA SUPPLY CHAINS: SUSTAINABILITY, INNOVATION, AND CONSUMER-DRIVEN TRANSFORMATION
@@ -122,11 +126,43 @@ function Agenda() {
                     </div>
                     <div className='mt-4 px-2 max-w-5xl'>
                         <h3 className=''>
-                        <span className='italic'>From bean to barcode— farmers, processors and retailers, from procurement to sourcing strategies to farm-level practices and supplier engagement, explore how tech is transforming FMCG accountability and winning consumer trust.</span>
+                        <span className='italic'>From bean to barcode— farmers, processors and retailers, from procurement to sourcing strategies to farm-level practices and supplier engagement, explore how tech is transforming FMCG accountability and winning consumer trust. <br/><br/>
+                       <b> Chair<br/>
+                            Jack Bugas</b>, Partner and Associate Director, <b>Boston Consulting Group (BCG) </b><br/><br/>
+
+                            <b>Speakers
+                            Harper McConnell</b>, Global Vice President Sustainability, <b>Mars</b>
+                            <b>Thomas Delbar</b>, Director of Sustainability – Coffee & Ingredients, <b>Touton group </b>
+
+                        </span>
                         </h3>
                     </div>
                 </div>
                 
+
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            12:05
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            CASE STUDY: UNLOCKING COFFEE SUPPLY CHAIN TRANSPARENCY & CARBON INSIGHTS 
+                        </div>
+                    </div>
+                    <div className='mt-4 px-2 max-w-5xl'>
+                        <h3 className=''>
+                            <span className='italic'>Leveraging high-resolution Planet imagery and Picterra’s geoAI, this session explores precise mapping and monitoring of coffee plantations, with use cases from Brazil covering commodity tracking, legal compliance, and biomass-to-carbon estimation.
+
+                                <br/><br/><b>Speakers<br/>
+                                Dr. Flávia de Souza Mendes</b>, Senior Program Manager Forestry and Land Use, <b>Planet Labs GmbH<br/>
+                                Frank de Morsier</b>, <b>COO & Co-founder, Picterra </b>
+                            </span>
+                        </h3>
+                    </div>
+                </div>
+
+
+
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
@@ -142,7 +178,7 @@ function Agenda() {
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                            12:25
+                            12:20
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                             PANEL: AI-DRIVEN & DIGITAL INNOVATION IN SMART FARMING
@@ -151,25 +187,21 @@ function Agenda() {
                     <div className='mt-4 px-2 max-w-5xl'>
                         <h3 className=''>
                             <span className='italic'>Optimising Ecosystems for Productivity and Climate Resilience. Discover how digital intelligence is enabling hyper-personalized farming, real-time risk reduction, and planetary resilience.</span>
-                        </h3>
+                                <br/><br/><b>Speakers<br/>
+                                Nick Appleyard</b>, Head of Applications and Solutions, <b>European Space Agency (ESA)<b/><br/>
+                                Wagner Albuquerque de Almeida</b>, Global Director- Manufacturing, <b>Agribusiness and Forestry, International Finance Corporation<b/> (IFC)<br/>
+                                Suresh Yadav</b>, Director, Climate Change and Oceans Directorate (CCO), <b>The Commonwealth Secretariat<b/> <br/>
+                                Mario Abreu</b>, Group Vice President Sustainability, <b>Ferrero</b>
+                     
+                          </h3>
                     </div>
                 </div>
 
-                <div className='mt-8'>
-                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
-                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                            13:05
-                        </div>
-                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                            SOLUTION PROVIDER PRESENTATION 
-                        </div>
-                    </div>
-                </div>
 
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
-                            13:15
+                            13:00
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
                             NETWORKING LUNCH
@@ -180,27 +212,27 @@ function Agenda() {
                  <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                            14:15
+                            14:00
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                            PANEL: SCALING REGENERATIVE AGRICULTURE ACROSS ORIGINS – DE-RISKING TRANSFORMATION: MAKING REGENERATIVE AGRICULTURE INVESTIBLE
+                            PANEL: DE-RISKING TRANSFORMATION: MAKING REGENERATIVE AGRICULTURE INVESTIBLE
                         </div>
                     </div>
                     <div className='mt-4 px-2 max-w-5xl'>
                         <h3 className=''>
                             <span className='italic'>Unlocking the potential of regenerative agriculture requires more than pilot projects—it demands systemic redesign, risk transfer innovation, bold investment strategies.</span>  
-                        </h3>
-                    </div>
-                </div>
+                         <br/><br/> <b>Chair<br/>
+                        Mauricio Castro Schmitz</b>, Regenerative Agriculture Director, <b>The Nature Conservancy 
 
-                 <div className='mt-8'>
-                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
-                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                            15:05
-                        </div>
-                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                           SOLUTION PROVIDER PRESENTATION
-                        </div>
+                        <br/><br/>Speakers<br/>
+                        Myriam Sainz</b>, Senior Director Strategic Initiatives, <b>TechnoServe<br/>
+                        Piet van Asten</b>, SVP - Head Sustainable Production Systems, <b>Olam Food Ingredients (ofi)<br/><br/>
+
+                        Cleiton Vargas</b>, SVP Innovation Americas, <b>Yara International <br/>
+                        Tzutzuy Ramirez</b>, Head of Climate and Nature, <b>Syngenta Group<br/>
+                        Roel Messie</b>, Chief Executive Officer, <b>IDH Investment Management</b><br/>
+
+                         </h3>
                     </div>
                 </div>
 
@@ -209,7 +241,7 @@ function Agenda() {
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
-                            15:15
+                            15:00
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
                             NETWORKING COFFEE BREAK
@@ -220,15 +252,25 @@ function Agenda() {
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                            15:45
+                            15:30
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                            PANEL: CRACKING SCOPE 3 – FROM CHAOS TO CLARITY 
+                            PANEL: CRACKING SCOPE 3 – FROM CHAOS TO CLARITY
                         </div>
                     </div>
                     <div className='mt-4 px-2 max-w-5xl'>
                         <h3 className=''>
-                           <span className='italic'>The world&apos;s toughest climate challenge becomes your company&apos;s next big opportunity. Learn how leaders are decoding, measuring, and monetising value chain emissions.</span>
+                           <span className='italic'>The world's toughest climate challenge becomes your company's next big opportunity. Learn how leaders are decoding, measuring, and monetising value chain emissions.
+
+                               <br/> <br/><b>Chair<br/>
+                                Taco Bosman</b>, Partner, <b>EY
+
+                                <br/><br/>Speakers
+                                Patrick Gibson</b>, EO Senior Climate Lead, <b>UK Space Agency<br/>
+                                Mariana Osorio Londoño</b>, Sustainable Trade Coordinator, <b>National Federation of Coffee Growers of Colombia (FNC)<br/>
+                                Malcolm Hett</b>, Director of Sustainability, <b>UCC Europe</b>
+
+</span>
                         </h3>
                     </div>
                 </div>
@@ -236,7 +278,7 @@ function Agenda() {
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                            16:25
+                            16:10
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                            PANEL: BEYOND THE FARMGATE – SYSTEMIC PERSPECTIVES ON PROFIT, PLANET, AND PROGRESS 
@@ -245,6 +287,12 @@ function Agenda() {
                     <div className='mt-4 px-2 max-w-5xl'>
                         <h3 className=''>
                            <span className='italic'>It’s time to put producers at the centre of the conversation, sharing how they navigate climate shocks, shifting trade, and human rights challenges, highlighting the role of finance, sourcing, innovation, and policy in building resilience, improving livelihoods, and shaping more inclusive global strategies.</span>
+                                <br/><br/><b>Speakers<br/>
+                                Rick van der Kamp</b>, Global Lead for Markets, Value Chains and Rural Finance, <b>International Fund for Agriculture Development (IFAD)<br/>
+                                Stefan Dierks</b>, Director Sustainability Strategy, <b>Melitta Group<br/>
+                                Raymond Katta</b>, Executive Chairman, Produce Monitoring Board (PMB), <b>Sierra Leone</b>
+
+                       
                         </h3>
                     </div>
                 </div>
@@ -252,7 +300,7 @@ function Agenda() {
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
-                            17:05
+                            17:00
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
                             NETWORKING DRINKS
@@ -271,7 +319,7 @@ function Agenda() {
                             9:00
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                            OPENING KEYNOTE
+                            COFFEE REGISTRATION 
                         </div>
                     </div>
                 </div>
@@ -279,10 +327,21 @@ function Agenda() {
                  <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                            9:10
+                            9:45
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                            GOVERNMENT KEYNOTE
+                            OPENING REMARKS
+                        </div>
+                    </div>
+                </div>
+
+                <div className='mt-8'>
+                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
+                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                            9:50
+                        </div>
+                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                            INSPIRATIONAL KEYNOTE
                         </div>
                     </div>
                 </div>
@@ -290,7 +349,7 @@ function Agenda() {
                  <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                            9:20
+                            10:00
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                             PANEL: COCOA & COFFEE SYNERGIES – UNITY FOR RESILIENCE
@@ -299,6 +358,13 @@ function Agenda() {
                     <div className='mt-4 px-2 max-w-4xl'>
                         <h3 className=''>
                             <span className='italic'>One planet. Two crops. Endless possibilities. Aligning innovations, infrastructure, and insights across sectors.</span>
+                        <br/><br/><b>Speakers<br/>
+                        Ruchira Joshi</b>, Director, Global Coffee & Cocoa Sustainability, <b>Starbucks<br/>
+                        Mario Abreu</b>, Group Vice President Sustainability, <b>Ferrero<br/>
+                        Anup Jagwani</b>， Global Sr. Sector Manager – Agribusiness and Forestry, <b>International Finance Corporation (IFC)<br/>
+                        Raphaelle Peinado</b>, Sustainability Director, <b>Volcafe <br/>
+                        Piet van Asten, SVP - Head Sustainable Production Systems, <b></b>Olam Food Ingredients (ofi)</b>
+
                         </h3>
                     </div>
                 </div>
@@ -307,7 +373,7 @@ function Agenda() {
                  <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                            10:00
+                            11:30
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                             PANEL: CARBON CONFIDENCE – BUILDING TRUST IN NATURE-BASED MARKETS 
@@ -316,6 +382,15 @@ function Agenda() {
                     <div className='mt-4 px-2 max-w-4xl'>
                         <h3 className=''>
                             <span className='italic'>Crack the carbon code: What does integrity mean, and how do we scale it in coffee and cocoa?</span>
+                            <br/><br/><b>Chair
+                            James Chamberlayne</b>, Director, Sustainable Finance Program, <b>CDP
+
+                           <br/><br/>Speakers<br/>
+                            Owen Hewlett</b>, Chief Technical Officer, Gold Standard; Technical Council Member, <b>SBTi<br/>
+                            Stefan Dierks</b>, Director Sustainability Strategy, <b>Melitta Group<br/>
+                            Saurabh Pratap</b>, Executive Director, Sustainable Finance, <b>Standard Chartered Bank<br/>
+                            Marco Albani, Co-Founder</b>, co-CEO and President, <b>Chloris Geospatial</b>
+
                         </h3>
                     </div>
                 </div>
@@ -323,10 +398,10 @@ function Agenda() {
                  <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                            10:40
+                            12:30
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                            SOLUTION PROVIDER PRESENTATION
+                            COFFEE TASTING SESSION 
                         </div>
                     </div>
                 </div>
@@ -335,10 +410,10 @@ function Agenda() {
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
-                            10:50
+                            13:00
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
-                            COFFEE TASTING SESSION + NETWORKING COFFEE BREAK 
+                           NETWORKING LUNCH
                         </div>
                     </div>
                 </div> 
@@ -346,7 +421,7 @@ function Agenda() {
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                            11:20
+                            14:00
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                             PANEL: DECODING NATURE’S COMPLEXITY
@@ -354,88 +429,22 @@ function Agenda() {
                     </div>
                     <div className='mt-4 px-2 max-w-4xl'>
                         <h3 className=''>
-                           <span className='italic'>From Natural Capital to Climate Assets: Building a Science-Based Regeneration Economy. How biodiversity, water, and ecosystem services are emerging as key assets in financial and supply chain decisions.</span>
+                           <span className='italic'>From Natural Capital to Climate Assets: Building a Science-Based Regeneration Economy. How biodiversity, water, and ecosystem services are emerging as key assets in financial and supply chain decisions. 
+                            <br/><br/> <b>Chair <br/>
+                            Felipe Carazo</b>, Head of Sustainable Commodities, Tropical Forest Alliance, <b>World Economic Forum
+
+                            <br/> <br/> Speakers <br/>
+                            Ethan Budiansky</b>, Sustainable Commodities Lead, <b>Wildlife Conservation Society( WCS) <br/>
+                            Toby Behrmann</b>, Head of London Market & Public Private Partnerships, <b>AXA Climate</b>
+                            </span>
                         </h3>
                     </div>
                 </div>
 
-
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                            12:00
-                        </div>
-                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                            SOLUTION PROVIDER PRESENTATION
-                        </div>
-                    </div>
-                </div>
-
-                <div className='mt-8'>
-                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
-                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                            12:10
-                        </div>
-                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                           NETWORKING ROUNDTABLES 
-                        </div>
-                    </div>
-                    <div className='mt-4 px-2 max-w-3xl'>
-                        <h3 className=''>
-                            <span className='italic'>Chatham House dialogues on critical topic issues. Topics TBC.</span>
-                            </h3>
-                    </div>
-                </div>
-
-
-                <div className='mt-8'>
-                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
-                        <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
-                            12:50
-                        </div>
-                        <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
-                            NETWORKING LUNCH
-                        </div>
-                    </div>
-                </div>
-
-                 <div className='mt-8'>
-                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
-                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                            13:50
-                        </div>
-                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                            FIRESIDE: CRAFTING ECOSYSTEM BUSINESS MODELS — WHAT CAN WE LEARN FROM OTHER SECTORS 
-                        </div>
-                    </div>
-                    <div className='mt-4 px-2 max-w-4xl'>
-                        <h3 className=''>
-                            <span className='italic'>How ecosystem business models can help coffee and cocoa industries tackle climate, compliance, and inequality challenges by fostering collaboration and resilience. </span>
-                        </h3>
-                    </div>
-                </div>
-
-                 <div className='mt-8'>
-                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
-                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                            14:10
-                        </div>
-                        <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                            GLOBAL LEADERS FORUM: FIRESIDE– TOWARD A NET POSITIVE WORLD
-                        </div>
-                    </div>
-                    <div className='mt-4 px-2 max-w-4xl'>
-                        <h3 className=''>
-                            <span className='italic'>A bold conversation about flipping the script—from extractive to regenerative, from offsetting to thriving.</span>
-                        </h3>
-                    </div>
-                </div>
-
-
-                <div className='mt-8'>
-                    <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
-                        <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                            14:50
+                            14:40
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                             GLOBAL INVESTORS FORUM: BUILDING THE BUSINESS CASE FOR SUSTAINABILITY AND REGENERATION 
@@ -443,7 +452,14 @@ function Agenda() {
                     </div>
                     <div className='mt-4 px-2 max-w-3xl'>
                         <h3 className=''>
-                           <span className='italic'>Hard returns meet heart-driven missions. What will it take to mainstream ecosystem-based investment?</span>
+                           <span className='italic'><b>Finance is waking up to nature—but is it moving fast enough?</b> This high-level forum explores how ecosystem-based investment models can shift from short-term returns to long-term shared value. The discussion will spotlight practical mechanisms—blended finance, risk mitigation tools, and outcome-based metrics—that can align financial performance with regenerative outcomes and bring ecosystem-based finance into the mainstream. 
+
+                <br/><br/><b>Chair<br/>
+                Joy Macknight</b>, Journalist, Former Editor, <b>Financial Times - The Banker
+
+                <br/><br/>Speakers
+                Wagner Albuquerque de Almeida</b>, Global Director- Manufacturing, <b>Agribusiness and Forestry, International Finance Corporation (IFC)</b>
+</span>
                         </h3>
                     </div>
                 </div>
@@ -451,7 +467,7 @@ function Agenda() {
                 <div className='mt-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                            15:40
+                            15:25
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                             CLOSING REFLECTIONS & CALL TO ACTION 
@@ -462,7 +478,7 @@ function Agenda() {
                 <div className='mt-8 mb-8'>
                     <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                         <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
-                            15:50
+                            15:30
                         </div>
                         <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
                             END OF SUMMIT
