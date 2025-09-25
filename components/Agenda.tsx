@@ -260,7 +260,7 @@ function Agenda() {
                     </div>
                     <div className='mt-4 px-2 max-w-5xl'>
                         <h3 className=''>
-                           <span className='italic'>The world's toughest climate challenge becomes your company's next big opportunity. Learn how leaders are decoding, measuring, and monetising value chain emissions.
+                           <span className='italic'>The world&apos;s toughest climate challenge becomes your company&apos;s next big opportunity. Learn how leaders are decoding, measuring, and monetising value chain emissions.
 
                                <br/> <br/><b>Chair<br/>
                                 Taco Bosman</b>, Partner, <b>EY
