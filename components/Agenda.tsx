@@ -375,7 +375,7 @@ function Agenda() {
                             James Chamberlayne</b>, Director, Sustainable Finance Program, <b>CDP
 
                            <br/><br/>Speakers<br/>
-                            Owen Hewlett</b>, Chief Technical Officer, Gold Standard; Technical Council Member, <b>SBTi<br/>
+                            Owen Hewlett</b>, Chief Technical Officer,<b> Gold Standard</b>; Technical Council Member, <b>SBTi<br/>
                             Stefan Dierks</b>, Director Sustainability Strategy, <b>Melitta Group<br/>
                             Saurabh Pratap</b>, Executive Director, Sustainable Finance, <b>Standard Chartered Bank<br/>
                             Marco Albani, Co-Founder</b>, co-CEO and President, <b>Chloris Geospatial</b>
