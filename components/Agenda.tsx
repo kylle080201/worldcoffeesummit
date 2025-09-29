@@ -189,7 +189,7 @@ function Agenda() {
                                 <span className='italic'>Optimising Ecosystems for Productivity and Climate Resilience. Discover how digital intelligence is enabling hyper-personalized farming, real-time risk reduction, and planetary resilience.</span>
                                 <span><br /><br /><b>Speakers<br />
                                     <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Nick-Appleyard.jpg'/> Nick Appleyard</b>, Head of Applications and Solutions, <b>European Space Agency (ESA)<b /><br />
-                                      <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Wagner-Albuquerque-de-Almeida.jpg'/>   Wagner Albuquerque de Almeida</b>, Global Director- Manufacturing, <b>Agribusiness and Forestry, International Finance Corporation<b /> (IFC)<br />
+                                      <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/07/Ruchira-Joshi-1.jpeg'/>   Ruchira Joshi</b>, Director, Global Coffee & Cocoa Sustainability, <b>Starbucks<br />
                                       <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Suresh-Yadav.png'/>   Suresh Yadav</b>, Director, Climate Change and Oceans Directorate (CCO), <b>The Commonwealth Secretariat<b /> <br />
                                        <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Mario-Abreu.jpg'/>  Mario Abreu</b>, Group Vice President Sustainability, <b>Ferrero</b>
                                 </span>
@@ -364,7 +364,7 @@ function Agenda() {
                                   <br /><br />Speakers<br />
                                     <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/07/Ruchira-Joshi-1.jpeg'/> Ruchira Joshi</b>, Director, Global Coffee & Cocoa Sustainability, <b>Starbucks<br />
                                       <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Mario-Abreu.jpg'/>   Mario Abreu</b>, Group Vice President Sustainability, <b>Ferrero<br />
-                                       <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Anup-Jagwani.jpg'/>  Anup Jagwani</b>， Global Sr. Sector Manager – Agribusiness and Forestry, <b>International Finance Corporation (IFC)<br />
+                                       <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Wagner-Albuquerque-de-Almeida.jpg'/>  Wagner Albuquerque de Almeida</b>， Global Director- Manufacturing, Agribusiness and Forestry, <b>International Finance Corporation (IFC)<br />
                                        <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Raphaelle-Peinado-2.jpg'/>  Raphaelle Peinado</b>, Sustainability Director, <b>Volcafe <br />
                                        <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/07/image-21.jpg'/>  Piet van Asten</b>, SVP - Head Sustainable Production Systems, <b>Olam Food Ingredients (ofi)</b>
                                 </span>
