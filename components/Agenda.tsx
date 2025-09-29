@@ -357,7 +357,11 @@ function Agenda() {
                         <div className='mt-4 px-2 max-w-5xl'>
                             <h3 className=''>
                                 <span className='italic'>One planet. Two crops. Endless possibilities. Aligning innovations, infrastructure, and insights across sectors.</span>
-                                <span>  <br /><br /><b>Speakers<br />
+                                <span>
+                                    <br/><br/><b>Chair <br />
+                                   <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Jenny-Davis-Peccoud.jpeg'/>  Jenny Davis-Peccoud</b>, Founder and Leader, Global Sustainability & Responsibility Practice, <b>Bain & Co. 
+
+                                  <br /><br />Speakers<br />
                                     <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/07/Ruchira-Joshi-1.jpeg'/> Ruchira Joshi</b>, Director, Global Coffee & Cocoa Sustainability, <b>Starbucks<br />
                                       <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Mario-Abreu.jpg'/>   Mario Abreu</b>, Group Vice President Sustainability, <b>Ferrero<br />
                                        <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Anup-Jagwani.jpg'/>  Anup Jagwani</b>， Global Sr. Sector Manager – Agribusiness and Forestry, <b>International Finance Corporation (IFC)<br />

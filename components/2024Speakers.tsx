@@ -296,11 +296,12 @@ As Senior Program Manager of Forest & Land Use at Planet, Dr. Mendes leads strat
       name: 'Toby Behrmann',
       role: 'Head of London Market & Public Private Partnerships',
       company: 'AXA Climate',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Toby-Behrmann.webp',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Toby-Behrmann.jpeg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/AXA_Climate_Blue_Horizontal_RVB.png",
       iconWidth: 120,
       iconHeight: 120,
-      bio: ``
+      bio: `Toby is currently Head of London Market and Public Private Partnerships at AXA Climate, the specialized entity within the AXA Group, created to address the growing need for climate adaptation across both private and public sectors.  He focuses on developing innovative financial solutions to address the growing impacts of climate change. Starting his career at international insurer AIG, Toby has spent over 20 years structuring and deploying global financial mechanisms across retail, commercial, and public sector channels, with a particular emphasis on resilience and adaptation strategies. With extensive experience in re/insurance, derivatives, and ILS, Toby is a passionate advocate for alternative risk transfer as a vital tool for bridging gaps in traditional insurance coverage and enhancing climate resilience across sectors.
+`
     },
 
     {
@@ -443,6 +444,17 @@ He currently serves as Head of Sustainable Commodities for the Tropical Forest A
 Previously he served as Executive Director of Fundecor, a ‘think tank’ that has been instrumental for his native country, Costa Rica, to develop and implement sound forest positive practices.  While leading Fundecor, he served as top-level advisor to the Government of Costa Rica. He has also worked at The Nature Conservancy (TNC) and the United Nations Development Program (UNDP) with diverse sustainability strategies across diverse contexts.  
 He holds a bachelor´s Degree in Biology from the Universidad de Costa Rica and a master’s degree in environmental management from the Nicholas School of Environment, Duke University (USA), with a mayor in Resource Economics and Policy.
 `
+    },
+
+        {
+      name: 'Jenny Davis-Peccoud',
+      role: 'Founder and Leader, Global Sustainability & Responsibility Practice',
+      company: 'Bain & Co.',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Jenny-Davis-Peccoud.jpeg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/bain-logo.png.webp",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: ` `
     },
         {
       name: 'Owen Hewlett',
