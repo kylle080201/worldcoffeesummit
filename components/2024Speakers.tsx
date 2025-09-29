@@ -450,8 +450,8 @@ He holds a bachelor´s Degree in Biology from the Universidad de Costa Rica and 
       name: 'Jenny Davis-Peccoud',
       role: 'Founder and Leader, Global Sustainability & Responsibility Practice',
       company: 'Bain & Co.',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Jenny-Davis-Peccoud.jpeg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/bain-logo.png.webp",
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Jenny-Davis-Peccoud.jpg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/bainstackedlogo_dig_red_1280x389px-1.png",
       iconWidth: 120,
       iconHeight: 120,
       bio: ` `
