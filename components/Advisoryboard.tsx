@@ -146,7 +146,7 @@ const settings = {
         }
       }}
     >
-<div className="flex flex-col w-72 bg-white rounded-lg overflow-hidden shadow-md h-[470px] relative">
+<div className="flex flex-col w-72 bg-white rounded-lg overflow-hidden shadow-md h-[520px] relative">
   {/* Image Section */}
   <div className="h-[300px] relative">
     <img
@@ -172,10 +172,10 @@ const settings = {
   </div>
 
   {/* Info Section */}
-  <div className="flex flex-col justify-start flex-grow bg-[#4D7C0F] px-4 pt-12 pb-4 text-white">
-    <h3 className="text-lg font-semibold leading-8 tracking-tight text-white md:text-xl">{speaker.name}</h3>
-    <p className="text-sm">{speaker.designation}</p>
-    <p className="text-sm font-semibold">{speaker.organization}</p>
+  <div className="flex flex-col justify-start flex-grow bg-[#4D7C0F] px-4 pt-12 pb-4 text-white p-6">
+    <h3 className="text-lg font-semibold leading-8 tracking-tight text-white md:text-2xl">{speaker.name}</h3>
+    <p className="font-semibold leading-7 text-white text-md">{speaker.designation}</p>
+    <p className="leading-7 text-white text-sm">{speaker.organization}</p>
   </div>
 </div>
 
