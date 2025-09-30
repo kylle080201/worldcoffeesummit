@@ -7,6 +7,8 @@ interface Speaker {
   organization: string;
   image: string;
   logo:string;
+  iconHeight:number;
+  iconWidth:number;
   description:string;
 }
 
@@ -16,7 +18,9 @@ const speakers: Speaker[] = [
       designation: 'COO and Regional Director Europe and North America',
       organization: 'Volcafe',
       image: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/Tim_Scharrer_COO_RD_1600x1200.jpg',
-      logo: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/logo@2x-1.png",
+      logo: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/Volcafe.png",
+      iconHeight:200,
+      iconWidth:200,
       description: `
       Appointed Chief Operating Officer and member of the Senior Leadership Team of Volcafe in 2023, Tim assumes global oversight of Volcafe’s Sustainability and Supply Chain functions. In his capacity as Regional Director Europe and North America, Tim leads our destination businesses in those regions. 
       Tim brings over 30 years of experience in green coffee trading and operations management, from both coffee merchants and the roasting industry. Tim started his career with an apprenticeship as a wholesale and international trade specialist. 
@@ -29,6 +33,8 @@ const speakers: Speaker[] = [
       organization: 'Ferrero',
       image: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Mario-Abreu.jpg',
       logo: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/Ferrero-logo.png",
+      iconHeight:120,
+      iconWidth:120,
       description: `Mario Abreu has been the Ferrero Group Vice President Sustainability since April 2020, based in Luxembourg. 
       That role entails securing sustainability is fully embedded in the Group's long-term business strategy. 
       Prior to Ferrero Mario worked for over 20 years in sustainability for Tetra Pak, 
@@ -40,10 +46,12 @@ const speakers: Speaker[] = [
     },
     {
       name: 'Piet van Asten',
-      designation: 'Head of Sustainable Production Systems',
+      designation: 'SVP - Head Sustainable Production Systems',
       organization: 'Olam Food Ingredients (ofi)',
       image: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/piet-van-asten.jpg',
       logo: "https://worldcoffeealliance.com/wp-content/uploads/2024/08/image00111.png",
+      iconHeight:60,
+      iconWidth:60,
       description: `
       Transforming agriculture to (re-)build livelihoods and nature requires knowledge, resources and motivation from farmers. Piet is driving the Regenerative Agriculture agenda across ofi through co-creation and co-investment from farmers to customers. He joined Olam in 2017 to co-create, adapt and apply technologies, approaches and services that improve the productivity, profitability, and carbon footprint of ofi’s coffee estates as well as its (smallholder) farmer network. He holds a PhD from Wageningen with a strong focus on agronomy, farming systems, livelihoods and rural innovation. Prior to his work at ofi, he worked for 20 years as a CGIAR scientist on agricultural systems, based out of Africa.
       `
@@ -54,6 +62,8 @@ const speakers: Speaker[] = [
       organization: 'National Federation of Coffee Growers of Colombia (FNC)',
       image: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Carolina-Castaneda-1.jpeg',
       logo: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/Logos-FNC_Cereza.png",
+      iconHeight:120,
+      iconWidth:120,
       description: `Carolina Castañeda has served as Director for Europe at the Federación Nacional de Cafeteros de Colombia B.V.since 2016. She leads a team focused on business development across various coffee segments (green, roasted and freeze dried), with regional coverage spanning Europe, the Middle East, and Africa. With 19 years of experience across different subsidiaries of the FNC, Carolina brings deep industry expertise and a strong commitment to sustainable coffee trade and long term commercial relationships. Before joining the FNC, she worked in finance. She holds Bachelor of Science degrees in both Physics and Economics, as well as a Master’s in Economics from Los Andes University in Colombia. In 2012, she earned a Master’s in Mathematics in Finance from New York University.
 Carolina advocates for fair negotiation terms in the coffee sector, seeing them as a fundamental pillar of long-term sustainability.
       `
@@ -64,16 +74,18 @@ Carolina advocates for fair negotiation terms in the coffee sector, seeing them 
       organization: 'Yara International',
       image: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Cleiton-Vargas.jpg',
       logo: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/Knowledge_grows_for_A4.png",
+      iconHeight:120,
+      iconWidth:120,
       description: `Cleiton Vargas (born in 1969) has been with Yara for over 30 years and recently took on the role of Senior Vice President of Innovation for the Americas. Throughout his career at the company, he has held various positions across different business units, including Commercial, Operations, and Logistics. Cleiton holds a degree in Agronomic Engineering from the Federal University of Rio Grande do Sul and an MBA in Marketing from the Escola Superior de Propaganda e Marketing`
     },
-
-
     {
       name: 'Toby Behrmann',
       designation: 'Head of London Market & Public Private Partnerships',
       organization: 'AXA Climate',
       image: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Toby-Behrmann.jpeg',
       logo: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/AXA_Climate_Blue_Horizontal_RVB.png",
+      iconHeight:80,
+      iconWidth:80,
       description: ` Toby is currently Head of London Market and Public Private Partnerships at AXA Climate, the specialized entity within the AXA Group, created to address the growing need for climate adaptation across both private and public sectors.  He focuses on developing innovative financial solutions to address the growing impacts of climate change. Starting his career at international insurer AIG, Toby has spent over 20 years structuring and deploying global financial mechanisms across retail, commercial, and public sector channels, with a particular emphasis on resilience and adaptation strategies. With extensive experience in re/insurance, derivatives, and ILS, Toby is a passionate advocate for alternative risk transfer as a vital tool for bridging gaps in traditional insurance coverage and enhancing climate resilience across sectors     `
     }
   
@@ -115,37 +127,9 @@ const settings = {
                         <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl pb-20">ADVISORY BOARD</p>
                     </div>
       {/* External Arrows */}
-      <button
-        onClick={() => sliderRef.current?.slickPrev()}
-        className="absolute -left-8 top-1/2 transform -translate-y-1/2 bg-green-600 text-white rounded-full p-3 z-10 hover:bg-green-700 focus:outline-none"
-        aria-label="Previous Slide"
-      >
-        <svg
-          className="w-4 h-4"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth={2}
-          viewBox="0 0 24 24"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-        </svg>
-      </button>
 
-      <button
-        onClick={() => sliderRef.current?.slickNext()}
-        className="absolute -right-8 top-1/2 transform -translate-y-1/2 bg-green-600 text-white rounded-full p-3 z-10 hover:bg-green-700 focus:outline-none"
-        aria-label="Next Slide"
-      >
-        <svg
-          className="w-4 h-4"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth={2}
-          viewBox="0 0 24 24"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-        </svg>
-      </button>
+
+
 
       {/* Slider */}
 <Slider ref={sliderRef} {...settings}>
@@ -173,13 +157,17 @@ const settings = {
     />
 
     {/* Floating Logo */}
-    <div className="absolute bottom-0 right-4 translate-y-1/2 z-20 bg-white rounded-xl shadow p-4">
+    <div className="absolute w-24 h-24 right-4 top-4/4 transform -translate-y-1/2 bg-white p-2 rounded-md shadow-md">
+     <div className='flex items-center h-full'>
       <img
         src={speaker.logo}
         alt="Logo"
-        className="w-12 h-12 object-contain"
+        height={speaker.iconHeight}
+        width={speaker.iconWidth}
+        className="my-auto mx-auto"
         loading="lazy"
       />
+      </div>
     </div>
   </div>
 
@@ -238,7 +226,9 @@ const settings = {
         <img
           src={selectedSpeaker.logo}
           alt="Logo"
-          className="h-20 object-contain"
+          width="160"
+          height="160"
+          className="h-20 object-cover"
           loading="lazy"
         />
       </div>

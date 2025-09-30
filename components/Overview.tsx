@@ -86,7 +86,7 @@ export default function Overview() {
             </div>
 
             {/* 2025 SUMMIT OVERVIEW */}
-            <div className='w-full md:px-0 px-12 py-8 sm:py-12 bg-gray-100 my-4'>
+            <div className='w-full md:px-0 px-12 py-8 sm:py-12 bg-gray-100'>
                 <div className='justify-center mx-auto max-w-7xl'>
                     <p className="text-2xl font-bold tracking-tight text-center sm:text-4xl text-yellow-900">
                         2025 SUMMIT OVERVIEW
