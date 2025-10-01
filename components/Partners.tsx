@@ -51,12 +51,12 @@ export default function Partners() {
         {
             href: '',
             imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Okala.png',
-            className: 'w-[16rem] px-2 mx-auto rounded-md'
+            className: 'w-[14rem] px-2 mx-auto rounded-md'
         },
         {
             href: '',
             imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/FoodChain-ID.webp',
-            className: 'w-[16rem] px-2 mx-auto rounded-md'
+            className: 'w-[18rem] px-2 mx-auto rounded-md'
         },
          {
             href: '',
@@ -71,7 +71,7 @@ export default function Partners() {
         {
             href: '',
             imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/biometrio.earth_.svg',
-            className: 'w-[18rem] px-2 mx-auto'
+            className: 'w-[24rem] px-2 mx-auto'
         }
 
     ]
