@@ -134,7 +134,7 @@ const settings = {
   return (
     
     
-    <div className="relative w-full max-w-7xl mx-auto my-8" >
+    <div className="relative w-full max-w-7xl mx-auto my-8" id="advisory">
                           <div className="max-w-2xl mx-auto text-center ">
                         <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl pb-20">ADVISORY BOARD</p>
                     </div>
