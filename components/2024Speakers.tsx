@@ -84,19 +84,14 @@ institutions such as ABN AMRO, Deutsche Bank, and Banco Itau, in addition to his
        and personal life Lord Deben has consistently championed an accord between sustainability and business sense.    `
     },
     {
-      name: 'Jean Van Wetter',
-      role: 'CEO',
-      company: 'Enabel',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Jean-Van-Wetter-1.jpg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/enabel-logo-color.png",
+      name: 'H.E. Mbelwa Brighton Kairuki',
+      role: 'High Commissioner of the United Republic of Tanzania to the United Kingdom',
+      company: 'Tanzania High Commission',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/10/Screenshot-2025-10-01-at-15.51.31.jpg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/10/imageedit_74_8864533329.png",
       iconWidth: 100,
       iconHeight: 100,
-      bio: ` Jean Van Wetter is the CEO of Enabel, the Belgian agency for international cooperation. 
-
-Together with its Belgian and international partners, Enabel offers solutions addressing pressing global challenges – Climate Change, Social and Economic Inequalities, Urbanisation, Peace and Security, Human Mobility – and promoting Global Citizenship. Enabel has over 20 years' experience in areas ranging from education and health care to agriculture, environmental protection, digitalisation, employment and governance. Enabel’s expertise is eagerly sought-after by partners around the globe – ranging from the Belgian government, European Union institutions, governments of other countries and the private sector. We work with civil society, research institutes as well as businesses.  With over 2,200 staff, Enabel manages about 170 projects in more than twenty countries, in Europe, Africa and the Middle East. 
-
-Jean Van Wetter graduated from the Solvay Brussels School of Economics and Management at the University of Brussels (ULB) and started his career as a strategy consultant for Arthur Andersen before moving into the international cooperation sector. He was the Executive Director of the NGO Humanity and Inclusion/Handicap International and lived in several countries in Africa, Europe and Asia. He is a frequent panelist on issues related to international cooperation and sustainable development goals. He is married and has three children.  
- `
+      bio: ` `
     },
 
     {
@@ -565,21 +560,21 @@ With over 25 years of experience in tropical commodity production landscapes, Ni
  `
     },
 
-    {
-      name: 'Anup Jagwani',
-      role: 'Global Sr. Sector Manager – Agribusiness and Forestry',
-      company: 'International Finance Corporation (IFC)',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Anup-Jagwani.jpg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/IFC-Logo.svg",
-      iconWidth: 100,
-      iconHeight: 100,
-      bio: `  Anup Jagwani is the Senior Global Sector Manager for Agribusiness and Forestry at the International Finance Corporation (IFC), a member of the World Bank Group, and the largest development institution focused on the private sector in emerging markets.  
+//     {
+//       name: 'Anup Jagwani',
+//       role: 'Global Sr. Sector Manager – Agribusiness and Forestry',
+//       company: 'International Finance Corporation (IFC)',
+//       imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Anup-Jagwani.jpg',
+//       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/IFC-Logo.svg",
+//       iconWidth: 100,
+//       iconHeight: 100,
+//       bio: `  Anup Jagwani is the Senior Global Sector Manager for Agribusiness and Forestry at the International Finance Corporation (IFC), a member of the World Bank Group, and the largest development institution focused on the private sector in emerging markets.  
   
-In this role Anup leads the framing and implementation of the Agribusiness & Forestry sector strategy, including growing IFC’s Agribusiness & Forestry portfolio and creating markets through new initiatives and products. He leads on innovation and the development and rollout of new business lines/products, ensuring the effective delivery of Investment and Advisory projects.
+// In this role Anup leads the framing and implementation of the Agribusiness & Forestry sector strategy, including growing IFC’s Agribusiness & Forestry portfolio and creating markets through new initiatives and products. He leads on innovation and the development and rollout of new business lines/products, ensuring the effective delivery of Investment and Advisory projects.
  
-Before taking on this role in August 2023, Anup was leading the climate finance and policy team and covered several areas of IFC’s climate business including Paris Alignment; sustainable finance; carbon pricing and carbon credits; climate risk, adaptation and resilience; biodiversity finance and nature-based solutions; stakeholder engagement & disclosure including TCFD and, climate related technical assistance and training programs.
- `
-    },
+// Before taking on this role in August 2023, Anup was leading the climate finance and policy team and covered several areas of IFC’s climate business including Paris Alignment; sustainable finance; carbon pricing and carbon credits; climate risk, adaptation and resilience; biodiversity finance and nature-based solutions; stakeholder engagement & disclosure including TCFD and, climate related technical assistance and training programs.
+//  `
+//     },
         {
       name: 'Joy Macknight',
       role: 'Journalist, Former Editor',
@@ -647,6 +642,16 @@ improve the lives of 3 million smallholder farmers.
 Roel joined IDH in 2018 and prior to that, held various management positions in the Dutch
 Entrepreneurial Development Bank (FMO) and worked for ABN AMRO Bank. He has over 30 years
 of investment experience and holds a Master’s Degree in law from the University of Leiden. `
+    },
+        {
+      name: 'Will Baldwin-Cantello',
+      role: 'Director, Nature-based Solutions',
+      company: 'WWF-UK',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/10/Image-empty-state.jpeg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/10/WWF-Logo.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: ` `
     },
     {
       name: 'Saurabh Pratap',

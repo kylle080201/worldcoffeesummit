@@ -85,6 +85,15 @@ export default function Partners() {
         
     ]
 
+        const OfficialOriginCountryExhibitor = [
+        {
+            href: '',
+            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/10/imageedit_74_8864533329.png',
+            className: 'w-[15rem] p-2 mx-auto rounded-md'
+        },
+        
+    ]
+
     const mediaPartners = [
         {
             href: '',
@@ -289,6 +298,33 @@ export default function Partners() {
                     </div> */}
 
                 </div>
+
+
+
+                    <div className="max-w-2xl mx-auto text-center mt-12">
+                        <div className="inline-flex items-center justify-center w-full">
+                            <hr className="w-80 h-px bg-gray-400 border-0" />
+                            <span className="absolute px-3 text-lg sm:text-2xl tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Official Origin Country Exhibitor</span>
+                        </div>
+                    </div>
+                    <div className='flex flex-wrap flex-col items-center justify-center gap-4 mx-auto sm:flex-row sm:max-w-7xl mt-6'>
+                        {OfficialOriginCountryExhibitor.map((sponsor) => (
+                            sponsor.href ?
+                                <Link key={sponsor.href} href={sponsor.href} target='_blank' rel='noreferer'>
+                                    <div className='items-center flex-shrink-0 h-full p-4'>
+                                        <img className={sponsor.className} src={sponsor.imgSrc}>
+                                        </img>
+                                    </div>
+                                </Link> :
+                                <div key={sponsor.href} className='items-center flex-shrink-0 h-full p-4'>
+                                    <img className={sponsor.className} src={sponsor.imgSrc}>
+                                    </img>
+                                </div>
+                        ))}
+                    </div>
+
+
+
                 <div className='mb-20'>
                     <div className="inline-flex items-center justify-center w-full">
                         <hr className="w-80 h-px bg-gray-400 border-0" />

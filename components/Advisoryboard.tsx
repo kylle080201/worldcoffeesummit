@@ -13,6 +13,18 @@ interface Speaker {
 }
 
 const speakers: Speaker[] = [
+    {
+      name: 'The Rt. Hon John Gummer, Lord Deben',
+      designation: 'Former Chairman',
+      organization: 'UK Climate Change Committee (The CCC) House of Lords',
+      image: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Lord-Deben-Photo-2019-adj-003-scaled-copy.jpg',
+      logo: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/House_of_Lords_logo_2020.svg.png",
+      iconHeight:200,
+      iconWidth:200,
+      description: `
+      The Rt. Hon John Gummer, Lord Deben, is the founder and Chairman of Sancroft International, a consultancy that advises both businesses and investors on all areas of Sustainability and ESG. Between 2012 and 2023 he was Chairman of the UK’s Independent Climate Change Committee. Lord Deben was also the UK’s longest serving Secretary of State for the Environment (1993-97) having previously been Minister of Agriculture, Fisheries, and Food. His sixteen years of top-level ministerial experience also include Minister for London, Employment Minister, and Paymaster General in HM Treasury. Lord Deben is currently Chairman of Valpak Ltd and of PIMFA, the trade body representing financial advisers and wealth managers. Throughout his political, business, and personal life Lord Deben has consistently championed an accord between sustainability and business sense.
+      `
+    },
  {
       name: 'Tim Scharrer',
       designation: 'COO and Regional Director Europe and North America',

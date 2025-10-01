@@ -438,6 +438,7 @@ function Agenda() {
                                    <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/07/Felipe-Carazo.jpeg'/>  Felipe Carazo</b>, Head of Sustainable Commodities, Tropical Forest Alliance, <b>World Economic Forum
 
                                         <br /> <br /> Speakers <br />
+                                       <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/10/Image-empty-state.jpeg'/>  Will Baldwin-Cantello</b>, Director, Nature-based Solutions, <b>WWF-UK<br />
                                        <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Ethan-Budiansky.jpeg'/>  Ethan Budiansky</b>, Sustainable Commodities Lead, <b>Wildlife Conservation Society( WCS) <br />
                                        <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Toby-Behrmann.webp'/>  Toby Behrmann</b>, Head of London Market & Public Private Partnerships, <b>AXA Climate</b>
                                 </span>
