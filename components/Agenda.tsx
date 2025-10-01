@@ -340,8 +340,16 @@ function Agenda() {
                                 9:50
                             </div>
                             <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                                INSPIRATIONAL KEYNOTE
+                                OPENING KEYNOTE
                             </div>
+                        </div>
+                        <div className='mt-4 px-2 max-w-5xl'>
+                            <h3 className=''>
+                                <span>
+                                  <b>Speaker<br />
+                                       <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/10/Screenshot-2025-10-01-at-15.51.31.jpg'/> H.E. Mbelwa Brighton Kairuki</b>, High Commissioner of the United Republic of Tanzania to the United Kingdom, <b>Tanzania High <br/>Commission</b>
+                                </span>
+                            </h3>
                         </div>
                     </div>
 
@@ -438,6 +446,7 @@ function Agenda() {
                                    <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/07/Felipe-Carazo.jpeg'/>  Felipe Carazo</b>, Head of Sustainable Commodities, Tropical Forest Alliance, <b>World Economic Forum
 
                                         <br /> <br /> Speakers <br />
+                                       <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/10/Image-empty-state.jpeg'/>  Will Baldwin-Cantello</b>, Director, Nature-based Solutions, <b>WWF-UK<br />
                                        <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Ethan-Budiansky.jpeg'/>  Ethan Budiansky</b>, Sustainable Commodities Lead, <b>Wildlife Conservation Society( WCS) <br />
                                        <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Toby-Behrmann.webp'/>  Toby Behrmann</b>, Head of London Market & Public Private Partnerships, <b>AXA Climate</b>
                                 </span>

@@ -4,6 +4,7 @@ import React from 'react'
 import KeyThemes from './KeyThemes'
 import Speakers2024 from './2024Speakers'
 import Speakertest from './2024Speakerstest'
+import Advisoryboard from './Advisoryboard'
 
 export default function Overview() {
     return (
@@ -125,6 +126,7 @@ export default function Overview() {
                     </div>
                 </div>
             </div>
+                              <Advisoryboard />
                 <Speakers2024 />
                 {/* <Speakertest/> */}
 
