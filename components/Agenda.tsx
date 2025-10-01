@@ -343,6 +343,14 @@ function Agenda() {
                                 OPENING KEYNOTE
                             </div>
                         </div>
+                        <div className='mt-4 px-2 max-w-5xl'>
+                            <h3 className=''>
+                                <span>
+                                  <b>Speaker<br />
+                                       <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/10/Screenshot-2025-10-01-at-15.51.31.jpg'/> H.E. Mbelwa Brighton Kairuki</b>, High Commissioner of the United Republic of Tanzania to the United Kingdom, <b>Tanzania High <br/>Commission</b>
+                                </span>
+                            </h3>
+                        </div>
                     </div>
 
                     <div className='mt-8'>
