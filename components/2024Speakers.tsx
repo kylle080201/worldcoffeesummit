@@ -423,6 +423,27 @@ Before joining TechnoServe, Myriam was a management consultant with McKinsey & C
       iconHeight: 80,
       bio: `Peter Foster is the world trade editor of the Financial Times (FT). `
     },
+      {
+      name: 'Jenny Davis-Peccoud',
+      role: 'Partner, Founder, Global Sustainability & Responsibility Practice',
+      company: 'Bain & Co.',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Jenny-Davis-Peccoud.jpg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/bainstackedlogo_dig_red_1280x389px-1.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: ` `
+    },
+
+     {
+      name: 'Jack Bugas',
+      role: 'Partner and Associate Director',
+      company: 'Boston Consulting Group (BCG) ',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Jack-Bugas.jpeg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/BCG_MONOGRAM.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio:``
+    },
 
     {
       name: 'Frank de Morsier',
@@ -452,16 +473,7 @@ He holds a bachelor´s Degree in Biology from the Universidad de Costa Rica and 
 `
     },
 
-        {
-      name: 'Jenny Davis-Peccoud',
-      role: 'Partner, Founder, Global Sustainability & Responsibility Practice',
-      company: 'Bain & Co.',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Jenny-Davis-Peccoud.jpg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/bainstackedlogo_dig_red_1280x389px-1.png",
-      iconWidth: 120,
-      iconHeight: 120,
-      bio: ` `
-    },
+
         {
       name: 'Owen Hewlett',
       role: 'Chief Technical Officer',
@@ -480,16 +492,7 @@ Owen is also a member of the SBTi Technical Council and the Greenhouse Gas Proto
  `
     },
 
-    {
-      name: 'Jack Bugas',
-      role: 'Partner and Associate Director',
-      company: 'Boston Consulting Group (BCG) ',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Jack-Bugas.jpeg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/BCG_MONOGRAM.png",
-      iconWidth: 120,
-      iconHeight: 120,
-      bio:``
-    },
+
 
      {
       name: 'Marco Albani ',
@@ -551,7 +554,7 @@ Rick started his career in management consulting with Accenture in London, focus
       role: 'Soft Commodities Reporter',
       company: 'Bloomberg News',
       imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Mumbi-Gitau-scaled.jpg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/og-image-generic-lp.png",
+      companyIcon: "",
       iconWidth: 100,
       iconHeight: 100,
       bio: `Mumbi Gitau, soft commodities reporter at Bloomberg News, covering global coffee, cocoa, sugar, cotton, and orange juice markets. `
