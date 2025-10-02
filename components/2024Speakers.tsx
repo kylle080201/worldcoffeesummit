@@ -470,8 +470,7 @@ Before joining TechnoServe, Myriam was a management consultant with McKinsey & C
 He currently serves as Head of Sustainable Commodities for the Tropical Forest Alliance housed in the World Economic Forum. In his role, he fosters multi-stakeholder engagement that connects, influence and mainstream good practices into private and public led policy discussions and processes. 
 Previously he served as Executive Director of Fundecor, a ‘think tank’ that has been instrumental for his native country, Costa Rica, to develop and implement sound forest positive practices.  While leading Fundecor, he served as top-level advisor to the Government of Costa Rica. He has also worked at The Nature Conservancy (TNC) and the United Nations Development Program (UNDP) with diverse sustainability strategies across diverse contexts.  
 He holds a bachelor´s Degree in Biology from the Universidad de Costa Rica and a master’s degree in environmental management from the Nicholas School of Environment, Duke University (USA), with a mayor in Resource Economics and Policy.
-`
-    },
+`},
 
 
         {
