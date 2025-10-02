@@ -413,6 +413,17 @@ Before joining TechnoServe, Myriam was a management consultant with McKinsey & C
       bio: ` `
     },
 
+        {
+      name: 'Peter Foster',
+      role: 'World Trade Editor',
+      company: 'Financial Times (FT)',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/10/Peter-Foster-scaled.jpg',
+      companyIcon: "",
+      iconWidth: 80,
+      iconHeight: 80,
+      bio: `Peter Foster is the world trade editor of the Financial Times (FT). `
+    },
+
     {
       name: 'Frank de Morsier',
       role: 'Co-Founder and COO',
