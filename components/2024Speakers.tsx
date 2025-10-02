@@ -413,6 +413,38 @@ Before joining TechnoServe, Myriam was a management consultant with McKinsey & C
       bio: ` `
     },
 
+        {
+      name: 'Peter Foster',
+      role: 'World Trade Editor',
+      company: 'Financial Times (FT)',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/10/Peter-Foster-scaled.jpg',
+      companyIcon: "",
+      iconWidth: 80,
+      iconHeight: 80,
+      bio: `Peter Foster is the world trade editor of the Financial Times (FT). `
+    },
+      {
+      name: 'Jenny Davis-Peccoud',
+      role: 'Partner, Founder, Global Sustainability & Responsibility Practice',
+      company: 'Bain & Co.',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Jenny-Davis-Peccoud.jpg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/bainstackedlogo_dig_red_1280x389px-1.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: ` `
+    },
+
+     {
+      name: 'Jack Bugas',
+      role: 'Partner and Associate Director',
+      company: 'Boston Consulting Group (BCG) ',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Jack-Bugas.jpeg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/BCG_MONOGRAM.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio:``
+    },
+
     {
       name: 'Frank de Morsier',
       role: 'Co-Founder and COO',
@@ -438,19 +470,9 @@ Before joining TechnoServe, Myriam was a management consultant with McKinsey & C
 He currently serves as Head of Sustainable Commodities for the Tropical Forest Alliance housed in the World Economic Forum. In his role, he fosters multi-stakeholder engagement that connects, influence and mainstream good practices into private and public led policy discussions and processes. 
 Previously he served as Executive Director of Fundecor, a ‘think tank’ that has been instrumental for his native country, Costa Rica, to develop and implement sound forest positive practices.  While leading Fundecor, he served as top-level advisor to the Government of Costa Rica. He has also worked at The Nature Conservancy (TNC) and the United Nations Development Program (UNDP) with diverse sustainability strategies across diverse contexts.  
 He holds a bachelor´s Degree in Biology from the Universidad de Costa Rica and a master’s degree in environmental management from the Nicholas School of Environment, Duke University (USA), with a mayor in Resource Economics and Policy.
-`
-    },
+`},
 
-        {
-      name: 'Jenny Davis-Peccoud',
-      role: 'Partner, Founder, Global Sustainability & Responsibility Practice',
-      company: 'Bain & Co.',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Jenny-Davis-Peccoud.jpg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/bainstackedlogo_dig_red_1280x389px-1.png",
-      iconWidth: 120,
-      iconHeight: 120,
-      bio: ` `
-    },
+
         {
       name: 'Owen Hewlett',
       role: 'Chief Technical Officer',
@@ -469,16 +491,7 @@ Owen is also a member of the SBTi Technical Council and the Greenhouse Gas Proto
  `
     },
 
-    {
-      name: 'Jack Bugas',
-      role: 'Partner and Associate Director',
-      company: 'Boston Consulting Group (BCG) ',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Jack-Bugas.jpeg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/BCG_MONOGRAM.png",
-      iconWidth: 120,
-      iconHeight: 120,
-      bio:``
-    },
+
 
      {
       name: 'Marco Albani ',
@@ -540,7 +553,7 @@ Rick started his career in management consulting with Accenture in London, focus
       role: 'Soft Commodities Reporter',
       company: 'Bloomberg News',
       imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Mumbi-Gitau-scaled.jpg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/og-image-generic-lp.png",
+      companyIcon: "",
       iconWidth: 100,
       iconHeight: 100,
       bio: `Mumbi Gitau, soft commodities reporter at Bloomberg News, covering global coffee, cocoa, sugar, cotton, and orange juice markets. `
