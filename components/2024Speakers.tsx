@@ -656,6 +656,17 @@ Roel joined IDH in 2018 and prior to that, held various management positions in 
 Entrepreneurial Development Bank (FMO) and worked for ABN AMRO Bank. He has over 30 years
 of investment experience and holds a Master’s Degree in law from the University of Leiden. `
     },
+
+    {
+      name: 'Marcial Vargas-Gonzalez',
+      role: 'Science & Innovation, Global Lead',
+      company: 'Quantis',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/10/Marcial-Vargas-Gonzalez.jpg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/10/imageedit_93_9321384431.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: ` `
+    },
         {
       name: 'Will Baldwin-Cantello',
       role: 'Director, Nature-based Solutions',
