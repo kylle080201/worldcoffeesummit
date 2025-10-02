@@ -271,7 +271,7 @@ function Agenda() {
                                         <br /><br />Speakers<br />
                                        <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Patrick-Gibson.jpg'/>  Patrick Gibson</b>, EO Senior Climate Lead, <b>UK Space Agency<br />
                                        <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Mariana-Osorio-Londono-.jpeg'/>  Mariana Osorio Londoño</b>, Sustainable Trade Coordinator, <b>National Federation of Coffee Growers of Colombia (FNC)<br />
-                                       <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/08/image-30.jpg'/>  Malcolm Hett</b>, Director of Sustainability, <b>UCC Europe
+                                       <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/08/image-30.jpg'/>  Malcolm Hett</b>, Director of Sustainability, <b>UCC Europe<br/>
                                        <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/10/Marcial-Vargas-Gonzalez.jpg'/>  Marcial Vargas-Gonzalez</b>, Science & Innovation, Global Lead, <b>Quantis</b>
                                 </span>
                             </h3>
