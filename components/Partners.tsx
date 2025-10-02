@@ -71,7 +71,12 @@ export default function Partners() {
         {
             href: '',
             imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/biometrio.earth_.svg',
-            className: 'w-[24rem] px-2 mx-auto'
+            className: 'w-[20rem] px-2 mx-auto'
+        },
+        {
+            href: '',
+            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/10/4c-stacked-limelight-rainforest-logo-green-final.png',
+            className: 'w-[7rem] px-2 mx-auto'
         }
 
     ]

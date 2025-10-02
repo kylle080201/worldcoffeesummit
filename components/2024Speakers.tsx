@@ -446,6 +446,18 @@ Before joining TechnoServe, Myriam was a management consultant with McKinsey & C
     },
 
     {
+      name: 'Mumbi Gitau',
+      role: 'Soft Commodities Reporter',
+      company: 'Bloomberg News',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Mumbi-Gitau-scaled.jpg',
+      companyIcon: "",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `Mumbi Gitau, soft commodities reporter at Bloomberg News, covering global coffee, cocoa, sugar, cotton, and orange juice markets. `
+    },
+
+
+    {
       name: 'Frank de Morsier',
       role: 'Co-Founder and COO',
       company: 'Picterra',
@@ -548,16 +560,6 @@ Rick started his career in management consulting with Accenture in London, focus
  `
     },
 
-    {
-      name: 'Mumbi Gitau',
-      role: 'Soft Commodities Reporter',
-      company: 'Bloomberg News',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Mumbi-Gitau-scaled.jpg',
-      companyIcon: "",
-      iconWidth: 100,
-      iconHeight: 100,
-      bio: `Mumbi Gitau, soft commodities reporter at Bloomberg News, covering global coffee, cocoa, sugar, cotton, and orange juice markets. `
-    },
 
     {
       name: 'Niels Wielaard',
@@ -655,6 +657,17 @@ improve the lives of 3 million smallholder farmers.
 Roel joined IDH in 2018 and prior to that, held various management positions in the Dutch
 Entrepreneurial Development Bank (FMO) and worked for ABN AMRO Bank. He has over 30 years
 of investment experience and holds a Master’s Degree in law from the University of Leiden. `
+    },
+
+    {
+      name: 'Marcial Vargas-Gonzalez',
+      role: 'Science & Innovation, Global Lead',
+      company: 'Quantis',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/10/Marcial-Vargas-Gonzalez.jpg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/10/imageedit_93_9321384431.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: ` `
     },
         {
       name: 'Will Baldwin-Cantello',
