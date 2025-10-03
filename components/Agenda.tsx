@@ -190,7 +190,10 @@ function Agenda() {
                         <div className='mt-4 px-2 max-w-5xl'>
                             <h3 className=''>
                                 <span className='italic'>Optimising Ecosystems for Productivity and Climate Resilience. Discover how digital intelligence is enabling hyper-personalized farming, real-time risk reduction, and planetary resilience.</span>
-                                <span><br /><br /><b>Speakers<br />
+                                <br /><br />
+                                     <span><b> Chair<br />
+                                    <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/10/Lauren-Ing.jpeg'/> Lauren Ing</b>, Managing Director, Sustainability Strategy, <b>Accenture, U.K. and Ireland</b><br /><br />
+                                    <br /><b>Speakers<br />
                                     <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Nick-Appleyard.jpg'/> Nick Appleyard</b>, Head of Applications and Solutions, <b>European Space Agency (ESA)<b /><br />
                                       <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/07/Ruchira-Joshi-1.jpeg'/>   Ruchira Joshi</b>, Director, Global Coffee & Cocoa Sustainability, <b>Starbucks<br />
                                       <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Suresh-Yadav.png'/>   Suresh Yadav</b>, Director, Climate Change and Oceans Directorate (CCO), <b>The Commonwealth Secretariat<b /> <br />
