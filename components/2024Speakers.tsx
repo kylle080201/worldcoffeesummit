@@ -406,11 +406,12 @@ Before joining TechnoServe, Myriam was a management consultant with McKinsey & C
       name: 'Nick Appleyard',
       role: 'Head of Applications and Solutions',
       company: 'European Space Agency (ESA)',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Nick-Appleyard.jpg',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/10/Nick-APPLEYARD.jpg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/ESA_logo_2020_Deep-e1749855679567.png",
       iconWidth: 80,
       iconHeight: 80,
-      bio: ` `
+      bio: `Dr Nick Appleyard heads up European Space Agency support for sustainable businesses using space. This comprises project funding and support to innovating companies and their customers. Nick’s previous background includes leading the UK government's innovation support for the digital economy, and it is data applications which now motivate the dramatic growth of the commercial space industry.
+ `
     },
 
         {
@@ -454,6 +455,17 @@ Before joining TechnoServe, Myriam was a management consultant with McKinsey & C
       iconWidth: 100,
       iconHeight: 100,
       bio: `Mumbi Gitau, soft commodities reporter at Bloomberg News, covering global coffee, cocoa, sugar, cotton, and orange juice markets. `
+    },
+
+    {
+      name: 'Lauren Ing',
+      role: 'Managing Director, Sustainability Strategy',
+      company: 'Accenture, U.K. and Ireland',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/10/Lauren-Ing.jpeg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/10/6102dbf43de48b00044eb5af.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: ` `
     },
 
 
