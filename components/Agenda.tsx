@@ -504,7 +504,7 @@ function Agenda() {
                                 END OF SUMMIT
                             </div>
                         </div>
- <div className='mt-4 px-2 max-w-5xl'>
+ <div className='mt-8 px-2 max-w-5xl'>
                             <h3 className=''>
                                 <span className='italic'> <span className="text-red-500">*</span>To foster open and candid dialogue among senior leaders, all sessions at the 3rd World Coffee Innovation Summit London 2025 will be conducted under the Chatham House Rule: participants are free to use the information received, but neither the identity nor the affiliation of speakers or participants may be revealed without permission.
                                 </span>
