@@ -13,6 +13,10 @@ const nextConfig = {
       },
       {
         protocol: "https",
+        hostname: "wocofco.org",
+      },
+      {
+        protocol: "https",
         hostname: "softtechs360.com",
       },
       {

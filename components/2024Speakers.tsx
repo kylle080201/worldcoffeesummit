@@ -299,6 +299,18 @@ As Senior Program Manager of Forest & Land Use at Planet, Dr. Mendes leads strat
 `
     },
 
+        {
+      name: 'Dr Katrina Hayter FRSB',
+      role: 'Global Head Sustainable Land Use & Supply Chains',
+      company: 'HSBC',
+      imageUrl: 'https://wocofco.org/wp-content/uploads/2025/10/Dr-Katrina-Hayter-FRSB.jpeg',
+      companyIcon: "https://wocofco.org/wp-content/uploads/2025/10/Hsbc_logo_PNG2.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: `Toby is currently Head of London Market and Public Private Partnerships at AXA Climate, the specialized entity within the AXA Group, created to address the growing need for climate adaptation across both private and public sectors.  He focuses on developing innovative financial solutions to address the growing impacts of climate change. Starting his career at international insurer AIG, Toby has spent over 20 years structuring and deploying global financial mechanisms across retail, commercial, and public sector channels, with a particular emphasis on resilience and adaptation strategies. With extensive experience in re/insurance, derivatives, and ILS, Toby is a passionate advocate for alternative risk transfer as a vital tool for bridging gaps in traditional insurance coverage and enhancing climate resilience across sectors.
+`
+    },
+
     {
       name: 'Tzutzuy Ramirez',
       role: 'Head of Climate and Nature',
@@ -311,6 +323,17 @@ As Senior Program Manager of Forest & Land Use at Planet, Dr. Mendes leads strat
  
 With a PhD in Biology and 13+ years in the industry, she brings extensive experience across R&D, strategic marketing, and corporate sustainability. Since joining Syngenta Group in 2023, Tzutzuy’s main focuses have been transforming agriculture through sustainable practices and innovative climate solutions.
 `
+    },
+
+    {
+      name: 'Mr. Primus Oswald Kimaryo',
+      role: 'Director General',
+      company: 'Tanzania Coffee Board (TCB)',
+      imageUrl: 'https://wocofco.org/wp-content/uploads/2025/10/Mr.-Primus-Oswald-Kimaryo.jpeg',
+      companyIcon: "https://wocofco.org/wp-content/uploads/2025/10/logo-3.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: ``
     },
 
         {
@@ -701,7 +724,17 @@ of investment experience and holds a Master’s Degree in law from the Universit
       iconHeight: 100,
       bio: ` `
     },
-        {
+    {
+      name: 'Emma Clarke',
+      role: 'Senior Private Sector Advisor',
+      company: 'WaterAid',
+      imageUrl: 'https://wocofco.org/wp-content/uploads/2025/10/Emma-Clarke.jpg',
+      companyIcon: "https://wocofco.org/wp-content/uploads/2025/10/wateraid_logo_rgb_primary-blue.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: ` `
+    },
+    {
       name: 'Ethan Budiansky',
       role: 'Sustainable Commodities Lead',
       company: 'Wildlife Conservation Society (WCS)',

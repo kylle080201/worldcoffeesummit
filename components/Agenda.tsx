@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/Home.module.css';
 
+
 function Agenda() {
     return (
  <><style>{`
@@ -197,7 +198,9 @@ function Agenda() {
                                     <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/10/Nick-APPLEYARD.jpg'/> Nick Appleyard</b>, Head of Applications and Solutions, <b>European Space Agency (ESA)<b /><br />
                                       <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/07/Ruchira-Joshi-1.jpeg'/>   Ruchira Joshi</b>, Director, Global Coffee & Cocoa Sustainability, <b>Starbucks<br />
                                       <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Suresh-Yadav.png'/>   Suresh Yadav</b>, Director, Climate Change and Oceans Directorate (CCO), <b>The Commonwealth Secretariat<b /> <br />
-                                       <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Mario-Abreu.jpg'/>  Mario Abreu</b>, Group Vice President Sustainability, <b>Ferrero</b>
+                                       <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Mario-Abreu.jpg'/>  Mario Abreu</b>, Group Vice President Sustainability, <b>Ferrero<br/>
+                                    <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/08/Raymond-Katta.jpeg'/>    Raymond Katta</b>, Executive Chairman, <b>Produce Monitoring Board (PMB), Sierra Leone</b>
+
                                 </span>
                             </h3>
                         </div>
@@ -295,8 +298,10 @@ function Agenda() {
                                 <span className='italic'>It’s time to put producers at the centre of the conversation, sharing how they navigate climate shocks, shifting trade, and human rights challenges, highlighting the role of finance, sourcing, innovation, and policy in building resilience, improving livelihoods, and shaping more inclusive global strategies.</span>
                                 <span><br /><br /><b>Speakers<br />
                                     <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/07/Rick-van-der-Kamp.jpg'/> Rick van der Kamp</b>, Global Lead for Markets, Value Chains and Rural Finance, <b>International Fund for Agriculture Development (IFAD)<br />
-                                     <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Stefan-Dierks.jpg'/>    Stefan Dierks</b>, Director Sustainability Strategy, <b>Melitta Group<br />
-                                     <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/08/Raymond-Katta.jpeg'/>    Raymond Katta</b>, Executive Chairman, <b>Produce Monitoring Board (PMB), Sierra Leone</b>
+                                     <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Stefan-Dierks.jpg'/>    Stefan Dierks</b>, Director Sustainability Strategy, <b>Melitta Group<br/>
+                                     <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Saurabh-Pratap.jpg'/>  Saurabh Pratap</b>, Executive Director, Sustainable Finance, <b>Standard Chartered Bank<br/>
+                                     <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Emma-Clarke.jpg'/>  Emma Clarke</b>, Senior Private Sector Advisor, <b>WaterAid<br/>
+                                     <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Mr.-Primus-Oswald-Kimaryo.jpeg'/>  Mr. Primus Oswald Kimaryo</b>,Director General, <b>Tanzania Coffee Board (TCB)</b>
                                 </span>
 
                             </h3>
@@ -381,7 +386,8 @@ function Agenda() {
                                       <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Mario-Abreu.jpg'/>   Mario Abreu</b>, Group Vice President Sustainability, <b>Ferrero<br />
                                        <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Wagner-Albuquerque-de-Almeida.jpg'/>  Wagner Albuquerque de Almeida</b>， Global Director- Manufacturing, Agribusiness and Forestry, <b>International Finance Corporation (IFC)<br />
                                        <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Raphaelle-Peinado-2.jpg'/>  Raphaelle Peinado</b>, Sustainability Director, <b>Volcafe <br />
-                                       <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/07/image-21.jpg'/>  Piet van Asten</b>, SVP - Head Sustainable Production Systems, <b>Olam Food Ingredients (ofi)</b>
+                                       <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/07/image-21.jpg'/>  Piet van Asten</b>, SVP - Head Sustainable Production Systems, <b>Olam Food Ingredients (ofi)<br/>
+                                      <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/07/Harper-McConnell.jpg'/>  Harper McConnell</b>, Global Vice President Sustainability, <b>Mars</b>
                                 </span>
                             </h3>
                         </div>
@@ -406,7 +412,7 @@ function Agenda() {
                                         <br /><br />Speakers<br />
                                        <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Owen.jpg'/>  Owen Hewlett</b>, Chief Technical Officer,<b> Gold Standard</b>; Technical Council Member, <b>SBTi<br />
                                         <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Stefan-Dierks.jpg'/> Stefan Dierks</b>, Director Sustainability Strategy, <b>Melitta Group<br />
-                                       <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Saurabh-Pratap.jpg'/>  Saurabh Pratap</b>, Executive Director, Sustainable Finance, <b>Standard Chartered Bank<br />
+                                        <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Dr-Katrina-Hayter-FRSB.jpeg'/>  Dr Katrina Hayter FRSB</b>, Global Head Sustainable Land Use & Supply Chains<b>HSBC<br />
                                        <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/07/image-26-scaled.jpg'/>  Marco Albani, Co-Founder</b>, co-CEO and President, <b>Chloris Geospatial</b>
                                 </span>
                             </h3>
