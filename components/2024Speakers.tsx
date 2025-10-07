@@ -482,8 +482,8 @@ Before joining TechnoServe, Myriam was a management consultant with McKinsey & C
 
     {
       name: 'Lauren Ing',
-      role: 'Managing Director, Sustainability Strategy',
-      company: 'Accenture, U.K. and Ireland',
+      role: 'Managing Director, UK and Ireland Sustainability Strategy Lead',
+      company: 'Accenture',
       imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/10/Lauren-Ing.jpeg',
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/10/6102dbf43de48b00044eb5af.png",
       iconWidth: 100,
