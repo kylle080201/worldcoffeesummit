@@ -134,7 +134,7 @@ function Agenda() {
                                 11:25
                             </div>
                             <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                                PANEL: DIGITALISING COFFEE & COCOA SUPPLY CHAINS: SUSTAINABILITY, INNOVATION, AND CONSUMER-DRIVEN TRANSFORMATION
+                                FIRESIDE: DIGITALISING COFFEE & COCOA SUPPLY CHAINS: SUSTAINABILITY, INNOVATION, AND CONSUMER-DRIVEN TRANSFORMATION
                             </div>
                         </div>
                         <div className='mt-4 px-2 max-w-5xl'>
@@ -145,7 +145,7 @@ function Agenda() {
 
                                     <b>Speakers<br />
                                         <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/07/Harper-McConnell.jpg'/> Harper McConnell</b>, Global Vice President Sustainability, <b>Mars<br />
-                                         <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/07/Thomas-Delbar.jpg'/> Thomas Delbar</b>, Director of Sustainability – Coffee & Ingredients, <b>Touton group </b>
+                                         <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/07/Thomas-Delbar.jpg'/> Thomas Delbar</b>, Director of Sustainability – Coffee & Ingredients, <b>Touton Group </b>
 
                                 </span>
                             </h3>
