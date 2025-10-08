@@ -103,7 +103,7 @@ function Agenda() {
                         <div className='mt-4 px-2 max-w-5xl'>
                             <h3 className=''>
                                 <span className='italic'>Compliance as Catalyst – Rethinking the Regulatory Revolution. Turn EUDR and CS3D from box-ticking into brand-building. Discover how trailblazers are future-proofing business through radical transparency and shared accountability.</span>
-                                <span> <br/>
+                                <span> <br/><br/>
                                     <b>Speakers<br />
                                       <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Nicolas-Mounard.jpg'/> Nicolas Mounard</b>, Vice President ESG, Sustainability & Traceability, <b>Barry Callebaut  </b><br />
                                     <b> <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Raphaelle-Peinado-2.jpg'/> Raphaelle Peinado</b>, Sustainability Director, <b>Volcafe </b><br />
