@@ -469,16 +469,16 @@ Before joining TechnoServe, Myriam was a management consultant with McKinsey & C
       bio:``
     },
 
-    {
-      name: 'Mumbi Gitau',
-      role: 'Soft Commodities Reporter',
-      company: 'Bloomberg News',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Mumbi-Gitau-scaled.jpg',
-      companyIcon: "",
-      iconWidth: 100,
-      iconHeight: 100,
-      bio: `Mumbi Gitau, soft commodities reporter at Bloomberg News, covering global coffee, cocoa, sugar, cotton, and orange juice markets. `
-    },
+    // {
+    //   name: 'Mumbi Gitau',
+    //   role: 'Soft Commodities Reporter',
+    //   company: 'Bloomberg News',
+    //   imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Mumbi-Gitau-scaled.jpg',
+    //   companyIcon: "",
+    //   iconWidth: 100,
+    //   iconHeight: 100,
+    //   bio: `Mumbi Gitau, soft commodities reporter at Bloomberg News, covering global coffee, cocoa, sugar, cotton, and orange juice markets. `
+    // },
 
     {
       name: 'Lauren Ing',
