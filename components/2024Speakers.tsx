@@ -299,6 +299,20 @@ As Senior Program Manager of Forest & Land Use at Planet, Dr. Mendes leads strat
 `
     },
 
+
+
+        {
+      name: 'Rowan Douglas',
+      role: 'CEO Climate Risk and Resilience',
+      company: 'Howden Group',
+      imageUrl: 'https://wocofco.org/wp-content/uploads/2025/10/Rowan-Douglas.jpg',
+      companyIcon: "https://wocofco.org/wp-content/uploads/2025/10/howden-tiger-new-logo.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: ``
+    },
+
+
         {
       name: 'Dr Katrina Hayter FRSB',
       role: 'Global Head Sustainable Land Use & Supply Chains',
@@ -700,16 +714,6 @@ of investment experience and holds a Master’s Degree in law from the Universit
       company: 'Quantis',
       imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/10/Marcial-Vargas-Gonzalez.jpg',
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/10/imageedit_93_9321384431.png",
-      iconWidth: 100,
-      iconHeight: 100,
-      bio: ` `
-    },
-        {
-      name: 'Will Baldwin-Cantello',
-      role: 'Director, Nature-based Solutions',
-      company: 'WWF-UK',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/10/Image-empty-state.jpeg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/10/WWF-Logo.png",
       iconWidth: 100,
       iconHeight: 100,
       bio: ` `

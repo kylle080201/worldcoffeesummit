@@ -41,10 +41,9 @@ export default function Overview() {
                         THE BIGGER PICTURE
                     </h1>
                     <p className=" mt-2 text-2xl sm:text-3xl md:text-4xl font-bold max-w-3xl drop-shadow-xl">
-                        CRAFTING AN ECOSYSTEM BUSINESS MODEL FOR SHARED PROSPERITY <br />
+                      Unlocking Coffee & Cocoa Synergies Through Innovation
 
                     </p>                        
-                    <h1 className='text-[2rem]'>Unlocking Coffee & Cocoa Synergies Through Innovation</h1>
 
                     {/* Event Logos - Smaller Size */}
                     <div className="flex flex-col sm:flex-row items-center p-2 rounded-md  gap-2 mt-[4rem] md:mt-[5rem] xl:mt-[10rem]">

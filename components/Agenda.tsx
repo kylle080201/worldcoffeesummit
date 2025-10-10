@@ -459,7 +459,6 @@ function Agenda() {
                                    <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/07/Felipe-Carazo.jpeg'/>  Felipe Carazo</b>, Head of Sustainable Commodities, Tropical Forest Alliance, <b>World Economic Forum
 
                                         <br /> <br /> Speakers <br />
-                                       <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/10/Image-empty-state.jpeg'/>  Will Baldwin-Cantello</b>, Director, Nature-based Solutions, <b>WWF-UK<br />
                                        <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Ethan-Budiansky.jpeg'/>  Ethan Budiansky</b>, Sustainable Commodities Lead, <b>Wildlife Conservation Society( WCS) <br />
                                        <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Toby-Behrmann.webp'/>  Toby Behrmann</b>, Head of London Market & Public Private Partnerships, <b>AXA Climate</b>
                                 </span>
@@ -484,7 +483,8 @@ function Agenda() {
                                     <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2024/08/Joy-Macknight-12-of-19.jpg'/> Joy Macknight</b>, Journalist, Former Editor, <b>Financial Times - The Banker
 
                                         <br /><br />Speakers<br />
-                                      <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Wagner-Albuquerque-de-Almeida.jpg'/>   Wagner Albuquerque de Almeida</b>, Global Director- Manufacturing, <b>Agribusiness and Forestry, International Finance Corporation (IFC)</b>
+                                      <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Wagner-Albuquerque-de-Almeida.jpg'/>   Wagner Albuquerque de Almeida</b>, Global Director- Manufacturing, <b>Agribusiness and Forestry, International Finance Corporation (IFC)<br/>
+                                        <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Rowan-Douglas.jpg'/> Rowan Douglas</b>, CEO Climate Risk and Resilience<b> Howden Group</b>
                                 </span>
                             </h3>
                         </div>
