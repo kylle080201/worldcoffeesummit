@@ -294,11 +294,13 @@ function Agenda() {
                         <div className='mt-4 px-2 max-w-5xl'>
                             <h3 className=''>
                                 <span className='italic'>It’s time to put producers at the centre of the conversation, sharing how they navigate climate shocks, shifting trade, and human rights challenges, highlighting the role of finance, sourcing, innovation, and policy in building resilience, improving livelihoods, and shaping more inclusive global strategies.</span>
-                                <span><br /><br /><b>Speakers<br />
+                                <span><br/><br/><b>Chair<br/>
+                                                                     <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Emma-Clarke.jpg'/>  Emma Clarke</b>, Senior Private Sector Advisor, <b>WaterAid
+                                <br /><br />Speakers<br />
                                     <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/07/Rick-van-der-Kamp.jpg'/> Rick van der Kamp</b>, Global Lead for Markets, Value Chains and Rural Finance, <b>International Fund for Agriculture Development (IFAD)<br />
                                      <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Stefan-Dierks.jpg'/>    Stefan Dierks</b>, Director Sustainability Strategy, <b>Melitta Group<br/>
                                      <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Saurabh-Pratap.jpg'/>  Saurabh Pratap</b>, Executive Director, Sustainable Finance, <b>Standard Chartered Bank<br/>
-                                     <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Emma-Clarke.jpg'/>  Emma Clarke</b>, Senior Private Sector Advisor, <b>WaterAid<br/>
+
                                      <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Mr.-Primus-Oswald-Kimaryo.jpeg'/>  Mr. Primus Oswald Kimaryo</b>,Director General, <b>Tanzania Coffee Board (TCB)</b>
                                 </span>
 
