@@ -25,12 +25,12 @@ export const summit = [
     {
         title: "NGOs, Co-operatives, Policy Makers",
         old_price: 1095,
-        item_price: 895,
+        item_price: 995,
         description: "Eligible for non-profits and NGOs, farmer-cooperatives, Policy Makers & Government Bodies",
         earlyBird: "Save £200 book before 11 October 2025",
         line_items: [
             {
-                price: 'price_1Rr80rKMWpUKzQVz5TLvKOvJ',
+                price: 'price_1SHoZnKMWpUKzQVzPtUcB2Ey',
                 quantity: 1,
                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
             }
@@ -38,13 +38,13 @@ export const summit = [
     },
     {
         title: "Corporates",
-        old_price: 1495,
-        item_price: 1095,
+        old_price: 1295,
+        item_price: 1195,
         description: "Eligible for multinational/ conglomerate companies, F&B & Agri-Commodity Brands, retailers, traders",
         earlyBird: "Save £400 book before 11 October 2025",
         line_items: [
             {
-                price: 'price_1Rr81dKMWpUKzQVzBqtbsbxH',
+                price: 'price_1SHoadKMWpUKzQVzCk3pc4oP',
                 quantity: 1,
                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
             }
@@ -52,15 +52,15 @@ export const summit = [
     },
     {
         title: "Start Ups",
-        old_price: 1295,
-        item_price: 995,
+        old_price: 1195,
+        item_price: 1095,
         description: "Eligible only for early-stage innovators, Independent Consultants/ Service Providers",
          limited: "(Limited Availability)",
         earlyBird: "Save £300 book before 11 October 2025",
 
         line_items: [
             {
-                price: 'price_1Rb9T2KMWpUKzQVzaQhry4yi',
+                price: 'price_1SHog6KMWpUKzQVzg22U1QLS',
                 quantity: 1,
                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
             }
@@ -68,13 +68,13 @@ export const summit = [
     },
     {
         title: "Service Providers",
-        old_price: 1995,
-        item_price: 1695,
+        old_price: 1895,
+        item_price: 1795,
         description: "Eligible for for-profit consultancies, mature start-ups, technology and service providers, including Private Equity Firms and Asset Managers/Brokers, Angel and Venture Capital Investors/ Banks/ Financial Institutions",
         earlyBird: "Save £300 book before 11 October 2025",
         line_items: [
             { 
-                price: 'price_1Rr82DKMWpUKzQVz3mGm7mS2',
+                price: 'price_1SHogiKMWpUKzQVzWQNaw3lL',
                 quantity: 1,
                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
             }
@@ -173,7 +173,7 @@ function TicketPricing() {
                         <div className='flex flex-col gap-2 w-1/2'>
                             <div className='p-2 bg-red-500 text-white w-max text-2xl xl:text-4xl font-bold px-24 justify-center items-center text-center rounded-xl whitespace-normal line-clamp-2'>
                                 TICKET PRICES INCREASE <br />
-                                AFTER 10 OCTOBER 2025
+                                AFTER 17 OCTOBER 2025
                             </div>
                             <RegisterCountDown />
                         </div>
