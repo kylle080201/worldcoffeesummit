@@ -27,7 +27,7 @@ export const summit = [
         old_price: 1095,
         item_price: 995,
         description: "Eligible for non-profits and NGOs, farmer-cooperatives, Policy Makers & Government Bodies",
-        earlyBird: "Save £200 book before 11 October 2025",
+        earlyBird: "Save £100 book before 18 October 2025",
         line_items: [
             {
                 price: 'price_1SHoZnKMWpUKzQVzPtUcB2Ey',
@@ -41,7 +41,7 @@ export const summit = [
         old_price: 1295,
         item_price: 1195,
         description: "Eligible for multinational/ conglomerate companies, F&B & Agri-Commodity Brands, retailers, traders",
-        earlyBird: "Save £400 book before 11 October 2025",
+        earlyBird: "Save £100 book before 18 October 2025",
         line_items: [
             {
                 price: 'price_1SHoadKMWpUKzQVzCk3pc4oP',
@@ -56,7 +56,7 @@ export const summit = [
         item_price: 1095,
         description: "Eligible only for early-stage innovators, Independent Consultants/ Service Providers",
          limited: "(Limited Availability)",
-        earlyBird: "Save £300 book before 11 October 2025",
+        earlyBird: "Save £100 book before 18 October 2025",
 
         line_items: [
             {
@@ -71,7 +71,7 @@ export const summit = [
         old_price: 1895,
         item_price: 1795,
         description: "Eligible for for-profit consultancies, mature start-ups, technology and service providers, including Private Equity Firms and Asset Managers/Brokers, Angel and Venture Capital Investors/ Banks/ Financial Institutions",
-        earlyBird: "Save £300 book before 11 October 2025",
+        earlyBird: "Save £100 book before 18 October 2025",
         line_items: [
             { 
                 price: 'price_1SHogiKMWpUKzQVzWQNaw3lL',
