@@ -52,15 +52,12 @@ export const summit = [
     },
     {
         title: "Start Ups",
-        old_price: 1195,
-        item_price: 1095,
+        item_price: 995,
         description: "Eligible only for early-stage innovators, Independent Consultants/ Service Providers",
-         limited: "(Limited Availability)",
-        earlyBird: "Save £100 book before 18 October 2025",
-
+        limited: "(Limited Availability)",
         line_items: [
             {
-                price: 'price_1SHog6KMWpUKzQVzg22U1QLS',
+                price: 'price_1Rb9T2KMWpUKzQVzaQhry4yi',
                 quantity: 1,
                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
             }
