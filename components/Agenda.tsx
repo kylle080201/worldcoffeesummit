@@ -55,7 +55,7 @@ function Agenda() {
                         <div className='mt-4 px-2 max-w-5xl'>
                             <h3 className=''>
                                 <span>
-                                    <b><img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Amb.Catherine-Photo-1.jpeg' /> H.E. Catherine Kirumba Karemu</b>, High Commissioner of Kenya to the UK, <b>Kenya High Commission</b></span>
+                                    <b><img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/H.E.-Catherine-Kirumba-Karemu-1.jpeg' /> H.E. Catherine Kirumba Karemu</b>, High Commissioner of Kenya to the UK, <b>Kenya High Commission</b></span>
                             </h3>
                         </div>
                     </div>
