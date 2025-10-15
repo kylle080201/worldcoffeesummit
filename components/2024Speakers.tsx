@@ -19,51 +19,9 @@ interface T_Speaker {
 
 function Speakers2024() {
   const speakers = [
-    {
-      name: 'H.E. Sheikh Mohammed Belal',
-      role: 'Managing Director',
-      company: 'Common Fund for Commodities (CFC)',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/H.E.-Sheikh-Mohammed-Belal-square.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/cfc_new_logo_v5_large.png",
-      iconWidth: 100,
-      iconHeight: 100,
-      bio: `Ambassador Sheikh Mohammed Belal, a Bangladeshi diplomat, is the Managing Director of the
-Common Fund for Commodities (CFC), re-elected in 2023 for a second term through 2028. Under his
-leadership, the CFC has deepened its support for smallholders and SMEs, particularly in Least
-Developed and Landlocked Developing Countries, with an emphasis on inclusive and sustainable value
-chains.
-He is the architect of the “Humanizing Value Chains (HVC)” concept—an ambitious vision to embed
-justice, traceability, and innovation into every transaction. HVC aspires to lift millions of smallholders
-from poverty by ensuring they receive a fairer share of global trade.
-Ambassador Belal is also overseeing the launch of the Agricultural Commodity Transformation (ACT)
-Fund, a USD 100 million+ impact vehicle to drive climate-resilient, nature-positive agri-SME growth.
-Before joining the CFC, he served as Bangladesh’s Ambassador to the Netherlands (2014–2020) and
-held senior postings in the USA, Australia, Malaysia, and Uzbekistan. He also chaired the Executive
-Council of the OPCW, represented Bangladesh at over 100 global forums, and is a known champion
-for gender equity in development.
-He holds degrees from the University of Chittagong, Monash University, and Harvard University.
-Ambassador Belal is married, with two children and two grandchildren.`
-    },
-    {
-      name: 'Wagner Albuquerque de Almeida',
-      role: 'Global Director- Manufacturing, Agribusiness and Forestry',
-      company: 'International Finance Corporation (IFC)',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Wagner-Albuquerque-de-Almeida.jpg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/IFC-Logo.svg",
-      iconWidth: 100,
-      iconHeight: 100,
-      bio: `Wagner Albuquerque de Almeida is the Global Director for Manufacturing‚
-Agribusiness, and Forestry (MAF) at IFC, a member of the World Bank and the
-largest global development institution focused on the private sector in emerging
-markets. Based in Washington, DC, Wagner is responsible for managing IFC’s
-investment and advisory services in the manufacturing, agribusiness, and
-forestry sectors, leading a team responsible for an investment portfolio of over
-$12 billion. Since joining IFC in 2010, Wagner has had a variety of roles
-spanning different industries and regions, including Africa, the Middle East and North Africa, Latin
-America and the Caribbean, Europe, Central Asia, and Türkiye.
-Prior to joining IFC, Wagner's career spanned several key positions at prominent global financial
-institutions such as ABN AMRO, Deutsche Bank, and Banco Itau, in addition to his role at Monsanto.`
-    },
+
+
+
     {
       name: 'The Rt. Hon John Gummer, Lord Deben',
       role: 'Former Chairman',
@@ -83,6 +41,23 @@ institutions such as ABN AMRO, Deutsche Bank, and Banco Itau, in addition to his
        Ltd and of PIMFA, the trade body representing financial advisers and wealth managers. Throughout his political, business, 
        and personal life Lord Deben has consistently championed an accord between sustainability and business sense.    `
     },
+
+    {
+      name: 'H.E. Catherine Kirumba Karemu',
+      role: 'High Commissioner of Kenya to the UK',
+      company: 'Kenya High Commission',
+      imageUrl: 'https://wocofco.org/wp-content/uploads/2025/10/H.E.-Catherine-Kirumba-Karemu-1.jpeg',
+      companyIcon: "https://wocofco.org/wp-content/uploads/2025/10/Kenya-High-Commission.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `Amb. Catherine Karemu is a highly accomplished leadership and organisational development strategist with nearly three decades of experience spanning government, international consulting, and private enterprise.
+She currently serves as Kenya’s High Commissioner to the United Kingdom of Great Britain and Northern Ireland. Previously, she held senior roles in Kenya’s public service, including Technical Advisor to the Cabinet Secretary in the Ministry of Public Service, Gender and Affirmative Action, and as the Cabinet Secretary’s alternate at the Salaries and Remuneration Commission.
+In the private sector, Amb. Karemu has led transformative initiatives in leadership development, organisational strategy, and talent management across Africa. She spent over a decade as Human Resource Director at Deloitte East Africa and has held senior consulting roles with PricewaterhouseCoopers, Coach Development Institute Africa, and Altima Africa.
+As a certified executive leadership coach, Amb Karemu  has empowered senior leaders and organisations to enhance leadership effectiveness and navigate complex change through tailored coaching and advisory engagements. Her diverse and rich experience has made her especially adept at translating strategy into actionable, people-centred solutions.
+Amb Karemu holds a Master of Philosophy degree from the University of Cambridge, an MBA from the University of Nairobi and a Bachelor of Commerce degree from Kenyatta University.
+`
+    },
+
     {
       name: 'H.E. Mbelwa Brighton Kairuki',
       role: 'High Commissioner of the United Republic of Tanzania to the United Kingdom',
@@ -94,6 +69,27 @@ institutions such as ABN AMRO, Deutsche Bank, and Banco Itau, in addition to his
       bio: ` `
     },
 
+        {
+      name: 'Wagner Albuquerque de Almeida',
+      role: 'Global Director- Manufacturing, Agribusiness and Forestry',
+      company: 'International Finance Corporation (IFC)',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Wagner-Albuquerque-de-Almeida.jpg',
+      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/IFC-Logo.svg",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `Wagner Albuquerque de Almeida is the Global Director for Manufacturing‚
+Agribusiness, and Forestry (MAF) at IFC, a member of the World Bank and the
+largest global development institution focused on the private sector in emerging
+markets. Based in Washington, DC, Wagner is responsible for managing IFC’s
+investment and advisory services in the manufacturing, agribusiness, and
+forestry sectors, leading a team responsible for an investment portfolio of over
+$12 billion. Since joining IFC in 2010, Wagner has had a variety of roles
+spanning different industries and regions, including Africa, the Middle East and North Africa, Latin
+America and the Caribbean, Europe, Central Asia, and Türkiye.
+Prior to joining IFC, Wagner's career spanned several key positions at prominent global financial
+institutions such as ABN AMRO, Deutsche Bank, and Banco Itau, in addition to his role at Monsanto.`
+    },
+
     {
       name: 'Harper McConnell',
       role: 'Global Vice President Sustainability',
@@ -102,7 +98,7 @@ institutions such as ABN AMRO, Deutsche Bank, and Banco Itau, in addition to his
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/Mars-Logo.png",
       iconWidth: 80,
       iconHeight: 80,
-      bio: ` `
+      bio: `Harper serves as the Vice President of Cocoa Sustainability at Mars Snacking, driving global strategy across sourcing, climate and people. Cocoa plays a critical role in delivering Mars’ commitment to cut emissions by 50% in 2030 and to build a modern, inclusive and sustainable ecosystem where everyone can thrive. Harper also manages human rights across all commodities and Tier 1 suppliers for Mars Snacking.  Prior to Mars, Harper held strategy, product development, and ethical sourcing leadership roles at Starbucks. She spend the first decade of her career developing agriculture supply chains from the ground up in the Democratic Republic of Congo. `
     },
 
     {
@@ -693,6 +689,22 @@ With over 25 years of experience in tropical commodity production landscapes, Ni
       Sean has written for all the major trade finance magazines and is on the editorial board of Global Trade Review (GTR). He has presented at many conferences.
     `
     },
+
+    {
+      name: 'Melissa Ocampo',
+      role: 'Head of Sustainability Strategy EMEA, Managing Director',
+      company: 'Sumitomo Mitsui Banking Corporation- SMBC Group',
+      imageUrl: 'https://wocofco.org/wp-content/uploads/2025/10/Melissa-Ocampo.jpg',
+      companyIcon: "https://wocofco.org/wp-content/uploads/2025/10/smbc-group-rgb-1_E5qwmxm.width-800.jpg",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: `Melissa Ocampo joined SMBC Bank International as the Head of Sustainability Strategy EMEA in February 2021. Her mandate includes developing the bank’s commercial offering for clients related to sustainable financing and advisory services, capacity building in the areas of Sustainability risk and disclosure, engaging with customers, employees, and other stakeholders on the topic of Sustainability and Climate Change and leading SMBC’s Net Zero by 2050 strategy in EMEA. Melissa is a member of the UK Finance Sustainability Committee and the AFME Sustainable Finance Steering Committee.
+Prior to joining SMBC, Melissa was the Head of Sustainability for HSBC’s Wealth and Personal Banking business, where she oversaw proposition development, ESG risk management, playing a key role in delivering HSBC’s award-winning ESG report, and employee engagement for the division. Melissa holds a Post-Graduate Certificate in Sustainable Business from the Cambridge Institute of Sustainability Leadership, where she focused on integration of ESG into bank business models and did primary research on the role of ESG reporting in improving sustainability performance. Prior to this she worked in a variety of banking roles in the US and UK including in strategy, operations, and client-facing roles. Melissa is passionate about Disability inclusion; she is involved with SMBC’s Disability Employee Resource Group and previously served as a non-executive director for the London-based charity the Business Disability Forum. 
+ `
+    },
+
+
+
     {
       name: 'Roel Messie',
       role: 'Chief Executive Officer',
