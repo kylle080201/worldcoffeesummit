@@ -461,6 +461,17 @@ Before joining TechnoServe, Myriam was a management consultant with McKinsey & C
       iconHeight: 80,
       bio: `Peter Foster is the world trade editor of the Financial Times (FT). `
     },
+
+    {
+      name: 'Agnieszka de Sousa',
+      role: 'Global Food Tsar',
+      company: 'Bloomberg News',
+      imageUrl: 'https://wocofco.org/wp-content/uploads/2025/10/Agnieszka-de-Sousa.jpg',
+      companyIcon: "",
+      iconWidth: 80,
+      iconHeight: 80,
+      bio: `Agnieszka de Sousa is Global Food Tsar at Bloomberg News, coordinating the global coverage of issues from farm to fork. She has reported on food and agriculture since 2016, covering anything from commodity markets and farming to consumer issues, policy and innovation. Her special focus is on food security and the food sector's sustainable transition, and she is passionate about connecting the dots across the food system. She currently runs Bloomberg's Business of Food newsletter, a weekly catch-up on how the world feeds itself in a changing economy and climate, which she launched in June. You can sign up here: https://www.bloomberg.com/account/newsletters/business-of-food?sref=7YMSv3yk. Prior to the food focus, Agnieszka covered metals, mining and exchanges. She's based in London. `
+    },
       {
       name: 'Jenny Davis-Peccoud',
       role: 'Partner, Founder, Global Sustainability & Responsibility Practice',
