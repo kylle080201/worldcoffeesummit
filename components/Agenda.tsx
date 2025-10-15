@@ -23,7 +23,7 @@ function Agenda() {
                     <div className='mt-8'>
                         <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                             <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
-                                8:00
+                                08:00
                             </div>
                             <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
                                 REGISTRATION & MORNING COFFEE
@@ -34,7 +34,7 @@ function Agenda() {
                     <div className='mt-8'>
                         <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                             <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                                9:00
+                                09:00
                             </div>
                             <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                                 OPENING REMARKS
@@ -42,21 +42,11 @@ function Agenda() {
                         </div>
                     </div>
 
-                    <div className='mt-8'>
-                        <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
-                            <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                                9:05
-                            </div>
-                            <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                                WELCOME ADDRESS
-                            </div>
-                        </div>
-                    </div>
 
                     <div className='mt-8'>
                         <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                             <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                                9:15
+                                09:05
                             </div>
                             <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                                 OPENING KEYNOTE
@@ -65,7 +55,7 @@ function Agenda() {
                         <div className='mt-4 px-2 max-w-5xl'>
                             <h3 className=''>
                                 <span>
-                                    <b><img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/H.E.-Sheikh-Mohammed-Belal-square.jpg' /> H.E. Sheikh Mohammed Belal</b>, Managing Director, <b>Common Fund for Commodities (CFC)</b></span>
+                                    <b><img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Amb.Catherine-Photo.jpeg' /> H.E. Catherine Kirumba Karemu</b>, High Commissioner of Kenya to the UK, <b>Kenya High Commission</b></span>
                             </h3>
                         </div>
                     </div>
@@ -74,7 +64,7 @@ function Agenda() {
                     <div className='mt-8'>
                         <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                             <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                                9:25
+                                9:15
                             </div>
                             <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                                 <b>FIRESIDE: THE BIGGER PICTURE </b>
@@ -94,7 +84,7 @@ function Agenda() {
                     <div className='mt-8'>
                         <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                             <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                                9:55
+                                10:00
                             </div>
                             <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                                 PANEL: TURNING REGULATORY COMPLIANCE INTO BUSINESS STRATEGY- ADAPTING TO EUDR, CSRD & CS3D
@@ -120,7 +110,7 @@ function Agenda() {
                     <div className='mt-8'>
                         <div className='w-full grid grid-cols-10 gap-x-4 h-max '>
                             <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
-                                10:55
+                                11:00
                             </div>
                             <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
                                 NETWORKING COFFEE BREAK
@@ -132,7 +122,7 @@ function Agenda() {
                     <div className='mt-8'>
                         <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                             <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                                11:25
+                                11:30
                             </div>
                             <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                                 FIRESIDE: DIGITALISING COFFEE & COCOA SUPPLY CHAINS: SUSTAINABILITY, INNOVATION, AND CONSUMER-DRIVEN TRANSFORMATION
@@ -157,7 +147,7 @@ function Agenda() {
                     <div className='mt-8'>
                         <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                             <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                                12:05
+                                12:00
                             </div>
                             <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                                 CASE STUDY: UNLOCKING COFFEE SUPPLY CHAIN TRANSPARENCY & CARBON INSIGHTS
@@ -181,7 +171,7 @@ function Agenda() {
                     <div className='mt-8'>
                         <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                             <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                                12:20
+                                12:15
                             </div>
                             <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                                 PANEL: AI-DRIVEN & DIGITAL INNOVATION IN SMART FARMING
@@ -195,7 +185,6 @@ function Agenda() {
                                     <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/10/Lauren-Ing.jpeg'/> Lauren Ing</b>, Managing Director, Sustainability Strategy, <b>Accenture, U.K. and Ireland</b><br /><br />
                                     <br /><b>Speakers<br />
                                     <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/10/Nick-APPLEYARD.jpg'/> Nick Appleyard</b>, Head of Applications and Solutions, <b>European Space Agency (ESA)<b /><br />
-                                      <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/07/Ruchira-Joshi-1.jpeg'/>   Ruchira Joshi</b>, Director, Global Coffee & Cocoa Sustainability, <b>Starbucks<br />
                                       <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Suresh-Yadav.png'/>   Suresh Yadav</b>, Director, Climate Change and Oceans Directorate (CCO), <b>The Commonwealth Secretariat<b /> <br />
                                        <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Mario-Abreu.jpg'/>  Mario Abreu</b>, Group Vice President Sustainability, <b>Ferrero<br/>
                                     <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/08/Raymond-Katta.jpeg'/>    Raymond Katta</b>, Executive Chairman, <b>Produce Monitoring Board (PMB), Sierra Leone</b>
@@ -286,7 +275,7 @@ function Agenda() {
                     <div className='mt-8'>
                         <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                             <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                                16:10
+                                16:15
                             </div>
                             <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                                 PANEL: BEYOND THE FARMGATE – SYSTEMIC PERSPECTIVES ON PROFIT, PLANET, AND PROGRESS
@@ -294,9 +283,9 @@ function Agenda() {
                         </div>
                         <div className='mt-4 px-2 max-w-5xl'>
                             <h3 className=''>
-                                <span className='italic'>It’s time to put producers at the centre of the conversation, sharing how they navigate climate shocks, shifting trade, and human rights challenges, highlighting the role of finance, sourcing, innovation, and policy in building resilience, improving livelihoods, and shaping more inclusive global strategies.</span>
+                                <span className='italic'>It&apos;s time to put producers at the centre of the conversation, sharing how they navigate climate shocks, shifting trade, and human rights challenges, highlighting the role of finance, sourcing, innovation, and policy in building resilience, improving livelihoods, and shaping more inclusive global strategies.</span>
                                 <span><br/><br/><b>Chair<br/>
-                                                                     <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Emma-Clarke.jpg'/>  Emma Clarke</b>, Senior Private Sector Advisor, <b>WaterAid
+                                 <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Emma-Clarke.jpg'/>  Emma Clarke</b>, Senior Private Sector Advisor, <b>WaterAid
                                 <br /><br />Speakers<br />
                                     <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/07/Rick-van-der-Kamp.jpg'/> Rick van der Kamp</b>, Global Lead for Markets, Value Chains and Rural Finance, <b>International Fund for Agriculture Development (IFAD)<br />
                                      <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Stefan-Dierks.jpg'/>    Stefan Dierks</b>, Director Sustainability Strategy, <b>Melitta Group<br/>
@@ -485,7 +474,8 @@ function Agenda() {
 
                                         <br /><br />Speakers<br />
                                       <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Wagner-Albuquerque-de-Almeida.jpg'/>   Wagner Albuquerque de Almeida</b>, Global Director- Manufacturing, <b>Agribusiness and Forestry, International Finance Corporation (IFC)<br/>
-                                        <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Rowan-Douglas.jpg'/> Rowan Douglas</b>, CEO Climate Risk and Resilience<b> Howden Group</b>
+                                        <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Rowan-Douglas.jpg'/> Rowan Douglas</b>, CEO Climate Risk and Resilience<b> Howden Group<br/>
+                                         <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/MelissaOcampo05LR.jpg'/> Melissa Ocampo</b>,Head of Sustainability Strategy EMEA, Managing Director <b> Sumitomo Mitsui Banking Corporation- SMBC Group</b>
                                 </span>
                             </h3>
                         </div>
