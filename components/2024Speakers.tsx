@@ -23,7 +23,7 @@ function Speakers2024() {
       name: 'H.E. Catherine Kirumba Karemu',
       role: 'High Commissioner of Kenya to the UK',
       company: 'Kenya High Commission',
-      imageUrl: 'https://wocofco.org/wp-content/uploads/2025/10/Amb.Catherine-Photo.jpeg',
+      imageUrl: 'https://wocofco.org/wp-content/uploads/2025/10/Amb.Catherine-Photo-1.jpeg',
       companyIcon: "https://wocofco.org/wp-content/uploads/2025/10/Kenya-High-Commission.png",
       iconWidth: 100,
       iconHeight: 100,
