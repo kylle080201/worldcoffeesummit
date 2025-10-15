@@ -688,8 +688,8 @@ With over 25 years of experience in tropical commodity production landscapes, Ni
       name: 'Melissa Ocampo',
       role: 'Head of Sustainability Strategy EMEA, Managing Director',
       company: 'Sumitomo Mitsui Banking Corporation- SMBC Group',
-      imageUrl: 'https://wocofco.org/wp-content/uploads/2025/10/MelissaOcampo05LR.jpg',
-      companyIcon: "https://wocofco.org/wp-content/uploads/2025/10/logo_group_01.png",
+      imageUrl: 'https://wocofco.org/wp-content/uploads/2025/10/Melissa-Ocampo.jpg',
+      companyIcon: "https://wocofco.org/wp-content/uploads/2025/10/smbc-group-rgb-1_E5qwmxm.width-800.jpg",
       iconWidth: 100,
       iconHeight: 100,
       bio: `Melissa Ocampo joined SMBC Bank International as the Head of Sustainability Strategy EMEA in February 2021. Her mandate includes developing the bank’s commercial offering for clients related to sustainable financing and advisory services, capacity building in the areas of Sustainability risk and disclosure, engaging with customers, employees, and other stakeholders on the topic of Sustainability and Climate Change and leading SMBC’s Net Zero by 2050 strategy in EMEA. Melissa is a member of the UK Finance Sustainability Committee and the AFME Sustainable Finance Steering Committee.
