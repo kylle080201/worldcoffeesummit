@@ -40,6 +40,15 @@ function Agenda() {
                                 OPENING REMARKS
                             </div>
                         </div>
+
+                        <div className='mt-4 px-2 max-w-5xl'>
+                            <h3 className=''>
+                              <span> <b>Chair <br/>
+                               <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2024/08/Joy-Macknight-12-of-19.jpg'/> Joy Macknight</b>, Journalist, Former Editor, <b>Financial Times - The Banker
+
+                                 </b></span>
+                            </h3>
+                        </div>
                     </div>
 
 
@@ -333,6 +342,13 @@ function Agenda() {
                             <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                                 OPENING REMARKS
                             </div>
+                        </div>
+
+                         <div className='mt-4 px-2 max-w-5xl'>
+                            <h3 className=''>
+                              <span> <b>Chair <br/>
+                               <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2024/09/sean-edwards.jpg'/> Sean Edwards</b>, Chairman, <b>International Trade Forfaiting Association (ITFA)</b></span>
+                            </h3>
                         </div>
                     </div>
 
