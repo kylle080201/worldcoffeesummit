@@ -161,15 +161,15 @@ function Navbar() {
           </div>
 
           {/* Mobile Nav */}
-          <Disclosure.Panel className="md:hidden">
+          <Disclosure.Panel className="md:hidden py-5">
             <div className="pt-2 pb-3 space-y-1">
               {navigation.map((item) =>
                 item.dropdown ? (
                   <div key="mobile-speakers" className="pl-3">
                     <p className="font-bold text-gray-900">Speakers</p>
                     <div className="ml-3 space-y-1">
-                      <Link href="/advisory-board" className="block py-2 text-gray-600">Advisory Board</Link>
-                      <Link href="/speaker" className="block py-2 text-gray-600">Speaker</Link>
+                      <Link href="/#advisory-board" className="block py-2 text-gray-600">Advisory Board</Link>
+                      <Link href="/#speaker" className="block py-2 text-gray-600">Speaker</Link>
                     </div>
                   </div>
                 ) : (
@@ -184,6 +184,20 @@ function Navbar() {
                 )
               )}
             </div>
+                                <div className='mt-4 flex gap-2'>
+                      <button
+                        onClick={() => router.push('/register')}
+                        className="relative inline-flex gap-x-1.5 rounded-md bg-lime-700 hover:bg-lime-900 px-3 py-2 text-sm font-semibold text-white shadow-sm"
+                      >
+                        Book Tickets
+                      </button>
+                      <button
+                        onClick={() => router.push('/interest')}
+                        className="relative inline-flex gap-x-1.5 rounded-md bg-lime-700 hover:bg-lime-900 px-3 py-2 text-sm font-semibold text-white shadow-sm"
+                      >
+                        Sponsor/Exhibit
+                      </button>
+                    </div>
           </Disclosure.Panel>
         </>
       )}
