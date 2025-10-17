@@ -540,6 +540,16 @@ Previously he served as Executive Director of Fundecor, a ‘think tank’ that 
 He holds a bachelor´s Degree in Biology from the Universidad de Costa Rica and a master’s degree in environmental management from the Nicholas School of Environment, Duke University (USA), with a mayor in Resource Economics and Policy.
 `},
 
+    {
+      name: 'Tripurari Prasad',
+      role: 'Deputy Head of Carbon, Investments',
+      company: 'Climate Asst Management',
+      imageUrl: 'https://wocofco.org/wp-content/uploads/2025/10/Tripurari-Prasad.jpg',
+      companyIcon: "https://wocofco.org/wp-content/uploads/2025/10/CAM_REGISTERED_Wordmark_RGB_Primary-scaled.png",
+      iconWidth: 120,
+      iconHeight: 120,
+      bio: ``},
+
 
         {
       name: 'Owen Hewlett',
@@ -772,16 +782,16 @@ of investment experience and holds a Master’s Degree in law from the Universit
       bio: `Ethan Budiansky is the Sustainable Commodities Lead at the Wildlife Conservation Society, working at the intersection of biodiversity, commodity production, healthy landscapes, and livelihoods. He has over 20 years of experience in conservation, corporate engagement, and natural resource management. Previously, he spent 13 years at the World Cocoa Foundation as Sr. Director of Environment, leading the Climate Smart Cocoa Program and Cocoa & Forest Initiative to advance sustainability and address deforestation and climate risks. He also directed agroforestry programs at Trees for the Future and served in the Peace Corps in Senegal. Ethan holds a B.A. in Zoology and dual M.A.s in Sustainable Development and Natural Resource Management.
  `
     },
-        {
-      name: 'Patrick Gibson',
-      role: 'EO Senior Climate Lead',
-      company: 'UK Space Agency',
-      imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Patrick-Gibson.jpg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/full_transparent.png",
-      iconWidth: 100,
-      iconHeight: 100,
-      bio: ` `
-    },
+    //     {
+    //   name: 'Patrick Gibson',
+    //   role: 'EO Senior Climate Lead',
+    //   company: 'UK Space Agency',
+    //   imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Patrick-Gibson.jpg',
+    //   companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/full_transparent.png",
+    //   iconWidth: 100,
+    //   iconHeight: 100,
+    //   bio: ` `
+    // },
 
     {
       name: 'James Chamberlayne',

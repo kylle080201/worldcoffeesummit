@@ -223,21 +223,21 @@ function TicketPricing() {
             <div className="container mb-12 mx-auto px-8 flex justify-between">
             <div className="w-full md:w-1/2 lg:w-full  mt-12 sm:text-start">
                 <h3 className="tracking-tight text-red-700 sm:text-lg"><span className='font-bold'>IMPORTANT NOTICE:</span></h3>
-                <h3 className="tracking-tight  sm:text-lg w-11/12">Please select the correct pass type. Registrations in   the  wrong category   may be cancelled and refunded.  <span className="italic text-lg">A deduction for non-refundable processing fees will apply.</span><br/>
+                <h3 className="tracking-tight  sm:text-lg w-11/12">Please select the correct pass type. Registrations in   the  wrong category   may be cancelled and refunded.  <span className="italic text-lg">A deduction for non-refundable processing fees will apply.</span><br/>
                 </h3>
 
                 <h3 className="tracking-tight  sm:text-lg">For any issues, email us at <Link href={"mailto:info@worldcoffeealliance.com"} target="_blank" className="text-blue-600 underline hover:underline-offset-4"> info@worldcoffeealliance.com</Link></h3>
             </div>
              <div className="w-full md:w-1/2 lg:w-full  mt-12 sm:text-start">
                 <h3 className="tracking-tight text-red-700 sm:text-lg"><span className='font-bold'>GROUP DISCOUNTS AVAILABLE!</span></h3>
-                <h3 className="tracking-tight sm:text-lg"><span className='font-bold'>Book a Team of 3+ </span> — Save an Additional 10% Off</h3>
-                <h3 className="tracking-tight  sm:text-lg"><span className='font-bold'>Book a Team of 5+ </span> — Save an Additional 15% Off</h3>
+                <h3 className="tracking-tight sm:text-lg"><span className='font-bold'>Book a Team of 3+ </span> — Save an Additional 10% Off</h3>
+                <h3 className="tracking-tight  sm:text-lg"><span className='font-bold'>Book a Team of 5+ </span> — Save an Additional 15% Off</h3>
 
-                <h3 className="tracking-tight  sm:text-lg">If you would like to register a team of 3 or more, please email  <Link href={"mailto:info@worldcoffeealliance.com"} target="_blank" className=" text-blue-600 underline hover:underline-offset-4"> info@worldcoffeealliance.com</Link> for your discount coupon code before registering.</h3>
+                <h3 className="tracking-tight  sm:text-lg">If you would like to register a team of 3 or more, please email  <Link href={"mailto:info@worldcoffeealliance.com"} target="_blank" className=" text-blue-600 underline hover:underline-offset-4"> info@worldcoffeealliance.com</Link> for your discount coupon code before registering.</h3>
             </div> 
            </div>
+           </div>
 
-        </div>
     )
 }
 
