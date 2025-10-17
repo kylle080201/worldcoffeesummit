@@ -272,7 +272,7 @@ function Agenda() {
                                       <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Taco-Bosman.jpg'/>   Taco Bosman</b>, Partner, <b>EY
 
                                         <br /><br />Speakers<br />
-                                       <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Patrick-Gibson.jpg'/>  Patrick Gibson</b>, EO Senior Climate Lead, <b>UK Space Agency<br />
+                                       {/* <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Patrick-Gibson.jpg'/>  Patrick Gibson</b>, EO Senior Climate Lead, <b>UK Space Agency<br /> */}
                                        <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Mariana-Osorio-Londono-.jpeg'/>  Mariana Osorio Londoño</b>, Sustainable Trade Coordinator, <b>National Federation of Coffee Growers of Colombia (FNC)<br />
                                        <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/08/image-30.jpg'/>  Malcolm Hett</b>, Director of Sustainability, <b>UCC Europe<br/>
                                        <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/10/Marcial-Vargas-Gonzalez.jpg'/>  Marcial Vargas-Gonzalez</b>, Science & Innovation, Global Lead, <b>Quantis</b>
@@ -466,7 +466,10 @@ function Agenda() {
 
                                         <br /> <br /> Speakers <br />
                                        <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Ethan-Budiansky.jpeg'/>  Ethan Budiansky</b>, Sustainable Commodities Lead, <b>Wildlife Conservation Society( WCS) <br />
-                                       <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Toby-Behrmann.webp'/>  Toby Behrmann</b>, Head of London Market & Public Private Partnerships, <b>AXA Climate</b>
+                                       <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Toby-Behrmann.webp'/>  Toby Behrmann</b>, Head of London Market & Public Private Partnerships, <b>AXA Climate<br/>
+                                       <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Myriam-Sainz.jpg'/>   Myriam Sainz</b>, Senior Director Strategic Initiatives, <b>TechnoServe<br />
+                                       <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Tripurari-Prasad.jpg'/>  Tripurari Prasad</b>, Deputy Head of Carbon, Investments, <b>Climate Asst Management</b>
+
                                 </span>
                             </h3>
                         </div>
