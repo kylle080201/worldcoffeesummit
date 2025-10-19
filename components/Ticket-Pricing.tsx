@@ -24,10 +24,8 @@ export const summit = [
     },
     {
         title: "NGOs, Co-operatives, Policy Makers",
-        old_price: 1095,
         item_price: 995,
         description: "Eligible for non-profits and NGOs, farmer-cooperatives, Policy Makers & Government Bodies",
-        earlyBird: "Save £100 book before 18 October 2025",
         line_items: [
             {
                 price: 'price_1SHoZnKMWpUKzQVzPtUcB2Ey',
@@ -38,13 +36,11 @@ export const summit = [
     },
     {
         title: "Corporates",
-        old_price: 1295,
-        item_price: 1195,
+        item_price: 1295,
         description: "Eligible for multinational/ conglomerate companies, F&B & Agri-Commodity Brands, retailers, traders",
-        earlyBird: "Save £100 book before 18 October 2025",
         line_items: [
             {
-                price: 'price_1SHoadKMWpUKzQVzCk3pc4oP',
+                price: 'price_1SJvX1KMWpUKzQVz604VjCdu',
                 quantity: 1,
                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
             }
@@ -52,12 +48,12 @@ export const summit = [
     },
     {
         title: "Start Ups",
-        item_price: 995,
+        item_price: 1095,
         description: "Eligible only for early-stage innovators, Independent Consultants/ Service Providers",
         limited: "(Limited Availability)",
         line_items: [
             {
-                price: 'price_1Rb9T2KMWpUKzQVzaQhry4yi',
+                price: 'price_1SHog6KMWpUKzQVzg22U1QLS',
                 quantity: 1,
                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
             }
@@ -65,13 +61,11 @@ export const summit = [
     },
     {
         title: "Service Providers",
-        old_price: 1895,
-        item_price: 1795,
+        item_price: 1895,
         description: "Eligible for for-profit consultancies, mature start-ups, technology and service providers, including Private Equity Firms and Asset Managers/Brokers, Angel and Venture Capital Investors/ Banks/ Financial Institutions",
-        earlyBird: "Save £100 book before 18 October 2025",
         line_items: [
             { 
-                price: 'price_1SHogiKMWpUKzQVzWQNaw3lL',
+                price: 'price_1SJvXRKMWpUKzQVzO2EzA3eJ',
                 quantity: 1,
                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
             }
@@ -184,13 +178,13 @@ function TicketPricing() {
                                         <td className="flex-wrap px-3 py-4 text-gray-900 text-lg">
                                             {delegate.description}
                                             <div className='text-red-700 font-bold'>
-                                                {delegate.earlyBird ?? delegate.earlyBird}
+                                                {(delegate as any).earlyBird}
                                             </div>
                                         </td>
                                         <td className="flex-wrap px-3 py-4 text-gray-900 font-bold">
                                             <div className='h-full text-lg w-full'>
                                                 <div className='text-red-700 line-through'>
-                                                    {delegate.old_price ? `£${delegate.old_price}.00` : undefined}
+                                                    {(delegate as any).old_price ? `£${(delegate as any).old_price}.00` : undefined}
                                                 </div>
                                                 <div>
                                                     £{delegate.item_price}.00
