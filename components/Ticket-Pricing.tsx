@@ -178,13 +178,13 @@ function TicketPricing() {
                                         <td className="flex-wrap px-3 py-4 text-gray-900 text-lg">
                                             {delegate.description}
                                             <div className='text-red-700 font-bold'>
-                                                {delegate.earlyBird ?? delegate.earlyBird}
+                                                {(delegate as any).earlyBird}
                                             </div>
                                         </td>
                                         <td className="flex-wrap px-3 py-4 text-gray-900 font-bold">
                                             <div className='h-full text-lg w-full'>
                                                 <div className='text-red-700 line-through'>
-                                                    {delegate.old_price ? `£${delegate.old_price}.00` : undefined}
+                                                    {(delegate as any).old_price ? `£${(delegate as any).old_price}.00` : undefined}
                                                 </div>
                                                 <div>
                                                     £{delegate.item_price}.00
