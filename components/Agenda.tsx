@@ -466,7 +466,8 @@ function Agenda() {
 
                                         <br /> <br /> Speakers <br />
                                        <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Ethan-Budiansky.jpeg'/>  Ethan Budiansky</b>, Sustainable Commodities Lead, <b>Wildlife Conservation Society( WCS) <br />
-                                       <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Toby-Behrmann.webp'/>  Toby Behrmann</b>, Head of London Market & Public Private Partnerships, <b>AXA Climate<br/>
+                                       {/* <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Toby-Behrmann.webp'/>  Toby Behrmann</b>, Head of London Market & Public Private Partnerships, <b>AXA Climate<br/> */}
+                                        <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Jack-Bugas.jpeg'/>   Jack Bugas</b>, Partner and Associate Director, <b>Boston Consulting Group (BCG)<br />
                                        <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Myriam-Sainz.jpg'/>   Myriam Sainz</b>, Senior Director Strategic Initiatives, <b>TechnoServe<br />
                                        <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Tripurari-Prasad.jpg'/>  Tripurari Prasad</b>, Deputy Head of Carbon, Investments, <b>Climate Asst Management</b>
 
