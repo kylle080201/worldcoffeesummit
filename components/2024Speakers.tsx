@@ -283,17 +283,17 @@ As Senior Program Manager of Forest & Land Use at Planet, Dr. Mendes leads strat
 `
     },
 
-    {
-      name: 'Toby Behrmann',
-      role: 'Head of London Market & Public Private Partnerships',
-      company: 'AXA Climate',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Toby-Behrmann.jpeg',
-      companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/AXA_Climate_Blue_Horizontal_RVB.png",
-      iconWidth: 120,
-      iconHeight: 120,
-      bio: `Toby is currently Head of London Market and Public Private Partnerships at AXA Climate, the specialized entity within the AXA Group, created to address the growing need for climate adaptation across both private and public sectors.  He focuses on developing innovative financial solutions to address the growing impacts of climate change. Starting his career at international insurer AIG, Toby has spent over 20 years structuring and deploying global financial mechanisms across retail, commercial, and public sector channels, with a particular emphasis on resilience and adaptation strategies. With extensive experience in re/insurance, derivatives, and ILS, Toby is a passionate advocate for alternative risk transfer as a vital tool for bridging gaps in traditional insurance coverage and enhancing climate resilience across sectors.
-`
-    },
+//     {
+//       name: 'Toby Behrmann',
+//       role: 'Head of London Market & Public Private Partnerships',
+//       company: 'AXA Climate',
+//       imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Toby-Behrmann.jpeg',
+//       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/AXA_Climate_Blue_Horizontal_RVB.png",
+//       iconWidth: 120,
+//       iconHeight: 120,
+//       bio: `Toby is currently Head of London Market and Public Private Partnerships at AXA Climate, the specialized entity within the AXA Group, created to address the growing need for climate adaptation across both private and public sectors.  He focuses on developing innovative financial solutions to address the growing impacts of climate change. Starting his career at international insurer AIG, Toby has spent over 20 years structuring and deploying global financial mechanisms across retail, commercial, and public sector channels, with a particular emphasis on resilience and adaptation strategies. With extensive experience in re/insurance, derivatives, and ILS, Toby is a passionate advocate for alternative risk transfer as a vital tool for bridging gaps in traditional insurance coverage and enhancing climate resilience across sectors.
+// `
+//     },
 
 
 
