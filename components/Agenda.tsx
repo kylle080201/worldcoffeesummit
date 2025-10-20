@@ -14,7 +14,7 @@ function Agenda() {
 }`}</style><div id="agenda" className='w-full'>
                 <div className='py-20 max-w-5xl mx-auto'>
                     <h2 className="relative text-4xl font-bold text-center tracking-tight">AGENDA</h2>
-                    <h2 className="text-sm text-red-500 text-center ">Confidentiality – Chatham House Rule*</h2>
+                    {/* <h2 className="text-sm text-red-500 text-center ">Confidentiality – Chatham House Rule*</h2> */}
 
                     <h2 className="mt-8 text-3xl text-lime-700 font-bold text-center tracking-tight">DAY 1, THURSDAY 23RD OCTOBER 2025 </h2>
                     <h2 className="text-2xl  font-bold text-center tracking-tight">SYSTEM RESET- REIMAGINING VALUE CHAINS & LANDSCAPES </h2>
@@ -520,12 +520,16 @@ function Agenda() {
                                 END OF SUMMIT
                             </div>
                         </div>
- <div className='mt-8 px-2 max-w-5xl'>
+                        {/* Mobile Nav <div className='mt-8 px-2 max-w-5xl'>
                             <h3 className=''>
-                                <span className='italic'> <span className="text-red-500">*</span>To foster open and candid dialogue among senior leaders, all sessions at the 3rd World Coffee Innovation Summit London 2025 will be conducted under the Chatham House Rule: participants are free to use the information received, but neither the identity nor the affiliation of speakers or participants may be revealed without permission.
+                                <span className='italic'> <span className="text-red-500">*
+                                </span>To foster open and candid dialogue among senior leaders, all sessions at the 
+                                3rd World Coffee Innovation Summit London 2025 will be conducted under the Chatham House Rule: 
+                                participants are free to use the information received, but neither the identity nor the affiliation 
+                                of speakers or participants may be revealed without permission.
                                 </span>
-                                </h3>
-                                </div>
+                            </h3>
+                        </div>*/}
                     </div>
 
                 </div>
