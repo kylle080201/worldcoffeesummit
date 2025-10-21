@@ -43,7 +43,7 @@ function Agenda() {
 
                         <div className='mt-4 px-2 max-w-5xl'>
                             <h3 className=''>
-                              <span> <b>Summit Chair <br/>
+                              <span> <b> Summit Chairperson <br/>
                                <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2024/08/Joy-Macknight-12-of-19.jpg'/> Joy Macknight</b>, Journalist, Former Editor, <b>Financial Times - The Banker
 
                                  </b></span>
