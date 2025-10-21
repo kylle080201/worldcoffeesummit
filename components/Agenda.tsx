@@ -191,7 +191,7 @@ function Agenda() {
                                 <span className='italic'>Optimising Ecosystems for Productivity and Climate Resilience. Discover how digital intelligence is enabling hyper-personalized farming, real-time risk reduction, and planetary resilience.</span>
                                 <br /><br />
                                      <span><b> Chair<br />
-                                    <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/10/Lauren-Ing.jpeg'/> Lauren Ing</b>, Managing Director, Sustainability Strategy, <b>Accenture, U.K. and Ireland</b><br />
+                                        <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Jack-Bugas.jpeg'/>   Jack Bugas</b>, Partner and Associate Director, <b>Boston Consulting Group (BCG)<br />
                                     <br /><b>Speakers<br />
                                     <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/10/Nick-APPLEYARD.jpg'/> Nick Appleyard</b>, Head of Applications and Solutions, <b>European Space Agency (ESA)<b /><br />
                                       <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Suresh-Yadav.png'/>   Suresh Yadav</b>, Director, Climate Change and Oceans Directorate (CCO), <b>The Commonwealth Secretariat<b /> <br />
@@ -462,12 +462,13 @@ function Agenda() {
                                 <span className='italic'>From Natural Capital to Climate Assets: Building a Science-Based Regeneration Economy. How biodiversity, water, and ecosystem services are emerging as key assets in financial and supply chain decisions.
                                 </span>
                                 <span> <br /><br /> <b>Chair <br />
+                                
                                    <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/07/Felipe-Carazo.jpeg'/>  Felipe Carazo</b>, Head of Sustainable Commodities, Tropical Forest Alliance, <b>World Economic Forum
 
                                         <br /> <br /> Speakers <br />
                                        <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Ethan-Budiansky.jpeg'/>  Ethan Budiansky</b>, Sustainable Commodities Lead, <b>Wildlife Conservation Society( WCS) <br />
                                        {/* <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Toby-Behrmann.webp'/>  Toby Behrmann</b>, Head of London Market & Public Private Partnerships, <b>AXA Climate<br/> */}
-                                        <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Jack-Bugas.jpeg'/>   Jack Bugas</b>, Partner and Associate Director, <b>Boston Consulting Group (BCG)<br />
+
                                        <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Myriam-Sainz.jpg'/>   Myriam Sainz</b>, Senior Director Strategic Initiatives, <b>TechnoServe<br />
                                        <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Tripurari-Prasad.jpg'/>  Tripurari Prasad</b>, Deputy Head of Carbon, Investments, <b>Climate Asst Management</b>
 
