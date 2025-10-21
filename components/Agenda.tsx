@@ -191,7 +191,7 @@ function Agenda() {
                                 <span className='italic'>Optimising Ecosystems for Productivity and Climate Resilience. Discover how digital intelligence is enabling hyper-personalized farming, real-time risk reduction, and planetary resilience.</span>
                                 <br /><br />
                                      <span><b> Chair<br />
-                                        <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Jack-Bugas.jpeg'/>   Jack Bugas</b>, Partner and Associate Director, <b>Boston Consulting Group (BCG)<br />
+                                        <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Jack-Bugas.jpeg'/>   Jack Bugas</b>, Partner and Associate Director, <b>Boston Consulting Group (BCG)</b><br />
                                     <br /><b>Speakers<br />
                                     <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/10/Nick-APPLEYARD.jpg'/> Nick Appleyard</b>, Head of Applications and Solutions, <b>European Space Agency (ESA)<b /><br />
                                       <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Suresh-Yadav.png'/>   Suresh Yadav</b>, Director, Climate Change and Oceans Directorate (CCO), <b>The Commonwealth Secretariat<b /> <br />
