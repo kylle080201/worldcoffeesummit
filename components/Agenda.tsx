@@ -44,7 +44,7 @@ function Agenda() {
                         <div className='mt-4 px-2 max-w-5xl'>
                             <h3 className=''>
                               <span> <b> Summit Chairperson <br/>
-                               <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2024/08/Joy-Macknight-12-of-19.jpg'/> Joy MacKnight</b>, Journalist, Former Editor, <b>Financial Times - The Banker
+                               <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2024/08/Joy-Macknight-12-of-19.jpg'/> Joy Macknight</b>, Journalist, Former Editor, <b>Financial Times - The Banker
 
                                  </b></span>
                             </h3>
@@ -497,7 +497,7 @@ function Agenda() {
                                 <span className='italic'><b>Finance is waking up to nature—but is it moving fast enough?</b> This high-level forum explores how ecosystem-based investment models can shift from short-term returns to long-term shared value. The discussion will spotlight practical mechanisms—blended finance, risk mitigation tools, and outcome-based metrics—that can align financial performance with regenerative outcomes and bring ecosystem-based finance into the mainstream.
                                 </span>
                                 <span><br /><br /><b>Chair<br />
-                                    <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2024/08/Joy-Macknight-12-of-19.jpg'/> Joy MacKnight</b>, Journalist, Former Editor, <b>Financial Times - The Banker
+                                    <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2024/08/Joy-Macknight-12-of-19.jpg'/> Joy Macknight</b>, Journalist, Former Editor, <b>Financial Times - The Banker
 
                                         <br /><br />Speakers<br />
                                       <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Wagner-Albuquerque-de-Almeida.jpg'/>   Wagner Albuquerque de Almeida</b>, Global Director- Manufacturing, <b>Agribusiness and Forestry, International Finance Corporation (IFC)<br/>
