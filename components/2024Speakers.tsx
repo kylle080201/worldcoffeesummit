@@ -298,7 +298,7 @@ As Senior Program Manager of Forest & Land Use at Planet, Dr. Mendes leads strat
 
 
         {
-      name: 'Rowan Douglas',
+      name: 'Rowan Douglas CBE',
       role: 'CEO Climate Risk and Resilience',
       company: 'Howden Group',
       imageUrl: 'https://wocofco.org/wp-content/uploads/2025/10/Rowan-Douglas-1.jpg',
@@ -784,7 +784,7 @@ of investment experience and holds a Master’s Degree in law from the Universit
     {
       name: 'Leonard Faustine Zimbehya',
       role: 'Managing Director',
-      company: 'KPD PLC',
+      company: 'KPD PLC (Tanzania)',
       imageUrl: 'https://wocofco.org/wp-content/uploads/2025/10/Leonard-Faustine-Zimbehya.jpeg',
       companyIcon: "https://wocofco.org/wp-content/uploads/2025/10/kpd-logo-DoYw7TUd.png",
       iconWidth: 100,
