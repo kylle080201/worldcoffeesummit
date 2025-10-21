@@ -666,7 +666,7 @@ With over 25 years of experience in tropical commodity production landscapes, Ni
 //  `
 //     },
         {
-      name: 'Joy MacKnight',
+      name: 'Joy Macknight',
       role: 'Journalist, Former Editor',
       company: 'Financial Times - The Banker',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/Joy-Macknight-12-of-19.jpg',
