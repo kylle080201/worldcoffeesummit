@@ -167,13 +167,13 @@ function TicketPricing() {
                             <h1 className='mx-auto text-3xl xl:text-5xl'>TO WCIS25</h1>
                             {/* <h1 className='mx-auto text-red-500 xl:text-2xl text-lg'>(LIMITED AVAILABILITY)</h1> */}
                         </div>
-                        <div className='flex flex-col gap-2 w-1/2'>
+                        {/* <div className='flex flex-col gap-2 w-1/2'>
                             <div className='p-2 bg-red-500 text-white w-max text-2xl xl:text-4xl font-bold px-24 justify-center items-center text-center rounded-xl whitespace-normal line-clamp-2'>
                                 TICKET PRICES INCREASE <br />
                                 AFTER 17 OCTOBER 2025
                             </div>
                             <RegisterCountDown />
-                        </div>
+                        </div> */}
                     </div>
                     <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8 ">
                         <table className="min-w-full divide-y divide-gray-300 mt-12">

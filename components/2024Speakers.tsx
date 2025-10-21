@@ -501,16 +501,16 @@ Before joining TechnoServe, Myriam was a management consultant with McKinsey & C
     //   bio: `Mumbi Gitau, soft commodities reporter at Bloomberg News, covering global coffee, cocoa, sugar, cotton, and orange juice markets. `
     // },
 
-    {
-      name: 'Lauren Ing',
-      role: 'Managing Director, UK and Ireland Sustainability Strategy Lead',
-      company: 'Accenture',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/10/Lauren-Ing.jpeg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/10/6102dbf43de48b00044eb5af.png",
-      iconWidth: 100,
-      iconHeight: 100,
-      bio: ` `
-    },
+    // {
+    //   name: 'Lauren Ing',
+    //   role: 'Managing Director, UK and Ireland Sustainability Strategy Lead',
+    //   company: 'Accenture',
+    //   imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/10/Lauren-Ing.jpeg',
+    //   companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/10/6102dbf43de48b00044eb5af.png",
+    //   iconWidth: 100,
+    //   iconHeight: 100,
+    //   bio: ` `
+    // },
 
 
     {
