@@ -475,7 +475,7 @@ function Agenda() {
                                        {/* <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Toby-Behrmann.webp'/>  Toby Behrmann</b>, Head of London Market & Public Private Partnerships, <b>AXA Climate<br/> */}
 
                                        <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Myriam-Sainz.jpg'/>   Myriam Sainz</b>, Senior Director Strategic Initiatives, <b>TechnoServe<br />
-                                       <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Tripurari-Prasad.jpg'/>  Tripurari Prasad</b>, Deputy Head of Carbon, Investments, <b>Climate Asst Management</b>
+                                       <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Tripurari-Prasad.jpg'/>  Tripurari Prasad</b>, Deputy Head of Carbon, Investments, <b>Climate Asset Management</b>
 
                                 </span>
                             </h3>
@@ -500,7 +500,7 @@ function Agenda() {
 
                                         <br /><br />Speakers<br />
                                       <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Wagner-Albuquerque-de-Almeida.jpg'/>   Wagner Albuquerque de Almeida</b>, Global Director- Manufacturing, <b>Agribusiness and Forestry, International Finance Corporation (IFC)<br/>
-                                        <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Rowan-Douglas-1.jpg'/> Rowan Douglas</b>, CEO Climate Risk and Resilience<b> Howden Group<br/>
+                                        <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Rowan-Douglas-1.jpg'/> Rowan Douglas CBE</b>, CEO Climate Risk and Resilience<b> Howden Group<br/>
                                          <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Melissa-Ocampo.jpg'/> Melissa Ocampo</b>,Head of Sustainability Strategy EMEA, Managing Director <b> Sumitomo Mitsui Banking Corporation- SMBC Group</b>
                                 </span>
                             </h3>

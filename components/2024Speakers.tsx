@@ -23,7 +23,7 @@ function Speakers2024() {
 
 
     {
-      name: 'The Rt. Hon John Gummer, Lord Deben',
+      name: 'The Rt Hon John Gummer, Lord Deben',
       role: 'Former Chairman',
       company: 'UK Climate Change Committee (The CCC)',
       company2: "House of Lords",
