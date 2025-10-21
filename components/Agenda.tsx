@@ -177,7 +177,8 @@ function Agenda() {
                                     <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/10/Nick-APPLEYARD.jpg'/> Nick Appleyard</b>, Head of Applications and Solutions, <b>European Space Agency (ESA)<b /><br />
                                       <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Suresh-Yadav.png'/>   Suresh Yadav</b>, Director, Climate Change and Oceans Directorate (CCO), <b>The Commonwealth Secretariat<b /> <br />
                                        <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Mario-Abreu.jpg'/>  Mario Abreu</b>, Group Vice President Sustainability, <b>Ferrero<br/>
-                                    <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/08/Raymond-Katta.jpeg'/>    Raymond Katta</b>, Executive Chairman, <b>Produce Monitoring Board (PMB), Sierra Leone</b>
+                                    <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/08/Raymond-Katta.jpeg'/>    Raymond Katta</b>, Executive Chairman, <b>Produce Monitoring Board (PMB), Sierra Leone<br/>
+                                 <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Emma-Clarke.jpg'/>  Emma Clarke</b>, Senior Private Sector Advisor, <b>WaterAid</b>
 
                                 </span>
                             </h3>
@@ -281,7 +282,7 @@ function Agenda() {
                                      <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Stefan-Dierks.jpg'/>    Stefan Dierks</b>, Director Sustainability Strategy, <b>Melitta Group<br/>
                                      <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Saurabh-Pratap.jpg'/>  Saurabh Pratap</b>, Executive Director, Sustainable Finance, <b>Standard Chartered Bank<br/>
 
-                                     <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Mr.-Primus-Oswald-Kimaryo.jpeg'/>  Mr. Primus Oswald Kimaryo</b>,Director General, <b>Tanzania Coffee Board (TCB)</b>
+                                     <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Leonard-Faustine-Zimbehya.jpeg'/>  Leonard Faustine Zimbehya</b>, Managing Director, <b>KPD PLC</b>
                                 </span>
 
                             </h3>
