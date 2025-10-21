@@ -369,7 +369,7 @@ function Agenda() {
                               <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/10/Peter-Foster-scaled.jpg' /> Peter Foster,</b> World Trade Editor, <b>Financial Times (FT)</b> </span><br/><br/>
                             <span>
                                 <b>Speakers<br />
-                                    <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Lord-Deben-Photo-2019-adj-003-scaled-copy.jpg' /> The Rt. Hon John Gummer, The Lord Deben,</b> Former Chairman, <b>UK Climate Change Committee (CCC) <br/>
+                                    <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Lord-Deben-Photo-2019-adj-003-scaled-copy.jpg' /> The Rt Hon John Gummer, The Lord Deben,</b> Former Chairman, <b>UK Climate Change Committee (CCC) <br/>
                                      <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Jenny-Davis-Peccoud.jpg'/>  Jenny Davis-Peccoud</b>, Partner, Founder, Global Sustainability & Responsibility Practice, <b>Bain & Co. </b>
                             </span>
                             </h3>
