@@ -23,7 +23,7 @@ function Agenda() {
                     <div className='mt-8'>
                         <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                             <div className='w-full text-white font-medium col-span-2 justify-center bg-gray-600 mx-auto flex items-center px-6'>
-                                08:00
+                                08:30
                             </div>
                             <div className='w-full text-white font-medium col-span-8 bg-gray-600 mx-auto flex items-center px-6 py-2'>
                                 REGISTRATION & MORNING COFFEE
@@ -34,7 +34,7 @@ function Agenda() {
                     <div className='mt-8'>
                         <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                             <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                                09:00
+                                09:45
                             </div>
                             <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                                 OPENING REMARKS
@@ -55,7 +55,7 @@ function Agenda() {
                     <div className='mt-8'>
                         <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                             <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                                09:05
+                                09:50
                             </div>
                             <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                                 OPENING KEYNOTE
@@ -70,25 +70,6 @@ function Agenda() {
                     </div>
 
 
-                    <div className='mt-8'>
-                        <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
-                            <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                                9:15
-                            </div>
-                            <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                                <b>FIRESIDE: THE BIGGER PICTURE </b>
-                            </div>
-                        </div>
-                        <div className='mt-4 px-2 max-w-5xl'>
-                            <h3 className=''>
-                              <span>  <b>Chair <br />
-                              <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/10/Peter-Foster-scaled.jpg' /> Peter Foster,</b> World Trade Editor, <b>Financial Times (FT)</b> </span><br/><br/>
-                            <span>
-                                <b>Speakers<br />
-                                    <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Lord-Deben-Photo-2019-adj-003-scaled-copy.jpg' /> The Rt. Hon John Gummer, The Lord Deben,</b> Former Chairman, <b>UK Climate Change Committee (CCC) </b></span>
-                            </h3>
-                        </div>
-                    </div>
 
                     <div className='mt-8'>
                         <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
@@ -326,7 +307,7 @@ function Agenda() {
                     <div className='mt-8'>
                         <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                             <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                                9:00
+                                8:15
                             </div>
                             <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                                 COFFEE REGISTRATION
@@ -337,7 +318,7 @@ function Agenda() {
                     <div className='mt-8'>
                         <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                             <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                                9:45
+                                9:15
                             </div>
                             <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                                 OPENING REMARKS
@@ -355,7 +336,7 @@ function Agenda() {
                     <div className='mt-8'>
                         <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                             <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
-                                9:50
+                                9:20
                             </div>
                             <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
                                 OPENING KEYNOTE
@@ -371,13 +352,36 @@ function Agenda() {
                         </div>
                     </div>
 
+
+                    <div className='mt-8'>
+                        <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
+                            <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
+                                9:30
+                            </div>
+                            <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
+                                <b>FIRESIDE: THE BIGGER PICTURE </b>
+                            </div>
+                        </div>
+                        <div className='mt-4 px-2 max-w-5xl'>
+                            <h3 className=''>
+                              <span>  <b>Chair <br />
+                              <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/10/Peter-Foster-scaled.jpg' /> Peter Foster,</b> World Trade Editor, <b>Financial Times (FT)</b> </span><br/><br/>
+                            <span>
+                                <b>Speakers<br />
+                                    <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Lord-Deben-Photo-2019-adj-003-scaled-copy.jpg' /> The Rt. Hon John Gummer, The Lord Deben,</b> Former Chairman, <b>UK Climate Change Committee (CCC) <br/>
+                                     <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Jenny-Davis-Peccoud.jpg'/>  Jenny Davis-Peccoud</b>, Partner, Founder, Global Sustainability & Responsibility Practice, <b>Bain & Co. </b>
+                            </span>
+                            </h3>
+                        </div>
+                    </div>
+
                     <div className='mt-8'>
                         <div className='w-full grid grid-cols-10 gap-x-4 h-max'>
                             <div className='w-full text-white font-medium col-span-2 justify-center bg-lime-700 mx-auto flex items-center px-6'>
                                 10:00
                             </div>
                             <div className='w-full text-white font-medium col-span-8 bg-lime-700 mx-auto flex items-center px-6 py-2'>
-                                PANEL: COCOA & COFFEE SYNERGIES – UNITY FOR RESILIENCE
+                               PANEL: COCOA & COFFEE SYNERGIES – UNITY FOR RESILIENCE
                             </div>
                         </div>
                         <div className='mt-4 px-2 max-w-5xl'>
@@ -388,7 +392,7 @@ function Agenda() {
                                    <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Jenny-Davis-Peccoud.jpg'/>  Jenny Davis-Peccoud</b>, Partner, Founder, Global Sustainability & Responsibility Practice, <b>Bain & Co. 
 
                                   <br /><br />Speakers<br />
-                                    <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/07/Ruchira-Joshi-1.jpeg'/> Ruchira Joshi</b>, Director, Global Coffee & Cocoa Sustainability, <b>Starbucks<br />
+                                    <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/10/Ruchira-Joshi-2.jpeg'/> Ruchira Joshi</b>, Director, Global Coffee & Cocoa Sustainability, <b>Starbucks<br />
                                       <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Mario-Abreu.jpg'/>   Mario Abreu</b>, Group Vice President Sustainability, <b>Ferrero<br />
                                        <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Wagner-Albuquerque-de-Almeida.jpg'/>  Wagner Albuquerque de Almeida</b>， Global Director- Manufacturing, Agribusiness and Forestry, <b>International Finance Corporation (IFC)<br />
                                        <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Raphaelle-Peinado-2.jpg'/>  Raphaelle Peinado</b>, Sustainability Director, <b>Volcafe <br />
@@ -495,7 +499,7 @@ function Agenda() {
 
                                         <br /><br />Speakers<br />
                                       <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Wagner-Albuquerque-de-Almeida.jpg'/>   Wagner Albuquerque de Almeida</b>, Global Director- Manufacturing, <b>Agribusiness and Forestry, International Finance Corporation (IFC)<br/>
-                                        <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Rowan-Douglas.jpg'/> Rowan Douglas</b>, CEO Climate Risk and Resilience<b> Howden Group<br/>
+                                        <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Rowan-Douglas-1.jpg'/> Rowan Douglas</b>, CEO Climate Risk and Resilience<b> Howden Group<br/>
                                          <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Melissa-Ocampo.jpg'/> Melissa Ocampo</b>,Head of Sustainability Strategy EMEA, Managing Director <b> Sumitomo Mitsui Banking Corporation- SMBC Group</b>
                                 </span>
                             </h3>

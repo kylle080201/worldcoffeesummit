@@ -105,7 +105,7 @@ institutions such as ABN AMRO, Deutsche Bank, and Banco Itau, in addition to his
       name: 'Ruchira Joshi',
       role: 'Director, Global Coffee & Cocoa Sustainability',
       company: 'Starbucks',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Ruchira-Joshi-1.jpeg',
+      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/10/Ruchira-Joshi-2.jpeg',
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/Starbucks.png",
       iconWidth: 80,
       iconHeight: 80,
@@ -301,11 +301,20 @@ As Senior Program Manager of Forest & Land Use at Planet, Dr. Mendes leads strat
       name: 'Rowan Douglas',
       role: 'CEO Climate Risk and Resilience',
       company: 'Howden Group',
-      imageUrl: 'https://wocofco.org/wp-content/uploads/2025/10/Rowan-Douglas.jpg',
+      imageUrl: 'https://wocofco.org/wp-content/uploads/2025/10/Rowan-Douglas-1.jpg',
       companyIcon: "https://wocofco.org/wp-content/uploads/2025/10/howden-tiger-new-logo.png",
       iconWidth: 120,
       iconHeight: 120,
-      bio: ``
+      bio: `Rowan leads Climate Risk and Resilience at Howden, a leading global insurance and reinsurance broker, and serves on the company's Global Leadership Team.  The CRR helps clients to derisk their climate related exposures, maintain access to capital and navigate their pathway towards resilience and decarbonisation. 
+
+Rowan has been a pioneer in the field of climate risk and insurance for over 20 years. He brought climate modelling to reinsurance in 2006, led the foundation of the Insurance Development Forum with UN, World Bank and Industry leaders in 2015 and incubated the award-winning Coalition for Climate Resilient Investment in 2020. 
+
+Beyond insurance Rowan was appointed to the UK Prime Minister's Council for Science & Technology 2011-2016 and served on the UK Green Finance Task Force. 
+
+In 2016 he was made CBE for services to the economy for risk, insurance and sustainable growth. 
+
+Rowan read Geography at Durham and Bristol Universities and lives and works in London
+`
     },
 
 
@@ -501,16 +510,16 @@ Before joining TechnoServe, Myriam was a management consultant with McKinsey & C
     //   bio: `Mumbi Gitau, soft commodities reporter at Bloomberg News, covering global coffee, cocoa, sugar, cotton, and orange juice markets. `
     // },
 
-    {
-      name: 'Lauren Ing',
-      role: 'Managing Director, UK and Ireland Sustainability Strategy Lead',
-      company: 'Accenture',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/10/Lauren-Ing.jpeg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/10/6102dbf43de48b00044eb5af.png",
-      iconWidth: 100,
-      iconHeight: 100,
-      bio: ` `
-    },
+    // {
+    //   name: 'Lauren Ing',
+    //   role: 'Managing Director, UK and Ireland Sustainability Strategy Lead',
+    //   company: 'Accenture',
+    //   imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/10/Lauren-Ing.jpeg',
+    //   companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/10/6102dbf43de48b00044eb5af.png",
+    //   iconWidth: 100,
+    //   iconHeight: 100,
+    //   bio: ` `
+    // },
 
 
     {
