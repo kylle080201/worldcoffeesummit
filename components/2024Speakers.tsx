@@ -666,14 +666,14 @@ With over 25 years of experience in tropical commodity production landscapes, Ni
 //  `
 //     },
         {
-      name: 'Joy Macknight',
+      name: 'Joy MacKnight',
       role: 'Journalist, Former Editor',
       company: 'Financial Times - The Banker',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/Joy-Macknight-12-of-19.jpg',
       companyIcon: "",
       iconWidth: 120,
       iconHeight: 120,
-      bio: `Joy Macknight is a freelance journalist and former editor of The Banker, part of the
+      bio: `Joy MacKnight is a freelance journalist and former editor of The Banker, part of the
       Financial Times group. She joined The Banker in August 2015 as transaction
       banking and technology editor, was promoted to deputy editor in September 2016
       and then to managing editor in April 2019, before becoming the first female editor in
