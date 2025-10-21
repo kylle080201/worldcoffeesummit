@@ -100,7 +100,7 @@ function Navbar() {
                                   <Menu.Item>
                                     {({ active }) => (
                                       <Link
-                                        href="/#speakers"
+                                        href="/speakers"
                                         className={`${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'} block px-4 py-2 text-sm`}
                                       >
                                         Speaker
@@ -169,7 +169,7 @@ function Navbar() {
                     <p className="font-bold text-gray-900">Speakers</p>
                     <div className="ml-3 space-y-1">
                       <Link href="/#advisory-board" className="block py-2 text-gray-600">Advisory Board</Link>
-                      <Link href="/#speaker" className="block py-2 text-gray-600">Speaker</Link>
+                      <Link href="/speakers" className="block py-2 text-gray-600">Speaker</Link>
                     </div>
                   </div>
                 ) : (

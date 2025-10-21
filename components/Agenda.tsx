@@ -392,7 +392,7 @@ function Agenda() {
                                    <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Jenny-Davis-Peccoud.jpg'/>  Jenny Davis-Peccoud</b>, Partner, Founder, Global Sustainability & Responsibility Practice, <b>Bain & Co. 
 
                                   <br /><br />Speakers<br />
-                                    <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/07/Ruchira-Joshi-1.jpeg'/> Ruchira Joshi</b>, Director, Global Coffee & Cocoa Sustainability, <b>Starbucks<br />
+                                    <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/10/Ruchira-Joshi-2.jpeg'/> Ruchira Joshi</b>, Director, Global Coffee & Cocoa Sustainability, <b>Starbucks<br />
                                       <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Mario-Abreu.jpg'/>   Mario Abreu</b>, Group Vice President Sustainability, <b>Ferrero<br />
                                        <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Wagner-Albuquerque-de-Almeida.jpg'/>  Wagner Albuquerque de Almeida</b>， Global Director- Manufacturing, Agribusiness and Forestry, <b>International Finance Corporation (IFC)<br />
                                        <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Raphaelle-Peinado-2.jpg'/>  Raphaelle Peinado</b>, Sustainability Director, <b>Volcafe <br />
@@ -499,7 +499,7 @@ function Agenda() {
 
                                         <br /><br />Speakers<br />
                                       <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Wagner-Albuquerque-de-Almeida.jpg'/>   Wagner Albuquerque de Almeida</b>, Global Director- Manufacturing, <b>Agribusiness and Forestry, International Finance Corporation (IFC)<br/>
-                                        <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Rowan-Douglas.jpg'/> Rowan Douglas</b>, CEO Climate Risk and Resilience<b> Howden Group<br/>
+                                        <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Rowan-Douglas-1.jpg'/> Rowan Douglas</b>, CEO Climate Risk and Resilience<b> Howden Group<br/>
                                          <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Melissa-Ocampo.jpg'/> Melissa Ocampo</b>,Head of Sustainability Strategy EMEA, Managing Director <b> Sumitomo Mitsui Banking Corporation- SMBC Group</b>
                                 </span>
                             </h3>
