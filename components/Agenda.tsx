@@ -43,7 +43,7 @@ function Agenda() {
 
                         <div className='mt-4 px-2 max-w-5xl'>
                             <h3 className=''>
-                              <span> <b>Summit Chair <br/>
+                              <span> <b> Summit Chairperson <br/>
                                <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2024/08/Joy-Macknight-12-of-19.jpg'/> Joy Macknight</b>, Journalist, Former Editor, <b>Financial Times - The Banker
 
                                  </b></span>
@@ -282,7 +282,8 @@ function Agenda() {
                                      <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Stefan-Dierks.jpg'/>    Stefan Dierks</b>, Director Sustainability Strategy, <b>Melitta Group<br/>
                                      <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Saurabh-Pratap.jpg'/>  Saurabh Pratap</b>, Executive Director, Sustainable Finance, <b>Standard Chartered Bank<br/>
 
-                                     <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Leonard-Faustine-Zimbehya.jpeg'/>  Leonard Faustine Zimbehya</b>, Managing Director, <b>KPD PLC</b>
+                                     <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Leonard-Faustine-Zimbehya.jpeg'/>  Leonard Faustine Zimbehya</b>, Managing Director, <b>KPD PLC (Tanzania)</b>
+
                                 </span>
 
                             </h3>
@@ -369,7 +370,7 @@ function Agenda() {
                               <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/10/Peter-Foster-scaled.jpg' /> Peter Foster,</b> World Trade Editor, <b>Financial Times (FT)</b> </span><br/><br/>
                             <span>
                                 <b>Speakers<br />
-                                    <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Lord-Deben-Photo-2019-adj-003-scaled-copy.jpg' /> The Rt. Hon John Gummer, The Lord Deben,</b> Former Chairman, <b>UK Climate Change Committee (CCC) <br/>
+                                    <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Lord-Deben-Photo-2019-adj-003-scaled-copy.jpg' /> The Rt Hon John Gummer, The Lord Deben,</b> Former Chairman, <b>UK Climate Change Committee (CCC) <br/>
                                      <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Jenny-Davis-Peccoud.jpg'/>  Jenny Davis-Peccoud</b>, Partner, Founder, Global Sustainability & Responsibility Practice, <b>Bain & Co. </b>
                             </span>
                             </h3>
@@ -475,7 +476,7 @@ function Agenda() {
                                        {/* <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Toby-Behrmann.webp'/>  Toby Behrmann</b>, Head of London Market & Public Private Partnerships, <b>AXA Climate<br/> */}
 
                                        <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Myriam-Sainz.jpg'/>   Myriam Sainz</b>, Senior Director Strategic Initiatives, <b>TechnoServe<br />
-                                       <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Tripurari-Prasad.jpg'/>  Tripurari Prasad</b>, Deputy Head of Carbon, Investments, <b>Climate Asst Management</b>
+                                       <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Tripurari-Prasad.jpg'/>  Tripurari Prasad</b>, Deputy Head of Carbon, Investments, <b>Climate Asset Management</b>
 
                                 </span>
                             </h3>
@@ -500,7 +501,7 @@ function Agenda() {
 
                                         <br /><br />Speakers<br />
                                       <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Wagner-Albuquerque-de-Almeida.jpg'/>   Wagner Albuquerque de Almeida</b>, Global Director- Manufacturing, <b>Agribusiness and Forestry, International Finance Corporation (IFC)<br/>
-                                        <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Rowan-Douglas-1.jpg'/> Rowan Douglas</b>, CEO Climate Risk and Resilience<b> Howden Group<br/>
+                                        <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Rowan-Douglas-1.jpg'/> Rowan Douglas CBE</b>, CEO Climate Risk and Resilience<b> Howden Group<br/>
                                          <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Melissa-Ocampo.jpg'/> Melissa Ocampo</b>,Head of Sustainability Strategy EMEA, Managing Director <b> Sumitomo Mitsui Banking Corporation- SMBC Group</b>
                                 </span>
                             </h3>

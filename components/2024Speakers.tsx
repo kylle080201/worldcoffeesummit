@@ -23,7 +23,7 @@ function Speakers2024() {
 
 
     {
-      name: 'The Rt. Hon John Gummer, Lord Deben',
+      name: 'The Rt Hon John Gummer, Lord Deben',
       role: 'Former Chairman',
       company: 'UK Climate Change Committee (The CCC)',
       company2: "House of Lords",
@@ -298,7 +298,7 @@ As Senior Program Manager of Forest & Land Use at Planet, Dr. Mendes leads strat
 
 
         {
-      name: 'Rowan Douglas',
+      name: 'Rowan Douglas CBE',
       role: 'CEO Climate Risk and Resilience',
       company: 'Howden Group',
       imageUrl: 'https://wocofco.org/wp-content/uploads/2025/10/Rowan-Douglas-1.jpg',
@@ -673,7 +673,7 @@ With over 25 years of experience in tropical commodity production landscapes, Ni
       companyIcon: "",
       iconWidth: 120,
       iconHeight: 120,
-      bio: `Joy Macknight is a freelance journalist and former editor of The Banker, part of the
+      bio: `Joy MacKnight is a freelance journalist and former editor of The Banker, part of the
       Financial Times group. She joined The Banker in August 2015 as transaction
       banking and technology editor, was promoted to deputy editor in September 2016
       and then to managing editor in April 2019, before becoming the first female editor in
@@ -784,7 +784,7 @@ of investment experience and holds a Master’s Degree in law from the Universit
     {
       name: 'Leonard Faustine Zimbehya',
       role: 'Managing Director',
-      company: 'KPD PLC',
+      company: 'KPD PLC (Tanzania)',
       imageUrl: 'https://wocofco.org/wp-content/uploads/2025/10/Leonard-Faustine-Zimbehya.jpeg',
       companyIcon: "https://wocofco.org/wp-content/uploads/2025/10/kpd-logo-DoYw7TUd.png",
       iconWidth: 100,
