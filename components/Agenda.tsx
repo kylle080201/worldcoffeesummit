@@ -282,7 +282,7 @@ function Agenda() {
                                      <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Stefan-Dierks.jpg'/>    Stefan Dierks</b>, Director Sustainability Strategy, <b>Melitta Group<br/>
                                      <img className='agenda-img' src='https://softtechs360.com/coffee/wp-content/uploads/2025/09/Saurabh-Pratap.jpg'/>  Saurabh Pratap</b>, Executive Director, Sustainable Finance, <b>Standard Chartered Bank<br/>
 
-                                     <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Mr.-Primus-Oswald-Kimaryo.jpeg'/>  Mr. Primus Oswald Kimaryo</b>,Director General, <b>Tanzania Coffee Board (TCB)</b>
+                                     <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Leonard-Faustine-Zimbehya.jpeg'/>  Leonard Faustine Zimbehya</b>, Managing Director, <b>KPD PLC</b>
                                 </span>
 
                             </h3>

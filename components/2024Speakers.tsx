@@ -344,16 +344,16 @@ With a PhD in Biology and 13+ years in the industry, she brings extensive experi
 `
     },
 
-    {
-      name: 'Mr. Primus Oswald Kimaryo',
-      role: 'Director General',
-      company: 'Tanzania Coffee Board (TCB)',
-      imageUrl: 'https://wocofco.org/wp-content/uploads/2025/10/Mr.-Primus-Oswald-Kimaryo.jpeg',
-      companyIcon: "https://wocofco.org/wp-content/uploads/2025/10/logo-3.png",
-      iconWidth: 120,
-      iconHeight: 120,
-      bio: ``
-    },
+    // {
+    //   name: 'Mr. Primus Oswald Kimaryo',
+    //   role: 'Director General',
+    //   company: 'Tanzania Coffee Board (TCB)',
+    //   imageUrl: 'https://wocofco.org/wp-content/uploads/2025/10/Mr.-Primus-Oswald-Kimaryo.jpeg',
+    //   companyIcon: "https://wocofco.org/wp-content/uploads/2025/10/logo-3.png",
+    //   iconWidth: 120,
+    //   iconHeight: 120,
+    //   bio: ``
+    // },
 
         {
       name: 'Mariana Osorio Londoño',
@@ -780,6 +780,18 @@ of investment experience and holds a Master’s Degree in law from the Universit
       iconHeight: 100,
       bio: ` `
     },
+
+    {
+      name: 'Leonard Faustine Zimbehya',
+      role: 'Managing Director',
+      company: 'KPD PLC',
+      imageUrl: 'https://wocofco.org/wp-content/uploads/2025/10/Leonard-Faustine-Zimbehya.jpeg',
+      companyIcon: "https://wocofco.org/wp-content/uploads/2025/10/kpd-logo-DoYw7TUd.png",
+      iconWidth: 100,
+      iconHeight: 100,
+      bio: ` `
+    },
+
     {
       name: 'Ethan Budiansky',
       role: 'Sustainable Commodities Lead',
