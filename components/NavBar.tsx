@@ -169,7 +169,7 @@ function Navbar() {
                     <p className="font-bold text-gray-900">Speakers</p>
                     <div className="ml-3 space-y-1">
                       <Link href="/#advisory-board" className="block py-2 text-gray-600">Advisory Board</Link>
-                      <Link href="/speakers" className="block py-2 text-gray-600">Speaker</Link>
+                      <Link href="/#speakers" className="block py-2 text-gray-600">Speaker</Link>
                     </div>
                   </div>
                 ) : (
