@@ -109,7 +109,19 @@ institutions such as ABN AMRO, Deutsche Bank, and Banco Itau, in addition to his
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/Starbucks.png",
       iconWidth: 80,
       iconHeight: 80,
-      bio: ` `
+      bio: ` Ruchira Joshi is the director of sustainability, global coffee and cocoa at Starbucks. She was
+most recently Global Head of the Agricommodities Business Unit at IDH, overseeing the
+coffee, cocoa, and tea programs. She has also held roles as Head of Responsible Sourcing
+at ASOS, and Program Director at the Better Cotton Initiative (BCI). Ruchira has life-long
+passion for working towards ensuring that global supply chains are more inclusive of
+smallholder farmers and workers.
+Her key achievements include designing an innovative Volume Based Fee financing
+mechanism for smallholder capacity building at BCI, setting up the ASOS Responsible
+Sourcing Program for third-party brands, and securing sector wide commitments on living
+wage in banana and tea supply chains. She is also experience on the public policy side of
+sustainability having coordinated for example, the IDH COP26 campaign among others.
+Ruchira has an MA from SOAS in International Development and holds various advisory and
+Board positions as well.`
     },
     {
       name: 'Stefan Dierks',
