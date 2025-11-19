@@ -52,7 +52,7 @@ export default function Overview() {
                         </div>
                     </div>
 
-                    <div className="flex flex-col sm:flex-row gap-4 mt-8">
+                    {/* <div className="flex flex-col sm:flex-row gap-4 mt-8">
                         <Link href="/register">
                             <button className="bg-[#FFC000] text-white hover:underline hover:drop-shadow-xl font-bold text-lg md:text-xl xl:text-5xl py-2 md:py-4 xl:py-6 px-6 rounded-md">
                                BOOK TICKETS
@@ -63,7 +63,7 @@ export default function Overview() {
                                 SPONSOR/EXHIBIT
                             </button>
                         </Link>
-                    </div>
+                    </div> */}
 
                     
 
@@ -129,8 +129,14 @@ export default function Overview() {
                 <Speakers2024 />
                 {/* <Speakertest/> */}
 
-            <KeyThemes />
-
+            {/* <KeyThemes /> */}
+      <div className="mb-8 w-full flex justify-center pt-8">
+  <div  className="font-bold text-white text-3xl bg-lime-700 px-6 py-3 rounded-lg hover:bg-lime-800 cursor-pointer transition duration-300"
+    onClick={() => window.location.href = "/agenda"} // or your desired action
+  >
+    FULL AGENDA
+  </div>
+</div>
 
 
             {/* 2024 SUMMIT HIGHLIGHT */}
