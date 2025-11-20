@@ -116,13 +116,7 @@ function KeyThemes() {
           </div>
         </div>
       </div>
-      <div className="mb-8 w-full flex justify-center pt-8">
-  <div  className="font-bold text-white text-3xl bg-lime-700 px-6 py-3 rounded-lg hover:bg-lime-800 cursor-pointer transition duration-300"
-    onClick={() => window.location.href = "/agenda"} // or your desired action
-  >
-    FULL AGENDA
-  </div>
-</div>
+
       {/* <div className='mt-8 w-full flex'>
         <button
           type="button"
