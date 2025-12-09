@@ -38,7 +38,7 @@ export default function Overview() {
                 <div className="w-full relative flex flex-col items-center text-center text-white mt-32 md:mt-2 xl:-mt-8">
                     {/* Event Title */}
                     <h1 className="text-[3rem] md:text-[4rem] xl:text-[6rem] font-bold tracking-tight drop-shadow-xl">
-                        THE BIGGER PICTURE
+                        MOVING THE NEEDLE
                     </h1>
                     <p className=" mt-2 text-2xl sm:text-3xl md:text-4xl font-bold max-w-5xl drop-shadow-xl">
                       Unlocking Coffee & Cocoa Synergies Through Innovation
