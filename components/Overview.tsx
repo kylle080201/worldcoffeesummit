@@ -51,7 +51,7 @@ export default function Overview() {
                     {/* Event Logos - Smaller Size */}
                     <div className="flex flex-col sm:flex-row items-center p-2 rounded-md  gap-2 mt-[4rem] md:mt-[5rem] xl:mt-[10rem] my-14">
                         <div className="p-2 rounded-md w-fit text-lg md:text-2xl xl:text-4xl font-bold tracking-wide">
-                           21-22 OCTOBER 2026 <span className="block sm:inline">| QEII CENTRE & HOUSE OF LORDS, LONDON | #WCIS26</span>
+                           21-22 October 2026 <span className="block sm:inline">| QEII Centre & House of Lords, London | #WCIS26</span>
                         </div>
                     </div>
 
