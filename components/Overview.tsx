@@ -42,7 +42,7 @@ export default function Overview() {
     </h1>
 
     <h1 className="text-yellow-300 p-2 rounded-md w-fit text-2xl md:text-2xl xl:text-4xl font-bold tracking-wide">
-        SAVE THE DATe
+        SAVE THE DATE
     </h1>            
 
     {/* Event Logos - Smaller Size */}
