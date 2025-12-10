@@ -41,21 +41,24 @@ export default function Overview() {
         MOVING THE NEEDLE
     </h1>
 
-    <p className=" mt-2 text-2xl sm:text-3xl md:text-4xl font-bold max-w-5xl drop-shadow-xl">
+    <p className="mt-2 text-[3rem] sm:text-3xl md:text-5xl font-bold max-w-5xl drop-shadow-xl">
        Creating A Business Case for Coffee & Cocoa Resilience
     </p>
 
-    <h1 className=" text-yellow-300 text-[3rem] md:text-[4rem] xl:text-[6rem] font-bold tracking-tight drop-shadow-xl">
-        SAVE THE DATE
-    </h1>            
-
-    {/* Event Logos - Smaller Size */}
-    <div className="flex flex-col sm:flex-row items-center p-2 rounded-md gap-2 mt-[4rem] md:mt-[5rem] xl:mt-[10rem] my-14">
+    {/* Container for date and SAVE THE DATES */}
+    <div className="flex flex-col items-center gap-4 mt-[4rem] md:mt-[5rem] xl:mt-[10rem]">
+                <h1 className="text-yellow-300 text-[3rem] md:text-[4rem] xl:text-[6rem] font-bold tracking-tight drop-shadow-xl">
+            SAVE THE DATES
+        </h1>
         <div className="p-2 rounded-md w-fit text-xl md:text-2xl xl:text-4xl font-bold tracking-wide">
            21-22 October 2026 <span className="block sm:inline">| QEII Centre & House of Lords, London | #WCIS26</span>
         </div>
+
+
     </div>
 </div>
+
+
 
                 {/* Footer Links */}
                 <div className=" absolute bottom-0 w-full mt-10 bg-green-700 flex flex-col md:flex-row justify-center gap-12 items-center p-4 text-xl md:text-2xl font-bold text-white px-2" style={{ backgroundColor: 'rgb(38 72 51)' }}>
