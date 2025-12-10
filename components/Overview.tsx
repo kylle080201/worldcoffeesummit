@@ -35,44 +35,26 @@ export default function Overview() {
                 </div>
 
                 {/* Main Container */}
-                <div className="w-full relative flex flex-col items-center text-center text-white mt-32 md:mt-2 xl:-mt-8">
-                    {/* Event Title */}
-                    <h1 className="text-[3rem] md:text-[4rem] xl:text-[6rem] font-bold tracking-tight drop-shadow-xl">
-                        MOVING THE NEEDLE
-                    </h1>
-                    <p className=" mt-2 text-2xl sm:text-3xl md:text-4xl font-bold max-w-5xl drop-shadow-xl">
-                      Unlocking Coffee & Cocoa Synergies Through Innovation
+<div className="w-full relative flex flex-col items-center text-center text-white mt-32 md:mt-2 xl:-mt-8 py-8 pb-60 md:pb-20">
+    {/* Event Title */}
+    <h1 className="text-[3rem] md:text-[4rem] xl:text-[6rem] font-bold tracking-tight drop-shadow-xl">
+        MOVING THE NEEDLE: Creating A Business Case for Coffee & Cocoa Resilience
+    </h1>
 
-                    </p>            
-                   <h1 className=" text-yellow-300 text-[3rem] md:text-[4rem] xl:text-[6rem] font-bold tracking-tight drop-shadow-xl">
-                        SAVE THE DATE
-                    </h1>            
+    <h1 className="text-yellow-300 p-2 rounded-md w-fit text-2xl md:text-2xl xl:text-4xl font-bold tracking-wide">
+        SAVE THE DATE
+    </h1>            
 
-                    {/* Event Logos - Smaller Size */}
-                    <div className="flex flex-col sm:flex-row items-center p-2 rounded-md  gap-2 mt-[4rem] md:mt-[5rem] xl:mt-[10rem] my-14">
-                        <div className="p-2 rounded-md w-fit text-lg md:text-2xl xl:text-4xl font-bold tracking-wide">
-                           21-22 October 2026 <span className="block sm:inline">| QEII Centre & House of Lords, London | #WCIS26</span>
-                        </div>
-                    </div>
+    {/* Event Logos - Smaller Size */}
+    <div className="flex flex-col sm:flex-row items-center p-2 rounded-md gap-2 mt-[4rem] md:mt-[5rem] xl:mt-[10rem] my-14">
+        <div className="p-2 rounded-md w-fit text-xl md:text-2xl xl:text-4xl font-bold tracking-wide">
+           21-22 October 2026 <span className="block sm:inline">| QEII Centre & House of Lords, London | #WCIS26</span>
+        </div>
+    </div>
+</div>
 
-                    {/* <div className="flex flex-col sm:flex-row gap-4 mt-8">
-                        <Link href="/register">
-                            <button className="bg-[#FFC000] text-white hover:underline hover:drop-shadow-xl font-bold text-lg md:text-xl xl:text-5xl py-2 md:py-4 xl:py-6 px-6 rounded-md">
-                               BOOK TICKETS
-                            </button>
-                        </Link>
-                        <Link href="/interest">
-                            <button className="bg-lime-700 text-white hover:underline hover:drop-shadow-xl font-bold text-lg md:text-xl xl:text-5xl py-2 md:py-4 xl:py-6 px-6 rounded-md">
-                                SPONSOR/EXHIBIT
-                            </button>
-                        </Link>
-                    </div> */}
-
-                    
-
-                </div>
                 {/* Footer Links */}
-                <div className=" absolute bottom-0 w-full mt-10 bg-green-700 flex flex-col md:flex-row justify-center gap-12 items-center p-4 text-xs md:text-2xl font-bold text-white px-2"  style={{ backgroundColor: 'rgb(38 72 51)' }}>
+                <div className=" absolute bottom-0 w-full mt-10 bg-green-700 flex flex-col md:flex-row justify-center gap-12 items-center p-4 text-xl md:text-2xl font-bold text-white px-2" style={{ backgroundColor: 'rgb(38 72 51)' }}>
                         {/* <p>WWW.WORLDCOFFEEINNOVATIONSUMMIT.COM</p> */}
                         <p>200+ Attendees</p>
                         <p>25+ Countries </p>
