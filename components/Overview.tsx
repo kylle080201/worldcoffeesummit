@@ -35,7 +35,7 @@ export default function Overview() {
                 </div>
 
                 {/* Main Container */}
-<div className="w-full relative flex flex-col items-center text-center text-white mt-32 md:mt-2 xl:-mt-8 py-8 pb-60 md:pb-20">
+<div className="w-full relative flex flex-col items-center text-center text-white mt-32 md:mt-2 xl:-mt-8 py-8 pb-80 md:pb-20">
     {/* Event Title */}
     <h1 className="text-[3rem] md:text-[4rem] xl:text-[6rem] font-bold tracking-tight drop-shadow-xl">
         MOVING THE NEEDLE
