@@ -48,7 +48,7 @@ export default function Overview() {
     {/* Container for date and SAVE THE DATES */}
     <div className="flex flex-col items-center gap-4 mt-[4rem] md:mt-[5rem] xl:mt-[10rem]">
                 <h1 className="text-yellow-300 text-[3rem] md:text-[4rem] xl:text-[6rem] font-bold tracking-tight drop-shadow-xl">
-            SAVE THE DATES
+            SAVE THE DATE
         </h1>
         <div className="p-2 rounded-md w-fit text-xl md:text-2xl xl:text-4xl font-bold tracking-wide">
            21-22 October 2026 <span className="block sm:inline">| QEII Centre & House of Lords, London | #WCIS26</span>
