@@ -38,9 +38,12 @@ export default function Overview() {
 <div className="w-full relative flex flex-col items-center text-center text-white mt-32 md:mt-2 xl:-mt-8 py-8 pb-60 md:pb-20">
     {/* Event Title */}
     <h1 className="text-[3rem] md:text-[4rem] xl:text-[6rem] font-bold tracking-tight drop-shadow-xl">
-        MOVING THE NEEDLE: Creating A Business Case for Coffee & Cocoa Resilience
+        MOVING THE NEEDLE:
     </h1>
+                    <p className=" mt-2 text-2xl sm:text-3xl md:text-4xl font-bold max-w-5xl drop-shadow-xl">
+                       Creating A Business Case for Coffee & Cocoa Resilience
 
+                    </p>  
     <h1 className="text-yellow-300 p-2 rounded-md w-fit text-2xl md:text-2xl xl:text-4xl font-bold tracking-wide">
         SAVE THE DATE
     </h1>            
