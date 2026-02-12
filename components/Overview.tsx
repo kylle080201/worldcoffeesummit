@@ -41,7 +41,7 @@ export default function Overview() {
         MOVING THE NEEDLE
     </h1>
 
-    <p className="mt-2 text-[3rem] sm:text-3xl md:text-6xl font-bold max-w-5xl drop-shadow-xl">
+    <p className="mt-2 text-[3rem] sm:text-3xl md:text-6xl font-bold max-w-7xl drop-shadow-xl">
        Securing Scalable Coffee & Cocoa Resilience
     </p>
 
