@@ -80,16 +80,16 @@ export default function Overview() {
             <div className='w-full md:px-0 px-12 py-8 sm:py-12 bg-gray-100'>
                 <div className='justify-center mx-auto max-w-7xl'>
                     <p className="text-2xl font-bold tracking-tight text-center sm:text-4xl text-yellow-900">
-                        2025 SUMMIT OVERVIEW
+                        ABOUT THE SUMMIT
                     </p>
 
                     <div className='flex flex-col gap-8 max-w-full m-auto mt-8'>
                         <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
-                            In a time of unprecedented disruption and transformation, the World Coffee Innovation Summit 2025 in London convenes global visionary leaders, global brands and corporates, innovators, producers, policymakers, and investors to reimagine the future of coffee through shared prosperity, resilience, and systemic collaboration.
+                           Recognised as the premier global platform uniting Coffee & Cocoa with Climate and Finance through Innovation, the World Coffee Innovation Summit convenes global leaders and senior decision-makers shaping resilient, nature-positive agriculture and food systems across the value chain.
                         </div>
 
                         <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
-                            Under the theme <strong>&ldquo;THE BIGGER PICTURE: CRAFTING AN ECOSYSTEM BUSINESS MODEL FOR SHARED PROSPERITY&ldquo;</strong>, the summit challenges the coffee &amp; cocoa industries to move beyond fragmented initiatives and transactional relations to embrace a holistic, collaborative ecosystem business model—one that prioritizes long-term value creation for all stakeholders, from farmers to consumers.
+                           Join us on 21-22 October 2026 in London for two days of curated discussions, executive networking, and cross-industry leadership designed to accelerate partnerships and scalable solutions.
                         </div>
 
                         {/* <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
@@ -111,9 +111,6 @@ export default function Overview() {
                             </li>
                         </ul> */}
 
-                        <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
-                            Join us in London to shift from transactional thinking to ecosystem leadership and reimagine the future of coffee and cocoa together.
-                        </div>
                     </div>
                 </div>
             </div>
