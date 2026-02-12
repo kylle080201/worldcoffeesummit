@@ -42,7 +42,7 @@ export default function Overview() {
     </h1>
 
     <p className="mt-2 text-[3rem] sm:text-3xl md:text-6xl font-bold max-w-5xl drop-shadow-xl">
-       Creating A Business Case  <br/>for Coffee & Cocoa Resilience
+       Securing Scalable Coffee & Cocoa Resilience
     </p>
 
     {/* Container for date and SAVE THE DATES */}
