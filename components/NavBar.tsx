@@ -150,7 +150,7 @@ function Navbar() {
                         onClick={() => router.push('/interest')}
                         className="relative inline-flex gap-x-1.5 rounded-md bg-lime-700 hover:bg-lime-900 px-3 py-2 text-sm font-semibold text-white shadow-sm"
                       >
-                        Sponsor/Exhibit
+                        Register Interest
                       </button>
                     </div>
                   </div>
@@ -195,7 +195,7 @@ function Navbar() {
                         onClick={() => router.push('/interest')}
                         className="relative inline-flex gap-x-1.5 rounded-md bg-lime-700 hover:bg-lime-900 px-3 py-2 text-sm font-semibold text-white shadow-sm"
                       >
-                        Sponsor/Exhibit
+                        Register Interest
                       </button>
                     </div>
           </Disclosure.Panel>

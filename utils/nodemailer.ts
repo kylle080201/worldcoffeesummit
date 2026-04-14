@@ -29,7 +29,7 @@ export const mailer = async (data: any) => {
             from: `World Coffee Innovation Summit Team <${user}>`,
             to: email,
             cc: "info@worldcoffeealliance.com",
-            subject: "Thank you for registering for World Coffee Innovation Summit London 23-24 October 2025",
+            subject: "Thank you for registering for World Coffee Innovation Summit London 23-24 October 2026",
             ...generateEmailContent({
                 lastName,
                 firstName,
@@ -196,8 +196,8 @@ const generateEmailContent = ({
                                                         </div>
                                                         <div class="form-container">
                                                             <p> Hi ${firstName},</p>
-                                                            <p>Thank you for registering as a delegate to the World Coffee Innovation Summit London 2025.</p>
-                                                            <p>We look forward to welcoming you in London on 23-24th October 2025.</p>
+                                                            <p>Thank you for registering as a delegate to the World Coffee Innovation Summit London 2026.</p>
+                                                            <p>We look forward to welcoming you in London on 23-24th October 2026.</p>
                                                             <p>To collect your badge, please show and scan the QR code below or attached.</p>
                                                             <div class="qr-code">
                                                                 <div>
@@ -214,9 +214,9 @@ const generateEmailContent = ({
                                                             <p>
                                                                 <b>What you need to know:</b>
                                                             </p>
-                                                            <p><b>When?</b><br>23-24th October 2025</p>
+                                                            <p><b>When?</b><br>23-24th October 2026</p>
                                                             <p><b>Where?</b><br> 4th Floor at QEII Centre, Broad Sanctuary, London SW1P 3EE 
-                                                            <p>For the most up to date information about World Coffee Innovation Summit London 2025, why not follow us on
+                                                            <p>For the most up to date information about World Coffee Innovation Summit London 2026, why not follow us on
                                                             <a target='_blank'
                                                                     href='https://www.linkedin.com/company/worldcoffeealliance/'>LinkedIn</a>
                                                                 and <a target='_blank'
