@@ -33,7 +33,7 @@ export const registrantMailer = async (data: any) => {
       from: `World Coffee Innovation Summit Team <${user}>`,
       to: "info@worldcoffeealliance.com",
       // to: "kv.madrigal08@gmail.com",
-      subject: "World Coffee Innovation Summit London 2025: Thank you for registering your interest!",
+      subject: "World Coffee Innovation Summit London 2026: Thank you for registering your interest!",
       html: `
       <div>Hi Mavis,</div>
       <div>${firstName} ${lastName} has just registered their interest.</div>
@@ -55,11 +55,11 @@ export const registrantMailer = async (data: any) => {
     const isSentToREgistrant = await transporter.sendMail({
       from: `World Coffee Innovation Summit Team <${user}>`,
       to: businessEmail,
-      subject: "World Coffee Innovation Summit London 2025: Thank you for registering your interest!",
+      subject: "World Coffee Innovation Summit London 2026: Thank you for registering your interest!",
       html: `
       <div>Hello ${firstName},</div>
       <br/>
-      <div>Thank you for registering your interest in attending the World Coffee Innovation Summit London 2025.</div>
+      <div>Thank you for registering your interest in attending the World Coffee Innovation Summit London 2026.</div>
       <br/>
       <div>Our team will be in touch shortly.</div>
       <br/>

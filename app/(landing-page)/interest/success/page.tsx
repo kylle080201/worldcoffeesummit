@@ -5,7 +5,7 @@ export default function FormPage() {
         <>
           <div className="flex flex-col justify-center py-24 h-[80vh] max-w-4xl mx-auto">
             <div className="font-bold text-2xl xs:text-4xl text-left">
-              Thank you for registering your interest in attending the World Coffee Innovation Summit London 2025.
+              Thank you for registering your interest in attending the World Coffee Innovation Summit London 2026.
             </div>
             <div className="text-lg xs:text-2xl mt-8 text-left">
               Our team will be in touch shortly.

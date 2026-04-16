@@ -49,6 +49,7 @@ const InterestForm = () => {
     ]
 
     const notificationMethods = [
+      "Delegate",
       "Sponsor",
       "Exhibitor",
     ]

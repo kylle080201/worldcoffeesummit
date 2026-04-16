@@ -145,13 +145,13 @@ function Navbar() {
                         className="relative inline-flex gap-x-1.5 rounded-md bg-lime-700 hover:bg-lime-900 px-3 py-2 text-sm font-semibold text-white shadow-sm"
                       >
                         Book Tickets
-                      </button>
+                      </button> */}
                       <button
                         onClick={() => router.push('/interest')}
                         className="relative inline-flex gap-x-1.5 rounded-md bg-lime-700 hover:bg-lime-900 px-3 py-2 text-sm font-semibold text-white shadow-sm"
                       >
-                        Sponsor/Exhibit
-                      </button> */}
+                        Register Interest
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -184,20 +184,20 @@ function Navbar() {
                 )
               )}
             </div>
-               {/* <div className='mt-4 flex gap-2'>
-                      <button
+               <div className='mt-4 flex gap-2'>
+                      {/* <button
                         onClick={() => router.push('/register')}
                         className="relative inline-flex gap-x-1.5 rounded-md bg-lime-700 hover:bg-lime-900 px-3 py-2 text-sm font-semibold text-white shadow-sm"
                       >
                         Book Tickets
-                      </button>
+                      </button> */}
                       <button
                         onClick={() => router.push('/interest')}
                         className="relative inline-flex gap-x-1.5 rounded-md bg-lime-700 hover:bg-lime-900 px-3 py-2 text-sm font-semibold text-white shadow-sm"
                       >
-                        Sponsor/Exhibit
+                        Register Interest
                       </button>
-                    </div> */}
+                    </div>
           </Disclosure.Panel>
         </>
       )}
