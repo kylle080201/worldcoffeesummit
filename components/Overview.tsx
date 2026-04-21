@@ -155,7 +155,7 @@ export default function Overview() {
   <div  className="font-bold text-white text-3xl bg-lime-700 px-6 py-3 rounded-lg hover:bg-lime-800 cursor-pointer transition duration-300"
     onClick={() => window.location.href = "/agenda"} // or your desired action
   >
-    FULL AGENDA
+    2025 AGENDA
   </div>
 </div>
 
