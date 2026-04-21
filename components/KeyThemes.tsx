@@ -1,5 +1,6 @@
 "use client"
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 
 import regulationCompetitiveAdvantage from "../images/key-themes/REGULATION & COMPETITIVE ADVANTAGE.jpg";
 import resilienceImperative from "../images/key-themes/THE RESILIENCE IMPERATIVE.jpg";
@@ -7,11 +8,11 @@ import spaceGeospatialIntelligence from "../images/key-themes/SPACE & GEOSPATIAL
 import carbonLandscapeFinance from "../images/key-themes/CARBON & LANDSCAPE FINANCE.jpg";
 import resilientSourcingProcurement from "../images/key-themes/RESILIENT SOURCING & PROCUREMENT.jpg";
 import scope3EudrAction from "../images/key-themes/SCOPE 3 & EUDR IN ACTION.jpg";
-import pricingResilience from "../images/key-themes/PRICING RESILIENCE.jpg";
+import financingResilience from "../images/key-themes/FINANCING RESILIENCE.jpg";
 import aiDigitalInfrastructure from "../images/key-themes/AI & DIGITAL INFRASTRUCTURE .jpg";
-import scalingResilience from "../images/key-themes/SCALING RESILIENCE.jpg";
-import regenerationAtScale from "../images/key-themes/REGENERATION AT SCALE.jpg";
+import regenerativeAgricultureAtScale from "../images/key-themes/REGENERATIVE AGRICULTURE AT SCALE.jpg";
 import biodiversityValueCreation from "../images/key-themes/BIODIVERSITY & VALUE CREATION.jpg";
+import soilHealthEcosystems from "../images/key-themes/SOIL HEALTH & ECOSYTEMS.jpg";
 import theNewSupplyMap from "../images/key-themes/THE NEW SUPPLY MAP.jpg";
 
 type ThemeCard = {
@@ -23,15 +24,15 @@ type ThemeCard = {
 
 const keyThemes: ThemeCard[] = [
   {
-    title: "Regulation & Competitive Advantage",
+    title: "EUDR Compliance & Competitive Advantage",
     subtitle: "From Compliance to Strategic Sourcing",
-    description: "Turning regulatory pressure into stronger traceability, reduced risk, and secure sourcing models.",
+    description: "Turning regulatory pressure into stronger traceability, reduced risk, and more secure sourcing models.",
     image: regulationCompetitiveAdvantage,
   },
   {
     title: "The Resilience Imperative",
     subtitle: "Why Resilience Is Now Business-Critical",
-    description: "Climate risk, sustainability, and adaptive strategy are redefining operational continuity.",
+    description: "Climate risk, sustainability, and adaptive strategy are redefining operational continuity and long-term value.",
     image: resilienceImperative,
   },
   {
@@ -49,20 +50,20 @@ const keyThemes: ThemeCard[] = [
   {
     title: "Resilient Sourcing & Procurement",
     subtitle: "From Cost to Supply Security",
-    description: "Brands and traders deploy capital and sourcing strategies to secure supply.",
+    description: "Brands and traders are deploying capital, partnerships, and sourcing strategies to secure supply.",
     image: resilientSourcingProcurement,
   },
   {
-    title: "Scope 3 & EUDR in Action",
+    title: "Scope 3 in Action",
     subtitle: "From Compliance to Execution",
-    description: "Translating emissions and regulatory requirements into systems, supplier onboarding, and delivery.",
+    description: "Translating emissions targets and regulatory requirements into systems, supplier onboarding, and real-world delivery.",
     image: scope3EudrAction,
   },
   {
-    title: "Pricing Resilience",
+    title: "Financing Resilience",
     subtitle: "The True Cost of Future Supply",
-    description: "Who pays and how pricing models evolve to secure long-term supply.",
-    image: pricingResilience,
+    description: "Allocating capital and evolving cost models to secure long-term supply.",
+    image: financingResilience,
   },
   {
     title: "AI & Digital Infrastructure",
@@ -71,16 +72,10 @@ const keyThemes: ThemeCard[] = [
     image: aiDigitalInfrastructure,
   },
   {
-    title: "Scaling Resilience",
-    subtitle: "From Pilot to System Change",
-    description: "Moving from pilot projects to industry-wide funded impact.",
-    image: scalingResilience,
-  },
-  {
-    title: "Regeneration at Scale",
+    title: "Regenerative Agriculture at Scale",
     subtitle: "Embedding Nature as Infrastructure",
     description: "Moving beyond mitigation to embed nature-based solutions into long-term system stability.",
-    image: regenerationAtScale,
+    image: regenerativeAgricultureAtScale,
   },
   {
     title: "Biodiversity & Value Creation",
@@ -89,9 +84,15 @@ const keyThemes: ThemeCard[] = [
     image: biodiversityValueCreation,
   },
   {
+    title: "Soil Health & Ecosystems",
+    subtitle: "From Pilot to System Change",
+    description: "Restoring soils and water balance to strengthen ecosystem resilience.",
+    image: soilHealthEcosystems,
+  },
+  {
     title: "The New Supply Map",
     subtitle: "Redrawing Coffee & Cocoa Geography",
-    description: "Climate, trade, and geopolitics are reshaping global sourcing and leadership priorities.",
+    description: "Climate, trade, and geopolitics are reshaping global sourcing and what leaders must do now.",
     image: theNewSupplyMap,
   },
 ];
@@ -121,18 +122,28 @@ function KeyThemes() {
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/90 via-black/65 to-black/20" />
 
               <div className="absolute bottom-3 left-0 right-0 flex h-44 flex-col px-4 pt-4 pb-6">
-                <h3 className="min-h-[3.75rem] text-2xl font-semibold leading-tight text-white md:text-[1.7rem]">
-                  {theme.title}
-                </h3>
-                <p className="mt-1 min-h-[2.5rem] text-base italic leading-snug text-gray-100 md:text-lg">
-                  {theme.subtitle}
-                </p>
+                <div className="min-h-[6.5rem]">
+                  <h3 className="text-2xl font-semibold leading-tight text-white md:text-[1.7rem]">
+                    {theme.title}
+                  </h3>
+                  <p className="mt-1 text-base italic leading-snug text-gray-100 md:text-lg">
+                    {theme.subtitle}
+                  </p>
+                </div>
                 <p className="mt-3 min-h-[2.75rem] text-sm leading-snug text-gray-100">
                   {theme.description}
                 </p>
               </div>
             </article>
           ))}
+        </div>
+        <div className="mt-8 flex justify-center">
+          <Link
+            href="/interest"
+            className="rounded-lg bg-lime-700 px-6 py-3 text-lg font-bold text-white transition-colors duration-300 hover:bg-lime-800"
+          >
+            REGISTER INTEREST
+          </Link>
         </div>
       </div>
     </section>
