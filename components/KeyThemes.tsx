@@ -123,7 +123,7 @@ function KeyThemes() {
 
               <div className="absolute bottom-3 left-0 right-0 flex h-44 flex-col px-4 pt-4 pb-6">
                 <div className="min-h-[6.5rem]">
-                  <h3 className="text-2xl font-semibold leading-tight text-white md:text-[1.7rem]">
+                  <h3 className="text-2xl font-semibold leading-tight text-white uppercase md:text-[1.7rem]">
                     {theme.title}
                   </h3>
                   <p className="mt-1 text-base italic leading-snug text-gray-100 md:text-lg">

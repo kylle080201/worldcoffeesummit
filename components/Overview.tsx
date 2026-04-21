@@ -47,6 +47,12 @@ export default function Overview() {
 
     {/* Container for date and SAVE THE DATES */}
     <div className="flex flex-col items-center gap-4 mt-[4rem] md:mt-[5rem] xl:mt-[10rem]">
+        <Link
+            href="/interest"
+            className="rounded-lg bg-lime-700 px-6 py-3 text-xl md:text-2xl font-bold text-white transition duration-300 hover:bg-lime-800"
+        >
+            REGISTER INTEREST
+        </Link>
                 <h1 className="text-yellow-300 text-[3rem] md:text-[4rem] xl:text-[6rem] font-bold tracking-tight drop-shadow-xl">
             SAVE THE DATE
         </h1>
