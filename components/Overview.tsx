@@ -46,14 +46,14 @@ export default function Overview() {
     </p>
 
     {/* Container for date and SAVE THE DATES */}
-    <div className="flex flex-col items-center gap-4 mt-[4rem] md:mt-[5rem] xl:mt-[10rem]">
+    <div className="flex flex-col items-center gap-0 mt-[4rem] md:mt-[5rem] xl:mt-[10rem]">
         <Link
             href="/interest"
-            className="rounded-lg bg-lime-700 px-6 py-3 text-xl md:text-2xl font-bold text-white transition duration-300 hover:bg-lime-800"
+            className="rounded-xl bg-lime-700 px-8 py-4 text-3xl md:text-4xl font-bold text-white transition duration-300 hover:bg-lime-800"
         >
             REGISTER INTEREST
         </Link>
-                <h1 className="text-yellow-300 text-[3rem] md:text-[4rem] xl:text-[6rem] font-bold tracking-tight drop-shadow-xl">
+        <h1 className="-mt-1 text-yellow-300 text-[3rem] md:text-[4rem] xl:text-[6rem] font-bold tracking-tight drop-shadow-xl">
             SAVE THE DATE
         </h1>
         <div className="p-2 rounded-md w-fit text-xl md:text-2xl xl:text-4xl font-bold tracking-wide">
@@ -121,7 +121,7 @@ export default function Overview() {
 
                         <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
                             Join us in London for two days focused on implementation, high-value connections,
-                            and real-world solutions shaping the future of coffee.
+                            and real-world solutions shaping the future of coffee and cocoa.
                         </div>
 
                         {/* <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
