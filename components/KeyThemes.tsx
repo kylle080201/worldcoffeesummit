@@ -30,12 +30,6 @@ const keyThemes: ThemeCard[] = [
     image: regulationCompetitiveAdvantage,
   },
   {
-    title: "The Resilience Imperative",
-    subtitle: "Why Resilience Is Now Business-Critical",
-    description: "Climate risk, sustainability, and adaptive strategy are redefining operational continuity and long-term value.",
-    image: resilienceImperative,
-  },
-  {
     title: "Space & Geospatial Intelligence",
     subtitle: "From Data to Deployment",
     description: "Satellite technologies support compliance, risk management, and scalable solutions.",
@@ -48,10 +42,10 @@ const keyThemes: ThemeCard[] = [
     image: carbonLandscapeFinance,
   },
   {
-    title: "Resilient Sourcing & Procurement",
-    subtitle: "From Cost to Supply Security",
-    description: "Brands and traders are deploying capital, partnerships, and sourcing strategies to secure supply.",
-    image: resilientSourcingProcurement,
+    title: "Regenerative Agriculture at Scale",
+    subtitle: "Embedding Nature as Infrastructure",
+    description: "Moving beyond mitigation to embed nature-based solutions into long-term system stability.",
+    image: regenerativeAgricultureAtScale,
   },
   {
     title: "Scope 3 in Action",
@@ -60,10 +54,10 @@ const keyThemes: ThemeCard[] = [
     image: scope3EudrAction,
   },
   {
-    title: "Financing Resilience",
-    subtitle: "The True Cost of Future Supply",
-    description: "Allocating capital and evolving cost models to secure long-term supply.",
-    image: financingResilience,
+    title: "Soil Health & Ecosystems",
+    subtitle: "From Pilot to System Change",
+    description: "Restoring soils and water balance to strengthen ecosystem resilience.",
+    image: soilHealthEcosystems,
   },
   {
     title: "AI & Digital Infrastructure",
@@ -72,10 +66,16 @@ const keyThemes: ThemeCard[] = [
     image: aiDigitalInfrastructure,
   },
   {
-    title: "Regenerative Agriculture at Scale",
-    subtitle: "Embedding Nature as Infrastructure",
-    description: "Moving beyond mitigation to embed nature-based solutions into long-term system stability.",
-    image: regenerativeAgricultureAtScale,
+    title: "Resilient Sourcing & Procurement",
+    subtitle: "From Cost to Supply Security",
+    description: "Brands and traders are deploying capital, partnerships, and sourcing strategies to secure supply.",
+    image: resilientSourcingProcurement,
+  },
+  {
+    title: "Financing Resilience",
+    subtitle: "The True Cost of Future Supply",
+    description: "Allocating capital and evolving cost models to secure long-term supply.",
+    image: financingResilience,
   },
   {
     title: "Biodiversity & Value Creation",
@@ -84,10 +84,10 @@ const keyThemes: ThemeCard[] = [
     image: biodiversityValueCreation,
   },
   {
-    title: "Soil Health & Ecosystems",
-    subtitle: "From Pilot to System Change",
-    description: "Restoring soils and water balance to strengthen ecosystem resilience.",
-    image: soilHealthEcosystems,
+    title: "The Resilience Imperative",
+    subtitle: "Why Resilience Is Now Business-Critical",
+    description: "Climate risk, sustainability, and adaptive strategy are redefining operational continuity and long-term value.",
+    image: resilienceImperative,
   },
   {
     title: "The New Supply Map",
