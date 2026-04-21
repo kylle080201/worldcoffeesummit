@@ -13,13 +13,13 @@ export default function Venue() {
                         <p className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
                             QEII Centre
                         </p>
-                        <p className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+                        <p className="text-2xl tracking-tight text-gray-900 sm:text-4xl">
                             Broad Sanctuary
                         </p>
-                        <p className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+                        <p className="text-2xl tracking-tight text-gray-900 sm:text-4xl">
                             Westminster
                         </p>
-                        <p className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+                        <p className="text-2xl tracking-tight text-gray-900 sm:text-4xl">
                             London SW1P 3EE
                         </p>
                     </div>
