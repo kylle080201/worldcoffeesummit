@@ -80,7 +80,7 @@ export default function Overview() {
             <div className='w-full md:px-0 px-12 py-8 sm:py-12 bg-gray-100'>
                 <div className='justify-center mx-auto max-w-7xl'>
                     <p className="text-2xl font-bold tracking-tight text-center sm:text-4xl text-yellow-900">
-                        ABOUT THE SUMMIT
+                        2026 SUMMIT OVERVIEW
                     </p>
 
                     <div className='flex flex-col gap-8 max-w-full m-auto mt-8'>
@@ -140,8 +140,8 @@ export default function Overview() {
                     </div>
                 </div>
             </div>
-                              <Advisoryboard />
-                <KeyThemes />
+                              <KeyThemes />
+                <Advisoryboard />
                 <Speakers2024 />
                 {/* <Speakertest/> */}
 

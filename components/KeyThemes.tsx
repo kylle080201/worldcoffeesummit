@@ -1,14 +1,14 @@
 "use client"
 import Image, { StaticImageData } from "next/image";
 
-import regulationCompetitiveAdvantage from "../images/key-themes/REGULATION COMPETITIVE ADVANTAGE.jpg";
+import regulationCompetitiveAdvantage from "../images/key-themes/REGULATION & COMPETITIVE ADVANTAGE.jpg";
 import resilienceImperative from "../images/key-themes/THE RESILIENCE IMPERATIVE.jpg";
-import spaceGeospatialIntelligence from "../images/key-themes/SPACE GEOSPATIAL INTELLIGENCE.jpg";
-import carbonLandscapeFinance from "../images/key-themes/CARBON LANDSCAPE FINANCE.jpg";
+import spaceGeospatialIntelligence from "../images/key-themes/SPACE & GEOSPATIAL INTELLIGENCE .jpg";
+import carbonLandscapeFinance from "../images/key-themes/CARBON & LANDSCAPE FINANCE.jpg";
 import resilientSourcingProcurement from "../images/key-themes/RESILIENT SOURCING & PROCUREMENT.jpg";
 import scope3EudrAction from "../images/key-themes/SCOPE 3 & EUDR IN ACTION.jpg";
 import pricingResilience from "../images/key-themes/PRICING RESILIENCE.jpg";
-import aiDigitalInfrastructure from "../images/key-themes/AI & DIGITAL INFRASTRUCTURE.jpg";
+import aiDigitalInfrastructure from "../images/key-themes/AI & DIGITAL INFRASTRUCTURE .jpg";
 import scalingResilience from "../images/key-themes/SCALING RESILIENCE.jpg";
 import regenerationAtScale from "../images/key-themes/REGENERATION AT SCALE.jpg";
 import biodiversityValueCreation from "../images/key-themes/BIODIVERSITY & VALUE CREATION.jpg";
@@ -101,7 +101,7 @@ function KeyThemes() {
     <section className="w-full bg-gray-100 px-6 py-12 sm:px-8 md:py-16">
       <div className="mx-auto w-full max-w-7xl">
         <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">
-          KEY THEMES
+          2026 KEY THEMES
         </h2>
 
         <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -120,14 +120,14 @@ function KeyThemes() {
 
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/90 via-black/65 to-black/20" />
 
-              <div className="absolute bottom-0 left-0 right-0 p-4">
-                <h3 className="text-xl font-semibold leading-tight text-white">
+              <div className="absolute bottom-3 left-0 right-0 flex h-44 flex-col px-4 pt-4 pb-6">
+                <h3 className="min-h-[3.75rem] text-2xl font-semibold leading-tight text-white md:text-[1.7rem]">
                   {theme.title}
                 </h3>
-                <p className="mt-1 text-sm italic leading-snug text-gray-100">
+                <p className="mt-1 min-h-[2.5rem] text-base italic leading-snug text-gray-100 md:text-lg">
                   {theme.subtitle}
                 </p>
-                <p className="mt-3 text-sm leading-snug text-gray-100">
+                <p className="mt-3 min-h-[2.75rem] text-sm leading-snug text-gray-100">
                   {theme.description}
                 </p>
               </div>
