@@ -89,7 +89,7 @@ export default function Overview() {
                         2026 SUMMIT OVERVIEW
                     </p>
 
-                    <div className='flex flex-col gap-8 max-w-full m-auto mt-8'>
+                    <div className='flex flex-col gap-4 max-w-full m-auto mt-8'>
                         <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
                             The global coffee and cocoa industry is at a turning point.
                         </div>
