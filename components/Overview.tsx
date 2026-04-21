@@ -46,8 +46,14 @@ export default function Overview() {
     </p>
 
     {/* Container for date and SAVE THE DATES */}
-    <div className="flex flex-col items-center gap-4 mt-[4rem] md:mt-[5rem] xl:mt-[10rem]">
-                <h1 className="text-yellow-300 text-[3rem] md:text-[4rem] xl:text-[6rem] font-bold tracking-tight drop-shadow-xl">
+    <div className="flex flex-col items-center gap-0 mt-[4rem] md:mt-[5rem] xl:mt-[10rem]">
+        <Link
+            href="/interest"
+            className="rounded-xl bg-lime-700 px-8 py-4 text-3xl md:text-4xl font-bold text-white transition duration-300 hover:bg-lime-800"
+        >
+            REGISTER INTEREST
+        </Link>
+        <h1 className="-mt-1 text-yellow-300 text-[3rem] md:text-[4rem] xl:text-[6rem] font-bold tracking-tight drop-shadow-xl">
             SAVE THE DATE
         </h1>
         <div className="p-2 rounded-md w-fit text-xl md:text-2xl xl:text-4xl font-bold tracking-wide">
@@ -80,16 +86,42 @@ export default function Overview() {
             <div className='w-full md:px-0 px-12 py-8 sm:py-12 bg-gray-100'>
                 <div className='justify-center mx-auto max-w-7xl'>
                     <p className="text-2xl font-bold tracking-tight text-center sm:text-4xl text-yellow-900">
-                        ABOUT THE SUMMIT
+                        2026 SUMMIT OVERVIEW
                     </p>
 
-                    <div className='flex flex-col gap-8 max-w-full m-auto mt-8'>
+                    <div className='flex flex-col gap-4 max-w-full m-auto mt-8'>
                         <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
-                           Recognised as the premier global platform uniting Coffee & Cocoa with Climate and Finance through Innovation, the World Coffee Innovation Summit convenes global leaders and senior decision-makers shaping resilient, nature-positive agriculture and food systems across the value chain.
+                            The global coffee and cocoa industry is at a turning point.
                         </div>
 
                         <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
-                           Join us on 21-22 October 2026 in London for two days of curated discussions, executive networking, and cross-industry leadership designed to accelerate partnerships and scalable solutions.
+                            Climate pressure, regulatory change, and supply volatility are reshaping how supply
+                            chains operate&mdash;and how businesses compete. At the same time, sustainability is
+                            moving from ambition to execution, with real capital, clear accountability, and
+                            measurable outcomes on the line.
+                        </div>
+
+                        <div className="text-2xl leading-8 text-gray-900 w-full text-justify font-semibold">
+                            The question is: how do we deliver change&mdash;at scale?
+                        </div>
+
+                        <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
+                            The 4<sup>th</sup> World Coffee Innovation Summit 2026 brings together the leaders driving
+                            that change&mdash;global brands, traders, corporates, policymakers, producers,
+                            innovators, investors, and sustainability organisations&mdash;creating a unique platform
+                            for partnership, investment, and delivery across the entire value chain.
+                        </div>
+
+                        <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
+                            Under the theme <strong>Move the Needle: Securing Scalable Coffee & Cocoa Resilience,</strong> the summit
+                            is <strong>built for execution, not just discussion</strong>&mdash;turning strategy into action by connecting
+                            capital, technology, and partnerships to deliver measurable impact across global
+                            coffee and cocoa supply chains.
+                        </div>
+
+                        <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
+                            Join us in London for two days focused on implementation, high-value connections,
+                            and real-world solutions shaping the future of coffee and cocoa.
                         </div>
 
                         {/* <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
@@ -114,16 +146,16 @@ export default function Overview() {
                     </div>
                 </div>
             </div>
-                              <Advisoryboard />
+                              <KeyThemes />
+                <Advisoryboard />
                 <Speakers2024 />
                 {/* <Speakertest/> */}
 
-            {/* <KeyThemes /> */}
       <div className="mb-8 w-full flex justify-center pt-8">
   <div  className="font-bold text-white text-3xl bg-lime-700 px-6 py-3 rounded-lg hover:bg-lime-800 cursor-pointer transition duration-300"
     onClick={() => window.location.href = "/agenda"} // or your desired action
   >
-    FULL AGENDA
+    2025 AGENDA
   </div>
 </div>
 
