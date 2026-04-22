@@ -113,7 +113,7 @@ export default function Overview() {
                         </div>
 
                         <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
-                            Under the theme <strong>Move the Needle: Securing Scalable Coffee & Cocoa Resilience,</strong> the summit
+                            Under the theme <strong>Moving the Needle: Securing Scalable Coffee & Cocoa Resilience,</strong> the summit
                             is <strong>built for execution, not just discussion</strong>&mdash;turning strategy into action by connecting
                             capital, technology, and partnerships to deliver measurable impact across global
                             coffee and cocoa supply chains.
