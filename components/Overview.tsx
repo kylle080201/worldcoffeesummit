@@ -2,9 +2,9 @@
 import Link from 'next/link'
 import React from 'react'
 import KeyThemes from './KeyThemes'
-import Speakers2024 from './2024Speakers'
 import Speakertest from './2024Speakerstest'
 import Advisoryboard from './Advisoryboard'
+import Speakers2026 from './Speakers2026'
 
 export default function Overview() {
     return (
@@ -148,16 +148,25 @@ export default function Overview() {
             </div>
                               <KeyThemes />
                 <Advisoryboard />
-                <Speakers2024 />
+                <Speakers2026 />
+                <div className="mb-8 w-full flex justify-center">
+                  <Link
+                    href="/speakers#speakers-2025"
+                    className="font-bold text-white text-3xl bg-lime-700 px-6 py-3 rounded-lg hover:bg-lime-800 transition duration-300"
+                  >
+                    2025 SPEAKERS
+                  </Link>
+                </div>
                 {/* <Speakertest/> */}
 
       <div className="mb-8 w-full flex justify-center pt-8">
-  <div  className="font-bold text-white text-3xl bg-lime-700 px-6 py-3 rounded-lg hover:bg-lime-800 cursor-pointer transition duration-300"
-    onClick={() => window.location.href = "/agenda"} // or your desired action
-  >
-    2025 AGENDA
-  </div>
-</div>
+        <div
+          className="font-bold text-white text-3xl bg-lime-700 px-6 py-3 rounded-lg hover:bg-lime-800 cursor-pointer transition duration-300"
+          onClick={() => window.location.href = "/agenda"}
+        >
+          2025 AGENDA
+        </div>
+      </div>
 
 
             {/* 2024 SUMMIT HIGHLIGHT */}

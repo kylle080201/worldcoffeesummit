@@ -1,3 +1,4 @@
+"use client"
 import { Transition, Dialog } from '@headlessui/react'
 import React, { Fragment, useState } from 'react'
 import Image from 'next/image'
