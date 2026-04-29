@@ -1,14 +1,18 @@
  "use client"
 import { Transition, Dialog } from '@headlessui/react'
 import React, { Fragment, useState } from 'react'
-import Image from 'next/image'
+import Image, { type StaticImageData } from 'next/image'
+import chrystelImage from '../images/2026-speakers/Yara international-Chrystel-Monthean/Chrystel-Monthean.jpg'
+import yaraLogo from '../images/2026-speakers/Yara international-Chrystel-Monthean/Knowledge_grows_for_A4.png'
+import tawandaImage from '../images/2026-speakers/Gates-Foundation-Tawanda-Mthintwa-Hove/tawanda.jpg'
+import gatesLogo from '../images/2026-speakers/Gates-Foundation-Tawanda-Mthintwa-Hove/3840px-Gates_Foundation_Logo.svg.png'
 
 interface Speaker {
   name: string;
   designation: string;
   organization: string;
-  image: string;
-  logo: string;
+  image: string | StaticImageData;
+  logo: string | StaticImageData;
   iconHeight: number;
   iconWidth: number;
   description: string;
@@ -94,6 +98,26 @@ const speakers: Speaker[] = [
     iconHeight: 120,
     iconWidth: 120,
     description: 'Mario Abreu has been the Ferrero Group Vice President Sustainability since April 2020, based in Luxembourg. That role entails securing sustainability is fully embedded in the Group\'s long-term business strategy. Prior to Ferrero Mario worked for over 20 years in sustainability for Tetra Pak, the last 5 of them as their Global VP Sustainability based in Lund, Sweden. Throughout his time in Tetra Pak he led teams of up to 100 people globally, developing industry-leading programmes for collection and recycling of beverage cartons. Earlier Mario worked as a technical and commercial director for paper manufacturing and recycling businesses. In addition, he has served on several boards (FSC International, RSPO, High Conservation Value Resource Network, Proforest Initiative, and ACE Beverage Cartons) and technical advisory groups (Science Based Targets initiative). Mario is a Mechanical Engineer, with a Post-Grad Diploma in Environmental Decision Making, having done sustainability and business trainings at CISL (UK), IMD (CH), Ashridge (UK), the Open University (UK), and Fundaçao Getulio Vargas (BR).'
+  },
+  {
+    name: 'Chrystel Monthean',
+    designation: 'EVP Americas<br/>Group Executive Board member',
+    organization: 'Yara International',
+    image: chrystelImage,
+    logo: yaraLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: ''
+  },
+  {
+    name: 'Dr. Tawanda Mthintwa Hove',
+    designation: 'Senior Program Officer, Digital Agronomy',
+    organization: 'Gates Foundation',
+    image: tawandaImage,
+    logo: gatesLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: ''
   },
   {
     name: 'Andre van den Beld',
