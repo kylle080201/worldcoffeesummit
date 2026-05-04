@@ -49,7 +49,7 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
       break;
 
     case "price_1SHoZnKMWpUKzQVzPtUcB2Ey":
-      ticketName = "NGOs, Co-operatives, Policy Makers"
+      ticketName = "NGO / Government / Academic"
       break;
 
     case "price_1SJvX1KMWpUKzQVz604VjCdu":
@@ -62,6 +62,10 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
 
     case "price_1SJvXRKMWpUKzQVzO2EzA3eJ":
       ticketName = "Service Providers"
+      break;
+
+    case "price_1PGx2vKMWpUKzQVz1rtJmCf0":
+      ticketName = "Networking Soirée (Add-on)"
       break;
   }
 

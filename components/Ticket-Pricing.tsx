@@ -4,207 +4,185 @@ import React from 'react'
 import Link from 'next/link'
 import RegisterCountDown from './RegisterCountDown'
 
-// ORIGINAL
-export const summit = [
-    {
-        title: "Academics",
-        // old_price: 1095,
-        item_price: 299,
-        description: "Eligible only for professors and full- time Masters, PhDs and post-graduates(including students)",
-        limited: "(Limited Availability)",
-        // earlyBird: "Save £300 book before 01 August 2025",
-        line_items: [
-            {
-                price: 'price_1RJ3cYKMWpUKzQVzk2sR6LGo',
-                quantity: 1,
-                tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
+const taxRates = ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'] as const
 
-            }
-        ]
-    },
+export type SummitLineItem = {
+    price: string
+    quantity: number
+    tax_rates: readonly string[]
+}
+
+export type SummitRow = {
+    title: string
+    description: string
+    item_price: number
+    old_price?: number
+    earlyBird?: string
+    limited?: string
+    footnote?: string
+    cta?: string
+    /** If set, CTA opens mailto instead of the registration form */
+    enquireHref?: string
+    line_items?: SummitLineItem[]
+    rowClassName?: string
+}
+
+/** Display amounts must match active Stripe prices — update price IDs in Stripe when tariffs change. */
+export const summit: SummitRow[] = [
     {
-        title: "NGOs, Co-operatives, Policy Makers",
-        item_price: 995,
-        description: "Eligible for non-profits and NGOs, farmer-cooperatives, Policy Makers & Government Bodies",
+        title: 'NGO / Government / Academic',
+        old_price: 1195,
+        item_price: 895,
+        description:
+            'For non-profit organisations, government bodies, policymakers, producer organisations, and full-time academics.',
+        earlyBird: 'Save £300 book before 19 Jun 2026',
         line_items: [
             {
                 price: 'price_1SHoZnKMWpUKzQVzPtUcB2Ey',
                 quantity: 1,
-                tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
-            }
-        ]
+                tax_rates: taxRates,
+            },
+        ],
     },
     {
-        title: "Corporates",
-        item_price: 1295,
-        description: "Eligible for multinational/ conglomerate companies, F&B & Agri-Commodity Brands, retailers, traders",
+        title: 'Corporate',
+        old_price: 1495,
+        item_price: 1095,
+        description:
+            'For corporate organisations, including F&B and Agri-commodity brands, retailers, traders, agribusinesses and other related commercial organisations.',
+        earlyBird: 'Save £500 book before 19 Jun 2026',
         line_items: [
             {
                 price: 'price_1SJvX1KMWpUKzQVz604VjCdu',
                 quantity: 1,
-                tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
-            }
-        ]
+                tax_rates: taxRates,
+            },
+        ],
     },
     {
-        title: "Start Ups",
-        item_price: 1095,
-        description: "Eligible only for early-stage innovators, Independent Consultants/ Service Providers",
-        limited: "(Limited Availability)",
+        title: 'Start-Up',
+        item_price: 995,
+        description: 'For early-stage innovators, solution providers, and independent consultants.',
+        earlyBird: 'Save £500 book before 19 Jun 2026',
+        footnote: 'Eligibility criteria apply',
+        cta: 'Enquire Now',
+        enquireHref:
+            'mailto:info@worldcoffeealliance.com?subject=WCIS26%20Start-Up%20pass%20enquiry',
+    },
+    {
+        title: 'Service Provider',
+        old_price: 1895,
+        item_price: 1495,
+        description:
+            'For for-profit consultancies, technology and service providers, mature start-ups, financial institutions, and investors.',
+        earlyBird: 'Save £500 book before 19 Jun 2026',
         line_items: [
             {
-                price: 'price_1SHog6KMWpUKzQVzg22U1QLS',
-                quantity: 1,
-                tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
-            }
-        ]
-    },
-    {
-        title: "Service Providers",
-        item_price: 1895,
-        description: "Eligible for for-profit consultancies, mature start-ups, technology and service providers, including Private Equity Firms and Asset Managers/Brokers, Angel and Venture Capital Investors/ Banks/ Financial Institutions",
-        line_items: [
-            { 
                 price: 'price_1SJvXRKMWpUKzQVzO2EzA3eJ',
                 quantity: 1,
-                tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
-            }
-        ]
+                tax_rates: taxRates,
+            },
+        ],
+    },
+    {
+        title: 'Networking Soirée (Add-on)',
+        old_price: 185,
+        item_price: 155,
+        description:
+            'A two-hour, invite-only networking reception at the UK House of Lords, bringing together senior stakeholders. Available to registered delegates only. Limited capacity.',
+        earlyBird: 'Save £30 book before 19 Jun 2026',
+        rowClassName: 'bg-orange-50',
+        line_items: [
+            {
+                price: 'price_1PGx2vKMWpUKzQVz1rtJmCf0',
+                quantity: 1,
+                tax_rates: taxRates,
+            },
+        ],
     },
 ]
 
-// PROD TESTING PRICES
-// export const summit = [
-//     {
-//         title: "Academics",
-//         old_price: 1095,
-//         item_price: 299,
-//         description: "Eligible only for professors and full- time Masters, PhDs and post-graduates(including students)",
-//         earlyBird: "Book before 8th October 2024 to Save £200.00",
-//         line_items: [
-//             {
-//                 price: 'price_1RLRZdKMWpUKzQVzxEOPwVBA',
-//                 quantity: 1,
-//                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
-
-//             }
-//         ]
-//     },
-//     {
-//         title: "NGOs, Co-operatives, Policy Makers",
-//         old_price: 1795,
-//         item_price: 599,
-//         description: "Eligible for non-profits and NGOs, farmer-cooperatives, Policy Makers & Government Bodies",
-//         earlyBird: "Book before 8th October 2024 to Save £300.00",
-//         line_items: [
-//             {
-//                 price: 'price_1RLn53KMWpUKzQVzP93RGG0I',
-//                 quantity: 1,
-//                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
-//             }
-//         ]
-//     },
-//     {
-//         title: "Corporates",
-//         old_price: 1995,
-//         item_price: 899,
-//         description: "Eligible for multinational/ conglomerate companies, F&B & Agri-Commodity Brands, retailers, traders ",
-//         earlyBird: "Book before 8th October 2024 to Save £300.00",
-//         line_items: [
-//             {
-//                 price: 'price_1RLn7BKMWpUKzQVzItm3kmzE',
-//                 quantity: 1,
-//                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
-//             }
-//         ]
-//     },
-//     {
-//         title: "Start Ups",
-//         old_price: 1295,
-//         item_price: 699,
-//         description: "Eligible only for early-stage innovators, Independent Consultants/ Service Providers",
-//         earlyBird: "Book before 8th October 2024 to Save £300.00",
-//         line_items: [
-//             {
-//                 price: 'price_1RLn8FKMWpUKzQVz5TAnpeGo',
-//                 quantity: 1,
-//                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
-//             }
-//         ]
-//     },
-//     {
-//         title: "Service Providers",
-//         old_price: 1295,
-//         item_price: 1099,
-//         description: "Eligible for for-profit consultancies, mature start-ups, technology and service providers, including Private Equity Firms and Asset Managers/Brokers, Angel and Venture Capital Investors/ Banks/ Financial Institutions",
-//         earlyBird: "Book before 8th October 2024 to Save £300.00",
-//         line_items: [
-//             {
-//                 price: 'price_1RLn8fKMWpUKzQVzG5ZhHwZM',
-//                 quantity: 1,
-//                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
-//             }
-//         ]
-//     },
-// ]
+const gbp = (n: number) =>
+    new Intl.NumberFormat('en-GB', { style: 'currency', currency: 'GBP' }).format(n)
 
 function TicketPricing() {
-
     return (
         <div className="z-40 py-12 bg-white sm:py-20">
             <div id="summit" className="flow-root px-6 mx-auto mt-12 rounded-md max-w-7xl">
                 <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-
-                    <div className='flex w-full gap-4'>
-                        <div className='flex flex-col text-black font-bold w-1/2 items-center'>
-                            <h1 className='mx-auto text-3xl xl:text-5xl text-lime-700'>GRAB YOUR TICKETS</h1>
-                            <h1 className='mx-auto text-3xl xl:text-5xl'>TO WCIS25</h1>
-                            {/* <h1 className='mx-auto text-red-500 xl:text-2xl text-lg'>(LIMITED AVAILABILITY)</h1> */}
+                    <div className="flex flex-col w-full gap-6 lg:flex-row lg:gap-4 lg:items-start lg:justify-between">
+                        <div className="flex flex-col w-full font-bold lg:w-1/2 text-center items-center justify-center">
+                            <h1 className="w-full mt-1 text-3xl text-lime-700 xl:text-5xl">
+                                GRAB YOUR TICKET
+                            </h1>
+                            <h1 className="w-full mt-1 text-3xl text-black xl:text-5xl">
+                                TO WCIS26
+                            </h1>
                         </div>
-                        {/* <div className='flex flex-col gap-2 w-1/2'>
-                            <div className='p-2 bg-red-500 text-white w-max text-2xl xl:text-4xl font-bold px-24 justify-center items-center text-center rounded-xl whitespace-normal line-clamp-2'>
-                                TICKET PRICES INCREASE <br />
-                                AFTER 17 OCTOBER 2025
+                        <div className="flex flex-col items-center gap-3 lg:w-1/2 lg:items-end">
+                            <div className="max-w-xl p-3 text-center text-white bg-red-600 rounded-xl sm:p-4 lg:px-6">
+                                <p className="text-lg font-bold leading-snug sm:text-2xl sm:leading-tight lg:text-3xl">
+                                    TICKET PRICES INCREASE AFTER 18 JUN 2026
+                                </p>
                             </div>
                             <RegisterCountDown />
-                        </div> */}
+                        </div>
                     </div>
                     <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8 ">
-                        <table className="min-w-full divide-y divide-gray-300 mt-12">
+                        <table className="min-w-full mt-12 divide-y divide-gray-300">
                             <tbody className="bg-white">
                                 {summit.map((delegate) => (
-                                    <tr key={delegate.title} className="odd:bg-gray-100 h-full">
-                                        <td className="flex-wrap px-3 py-4 font-semibold text-gray-900 text-lg whitespace-nowrap">{delegate.title} <div className='text-red-700 font-bold'>{delegate.limited ?? delegate.limited}</div></td>
-                                        <td className="flex-wrap px-3 py-4 text-gray-900 text-lg">
-                                            {delegate.description}
-                                            <div className='text-red-700 font-bold'>
-                                                {(delegate as any).earlyBird}
-                                            </div>
+                                    <tr
+                                        key={delegate.title}
+                                        className={`h-full ${delegate.rowClassName ?? 'odd:bg-gray-100'}`}
+                                    >
+                                        <td className="flex-wrap px-3 py-4 text-lg font-semibold text-gray-900 whitespace-nowrap">
+                                            {delegate.title}
+                                            {delegate.limited ? (
+                                                <div className="font-bold text-red-700">{delegate.limited}</div>
+                                            ) : null}
                                         </td>
-                                        <td className="flex-wrap px-3 py-4 text-gray-900 font-bold">
-                                            <div className='h-full text-lg w-full'>
-                                                <div className='text-red-700 line-through'>
-                                                    {(delegate as any).old_price ? `£${(delegate as any).old_price}.00` : undefined}
-                                                </div>
-                                                <div>
-                                                    £{delegate.item_price}.00
-                                                </div>
+                                        <td className="flex-wrap px-3 py-4 text-lg text-gray-900">
+                                            {delegate.description}
+                                            {delegate.earlyBird ? (
+                                                <div className="font-bold text-red-700">{delegate.earlyBird}</div>
+                                            ) : null}
+                                        </td>
+                                        <td className="flex-wrap px-3 py-4 font-bold text-gray-900">
+                                            <div className="w-full h-full text-lg">
+                                                {delegate.old_price != null ? (
+                                                    <div className="text-red-700 line-through">
+                                                        {gbp(delegate.old_price)}
+                                                    </div>
+                                                ) : null}
+                                                <div>{gbp(delegate.item_price)}</div>
                                             </div>
                                         </td>
                                         <td className="px-3 py-4">
-                                            <div className='my-auto justify-self-center mx:auto'>
-                                                <Link
-                                                    href={{
-                                                        pathname: '/register/form',
-                                                        query: {
-                                                            line_items: JSON.stringify(delegate.line_items)
-                                                        }
-                                                    }}
-                                                    type="button"
-                                                    className="block w-full px-3 py-2 text-sm font-semibold text-center text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                                                >
-                                                    Register
-                                                </Link>
+                                            <div className="justify-self-center mx:auto my-auto">
+                                                {delegate.enquireHref ? (
+                                                    <a
+                                                        href={delegate.enquireHref}
+                                                        className="block w-full px-3 py-2 text-sm font-semibold text-center text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                                    >
+                                                        {delegate.cta ?? 'Enquire Now'}
+                                                    </a>
+                                                ) : delegate.line_items ? (
+                                                    <Link
+                                                        href={{
+                                                            pathname: '/register/form',
+                                                            query: {
+                                                                line_items: JSON.stringify(delegate.line_items),
+                                                            },
+                                                        }}
+                                                        className="block w-full px-3 py-2 text-sm font-semibold text-center text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                                    >
+                                                        {delegate.cta ?? 'Register Now'}
+                                                    </Link>
+                                                ) : null}
+                                                {delegate.footnote ? (
+                                                    <p className="mt-2 text-xs text-gray-600">{delegate.footnote}</p>
+                                                ) : null}
                                             </div>
                                         </td>
                                     </tr>
@@ -214,25 +192,57 @@ function TicketPricing() {
                     </div>
                 </div>
             </div>
-            <div className="container mb-12 mx-auto px-8 flex justify-between">
-            <div className="w-full md:w-1/2 lg:w-full  mt-12 sm:text-start">
-                <h3 className="tracking-tight text-red-700 sm:text-lg"><span className='font-bold'>IMPORTANT NOTICE:</span></h3>
-                <h3 className="tracking-tight  sm:text-lg w-11/12">Please select the correct pass type. Registrations in   the  wrong category   may be cancelled and refunded.  <span className="italic text-lg">A deduction for non-refundable processing fees will apply.</span><br/>
-                </h3>
+            <div className="container flex justify-between px-8 mx-auto mb-12">
+                <div className="w-full mt-12 md:w-1/2 lg:w-full sm:text-start">
+                    <h3 className="tracking-tight text-red-700 sm:text-lg">
+                        <span className="font-bold">IMPORTANT NOTICE:</span>
+                    </h3>
+                    <h3 className="w-11/12 tracking-tight sm:text-lg">
+                        Please select the correct pass type. Registrations in the wrong category may be cancelled and
+                        refunded.{' '}
+                        <span className="text-lg italic">
+                            A deduction for non-refundable processing fees will apply.
+                        </span>
+                        <br />
+                    </h3>
 
-                <h3 className="tracking-tight  sm:text-lg">For any issues, email us at <Link href={"mailto:info@worldcoffeealliance.com"} target="_blank" className="text-blue-600 underline hover:underline-offset-4"> info@worldcoffeealliance.com</Link></h3>
+                    <h3 className="tracking-tight sm:text-lg">
+                        For any issues, email us at{' '}
+                        <Link
+                            href={'mailto:info@worldcoffeealliance.com'}
+                            target="_blank"
+                            className="text-blue-600 underline hover:underline-offset-4"
+                        >
+                            info@worldcoffeealliance.com
+                        </Link>
+                    </h3>
+                </div>
+                <div className="w-full mt-12 md:w-1/2 lg:w-full sm:text-start">
+                    <h3 className="tracking-tight text-red-700 sm:text-lg">
+                        <span className="font-bold">GROUP DISCOUNTS AVAILABLE!</span>
+                    </h3>
+                    <h3 className="tracking-tight sm:text-lg">
+                        <span className="font-bold">Book a Team of 3+ </span> — Save an Additional 10% Off
+                    </h3>
+                    <h3 className="tracking-tight sm:text-lg">
+                        <span className="font-bold">Book a Team of 5+ </span> — Save an Additional 15% Off
+                    </h3>
+
+                    <h3 className="tracking-tight sm:text-lg">
+                        If you would like to register a team of 3 or more, please email{' '}
+                        <Link
+                            href={'mailto:info@worldcoffeealliance.com'}
+                            target="_blank"
+                            className="text-blue-600 underline hover:underline-offset-4"
+                        >
+                            info@worldcoffeealliance.com
+                        </Link>{' '}
+                        for your discount coupon code before registering.
+                    </h3>
+                </div>
             </div>
-             <div className="w-full md:w-1/2 lg:w-full  mt-12 sm:text-start">
-                <h3 className="tracking-tight text-red-700 sm:text-lg"><span className='font-bold'>GROUP DISCOUNTS AVAILABLE!</span></h3>
-                <h3 className="tracking-tight sm:text-lg"><span className='font-bold'>Book a Team of 3+ </span> — Save an Additional 10% Off</h3>
-                <h3 className="tracking-tight  sm:text-lg"><span className='font-bold'>Book a Team of 5+ </span> — Save an Additional 15% Off</h3>
-
-                <h3 className="tracking-tight  sm:text-lg">If you would like to register a team of 3 or more, please email  <Link href={"mailto:info@worldcoffeealliance.com"} target="_blank" className=" text-blue-600 underline hover:underline-offset-4"> info@worldcoffeealliance.com</Link> for your discount coupon code before registering.</h3>
-            </div> 
-           </div>
-           </div>
-
+        </div>
     )
 }
 
-export default TicketPricing;
+export default TicketPricing
