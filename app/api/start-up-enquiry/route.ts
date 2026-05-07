@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
+import connectMongo from "../../../utils/mongodb";
+import StartUpEnquiries from "../../../models/startUpEnquiries";
 
 const user = process.env.EMAIL;
 const pass = process.env.EMAIL_PASS;
@@ -25,6 +27,7 @@ export async function POST(request: NextRequest) {
       companyWebsite,
       country,
       workEmail,
+      mobile,
       companyStage,
       briefDescription,
     } = data ?? {};
@@ -37,6 +40,7 @@ export async function POST(request: NextRequest) {
       !companyWebsite ||
       !country ||
       !workEmail ||
+      !mobile ||
       !companyStage
     ) {
       return NextResponse.json(
@@ -45,15 +49,30 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    await connectMongo();
+    await StartUpEnquiries.create({
+      firstName,
+      lastName,
+      jobTitle,
+      companyName,
+      companyWebsite,
+      country,
+      workEmail,
+      mobile,
+      companyStage,
+      briefDescription: briefDescription || "",
+    });
+
     await transporter.sendMail({
       from: `World Coffee Innovation Summit Team <${user}>`,
       to: "info@worldcoffeealliance.com",
-      subject: "WCIS26 Start-Up pass enquiry",
+      subject: "Start-Up Pass Application-World Coffee Innovation Summit London 2026",
       html: `
-        <div>Hi team,</div>
+        <div>Hi ${firstName},</div>
         <br/>
-        <div>A new Start-Up pass enquiry has been submitted.</div>
+        <div>${firstName} ${lastName} has just applied for Start-Up pass.</div>
         <br/>
+        <div>Here are the Information:</div>
         <div><strong>First Name:</strong> ${firstName}</div>
         <div><strong>Last Name:</strong> ${lastName}</div>
         <div><strong>Job Title:</strong> ${jobTitle}</div>
@@ -61,8 +80,29 @@ export async function POST(request: NextRequest) {
         <div><strong>Company Website:</strong> ${companyWebsite}</div>
         <div><strong>Country:</strong> ${country}</div>
         <div><strong>Work Email:</strong> ${workEmail}</div>
+        <div><strong>Mobile:</strong> ${mobile}</div>
         <div><strong>Company Stage:</strong> ${companyStage}</div>
         <div><strong>Brief Description:</strong> ${briefDescription || "N/A"}</div>
+      `,
+    });
+
+    await transporter.sendMail({
+      from: `World Coffee Innovation Summit Team <${user}>`,
+      to: workEmail,
+      subject: "Start-Up Pass Enquiry Received – World Coffee Innovation Summit London 2026",
+      html: `
+        <div>Dear ${firstName},</div>
+        <br/>
+        <div>
+          Thank you for your interest in attending the World Coffee Innovation Summit London 2026 under the Start-Up Pass category.
+        </div>
+        <br/>
+        <div>
+          We have received your enquiry and our team will review your submission and get back to you shortly.
+        </div>
+        <br/>
+        <div>Kind regards,</div>
+        <div><strong>The Team @ World Coffee Innovation Summit</strong></div>
       `,
     });
 

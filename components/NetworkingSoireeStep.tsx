@@ -94,7 +94,7 @@ function NetworkingSoireeStep() {
     return (
         <div className="z-40 py-12 bg-white sm:py-20">
             <div className="max-w-screen-md px-4 mx-auto mb-12 text-center">
-                <h2 className="mb-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                <h2 className="mb-4 text-3xl font-bold tracking-tight text-gray-900 whitespace-nowrap">
                     Join the Networking Soiree at the UK House of Lords
                 </h2>
                 <p className="text-xl text-gray-900">Early evening of Day 1, Wednesday, 21 October 2026</p>
@@ -131,11 +131,6 @@ function NetworkingSoireeStep() {
                 </div>
 
                 {errorMessage ? <p className="mt-4 text-sm text-red-700">{errorMessage}</p> : null}
-
-                <p className="mt-10 text-sm text-gray-600">
-                    Add Networking Soiree includes summit pass plus networking soiree charge in one payment.
-                    Continue without goes directly to payment for the summit pass only.
-                </p>
 
                 <div className="mt-8 text-left">
                     <BackButton />

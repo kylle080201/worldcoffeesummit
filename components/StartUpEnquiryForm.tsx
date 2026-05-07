@@ -10,6 +10,7 @@ type StartUpEnquiryData = {
   companyWebsite: string;
   country: string;
   workEmail: string;
+  mobile: string;
   companyStage: "Early-stage (pre-seed / seed)" | "Growth-stage" | "";
   briefDescription: string;
 };
@@ -22,6 +23,7 @@ const initialFormData: StartUpEnquiryData = {
   companyWebsite: "",
   country: "",
   workEmail: "",
+  mobile: "",
   companyStage: "",
   briefDescription: "",
 };
@@ -31,6 +33,13 @@ function StartUpEnquiryForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
+
+  const normalizeWebsite = (value: string) => {
+    const trimmed = value.trim();
+    if (!trimmed) return "";
+    if (/^https?:\/\//i.test(trimmed)) return trimmed;
+    return `https://${trimmed}`;
+  };
 
   const onChange = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -43,6 +52,10 @@ function StartUpEnquiryForm() {
     event.preventDefault();
     setErrorMessage("");
     setIsSubmitting(true);
+    const normalizedFormData = {
+      ...formData,
+      companyWebsite: normalizeWebsite(formData.companyWebsite),
+    };
 
     try {
       const response = await fetch("/api/start-up-enquiry", {
@@ -50,7 +63,7 @@ function StartUpEnquiryForm() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(normalizedFormData),
       });
 
       if (!response.ok) {
@@ -72,20 +85,10 @@ function StartUpEnquiryForm() {
       <div className="z-40 py-12 bg-white sm:py-20">
         <div className="max-w-screen-md px-4 mx-auto mb-12">
           <h2 className="mb-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Thank you
+            Thank you for your enquiry.
           </h2>
           <p className="text-lg text-gray-900">
-            Thank you — our team will review your application and get back to you shortly.
-          </p>
-          <p className="mt-4 text-lg text-gray-900">
-            If needed, you can also email{" "}
-            <a
-              href="mailto:info@worldcoffeealliance.com"
-              className="text-lime-700 underline"
-            >
-              info@worldcoffeealliance.com
-            </a>
-            .
+            Our team will review your submission and be in touch shortly.
           </p>
         </div>
       </div>
@@ -122,7 +125,15 @@ function StartUpEnquiryForm() {
 
           <div>
             <label className="block mb-2 text-sm font-medium text-gray-900">Company Website</label>
-            <input type="url" name="companyWebsite" value={formData.companyWebsite} onChange={onChange} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50" required />
+            <input
+              type="text"
+              name="companyWebsite"
+              value={formData.companyWebsite}
+              onChange={onChange}
+              className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50"
+              placeholder="e.g. worldcoffeealliance.com"
+              required
+            />
           </div>
 
           <div>
@@ -133,6 +144,18 @@ function StartUpEnquiryForm() {
           <div>
             <label className="block mb-2 text-sm font-medium text-gray-900">Work Email</label>
             <input type="email" name="workEmail" value={formData.workEmail} onChange={onChange} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50" required />
+          </div>
+
+          <div>
+            <label className="block mb-2 text-sm font-medium text-gray-900">Mobile</label>
+            <input
+              type="tel"
+              name="mobile"
+              value={formData.mobile}
+              onChange={onChange}
+              className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50"
+              required
+            />
           </div>
 
           <fieldset>

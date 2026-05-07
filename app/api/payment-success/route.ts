@@ -25,10 +25,10 @@ export async function POST(request: NextRequest, res: NextResponse) {
         status: 200,
       }
     );
-  } catch (error) {
+  } catch (error: any) {
     return NextResponse.json(
       {
-        error,
+        error: error?.message || "Unable to load payment success details",
       },
       {
         status: 400,
@@ -41,10 +41,18 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
   const req = await request.json();
   const checkoutSessionId = req.checkoutSessionId;
   const formData = req.decryptedFormData;
+  const forceResend = req.forceResend === true;
   const parsedLineItems = Array.isArray(req.line_items)
     ? req.line_items
     : JSON.parse(req.line_items ?? "[]");
   const selectedLineItem = parsedLineItems[0];
+  const hasNetworkingSoiree = parsedLineItems.some(
+    (item: { price?: string }) => item?.price === "price_1TUHu5KMWpUKzQVzaZLAIhUe"
+  );
+  const isNetworkingSoireeOnly =
+    hasNetworkingSoiree &&
+    parsedLineItems.length === 1 &&
+    selectedLineItem?.price === "price_1TUHu5KMWpUKzQVzaZLAIhUe";
 
   if (!checkoutSessionId || !selectedLineItem?.price) {
     return NextResponse.json(
@@ -133,6 +141,7 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
         $set: {
           ...formData,
           ticketName,
+          hasNetworkingSoiree,
         },
       },
       { new: true }
@@ -149,8 +158,13 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
       );
     }
 
-    if (!res.isEmailAccepted || res.isEmailAccepted === false) {
-      const mailerRes = await mailer(res);
+    if (forceResend || !res.isEmailAccepted || res.isEmailAccepted === false) {
+      const mailerPayload = {
+        ...(typeof res.toObject === "function" ? res.toObject() : res),
+        hasNetworkingSoiree,
+        isNetworkingSoireeOnly,
+      };
+      const mailerRes = await mailer(mailerPayload);
         if (mailerRes?.accepted?.length ?? 0 > 0) {
           await Tickets.findByIdAndUpdate(res._id, {
             $set: {
@@ -174,10 +188,10 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
         status: 200,
       }
     );
-  } catch (error) {
+  } catch (error: any) {
     return NextResponse.json(
       {
-        error,
+        error: error?.message || "Unable to process payment success request",
       },
       {
         status: 400,

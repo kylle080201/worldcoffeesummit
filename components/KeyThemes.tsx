@@ -139,10 +139,10 @@ function KeyThemes() {
         </div>
         <div className="mt-8 flex justify-center">
           <Link
-            href="/interest"
+            href="/agenda"
             className="rounded-lg bg-lime-700 px-6 py-3 text-lg font-bold text-white transition-colors duration-300 hover:bg-lime-800"
           >
-            REGISTER INTEREST
+            2025 AGENDA
           </Link>
         </div>
       </div>

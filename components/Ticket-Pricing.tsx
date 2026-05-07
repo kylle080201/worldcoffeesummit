@@ -22,6 +22,7 @@ export type SummitRow = {
     old_price?: number
     earlyBird?: string
     limited?: string
+    limitedOnTop?: boolean
     footnote?: string
     cta?: string
     /** If set, CTA opens mailto instead of the registration form */
@@ -54,7 +55,7 @@ export const summit: SummitRow[] = [
         item_price: 1095,
         description:
             'For corporate organisations, including F&B and Agri-commodity brands, retailers, traders, agribusinesses and other related commercial organisations.',
-        earlyBird: 'Save £500 book before 19 Jun 2026',
+        earlyBird: 'Save £400 book before 19 Jun 2026',
         line_items: [
             {
                 // price: 'price_1Rr81dKMWpUKzQVzBqtbsbxH', // production
@@ -68,8 +69,8 @@ export const summit: SummitRow[] = [
         title: 'Start-Up',
         item_price: 995,
         description: 'For early-stage innovators, solution providers, and independent consultants.',
-        earlyBird: 'Save £500 book before 19 Jun 2026',
-        footnote: 'Eligibility criteria apply',
+        earlyBird: 'Eligibility criteria apply',
+        limited: 'Limited Availability',
         cta: 'Enquire Now',
         enquireHref: '/register/start-up-enquiry',
         // price reference only (start-up currently uses enquiry flow):
@@ -82,7 +83,7 @@ export const summit: SummitRow[] = [
         item_price: 1495,
         description:
             'For for-profit consultancies, technology and service providers, mature start-ups, financial institutions, and investors.',
-        earlyBird: 'Save £500 book before 19 Jun 2026',
+        earlyBird: 'Save £400 book before 19 Jun 2026',
         line_items: [
             {
                 // price: 'price_1RVYT2KMWpUKzQVzleFRk7vr', // production
@@ -93,9 +94,11 @@ export const summit: SummitRow[] = [
         ],
     },
     {
-        title: 'Networking Soirée (Add-on)',
+        title: 'Networking Soirée',
         old_price: 185,
         item_price: 155,
+        limited: 'Add-on',
+        limitedOnTop: true,
         description:
             'A two-hour, invite-only networking reception at the UK House of Lords, bringing together senior stakeholders. Available to registered delegates only. Limited capacity.',
         earlyBird: 'Save £30 book before 19 Jun 2026',
@@ -146,8 +149,11 @@ function TicketPricing() {
                                         className={`h-full ${delegate.rowClassName ?? 'odd:bg-gray-100'}`}
                                     >
                                         <td className="flex-wrap px-3 py-4 text-lg font-semibold text-gray-900 whitespace-nowrap">
+                                            {delegate.limited && delegate.limitedOnTop ? (
+                                                <div className="font-bold text-red-700">{delegate.limited}</div>
+                                            ) : null}
                                             {delegate.title}
-                                            {delegate.limited ? (
+                                            {delegate.limited && !delegate.limitedOnTop ? (
                                                 <div className="font-bold text-red-700">{delegate.limited}</div>
                                             ) : null}
                                         </td>
