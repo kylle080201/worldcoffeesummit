@@ -8,7 +8,7 @@ import TicketPricingMaintenance from "../../../components/TicketPricingMaintenan
 export default function Tickets() {
     const steps = [
         { id: '1', name: 'Choose a Pass', status: 'current' },
-        { id: '2', name: 'Personal Information', status: 'upcoming' },
+        { id: '2', name: 'Delegate Information', status: 'upcoming' },
         { id: '3', name: 'Payment', status: 'upcoming' },
         { id: '4', name: 'Confirmation', status: 'upcoming' },
     ]

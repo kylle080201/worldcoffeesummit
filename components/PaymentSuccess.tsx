@@ -1,15 +1,14 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import 'crypto-js/enc-utf8';
-import Link from 'next/link';
-import { ArrowLongRightIcon } from '@heroicons/react/24/outline';
 import { IResponseData } from '../types/responseData';
-import { SocialIcon } from 'react-social-icons';
-import NetworkingSoiree from './NetworkingSoiree';
 
 function PaymentSuccess({ checkoutSessionId, decryptedFormData, line_items }: any) {
     const [res, setRes] = useState<IResponseData>(Object)
     const [origin, setOrigin] = useState('')
+    const [copied, setCopied] = useState(false)
+    const [isLoading, setIsLoading] = useState(true)
+    const [errorMessage, setErrorMessage] = useState('')
 
     useEffect(() => {
         if (typeof window !== "undefined") {
@@ -19,6 +18,8 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, line_items }: an
 
     const patchData = async () => {
         try {
+            setIsLoading(true)
+            setErrorMessage('')
             const response = await fetch(`${origin}/api/payment-success`, {
                 method: 'PATCH',
                 headers: {
@@ -32,9 +33,15 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, line_items }: an
             });
 
             const data = await response.json();
+            if (!response.ok || !data?.res?.ticketName) {
+                setErrorMessage(data?.error || 'Unable to load confirmation details right now. Please try again.')
+                return
+            }
             setRes(data)
         } catch (error: any) {
-            return error
+            setErrorMessage('Unable to load confirmation details right now. Please try again.')
+        } finally {
+            setIsLoading(false)
         }
     };
 
@@ -43,70 +50,109 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, line_items }: an
             patchData();
         }
     }, [origin]);
-    
+
+    const shareCopyText = "Join me at the 4th World Coffee Innovation Summit London 2026, 21-22 October 2026, at Queen Elizabeth II Centre & UK House of Lords."
+
+    const copyInviteText = async () => {
+        try {
+            await navigator.clipboard.writeText(shareCopyText)
+            setCopied(true)
+            setTimeout(() => setCopied(false), 2000)
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
     return (
         <>
             <div className="bg-white">
                 <div className="flex-shrink-0 max-w-3xl px-6 py-20 mx-auto sm:px-6 sm:py-32 lg:px-8 md:max-w-7xl">
-                    <div className='max-w-5xl'>
-                        <img className='w-[20rem]' src="https://worldcoffeealliance.com/wp-content/uploads/2024/04/world-coffee-innovation-summit-high-resolution-logo-transparent-1.png" />
-                    </div>
                     {res?.res?.ticketName ?
                         <div className="mt-6 justify-left md:mt-12">
                             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                                REGISTRATION CONFIRMED
+                                REGISTERED CONFIRMED
                             </h2>
-                            <h3 className="my-6 text-lg tracking-tight text-gray-900 sm:text-2xl">
-                                Thank you for registering to attend the World Coffee Innovation Summit London 2025.
+                            <p className="mt-6 text-[32px] leading-tight tracking-tight text-gray-900">
+                                Thank you for registering for the <span className="font-bold">4<sup>th</sup> World Coffee Innovation Summit London 2026</span>.
+                            </p>
+                            <p className="mt-6 text-[32px] leading-tight tracking-tight text-gray-900">
+                                You're also confirmed for the <span className="font-bold">Networking Soiree at the UK House of Lords.</span>
+                            </p>
+                            <p className="mt-6 text-[32px] leading-tight tracking-tight text-gray-900">
+                                A confirmation email has been sent with further details.
+                            </p>
+
+                            <h3 className="mt-8 text-[34px] font-bold tracking-tight text-gray-900">
+                                Event Details
                             </h3>
-                            <h3 className="my-6 text-lg tracking-tight text-gray-900 sm:text-2xl">
-                                An email confirmation will be with you shortly with further instructions.
+                            <h3 className="mt-6 text-[34px] font-bold tracking-tight text-gray-900">
+                                Date
                             </h3>
-                            
-                            <h3 className="mt-6 text-lg font-bold tracking-tight text-lime-700 sm:text-2xl">
-                                Event Date:
+                            <p className="text-[34px] leading-tight tracking-tight text-gray-900">
+                                21–22 October 2026
+                            </p>
+                            <h3 className="mt-6 text-[34px] font-bold tracking-tight text-gray-900">
+                                Location
                             </h3>
-                            <h4 className="text-lg tracking-tight text-gray-900 sm:text-2xl">
-                                23-24 October 2025
-                            </h4>
-                            <h3 className="mt-6 text-lg font-bold tracking-tight text-lime-700 sm:text-2xl">
-                                Location:
-                            </h3>
-                            <h4 className="text-lg tracking-tight text-gray-900 sm:text-2xl">
-                                Queen Elizabeth II Centre
-                            </h4>
-                            <h4 className="mt-6 text-lg tracking-tight text-gray-900 sm:text-2xl">
+                            <p className="text-[34px] leading-tight tracking-tight text-gray-900">
+                                Queen Elizabeth II Centre &amp; UK House of Lords
+                            </p>
+                            <p className="mt-8 text-[32px] leading-tight tracking-tight text-gray-900">
                                 Didn&apos;t receive an email? Please check your spam/junk mail.
-                            </h4>
-                            <div className='flex items-center my-auto mt-6 gap-x-4'>
-                                <p className="max-w-xl text-lg leading-8 text-gray-900 sm:text-2xl">
-                                    Still didn&apos;t receive an email?
+                            </p>
+                            <div className='flex flex-col gap-5 mt-8 sm:flex-row sm:items-center'>
+                                <p className="text-[32px] leading-tight tracking-tight text-gray-900">
+                                    Still haven't received it?
                                 </p>
                                 <div className="flex justify-center gap-x-6">
                                     <button
                                         onClick={(() => patchData())}
-                                        className="rounded-md bg-lime-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-lime-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                        className="rounded-[10px] border-2 border-sky-700 px-8 py-2 text-[28px] font-bold text-gray-900 hover:bg-gray-100"
                                     >
                                         Resend Email
                                     </button>
                                 </div>
                             </div>
-                            <h4 className="mt-6 text-lg tracking-tight text-gray-900 sm:text-2xl">
-                                Tell your colleagues and industry peers join you
-                            </h4>
-                            <div className='flex mt-3 gap-x-4'>
-                                <SocialIcon url="https://www.linkedin.com/company/worldcoffeealliance/" style={{ height: 50, width: 50 }} target='_blank' />
-                                <SocialIcon url="https://www.x.com/WCoffeeAlliance" style={{ height: 50, width: 50 }} target='_blank' />
-                            </div>
-                            <div className="flex mt-10 gap-x-6">
-                                <Link href="/" className="flex content-center text-2xl font-semibold leading-6 text-gray-900 hover:underline">
-                                    Back to home <span aria-hidden="true"> <ArrowLongRightIcon className="mx-auto ml-2 h-7" aria-hidden="true" /> </span>
-                                </Link>
+
+                            <p className="mt-8 text-[32px] leading-tight tracking-tight text-gray-900">
+                                Invite your colleagues and professional network to join you
+                            </p>
+                            <div className="flex flex-col items-center mt-6 gap-y-4">
+                                <a
+                                    href="https://www.linkedin.com/company/worldcoffeealliance/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="rounded-[10px] border-2 border-sky-700 bg-lime-700 px-8 py-2 text-[28px] font-bold text-white hover:bg-lime-800"
+                                >
+                                    Share on LinkedIn
+                                </a>
+                                <button
+                                    type="button"
+                                    onClick={copyInviteText}
+                                    className="text-[24px] tracking-tight text-amber-800 hover:underline text-center"
+                                >
+                                    {copied ? 'Invite Text Copied' : 'Copy Invite Text'}
+                                </button>
                             </div>
 
                         </div>
-                        :
-                        <div className="flex-shrink-0 max-w-3xl px-6 py-20 mx-auto sm:px-6 sm:py-32 lg:px-8 md:max-w-7xl text-md lg:text-2xl">Loading ...</div>
+                        : isLoading ? (
+                            <div className="flex-shrink-0 max-w-3xl px-6 py-20 mx-auto sm:px-6 sm:py-32 lg:px-8 md:max-w-7xl">
+                                <div className="text-lg text-gray-900 sm:text-2xl">Loading your confirmation...</div>
+                                <p className="mt-2 text-sm text-gray-600 sm:text-base">Please wait while we verify your registration details.</p>
+                            </div>
+                        ) : (
+                            <div className="flex-shrink-0 max-w-3xl px-6 py-20 mx-auto sm:px-6 sm:py-32 lg:px-8 md:max-w-7xl">
+                                <p className="text-lg text-red-700 sm:text-2xl">{errorMessage || 'Unable to load confirmation details.'}</p>
+                                <button
+                                    type="button"
+                                    onClick={patchData}
+                                    className="px-5 py-3 mt-4 text-sm font-semibold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-900"
+                                >
+                                    Retry
+                                </button>
+                            </div>
+                        )
                     }
 
                 </div>

@@ -4,7 +4,10 @@ import React from 'react'
 import Link from 'next/link'
 import RegisterCountDown from './RegisterCountDown'
 
-const taxRates = ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'] as const
+const taxRates = [
+    // 'txr_1NBBYeKMWpUKzQVzkTT4Wib4', // production
+    'txr_1NCgheKMWpUKzQVzZ761hX9q', // testing
+] as const
 
 export type SummitLineItem = {
     price: string
@@ -38,7 +41,8 @@ export const summit: SummitRow[] = [
         earlyBird: 'Save £300 book before 19 Jun 2026',
         line_items: [
             {
-                price: 'price_1SHoZnKMWpUKzQVzPtUcB2Ey',
+                // price: 'price_1TU6ZNKMWpUKzQVzFeZzO8Zd', // production
+                price: 'price_1TUHqbKMWpUKzQVzAYk5Ctmo', // testing
                 quantity: 1,
                 tax_rates: taxRates,
             },
@@ -53,7 +57,8 @@ export const summit: SummitRow[] = [
         earlyBird: 'Save £500 book before 19 Jun 2026',
         line_items: [
             {
-                price: 'price_1SJvX1KMWpUKzQVz604VjCdu',
+                // price: 'price_1Rr81dKMWpUKzQVzBqtbsbxH', // production
+                price: 'price_1TUHsIKMWpUKzQVzGM1Fgqg5', // testing
                 quantity: 1,
                 tax_rates: taxRates,
             },
@@ -66,8 +71,10 @@ export const summit: SummitRow[] = [
         earlyBird: 'Save £500 book before 19 Jun 2026',
         footnote: 'Eligibility criteria apply',
         cta: 'Enquire Now',
-        enquireHref:
-            'mailto:info@worldcoffeealliance.com?subject=WCIS26%20Start-Up%20pass%20enquiry',
+        enquireHref: '/register/start-up-enquiry',
+        // price reference only (start-up currently uses enquiry flow):
+        // price: 'price_1Rb9T2KMWpUKzQVzaQhry4yi', // production
+        // price: 'price_1TUHspKMWpUKzQVzeiuq5ATZ', // testing
     },
     {
         title: 'Service Provider',
@@ -78,7 +85,8 @@ export const summit: SummitRow[] = [
         earlyBird: 'Save £500 book before 19 Jun 2026',
         line_items: [
             {
-                price: 'price_1SJvXRKMWpUKzQVzO2EzA3eJ',
+                // price: 'price_1RVYT2KMWpUKzQVzleFRk7vr', // production
+                price: 'price_1TUHtiKMWpUKzQVzQK1vBQ1O', // testing
                 quantity: 1,
                 tax_rates: taxRates,
             },
@@ -94,7 +102,8 @@ export const summit: SummitRow[] = [
         rowClassName: 'bg-orange-50',
         line_items: [
             {
-                price: 'price_1PGx2vKMWpUKzQVz1rtJmCf0',
+                // price: 'price_1TU6d9KMWpUKzQVzbvEL5xFJ', // production
+                price: 'price_1TUHu5KMWpUKzQVzaZLAIhUe', // testing
                 quantity: 1,
                 tax_rates: taxRates,
             },
@@ -192,7 +201,7 @@ function TicketPricing() {
                     </div>
                 </div>
             </div>
-            <div className="container flex justify-between px-8 mx-auto mb-12">
+            {/* <div className="container flex justify-between px-8 mx-auto mb-12">
                 <div className="w-full mt-12 md:w-1/2 lg:w-full sm:text-start">
                     <h3 className="tracking-tight text-red-700 sm:text-lg">
                         <span className="font-bold">IMPORTANT NOTICE:</span>
@@ -240,7 +249,7 @@ function TicketPricing() {
                         for your discount coupon code before registering.
                     </h3>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

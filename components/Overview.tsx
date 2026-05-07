@@ -2,8 +2,6 @@
 import Link from 'next/link'
 import React from 'react'
 import KeyThemes from './KeyThemes'
-import Speakertest from './2024Speakerstest'
-import Advisoryboard from './Advisoryboard'
 import Speakers2026 from './Speakers2026'
 
 export default function Overview() {
@@ -45,22 +43,25 @@ export default function Overview() {
        Securing Scalable Coffee & Cocoa Resilience
     </p>
 
-    {/* Container for date and SAVE THE DATES */}
+    {/* Date, venue, and CTA buttons */}
     <div className="flex flex-col items-center gap-0 mt-[4rem] md:mt-[5rem] xl:mt-[10rem]">
-        <Link
-            href="/interest"
-            className="rounded-xl bg-lime-700 px-8 py-4 text-3xl md:text-4xl font-bold text-white transition duration-300 hover:bg-lime-800"
-        >
-            REGISTER INTEREST
-        </Link>
-        <h1 className="-mt-1 text-yellow-300 text-[3rem] md:text-[4rem] xl:text-[6rem] font-bold tracking-tight drop-shadow-xl">
-            SAVE THE DATE
-        </h1>
         <div className="p-2 rounded-md w-fit text-xl md:text-2xl xl:text-4xl font-bold tracking-wide">
            21-22 October 2026 <span className="block sm:inline">| QEII Centre & House of Lords, London | #WCIS26</span>
         </div>
-
-
+        <div className="flex flex-col gap-3 mt-4 sm:flex-row">
+            <Link
+                href="/register"
+                className="rounded-xl bg-lime-700 px-8 py-4 text-2xl md:text-3xl font-bold text-white transition duration-300 hover:bg-lime-800"
+            >
+                REGISTER NOW
+            </Link>
+            <Link
+                href="/interest"
+                className="rounded-xl bg-lime-700 px-8 py-4 text-2xl md:text-3xl font-bold text-white transition duration-300 hover:bg-lime-800"
+            >
+                SPONSOR OR EXHIBIT
+            </Link>
+        </div>
     </div>
 </div>
 
@@ -146,8 +147,6 @@ export default function Overview() {
                     </div>
                 </div>
             </div>
-                              <KeyThemes />
-                <Advisoryboard />
                 <Speakers2026 />
                 <div className="mb-8 w-full flex justify-center">
                   <Link
@@ -157,6 +156,8 @@ export default function Overview() {
                     2025 SPEAKERS
                   </Link>
                 </div>
+                <KeyThemes />
+                {/* <Advisoryboard /> */}
                 {/* <Speakertest/> */}
 
       <div className="mb-8 w-full flex justify-center pt-8">

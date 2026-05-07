@@ -190,10 +190,12 @@ const generateEmailContent = ({
                                 line-height: 25px;
                                 color: #232323;
                                 " class="padding message-content">
+                                                        <!--
                                                         <div class="header-image">
                                                             <img width="500"
                                                                 src="https://worldcoffeealliance.com/wp-content/uploads/2025/04/Confirmation-Email-Banner-scaled.jpg" />
                                                         </div>
+                                                        -->
                                                         <div class="form-container">
                                                             <p> Hi ${firstName},</p>
                                                             <p>Thank you for registering as a delegate to the World Coffee Innovation Summit London 2026.</p>

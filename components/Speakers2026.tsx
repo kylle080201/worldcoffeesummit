@@ -2,7 +2,7 @@
 import { Transition, Dialog } from '@headlessui/react'
 import React, { Fragment, useState } from 'react'
 import Image, { type StaticImageData } from 'next/image'
-import chrystelImage from '../images/2026-speakers/Yara international-Chrystel-Monthean/Chrystel-Monthean.jpg'
+import chrystelImage from '../images/2026-speakers/Yara international-Chrystel-Monthean/Chrystel Monthean.jpg'
 import yaraLogo from '../images/2026-speakers/Yara international-Chrystel-Monthean/Knowledge_grows_for_A4.png'
 import tawandaImage from '../images/2026-speakers/Gates-Foundation-Tawanda-Mthintwa-Hove/tawanda.jpg'
 import gatesLogo from '../images/2026-speakers/Gates-Foundation-Tawanda-Mthintwa-Hove/3840px-Gates_Foundation_Logo.svg.png'
@@ -101,13 +101,13 @@ const speakers: Speaker[] = [
   },
   {
     name: 'Chrystel Monthean',
-    designation: 'EVP Americas<br/>Group Executive Board member',
+    designation: 'Executive Vice Presidente Americas; Group Executive Board member',
     organization: 'Yara International',
     image: chrystelImage,
     logo: yaraLogo,
     iconHeight: 80,
     iconWidth: 80,
-    description: ''
+    description: `<p class="mb-3">With deep-rooted experience in the agribusiness sector, Chrystel Monthean is committed to fostering a more inclusive food production system by supporting farmers in their tremendous role of both feeding the world by producing nutritious and high-quality crops and protecting the planet by adopting practices that improve nature as a business.</p><p class="mb-3">As the EVP Americas at Yara International, since 2020, she brings a diverse skill set and a unique approach to tackling the complex challenges specific to the agricultural industry.</p><p class="mb-3">Embracing the richness of diversity, Chrystel champions a workplace that celebrates human beings and empowers each individual to thrive.</p><p class="mb-3">With a background in agronomy engineering and international business, her professional journey has taken her across three different continents, shaping a profound understanding of global markets and cultural nuances. She has honed her expertise in driving innovation and forging impactful partnerships in diverse food production ecosystems.</p>`
   },
   {
     name: 'Dr. Tawanda Mthintwa Hove',

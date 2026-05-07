@@ -1,87 +1,81 @@
 "use client"
-import React, { Fragment, useEffect, useState } from 'react'
+import React, { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
-import getStripe from '../get_stripe'
 import { useRouter, useSearchParams } from 'next/navigation'
-import { useForm } from 'react-hook-form'
+import { Controller, useForm } from 'react-hook-form'
 import BackButton from './BackButton'
 import Link from 'next/link'
 import { ClockIcon } from '@heroicons/react/24/outline'
+import { countryCodes } from './ResourceForm'
+import getStripe from '../get_stripe'
 
 interface User {
     firstName: string;
     lastName: string;
     companyName: string;
     jobTitle: string;
+    countryCode: string;
     mobileNumber: string;
     country: string;
     email: string;
     confirmEmail: string;
 }
 
+// const networkingSoireePriceId = 'price_1TU6d9KMWpUKzQVzbvEL5xFJ' // production
+const networkingSoireePriceId = 'price_1TUHu5KMWpUKzQVzaZLAIhUe' // testing
+
 const RegisterForm = () => {
     const router = useRouter()
     const searchParams = useSearchParams()
     const [isAgree, setIsAgree] = useState(false)
-    const [origin, setOrigin] = useState('')
     const [openTermsAndConditions, setOpenTermsAndConditions] = useState(false)
     const [openLetterOfInvitation, setOpenLetterOfInvitation] = useState(false)
     const [openNotice, setOpenNotice] = useState(false)
-
-    useEffect(() => {
-        if (typeof window !== "undefined") {
-            setOrigin(window.location.origin)
-        }
-    }, [])
 
     const {
         register,
         handleSubmit,
         watch,
+        control,
         formState: { errors },
-    } = useForm();
-
-    const redirectToCheckout = async (formData: User) => {
-        try {
-            const line_items = searchParams?.get('line_items') as string;
-            const parsedLineItems = JSON.parse(line_items)
-            const encryptedFormData = JSON.stringify(formData)
-            if (line_items) {
-                try {
-                    await fetch('/api/checkout-sessions', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify(
-                            {
-                                line_items: parsedLineItems,
-                                formData,
-                                origin
-                            }
-                        )
-                    }).then(response => response.json())
-                        .then(async data => {
-                            const stripe = await getStripe();
-                            await stripe?.redirectToCheckout({ sessionId: data?.response?.retrievedSession?.id })
-                        }).catch(error => {
-                            console.log(error);
-                        });
-                } catch (error) {
-                    alert(error)
-                }
-            }
-        } catch (error) {
-            console.log(error)
-        }
-    }
+    } = useForm<User>();
 
     const onSubmit = async (data: any) => {
         try {
             const { email, confirmEmail } = data;
             if (data) {
                 if (email === confirmEmail) {
-                    await redirectToCheckout(data)
+                    const line_items = searchParams?.get('line_items') as string;
+                    if (!line_items) return;
+                    const parsedLineItems = JSON.parse(line_items) as { price: string }[];
+                    const hasNetworkingSoiree = parsedLineItems.some(
+                        (item) => item.price === networkingSoireePriceId
+                    )
+                    if (hasNetworkingSoiree) {
+                        const origin = window.location.origin
+                        const dataRes = await fetch('/api/checkout-sessions', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify({
+                                line_items: parsedLineItems,
+                                formData: data,
+                                origin,
+                            }),
+                        })
+                        const dataResJson = await dataRes.json()
+                        const stripe = await getStripe()
+                        await stripe?.redirectToCheckout({
+                            sessionId: dataResJson?.response?.retrievedSession?.id,
+                        })
+                        return
+                    }
+                    const query = new URLSearchParams({
+                        line_items,
+                        buyer_data: JSON.stringify(data),
+                    });
+                    router.push(`/register/add-ons?${query.toString()}`)
                 }
             }
         } catch (error) {
@@ -96,7 +90,7 @@ const RegisterForm = () => {
         <>
             <div className="z-40 py-12 bg-white sm:py-20">
                 <div className="max-w-screen-md px-4 mx-auto mb-12">
-                    <h2 className="mb-4 text-4xl font-bold tracking-tight text-center text-gray-900"><span className='text-lime-700'>Personal</span> Information</h2>
+                    <h2 className="mb-4 text-4xl font-bold tracking-tight text-center text-gray-900"><span className='text-lime-700'>Delegate</span> Information</h2>
                     <form className="space-y-8" onSubmit={handleSubmit(onSubmit)}>
                         <div className='flex gap-4'>
                             <div className='w-1/2'>
@@ -123,11 +117,38 @@ const RegisterForm = () => {
                         <div className='flex gap-4'>
                             <div className='w-1/2'>
                                 <label htmlFor="mobileNumber" className="block mb-2 text-sm font-medium text-gray-900">Mobile Number</label>
-                                <input {...register('mobileNumber')} type='number' className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500" required />
+                                <div className='flex gap-4'>
+                                    <Controller
+                                        control={control}
+                                        name="countryCode"
+                                        rules={{ required: true }}
+                                        render={({ field }) => (
+                                            <select {...field} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500" required>
+                                                <option value="">Country Code</option>
+                                                {countryCodes.map((country) => (
+                                                    <option key={country.code} value={country.dial_code}>{country.name} ({country.dial_code})</option>
+                                                ))}
+                                            </select>
+                                        )}
+                                    />
+                                    <input {...register('mobileNumber', { required: true })} type='tel' className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500" required />
+                                </div>
                             </div>
                             <div className='w-1/2'>
                                 <label htmlFor="country" className="block mb-2 text-sm font-medium text-gray-900">Country</label>
-                                <input {...register('country', { required: true, pattern: /^[a-zA-Z0-9\s&@#*!]+$/ })} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500" required />
+                                <Controller
+                                    control={control}
+                                    name="country"
+                                    rules={{ required: true }}
+                                    render={({ field }) => (
+                                        <select {...field} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500" required>
+                                            <option value="">Select Country</option>
+                                            {countryCodes.map((country) => (
+                                                <option key={country.code} value={country.name}>{country.name}</option>
+                                            ))}
+                                        </select>
+                                    )}
+                                />
                             </div>
                         </div>
 
@@ -171,8 +192,7 @@ const RegisterForm = () => {
                             </div>
                         </fieldset>
                         <div className="flex justify-end">
-                            <input type="submit" className="flex justify-center px-3 py-2 text-sm font-semibold text-white border border-transparent rounded-md shadow-sm bg-lime-700 hover:cursor-pointer hover:bg-lime-900 focus:outline-none"
-                            />
+                            <input type="submit" value="Next" className="flex justify-center px-3 py-2 text-sm font-semibold text-white border border-transparent rounded-md shadow-sm bg-lime-700 hover:cursor-pointer hover:bg-lime-900 focus:outline-none" />
                         </div>
                     </form>
                     <BackButton />
