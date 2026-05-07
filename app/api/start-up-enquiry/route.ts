@@ -47,7 +47,7 @@ export async function POST(request: NextRequest) {
 
     await transporter.sendMail({
       from: `World Coffee Innovation Summit Team <${user}>`,
-      to: "kyllemadrigal08@gmail.com",
+      to: "info@worldcoffeealliance.com",
       subject: "WCIS26 Start-Up pass enquiry",
       html: `
         <div>Hi team,</div>

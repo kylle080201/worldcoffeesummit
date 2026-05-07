@@ -76,7 +76,7 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, line_items }: an
                                 Thank you for registering for the <span className="font-bold">4<sup>th</sup> World Coffee Innovation Summit London 2026</span>.
                             </p>
                             <p className="mt-6 text-[32px] leading-tight tracking-tight text-gray-900">
-                                You're also confirmed for the <span className="font-bold">Networking Soiree at the UK House of Lords.</span>
+                                You&apos;re also confirmed for the <span className="font-bold">Networking Soiree at the UK House of Lords.</span>
                             </p>
                             <p className="mt-6 text-[32px] leading-tight tracking-tight text-gray-900">
                                 A confirmation email has been sent with further details.
@@ -102,7 +102,7 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, line_items }: an
                             </p>
                             <div className='flex flex-col gap-5 mt-8 sm:flex-row sm:items-center'>
                                 <p className="text-[32px] leading-tight tracking-tight text-gray-900">
-                                    Still haven't received it?
+                                    Still haven&apos;t received it?
                                 </p>
                                 <div className="flex justify-center gap-x-6">
                                     <button

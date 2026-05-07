@@ -12,7 +12,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
   const line_items = JSON.stringify(req.line_items);
   const formData = JSON.stringify(req.formData);
   const origin = req.origin;
-  const encryptedFormData = encryptData(formData);
+  const encryptedFormData = encryptData(formData) ?? "";
   const encodedLineItems = encodeURIComponent(line_items);
   const encodedBuyerData = encodeURIComponent(encryptedFormData);
   try {
