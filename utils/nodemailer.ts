@@ -1,6 +1,13 @@
 import nodemailer from "nodemailer";
+import path from "path";
 
 const user = process.env.EMAIL;
+const confirmationBannerPath = path.join(
+    process.cwd(),
+    "images",
+    "Banner for Confirmation Email.jpg"
+);
+const confirmationBannerCid = "confirmation-email-banner";
 const pass = process.env.EMAIL_PASS;
 
 export const transporter = nodemailer.createTransport({
@@ -40,6 +47,11 @@ export const mailer = async (data: any) => {
                 companyName,
             }),
             attachments: [
+                {
+                    filename: "confirmation-banner.jpg",
+                    path: confirmationBannerPath,
+                    cid: confirmationBannerCid,
+                },
                 {
                     filename: "qr-code-downloadable.jpg", // Replace with your image file name
                     path: `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.worldcoffeeinnovationsummit.com/pdf/${id}`, // Replace with the actual path of your image file
@@ -190,12 +202,13 @@ const generateEmailContent = ({
                                 line-height: 25px;
                                 color: #232323;
                                 " class="padding message-content">
-                                                        <!--
                                                         <div class="header-image">
                                                             <img width="500"
-                                                                src="https://worldcoffeealliance.com/wp-content/uploads/2025/04/Confirmation-Email-Banner-scaled.jpg" />
+                                                                alt="World Coffee Innovation Summit London"
+                                                                src="cid:${confirmationBannerCid}"
+                                                                style="display:block;max-width:100%;height:auto;"
+                                                            />
                                                         </div>
-                                                        -->
                                                         <div class="form-container">
                                                             <p> Hi ${firstName},</p>
                                                             <p>Thank you for registering as a delegate to the World Coffee Innovation Summit London 2026.</p>
