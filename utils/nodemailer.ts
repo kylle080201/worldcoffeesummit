@@ -156,7 +156,16 @@ const generateEmailContent = ({
             }
 
             .header-image {
-                width: 20%;
+                width: 100%;
+                max-width: 100%;
+                margin: 0 0 20px 0;
+            }
+
+            .header-image img {
+                width: 100% !important;
+                max-width: 100%;
+                height: auto !important;
+                display: block;
             }
 
             .qr-code {
@@ -187,7 +196,7 @@ const generateEmailContent = ({
         <table border="0" cellpadding="0" cellspacing="0" width="100%">
             <tr>
                 <td bgcolor="#ffffff" align="center" style="padding: 10px 15px 30px 15px" class="section-padding">
-                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 500px"
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px"
                         class="responsive-table">
                         <tr>
                             <td>
@@ -203,10 +212,11 @@ const generateEmailContent = ({
                                 color: #232323;
                                 " class="padding message-content">
                                                         <div class="header-image">
-                                                            <img width="500"
+                                                            <img
+                                                                width="600"
                                                                 alt="World Coffee Innovation Summit London"
                                                                 src="cid:${confirmationBannerCid}"
-                                                                style="display:block;max-width:100%;height:auto;"
+                                                                style="display:block;width:100%;max-width:600px;height:auto;border:0;outline:none;"
                                                             />
                                                         </div>
                                                         <div class="form-container">
