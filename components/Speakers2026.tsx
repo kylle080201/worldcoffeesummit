@@ -8,8 +8,6 @@ import tawandaImage from '../images/2026-speakers/Gates-Foundation-Tawanda-Mthin
 import gatesLogo from '../images/2026-speakers/Gates-Foundation-Tawanda-Mthintwa-Hove/3840px-Gates_Foundation_Logo.svg.png'
 import marisaImage from '../images/2026-speakers/SC-Marisa Drew/Marisa Drew.png'
 import marisaLogo from '../images/2026-speakers/SC-Marisa Drew/sc-lock-up-english-grey-rgb.png'
-import peterImage from '../images/2026-speakers/FT-Peter Foster/Peter Foster.jpg'
-import peterFtLogo from '../images/2026-speakers/FT-Peter Foster/FT logo-non-official.jpg'
 import jennyImage from '../images/2026-speakers/Bain & Co.-Jenny Davis-Peccoud/Jenny Davis-Peccoud.jpg'
 import bainLogo from '../images/2026-speakers/Bain & Co.-Jenny Davis-Peccoud/bainstackedlogo_dig_red_1280x389px (1).png'
 import prueImage from '../images/2026-speakers/Google-Prue Mackenzie/prue photo (1).jpg'
@@ -35,6 +33,7 @@ const stefanImage = '/images/2026-speakers/stefan-dierks.jpg'
 const melittaLogo = '/images/2026-speakers/melitta-logo.jpg'
 const malcolmImage = '/images/2026-speakers/malcolm-hett.jpg'
 const uccLogo = '/images/2026-speakers/ucc-europe-logo.png'
+const peterImage = '/images/2026-speakers/peter-foster.jpg'
 const financialTimesLogo = '/images/2026-speakers/financial-times-logo.jpg'
 const michaelImage = '/images/2026-speakers/michael-mowat.jpg'
 const ibmLogo = '/images/2026-speakers/michael-ibm-logo-v3.png'
@@ -201,7 +200,7 @@ const speakers: Speaker[] = [
     designation: 'World Trade Editor',
     organization: 'Financial Times (FT)',
     image: peterImage,
-    logo: peterFtLogo,
+    logo: financialTimesLogo,
     iconHeight: 80,
     iconWidth: 80,
     description: 'Peter Foster is the world trade editor of the Financial Times. His brief is to report on the shifting landscape of global supply chains, investment and trade patterns being reorientated as a result of pressures being applied by the second Trump administration. Previously Peter was UK policy editor, reporting on the UK\'s post-Brexit trade, regulatory and investment environment. Peter appears regularly discussing policy issues on radio and television broadcasts, including BBC, RTE as well as Italian and German stations. He joined the FT in April 2020 from the Telegraph Media Group where he had held the position of Europe editor since 2015, focusing on the Brexit negotiations. He has more than two decades of experience covering global affairs from all sides of the world, based in New Delhi (2004-2008) and Beijing (2008-2012), as well as Washington DC, where he served as The Telegraph\'s US editor from 2012-2015. His book What Went Wrong with Brexit - and what we can do about it was published by Canongate in September 2023. It was a Waterstones \'best book of 2023\', a Guardian \'if you read one book about politics\' pick and a Christmas Book choice by \'The Week\'.'
