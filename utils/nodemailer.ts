@@ -164,19 +164,6 @@ const generateEmailContent = ({
                 margin: 0 !important;
             }
 
-            .header-image {
-                width: 100%;
-                max-width: 100%;
-                margin: 0 0 20px 0;
-            }
-
-            .header-image img {
-                width: 100% !important;
-                max-width: 100%;
-                height: auto !important;
-                display: block;
-            }
-
             .qr-code {
                 display: flex;
                 flex-direction: row;
@@ -220,19 +207,30 @@ const generateEmailContent = ({
                                 line-height: 25px;
                                 color: #232323;
                                 " class="padding message-content">
-                                                        <div class="header-image">
-                                                            <img
-                                                                width="600"
-                                                                alt="World Coffee Innovation Summit London"
-                                                                src="cid:${confirmationBannerCid}"
-                                                                style="display:block;width:100%;max-width:600px;height:auto;border:0;outline:none;"
-                                                            />
-                                                        </div>
+                                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;">
+                                                            <tr>
+                                                                <td align="center" style="padding:0 0 24px 0;text-align:center;">
+                                                                    <table role="presentation" align="center" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin:0 auto;">
+                                                                        <tr>
+                                                                            <td align="center" style="padding:0;text-align:center;">
+                                                                                <img
+                                                                                    width="600"
+                                                                                    alt="World Coffee Innovation Summit London"
+                                                                                    src="cid:${confirmationBannerCid}"
+                                                                                    border="0"
+                                                                                    style="display:block;width:600px;max-width:100%;height:auto;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;margin:0 auto;"
+                                                                                />
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
                                                         <div class="form-container">
                                                             <p>Dear ${firstName},</p>
                                                             ${isNetworkingSoireeOnly
             ? `<p>Thank you for registering for the Networking Soirée at the UK House of Lords.</p>`
-            : `<p>Thank you for registering as a delegate to the World Coffee Innovation Summit London 2026.</p>`}
+            : `<p>Thank you for registering for the 4th World Coffee Innovation Summit London 2026.</p>`}
                                                             ${hasNetworkingSoiree && !isNetworkingSoireeOnly
             ? `<p>You&apos;re also confirmed for the Networking Soirée at the UK House of Lords.</p>`
             : ""}
@@ -240,7 +238,7 @@ const generateEmailContent = ({
                                                             ${isNetworkingSoireeOnly
             ? `
                                                             <p><b>Please note</b></p>
-                                                            <p>The Networking Soirée is exclusively for registered summit delegates.</p>
+                                                            <p>The Networking Soirée pass is available to attendees with confirmed summit access.</p>
                                                             <p>If you haven&apos;t yet registered for the <b>World Coffee Innovation Summit London 2026</b>, you can do so below.</p>
                                                             <p>
                                                                 <a target="_blank"
@@ -254,7 +252,7 @@ const generateEmailContent = ({
                                                             ${!hasNetworkingSoiree
             ? `
                                                             <p><b>Join the Networking Soirée at the UK House of Lords</b><br>
-                                                            A two-hour, invite-only reception with senior stakeholders</p>
+                                                            A two-hour, invite-only reception with global leaders and senior stakeholders</p>
                                                             <p><i>Limited capacity</i></p>
                                                             <p>
                                                                 <a target="_blank"
@@ -274,8 +272,8 @@ const generateEmailContent = ({
                                                                     <div>${firstName} ${lastName}</div>
                                                                     <div>${jobTitle}</div>
                                                                     <div>${companyName}</div>
-                                                                    ${isNetworkingSoireeOnly ? "" : `<div>${email}</div>`}
-                                                                    ${isNetworkingSoireeOnly ? "" : `<div>${ticketName}</div>`}
+                                                                    <div>${email}</div>
+                                                                    <div>${ticketName}</div>
                                                                 </div>
                                                             </div>
                                                             <p><b>Event Details</b></p>

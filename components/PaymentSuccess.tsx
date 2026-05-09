@@ -3,8 +3,25 @@ import React, { useEffect, useState } from 'react'
 import 'crypto-js/enc-utf8';
 import { IResponseData } from '../types/responseData';
 import Image from 'next/image';
+import getStripe from '../get_stripe'
 
-function PaymentSuccess({ checkoutSessionId, decryptedFormData, line_items }: any) {
+const networkingLineItem = {
+    price: 'price_1TUHu5KMWpUKzQVzaZLAIhUe', // testing
+    quantity: 1,
+    tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'] as const,
+}
+
+function PaymentSuccess({
+    checkoutSessionId,
+    decryptedFormData,
+    line_items,
+    registrationFlow,
+}: {
+    checkoutSessionId?: string
+    decryptedFormData: Record<string, unknown>
+    line_items: string | unknown[]
+    registrationFlow?: string
+}) {
     const RESEND_COOLDOWN_MS = 3 * 60 * 1000
     const resendCooldownKey = `payment-success-resend-cooldown-${checkoutSessionId ?? 'unknown'}`
     const [res, setRes] = useState<IResponseData>(Object)
@@ -17,6 +34,8 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, line_items }: an
     const [cooldownEndTime, setCooldownEndTime] = useState(0)
     const [now, setNow] = useState(Date.now())
     const [errorMessage, setErrorMessage] = useState('')
+    const [isAddOnCheckoutLoading, setIsAddOnCheckoutLoading] = useState(false)
+    const [addOnCheckoutError, setAddOnCheckoutError] = useState('')
     const getReadableError = (error: unknown, fallback: string) => {
         if (typeof error === 'string' && error.trim()) return error
         if (error && typeof error === 'object' && 'message' in error && typeof (error as { message?: unknown }).message === 'string') {
@@ -127,11 +146,47 @@ function PaymentSuccess({ checkoutSessionId, decryptedFormData, line_items }: an
         hasNetworkingSoiree &&
         parsedLineItems.length === 1 &&
         parsedLineItems[0]?.price === 'price_1TUHu5KMWpUKzQVzaZLAIhUe'
+    const isNetworkingAddonConfirmation =
+        registrationFlow === 'networking_addon' && isNetworkingSoireeOnly && hasNetworkingSoiree
 
     const eventUrl = 'https://www.worldcoffeeinnovationsummit.com'
     const linkedInShareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(eventUrl)}`
-    const networkingSoireeRegistrationUrl =
-        '/register/form?line_items=%5B%7B"price"%3A"price_1TUHu5KMWpUKzQVzaZLAIhUe"%2C"quantity"%3A1%2C"tax_rates"%3A%5B"txr_1NCgheKMWpUKzQVzZ761hX9q"%5D%7D%5D'
+
+    const startNetworkingAddOnCheckout = async () => {
+        try {
+            setAddOnCheckoutError('')
+            setIsAddOnCheckoutLoading(true)
+            if (!decryptedFormData?.email) {
+                setAddOnCheckoutError('Unable to continue: missing registration details. Please contact support.')
+                return
+            }
+            const origin = typeof window !== 'undefined' ? window.location.origin : ''
+            const res = await fetch('/api/checkout-sessions', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    line_items: [networkingLineItem],
+                    formData: decryptedFormData,
+                    origin,
+                    registration_flow: 'networking_addon',
+                }),
+            })
+            const data = await res.json()
+            const sessionId = data?.response?.retrievedSession?.id
+            if (!res.ok || !sessionId) {
+                setAddOnCheckoutError(
+                    typeof data?.message === 'string' ? data.message : 'Unable to start checkout. Please try again.'
+                )
+                return
+            }
+            const stripe = await getStripe()
+            await stripe?.redirectToCheckout({ sessionId })
+        } catch {
+            setAddOnCheckoutError('Unable to start checkout. Please try again.')
+        } finally {
+            setIsAddOnCheckoutLoading(false)
+        }
+    }
     const shareCopyText = `Looking forward to attending the 4th World Coffee Innovation Summit London,
 21-22 October 2026.
 
@@ -154,7 +209,7 @@ Join me: ${eventUrl}`
             <div className="bg-white">
                 <div className="flex-shrink-0 max-w-3xl px-6 py-20 mx-auto sm:px-6 sm:py-32 lg:px-8 md:max-w-7xl">
                     {res?.res?.ticketName ?
-                        <div className="mt-6 justify-left md:mt-12">
+                        <div className="justify-left">
                             <Image
                                 src="https://worldcoffeealliance.com/wp-content/uploads/2024/04/world-coffee-innovation-summit-high-resolution-logo-transparent-1.png"
                                 alt="World Coffee Innovation Summit logo"
@@ -162,13 +217,19 @@ Join me: ${eventUrl}`
                                 height={180}
                                 className="object-contain w-full max-w-md mb-6"
                             />
-                            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-12">
+                            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-12 lg:mt-24">
                                 REGISTRATION CONFIRMED
                             </h2>
                             <p className="mt-6 text-[32px] leading-tight tracking-tight text-gray-900">
-                                {isNetworkingSoireeOnly ? (
+                                {isNetworkingAddonConfirmation ? (
                                     <>
-                                        Thank you for registering for the <span className="font-bold">4<sup>th</sup> Networking Soir&eacute;e at the UK House of Lords.</span>
+                                        Your <span className="font-bold">Networking Soir&eacute;e</span> add-on is
+                                        confirmed. Your summit delegate registration is unchanged.
+                                    </>
+                                ) : isNetworkingSoireeOnly ? (
+                                    <>
+                                        Thank you for registering for the{' '}
+                                        <span className="font-bold">Networking Soirée at the UK House of Lords.</span>
                                     </>
                                 ) : (
                                     <>
@@ -184,11 +245,11 @@ Join me: ${eventUrl}`
                             <p className="mt-6 text-[32px] leading-tight tracking-tight text-gray-900">
                                 A confirmation email has been sent with further details.
                             </p>
-                            {isNetworkingSoireeOnly ? (
+                            {isNetworkingSoireeOnly && !isNetworkingAddonConfirmation ? (
                                 <div className="mt-8">
                                     <p className="text-[32px] font-bold leading-tight tracking-tight text-gray-900">Please note</p>
                                     <p className="text-[30px] leading-tight tracking-tight text-gray-900">
-                                        The Networking Soiree is exclusively for registered summit delegates.
+                                        The Networking Soirée pass is available to attendees with confirmed summit access.
                                     </p>
                                     <p className="mt-8 text-[32px] leading-tight tracking-tight text-gray-900">
                                         If you haven&apos;t yet registered for the <span className="font-bold">World Coffee Innovation Summit London 2026</span>, you can do so below.
@@ -223,15 +284,20 @@ Join me: ${eventUrl}`
                                         Join the Networking Soir&eacute;e at the UK House of Lords
                                     </h3>
                                     <p className="mt-2 text-[32px] leading-tight tracking-tight text-gray-900">
-                                        A two-hour, invite-only reception with senior stakeholders
+                                        A two-hour, invite-only reception with global leaders and senior stakeholders
                                     </p>
                                     <p className="mt-4 text-[30px] italic text-red-600">Limited capacity</p>
-                                    <a
-                                        href={networkingSoireeRegistrationUrl}
-                                        className="inline-block px-6 py-2 mt-6 text-[32px] font-bold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800"
+                                    <button
+                                        type="button"
+                                        onClick={startNetworkingAddOnCheckout}
+                                        disabled={isAddOnCheckoutLoading}
+                                        className="inline-block px-6 py-2 mt-6 text-[32px] font-bold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800 disabled:cursor-not-allowed disabled:opacity-60"
                                     >
-                                        Add Networking Soir&eacute;e
-                                    </a>
+                                        {isAddOnCheckoutLoading ? 'Redirecting…' : 'Add Networking Soirée'}
+                                    </button>
+                                    {addOnCheckoutError ? (
+                                        <p className="mt-3 text-lg text-red-700">{addOnCheckoutError}</p>
+                                    ) : null}
                                 </div>
                             ) : null}
                             <p className="mt-8 text-[32px] leading-tight tracking-tight text-gray-900">

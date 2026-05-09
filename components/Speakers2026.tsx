@@ -29,8 +29,6 @@ const ofiLogo = '/images/2026-speakers/ofi-logo.png'
 const marioImage = '/images/2026-speakers/mario-abreu.jpg'
 const andreImage = '/images/2026-speakers/andre-van-den-beld.jpg'
 const etgLogo = '/images/2026-speakers/etg-logo.png'
-const stefanImage = '/images/2026-speakers/stefan-dierks.jpg'
-const melittaLogo = '/images/2026-speakers/melitta-logo.jpg'
 const malcolmImage = '/images/2026-speakers/malcolm-hett.jpg'
 const uccLogo = '/images/2026-speakers/ucc-europe-logo.png'
 const peterImage = '/images/2026-speakers/peter-foster.jpg'
@@ -164,16 +162,6 @@ const speakers: Speaker[] = [
     iconHeight: 80,
     iconWidth: 80,
     description: 'Andre van den Beld is Chief Sustainability Officer at ETG, one of the largest global agri commodity trading and processing firms, with its stronghold in Sub-Sahara Africa. He has over 15 years of experience in building dedicated supply chains in various tropical commodities including cocoa, cashew, coffee, soya, cotton and fertilizers. Leading a 500+ FTE multidisciplinary team, ETG is mainly focusing on innovations at scale, such as waste recycling, renewable energy, biochar fertilizers and women finance solutions.'
-  },
-  {
-    name: 'Stefan Dierks',
-    designation: 'Director Sustainability Strategy',
-    organization: 'Melitta Group',
-    image: stefanImage,
-    logo: melittaLogo,
-    iconHeight: 80,
-    iconWidth: 80,
-    description: 'Stefan Dierks is since 2019 Director Sustainability Strategy at Melitta Group. In this role he is responsible for the group-wide coordination and monitoring of the Melitta sustainability transformation process. He has 19-years\' sustainability experience across different economic sectors, with a special focus on the coffee value chain. Due to his prior professional experience as HR coach and developer, he places a high value on the needs of human beings in transformation processes. Along with his engagement in the mentioned sectors, he is engaged in various sector and sustainability associations and initiatives, on global as well as European and German scale. Stefan studied Environmental Sciences at the Leuphana Luneburg in Germany. He is engaged in different alliances, e.g. as a Board Member of the Global Coffee Platform GCP, Member of the Advisory Board of BAUM e.V., as well as Member of the Board of Trustees of the German Consumer Protection Foundation. Stefan regularly gives lectures, e.g. at universities and at conferences.'
   },
   {
     name: 'Malcolm Hett',

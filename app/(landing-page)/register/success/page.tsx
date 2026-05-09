@@ -10,6 +10,9 @@ export default function Success({ searchParams }: any) {
     const buyerDataParam = Array.isArray(searchParams?.buyer_data)
         ? searchParams.buyer_data[0]
         : searchParams?.buyer_data;
+    const registrationFlowParam = Array.isArray(searchParams?.registration_flow)
+        ? searchParams.registration_flow[0]
+        : searchParams?.registration_flow
 
     let decryptedFormData: any = null
     let line_items = ''
@@ -32,7 +35,14 @@ export default function Success({ searchParams }: any) {
         <>
             <RegistrationSteps steps={steps} />
             {decryptedFormData
-                ? <PaymentSuccess checkoutSessionId={checkoutSessionId} line_items={line_items} decryptedFormData={JSON.parse(decryptedFormData)} />
+                ? (
+                    <PaymentSuccess
+                        checkoutSessionId={checkoutSessionId}
+                        line_items={line_items}
+                        decryptedFormData={JSON.parse(decryptedFormData)}
+                        registrationFlow={typeof registrationFlowParam === 'string' ? registrationFlowParam : undefined}
+                    />
+                )
                 : (
                     <div className="max-w-3xl px-6 py-12 mx-auto text-base text-red-700 sm:text-lg">
                         Unable to load your registration confirmation details. Please refresh this page or contact support.

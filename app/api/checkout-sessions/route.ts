@@ -15,6 +15,12 @@ export async function POST(request: NextRequest, response: NextResponse) {
   const encryptedFormData = encryptData(formData) ?? "";
   const encodedLineItems = encodeURIComponent(line_items);
   const encodedBuyerData = encodeURIComponent(encryptedFormData);
+  const registrationFlow =
+    typeof req.registration_flow === "string" ? req.registration_flow : "";
+  const registrationFlowQuery =
+    registrationFlow === "networking_addon"
+      ? "&registration_flow=networking_addon"
+      : "";
   try {
     const session = await stripe.checkout.sessions.create({
       custom_text: {
@@ -29,7 +35,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
       mode: "payment",
       payment_method_types: ["card"],
       line_items: JSON.parse(line_items),
-      success_url: `${origin}/register/success?session_id={CHECKOUT_SESSION_ID}&line_items=${encodedLineItems}&buyer_data=${encodedBuyerData}`,
+      success_url: `${origin}/register/success?session_id={CHECKOUT_SESSION_ID}&line_items=${encodedLineItems}&buyer_data=${encodedBuyerData}${registrationFlowQuery}`,
       cancel_url: `${origin}/register`,
       metadata: {
         cc_email: 'events@worldcoffeealliance.com',

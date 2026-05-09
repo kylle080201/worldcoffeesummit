@@ -99,7 +99,7 @@ function NetworkingSoireeStep() {
                 </h2>
                 <p className="text-xl text-gray-900">Early evening of Day 1, Wednesday, 21 October 2026</p>
                 <p className="mt-6 text-lg text-gray-900">
-                    A two-hour, invite-only reception bringing together senior stakeholders in a unique and historic setting.
+                    A two-hour, invite-only reception bringing together global leaders and senior stakeholders in a unique and historic setting.
                 </p>
                 <p className="mt-2 text-lg text-gray-900">Most attendees join this reception.</p>
 
