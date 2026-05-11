@@ -13,12 +13,12 @@ export default function NetworkingSoiree() {
   const line_items = JSON.parse(searchParams?.get('line_items') as string) as T_Line_Items[];
   const formData = JSON.parse(decodeURIComponent(searchParams?.get('formData') as string));
   const networkingSoireeTicket = {
-    // price: 'price_1TU6d9KMWpUKzQVzbvEL5xFJ', // production
-    price: 'price_1TVyh9KMWpUKzQVzYXpxkkUr', // prod testing (£5)
+    price: 'price_1TU6d9KMWpUKzQVzbvEL5xFJ', // production
+    // price: 'price_1TVyh9KMWpUKzQVzYXpxkkUr', // prod testing (£5)
     // price: 'price_1TUHu5KMWpUKzQVzaZLAIhUe', // testing
     quantity: 1,
     tax_rates: [
-      'txr_1NBBYeKMWpUKzQVzkTT4Wib4', // production (active — prod testing uses live Stripe)
+      'txr_1NBBYeKMWpUKzQVzkTT4Wib4', // production
       // 'txr_1NCgheKMWpUKzQVzZ761hX9q', // testing
     ],
   }

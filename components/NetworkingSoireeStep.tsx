@@ -6,12 +6,12 @@ import getStripe from '../get_stripe'
 import BackButton from './BackButton'
 
 const networkingLineItem = {
-    // price: 'price_1TU6d9KMWpUKzQVzbvEL5xFJ', // production
-    price: 'price_1TVyh9KMWpUKzQVzYXpxkkUr', // prod testing (£5)
+    price: 'price_1TU6d9KMWpUKzQVzbvEL5xFJ', // production
+    // price: 'price_1TVyh9KMWpUKzQVzYXpxkkUr', // prod testing (£5)
     // price: 'price_1TUHu5KMWpUKzQVzaZLAIhUe', // testing
     quantity: 1,
     tax_rates: [
-        'txr_1NBBYeKMWpUKzQVzkTT4Wib4', // production (active — prod testing uses live Stripe)
+        'txr_1NBBYeKMWpUKzQVzkTT4Wib4', // production
         // 'txr_1NCgheKMWpUKzQVzZ761hX9q', // testing
     ],
 }
