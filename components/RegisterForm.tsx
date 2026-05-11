@@ -21,8 +21,8 @@ interface User {
     confirmEmail: string;
 }
 
-// const networkingSoireePriceId = 'price_1TU6d9KMWpUKzQVzbvEL5xFJ' // production
-const networkingSoireePriceId = 'price_1TVyh9KMWpUKzQVzYXpxkkUr' // prod testing (£5)
+const networkingSoireePriceId = 'price_1TU6d9KMWpUKzQVzbvEL5xFJ' // production
+// const networkingSoireePriceId = 'price_1TVyh9KMWpUKzQVzYXpxkkUr' // prod testing (£5)
 // const networkingSoireePriceId = 'price_1TUHu5KMWpUKzQVzaZLAIhUe' // testing
 
 const RegisterForm = () => {

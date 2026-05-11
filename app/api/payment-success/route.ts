@@ -70,16 +70,16 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
     : JSON.parse(req.line_items ?? "[]");
   const selectedLineItem = parsedLineItems[0];
   // Networking Soirée price IDs:
-  //   production:        price_1TU6d9KMWpUKzQVzbvEL5xFJ
-  //   prod testing (£5): price_1TVyh9KMWpUKzQVzYXpxkkUr (active)
+  //   production:        price_1TU6d9KMWpUKzQVzbvEL5xFJ (active)
+  //   prod testing (£5): price_1TVyh9KMWpUKzQVzYXpxkkUr
   //   testing:           price_1TUHu5KMWpUKzQVzaZLAIhUe
   const hasNetworkingSoiree = parsedLineItems.some(
-    (item: { price?: string }) => item?.price === "price_1TVyh9KMWpUKzQVzYXpxkkUr"
+    (item: { price?: string }) => item?.price === "price_1TU6d9KMWpUKzQVzbvEL5xFJ"
   );
   const isNetworkingSoireeOnly =
     hasNetworkingSoiree &&
     parsedLineItems.length === 1 &&
-    selectedLineItem?.price === "price_1TVyh9KMWpUKzQVzYXpxkkUr";
+    selectedLineItem?.price === "price_1TU6d9KMWpUKzQVzbvEL5xFJ";
   const isNetworkingAddonConfirmation =
     registrationFlow === "networking_addon" &&
     isNetworkingSoireeOnly &&
@@ -97,55 +97,55 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
   }
   let ticketName = "Summit Delegate"
 
-  // ORIGINAL PRICES (commented out for test deployment)
-  // switch (line_items[0].price) {
-  //   case "price_1RJ3cYKMWpUKzQVzk2sR6LGo":
-  //     ticketName = "Academics"
-  //     break;
-  //
-  //   case "price_1TU6ZNKMWpUKzQVzFeZzO8Zd":
-  //     ticketName = "NGO / Government / Academic"
-  //     break;
-  //
-  //   case "price_1Rr81dKMWpUKzQVzBqtbsbxH":
-  //     ticketName = "Corporates"
-  //     break;
-  //
-  //   case "price_1Rb9T2KMWpUKzQVzaQhry4yi":
-  //     ticketName = "Start Ups"
-  //     break;
-  //
-  //   case "price_1RVYT2KMWpUKzQVzleFRk7vr":
-  //     ticketName = "Service Providers"
-  //     break;
-  //
-  //   case "price_1TU6d9KMWpUKzQVzbvEL5xFJ":
-  //     ticketName = "Networking Soirée"
-  //     break;
-  // }
-
-  // PROD TESTING PRICES (£5 each — for live testing on production)
+  // PRODUCTION PRICES (active)
   switch (selectedLineItem.price) {
-    case "price_1TVyhwKMWpUKzQVzeGCqN8CQ":
+    case "price_1RJ3cYKMWpUKzQVzk2sR6LGo":
+      ticketName = "Academics"
+      break;
+
+    case "price_1TU6ZNKMWpUKzQVzFeZzO8Zd":
       ticketName = "NGO / Government / Academic"
       break;
 
-    case "price_1RJHLYKMWpUKzQVzFS993eOR":
+    case "price_1Rr81dKMWpUKzQVzBqtbsbxH":
       ticketName = "Corporates"
       break;
 
-    case "price_1RJHKqKMWpUKzQVzqUg2mW67":
+    case "price_1Rb9T2KMWpUKzQVzaQhry4yi":
       ticketName = "Start Ups"
       break;
 
-    case "price_1RLn8fKMWpUKzQVzG5ZhHwZM":
+    case "price_1RVYT2KMWpUKzQVzleFRk7vr":
       ticketName = "Service Providers"
       break;
 
-    case "price_1TVyh9KMWpUKzQVzYXpxkkUr":
+    case "price_1TU6d9KMWpUKzQVzbvEL5xFJ":
       ticketName = "Networking Soirée"
       break;
   }
+
+  // PROD TESTING PRICES (£5 each — for live testing on production)
+  // switch (selectedLineItem.price) {
+  //   case "price_1TVyhwKMWpUKzQVzeGCqN8CQ":
+  //     ticketName = "NGO / Government / Academic"
+  //     break;
+  //
+  //   case "price_1RJHLYKMWpUKzQVzFS993eOR":
+  //     ticketName = "Corporates"
+  //     break;
+  //
+  //   case "price_1RJHKqKMWpUKzQVzqUg2mW67":
+  //     ticketName = "Start Ups"
+  //     break;
+  //
+  //   case "price_1RLn8fKMWpUKzQVzG5ZhHwZM":
+  //     ticketName = "Service Providers"
+  //     break;
+  //
+  //   case "price_1TVyh9KMWpUKzQVzYXpxkkUr":
+  //     ticketName = "Networking Soirée"
+  //     break;
+  // }
 
   // TESTING PRICES
   // switch (selectedLineItem.price) {

@@ -6,7 +6,7 @@ import { BriefcaseBusiness, Landmark, Rocket, Users, Wine, type LucideIcon } fro
 import RegisterCountDown from './RegisterCountDown'
 
 const taxRates = [
-    'txr_1NBBYeKMWpUKzQVzkTT4Wib4', // production (active — prod testing uses live Stripe)
+    'txr_1NBBYeKMWpUKzQVzkTT4Wib4', // production
     // 'txr_1NCgheKMWpUKzQVzZ761hX9q', // testing
 ] as const
 
@@ -49,8 +49,8 @@ export const summit: SummitRow[] = [
         earlyBird: 'Save £300 book before 19 Jun 2026',
         line_items: [
             {
-                // price: 'price_1TU6ZNKMWpUKzQVzFeZzO8Zd', // production
-                price: 'price_1TVyhwKMWpUKzQVzeGCqN8CQ', // prod testing (£5)
+                price: 'price_1TU6ZNKMWpUKzQVzFeZzO8Zd', // production
+                // price: 'price_1TVyhwKMWpUKzQVzeGCqN8CQ', // prod testing (£5)
                 // price: 'price_1TUHqbKMWpUKzQVzAYk5Ctmo', // testing
                 quantity: 1,
                 tax_rates: taxRates,
@@ -67,8 +67,8 @@ export const summit: SummitRow[] = [
         earlyBird: 'Save £400 book before 19 Jun 2026',
         line_items: [
             {
-                // price: 'price_1Rr81dKMWpUKzQVzBqtbsbxH', // production
-                price: 'price_1RJHLYKMWpUKzQVzFS993eOR', // prod testing (£5)
+                price: 'price_1Rr81dKMWpUKzQVzBqtbsbxH', // production
+                // price: 'price_1RJHLYKMWpUKzQVzFS993eOR', // prod testing (£5)
                 // price: 'price_1TUHsIKMWpUKzQVzGM1Fgqg5', // testing
                 quantity: 1,
                 tax_rates: taxRates,
@@ -101,8 +101,8 @@ export const summit: SummitRow[] = [
         earlyBird: 'Save £400 book before 19 Jun 2026',
         line_items: [
             {
-                // price: 'price_1RVYT2KMWpUKzQVzleFRk7vr', // production
-                price: 'price_1RLn8fKMWpUKzQVzG5ZhHwZM', // prod testing (£5)
+                price: 'price_1RVYT2KMWpUKzQVzleFRk7vr', // production
+                // price: 'price_1RLn8fKMWpUKzQVzG5ZhHwZM', // prod testing (£5)
                 // price: 'price_1TUHtiKMWpUKzQVzQK1vBQ1O', // testing
                 quantity: 1,
                 tax_rates: taxRates,
@@ -123,8 +123,8 @@ export const summit: SummitRow[] = [
         rowClassName: 'bg-orange-50',
         line_items: [
             {
-                // price: 'price_1TU6d9KMWpUKzQVzbvEL5xFJ', // production
-                price: 'price_1TVyh9KMWpUKzQVzYXpxkkUr', // prod testing (£5)
+                price: 'price_1TU6d9KMWpUKzQVzbvEL5xFJ', // production
+                // price: 'price_1TVyh9KMWpUKzQVzYXpxkkUr', // prod testing (£5)
                 // price: 'price_1TUHu5KMWpUKzQVzaZLAIhUe', // testing
                 quantity: 1,
                 tax_rates: taxRates,
