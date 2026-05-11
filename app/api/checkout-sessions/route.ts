@@ -1,7 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import Tickets from "../../../models/tickets";
+import Unpaid from "../../../models/unpaid";
 import Stripe from "stripe";
 import { encryptData } from "../../../utils/encryptor";
+import connectMongo from "../../../utils/mongodb";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2024-06-20" as any,
@@ -44,6 +46,42 @@ export async function POST(request: NextRequest, response: NextResponse) {
     const retrievedSession = await stripe.checkout.sessions.retrieve(
       session?.id
     );
+
+    // Track the registration as "unpaid" until the Stripe webhook confirms
+    // payment. Failures here must never block the user from reaching Stripe.
+    try {
+      const rawEmail =
+        typeof req?.formData?.email === "string" ? req.formData.email : "";
+      const email = rawEmail.trim().toLowerCase();
+      if (email && session?.id) {
+        await connectMongo();
+        await Unpaid.findOneAndUpdate(
+          { email },
+          {
+            $set: {
+              email,
+              firstName: req?.formData?.firstName,
+              lastName: req?.formData?.lastName,
+              companyName: req?.formData?.companyName,
+              jobTitle: req?.formData?.jobTitle,
+              countryCode: req?.formData?.countryCode,
+              mobileNumber: req?.formData?.mobileNumber,
+              country: req?.formData?.country,
+              line_items: req?.line_items,
+              checkoutSessionId: session.id,
+              updatedAt: new Date(),
+            },
+            $setOnInsert: { createdAt: new Date() },
+          },
+          { upsert: true, new: true, setDefaultsOnInsert: true }
+        );
+      }
+    } catch (unpaidError: any) {
+      const message =
+        unpaidError instanceof Error ? unpaidError.message : String(unpaidError);
+      console.log(`Unpaid upsert (checkout-sessions) failed: ${message}`);
+    }
+
     return NextResponse.json({
       response: { retrievedSession, origin },
     });

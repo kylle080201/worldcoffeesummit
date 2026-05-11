@@ -114,6 +114,7 @@ export const summit: SummitRow[] = [
         description:
             'Early evening of Day 1 \u00B7 A two-hour, invite-only reception bringing together global leaders and senior stakeholders in a unique and historic setting.',
         subDescription: 'Available to registered delegates only. Limited capacity.',
+        earlyBird: 'Save £30 book before 19 Jun 2026',
         cta: 'Add Now',
         rowClassName: 'bg-orange-50',
         line_items: [
@@ -248,9 +249,7 @@ function TicketPricing() {
                                                         <div className="text-red-700 line-through decoration-red-700">
                                                             {gbp(delegate.old_price)}
                                                         </div>
-                                                        <div className="font-bold text-red-700">
-                                                            {gbp(delegate.item_price)}
-                                                        </div>
+                                                        <div>{gbp(delegate.item_price)}</div>
                                                     </div>
                                                 ) : (
                                                     <div className="w-full h-full text-lg">

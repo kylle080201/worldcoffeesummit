@@ -48,6 +48,25 @@ const RegisterForm = () => {
                     const line_items = searchParams?.get('line_items') as string;
                     if (!line_items) return;
                     const parsedLineItems = JSON.parse(line_items) as { price: string }[];
+
+                    // Track this submission as "unpaid" up front so we still
+                    // capture delegates who abandon before/at Stripe checkout.
+                    // Awaited so the request completes before navigation, but
+                    // wrapped so a failure never blocks the user from paying.
+                    try {
+                        await fetch('/api/unpaid-registrations', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({
+                                formData: data,
+                                line_items: parsedLineItems,
+                            }),
+                            keepalive: true,
+                        })
+                    } catch (err) {
+                        console.log('Failed to record unpaid registration', err)
+                    }
+
                     const hasNetworkingSoiree = parsedLineItems.some(
                         (item) => item.price === networkingSoireePriceId
                     )

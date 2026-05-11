@@ -148,10 +148,10 @@ export default function Overview() {
                 </div>
             </div>
                 <Speakers2026 />
-                <div className="mb-8 w-full flex justify-center">
+                <div className="-mt-12 mb-4 w-full flex justify-center">
                   <Link
                     href="/speakers#speakers-2025"
-                    className="font-bold text-white text-3xl bg-lime-700 px-6 py-3 rounded-lg hover:bg-lime-800 transition duration-300"
+                    className="rounded-lg bg-lime-700 px-6 py-3 text-lg font-bold text-white transition-colors duration-300 hover:bg-lime-800"
                   >
                     2025 SPEAKERS
                   </Link>
@@ -159,16 +159,6 @@ export default function Overview() {
                 <KeyThemes />
                 {/* <Advisoryboard /> */}
                 {/* <Speakertest/> */}
-
-      <div className="mb-8 w-full flex justify-center pt-8">
-        <div
-          className="font-bold text-white text-3xl bg-lime-700 px-6 py-3 rounded-lg hover:bg-lime-800 cursor-pointer transition duration-300"
-          onClick={() => window.location.href = "/agenda"}
-        >
-          2025 AGENDA
-        </div>
-      </div>
-
 
             {/* 2024 SUMMIT HIGHLIGHT */}
             {/* <div className='w-full md:px-0 px-12 py-8 sm:py-12 bg-gray-100'>

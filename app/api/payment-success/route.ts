@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
 import Tickets from "../../../models/tickets";
+import Unpaid from "../../../models/unpaid";
 import connectMongo from "../../../utils/mongodb";
 import { mailer } from "../../../utils/nodemailer";
 
@@ -206,6 +207,25 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
             },
           });
         }
+    }
+
+    // Payment succeeded and the registration is finalised — remove any
+    // matching unpaid entry for this email. Best-effort, never blocks.
+    try {
+      const paidEmailRaw =
+        (typeof res.email === "string" && res.email) ||
+        (typeof formData?.email === "string" && formData.email) ||
+        "";
+      const paidEmail = paidEmailRaw.trim().toLowerCase();
+      if (paidEmail) {
+        await Unpaid.deleteOne({ email: paidEmail });
+      }
+    } catch (cleanupError: any) {
+      const message =
+        cleanupError instanceof Error
+          ? cleanupError.message
+          : String(cleanupError);
+      console.log(`Unpaid cleanup (payment-success) failed: ${message}`);
     }
 
     return NextResponse.json(

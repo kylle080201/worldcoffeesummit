@@ -14,6 +14,8 @@ import prueImage from '../images/2026-speakers/Google-Prue Mackenzie/prue photo 
 import googleLogo from '../images/2026-speakers/Google-Prue Mackenzie/Google Logo.png'
 import katrinaImage from '../images/2026-speakers/HSBC-Katrina-Hayter/Katrina Hayter.jpeg'
 import hsbcLogo from '../images/2026-speakers/HSBC-Katrina-Hayter/Hsbc_logo_PNG2.png'
+import sonyaImage from '../images/2026-speakers/CDP-Sonya Bhonsle/Sonya Bhonsle.jpg'
+import cdpLogo from '../images/2026-speakers/CDP-Sonya Bhonsle/cdp.png'
 const anupImage = '/images/2026-speakers/anup-jagwani.jpg'
 const worldBankLogo = '/images/2026-speakers/world-bank-group-logo.png'
 const teddyImage = '/images/2026-speakers/teddy-esteve.jpg'
@@ -134,26 +136,6 @@ const speakers: Speaker[] = [
     description: 'Mario Abreu has been the Ferrero Group Vice President Sustainability since April 2020, based in Luxembourg. That role entails securing sustainability is fully embedded in the Group\'s long-term business strategy. Prior to Ferrero Mario worked for over 20 years in sustainability for Tetra Pak, the last 5 of them as their Global VP Sustainability based in Lund, Sweden. Throughout his time in Tetra Pak he led teams of up to 100 people globally, developing industry-leading programmes for collection and recycling of beverage cartons. Earlier Mario worked as a technical and commercial director for paper manufacturing and recycling businesses. In addition, he has served on several boards (FSC International, RSPO, High Conservation Value Resource Network, Proforest Initiative, and ACE Beverage Cartons) and technical advisory groups (Science Based Targets initiative). Mario is a Mechanical Engineer, with a Post-Grad Diploma in Environmental Decision Making, having done sustainability and business trainings at CISL (UK), IMD (CH), Ashridge (UK), the Open University (UK), and Fundaçao Getulio Vargas (BR).'
   },
   {
-    name: 'Chrystel Monthean',
-    designation: 'Executive Vice Presidente Americas; Group Executive Board member',
-    organization: 'Yara International',
-    image: chrystelImage,
-    logo: yaraLogo,
-    iconHeight: 80,
-    iconWidth: 80,
-    description: `<p class="mb-3">With deep-rooted experience in the agribusiness sector, Chrystel Monthean is committed to fostering a more inclusive food production system by supporting farmers in their tremendous role of both feeding the world by producing nutritious and high-quality crops and protecting the planet by adopting practices that improve nature as a business.</p><p class="mb-3">As the EVP Americas at Yara International, since 2020, she brings a diverse skill set and a unique approach to tackling the complex challenges specific to the agricultural industry.</p><p class="mb-3">Embracing the richness of diversity, Chrystel champions a workplace that celebrates human beings and empowers each individual to thrive.</p><p class="mb-3">With a background in agronomy engineering and international business, her professional journey has taken her across three different continents, shaping a profound understanding of global markets and cultural nuances. She has honed her expertise in driving innovation and forging impactful partnerships in diverse food production ecosystems.</p>`
-  },
-  {
-    name: 'Marisa Drew',
-    designation: 'Chief Sustainability Officer',
-    organization: 'Standard Chartered',
-    image: marisaImage,
-    logo: marisaLogo,
-    iconHeight: 80,
-    iconWidth: 80,
-    description: ''
-  },
-  {
     name: 'Andre van den Beld',
     designation: 'Chief Sustainability Officer',
     organization: 'Export Trading Group (ETG)',
@@ -174,6 +156,26 @@ const speakers: Speaker[] = [
     description: 'Malcolm has worked within some of the world\'s top 10 largest coffee companies since his first caffeinated role as a Brand Manager in 2007. His experience is mainly on the consumption side of the coffee world, with roles in innovation, marketing, insight - and as a cafe owner - now working at UCC in Europe since 2021, firstly as Director of Innovation and now as Director of Sustainability. With UCC as the Total Coffee Solution behind several well-loved retail and hospitality brands across Europe, Malcolm explores and encourages developing solutions that can deliver against the sustainability goals of UCC\'s customers.'
   },
   {
+    name: 'Chrystel Monthean',
+    designation: 'Executive Vice Presidente Americas; Group Executive Board member',
+    organization: 'Yara International',
+    image: chrystelImage,
+    logo: yaraLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: `<p class="mb-3">With deep-rooted experience in the agribusiness sector, Chrystel Monthean is committed to fostering a more inclusive food production system by supporting farmers in their tremendous role of both feeding the world by producing nutritious and high-quality crops and protecting the planet by adopting practices that improve nature as a business.</p><p class="mb-3">As the EVP Americas at Yara International, since 2020, she brings a diverse skill set and a unique approach to tackling the complex challenges specific to the agricultural industry.</p><p class="mb-3">Embracing the richness of diversity, Chrystel champions a workplace that celebrates human beings and empowers each individual to thrive.</p><p class="mb-3">With a background in agronomy engineering and international business, her professional journey has taken her across three different continents, shaping a profound understanding of global markets and cultural nuances. She has honed her expertise in driving innovation and forging impactful partnerships in diverse food production ecosystems.</p>`
+  },
+  {
+    name: 'Marisa Drew',
+    designation: 'Chief Sustainability Officer',
+    organization: 'Standard Chartered',
+    image: marisaImage,
+    logo: marisaLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: ''
+  },
+  {
     name: 'Dr. Tawanda Mthintwa Hove',
     designation: 'Senior Program Officer, Digital Agronomy',
     organization: 'Gates Foundation',
@@ -182,6 +184,16 @@ const speakers: Speaker[] = [
     iconHeight: 80,
     iconWidth: 80,
     description: ''
+  },
+  {
+    name: 'Prue Mackenzie',
+    designation: 'Director, Retail & CPG, Strategic Industries EMEA',
+    organization: 'Google',
+    image: prueImage,
+    logo: googleLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: 'Prue Mackenzie is a Director at Google Cloud, based in Paris. She is responsible for Google Cloud\'s largest clients in EMEA for the luxury, retail, CPG and travel sectors. Prue leads executives and board members on their AI and agentic journeys to accelerate their strategic priorities. Previously, Prue spent 10 years in Investment Banking at Credit Suisse in global roles across UK/EMEA, Singapore, the US and Australia. A passionate advocate for technology and AI education, Prue is an Industry Fellow at the University of Queensland, President of Harvard Alumni Women in France, and a Board Member of the Harvard Club of France.'
   },
   {
     name: 'Peter Foster',
@@ -202,16 +214,6 @@ const speakers: Speaker[] = [
     iconHeight: 80,
     iconWidth: 80,
     description: 'Jenny Davis-Peccoud is a partner in Bain & Company\'s Amsterdam office. In her almost 30 years at Bain, Jenny has advised clients across a wide range of industries, as well as government entities and NGOs, on topics such as growth strategy, organizational effectiveness, merger integration, business transformation, digital acceleration, pricing, supply chain and leadership team development. A US and French citizen, Jenny has led projects in varied business cultures across Europe, the Middle East, Asia and North America. Jenny founded and heads Bain\'s Global Sustainability & Responsibility practice. In the sustainability sphere, Jenny advises companies on how to tackle social and environmental challenges and opportunities as strategic issues at the heart of their core businesses. Beyond her broad expertise in this area, she has a particular focus on the food value chain, from agriculture to consumer products to retail, as well as the systems solutions needed to drive impactful and lasting change. She directs Bain\'s research in this field, focusing on topics such as the change management challenge of sustainability programs and the role of sustainability in employee engagement. Her work in this area has been published in The Wall Street Journal, The Huffington Post, HBR.org and the Stanford Social Innovation Review. Jenny received her BS from Georgetown University and her MBA, with distinction, from Harvard Business School.'
-  },
-  {
-    name: 'Prue Mackenzie',
-    designation: 'Director, Retail & CPG, Strategic Industries EMEA',
-    organization: 'Google',
-    image: prueImage,
-    logo: googleLogo,
-    iconHeight: 80,
-    iconWidth: 80,
-    description: 'Prue Mackenzie is a Director at Google Cloud, based in Paris. She is responsible for Google Cloud\'s largest clients in EMEA for the luxury, retail, CPG and travel sectors. Prue leads executives and board members on their AI and agentic journeys to accelerate their strategic priorities. Previously, Prue spent 10 years in Investment Banking at Credit Suisse in global roles across UK/EMEA, Singapore, the US and Australia. A passionate advocate for technology and AI education, Prue is an Industry Fellow at the University of Queensland, President of Harvard Alumni Women in France, and a Board Member of the Harvard Club of France.'
   },
   {
     name: 'Michael Mowat',
@@ -242,6 +244,16 @@ const speakers: Speaker[] = [
     iconHeight: 80,
     iconWidth: 80,
     description: 'Toby is currently Head of London Market and Public Private Partnerships at AXA Climate, the specialized entity within the AXA Group, created to address the growing need for climate adaptation across both private and public sectors. He focuses on developing innovative financial solutions to address the growing impacts of climate change. Starting his career at international insurer AIG, Toby has spent over 20 years structuring and deploying global financial mechanisms across retail, commercial, and public sector channels, with a particular emphasis on resilience and adaptation strategies. With extensive experience in re/insurance, derivatives, and ILS, Toby is a passionate advocate for alternative risk transfer as a vital tool for bridging gaps in traditional insurance coverage and enhancing climate resilience across sectors.'
+  },
+  {
+    name: 'Sonya Bhonsle',
+    designation: 'Global Director of Corporates',
+    organization: 'CDP',
+    image: sonyaImage,
+    logo: cdpLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: ''
   },
   {
     name: 'Joy Macknight',
