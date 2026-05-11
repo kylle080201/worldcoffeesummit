@@ -6,9 +6,14 @@ import Image from 'next/image';
 import getStripe from '../get_stripe'
 
 const networkingLineItem = {
-    price: 'price_1TUHu5KMWpUKzQVzaZLAIhUe', // testing
+    // price: 'price_1TU6d9KMWpUKzQVzbvEL5xFJ', // production
+    price: 'price_1TVyh9KMWpUKzQVzYXpxkkUr', // prod testing (£5)
+    // price: 'price_1TUHu5KMWpUKzQVzaZLAIhUe', // testing
     quantity: 1,
-    tax_rates: ['txr_1NCgheKMWpUKzQVzZ761hX9q'] as const,
+    tax_rates: [
+        'txr_1NBBYeKMWpUKzQVzkTT4Wib4', // production (active — prod testing uses live Stripe)
+        // 'txr_1NCgheKMWpUKzQVzZ761hX9q', // testing
+    ] as const,
 }
 
 function PaymentSuccess({
@@ -143,12 +148,12 @@ function PaymentSuccess({
         }
     }, [line_items])
     const hasNetworkingSoiree = parsedLineItems.some(
-        (item: { price?: string }) => item?.price === 'price_1TUHu5KMWpUKzQVzaZLAIhUe'
+        (item: { price?: string }) => item?.price === 'price_1TVyh9KMWpUKzQVzYXpxkkUr'
     )
     const isNetworkingSoireeOnly =
         hasNetworkingSoiree &&
         parsedLineItems.length === 1 &&
-        parsedLineItems[0]?.price === 'price_1TUHu5KMWpUKzQVzaZLAIhUe'
+        parsedLineItems[0]?.price === 'price_1TVyh9KMWpUKzQVzYXpxkkUr'
     const isNetworkingAddonConfirmation =
         registrationFlow === 'networking_addon' && isNetworkingSoireeOnly && hasNetworkingSoiree
 
