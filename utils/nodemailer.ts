@@ -304,6 +304,9 @@ const generateEmailContent = ({
                                                                     <div>${companyName}</div>
                                                                     <div>${email}</div>
                                                                     <div>${badgeTicketName}</div>
+                                                                    ${hasNetworkingSoiree && !isNetworkingSoireeOnly
+            ? `<div>Networking Soirée</div>`
+            : ""}
                                                                 </div>
                                                             </div>
                                                             <p><b>Event Details</b></p>

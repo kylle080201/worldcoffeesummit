@@ -99,7 +99,7 @@ const keyThemes: ThemeCard[] = [
 
 function KeyThemes() {
   return (
-    <section className="w-full bg-gray-100 px-6 pt-4 pb-12 sm:px-8 md:pt-2 md:pb-16">
+    <section className="w-full bg-gray-100 px-6 pt-10 pb-12 sm:px-8 md:pt-12 md:pb-16">
       <div className="mx-auto w-full max-w-7xl">
         <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">
           2026 KEY THEMES

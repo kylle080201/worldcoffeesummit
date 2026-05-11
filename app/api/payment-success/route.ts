@@ -69,13 +69,17 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
     ? req.line_items
     : JSON.parse(req.line_items ?? "[]");
   const selectedLineItem = parsedLineItems[0];
+  // Networking Soirée price IDs:
+  //   production:        price_1TU6d9KMWpUKzQVzbvEL5xFJ
+  //   prod testing (£5): price_1TVyh9KMWpUKzQVzYXpxkkUr (active)
+  //   testing:           price_1TUHu5KMWpUKzQVzaZLAIhUe
   const hasNetworkingSoiree = parsedLineItems.some(
-    (item: { price?: string }) => item?.price === "price_1TUHu5KMWpUKzQVzaZLAIhUe"
+    (item: { price?: string }) => item?.price === "price_1TVyh9KMWpUKzQVzYXpxkkUr"
   );
   const isNetworkingSoireeOnly =
     hasNetworkingSoiree &&
     parsedLineItems.length === 1 &&
-    selectedLineItem?.price === "price_1TUHu5KMWpUKzQVzaZLAIhUe";
+    selectedLineItem?.price === "price_1TVyh9KMWpUKzQVzYXpxkkUr";
   const isNetworkingAddonConfirmation =
     registrationFlow === "networking_addon" &&
     isNetworkingSoireeOnly &&
@@ -120,28 +124,51 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
   //     break;
   // }
 
-  // TESTING PRICES
+  // PROD TESTING PRICES (£5 each — for live testing on production)
   switch (selectedLineItem.price) {
-    case "price_1TUHqbKMWpUKzQVzAYk5Ctmo":
+    case "price_1TVyhwKMWpUKzQVzeGCqN8CQ":
       ticketName = "NGO / Government / Academic"
       break;
 
-    case "price_1TUHsIKMWpUKzQVzGM1Fgqg5":
+    case "price_1RJHLYKMWpUKzQVzFS993eOR":
       ticketName = "Corporates"
       break;
 
-    case "price_1TUHspKMWpUKzQVzeiuq5ATZ":
+    case "price_1RJHKqKMWpUKzQVzqUg2mW67":
       ticketName = "Start Ups"
       break;
 
-    case "price_1TUHtiKMWpUKzQVzQK1vBQ1O":
+    case "price_1RLn8fKMWpUKzQVzG5ZhHwZM":
       ticketName = "Service Providers"
       break;
 
-    case "price_1TUHu5KMWpUKzQVzaZLAIhUe":
+    case "price_1TVyh9KMWpUKzQVzYXpxkkUr":
       ticketName = "Networking Soirée"
       break;
   }
+
+  // TESTING PRICES
+  // switch (selectedLineItem.price) {
+  //   case "price_1TUHqbKMWpUKzQVzAYk5Ctmo":
+  //     ticketName = "NGO / Government / Academic"
+  //     break;
+  //
+  //   case "price_1TUHsIKMWpUKzQVzGM1Fgqg5":
+  //     ticketName = "Corporates"
+  //     break;
+  //
+  //   case "price_1TUHspKMWpUKzQVzeiuq5ATZ":
+  //     ticketName = "Start Ups"
+  //     break;
+  //
+  //   case "price_1TUHtiKMWpUKzQVzQK1vBQ1O":
+  //     ticketName = "Service Providers"
+  //     break;
+  //
+  //   case "price_1TUHu5KMWpUKzQVzaZLAIhUe":
+  //     ticketName = "Networking Soirée"
+  //     break;
+  // }
 
   try {
     await connectMongo();
@@ -183,6 +210,34 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
           status: 400,
         }
       );
+    }
+
+    // When the user just bought the Networking Soirée as a follow-up add-on,
+    // back-fill the original delegate ticket(s) for this email so the database
+    // reflects that they now have the soirée. Best-effort, never blocks.
+    if (isNetworkingAddonConfirmation) {
+      try {
+        const delegateEmailRaw =
+          (typeof res.email === "string" && res.email) ||
+          (typeof formData?.email === "string" && formData.email) ||
+          "";
+        const delegateEmail = delegateEmailRaw.trim();
+        if (delegateEmail) {
+          await Tickets.updateMany(
+            {
+              email: delegateEmail,
+              ticketName: { $ne: "Networking Soirée" },
+              deletedAt: { $exists: false },
+              _id: { $ne: res._id },
+            },
+            { $set: { hasNetworkingSoiree: true } }
+          );
+        }
+      } catch (linkError: any) {
+        const message =
+          linkError instanceof Error ? linkError.message : String(linkError);
+        console.log(`Networking soirée back-fill failed: ${message}`);
+      }
     }
 
     if (forceResend || !res.isEmailAccepted || res.isEmailAccepted === false) {
