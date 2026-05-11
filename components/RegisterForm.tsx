@@ -50,16 +50,22 @@ const RegisterForm = () => {
                     if (!line_items) return;
                     const parsedLineItems = JSON.parse(line_items) as { price: string }[];
 
-                    // Track this submission as "unpaid" up front so we still
-                    // capture delegates who abandon before/at Stripe checkout.
-                    // Awaited so the request completes before navigation, but
-                    // wrapped so a failure never blocks the user from paying.
+                    // The country-code select stores the ISO code (unique) to
+                    // avoid clashes between countries that share a dial code
+                    // (e.g. UK / Guernsey on +44, US / Canada on +1). Convert
+                    // it back to the dial code before sending downstream so
+                    // mailers and storage keep their existing shape.
+                    const dialCode =
+                        countryCodes.find((c) => c.code === data.countryCode)?.dial_code ??
+                        data.countryCode
+                    const submitData = { ...data, countryCode: dialCode }
+
                     try {
                         await fetch('/api/unpaid-registrations', {
                             method: 'POST',
                             headers: { 'Content-Type': 'application/json' },
                             body: JSON.stringify({
-                                formData: data,
+                                formData: submitData,
                                 line_items: parsedLineItems,
                             }),
                             keepalive: true,
@@ -80,7 +86,7 @@ const RegisterForm = () => {
                             },
                             body: JSON.stringify({
                                 line_items: parsedLineItems,
-                                formData: data,
+                                formData: submitData,
                                 origin,
                             }),
                         })
@@ -93,7 +99,7 @@ const RegisterForm = () => {
                     }
                     const query = new URLSearchParams({
                         line_items,
-                        buyer_data: JSON.stringify(data),
+                        buyer_data: JSON.stringify(submitData),
                     });
                     router.push(`/register/add-ons?${query.toString()}`)
                 }
@@ -146,7 +152,7 @@ const RegisterForm = () => {
                                             <select {...field} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500" required>
                                                 <option value="">Country Code</option>
                                                 {countryCodes.map((country) => (
-                                                    <option key={country.code} value={country.dial_code}>{country.name} ({country.dial_code})</option>
+                                                    <option key={country.code} value={country.code}>{country.name} ({country.dial_code})</option>
                                                 ))}
                                             </select>
                                         )}
