@@ -185,6 +185,34 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
       );
     }
 
+    // When the user just bought the Networking Soirée as a follow-up add-on,
+    // back-fill the original delegate ticket(s) for this email so the database
+    // reflects that they now have the soirée. Best-effort, never blocks.
+    if (isNetworkingAddonConfirmation) {
+      try {
+        const delegateEmailRaw =
+          (typeof res.email === "string" && res.email) ||
+          (typeof formData?.email === "string" && formData.email) ||
+          "";
+        const delegateEmail = delegateEmailRaw.trim();
+        if (delegateEmail) {
+          await Tickets.updateMany(
+            {
+              email: delegateEmail,
+              ticketName: { $ne: "Networking Soirée" },
+              deletedAt: { $exists: false },
+              _id: { $ne: res._id },
+            },
+            { $set: { hasNetworkingSoiree: true } }
+          );
+        }
+      } catch (linkError: any) {
+        const message =
+          linkError instanceof Error ? linkError.message : String(linkError);
+        console.log(`Networking soirée back-fill failed: ${message}`);
+      }
+    }
+
     if (forceResend || !res.isEmailAccepted || res.isEmailAccepted === false) {
       const mailerPayload = {
         ...(typeof res.toObject === "function" ? res.toObject() : res),
