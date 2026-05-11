@@ -106,7 +106,7 @@ function NetworkingSoireeStep() {
                 </p>
                 <p className="mt-2 text-lg text-gray-900">Most attendees join this reception.</p>
                 <div className="mt-5 flex flex-col items-center">
-                    <div className="w-max space-y-2 text text-sm sm:text-base">
+                    <div className="w-max space-y-2 text-lg">
                         <p className="font-medium text-red-700 not-italic">Limited capacity</p>
                         <p className="font-bold leading-snug text-gray-900">
                             <span className=" line-through ">{gbp(185)}</span>

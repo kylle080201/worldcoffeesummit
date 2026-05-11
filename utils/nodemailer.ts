@@ -34,6 +34,10 @@ export const mailer = async (data: any) => {
     const hasNetworkingSoiree = reqData.hasNetworkingSoiree === true;
     const isNetworkingSoireeOnly = reqData.isNetworkingSoireeOnly === true;
     const isNetworkingAddonConfirmation = reqData.isNetworkingAddonConfirmation === true;
+    const origin =
+        typeof reqData.origin === "string" && reqData.origin.trim()
+            ? reqData.origin.replace(/\/$/, "")
+            : "https://www.worldcoffeeinnovationsummit.com";
     try {
         const isEmailSent = await transporter.sendMail({
             from: `World Coffee Innovation Summit Team <${user}>`,
@@ -51,6 +55,7 @@ export const mailer = async (data: any) => {
                 hasNetworkingSoiree,
                 isNetworkingSoireeOnly,
                 isNetworkingAddonConfirmation,
+                origin,
             }),
             attachments: [
                 {
@@ -88,11 +93,16 @@ const generateEmailContent = ({
     hasNetworkingSoiree,
     isNetworkingSoireeOnly,
     isNetworkingAddonConfirmation,
+    origin,
 }: any) => {
     const badgeTicketName = networkingBadgeDisplayName(ticketName, isNetworkingAddonConfirmation === true);
-    const networkingSoireeLink =
-        "https://www.worldcoffeeinnovationsummit.com/register/form?line_items=%5B%7B%22price%22%3A%22price_1TUHu5KMWpUKzQVzaZLAIhUe%22%2C%22quantity%22%3A1%2C%22tax_rates%22%3A%5B%22txr_1NCgheKMWpUKzQVzZ761hX9q%22%5D%7D%5D";
-    const summitRegistrationLink = "https://www.worldcoffeeinnovationsummit.com/register";
+    const baseUrl = (typeof origin === "string" && origin.trim()
+        ? origin
+        : "https://www.worldcoffeeinnovationsummit.com").replace(/\/$/, "");
+    const networkingSoireeLink = `${baseUrl}/api/networking-soiree-checkout?ticket=${encodeURIComponent(
+        String(id)
+    )}&email=${encodeURIComponent(String(email))}`;
+    const summitRegistrationLink = `${baseUrl}/register`;
 
 
     const html = `<!DOCTYPE html>

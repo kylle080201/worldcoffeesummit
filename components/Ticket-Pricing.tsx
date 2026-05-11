@@ -113,8 +113,7 @@ export const summit: SummitRow[] = [
         item_price: 155,
         description:
             'Early evening of Day 1 \u00B7 A two-hour, invite-only reception bringing together global leaders and senior stakeholders in a unique and historic setting.',
-        subDescription: 'Available to registered delegates only.',
-        earlyBird: 'Save £30 book before 19 Jun 2026',
+        subDescription: 'Available to registered delegates only. Limited capacity.',
         cta: 'Add Now',
         rowClassName: 'bg-orange-50',
         line_items: [
@@ -138,7 +137,7 @@ function TicketPricing() {
                 <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                     <div className="flex flex-col w-full gap-6 lg:flex-row lg:gap-4 lg:items-start lg:justify-between">
                         <div className="flex flex-col w-full font-bold lg:w-1/2 text-center items-center justify-center lg:text-left lg:items-start">
-                            <h1 className="w-full mt-1 text-3xl text-black xl:text-4xl">
+                            <h1 className="w-full mt-1 text-4xl text-black xl:text-5xl">
                                 Secure your pass to WCIS26
                             </h1>
                             <p className="w-full mt-3 text-sm font-normal text-black sm:text-base lg:max-w-xl">
@@ -146,7 +145,7 @@ function TicketPricing() {
                             </p>
                         </div>
                         <div className="flex flex-col items-center w-full gap-3 lg:w-1/2">
-                            <p className="w-full max-w-xl px-1 text-xs font-bold leading-tight text-center text-lime-700 whitespace-nowrap sm:text-sm md:text-base lg:text-lg xl:text-2xl">
+                            <p className="w-full max-w-xl px-1 text-xl font-bold leading-tight text-center text-lime-700 whitespace-nowrap sm:text-2xl md:text-3xl xl:text-4xl">
                                 Prices increase after 18 June 2026
                             </p>
                             <p className="w-full max-w-xl text-sm font-normal text-center text-black sm:text-base">
@@ -170,7 +169,7 @@ function TicketPricing() {
                                     <React.Fragment key={delegate.title}>
                                         {delegate.title === 'Networking Soirée' ? (
                                             <tr>
-                                                <td colSpan={4} className="px-3 pt-3 pb-0 bg-white">
+                                                <td colSpan={4} className="px-3 pt-8 pb-6 bg-white">
                                                     <div className="flex items-center justify-center w-full gap-4">
                                                         <div className="h-px bg-gray-300 w-28 sm:w-44" />
                                                         <span className="text-2xl font-bold text-center text-black uppercase">
@@ -229,7 +228,7 @@ function TicketPricing() {
                                                     <div
                                                         className={
                                                             delegate.title === 'Networking Soirée'
-                                                                ? 'mt-2 text-base font-normal text-gray-900'
+                                                                ? 'mt-2 text-base font-bold text-red-700'
                                                                 : 'font-semibold text-red-700'
                                                         }
                                                     >
@@ -245,19 +244,13 @@ function TicketPricing() {
                                             >
                                                 {delegate.title === 'Networking Soirée' &&
                                                 delegate.old_price != null ? (
-                                                    <div className="w-full space-y-2 text-left text-base font-normal">
-                                                        <p className="font-medium text-red-700 not-italic">
-                                                            Limited capacity
-                                                        </p>
-                                                        <p className="font-bold text-gray-900">
-                                                            <span className="text-red-700 line-through decoration-red-700">
-                                                                {gbp(delegate.old_price)}
-                                                            </span>
-                                                            <span> per person</span>
-                                                        </p>
-                                                        <p className="block font-bold text-red-700">
+                                                    <div className="w-full space-y-1 text-left text-lg">
+                                                        <div className="text-red-700 line-through decoration-red-700">
+                                                            {gbp(delegate.old_price)}
+                                                        </div>
+                                                        <div className="font-bold text-red-700">
                                                             {gbp(delegate.item_price)}
-                                                        </p>
+                                                        </div>
                                                     </div>
                                                 ) : (
                                                     <div className="w-full h-full text-lg">
@@ -308,13 +301,13 @@ function TicketPricing() {
                 </div>
             </div>
             <div className="flow-root px-6 mx-auto mt-12 mb-12 max-w-7xl">
-                <div className="flex flex-col gap-8 text-base text-black lg:flex-row lg:gap-10 lg:text-lg">
+                <div className="flex flex-col gap-8 text-base leading-snug text-black lg:flex-row lg:gap-10 lg:text-lg">
                     <div className="w-full lg:w-1/2">
                         <h3 className="text-xl font-bold tracking-tight text-black sm:text-2xl">Please Note</h3>
-                        <p className="mt-4 tracking-tight sm:mt-5">
+                        <p className="mt-3 tracking-tight">
                             Please ensure you register under the correct pass category.
                         </p>
-                        <p className="mt-5 tracking-tight sm:mt-6">For any registration queries, please contact:</p>
+                        <p className="mt-3 tracking-tight">For any registration queries, please contact:</p>
                         <Link
                             href={'mailto:info@worldcoffeealliance.com'}
                             target="_blank"
@@ -328,22 +321,22 @@ function TicketPricing() {
                         <h3 className="text-xl font-bold tracking-tight text-lime-700 sm:text-2xl">
                             Group Discounts Available
                         </h3>
-                        <p className="mt-4 tracking-tight sm:mt-5">
+                        <p className="mt-3 tracking-tight">
                             <span className="font-bold">3+ delegates</span>
                             {' \u2013 '}
                             Save 10%
                         </p>
-                        <p className="mt-1 tracking-tight sm:mt-2">
+                        <p className="tracking-tight">
                             <span className="font-bold">4+ delegates</span>
                             {' \u2013 '}
                             Save 12%
                         </p>
-                        <p className="mt-1 tracking-tight sm:mt-2">
+                        <p className="tracking-tight">
                             <span className="font-bold">5+ delegates</span>
                             {' \u2013 '}
                             Save 15%
                         </p>
-                        <p className="mt-5 tracking-tight sm:mt-6">For group registrations, please contact:</p>
+                        <p className="mt-3 tracking-tight">For group registrations, please contact:</p>
                         <Link
                             href={'mailto:info@worldcoffeealliance.com'}
                             target="_blank"

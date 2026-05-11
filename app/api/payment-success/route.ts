@@ -37,6 +37,25 @@ export async function POST(request: NextRequest, res: NextResponse) {
   }
 }
 
+const resolveRequestOrigin = (request: NextRequest): string => {
+  const explicitOrigin = request.headers.get("origin");
+  if (explicitOrigin) return explicitOrigin.replace(/\/$/, "");
+
+  const forwardedProto = request.headers.get("x-forwarded-proto");
+  const forwardedHost = request.headers.get("x-forwarded-host");
+  const host = forwardedHost ?? request.headers.get("host");
+  if (host) {
+    const proto = forwardedProto ?? (host.startsWith("localhost") ? "http" : "https");
+    return `${proto}://${host}`.replace(/\/$/, "");
+  }
+
+  try {
+    return new URL(request.url).origin;
+  } catch {
+    return "https://www.worldcoffeeinnovationsummit.com";
+  }
+};
+
 export async function PATCH(request: NextRequest, res: NextResponse) {
   const req = await request.json();
   const checkoutSessionId = req.checkoutSessionId;
@@ -44,6 +63,7 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
   const forceResend = req.forceResend === true;
   const registrationFlow =
     typeof req.registration_flow === "string" ? req.registration_flow : undefined;
+  const requestOrigin = resolveRequestOrigin(request);
   const parsedLineItems = Array.isArray(req.line_items)
     ? req.line_items
     : JSON.parse(req.line_items ?? "[]");
@@ -170,6 +190,7 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
         hasNetworkingSoiree,
         isNetworkingSoireeOnly,
         isNetworkingAddonConfirmation,
+        origin: requestOrigin,
       };
       const mailerRes = await mailer(mailerPayload);
         if (mailerRes?.accepted?.length ?? 0 > 0) {

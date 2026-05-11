@@ -46,8 +46,8 @@ const RegisterCountDown = () => {
                             key={index}
                             className="inline-flex items-baseline gap-1 font-bold tabular-nums text-lime-700"
                         >
-                            <span className="text-lg sm:text-xl md:text-2xl">{value}</span>
-                            <span className="text-xs font-normal normal-case sm:text-sm">{units[index]}</span>
+                            <span className="text-2xl sm:text-3xl md:text-4xl">{value}</span>
+                            <span className="text-sm font-normal normal-case sm:text-base">{units[index]}</span>
                         </span>
                     ))}
                 </div>
