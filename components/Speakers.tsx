@@ -289,7 +289,7 @@ export default function Speakers() {
             <div className="px-12 py-20 sm:px-20" >
                 <div className="mx-auto sm:content-center">
                     <div className="max-w-2xl mx-auto text-center">
-                        <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">2023 Speakers</p>
+                        <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">2025 SPEAKERS</p>
                     </div>
                     <ul
                         role="list"

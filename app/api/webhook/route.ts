@@ -2,6 +2,7 @@ import Stripe from "stripe";
 import { NextRequest, NextResponse } from "next/server";
 import connectMongo from "../../../utils/mongodb";
 import Tickets from "../../../models/tickets";
+import Unpaid from "../../../models/unpaid";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2024-06-20" as any,
@@ -28,6 +29,21 @@ export async function POST(request: NextRequest, response: NextResponse) {
     if (event.type === "checkout.session.completed") {
       // Handle the checkout session completed event
       await connectMongo();
+
+      // Best-effort cleanup of the matching unpaid record. The user has now
+      // paid, so they should no longer be tracked as unpaid.
+      try {
+        if (checkoutSessionId) {
+          await Unpaid.deleteOne({ checkoutSessionId });
+        }
+      } catch (cleanupError: any) {
+        const message =
+          cleanupError instanceof Error
+            ? cleanupError.message
+            : String(cleanupError);
+        console.log(`Unpaid cleanup (webhook) failed: ${message}`);
+      }
+
       if(paymentIntentId) {
         const newTicket = new Tickets({ paymentIntentId, checkoutSessionId });
         const ticket = await newTicket.save();

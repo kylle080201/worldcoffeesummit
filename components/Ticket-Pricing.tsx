@@ -2,237 +2,352 @@
 import React from 'react'
 
 import Link from 'next/link'
+import { BriefcaseBusiness, Landmark, Rocket, Users, Wine, type LucideIcon } from 'lucide-react'
 import RegisterCountDown from './RegisterCountDown'
 
-// ORIGINAL
-export const summit = [
-    {
-        title: "Academics",
-        // old_price: 1095,
-        item_price: 299,
-        description: "Eligible only for professors and full- time Masters, PhDs and post-graduates(including students)",
-        limited: "(Limited Availability)",
-        // earlyBird: "Save £300 book before 01 August 2025",
-        line_items: [
-            {
-                price: 'price_1RJ3cYKMWpUKzQVzk2sR6LGo',
-                quantity: 1,
-                tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
+const taxRates = [
+    // 'txr_1NBBYeKMWpUKzQVzkTT4Wib4', // production
+    'txr_1NCgheKMWpUKzQVzZ761hX9q', // testing
+] as const
 
-            }
-        ]
-    },
+export type SummitLineItem = {
+    price: string
+    quantity: number
+    tax_rates: readonly string[]
+}
+
+export type SummitRow = {
+    title: string
+    /** Optional second line under title (e.g. venue), regular weight */
+    titleSubline?: string
+    description: string
+    icon: LucideIcon
+    item_price: number
+    old_price?: number
+    earlyBird?: string
+    limited?: string
+    limitedOnTop?: boolean
+    limitedClassName?: string
+    subDescription?: string
+    footnote?: string
+    cta?: string
+    /** If set, CTA opens mailto instead of the registration form */
+    enquireHref?: string
+    line_items?: SummitLineItem[]
+    rowClassName?: string
+}
+
+/** Display amounts must match active Stripe prices — update price IDs in Stripe when tariffs change. */
+export const summit: SummitRow[] = [
     {
-        title: "NGOs, Co-operatives, Policy Makers",
-        item_price: 995,
-        description: "Eligible for non-profits and NGOs, farmer-cooperatives, Policy Makers & Government Bodies",
+        title: 'NGO / Government / Academic',
+        icon: Landmark,
+        old_price: 1195,
+        item_price: 895,
+        description:
+            'For non-profit organisations, government bodies, policymakers, producer organisations, and full-time academics.',
+        earlyBird: 'Save £300 book before 19 Jun 2026',
         line_items: [
             {
-                price: 'price_1SHoZnKMWpUKzQVzPtUcB2Ey',
+                // price: 'price_1TU6ZNKMWpUKzQVzFeZzO8Zd', // production
+                price: 'price_1TUHqbKMWpUKzQVzAYk5Ctmo', // testing
                 quantity: 1,
-                tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
-            }
-        ]
+                tax_rates: taxRates,
+            },
+        ],
     },
     {
-        title: "Corporates",
-        item_price: 1295,
-        description: "Eligible for multinational/ conglomerate companies, F&B & Agri-Commodity Brands, retailers, traders",
-        line_items: [
-            {
-                price: 'price_1SJvX1KMWpUKzQVz604VjCdu',
-                quantity: 1,
-                tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
-            }
-        ]
-    },
-    {
-        title: "Start Ups",
+        title: 'Corporate',
+        icon: BriefcaseBusiness,
+        old_price: 1495,
         item_price: 1095,
-        description: "Eligible only for early-stage innovators, Independent Consultants/ Service Providers",
-        limited: "(Limited Availability)",
+        description:
+            'For corporate organisations, including F&B and Agri-commodity brands, retailers, traders, agribusinesses and other related commercial organisations.',
+        earlyBird: 'Save £400 book before 19 Jun 2026',
         line_items: [
             {
-                price: 'price_1SHog6KMWpUKzQVzg22U1QLS',
+                // price: 'price_1Rr81dKMWpUKzQVzBqtbsbxH', // production
+                price: 'price_1TUHsIKMWpUKzQVzGM1Fgqg5', // testing
                 quantity: 1,
-                tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
-            }
-        ]
+                tax_rates: taxRates,
+            },
+        ],
     },
     {
-        title: "Service Providers",
-        item_price: 1895,
-        description: "Eligible for for-profit consultancies, mature start-ups, technology and service providers, including Private Equity Firms and Asset Managers/Brokers, Angel and Venture Capital Investors/ Banks/ Financial Institutions",
+        title: 'Start-Up',
+        icon: Rocket,
+        item_price: 995,
+        description:
+            'For early-stage innovators and solution providers, typically pre-seed to pre\u2013Series A.',
+        earlyBird: 'Subject to qualification',
+        limited: 'Limited Availability',
+        limitedClassName: 'text-lime-700',
+        cta: 'Enquire Now',
+        enquireHref: '/register/start-up-enquiry',
+        // price reference only (start-up currently uses enquiry flow):
+        // price: 'price_1Rb9T2KMWpUKzQVzaQhry4yi', // production
+        // price: 'price_1TUHspKMWpUKzQVzeiuq5ATZ', // testing
+    },
+    {
+        title: 'Service Provider',
+        icon: Users,
+        old_price: 1895,
+        item_price: 1495,
+        description:
+            'For for-profit consultancies, technology and service providers, mature start-ups, financial institutions, and investors.',
+        earlyBird: 'Save £400 book before 19 Jun 2026',
         line_items: [
-            { 
-                price: 'price_1SJvXRKMWpUKzQVzO2EzA3eJ',
+            {
+                // price: 'price_1RVYT2KMWpUKzQVzleFRk7vr', // production
+                price: 'price_1TUHtiKMWpUKzQVzQK1vBQ1O', // testing
                 quantity: 1,
-                tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
-            }
-        ]
+                tax_rates: taxRates,
+            },
+        ],
+    },
+    {
+        title: 'Networking Soirée',
+        titleSubline: 'at the UK House of Lords',
+        icon: Wine,
+        old_price: 185,
+        item_price: 155,
+        description:
+            'Early evening of Day 1 \u00B7 A two-hour, invite-only reception bringing together global leaders and senior stakeholders in a unique and historic setting.',
+        subDescription: 'Available to registered delegates only. Limited capacity.',
+        earlyBird: 'Save £30 book before 19 Jun 2026',
+        cta: 'Add Now',
+        rowClassName: 'bg-orange-50',
+        line_items: [
+            {
+                // price: 'price_1TU6d9KMWpUKzQVzbvEL5xFJ', // production
+                price: 'price_1TUHu5KMWpUKzQVzaZLAIhUe', // testing
+                quantity: 1,
+                tax_rates: taxRates,
+            },
+        ],
     },
 ]
 
-// PROD TESTING PRICES
-// export const summit = [
-//     {
-//         title: "Academics",
-//         old_price: 1095,
-//         item_price: 299,
-//         description: "Eligible only for professors and full- time Masters, PhDs and post-graduates(including students)",
-//         earlyBird: "Book before 8th October 2024 to Save £200.00",
-//         line_items: [
-//             {
-//                 price: 'price_1RLRZdKMWpUKzQVzxEOPwVBA',
-//                 quantity: 1,
-//                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
-
-//             }
-//         ]
-//     },
-//     {
-//         title: "NGOs, Co-operatives, Policy Makers",
-//         old_price: 1795,
-//         item_price: 599,
-//         description: "Eligible for non-profits and NGOs, farmer-cooperatives, Policy Makers & Government Bodies",
-//         earlyBird: "Book before 8th October 2024 to Save £300.00",
-//         line_items: [
-//             {
-//                 price: 'price_1RLn53KMWpUKzQVzP93RGG0I',
-//                 quantity: 1,
-//                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
-//             }
-//         ]
-//     },
-//     {
-//         title: "Corporates",
-//         old_price: 1995,
-//         item_price: 899,
-//         description: "Eligible for multinational/ conglomerate companies, F&B & Agri-Commodity Brands, retailers, traders ",
-//         earlyBird: "Book before 8th October 2024 to Save £300.00",
-//         line_items: [
-//             {
-//                 price: 'price_1RLn7BKMWpUKzQVzItm3kmzE',
-//                 quantity: 1,
-//                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
-//             }
-//         ]
-//     },
-//     {
-//         title: "Start Ups",
-//         old_price: 1295,
-//         item_price: 699,
-//         description: "Eligible only for early-stage innovators, Independent Consultants/ Service Providers",
-//         earlyBird: "Book before 8th October 2024 to Save £300.00",
-//         line_items: [
-//             {
-//                 price: 'price_1RLn8FKMWpUKzQVz5TAnpeGo',
-//                 quantity: 1,
-//                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
-//             }
-//         ]
-//     },
-//     {
-//         title: "Service Providers",
-//         old_price: 1295,
-//         item_price: 1099,
-//         description: "Eligible for for-profit consultancies, mature start-ups, technology and service providers, including Private Equity Firms and Asset Managers/Brokers, Angel and Venture Capital Investors/ Banks/ Financial Institutions",
-//         earlyBird: "Book before 8th October 2024 to Save £300.00",
-//         line_items: [
-//             {
-//                 price: 'price_1RLn8fKMWpUKzQVzG5ZhHwZM',
-//                 quantity: 1,
-//                 tax_rates: ['txr_1NBBYeKMWpUKzQVzkTT4Wib4'],
-//             }
-//         ]
-//     },
-// ]
+const gbp = (n: number) =>
+    new Intl.NumberFormat('en-GB', { style: 'currency', currency: 'GBP' }).format(n)
 
 function TicketPricing() {
-
     return (
         <div className="z-40 py-12 bg-white sm:py-20">
             <div id="summit" className="flow-root px-6 mx-auto mt-12 rounded-md max-w-7xl">
                 <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-
-                    <div className='flex w-full gap-4'>
-                        <div className='flex flex-col text-black font-bold w-1/2 items-center'>
-                            <h1 className='mx-auto text-3xl xl:text-5xl text-lime-700'>GRAB YOUR TICKETS</h1>
-                            <h1 className='mx-auto text-3xl xl:text-5xl'>TO WCIS25</h1>
-                            {/* <h1 className='mx-auto text-red-500 xl:text-2xl text-lg'>(LIMITED AVAILABILITY)</h1> */}
+                    <div className="flex flex-col w-full gap-6 lg:flex-row lg:gap-4 lg:items-start lg:justify-between">
+                        <div className="flex flex-col w-full font-bold lg:w-1/2 text-center items-center justify-center lg:text-left lg:items-start">
+                            <h1 className="w-full mt-1 text-4xl text-black xl:text-5xl">
+                                Secure your pass to WCIS26
+                            </h1>
+                            <p className="w-full mt-3 text-sm font-normal text-black sm:text-base lg:max-w-xl">
+                                Join global leaders and senior stakeholders from across the coffee and cocoa supply chain.
+                            </p>
                         </div>
-                        {/* <div className='flex flex-col gap-2 w-1/2'>
-                            <div className='p-2 bg-red-500 text-white w-max text-2xl xl:text-4xl font-bold px-24 justify-center items-center text-center rounded-xl whitespace-normal line-clamp-2'>
-                                TICKET PRICES INCREASE <br />
-                                AFTER 17 OCTOBER 2025
-                            </div>
+                        <div className="flex flex-col items-center w-full gap-3 lg:w-1/2">
+                            <p className="w-full max-w-xl px-1 text-xl font-bold leading-tight text-center text-lime-700 whitespace-nowrap sm:text-2xl md:text-3xl xl:text-4xl">
+                                Prices increase after 18 June 2026
+                            </p>
+                            <p className="w-full max-w-xl text-sm font-normal text-center text-black sm:text-base">
+                                Current rates end in:
+                            </p>
                             <RegisterCountDown />
-                        </div> */}
+                        </div>
                     </div>
-                    <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8 ">
-                        <table className="min-w-full divide-y divide-gray-300 mt-12">
+                    <div className="flex items-center justify-center w-full gap-4 mt-10">
+                        <div className="h-px bg-gray-300 w-28 sm:w-44" />
+                        <h2 className="text-2xl font-bold text-center text-black">CHOOSE YOUR PASS</h2>
+                        <div className="h-px bg-gray-300 w-28 sm:w-44" />
+                    </div>
+                    <div
+                        id="choose-your-pass"
+                        className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8 "
+                    >
+                        <table className="min-w-full mt-12 divide-y divide-gray-300">
                             <tbody className="bg-white">
                                 {summit.map((delegate) => (
-                                    <tr key={delegate.title} className="odd:bg-gray-100 h-full">
-                                        <td className="flex-wrap px-3 py-4 font-semibold text-gray-900 text-lg whitespace-nowrap">{delegate.title} <div className='text-red-700 font-bold'>{delegate.limited ?? delegate.limited}</div></td>
-                                        <td className="flex-wrap px-3 py-4 text-gray-900 text-lg">
-                                            {delegate.description}
-                                            <div className='text-red-700 font-bold'>
-                                                {(delegate as any).earlyBird}
-                                            </div>
-                                        </td>
-                                        <td className="flex-wrap px-3 py-4 text-gray-900 font-bold">
-                                            <div className='h-full text-lg w-full'>
-                                                <div className='text-red-700 line-through'>
-                                                    {(delegate as any).old_price ? `£${(delegate as any).old_price}.00` : undefined}
+                                    <React.Fragment key={delegate.title}>
+                                        {delegate.title === 'Networking Soirée' ? (
+                                            <tr>
+                                                <td colSpan={4} className="px-3 pt-8 pb-6 bg-white">
+                                                    <div className="flex items-center justify-center w-full gap-4">
+                                                        <div className="h-px bg-gray-300 w-28 sm:w-44" />
+                                                        <span className="text-2xl font-bold text-center text-black uppercase">
+                                                            Add-on
+                                                        </span>
+                                                        <div className="h-px bg-gray-300 w-28 sm:w-44" />
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        ) : null}
+                                        <tr
+                                            className={`h-full ${delegate.rowClassName ?? 'odd:bg-gray-100'}`}
+                                        >
+                                            <td
+                                                className={`px-3 text-gray-900 whitespace-nowrap ${delegate.title === 'Networking Soirée' ? 'py-6' : 'py-4'}`}
+                                            >
+                                                <div className="flex items-center gap-3">
+                                                    <div className="flex items-center justify-center w-12 h-12 rounded-full bg-lime-100/70">
+                                                        <delegate.icon className="w-6 h-6 text-lime-700" />
+                                                    </div>
+                                                    <div
+                                                        className={`text-lg leading-tight ${delegate.titleSubline ? '' : 'font-semibold'}`}
+                                                    >
+                                                        {delegate.limited && delegate.limitedOnTop ? (
+                                                            <div
+                                                                className={`font-bold ${delegate.limitedClassName ?? 'text-red-700'}`}
+                                                            >
+                                                                {delegate.limited}
+                                                            </div>
+                                                        ) : null}
+                                                        {delegate.titleSubline ? (
+                                                            <>
+                                                                <div className="font-semibold">{delegate.title}</div>
+                                                                <div className="mt-0.5 text-base font-normal text-gray-900">
+                                                                    {delegate.titleSubline}
+                                                                </div>
+                                                            </>
+                                                        ) : (
+                                                            delegate.title
+                                                        )}
+                                                        {delegate.limited && !delegate.limitedOnTop ? (
+                                                            <div
+                                                                className={`font-bold ${delegate.limitedClassName ?? 'text-red-700'}`}
+                                                            >
+                                                                {delegate.limited}
+                                                            </div>
+                                                        ) : null}
+                                                    </div>
                                                 </div>
-                                                <div>
-                                                    £{delegate.item_price}.00
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td className="px-3 py-4">
-                                            <div className='my-auto justify-self-center mx:auto'>
-                                                <Link
-                                                    href={{
-                                                        pathname: '/register/form',
-                                                        query: {
-                                                            line_items: JSON.stringify(delegate.line_items)
+                                            </td>
+                                            <td
+                                                className={`flex-wrap px-3 text-lg text-gray-900 ${delegate.title === 'Networking Soirée' ? 'py-6' : 'py-4'}`}
+                                            >
+                                                {delegate.description}
+                                                {delegate.subDescription ? (
+                                                    <div
+                                                        className={
+                                                            delegate.title === 'Networking Soirée'
+                                                                ? 'mt-2 text-base font-bold text-red-700'
+                                                                : 'font-semibold text-red-700'
                                                         }
-                                                    }}
-                                                    type="button"
-                                                    className="block w-full px-3 py-2 text-sm font-semibold text-center text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                                                >
-                                                    Register
-                                                </Link>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                                    >
+                                                        {delegate.subDescription}
+                                                    </div>
+                                                ) : null}
+                                                {delegate.earlyBird ? (
+                                                    <div className="font-bold text-red-700">{delegate.earlyBird}</div>
+                                                ) : null}
+                                            </td>
+                                            <td
+                                                className={`flex-wrap px-3 font-bold text-gray-900 ${delegate.title === 'Networking Soirée' ? 'py-6' : 'py-4'}`}
+                                            >
+                                                {delegate.title === 'Networking Soirée' &&
+                                                delegate.old_price != null ? (
+                                                    <div className="w-full space-y-1 text-left text-lg">
+                                                        <div className="text-red-700 line-through decoration-red-700">
+                                                            {gbp(delegate.old_price)}
+                                                        </div>
+                                                        <div>{gbp(delegate.item_price)}</div>
+                                                    </div>
+                                                ) : (
+                                                    <div className="w-full h-full text-lg">
+                                                        {delegate.old_price != null ? (
+                                                            <div className="text-red-700 line-through">
+                                                                {gbp(delegate.old_price)}
+                                                            </div>
+                                                        ) : null}
+                                                        <div>{gbp(delegate.item_price)}</div>
+                                                    </div>
+                                                )}
+                                            </td>
+                                            <td
+                                                className={`px-3 ${delegate.title === 'Networking Soirée' ? 'py-6' : 'py-4'}`}
+                                            >
+                                                <div className="justify-self-center mx:auto my-auto">
+                                                    {delegate.enquireHref ? (
+                                                        <a
+                                                            href={delegate.enquireHref}
+                                                            className="block w-full px-3 py-2 text-sm font-semibold text-center border rounded-md shadow-sm text-lime-700 border-lime-700 bg-transparent hover:bg-lime-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-700"
+                                                        >
+                                                            {delegate.cta ?? 'Enquire Now'}
+                                                        </a>
+                                                    ) : delegate.line_items ? (
+                                                        <Link
+                                                            href={{
+                                                                pathname: '/register/form',
+                                                                query: {
+                                                                    line_items: JSON.stringify(delegate.line_items),
+                                                                },
+                                                            }}
+                                                            className="block w-full px-3 py-2 text-sm font-semibold text-center text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                                        >
+                                                            {delegate.cta ?? 'Register Now'}
+                                                        </Link>
+                                                    ) : null}
+                                                    {delegate.footnote ? (
+                                                        <p className="mt-2 text-xs text-gray-600">{delegate.footnote}</p>
+                                                    ) : null}
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </React.Fragment>
                                 ))}
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
-            <div className="container mb-12 mx-auto px-8 flex justify-between">
-            <div className="w-full md:w-1/2 lg:w-full  mt-12 sm:text-start">
-                <h3 className="tracking-tight text-red-700 sm:text-lg"><span className='font-bold'>IMPORTANT NOTICE:</span></h3>
-                <h3 className="tracking-tight  sm:text-lg w-11/12">Please select the correct pass type. Registrations in   the  wrong category   may be cancelled and refunded.  <span className="italic text-lg">A deduction for non-refundable processing fees will apply.</span><br/>
-                </h3>
+            <div className="flow-root px-6 mx-auto mt-12 mb-12 max-w-7xl">
+                <div className="flex flex-col gap-8 text-base leading-snug text-black lg:flex-row lg:gap-10 lg:text-lg">
+                    <div className="w-full lg:w-1/2">
+                        <h3 className="text-xl font-bold tracking-tight text-black sm:text-2xl">Please Note</h3>
+                        <p className="mt-3 tracking-tight">
+                            Please ensure you register under the correct pass category.
+                        </p>
+                        <p className="mt-3 tracking-tight">For any registration queries, please contact:</p>
+                        <Link
+                            href={'mailto:info@worldcoffeealliance.com'}
+                            target="_blank"
+                            className="text-base text-blue-600 underline hover:underline-offset-4 sm:text-lg"
+                        >
+                            info@worldcoffeealliance.com
+                        </Link>
+                    </div>
 
-                <h3 className="tracking-tight  sm:text-lg">For any issues, email us at <Link href={"mailto:info@worldcoffeealliance.com"} target="_blank" className="text-blue-600 underline hover:underline-offset-4"> info@worldcoffeealliance.com</Link></h3>
+                    <div className="w-full lg:w-1/2">
+                        <h3 className="text-xl font-bold tracking-tight text-lime-700 sm:text-2xl">
+                            Group Discounts Available
+                        </h3>
+                        <p className="mt-3 tracking-tight">
+                            <span className="font-bold">3+ delegates</span>
+                            {' \u2013 '}
+                            Save 10%
+                        </p>
+                        <p className="tracking-tight">
+                            <span className="font-bold">4+ delegates</span>
+                            {' \u2013 '}
+                            Save 12%
+                        </p>
+                        <p className="tracking-tight">
+                            <span className="font-bold">5+ delegates</span>
+                            {' \u2013 '}
+                            Save 15%
+                        </p>
+                        <p className="mt-3 tracking-tight">For group registrations, please contact:</p>
+                        <Link
+                            href={'mailto:info@worldcoffeealliance.com'}
+                            target="_blank"
+                            className="text-base text-blue-600 underline hover:underline-offset-4 sm:text-lg"
+                        >
+                            info@worldcoffeealliance.com
+                        </Link>
+                    </div>
+                </div>
             </div>
-             <div className="w-full md:w-1/2 lg:w-full  mt-12 sm:text-start">
-                <h3 className="tracking-tight text-red-700 sm:text-lg"><span className='font-bold'>GROUP DISCOUNTS AVAILABLE!</span></h3>
-                <h3 className="tracking-tight sm:text-lg"><span className='font-bold'>Book a Team of 3+ </span> — Save an Additional 10% Off</h3>
-                <h3 className="tracking-tight  sm:text-lg"><span className='font-bold'>Book a Team of 5+ </span> — Save an Additional 15% Off</h3>
-
-                <h3 className="tracking-tight  sm:text-lg">If you would like to register a team of 3 or more, please email  <Link href={"mailto:info@worldcoffeealliance.com"} target="_blank" className=" text-blue-600 underline hover:underline-offset-4"> info@worldcoffeealliance.com</Link> for your discount coupon code before registering.</h3>
-            </div> 
-           </div>
-           </div>
-
+        </div>
     )
 }
 
-export default TicketPricing;
+export default TicketPricing
