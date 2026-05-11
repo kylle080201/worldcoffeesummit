@@ -42,6 +42,8 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
   const checkoutSessionId = req.checkoutSessionId;
   const formData = req.decryptedFormData;
   const forceResend = req.forceResend === true;
+  const registrationFlow =
+    typeof req.registration_flow === "string" ? req.registration_flow : undefined;
   const parsedLineItems = Array.isArray(req.line_items)
     ? req.line_items
     : JSON.parse(req.line_items ?? "[]");
@@ -53,6 +55,10 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
     hasNetworkingSoiree &&
     parsedLineItems.length === 1 &&
     selectedLineItem?.price === "price_1TUHu5KMWpUKzQVzaZLAIhUe";
+  const isNetworkingAddonConfirmation =
+    registrationFlow === "networking_addon" &&
+    isNetworkingSoireeOnly &&
+    hasNetworkingSoiree;
 
   if (!checkoutSessionId || !selectedLineItem?.price) {
     return NextResponse.json(
@@ -89,7 +95,7 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
   //     break;
   //
   //   case "price_1TU6d9KMWpUKzQVzbvEL5xFJ":
-  //     ticketName = "Networking Soirée (Add-on)"
+  //     ticketName = "Networking Soirée"
   //     break;
   // }
 
@@ -112,7 +118,7 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
       break;
 
     case "price_1TUHu5KMWpUKzQVzaZLAIhUe":
-      ticketName = "Networking Soirée (Add-on)"
+      ticketName = "Networking Soirée"
       break;
   }
 
@@ -163,6 +169,7 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
         ...(typeof res.toObject === "function" ? res.toObject() : res),
         hasNetworkingSoiree,
         isNetworkingSoireeOnly,
+        isNetworkingAddonConfirmation,
       };
       const mailerRes = await mailer(mailerPayload);
         if (mailerRes?.accepted?.length ?? 0 > 0) {

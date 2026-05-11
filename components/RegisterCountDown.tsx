@@ -7,19 +7,10 @@ const RegisterCountDown = () => {
     const [hours, setHours] = useState("00");
     const [minutes, setMinutes] = useState("00");
     const [seconds, setSeconds] = useState("00");
-    const [localizedDate, setLocalizedDate] = useState("");
-    
+
     const target = new Date("2026-06-18T23:59:00");
 
     useEffect(() => {
-        setLocalizedDate(target.toLocaleDateString(undefined, { 
-            year: 'numeric', 
-            month: 'long', 
-            day: 'numeric',
-            hour: '2-digit',
-            minute: '2-digit'
-        }));
-
         const interval = setInterval(() => {
             const now = new Date();
             const difference = target.getTime() - now.getTime();
@@ -44,26 +35,21 @@ const RegisterCountDown = () => {
         return () => clearInterval(interval);
     }, []);
 
-    return (
-        <div className="flex flex-col items-center">
+    const units = ['days', 'hrs', 'mins', 'seconds'] as const
 
-            {/* Countdown timer */}
+    return (
+        <div className="flex flex-col items-center w-full max-w-xl">
             {!eventTime && (
-                <div className="flex-col justify-self-center">
-                    <div className="flex flex-row justify-center w-full mx-auto text-center">
-                        {[days, hours, minutes, seconds].map((value, index) => (
-                            <div key={index} className="flex flex-col">
-                                <div className="flex flex-col p-2 mx-1 rounded-md md:p-4">
-                                    <h2 className="font-bold text-center text-md text-lime-700 md:text-4xl">
-                                        {value}
-                                        <span className="text-sm font-normal">
-                                            {['days', 'hrs', 'mins', 'seconds'][index]}
-                                        </span>
-                                    </h2>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
+                <div className="flex flex-row flex-wrap items-baseline justify-center w-full gap-x-2 gap-y-1 sm:gap-x-3">
+                    {[days, hours, minutes, seconds].map((value, index) => (
+                        <span
+                            key={index}
+                            className="inline-flex items-baseline gap-1 font-bold tabular-nums text-lime-700"
+                        >
+                            <span className="text-lg sm:text-xl md:text-2xl">{value}</span>
+                            <span className="text-xs font-normal normal-case sm:text-sm">{units[index]}</span>
+                        </span>
+                    ))}
                 </div>
             )}
         </div>

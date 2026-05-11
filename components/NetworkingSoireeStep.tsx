@@ -21,6 +21,9 @@ type SummitLineItem = {
     tax_rates: readonly string[]
 }
 
+const gbp = (n: number) =>
+    new Intl.NumberFormat('en-GB', { style: 'currency', currency: 'GBP' }).format(n)
+
 type DelegateData = {
     firstName: string
     lastName: string
@@ -102,13 +105,15 @@ function NetworkingSoireeStep() {
                     A two-hour, invite-only reception bringing together global leaders and senior stakeholders in a unique and historic setting.
                 </p>
                 <p className="mt-2 text-lg text-gray-900">Most attendees join this reception.</p>
-
-                <div className="mt-8">
-                    <div className="text-2xl font-bold text-gray-900">
-                        <span className="mr-2 text-red-700 line-through">£185</span>
-                        <span>£155 per person</span>
+                <div className="mt-5 flex flex-col items-center">
+                    <div className="w-max space-y-2 text text-sm sm:text-base">
+                        <p className="font-medium text-red-700 not-italic">Limited capacity</p>
+                        <p className="font-bold leading-snug text-gray-900">
+                            <span className=" line-through ">{gbp(185)}</span>
+                            <span> per person</span>
+                        </p>
+                        <p className="block font-bold text-left leading-tight text-red-700">{gbp(155)}</p>
                     </div>
-                    <div className="text-lg italic text-red-700">Limited capacity</div>
                 </div>
 
                 <div className="flex flex-col items-center justify-center gap-4 mt-10 sm:flex-row">

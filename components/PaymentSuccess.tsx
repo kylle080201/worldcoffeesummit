@@ -69,7 +69,10 @@ function PaymentSuccess({
                     checkoutSessionId,
                     decryptedFormData,
                     line_items,
-                    forceResend
+                    forceResend,
+                    ...(typeof registrationFlow === 'string' && registrationFlow
+                        ? { registration_flow: registrationFlow }
+                        : {}),
                 })
             });
 
@@ -102,7 +105,7 @@ function PaymentSuccess({
                 setIsLoading(false)
             }
         }
-    }, [origin, checkoutSessionId, decryptedFormData, line_items, RESEND_COOLDOWN_MS, resendCooldownKey]);
+    }, [origin, checkoutSessionId, decryptedFormData, line_items, registrationFlow, RESEND_COOLDOWN_MS, resendCooldownKey]);
 
     useEffect(() => {
         if (origin) {
@@ -220,11 +223,11 @@ Join me: ${eventUrl}`
                             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-12 lg:mt-24">
                                 REGISTRATION CONFIRMED
                             </h2>
-                            <p className="mt-6 text-[32px] leading-tight tracking-tight text-gray-900">
+                            <p className="mt-6 text-2xl leading-snug tracking-tight text-gray-900">
                                 {isNetworkingAddonConfirmation ? (
                                     <>
-                                        Your <span className="font-bold">Networking Soir&eacute;e</span> add-on is
-                                        confirmed. Your summit delegate registration is unchanged.
+                                        Thank you for registering for the{' '}
+                                        <span className="font-bold">Networking Soirée at the UK House of Lords.</span>
                                     </>
                                 ) : isNetworkingSoireeOnly ? (
                                     <>
@@ -238,73 +241,73 @@ Join me: ${eventUrl}`
                                 )}
                             </p>
                             {hasNetworkingSoiree && !isNetworkingSoireeOnly ? (
-                                <p className="mt-6 text-[32px] leading-tight tracking-tight text-gray-900">
+                                <p className="mt-6 text-2xl leading-snug tracking-tight text-gray-900">
                                     You&apos;re also confirmed for the <span className="font-bold">Networking Soiree at the UK House of Lords.</span>
                                 </p>
                             ) : null}
-                            <p className="mt-6 text-[32px] leading-tight tracking-tight text-gray-900">
+                            <p className="mt-6 text-2xl leading-snug tracking-tight text-gray-900">
                                 A confirmation email has been sent with further details.
                             </p>
                             {isNetworkingSoireeOnly && !isNetworkingAddonConfirmation ? (
                                 <div className="mt-8">
-                                    <p className="text-[32px] font-bold leading-tight tracking-tight text-gray-900">Please note</p>
-                                    <p className="text-[30px] leading-tight tracking-tight text-gray-900">
+                                    <p className="text-2xl font-bold leading-snug tracking-tight text-gray-900">Please note</p>
+                                    <p className="mt-4 text-2xl leading-snug tracking-tight text-gray-900">
                                         The Networking Soirée pass is available to attendees with confirmed summit access.
                                     </p>
-                                    <p className="mt-8 text-[32px] leading-tight tracking-tight text-gray-900">
+                                    <p className="mt-6 text-2xl leading-snug tracking-tight text-gray-900">
                                         If you haven&apos;t yet registered for the <span className="font-bold">World Coffee Innovation Summit London 2026</span>, you can do so below.
                                     </p>
                                     <a
                                         href="/register"
-                                        className="inline-block px-8 py-2 mt-6 text-[30px] font-bold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800"
+                                        className="inline-block px-8 py-2 mt-6 text-2xl font-bold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800"
                                     >
                                         Register Now
                                     </a>
                                 </div>
                             ) : null}
 
-                            <h3 className="mt-8 text-[34px] font-bold tracking-tight text-gray-900">
+                            <h3 className="mt-8 text-2xl font-bold tracking-tight text-gray-900">
                                 Event Details
                             </h3>
-                            <h3 className="mt-6 text-[34px] font-bold tracking-tight text-gray-900">
+                            <h3 className="mt-6 text-2xl font-bold tracking-tight text-gray-900">
                                 Date
                             </h3>
-                            <p className="text-[34px] leading-tight tracking-tight text-gray-900">
+                            <p className="text-2xl leading-snug tracking-tight text-gray-900">
                                 21–22 October 2026
                             </p>
-                            <h3 className="mt-6 text-[34px] font-bold tracking-tight text-gray-900">
+                            <h3 className="mt-6 text-2xl font-bold tracking-tight text-gray-900">
                                 Location
                             </h3>
-                            <p className="text-[34px] leading-tight tracking-tight text-gray-900">
+                            <p className="text-2xl leading-snug tracking-tight text-gray-900">
                                 Queen Elizabeth II Centre &amp; UK House of Lords
                             </p>
                             {!hasNetworkingSoiree ? (
                                 <div className="mt-8">
-                                    <h3 className="text-[34px] font-bold tracking-tight text-gray-900">
+                                    <h3 className="text-2xl font-bold tracking-tight text-gray-900">
                                         Join the Networking Soir&eacute;e at the UK House of Lords
                                     </h3>
-                                    <p className="mt-2 text-[32px] leading-tight tracking-tight text-gray-900">
+                                    <p className="mt-2 text-2xl leading-snug tracking-tight text-gray-900">
                                         A two-hour, invite-only reception with global leaders and senior stakeholders
                                     </p>
-                                    <p className="mt-4 text-[30px] italic text-red-600">Limited capacity</p>
+                                    <p className="mt-4 text-2xl italic text-red-600">Limited capacity</p>
                                     <button
                                         type="button"
                                         onClick={startNetworkingAddOnCheckout}
                                         disabled={isAddOnCheckoutLoading}
-                                        className="inline-block px-6 py-2 mt-6 text-[32px] font-bold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800 disabled:cursor-not-allowed disabled:opacity-60"
+                                        className="inline-block px-6 py-2 mt-6 text-2xl font-bold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800 disabled:cursor-not-allowed disabled:opacity-60"
                                     >
                                         {isAddOnCheckoutLoading ? 'Redirecting…' : 'Add Networking Soirée'}
                                     </button>
                                     {addOnCheckoutError ? (
-                                        <p className="mt-3 text-lg text-red-700">{addOnCheckoutError}</p>
+                                        <p className="mt-3 text-2xl leading-snug text-red-700">{addOnCheckoutError}</p>
                                     ) : null}
                                 </div>
                             ) : null}
-                            <p className="mt-8 text-[32px] leading-tight tracking-tight text-gray-900">
+                            <p className="mt-8 text-2xl leading-snug tracking-tight text-gray-900">
                                 Didn&apos;t receive an email? Please check your spam/junk mail.
                             </p>
                             <div className='flex flex-col gap-5 mt-8 sm:flex-row sm:items-center'>
-                                <p className="text-[32px] leading-tight tracking-tight text-gray-900">
+                                <p className="text-2xl leading-snug tracking-tight text-gray-900">
                                     Still haven&apos;t received it?
                                 </p>
                                 <div className="flex justify-center gap-x-6">
@@ -312,7 +315,7 @@ Join me: ${eventUrl}`
                                         type="button"
                                         onClick={() => patchData({ forceResend: true })}
                                         disabled={resendButtonDisabled}
-                                        className="rounded-[10px] border-2 border-sky-700 px-6 py-1.5 text-[22px] font-bold text-gray-900 hover:bg-gray-100 disabled:cursor-not-allowed disabled:opacity-60"
+                                        className="rounded-[10px] border-2 border-sky-700 px-6 py-1.5 text-xl font-bold text-gray-900 hover:bg-gray-100 disabled:cursor-not-allowed disabled:opacity-60"
                                     >
                                         {isResending
                                             ? 'Resending...'
@@ -323,13 +326,13 @@ Join me: ${eventUrl}`
                                 </div>
                             </div>
                             {resendSuccessMessage ? (
-                                <p className="mt-3 text-lg text-green-700">{resendSuccessMessage}</p>
+                                <p className="mt-3 text-base text-green-700">{resendSuccessMessage}</p>
                             ) : null}
                             {resendErrorMessage ? (
-                                <p className="mt-3 text-lg text-red-700">{resendErrorMessage}</p>
+                                <p className="mt-3 text-base text-red-700">{resendErrorMessage}</p>
                             ) : null}
 
-                            <p className="mt-8 text-[32px] leading-tight tracking-tight text-gray-900">
+                            <p className="mt-8 text-2xl leading-snug tracking-tight text-gray-900">
                                 Invite your colleagues and professional network to join you
                             </p>
                             <div className="flex flex-col items-center mt-6 gap-y-4">
@@ -337,14 +340,14 @@ Join me: ${eventUrl}`
                                     href={linkedInShareUrl}
                                     target="_blank"
                                     rel="noreferrer"
-                                    className="rounded-[10px] border-2 border-sky-700 bg-lime-700 px-8 py-2 text-[28px] font-bold text-white hover:bg-lime-800"
+                                    className="rounded-[10px] border-2 border-sky-700 bg-lime-700 px-8 py-2 text-2xl font-bold text-white hover:bg-lime-800"
                                 >
                                     Share on LinkedIn
                                 </a>
                                 <button
                                     type="button"
                                     onClick={copyInviteText}
-                                    className="text-[24px] tracking-tight text-amber-800 hover:underline text-center"
+                                    className="text-xl tracking-tight text-amber-800 hover:underline text-center"
                                 >
                                     {copied ? 'Invite Text Copied' : 'Copy Invite Text'}
                                 </button>
@@ -353,12 +356,12 @@ Join me: ${eventUrl}`
                         </div>
                         : isLoading ? (
                             <div className="flex-shrink-0 max-w-3xl px-6 py-20 mx-auto sm:px-6 sm:py-32 lg:px-8 md:max-w-7xl">
-                                <div className="text-lg text-gray-900 sm:text-2xl">Loading your confirmation...</div>
-                                <p className="mt-2 text-sm text-gray-600 sm:text-base">Please wait while we verify your registration details.</p>
+                                <div className="text-2xl leading-snug text-gray-900">Loading your confirmation...</div>
+                                <p className="mt-2 text-base text-gray-600">Please wait while we verify your registration details.</p>
                             </div>
                         ) : (
                             <div className="flex-shrink-0 max-w-3xl px-6 py-20 mx-auto sm:px-6 sm:py-32 lg:px-8 md:max-w-7xl">
-                                <p className="text-lg text-red-700 sm:text-2xl">{errorMessage || 'Unable to load confirmation details.'}</p>
+                                <p className="text-2xl leading-snug text-red-700">{errorMessage || 'Unable to load confirmation details.'}</p>
                                 <button
                                     type="button"
                                     onClick={() => patchData()}

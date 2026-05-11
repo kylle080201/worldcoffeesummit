@@ -33,6 +33,7 @@ export const mailer = async (data: any) => {
     const companyName = reqData.companyName;
     const hasNetworkingSoiree = reqData.hasNetworkingSoiree === true;
     const isNetworkingSoireeOnly = reqData.isNetworkingSoireeOnly === true;
+    const isNetworkingAddonConfirmation = reqData.isNetworkingAddonConfirmation === true;
     try {
         const isEmailSent = await transporter.sendMail({
             from: `World Coffee Innovation Summit Team <${user}>`,
@@ -49,6 +50,7 @@ export const mailer = async (data: any) => {
                 companyName,
                 hasNetworkingSoiree,
                 isNetworkingSoireeOnly,
+                isNetworkingAddonConfirmation,
             }),
             attachments: [
                 {
@@ -69,6 +71,12 @@ export const mailer = async (data: any) => {
     }
 };
 
+const networkingBadgeDisplayName = (ticketName: string, isNetworkingAddonConfirmation: boolean) => {
+    if (!isNetworkingAddonConfirmation) return ticketName;
+    const stripped = String(ticketName).replace(/\s*\(Add-on\)\s*$/i, "").trim();
+    return stripped || "Networking Soirée";
+};
+
 const generateEmailContent = ({
     lastName,
     firstName,
@@ -79,7 +87,9 @@ const generateEmailContent = ({
     companyName,
     hasNetworkingSoiree,
     isNetworkingSoireeOnly,
+    isNetworkingAddonConfirmation,
 }: any) => {
+    const badgeTicketName = networkingBadgeDisplayName(ticketName, isNetworkingAddonConfirmation === true);
     const networkingSoireeLink =
         "https://www.worldcoffeeinnovationsummit.com/register/form?line_items=%5B%7B%22price%22%3A%22price_1TUHu5KMWpUKzQVzaZLAIhUe%22%2C%22quantity%22%3A1%2C%22tax_rates%22%3A%5B%22txr_1NCgheKMWpUKzQVzZ761hX9q%22%5D%7D%5D";
     const summitRegistrationLink = "https://www.worldcoffeeinnovationsummit.com/register";
@@ -195,37 +205,47 @@ const generateEmailContent = ({
                     <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px"
                         class="responsive-table">
                         <tr>
-                            <td>
-                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <td width="100%" style="width:100%;">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%;">
                                     <tr>
-                                        <td>
-                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <td width="100%" style="width:100%;">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%;">
                                                 <tr>
-                                                    <td style="
+                                                    <td width="100%" style="
                                 padding: 0 0 0 0;
                                 font-size: 16px;
                                 line-height: 25px;
                                 color: #232323;
+                                width: 100%;
                                 " class="padding message-content">
-                                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;">
+                                                        <!-- Banner: full-width tds + center + fixed 600 table (Outlook / Apple Mail / Gmail) -->
+                                                        <center style="width:100%;text-align:center;">
+                                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;width:100%;">
                                                             <tr>
-                                                                <td align="center" style="padding:0 0 24px 0;text-align:center;">
-                                                                    <table role="presentation" align="center" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin:0 auto;">
+                                                                <td align="center" width="100%" style="padding:0 0 24px 0;text-align:center;">
+                                                                    <!--[if mso]>
+                                                                    <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;border-collapse:collapse;"><tr><td align="center" style="padding:0;">
+                                                                    <![endif]-->
+                                                                    <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:100%;max-width:600px;border-collapse:collapse;margin:0 auto;">
                                                                         <tr>
-                                                                            <td align="center" style="padding:0;text-align:center;">
+                                                                            <td align="center" width="600" style="padding:0;text-align:center;">
                                                                                 <img
                                                                                     width="600"
                                                                                     alt="World Coffee Innovation Summit London"
                                                                                     src="cid:${confirmationBannerCid}"
                                                                                     border="0"
-                                                                                    style="display:block;width:600px;max-width:100%;height:auto;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;margin:0 auto;"
+                                                                                    style="display:inline-block;width:100%;max-width:600px;height:auto;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;margin:0;padding:0;vertical-align:bottom;"
                                                                                 />
                                                                             </td>
                                                                         </tr>
                                                                     </table>
+                                                                    <!--[if mso]>
+                                                                    </td></tr></table>
+                                                                    <![endif]-->
                                                                 </td>
                                                             </tr>
                                                         </table>
+                                                        </center>
                                                         <div class="form-container">
                                                             <p>Dear ${firstName},</p>
                                                             ${isNetworkingSoireeOnly
@@ -235,7 +255,7 @@ const generateEmailContent = ({
             ? `<p>You&apos;re also confirmed for the Networking Soirée at the UK House of Lords.</p>`
             : ""}
                                                             <p>We look forward to welcoming you to London on 21-22 October 2026.</p>
-                                                            ${isNetworkingSoireeOnly
+                                                            ${isNetworkingSoireeOnly && !isNetworkingAddonConfirmation
             ? `
                                                             <p><b>Please note</b></p>
                                                             <p>The Networking Soirée pass is available to attendees with confirmed summit access.</p>
@@ -273,7 +293,7 @@ const generateEmailContent = ({
                                                                     <div>${jobTitle}</div>
                                                                     <div>${companyName}</div>
                                                                     <div>${email}</div>
-                                                                    <div>${ticketName}</div>
+                                                                    <div>${badgeTicketName}</div>
                                                                 </div>
                                                             </div>
                                                             <p><b>Event Details</b></p>
