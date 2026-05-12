@@ -6,7 +6,7 @@ import chrystelImage from '../images/2026-speakers/Yara international-Chrystel-M
 import yaraLogo from '../images/2026-speakers/Yara international-Chrystel-Monthean/Knowledge_grows_for_A4.png'
 import tawandaImage from '../images/2026-speakers/Gates-Foundation-Tawanda-Mthintwa-Hove/tawanda.jpg'
 import gatesLogo from '../images/2026-speakers/Gates-Foundation-Tawanda-Mthintwa-Hove/3840px-Gates_Foundation_Logo.svg.png'
-import marisaImage from '../images/2026-speakers/SC-Marisa Drew/Marisa Drew.png'
+import marisaImage from '../images/2026-speakers/SC-Marisa Drew/Marisa Drew.jpeg'
 import marisaLogo from '../images/2026-speakers/SC-Marisa Drew/sc-lock-up-english-grey-rgb.png'
 import jennyImage from '../images/2026-speakers/Bain & Co.-Jenny Davis-Peccoud/Jenny Davis-Peccoud.jpg'
 import bainLogo from '../images/2026-speakers/Bain & Co.-Jenny Davis-Peccoud/bainstackedlogo_dig_red_1280x389px (1).png'
