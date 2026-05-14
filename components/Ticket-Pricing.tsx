@@ -322,29 +322,32 @@ function TicketPricing() {
                     </div>
 
                     <div className="w-full lg:w-1/2">
-                        <h3 className="text-xl font-bold tracking-tight text-lime-700 sm:text-2xl">
+                        <h3 className="text-xl font-bold tracking-tight text-[#4F7928] sm:text-2xl">
                             Group Discounts Available
                         </h3>
-                        <p className="mt-3 tracking-tight">
-                            <span className="font-bold">3+ delegates</span>
-                            {' \u2013 '}
-                            Save 10%
-                        </p>
-                        <p className="tracking-tight">
-                            <span className="font-bold">4+ delegates</span>
-                            {' \u2013 '}
-                            Save 12%
-                        </p>
-                        <p className="tracking-tight">
-                            <span className="font-bold">5+ delegates</span>
-                            {' \u2013 '}
-                            Save 15%
-                        </p>
+                        <div className="mt-3 space-y-0 tracking-tight">
+                            <p>
+                                <span className="font-bold">3+ delegates</span>
+                                {' \u2013 '}
+                                Save 10%
+                            </p>
+                            <p>
+                                <span className="font-bold">4+ delegates</span>
+                                {' \u2013 '}
+                                Save 12%
+                            </p>
+                            <p>
+                                <span className="font-bold">5+ delegates</span>
+                                {' \u2013 '}
+                                Save 15%
+                            </p>
+                        </div>
+                        <p className="mt-3 tracking-tight">Excludes Networking Soirée passes.</p>
                         <p className="mt-3 tracking-tight">For group registrations, please contact:</p>
                         <Link
                             href={'mailto:info@worldcoffeealliance.com'}
                             target="_blank"
-                            className="text-base text-blue-600 underline hover:underline-offset-4 sm:text-lg"
+                            className="text-base text-[#3366BB] underline hover:underline-offset-4 sm:text-lg"
                         >
                             info@worldcoffeealliance.com
                         </Link>
