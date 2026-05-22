@@ -12,6 +12,10 @@ import jennyImage from '../images/2026-speakers/Bain & Co.-Jenny Davis-Peccoud/J
 import bainLogo from '../images/2026-speakers/Bain & Co.-Jenny Davis-Peccoud/bainstackedlogo_dig_red_1280x389px (1).png'
 import prueImage from '../images/2026-speakers/Google-Prue Mackenzie/prue photo (1).jpg'
 import googleLogo from '../images/2026-speakers/Google-Prue Mackenzie/Google Logo.png'
+import lenaImage from '../images/2026-speakers/TCHIBO-Lena Scheighofer/Lena Schweighofer.jpeg'
+import tchiboLogo from '../images/2026-speakers/TCHIBO-Lena Scheighofer/Tchibo.png'
+import raymondImage from '../images/2026-speakers/PMB-Raymond Katta/Raymond Katta.jpeg'
+import pmbLogo from '../images/2026-speakers/PMB-Raymond Katta/PMB Logo.png'
 import katrinaImage from '../images/2026-speakers/HSBC-Katrina-Hayter/Katrina Hayter.jpeg'
 import hsbcLogo from '../images/2026-speakers/HSBC-Katrina-Hayter/Hsbc_logo_PNG2.png'
 import sonyaImage from '../images/2026-speakers/CDP-Sonya Bhonsle/Sonya Bhonsle.jpg'
@@ -136,16 +140,6 @@ const speakers: Speaker[] = [
     description: 'Mario Abreu has been the Ferrero Group Vice President Sustainability since April 2020, based in Luxembourg. That role entails securing sustainability is fully embedded in the Group\'s long-term business strategy. Prior to Ferrero Mario worked for over 20 years in sustainability for Tetra Pak, the last 5 of them as their Global VP Sustainability based in Lund, Sweden. Throughout his time in Tetra Pak he led teams of up to 100 people globally, developing industry-leading programmes for collection and recycling of beverage cartons. Earlier Mario worked as a technical and commercial director for paper manufacturing and recycling businesses. In addition, he has served on several boards (FSC International, RSPO, High Conservation Value Resource Network, Proforest Initiative, and ACE Beverage Cartons) and technical advisory groups (Science Based Targets initiative). Mario is a Mechanical Engineer, with a Post-Grad Diploma in Environmental Decision Making, having done sustainability and business trainings at CISL (UK), IMD (CH), Ashridge (UK), the Open University (UK), and Fundaçao Getulio Vargas (BR).'
   },
   {
-    name: 'Andre van den Beld',
-    designation: 'Chief Sustainability Officer',
-    organization: 'Export Trading Group (ETG)',
-    image: andreImage,
-    logo: etgLogo,
-    iconHeight: 80,
-    iconWidth: 80,
-    description: 'Andre van den Beld is Chief Sustainability Officer at ETG, one of the largest global agri commodity trading and processing firms, with its stronghold in Sub-Sahara Africa. He has over 15 years of experience in building dedicated supply chains in various tropical commodities including cocoa, cashew, coffee, soya, cotton and fertilizers. Leading a 500+ FTE multidisciplinary team, ETG is mainly focusing on innovations at scale, such as waste recycling, renewable energy, biochar fertilizers and women finance solutions.'
-  },
-  {
     name: 'Malcolm Hett',
     designation: 'Director of Sustainability',
     organization: 'UCC Europe',
@@ -154,6 +148,16 @@ const speakers: Speaker[] = [
     iconHeight: 80,
     iconWidth: 80,
     description: 'Malcolm has worked within some of the world\'s top 10 largest coffee companies since his first caffeinated role as a Brand Manager in 2007. His experience is mainly on the consumption side of the coffee world, with roles in innovation, marketing, insight - and as a cafe owner - now working at UCC in Europe since 2021, firstly as Director of Innovation and now as Director of Sustainability. With UCC as the Total Coffee Solution behind several well-loved retail and hospitality brands across Europe, Malcolm explores and encourages developing solutions that can deliver against the sustainability goals of UCC\'s customers.'
+  },
+  {
+    name: 'Andre van den Beld',
+    designation: 'Chief Sustainability Officer',
+    organization: 'Export Trading Group (ETG)',
+    image: andreImage,
+    logo: etgLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: 'Andre van den Beld is Chief Sustainability Officer at ETG, one of the largest global agri commodity trading and processing firms, with its stronghold in Sub-Sahara Africa. He has over 15 years of experience in building dedicated supply chains in various tropical commodities including cocoa, cashew, coffee, soya, cotton and fertilizers. Leading a 500+ FTE multidisciplinary team, ETG is mainly focusing on innovations at scale, such as waste recycling, renewable energy, biochar fertilizers and women finance solutions.'
   },
   {
     name: 'Chrystel Monthean',
@@ -176,26 +180,6 @@ const speakers: Speaker[] = [
     description: ''
   },
   {
-    name: 'Dr. Tawanda Mthintwa Hove',
-    designation: 'Senior Program Officer, Digital Agronomy',
-    organization: 'Gates Foundation',
-    image: tawandaImage,
-    logo: gatesLogo,
-    iconHeight: 80,
-    iconWidth: 80,
-    description: ''
-  },
-  {
-    name: 'Prue Mackenzie',
-    designation: 'Director, Retail & CPG, Strategic Industries EMEA',
-    organization: 'Google',
-    image: prueImage,
-    logo: googleLogo,
-    iconHeight: 80,
-    iconWidth: 80,
-    description: 'Prue Mackenzie is a Director at Google Cloud, based in Paris. She is responsible for Google Cloud\'s largest clients in EMEA for the luxury, retail, CPG and travel sectors. Prue leads executives and board members on their AI and agentic journeys to accelerate their strategic priorities. Previously, Prue spent 10 years in Investment Banking at Credit Suisse in global roles across UK/EMEA, Singapore, the US and Australia. A passionate advocate for technology and AI education, Prue is an Industry Fellow at the University of Queensland, President of Harvard Alumni Women in France, and a Board Member of the Harvard Club of France.'
-  },
-  {
     name: 'Peter Foster',
     designation: 'World Trade Editor',
     organization: 'Financial Times (FT)',
@@ -214,6 +198,46 @@ const speakers: Speaker[] = [
     iconHeight: 80,
     iconWidth: 80,
     description: 'Jenny Davis-Peccoud is a partner in Bain & Company\'s Amsterdam office. In her almost 30 years at Bain, Jenny has advised clients across a wide range of industries, as well as government entities and NGOs, on topics such as growth strategy, organizational effectiveness, merger integration, business transformation, digital acceleration, pricing, supply chain and leadership team development. A US and French citizen, Jenny has led projects in varied business cultures across Europe, the Middle East, Asia and North America. Jenny founded and heads Bain\'s Global Sustainability & Responsibility practice. In the sustainability sphere, Jenny advises companies on how to tackle social and environmental challenges and opportunities as strategic issues at the heart of their core businesses. Beyond her broad expertise in this area, she has a particular focus on the food value chain, from agriculture to consumer products to retail, as well as the systems solutions needed to drive impactful and lasting change. She directs Bain\'s research in this field, focusing on topics such as the change management challenge of sustainability programs and the role of sustainability in employee engagement. Her work in this area has been published in The Wall Street Journal, The Huffington Post, HBR.org and the Stanford Social Innovation Review. Jenny received her BS from Georgetown University and her MBA, with distinction, from Harvard Business School.'
+  },
+  {
+    name: 'Prue Mackenzie',
+    designation: 'Director, Retail & CPG, Strategic Industries EMEA',
+    organization: 'Google',
+    image: prueImage,
+    logo: googleLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: 'Prue Mackenzie is a Director at Google Cloud, based in Paris. She is responsible for Google Cloud\'s largest clients in EMEA for the luxury, retail, CPG and travel sectors. Prue leads executives and board members on their AI and agentic journeys to accelerate their strategic priorities. Previously, Prue spent 10 years in Investment Banking at Credit Suisse in global roles across UK/EMEA, Singapore, the US and Australia. A passionate advocate for technology and AI education, Prue is an Industry Fellow at the University of Queensland, President of Harvard Alumni Women in France, and a Board Member of the Harvard Club of France.'
+  },
+  {
+    name: 'Lena Schweighöfer',
+    designation: 'Head of Sustainable Coffee',
+    organization: 'Tchibo GmbH',
+    image: lenaImage,
+    logo: tchiboLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: 'Lena Schweighöfer is Head of Sustainable Coffee at Tchibo. In this role, she oversees the Tchibo coffee program “Coffee2Stay” which aims to create long-term prospects for coffee farmers and promote sustainable farming practices. In her previous role, in addition to project work in Kenya and Colombia, her focus was the implementation of HRDD and the EUDR.'
+  },
+  {
+    name: 'Raymond Katta',
+    designation: 'Executive Chairman',
+    organization: 'Produce Monitoring Board (PMB), Sierra Leone',
+    image: raymondImage,
+    logo: pmbLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: `<p class="mb-3">Raymond holds a Bachelor of Arts degree in Liberal Studies from Westfield State University USA (2006), a Master of Science Degree in Human Services, with a Specialization in Organizational Management and Leadership from Springfield College, USA (2007), and a European Master&apos;s degree in human Rights and Democratization from the European Inter-University Center for Human Rights and Democratization, (now Global Campus for Human Rights), in Italy (2015).</p><p class="mb-3">Throughout his career, he has held esteemed Executive and Management positions in both Sierra Leone and the United States. Notable roles include serving as Deputy Executive Secretary at the Human Rights of Commission of Sierra Leone, Program Manager at the Jubilee Association of Maryland Inc., Head of Programmes at the Public Sector Reform Unit (PSRU), and Senior Direct of Programmes at the National Commission for Social Action (NaCSA) before being appointed by his Excellency the President Brigadier Dr. Julius Maada Bio as Executive Chairman of the Produce Monitoring Board on November 14th, 2024, a position he currently holds.</p><p class="mb-3">His expertise encompasses a diverse array of specializations with contributions in rights-based programming, strategic and operational planning, organizational transformation, change management, institutional capacity strengthening, impact assessment, project cycle management, resource mobilization, management and public policy.</p><p class="mb-3">Mr. Katta is also highly experienced in designing and implementing farm-mapping, geolocation verification, and digital traceability systems to meet international sustainability requirements (including EUDR). Skilled at stakeholder engagement, smallholder onboarding, M&amp;E, and developing and translating policy into operational systems that support market access and reduced deforestation risk.</p>`
+  },
+  {
+    name: 'Dr. Tawanda Mthintwa Hove',
+    designation: 'Senior Program Officer, Digital Agronomy',
+    organization: 'Gates Foundation',
+    image: tawandaImage,
+    logo: gatesLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: ''
   },
   {
     name: 'Michael Mowat',
