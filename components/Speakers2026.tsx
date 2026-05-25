@@ -12,8 +12,6 @@ import jennyImage from '../images/2026-speakers/Bain & Co.-Jenny Davis-Peccoud/J
 import bainLogo from '../images/2026-speakers/Bain & Co.-Jenny Davis-Peccoud/bainstackedlogo_dig_red_1280x389px (1).png'
 import prueImage from '../images/2026-speakers/Google-Prue Mackenzie/prue photo (1).jpg'
 import googleLogo from '../images/2026-speakers/Google-Prue Mackenzie/Google Logo.png'
-import lenaImage from '../images/2026-speakers/TCHIBO-Lena Scheighofer/Lena Schweighofer.JPG'
-import tchiboLogo from '../images/2026-speakers/TCHIBO-Lena Scheighofer/Tchibo.png'
 import raymondImage from '../images/2026-speakers/PMB-Raymond Katta/Raymond Katta.jpeg'
 import pmbLogo from '../images/2026-speakers/PMB-Raymond Katta/PMB Logo.png'
 import katrinaImage from '../images/2026-speakers/HSBC-Katrina-Hayter/Katrina Hayter.jpeg'
@@ -46,6 +44,8 @@ const axaLogo = '/images/2026-speakers/axa-climate-logo.png'
 const joyImage = '/images/2026-speakers/joy-macknight-v2.jpg'
 const seanImage = '/images/2026-speakers/sean-edwards-v2.jpg'
 const itfaLogo = '/images/2026-speakers/sean-itfa-logo-v2.png'
+const lenaImage = '/images/2026-speakers/lena-schweighofer.jpg'
+const tchiboLogo = '/images/2026-speakers/tchibo-logo.png'
 
 interface Speaker {
   name: string;
