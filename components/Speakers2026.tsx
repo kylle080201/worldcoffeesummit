@@ -62,7 +62,7 @@ const speakers: Speaker[] = [
   {
     name: 'The Rt. Hon John Gummer, The Lord Deben',
     designation: 'Former Secretary of State for the Environment & Minister of Agriculture, Fisheries, and Food',
-    organization: 'UK Climate Change Committee (CCC)',
+    organization: '',
     image: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Lord-Deben-Photo-2019-adj-003-scaled-copy.jpg',
     logo: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/House_of_Lords_logo_2020.svg.png',
     iconHeight: 200,
@@ -348,7 +348,9 @@ export default function Speakers2026() {
                         {speaker.name}
                       </p>
                       <p className="leading-7 text-white text-sm">{speaker.designation}</p>
-                      <p className="font-semibold leading-7 text-white text-md">{speaker.organization}</p>
+                      {speaker.organization && (
+                        <p className="font-semibold leading-7 text-white text-md">{speaker.organization}</p>
+                      )}
                     </div>
                   </div>
                 </a>
@@ -398,7 +400,9 @@ export default function Speakers2026() {
                         <div>
                           <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-lg">{selectedSpeaker.name}</p>
                           <p className="leading-7 text-gray-700 text-md">{selectedSpeaker.designation}</p>
-                          <p className="font-semibold leading-7 text-gray-900 text-2xl">{selectedSpeaker.organization}</p>
+                          {selectedSpeaker.organization && (
+                            <p className="font-semibold leading-7 text-gray-900 text-2xl">{selectedSpeaker.organization}</p>
+                          )}
                         </div>
                       </div>
                     </div>

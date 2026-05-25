@@ -29,8 +29,7 @@ function Speakers2024() {
     {
       name: 'The Rt Hon John Gummer, Lord Deben',
       role: 'Former Secretary of State for the Environment & Minister of Agriculture, Fisheries, and Food',
-      company: 'UK Climate Change Committee (The CCC)',
-      company2: "House of Lords",
+      company: 'House of Lords',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Lord-Deben-Photo-2019-adj-003-scaled-copy.jpg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/House_of_Lords_logo_2020.svg.png",
       iconWidth: 100,
