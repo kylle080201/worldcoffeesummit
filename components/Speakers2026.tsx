@@ -12,7 +12,7 @@ import jennyImage from '../images/2026-speakers/Bain & Co.-Jenny Davis-Peccoud/J
 import bainLogo from '../images/2026-speakers/Bain & Co.-Jenny Davis-Peccoud/bainstackedlogo_dig_red_1280x389px (1).png'
 import prueImage from '../images/2026-speakers/Google-Prue Mackenzie/prue photo (1).jpg'
 import googleLogo from '../images/2026-speakers/Google-Prue Mackenzie/Google Logo.png'
-import lenaImage from '../images/2026-speakers/TCHIBO-Lena Scheighofer/Lena Schweighofer.jpeg'
+import lenaImage from '../images/2026-speakers/TCHIBO-Lena Scheighofer/Lena Schweighofer.JPG'
 import tchiboLogo from '../images/2026-speakers/TCHIBO-Lena Scheighofer/Tchibo.png'
 import raymondImage from '../images/2026-speakers/PMB-Raymond Katta/Raymond Katta.jpeg'
 import pmbLogo from '../images/2026-speakers/PMB-Raymond Katta/PMB Logo.png'
@@ -61,7 +61,7 @@ interface Speaker {
 const speakers: Speaker[] = [
   {
     name: 'The Rt. Hon John Gummer, The Lord Deben',
-    designation: 'Former Chairman',
+    designation: 'Former Secretary of State for the Environment & Minister of Agriculture, Fisheries, and Food',
     organization: 'UK Climate Change Committee (CCC)',
     image: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Lord-Deben-Photo-2019-adj-003-scaled-copy.jpg',
     logo: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/House_of_Lords_logo_2020.svg.png',
@@ -217,7 +217,7 @@ const speakers: Speaker[] = [
     logo: tchiboLogo,
     iconHeight: 80,
     iconWidth: 80,
-    description: 'Lena Schweighöfer is Head of Sustainable Coffee at Tchibo. In this role, she oversees the Tchibo coffee program “Coffee2Stay” which aims to create long-term prospects for coffee farmers and promote sustainable farming practices. In her previous role, in addition to project work in Kenya and Colombia, her focus was the implementation of HRDD and the EUDR.'
+    description: `<p class="mb-3">Lena Schweighöfer is Head of Sustainable Coffee at Tchibo. In this role, she oversees the Tchibo coffee program &ldquo;Coffee2Stay&rdquo; which aims to create long-term prospects for coffee farmers and promote sustainable farming practices.</p><p>After completing her master&apos;s degree with a focus on international relations, Lena has built up expertise in human rights due diligence, sustainability legislation, and agricultural supply chains through her previous professional positions at ALDI Nord and GIZ.</p>`
   },
   {
     name: 'Raymond Katta',

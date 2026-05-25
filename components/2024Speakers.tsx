@@ -1,7 +1,10 @@
 "use client"
 import { Transition, Dialog } from '@headlessui/react'
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useRef, useState } from 'react'
 import Image from 'next/image'
+import Slider from 'react-slick'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 
 interface T_Speaker {
   name: string;
@@ -25,7 +28,7 @@ function Speakers2024() {
 
     {
       name: 'The Rt Hon John Gummer, Lord Deben',
-      role: 'Former Chairman',
+      role: 'Former Secretary of State for the Environment & Minister of Agriculture, Fisheries, and Food',
       company: 'UK Climate Change Committee (The CCC)',
       company2: "House of Lords",
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Lord-Deben-Photo-2019-adj-003-scaled-copy.jpg',
@@ -874,7 +877,23 @@ His areas of specialisation are global food security governance, agriculture and
 
   ];
 
+  const sliderRef = useRef<Slider>(null);
   const [selectedSpeaker, setSelectedSpeaker] = useState<T_Speaker | null>(null);
+
+  const settings = {
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 3000,
+    autoplaySpeed: 0,
+    cssEase: 'linear',
+    arrows: false,
+    responsive: [
+      { breakpoint: 1024, settings: { slidesToShow: 2 } },
+      { breakpoint: 640, settings: { slidesToShow: 1 } },
+    ],
+  };
 
   return (
     
@@ -883,54 +902,56 @@ His areas of specialisation are global food security governance, agriculture and
       <div className="px-12 py-20 sm:px-20" id="speakers">
         <div className="mx-auto sm:content-center">
           <div className="max-w-2xl mx-auto text-center">
-            <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">2025 SPEAKERS</p>
+            <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl pb-20">2025 SPEAKERS</p>
           </div>
-          <ul
-            role="list"
-            className="grid grid-cols-1 mx-auto mt-20 max-w-7xl gap-x-6 gap-y-20 md:grid-cols-2 lg:grid-cols-4 lg:gap-x-8"
-          >
-            {speakers.map((speaker) => (
-              <li
-                onClick={() => setSelectedSpeaker(speaker)}
-                key={speaker.name}
-                className="relative border rounded-md bg-lime-700 shadow-md hover:shadow-lg"
-              >
-                <a className="flex flex-col gap-2 hover:cursor-pointer">
-                  <div className="relative">
-                      <Image
-                        className="w-full rounded-t-md"
+          <div className="relative w-full max-w-7xl mx-auto mt-8">
+            <Slider ref={sliderRef} {...settings}>
+              {speakers.map((speaker, index) => (
+                <div
+                  key={`${speaker.name}-${index}`}
+                  className="px-2 cursor-pointer"
+                  onClick={() => setSelectedSpeaker(speaker)}
+                  role="button"
+                  tabIndex={0}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      setSelectedSpeaker(speaker);
+                    }
+                  }}
+                >
+                  <div className="flex flex-col w-72 bg-white rounded-lg overflow-hidden shadow-md h-[520px] relative">
+                    <div className="h-[300px] relative">
+                      <img
                         src={speaker.imageUrl}
                         alt={speaker.name}
-                        width={160}
-                        height={160}
+                        className="w-full h-full object-cover object-top"
+                        loading="lazy"
                       />
                       <div className="absolute w-24 h-24 right-4 top-4/4 transform -translate-y-1/2 bg-white p-2 rounded-md shadow-md">
-                        <div className='flex items-center h-full'>
-                          <Image
+                        <div className="flex items-center h-full">
+                          <img
                             src={speaker.companyIcon}
                             alt={`${speaker.company} logo`}
                             width={speaker.iconWidth}
                             height={speaker.iconHeight}
-                            className="my-auto mx-auto"
+                            className="my-auto mx-auto max-h-full max-w-full object-contain"
+                            loading="lazy"
                           />
                         </div>
                       </div>
-                  </div>
-                  <div className="flex text-left p-4">
-                    <div className="mt-6">
-                      <p className="text-lg font-semibold leading-8 tracking-tight text-white md:text-2xl">
-                          {speaker.name}
-                      </p>
-                      <p className="leading-7 text-white text-sm">{speaker.role}</p>
-                      <p className="font-semibold leading-7 text-white text-md">{speaker.company}</p>
-                      <p className="leading-7 text-white text-sm">{speaker.role2}</p>
+                    </div>
+                    <div className="flex flex-col justify-start flex-grow bg-[#4D7C0F] px-4 pt-12 pb-4 text-white p-6">
+                      <h3 className="text-lg font-semibold leading-8 tracking-tight text-white md:text-2xl">{speaker.name}</h3>
+                      <p className="font-semibold leading-7 text-white text-md">{speaker.role}</p>
+                      <p className="leading-7 text-white text-sm">{speaker.company}</p>
+                      {speaker.role2 && <p className="leading-7 text-white text-sm">{speaker.role2}</p>}
                       {speaker.company2 && <p className="font-semibold leading-7 text-white text-md">{speaker.company2}</p>}
                     </div>
                   </div>
-                </a>
-              </li>
-            ))}
-          </ul>
+                </div>
+              ))}
+            </Slider>
+          </div>
         </div>
     </div>
 
