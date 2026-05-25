@@ -15,7 +15,7 @@ interface Speaker {
 const speakers: Speaker[] = [
   {
     name: 'The Rt. Hon John Gummer, Lord Deben',
-    designation: 'Former Chairman',
+    designation: 'Former Secretary of State for the Environment & Minister of Agriculture, Fisheries, and Food',
     organization: 'UK Climate Change Committee (The CCC) House of Lords',
     image: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Lord-Deben-Photo-2019-adj-003-scaled-copy.jpg',
     logo: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/House_of_Lords_logo_2020.svg.png',
