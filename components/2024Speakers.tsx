@@ -402,20 +402,33 @@ combine innovation, social impact, and corporate sustainability.`
 
 
     {
-      name: 'Raymond Katta',
+      name: 'Raymond Bob Katta',
       role: 'Executive Chairman',
       company: 'Produce Monitoring Board (PMB), Sierra Leone',
       imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/Raymond-Katta.jpeg',
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/08/PMB-Logo.png",
       iconWidth: 80,
       iconHeight: 80,
-      bio: `Raymond holds a Bachelor of Arts degree in Liberal Studies from Westfield State University USA (2006), a Master of Science Degree in Human Services, with a Specialization in Organizational Management and Leadership from Springfield College, USA (2007), and a European Master’s degree in human Rights and Democratization from the European Inter-University Center for Human Rights and Democratization, (now Global Campus for Human Rights), in Italy (2015). 
+      bio: `Raymond was appointed Executive Chairman of the Produce Monitoring Board by H.E.
+President Brigadier Dr. Julius Maada Bio on 14 November 2024.
 
-Throughout his career, he has held esteemed Executive and Management positions in both Sierra Leone and the United States. Notable roles include serving as Deputy Executive Secretary at the Human Rights of Commission of Sierra Leone, Program Manager at the Jubilee Association of Maryland Inc., Head of Programmes at the Public Sector Reform Unit (PSRU), and Senior Direct of Programmes at the National Commission for Social Action (NaCSA) before being appointed by his Excellency the President Brigadier Dr. Julius Maada Bio as Executive Chairman of the Produce Monitoring Board on November 14th, 2024, a position he currently holds.
+He is a public sector leader with 15+ years of executive experience across Sierra Leone
+and the United States, specializing in institutional reform, rights-based development,
+and sustainable agricultural trade.
 
-His expertise encompasses a diverse array of specializations with contributions in rights-based programming, strategic and operational planning, organizational transformation, change management, institutional capacity strengthening, impact assessment, project cycle management, resource mobilization, management and public policy.
+He holds a BA in Liberal Studies from Westfield State University, an MSc in Human
+Services &amp; Organizational Leadership from Springfield College, and a European
+Master’s in Human Rights &amp; Democratization from the Global Campus of Human
+Rights, Italy.
 
-Mr. Katta is also highly experienced in designing and implementing farm-mapping, geolocation verification, and digital traceability systems to meet international sustainability requirements (including EUDR). Skilled at stakeholder engagement, smallholder onboarding, M&E, and developing and translating policy into operational systems that support market access and reduced deforestation risk.
+Prior to PMB, he served as Deputy Executive Secretary of Sierra Leone’s Human Rights
+Commission, Program Manager at Jubilee Association of Maryland, Head of
+Programmes at PSRU, and Senior Director at NaCSA.
+
+At PMB, he leads efforts to align Sierra Leone’s agricultural exports with international
+standards, focusing on EUDR readiness, farm-mapping and geolocation verification,
+digital traceability systems, and translating policy into operational solutions that expand
+market access and reduce deforestation risk.
  `
     },
     {
