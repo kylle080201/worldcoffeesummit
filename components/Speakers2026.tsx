@@ -302,7 +302,7 @@ const speakers: Speaker[] = [
     iconHeight: 80,
     iconWidth: 80,
     description: ''
-  ,}
+  },
   {
     name: 'Joy Macknight',
     designation: 'Journalist, Former Editor',
