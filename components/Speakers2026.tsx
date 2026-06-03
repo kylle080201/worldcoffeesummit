@@ -14,6 +14,10 @@ import prueImage from '../images/2026-speakers/Google-Prue Mackenzie/prue photo 
 import googleLogo from '../images/2026-speakers/Google-Prue Mackenzie/Google Logo.png'
 import katrinaImage from '../images/2026-speakers/HSBC-Katrina-Hayter/Katrina Hayter.jpeg'
 import hsbcLogo from '../images/2026-speakers/HSBC-Katrina-Hayter/Hsbc_logo_PNG2.png'
+import davidLabordeImage from '../images/2026-speakers/FAO-David Laborde/David Laborde.jpg'
+import faoLogo from '../images/2026-speakers/FAO-David Laborde/fao-logo-en.png'
+import rickVanDerKampImage from '../images/2026-speakers/IFAD-Rick van der Kamp/Rick van der Kamp.jpg'
+import ifadLogo from '../images/2026-speakers/IFAD-Rick van der Kamp/E_g_web.png'
 import sonyaImage from '../images/2026-speakers/CDP-Sonya Bhonsle/Sonya Bhonsle.jpg'
 import cdpLogo from '../images/2026-speakers/CDP-Sonya Bhonsle/cdp.png'
 const anupImage = '/images/2026-speakers/anup-jagwani.jpg'
@@ -78,6 +82,16 @@ const speakers: Speaker[] = [
     iconHeight: 80,
     iconWidth: 80,
     description: `<p class="mb-3">Anup Jagwani is the World Bank Group (WBG) Director for Farming and Agribusiness, which brings together public and private sector expertise to transform food systems and scale climate-smart agriculture. In this role Anup also drives the AgriConnect agenda forward to transform opportunities and livelihoods for 300 million farmers globally by 2030.</p><p class="mb-3">Anup has previously held various leadership positions across the WBG and most recently as WBG Senior Manager, Farming and Agribusiness, Solutions &amp; Impact. Prior to that, Anup was Senior Global Sector Manager for Agribusiness and Forestry at the International Finance Corporation (IFC), a member of the World Bank Group, and the largest development institution focused on the private sector in emerging markets.</p><p class="mb-3">During his WBG career, Anup also led IFC&apos;s climate finance and policy team, covering several areas of climate business including sustainable finance; carbon pricing and carbon credits; climate risk, adaptation and resilience; biodiversity finance and nature-based solutions. In addition, he spent over 20 years in IFC&apos;s investment operations, with the majority of his time focused on agribusiness and agritech investments, with a particular focus on Sub Saharan Africa and South and South-East Asia. Anup has served as nominee Director for several IFC investee companies.</p><p>Before joining IFC, Anup was with Unilever in India. Anup is a graduate of the Asian Institute of Management and the Wharton School of Business and completed his undergraduate studies in Economics at St. Xavier&apos;s College in Kolkata, India.</p>`
+  },
+  {
+    name: 'David Laborde',
+    designation: 'Director of Agrifood Economics and Policy Division (ESA)',
+    organization: 'Food and Agriculture Organization of the United Nations (FAO)',
+    image: davidLabordeImage,
+    logo: faoLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: ''
   },
   {
     name: 'Teddy Esteve',
@@ -258,6 +272,16 @@ const speakers: Speaker[] = [
     iconHeight: 80,
     iconWidth: 80,
     description: 'Katrina is Global Head of Sustainable Land Use & Supply Chains at HSBC in Group Sustainability. She is HSBC\'s senior expert on land use and the agri-food system transition. Her focal areas include sustainable agriculture, new technologies & commericalisation, with a particularly focus on decarbonisation and low carbon and nature positive technologies, new industry segments and supply chain sustainability. She is supporting the bank and its customers globally, in land-based industries and across supply chains, transition to a low carbon future. Previously she was in the UK government, where she held a number senior civil servant roles including Executive Director for Healthy Living and Agriculture for the UK innovation agency. Katrina has worked for different organisations across the Agri-food sector including FERA Science, DuPont Pioneer, and the World Economic Forum. Throughout her career, she has worked on the commercialisation of technology innovation both from a public and government perspective. Katrina has a PhD in Biosciences, an MSc in Ecology and a BSc in Plant Sciences.'
+  },
+  {
+    name: 'Rick van der Kamp',
+    designation: 'Global Lead for Markets, Value Chains and Rural Finance',
+    organization: 'International Fund for Agriculture Development (IFAD)',
+    image: rickVanDerKampImage,
+    logo: ifadLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: ''
   },
   {
     name: 'Toby Behrmann',
