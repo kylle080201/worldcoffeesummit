@@ -1,4 +1,4 @@
-import { ArrowLongRightIcon, } from '@heroicons/react/24/solid'
+import { ArrowLongRightIcon } from '@heroicons/react/24/solid'
 import Link from 'next/link'
 
 export default function Venue() {
@@ -13,13 +13,13 @@ export default function Venue() {
                         <p className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
                             QEII Centre
                         </p>
-                        <p className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+                        <p className="text-2xl tracking-tight text-gray-900 sm:text-4xl">
                             Broad Sanctuary
                         </p>
-                        <p className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+                        <p className="text-2xl tracking-tight text-gray-900 sm:text-4xl">
                             Westminster
                         </p>
-                        <p className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+                        <p className="text-2xl tracking-tight text-gray-900 sm:text-4xl">
                             London SW1P 3EE
                         </p>
                     </div>
@@ -39,7 +39,7 @@ export default function Venue() {
                                 </div>
                                 <ArrowLongRightIcon className="self-center mx-auto mt-2 w-7 h-7" aria-hidden="true" />
                             </Link>
-                            <p><b>Note:</b>The suggested hotels are for reference only. You don’t need to book through this link — feel free to reserve directly with hotels or use trusted sites like Booking.com or Expedia.</p>
+                            <p><b>Note:</b>The suggested hotels are for reference only. You don’t need to book through this link — feel free to reserve directly with hotels or use trusted sites like Booking.com or Expedia.</p>
                         </div>
                     </div>
                 </div>
@@ -51,7 +51,8 @@ export default function Venue() {
                     />
                 </div>
             </div>
-            {/* <div className="mx-auto lg:flex md:max-w-7xl mt-12 gap-12">
+
+            <div className="mx-auto lg:flex md:max-w-7xl mt-20 gap-12">
                 <div className="flex-shrink-0 max-w-5xl mx-12 mt-12 lg:mx-0 md:mt-0 w-3/5">
                     <img
                         src="https://worldcoffeealliance.com/wp-content/uploads/2024/05/11c55634acb3faa3c15d13127891b37e-e1716190907215.jpeg"
@@ -78,7 +79,7 @@ export default function Venue() {
                         </p>
                     </div>
                 </div>
-            </div> */}
+            </div>
         </div>
     )
 }

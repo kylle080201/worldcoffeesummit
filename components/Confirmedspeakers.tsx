@@ -36,14 +36,6 @@ const speakers: Speaker[] = [
      description:''
   },
   {
-    name: 'Stefan Dierks',
-    designation: 'Director Sustainability Strategy',
-    organization: 'Melitta Group',
-    image: 'https://softtechs360.com/worldcoffee/wp-content/uploads/2025/06/Dierks.jpg',
-     logo: 'https://softtechs360.com/worldcoffee/wp-content/uploads/2025/06/Untitled-design-2.png',
-     description:'Stefan Dierks is since 2019 Director Sustainability Strategy at Melitta Group. In this role he is responsible for the group-wide coordination and monitoring of the Melitta sustainability transformation process. •	He has 19-years’ sustainability experience across different economic sectors, with a special focus on the coffee value chain.  •	Due to his prior professional experience as HR coach and developer, he places a high value on the needs of human beings in transformation processes.  •	Along with his engagement in the mentioned sectors, he is engaged in various sector and sustainability associations and initiatives, on global as well as European and German scale.  •	Stefan studied Environmental Sciences at the Leuphana Luneburg in Germany.  •	He is engaged in different alliances, e.g. as a Board Member of the Global Coffee Platform GCP, Member of the Advisory Board of BAUM e.V., as well as Member of the Board of Trustees of the German Consumer Protection Foundation. •	Stefan regularly gives lectures, e.g. at universities and at conferences.'
-  },
-  {
     name: 'Mario Abreu',
     designation: 'Group Vice President Sustainability',
     organization: 'Ferrero',

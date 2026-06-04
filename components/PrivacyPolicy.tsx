@@ -138,7 +138,7 @@ export default function PrivacyPolicy() {
         },
         {
             key: 11,
-            text: "If you consider that our processing of your personal information infringes data protection laws, you have a legal right to lodge a complaint with a supervisory authority responsible for data protection. You may do so in the EU member state of your habitual residence, your place of work or the place of the alleged infringement."
+            text: "If you consider that our processing of your personal information infringes data protection laws, you have a legal right to lodge a complaint with a supervisory authority responsible for data protection. You may do so in the EU member state of your habitual residence, your place of work or the place of the alleged infringement. In the United Kingdom, you may also lodge a complaint with the Information Commissioner's Office (ICO)."
         },
         {
             key: 12,
@@ -236,6 +236,7 @@ export default function PrivacyPolicy() {
                 <div className="mx-auto text-left ">
                     <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">PRIVACY POLICY</h1>
                     <p className="mt-12 tracking-tight text-gray-700 text-md sm:text-lg">We have always complied with both the spirit and the letter of data protection laws and will continue to do so. In order to comply with new rules (GDPR), we have updated our privacy policy.</p>
+                    <p className="mt-6 tracking-tight text-gray-700 text-md sm:text-lg">Global Stratagem Group Ltd is the data controller responsible for your personal information.</p>
                     <p className="mt-6 tracking-tight text-gray-700 text-md sm:text-lg">The policy sets out prescribed information such as what data we are holding, what we are doing with that data (how we are “processing” that data), why we are processing your data, and you rights under the new law.</p>
                     <p className="mt-6 tracking-tight text-gray-700 text-md sm:text-lg">If you are wondering how we obtained your data, it is likely that we have it as you have dealt with us in the past or the data is publicly-available on business sites such as LinkedIn, or you may have handed us your business card or given us your information in some other way.</p>
                     <p className="mt-6 tracking-tight text-gray-700 text-md sm:text-lg">In order to process data, we need to identify a “lawful basis”. The lawful basis will typically be  your consent, our legitimate interests, to perform a contract with you, or when we are legally obliged to do so.</p>
@@ -282,6 +283,27 @@ export default function PrivacyPolicy() {
                             <p key={item.key} className="mt-6 tracking-tight text-gray-700 text-md sm:text-lg">{item.key}. {item.text}</p>
                         </>
                     ))}
+                </div>
+
+                <div className="mx-auto text-left ">
+                    <p className="mt-12 font-bold tracking-tight text-gray-700 text-md sm:text-lg">Event Participation &amp; Networking</p>
+
+                    <p className="mt-6 tracking-tight text-gray-700 text-md sm:text-lg">When registering for our events, we may process your personal information for:</p>
+                    <ul className="mt-3 ml-6 list-disc tracking-tight text-gray-700 text-md sm:text-lg">
+                        <li>event administration;</li>
+                        <li>attendee communications;</li>
+                        <li>badge production;</li>
+                        <li>networking facilitation;</li>
+                        <li>sponsor and exhibitor interactions;</li>
+                        <li>business matching;</li>
+                        <li>event analytics and reporting.</li>
+                    </ul>
+
+                    <p className="mt-6 tracking-tight text-gray-700 text-md sm:text-lg">As part of the event experience, attendee information such as name, job title, organisation and business contact details may be shared with sponsors or selected event partners for networking and event-related communications where relevant.</p>
+
+                    <p className="mt-6 tracking-tight text-gray-700 text-md sm:text-lg">Attendees may also voluntarily share their information through networking interactions, business card exchange, enquiry forms or other engagement activities during the event.</p>
+
+                    <p className="mt-6 tracking-tight text-gray-700 text-md sm:text-lg">You may opt out of marketing communications at any time by contacting the Organiser in writing.</p>
                 </div>
 
                 <div className="mx-auto text-left ">
@@ -370,7 +392,9 @@ export default function PrivacyPolicy() {
 
                 <div className="mx-auto text-left ">
                     <p className="mt-12 font-bold tracking-tight text-gray-700 text-md sm:text-lg">Contact by email</p>
-                    <p className="mt-6 tracking-tight text-gray-700 text-md sm:text-lg">info@worldcofeealliance.com</p>
+                    <p className="mt-6 tracking-tight text-gray-700 text-md sm:text-lg">
+                        <a href="mailto:info@worldcoffeealliance.com" className="underline">info@worldcoffeealliance.com</a>
+                    </p>
                 </div>
             </div>
         </>

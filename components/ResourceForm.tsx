@@ -1483,6 +1483,15 @@ const ResourceForm = () => {
     const onSubmit = async (data: any) => {
       if (data) {
         try {
+            // The country-code select stores the ISO code (unique) to avoid
+            // clashes between countries that share a dial code (e.g. UK /
+            // Guernsey on +44, US / Canada on +1). Convert it back to the
+            // dial code before sending downstream so mailers and storage
+            // keep their existing shape.
+            const dialCode =
+              countryCodes.find((c) => c.code === data.countryCode)?.dial_code ??
+              data.countryCode
+            const submitData = { ...data, countryCode: dialCode }
             await fetch('/api/download-magazine', {
                 method: 'POST',
                 headers: {
@@ -1490,7 +1499,7 @@ const ResourceForm = () => {
                 },
                 body: JSON.stringify(
                     {
-                        data
+                        data: submitData
                     }
                 )
             }).then(response => response.json())
@@ -1557,7 +1566,7 @@ const ResourceForm = () => {
                                             <select {...field} className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500" required>
                                                 <option value="" disabled selected hidden>Select Country Code</option>
                                                 {countryCodes.map((country) => (
-                                                    <option key={country.code} value={country.dial_code} >{country.name} ({country.dial_code})</option>
+                                                    <option key={country.code} value={country.code} >{country.name} ({country.dial_code})</option>
                                                 ))}
                                             </select>
                                         )}

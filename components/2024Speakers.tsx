@@ -1,6 +1,10 @@
+"use client"
 import { Transition, Dialog } from '@headlessui/react'
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useRef, useState } from 'react'
 import Image from 'next/image'
+import Slider from 'react-slick'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 
 interface T_Speaker {
   name: string;
@@ -24,9 +28,8 @@ function Speakers2024() {
 
     {
       name: 'The Rt Hon John Gummer, Lord Deben',
-      role: 'Former Chairman',
-      company: 'UK Climate Change Committee (The CCC)',
-      company2: "House of Lords",
+      role: 'Former Secretary of State for the Environment & Minister of Agriculture, Fisheries, and Food',
+      company: 'House of Lords',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Lord-Deben-Photo-2019-adj-003-scaled-copy.jpg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/House_of_Lords_logo_2020.svg.png",
       iconWidth: 100,
@@ -399,20 +402,33 @@ combine innovation, social impact, and corporate sustainability.`
 
 
     {
-      name: 'Raymond Katta',
+      name: 'Raymond Bob Katta',
       role: 'Executive Chairman',
       company: 'Produce Monitoring Board (PMB), Sierra Leone',
       imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/Raymond-Katta.jpeg',
       companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/08/PMB-Logo.png",
       iconWidth: 80,
       iconHeight: 80,
-      bio: `Raymond holds a Bachelor of Arts degree in Liberal Studies from Westfield State University USA (2006), a Master of Science Degree in Human Services, with a Specialization in Organizational Management and Leadership from Springfield College, USA (2007), and a European Master’s degree in human Rights and Democratization from the European Inter-University Center for Human Rights and Democratization, (now Global Campus for Human Rights), in Italy (2015). 
+      bio: `Raymond was appointed Executive Chairman of the Produce Monitoring Board by H.E.
+President Brigadier Dr. Julius Maada Bio on 14 November 2024.
 
-Throughout his career, he has held esteemed Executive and Management positions in both Sierra Leone and the United States. Notable roles include serving as Deputy Executive Secretary at the Human Rights of Commission of Sierra Leone, Program Manager at the Jubilee Association of Maryland Inc., Head of Programmes at the Public Sector Reform Unit (PSRU), and Senior Direct of Programmes at the National Commission for Social Action (NaCSA) before being appointed by his Excellency the President Brigadier Dr. Julius Maada Bio as Executive Chairman of the Produce Monitoring Board on November 14th, 2024, a position he currently holds.
+He is a public sector leader with 15+ years of executive experience across Sierra Leone
+and the United States, specializing in institutional reform, rights-based development,
+and sustainable agricultural trade.
 
-His expertise encompasses a diverse array of specializations with contributions in rights-based programming, strategic and operational planning, organizational transformation, change management, institutional capacity strengthening, impact assessment, project cycle management, resource mobilization, management and public policy.
+He holds a BA in Liberal Studies from Westfield State University, an MSc in Human
+Services &amp; Organizational Leadership from Springfield College, and a European
+Master’s in Human Rights &amp; Democratization from the Global Campus of Human
+Rights, Italy.
 
-Mr. Katta is also highly experienced in designing and implementing farm-mapping, geolocation verification, and digital traceability systems to meet international sustainability requirements (including EUDR). Skilled at stakeholder engagement, smallholder onboarding, M&E, and developing and translating policy into operational systems that support market access and reduced deforestation risk.
+Prior to PMB, he served as Deputy Executive Secretary of Sierra Leone’s Human Rights
+Commission, Program Manager at Jubilee Association of Maryland, Head of
+Programmes at PSRU, and Senior Director at NaCSA.
+
+At PMB, he leads efforts to align Sierra Leone’s agricultural exports with international
+standards, focusing on EUDR readiness, farm-mapping and geolocation verification,
+digital traceability systems, and translating policy into operational solutions that expand
+market access and reduce deforestation risk.
  `
     },
     {
@@ -873,7 +889,23 @@ His areas of specialisation are global food security governance, agriculture and
 
   ];
 
+  const sliderRef = useRef<Slider>(null);
   const [selectedSpeaker, setSelectedSpeaker] = useState<T_Speaker | null>(null);
+
+  const settings = {
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 3000,
+    autoplaySpeed: 0,
+    cssEase: 'linear',
+    arrows: false,
+    responsive: [
+      { breakpoint: 1024, settings: { slidesToShow: 2 } },
+      { breakpoint: 640, settings: { slidesToShow: 1 } },
+    ],
+  };
 
   return (
     
@@ -882,54 +914,56 @@ His areas of specialisation are global food security governance, agriculture and
       <div className="px-12 py-20 sm:px-20" id="speakers">
         <div className="mx-auto sm:content-center">
           <div className="max-w-2xl mx-auto text-center">
-            <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">2025 SPEAKERS</p>
+            <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl pb-20">2025 SPEAKERS</p>
           </div>
-          <ul
-            role="list"
-            className="grid grid-cols-1 mx-auto mt-20 max-w-7xl gap-x-6 gap-y-20 md:grid-cols-2 lg:grid-cols-4 lg:gap-x-8"
-          >
-            {speakers.map((speaker) => (
-              <li
-                onClick={() => setSelectedSpeaker(speaker)}
-                key={speaker.name}
-                className="relative border rounded-md bg-lime-700 shadow-md hover:shadow-lg"
-              >
-                <a className="flex flex-col gap-2 hover:cursor-pointer">
-                  <div className="relative">
-                      <Image
-                        className="w-full rounded-t-md"
+          <div className="relative w-full max-w-7xl mx-auto mt-8">
+            <Slider ref={sliderRef} {...settings}>
+              {speakers.map((speaker, index) => (
+                <div
+                  key={`${speaker.name}-${index}`}
+                  className="px-2 cursor-pointer"
+                  onClick={() => setSelectedSpeaker(speaker)}
+                  role="button"
+                  tabIndex={0}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      setSelectedSpeaker(speaker);
+                    }
+                  }}
+                >
+                  <div className="flex flex-col w-72 bg-white rounded-lg overflow-hidden shadow-md h-[520px] relative">
+                    <div className="h-[300px] relative">
+                      <img
                         src={speaker.imageUrl}
                         alt={speaker.name}
-                        width={160}
-                        height={160}
+                        className="w-full h-full object-cover object-top"
+                        loading="lazy"
                       />
                       <div className="absolute w-24 h-24 right-4 top-4/4 transform -translate-y-1/2 bg-white p-2 rounded-md shadow-md">
-                        <div className='flex items-center h-full'>
-                          <Image
+                        <div className="flex items-center h-full">
+                          <img
                             src={speaker.companyIcon}
                             alt={`${speaker.company} logo`}
                             width={speaker.iconWidth}
                             height={speaker.iconHeight}
-                            className="my-auto mx-auto"
+                            className="my-auto mx-auto max-h-full max-w-full object-contain"
+                            loading="lazy"
                           />
                         </div>
                       </div>
-                  </div>
-                  <div className="flex text-left p-4">
-                    <div className="mt-6">
-                      <p className="text-lg font-semibold leading-8 tracking-tight text-white md:text-2xl">
-                          {speaker.name}
-                      </p>
-                      <p className="leading-7 text-white text-sm">{speaker.role}</p>
-                      <p className="font-semibold leading-7 text-white text-md">{speaker.company}</p>
-                      <p className="leading-7 text-white text-sm">{speaker.role2}</p>
+                    </div>
+                    <div className="flex flex-col justify-start flex-grow bg-[#4D7C0F] px-4 pt-12 pb-4 text-white p-6">
+                      <h3 className="text-lg font-semibold leading-8 tracking-tight text-white md:text-2xl">{speaker.name}</h3>
+                      <p className="font-semibold leading-7 text-white text-md">{speaker.role}</p>
+                      <p className="leading-7 text-white text-sm">{speaker.company}</p>
+                      {speaker.role2 && <p className="leading-7 text-white text-sm">{speaker.role2}</p>}
                       {speaker.company2 && <p className="font-semibold leading-7 text-white text-md">{speaker.company2}</p>}
                     </div>
                   </div>
-                </a>
-              </li>
-            ))}
-          </ul>
+                </div>
+              ))}
+            </Slider>
+          </div>
         </div>
     </div>
 
