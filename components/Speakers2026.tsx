@@ -204,16 +204,6 @@ const speakers: Speaker[] = [
     description: 'Peter Foster is the world trade editor of the Financial Times. His brief is to report on the shifting landscape of global supply chains, investment and trade patterns being reorientated as a result of pressures being applied by the second Trump administration. Previously Peter was UK policy editor, reporting on the UK\'s post-Brexit trade, regulatory and investment environment. Peter appears regularly discussing policy issues on radio and television broadcasts, including BBC, RTE as well as Italian and German stations. He joined the FT in April 2020 from the Telegraph Media Group where he had held the position of Europe editor since 2015, focusing on the Brexit negotiations. He has more than two decades of experience covering global affairs from all sides of the world, based in New Delhi (2004-2008) and Beijing (2008-2012), as well as Washington DC, where he served as The Telegraph\'s US editor from 2012-2015. His book What Went Wrong with Brexit - and what we can do about it was published by Canongate in September 2023. It was a Waterstones \'best book of 2023\', a Guardian \'if you read one book about politics\' pick and a Christmas Book choice by \'The Week\'.'
   },
   {
-    name: 'Jenny Davis-Peccoud',
-    designation: 'Partner, Founder, Global Sustainability & Responsibility Practice',
-    organization: 'Bain & Co.',
-    image: jennyImage,
-    logo: bainLogo,
-    iconHeight: 80,
-    iconWidth: 80,
-    description: 'Jenny Davis-Peccoud is a partner in Bain & Company\'s Amsterdam office. In her almost 30 years at Bain, Jenny has advised clients across a wide range of industries, as well as government entities and NGOs, on topics such as growth strategy, organizational effectiveness, merger integration, business transformation, digital acceleration, pricing, supply chain and leadership team development. A US and French citizen, Jenny has led projects in varied business cultures across Europe, the Middle East, Asia and North America. Jenny founded and heads Bain\'s Global Sustainability & Responsibility practice. In the sustainability sphere, Jenny advises companies on how to tackle social and environmental challenges and opportunities as strategic issues at the heart of their core businesses. Beyond her broad expertise in this area, she has a particular focus on the food value chain, from agriculture to consumer products to retail, as well as the systems solutions needed to drive impactful and lasting change. She directs Bain\'s research in this field, focusing on topics such as the change management challenge of sustainability programs and the role of sustainability in employee engagement. Her work in this area has been published in The Wall Street Journal, The Huffington Post, HBR.org and the Stanford Social Innovation Review. Jenny received her BS from Georgetown University and her MBA, with distinction, from Harvard Business School.'
-  },
-  {
     name: 'Prue Mackenzie',
     designation: 'Director, Retail & CPG, Strategic Industries EMEA',
     organization: 'Google',
@@ -222,6 +212,16 @@ const speakers: Speaker[] = [
     iconHeight: 80,
     iconWidth: 80,
     description: 'Prue Mackenzie is a Director at Google Cloud, based in Paris. She is responsible for Google Cloud\'s largest clients in EMEA for the luxury, retail, CPG and travel sectors. Prue leads executives and board members on their AI and agentic journeys to accelerate their strategic priorities. Previously, Prue spent 10 years in Investment Banking at Credit Suisse in global roles across UK/EMEA, Singapore, the US and Australia. A passionate advocate for technology and AI education, Prue is an Industry Fellow at the University of Queensland, President of Harvard Alumni Women in France, and a Board Member of the Harvard Club of France.'
+  },
+  {
+    name: 'Jenny Davis-Peccoud',
+    designation: 'Partner, Founder, Global Sustainability & Responsibility Practice',
+    organization: 'Bain & Co.',
+    image: jennyImage,
+    logo: bainLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: 'Jenny Davis-Peccoud is a partner in Bain & Company\'s Amsterdam office. In her almost 30 years at Bain, Jenny has advised clients across a wide range of industries, as well as government entities and NGOs, on topics such as growth strategy, organizational effectiveness, merger integration, business transformation, digital acceleration, pricing, supply chain and leadership team development. A US and French citizen, Jenny has led projects in varied business cultures across Europe, the Middle East, Asia and North America. Jenny founded and heads Bain\'s Global Sustainability & Responsibility practice. In the sustainability sphere, Jenny advises companies on how to tackle social and environmental challenges and opportunities as strategic issues at the heart of their core businesses. Beyond her broad expertise in this area, she has a particular focus on the food value chain, from agriculture to consumer products to retail, as well as the systems solutions needed to drive impactful and lasting change. She directs Bain\'s research in this field, focusing on topics such as the change management challenge of sustainability programs and the role of sustainability in employee engagement. Her work in this area has been published in The Wall Street Journal, The Huffington Post, HBR.org and the Stanford Social Innovation Review. Jenny received her BS from Georgetown University and her MBA, with distinction, from Harvard Business School.'
   },
   {
     name: 'Lena Schweighöfer',
