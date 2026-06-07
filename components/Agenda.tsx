@@ -11,7 +11,7 @@ function Agenda() {
     width: 50px;
     border-radius: 100%;
     margin-bottom:10px
-}`}</style><div id="agenda" className='w-full'>
+}`}</style><div id="agenda-2025" className='w-full scroll-mt-24'>
                 <div className='py-20 max-w-5xl mx-auto'>
                     <h2 className="relative text-4xl font-bold text-center tracking-tight">2025 AGENDA</h2>
                     {/* <h2 className="text-sm text-red-500 text-center ">Confidentiality – Chatham House Rule*</h2> */}

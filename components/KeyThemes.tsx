@@ -97,9 +97,41 @@ const keyThemes: ThemeCard[] = [
   },
 ];
 
-function KeyThemes() {
+const navButtonClassName =
+  "rounded-lg bg-lime-700 px-6 py-3 text-lg font-bold text-white transition-colors duration-300 hover:bg-lime-800";
+
+export function AgendaNavigator({ useHashLinks = false }: { useHashLinks?: boolean }) {
   return (
-    <section className="w-full bg-gray-100 px-6 pt-10 pb-12 sm:px-8 md:pt-12 md:pb-16">
+    <div className="flex flex-wrap justify-center gap-4">
+      {useHashLinks ? (
+        <>
+          <a href="#key-themes-2026" className={navButtonClassName}>
+            2026 KEY THEMES
+          </a>
+          <a href="#agenda-2025" className={navButtonClassName}>
+            2025 AGENDA
+          </a>
+        </>
+      ) : (
+        <>
+          <Link href="/agenda#key-themes-2026" className={navButtonClassName}>
+            2026 KEY THEMES
+          </Link>
+          <Link href="/agenda#agenda-2025" className={navButtonClassName}>
+            2025 AGENDA
+          </Link>
+        </>
+      )}
+    </div>
+  );
+}
+
+function KeyThemes({ showNavigator = true, compactTop = false }: { showNavigator?: boolean; compactTop?: boolean }) {
+  return (
+    <section
+      id="key-themes-2026"
+      className={`w-full scroll-mt-24 bg-gray-100 px-6 pb-12 sm:px-8 md:pb-16 ${compactTop ? 'pt-4 sm:pt-6' : 'pt-10 md:pt-12'}`}
+    >
       <div className="mx-auto w-full max-w-7xl">
         <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">
           2026 KEY THEMES
@@ -137,14 +169,11 @@ function KeyThemes() {
             </article>
           ))}
         </div>
-        <div className="mt-8 flex justify-center">
-          <Link
-            href="/agenda"
-            className="rounded-lg bg-lime-700 px-6 py-3 text-lg font-bold text-white transition-colors duration-300 hover:bg-lime-800"
-          >
-            2025 AGENDA
-          </Link>
-        </div>
+        {showNavigator && (
+          <div className="mt-8">
+            <AgendaNavigator />
+          </div>
+        )}
       </div>
     </section>
   );

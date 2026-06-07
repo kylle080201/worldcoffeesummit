@@ -1,12 +1,13 @@
 import React from 'react'
 import Agenda from '../../../components/Agenda'
+import KeyThemes from '../../../components/KeyThemes'
 
 function page() {
   return (
-    <div>
+    <>
+      <KeyThemes showNavigator={false} compactTop />
       <Agenda />
-    </div>
+    </>
   )
 }
-
 export default page
