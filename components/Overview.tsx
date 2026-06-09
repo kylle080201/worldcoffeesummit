@@ -1,8 +1,10 @@
 "use client"
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import KeyThemes from './KeyThemes'
 import Speakers2026 from './Speakers2026'
+import wcaWhiteLogo from '../images/WCA-White.png'
 
 export default function Overview() {
     return (
@@ -25,12 +27,6 @@ export default function Overview() {
 
   {/* Teal Overlay */}
   <div className="absolute inset-0 bg-teal-700 opacity-50 z-0" />
-                {/* Icon in the top right corner */}
-                <div className="absolute top-6 right-6 z-10">
-                    <Link href={"https://worldcoffeealliance.com/"} target='_blank'>
-                        <img src="https://worldcoffeealliance.com/wp-content/uploads/2021/08/WCA_new_logo.png" alt="Icon" className="w-24 h-24 md:w-32 md:h-32 xl:w-44 xl:h-44" />
-                    </Link>
-                </div>
 
                 {/* Main Container */}
 <div className="w-full relative flex flex-col items-center text-center text-white mt-32 md:mt-2 xl:-mt-8 py-8 pb-80 md:pb-20">
@@ -41,6 +37,10 @@ export default function Overview() {
 
     <p className="mt-2 text-[3rem] sm:text-3xl md:text-6xl font-bold max-w-7xl drop-shadow-xl">
        Securing Scalable Coffee & Cocoa Resilience
+    </p>
+
+    <p className="mt-3 text-xl sm:text-2xl md:text-3xl xl:text-4xl font-semibold max-w-5xl drop-shadow-xl">
+      Where Climate, Capital and Supply Chains Converge
     </p>
 
     {/* Date, venue, and CTA buttons */}
@@ -67,19 +67,45 @@ export default function Overview() {
 
 
 
+                <div className="absolute bottom-20 right-4 z-10 sm:bottom-24 sm:right-8">
+                    <Link
+                        href="https://worldcoffeealliance.com/"
+                        target="_blank"
+                        className="flex items-start gap-0"
+                    >
+                        <span className="pt-4 text-[0.65rem] font-semibold uppercase leading-tight tracking-wide text-white sm:pt-5 sm:text-xs md:pt-6 md:text-sm whitespace-nowrap">
+                            Powered by
+                        </span>
+                        <Image
+                            src={wcaWhiteLogo}
+                            alt="World Coffee Alliance"
+                            className="-ml-4 h-20 w-auto sm:-ml-5 sm:h-24 md:-ml-6 md:h-28"
+                        />
+                    </Link>
+                </div>
+
                 {/* Footer Links */}
-                <div className=" absolute bottom-0 w-full mt-10 bg-green-700 flex flex-col md:flex-row justify-center gap-12 items-center p-4 text-xl md:text-2xl font-bold text-white px-2" style={{ backgroundColor: 'rgb(38 72 51)' }}>
-                        {/* <p>WWW.WORLDCOFFEEINNOVATIONSUMMIT.COM</p> */}
-                        <p>200+ Attendees</p>
-                        <p>25+ Countries </p>
-                        <p>60+ Speakers </p>
-                        <p>75%+ C-Suite, VP or Director Level  </p>
-                        {/* <div className="flex items-center"> 
-                            <p className="ml-5">75%+ </p>
-                        <p>Attendance C-Suite, <br/> VP or Director Level </p>
-                        </div> */}
-                       
-                    </div>
+                <div
+                    className="absolute bottom-0 mt-10 flex w-full flex-col items-center justify-center gap-4 p-4 px-2 text-xl font-bold text-white md:flex-row md:gap-0 md:text-2xl"
+                    style={{ backgroundColor: 'rgb(38 72 51)' }}
+                >
+                    {[
+                        '200+ Attendees',
+                        '25+ Countries',
+                        '60+ Speakers',
+                        '75%+ C-Suite, VP or Director Level',
+                    ].map((stat, index) => (
+                        <React.Fragment key={stat}>
+                            {index > 0 && (
+                                <div
+                                    aria-hidden="true"
+                                    className="hidden h-8 w-px bg-gray-400/60 md:block"
+                                />
+                            )}
+                            <p className="px-0 text-center md:px-10">{stat}</p>
+                        </React.Fragment>
+                    ))}
+                </div>
 
             </div>
 
