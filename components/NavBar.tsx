@@ -6,17 +6,32 @@ import { SocialIcon } from 'react-social-icons'
 import React from 'react'
 import { useRouter } from 'next/navigation'
 
+type NavItem = {
+  name: string
+  href?: string
+  children?: { name: string; href: string }[]
+}
+
 function Navbar() {
   const router = useRouter()
-  const navigation = [
+  const navigation: NavItem[] = [
     { name: 'Overview', href: '/#overview' },
     { name: 'Speakers', href: '/speakers' },
-    { name: 'Agenda', href: '/agenda' },
+    {
+      name: 'Agenda',
+      children: [
+        { name: 'Key Themes', href: '/agenda#key-themes-2026' },
+        { name: 'Agenda', href: '/agenda#agenda-2025' },
+      ],
+    },
     { name: 'Venue', href: '/venue' },
     { name: 'Partners', href: '/#partners' },
     { name: 'Resources', href: '/resources' },
     { name: 'FAQ', href: '/faq' },
   ]
+
+  const navLinkClassName =
+    'inline-flex items-end px-2 pb-4 text-sm font-bold text-gray-900 lg:text-md lg:px-4 hover:border-b-2 hover:border-lime-700'
 
   return (
     <Disclosure as="nav" className="w-full bg-white shadow">
@@ -58,16 +73,38 @@ function Navbar() {
                 </div>
 
                 {/* Desktop Nav Menu */}
-                <div className="hidden max-w-5xl mx-auto sm:flex">
-                  {navigation.map((item) => (
-                    <Link
-                      key={item.name}
-                      href={item.href}
-                      className="inline-flex items-end px-2 pb-4 text-sm font-bold text-gray-900 lg:text-md lg:px-4 hover:border-b-2 hover:border-lime-700"
-                    >
-                      {item.name}
-                    </Link>
-                  ))}
+                <div className="hidden max-w-5xl mx-auto sm:flex sm:items-end">
+                  {navigation.map((item) =>
+                    item.children ? (
+                      <div key={item.name} className="group relative inline-flex items-end self-end">
+                        <button
+                          type="button"
+                          className={navLinkClassName}
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          {item.name}
+                        </button>
+                        <div className="invisible absolute left-0 top-full z-20 min-w-[10rem] pt-1 opacity-0 transition-all duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+                          <div className="rounded-md border border-gray-100 bg-white py-1 shadow-lg">
+                          {item.children.map((child) => (
+                            <Link
+                              key={child.name}
+                              href={child.href}
+                              className="block px-4 py-2 text-sm font-semibold text-gray-900 hover:bg-gray-50 hover:text-lime-800"
+                            >
+                              {child.name}
+                            </Link>
+                          ))}
+                          </div>
+                        </div>
+                      </div>
+                    ) : (
+                      <Link key={item.name} href={item.href!} className={navLinkClassName}>
+                        {item.name}
+                      </Link>
+                    )
+                  )}
                 </div>
 
                 {/* Desktop Right Side Buttons */}
@@ -108,16 +145,34 @@ function Navbar() {
           {/* Mobile Nav */}
           <Disclosure.Panel className="md:hidden py-5">
             <div className="pt-2 pb-3 space-y-1">
-              {navigation.map((item) => (
-                <Disclosure.Button
-                  as='a'
-                  key={item.name}
-                  href={item.href}
-                  className='block py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-900'
-                >
-                  {item.name}
-                </Disclosure.Button>
-              ))}
+              {navigation.map((item) =>
+                item.children ? (
+                  <div key={item.name}>
+                    <p className="py-2 pl-3 pr-4 text-base font-bold text-gray-900">
+                      {item.name}
+                    </p>
+                    {item.children.map((child) => (
+                      <Disclosure.Button
+                        as="a"
+                        key={child.name}
+                        href={child.href}
+                        className="block py-2 pl-6 pr-4 text-base font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-900"
+                      >
+                        {child.name}
+                      </Disclosure.Button>
+                    ))}
+                  </div>
+                ) : (
+                  <Disclosure.Button
+                    as="a"
+                    key={item.name}
+                    href={item.href}
+                    className="block py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-900"
+                  >
+                    {item.name}
+                  </Disclosure.Button>
+                )
+              )}
             </div>
                <div className='mt-4 flex gap-2'>
                       {/* <button
