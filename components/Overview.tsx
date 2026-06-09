@@ -67,7 +67,7 @@ export default function Overview() {
 
 
 
-                <div className="absolute bottom-20 right-4 z-10 sm:bottom-24 sm:right-8">
+                <div className="absolute bottom-20 right-4 z-10 sm:bottom-20 sm:right-4">
                     <Link
                         href="https://worldcoffeealliance.com/"
                         target="_blank"
@@ -79,7 +79,7 @@ export default function Overview() {
                         <Image
                             src={wcaWhiteLogo}
                             alt="World Coffee Alliance"
-                            className="-ml-4 h-20 w-auto sm:-ml-5 sm:h-24 md:-ml-6 md:h-28"
+                            className="-ml-8 h-20 w-auto sm:-ml-9 sm:h-24 md:-ml-10 md:h-28"
                         />
                     </Link>
                 </div>
