@@ -164,7 +164,7 @@ export default function Overview() {
                     <div className="mt-8 flex items-center justify-center gap-3 sm:mt-10">
                         <div className="h-px w-12 bg-lime-700 sm:w-20" />
                         <p className="text-center text-lg font-bold tracking-wide text-lime-700 sm:text-xl">
-                            WHY THIS MATTERS NOW
+                            WHY THIS MATTERS
                         </p>
                         <div className="h-px w-12 bg-lime-700 sm:w-20" />
                     </div>
