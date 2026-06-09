@@ -136,23 +136,23 @@ export default function Overview() {
 
             </div>
 
-            <div className="w-full bg-gray-100 px-6 py-10 sm:px-8 sm:py-14 md:px-12">
+            <div className="w-full bg-gray-100 px-6 pb-10 pt-6 sm:px-8 sm:pb-14 sm:pt-8 md:px-12">
                 <div className="mx-auto max-w-7xl">
                     <p className="text-center text-2xl font-bold tracking-tight text-yellow-900 sm:text-4xl">
                         2026 SUMMIT OVERVIEW
                     </p>
-                    <h2 className="mt-8 text-center text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl md:text-4xl">
+                    <h2 className="mt-2 text-center text-2xl font-bold tracking-tight text-gray-900 sm:mt-3 sm:text-3xl md:text-4xl">
                         The Industry at a Turning Point
                     </h2>
 
-                    <div className="mt-10 flex flex-col gap-6">
-                        <p className="text-xl leading-8 text-gray-900 sm:text-2xl">
+                    <div className="mt-6 flex flex-col gap-0">
+                        <p className="text-xl leading-normal text-gray-900 sm:text-2xl">
                             Coffee and cocoa sit at the intersection of climate risk, global trade, capital, and supply chain resilience.
                         </p>
-                        <p className="text-xl leading-8 text-gray-900 sm:text-2xl">
+                        <p className="text-xl leading-normal text-gray-900 sm:text-2xl">
                             The 4<sup>th</sup> World Coffee Innovation Summit 2026 brings together global leading brands, traders, producers, policymakers, investors, technology providers, and sustainability leaders to address the challenges and opportunities shaping the future of coffee and cocoa.
                         </p>
-                        <p className="text-xl leading-8 text-gray-900 sm:text-2xl">
+                        <p className="text-xl leading-normal text-gray-900 sm:text-2xl">
                             Under the theme{' '}
                             <span className="text-lime-700">
                                 Moving the Needle: Securing Scalable Coffee &amp; Cocoa Resilience
@@ -161,15 +161,15 @@ export default function Overview() {
                         </p>
                     </div>
 
-                    <div className="my-12 flex items-center gap-4 sm:my-14">
-                        <div className="h-px flex-1 bg-lime-700" />
+                    <div className="mt-8 flex items-center justify-center gap-3 sm:mt-10">
+                        <div className="h-px w-12 bg-lime-700 sm:w-20" />
                         <p className="text-center text-lg font-bold tracking-wide text-lime-700 sm:text-xl">
                             WHY THIS MATTERS NOW
                         </p>
-                        <div className="h-px flex-1 bg-lime-700" />
+                        <div className="h-px w-12 bg-lime-700 sm:w-20" />
                     </div>
 
-                    <h3 className="text-center text-2xl font-bold text-gray-900 sm:text-3xl">
+                    <h3 className="mt-2 text-center text-2xl font-bold text-gray-900 sm:mt-3 sm:text-3xl">
                         The Moment to Act is Now
                     </h3>
 
