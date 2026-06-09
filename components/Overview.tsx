@@ -5,6 +5,33 @@ import React from 'react'
 import KeyThemes from './KeyThemes'
 import Speakers2026 from './Speakers2026'
 import wcaWhiteLogo from '../images/WCA-White.png'
+import futureSupplyIcon from '../images/FUTURE SUPPLY IS AT RISK.png'
+import complianceIcon from '../images/COMPLIANCE IS NOW A COMPETITIVE ADVANTAGE.png'
+import costInactionIcon from '../images/THE COST OF INACTION IS RISING.png'
+
+const whyItMattersCards = [
+  {
+    title: 'FUTURE SUPPLY IS AT RISK',
+    description:
+      'Climate volatility, declining productivity and market disruption are reshaping future supply.',
+    image: futureSupplyIcon,
+    titleClassName: 'text-gray-900',
+  },
+  {
+    title: 'COMPLIANCE IS NOW A COMPETITIVE ADVANTAGE',
+    description:
+      'EUDR, Scope 3, and traceability requirements are becoming commercial priorities across global supply chains.',
+    image: complianceIcon,
+    titleClassName: 'text-yellow-900',
+  },
+  {
+    title: 'THE COST OF INACTION IS RISING',
+    description:
+      'Securing long-term supply will require greater capital, faster innovation and strategic partnerships.',
+    image: costInactionIcon,
+    titleClassName: 'text-gray-900',
+  },
+]
 
 export default function Overview() {
     return (
@@ -67,19 +94,19 @@ export default function Overview() {
 
 
 
-                <div className="absolute bottom-20 right-4 z-10 sm:bottom-24 sm:right-8">
+                <div className="absolute bottom-48 left-1/2 z-10 -translate-x-1/2 sm:bottom-20 sm:left-auto sm:right-1 sm:translate-x-0 md:right-0 lg:bottom-20 lg:right-2 xl:right-4">
                     <Link
                         href="https://worldcoffeealliance.com/"
                         target="_blank"
-                        className="flex items-start gap-0"
+                        className="flex items-start justify-center gap-0 sm:justify-start"
                     >
-                        <span className="pt-4 text-[0.65rem] font-semibold uppercase leading-tight tracking-wide text-white sm:pt-5 sm:text-xs md:pt-6 md:text-sm whitespace-nowrap">
+                        <span className="pt-5 text-xs font-semibold uppercase leading-tight tracking-wide text-white whitespace-nowrap sm:pt-3 sm:text-[0.6rem] md:pt-3.5 lg:pt-6 lg:text-sm">
                             Powered by
                         </span>
                         <Image
                             src={wcaWhiteLogo}
                             alt="World Coffee Alliance"
-                            className="-ml-4 h-20 w-auto sm:-ml-5 sm:h-24 md:-ml-6 md:h-28"
+                            className="-ml-7 h-24 w-auto sm:-ml-5 sm:h-14 md:-ml-6 md:h-16 lg:-ml-10 lg:h-28"
                         />
                     </Link>
                 </div>
@@ -109,68 +136,67 @@ export default function Overview() {
 
             </div>
 
-            {/* 2025 SUMMIT OVERVIEW */}
-            <div className='w-full md:px-0 px-12 py-8 sm:py-12 bg-gray-100'>
-                <div className='justify-center mx-auto max-w-7xl'>
-                    <p className="text-2xl font-bold tracking-tight text-center sm:text-4xl text-yellow-900">
+            <div className="w-full bg-gray-100 px-6 py-10 sm:px-8 sm:py-14 md:px-12">
+                <div className="mx-auto max-w-7xl">
+                    <p className="text-center text-2xl font-bold tracking-tight text-yellow-900 sm:text-4xl">
                         2026 SUMMIT OVERVIEW
                     </p>
+                    <h2 className="mt-8 text-center text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl md:text-4xl">
+                        The Industry at a Turning Point
+                    </h2>
 
-                    <div className='flex flex-col gap-4 max-w-full m-auto mt-8'>
-                        <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
-                            The global coffee and cocoa industry is at a turning point.
-                        </div>
-
-                        <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
-                            Climate pressure, regulatory change, and supply volatility are reshaping how supply
-                            chains operate&mdash;and how businesses compete. At the same time, sustainability is
-                            moving from ambition to execution, with real capital, clear accountability, and
-                            measurable outcomes on the line.
-                        </div>
-
-                        <div className="text-2xl leading-8 text-gray-900 w-full text-justify font-semibold">
-                            The question is: how do we deliver change&mdash;at scale?
-                        </div>
-
-                        <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
-                            The 4<sup>th</sup> World Coffee Innovation Summit 2026 brings together the leaders driving
-                            that change&mdash;global brands, traders, corporates, policymakers, producers,
-                            innovators, investors, and sustainability organisations&mdash;creating a unique platform
-                            for partnership, investment, and delivery across the entire value chain.
-                        </div>
-
-                        <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
-                            Under the theme <strong>Moving the Needle: Securing Scalable Coffee & Cocoa Resilience,</strong> the summit
-                            is <strong>built for execution, not just discussion</strong>&mdash;turning strategy into action by connecting
-                            capital, technology, and partnerships to deliver measurable impact across global
-                            coffee and cocoa supply chains.
-                        </div>
-
-                        <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
-                            Join us in London for two days focused on implementation, high-value connections,
-                            and real-world solutions shaping the future of coffee and cocoa.
-                        </div>
-
-                        {/* <div className="text-2xl leading-8 text-gray-900 w-full text-justify">
-                            This two-day, high-level, closed-door gathering will focus on:
-                        </div> */}
-
-                        {/* <ul className="list-disc flex flex-col ml-12">
-                            <li className="text-2xl leading-8 text-gray-900 w-full text-justify">
-                                Unlocking inclusive growth across the entire coffee value chain.
-                            </li>
-                            <li className="text-2xl leading-8 text-gray-900 w-full text-justify">
-                                Embedding innovation, equity and sustainability into business models.
-                            </li>
-                            <li className="text-2xl leading-8 text-gray-900 w-full text-justify">
-                                Aligning climate action, farmer income improvement and ethical sourcing with market opportunities.
-                            </li>
-                            <li className="text-2xl leading-8 text-gray-900 w-full text-justify">
-                                Co-creating bold, scalable solutions across industries based on trust.
-                            </li>
-                        </ul> */}
-
+                    <div className="mt-10 flex flex-col gap-6">
+                        <p className="text-xl leading-8 text-gray-900 sm:text-2xl">
+                            Coffee and cocoa sit at the intersection of climate risk, global trade, capital, and supply chain resilience.
+                        </p>
+                        <p className="text-xl leading-8 text-gray-900 sm:text-2xl">
+                            The 4<sup>th</sup> World Coffee Innovation Summit 2026 brings together global leading brands, traders, producers, policymakers, investors, technology providers, and sustainability leaders to address the challenges and opportunities shaping the future of coffee and cocoa.
+                        </p>
+                        <p className="text-xl leading-8 text-gray-900 sm:text-2xl">
+                            Under the theme{' '}
+                            <span className="text-lime-700">
+                                Moving the Needle: Securing Scalable Coffee &amp; Cocoa Resilience
+                            </span>
+                            , the summit is built for execution&mdash;not just discussion&mdash;bringing together industry leadership, investment, technology, and partnerships to drive practical action across the value chain.
+                        </p>
                     </div>
+
+                    <div className="my-12 flex items-center gap-4 sm:my-14">
+                        <div className="h-px flex-1 bg-lime-700" />
+                        <p className="text-center text-lg font-bold tracking-wide text-lime-700 sm:text-xl">
+                            WHY THIS MATTERS NOW
+                        </p>
+                        <div className="h-px flex-1 bg-lime-700" />
+                    </div>
+
+                    <h3 className="text-center text-2xl font-bold text-gray-900 sm:text-3xl">
+                        The Moment to Act is Now
+                    </h3>
+
+                    <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8">
+                        {whyItMattersCards.map((card) => (
+                            <article
+                                key={card.title}
+                                className="flex flex-col items-center rounded-2xl border border-gray-200 bg-white px-6 py-8 text-center shadow-sm"
+                            >
+                                <Image
+                                    src={card.image}
+                                    alt=""
+                                    className="h-28 w-28 object-contain"
+                                />
+                                <h4 className={`mt-6 text-lg font-bold leading-snug sm:text-xl ${card.titleClassName}`}>
+                                    {card.title}
+                                </h4>
+                                <p className="mt-4 text-base leading-7 text-gray-700 sm:text-lg">
+                                    {card.description}
+                                </p>
+                            </article>
+                        ))}
+                    </div>
+
+                    <p className="mt-4 text-center text-xl font-normal text-gray-900 sm:text-2xl">
+                        Join the leaders shaping the future of coffee and cocoa.
+                    </p>
                 </div>
             </div>
                 <Speakers2026 />
