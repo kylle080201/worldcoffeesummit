@@ -11,24 +11,27 @@ import costInactionIcon from '../images/THE COST OF INACTION IS RISING.png'
 
 const whyItMattersCards = [
   {
-    title: 'FUTURE SUPPLY IS AT RISK',
+    titleLines: ['FUTURE SUPPLY', 'IS AT RISK'],
     description:
       'Climate volatility, declining productivity and market disruption are reshaping future supply.',
     image: futureSupplyIcon,
+    bgClassName: 'bg-emerald-50/50',
     titleClassName: 'text-gray-900',
   },
   {
-    title: 'COMPLIANCE IS NOW A COMPETITIVE ADVANTAGE',
+    titleLines: ['COMPLIANCE IS NOW', 'A COMPETITIVE ADVANTAGE'],
     description:
       'EUDR, Scope 3, and traceability requirements are becoming commercial priorities across global supply chains.',
     image: complianceIcon,
+    bgClassName: 'bg-amber-50/50',
     titleClassName: 'text-yellow-900',
   },
   {
-    title: 'THE COST OF INACTION IS RISING',
+    titleLines: ['THE COST OF', 'INACTIONIS RISING'],
     description:
       'Securing long-term supply will require greater capital, faster innovation and strategic partnerships.',
     image: costInactionIcon,
+    bgClassName: 'bg-blue-50/50',
     titleClassName: 'text-gray-900',
   },
 ]
@@ -141,11 +144,11 @@ export default function Overview() {
                     <p className="text-center text-2xl font-bold tracking-tight text-yellow-900 sm:text-4xl">
                         2026 SUMMIT OVERVIEW
                     </p>
-                    <h2 className="mt-2 text-center text-2xl font-bold tracking-tight text-gray-900 sm:mt-3 sm:text-3xl md:text-4xl">
+                    <h2 className="mt-2 text-center text-2xl font-bold text-gray-900 sm:mt-3 sm:text-3xl">
                         The Industry at a Turning Point
                     </h2>
 
-                    <div className="mt-6 flex flex-col gap-0">
+                    <div className="mt-6 flex flex-col gap-5 sm:gap-6">
                         <p className="text-xl leading-normal text-gray-900 sm:text-2xl">
                             Coffee and cocoa sit at the intersection of climate risk, global trade, capital, and supply chain resilience.
                         </p>
@@ -163,7 +166,7 @@ export default function Overview() {
 
                     <div className="mt-8 flex items-center justify-center gap-3 sm:mt-10">
                         <div className="h-px w-12 bg-lime-700 sm:w-20" />
-                        <p className="text-center text-lg font-bold tracking-wide text-lime-700 sm:text-xl">
+                        <p className="text-center text-2xl font-bold tracking-tight text-lime-700 sm:text-4xl">
                             WHY THIS MATTERS
                         </p>
                         <div className="h-px w-12 bg-lime-700 sm:w-20" />
@@ -173,30 +176,34 @@ export default function Overview() {
                         The Moment to Act is Now
                     </h3>
 
-                    <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8">
+                    <div className="mt-10">
+                        <div className="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8">
                         {whyItMattersCards.map((card) => (
                             <article
-                                key={card.title}
-                                className="flex flex-col items-center rounded-2xl border border-gray-200 bg-white px-6 py-8 text-center shadow-sm"
+                                key={card.titleLines.join(' ')}
+                                className={`flex flex-col items-center rounded-2xl px-6 py-2 text-center shadow-sm ${card.bgClassName}`}
                             >
                                 <Image
                                     src={card.image}
                                     alt=""
-                                    className="h-28 w-28 object-contain"
+                                    className="h-24 w-24 object-contain"
                                 />
-                                <h4 className={`mt-6 text-lg font-bold leading-snug sm:text-xl ${card.titleClassName}`}>
-                                    {card.title}
+                                <h4 className={`min-h-[2.6em] text-lg font-bold leading-tight sm:min-h-[2.8em] sm:text-xl ${card.titleClassName}`}>
+                                    {card.titleLines[0]}
+                                    <br />
+                                    {card.titleLines[1]}
                                 </h4>
-                                <p className="mt-4 text-base leading-7 text-gray-700 sm:text-lg">
+                                <p className="mt-3 text-base sm:text-lg sm:leading-tight">
                                     {card.description}
                                 </p>
                             </article>
                         ))}
-                    </div>
+                        </div>
 
-                    <p className="mt-4 text-center text-xl font-normal text-gray-900 sm:text-2xl">
-                        Join the leaders shaping the future of coffee and cocoa.
-                    </p>
+                        <p className="mt-6 text-center text-xl font-bold text-gray-900 sm:text-2xl">
+                            Join the leaders shaping the future of coffee and cocoa.
+                        </p>
+                    </div>
                 </div>
             </div>
                 <Speakers2026 />
