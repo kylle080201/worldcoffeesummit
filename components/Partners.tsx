@@ -159,7 +159,7 @@ export default function Partners() {
 
     return (
         <>
-            <div className='w-full py-20 bg-white' id='partners'>
+            <div className='w-full py-20' id='partners'>
                 <div className='mb-20'>
                     <div className="max-w-2xl mx-auto text-center">
                         <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">2025 Partners</p>

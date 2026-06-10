@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Image, { type StaticImageData } from 'next/image';
-import { speakerCompanyLogos } from './Speakers2026';
+import { whoAttendsLogos } from './whoAttendsLogos';
 
 const AUDIENCE_DATA = [
   { label: 'Brands, Traders, Retailers & Agribusiness', percentage: 30 },
@@ -17,9 +17,16 @@ interface CompanyLogo {
   logo: string | StaticImageData;
 }
 
-function DonutChart({ percentage, label }: { percentage: number; label: string }) {
-  const size = 160;
-  const strokeWidth = 40;
+function DonutChart({
+  percentage,
+  label,
+  size = 160,
+}: {
+  percentage: number;
+  label: string;
+  size?: number;
+}) {
+  const strokeWidth = Math.round(size * 0.25);
   const radius = (size - strokeWidth) / 2;
   const circumference = 2 * Math.PI * radius;
   const filled = (percentage / 100) * circumference;
@@ -48,12 +55,41 @@ function DonutChart({ percentage, label }: { percentage: number; label: string }
           />
         </svg>
         <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-2xl font-bold text-amber-700">{percentage}%</span>
+          <span
+            className={`font-bold text-amber-700 ${size <= 140 ? 'text-xl' : 'text-2xl'}`}
+          >
+            {percentage}%
+          </span>
         </div>
       </div>
-      <p className="mt-4 text-center text-sm font-semibold leading-snug text-gray-800 max-w-[220px]">
+      <p className="mt-4 text-center text-sm font-semibold leading-snug text-gray-800">
         {label}
       </p>
+    </div>
+  );
+}
+
+function AudienceBreakdown() {
+  return (
+    <div className="grid grid-cols-2 gap-4 sm:gap-5 lg:grid-cols-5">
+      {AUDIENCE_DATA.map((item, index) => (
+        <div
+          key={item.label}
+          className={
+            index === AUDIENCE_DATA.length - 1
+              ? 'col-span-2 mx-auto w-full max-w-[12rem] lg:col-span-1 lg:max-w-none'
+              : undefined
+          }
+        >
+          <div className="flex h-full flex-col items-center rounded-xl bg-white px-3 py-5 shadow-sm ring-1 ring-gray-200/70 sm:px-4 sm:py-6">
+            <DonutChart
+              percentage={item.percentage}
+              label={item.label}
+              size={140}
+            />
+          </div>
+        </div>
+      ))}
     </div>
   );
 }
@@ -139,31 +175,25 @@ function WhoAttendsMarquee({ logos }: { logos: CompanyLogo[] }) {
 }
 
 function WhoIsInTheRoom() {
-  const topRow = AUDIENCE_DATA.slice(0, 3);
-  const bottomRow = AUDIENCE_DATA.slice(3);
-
   return (
     <div className="w-full py-16">
-      <p className="text-3xl font-bold text-center mb-4">{`WHO'S IN THE ROOM`}</p>
-      <p className="text-center text-lg text-gray-700 max-w-2xl mx-auto mb-12 px-4">
-        A cross-industry audience shaping the future of coffee and cocoa.
-      </p>
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <div className="overflow-hidden rounded-2xl border border-gray-200 bg-gradient-to-b from-lime-700/[0.05] via-white to-white shadow-sm">
+          <div className="border-b border-gray-200/80 px-6 py-8 text-center sm:px-10">
+            <p className="text-3xl font-bold">{`WHO'S IN THE ROOM`}</p>
+            <p className="mx-auto mt-3 max-w-2xl text-lg text-gray-700">
+              A cross-industry audience shaping the future of coffee and cocoa.
+            </p>
+          </div>
 
-      <div className="max-w-4xl mx-auto px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 justify-items-center">
-          {topRow.map((item) => (
-            <DonutChart key={item.label} percentage={item.percentage} label={item.label} />
-          ))}
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 justify-items-center max-w-2xl mx-auto mt-10">
-          {bottomRow.map((item) => (
-            <DonutChart key={item.label} percentage={item.percentage} label={item.label} />
-          ))}
+          <div className="p-6 sm:p-8">
+            <AudienceBreakdown />
+          </div>
         </div>
       </div>
 
       <div className="max-w-screen-xl mx-auto px-4">
-        <WhoAttendsMarquee logos={speakerCompanyLogos} />
+        <WhoAttendsMarquee logos={whoAttendsLogos} />
       </div>
     </div>
   );

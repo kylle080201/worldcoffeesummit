@@ -14,31 +14,24 @@ import Testimonials from "../../components/LoopedTestimonials";
 import Speakers2024 from "../../components/2024Speakers";
 import KeyThemes from "../../components/KeyThemes";
 import Attendees2023 from "../../components/2023Attendees";
-import WhoYoullMeet from "../../components/WhoYoullMeet";
 import WhoIsInTheRoom  from "../../components/WholsInTheRoom";
 import Confirmedspeakers from "../../components/Confirmedspeakers";
+import { HomePageLayout, HomeSection } from "../../components/HomeSection";
 
 
 export default function HomePage() {
     return (
-        <>
-            <div>
-                <Overview />
-                <WhoIsInTheRoom />
-
-
-
-                <WhoYoullMeet />
-
-                {/* <SpeakerSlider /> */}
-                {/* <ImageCarousel /> */}
-                <Testimonials />
-                {/* <Attendees2023 /> */}
-                <SummitInTheNews />
-                <WhyAttend />
-                {/* <Venue /> */}
-                <Partners />
-            </div>
-        </>
+        <HomePageLayout>
+            <Overview />
+            <HomeSection><WhoIsInTheRoom /></HomeSection>
+            {/* <SpeakerSlider /> */}
+            {/* <ImageCarousel /> */}
+            <HomeSection><Testimonials /></HomeSection>
+            {/* <Attendees2023 /> */}
+            <HomeSection><SummitInTheNews /></HomeSection>
+            <HomeSection bare><WhyAttend /></HomeSection>
+            <HomeSection><Partners /></HomeSection>
+            {/* <Venue /> */}
+        </HomePageLayout>
     )
 }
