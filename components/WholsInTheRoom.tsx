@@ -90,8 +90,10 @@ function AudienceBreakdown() {
 }
 
 const MARQUEE_DURATION = 50;
-const DEFAULT_LOGO_MAX_HEIGHT = 112;
-const DEFAULT_LOGO_MAX_WIDTH = 300;
+const LOGO_SCALE = 0.85;
+const LOGO_BASE_MAX_HEIGHT = 112;
+const LOGO_BASE_MAX_WIDTH = 300;
+const LOGO_ROW_HEIGHT = Math.round(160 * LOGO_SCALE);
 
 const MARQUEE_MASK = {
   maskImage:
@@ -107,11 +109,14 @@ function LogoItem({
   logo: WhoAttendsLogo;
   copyIndex: number;
 }) {
-  const maxHeight = logo.maxHeight ?? DEFAULT_LOGO_MAX_HEIGHT;
-  const maxWidth = logo.maxWidth ?? DEFAULT_LOGO_MAX_WIDTH;
+  const maxHeight = Math.round((logo.maxHeight ?? LOGO_BASE_MAX_HEIGHT) * LOGO_SCALE);
+  const maxWidth = Math.round((logo.maxWidth ?? LOGO_BASE_MAX_WIDTH) * LOGO_SCALE);
 
   return (
-    <div className="flex h-40 flex-shrink-0 items-center justify-center">
+    <div
+      className="flex flex-shrink-0 items-center justify-center"
+      style={{ height: LOGO_ROW_HEIGHT }}
+    >
       <Image
         src={logo.logo}
         alt={copyIndex === 0 ? `${logo.name} logo` : ''}
