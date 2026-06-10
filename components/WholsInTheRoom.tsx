@@ -189,7 +189,7 @@ function WhoAttendsMarquee({ rows }: { rows: WhoAttendsLogo[][] }) {
 
   return (
     <div className="space-y-8">
-      <p className="text-3xl font-bold text-center">WHO ATTENDS WCIS</p>
+      <p className="text-3xl font-bold text-center">WHO ATTENDS</p>
       <div className="space-y-0">
         {rows.map((row, index) => (
           <LogoRowMarquee
