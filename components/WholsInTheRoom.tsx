@@ -90,7 +90,7 @@ function AudienceBreakdown() {
 }
 
 const MARQUEE_DURATION = 50;
-const LOGO_SCALE = 1;
+const LOGO_SCALE = 1.2;
 const LOGO_BASE_MAX_HEIGHT = 112;
 const LOGO_BASE_MAX_WIDTH = 300;
 const LOGO_MARGIN_X = 16;
