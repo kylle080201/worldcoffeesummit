@@ -27,7 +27,17 @@ module.exports = {
 
       msm: { max: "639px" },
     },
-    extend: {},
+    extend: {
+      keyframes: {
+        "marquee-left": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(calc(var(--marquee-distance) * -1))" },
+        },
+      },
+      animation: {
+        "marquee-left": "marquee-left linear infinite",
+      },
+    },
   },
   plugins: [],
 };
