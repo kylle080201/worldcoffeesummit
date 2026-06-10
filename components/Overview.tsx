@@ -4,6 +4,7 @@ import Link from 'next/link'
 import React from 'react'
 import KeyThemes from './KeyThemes'
 import Speakers2026 from './Speakers2026'
+import { HomeSection } from './HomeSection'
 import wcaWhiteLogo from '../images/WCA-White.png'
 
 export default function Overview() {
@@ -110,7 +111,7 @@ export default function Overview() {
             </div>
 
             {/* 2025 SUMMIT OVERVIEW */}
-            <div className='w-full md:px-0 px-12 py-8 sm:py-12 bg-gray-100'>
+            <HomeSection className="md:px-0 px-12 py-8 sm:py-12">
                 <div className='justify-center mx-auto max-w-7xl'>
                     <p className="text-2xl font-bold tracking-tight text-center sm:text-4xl text-yellow-900">
                         2026 SUMMIT OVERVIEW
@@ -172,9 +173,10 @@ export default function Overview() {
 
                     </div>
                 </div>
-            </div>
+            </HomeSection>
+                <HomeSection className="pb-12 sm:pb-16">
                 <Speakers2026 />
-                <div className="-mt-12 mb-12 w-full flex justify-center sm:mb-16">
+                <div className="-mt-12 w-full flex justify-center">
                   <Link
                     href="/speakers#speakers-2025"
                     className="rounded-lg bg-lime-700 px-6 py-3 text-lg font-bold text-white transition-colors duration-300 hover:bg-lime-800"
@@ -182,7 +184,10 @@ export default function Overview() {
                     2025 SPEAKERS
                   </Link>
                 </div>
+                </HomeSection>
+                <HomeSection>
                 <KeyThemes />
+                </HomeSection>
                 {/* <Advisoryboard /> */}
                 {/* <Speakertest/> */}
 

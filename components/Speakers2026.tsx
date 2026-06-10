@@ -325,6 +325,20 @@ const speakers: Speaker[] = [
   }
 ];
 
+export const speakerCompanyLogos = Array.from(
+  new Map(
+    speakers
+      .filter((speaker) => speaker.logo)
+      .map((speaker) => [
+        speaker.organization || speaker.name,
+        {
+          name: speaker.organization || speaker.name,
+          logo: speaker.logo,
+        },
+      ])
+  ).values()
+);
+
 export default function Speakers2026() {
   const [selectedSpeaker, setSelectedSpeaker] = useState<Speaker | null>(null);
 

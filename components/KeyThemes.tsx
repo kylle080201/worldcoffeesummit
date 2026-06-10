@@ -99,7 +99,7 @@ function KeyThemes({ showNavigator = true, compactTop = false }: { showNavigator
   return (
     <section
       id="key-themes-2026"
-      className={`w-full scroll-mt-24 bg-gray-100 px-6 pb-12 sm:px-8 md:pb-16 ${compactTop ? 'pt-4 sm:pt-6' : 'pt-10 md:pt-12'}`}
+      className={`w-full scroll-mt-24 px-6 pb-12 sm:px-8 md:pb-16 ${compactTop ? 'pt-4 sm:pt-6' : 'pt-10 md:pt-12'}`}
     >
       <div className="mx-auto w-full max-w-7xl">
         <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">
