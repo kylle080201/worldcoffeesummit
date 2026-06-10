@@ -1,8 +1,8 @@
 "use client";
 
-import React from 'react';
-import Image, { type StaticImageData } from 'next/image';
-import { whoAttendsLogos } from './whoAttendsLogos';
+import React, { useLayoutEffect, useRef, useState } from 'react';
+import Image from 'next/image';
+import { whoAttendsLogoRows, type WhoAttendsLogo } from './whoAttendsLogos';
 
 const AUDIENCE_DATA = [
   { label: 'Brands, Traders, Retailers & Agribusiness', percentage: 30 },
@@ -11,11 +11,6 @@ const AUDIENCE_DATA = [
   { label: 'Technology & Solution Providers', percentage: 20 },
   { label: 'Finance & Investors', percentage: 15 },
 ];
-
-interface CompanyLogo {
-  name: string;
-  logo: string | StaticImageData;
-}
 
 function DonutChart({
   percentage,
@@ -95,79 +90,116 @@ function AudienceBreakdown() {
 }
 
 const MARQUEE_DURATION = 50;
-const LOGO_SLOT_WIDTH = 208; // w-52
-const LOGO_GAP = 64; // gap-16
+const DEFAULT_LOGO_MAX_HEIGHT = 112;
+const DEFAULT_LOGO_MAX_WIDTH = 300;
 
-function splitIntoRows<T>(items: T[], rowCount: number): T[][] {
-  const rows: T[][] = Array.from({ length: rowCount }, () => []);
-  items.forEach((item, index) => {
-    rows[index % rowCount].push(item);
-  });
-  return rows.filter((row) => row.length > 0);
-}
+const MARQUEE_MASK = {
+  maskImage:
+    'linear-gradient(to right, transparent, black 8%, black 92%, transparent)',
+  WebkitMaskImage:
+    'linear-gradient(to right, transparent, black 8%, black 92%, transparent)',
+};
 
-function normalizeRowLengths<T>(rows: T[][]): T[][] {
-  const maxLength = Math.max(...rows.map((row) => row.length));
-  return rows.map((row) => {
-    const normalized = [...row];
-    let i = 0;
-    while (normalized.length < maxLength) {
-      normalized.push(row[i % row.length]);
-      i += 1;
-    }
-    return normalized;
-  });
-}
-
-function LogoMarqueeRow({ logos }: { logos: CompanyLogo[] }) {
-  const duplicated = [...logos, ...logos];
-  const trackWidth = logos.length * (LOGO_SLOT_WIDTH + LOGO_GAP);
+function LogoItem({
+  logo,
+  copyIndex,
+}: {
+  logo: WhoAttendsLogo;
+  copyIndex: number;
+}) {
+  const maxHeight = logo.maxHeight ?? DEFAULT_LOGO_MAX_HEIGHT;
+  const maxWidth = logo.maxWidth ?? DEFAULT_LOGO_MAX_WIDTH;
 
   return (
-    <div
-      className="relative overflow-hidden"
-      style={{
-        maskImage:
-          'linear-gradient(to right, transparent, black 8%, black 92%, transparent)',
-        WebkitMaskImage:
-          'linear-gradient(to right, transparent, black 8%, black 92%, transparent)',
-      }}
-    >
+    <div className="flex h-40 flex-shrink-0 items-center justify-center">
+      <Image
+        src={logo.logo}
+        alt={copyIndex === 0 ? `${logo.name} logo` : ''}
+        aria-hidden={copyIndex !== 0}
+        width={maxWidth}
+        height={maxHeight}
+        className="h-auto w-auto object-contain"
+        style={{ maxHeight, maxWidth }}
+      />
+    </div>
+  );
+}
+
+function LogoRowMarquee({
+  logos,
+  duration,
+  measureRef,
+}: {
+  logos: WhoAttendsLogo[];
+  duration: number;
+  measureRef: (element: HTMLDivElement | null) => void;
+}) {
+  return (
+    <div className="relative overflow-hidden" style={MARQUEE_MASK}>
       <div
-        className="flex w-max animate-marquee-left items-center gap-16 py-5"
-        style={{
-          animationDuration: `${MARQUEE_DURATION}s`,
-          ['--marquee-distance' as string]: `${trackWidth}px`,
-        }}
+        ref={measureRef}
+        className="flex w-max animate-marquee-loop items-center gap-3 py-1"
+        style={{ animationDuration: `${duration}s` }}
       >
-        {duplicated.map((logo, index) => (
-          <div
-            key={`${logo.name}-${index}`}
-            className="flex h-20 w-52 flex-shrink-0 items-center justify-center px-2"
-          >
-            <Image
-              src={logo.logo}
-              alt={`${logo.name} logo`}
-              width={200}
-              height={80}
-              className="max-h-16 w-auto max-w-[200px] object-contain"
+        {[0, 1].map((copyIndex) =>
+          logos.map((logo, index) => (
+            <LogoItem
+              key={`${copyIndex}-${logo.name}-${index}`}
+              logo={logo}
+              copyIndex={copyIndex}
             />
-          </div>
-        ))}
+          )),
+        )}
       </div>
     </div>
   );
 }
 
-function WhoAttendsMarquee({ logos }: { logos: CompanyLogo[] }) {
-  const rows = normalizeRowLengths(splitIntoRows(logos, 3));
+function WhoAttendsMarquee({ rows }: { rows: WhoAttendsLogo[][] }) {
+  const measureRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const [durations, setDurations] = useState<number[]>(() =>
+    rows.map(() => MARQUEE_DURATION),
+  );
+
+  useLayoutEffect(() => {
+    const syncDurations = () => {
+      const widths = rows.map((_, index) => {
+        const track = measureRefs.current[index];
+        return track ? track.offsetWidth / 2 : 0;
+      });
+      const maxWidth = Math.max(...widths, 1);
+
+      setDurations(widths.map((width) => MARQUEE_DURATION * (width / maxWidth)));
+    };
+
+    syncDurations();
+
+    const observer = new ResizeObserver(syncDurations);
+    measureRefs.current.forEach((element) => {
+      if (element) observer.observe(element);
+    });
+
+    window.addEventListener('load', syncDurations);
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener('load', syncDurations);
+    };
+  }, [rows]);
 
   return (
-    <div className="mt-16 space-y-6">
+    <div className="space-y-8">
       <p className="text-3xl font-bold text-center">WHO ATTENDS WCIS</p>
-      <div className="space-y-2">
+      <div className="space-y-0">
         {rows.map((row, index) => (
-          <LogoMarqueeRow key={index} logos={row} />
+          <LogoRowMarquee
+            key={index}
+            logos={row}
+            duration={durations[index] ?? MARQUEE_DURATION}
+            measureRef={(element) => {
+              measureRefs.current[index] = element;
+            }}
+          />
         ))}
       </div>
     </div>
@@ -191,9 +223,15 @@ function WhoIsInTheRoom() {
           </div>
         </div>
       </div>
+    </div>
+  );
+}
 
+export function WhoAttends() {
+  return (
+    <div className="w-full bg-white py-16">
       <div className="max-w-screen-xl mx-auto px-4">
-        <WhoAttendsMarquee logos={whoAttendsLogos} />
+        <WhoAttendsMarquee rows={whoAttendsLogoRows} />
       </div>
     </div>
   );

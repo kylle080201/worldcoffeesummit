@@ -14,7 +14,7 @@ import Testimonials from "../../components/LoopedTestimonials";
 import Speakers2024 from "../../components/2024Speakers";
 import KeyThemes from "../../components/KeyThemes";
 import Attendees2023 from "../../components/2023Attendees";
-import WhoIsInTheRoom  from "../../components/WholsInTheRoom";
+import WhoIsInTheRoom, { WhoAttends } from "../../components/WholsInTheRoom";
 import Confirmedspeakers from "../../components/Confirmedspeakers";
 import { HomePageLayout, HomeSection } from "../../components/HomeSection";
 
@@ -24,6 +24,7 @@ export default function HomePage() {
         <HomePageLayout>
             <Overview />
             <HomeSection><WhoIsInTheRoom /></HomeSection>
+            <HomeSection className="bg-white"><WhoAttends /></HomeSection>
             {/* <SpeakerSlider /> */}
             {/* <ImageCarousel /> */}
             <HomeSection><Testimonials /></HomeSection>
