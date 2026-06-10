@@ -11,7 +11,7 @@ import costInactionIcon from '../images/THE COST OF INACTION IS RISING.png'
 
 const whyItMattersCards = [
   {
-    titleLines: ['FUTURE SUPPLY', 'IS AT RISK'],
+    titleLines: ['SUPPLY IS', 'UNDER PRESSURE'],
     description:
       'Climate volatility, declining productivity and market disruption are reshaping future supply.',
     image: futureSupplyIcon,
@@ -21,15 +21,15 @@ const whyItMattersCards = [
   {
     titleLines: ['COMPLIANCE IS NOW', 'A COMPETITIVE ADVANTAGE'],
     description:
-      'EUDR, Scope 3, and traceability requirements are becoming commercial priorities across global supply chains.',
+      'EUDR, Scope 3 and traceability requirements are increasingly shaping sourcing, investment and trade decisions across global supply chains.',
     image: complianceIcon,
     bgClassName: 'bg-amber-50/50',
     titleClassName: 'text-yellow-900',
   },
   {
-    titleLines: ['THE COST OF', 'INACTIONIS RISING'],
+    titleLines: ['RESILIENCE IS', 'BECOMING A BUSINESS PRIORITY'],
     description:
-      'Securing long-term supply will require greater capital, faster innovation and strategic partnerships.',
+      'New investments, innovation and strategic partnerships are creating new pathways to strengthen resilience and secure long-term growth.',
     image: costInactionIcon,
     bgClassName: 'bg-blue-50/50',
     titleClassName: 'text-gray-900',
