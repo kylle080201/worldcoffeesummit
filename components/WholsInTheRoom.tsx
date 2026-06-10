@@ -1,6 +1,6 @@
 "use client";
 
-import React from 'react';
+import React, { useLayoutEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import { whoAttendsLogoRows, type WhoAttendsLogo } from './whoAttendsLogos';
 
@@ -89,60 +89,148 @@ function AudienceBreakdown() {
   );
 }
 
-const LOGO_SCALE = 0.85;
+const MARQUEE_DURATION = 50;
+const LOGO_SCALE = 1;
 const LOGO_BASE_MAX_HEIGHT = 112;
 const LOGO_BASE_MAX_WIDTH = 300;
+const LOGO_MARGIN_X = 16;
+const LOGO_MARGIN_Y = 16;
+const LOGO_ROW_GAP_PX = 16;
+const LOGO_SLOT_WIDTH = Math.round(160 * LOGO_SCALE);
 const LOGO_ROW_HEIGHT = Math.round(120 * LOGO_SCALE);
-const LOGO_COLUMNS = 9;
-const LOGO_GAP_PX = 64; // gap-16
+const ROW_STAGGER_PX = (LOGO_SLOT_WIDTH + LOGO_MARGIN_X * 2) / 2;
 
-function getStaggeredRowStyle(rowIndex: number): React.CSSProperties {
-  if (rowIndex !== 1) return {};
+const MARQUEE_MASK = {
+  maskImage:
+    'linear-gradient(to right, transparent, black 8%, black 92%, transparent)',
+  WebkitMaskImage:
+    'linear-gradient(to right, transparent, black 8%, black 92%, transparent)',
+};
 
-  return {
-    marginLeft: `calc(((100% - ${LOGO_GAP_PX}px * ${LOGO_COLUMNS - 1}) / ${LOGO_COLUMNS} + ${LOGO_GAP_PX}px) / 2)`,
-  };
-}
-
-function LogoCell({ logo }: { logo: WhoAttendsLogo }) {
-  const maxHeight = Math.round((logo.maxHeight ?? LOGO_BASE_MAX_HEIGHT) * LOGO_SCALE);
-  const maxWidth = Math.round((logo.maxWidth ?? LOGO_BASE_MAX_WIDTH) * LOGO_SCALE);
+function LogoItem({
+  logo,
+  copyIndex,
+}: {
+  logo: WhoAttendsLogo;
+  copyIndex: number;
+}) {
+  const maxHeight = Math.min(
+    Math.round((logo.maxHeight ?? LOGO_BASE_MAX_HEIGHT) * LOGO_SCALE),
+    LOGO_ROW_HEIGHT,
+  );
+  const maxWidth = Math.min(
+    Math.round((logo.maxWidth ?? LOGO_BASE_MAX_WIDTH) * LOGO_SCALE),
+    LOGO_SLOT_WIDTH,
+  );
 
   return (
     <div
-      className="flex min-w-0 flex-1 items-center justify-center px-3"
-      style={{ height: LOGO_ROW_HEIGHT }}
+      className="flex flex-shrink-0 items-center justify-center"
+      style={{
+        width: LOGO_SLOT_WIDTH,
+        height: LOGO_ROW_HEIGHT,
+        marginLeft: LOGO_MARGIN_X,
+        marginRight: LOGO_MARGIN_X,
+        marginTop: LOGO_MARGIN_Y,
+        marginBottom: LOGO_MARGIN_Y,
+      }}
     >
       <Image
         src={logo.logo}
-        alt={`${logo.name} logo`}
+        alt={copyIndex === 0 ? `${logo.name} logo` : ''}
+        aria-hidden={copyIndex !== 0}
         width={maxWidth}
         height={maxHeight}
-        className="h-auto w-auto max-w-full object-contain"
+        className="h-auto w-auto object-contain"
         style={{ maxHeight, maxWidth }}
       />
     </div>
   );
 }
 
-function WhoAttendsGrid({ rows }: { rows: WhoAttendsLogo[][] }) {
+function LogoRowMarquee({
+  logos,
+  duration,
+  measureRef,
+  rowIndex,
+}: {
+  logos: WhoAttendsLogo[];
+  duration: number;
+  measureRef: (element: HTMLDivElement | null) => void;
+  rowIndex: number;
+}) {
+  return (
+    <div
+      style={rowIndex === 1 ? { marginLeft: ROW_STAGGER_PX } : undefined}
+    >
+      <div className="relative overflow-hidden" style={MARQUEE_MASK}>
+        <div
+          ref={measureRef}
+          className="flex w-max animate-marquee-loop items-center"
+          style={{ animationDuration: `${duration}s` }}
+        >
+          {[0, 1].map((copyIndex) =>
+            logos.map((logo, index) => (
+              <LogoItem
+                key={`${copyIndex}-${logo.name}-${index}`}
+                logo={logo}
+                copyIndex={copyIndex}
+              />
+            )),
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function WhoAttendsMarquee({ rows }: { rows: WhoAttendsLogo[][] }) {
+  const measureRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const [durations, setDurations] = useState<number[]>(() =>
+    rows.map(() => MARQUEE_DURATION),
+  );
+
+  useLayoutEffect(() => {
+    const syncDurations = () => {
+      const widths = rows.map((_, index) => {
+        const track = measureRefs.current[index];
+        return track ? track.offsetWidth / 2 : 0;
+      });
+      const maxWidth = Math.max(...widths, 1);
+
+      setDurations(widths.map((width) => MARQUEE_DURATION * (width / maxWidth)));
+    };
+
+    syncDurations();
+
+    const observer = new ResizeObserver(syncDurations);
+    measureRefs.current.forEach((element) => {
+      if (element) observer.observe(element);
+    });
+
+    window.addEventListener('load', syncDurations);
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener('load', syncDurations);
+    };
+  }, [rows]);
+
   return (
     <div className="space-y-8">
       <p className="text-3xl font-bold text-center">WHO ATTENDS</p>
-      <div className="overflow-x-auto pb-2">
-        <div className="mx-auto w-full min-w-[1120px] max-w-6xl space-y-4">
-          {rows.map((row, rowIndex) => (
-            <div
-              key={rowIndex}
-              className="flex w-full"
-              style={{ gap: LOGO_GAP_PX, ...getStaggeredRowStyle(rowIndex) }}
-            >
-              {row.map((logo) => (
-                <LogoCell key={logo.name} logo={logo} />
-              ))}
-            </div>
-          ))}
-        </div>
+      <div className="flex flex-col" style={{ gap: LOGO_ROW_GAP_PX }}>
+        {rows.map((row, index) => (
+          <LogoRowMarquee
+            key={index}
+            rowIndex={index}
+            logos={row}
+            duration={durations[index] ?? MARQUEE_DURATION}
+            measureRef={(element) => {
+              measureRefs.current[index] = element;
+            }}
+          />
+        ))}
       </div>
     </div>
   );
@@ -173,7 +261,7 @@ export function WhoAttends() {
   return (
     <div className="w-full bg-white py-16">
       <div className="max-w-screen-xl mx-auto px-4">
-        <WhoAttendsGrid rows={whoAttendsLogoRows} />
+        <WhoAttendsMarquee rows={whoAttendsLogoRows} />
       </div>
     </div>
   );
