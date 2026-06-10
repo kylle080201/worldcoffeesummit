@@ -4,6 +4,10 @@ export interface WhoAttendsLogo {
   /** Override when the asset renders smaller than other logos at the default size. */
   maxHeight?: number;
   maxWidth?: number;
+  /** Extra visual scale for assets with excess whitespace. */
+  scale?: number;
+  marginX?: number;
+  marginY?: number;
 }
 
 const LOGO_BASE = '/images/who-attends-logos';
@@ -11,7 +15,7 @@ const LOGO_BASE = '/images/who-attends-logos';
 function logo(
   name: string,
   file: string,
-  size?: Pick<WhoAttendsLogo, 'maxHeight' | 'maxWidth'>,
+  size?: Pick<WhoAttendsLogo, 'maxHeight' | 'maxWidth' | 'scale' | 'marginX' | 'marginY'>,
 ): WhoAttendsLogo {
   return { name, logo: `${LOGO_BASE}/${file}`, ...size };
 }
@@ -23,30 +27,44 @@ export const whoAttendsLogoRows: WhoAttendsLogo[][] = [
     logo('Touton Group', 'Touton Group.png', { maxHeight: 160, maxWidth: 400 }),
     logo('Barry Callebaut', 'Barry Callebaut.png'),
     logo('Ferrero', 'ferrero-brandlogo.net.png', { maxHeight: 160, maxWidth: 400 }),
-    logo('Starbucks', 'Starbucks.png'),
+    logo('Starbucks', 'Starbucks.png', { maxHeight: 85, maxWidth: 85 }),
     logo('HSBC', 'Hsbc_logo_PNG2.png'),
     logo('ALDI SÜD', 'ALDI SUD.png'),
     logo('Tchibo', 'Tchibo.png'),
     logo('Volcafe', 'Volcafe.png'),
   ],
   [
-    logo('The World Bank', 'The World Bank.png'),
+    logo('The World Bank', 'The World Bank.png', {
+      maxHeight: 168,
+      maxWidth: 400,
+      scale: 1.2,
+      marginX: 32,
+    }),
     logo('Lavazza Group', 'LAVAZZA-GROUP.png', { maxHeight: 100, maxWidth: 250 }),
     logo('Mars', 'Mars Wordmark RGB Blue.png'),
-    logo('Neumann Gruppe', 'Neumann Gruppe_Logo_left-1.jpg', { maxHeight: 140, maxWidth: 340 }),
-    logo('ICE', 'ICE.png', { maxHeight: 130, maxWidth: 130 }),
+    logo('Neumann Gruppe', 'Neumann Gruppe_Logo_left-1.jpg', {
+      maxHeight: 168,
+      maxWidth: 400,
+      scale: 1.2,
+    }),
+    logo('ICE', 'ICE.png', { maxHeight: 90, maxWidth: 90 }),
     logo('Planet Labs', '512px-Planet_Labs_logo.png', { maxHeight: 140, maxWidth: 340 }),
     logo('European Commission', 'EU.png', { maxHeight: 168, maxWidth: 400 }),
     logo('JDE Peet\'s', 'JDE Peet_s.png'),
     logo('Bain & Company', 'bainstackedlogo_dig_red_1280x389px (1).png'),
   ],
   [
-    logo('FAO', 'FAO.png', { maxHeight: 150, maxWidth: 360 }),
+    logo('FAO', 'FAO.png', {
+      maxHeight: 180,
+      maxWidth: 500,
+      scale: 1.2,
+      marginX: 32,
+    }),
     logo('European Space Agency', 'ESA_logo_2020_Deep.png', { maxHeight: 140, maxWidth: 340 }),
     logo('Gold Standard', 'Gold Standard.png', { maxHeight: 140, maxWidth: 340 }),
-    logo('AXA Climate', 'AXA_Climate_Blue_Horizontal_RVB.png'),
-    logo('LDC', 'LDC.png', { maxHeight: 130, maxWidth: 200 }),
-    logo('IFC', 'IFC.png', { maxHeight: 140, maxWidth: 340 }),
+    logo('AXA Climate', 'AXA_Climate_Blue_Horizontal_RVB.png', { maxHeight: 65, maxWidth: 220 }),
+    logo('LDC', 'LDC.png', { maxHeight: 72, maxWidth: 130 }),
+    logo('IFC', 'IFC.png', { maxHeight: 168, maxWidth: 400, scale: 1.2 }),
     logo('ECOM', 'ECOM.jpg'),
     logo('Yara International', 'Yara International.png'),
     logo('Rainforest Alliance', 'Rainforest-Alliance-logo.png'),

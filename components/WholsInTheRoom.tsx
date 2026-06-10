@@ -129,10 +129,10 @@ function LogoItem({
       style={{
         width: LOGO_SLOT_WIDTH,
         height: LOGO_ROW_HEIGHT,
-        marginLeft: LOGO_MARGIN_X,
-        marginRight: LOGO_MARGIN_X,
-        marginTop: LOGO_MARGIN_Y,
-        marginBottom: LOGO_MARGIN_Y,
+        marginLeft: logo.marginX ?? LOGO_MARGIN_X,
+        marginRight: logo.marginX ?? LOGO_MARGIN_X,
+        marginTop: logo.marginY ?? LOGO_MARGIN_Y,
+        marginBottom: logo.marginY ?? LOGO_MARGIN_Y,
       }}
     >
       <Image
@@ -142,7 +142,11 @@ function LogoItem({
         width={maxWidth}
         height={maxHeight}
         className="h-auto w-auto object-contain"
-        style={{ maxHeight, maxWidth }}
+        style={{
+          maxHeight,
+          maxWidth,
+          transform: logo.scale ? `scale(${logo.scale})` : undefined,
+        }}
       />
     </div>
   );
