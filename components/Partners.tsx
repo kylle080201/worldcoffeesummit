@@ -3,7 +3,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { WhoAttends } from './WholsInTheRoom'
+import { Partners2025Marquee, WhoAttends } from './WholsInTheRoom'
+import { type WhoAttendsLogo } from './whoAttendsLogos'
 import partnerHeaderImage from '../images/partners-image/PARTNER-HEADER-IMAGE.jpg'
 import partnerImage1 from '../images/partners-image/PARTNER-IMAGE-1.jpg'
 import partnerImage2 from '../images/partners-image/PARTNER-IMAGE-2.jpg'
@@ -14,32 +15,54 @@ import globeIcon from '../images/partners-image/icons/globe.png'
 import peopleIcon from '../images/partners-image/icons/people.png'
 
 const sectionIconClassName = 'h-20 w-20 flex-shrink-0 object-contain sm:h-24 sm:w-24 md:h-28 md:w-28'
-const partners2025 = [
-  { alt: 'Okala', imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Okala.png' },
+const partners2025: WhoAttendsLogo[] = [
   {
-    alt: 'Picterra',
-    imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Picterra_Primary_Logo_Dark-1-scaled.png',
+    name: 'Okala',
+    logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Okala.png',
+    maxHeight: 56,
+    maxWidth: 140,
   },
   {
-    alt: 'Chloris Geospatial',
-    imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Chloris-Geospatial.png',
-  },
-  { alt: 'Planet', imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Planet.png' },
-  {
-    alt: 'Satelligence',
-    imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/Satelligence-blue.svg',
+    name: 'Picterra',
+    logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Picterra_Primary_Logo_Dark-1-scaled.png',
+    maxHeight: 56,
+    maxWidth: 160,
   },
   {
-    alt: 'Origin Country Exhibitor',
-    imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/10/imageedit_74_8864533329.png',
+    name: 'Chloris Geospatial',
+    logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Chloris-Geospatial.png',
+    maxHeight: 56,
+    maxWidth: 120,
   },
   {
-    alt: 'FoodChain ID',
-    imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/FoodChain-ID.webp',
+    name: 'Planet',
+    logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Planet.png',
+    maxHeight: 56,
+    maxWidth: 120,
   },
   {
-    alt: 'Ubees',
-    imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Ubees-logo-2022_1.avif',
+    name: 'Satelligence',
+    logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/Satelligence-blue.svg',
+    maxHeight: 56,
+    maxWidth: 160,
+  },
+  {
+    name: 'Origin Country Exhibitor',
+    logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/10/imageedit_74_8864533329.png',
+    maxHeight: 56,
+    maxWidth: 120,
+  },
+  {
+    name: 'FoodChain ID',
+    logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/FoodChain-ID.webp',
+    maxHeight: 56,
+    maxWidth: 180,
+  },
+  {
+    name: 'Ubees',
+    logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Ubees-logo-2022_1.avif',
+    maxHeight: 56,
+    maxWidth: 140,
   },
 ]
 
@@ -203,20 +226,7 @@ export default function Partners() {
           <h2 className="text-center text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             2025 PARTNERS INCLUDE :
           </h2>
-          <div className="mt-10 grid w-full grid-cols-3 items-center justify-items-center gap-x-4 gap-y-8 sm:grid-cols-4 lg:flex lg:flex-nowrap lg:justify-between lg:gap-6">
-            {partners2025.map((partner) => (
-              <div
-                key={partner.alt}
-                className="flex w-full items-center justify-center px-1 sm:px-2 lg:flex-1 lg:min-w-0"
-              >
-                <img
-                  className="h-10 w-auto max-w-full object-contain sm:h-12 lg:h-14 lg:max-w-none"
-                  src={partner.imgSrc}
-                  alt={`${partner.alt} logo`}
-                />
-              </div>
-            ))}
-          </div>
+          <Partners2025Marquee logos={partners2025} />
         </div>
       </section>
 

@@ -182,6 +182,40 @@ function LogoRowMarquee({
   );
 }
 
+function SingleLogoMarqueeRow({ logos }: { logos: WhoAttendsLogo[] }) {
+  const measureRef = useRef<HTMLDivElement | null>(null);
+  const [duration, setDuration] = useState(MARQUEE_DURATION);
+
+  useLayoutEffect(() => {
+    const syncDuration = () => {
+      setDuration(MARQUEE_DURATION);
+    };
+
+    syncDuration();
+
+    const observer = new ResizeObserver(syncDuration);
+    if (measureRef.current) observer.observe(measureRef.current);
+
+    window.addEventListener('load', syncDuration);
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener('load', syncDuration);
+    };
+  }, [logos]);
+
+  return (
+    <LogoRowMarquee
+      logos={logos}
+      duration={duration}
+      rowIndex={0}
+      measureRef={(element) => {
+        measureRef.current = element;
+      }}
+    />
+  );
+}
+
 function WhoAttendsMarquee({
   rows,
   subtitle,
@@ -262,6 +296,14 @@ function WhoIsInTheRoom() {
           </div>
         </div>
       </div>
+    </div>
+  );
+}
+
+export function Partners2025Marquee({ logos }: { logos: WhoAttendsLogo[] }) {
+  return (
+    <div className="mt-10 w-full">
+      <SingleLogoMarqueeRow logos={logos} />
     </div>
   );
 }
