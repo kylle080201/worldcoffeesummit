@@ -5,11 +5,12 @@ import Image from 'next/image';
 import { whoAttendsLogoRows, type WhoAttendsLogo } from './whoAttendsLogos';
 
 const AUDIENCE_DATA = [
-  { label: 'Brands, Traders, Retailers & Agribusiness', percentage: 30 },
-  { label: 'Government, NGOs & Policymakers', percentage: 20 },
-  { label: 'Producers & Origin Organisations', percentage: 15 },
+  { label: 'Brands, Retailers, Traders & Agribusiness', percentage: 30 },
+  { label: 'Government, Policy, NGOs & Development Organisations', percentage: 20 },
+  { label: 'Producers & Origin Organisations', percentage: 10 },
+  { label: 'Advisory, Research & Strategy', percentage: 10 },
   { label: 'Technology & Solution Providers', percentage: 20 },
-  { label: 'Finance & Investors', percentage: 15 },
+  { label: 'Finance, Investment & Insurance', percentage: 10 },
 ];
 
 function DonutChart({
@@ -66,16 +67,9 @@ function DonutChart({
 
 function AudienceBreakdown() {
   return (
-    <div className="grid grid-cols-2 gap-4 sm:gap-5 lg:grid-cols-5">
-      {AUDIENCE_DATA.map((item, index) => (
-        <div
-          key={item.label}
-          className={
-            index === AUDIENCE_DATA.length - 1
-              ? 'col-span-2 mx-auto w-full max-w-[12rem] lg:col-span-1 lg:max-w-none'
-              : undefined
-          }
-        >
+    <div className="grid grid-cols-2 gap-4 sm:gap-5 lg:grid-cols-3">
+      {AUDIENCE_DATA.map((item) => (
+        <div key={item.label}>
           <div className="flex h-full flex-col items-center rounded-xl bg-white px-3 py-5 shadow-sm ring-1 ring-gray-200/70 sm:px-4 sm:py-6">
             <DonutChart
               percentage={item.percentage}
@@ -248,7 +242,7 @@ function WhoIsInTheRoom() {
           <div className="border-b border-gray-200/80 px-6 py-8 text-center sm:px-10">
             <p className="text-3xl font-bold">{`WHO'S IN THE ROOM`}</p>
             <p className="mx-auto mt-3 max-w-2xl text-lg text-gray-700">
-              A cross-industry audience shaping the future of coffee and cocoa.
+              Bringing together decision-makers from across the coffee and cocoa ecosystem.
             </p>
           </div>
 

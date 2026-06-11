@@ -26,8 +26,6 @@ function Navbar() {
     },
     { name: 'Venue', href: '/venue' },
     { name: 'Partners', href: '/#partners' },
-    { name: 'Resources', href: '/resources' },
-    { name: 'FAQ', href: '/faq' },
   ]
 
   const navLinkClassName =
