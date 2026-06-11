@@ -3,8 +3,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { Partners2025Marquee, WhoAttends } from './WholsInTheRoom'
-import { type WhoAttendsLogo } from './whoAttendsLogos'
+import { Partners2025Marquee, WhoAttendsGrid } from './WholsInTheRoom'
+import { partnersPageWhoAttendsRows, type WhoAttendsLogo } from './whoAttendsLogos'
 import partnerHeaderImage from '../images/partners-image/PARTNER-HEADER-IMAGE.jpg'
 import partnerImage1 from '../images/partners-image/PARTNER-IMAGE-1.jpg'
 import partnerImage2 from '../images/partners-image/PARTNER-IMAGE-2.jpg'
@@ -19,50 +19,50 @@ const partners2025: WhoAttendsLogo[] = [
   {
     name: 'Okala',
     logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Okala.png',
-    maxHeight: 56,
-    maxWidth: 140,
+    maxHeight: 90,
+    maxWidth: 180,
   },
   {
     name: 'Picterra',
     logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Picterra_Primary_Logo_Dark-1-scaled.png',
-    maxHeight: 56,
-    maxWidth: 160,
+    maxHeight: 90,
+    maxWidth: 200,
   },
   {
     name: 'Chloris Geospatial',
     logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Chloris-Geospatial.png',
-    maxHeight: 56,
-    maxWidth: 120,
+    maxHeight: 90,
+    maxWidth: 160,
   },
   {
     name: 'Planet',
     logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Planet.png',
-    maxHeight: 56,
-    maxWidth: 120,
+    maxHeight: 90,
+    maxWidth: 160,
   },
   {
     name: 'Satelligence',
     logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/Satelligence-blue.svg',
-    maxHeight: 56,
-    maxWidth: 160,
+    maxHeight: 90,
+    maxWidth: 200,
   },
   {
     name: 'Origin Country Exhibitor',
     logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/10/imageedit_74_8864533329.png',
-    maxHeight: 56,
-    maxWidth: 120,
+    maxHeight: 90,
+    maxWidth: 160,
   },
   {
     name: 'FoodChain ID',
     logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/FoodChain-ID.webp',
-    maxHeight: 56,
-    maxWidth: 180,
+    maxHeight: 90,
+    maxWidth: 220,
   },
   {
     name: 'Ubees',
     logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Ubees-logo-2022_1.avif',
-    maxHeight: 56,
-    maxWidth: 140,
+    maxHeight: 90,
+    maxWidth: 180,
   },
 ]
 
@@ -103,7 +103,7 @@ export default function Partners() {
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-12">
           <div>
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              PARTNER WITH US
+              PARTNER WITH WCIS
             </h2>
             <p className="mt-4 text-lg leading-8 text-gray-900 sm:text-xl">
               Position your organisation at the centre of coffee and cocoa resilience,
@@ -122,7 +122,7 @@ export default function Partners() {
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-2xl shadow-sm">
+          <div className="overflow-hidden shadow-sm">
             <Image
               src={partnerHeaderImage}
               alt="Panel discussion at World Coffee Innovation Summit"
@@ -141,7 +141,7 @@ export default function Partners() {
           <div className="mt-12 grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-8">
             {whyPartnerItems.map((item) => (
               <article key={item.title}>
-                <div className="overflow-hidden rounded-2xl">
+                <div className="overflow-hidden">
                   <Image
                     src={item.image}
                     alt={item.title}
@@ -211,15 +211,17 @@ export default function Partners() {
                 aria-hidden
               />
               <p className="text-base leading-7 text-gray-900 sm:text-lg">
-                Uniting the entire value chain to accelerate sustainable and inclusive
-                growth.
+              Uniting the entire value chain to build resilient and future-ready coffee and cocoa supply chains.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <WhoAttends subtitle="Organisations represented include:" />
+      <WhoAttendsGrid
+        rows={partnersPageWhoAttendsRows}
+        subtitle="Organisations represented include:"
+      />
 
       <section className="w-full bg-white py-16 sm:py-20">
         <div className="w-full px-4 sm:px-6 lg:px-8">

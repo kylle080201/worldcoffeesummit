@@ -20,7 +20,7 @@ function logo(
   return { name, logo: `${LOGO_BASE}/${file}`, ...size };
 }
 
-/** Row order matches the WHO ATTENDS design mockup (left → right, top → bottom). */
+/** Row order for the homepage WHO ATTENDS marquee (left → right, top → bottom). */
 export const whoAttendsLogoRows: WhoAttendsLogo[][] = [
   [
     logo('ofi', 'ofi.png', { maxHeight: 160, maxWidth: 400 }),
@@ -76,5 +76,33 @@ export const whoAttendsLogoRows: WhoAttendsLogo[][] = [
     logo('Rainforest Alliance', 'Rainforest-Alliance-logo.png'),
   ],
 ];
+
+/** Static grid order for the partners page WHO ATTENDS section (same logos as homepage). */
+function toPartnersGridLogo(item: WhoAttendsLogo): WhoAttendsLogo {
+  const overrides: Record<string, Pick<WhoAttendsLogo, 'maxHeight' | 'maxWidth'>> = {
+    Starbucks: { maxHeight: 48, maxWidth: 48 },
+    ICE: { maxHeight: 48, maxWidth: 48 },
+    LDC: { maxHeight: 48, maxWidth: 72 },
+    'European Commission': { maxHeight: 52, maxWidth: 72 },
+    'AXA Climate': { maxHeight: 44, maxWidth: 88 },
+    'Neumann Gruppe': { maxHeight: 48, maxWidth: 96 },
+    'The World Bank': { maxHeight: 52, maxWidth: 104 },
+    FAO: { maxHeight: 68, maxWidth: 136 },
+    IFC: { maxHeight: 68, maxWidth: 136 },
+    'Barry Callebaut': { maxHeight: 52, maxWidth: 124 },
+  };
+
+  return {
+    name: item.name,
+    logo: item.logo,
+    maxHeight: 56,
+    maxWidth: 112,
+    ...overrides[item.name],
+  };
+}
+
+export const partnersPageWhoAttendsRows: WhoAttendsLogo[][] = whoAttendsLogoRows.map(
+  (row) => row.map(toPartnersGridLogo),
+);
 
 export const whoAttendsLogos: WhoAttendsLogo[] = whoAttendsLogoRows.flat();

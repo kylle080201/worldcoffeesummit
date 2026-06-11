@@ -101,6 +101,73 @@ const MARQUEE_MASK = {
     'linear-gradient(to right, transparent, black 8%, black 92%, transparent)',
 };
 
+const PARTNERS_2025_SLOT_WIDTH = 220;
+const PARTNERS_2025_ROW_HEIGHT = 112;
+const PARTNERS_2025_MARGIN_X = 8;
+
+const GRID_BASE_MAX_HEIGHT = 56;
+const GRID_BASE_MAX_WIDTH = 112;
+
+function StaticLogoGridItem({ logo }: { logo: WhoAttendsLogo }) {
+  const maxHeight = logo.maxHeight ?? GRID_BASE_MAX_HEIGHT;
+  const maxWidth = logo.maxWidth ?? GRID_BASE_MAX_WIDTH;
+
+  return (
+    <div className="flex h-14 w-full items-center justify-center overflow-hidden px-0.5 sm:h-16 lg:h-[4.25rem]">
+      <Image
+        src={logo.logo}
+        alt={`${logo.name} logo`}
+        width={maxWidth}
+        height={maxHeight}
+        className="max-h-full max-w-full object-contain"
+      />
+    </div>
+  );
+}
+
+function Partners2025LogoItem({
+  logo,
+  copyIndex,
+}: {
+  logo: WhoAttendsLogo;
+  copyIndex: number;
+}) {
+  const maxHeight = Math.min(
+    Math.round((logo.maxHeight ?? LOGO_BASE_MAX_HEIGHT) * LOGO_SCALE),
+    PARTNERS_2025_ROW_HEIGHT,
+  );
+  const maxWidth = Math.min(
+    Math.round((logo.maxWidth ?? LOGO_BASE_MAX_WIDTH) * LOGO_SCALE),
+    PARTNERS_2025_SLOT_WIDTH,
+  );
+
+  return (
+    <div
+      className="flex flex-shrink-0 items-center justify-center"
+      style={{
+        width: PARTNERS_2025_SLOT_WIDTH,
+        height: PARTNERS_2025_ROW_HEIGHT,
+        marginLeft: logo.marginX ?? PARTNERS_2025_MARGIN_X,
+        marginRight: logo.marginX ?? PARTNERS_2025_MARGIN_X,
+      }}
+    >
+      <Image
+        src={logo.logo}
+        alt={copyIndex === 0 ? `${logo.name} logo` : ''}
+        aria-hidden={copyIndex !== 0}
+        width={maxWidth}
+        height={maxHeight}
+        className="h-auto w-auto object-contain"
+        style={{
+          maxHeight,
+          maxWidth,
+          transform: logo.scale ? `scale(${logo.scale})` : undefined,
+        }}
+      />
+    </div>
+  );
+}
+
 function LogoItem({
   logo,
   copyIndex,
@@ -182,7 +249,13 @@ function LogoRowMarquee({
   );
 }
 
-function SingleLogoMarqueeRow({ logos }: { logos: WhoAttendsLogo[] }) {
+function SingleLogoMarqueeRow({
+  logos,
+  renderLogo,
+}: {
+  logos: WhoAttendsLogo[];
+  renderLogo: (logo: WhoAttendsLogo, copyIndex: number, index: number) => React.ReactNode;
+}) {
   const measureRef = useRef<HTMLDivElement | null>(null);
   const [duration, setDuration] = useState(MARQUEE_DURATION);
 
@@ -205,14 +278,17 @@ function SingleLogoMarqueeRow({ logos }: { logos: WhoAttendsLogo[] }) {
   }, [logos]);
 
   return (
-    <LogoRowMarquee
-      logos={logos}
-      duration={duration}
-      rowIndex={0}
-      measureRef={(element) => {
-        measureRef.current = element;
-      }}
-    />
+    <div className="relative overflow-hidden" style={MARQUEE_MASK}>
+      <div
+        ref={measureRef}
+        className="flex w-max animate-marquee-loop items-center"
+        style={{ animationDuration: `${duration}s` }}
+      >
+        {[0, 1].map((copyIndex) =>
+          logos.map((logo, index) => renderLogo(logo, copyIndex, index)),
+        )}
+      </div>
+    </div>
   );
 }
 
@@ -303,7 +379,49 @@ function WhoIsInTheRoom() {
 export function Partners2025Marquee({ logos }: { logos: WhoAttendsLogo[] }) {
   return (
     <div className="mt-10 w-full">
-      <SingleLogoMarqueeRow logos={logos} />
+      <SingleLogoMarqueeRow
+        logos={logos}
+        renderLogo={(logo, copyIndex, index) => (
+          <Partners2025LogoItem
+            key={`${copyIndex}-${logo.name}-${index}`}
+            logo={logo}
+            copyIndex={copyIndex}
+          />
+        )}
+      />
+    </div>
+  );
+}
+
+export function WhoAttendsGrid({
+  rows,
+  subtitle,
+}: {
+  rows: WhoAttendsLogo[][];
+  subtitle?: string;
+}) {
+  return (
+    <div className="w-full bg-white py-16">
+      <div className="w-full px-4 sm:px-6 lg:px-8">
+        <div className="text-center">
+          <p className="text-3xl font-bold">WHO ATTENDS</p>
+          {subtitle ? (
+            <p className="mt-3 text-lg text-gray-900 sm:text-xl">{subtitle}</p>
+          ) : null}
+        </div>
+        <div className="mt-8 flex flex-col gap-4 sm:gap-5">
+          {rows.map((row, rowIndex) => (
+            <div
+              key={rowIndex}
+              className="grid w-full grid-cols-3 gap-x-2 gap-y-3 sm:grid-cols-5 sm:gap-x-3 lg:grid-cols-9 lg:gap-x-2"
+            >
+              {row.map((logo) => (
+                <StaticLogoGridItem key={logo.name} logo={logo} />
+              ))}
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
