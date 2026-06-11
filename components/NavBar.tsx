@@ -25,7 +25,7 @@ function Navbar() {
       ],
     },
     { name: 'Venue', href: '/venue' },
-    { name: 'Partners', href: '/#partners' },
+    { name: 'Partners', href: '/partners' },
   ]
 
   const navLinkClassName =

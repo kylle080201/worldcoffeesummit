@@ -182,7 +182,13 @@ function LogoRowMarquee({
   );
 }
 
-function WhoAttendsMarquee({ rows }: { rows: WhoAttendsLogo[][] }) {
+function WhoAttendsMarquee({
+  rows,
+  subtitle,
+}: {
+  rows: WhoAttendsLogo[][];
+  subtitle?: string;
+}) {
   const measureRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [durations, setDurations] = useState<number[]>(() =>
     rows.map(() => MARQUEE_DURATION),
@@ -216,7 +222,12 @@ function WhoAttendsMarquee({ rows }: { rows: WhoAttendsLogo[][] }) {
 
   return (
     <div className="space-y-8">
-      <p className="text-3xl font-bold text-center">WHO ATTENDS</p>
+      <div className="text-center">
+        <p className="text-3xl font-bold">WHO ATTENDS</p>
+        {subtitle ? (
+          <p className="mt-3 text-lg text-gray-900 sm:text-xl">{subtitle}</p>
+        ) : null}
+      </div>
       <div className="flex flex-col" style={{ gap: LOGO_ROW_GAP_PX }}>
         {rows.map((row, index) => (
           <LogoRowMarquee
@@ -255,11 +266,11 @@ function WhoIsInTheRoom() {
   );
 }
 
-export function WhoAttends() {
+export function WhoAttends({ subtitle }: { subtitle?: string }) {
   return (
     <div className="w-full bg-white py-16">
       <div className="max-w-screen-xl mx-auto px-4">
-        <WhoAttendsMarquee rows={whoAttendsLogoRows} />
+        <WhoAttendsMarquee rows={whoAttendsLogoRows} subtitle={subtitle} />
       </div>
     </div>
   );
