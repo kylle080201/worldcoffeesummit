@@ -15,6 +15,8 @@ import Attendees2023 from "../../components/2023Attendees";
 import WhoIsInTheRoom, { WhoAttends } from "../../components/WholsInTheRoom";
 import WcisInAction from "../../components/WcisInAction";
 import Confirmedspeakers from "../../components/Confirmedspeakers";
+import Speakers2026 from "../../components/Speakers2026";
+import Link from "next/link";
 import { HomePageLayout, HomeSection } from "../../components/HomeSection";
 
 
@@ -22,14 +24,17 @@ export default function HomePage() {
     return (
         <HomePageLayout>
             <Overview />
-            <HomeSection><WhoIsInTheRoom /></HomeSection>
-            <HomeSection className="bg-white"><WhoAttends compactBottom /></HomeSection>
-            
-            {/* <SpeakerSlider /> */}
-            {/* <ImageCarousel /> */}
-            <HomeSection><Testimonials /></HomeSection>
+            <HomeSection className="bg-gray-100">
+                <Speakers2026 />
+            </HomeSection>
+            <HomeSection className="bg-white">
+                <KeyThemes />
+            </HomeSection>
+            <HomeSection className="bg-gray-100"><WhoIsInTheRoom /></HomeSection>
+            <HomeSection className="bg-white"><WhoAttends /></HomeSection>
+            <HomeSection className="bg-gray-100"><Testimonials /></HomeSection>
             {/* <Attendees2023 /> */}
-            <HomeSection><SummitInTheNews /></HomeSection>
+            <HomeSection className="bg-white"><SummitInTheNews /></HomeSection>
             {/* <Venue /> */}
         </HomePageLayout>
     )

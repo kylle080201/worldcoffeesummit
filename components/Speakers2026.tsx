@@ -20,6 +20,7 @@ import rickVanDerKampImage from '../images/2026-speakers/IFAD-Rick van der Kamp/
 import ifadLogo from '../images/2026-speakers/IFAD-Rick van der Kamp/E_g_web.png'
 import sonyaImage from '../images/2026-speakers/CDP-Sonya Bhonsle/Sonya Bhonsle.jpg'
 import cdpLogo from '../images/2026-speakers/CDP-Sonya Bhonsle/cdp.png'
+import Link from 'next/link'
 const anupImage = '/images/2026-speakers/anup-jagwani.jpg'
 const worldBankLogo = '/images/2026-speakers/world-bank-group-logo.png'
 const teddyImage = '/images/2026-speakers/teddy-esteve.jpg'
@@ -480,6 +481,15 @@ export default function Speakers2026() {
           </Dialog>
         </Transition.Root>
       )}
+
+      <div className="-mt-12 mb-12 w-full flex justify-center sm:mb-16 pb-12">
+          <Link
+              href="/speakers#speakers-2025"
+              className="rounded-lg bg-lime-700 px-6 py-3 text-lg font-bold text-white transition-colors duration-300 hover:bg-lime-800"
+          >
+              2025 SPEAKERS
+          </Link>
+      </div>
     </>
   );
 }

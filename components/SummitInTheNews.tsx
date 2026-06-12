@@ -6,7 +6,7 @@ function SummitInTheNews() {
   return (
     <div className='w-full py-24 md:px-0 px-12'>
       <div className="relative max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold leading-10 tracking-tight text-gray-900">World Coffee Innovation Summit in The News</h2>
+        <h2 className="text-center text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">WCIS IN THE NEWS</h2>
         <div className='flex md:flex-row flex-col gap-8 '>
           <div className="flex w-full md:w-[500px] h-full mt-12">
             <div className="testimonial-item bg-white shadow rounded hover:shadow-lg">

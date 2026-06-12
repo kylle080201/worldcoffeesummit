@@ -335,7 +335,7 @@ function WhoAttendsMarquee({
   return (
     <div className="space-y-8">
       <div className="text-center">
-        <p className="text-3xl font-bold">WHO ATTENDS</p>
+        <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">WHO ATTENDS</p>
         {subtitle ? (
           <p className="mt-3 text-lg text-gray-900 sm:text-xl">{subtitle}</p>
         ) : null}
@@ -363,7 +363,7 @@ function WhoIsInTheRoom() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="overflow-hidden rounded-2xl border border-gray-200 bg-gradient-to-b from-lime-700/[0.05] via-white to-white shadow-sm">
           <div className="border-b border-gray-200/80 px-6 py-8 text-center sm:px-10">
-            <p className="text-3xl font-bold">{`WHO'S IN THE ROOM`}</p>
+            <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">{`WHO'S IN THE ROOM`}</p>
             <p className="mx-auto mt-3 max-w-2xl text-lg text-gray-700">
               Bringing together decision-makers from across the coffee and cocoa ecosystem.
             </p>
@@ -443,7 +443,7 @@ export function WhoAttends({
 }) {
   return (
     <div
-      className={`w-full bg-white pt-16 ${compactBottom ? 'pb-4 sm:pb-6' : 'pb-16'}`}
+      className={`w-full pt-16 ${compactBottom ? 'pb-4 sm:pb-6' : 'pb-16'}`}
     >
       <div className="max-w-screen-xl mx-auto px-4">
         <WhoAttendsMarquee rows={whoAttendsLogoRows} subtitle={subtitle} />
