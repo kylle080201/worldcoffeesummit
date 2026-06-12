@@ -43,6 +43,13 @@ const nextConfig = {
 
     return config;
   },
+  async redirects() {
+    return [
+      { source: '/faq', destination: '/', permanent: false },
+      { source: '/resources', destination: '/', permanent: false },
+      { source: '/resources/:path*', destination: '/', permanent: false },
+    ];
+  },
 };
 
 module.exports = nextConfig;

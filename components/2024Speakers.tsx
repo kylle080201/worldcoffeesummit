@@ -954,10 +954,10 @@ His areas of specialisation are global food security governance, agriculture and
                     </div>
                     <div className="flex flex-col justify-start flex-grow bg-[#4D7C0F] px-4 pt-12 pb-4 text-white p-6">
                       <h3 className="text-lg font-semibold leading-8 tracking-tight text-white md:text-2xl">{speaker.name}</h3>
-                      <p className="font-semibold leading-7 text-white text-md">{speaker.role}</p>
-                      <p className="leading-7 text-white text-sm">{speaker.company}</p>
-                      {speaker.role2 && <p className="leading-7 text-white text-sm">{speaker.role2}</p>}
-                      {speaker.company2 && <p className="font-semibold leading-7 text-white text-md">{speaker.company2}</p>}
+                      <p className="text-lg leading-8 tracking-tight text-white md:text-2xl">{speaker.role}</p>
+                      <p className="text-sm font-semibold leading-6 text-white">{speaker.company}</p>
+                      {speaker.role2 && <p className="text-lg leading-8 tracking-tight text-white md:text-2xl">{speaker.role2}</p>}
+                      {speaker.company2 && <p className="text-sm font-semibold leading-6 text-white">{speaker.company2}</p>}
                     </div>
                   </div>
                 </div>
@@ -1005,11 +1005,11 @@ His areas of specialisation are global food security governance, agriculture and
                     </div>
                     <div className="flex mx-auto text-center">
                       <div>
-                        <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-lg">{selectedSpeaker.name}</p>
-                        <p className="leading-7 text-gray-700 text-md">{selectedSpeaker.role}</p>
-                        <p className="font-semibold leading-7 text-gray-900 text-2xl">{selectedSpeaker.company}</p>
-                       <p className="leading-7 text-gray-700 text-md">{selectedSpeaker.role2}</p>
-                       <p className="font-semibold leading-7 text-gray-900 text-2xl">{selectedSpeaker.company2}</p>
+                        <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{selectedSpeaker.name}</p>
+                        <p className="text-lg leading-8 tracking-tight text-gray-900 md:text-2xl">{selectedSpeaker.role}</p>
+                        <p className="text-sm font-semibold leading-6 text-gray-900">{selectedSpeaker.company}</p>
+                       <p className="text-lg leading-8 tracking-tight text-gray-900 md:text-2xl">{selectedSpeaker.role2}</p>
+                       <p className="text-sm font-semibold leading-6 text-gray-900">{selectedSpeaker.company2}</p>
                       </div>
                     </div>
                   </div>

@@ -1,353 +1,271 @@
+"use client"
+
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { Partners2025Marquee, WhoAttendsGrid } from './WholsInTheRoom'
+import { partnersPageWhoAttendsRows, type WhoAttendsLogo } from './whoAttendsLogos'
+import partnerHeaderImage from '../images/partners-image/PARTNER-HEADER-IMAGE.jpg'
+import partnerImage1 from '../images/partners-image/PARTNER-IMAGE-1.jpg'
+import partnerImage2 from '../images/partners-image/PARTNER-IMAGE-2.jpg'
+import partnerImage3 from '../images/partners-image/PARTNER-IMAGE-3.jpg'
+import becomeAPartnerIcon from '../images/partners-image/icons/become-a-partner.png'
+import briefcaseIcon from '../images/partners-image/icons/briefcase.png'
+import globeIcon from '../images/partners-image/icons/globe.png'
+import peopleIcon from '../images/partners-image/icons/people.png'
+
+const sectionIconClassName = 'h-20 w-20 flex-shrink-0 object-contain sm:h-24 sm:w-24 md:h-28 md:w-28'
+const partners2025: WhoAttendsLogo[] = [
+  {
+    name: 'Okala',
+    logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Okala.png',
+    maxHeight: 90,
+    maxWidth: 180,
+  },
+  {
+    name: 'Picterra',
+    logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Picterra_Primary_Logo_Dark-1-scaled.png',
+    maxHeight: 90,
+    maxWidth: 200,
+  },
+  {
+    name: 'Chloris Geospatial',
+    logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Chloris-Geospatial.png',
+    maxHeight: 80,
+    maxWidth: 110,
+    slotWidth: 108,
+    marginX: -4,
+  },
+  {
+    name: 'Planet',
+    logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Planet.png',
+    maxHeight: 90,
+    maxWidth: 160,
+  },
+  {
+    name: 'Satelligence',
+    logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/Satelligence-blue.svg',
+    maxHeight: 90,
+    maxWidth: 200,
+  },
+  {
+    name: 'Origin Country Exhibitor',
+    logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/10/imageedit_74_8864533329.png',
+    maxHeight: 80,
+    maxWidth: 80,
+    slotWidth: 96,
+    marginX: 4,
+  },
+  {
+    name: 'FoodChain ID',
+    logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/FoodChain-ID.webp',
+    maxHeight: 90,
+    maxWidth: 220,
+  },
+  {
+    name: 'Ubees',
+    logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Ubees-logo-2022_1.avif',
+    maxHeight: 90,
+    maxWidth: 180,
+  },
+]
+
+const whyPartnerItems = [
+  {
+    title: 'SHOWCASE SOLUTIONS & INNOVATION',
+    description:
+      'Demonstrate technologies, services and solutions to brands, traders, producers and investors actively seeking scalable approaches to resilience, compliance and supply security.',
+    image: partnerImage1,
+  },
+  {
+    title: 'LEAD INDUSTRY CONVERSATIONS',
+    description:
+      "Establish thought leadership and strengthen your authority alongside senior industry leaders through keynotes, curated panels, case studies and deep-dive discussions that position your organisation at the centre of the industry's most important conversations.",
+    image: partnerImage2,
+  },
+  {
+    title: 'BUILD STRATEGIC RELATIONSHIPS',
+    description:
+      'Build meaningful relationships with senior decision-makers from across the global value chain—including brands, traders, producers, investors, policymakers, technology providers and sustainability organisations—through curated networking, hosted lunches, coffee tasting experiences and the exclusive WCIS Networking Soirée at the UK House of Lords.',
+    image: partnerImage3,
+  },
+]
+
+const ctaButtonClassName =
+  'inline-flex items-center justify-center rounded-lg bg-teal-700 px-6 py-3 text-base font-bold text-white transition-colors duration-300 hover:bg-teal-800 sm:px-8 sm:text-lg'
+
+const becomePartnerPrimaryButtonClassName =
+  'inline-flex items-center justify-center rounded-lg bg-white px-6 py-3 text-base font-bold text-teal-700 transition-colors duration-300 hover:bg-gray-100 sm:px-8 sm:text-lg'
+
+const becomePartnerSecondaryButtonClassName =
+  'inline-flex items-center justify-center rounded-lg border-2 border-white px-6 py-3 text-base font-bold text-white transition-colors duration-300 hover:bg-teal-800 sm:px-8 sm:text-lg'
 
 export default function Partners() {
-    const goldSponsors = [
-        {
-            href: '',
-            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2023/09/ICE_logo_Rmark_rgb-1.png',
-            className: 'w-[10rem] p-2 mx-auto'
-        },
-        {
-            href: '',
-            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/osapiens-Logo-horizontal-gradient-black-RM.svg',
-            className: 'w-[16rem] p-2 mx-auto'
-        },
-    ]
+  return (
+    <div className="w-full pt-16 sm:pt-20" id="partners">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-12">
+          <div>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              PARTNER WITH WCIS
+            </h2>
+            <p className="mt-4 text-lg leading-8 text-gray-900 sm:text-xl">
+              Position your organisation at the centre of coffee and cocoa resilience,
+              supply security and future growth.
+            </p>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <Link href="/interest" className={ctaButtonClassName}>
+                Submit Your Interest
+              </Link>
+              <Link
+                href="mailto:info@worldcoffeealliance.com"
+                className={ctaButtonClassName}
+              >
+                Email Us
+              </Link>
+            </div>
+          </div>
 
-    const silverSponsors = [
-        {
-            href: '',
-            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Planet.png',
-            className: 'w-[16rem] p-2 mx-auto'
-        },
-        {
-            href: '',
-            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Picterra_Primary_Logo_Dark-1-scaled.png',
-            className: 'w-[16rem] p-2 mx-auto'
-        }
-    ]
+          <div className="overflow-hidden shadow-sm">
+            <Image
+              src={partnerHeaderImage}
+              alt="Panel discussion at World Coffee Innovation Summit"
+              className="h-full w-full object-cover"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              priority
+            />
+          </div>
+        </div>
 
-    const bronzeSponsors = [
-        {
-            href: '',
-            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Chloris-Geospatial.png',
-            className: 'w-[10rem] p-2 mx-auto'
-        },
-                {
-            href: '',
-            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/Satelligence-blue.svg',
-            className: 'w-[16rem] p-2 mx-auto'
-        },
+        <div className="mt-20 sm:mt-24">
+          <h2 className="text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            WHY PARTNER WITH US?
+          </h2>
 
-    ]
-
-    const coSponsors = [
-        {
-            href: '',
-            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Preferred_by_Nature-scaled.png',
-            className: 'w-[16rem] px-2 mx-auto rounded-md'
-        },
-        {
-            href: '',
-            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Okala.png',
-            className: 'w-[14rem] px-2 mx-auto rounded-md'
-        },
-        {
-            href: '',
-            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/FoodChain-ID.webp',
-            className: 'w-[18rem] px-2 mx-auto rounded-md'
-        },
-         {
-            href: '',
-            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Beefutures_Logo_Web500_positive.png',
-            className: 'w-[10rem] px-2 mx-auto'
-        },
-        {
-            href: '',
-            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Ubees-logo-2022_1.avif',
-            className: 'w-[14rem] px-2 mx-auto'
-        },
-        {
-            href: '',
-            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/biometrio.earth_.svg',
-            className: 'w-[20rem] px-2 mx-auto'
-        },
-        {
-            href: '',
-            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/10/4c-stacked-limelight-rainforest-logo-green-final.png',
-            className: 'w-[7rem] px-2 mx-auto'
-        }
-
-    ]
-
-    const sustainableCoffeePartner = [
-        {
-            href: '',
-            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/10/LAVAZZA-GROUP-CROPPED.png',
-            className: 'w-[15rem] p-2 mx-auto rounded-md'
-        },
-        
-    ]
-
-        const OfficialOriginCountryExhibitor = [
-        {
-            href: '',
-            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/10/imageedit_74_8864533329.png',
-            className: 'w-[15rem] p-2 mx-auto rounded-md'
-        },
-        
-    ]
-
-    const mediaPartners = [
-        {
-            href: '',
-            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Pefect-Daily-Grind-scaled.png',
-            className: 'w-[16rem] p-2 mx-auto'
-        },
-        {
-            href: '',
-            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Daily-Coffee-News.png',
-            className: 'w-[16rem] p-2 mx-auto'
-        },
-        {
-            href: '',
-            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Comunicaffe.png',
-            className: 'w-[16rem] p-2 mx-auto'
-        },
-        {
-            href: '',
-            imgSrc: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/logo-dark.svg',
-            className: 'w-[7rem] p-2 mx-auto'
-        },//
-
-//
-    ]
-
-    const crossIndustryPartners = [
-        {
-            href: '',
-            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/SMI_logo_Green-text.png',
-            className: 'w-[16rem] mx-auto py-8'
-        },
-        {
-            href: '',
-            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/ICC_United_Kingdom_BLACK_RGB_300dpi.png',
-            className: 'w-[8rem] mx-auto py-8'
-        },
-        {
-            href: '',
-            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/09/ITFA_Logo_Positive-2-e1727183762852.png',
-            className: 'w-[6rem] mx-auto py-8'
-        },
-        {
-            href: '',
-            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2020/08/FBM_INT_VERT_RGB_POS.png',
-            className: 'w-[5rem] mx-auto py-8'
-        },
-        {
-            href: '',
-            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/soil-association.jpg',
-            className: 'w-[9rem] mx-auto py-8'
-        },
-        {
-            href: '',
-            imgSrc: 'https://worldcoffeealliance.com/wp-content/uploads/2024/07/DCSA_logo-1.png',
-            className: 'w-[9rem] mx-auto py-8'
-        },
-    ]
-
-    return (
-        <>
-            <div className='w-full py-20 bg-white' id='partners'>
-                <div className='mb-20'>
-                    <div className="max-w-2xl mx-auto text-center">
-                        <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">2025 Partners</p>
-                    </div>
-
-                    {/* <div className="max-w-2xl mx-auto text-center mt-8">
-                        <div className="inline-flex items-center justify-center w-full">
-                            <hr className="w-80 h-px bg-gray-400 border-0" />
-                            <span className="absolute px-3 text-lg sm:text-2xl tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Gold Sponsor</span>
-                        </div>
-                    </div>
-                    <div className='flex flex-wrap flex-col items-center justify-center gap-4 mx-auto sm:flex-row sm:max-w-7xl mt-6'>
-                        {goldSponsors.map((sponsor) => (
-                            sponsor.href ?
-                                <Link key={sponsor.href} href={sponsor.href} target='_blank' rel='noreferer'>
-                                    <div className='items-center flex-shrink-0 h-full p-4'>
-                                        <img className={sponsor.className} src={sponsor.imgSrc}>
-                                        </img>
-                                    </div>
-                                </Link> :
-                                <div key={sponsor.href} className='items-center flex-shrink-0 h-full p-4'>
-                                    <img className={sponsor.className} src={sponsor.imgSrc}>
-                                    </img>
-                                </div>
-                        ))}
-                    </div> */}
-
-                    <div className="max-w-2xl mx-auto text-center mt-12">
-                        <div className="inline-flex items-center justify-center w-full">
-                            <hr className="w-80 h-px bg-gray-400 border-0" />
-                            <span className="absolute px-3 text-lg sm:text-2xl tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Silver Sponsors</span>
-                        </div>
-                    </div>
-                    <div className='flex flex-wrap flex-col items-center justify-center gap-4 mx-auto sm:flex-row sm:max-w-7xl mt-6'>
-                        {silverSponsors.map((sponsor) => (
-                            sponsor.href ?
-                                <Link key={sponsor.href} href={sponsor.href} target='_blank' rel='noreferer'>
-                                    <div className='items-center flex-shrink-0 h-full p-4'>
-                                        <img className={sponsor.className} src={sponsor.imgSrc}>
-                                        </img>
-                                    </div>
-                                </Link> :
-                                <div key={sponsor.href} className='items-center flex-shrink-0 h-full p-4'>
-                                    <img className={sponsor.className} src={sponsor.imgSrc}>
-                                    </img>
-                                </div>
-                        ))}
-                    </div>
-
-                    <div className="max-w-2xl mx-auto text-center mt-12">
-                        <div className="inline-flex items-center justify-center w-full">
-                            <hr className="w-80 h-px bg-gray-400 border-0" />
-                            <span className="absolute px-3 text-lg sm:text-2xl tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Bronze Sponsors</span>
-                        </div>
-                    </div>
-                    <div className='flex flex-wrap flex-col items-center justify-center gap-4 mx-auto sm:flex-row sm:max-w-7xl mt-6'>
-                        {bronzeSponsors.map((sponsor) => (
-                            sponsor.href ?
-                                <Link key={sponsor.href} href={sponsor.href} target='_blank' rel='noreferer'>
-                                    <div className='items-center flex-shrink-0 h-full p-4'>
-                                        <img className={sponsor.className} src={sponsor.imgSrc}>
-                                        </img>
-                                    </div>
-                                </Link> :
-                                <div key={sponsor.href} className='items-center flex-shrink-0 h-full p-4'>
-                                    <img className={sponsor.className} src={sponsor.imgSrc}>
-                                    </img>
-                                </div>
-                        ))}
-                    </div>
-
-                    <div className="max-w-2xl mx-auto text-center mt-12">
-                        <div className="inline-flex items-center justify-center w-full">
-                            <hr className="w-80 h-px bg-gray-400 border-0" />
-                            <span className="absolute px-3 text-lg sm:text-2xl tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Exhibitors</span>
-                        </div>
-                    </div>
-                    <div className='flex flex-wrap flex-col items-center justify-center gap-4 mx-auto sm:flex-row sm:max-w-7xl mt-6'>
-                        {coSponsors.map((sponsor) => (
-                            sponsor.href ?
-                                <Link key={sponsor.href} href={sponsor.href} target='_blank' rel='noreferer'>
-                                    <div className='items-center flex-shrink-0 h-full px-2'>
-                                        <img className={sponsor.className} src={sponsor.imgSrc}>
-                                        </img>
-                                    </div>
-                                </Link> :
-                                <div key={sponsor.href} className='items-center flex-shrink-0 h-full px-2'>
-                                    <img className={sponsor.className} src={sponsor.imgSrc}>
-                                    </img>
-                                </div>
-                        ))}
-                    </div>
-
-                    {/* <div className="max-w-2xl mx-auto text-center mt-12">
-                        <div className="inline-flex items-center justify-center w-full">
-                            <hr className="w-80 h-px bg-gray-400 border-0" />
-                            <span className="absolute px-3 text-lg sm:text-2xl tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Sustainable Coffee Partner</span>
-                        </div>
-                    </div>
-                    <div className='flex flex-wrap flex-col items-center justify-center gap-4 mx-auto sm:flex-row sm:max-w-7xl mt-6'>
-                        {sustainableCoffeePartner.map((sponsor) => (
-                            sponsor.href ?
-                                <Link key={sponsor.href} href={sponsor.href} target='_blank' rel='noreferer'>
-                                    <div className='items-center flex-shrink-0 h-full p-4'>
-                                        <img className={sponsor.className} src={sponsor.imgSrc}>
-                                        </img>
-                                    </div>
-                                </Link> :
-                                <div key={sponsor.href} className='items-center flex-shrink-0 h-full p-4'>
-                                    <img className={sponsor.className} src={sponsor.imgSrc}>
-                                    </img>
-                                </div>
-                        ))}
-                    </div>
-
-                    <div className="max-w-2xl mx-auto text-center mt-12">
-                        <div className="inline-flex items-center justify-center w-full">
-                            <hr className="w-80 h-px bg-gray-400 border-0" />
-                            <span className="absolute px-3 text-lg sm:text-2xl tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Cross-industry Partners</span>
-                        </div>
-                    </div>
-                    <div className='flex flex-wrap flex-col items-center justify-center gap-4 mx-auto sm:flex-row sm:max-w-7xl mt-6'>
-                        {crossIndustryPartners.map((sponsor) => (
-                            sponsor.href ?
-                                <Link key={sponsor.href} href={sponsor.href} target='_blank' rel='noreferer'>
-                                    <div className='items-center flex-shrink-0 h-full p-4'>
-                                        <img className={sponsor.className} src={sponsor.imgSrc}>
-                                        </img>
-                                    </div>
-                                </Link> :
-                                <div key={sponsor.href} className='items-center flex-shrink-0 h-full p-4'>
-                                    <img className={sponsor.className} src={sponsor.imgSrc}>
-                                    </img>
-                                </div>
-                        ))}
-                    </div> */}
-
+          <div className="mt-12 grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-8">
+            {whyPartnerItems.map((item) => (
+              <article key={item.title}>
+                <div className="overflow-hidden">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    className="aspect-[4/3] w-full object-cover"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
                 </div>
+                <h3 className="mt-5 text-lg font-bold uppercase leading-snug text-teal-700 sm:text-xl">
+                  {item.title}
+                </h3>
+                <p className="mt-3 text-base leading-7 text-gray-900">
+                  {item.description}
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </div>
 
+      <section className="mt-20 w-full bg-[#E8F5F2] py-16 sm:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            {`WHO'S IN THE ROOM`}
+          </h2>
+          <p className="mx-auto mt-4 max-w-4xl text-center text-lg leading-8 text-gray-900 sm:text-xl">
+            A cross-industry ecosystem bringing together senior leaders from business,
+            finance, technology, policy and production to address the future of resilient
+            supply chains.
+          </p>
 
-
-                    <div className="max-w-2xl mx-auto text-center mt-12">
-                        <div className="inline-flex items-center justify-center w-full">
-                            <hr className="w-80 h-px bg-gray-400 border-0" />
-                            <span className="absolute px-3 text-lg sm:text-2xl tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Origin Country Exhibitor</span>
-                        </div>
-                    </div>
-                    <div className='flex flex-wrap flex-col items-center justify-center gap-4 mx-auto sm:flex-row sm:max-w-7xl mt-6'>
-                        {OfficialOriginCountryExhibitor.map((sponsor) => (
-                            sponsor.href ?
-                                <Link key={sponsor.href} href={sponsor.href} target='_blank' rel='noreferer'>
-                                    <div className='items-center flex-shrink-0 h-full p-4'>
-                                        <img className={sponsor.className} src={sponsor.imgSrc}>
-                                        </img>
-                                    </div>
-                                </Link> :
-                                <div key={sponsor.href} className='items-center flex-shrink-0 h-full p-4'>
-                                    <img className={sponsor.className} src={sponsor.imgSrc}>
-                                    </img>
-                                </div>
-                        ))}
-                    </div>
-
-
-
-                <div className='mb-20'>
-                    <div className="inline-flex items-center justify-center w-full">
-                        <hr className="w-80 h-px bg-gray-400 border-0" />
-                        <span className="absolute px-3 text-lg sm:text-2xl tracking-tight text-gray-900 -translate-x-1/2 bg-white left-1/2">Media & Marketing Partners</span>
-                    </div>
-                    <div className='flex flex-col items-center justify-center gap-4 mx-auto sm:flex-row sm:max-w-7xl'>
-                        {mediaPartners.map((partner) => (
-                            partner.href ?
-                                <Link key={partner.href} href={partner.href} target='_blank' rel='noreferer'>
-                                    <div className='items-center flex-shrink-0 h-full p-4'>
-                                        <img className={partner.className} src={partner.imgSrc}>
-                                        </img>
-                                    </div>
-                                </Link> :
-                                <div key={partner.href} className='items-center flex-shrink-0 h-full p-4'>
-                                    <img className={partner.className} src={partner.imgSrc}>
-                                    </img>
-                                </div>
-                        ))}
-                    </div>
-                </div>
+          <div className="mt-12 grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-8">
+            <div className="flex items-start gap-4 md:items-center">
+              <Image
+                src={peopleIcon}
+                alt=""
+                className={sectionIconClassName}
+                aria-hidden
+              />
+              <div>
+                <p className="text-4xl font-bold text-gray-900 sm:text-5xl">200+</p>
+                <p className="mt-2 text-base font-bold text-gray-900 sm:text-lg">
+                  Senior leaders from 25+ Countries
+                </p>
+              </div>
             </div>
 
-        </>
-    )
+            <div className="flex items-start gap-4 md:items-center">
+              <Image
+                src={briefcaseIcon}
+                alt=""
+                className={sectionIconClassName}
+                aria-hidden
+              />
+              <div>
+                <p className="text-4xl font-bold text-gray-900 sm:text-5xl">75%+</p>
+                <p className="mt-2 text-base font-bold text-gray-900 sm:text-lg">
+                  C-Suite, VP or Director Level
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4 md:items-center">
+              <Image
+                src={globeIcon}
+                alt=""
+                className={sectionIconClassName}
+                aria-hidden
+              />
+              <p className="text-base leading-7 text-gray-900 sm:text-lg">
+              Uniting the entire value chain to build resilient and future-ready coffee and cocoa supply chains.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <WhoAttendsGrid
+        rows={partnersPageWhoAttendsRows}
+        subtitle="Organisations represented include:"
+        compactBottom
+      />
+
+      <section className="w-full bg-white pb-16 pt-12 sm:pb-20 sm:pt-16">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
+          <h2 className="text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            2025 PARTNERS INCLUDE
+          </h2>
+          <Partners2025Marquee logos={partners2025} />
+        </div>
+      </section>
+
+      <section className="w-full bg-teal-700 ">
+        <div className="mx-auto flex max-w-7xl flex-col items-center gap-6 px-4 py-10 sm:flex-row sm:justify-between sm:px-6 lg:px-8">
+          <div className="flex items-center gap-4">
+            <Image
+              src={becomeAPartnerIcon}
+              alt=""
+              className="h-16 w-16 flex-shrink-0 object-contain sm:h-20 sm:w-20"
+              aria-hidden
+            />
+            <div>
+              <h2 className="text-xl font-bold text-white sm:text-2xl">BECOME A PARTNER</h2>
+              <p className="mt-1 text-base text-white sm:text-lg">
+                Interested in partnering with WCIS?
+              </p>
+            </div>
+          </div>
+          <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
+            <Link href="/interest" className={`${becomePartnerPrimaryButtonClassName} w-full sm:w-auto`}>
+              Submit Your Interest
+            </Link>
+            <Link
+              href="mailto:info@worldcoffeealliance.com"
+              className={`${becomePartnerSecondaryButtonClassName} w-full sm:w-auto`}
+            >
+              Email Us
+            </Link>
+          </div>
+        </div>
+      </section>
+    </div>
+  )
 }
