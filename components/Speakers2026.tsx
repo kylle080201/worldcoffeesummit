@@ -385,7 +385,7 @@ export default function Speakers2026() {
                       <p className="text-lg font-bold tracking-tight text-white md:text-2xl">
                         {speaker.name}
                       </p>
-                      <p className="text-md tracking-tight text-white md:text-xl">
+                      <p className="text-md tracking-tight text-white md:text-xl italic">
                         {speaker.designation}
                       </p>
                       {speaker.organization && (

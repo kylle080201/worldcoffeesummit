@@ -954,7 +954,7 @@ His areas of specialisation are global food security governance, agriculture and
                     </div>
                     <div className="flex flex-col justify-start flex-grow bg-[#4D7C0F] px-4 pt-12 pb-4 text-white p-6">
                       <h3 className="text-lg font-bold tracking-tight text-white md:text-2xl">{speaker.name}</h3>
-                      <p className="text-md tracking-tight text-white md:text-xl">{speaker.role}</p>
+                      <p className="text-md tracking-tight text-white md:text-xl italic">{speaker.role}</p>
                       <p className="text-md tracking-tight font-bold text-white md:text-xl">{speaker.company}</p>
                       {speaker.role2 && <p className="text-md tracking-tight text-white md:text-xl">{speaker.role2}</p>}
                       {speaker.company2 && <p className="text-md tracking-tight font-bold text-white md:text-xl">{speaker.company2}</p>}
