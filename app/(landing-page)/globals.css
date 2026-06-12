@@ -34,3 +34,35 @@ a {
   bottom: 0;
   width: 100%;
 } */
+
+.wcis-in-action-slider .slick-list {
+  margin: 0;
+  line-height: 0;
+}
+
+.wcis-in-action-slider .slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+
+.wcis-in-action-slider .slick-slide {
+  line-height: 0;
+  font-size: 0;
+}
+
+.wcis-in-action-slider .slick-slide > div {
+  line-height: 0;
+}
+
+.wcis-in-action-slider .slick-slide img {
+  display: block;
+  vertical-align: top;
+}
+
+.wcis-in-action-slider .slick-arrow::before {
+  display: none;
+}
+
+.wcis-in-action-slide {
+  outline: none;
+}

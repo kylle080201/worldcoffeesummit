@@ -13,6 +13,7 @@ import Speakers2024 from "../../components/2024Speakers";
 import KeyThemes from "../../components/KeyThemes";
 import Attendees2023 from "../../components/2023Attendees";
 import WhoIsInTheRoom, { WhoAttends } from "../../components/WholsInTheRoom";
+import WcisInAction from "../../components/WcisInAction";
 import Confirmedspeakers from "../../components/Confirmedspeakers";
 import { HomePageLayout, HomeSection } from "../../components/HomeSection";
 
@@ -23,6 +24,7 @@ export default function HomePage() {
             <Overview />
             <HomeSection><WhoIsInTheRoom /></HomeSection>
             <HomeSection className="bg-white"><WhoAttends /></HomeSection>
+            <HomeSection className="bg-white px-0"><WcisInAction /></HomeSection>
             {/* <SpeakerSlider /> */}
             {/* <ImageCarousel /> */}
             <HomeSection><Testimonials /></HomeSection>
