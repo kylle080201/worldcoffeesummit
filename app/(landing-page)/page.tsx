@@ -23,8 +23,8 @@ export default function HomePage() {
         <HomePageLayout>
             <Overview />
             <HomeSection><WhoIsInTheRoom /></HomeSection>
-            <HomeSection className="bg-white"><WhoAttends /></HomeSection>
-            <HomeSection className="bg-white px-0"><WcisInAction /></HomeSection>
+            <HomeSection className="bg-white"><WhoAttends compactBottom /></HomeSection>
+            
             {/* <SpeakerSlider /> */}
             {/* <ImageCarousel /> */}
             <HomeSection><Testimonials /></HomeSection>

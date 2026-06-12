@@ -3,6 +3,7 @@
 import React, { useLayoutEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import { whoAttendsLogoRows, type WhoAttendsLogo } from './whoAttendsLogos';
+import WcisInAction from './WcisInAction';
 
 const AUDIENCE_DATA = [
   { label: 'Brands, Retailers, Traders & Agribusiness', percentage: 30 },
@@ -433,12 +434,21 @@ export function WhoAttendsGrid({
   );
 }
 
-export function WhoAttends({ subtitle }: { subtitle?: string }) {
+export function WhoAttends({
+  subtitle,
+  compactBottom = false,
+}: {
+  subtitle?: string;
+  compactBottom?: boolean;
+}) {
   return (
-    <div className="w-full bg-white py-16">
+    <div
+      className={`w-full bg-white pt-16 ${compactBottom ? 'pb-4 sm:pb-6' : 'pb-16'}`}
+    >
       <div className="max-w-screen-xl mx-auto px-4">
         <WhoAttendsMarquee rows={whoAttendsLogoRows} subtitle={subtitle} />
       </div>
+      <WcisInAction />
     </div>
   );
 }

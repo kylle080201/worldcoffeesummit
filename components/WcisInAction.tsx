@@ -1,7 +1,7 @@
 "use client";
 
 import Slider from "react-slick";
-import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/solid";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -12,17 +12,17 @@ const WCIS_IN_ACTION_IMAGES = WCIS_IN_ACTION_IMAGE_NUMBERS.map((number) => ({
   alt: `World Coffee Innovation Summit in action — photo ${number}`,
 }));
 
-const GREEN_BAR = "rgb(38 72 51)";
+const GREEN_BAR = "#4d7c0f";
 
 function NextArrow({ onClick }: { onClick?: () => void }) {
   return (
     <button
       type="button"
-      className="absolute right-3 top-1/2 z-10 -translate-y-1/2 rounded-full bg-lime-700 p-2.5 text-white shadow-md transition-colors hover:bg-lime-800 sm:right-5 sm:p-3"
+      className="absolute right-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-black bg-white text-black transition-colors hover:bg-gray-50 sm:right-5 sm:h-11 sm:w-11"
       onClick={onClick}
       aria-label="Next photos"
     >
-      <ArrowRightIcon className="h-4 w-4 sm:h-5 sm:w-5" />
+      <ChevronRightIcon className="h-5 w-5 stroke-[1.5] sm:h-6 sm:w-6" />
     </button>
   );
 }
@@ -31,11 +31,11 @@ function PrevArrow({ onClick }: { onClick?: () => void }) {
   return (
     <button
       type="button"
-      className="absolute left-3 top-1/2 z-10 -translate-y-1/2 rounded-full bg-lime-700 p-2.5 text-white shadow-md transition-colors hover:bg-lime-800 sm:left-5 sm:p-3"
+      className="absolute left-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-black bg-white text-black transition-colors hover:bg-gray-50 sm:left-5 sm:h-11 sm:w-11"
       onClick={onClick}
       aria-label="Previous photos"
     >
-      <ArrowLeftIcon className="h-4 w-4 sm:h-5 sm:w-5" />
+      <ChevronLeftIcon className="h-5 w-5 stroke-[1.5] sm:h-6 sm:w-6" />
     </button>
   );
 }
@@ -75,7 +75,7 @@ const sliderSettings = {
 
 export default function WcisInAction() {
   return (
-    <div className="w-full bg-white py-12 sm:py-16">
+    <div className="w-full pb-12 pt-4 sm:pb-16 sm:pt-6">
       <h2 className="px-4 text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
         WCIS IN ACTION
       </h2>
@@ -86,12 +86,14 @@ export default function WcisInAction() {
         <Slider {...sliderSettings} className="wcis-in-action-slider">
           {WCIS_IN_ACTION_IMAGES.map((image) => (
             <div key={image.src} className="wcis-in-action-slide">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={image.src}
-                alt={image.alt}
-                className="block h-[220px] w-full object-cover object-center sm:h-[300px] md:h-[360px] lg:h-[420px]"
-              />
+              <div className="relative aspect-[3/2] w-full overflow-hidden">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="block h-full w-full object-cover object-center"
+                />
+              </div>
             </div>
           ))}
         </Slider>

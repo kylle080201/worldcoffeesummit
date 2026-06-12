@@ -42,7 +42,7 @@ a {
 
 .wcis-in-action-slider .slick-track {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 .wcis-in-action-slider .slick-slide {
