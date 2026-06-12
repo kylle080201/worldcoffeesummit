@@ -40,8 +40,6 @@ export default function HomePage() {
             </HomeSection>
             <HomeSection className="bg-gray-100"><WhoIsInTheRoom /></HomeSection>
             <HomeSection className="bg-white"><WhoAttends /></HomeSection>
-            {/* <SpeakerSlider /> */}
-            {/* <ImageCarousel /> */}
             <HomeSection className="bg-gray-100"><Testimonials /></HomeSection>
             {/* <Attendees2023 /> */}
             <HomeSection className="bg-white"><SummitInTheNews /></HomeSection>
