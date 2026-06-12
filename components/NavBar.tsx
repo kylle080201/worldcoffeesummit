@@ -25,11 +25,14 @@ function Navbar() {
       ],
     },
     { name: 'Venue', href: '/venue' },
-    { name: 'Partners', href: '/#partners' },
+    { name: 'Partners', href: '/partners' },
   ]
 
   const navLinkClassName =
-    'inline-flex items-end px-2 pb-4 text-sm font-bold text-gray-900 lg:text-md lg:px-4 hover:border-b-2 hover:border-lime-700'
+    'inline-flex items-end px-2 pb-4 text-base font-bold text-gray-900 sm:text-lg lg:px-5 lg:text-xl hover:border-b-2 hover:border-lime-700'
+
+  const navButtonClassName =
+    'relative inline-flex items-center justify-center gap-x-1.5 rounded-md bg-lime-700 px-4 py-2.5 text-base font-bold text-white shadow-sm hover:bg-lime-900 sm:px-5 sm:py-3 sm:text-lg lg:text-xl'
 
   return (
     <Disclosure as="nav" className="w-full bg-white shadow">
@@ -122,13 +125,13 @@ function Navbar() {
                     <div className='mt-4 flex gap-2'>
                       <button
                         onClick={() => router.push('/register')}
-                        className="relative inline-flex gap-x-1.5 rounded-md bg-lime-700 hover:bg-lime-900 px-3 py-2 text-sm font-semibold text-white shadow-sm"
+                        className={navButtonClassName}
                       >
                         Register Now
                       </button>
                       <button
                         onClick={() => router.push('/interest')}
-                        className="relative inline-flex gap-x-1.5 rounded-md bg-lime-700 hover:bg-lime-900 px-3 py-2 text-sm font-semibold text-white shadow-sm"
+                        className={navButtonClassName}
                       >
                         Sponsor or Exhibit
                       </button>
@@ -146,7 +149,7 @@ function Navbar() {
               {navigation.map((item) =>
                 item.children ? (
                   <div key={item.name}>
-                    <p className="py-2 pl-3 pr-4 text-base font-bold text-gray-900">
+                    <p className="py-2 pl-3 pr-4 text-lg font-bold text-gray-900">
                       {item.name}
                     </p>
                     {item.children.map((child) => (
@@ -165,7 +168,7 @@ function Navbar() {
                     as="a"
                     key={item.name}
                     href={item.href}
-                    className="block py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-900"
+                    className="block py-2 pl-3 pr-4 text-lg font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-900"
                   >
                     {item.name}
                   </Disclosure.Button>
@@ -181,7 +184,7 @@ function Navbar() {
                       </button> */}
                       <button
                         onClick={() => router.push('/interest')}
-                        className="relative inline-flex gap-x-1.5 rounded-md bg-lime-700 hover:bg-lime-900 px-3 py-2 text-sm font-semibold text-white shadow-sm"
+                        className={navButtonClassName}
                       >
                         Register Interest
                       </button>

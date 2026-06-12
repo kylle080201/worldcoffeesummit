@@ -8,6 +8,8 @@ export interface WhoAttendsLogo {
   scale?: number;
   marginX?: number;
   marginY?: number;
+  /** Narrower marquee slot for logos with excess transparent padding. */
+  slotWidth?: number;
 }
 
 const LOGO_BASE = '/images/who-attends-logos';
@@ -20,7 +22,7 @@ function logo(
   return { name, logo: `${LOGO_BASE}/${file}`, ...size };
 }
 
-/** Row order matches the WHO ATTENDS design mockup (left → right, top → bottom). */
+/** Row order for the homepage WHO ATTENDS marquee (left → right, top → bottom). */
 export const whoAttendsLogoRows: WhoAttendsLogo[][] = [
   [
     logo('ofi', 'ofi.png', { maxHeight: 160, maxWidth: 400 }),
@@ -74,6 +76,37 @@ export const whoAttendsLogoRows: WhoAttendsLogo[][] = [
     logo('ECOM', 'ECOM.jpg'),
     logo('Yara International', 'Yara International.png'),
     logo('Rainforest Alliance', 'Rainforest-Alliance-logo.png'),
+  ],
+];
+
+/** Static 3×7 grid for the partners page WHO ATTENDS section. */
+export const partnersPageWhoAttendsRows: WhoAttendsLogo[][] = [
+  [
+    logo('Tchibo', 'Tchibo.png', { maxHeight: 72, maxWidth: 140 }),
+    logo('Touton Group', 'Touton Group.png', { maxHeight: 72, maxWidth: 130 }),
+    logo('Ferrero', 'ferrero-brandlogo.net.png', { maxHeight: 72, maxWidth: 140 }),
+    logo('Starbucks', 'Starbucks.png', { maxHeight: 64, maxWidth: 64 }),
+    logo('Barry Callebaut', 'Barry Callebaut.png', { maxHeight: 72, maxWidth: 160 }),
+    logo('Mars', 'Mars Wordmark RGB Blue.png', { maxHeight: 72, maxWidth: 120 }),
+    logo('Lavazza Group', 'LAVAZZA-GROUP.png', { maxHeight: 72, maxWidth: 150 }),
+  ],
+  [
+    logo('Volcafe', 'Volcafe.png', { maxHeight: 72, maxWidth: 150 }),
+    logo('Neumann Gruppe', 'Neumann Gruppe_Logo_left-1.jpg', { maxHeight: 68, maxWidth: 130 }),
+    logo('ofi', 'ofi.png', { maxHeight: 72, maxWidth: 130 }),
+    logo('LDC', 'LDC.png', { maxHeight: 68, maxWidth: 90 }),
+    logo('ECOM', 'ECOM.jpg', { maxHeight: 72, maxWidth: 130 }),
+    logo('HSBC', 'Hsbc_logo_PNG2.png', { maxHeight: 72, maxWidth: 140 }),
+    logo('UCC', 'UCCE Logo Colour.png', { maxHeight: 72, maxWidth: 100 }),
+  ],
+  [
+    logo('FAO', 'FAO.png', { maxHeight: 80, maxWidth: 160 }),
+    logo('The World Bank', 'The World Bank.png', { maxHeight: 72, maxWidth: 150 }),
+    logo('European Commission', 'EU.png', { maxHeight: 72, maxWidth: 90 }),
+    logo('IFC', 'IFC.png', { maxHeight: 80, maxWidth: 160 }),
+    logo('JDE Peet\'s', 'JDE Peet_s.png', { maxHeight: 72, maxWidth: 100 }),
+    logo('Yara International', 'Yara International.png', { maxHeight: 72, maxWidth: 130 }),
+    logo('AXA Climate', 'AXA_Climate_Blue_Horizontal_RVB.png', { maxHeight: 68, maxWidth: 110 }),
   ],
 ];
 
