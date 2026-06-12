@@ -39,9 +39,11 @@ export function HomeSection({
   }
 
   const sectionIndex = ctx?.consumeIndex() ?? 0;
+  const hasExplicitBg = /\bbg-/.test(className);
+  const backgroundClass = hasExplicitBg ? "" : alternatingBackground(sectionIndex);
 
   return (
-    <section className={`w-full ${alternatingBackground(sectionIndex)} ${className}`.trim()}>
+    <section className={`w-full ${backgroundClass} ${className}`.trim()}>
       {children}
     </section>
   );

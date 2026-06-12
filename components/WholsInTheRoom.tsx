@@ -443,7 +443,7 @@ export function WhoAttends({
 }) {
   return (
     <div
-      className={`w-full bg-white pt-16 ${compactBottom ? 'pb-4 sm:pb-6' : 'pb-16'}`}
+      className={`w-full pt-16 ${compactBottom ? 'pb-4 sm:pb-6' : 'pb-16'}`}
     >
       <div className="max-w-screen-xl mx-auto px-4">
         <WhoAttendsMarquee rows={whoAttendsLogoRows} subtitle={subtitle} />

@@ -26,14 +26,6 @@ export default function HomePage() {
             <Overview />
             <HomeSection className="bg-gray-100">
                 <Speakers2026 />
-                <div className="-mt-12 mb-12 w-full flex justify-center sm:mb-16">
-                    <Link
-                        href="/speakers#speakers-2025"
-                        className="rounded-lg bg-lime-700 px-6 py-3 text-lg font-bold text-white transition-colors duration-300 hover:bg-lime-800"
-                    >
-                        2025 SPEAKERS
-                    </Link>
-                </div>
             </HomeSection>
             <HomeSection className="bg-white">
                 <KeyThemes />

@@ -198,7 +198,7 @@ export default function Overview() {
                         ))}
                         </div>
 
-                        <p className="mt-6 text-center text-xl font-bold text-gray-900 sm:text-2xl">
+                        <p className="mt-6 text-center text-xl font-semibold text-gray-900 sm:text-2xl">
                             Join the leaders shaping the future of coffee and cocoa.
                         </p>
                     </div>
