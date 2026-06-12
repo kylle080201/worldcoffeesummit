@@ -385,11 +385,11 @@ export default function Speakers2026() {
                       <p className="text-lg font-semibold leading-8 tracking-tight text-white md:text-2xl">
                         {speaker.name}
                       </p>
-                      <p className="text-lg font-semibold leading-8 tracking-tight text-white md:text-2xl">
+                      <p className="text-lg leading-8 tracking-tight text-white md:text-2xl">
                         {speaker.designation}
                       </p>
                       {speaker.organization && (
-                        <p className="leading-6 text-white text-sm">{speaker.organization}</p>
+                        <p className="text-sm font-semibold leading-6 text-white">{speaker.organization}</p>
                       )}
                     </div>
                   </div>
@@ -439,9 +439,9 @@ export default function Speakers2026() {
                       <div className="flex mx-auto text-center">
                         <div>
                           <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{selectedSpeaker.name}</p>
-                          <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{selectedSpeaker.designation}</p>
+                          <p className="text-lg leading-8 tracking-tight text-gray-900 md:text-2xl">{selectedSpeaker.designation}</p>
                           {selectedSpeaker.organization && (
-                            <p className="leading-6 text-gray-700 text-sm">{selectedSpeaker.organization}</p>
+                            <p className="text-sm font-semibold leading-6 text-gray-900">{selectedSpeaker.organization}</p>
                           )}
                         </div>
                       </div>

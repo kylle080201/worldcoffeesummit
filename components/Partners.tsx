@@ -237,7 +237,7 @@ export default function Partners() {
         </div>
       </section>
 
-      <section className="w-full bg-teal-700">
+      <section className="w-full bg-teal-700 ">
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-6 px-4 py-10 sm:flex-row sm:justify-between sm:px-6 lg:px-8">
           <div className="flex items-center gap-4">
             <Image
