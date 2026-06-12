@@ -389,7 +389,7 @@ export default function Speakers2026() {
                         {speaker.designation}
                       </p>
                       {speaker.organization && (
-                        <p className="text-sm font-semibold leading-6 text-white">{speaker.organization}</p>
+                        <p className="text-md font-bold leading-6 text-white">{speaker.organization}</p>
                       )}
                     </div>
                   </div>
