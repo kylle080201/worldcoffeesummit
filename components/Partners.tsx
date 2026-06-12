@@ -1,8 +1,8 @@
 "use client"
 
-import Image from 'next/image'
+import Image, { type StaticImageData } from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import { Partners2025Marquee, WhoAttendsGrid } from './WholsInTheRoom'
 import { partnersPageWhoAttendsRows, type WhoAttendsLogo } from './whoAttendsLogos'
 import partnerHeaderImage from '../images/partners-image/PARTNER-HEADER-IMAGE.jpg'
@@ -100,6 +100,43 @@ const becomePartnerPrimaryButtonClassName =
 const becomePartnerSecondaryButtonClassName =
   'inline-flex items-center justify-center rounded-lg border-2 border-white px-6 py-3 text-base font-bold text-white transition-colors duration-300 hover:bg-teal-800 sm:px-8 sm:text-lg'
 
+function PartnerImageWithSkeleton({
+  src,
+  alt,
+  className,
+  sizes,
+  priority = false,
+  wrapperClassName = '',
+}: {
+  src: StaticImageData
+  alt: string
+  className: string
+  sizes: string
+  priority?: boolean
+  wrapperClassName?: string
+}) {
+  const [loaded, setLoaded] = useState(false)
+
+  return (
+    <div className={`relative overflow-hidden ${wrapperClassName}`}>
+      {!loaded && (
+        <div
+          className="absolute inset-0 animate-pulse bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200"
+          aria-hidden="true"
+        />
+      )}
+      <Image
+        src={src}
+        alt={alt}
+        className={`${className} transition-opacity duration-500 ${loaded ? 'opacity-100' : 'opacity-0'}`}
+        sizes={sizes}
+        priority={priority}
+        onLoad={() => setLoaded(true)}
+      />
+    </div>
+  )
+}
+
 export default function Partners() {
   return (
     <div className="w-full pt-16 sm:pt-20" id="partners">
@@ -127,10 +164,10 @@ export default function Partners() {
           </div>
 
           <div className="overflow-hidden shadow-sm">
-            <Image
+            <PartnerImageWithSkeleton
               src={partnerHeaderImage}
               alt="Panel discussion at World Coffee Innovation Summit"
-              className="h-full w-full object-cover"
+              className="aspect-[4/3] h-full w-full object-cover lg:aspect-auto lg:min-h-[320px]"
               sizes="(max-width: 1024px) 100vw, 50vw"
               priority
             />
@@ -146,7 +183,7 @@ export default function Partners() {
             {whyPartnerItems.map((item) => (
               <article key={item.title}>
                 <div className="overflow-hidden">
-                  <Image
+                  <PartnerImageWithSkeleton
                     src={item.image}
                     alt={item.title}
                     className="aspect-[4/3] w-full object-cover"
