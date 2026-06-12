@@ -435,7 +435,7 @@ export function WhoAttendsGrid({
 
 export function WhoAttends({ subtitle }: { subtitle?: string }) {
   return (
-    <div className="w-full bg-white py-16">
+    <div className="w-full py-16">
       <div className="max-w-screen-xl mx-auto px-4">
         <WhoAttendsMarquee rows={whoAttendsLogoRows} subtitle={subtitle} />
       </div>

@@ -2,8 +2,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import KeyThemes from './KeyThemes'
-import Speakers2026 from './Speakers2026'
 import wcaWhiteLogo from '../images/WCA-White.png'
 import futureSupplyIcon from '../images/FUTURE SUPPLY IS AT RISK.png'
 import complianceIcon from '../images/COMPLIANCE IS NOW A COMPETITIVE ADVANTAGE.png'
@@ -139,7 +137,7 @@ export default function Overview() {
 
             </div>
 
-            <div className="w-full bg-gray-100 px-6 pb-10 pt-6 sm:px-8 sm:pb-14 sm:pt-8 md:px-12">
+            <section className="w-full bg-gray-100 px-6 pb-10 pt-6 sm:px-8 sm:pb-14 sm:pt-8 md:px-12">
                 <div className="mx-auto max-w-7xl">
                     <p className="text-center text-2xl font-bold tracking-tight text-yellow-900 sm:text-4xl">
                         2026 SUMMIT OVERVIEW
@@ -163,14 +161,14 @@ export default function Overview() {
                             , the summit is built for execution&mdash;not just discussion&mdash;bringing together industry leadership, investment, technology, and partnerships to drive practical action across the value chain.
                         </p>
                     </div>
+                </div>
+            </section>
 
-                    <div className="mt-8 flex items-center justify-center gap-3 sm:mt-10">
-                        <div className="h-px w-12 bg-lime-700 sm:w-20" />
-                        <p className="text-center text-2xl font-bold tracking-tight text-lime-700 sm:text-4xl">
-                            WHY THIS MATTERS
-                        </p>
-                        <div className="h-px w-12 bg-lime-700 sm:w-20" />
-                    </div>
+            <section className="w-full bg-white px-6 pb-10 pt-6 sm:px-8 sm:pb-14 sm:pt-8 md:px-12">
+                <div className="mx-auto max-w-7xl">
+                    <p className="text-center text-2xl font-bold tracking-tight text-lime-700 sm:text-4xl">
+                        WHY THIS MATTERS
+                    </p>
 
                     <h3 className="mt-2 text-center text-2xl font-bold text-gray-900 sm:mt-3 sm:text-3xl">
                         The Moment to Act is Now
@@ -205,17 +203,7 @@ export default function Overview() {
                         </p>
                     </div>
                 </div>
-            </div>
-                <Speakers2026 />
-                <div className="-mt-12 mb-12 w-full flex justify-center sm:mb-16">
-                  <Link
-                    href="/speakers#speakers-2025"
-                    className="rounded-lg bg-lime-700 px-6 py-3 text-lg font-bold text-white transition-colors duration-300 hover:bg-lime-800"
-                  >
-                    2025 SPEAKERS
-                  </Link>
-                </div>
-                <KeyThemes />
+            </section>
                 {/* <Advisoryboard /> */}
                 {/* <Speakertest/> */}
 
