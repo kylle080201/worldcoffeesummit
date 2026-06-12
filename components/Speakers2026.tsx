@@ -50,6 +50,8 @@ const lenaImage = '/images/2026-speakers/lena-schweighofer.jpg'
 const tchiboLogo = '/images/2026-speakers/tchibo-logo.png'
 const raymondImage = '/images/2026-speakers/raymond-katta.jpeg'
 const pmbLogo = '/images/2026-speakers/pmb-logo.png'
+const marcelaImage = '/images/2026-speakers/marcela-gaviria.jpg'
+const fncLogo = '/images/2026-speakers/fnc-logo.png'
 
 interface Speaker {
   name: string;
@@ -244,6 +246,16 @@ const speakers: Speaker[] = [
     description: `<p class="mb-3">Raymond was appointed Executive Chairman of the Produce Monitoring Board by H.E. President Brigadier Dr. Julius Maada Bio on 14 November 2024.</p><p class="mb-3">He is a public sector leader with 15+ years of executive experience across Sierra Leone and the United States, specializing in institutional reform, rights-based development, and sustainable agricultural trade.</p><p class="mb-3">He holds a BA in Liberal Studies from Westfield State University, an MSc in Human Services &amp; Organizational Leadership from Springfield College, and a European Master&apos;s in Human Rights &amp; Democratization from the Global Campus of Human Rights, Italy.</p><p class="mb-3">Prior to PMB, he served as Deputy Executive Secretary of Sierra Leone&apos;s Human Rights Commission, Program Manager at Jubilee Association of Maryland, Head of Programmes at PSRU, and Senior Director at NaCSA.</p><p class="mb-3">At PMB, he leads efforts to align Sierra Leone&apos;s agricultural exports with international standards, focusing on EUDR readiness, farm-mapping and geolocation verification, digital traceability systems, and translating policy into operational solutions that expand market access and reduce deforestation risk.</p>`
   },
   {
+    name: 'Marcela Gaviria',
+    designation: 'Director of Alliances and Projects',
+    organization: 'Colombian Coffee Growers Federation (FNC)',
+    image: marcelaImage,
+    logo: fncLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: `<p class="mb-3">Marcela Gaviria is the Director of Alliances and Projects at the Colombian Coffee Growers Federation (FNC). She brings over 14 years of experience in sustainability, corporate relations, and international cooperation, having led strategic programs and high-impact partnerships with organizations such as the Nespresso AAA Program (supporting over 16,000 coffee growers), the European Union, Starbucks, and the Howard G. Buffett Foundation. Since 2023, she has led the implementation strategy for the EU Deforestation Regulation (EUDR), positioning Colombia&apos;s coffee sector as a global benchmark for regulatory compliance.</p><p>Prior to her role at the FNC, Marcela worked in international cooperation at Endeavor, where she contributed to initiatives promoting entrepreneurship and economic development. She holds a Master&apos;s degree in International Development from Universit&eacute; Paul-Val&eacute;ry Montpellier III in France and an MSc in Management from the University of Buckingham.</p>`,
+  },
+  {
     name: 'Dr. Tawanda Mthintwa Hove',
     designation: 'Senior Program Officer, Digital Agronomy',
     organization: 'Gates Foundation',
@@ -382,14 +394,14 @@ export default function Speakers2026() {
                   </div>
                   <div className="flex text-left p-4">
                     <div className="mt-6">
-                      <p className="text-lg font-semibold leading-8 tracking-tight text-white md:text-2xl">
+                      <p className="text-lg font-bold tracking-tight text-white md:text-2xl">
                         {speaker.name}
                       </p>
-                      <p className="text-lg leading-8 tracking-tight text-white md:text-2xl">
+                      <p className="text-md tracking-tight text-white md:text-xl italic">
                         {speaker.designation}
                       </p>
                       {speaker.organization && (
-                        <p className="text-sm font-semibold leading-6 text-white">{speaker.organization}</p>
+                        <p className="text-md tracking-tight font-bold text-white md:text-xl">{speaker.organization}</p>
                       )}
                     </div>
                   </div>
