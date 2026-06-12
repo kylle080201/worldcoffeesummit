@@ -102,7 +102,7 @@ const becomePartnerSecondaryButtonClassName =
 
 export default function Partners() {
   return (
-    <div className="w-full py-16 sm:py-20" id="partners">
+    <div className="w-full pt-16 sm:pt-20" id="partners">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-12">
           <div>
@@ -228,10 +228,10 @@ export default function Partners() {
         compactBottom
       />
 
-      <section className="w-full bg-white pb-16 pt-2 sm:pb-20 sm:pt-4">
+      <section className="w-full bg-white pb-16 pt-12 sm:pb-20 sm:pt-16">
         <div className="w-full px-4 sm:px-6 lg:px-8">
-          <h2 className="text-center text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            2025 PARTNERS INCLUDE :
+          <h2 className="text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            2025 PARTNERS INCLUDE
           </h2>
           <Partners2025Marquee logos={partners2025} />
         </div>

@@ -405,11 +405,13 @@ export function WhoAttendsGrid({
 }) {
   return (
     <div
-      className={`w-full bg-white pt-16 ${compactBottom ? 'pb-4 sm:pb-6' : 'pb-16'}`}
+      className={`w-full border-t border-gray-200 bg-gray-50 pt-16 ${compactBottom ? 'pb-4 sm:pb-6' : 'pb-16'}`}
     >
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <p className="text-3xl font-bold">WHO ATTENDS</p>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            WHO ATTENDS
+          </h2>
           {subtitle ? (
             <p className="mt-3 text-lg text-gray-900 sm:text-xl">{subtitle}</p>
           ) : null}
