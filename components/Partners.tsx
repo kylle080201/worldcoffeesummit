@@ -31,8 +31,10 @@ const partners2025: WhoAttendsLogo[] = [
   {
     name: 'Chloris Geospatial',
     logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Chloris-Geospatial.png',
-    maxHeight: 90,
-    maxWidth: 160,
+    maxHeight: 80,
+    maxWidth: 110,
+    slotWidth: 108,
+    marginX: -4,
   },
   {
     name: 'Planet',
@@ -49,8 +51,10 @@ const partners2025: WhoAttendsLogo[] = [
   {
     name: 'Origin Country Exhibitor',
     logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/10/imageedit_74_8864533329.png',
-    maxHeight: 90,
-    maxWidth: 160,
+    maxHeight: 80,
+    maxWidth: 80,
+    slotWidth: 96,
+    marginX: 4,
   },
   {
     name: 'FoodChain ID',
@@ -107,7 +111,7 @@ export default function Partners() {
             </h2>
             <p className="mt-4 text-lg leading-8 text-gray-900 sm:text-xl">
               Position your organisation at the centre of coffee and cocoa resilience,
-              supply security and sustainable growth.
+              supply security and future growth.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Link href="/interest" className={ctaButtonClassName}>
@@ -221,9 +225,10 @@ export default function Partners() {
       <WhoAttendsGrid
         rows={partnersPageWhoAttendsRows}
         subtitle="Organisations represented include:"
+        compactBottom
       />
 
-      <section className="w-full bg-white py-16 sm:py-20">
+      <section className="w-full bg-white pb-16 pt-2 sm:pb-20 sm:pt-4">
         <div className="w-full px-4 sm:px-6 lg:px-8">
           <h2 className="text-center text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             2025 PARTNERS INCLUDE :

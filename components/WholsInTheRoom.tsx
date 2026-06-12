@@ -105,15 +105,15 @@ const PARTNERS_2025_SLOT_WIDTH = 220;
 const PARTNERS_2025_ROW_HEIGHT = 112;
 const PARTNERS_2025_MARGIN_X = 8;
 
-const GRID_BASE_MAX_HEIGHT = 56;
-const GRID_BASE_MAX_WIDTH = 112;
+const GRID_BASE_MAX_HEIGHT = 72;
+const GRID_BASE_MAX_WIDTH = 140;
 
 function StaticLogoGridItem({ logo }: { logo: WhoAttendsLogo }) {
   const maxHeight = logo.maxHeight ?? GRID_BASE_MAX_HEIGHT;
   const maxWidth = logo.maxWidth ?? GRID_BASE_MAX_WIDTH;
 
   return (
-    <div className="flex h-14 w-full items-center justify-center overflow-hidden px-0.5 sm:h-16 lg:h-[4.25rem]">
+    <div className="flex h-16 w-full items-center justify-center overflow-hidden px-1 sm:h-20 lg:h-24">
       <Image
         src={logo.logo}
         alt={`${logo.name} logo`}
@@ -132,20 +132,21 @@ function Partners2025LogoItem({
   logo: WhoAttendsLogo;
   copyIndex: number;
 }) {
+  const slotWidth = logo.slotWidth ?? PARTNERS_2025_SLOT_WIDTH;
   const maxHeight = Math.min(
     Math.round((logo.maxHeight ?? LOGO_BASE_MAX_HEIGHT) * LOGO_SCALE),
     PARTNERS_2025_ROW_HEIGHT,
   );
   const maxWidth = Math.min(
     Math.round((logo.maxWidth ?? LOGO_BASE_MAX_WIDTH) * LOGO_SCALE),
-    PARTNERS_2025_SLOT_WIDTH,
+    slotWidth,
   );
 
   return (
     <div
       className="flex flex-shrink-0 items-center justify-center"
       style={{
-        width: PARTNERS_2025_SLOT_WIDTH,
+        width: slotWidth,
         height: PARTNERS_2025_ROW_HEIGHT,
         marginLeft: logo.marginX ?? PARTNERS_2025_MARGIN_X,
         marginRight: logo.marginX ?? PARTNERS_2025_MARGIN_X,
@@ -396,12 +397,16 @@ export function Partners2025Marquee({ logos }: { logos: WhoAttendsLogo[] }) {
 export function WhoAttendsGrid({
   rows,
   subtitle,
+  compactBottom = false,
 }: {
   rows: WhoAttendsLogo[][];
   subtitle?: string;
+  compactBottom?: boolean;
 }) {
   return (
-    <div className="w-full bg-white py-16">
+    <div
+      className={`w-full bg-white pt-16 ${compactBottom ? 'pb-4 sm:pb-6' : 'pb-16'}`}
+    >
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <p className="text-3xl font-bold">WHO ATTENDS</p>
@@ -413,7 +418,7 @@ export function WhoAttendsGrid({
           {rows.map((row, rowIndex) => (
             <div
               key={rowIndex}
-              className="grid w-full grid-cols-3 gap-x-2 gap-y-3 sm:grid-cols-5 sm:gap-x-3 lg:grid-cols-9 lg:gap-x-2"
+              className="grid w-full grid-cols-2 gap-x-2 gap-y-4 sm:grid-cols-4 sm:gap-x-3 lg:grid-cols-7 lg:gap-x-3"
             >
               {row.map((logo) => (
                 <StaticLogoGridItem key={logo.name} logo={logo} />
