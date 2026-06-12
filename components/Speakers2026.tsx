@@ -382,14 +382,14 @@ export default function Speakers2026() {
                   </div>
                   <div className="flex text-left p-4">
                     <div className="mt-6">
-                      <p className="text-lg font-semibold leading-8 tracking-tight text-white md:text-2xl">
+                      <p className="text-lg font-bold tracking-tight text-white md:text-2xl">
                         {speaker.name}
                       </p>
-                      <p className="text-lg leading-8 tracking-tight text-white md:text-2xl">
+                      <p className="text-md tracking-tight text-white md:text-xl">
                         {speaker.designation}
                       </p>
                       {speaker.organization && (
-                        <p className="text-md font-bold leading-6 text-white">{speaker.organization}</p>
+                        <p className="text-md tracking-tight font-bold text-white md:text-xl">{speaker.organization}</p>
                       )}
                     </div>
                   </div>
