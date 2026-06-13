@@ -67,7 +67,7 @@ export default function Overview() {
        Securing Scalable Coffee & Cocoa Resilience
     </p>
 
-    <p className="mt-3 text-xl sm:text-2xl md:text-3xl xl:text-4xl font-semibold max-w-5xl drop-shadow-xl">
+    <p className="mt-3 text-xl sm:text-2xl md:text-3xl xl:text-4xl font-semibold max-w-5xl drop-shadow-xl text-[#FFBF00]">
       Where Climate, Capital and Supply Chains Converge
     </p>
 
