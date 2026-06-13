@@ -314,7 +314,9 @@ const speakers: Speaker[] = [
     logo: cdpLogo,
     iconHeight: 80,
     iconWidth: 80,
-    description: ''
+
+    description: 'Sonya Bhonsle is Global Director of Corporates at CDP, where she leads efforts to support and accelerate corporate environmental action worldwide. With over 16 years at CDP and more than two decades in sustainability, Sonya drives strategies that enable companies to disclose environmental data and leverage it to build more resilient, low-carbon supply chains. She has deep expertise in Scope 3 emissions, science-based target setting, and sustainable procurement transformation.'
+
   },
   {
     name: 'Joy Macknight',
