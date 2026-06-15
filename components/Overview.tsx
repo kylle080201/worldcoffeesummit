@@ -9,19 +9,16 @@ const whyThisSummitCards = [
     titleLines: ['BEYOND COFFEE'],
     description:
       'Looking beyond commodities to the wider systems shaping coffee and cocoa — from climate and trade to capital, regulation and supply chain resilience.',
-    image: '/images/why-this-summit/ICON-1.png',
   },
   {
     titleLines: ['BEYOND SCENARIOS'],
     description:
       'Focused on what is being deployed, financed and scaled across the value chain.',
-    image: '/images/why-this-summit/ICON-2.png',
   },
   {
     titleLines: ['BEYOND FAMILIAR CIRCLES'],
     description:
       'Bringing together leaders and decision-makers from across the value chain — from origin to boardroom — to accelerate action where it matters most.',
-    image: '/images/why-this-summit/ICON-3.png',
   },
 ]
 
@@ -199,20 +196,13 @@ export default function Overview() {
                         Where strategy, implementation and collaboration come together.
                     </p>
 
-                    <div className="mt-8 grid grid-cols-1 divide-y divide-emerald-200/40 md:mt-10 md:grid-cols-3 md:divide-x md:divide-y-0">
+                    <div className="mt-8 grid grid-cols-1 divide-y divide-gray-200 md:mt-10 md:grid-cols-3 md:divide-x md:divide-y-0">
                         {whyThisSummitCards.map((card) => (
                             <article
                                 key={card.titleLines.join(' ')}
-                                className="flex flex-col items-center px-4 py-8 text-center first:pt-0 last:pb-0 sm:px-6 md:px-8 md:py-6"
+                                className="flex flex-col items-center px-4 py-6 text-center first:pt-0 last:pb-0 sm:px-6 md:px-8 md:py-4"
                             >
-                                <Image
-                                    src={card.image}
-                                    alt=""
-                                    width={160}
-                                    height={160}
-                                    className="h-36 w-36 object-contain sm:h-40 sm:w-40"
-                                />
-                                <h3 className="mt-3 text-xl font-bold leading-tight text-gray-900 sm:text-2xl">
+                                <h3 className="text-xl font-bold leading-tight text-gray-900 sm:text-2xl">
                                     {card.titleLines.map((line, index) => (
                                         <React.Fragment key={line}>
                                             {index > 0 && <br />}
@@ -220,7 +210,7 @@ export default function Overview() {
                                         </React.Fragment>
                                     ))}
                                 </h3>
-                                <p className="mt-3 max-w-sm text-base leading-snug text-gray-900 sm:text-lg">
+                                <p className="mt-2 max-w-sm text-base leading-snug text-gray-900 sm:text-lg">
                                     {card.description}
                                 </p>
                             </article>
