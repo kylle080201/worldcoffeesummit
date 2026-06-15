@@ -144,7 +144,7 @@ export default function Partners() {
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-12">
           <div>
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              PARTNER WITH WCIS
+              PARTNER WITH US
             </h2>
             <p className="mt-4 text-lg leading-8 text-gray-900 sm:text-xl">
               Position your organisation at the centre of coffee and cocoa resilience,

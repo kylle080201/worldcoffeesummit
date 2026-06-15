@@ -3,16 +3,33 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import wcaWhiteLogo from '../images/WCA-White.png'
-import futureSupplyIcon from '../images/FUTURE SUPPLY IS AT RISK.png'
-import complianceIcon from '../images/COMPLIANCE IS NOW A COMPETITIVE ADVANTAGE.png'
-import costInactionIcon from '../images/THE COST OF INACTION IS RISING.png'
+
+const whyThisSummitCards = [
+  {
+    titleLines: ['BEYOND COFFEE'],
+    description:
+      'Looking beyond commodities to the wider systems shaping coffee and cocoa — from climate and trade to capital, regulation and supply chain resilience.',
+    image: '/images/why-this-summit/ICON-1.png',
+  },
+  {
+    titleLines: ['BEYOND SCENARIOS'],
+    description:
+      'Focused on what is being deployed, financed and scaled across the value chain.',
+    image: '/images/why-this-summit/ICON-2.png',
+  },
+  {
+    titleLines: ['BEYOND FAMILIAR CIRCLES'],
+    description:
+      'Bringing together leaders and decision-makers from across the value chain — from origin to boardroom — to accelerate action where it matters most.',
+    image: '/images/why-this-summit/ICON-3.png',
+  },
+]
 
 const whyItMattersCards = [
   {
     titleLines: ['SUPPLY IS', 'UNDER PRESSURE'],
     description:
       'Climate volatility, declining productivity and market disruption are reshaping future supply.',
-    image: futureSupplyIcon,
     bgClassName: 'bg-emerald-50/50',
     titleClassName: 'text-gray-900',
   },
@@ -20,7 +37,6 @@ const whyItMattersCards = [
     titleLines: ['COMPLIANCE IS NOW', 'A COMPETITIVE ADVANTAGE'],
     description:
       'EUDR, Scope 3 and traceability requirements are increasingly shaping sourcing, investment and trade decisions across global supply chains.',
-    image: complianceIcon,
     bgClassName: 'bg-amber-50/50',
     titleClassName: 'text-yellow-900',
   },
@@ -28,7 +44,6 @@ const whyItMattersCards = [
     titleLines: ['RESILIENCE IS', 'BECOMING A BUSINESS PRIORITY'],
     description:
       'New investments, innovation and strategic partnerships are creating new pathways to strengthen resilience and secure long-term growth.',
-    image: costInactionIcon,
     bgClassName: 'bg-blue-50/50',
     titleClassName: 'text-gray-900',
   },
@@ -148,17 +163,23 @@ export default function Overview() {
 
                     <div className="mt-6 flex flex-col gap-5 sm:gap-6">
                         <p className="text-xl leading-normal text-gray-900 sm:text-2xl">
-                            Coffee and cocoa sit at the intersection of climate risk, global trade, capital, and supply chain resilience.
+                            Coffee and cocoa are entering a defining period of transformation.
                         </p>
                         <p className="text-xl leading-normal text-gray-900 sm:text-2xl">
-                            The 4<sup>th</sup> World Coffee Innovation Summit 2026 brings together global leading brands, traders, producers, policymakers, investors, technology providers, and sustainability leaders to address the challenges and opportunities shaping the future of coffee and cocoa.
+                            Climate risk, regulatory change, shifting trade dynamics, and growing expectations around investment and accountability are reshaping how commodities are sourced, financed and managed across global supply chains.
+                        </p>
+                        <p className="text-xl leading-normal text-gray-900 sm:text-2xl">
+                            The 4<sup>th</sup> World Coffee Innovation Summit (WCIS26) brings together leading global brands, traders, producers, policymakers, investors, technology providers, and senior procurement and sustainability executives to address the challenges and opportunities reshaping the future of coffee and cocoa.
                         </p>
                         <p className="text-xl leading-normal text-gray-900 sm:text-2xl">
                             Under the theme{' '}
                             <span className="text-lime-700">
                                 Moving the Needle: Securing Scalable Coffee &amp; Cocoa Resilience
                             </span>
-                            , the summit is built for execution&mdash;not just discussion&mdash;bringing together industry leadership, investment, technology, and partnerships to drive practical action across the value chain.
+                            , WCIS26 is designed to move from discussion to implementation&mdash;convening industry leadership, investment, innovation and partnerships to drive practical action across the value chain.
+                        </p>
+                        <p className="text-xl leading-normal text-gray-900 sm:text-2xl">
+                            Now entering its fourth edition, the Summit continues to attract an increasingly diverse and influential group of senior leaders from across the global coffee and cocoa ecosystem.
                         </p>
                     </div>
                 </div>
@@ -167,7 +188,51 @@ export default function Overview() {
             <section className="w-full bg-white px-6 pb-10 pt-6 sm:px-8 sm:pb-14 sm:pt-8 md:px-12">
                 <div className="mx-auto max-w-7xl">
                     <p className="text-center text-2xl font-bold tracking-tight text-lime-700 sm:text-4xl">
-                        WHY THIS MATTERS
+                        WHY THIS SUMMIT
+                    </p>
+
+                    <h2 className="mt-2 text-center text-2xl font-bold text-gray-900 sm:mt-3 sm:text-3xl">
+                        Why WCIS?
+                    </h2>
+
+                    <p className="mt-2 text-center text-xl text-gray-900 sm:mt-3 sm:text-2xl">
+                        Where strategy, implementation and collaboration come together.
+                    </p>
+
+                    <div className="mt-8 grid grid-cols-1 divide-y divide-emerald-200/40 md:mt-10 md:grid-cols-3 md:divide-x md:divide-y-0">
+                        {whyThisSummitCards.map((card) => (
+                            <article
+                                key={card.titleLines.join(' ')}
+                                className="flex flex-col items-center px-4 py-8 text-center first:pt-0 last:pb-0 sm:px-6 md:px-8 md:py-6"
+                            >
+                                <Image
+                                    src={card.image}
+                                    alt=""
+                                    width={160}
+                                    height={160}
+                                    className="h-36 w-36 object-contain sm:h-40 sm:w-40"
+                                />
+                                <h3 className="mt-3 text-xl font-bold leading-tight text-gray-900 sm:text-2xl">
+                                    {card.titleLines.map((line, index) => (
+                                        <React.Fragment key={line}>
+                                            {index > 0 && <br />}
+                                            {line}
+                                        </React.Fragment>
+                                    ))}
+                                </h3>
+                                <p className="mt-3 max-w-sm text-base leading-snug text-gray-900 sm:text-lg">
+                                    {card.description}
+                                </p>
+                            </article>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            <section className="w-full bg-gray-100 px-6 pb-10 pt-6 sm:px-8 sm:pb-14 sm:pt-8 md:px-12">
+                <div className="mx-auto max-w-7xl">
+                    <p className="text-center text-2xl font-bold tracking-tight text-lime-700 sm:text-4xl">
+                        WHY THIS MATTERS NOW
                     </p>
 
                     <h3 className="mt-2 text-center text-2xl font-bold text-gray-900 sm:mt-3 sm:text-3xl">
@@ -179,28 +244,19 @@ export default function Overview() {
                         {whyItMattersCards.map((card) => (
                             <article
                                 key={card.titleLines.join(' ')}
-                                className={`flex flex-col items-center rounded-2xl px-6 py-2 text-center shadow-sm ${card.bgClassName}`}
+                                className={`flex flex-col items-center rounded-2xl px-6 py-5 text-center shadow-sm sm:py-6 ${card.bgClassName}`}
                             >
-                                <Image
-                                    src={card.image}
-                                    alt=""
-                                    className="h-24 w-24 object-contain"
-                                />
                                 <h4 className={`min-h-[2.6em] text-lg font-bold leading-tight sm:min-h-[2.8em] sm:text-xl ${card.titleClassName}`}>
                                     {card.titleLines[0]}
                                     <br />
                                     {card.titleLines[1]}
                                 </h4>
-                                <p className="mt-3 text-base sm:text-lg sm:leading-tight">
+                                <p className="mt-2 text-base sm:text-lg sm:leading-tight">
                                     {card.description}
                                 </p>
                             </article>
                         ))}
                         </div>
-
-                        <p className="mt-6 text-center text-xl font-semibold text-gray-900 sm:text-2xl">
-                            Join the leaders shaping the future of coffee and cocoa.
-                        </p>
                     </div>
                 </div>
             </section>

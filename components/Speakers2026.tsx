@@ -360,7 +360,7 @@ export default function Speakers2026() {
       <div className="px-12 py-20 sm:px-20" id="speakers-2026">
         <div className="mx-auto sm:content-center">
           <div className="max-w-2xl mx-auto text-center">
-            <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">2026 SPEAKERS</p>
+            <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">MEET THE 2026 SPEAKERS</p>
           </div>
           <ul
             role="list"
