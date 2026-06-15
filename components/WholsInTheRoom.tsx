@@ -365,7 +365,7 @@ function WhoIsInTheRoom() {
           <div className="border-b border-gray-200/80 px-6 py-8 text-center sm:px-10">
             <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">{`WHO'S IN THE ROOM`}</p>
             <p className="mx-auto mt-3 max-w-2xl text-lg text-gray-700">
-              Bringing together decision-makers from across the coffee and cocoa ecosystem.
+              Bringing together senior leaders and decision-makers from across the coffee and cocoa ecosystem.
             </p>
           </div>
 

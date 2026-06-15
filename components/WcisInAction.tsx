@@ -75,7 +75,7 @@ const sliderSettings = {
 
 export default function WcisInAction() {
   return (
-    <div className="w-full pb-12 pt-4 sm:pb-16 sm:pt-6">
+    <div className="w-full pb-12 pt-16 sm:pb-16">
       <h2 className="px-4 text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
         WCIS IN ACTION
       </h2>
