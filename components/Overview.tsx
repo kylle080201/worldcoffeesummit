@@ -27,22 +27,16 @@ const whyItMattersCards = [
     titleLines: ['SUPPLY IS', 'UNDER PRESSURE'],
     description:
       'Climate volatility, declining productivity and market disruption are reshaping future supply.',
-    bgClassName: 'bg-emerald-50/50',
-    titleClassName: 'text-gray-900',
   },
   {
     titleLines: ['COMPLIANCE IS NOW', 'A COMPETITIVE ADVANTAGE'],
     description:
       'EUDR, Scope 3 and traceability requirements are increasingly shaping sourcing, investment and trade decisions across global supply chains.',
-    bgClassName: 'bg-amber-50/50',
-    titleClassName: 'text-yellow-900',
   },
   {
     titleLines: ['RESILIENCE IS', 'BECOMING A BUSINESS PRIORITY'],
     description:
       'New investments, innovation and strategic partnerships are creating new pathways to strengthen resilience and secure long-term growth.',
-    bgClassName: 'bg-blue-50/50',
-    titleClassName: 'text-gray-900',
   },
 ]
 
@@ -196,11 +190,11 @@ export default function Overview() {
                         Where strategy, implementation and collaboration come together.
                     </p>
 
-                    <div className="mt-8 grid grid-cols-1 divide-y divide-gray-200 md:mt-10 md:grid-cols-3 md:divide-x md:divide-y-0">
+                    <div className="mt-8 grid grid-cols-1 items-start divide-y divide-gray-200 md:mt-10 md:grid-cols-3 md:divide-x md:divide-y-0">
                         {whyThisSummitCards.map((card) => (
                             <article
                                 key={card.titleLines.join(' ')}
-                                className="flex flex-col items-center px-4 py-6 text-center first:pt-0 last:pb-0 sm:px-6 md:px-8 md:py-4"
+                                className="flex flex-col items-center px-4 py-6 text-center sm:px-6 md:px-8"
                             >
                                 <h3 className="text-xl font-bold leading-tight text-gray-900 sm:text-2xl">
                                     {card.titleLines.map((line, index) => (
@@ -219,34 +213,35 @@ export default function Overview() {
                 </div>
             </section>
 
-            <section className="w-full bg-white px-6 pb-10 pt-6 sm:px-8 sm:pb-14 sm:pt-8 md:px-12">
+            <section className="w-full bg-gray-100 px-6 pb-10 pt-6 sm:px-8 sm:pb-14 sm:pt-8 md:px-12">
                 <div className="mx-auto max-w-7xl">
                     <p className="text-center text-2xl font-bold tracking-tight text-lime-700 sm:text-4xl">
                         WHY THIS MATTERS NOW
                     </p>
 
-                    <h3 className="mt-2 text-center text-2xl font-bold text-gray-900 sm:mt-3 sm:text-3xl">
+                    <h2 className="mt-2 text-center text-2xl font-bold text-gray-900 sm:mt-3 sm:text-3xl">
                         The Moment to Act is Now
-                    </h3>
+                    </h2>
 
-                    <div className="mt-10">
-                        <div className="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8">
+                    <div className="mt-8 grid grid-cols-1 items-start divide-y divide-gray-200 md:mt-10 md:grid-cols-3 md:divide-x md:divide-y-0">
                         {whyItMattersCards.map((card) => (
                             <article
                                 key={card.titleLines.join(' ')}
-                                className={`flex flex-col items-center rounded-2xl px-6 py-5 text-center shadow-sm sm:py-6 ${card.bgClassName}`}
+                                className="flex flex-col items-center px-4 py-6 text-center sm:px-6 md:px-8"
                             >
-                                <h4 className={`min-h-[2.6em] text-lg font-bold leading-tight sm:min-h-[2.8em] sm:text-xl ${card.titleClassName}`}>
-                                    {card.titleLines[0]}
-                                    <br />
-                                    {card.titleLines[1]}
-                                </h4>
-                                <p className="mt-2 text-base sm:text-lg sm:leading-tight">
+                                <h3 className="text-xl font-bold leading-tight text-gray-900 sm:text-2xl">
+                                    {card.titleLines.map((line, index) => (
+                                        <React.Fragment key={line}>
+                                            {index > 0 && <br />}
+                                            {line}
+                                        </React.Fragment>
+                                    ))}
+                                </h3>
+                                <p className="mt-2 max-w-sm text-base leading-snug text-gray-900 sm:text-lg">
                                     {card.description}
                                 </p>
                             </article>
                         ))}
-                        </div>
                     </div>
                 </div>
             </section>

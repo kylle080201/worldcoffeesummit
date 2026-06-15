@@ -24,17 +24,17 @@ export default function HomePage() {
     return (
         <HomePageLayout>
             <Overview />
-            <HomeSection className="bg-gray-100">
+            <HomeSection>
                 <Speakers2026 />
             </HomeSection>
-            <HomeSection className="bg-white">
+            <HomeSection>
                 <KeyThemes />
             </HomeSection>
-            <HomeSection className="bg-gray-100"><WhoIsInTheRoom /></HomeSection>
-            <HomeSection className="bg-white"><WhoAttends /></HomeSection>
-            <HomeSection className="bg-gray-100"><Testimonials /></HomeSection>
+            <HomeSection><WhoIsInTheRoom /></HomeSection>
+            <HomeSection><WhoAttends /></HomeSection>
+            <HomeSection><Testimonials /></HomeSection>
             {/* <Attendees2023 /> */}
-            <HomeSection className="bg-white"><SummitInTheNews /></HomeSection>
+            <HomeSection><SummitInTheNews /></HomeSection>
             {/* <Venue /> */}
         </HomePageLayout>
     )
