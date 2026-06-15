@@ -6,7 +6,10 @@ function SummitInTheNews() {
   return (
     <div className='w-full py-24 md:px-0 px-12'>
       <div className="relative max-w-7xl mx-auto">
-        <h2 className="text-center text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">WCIS IN THE NEWS</h2>
+        <h2 className="text-center text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">INDUSTRY VOICES, GLOBAL REACH</h2>
+        <p className="mt-3 text-center text-lg text-gray-900 sm:text-xl">
+          Insights from our speakers and industry leaders continue to influence conversations across coffee, cocoa, sustainability and supply chain resilience.
+        </p>
         <div className='flex md:flex-row flex-col gap-8 '>
           <div className="flex w-full md:w-[500px] h-full mt-12">
             <div className="testimonial-item bg-white shadow rounded hover:shadow-lg">
