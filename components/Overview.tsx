@@ -143,7 +143,7 @@ export default function Overview() {
 
             </div>
 
-            <section className="w-full bg-gray-100 px-6 pb-10 pt-6 sm:px-8 sm:pb-14 sm:pt-8 md:px-12">
+            <section className="w-full bg-white px-6 pb-10 pt-6 sm:px-8 sm:pb-14 sm:pt-8 md:px-12">
                 <div className="mx-auto max-w-7xl">
                     <p className="text-center text-2xl font-bold tracking-tight text-yellow-900 sm:text-4xl">
                         2026 SUMMIT OVERVIEW
@@ -154,29 +154,23 @@ export default function Overview() {
 
                     <div className="mt-6 flex flex-col gap-5 sm:gap-6">
                         <p className="text-xl leading-normal text-gray-900 sm:text-2xl">
-                            Coffee and cocoa are entering a defining period of transformation.
+                            Coffee and cocoa are being reshaped by climate risk, regulation, investment priorities and shifting supply chain dynamics.
                         </p>
                         <p className="text-xl leading-normal text-gray-900 sm:text-2xl">
-                            Climate risk, regulatory change, shifting trade dynamics, and growing expectations around investment and accountability are reshaping how commodities are sourced, financed and managed across global supply chains.
-                        </p>
-                        <p className="text-xl leading-normal text-gray-900 sm:text-2xl">
-                            The 4<sup>th</sup> World Coffee Innovation Summit (WCIS26) brings together leading global brands, traders, producers, policymakers, investors, technology providers, and senior procurement and sustainability executives to address the challenges and opportunities reshaping the future of coffee and cocoa.
+                            Bringing together leaders from across the value chain — from producers and origin representatives to traders, brands, investors, policymakers and technology providers — the 4th World Coffee Innovation Summit (WCIS26) explores the partnerships, investments and practical action needed to build more resilient coffee and cocoa supply chains.
                         </p>
                         <p className="text-xl leading-normal text-gray-900 sm:text-2xl">
                             Under the theme{' '}
                             <span className="text-lime-700">
                                 Moving the Needle: Securing Scalable Coffee &amp; Cocoa Resilience
                             </span>
-                            , WCIS26 is designed to move from discussion to implementation&mdash;convening industry leadership, investment, innovation and partnerships to drive practical action across the value chain.
-                        </p>
-                        <p className="text-xl leading-normal text-gray-900 sm:text-2xl">
-                            Now entering its fourth edition, the Summit continues to attract an increasingly diverse and influential group of senior leaders from across the global coffee and cocoa ecosystem.
+                            , the Summit is designed to move beyond discussion and focus on what is being implemented, financed and scaled across the sector.
                         </p>
                     </div>
                 </div>
             </section>
 
-            <section className="w-full bg-white px-6 pb-10 pt-6 sm:px-8 sm:pb-14 sm:pt-8 md:px-12">
+            <section className="w-full bg-gray-100 px-6 pb-10 pt-6 sm:px-8 sm:pb-14 sm:pt-8 md:px-12">
                 <div className="mx-auto max-w-7xl">
                     <p className="text-center text-2xl font-bold tracking-tight text-lime-700 sm:text-4xl">
                         WHY THIS SUMMIT
@@ -213,7 +207,7 @@ export default function Overview() {
                 </div>
             </section>
 
-            <section className="w-full bg-gray-100 px-6 pb-10 pt-6 sm:px-8 sm:pb-14 sm:pt-8 md:px-12">
+            <section className="w-full bg-white px-6 pb-10 pt-6 sm:px-8 sm:pb-14 sm:pt-8 md:px-12">
                 <div className="mx-auto max-w-7xl">
                     <p className="text-center text-2xl font-bold tracking-tight text-lime-700 sm:text-4xl">
                         WHY THIS MATTERS NOW
