@@ -176,19 +176,15 @@ export default function Overview() {
                         WHY THIS SUMMIT
                     </p>
 
-                    <h2 className="mt-2 text-center text-2xl font-bold text-gray-900 sm:mt-3 sm:text-3xl">
-                        Why WCIS?
-                    </h2>
-
                     <p className="mt-2 text-center text-xl text-gray-900 sm:mt-3 sm:text-2xl">
                         Where strategy, implementation and collaboration come together.
                     </p>
 
-                    <div className="mt-8 grid grid-cols-1 items-start divide-y divide-gray-200 md:mt-10 md:grid-cols-3 md:divide-x md:divide-y-0">
+                    <div className="mt-4 grid grid-cols-1 divide-y divide-gray-200 sm:mt-5 md:grid-cols-3 md:divide-x md:divide-y-0">
                         {whyThisSummitCards.map((card) => (
                             <article
                                 key={card.titleLines.join(' ')}
-                                className="flex flex-col items-center px-4 py-6 text-center sm:px-6 md:px-8"
+                                className="flex h-full flex-col items-center px-4 pt-3 pb-0 text-center sm:px-6 md:px-8"
                             >
                                 <h3 className="text-xl font-bold leading-tight text-gray-900 sm:text-2xl">
                                     {card.titleLines.map((line, index) => (
@@ -217,11 +213,11 @@ export default function Overview() {
                         The Moment to Act is Now
                     </h2>
 
-                    <div className="mt-8 grid grid-cols-1 items-start divide-y divide-gray-200 md:mt-10 md:grid-cols-3 md:divide-x md:divide-y-0">
+                    <div className="mt-4 grid grid-cols-1 divide-y divide-gray-200 sm:mt-5 md:grid-cols-3 md:divide-x md:divide-y-0">
                         {whyItMattersCards.map((card) => (
                             <article
                                 key={card.titleLines.join(' ')}
-                                className="flex flex-col items-center px-4 py-6 text-center sm:px-6 md:px-8"
+                                className="flex h-full flex-col items-center px-4 pt-3 pb-0 text-center sm:px-6 md:px-8"
                             >
                                 <h3 className="text-xl font-bold leading-tight text-gray-900 sm:text-2xl">
                                     {card.titleLines.map((line, index) => (
