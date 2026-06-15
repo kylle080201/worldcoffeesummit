@@ -34,7 +34,7 @@ const whyItMattersCards = [
       'EUDR, Scope 3 and traceability requirements are increasingly shaping sourcing, investment and trade decisions across global supply chains.',
   },
   {
-    titleLines: ['RESILIENCE IS', 'BECOMING A BUSINESS PRIORITY'],
+    titleLines: ['RESILIENCE IS BECOMING', 'A BUSINESS PRIORITY'],
     description:
       'New investments, innovation and strategic partnerships are creating new pathways to strengthen resilience and secure long-term growth.',
   },
@@ -209,9 +209,9 @@ export default function Overview() {
                         WHY THIS MATTERS NOW
                     </p>
 
-                    <h2 className="mt-2 text-center text-2xl font-bold text-gray-900 sm:mt-3 sm:text-3xl">
+                    <p className="mt-2 text-center text-xl text-gray-900 sm:mt-3 sm:text-2xl">
                         The Moment to Act is Now
-                    </h2>
+                    </p>
 
                     <div className="mt-4 grid grid-cols-1 divide-y divide-gray-200 sm:mt-5 md:grid-cols-3 md:divide-x md:divide-y-0">
                         {whyItMattersCards.map((card) => (
