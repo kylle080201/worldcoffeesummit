@@ -46,7 +46,7 @@ const keyThemes: ThemeCard[] = [
   },
   {
     title: "Scope 3 in Action",
-    subtitle: "From Compliance to Execution",
+    subtitle: "Moving from Reporting to Implementation",
     description: "Supplier Engagement • Emissions Reduction • Reporting",
     image: scope3EudrAction,
   },
