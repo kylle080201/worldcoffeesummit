@@ -2,6 +2,7 @@
 import FAQ from "../../components/FAQ";
 import Venue from "../../components/Venue";
 import Overview from "../../components/Overview";
+import WhyAttend from "../../components/WhyAttend";
 import Speakers from "../../components/Speakers";
 import Exhibition from "../../components/Exhibition";
 import Agenda from "../../components/Agenda";
@@ -24,17 +25,18 @@ export default function HomePage() {
     return (
         <HomePageLayout>
             <Overview />
-            <HomeSection className="bg-gray-100">
+            <WhyAttend />
+            <HomeSection className="bg-white">
                 <Speakers2026 />
             </HomeSection>
-            <HomeSection className="bg-white">
+            <HomeSection className="bg-gray-100">
                 <KeyThemes />
             </HomeSection>
-            <HomeSection className="bg-gray-100"><WhoIsInTheRoom /></HomeSection>
-            <HomeSection className="bg-white"><WhoAttends /></HomeSection>
-            <HomeSection className="bg-gray-100"><Testimonials /></HomeSection>
+            <HomeSection className="bg-white"><WhoIsInTheRoom /></HomeSection>
+            <HomeSection className="bg-gray-100"><WhoAttends /></HomeSection>
+            <HomeSection className="bg-white"><Testimonials /></HomeSection>
             {/* <Attendees2023 /> */}
-            <HomeSection className="bg-white"><SummitInTheNews /></HomeSection>
+            <HomeSection className="bg-gray-100"><SummitInTheNews /></HomeSection>
             {/* <Venue /> */}
         </HomePageLayout>
     )
