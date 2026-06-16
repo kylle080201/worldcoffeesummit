@@ -1,5 +1,5 @@
 import {
-  ArrowLongRightIcon,
+  ArrowRightIcon,
   BuildingOffice2Icon,
   MapPinIcon,
 } from '@heroicons/react/24/solid'
@@ -15,6 +15,12 @@ const ctaButtonClassName =
 const outlineButtonClassName =
   'inline-flex items-center justify-center rounded-lg border-2 border-white px-8 py-3 text-lg font-bold text-white transition-colors duration-300 hover:bg-white/10 sm:px-10 sm:py-4 sm:text-xl'
 
+const introPrimaryButtonClassName =
+  'inline-flex items-center gap-2 rounded-lg bg-lime-700 px-5 py-2.5 text-base font-bold text-white transition-colors duration-300 hover:bg-lime-800 sm:px-6 sm:py-3 sm:text-lg'
+
+const introOutlineButtonClassName =
+  'inline-flex items-center gap-2 rounded-lg border-2 border-lime-700 bg-white px-5 py-2.5 text-base font-bold text-lime-700 transition-colors duration-300 hover:bg-lime-50 sm:px-6 sm:py-3 sm:text-lg'
+
 function VenueImage({
   src,
   alt,
@@ -25,19 +31,22 @@ function VenueImage({
   priority?: boolean
 }) {
   return (
-    <div className="overflow-hidden shadow-sm">
+    <div className="relative h-full min-h-[16rem] overflow-hidden sm:min-h-[20rem] lg:min-h-0 lg:absolute lg:inset-0">
       <Image
         src={src}
         alt={alt}
-        width={1200}
-        height={800}
-        className="aspect-[4/3] h-full w-full object-cover lg:aspect-auto lg:min-h-[320px]"
-        sizes="(max-width: 1024px) 100vw, 40vw"
+        fill
+        className="object-cover"
+        sizes="(max-width: 1024px) 100vw, 58vw"
         priority={priority}
       />
     </div>
   )
 }
+
+const venueTextColumnClassName = 'py-10 sm:py-12 lg:py-14'
+
+const venueImageColumnClassName = 'relative h-full min-h-[16rem] sm:min-h-[20rem] lg:min-h-0'
 
 function VenueAddress({ children }: { children: React.ReactNode }) {
   return (
@@ -53,25 +62,32 @@ function PlanningCard({
   icon: Icon,
   title,
   description,
+  footnote,
 }: {
   href: string
   icon: typeof BuildingOffice2Icon
   title: string
   description: string
+  footnote?: string
 }) {
   return (
     <Link
       href={href}
       target="_blank"
-      className="group flex h-full flex-col rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md sm:p-8"
+      className="group flex items-stretch gap-4 rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md sm:gap-6 sm:p-8"
     >
-      <div className="flex h-14 w-14 items-center justify-center rounded-full bg-lime-700 sm:h-16 sm:w-16">
+      <div className="flex h-14 w-14 shrink-0 items-center justify-center self-center rounded-full bg-lime-700 sm:h-16 sm:w-16">
         <Icon className="h-7 w-7 text-white sm:h-8 sm:w-8" aria-hidden="true" />
       </div>
-      <h3 className="mt-5 text-2xl font-bold text-gray-900 sm:text-3xl">{title}</h3>
-      <p className="mt-3 flex-1 text-base leading-7 text-gray-900 sm:text-lg">{description}</p>
-      <ArrowLongRightIcon
-        className="mt-6 h-8 w-8 text-gray-900 transition-transform group-hover:translate-x-1"
+      <div className="min-w-0 flex-1">
+        <h3 className="text-xl font-bold text-gray-900 sm:text-2xl">{title}</h3>
+        <p className="mt-3 text-base leading-7 text-gray-700 sm:mt-4 sm:text-lg">{description}</p>
+        {footnote ? (
+          <p className="mt-3 text-xs leading-6 text-gray-700 sm:mt-4 sm:text-base">{footnote}</p>
+        ) : null}
+      </div>
+      <ArrowRightIcon
+        className="h-7 w-7 shrink-0 self-end text-lime-700 transition-transform group-hover:translate-x-1 sm:h-8 sm:w-8"
         aria-hidden="true"
       />
     </Link>
@@ -80,11 +96,11 @@ function PlanningCard({
 
 export default function Venue() {
   return (
-    <div className="w-full pt-12 sm:pt-16" id="venue">
-      <section className="bg-white px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
-        <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-10 lg:gap-12">
-          <div className="lg:col-span-6">
-            <p className={sectionLabelClassName}>VENUE &amp; NETWORKING</p>
+    <div className="w-full" id="venue">
+      <section className="bg-white px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto grid max-w-7xl items-stretch gap-10 lg:grid-cols-12 lg:gap-12">
+          <div className={`lg:col-span-5 ${venueTextColumnClassName}`}>
+            <p className={sectionLabelClassName}>VENUE &amp; NETWORKING —</p>
             <h1 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl">
               At the Heart of Westminster
             </h1>
@@ -94,11 +110,29 @@ export default function Venue() {
                 bringing together leaders from across coffee, cocoa, finance, policy and technology.
               </p>
               <p>
-                The event concludes with the exclusive WCIS Networking Soirée at the House of Lords
+                The event concludes with the exclusive WCIS Networking Soirée at the House of Lords.
               </p>
             </div>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <Link
+                href="https://qeiicentre.london/about/location/"
+                target="_blank"
+                className={introPrimaryButtonClassName}
+              >
+                View Venue
+                <MapPinIcon className="h-5 w-5 shrink-0" aria-hidden="true" />
+              </Link>
+              <Link
+                href="https://qeiicentre.london/about/hotels/"
+                target="_blank"
+                className={introOutlineButtonClassName}
+              >
+                Recommended Hotels
+                <BuildingOffice2Icon className="h-5 w-5 shrink-0" aria-hidden="true" />
+              </Link>
+            </div>
           </div>
-          <div className="lg:col-span-4">
+          <div className={`${venueImageColumnClassName} lg:col-span-7`}>
             <VenueImage
               src="/images/venue/at-the-hear-of-westminster.jpg"
               alt="Panel discussion at World Coffee Innovation Summit"
@@ -108,15 +142,15 @@ export default function Venue() {
         </div>
       </section>
 
-      <section className="bg-gray-100 px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
-        <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-10 lg:gap-12">
-          <div className="lg:col-span-6">
-            <p className={sectionLabelClassName}>VENUE &amp; NETWORKING</p>
+      <section className="bg-gray-100 px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto grid max-w-7xl items-stretch gap-10 lg:grid-cols-12 lg:gap-12">
+          <div className={`lg:col-span-5 ${venueTextColumnClassName}`}>
+            <p className={sectionLabelClassName}>THE SUMMIT VENUE —</p>
             <h2 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl">QEII Centre</h2>
             <VenueAddress>
-              Broad Sanctuary, Westminster London SW1P 3EE, UK
+              Broad Sanctuary, Westminster London SW1P 3EE, United Kingdom
             </VenueAddress>
-            <div className="mt-6 max-w-4xl space-y-4 text-lg leading-normal text-gray-900 sm:text-xl">
+            <div className="mt-6 space-y-4 text-lg leading-normal text-gray-900 sm:text-xl">
               <p>
                 The UK&apos;s premier conference and events venue, located in the heart of Westminster.
               </p>
@@ -127,7 +161,7 @@ export default function Venue() {
               </p>
             </div>
           </div>
-          <div className="lg:col-span-4">
+          <div className={`${venueImageColumnClassName} lg:col-span-7`}>
             <VenueImage
               src="https://worldcoffeealliance.com/wp-content/uploads/2024/05/qeii-vac2021-071021-hires-1039-1080x675.jpg.webp"
               alt="QEII Centre exterior"
@@ -136,26 +170,31 @@ export default function Venue() {
         </div>
       </section>
 
-      <section className="bg-white px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
-        <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-10 lg:gap-12">
-          <div className="lg:col-span-4 lg:order-1">
+      <section className="bg-white px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto grid max-w-7xl items-stretch gap-10 lg:grid-cols-12 lg:gap-12">
+          <div className={`lg:order-1 lg:col-span-7 ${venueImageColumnClassName}`}>
             <VenueImage
               src="/images/venue/house-of-lords.jpg"
               alt="WCIS Networking Soirée at the House of Lords"
             />
           </div>
-          <div className="lg:order-2 lg:col-span-6">
-            <p className={sectionLabelClassName}>EXCLUSIVE NETWORKING SOIRÉE</p>
+          <div className={`lg:order-2 lg:col-span-5 ${venueTextColumnClassName}`}>
+            <p className={sectionLabelClassName}>EXCLUSIVE NETWORKING SOIRÉE —</p>
             <h2 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl">
               House of Lords
             </h2>
             <VenueAddress>
-              Houses of Parliament, Parliament Sq, London SW1A 0PW, UK
+              Houses of Parliament Parliament Sq, London SW1A 0PW, United Kingdom
             </VenueAddress>
-            <p className="mt-6 text-lg leading-normal text-gray-900 sm:text-xl">
-              An exclusive reception bringing together senior leaders from across the coffee and
-              cocoa value chain in one of the UK&apos;s most iconic settings.
-            </p>
+            <div className="mt-6 space-y-4 text-lg leading-normal text-gray-900 sm:text-xl">
+              <p>
+                Selected delegates are invited to an exclusive evening reception at the House of Lords.
+              </p>
+              <p>
+                This unique setting offers an unparalleled opportunity to connect with senior leaders
+                from across the coffee and cocoa value chains, as well as finance, policy and innovation.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -163,20 +202,24 @@ export default function Venue() {
       <section className="bg-green-100/40 px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <h2 className="text-center text-2xl font-bold tracking-tight text-lime-700 sm:text-3xl">
-            PLANNING YOUR VISIT
+            — PLANNING YOUR VISIT —
           </h2>
+          <p className="mt-3 text-center text-lg text-gray-700 sm:text-xl">
+            Everything you need to plan your trip to WCIS
+          </p>
           <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
             <PlanningCard
               href="https://qeiicentre.london/about/hotels/"
               icon={BuildingOffice2Icon}
               title="Recommended Hotels"
-              description="Central location, wide range of options, exclusive rates for attendees."
+              description="A curated list of recommended hotels recommended by the QEII Centre."
+              footnote="* For your reference only, you can book from other platforms"
             />
             <PlanningCard
               href="https://qeiicentre.london/about/location/"
               icon={MapPinIcon}
               title="Venue Directions"
-              description="Nearest stations: Westminster and St James's Park. Walking distance from Westminster Underground."
+              description="Find the QEII Centre, explore transport options and get detailed directions."
             />
           </div>
         </div>
