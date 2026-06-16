@@ -26,7 +26,7 @@ function Navbar() {
     },
     { name: 'Venue', href: '/venue' },
     { name: 'Partners', href: '/partners' },
-    { name: 'ABOUT WCIS', href: '/about-wcis' },
+    { name: 'ABOUT', href: '/about-wcis' },
   ]
 
   const navLinkClassName =

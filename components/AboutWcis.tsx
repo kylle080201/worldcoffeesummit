@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import headerImage from '../images/about-wcis/ICONS/images/header.jpg'
 import icon1 from '../images/about-wcis/ICONS/1.png'
 import icon2 from '../images/about-wcis/ICONS/2.png'
 import icon3 from '../images/about-wcis/ICONS/3.png'
@@ -76,29 +77,43 @@ function LimeDivider({ className = 'mx-auto w-12' }: { className?: string }) {
 export default function AboutWcis() {
   return (
     <div className="w-full" id="about-wcis">
-      <section className="w-full bg-white px-4 pb-16 pt-16 sm:px-6 sm:pb-20 sm:pt-20 lg:px-8">
+      <section className="w-full bg-white px-4 pb-0 pt-16 sm:px-6 sm:pt-20 lg:px-8">
         <div className="mx-auto max-w-7xl">
-          <p className="text-sm font-bold uppercase tracking-wide text-lime-700 sm:text-base">
-            ABOUT WCIS
-          </p>
+          <div className="grid items-center gap-10 lg:grid-cols-10 lg:gap-12">
+            <div className="lg:col-span-6">
+              <p className="text-sm font-bold uppercase tracking-wide text-lime-700 sm:text-base">
+                ABOUT WCIS
+              </p>
 
-          <h1 className="mt-4 text-4xl font-bold leading-tight text-gray-900 sm:text-5xl lg:text-6xl">
-            World Coffee Innovation Summit
-          </h1>
+              <h1 className="mt-4 text-4xl font-bold leading-tight text-gray-900 sm:text-5xl lg:text-6xl">
+                World Coffee Innovation Summit
+              </h1>
 
-          <p className="mt-4 text-2xl font-medium text-lime-700 sm:text-3xl">
-            Securing the Future of Coffee and Cocoa
-          </p>
+              <p className="mt-4 text-2xl font-medium text-lime-700 sm:text-3xl">
+                Securing the Future of Coffee and Cocoa
+              </p>
 
-          <div className="mt-8 max-w-5xl space-y-5 text-lg leading-8 text-gray-900 sm:text-xl sm:leading-9">
-            <p>
-              Coffee and cocoa face increasingly complex challenges, from climate and regulation
-              to capital and supply chain resilience.
-            </p>
-            <p>
-              WCIS exists to explore the expertise, partnerships and practical solutions needed to
-              strengthen the future of both sectors.
-            </p>
+              <div className="mt-8 text-lg leading-normal text-gray-900 sm:text-xl">
+                <p>
+                  Coffee and cocoa face increasingly complex challenges, from climate and regulation
+                  to capital and supply chain resilience.
+                </p>
+                <p className="mt-4">
+                  WCIS exists to explore the expertise, partnerships and practical solutions needed to
+                  strengthen the future of both sectors.
+                </p>
+              </div>
+            </div>
+
+            <div className="overflow-hidden shadow-sm lg:col-span-4">
+              <Image
+                src={headerImage}
+                alt="Panel discussion at World Coffee Innovation Summit"
+                className="aspect-[4/3] h-full w-full object-cover lg:aspect-auto lg:min-h-[320px]"
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                priority
+              />
+            </div>
           </div>
 
           <div className="mt-16 sm:mt-20">
@@ -138,7 +153,7 @@ export default function AboutWcis() {
               {whoWeBringTogetherItems.map((item) => (
                 <article
                   key={item.label}
-                  className="flex h-full flex-col items-center px-3 py-6 text-center sm:px-4"
+                  className="flex h-full flex-col items-center px-3 pt-3 pb-0 text-center sm:px-4"
                 >
                   <Image
                     src={item.icon}
@@ -157,7 +172,7 @@ export default function AboutWcis() {
       </section>
 
       <section className="w-full bg-white">
-        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 pb-0 pt-16 sm:px-6 sm:pt-20 lg:px-8">
           <p className="text-center text-2xl font-bold tracking-tight text-lime-700 sm:text-3xl">
             SINCE 2023
           </p>
@@ -170,20 +185,20 @@ export default function AboutWcis() {
             {evolutionTimeline.map((item) => (
               <article
                 key={item.year}
-                className="flex h-full flex-col items-center px-4 py-6 text-center sm:px-5"
+                className="flex h-full flex-col items-center px-3 py-3 pb-0 text-center sm:px-4"
               >
                 <p className="text-3xl font-bold text-gray-900 sm:text-4xl">
                   {item.year}
                 </p>
                 <LimeDivider className="mx-auto w-32 sm:w-40" />
-                <p className="mt-4 text-lg font-bold leading-snug text-gray-900 sm:text-xl">
+                <p className="mt-4 text-base font-bold leading-snug text-gray-900 sm:text-lg lg:whitespace-nowrap lg:text-xl">
                   {item.theme}
                 </p>
               </article>
             ))}
           </div>
 
-          <p className="mx-auto mt-10 max-w-5xl text-center text-lg leading-8 text-gray-900 sm:text-xl sm:leading-9">
+          <p className="mx-auto mt-4 max-w-5xl pb-4 text-center text-lg leading-normal text-gray-900 sm:mt-5 sm:pb-6 sm:text-xl">
             From collaboration and shared value to implementation and measurable progress, each
             edition has reflected the evolving priorities of the sector.
           </p>
@@ -191,7 +206,7 @@ export default function AboutWcis() {
 
         <div className="bg-lime-700">
           <div className="mx-auto flex max-w-7xl flex-col md:flex-row md:items-center">
-            <div className="flex flex-1 items-center px-6 py-10 text-left sm:px-10 sm:py-12 lg:px-12 lg:py-14">
+            <div className="flex flex-1 items-center justify-end px-6 py-10 text-left sm:pl-10 sm:pr-4 sm:py-12 lg:pl-12 lg:pr-6 lg:py-14">
               <p className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
                 Different Themes.
                 <br />
@@ -202,9 +217,10 @@ export default function AboutWcis() {
               className="mx-auto h-1 w-24 shrink-0 bg-white md:mx-0 md:h-32 md:w-1 lg:h-40"
               aria-hidden="true"
             />
-            <div className="flex flex-1 items-center px-6 py-10 text-left sm:px-10 sm:py-12 lg:px-12 lg:py-14">
-              <p className="max-w-xl text-xl leading-relaxed text-white sm:text-2xl lg:text-3xl lg:leading-snug">
+            <div className="flex flex-1 items-center px-4 py-10 text-left sm:pl-4 sm:pr-10 sm:py-12 lg:pl-6 lg:pr-12 lg:py-14">
+              <p className="max-w-2xl text-xl leading-snug text-white sm:text-2xl lg:text-3xl">
                 To bring together the people, expertise, and partnerships shaping the future of
+                <br />
                 coffee and cocoa.
               </p>
             </div>
