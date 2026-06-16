@@ -85,7 +85,7 @@ export default function AboutWcis() {
                 ABOUT WCIS
               </p>
 
-              <h1 className="mt-4 text-4xl font-bold leading-tight text-gray-900 sm:text-5xl lg:text-6xl">
+              <h1 className="mt-4 text-3xl font-bold leading-tight text-gray-900 sm:text-4xl lg:text-4xl lg:whitespace-nowrap xl:text-5xl">
                 World Coffee Innovation Summit
               </h1>
 
