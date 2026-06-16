@@ -77,7 +77,7 @@ function LimeDivider({ className = 'mx-auto w-12' }: { className?: string }) {
 export default function AboutWcis() {
   return (
     <div className="w-full" id="about-wcis">
-      <section className="w-full bg-white px-4 pb-0 pt-16 sm:px-6 sm:pt-20 lg:px-8">
+      <section className="w-full bg-white px-4 pb-0 pt-12 sm:px-6 sm:pt-16 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="grid items-center gap-10 lg:grid-cols-10 lg:gap-12">
             <div className="lg:col-span-6">
@@ -93,7 +93,7 @@ export default function AboutWcis() {
                 Securing the Future of Coffee and Cocoa
               </p>
 
-              <div className="mt-8 text-lg leading-normal text-gray-900 sm:text-xl">
+              <div className="mt-6 text-lg leading-normal text-gray-900 sm:text-xl">
                 <p>
                   Coffee and cocoa face increasingly complex challenges, from climate and regulation
                   to capital and supply chain resilience.
@@ -116,22 +116,22 @@ export default function AboutWcis() {
             </div>
           </div>
 
-          <div className="mt-16 sm:mt-20">
+          <div className="mt-10 sm:mt-12">
             <h2 className="text-center text-2xl font-bold tracking-tight text-lime-700 sm:text-3xl">
               THE WCIS DIFFERENCE
             </h2>
 
-            <div className="mt-10 grid grid-cols-1 divide-y divide-gray-200 md:grid-cols-4 md:divide-x md:divide-y-0">
+            <div className="mt-6 grid grid-cols-1 divide-y divide-gray-200 sm:mt-8 md:grid-cols-4 md:divide-x md:divide-y-0">
               {wcisDifferenceItems.map((item) => (
                 <article
                   key={item.title}
-                  className="flex h-full flex-col items-start px-4 py-6 text-left sm:px-5 md:py-0"
+                  className="flex h-full flex-col items-start px-4 py-4 text-left sm:px-5 md:py-0"
                 >
                   <h3 className="text-lg font-bold leading-snug text-gray-900 sm:text-xl">
                     {item.title}
                   </h3>
                   <LimeDivider className="w-24 sm:w-32" />
-                  <p className="mt-4 text-base leading-7 text-gray-900 sm:text-lg">
+                  <p className="mt-3 text-base leading-7 text-gray-900 sm:text-lg">
                     {item.description}
                   </p>
                 </article>
@@ -139,17 +139,17 @@ export default function AboutWcis() {
             </div>
           </div>
 
-          <div className="mt-16 sm:mt-20">
+          <div className="mt-10 sm:mt-12">
             <h2 className="text-center text-2xl font-bold tracking-tight text-lime-700 sm:text-3xl">
               WHO WE BRING TOGETHER
             </h2>
 
-            <p className="mx-auto mt-4 max-w-4xl text-center text-lg leading-8 text-gray-900 sm:text-xl">
+            <p className="mx-auto mt-3 max-w-4xl text-center text-lg leading-7 text-gray-900 sm:text-xl">
               WCIS is designed for the people responsible for shaping strategy, investment and
               implementation across coffee and cocoa value chains.
             </p>
 
-            <div className="mt-10 grid grid-cols-2 divide-y divide-gray-200 sm:grid-cols-3 lg:grid-cols-6 lg:divide-x lg:divide-y-0">
+            <div className="mt-6 grid grid-cols-2 divide-y divide-gray-200 sm:mt-8 sm:grid-cols-3 lg:grid-cols-6 lg:divide-x lg:divide-y-0">
               {whoWeBringTogetherItems.map((item) => (
                 <article
                   key={item.label}
@@ -161,7 +161,7 @@ export default function AboutWcis() {
                     className="h-16 w-16 object-contain sm:h-20 sm:w-20"
                   />
                   <LimeDivider className="mx-auto w-16 sm:w-20" />
-                  <p className="mt-4 text-sm font-medium leading-snug text-gray-900 sm:text-base">
+                  <p className="mt-3 text-sm font-medium leading-snug text-gray-900 sm:text-base">
                     {item.label}
                   </p>
                 </article>
@@ -172,16 +172,16 @@ export default function AboutWcis() {
       </section>
 
       <section className="w-full bg-white">
-        <div className="mx-auto max-w-7xl px-4 pb-0 pt-16 sm:px-6 sm:pt-20 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 pb-0 pt-10 sm:px-6 sm:pt-12 lg:px-8">
           <p className="text-center text-2xl font-bold tracking-tight text-lime-700 sm:text-3xl">
             SINCE 2023
           </p>
 
-          <h2 className="mt-3 text-center text-3xl font-bold text-gray-900 sm:text-4xl">
+          <h2 className="mt-2 text-center text-3xl font-bold text-gray-900 sm:mt-3 sm:text-4xl">
             How the Conversation Has Evolved
           </h2>
 
-          <div className="mt-10 grid grid-cols-1 divide-y divide-gray-200 sm:grid-cols-2 lg:grid-cols-4 lg:divide-x lg:divide-y-0">
+          <div className="mt-6 grid grid-cols-1 divide-y divide-gray-200 sm:mt-8 sm:grid-cols-2 lg:grid-cols-4 lg:divide-x lg:divide-y-0">
             {evolutionTimeline.map((item) => (
               <article
                 key={item.year}
@@ -191,14 +191,14 @@ export default function AboutWcis() {
                   {item.year}
                 </p>
                 <LimeDivider className="mx-auto w-32 sm:w-40" />
-                <p className="mt-4 text-base font-bold leading-snug text-gray-900 sm:text-lg lg:whitespace-nowrap lg:text-xl">
+                <p className="mt-3 text-base font-bold leading-snug text-gray-900 sm:text-lg lg:whitespace-nowrap lg:text-xl">
                   {item.theme}
                 </p>
               </article>
             ))}
           </div>
 
-          <p className="mx-auto mt-4 max-w-5xl pb-4 text-center text-lg leading-normal text-gray-900 sm:mt-5 sm:pb-6 sm:text-xl">
+          <p className="mx-auto mt-3 max-w-5xl pb-4 text-center text-lg leading-normal text-gray-900 sm:mt-4 sm:pb-5 sm:text-xl">
             From collaboration and shared value to implementation and measurable progress, each
             edition has reflected the evolving priorities of the sector.
           </p>
