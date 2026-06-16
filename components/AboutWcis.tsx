@@ -206,7 +206,7 @@ export default function AboutWcis() {
 
         <div className="bg-lime-700">
           <div className="mx-auto flex max-w-7xl flex-col md:flex-row md:items-center">
-            <div className="flex flex-1 items-center justify-end px-6 py-10 text-left sm:pl-10 sm:pr-4 sm:py-12 lg:pl-12 lg:pr-6 lg:py-14">
+            <div className="flex flex-1 items-center px-6 py-10 text-left sm:pl-10 sm:pr-12 sm:py-12 lg:pl-12 lg:pr-20 lg:py-14">
               <p className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
                 Different Themes.
                 <br />
