@@ -1,86 +1,78 @@
-import { CalendarDaysIcon, ChatBubbleOvalLeftEllipsisIcon, ChatBubbleLeftRightIcon, LinkIcon, UserIcon, UsersIcon, BanknotesIcon } from '@heroicons/react/24/outline'
-import Link from 'next/link'
 import React from 'react'
 
-function WhyAttend() {
-    const WhyAttend = [
-        {
-            id: 1,
-            title: "INSPIRING HIGH-LEVEL SPEAKERS",
-            description: "Gain valuable insights from global industry leaders, top Thought leaders, governments and leading EU policy and funding practitioners who are shaping the future of coffee and related commodities.",
-            icon: UserIcon
-        },
-        {
-            id: 2,
-            title: "UNIQUE APPROACH",
-            description: "Connect Coffee, Innovation and Climate Finance towards sustainability beyond compliance.",
-            icon: LinkIcon
-        },
-        {
-            id: 3,
-            title: "INSIGHTFUL AGENDA",
-            description: "Debate and discuss the latest EUDR, exploring opportunities in Carbon Credits, ESG/ Impact Investing and Innovation.",
-            icon: ChatBubbleLeftRightIcon
-        },
-        {
-            id: 4,
-            title: "NETWORK OPPORTUNITIES",
-            description: "Connect and get engaged with your cross-sector peers to share best practices and explore future of collaboration and broaden your contact list.",
-            icon: UsersIcon
-        },
-        {
-            id: 4,
-            title: "EXHIBITION WITH PURPOSE",
-            description: "Real buyers meeting real coffee farmers and cooperatives from countries of origin doing real business and sharing their stories.",
-            icon: BanknotesIcon
-        }
-    ]
-    function classNames(...classes: any[]) {
-        return classes.filter(Boolean).join(' ')
-    }
-    return (
-        <div id="why-attend" className="flex flex-col bg-[url('https://worldcoffeealliance.com/wp-content/uploads/2023/07/shutterstock_536617741-scaled.jpg')] bg-center bg-cover">
-            <div className='w-full py-40 bg-gray-50/70'>
-                <div className='px-24 mx-auto text-center'>
-                    <h1 className='text-2xl font-bold lg:text-4xl'>
-                        WHAT CAN YOU EXPECT?
-                    </h1>
-                    <div className='grid grid-cols-1 mx-auto mt-20 gap-x-6 gap-y-20 lg:grid-cols-5 lg:gap-x-8'>
-                        {WhyAttend.map((item) => (
-                            <div key={item.id} className='flex-col text-lg lg:text-2xl'>
-                                <div className='justify-center'>
-                                    <span
-                                        className={classNames(
-                                            item.icon,
-                                        )}
-                                    >
-                                        <item.icon className="w-24 mx-auto" aria-hidden="true" />
-                                    </span>
-                                </div>
-                                <div className='mt-8 font-bold'>
-                                    {item.title}
-                                </div>
-                                <div className='mx-8 mt-8 lg:mx-0'>
-                                    {item.description}
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-                <div className="flex flex-row items-center justify-center mt-4 text-center gap-x-4">
-                    <div className='text-lg font-bold underline sm:text-2xl'>
-                        <Link target={'_blank'} rel='noreferer' href="/">WWW.WORLDCOFFEEINNOVATIONSUMMIT.COM
-                        </Link>
-                    </div>
-                </div>
-                {/* <div className="flex flex-row items-center w-full mt-12 bg-lime-700">
-                    <div className='py-4 mx-auto text-lg font-bold text-center text-white sm:text-2xl'>
-                        EARLY BIRD DISCOUNT UNTIL 31ST AUGUST 2023
-                    </div>
-                </div> */}
-            </div>
-        </div>
-    )
+const whyAttendCards = [
+  {
+    title: "Understand What's Next",
+    description:
+      'Gain practical insight into the realities, risks and opportunities shaping coffee and cocoa.',
+  },
+  {
+    title: 'Discover What Scales',
+    description:
+      'Explore solutions, partnerships and investment models already delivering results.',
+  },
+  {
+    title: 'Engage Decision-Makers',
+    description:
+      'Meet senior leaders driving strategy, investment and implementation.',
+  },
+  {
+    title: 'Build Valuable Connections',
+    description:
+      'Connect with stakeholders from origin to boardroom across the coffee and cocoa ecosystem.',
+  },
+  {
+    title: 'Network Beyond the Stage',
+    description:
+      'Strengthen relationships from coffee tastings to the House of Lords Soirée.',
+  },
+]
+
+const sectionClassName =
+  'w-full px-6 pb-10 pt-6 sm:px-8 sm:pb-14 sm:pt-8 md:px-12'
+
+function AttendCard({
+  title,
+  description,
+}: {
+  title: string
+  description: string
+}) {
+  return (
+    <article className="flex h-full flex-col items-center px-4 pt-3 pb-0 text-center sm:px-6 md:px-8">
+      <h3 className="text-xl font-bold uppercase leading-tight text-gray-900 sm:text-2xl">
+        {title}
+      </h3>
+      <p className="mt-2 max-w-sm text-base leading-snug text-gray-900 sm:text-lg">
+        {description}
+      </p>
+    </article>
+  )
 }
 
-export default WhyAttend
+export default function WhyAttend() {
+  const [rowOne, rowTwo] = [whyAttendCards.slice(0, 3), whyAttendCards.slice(3)]
+
+  return (
+    <section className={`${sectionClassName} bg-gray-100`}>
+      <div className="mx-auto max-w-7xl">
+        <p className="text-center text-2xl font-bold tracking-tight text-lime-700 sm:text-4xl">
+          WHY ATTEND
+        </p>
+
+        <div className="mt-4 grid grid-cols-1 divide-y divide-gray-200 sm:mt-5 md:grid-cols-3 md:divide-x md:divide-y-0">
+          {rowOne.map((card) => (
+            <AttendCard key={card.title} {...card} />
+          ))}
+        </div>
+        <div className="mt-8 flex justify-center md:mt-10">
+          <div className="grid w-full max-w-4xl grid-cols-1 divide-y divide-gray-200 md:grid-cols-2 md:divide-x md:divide-y-0">
+            {rowTwo.map((card) => (
+              <AttendCard key={card.title} {...card} />
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}

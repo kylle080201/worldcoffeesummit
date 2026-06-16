@@ -157,7 +157,7 @@ export default function Overview() {
                             Coffee and cocoa are being reshaped by climate risk, regulation, investment priorities and shifting supply chain dynamics.
                         </p>
                         <p className="text-xl leading-normal text-gray-900 sm:text-2xl">
-                            Bringing together leaders from across the value chain — from producers and origin representatives to traders, brands, investors, policymakers and technology providers — the 4th World Coffee Innovation Summit (WCIS26) explores the partnerships, investments and practical action needed to build more resilient coffee and cocoa supply chains.
+                            Bringing together leaders from across the value chain — from producers and origin representatives to traders, brands, investors, policymakers and technology providers — the 4th World Coffee Innovation Summit (WCIS26) explores the expertise, partnerships, investments and practical action needed to build more resilient coffee and cocoa supply chains.
                         </p>
                         <p className="text-xl leading-normal text-gray-900 sm:text-2xl">
                             Under the theme{' '}
