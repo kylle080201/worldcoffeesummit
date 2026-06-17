@@ -80,7 +80,7 @@ export const summit: SummitRow[] = [
         icon: Rocket,
         item_price: 995,
         description:
-            'For early-stage innovators and solution providers, typically pre-seed to pre\u2013Series A.',
+            'For full-time early-stage innovators and solution providers, typically pre-seed to pre\u2013Series A.',
         earlyBird: 'Subject to qualification',
         limited: 'Limited Availability',
         limitedClassName: 'text-lime-700',

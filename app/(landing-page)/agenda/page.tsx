@@ -5,7 +5,7 @@ import KeyThemes from '../../../components/KeyThemes'
 function page() {
   return (
     <>
-      <KeyThemes showNavigator={false} compactTop />
+      <KeyThemes showNavigator={false} compactTop compactBottom />
       <Agenda />
     </>
   )

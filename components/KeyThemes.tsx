@@ -95,11 +95,11 @@ export function AgendaNavigator({ useHashLinks = false }: { useHashLinks?: boole
   );
 }
 
-function KeyThemes({ showNavigator = true, compactTop = false }: { showNavigator?: boolean; compactTop?: boolean }) {
+function KeyThemes({ showNavigator = true, compactTop = false, compactBottom = false }: { showNavigator?: boolean; compactTop?: boolean; compactBottom?: boolean }) {
   return (
     <section
       id="key-themes-2026"
-      className={`w-full scroll-mt-24 px-6 pb-12 sm:px-8 md:pb-16 ${compactTop ? 'pt-4 sm:pt-6' : 'pt-10 md:pt-12'}`}
+      className={`w-full scroll-mt-24 px-6 sm:px-8 ${compactTop ? 'pt-4 sm:pt-6' : 'pt-10 md:pt-12'} ${compactBottom ? 'pb-4 sm:pb-6' : 'pb-12 md:pb-16'}`}
     >
       <div className="mx-auto w-full max-w-7xl">
         <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">
@@ -139,7 +139,7 @@ function KeyThemes({ showNavigator = true, compactTop = false }: { showNavigator
           ))}
         </div>
         {showNavigator && (
-          <div className="mt-8">
+          <div className="mt-6">
             <AgendaNavigator />
           </div>
         )}

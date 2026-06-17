@@ -90,7 +90,7 @@ function PlanningCard({
 
 export default function Venue() {
   return (
-    <div className="w-full" id="venue">
+    <div className="w-full pt-8 sm:pt-10" id="venue">
       <section className="bg-white lg:grid lg:grid-cols-8 lg:items-center">
         <div className={`${venueTextColumnClassName} lg:col-span-3 lg:pl-8 lg:pr-8`}>
           <p className={sectionLabelClassName}>VENUE &amp; NETWORKING —</p>
