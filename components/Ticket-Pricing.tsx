@@ -29,6 +29,8 @@ export type SummitRow = {
     limitedOnTop?: boolean
     limitedClassName?: string
     subDescription?: string
+    descriptionSubline?: string
+    descriptionItalic?: string
     footnote?: string
     cta?: string
     /** If set, CTA opens mailto instead of the registration form */
@@ -79,17 +81,20 @@ export const summit: SummitRow[] = [
         title: 'Start-Up',
         icon: Rocket,
         item_price: 995,
-        description:
-            'For full-time early-stage innovators and solution providers, typically pre-seed to pre\u2013Series A.',
-        earlyBird: 'Subject to qualification',
+        description: 'For emerging companies developing new products or solutions.',
+        descriptionSubline: 'Not applicable to consultancies, agencies or service providers.',
+        descriptionItalic: '*Registrations may be reclassified where appropriate.',
         limited: 'Limited Availability',
         limitedClassName: 'text-lime-700',
-        cta: 'Enquire Now',
-        enquireHref: '/register/start-up-enquiry',
-        // price reference only (start-up currently uses enquiry flow):
-        // price: 'price_1Rb9T2KMWpUKzQVzaQhry4yi', // production
-        // price: 'price_1RJHKqKMWpUKzQVzqUg2mW67', // prod testing (£5)
-        // price: 'price_1TUHspKMWpUKzQVzeiuq5ATZ', // testing
+        line_items: [
+            {
+                price: 'price_1Rb9T2KMWpUKzQVzaQhry4yi', // production
+                // price: 'price_1RJHKqKMWpUKzQVzqUg2mW67', // prod testing (£5)
+                // price: 'price_1TUHspKMWpUKzQVzeiuq5ATZ', // testing
+                quantity: 1,
+                tax_rates: taxRates,
+            },
+        ],
     },
     {
         title: 'Service Provider',
@@ -230,6 +235,12 @@ function TicketPricing() {
                                                 className={`flex-wrap px-3 text-lg text-gray-900 ${delegate.title === 'Networking Soirée' ? 'py-6' : 'py-4'}`}
                                             >
                                                 {delegate.description}
+                                                {delegate.descriptionSubline ? (
+                                                    <div className="mt-2">{delegate.descriptionSubline}</div>
+                                                ) : null}
+                                                {delegate.descriptionItalic ? (
+                                                    <div className="mt-2 italic">{delegate.descriptionItalic}</div>
+                                                ) : null}
                                                 {delegate.subDescription ? (
                                                     <div
                                                         className={
