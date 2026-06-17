@@ -81,8 +81,8 @@ export const summit: SummitRow[] = [
         title: 'Start-Up',
         icon: Rocket,
         item_price: 995,
-        description: 'For emerging companies developing new products or solutions.',
-        descriptionSubline: 'Not applicable to consultancies, agencies or service providers.',
+        description:
+            'For emerging companies developing new products or solutions. Not applicable to consultancies, agencies or service providers.',
         descriptionItalic: '*Registrations may be reclassified where appropriate.',
         limited: 'Limited Availability',
         limitedClassName: 'text-lime-700',
@@ -102,7 +102,7 @@ export const summit: SummitRow[] = [
         old_price: 1895,
         item_price: 1495,
         description:
-            'For for-profit consultancies, technology and service providers, mature start-ups, financial institutions, and investors.',
+            'For for-profit consultancies, technology and service providers, financial institutions, and investors.',
         earlyBird: 'Save £400 book before 19 Jun 2026',
         line_items: [
             {
