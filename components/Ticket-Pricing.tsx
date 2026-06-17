@@ -81,8 +81,8 @@ export const summit: SummitRow[] = [
         title: 'Start-Up',
         icon: Rocket,
         item_price: 995,
-        description:
-            'For emerging companies developing new products or solutions. Not applicable to consultancies, agencies or service providers.',
+        description: 'For emerging companies developing new products or solutions.',
+        descriptionSubline: 'Not applicable to consultancies, agencies or service providers.',
         descriptionItalic: '*Registrations may be reclassified where appropriate.',
         limited: 'Limited Availability',
         limitedClassName: 'text-lime-700',
@@ -236,7 +236,7 @@ function TicketPricing() {
                                             >
                                                 {delegate.description}
                                                 {delegate.descriptionSubline ? (
-                                                    <div className="mt-2">{delegate.descriptionSubline}</div>
+                                                    <div>{delegate.descriptionSubline}</div>
                                                 ) : null}
                                                 {delegate.descriptionItalic ? (
                                                     <div className="mt-2 italic">{delegate.descriptionItalic}</div>
