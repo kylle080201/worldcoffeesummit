@@ -18,7 +18,13 @@ export default function TermsAndConditionsContent() {
 
       <p className="mt-6 font-semibold text-gray-900">Delegate Eligibility &amp; Registration Review</p>
       <p className="mt-2 text-gray-700">
-        The Organiser reserves the right to review registrations and determine the most appropriate delegate category in order to maintain a high-quality and relevant event experience. Registrations may be reassigned, adjusted, or declined at the Organiser&apos;s discretion.
+        Delegates are expected to provide complete and accurate registration information, including their organisation name and business details where applicable.
+      </p>
+      <p className="mt-2 text-gray-700">
+        The Organiser reserves the right to review registrations and determine the most appropriate delegate category in order to maintain a high-quality and relevant event experience.
+      </p>
+      <p className="mt-2 text-gray-700">
+        Where inaccurate, incomplete or misleading information has been provided, the Organiser may request additional information, reassign the registration to the appropriate delegate category, decline the registration, or issue a refund at its discretion.
       </p>
 
       <p className="mt-6 font-semibold text-gray-900">Cancellation, Refunds &amp; Substitutions</p>

@@ -44,7 +44,7 @@ export const whoAttendsLogoRows: WhoAttendsLogo[][] = [
     }),
     logo('Lavazza Group', 'LAVAZZA-GROUP.png', { maxHeight: 100, maxWidth: 250 }),
     logo('Mars', 'Mars Wordmark RGB Blue.png'),
-    logo('Neumann Gruppe', 'Neumann Gruppe_Logo_left-1.jpg', {
+    logo('Neumann Gruppe', 'Neumann Gruppe_Logo_left-1.png', {
       maxHeight: 200,
       maxWidth: 1000,
       scale: 1.5,
@@ -73,7 +73,7 @@ export const whoAttendsLogoRows: WhoAttendsLogo[][] = [
       scale: 1.4,
       marginX: 32,
     }),
-    logo('ECOM', 'ECOM.jpg'),
+    logo('ECOM', 'ECOM.png'),
     logo('Yara International', 'Yara International.png'),
     logo('Rainforest Alliance', 'Rainforest-Alliance-logo.png'),
   ],
@@ -92,10 +92,10 @@ export const partnersPageWhoAttendsRows: WhoAttendsLogo[][] = [
   ],
   [
     logo('Volcafe', 'Volcafe.png', { maxHeight: 72, maxWidth: 150 }),
-    logo('Neumann Gruppe', 'Neumann Gruppe_Logo_left-1.jpg', { maxHeight: 68, maxWidth: 130 }),
+    logo('Neumann Gruppe', 'Neumann Gruppe_Logo_left-1.png', { maxHeight: 68, maxWidth: 130 }),
     logo('ofi', 'ofi.png', { maxHeight: 72, maxWidth: 130 }),
     logo('LDC', 'LDC.png', { maxHeight: 68, maxWidth: 90 }),
-    logo('ECOM', 'ECOM.jpg', { maxHeight: 72, maxWidth: 130 }),
+    logo('ECOM', 'ECOM.png', { maxHeight: 72, maxWidth: 130 }),
     logo('HSBC', 'Hsbc_logo_PNG2.png', { maxHeight: 72, maxWidth: 140 }),
     logo('UCC', 'UCCE Logo Colour.png', { maxHeight: 72, maxWidth: 100 }),
   ],
