@@ -47,7 +47,7 @@ export const summit: SummitRow[] = [
         old_price: 1195,
         item_price: 895,
         description:
-            'For non-profit organisations, government bodies, policymakers, producer organisations, and full-time academics.',
+            'For non-profit organisations, government agencies, policymakers, producers & cooperatives, and full-time academics.',
         earlyBird: 'Save £300 book before 19 Jun 2026',
         line_items: [
             {
@@ -65,7 +65,7 @@ export const summit: SummitRow[] = [
         old_price: 1495,
         item_price: 1095,
         description:
-            'For corporate organisations, including F&B and Agri-commodity brands, retailers, traders, agribusinesses and other related commercial organisations.',
+            'For commercial organisations operating across coffee, cocoa and agricultural commodity value chains, including financial institutions and investment organisations.',
         earlyBird: 'Save £400 book before 19 Jun 2026',
         line_items: [
             {
@@ -97,12 +97,12 @@ export const summit: SummitRow[] = [
         ],
     },
     {
-        title: 'Service Provider',
+        title: 'Technology & Service Provider',
         icon: Users,
         old_price: 1895,
         item_price: 1495,
         description:
-            'For for-profit consultancies, technology and service providers, financial institutions, and investors.',
+            'For organisations providing products, services or solutions to the sector, including technology companies, consultancies, advisory firms and professional service organisations.',
         earlyBird: 'Save £400 book before 19 Jun 2026',
         line_items: [
             {
@@ -320,7 +320,7 @@ function TicketPricing() {
                     <div className="w-full lg:w-1/2">
                         <h3 className="text-xl font-bold tracking-tight text-black sm:text-2xl">Please Note</h3>
                         <p className="mt-3 tracking-tight">
-                            Please ensure you register under the correct pass category.
+                            The organiser reserves the right to review and reclassify registrations where appropriate.
                         </p>
                         <p className="mt-3 tracking-tight">For any registration queries, please contact:</p>
                         <Link
