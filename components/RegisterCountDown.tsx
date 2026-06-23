@@ -8,7 +8,7 @@ const RegisterCountDown = () => {
     const [minutes, setMinutes] = useState("00");
     const [seconds, setSeconds] = useState("00");
 
-    const target = new Date("2026-06-18T23:59:00");
+    const target = new Date("2026-07-31T23:59:00");
 
     useEffect(() => {
         const interval = setInterval(() => {
