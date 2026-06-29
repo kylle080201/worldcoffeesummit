@@ -2,7 +2,11 @@
 
 import React, { useLayoutEffect, useRef, useState } from 'react';
 import Image from 'next/image';
-import { whoAttendsLogoRows, type WhoAttendsLogo } from './whoAttendsLogos';
+import {
+  partners2025Logos,
+  whoAttendsLogoRows,
+  type WhoAttendsLogo,
+} from './whoAttendsLogos';
 import WcisInAction from './WcisInAction';
 
 const AUDIENCE_DATA = [
@@ -378,11 +382,11 @@ function WhoIsInTheRoom() {
   );
 }
 
-export function Partners2025Marquee({ logos }: { logos: WhoAttendsLogo[] }) {
+export function Partners2025Marquee() {
   return (
     <div className="mt-10 w-full">
       <SingleLogoMarqueeRow
-        logos={logos}
+        logos={partners2025Logos}
         renderLogo={(logo, copyIndex, index) => (
           <Partners2025LogoItem
             key={`${copyIndex}-${logo.name}-${index}`}

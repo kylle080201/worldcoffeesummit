@@ -111,3 +111,56 @@ export const partnersPageWhoAttendsRows: WhoAttendsLogo[][] = [
 ];
 
 export const whoAttendsLogos: WhoAttendsLogo[] = whoAttendsLogoRows.flat();
+
+const PARTNERS_2025_BASE = '/images/2025-partners';
+
+function partner2025Logo(
+  name: string,
+  file: string,
+  size?: Pick<
+    WhoAttendsLogo,
+    'maxHeight' | 'maxWidth' | 'scale' | 'marginX' | 'marginY' | 'slotWidth'
+  >,
+): WhoAttendsLogo {
+  return { name, logo: `${PARTNERS_2025_BASE}/${file}`, ...size };
+}
+
+/** 2025 partners marquee — order follows the numeric prefix on each filename. */
+export const partners2025Logos: WhoAttendsLogo[] = [
+  partner2025Logo('Okala', '1okala_VBL_LogoV03_GreenForest.png', {
+    maxHeight: 90,
+    maxWidth: 180,
+  }),
+  partner2025Logo('Picterra', '2Picterra_Primary_Logo_Dark (1) (1).png', {
+    maxHeight: 90,
+    maxWidth: 200,
+  }),
+  partner2025Logo('Chloris Geospatial', '3 Chloris Geospatial_Logo_Square_RGB_Midnight_v1.png', {
+    maxHeight: 80,
+    maxWidth: 110,
+    slotWidth: 108,
+    marginX: -4,
+  }),
+  partner2025Logo('Planet', '4Planet_Labs_logo.svg.png', {
+    maxHeight: 90,
+    maxWidth: 160,
+  }),
+  partner2025Logo('Satelligence', '5Satelligence_Logo_RGB_FC (5).png', {
+    maxHeight: 90,
+    maxWidth: 200,
+  }),
+  partner2025Logo('Tanzania', '6Tanzania.png', {
+    maxHeight: 80,
+    maxWidth: 80,
+    slotWidth: 96,
+    marginX: 4,
+  }),
+  partner2025Logo('FoodChain ID', '7Foodchain Id.png', {
+    maxHeight: 90,
+    maxWidth: 220,
+  }),
+  partner2025Logo('Ubees', '8Ubees-logo-2022-scaled.png', {
+    maxHeight: 90,
+    maxWidth: 180,
+  }),
+];

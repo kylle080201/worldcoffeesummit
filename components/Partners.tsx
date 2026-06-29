@@ -4,7 +4,7 @@ import Image, { type StaticImageData } from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { Partners2025Marquee, WhoAttendsGrid } from './WholsInTheRoom'
-import { partnersPageWhoAttendsRows, type WhoAttendsLogo } from './whoAttendsLogos'
+import { partnersPageWhoAttendsRows } from './whoAttendsLogos'
 import partnerHeaderImage from '../images/partners-image/PARTNER-HEADER-IMAGE.jpg'
 import partnerImage1 from '../images/partners-image/PARTNER-IMAGE-1.jpg'
 import partnerImage2 from '../images/partners-image/PARTNER-IMAGE-2.jpg'
@@ -15,60 +15,6 @@ import globeIcon from '../images/partners-image/icons/globe.png'
 import peopleIcon from '../images/partners-image/icons/people.png'
 
 const sectionIconClassName = 'h-20 w-20 flex-shrink-0 object-contain sm:h-24 sm:w-24 md:h-28 md:w-28'
-const partners2025: WhoAttendsLogo[] = [
-  {
-    name: 'Okala',
-    logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Okala.png',
-    maxHeight: 90,
-    maxWidth: 180,
-  },
-  {
-    name: 'Picterra',
-    logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Picterra_Primary_Logo_Dark-1-scaled.png',
-    maxHeight: 90,
-    maxWidth: 200,
-  },
-  {
-    name: 'Chloris Geospatial',
-    logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Chloris-Geospatial.png',
-    maxHeight: 80,
-    maxWidth: 110,
-    slotWidth: 108,
-    marginX: -4,
-  },
-  {
-    name: 'Planet',
-    logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Planet.png',
-    maxHeight: 90,
-    maxWidth: 160,
-  },
-  {
-    name: 'Satelligence',
-    logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/Satelligence-blue.svg',
-    maxHeight: 90,
-    maxWidth: 200,
-  },
-  {
-    name: 'Origin Country Exhibitor',
-    logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/10/imageedit_74_8864533329.png',
-    maxHeight: 80,
-    maxWidth: 80,
-    slotWidth: 96,
-    marginX: 4,
-  },
-  {
-    name: 'FoodChain ID',
-    logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/FoodChain-ID.webp',
-    maxHeight: 90,
-    maxWidth: 220,
-  },
-  {
-    name: 'Ubees',
-    logo: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Ubees-logo-2022_1.avif',
-    maxHeight: 90,
-    maxWidth: 180,
-  },
-]
 
 const whyPartnerItems = [
   {
@@ -270,7 +216,7 @@ export default function Partners() {
           <h2 className="text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             2025 PARTNERS INCLUDE
           </h2>
-          <Partners2025Marquee logos={partners2025} />
+          <Partners2025Marquee />
         </div>
       </section>
 
