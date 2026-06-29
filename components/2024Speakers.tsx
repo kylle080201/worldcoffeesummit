@@ -30,9 +30,9 @@ function Speakers2024() {
 
 
     {
-      name: 'The Rt Hon John Gummer, Lord Deben',
+      name: 'The Rt. Hon John Gummer, The Lord Deben',
       role: 'Former Secretary of State for the Environment & Minister of Agriculture, Fisheries, and Food',
-      company: 'House of Lords',
+      company: '',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Lord-Deben-Photo-2019-adj-003-scaled-copy.jpg',
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2024/05/House_of_Lords_logo_2020.svg.png",
       iconWidth: 100,
@@ -934,35 +934,35 @@ His areas of specialisation are global food security governance, agriculture and
                     }
                   }}
                 >
-                  <div className="flex flex-col w-72 bg-white rounded-lg overflow-hidden shadow-md h-[520px] relative">
-                    <div className="h-[300px] relative">
+                  <div className="flex flex-col w-72 bg-white rounded-lg shadow-md min-h-[550px] relative">
+                    <div className="h-[280px] relative overflow-hidden rounded-t-lg shrink-0">
                       <img
                         src={speaker.imageUrl}
                         alt={speaker.name}
                         className="w-full h-full object-cover object-top"
                         loading="lazy"
                       />
-                      <div className="absolute w-24 h-24 right-4 top-4/4 transform -translate-y-1/2 bg-white p-2 rounded-md shadow-md">
+                    </div>
+                    {speaker.companyIcon ? (
+                      <div className="absolute z-10 w-24 h-24 right-4 top-[280px] -translate-y-1/2 bg-white p-2 rounded-md shadow-md">
                         <div className="flex items-center h-full">
-                          {speaker.companyIcon ? (
-                            <img
-                              src={speaker.companyIcon}
-                              alt={`${speaker.company} logo`}
-                              width={speaker.iconWidth}
-                              height={speaker.iconHeight}
-                              className="my-auto mx-auto max-h-full max-w-full object-contain"
-                              loading="lazy"
-                            />
-                          ) : null}
+                          <img
+                            src={speaker.companyIcon}
+                            alt={`${speaker.company} logo`}
+                            width={speaker.iconWidth}
+                            height={speaker.iconHeight}
+                            className="my-auto mx-auto max-h-full max-w-full object-contain"
+                            loading="lazy"
+                          />
                         </div>
                       </div>
-                    </div>
-                    <div className="flex flex-col justify-start flex-grow bg-[#4D7C0F] px-4 pt-12 pb-4 text-white p-6">
-                      <h3 className="text-lg font-bold tracking-tight text-white md:text-2xl">{speaker.name}</h3>
-                      <p className="text-md tracking-tight text-white md:text-xl italic">{speaker.role}</p>
-                      <p className="text-md tracking-tight font-bold text-white md:text-xl">{speaker.company}</p>
-                      {speaker.role2 && <p className="text-md tracking-tight text-white md:text-xl">{speaker.role2}</p>}
-                      {speaker.company2 && <p className="text-md tracking-tight font-bold text-white md:text-xl">{speaker.company2}</p>}
+                    ) : null}
+                    <div className="flex flex-col justify-start flex-1 bg-[#4D7C0F] px-4 pt-12 pb-6 text-white rounded-b-lg">
+                      <h3 className="text-lg font-bold tracking-tight text-white md:text-2xl break-words">{speaker.name}</h3>
+                      <p className="text-md tracking-tight text-white md:text-xl italic break-words">{speaker.role}</p>
+                      <p className="text-md tracking-tight font-bold text-white md:text-xl break-words">{speaker.company}</p>
+                      {speaker.role2 && <p className="text-md tracking-tight text-white md:text-xl break-words">{speaker.role2}</p>}
+                      {speaker.company2 && <p className="text-md tracking-tight font-bold text-white md:text-xl break-words">{speaker.company2}</p>}
                     </div>
                   </div>
                 </div>

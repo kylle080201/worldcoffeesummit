@@ -6,7 +6,7 @@ function page() {
   return (
     <div>
       <div className="pt-16 bg-white">
-        <Speakers2026 />
+        <Speakers2026 compactTop />
       </div>
       <div id="speakers-2025" className="bg-gray-100 scroll-mt-24">
         <Speakers2025 />

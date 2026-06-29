@@ -364,12 +364,15 @@ export const speakerCompanyLogos = Array.from(
   ).values()
 );
 
-export default function Speakers2026() {
+export default function Speakers2026({ compactTop = false }: { compactTop?: boolean }) {
   const [selectedSpeaker, setSelectedSpeaker] = useState<Speaker | null>(null);
 
   return (
     <>
-      <div className="px-12 py-20 sm:px-20" id="speakers-2026">
+      <div
+        className={`px-12 sm:px-20 ${compactTop ? 'pb-20 pt-4' : 'py-20'}`}
+        id="speakers-2026"
+      >
         <div className="mx-auto sm:content-center">
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">MEET THE 2026 SPEAKERS</p>
@@ -494,7 +497,7 @@ export default function Speakers2026() {
         </Transition.Root>
       )}
 
-      <div className="-mt-12 mb-12 w-full flex justify-center sm:mb-16 pb-12">
+      <div className="-mt-12 mb-2 w-full flex justify-center pb-4">
           <Link
               href="/speakers#speakers-2025"
               className="rounded-lg bg-lime-700 px-6 py-3 text-lg font-bold text-white transition-colors duration-300 hover:bg-lime-800"

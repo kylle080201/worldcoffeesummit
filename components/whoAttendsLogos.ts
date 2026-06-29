@@ -128,8 +128,8 @@ function partner2025Logo(
 /** 2025 partners marquee — order follows the numeric prefix on each filename. */
 export const partners2025Logos: WhoAttendsLogo[] = [
   partner2025Logo('Okala', '1okala_VBL_LogoV03_GreenForest.png', {
-    maxHeight: 90,
-    maxWidth: 180,
+    maxHeight: 76,
+    maxWidth: 155,
   }),
   partner2025Logo('Picterra', '2Picterra_Primary_Logo_Dark (1) (1).png', {
     maxHeight: 90,
