@@ -30,7 +30,7 @@ export default function HomePage() {
                 <Speakers2026 />
             </HomeSection>
             <HomeSection className="bg-gray-100">
-                <KeyThemes />
+                <KeyThemes compactTop />
             </HomeSection>
             <HomeSection className="bg-white"><WhoIsInTheRoom /></HomeSection>
             <HomeSection className="bg-gray-100"><WhoAttends /></HomeSection>
