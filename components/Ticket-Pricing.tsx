@@ -48,7 +48,7 @@ export const summit: SummitRow[] = [
         item_price: 895,
         description:
             'For non-profit organisations, government agencies, policymakers, producers & cooperatives, and full-time academics.',
-        earlyBird: 'Save £300 book before 19 Jun 2026',
+        earlyBird: 'Save £300 book before 1 August 2026',
         line_items: [
             {
                 price: 'price_1TU6ZNKMWpUKzQVzFeZzO8Zd', // production
@@ -66,7 +66,7 @@ export const summit: SummitRow[] = [
         item_price: 1095,
         description:
             'For commercial organisations operating across coffee, cocoa and agricultural commodity value chains, including financial institutions and investment organisations.',
-        earlyBird: 'Save £400 book before 19 Jun 2026',
+        earlyBird: 'Save £400 book before 1 August 2026',
         line_items: [
             {
                 price: 'price_1Rr81dKMWpUKzQVzBqtbsbxH', // production
@@ -103,7 +103,7 @@ export const summit: SummitRow[] = [
         item_price: 1495,
         description:
             'For organisations providing products, services or solutions to the sector, including technology companies, consultancies, advisory firms and professional service organisations.',
-        earlyBird: 'Save £400 book before 19 Jun 2026',
+        earlyBird: 'Save £400 book before 1 August 2026',
         line_items: [
             {
                 price: 'price_1RVYT2KMWpUKzQVzleFRk7vr', // production
@@ -123,7 +123,7 @@ export const summit: SummitRow[] = [
         description:
             'Early evening of Day 1 \u00B7 A two-hour, invite-only reception bringing together global leaders and senior stakeholders in a unique and historic setting.',
         subDescription: 'Available to registered delegates only. Limited capacity.',
-        earlyBird: 'Save £30 book before 19 Jun 2026',
+        earlyBird: 'Save £30 book before 1 August 2026',
         cta: 'Add Now',
         rowClassName: 'bg-orange-50',
         line_items: [
@@ -157,7 +157,7 @@ function TicketPricing() {
                         </div>
                         <div className="flex flex-col items-center w-full gap-3 lg:w-1/2">
                             <p className="w-full max-w-xl px-1 text-xl font-bold leading-tight text-center text-lime-700 whitespace-nowrap sm:text-2xl md:text-3xl xl:text-4xl">
-                                Prices increase after 18 June 2026
+                                Prices increase after 31 July 2026
                             </p>
                             <p className="w-full max-w-xl text-sm font-normal text-center text-black sm:text-base">
                                 Current rates end in:
