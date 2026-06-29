@@ -20,6 +20,8 @@ import rickVanDerKampImage from '../images/2026-speakers/IFAD-Rick van der Kamp/
 import ifadLogo from '../images/2026-speakers/IFAD-Rick van der Kamp/E_g_web.png'
 import sonyaImage from '../images/2026-speakers/CDP-Sonya Bhonsle/Sonya Bhonsle.jpg'
 import cdpLogo from '../images/2026-speakers/CDP-Sonya Bhonsle/cdp.png'
+import julietteImage from '../images/2026-speakers/BCG-Juliette-Cody/Juliette Cody.jpg'
+import bcgLogo from '../images/2026-speakers/BCG-Juliette-Cody/header-logo--bc.png'
 import Link from 'next/link'
 const anupImage = '/images/2026-speakers/anup-jagwani.jpg'
 const worldBankLogo = '/images/2026-speakers/world-bank-group-logo.png'
@@ -145,6 +147,16 @@ const speakers: Speaker[] = [
     iconHeight: 60,
     iconWidth: 60,
     description: 'Transforming agriculture to (re-)build livelihoods and nature requires knowledge, resources and motivation from farmers. Piet is driving the Regenerative Agriculture agenda across ofi through co-creation and co-investment from farmers to customers. He joined Olam in 2017 to co-create, adapt and apply technologies, approaches and services that improve the productivity, profitability, and carbon footprint of ofi\'s coffee estates as well as its (smallholder) farmer network. He holds a PhD from Wageningen with a strong focus on agronomy, farming systems, livelihoods and rural innovation. Prior to his work at ofi, he worked for 20 years as a CGIAR scientist on agricultural systems, based out of Africa.'
+  },
+  {
+    name: 'Juliette Cody',
+    designation: 'Director, Global Sustainability Programs',
+    organization: 'Barry Callebaut Group',
+    image: julietteImage,
+    logo: bcgLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: ''
   },
   {
     name: 'Mario Abreu',
