@@ -19,6 +19,9 @@ interface T_Speaker {
   bio: string;
 }
 
+const S2025 = '/images/2025-speakers';
+const FT_LOGO = '/images/2026-speakers/financial-times-logo.jpg';
+
 
 
 function Speakers2024() {
@@ -65,8 +68,8 @@ Amb Karemu holds a Master of Philosophy degree from the University of Cambridge,
       name: 'H.E. Mbelwa Brighton Kairuki',
       role: 'High Commissioner of the United Republic of Tanzania to the United Kingdom',
       company: 'Tanzania High Commission',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/10/Screenshot-2025-10-01-at-15.51.31.jpg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/10/imageedit_74_8864533329.png",
+      imageUrl: `${S2025}/Tanzania High Commission/Screenshot 2025-10-01 at 15.51.31.jpg`,
+      companyIcon: `${S2025}/Tanzania High Commission/Logo.png`,
       iconWidth: 100,
       iconHeight: 100,
       bio: ` `
@@ -76,8 +79,8 @@ Amb Karemu holds a Master of Philosophy degree from the University of Cambridge,
       name: 'Wagner Albuquerque de Almeida',
       role: 'Global Director- Manufacturing, Agribusiness and Forestry',
       company: 'International Finance Corporation (IFC)',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Wagner-Albuquerque-de-Almeida.jpg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/IFC-Logo.svg",
+      imageUrl: `${S2025}/IFC Wagner/Wagner Albuquerque de Almeida.jpg`,
+      companyIcon: `${S2025}/IFC Wagner/IFC-Logo.svg`,
       iconWidth: 100,
       iconHeight: 100,
       bio: `Wagner Albuquerque de Almeida is the Global Director for Manufacturing‚
@@ -97,7 +100,7 @@ institutions such as ABN AMRO, Deutsche Bank, and Banco Itau, in addition to his
       name: 'Harper McConnell',
       role: 'Global Vice President Sustainability',
       company: 'Mars',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Harper-McConnell.jpg',
+      imageUrl: `${S2025}/Mars/Harper McConnell.jpg`,
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/Mars-Logo.png",
       iconWidth: 80,
       iconHeight: 80,
@@ -108,8 +111,8 @@ institutions such as ABN AMRO, Deutsche Bank, and Banco Itau, in addition to his
       name: 'Ruchira Joshi',
       role: 'Director, Global Coffee & Cocoa Sustainability',
       company: 'Starbucks',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/10/Ruchira-Joshi-2.jpeg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/Starbucks.png",
+      imageUrl: `${S2025}/Starbucks/Ruchira Joshi.jpeg`,
+      companyIcon: `${S2025}/Starbucks/Starbucks.png`,
       iconWidth: 80,
       iconHeight: 80,
       bio: ` Ruchira Joshi is the director of sustainability, global coffee and cocoa at Starbucks. She was
@@ -211,8 +214,8 @@ Nicolas holds an MBA from ESSEC Business School in Paris. `
       name: 'Thomas Delbar',
       role: 'Director of Sustainability – Coffee & Ingredients',
       company: 'Touton Group',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Thomas-Delbar.jpg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/Touton-logo-transparent-background.png",
+      imageUrl: `${S2025}/Touton Group/Thomas Delbar.jpg`,
+      companyIcon: `${S2025}/Touton Group/Touton logo-transparent background.png`,
       iconWidth: 120,
       iconHeight: 120,
       bio: `Thomas Delbar is a senior sustainability executive with nearly two decades of experience leading business-integrated sustainability strategies across the global coffee and ingredients sector. As Director of Sustainability – Coffee & Ingredients at Touton SA, he drives the company’s efforts to embed ESG performance, digital traceability, and responsible sourcing into core business operations.
@@ -231,8 +234,8 @@ Thomas is a results-oriented leader who bridges sustainability with operational 
       name: 'Piet van Asten',
       role: 'SVP - Head Sustainable Production Systems',
       company: 'Olam Food Ingredients (ofi)',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/image-21.jpg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/image-22.png",
+      imageUrl: `${S2025}/ofi/Piet Van Asten.jpg`,
+      companyIcon: `${S2025}/ofi/ofi.png`,
       iconWidth: 120,
       iconHeight: 120,
       bio: ` Transforming agriculture to (re-)build livelihoods and nature requires knowledge, 
@@ -246,7 +249,7 @@ Thomas is a results-oriented leader who bridges sustainability with operational 
       role: 'Director - International Sustainability',
       company: 'ALDI SOUTH Group',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Rachel-Vujovic-suqare.jpg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/ALDI-SUD.png",
+      companyIcon: `${S2025}/ALDI SOUTH Group/ALDI-SUD.png`,
       iconWidth: 60,
       iconHeight: 60,
       bio:`Rachel is leading a set of global sustainability initiatives at the ALDI SOUTH Group, with a focus on driving compliance with the EU Deforestation Regulation (EUDR). She oversees cross-functional teams working across high-impact supply chains—including cocoa, coffee, produce, and seafood—where she navigates the complex intersection of regulatory compliance, traceability, and supplier engagement. She brings a strategic, systems-level approach to building credible and scalable solutions that address both environmental and social risks.
@@ -259,8 +262,8 @@ She holds a master’s degree in international political economy from the State 
       name: 'Malcolm Hett',
       role: 'Director of Sustainability',
       company: 'UCC Europe',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/image-30.jpg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/image-28.png",
+      imageUrl: `${S2025}/UCC/Malcolm Hett.jpg`,
+      companyIcon: `${S2025}/UCC/UCCE Logo Colour.png`,
       iconWidth: 120,
       iconHeight: 120,
       bio:`Malcolm has worked within some of the world’s top 10 largest coffee companies since his first caffeinated role as a Brand Manager in 2007.
@@ -273,8 +276,8 @@ With UCC as the Total Coffee Solution behind several well-loved retail and hospi
       name: 'Cleiton Vargas',
       role: 'SVP Innovation Americas',
       company: 'Yara International',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Cleiton-Vargas.jpg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/Knowledge_grows_for_A4.png",
+      imageUrl: `${S2025}/Yara International/Cleiton Vargas.jpg`,
+      companyIcon: `${S2025}/Yara International/Knowledge_grows_for_A4.png`,
       iconWidth: 120,
       iconHeight: 120,
       bio: `Cleiton Vargas (born in 1969) has been with Yara for over 30 years and recently took on the 
@@ -288,8 +291,8 @@ With UCC as the Total Coffee Solution behind several well-loved retail and hospi
       name: 'Dr. Flávia De Souza Mendes',
       role: 'Senior Program Manager, Forest & Land Use',
       company: 'Planet',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/Dr.-Flavia-de-Souza-Mendes-1.jpeg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/512px-Planet_Labs_logo.svg.png",
+      imageUrl: `${S2025}/Planet/flavia-de-souza-mendes.jpeg`,
+      companyIcon: `${S2025}/Planet/512px-Planet_Labs_logo.svg.png`,
       iconWidth: 120,
       iconHeight: 120,
       bio: `Dr. Flávia de Souza Mendes is a forest remote sensing scientist with over 17 years of experience working at the intersection of forests, land use, and environmental policy. She began her career at leading Brazilian institutions such as INPE, where she contributed to national forest monitoring systems and supply chain traceability programs. Her PhD research focused on forest carbon estimation, a field in which she remains deeply engaged through her work on carbon markets and international forest reporting frameworks such as the EU Deforestation Regulation (EUDR).
@@ -349,8 +352,8 @@ Rowan read Geography at Durham and Bristol Universities and lives and works in L
       name: 'Tzutzuy Ramirez',
       role: 'Head of Climate and Nature',
       company: 'Syngenta Group',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/Tzutzuy-Ramirez.jpeg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/08/Syngenta-Logo-RGB-no-R-mark.png",
+      imageUrl: `${S2025}/Syngenta Group/Tzutzuy Ramirez.jpeg`,
+      companyIcon: `${S2025}/Syngenta Group/Syngenta Logo RGB no R mark.png`,
       iconWidth: 120,
       iconHeight: 120,
       bio: `As Head of Climate & Nature, Syngenta Group, Tzutzuy Ramirez oversees the establishment of Syngenta Group's decarbonization agenda and strategic plan for nature-related activities across business units. Additionally, Tzutzuy is Syngenta’s liaison delegate to the World Business Council for Sustainable Development (WBCSD), where she also serves as the company's climate and nature spokesperson. She is also the key account manager for Syngenta Group's largest NGO collaboration with The Nature Conservancy.
@@ -374,8 +377,8 @@ With a PhD in Biology and 13+ years in the industry, she brings extensive experi
       name: 'Mariana Osorio Londoño',
       role: 'Sustainable Trade Coordinator',
       company: 'National Federation of Coffee Growers of Colombia (FNC)',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Mariana-Osorio-Londono-.jpeg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/Logos-FNC_Cereza.png",
+      imageUrl: `${S2025}/FNC/mariana-osorio-londono.jpeg`,
+      companyIcon: `${S2025}/FNC/Logos FNC_Cereza.png`,
       iconWidth: 120,
       iconHeight: 120,
       bio: `Mariana is a Finance and International Relations professional with a specialization in International Cooperation
@@ -405,8 +408,8 @@ combine innovation, social impact, and corporate sustainability.`
       name: 'Raymond Bob Katta',
       role: 'Executive Chairman',
       company: 'Produce Monitoring Board (PMB), Sierra Leone',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/Raymond-Katta.jpeg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/08/PMB-Logo.png",
+      imageUrl: `${S2025}/PMB/Raymond Katta.jpeg`,
+      companyIcon: `${S2025}/PMB/PMB Logo.png`,
       iconWidth: 80,
       iconHeight: 80,
       bio: `Raymond was appointed Executive Chairman of the Produce Monitoring Board by H.E.
@@ -435,8 +438,8 @@ market access and reduce deforestation risk.
       name: 'Suresh Yadav',
       role: 'Director, Climate Change and Oceans Directorate (CCO)',
       company: 'The Commonwealth Secretariat ',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Suresh-Yadav.png',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/logo.svg",
+      imageUrl: `${S2025}/The Commonwealth Secretariat/Suresh Yadav.png`,
+      companyIcon: `${S2025}/The Commonwealth Secretariat/logo.svg`,
       iconWidth: 100,
       iconHeight: 100,
       bio: ` Suresh Yadav is Director for Climate Change, Ocean and Energy Directorate in
@@ -460,8 +463,8 @@ Duke University and German Development Institute,`
       name: 'Myriam Sainz',
       role: 'Senior Director Strategic Initiatives',
       company: 'TechnoServe',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Myriam-Sainz.jpg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/ENG_TNSLogoCMYK_Horz_TaglineTM_Color-scaled.png",
+      imageUrl: `${S2025}/TechnoServe/Myriam Sainz.jpg`,
+      companyIcon: `${S2025}/TechnoServe/ENG_TNSLogoCMYK_Horz_TaglineTM_Color.png`,
       iconWidth: 80,
       iconHeight: 80,
       bio: `Myriam leads TechnoServe's work with food and agriculture companies to build inclusive and regenerative supply chains that improve farmer incomes, reduce carbon emissions, and preserve nature. She has spent over 15 years proving that investing in farmers and local supply chains is not only good for the planet but also a powerful lever for business growth.
@@ -476,7 +479,7 @@ Before joining TechnoServe, Myriam was a management consultant with McKinsey & C
       name: 'Nick Appleyard',
       role: 'Head of Applications and Solutions',
       company: 'European Space Agency (ESA)',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/10/Nick-APPLEYARD.jpg',
+      imageUrl: `${S2025}/ESA/Nick APPLEYARD.jpg`,
       companyIcon: "https://worldcoffeealliance.com/wp-content/uploads/2025/06/ESA_logo_2020_Deep-e1749855679567.png",
       iconWidth: 80,
       iconHeight: 80,
@@ -488,8 +491,8 @@ Before joining TechnoServe, Myriam was a management consultant with McKinsey & C
       name: 'Peter Foster',
       role: 'World Trade Editor',
       company: 'Financial Times (FT)',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/10/Peter-Foster-scaled.jpg',
-      companyIcon: "",
+      imageUrl: `${S2025}/FT/Peter Foster.JPG`,
+      companyIcon: FT_LOGO,
       iconWidth: 80,
       iconHeight: 80,
       bio: `Peter Foster is the world trade editor of the Financial Times (FT). `
@@ -509,8 +512,8 @@ Before joining TechnoServe, Myriam was a management consultant with McKinsey & C
       name: 'Jenny Davis-Peccoud',
       role: 'Partner, Founder, Global Sustainability & Responsibility Practice',
       company: 'Bain & Co.',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Jenny-Davis-Peccoud.jpg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/bainstackedlogo_dig_red_1280x389px-1.png",
+      imageUrl: `${S2025}/Bain & Co/Jenny Davis-Peccoud.jpg`,
+      companyIcon: `${S2025}/Bain & Co/bainstackedlogo_dig_red_1280x389px (1).png`,
       iconWidth: 120,
       iconHeight: 120,
       bio: ` `
@@ -520,8 +523,8 @@ Before joining TechnoServe, Myriam was a management consultant with McKinsey & C
       name: 'Jack Bugas',
       role: 'Partner and Associate Director',
       company: 'Boston Consulting Group (BCG) ',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Jack-Bugas.jpeg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/BCG_MONOGRAM.png",
+      imageUrl: `${S2025}/BCG/Jack Bugas.jpeg`,
+      companyIcon: `${S2025}/BCG/BCG_MONOGRAM.png`,
       iconWidth: 120,
       iconHeight: 120,
       bio:``
@@ -554,8 +557,8 @@ Before joining TechnoServe, Myriam was a management consultant with McKinsey & C
       name: 'Frank de Morsier',
       role: 'Co-Founder and COO',
       company: 'Picterra',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Frank-de-Morsier.png',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/Picterra_Primary_Logo_Dark-1-scaled.png",
+      imageUrl: `${S2025}/Picterra/Frank de Morsier.png`,
+      companyIcon: `${S2025}/Picterra/Picterra.png`,
       iconWidth: 80,
       iconHeight: 80,
       bio: ` `
@@ -567,8 +570,8 @@ Before joining TechnoServe, Myriam was a management consultant with McKinsey & C
       name: 'Felipe Carazo',
       role: 'Head of Sustainable Commodities,Tropical Forest Alliance',
       company: 'World Economic Forum',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Felipe-Carazo.jpeg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/World-Economic-Forum.png",
+      imageUrl: `${S2025}/World Economic Forum/Felipe Carazo.jpeg`,
+      companyIcon: `${S2025}/World Economic Forum/World Economic Forum.png`,
       iconWidth: 120,
       iconHeight: 120,
       bio: `Felipe is passionate about fostering science-based, long-term solutions to the developmental and environmental challenges currently facing our planet, capturing both global and on-the-ground perspectives. He brings along more than twenty years of experience developing and overseeing programs and initiatives addressing policy, governance, financial instruments, impact metrics, capacity building, private-public partnerships, south-south cooperation, resource management, rural development, conservation, human wellbeing, integrated landscape management and climate change.
@@ -612,8 +615,8 @@ Owen is also a member of the SBTi Technical Council and the Greenhouse Gas Proto
       name: 'Marco Albani ',
       role: 'Co-Founder, co-CEO and President',
       company: 'Chloris Geospatial',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/image-26-scaled.jpg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/image-25.png",
+      imageUrl: `${S2025}/Chloris Geospatial/Marco Albani.jpg`,
+      companyIcon: `${S2025}/Chloris Geospatial/CG_Logo_Square_RGB_Midnight_v1.png`,
       iconWidth: 120,
       iconHeight: 120,
       bio: `Marco is an experienced sustainability executive, bringing a unique combination of business and science experience, and deep senior-level network in the land use arena.
@@ -627,8 +630,8 @@ He has been an ecosystem scientist at Harvard modeling continental-scale forest 
       name: 'Mauricio Castro Schmitz',
       role: 'Regenerative Agriculture Director ',
       company: 'The Nature Conservancy',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/08/Mauricio-Castro-Schmitz-scaled.jpg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/08/tnc-logo-primary-registered-dark-text.svg",
+      imageUrl: `${S2025}/The Nature Conservancy/Mauricio Castro Schmitz.jpg`,
+      companyIcon: `${S2025}/The Nature Conservancy/tnc-logo-primary-registered-dark-text.svg`,
       iconWidth: 120,
       iconHeight: 120,
       bio: `Mauricio Castro is a seasoned leader with over 20 years of
@@ -654,8 +657,8 @@ conservation and sustainability efforts. `
       name: 'Rick van der Kamp',
       role: 'Global Lead for Markets, Value Chains and Rural Finance',
       company: 'International Fund for Agriculture Development (IFAD)',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/07/Rick-van-der-Kamp.jpg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/E_g_web.png",
+      imageUrl: `${S2025}/IFAD/Rick van der Kamp.jpg`,
+      companyIcon: `${S2025}/IFAD/E_g_web.png`,
       iconWidth: 100,
       iconHeight: 100,
       bio: `  Rick van der Kamp is the International Fund for Agriculture Development (IFAD)’s global lead for markets, value chains and rural finance, based out of its headquarters in Rome. He has over 20 years of experience in agribusiness, markets and value chains, and rural finance projects, in particular in cocoa, coffee and agro-inputs. A Dutch national, he has Masters in Physics & Development Studies (Eindhoven University of Technology) and in Economics (University of London, UK). 
@@ -668,8 +671,8 @@ Rick started his career in management consulting with Accenture in London, focus
       name: 'Niels Wielaard',
       role: 'Founder and Director',
       company: 'Satelligence',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Niels-Wielaard.jpg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/08/Satelligence-blue.svg",
+      imageUrl: `${S2025}/Satelligence/Niels Wielaard.jpg`,
+      companyIcon: `${S2025}/Satelligence/Satelligence_Logo_RGB_FC (5).png`,
       iconWidth: 100,
       iconHeight: 100,
       bio: `  Niels is the founder and director of Satelligence, a social enterprise dedicated to tracking deforestation for companies and partners such as Cargill, Unilever, Fairtrade International and Tony’s Chocolonely. He is driven by a commitment to protecting people and the planet through the use of satellite-based analytics, particularly in promoting more sustainable agricultural commodities. 
@@ -698,7 +701,7 @@ With over 25 years of experience in tropical commodity production landscapes, Ni
       role: 'Journalist, Former Editor',
       company: 'Financial Times - The Banker',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/Joy-Macknight-12-of-19.jpg',
-      companyIcon: "",
+      companyIcon: FT_LOGO,
       iconWidth: 120,
       iconHeight: 120,
       bio: `Joy MacKnight is a freelance journalist and former editor of The Banker, part of the
@@ -782,8 +785,8 @@ of investment experience and holds a Master’s Degree in law from the Universit
       name: 'Marcial Vargas-Gonzalez',
       role: 'Science & Innovation, Global Lead',
       company: 'Quantis',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/10/Marcial-Vargas-Gonzalez.jpg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/10/imageedit_93_9321384431.png",
+      imageUrl: `${S2025}/Quantis/Marcial Vargas-Gonzalez.jpg`,
+      companyIcon: `${S2025}/Quantis/imageedit_93_9321384431.png`,
       iconWidth: 100,
       iconHeight: 100,
       bio: ` `
@@ -792,8 +795,8 @@ of investment experience and holds a Master’s Degree in law from the Universit
       name: 'Saurabh Pratap',
       role: 'Executive Director, Sustainable Finance',
       company: 'Standard Chartered Bank',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Saurabh-Pratap.jpg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/sc-lock-up-english-grey-rgb-scaled.png",
+      imageUrl: `${S2025}/Standard Chartered Bank/Saurabh Pratap.jpg`,
+      companyIcon: `${S2025}/Standard Chartered Bank/sc-lock-up-english-grey-rgb.png`,
       iconWidth: 100,
       iconHeight: 100,
       bio: ` `
@@ -824,8 +827,8 @@ of investment experience and holds a Master’s Degree in law from the Universit
       name: 'Ethan Budiansky',
       role: 'Sustainable Commodities Lead',
       company: 'Wildlife Conservation Society (WCS)',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Ethan-Budiansky.jpeg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/imageedit_1_4178324201-1.png",
+      imageUrl: `${S2025}/WCS/Ethan Budiansky.jpeg`,
+      companyIcon: `${S2025}/WCS/imageedit_1_4178324201.png`,
       iconWidth: 100,
       iconHeight: 100,
       bio: `Ethan Budiansky is the Sustainable Commodities Lead at the Wildlife Conservation Society, working at the intersection of biodiversity, commodity production, healthy landscapes, and livelihoods. He has over 20 years of experience in conservation, corporate engagement, and natural resource management. Previously, he spent 13 years at the World Cocoa Foundation as Sr. Director of Environment, leading the Climate Smart Cocoa Program and Cocoa & Forest Initiative to advance sustainability and address deforestation and climate risks. He also directed agroforestry programs at Trees for the Future and served in the Peace Corps in Senegal. Ethan holds a B.A. in Zoology and dual M.A.s in Sustainable Development and Natural Resource Management.
@@ -847,7 +850,7 @@ of investment experience and holds a Master’s Degree in law from the Universit
       role: 'Director, Sustainable Finance Program',
       company: 'CDP',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/James-Chamberlayne.jpg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/07/cdp.png",
+      companyIcon: `${S2025}/CDP/cdp.png`,
       iconWidth: 100,
       iconHeight: 100,
       bio: `  James Chamberlayne is the director of CDP’s Sustainable Finance Program, 
@@ -862,8 +865,8 @@ of investment experience and holds a Master’s Degree in law from the Universit
       name: 'Andrea Olivar',
       role: 'Strategy & Quality Director-Latin America',
       company: 'Solidaridad Network',
-      imageUrl: 'https://softtechs360.com/coffee/wp-content/uploads/2025/09/Andrea-Olivar.jpg',
-      companyIcon: "https://softtechs360.com/coffee/wp-content/uploads/2025/09/Logo-full-colour-for-professional-print.jpg",
+      imageUrl: `${S2025}/Solidaridad/Andrea Olivar.jpg`,
+      companyIcon: `${S2025}/Solidaridad/Logo-full-colour-for-professional-print.jpg`,
       iconWidth: 100,
       iconHeight: 100,
       bio: `Andrea Olivar is an expert in sustainability and has been working in the coffee sector for over 15 years. 
@@ -941,14 +944,16 @@ His areas of specialisation are global food security governance, agriculture and
                       />
                       <div className="absolute w-24 h-24 right-4 top-4/4 transform -translate-y-1/2 bg-white p-2 rounded-md shadow-md">
                         <div className="flex items-center h-full">
-                          <img
-                            src={speaker.companyIcon}
-                            alt={`${speaker.company} logo`}
-                            width={speaker.iconWidth}
-                            height={speaker.iconHeight}
-                            className="my-auto mx-auto max-h-full max-w-full object-contain"
-                            loading="lazy"
-                          />
+                          {speaker.companyIcon ? (
+                            <img
+                              src={speaker.companyIcon}
+                              alt={`${speaker.company} logo`}
+                              width={speaker.iconWidth}
+                              height={speaker.iconHeight}
+                              className="my-auto mx-auto max-h-full max-w-full object-contain"
+                              loading="lazy"
+                            />
+                          ) : null}
                         </div>
                       </div>
                     </div>
@@ -998,11 +1003,13 @@ His areas of specialisation are global food security governance, agriculture and
                     <div className='flex-shrink-0 mx-auto'>
                       <Image className="rounded-md w-[20rem]" src={selectedSpeaker.imageUrl} alt={selectedSpeaker.name} width={160} height={160} />
                     </div>
-                    <div className='flex justify-center p-2'>
-                      <div className='bg-white p-2 rounded-md'>
-                        <Image src={selectedSpeaker.companyIcon} alt={`${selectedSpeaker.company} logo`} width={140} height={140} />
+                    {selectedSpeaker.companyIcon ? (
+                      <div className='flex justify-center p-2'>
+                        <div className='bg-white p-2 rounded-md'>
+                          <Image src={selectedSpeaker.companyIcon} alt={`${selectedSpeaker.company} logo`} width={140} height={140} />
+                        </div>
                       </div>
-                    </div>
+                    ) : null}
                     <div className="flex mx-auto text-center">
                       <div>
                         <p className="text-lg font-bold tracking-tight text-gray-900 md:text-2xl">{selectedSpeaker.name}</p>
