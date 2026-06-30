@@ -148,9 +148,6 @@ export default function Overview() {
                     <p className="text-center text-2xl font-bold tracking-tight text-yellow-900 sm:text-4xl">
                         2026 SUMMIT OVERVIEW
                     </p>
-                    <h2 className="mt-2 text-center text-2xl font-bold text-gray-900 sm:mt-3 sm:text-3xl">
-                        The Industry at a Turning Point
-                    </h2>
 
                     <div className="mt-6 flex flex-col gap-5 sm:gap-6">
                         <p className="text-xl leading-normal text-gray-900 sm:text-2xl">
