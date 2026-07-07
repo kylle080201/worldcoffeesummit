@@ -205,23 +205,24 @@ export default function AboutWcis() {
         </div>
 
         <div className="bg-lime-700">
-          <div className="mx-auto flex max-w-7xl flex-col md:flex-row md:items-center">
-            <div className="flex flex-1 items-center px-6 py-10 text-left sm:pl-10 sm:pr-12 sm:py-12 lg:pl-12 lg:pr-20 lg:py-14">
-              <p className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
+          <div className="mx-auto flex max-w-7xl justify-center px-6 py-10 sm:py-12 lg:px-8 lg:py-14">
+            <div className="flex w-full max-w-6xl flex-col items-center gap-6 md:flex-row md:items-stretch md:justify-center md:gap-8 lg:gap-10">
+              <p className="shrink-0 text-left font-bold leading-tight text-white sm:text-2xl">
                 Different Themes.
                 <br />
                 One Mission.
               </p>
-            </div>
-            <div
-              className="mx-auto h-1 w-24 shrink-0 bg-white md:mx-0 md:h-32 md:w-1 lg:h-40"
-              aria-hidden="true"
-            />
-            <div className="flex flex-1 items-center px-4 py-10 text-left sm:pl-4 sm:pr-10 sm:py-12 lg:pl-6 lg:pr-12 lg:py-14">
-              <p className="max-w-2xl text-xl leading-snug text-white sm:text-2xl lg:text-3xl">
-                To bring together the people, expertise, and partnerships shaping the future of
-                <br />
-                coffee and cocoa.
+              <div
+                className="h-px w-20 shrink-0 bg-white md:h-auto md:w-px"
+                aria-hidden="true"
+              />
+              <p className="leading-snug text-white sm:text-2xl">
+                <span className="block md:whitespace-nowrap">
+                  To bring together the people, expertise, and partnerships
+                </span>
+                <span className="block md:whitespace-nowrap">
+                  shaping the future of coffee and cocoa.
+                </span>
               </p>
             </div>
           </div>
