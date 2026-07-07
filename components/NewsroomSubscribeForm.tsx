@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowPathIcon } from "@heroicons/react/24/outline";
+import { ArrowPathIcon, CheckCircleIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import React, { useState } from "react";
 import toast from "react-hot-toast";
@@ -22,10 +22,12 @@ export default function NewsroomSubscribeForm() {
   const [company, setCompany] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState("");
+  const [isSuccess, setIsSuccess] = useState(false);
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setError("");
+    setIsSuccess(false);
     setIsSubmitting(true);
 
     try {
@@ -53,7 +55,7 @@ export default function NewsroomSubscribeForm() {
       setLastName("");
       setEmail("");
       setCompany("");
-      toast.success("Thank you. You've now been added to our network.");
+      setIsSuccess(true);
     } catch (submitError) {
       const message =
         submitError instanceof Error
@@ -172,7 +174,7 @@ export default function NewsroomSubscribeForm() {
               </p>
             </div>
 
-            <div className="flex flex-col items-center gap-3 pt-2">
+            <div className="flex flex-col items-center gap-4 pt-2 sm:flex-row sm:items-center sm:justify-center lg:justify-start">
               <button
                 type="submit"
                 disabled={isSubmitting}
@@ -186,6 +188,19 @@ export default function NewsroomSubscribeForm() {
                 )}
                 {isSubmitting ? "Submitting..." : "Submit"}
               </button>
+
+              {isSuccess && (
+                <div className="flex items-center gap-3 text-white" role="status">
+                  <CheckCircleIcon
+                    className="h-10 w-10 flex-shrink-0"
+                    aria-hidden="true"
+                  />
+                  <div className="text-sm sm:text-base">
+                    <p className="font-bold">Thank you.</p>
+                    <p>You&apos;ve now been added to our network.</p>
+                  </div>
+                </div>
+              )}
 
               {error && (
                 <p className="text-center text-sm font-medium text-white">
