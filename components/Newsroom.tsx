@@ -10,36 +10,35 @@ export default function Newsroom() {
     <div className="w-full bg-white" id="newsroom">
       <section className="w-full px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-7xl">
-          <div className="grid items-start gap-10 lg:grid-cols-2 lg:gap-16">
+          <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1.4fr)_auto] lg:gap-12">
             <div>
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
                 NEWSROOM
               </h1>
-              <p className="mt-6 max-w-xl text-lg leading-relaxed text-gray-900 sm:text-xl">
+              <p className="mt-6 text-base text-gray-900 sm:text-lg lg:whitespace-nowrap">
                 Updates, insights and announcements from across the World Coffee
                 Alliance(WCA) network.
               </p>
             </div>
 
-            <div className="w-full max-w-md rounded-2xl bg-lime-700 px-6 py-8 sm:px-8 sm:py-9 lg:ml-auto">
-              <h2 className="text-xl font-bold text-white sm:text-2xl">
+            <div className="w-full max-w-[17rem] rounded-2xl bg-lime-700 px-5 py-6 lg:ml-auto">
+              <h2 className="text-lg font-bold text-white">
                 Join Our Network
               </h2>
-              <p className="mt-3 text-sm leading-relaxed text-white/95 sm:text-base">
+              <p className="mt-2 text-xs leading-snug text-white/95 sm:text-sm">
                 Stay informed with the latest news, insights, opportunities, and
                 announcements.
               </p>
-              <div className="mt-6">
+              <div className="mt-4">
                 <Link
                   href="#join-our-network"
-                  className="inline-flex items-center justify-center rounded-lg bg-white px-6 py-2.5 text-sm font-bold text-lime-700 transition-colors hover:bg-gray-100 sm:text-base"
+                  className="inline-flex items-center justify-center rounded-lg bg-white px-5 py-2 text-sm font-bold text-lime-700 transition-colors hover:bg-gray-100"
                 >
                   Subscribe
                 </Link>
               </div>
             </div>
           </div>
-
           <div className="mt-16 space-y-16 sm:mt-20">
             {newsArticles.map((article) => (
               <article

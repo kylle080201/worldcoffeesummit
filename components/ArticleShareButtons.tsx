@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { SocialIcon } from "react-social-icons";
 
-const iconStyle = { height: 36, width: 36 };
+const iconStyle = { height: 40, width: 40 };
 
 type ArticleShareButtonsProps = {
   title: string;
@@ -21,7 +21,7 @@ export default function ArticleShareButtons({ title }: ArticleShareButtonsProps)
 
   return (
     <div className="flex flex-wrap items-center justify-end gap-3">
-      <p className="text-sm font-medium text-gray-900 sm:text-base">
+      <p className="text-base font-bold text-lime-700 sm:text-lg">
         Share this article
       </p>
       <div className="flex items-center gap-2">
@@ -68,10 +68,11 @@ export default function ArticleShareButtons({ title }: ArticleShareButtonsProps)
               ? `mailto:?subject=${encodedTitle}&body=${encodedUrl}`
               : "#"
           }
+          bgColor="#4d7c0f"
+          fgColor="#ffffff"
           style={iconStyle}
           aria-label="Share by email"
-        />
-      </div>
+        />      </div>
     </div>
   );
 }

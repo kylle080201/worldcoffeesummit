@@ -174,7 +174,7 @@ export default function NewsroomSubscribeForm() {
               </p>
             </div>
 
-            <div className="flex flex-col items-center gap-4 pt-2 sm:flex-row sm:items-center sm:justify-center lg:justify-start">
+            <div className="flex flex-col items-center justify-center gap-4 pt-2 sm:flex-row sm:items-center">
               <button
                 type="submit"
                 disabled={isSubmitting}

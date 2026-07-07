@@ -45,12 +45,12 @@ export default function NewsroomArticle({ article }: { article: NewsArticle }) {
             <ArticleShareButtons title={article.communiquéTitle} />
           </div>
 
-          <header className="mt-8 max-w-5xl">
+          <header className="mx-auto mt-8 max-w-6xl text-center">
             <h1 className="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl lg:text-5xl">
               {article.communiquéTitle}
             </h1>
 
-            <p className="mt-5 text-xl font-medium text-lime-700 sm:text-2xl lg:text-3xl">
+            <p className="mt-5 text-lg font-medium text-lime-700 sm:text-xl lg:text-2xl xl:whitespace-nowrap">
               {article.subtitle}
             </p>
 
@@ -58,7 +58,6 @@ export default function NewsroomArticle({ article }: { article: NewsArticle }) {
               {article.tagline}
             </p>
           </header>
-
           <div className="mt-10 max-w-5xl overflow-hidden">
             <NewsArticleImage
               article={article}
