@@ -54,7 +54,7 @@ export default function NewsroomArticle({ article }: { article: NewsArticle }) {
             <ArticleShareButtons {...shareProps} variant="inline" />
           </div>
 
-          <div className="mt-8 lg:grid lg:grid-cols-[80fr_20fr] lg:items-start lg:gap-6">
+          <div className="mt-8 lg:grid lg:grid-cols-[minmax(0,1fr)_auto] lg:items-start lg:gap-3">
             <div className="min-w-0">
               <header className="text-left">
                 <h1 className="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl lg:text-5xl">

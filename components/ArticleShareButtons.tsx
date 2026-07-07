@@ -3,7 +3,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { SocialIcon } from "react-social-icons";
 
-const iconStyle = { height: 40, width: 40 };
+const iconStyle = { height: 43, width: 43 };
 
 type ShareIconLayout = "horizontal" | "vertical";
 
@@ -82,12 +82,12 @@ export default function ArticleShareButtons({
 
   const iconContainerClassName =
     iconLayout === "vertical"
-      ? "flex flex-col items-center gap-2"
-      : "flex flex-nowrap items-center justify-center gap-2";
+      ? `flex flex-col gap-2 ${variant === "sidebar" ? "items-start" : "items-center"}`
+      : `flex flex-nowrap items-center gap-2 ${variant === "sidebar" ? "justify-start" : "justify-center"}`;
 
   if (variant === "sidebar") {
     return (
-      <div className="flex flex-col items-center gap-3 text-center">
+      <div className="flex flex-col items-start gap-3 text-left">
         <p className="text-base font-bold text-lime-700 sm:text-lg">
           Share this article
         </p>
