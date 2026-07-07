@@ -3,8 +3,7 @@ import React from "react";
 import type { NewsArticle } from "../data/newsArticles";
 
 type NewsArticleImageProps = {
-  article: Pick<NewsArticle, "image" | "imageAlt" | "articleHeroImage">;
-  variant?: "listing" | "hero";
+  article: Pick<NewsArticle, "image" | "imageAlt">;
   priority?: boolean;
   sizes?: string;
   className?: string;
@@ -12,21 +11,14 @@ type NewsArticleImageProps = {
 
 export default function NewsArticleImage({
   article,
-  variant = "listing",
   priority = false,
   sizes = "(max-width: 1024px) 100vw, 50vw",
   className = "",
 }: NewsArticleImageProps) {
-  const src: string | StaticImageData =
-    variant === "hero" && article.articleHeroImage
-      ? article.articleHeroImage
-      : article.image;
-
-  const aspectClassName =
-    variant === "hero" ? "aspect-video" : "aspect-[4/3]";
+  const src: string | StaticImageData = article.image;
 
   return (
-    <div className={`relative w-full overflow-hidden ${aspectClassName}`}>
+    <div className="relative aspect-video w-full overflow-hidden">
       <Image
         src={src}
         alt={article.imageAlt}

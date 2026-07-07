@@ -62,7 +62,6 @@ export default function NewsroomArticle({ article }: { article: NewsArticle }) {
           <div className="mt-10 overflow-hidden">
             <NewsArticleImage
               article={article}
-              variant="hero"
               priority
               sizes="(max-width: 1152px) 100vw, 1152px"
             />

@@ -1,5 +1,4 @@
 import type { StaticImageData } from 'next/image'
-import headerImage from '../images/about-wcis/ICONS/images/header.jpg'
 
 export type NewsArticleParagraph = {
   text: string
@@ -16,8 +15,7 @@ export type NewsArticle = {
   excerpt: string
   date: string
   dateTime: string
-  image: StaticImageData
-  articleHeroImage?: string | StaticImageData
+  image: string | StaticImageData
   imageAlt: string
   body: NewsArticleParagraph[]
 }
@@ -38,8 +36,7 @@ export const newsArticles: NewsArticle[] = [
       'Explore the key themes, discussions and milestones from WCIS25, including how the Summit brought coffee and cocoa into a shared strategic conversation.',
     date: '31 October 2025',
     dateTime: '2025-10-31',
-    image: headerImage,
-    articleHeroImage: '/images/2025-recap/article/ARTICLE Photo.jpg',
+    image: '/images/2025-recap/article/ARTICLE Photo.jpg',
     imageAlt: 'Panel discussion at World Coffee Innovation Summit',
     body: [
       {

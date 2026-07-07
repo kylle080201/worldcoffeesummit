@@ -83,40 +83,42 @@ export default function NewsroomSubscribeForm() {
           </div>
 
           <form className="space-y-4" onSubmit={handleSubmit}>
-            <div>
-              <label
-                htmlFor="firstName"
-                className="mb-2 block text-sm font-medium text-white sm:text-base"
-              >
-                First Name*
-              </label>
-              <input
-                id="firstName"
-                name="firstName"
-                type="text"
-                required
-                value={firstName}
-                onChange={(event) => setFirstName(event.target.value)}
-                className={inputClassName}
-              />
-            </div>
+            <div className="grid gap-4 sm:grid-cols-2">
+              <div>
+                <label
+                  htmlFor="firstName"
+                  className="mb-2 block text-sm font-medium text-white sm:text-base"
+                >
+                  First Name*
+                </label>
+                <input
+                  id="firstName"
+                  name="firstName"
+                  type="text"
+                  required
+                  value={firstName}
+                  onChange={(event) => setFirstName(event.target.value)}
+                  className={inputClassName}
+                />
+              </div>
 
-            <div>
-              <label
-                htmlFor="lastName"
-                className="mb-2 block text-sm font-medium text-white sm:text-base"
-              >
-                Last Name*
-              </label>
-              <input
-                id="lastName"
-                name="lastName"
-                type="text"
-                required
-                value={lastName}
-                onChange={(event) => setLastName(event.target.value)}
-                className={inputClassName}
-              />
+              <div>
+                <label
+                  htmlFor="lastName"
+                  className="mb-2 block text-sm font-medium text-white sm:text-base"
+                >
+                  Last Name*
+                </label>
+                <input
+                  id="lastName"
+                  name="lastName"
+                  type="text"
+                  required
+                  value={lastName}
+                  onChange={(event) => setLastName(event.target.value)}
+                  className={inputClassName}
+                />
+              </div>
             </div>
 
             <div>
@@ -154,7 +156,6 @@ export default function NewsroomSubscribeForm() {
                 className={inputClassName}
               />
             </div>
-
             <div className="pt-2 text-center text-sm text-white sm:text-base">
               <p className="font-bold">Receive updates from us.</p>
               <p className="mt-1">

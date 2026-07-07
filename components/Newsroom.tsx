@@ -36,7 +36,8 @@ export default function Newsroom() {
                   Subscribe
                 </Link>
               </div>
-            </div>          </div>
+            </div>
+          </div>
 
           <div className="mt-16 space-y-16 sm:mt-20">
             {newsArticles.map((article) => (
