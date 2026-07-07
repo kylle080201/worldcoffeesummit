@@ -21,16 +21,15 @@ export default function Newsroom() {
               </p>
             </div>
 
-            <div className="w-full max-w-[17rem] rounded-2xl bg-lime-700 px-5 py-6 lg:ml-auto">
-              <h2 className="text-lg font-bold text-white">
+            <div className="w-full max-w-md rounded-2xl bg-lime-700 px-6 py-5 lg:ml-auto lg:max-w-[26rem]">
+              <h2 className="text-lg font-bold text-white sm:text-xl">
                 Join Our Network
               </h2>
-              <p className="mt-2 text-xs leading-snug text-white/95 sm:text-sm">
+              <p className="mt-2 text-sm leading-snug text-white/95">
                 Stay informed with the latest news, insights, opportunities, and
                 announcements.
               </p>
-              <div className="mt-4">
-                <Link
+              <div className="mt-3">                <Link
                   href="#join-our-network"
                   className="inline-flex items-center justify-center rounded-lg bg-white px-5 py-2 text-sm font-bold text-lime-700 transition-colors hover:bg-gray-100"
                 >
