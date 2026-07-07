@@ -1,3 +1,4 @@
+import { ArrowRightIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 import React from 'react'
 import { newsArticles } from '../data/newsArticles'
@@ -43,7 +44,7 @@ export default function Newsroom() {
             {newsArticles.map((article) => (
               <article
                 key={article.slug}
-                className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12"
+                className="grid items-start gap-8 lg:grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)] lg:gap-10"
               >
                 <Link
                   href={`/newsroom/${article.slug}`}
@@ -55,12 +56,12 @@ export default function Newsroom() {
                   />
                 </Link>
 
-                <div className="flex flex-col">
+                <div className="flex max-w-xl flex-col lg:max-w-md">
                   <p className="text-sm font-bold uppercase tracking-wide text-lime-700 sm:text-base">
                     {article.category}
                   </p>
 
-                  <h2 className="mt-4 text-2xl font-bold leading-snug text-gray-900 sm:text-3xl lg:text-4xl">
+                  <h2 className="mt-4 text-2xl font-bold leading-snug text-gray-900 sm:text-3xl">
                     <Link
                       href={`/newsroom/${article.slug}`}
                       className="transition-colors hover:text-lime-800"
@@ -73,7 +74,7 @@ export default function Newsroom() {
                     {article.excerpt}
                   </p>
 
-                  <div className="mt-8 flex items-center justify-between gap-4">
+                  <div className="mt-8 flex flex-wrap items-center gap-3">
                     <time
                       dateTime={article.dateTime}
                       className="text-sm text-gray-900 sm:text-base"
@@ -82,15 +83,15 @@ export default function Newsroom() {
                     </time>
                     <Link
                       href={`/newsroom/${article.slug}`}
-                      className="text-base font-bold text-lime-700 transition-colors hover:text-lime-900 sm:text-lg"
+                      className="inline-flex items-center gap-2 text-base font-bold text-lime-700 transition-colors hover:text-lime-900 sm:text-lg"
                     >
-                      Read more &rarr;
+                      Read more
+                      <ArrowRightIcon className="h-5 w-5 sm:h-6 sm:w-6" aria-hidden="true" />
                     </Link>
                   </div>
                 </div>
               </article>
-            ))}
-          </div>
+            ))}          </div>
         </div>
       </section>
 

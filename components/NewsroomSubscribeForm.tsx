@@ -121,40 +121,42 @@ export default function NewsroomSubscribeForm() {
               </div>
             </div>
 
-            <div>
-              <label
-                htmlFor="email"
-                className="mb-2 block text-sm font-medium text-white sm:text-base"
-              >
-                Work Email*
-              </label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                required
-                value={email}
-                onChange={(event) => setEmail(event.target.value)}
-                className={inputClassName}
-              />
-            </div>
+            <div className="grid gap-4 sm:grid-cols-2">
+              <div>
+                <label
+                  htmlFor="email"
+                  className="mb-2 block text-sm font-medium text-white sm:text-base"
+                >
+                  Work Email*
+                </label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  value={email}
+                  onChange={(event) => setEmail(event.target.value)}
+                  className={inputClassName}
+                />
+              </div>
 
-            <div>
-              <label
-                htmlFor="company"
-                className="mb-2 block text-sm font-medium text-white sm:text-base"
-              >
-                Company*
-              </label>
-              <input
-                id="company"
-                name="company"
-                type="text"
-                required
-                value={company}
-                onChange={(event) => setCompany(event.target.value)}
-                className={inputClassName}
-              />
+              <div>
+                <label
+                  htmlFor="company"
+                  className="mb-2 block text-sm font-medium text-white sm:text-base"
+                >
+                  Company*
+                </label>
+                <input
+                  id="company"
+                  name="company"
+                  type="text"
+                  required
+                  value={company}
+                  onChange={(event) => setCompany(event.target.value)}
+                  className={inputClassName}
+                />
+              </div>
             </div>
             <div className="pt-2 text-center text-sm text-white sm:text-base">
               <p className="font-bold">Receive updates from us.</p>

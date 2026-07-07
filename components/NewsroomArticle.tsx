@@ -59,14 +59,13 @@ export default function NewsroomArticle({ article }: { article: NewsArticle }) {
             </p>
           </header>
 
-          <div className="mt-10 overflow-hidden">
+          <div className="mt-10 max-w-5xl overflow-hidden">
             <NewsArticleImage
               article={article}
               priority
-              sizes="(max-width: 1152px) 100vw, 1152px"
+              sizes="(max-width: 1024px) 100vw, 1024px"
             />
-          </div>
-          <div className="mt-10 max-w-5xl space-y-6 text-base leading-relaxed text-gray-900 sm:text-lg">
+          </div>          <div className="mt-10 max-w-5xl space-y-6 text-base leading-relaxed text-gray-900 sm:text-lg">
             {article.body.map((paragraph, index) => (
               <p
                 key={index}
