@@ -17,6 +17,7 @@ export type NewsArticle = {
   date: string
   dateTime: string
   image: StaticImageData
+  articleHeroImage?: string | StaticImageData
   imageAlt: string
   body: NewsArticleParagraph[]
 }
@@ -38,6 +39,7 @@ export const newsArticles: NewsArticle[] = [
     date: '31 October 2025',
     dateTime: '2025-10-31',
     image: headerImage,
+    articleHeroImage: '/images/2025-recap/article/ARTICLE Photo.jpg',
     imageAlt: 'Panel discussion at World Coffee Innovation Summit',
     body: [
       {

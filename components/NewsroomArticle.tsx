@@ -1,41 +1,77 @@
-import Link from 'next/link'
-import React from 'react'
-import type { NewsArticle } from '../data/newsArticles'
-import NewsroomSubscribeForm from './NewsroomSubscribeForm'
-
+import { HomeIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
+import React from "react";
+import type { NewsArticle } from "../data/newsArticles";
+import ArticleShareButtons from "./ArticleShareButtons";
+import NewsArticleImage from "./NewsArticleImage";
+import NewsroomSubscribeForm from "./NewsroomSubscribeForm";
 export default function NewsroomArticle({ article }: { article: NewsArticle }) {
   return (
     <div className="w-full bg-white">
-      <section className="w-full px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <div className="mx-auto max-w-4xl">
-          <Link
-            href="/newsroom"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-lime-700 transition-colors hover:text-lime-900 sm:text-base"
+      <section className="w-full px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <nav
+            aria-label="Breadcrumb"
+            className="flex flex-wrap items-center gap-2 text-sm text-gray-600 sm:text-base"
           >
-            &larr; Back to Newsroom
-          </Link>
+            <Link
+              href="/"
+              className="inline-flex items-center text-gray-600 transition-colors hover:text-lime-700"
+              aria-label="Home"
+            >
+              <HomeIcon className="h-5 w-5" aria-hidden="true" />
+            </Link>
+            <span aria-hidden="true">&gt;</span>
+            <Link
+              href="/newsroom"
+              className="transition-colors hover:text-lime-700"
+            >
+              Newsroom
+            </Link>
+            <span aria-hidden="true">&gt;</span>
+            <span className="text-gray-900">{article.communiquéTitle}</span>
+          </nav>
 
-          <header className="mt-8 text-center">
-            <h1 className="text-2xl font-bold leading-tight text-gray-900 sm:text-3xl lg:text-4xl">
+          <div className="mt-8 flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
+            <div className="flex flex-wrap items-center gap-3 text-sm sm:text-base">
+              <span className="font-bold uppercase tracking-wide text-lime-700">
+                {article.category}
+              </span>
+              <time dateTime={article.dateTime} className="text-gray-900">
+                {article.date}
+              </time>
+            </div>
+
+            <ArticleShareButtons title={article.communiquéTitle} />
+          </div>
+
+          <header className="mt-8 max-w-5xl">
+            <h1 className="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl lg:text-5xl">
               {article.communiquéTitle}
             </h1>
 
-            <p className="mt-6 text-lg font-medium text-lime-700 sm:text-xl lg:text-2xl">
+            <p className="mt-5 text-xl font-medium text-lime-700 sm:text-2xl lg:text-3xl">
               {article.subtitle}
             </p>
 
-            <p className="mt-4 text-base italic text-gray-900 sm:text-lg lg:text-xl">
+            <p className="mt-4 text-lg italic text-gray-900 sm:text-xl">
               {article.tagline}
             </p>
           </header>
 
-          <hr className="mt-10 border-sky-300" />
-
-          <div className="mt-10 space-y-6 text-base leading-relaxed text-gray-900 sm:text-lg">
+          <div className="mt-10 overflow-hidden">
+            <NewsArticleImage
+              article={article}
+              variant="hero"
+              priority
+              sizes="(max-width: 1152px) 100vw, 1152px"
+            />
+          </div>
+          <div className="mt-10 max-w-5xl space-y-6 text-base leading-relaxed text-gray-900 sm:text-lg">
             {article.body.map((paragraph, index) => (
               <p
                 key={index}
-                className={paragraph.bold ? 'font-bold' : undefined}
+                className={paragraph.bold ? "font-bold" : undefined}
               >
                 {paragraph.text}
               </p>
@@ -46,5 +82,5 @@ export default function NewsroomArticle({ article }: { article: NewsArticle }) {
 
       <NewsroomSubscribeForm />
     </div>
-  )
+  );
 }

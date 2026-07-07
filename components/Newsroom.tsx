@@ -1,7 +1,7 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { newsArticles } from '../data/newsArticles'
+import NewsArticleImage from './NewsArticleImage'
 import NewsroomSubscribeForm from './NewsroomSubscribeForm'
 
 export default function Newsroom() {
@@ -20,24 +20,23 @@ export default function Newsroom() {
               </p>
             </div>
 
-            <div className="rounded-2xl bg-lime-700 px-8 py-10 sm:px-10 sm:py-12">
-              <h2 className="text-2xl font-bold text-white sm:text-3xl">
+            <div className="w-full max-w-md rounded-2xl bg-lime-700 px-6 py-8 sm:px-8 sm:py-9 lg:ml-auto">
+              <h2 className="text-xl font-bold text-white sm:text-2xl">
                 Join Our Network
               </h2>
-              <p className="mt-4 text-base leading-relaxed text-white/95 sm:text-lg">
+              <p className="mt-3 text-sm leading-relaxed text-white/95 sm:text-base">
                 Stay informed with the latest news, insights, opportunities, and
                 announcements.
               </p>
-              <div className="mt-8">
+              <div className="mt-6">
                 <Link
                   href="#join-our-network"
-                  className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-3 text-base font-bold text-lime-700 transition-colors hover:bg-gray-100 sm:text-lg"
+                  className="inline-flex items-center justify-center rounded-lg bg-white px-6 py-2.5 text-sm font-bold text-lime-700 transition-colors hover:bg-gray-100 sm:text-base"
                 >
                   Subscribe
                 </Link>
               </div>
-            </div>
-          </div>
+            </div>          </div>
 
           <div className="mt-16 space-y-16 sm:mt-20">
             {newsArticles.map((article) => (
@@ -49,11 +48,9 @@ export default function Newsroom() {
                   href={`/newsroom/${article.slug}`}
                   className="overflow-hidden"
                 >
-                  <Image
-                    src={article.image}
-                    alt={article.imageAlt}
-                    className="aspect-[4/3] h-full w-full object-cover transition-opacity hover:opacity-90"
-                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  <NewsArticleImage
+                    article={article}
+                    className="transition-opacity hover:opacity-90"
                   />
                 </Link>
 

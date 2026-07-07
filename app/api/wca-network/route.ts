@@ -21,14 +21,7 @@ export async function POST(request: NextRequest) {
     const data = await request.json();
     const { firstName, lastName, email, company, areasOfInterest } = data ?? {};
 
-    if (
-      !firstName ||
-      !lastName ||
-      !email ||
-      !company ||
-      !Array.isArray(areasOfInterest) ||
-      areasOfInterest.length === 0
-    ) {
+    if (!firstName || !lastName || !email || !company) {
       return NextResponse.json(
         { error: { message: "Missing required fields." } },
         { status: 400 }
@@ -41,12 +34,12 @@ export async function POST(request: NextRequest) {
       lastName,
       email,
       company,
-      areasOfInterest,
+      areasOfInterest: Array.isArray(areasOfInterest) ? areasOfInterest : [],
     });
 
     await transporter.sendMail({
       from: `World Coffee Innovation Summit Team <${user}>`,
-      to: "kyllemadrigal08@gmail.com",
+      to: "info@worldcoffeealliance.com",
       subject: "WCA Network Subscriber",
       html: `
         <div>${firstName} ${lastName} has just joined WCA Network</div>
