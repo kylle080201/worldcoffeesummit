@@ -181,17 +181,17 @@ export default function AboutWcis() {
             How the Conversation Has Evolved
           </h2>
 
-          <div className="mt-6 grid grid-cols-1 divide-y divide-gray-200 sm:mt-8 sm:grid-cols-2 lg:grid-cols-4 lg:divide-x lg:divide-y-0">
+          <div className="mt-6 grid grid-cols-1 sm:mt-8 md:grid-cols-2 xl:grid-cols-4">
             {evolutionTimeline.map((item) => (
               <article
                 key={item.year}
-                className="flex h-full flex-col items-center px-3 py-3 pb-0 text-center sm:px-4"
+                className="flex h-full flex-col items-center border-b border-gray-200 px-3 py-6 text-center last:border-b-0 md:border-b-0 md:px-4 md:py-8 md:[&:nth-child(-n+2)]:border-b md:[&:nth-child(odd)]:border-r xl:[&:nth-child(-n+2)]:border-b-0 xl:[&:nth-child(odd)]:border-r-0 xl:[&:not(:last-child)]:border-r"
               >
                 <p className="text-3xl font-bold text-gray-900 sm:text-4xl">
                   {item.year}
                 </p>
                 <LimeDivider className="mx-auto w-32 sm:w-40" />
-                <p className="mt-3 text-base font-bold leading-snug text-gray-900 sm:text-lg lg:whitespace-nowrap lg:text-xl">
+                <p className="mt-3 text-base font-bold leading-snug text-gray-900 sm:text-lg lg:text-xl xl:whitespace-nowrap">
                   {item.theme}
                 </p>
               </article>

@@ -177,20 +177,20 @@ function Navbar() {
                 )
               )}
             </div>
-               <div className='mt-4 flex gap-2'>
-                      {/* <button
-                        onClick={() => router.push('/register')}
-                        className="relative inline-flex gap-x-1.5 rounded-md bg-lime-700 hover:bg-lime-900 px-3 py-2 text-sm font-semibold text-white shadow-sm"
-                      >
-                        Book Tickets
-                      </button> */}
-                      <button
-                        onClick={() => router.push('/interest')}
-                        className={navButtonClassName}
-                      >
-                        Register Interest
-                      </button>
-                    </div>
+            <div className="mt-4 flex flex-col gap-2 pl-3">
+              <button
+                onClick={() => router.push('/register')}
+                className={`${navButtonClassName} w-fit`}
+              >
+                Register Interest
+              </button>
+              <button
+                onClick={() => router.push('/interest')}
+                className={`${navButtonClassName} w-fit`}
+              >
+                Sponsor or Exhibit
+              </button>
+            </div>
           </Disclosure.Panel>
         </>
       )}
