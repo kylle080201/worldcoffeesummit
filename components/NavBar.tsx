@@ -182,7 +182,7 @@ function Navbar() {
                 onClick={() => router.push('/register')}
                 className={`${navButtonClassName} w-fit`}
               >
-                Register Interest
+                Register Now
               </button>
               <button
                 onClick={() => router.push('/interest')}
