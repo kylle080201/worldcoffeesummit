@@ -11,8 +11,8 @@ function Agenda() {
     width: 50px;
     border-radius: 100%;
     margin-bottom:10px
-}`}</style><div id="agenda-2025" className='w-full scroll-mt-24'>
-                <div className='pt-6 pb-16 max-w-5xl mx-auto'>
+}`}</style><div id="agenda-2025" className='w-full scroll-mt-24 bg-gray-100'>
+                <div className='pt-6 pb-16 max-w-5xl mx-auto px-4 sm:px-6'>
                     <h2 className="relative text-4xl font-bold text-center tracking-tight">2025 AGENDA</h2>
                     {/* <h2 className="text-sm text-red-500 text-center ">Confidentiality – Chatham House Rule*</h2> */}
 
@@ -41,13 +41,16 @@ function Agenda() {
                             </div>
                         </div>
 
-                        <div className='mt-4 px-2 max-w-5xl'>
+                        <div className='mt-4 w-full grid grid-cols-10 gap-x-4'>
+                            <div className='col-span-2' aria-hidden='true' />
+                            <div className='col-span-8 px-2'>
                             <h3 className=''>
                               <span> <b> Summit Chairperson <br/>
                                <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2024/08/Joy-Macknight-12-of-19.jpg'/> Joy Macknight</b>, Journalist, Former Editor, <b>Financial Times - The Banker
 
                                  </b></span>
                             </h3>
+                            </div>
                         </div>
                     </div>
 
@@ -61,11 +64,14 @@ function Agenda() {
                                 OPENING KEYNOTE
                             </div>
                         </div>
-                        <div className='mt-4 px-2 max-w-5xl'>
+                        <div className='mt-4 w-full grid grid-cols-10 gap-x-4'>
+                            <div className='col-span-2' aria-hidden='true' />
+                            <div className='col-span-8 px-2'>
                             <h3 className=''>
                                 <span>
                                     <b><img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/H.E.-Catherine-Kirumba-Karemu-1.jpeg' /> H.E. Catherine Kirumba Karemu</b>, High Commissioner of Kenya to the UK, <b>Kenya High Commission</b></span>
                             </h3>
+                            </div>
                         </div>
                     </div>
 
@@ -80,7 +86,9 @@ function Agenda() {
                                 PANEL: TURNING REGULATORY COMPLIANCE INTO BUSINESS STRATEGY- ADAPTING TO EUDR, CSRD & CS3D
                             </div>
                         </div>
-                        <div className='mt-4 px-2 max-w-5xl'>
+                        <div className='mt-4 w-full grid grid-cols-10 gap-x-4'>
+                            <div className='col-span-2' aria-hidden='true' />
+                            <div className='col-span-8 px-2'>
                             <h3 className=''>
                                 <span className='italic'>Compliance as Catalyst – Rethinking the Regulatory Revolution. Turn EUDR and CS3D from box-ticking into brand-building. Discover how trailblazers are future-proofing business through radical transparency and shared accountability.</span>
                                 <span> <br/> <br/><b> Chair<br/>
@@ -94,6 +102,7 @@ function Agenda() {
 
                                 </span>
                             </h3>
+                            </div>
                         </div>
                     </div>
 
@@ -118,7 +127,9 @@ function Agenda() {
                                 FIRESIDE: DIGITALISING COFFEE & COCOA SUPPLY CHAINS: SUSTAINABILITY, INNOVATION, AND CONSUMER-DRIVEN TRANSFORMATION
                             </div>
                         </div>
-                        <div className='mt-4 px-2 max-w-5xl'>
+                        <div className='mt-4 w-full grid grid-cols-10 gap-x-4'>
+                            <div className='col-span-2' aria-hidden='true' />
+                            <div className='col-span-8 px-2'>
                             <h3 className=''>
                                 <span className='italic'>From bean to barcode— farmers, processors and retailers, from procurement to sourcing strategies to farm-level practices and supplier engagement, explore how tech is transforming FMCG accountability and winning consumer trust. <br /><br /></span>
                                 <span><b> Chair<br />
@@ -130,6 +141,7 @@ function Agenda() {
 
                                 </span>
                             </h3>
+                            </div>
                         </div>
                     </div>
 
@@ -143,7 +155,9 @@ function Agenda() {
                                 CASE STUDY: UNLOCKING COFFEE SUPPLY CHAIN TRANSPARENCY & CARBON INSIGHTS
                             </div>
                         </div>
-                        <div className='mt-4 px-2 max-w-5xl'>
+                        <div className='mt-4 w-full grid grid-cols-10 gap-x-4'>
+                            <div className='col-span-2' aria-hidden='true' />
+                            <div className='col-span-8 px-2'>
                             <h3 className=''>
                                 <span className='italic'>Leveraging high-resolution Planet imagery and Picterra’s geoAI, this session explores precise mapping and monitoring of coffee plantations, with use cases from Brazil covering commodity tracking, legal compliance, and biomass-to-carbon estimation.
                                 </span>
@@ -153,6 +167,7 @@ function Agenda() {
                                         <img className='agenda-img' src='/images/2025-speakers/Picterra/Frank de Morsier.png'/> Frank de Morsier</b>, COO & Co-founder, <b>Picterra </b>
                                 </span>
                             </h3>
+                            </div>
                         </div>
                     </div>
 
@@ -167,7 +182,9 @@ function Agenda() {
                                 PANEL: AI-DRIVEN DIGITAL INNOVATION IN SMART FARMING
                             </div>
                         </div>
-                        <div className='mt-4 px-2 max-w-5xl'>
+                        <div className='mt-4 w-full grid grid-cols-10 gap-x-4'>
+                            <div className='col-span-2' aria-hidden='true' />
+                            <div className='col-span-8 px-2'>
                             <h3 className=''>
                                 <span className='italic'>Optimising Ecosystems for Productivity and Climate Resilience. Discover how digital intelligence is enabling hyper-personalized farming, real-time risk reduction, and planetary resilience.</span>
                                 <br /><br />
@@ -182,6 +199,7 @@ function Agenda() {
 
                                 </span>
                             </h3>
+                            </div>
                         </div>
                     </div>
 
@@ -206,7 +224,9 @@ function Agenda() {
                                 PANEL: DE-RISKING TRANSFORMATION: MAKING REGENERATIVE AGRICULTURE INVESTIBLE
                             </div>
                         </div>
-                        <div className='mt-4 px-2 max-w-5xl'>
+                        <div className='mt-4 w-full grid grid-cols-10 gap-x-4'>
+                            <div className='col-span-2' aria-hidden='true' />
+                            <div className='col-span-8 px-2'>
                             <h3 className=''>
                                 <span className='italic'>Unlocking the potential of regenerative agriculture requires more than pilot projects—it demands systemic redesign, risk transfer innovation, bold investment strategies.</span>
                                 <span> <br /><br /> <b>Chair<br />
@@ -220,6 +240,7 @@ function Agenda() {
                                       <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2025/06/Roel-Messie-1.jpg'/>   Roel Messie</b>, Chief Executive Officer, <b>IDH Investment Management</b><br />
                                 </span>
                             </h3>
+                            </div>
                         </div>
                     </div>
 
@@ -245,7 +266,9 @@ function Agenda() {
                                 PANEL: CRACKING SCOPE 3 – FROM CHAOS TO CLARITY
                             </div>
                         </div>
-                        <div className='mt-4 px-2 max-w-5xl'>
+                        <div className='mt-4 w-full grid grid-cols-10 gap-x-4'>
+                            <div className='col-span-2' aria-hidden='true' />
+                            <div className='col-span-8 px-2'>
                             <h3 className=''>
                                 <span className='italic'>The world&apos;s toughest climate challenge becomes your company&apos;s next big opportunity. Learn how leaders are decoding, measuring, and monetising value chain emissions.
                                 </span>
@@ -260,6 +283,7 @@ function Agenda() {
                                        <img className='agenda-img' src='/images/2025-speakers/Quantis/Marcial Vargas-Gonzalez.jpg'/>  Marcial Vargas-Gonzalez</b>, Science & Innovation, Global Lead, <b>Quantis</b>
                                 </span>
                             </h3>
+                            </div>
                         </div>
                     </div>
 
@@ -272,7 +296,9 @@ function Agenda() {
                                 PANEL: BEYOND THE FARMGATE – SYSTEMIC PERSPECTIVES ON PROFIT, PLANET, AND PROGRESS
                             </div>
                         </div>
-                        <div className='mt-4 px-2 max-w-5xl'>
+                        <div className='mt-4 w-full grid grid-cols-10 gap-x-4'>
+                            <div className='col-span-2' aria-hidden='true' />
+                            <div className='col-span-8 px-2'>
                             <h3 className=''>
                                 <span className='italic'>It&apos;s time to put producers at the centre of the conversation, sharing how they navigate climate shocks, shifting trade, and human rights challenges, highlighting the role of finance, sourcing, innovation, and policy in building resilience, improving livelihoods, and shaping more inclusive global strategies.</span>
                                 <span><br/><br/><b>Chair<br/>
@@ -287,6 +313,7 @@ function Agenda() {
                                 </span>
 
                             </h3>
+                            </div>
                         </div>
                     </div>
 
@@ -327,11 +354,14 @@ function Agenda() {
                             </div>
                         </div>
 
-                         <div className='mt-4 px-2 max-w-5xl'>
+                         <div className='mt-4 w-full grid grid-cols-10 gap-x-4'>
+                            <div className='col-span-2' aria-hidden='true' />
+                            <div className='col-span-8 px-2'>
                             <h3 className=''>
                               <span> <b>Summit Chair <br/>
                                <img className='agenda-img' src='https://worldcoffeealliance.com/wp-content/uploads/2024/09/sean-edwards.jpg'/> Sean Edwards</b>, Chairman, <b>International Trade Forfaiting Association (ITFA)</b></span>
                             </h3>
+                            </div>
                         </div>
                     </div>
 
@@ -344,13 +374,16 @@ function Agenda() {
                                 OPENING KEYNOTE
                             </div>
                         </div>
-                        <div className='mt-4 px-2 max-w-5xl'>
+                        <div className='mt-4 w-full grid grid-cols-10 gap-x-4'>
+                            <div className='col-span-2' aria-hidden='true' />
+                            <div className='col-span-8 px-2'>
                             <h3 className=''>
                                 <span>
                                   <b>Speaker<br />
                                        <img className='agenda-img' src='/images/2025-speakers/Tanzania High Commission/Screenshot 2025-10-01 at 15.51.31.jpg'/> H.E. Mbelwa Brighton Kairuki</b>, High Commissioner of the United Republic of Tanzania to the United Kingdom, <b>Tanzania High <br/>Commission</b>
                                 </span>
                             </h3>
+                            </div>
                         </div>
                     </div>
 
@@ -364,7 +397,9 @@ function Agenda() {
                                 <b>FIRESIDE: THE BIGGER PICTURE </b>
                             </div>
                         </div>
-                        <div className='mt-4 px-2 max-w-5xl'>
+                        <div className='mt-4 w-full grid grid-cols-10 gap-x-4'>
+                            <div className='col-span-2' aria-hidden='true' />
+                            <div className='col-span-8 px-2'>
                             <h3 className=''>
                               <span>  <b>Chair <br />
                               <img className='agenda-img' src='/images/2025-speakers/FT/Peter Foster.JPG' /> Peter Foster,</b> World Trade Editor, <b>Financial Times (FT)</b> </span><br/><br/>
@@ -374,6 +409,7 @@ function Agenda() {
                                      <img className='agenda-img' src='/images/2025-speakers/Bain & Co/Jenny Davis-Peccoud.jpg'/>  Jenny Davis-Peccoud</b>, Partner, Founder, Global Sustainability & Responsibility Practice, <b>Bain & Co. </b>
                             </span>
                             </h3>
+                            </div>
                         </div>
                     </div>
 
@@ -386,7 +422,9 @@ function Agenda() {
                                PANEL: COCOA & COFFEE SYNERGIES – UNITY FOR RESILIENCE
                             </div>
                         </div>
-                        <div className='mt-4 px-2 max-w-5xl'>
+                        <div className='mt-4 w-full grid grid-cols-10 gap-x-4'>
+                            <div className='col-span-2' aria-hidden='true' />
+                            <div className='col-span-8 px-2'>
                             <h3 className=''>
                                 <span className='italic'>One planet. Two crops. Endless possibilities. Aligning innovations, infrastructure, and insights across sectors.</span>
                                 <span>
@@ -402,6 +440,7 @@ function Agenda() {
                                       <img className='agenda-img' src='/images/2025-speakers/Mars/Harper McConnell.jpg'/>  Harper McConnell</b>, Global Vice President Sustainability, <b>Mars</b>
                                 </span>
                             </h3>
+                            </div>
                         </div>
                     </div>
 
@@ -415,7 +454,9 @@ function Agenda() {
                                 PANEL: CARBON CONFIDENCE – BUILDING TRUST IN NATURE-BASED MARKETS
                             </div>
                         </div>
-                        <div className='mt-4 px-2 max-w-5xl'>
+                        <div className='mt-4 w-full grid grid-cols-10 gap-x-4'>
+                            <div className='col-span-2' aria-hidden='true' />
+                            <div className='col-span-8 px-2'>
                             <h3 className=''>
                                 <span className='italic'>Crack the carbon code: What does integrity mean, and how do we scale it in coffee and cocoa?</span>
                                 <span>  <br /><br /><b>Chair<br/>
@@ -428,6 +469,7 @@ function Agenda() {
                                        <img className='agenda-img' src='/images/2025-speakers/Chloris Geospatial/Marco Albani.jpg'/>  Marco Albani, Co-Founder</b>, co-CEO and President, <b>Chloris Geospatial</b>
                                 </span>
                             </h3>
+                            </div>
                         </div>
                     </div>
 
@@ -463,7 +505,9 @@ function Agenda() {
                                 PANEL: DECODING NATURE’S COMPLEXITY
                             </div>
                         </div>
-                        <div className='mt-4 px-2 max-w-5xl'>
+                        <div className='mt-4 w-full grid grid-cols-10 gap-x-4'>
+                            <div className='col-span-2' aria-hidden='true' />
+                            <div className='col-span-8 px-2'>
                             <h3 className=''>
                                 <span className='italic'>From Natural Capital to Climate Assets: Building a Science-Based Regeneration Economy. How biodiversity, water, and ecosystem services are emerging as key assets in financial and supply chain decisions.
                                 </span>
@@ -480,6 +524,7 @@ function Agenda() {
 
                                 </span>
                             </h3>
+                            </div>
                         </div>
                     </div>
 
@@ -492,7 +537,9 @@ function Agenda() {
                                 GLOBAL INVESTORS FORUM: BUILDING THE BUSINESS CASE FOR SUSTAINABILITY AND REGENERATION
                             </div>
                         </div>
-                        <div className='mt-4 px-2 max-w-5xl'>
+                        <div className='mt-4 w-full grid grid-cols-10 gap-x-4'>
+                            <div className='col-span-2' aria-hidden='true' />
+                            <div className='col-span-8 px-2'>
                             <h3 className=''>
                                 <span className='italic'><b>Finance is waking up to nature—but is it moving fast enough?</b> This high-level forum explores how ecosystem-based investment models can shift from short-term returns to long-term shared value. The discussion will spotlight practical mechanisms—blended finance, risk mitigation tools, and outcome-based metrics—that can align financial performance with regenerative outcomes and bring ecosystem-based finance into the mainstream.
                                 </span>
@@ -505,6 +552,7 @@ function Agenda() {
                                          <img className='agenda-img' src='https://wocofco.org/wp-content/uploads/2025/10/Melissa-Ocampo.jpg'/> Melissa Ocampo</b>,Head of Sustainability Strategy EMEA, Managing Director <b> Sumitomo Mitsui Banking Corporation- SMBC Group</b>
                                 </span>
                             </h3>
+                            </div>
                         </div>
                     </div>
 

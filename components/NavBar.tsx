@@ -21,7 +21,8 @@ function Navbar() {
       name: 'Agenda',
       children: [
         { name: 'Key Themes', href: '/agenda#key-themes-2026' },
-        { name: 'Agenda', href: '/agenda#agenda-2025' },
+        { name: '2026 Agenda', href: '/agenda#agenda-2026' },
+        { name: '2025 Agenda', href: '/agenda#agenda-2025' },
       ],
     },
     { name: 'Venue', href: '/venue' },
