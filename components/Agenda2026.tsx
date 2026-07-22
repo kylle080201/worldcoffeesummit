@@ -45,7 +45,7 @@ const day1: DayAgenda = {
       title:
         "OPENING PANEL: TRACEABILITY VS REALITY: CAN TODAY'S SUPPLY CHAIN DELIVER COMPLIANCE AT SCALE?",
       description:
-        "As regulatory expectations reshape global trade, organisations are strengthening traceability, supplier visibility and data readiness to maintain market access and secure long-term supply. This executive discussion explores how business leaders are preparing their organisations for the next generation of compliance.",
+        "Traceability is becoming the licence to trade—but how much of today's coffee and cocoa supply is genuinely ready? As EUDR reshapes global value chains, what separates compliance on paper from compliance in practice—and what will it take to close the gap?",
     },
     {
       time: "10:15 – 10:30",
@@ -58,18 +58,17 @@ const day1: DayAgenda = {
     },
     {
       time: "11:00 – 12:00",
-      title: "GLOBAL LEADERS FORUM",
-      subtitle: "“IS THE TRADITIONAL COFFEE TRADING MODEL STILL FIT FOR THE FUTURE?”",
+      title:
+        "GLOBAL LEADERS FORUM: IS THE TRADITIONAL COFFEE TRADING MODEL STILL FIT FOR THE FUTURE?",
       description:
-        "Global coffee trade is entering a period of structural transformation. Industry leaders will examine how sourcing strategies, commercial partnerships and trading models are evolving to strengthen resilience and secure future supply.",
+        "Coffee trading has always adapted to change. Today's combination of regulation, volatility and supply uncertainty is testing whether traditional models remain fit for purpose. What will define the next generation of coffee trading?",
     },
     {
       time: "12:00 – 12:40",
-      title: "PANEL",
-      subtitle:
-        "“WHO PAYS—OR PROFITS—FROM RESILIENCE? FINANCING THE FUTURE OF GLOBAL SUPPLY CHAINS”",
+      title:
+        "PANEL: WHO PAYS—OR PROFITS—FROM RESILIENCE? FINANCING THE FUTURE OF GLOBAL SUPPLY CHAINS",
       description:
-        "As resilience moves from ambition to business necessity, investment and financing models are evolving to protect supply, reduce risk and unlock long-term value. The discussion highlights how finance is enabling more resilient and competitive global supply chains.",
+        "Resilience cannot be built without capital. Who carries the risk, who finances the transition and where is long-term value created? How are financial institutions, buyers and supply chain partners reshaping investment models to protect supply while creating long-term commercial value?",
     },
     {
       time: "12:40 – 13:00",
@@ -82,21 +81,19 @@ const day1: DayAgenda = {
     },
     {
       time: "14:00 – 15:30",
-      title: "EXECUTIVE DEEP DIVES (INVITATION ONLY)",
+      title: "EXECUTIVE DEEP DIVES",
       extra: [
         {
-          title: "EXECUTIVE DEEP DIVE I",
-          subtitle:
-            "From Space to Strategy: Earth Observation, Geospatial Intelligence & AI",
+          title:
+            "FROM SPACE TO STRATEGY: EARTH OBSERVATION, GEOSPATIAL INTELLIGENCE & AI",
           description:
-            "Discover how Earth Observation, geospatial intelligence and AI are helping organisations monitor supply risk, strengthen traceability and support faster, more informed business decisions.",
+            "Satellite intelligence is moving from maps to boardrooms. Discover how Earth Observation, geospatial intelligence and AI are supporting sourcing decisions, strengthening traceability and providing earlier visibility of supply risk.",
         },
         {
-          title: "EXECUTIVE DEEP DIVE II",
-          subtitle:
-            "From Exposure to Investment: Turning Climate & Nature Intelligence into Business Value",
+          title:
+            "FROM EXPOSURE TO INVESTMENT: TURNING CLIMATE & NATURE INTELLIGENCE INTO BUSINESS VALUE",
           description:
-            "As climate and nature increasingly influence investment decisions and long-term competitiveness, organisations need better intelligence to manage risk and identify opportunities. Leading organisations are increasingly leveraging climate and nature intelligence to strengthen investment decisions, improve risk management and create measurable business value.",
+            "Climate and nature data are becoming business intelligence. Explore how better insights are supporting investment decisions, improving risk management and helping organisations identify opportunities across global supply chains.",
         },
       ],
     },
@@ -107,19 +104,17 @@ const day1: DayAgenda = {
     },
     {
       time: "16:00 – 16:40",
-      title: "PANEL",
-      subtitle:
-        "Decarbonisation at Scale: From Scope 3 Commitments to Measurable Outcomes",
+      title:
+        "PANEL: DECARBONISATION AT SCALE: FROM SCOPE 3 COMMITMENTS TO MEASURABLE OUTCOMES",
       description:
-        "Scope 3 is becoming a business performance issue rather than simply a reporting requirement. Discover how organisations are embedding carbon management into procurement, supplier engagement and operational decision-making, supported by digital measurement, reporting and verification (MRV) capabilities.",
+        "Moving from Scope 3 commitments to measurable outcomes remains one of the industry's biggest execution challenges. Discover how organisations are embedding carbon management into procurement, supplier engagement and day-to-day business decisions through practical implementation and digital MRV.",
     },
     {
       time: "16:40 – 17:25",
-      title: "PANEL",
-      subtitle:
-        "Putting Nature on the Balance Sheet: Natural Capital as a Strategic Business Asset",
+      title:
+        "PANEL: PUTTING NATURE ON THE BALANCE SHEET: NATURAL CAPITAL AS A STRATEGIC BUSINESS ASSET",
       description:
-        "Biodiversity, soil health and water resilience are becoming increasingly important business considerations. Organisations are increasingly integrating natural capital into sourcing, investment and long-term resilience strategies.",
+        "Healthy landscapes underpin long-term productivity, supply security and investment performance. How can biodiversity, soil health and water resilience become measurable business assets rather than external costs?",
     },
     {
       time: "17:25 – 17:30",
@@ -127,7 +122,7 @@ const day1: DayAgenda = {
     },
     {
       time: "18:30 – 20:30",
-      title: "NETWORKING SOIRÉE AT UK HOUSE OF LORDS (INVITATION ONLY)",
+      title: "NETWORKING SOIRÉE AT UK HOUSE OF LORDS",
       variant: "break",
     },
   ],
@@ -161,10 +156,10 @@ const day2: DayAgenda = {
     },
     {
       time: "09:30 – 10:45",
-      title: "SIGNATURE PANEL",
-      subtitle: "“Who Will Secure Coffee & Cocoa Supply by 2030?”",
+      title:
+        "SIGNATURE PANEL: WHO WILL SECURE COFFEE & COCOA SUPPLY BY 2030?",
       description:
-        "Bringing together senior decision-makers from across the value chain to examine how procurement, finance, technology and partnerships must evolve to secure resilient coffee and cocoa supply for the decade ahead.",
+        "Bringing together senior decision-makers from across the coffee and cocoa value chain, this signature discussion examines how procurement, finance, technology and partnerships must evolve to secure future supply. Which decisions made today will matter most over the next decade?",
     },
     {
       time: "10:45 – 11:15",
@@ -173,19 +168,17 @@ const day2: DayAgenda = {
     },
     {
       time: "11:15 – 12:00",
-      title: "PANEL",
-      subtitle:
-        "Building the Next Generation of Resilient Coffee & Cocoa Production Systems",
+      title:
+        "PANEL: BUILDING THE NEXT GENERATION OF RESILIENT COFFEE & COCOA PRODUCTION SYSTEMS",
       description:
-        "Long-term supply resilience depends on production systems that integrate regenerative agriculture, strengthen biodiversity and help producers adapt to climate, market and resource pressures. Hear how producers, buyers and technology partners are scaling practical innovations to improve productivity, resilience and future supply.",
+        "Higher productivity alone is no longer enough. Resilient production depends on farming systems that can respond to climate pressures, protect natural resources and remain commercially viable. What does scalable resilience look like on the ground?",
     },
     {
       time: "12:00 – 12:40",
-      title: "PANEL DISCUSSION",
-      subtitle:
-        "“THE PROCUREMENT DECADE: SECURING SUPPLY IN AN ERA OF STRUCTURAL CHANGE”",
+      title:
+        "PANEL: THE PROCUREMENT DECADE: SECURING SUPPLY IN AN ERA OF STRUCTURAL CHANGE",
       description:
-        "Procurement is becoming one of the industry’s most strategic business functions. The discussion focuses on how procurement leaders are balancing resilience, supplier partnerships, traceability and long-term competitiveness.",
+        "Procurement is no longer simply about buying—it is becoming central to long-term supply resilience. Explore how leading organisations are balancing resilience, supplier partnerships and competitiveness in an increasingly uncertain market.",
     },
     {
       time: "12:40 – 13:40",
@@ -194,19 +187,17 @@ const day2: DayAgenda = {
     },
     {
       time: "13:40 – 14:10",
-      title: "INNOVATION SHOWCASE",
-      subtitle:
-        "From Data to Decisions: AI & Digital Intelligence for Resilient Supply Chains",
+      title:
+        "INNOVATION SHOWCASE: FROM DATA TO DECISIONS: AI & DIGITAL INTELLIGENCE FOR RESILIENT SUPPLY CHAINS",
       description:
-        "See how AI, digital platforms and advanced analytics are helping organisations improve sourcing decisions, strengthen supplier visibility and build more resilient coffee and cocoa supply chains.",
+        "Technology creates value only when it improves decisions. See how AI, digital platforms and advanced analytics are helping organisations strengthen sourcing, increase supply chain visibility and respond faster to emerging risks.",
     },
     {
       time: "14:10 – 14:50",
-      title: "CLOSING PANEL",
-      subtitle:
-        "Mapping the Next Five Years: What Will Define the Future of Coffee & Cocoa?",
+      title:
+        "CLOSING PANEL: MAPPING THE NEXT FIVE YEARS: WHAT WILL DEFINE THE FUTURE OF COFFEE & COCOA?",
       description:
-        "After two days of executive discussions, this closing forum distils the biggest insights, toughest challenges and defining opportunities shaping the future of coffee and cocoa.",
+        "After two days of discussion, one question remains: what will define the next generation of resilient coffee and cocoa supply? From technology and finance to procurement and production, which shifts deserve the industry’s attention—and which are simply noise?",
     },
     {
       time: "14:50 – 15:00",
@@ -227,10 +218,17 @@ function startTime(time: string) {
   return time.split("–")[0]?.trim() ?? time;
 }
 
+function toBarTitle(title: string, subtitle?: string) {
+  if (!subtitle) return title.toUpperCase();
+  const cleaned = subtitle.replace(/^[“"']+|[”"']+$/g, "").trim();
+  return `${title}: ${cleaned}`.toUpperCase();
+}
+
 function AgendaSession({ item }: { item: AgendaItem }) {
   const isBreak = item.variant === "break";
   const barClass = isBreak ? "bg-gray-600" : "bg-lime-700";
-  const hasDetails = Boolean(item.subtitle || item.description || item.extra?.length);
+  const heading = toBarTitle(item.title, item.subtitle);
+  const hasDetails = Boolean(item.description || item.extra?.length);
 
   return (
     <div className="mt-8">
@@ -241,45 +239,36 @@ function AgendaSession({ item }: { item: AgendaItem }) {
           {startTime(item.time)}
         </div>
         <div
-          className={`col-span-8 mx-auto flex w-full items-center px-6 py-2 font-medium text-white ${barClass}`}
+          className={`col-span-8 mx-auto flex w-full items-center px-6 py-2 font-medium uppercase text-white ${barClass}`}
         >
-          {item.title}
+          {heading}
         </div>
       </div>
 
       {hasDetails && (
-        <div className="mt-4 grid w-full grid-cols-10 gap-x-4">
-          <div className="col-span-2" aria-hidden="true" />
-          <div className="col-span-8 px-2">
-            {item.subtitle && <p className="font-bold">{item.subtitle}</p>}
-            {item.description && (
-              <p className={`italic ${item.subtitle ? "mt-2" : ""}`}>
-                {item.description}
-              </p>
-            )}
-            {item.extra && item.extra.length > 0 && (
-              <div
-                className={`grid grid-cols-1 gap-4 md:grid-cols-2 ${
-                  item.subtitle || item.description ? "mt-4" : ""
-                }`}
-              >
-                {item.extra.map((block) => (
-                  <div
-                    key={block.title}
-                    className="border border-lime-700/30 bg-lime-50/50 p-4"
-                  >
-                    <p className="font-bold text-lime-700">{block.title}</p>
-                    {block.subtitle && (
-                      <p className="mt-2 font-bold">{block.subtitle}</p>
-                    )}
-                    {block.description && (
-                      <p className="mt-2 italic">{block.description}</p>
-                    )}
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
+        <div className="mt-4 max-w-5xl px-2">
+          {item.description && <p className="italic">{item.description}</p>}
+          {item.extra && item.extra.length > 0 && (
+            <div
+              className={`grid grid-cols-1 gap-4 md:grid-cols-2 ${
+                item.description ? "mt-4" : ""
+              }`}
+            >
+              {item.extra.map((block) => (
+                <div
+                  key={block.title}
+                  className="border border-lime-700/30 bg-lime-50/50 p-4"
+                >
+                  <p className="font-bold uppercase text-lime-700">
+                    {toBarTitle(block.title, block.subtitle)}
+                  </p>
+                  {block.description && (
+                    <p className="mt-2 italic">{block.description}</p>
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       )}
     </div>
