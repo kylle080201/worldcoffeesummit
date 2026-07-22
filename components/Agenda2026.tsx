@@ -61,14 +61,14 @@ const day1: DayAgenda = {
       title:
         "GLOBAL LEADERS FORUM: IS THE TRADITIONAL COFFEE TRADING MODEL STILL FIT FOR THE FUTURE?",
       description:
-        "Coffee trading has always adapted to change. Today's combination of regulation, volatility and supply uncertainty is testing whether traditional models remain fit for purpose. What will define the next generation of coffee trading?",
+        "Coffee trading has always evolved—but today's combination of regulation, volatility and supply uncertainty raises a bigger question: what will define the next generation of coffee trading?",
     },
     {
       time: "12:00 – 12:40",
       title:
         "PANEL: WHO PAYS—OR PROFITS—FROM RESILIENCE? FINANCING THE FUTURE OF GLOBAL SUPPLY CHAINS",
       description:
-        "Resilience cannot be built without capital. Who carries the risk, who finances the transition and where is long-term value created? How are financial institutions, buyers and supply chain partners reshaping investment models to protect supply while creating long-term commercial value?",
+        "Resilience cannot be built without capital. Who carries the risk, who finances the transition and where is long-term value created? As investment priorities evolve, which financing models will prove most effective in securing future supply?",
     },
     {
       time: "12:40 – 13:00",
@@ -107,7 +107,7 @@ const day1: DayAgenda = {
       title:
         "PANEL: DECARBONISATION AT SCALE: FROM SCOPE 3 COMMITMENTS TO MEASURABLE OUTCOMES",
       description:
-        "Moving from Scope 3 commitments to measurable outcomes remains one of the industry's biggest execution challenges. Discover how organisations are embedding carbon management into procurement, supplier engagement and day-to-day business decisions through practical implementation and digital MRV.",
+        "Moving from Scope 3 commitments to measurable outcomes remains one of the industry's biggest execution challenges. What will it take to embed carbon management into procurement, supplier engagement and day-to-day business decisions—and how can digital MRV help turn ambition into measurable action?",
     },
     {
       time: "16:40 – 17:25",
@@ -171,14 +171,14 @@ const day2: DayAgenda = {
       title:
         "PANEL: BUILDING THE NEXT GENERATION OF RESILIENT COFFEE & COCOA PRODUCTION SYSTEMS",
       description:
-        "Higher productivity alone is no longer enough. Resilient production depends on farming systems that can respond to climate pressures, protect natural resources and remain commercially viable. What does scalable resilience look like on the ground?",
+        "If higher productivity alone is no longer enough, what will resilient production look like? How can farming systems respond to climate pressures, protect natural resources and remain commercially viable at scale?",
     },
     {
       time: "12:00 – 12:40",
       title:
         "PANEL: THE PROCUREMENT DECADE: SECURING SUPPLY IN AN ERA OF STRUCTURAL CHANGE",
       description:
-        "Procurement is no longer simply about buying—it is becoming central to long-term supply resilience. Explore how leading organisations are balancing resilience, supplier partnerships and competitiveness in an increasingly uncertain market.",
+        "Procurement is no longer simply about buying—but can it become one of the industry's greatest drivers of long-term supply resilience? How are leading organisations balancing resilience, supplier partnerships and competitiveness in an increasingly uncertain market?",
     },
     {
       time: "12:40 – 13:40",
