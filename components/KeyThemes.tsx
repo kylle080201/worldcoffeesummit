@@ -83,12 +83,12 @@ export function AgendaNavigator({ useHashLinks = false }: { useHashLinks?: boole
   return (
     <div className="flex flex-wrap justify-center gap-4">
       {useHashLinks ? (
-        <a href="#agenda-2025" className={navButtonClassName}>
-          2025 AGENDA
+        <a href="#agenda-2026" className={navButtonClassName}>
+          2026 AGENDA
         </a>
       ) : (
-        <Link href="/agenda#agenda-2025" className={navButtonClassName}>
-          2025 AGENDA
+        <Link href="/agenda#agenda-2026" className={navButtonClassName}>
+          2026 AGENDA
         </Link>
       )}
     </div>

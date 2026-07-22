@@ -17,13 +17,7 @@ function Navbar() {
   const navigation: NavItem[] = [
     { name: 'Overview', href: '/#overview' },
     { name: 'Speakers', href: '/speakers' },
-    {
-      name: 'Agenda',
-      children: [
-        { name: 'Key Themes', href: '/agenda#key-themes-2026' },
-        { name: 'Agenda', href: '/agenda#agenda-2025' },
-      ],
-    },
+    { name: 'Agenda', href: '/agenda#agenda-2026' },
     { name: 'Venue', href: '/venue' },
     { name: 'Partners', href: '/partners' },
     { name: 'Newsroom', href: '/newsroom' },

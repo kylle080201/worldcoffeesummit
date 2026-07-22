@@ -1,13 +1,7 @@
 import React from 'react'
-import Agenda from '../../../components/Agenda'
-import KeyThemes from '../../../components/KeyThemes'
+import Agenda2026 from '../../../components/Agenda2026'
 
 function page() {
-  return (
-    <>
-      <KeyThemes showNavigator={false} compactTop compactBottom />
-      <Agenda />
-    </>
-  )
+  return <Agenda2026 />
 }
 export default page
