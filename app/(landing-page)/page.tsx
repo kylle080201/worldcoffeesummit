@@ -5,7 +5,6 @@ import Overview from "../../components/Overview";
 import WhyAttend from "../../components/WhyAttend";
 import Speakers from "../../components/Speakers";
 import Exhibition from "../../components/Exhibition";
-import Agenda from "../../components/Agenda";
 import SpeakerSlider from "../../components/LoopedSpeakers";
 import SummitInTheNews from "../../components/SummitInTheNews";
 import ImageCarousel from "../../components/ImageCarousel";

@@ -217,8 +217,8 @@ const day2: DayAgenda = {
 
 const tabs = [
   { id: "full" as const, label: "Full agenda" },
-  { id: "day1" as const, label: "21 Oct 2026" },
-  { id: "day2" as const, label: "22 Oct 2026" },
+  { id: "day1" as const, label: "Day 1" },
+  { id: "day2" as const, label: "Day 2" },
 ];
 
 type TabId = (typeof tabs)[number]["id"];
@@ -229,56 +229,59 @@ function startTime(time: string) {
 
 function AgendaSession({ item }: { item: AgendaItem }) {
   const isBreak = item.variant === "break";
-  const contentBg = isBreak ? "bg-lime-50" : "bg-gray-100";
+  const barClass = isBreak ? "bg-gray-600" : "bg-lime-700";
+  const hasDetails = Boolean(item.subtitle || item.description || item.extra?.length);
 
   return (
-    <div className="mt-4 flex gap-3 sm:gap-4">
-      <div className="flex w-16 shrink-0 items-start justify-center bg-lime-700 px-2 py-4 sm:w-20">
-        <span className="text-base font-bold text-white sm:text-lg">
+    <div className="mt-8">
+      <div className="grid h-max w-full grid-cols-10 gap-x-4">
+        <div
+          className={`col-span-2 mx-auto flex w-full items-center justify-center px-6 font-medium text-white ${barClass}`}
+        >
           {startTime(item.time)}
-        </span>
-      </div>
-
-      <div className={`min-w-0 flex-1 px-4 py-4 sm:px-5 sm:py-5 ${contentBg}`}>
-        <h3 className="text-base font-bold text-gray-900 sm:text-lg">
+        </div>
+        <div
+          className={`col-span-8 mx-auto flex w-full items-center px-6 py-2 font-medium text-white ${barClass}`}
+        >
           {item.title}
-        </h3>
-
-        {item.subtitle && (
-          <p className="mt-2 font-semibold text-gray-800">{item.subtitle}</p>
-        )}
-
-        {item.description && (
-          <p className="mt-2 text-sm leading-relaxed text-gray-700 sm:text-base">
-            {item.description}
-          </p>
-        )}
-
-        {item.extra && item.extra.length > 0 && (
-          <div className="mt-4 grid grid-cols-1 gap-3 md:grid-cols-2">
-            {item.extra.map((block) => (
-              <div
-                key={block.title}
-                className="border border-lime-700/25 bg-white p-4"
-              >
-                <p className="text-sm font-bold uppercase tracking-wide text-lime-700">
-                  {block.title}
-                </p>
-                {block.subtitle && (
-                  <p className="mt-2 font-semibold text-gray-900">
-                    {block.subtitle}
-                  </p>
-                )}
-                {block.description && (
-                  <p className="mt-2 text-sm leading-relaxed text-gray-700">
-                    {block.description}
-                  </p>
-                )}
-              </div>
-            ))}
-          </div>
-        )}
+        </div>
       </div>
+
+      {hasDetails && (
+        <div className="mt-4 grid w-full grid-cols-10 gap-x-4">
+          <div className="col-span-2" aria-hidden="true" />
+          <div className="col-span-8 px-2">
+            {item.subtitle && <p className="font-bold">{item.subtitle}</p>}
+            {item.description && (
+              <p className={`italic ${item.subtitle ? "mt-2" : ""}`}>
+                {item.description}
+              </p>
+            )}
+            {item.extra && item.extra.length > 0 && (
+              <div
+                className={`grid grid-cols-1 gap-4 md:grid-cols-2 ${
+                  item.subtitle || item.description ? "mt-4" : ""
+                }`}
+              >
+                {item.extra.map((block) => (
+                  <div
+                    key={block.title}
+                    className="border border-lime-700/30 bg-lime-50/50 p-4"
+                  >
+                    <p className="font-bold text-lime-700">{block.title}</p>
+                    {block.subtitle && (
+                      <p className="mt-2 font-bold">{block.subtitle}</p>
+                    )}
+                    {block.description && (
+                      <p className="mt-2 italic">{block.description}</p>
+                    )}
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
@@ -288,17 +291,20 @@ function DaySection({ day, showHeading }: { day: DayAgenda; showHeading: boolean
     <div>
       {showHeading && (
         <>
-          <h3 className="mt-3 text-center text-2xl font-bold tracking-tight text-lime-700 sm:text-3xl">
+          <h3 className="mt-3 text-center text-3xl font-bold tracking-tight text-lime-700">
             {day.date}
           </h3>
-          <h4 className="mt-1 text-center text-xl font-bold tracking-tight sm:text-2xl">
+          <h4 className="text-center text-2xl font-bold tracking-tight">
             {day.theme}
           </h4>
         </>
       )}
-      <div className={showHeading ? "mt-6" : "mt-2"}>
+      <div>
         {day.items.map((item) => (
-          <AgendaSession key={`${day.label}-${item.time}-${item.title}`} item={item} />
+          <AgendaSession
+            key={`${day.label}-${item.time}-${item.title}`}
+            item={item}
+          />
         ))}
       </div>
     </div>
@@ -353,10 +359,10 @@ function Agenda2026() {
 
           {activeTab === "day1" && (
             <>
-              <h3 className="text-center text-2xl font-bold tracking-tight text-lime-700 sm:text-3xl">
+              <h3 className="text-center text-3xl font-bold tracking-tight text-lime-700">
                 {day1.date}
               </h3>
-              <h4 className="mt-1 text-center text-xl font-bold tracking-tight sm:text-2xl">
+              <h4 className="text-center text-2xl font-bold tracking-tight">
                 {day1.theme}
               </h4>
               <DaySection day={day1} showHeading={false} />
@@ -365,10 +371,10 @@ function Agenda2026() {
 
           {activeTab === "day2" && (
             <>
-              <h3 className="text-center text-2xl font-bold tracking-tight text-lime-700 sm:text-3xl">
+              <h3 className="text-center text-3xl font-bold tracking-tight text-lime-700">
                 {day2.date}
               </h3>
-              <h4 className="mt-1 text-center text-xl font-bold tracking-tight sm:text-2xl">
+              <h4 className="text-center text-2xl font-bold tracking-tight">
                 {day2.theme}
               </h4>
               <DaySection day={day2} showHeading={false} />
