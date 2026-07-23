@@ -497,14 +497,16 @@ export default function Speakers2026({ compactTop = false }: { compactTop?: bool
         </Transition.Root>
       )}
 
-      {/* <div className="-mt-12 mb-2 w-full flex justify-center pb-4">
-          <Link
-              href="/speakers#speakers-2025"
-              className="rounded-lg bg-lime-700 px-6 py-3 text-lg font-bold text-white transition-colors duration-300 hover:bg-lime-800"
-          >
-              2025 SPEAKERS
-          </Link>
-      </div> */}
+      {!compactTop && (
+        <div className="-mt-12 mb-2 w-full flex justify-center pb-4">
+            <Link
+                href="/speakers#speakers-2025"
+                className="rounded-lg bg-lime-700 px-6 py-3 text-lg font-bold text-white transition-colors duration-300 hover:bg-lime-800"
+            >
+                2025 SPEAKERS
+            </Link>
+        </div>
+      )}
     </>
   );
 }
