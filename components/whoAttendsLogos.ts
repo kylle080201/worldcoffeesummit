@@ -125,12 +125,8 @@ function partner2025Logo(
   return { name, logo: `${PARTNERS_2025_BASE}/${file}`, ...size };
 }
 
-/** 2025 partners marquee — order follows the numeric prefix on each filename. */
+/** 2025 partners marquee — order matches previous partners artwork. */
 export const partners2025Logos: WhoAttendsLogo[] = [
-  partner2025Logo('Okala', '1okala_VBL_LogoV03_GreenForest.png', {
-    maxHeight: 76,
-    maxWidth: 155,
-  }),
   partner2025Logo('Picterra', '2Picterra_Primary_Logo_Dark (1) (1).png', {
     maxHeight: 90,
     maxWidth: 200,
@@ -145,22 +141,24 @@ export const partners2025Logos: WhoAttendsLogo[] = [
     maxHeight: 90,
     maxWidth: 160,
   }),
+  partner2025Logo('osapiens', '11osapiens Logo horizontal gradient.png', {
+    maxHeight: 70,
+    maxWidth: 200,
+  }),
+  partner2025Logo('ICE', '12ICE.png', {
+    maxHeight: 90,
+    maxWidth: 90,
+  }),
   partner2025Logo('Satelligence', '5Satelligence_Logo_RGB_FC (5).png', {
     maxHeight: 90,
     maxWidth: 200,
   }),
-  partner2025Logo('Tanzania', '6Tanzania.png', {
+  partner2025Logo('agmatix', '10agmatix_logo.png', {
+    maxHeight: 90,
+    maxWidth: 160,
+  }),
+  partner2025Logo('regenagri', '9regenagri_logo_full.png', {
     maxHeight: 80,
-    maxWidth: 80,
-    slotWidth: 96,
-    marginX: 4,
-  }),
-  partner2025Logo('FoodChain ID', '7Foodchain Id.png', {
-    maxHeight: 90,
-    maxWidth: 220,
-  }),
-  partner2025Logo('Ubees', '8Ubees-logo-2022-scaled.png', {
-    maxHeight: 90,
-    maxWidth: 180,
+    maxWidth: 200,
   }),
 ];

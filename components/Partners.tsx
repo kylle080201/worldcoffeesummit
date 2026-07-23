@@ -214,7 +214,7 @@ export default function Partners() {
       <section className="w-full bg-white pb-16 pt-12 sm:pb-20 sm:pt-16">
         <div className="w-full px-4 sm:px-6 lg:px-8">
           <h2 className="text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            2025 PARTNERS INCLUDE
+            PREVIOUS PARTNERS INCLUDE
           </h2>
           <Partners2025Marquee />
         </div>
