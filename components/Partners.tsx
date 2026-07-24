@@ -32,7 +32,7 @@ const whyPartnerItems = [
   {
     title: 'BUILD STRATEGIC RELATIONSHIPS',
     description:
-      'Build meaningful relationships with senior decision-makers from across the global value chain—including brands, traders, producers, investors, policymakers, technology providers and sustainability organisations—through curated networking, hosted lunches, coffee tasting experiences and the exclusive WCIS Networking Soirée at the UK House of Lords.',
+      'Build meaningful relationships with senior decision-makers from across the global value chain—including brands, traders, producers, investors, policymakers, technology providers and sustainability organisations—through curated networking, hosted lunches, coffee tasting experiences and the WCIS Networking Soirée at the UK House of Lords.',
     image: partnerImage3,
   },
 ]

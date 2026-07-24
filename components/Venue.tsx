@@ -103,7 +103,7 @@ export default function Venue() {
               bringing together leaders from across coffee, cocoa, finance, policy and technology.
             </p>
             <p>
-              The event concludes with the exclusive WCIS Networking Soirée at the House of Lords.
+              On day 1, the event concludes with the WCIS Networking Soirée at the House of Lords.
             </p>
           </div>
         </div>
@@ -153,7 +153,7 @@ export default function Venue() {
           />
         </div>
         <div className={`${venueTextColumnClassName} lg:col-span-4 lg:pl-8 lg:pr-8`}>
-          <p className={sectionLabelClassName}>EXCLUSIVE NETWORKING SOIRÉE —</p>
+          <p className={sectionLabelClassName}>NETWORKING SOIRÉE —</p>
           <h2 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl">
             House of Lords
           </h2>
@@ -162,7 +162,7 @@ export default function Venue() {
           </VenueAddress>
           <div className="mt-6 space-y-4 text-lg leading-normal text-gray-900 sm:text-xl">
             <p>
-              The exclusive Networking Soirée will be held at the House of Lords.
+              The Networking Soirée will be held at the House of Lords.
             </p>
             <p>
               This unique setting offers an unparalleled opportunity to connect with senior leaders
