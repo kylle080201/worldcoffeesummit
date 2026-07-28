@@ -169,7 +169,7 @@ const day2: DayAgenda = {
     {
       time: "11:15 – 12:00",
       title:
-        "PANEL: BUILDING THE NEXT GENERATION OF RESILIENT COFFEE & COCOA PRODUCTION SYSTEMS",
+        "PANEL: REGENERATIVE AGRICULTURE – BUILDING THE NEXT GENERATION OF RESILIENT COFFEE & COCOA PRODUCTION SYSTEMS",
       description:
         "If higher productivity alone is no longer enough, what will resilient production look like? How can farming systems respond to climate pressures, protect natural resources and remain commercially viable at scale?",
     },
