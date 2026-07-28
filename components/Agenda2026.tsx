@@ -187,10 +187,9 @@ const day2: DayAgenda = {
     },
     {
       time: "13:40 – 14:10",
-      title:
-        "INNOVATION SHOWCASE: FROM DATA TO DECISIONS: AI & DIGITAL INTELLIGENCE FOR RESILIENT SUPPLY CHAINS",
+      title: "PANEL: BEYOND AI – FROM ADOPTION TO ADVANTAGE",
       description:
-        "Technology creates value only when it improves decisions. See how AI, digital platforms and advanced analytics are helping organisations strengthen sourcing, increase supply chain visibility and respond faster to emerging risks.",
+        "AI is only valuable when it helps organisations make faster, better and more confident decisions. As the pace of innovation accelerates, what separates the technologies that transform organisations from those that struggle to gain traction?",
     },
     {
       time: "14:10 – 14:50",
