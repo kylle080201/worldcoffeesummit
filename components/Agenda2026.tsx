@@ -42,10 +42,9 @@ const day1: DayAgenda = {
     },
     {
       time: "09:25 – 10:15",
-      title:
-        "OPENING PANEL: TRACEABILITY VS REALITY: CAN TODAY'S SUPPLY CHAIN DELIVER COMPLIANCE AT SCALE?",
+      title: "OPENING PANEL: EUDR READY? TRACEABILITY VS REALITY",
       description:
-        "Traceability is becoming the licence to trade—but how much of today's coffee and cocoa supply is genuinely ready? As EUDR reshapes global value chains, what separates compliance on paper from compliance in practice—and what will it take to close the gap?",
+        "As EUDR reshapes global coffee and cocoa trade, traceability is becoming the licence to trade. But how ready is today's supply—and what separates compliance on paper from compliance in practice?",
     },
     {
       time: "10:15 – 10:30",
