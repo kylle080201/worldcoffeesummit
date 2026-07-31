@@ -150,42 +150,42 @@ const day2: DayAgenda = {
       title: "OPENING KEYNOTE",
     },
     {
-      time: "09:15 – 09:30",
+      time: "09:15 – 09:25",
       title: "INSPIRATIONAL PRESENTATION",
     },
     {
-      time: "09:30 – 10:45",
+      time: "09:25 – 10:40",
       title:
         "SIGNATURE PANEL: WHO WILL SECURE COFFEE & COCOA SUPPLY BY 2030?",
       description:
         "Bringing together senior decision-makers from across the coffee and cocoa value chain, this signature discussion examines how procurement, finance, technology and partnerships must evolve to secure future supply. Which decisions made today will matter most over the next decade?",
     },
     {
-      time: "10:45 – 11:15",
+      time: "10:40 – 11:10",
       title: "NETWORKING COFFEE BREAK",
       variant: "break",
     },
     {
-      time: "11:15 – 12:00",
+      time: "11:10 – 11:50",
       title:
         "PANEL: REGENERATIVE AGRICULTURE – BUILDING THE NEXT GENERATION OF RESILIENT COFFEE & COCOA PRODUCTION SYSTEMS",
       description:
         "If higher productivity alone is no longer enough, what will resilient production look like? How can farming systems respond to climate pressures, protect natural resources and remain commercially viable at scale?",
     },
     {
-      time: "12:00 – 12:40",
+      time: "11:50 – 12:30",
       title:
         "PANEL: THE PROCUREMENT DECADE: SECURING SUPPLY IN AN ERA OF STRUCTURAL CHANGE",
       description:
         "Procurement is no longer simply about buying—but can it become one of the industry's greatest drivers of long-term supply resilience? How are leading organisations balancing resilience, supplier partnerships and competitiveness in an increasingly uncertain market?",
     },
     {
-      time: "12:40 – 13:40",
+      time: "12:30 – 13:30",
       title: "NETWORKING LUNCH + COFFEE TASTING",
       variant: "break",
     },
     {
-      time: "13:40 – 14:10",
+      time: "13:30 – 14:10",
       title: "PANEL: BEYOND AI – FROM ADOPTION TO ADVANTAGE",
       description:
         "AI is only valuable when it helps organisations make faster, better and more confident decisions. As the pace of innovation accelerates, what separates the technologies that transform organisations from those that struggle to gain traction?",
