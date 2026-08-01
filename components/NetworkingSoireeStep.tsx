@@ -109,7 +109,7 @@ function NetworkingSoireeStep() {
                                     <span className="line-through">{gbp(185)}</span>
                                     <span> per person</span>
                                 </p>
-                                <p className="block font-bold text-left leading-tight text-red-700">{gbp(165)}</p>
+                                <p className="block font-bold text-center leading-tight text-red-700">{gbp(165)}</p>
                                 <p className="font-bold text-red-700">Save £20 book before 5 September 2026</p>
                             </>
                         ) : (
