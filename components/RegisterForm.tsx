@@ -9,6 +9,7 @@ import Link from 'next/link'
 import { ClockIcon } from '@heroicons/react/24/outline'
 import { countryCodes } from './ResourceForm'
 import getStripe from '../get_stripe'
+import { isNetworkingSoireePriceId } from '../utils/stripePrices'
 
 interface User {
     firstName: string;
@@ -21,10 +22,6 @@ interface User {
     email: string;
     confirmEmail: string;
 }
-
-const networkingSoireePriceId = 'price_1TU6d9KMWpUKzQVzbvEL5xFJ' // production
-// const networkingSoireePriceId = 'price_1TVyh9KMWpUKzQVzYXpxkkUr' // prod testing (£5)
-// const networkingSoireePriceId = 'price_1TUHu5KMWpUKzQVzaZLAIhUe' // testing
 
 const RegisterForm = () => {
     const router = useRouter()
@@ -76,7 +73,7 @@ const RegisterForm = () => {
                     }
 
                     const hasNetworkingSoiree = parsedLineItems.some(
-                        (item) => item.price === networkingSoireePriceId
+                        (item) => isNetworkingSoireePriceId(item.price)
                     )
                     if (hasNetworkingSoiree) {
                         const origin = window.location.origin

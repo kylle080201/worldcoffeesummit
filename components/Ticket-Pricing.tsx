@@ -3,12 +3,7 @@ import React from 'react'
 
 import Link from 'next/link'
 import { BriefcaseBusiness, Landmark, Rocket, Users, Wine, type LucideIcon } from 'lucide-react'
-import RegisterCountDown from './RegisterCountDown'
-
-const taxRates = [
-    'txr_1NBBYeKMWpUKzQVzkTT4Wib4', // production
-    // 'txr_1NCgheKMWpUKzQVzZ761hX9q', // testing
-] as const
+import { PRODUCTION_TAX_RATES, STRIPE_PRICES } from '../utils/stripePrices'
 
 export type SummitLineItem = {
     price: string
@@ -44,36 +39,28 @@ export const summit: SummitRow[] = [
     {
         title: 'NGO / Government / Academic',
         icon: Landmark,
-        old_price: 1195,
-        item_price: 895,
+        item_price: 1195,
         description:
             'For non-profit organisations, government agencies, policymakers, producers & cooperatives, and full-time academics.',
-        earlyBird: 'Save £300 book before 1 August 2026',
         line_items: [
             {
-                price: 'price_1TU6ZNKMWpUKzQVzFeZzO8Zd', // production
-                // price: 'price_1TVyhwKMWpUKzQVzeGCqN8CQ', // prod testing (£5)
-                // price: 'price_1TUHqbKMWpUKzQVzAYk5Ctmo', // testing
+                price: STRIPE_PRICES.ngoGovernmentAcademic,
                 quantity: 1,
-                tax_rates: taxRates,
+                tax_rates: PRODUCTION_TAX_RATES,
             },
         ],
     },
     {
         title: 'Corporate',
         icon: BriefcaseBusiness,
-        old_price: 1495,
-        item_price: 1095,
+        item_price: 1495,
         description:
             'For commercial organisations operating across coffee, cocoa and agricultural commodity value chains, including financial institutions and investment organisations.',
-        earlyBird: 'Save £400 book before 1 August 2026',
         line_items: [
             {
-                price: 'price_1Rr81dKMWpUKzQVzBqtbsbxH', // production
-                // price: 'price_1RJHLYKMWpUKzQVzFS993eOR', // prod testing (£5)
-                // price: 'price_1TUHsIKMWpUKzQVzGM1Fgqg5', // testing
+                price: STRIPE_PRICES.corporate,
                 quantity: 1,
-                tax_rates: taxRates,
+                tax_rates: PRODUCTION_TAX_RATES,
             },
         ],
     },
@@ -88,29 +75,23 @@ export const summit: SummitRow[] = [
         limitedClassName: 'text-lime-700',
         line_items: [
             {
-                price: 'price_1Rb9T2KMWpUKzQVzaQhry4yi', // production
-                // price: 'price_1RJHKqKMWpUKzQVzqUg2mW67', // prod testing (£5)
-                // price: 'price_1TUHspKMWpUKzQVzeiuq5ATZ', // testing
+                price: STRIPE_PRICES.startUp,
                 quantity: 1,
-                tax_rates: taxRates,
+                tax_rates: PRODUCTION_TAX_RATES,
             },
         ],
     },
     {
         title: 'Technology & Service Provider',
         icon: Users,
-        old_price: 1895,
-        item_price: 1495,
+        item_price: 1895,
         description:
             'For organisations providing products, services or solutions to the sector, including technology companies, consultancies, advisory firms and professional service organisations.',
-        earlyBird: 'Save £400 book before 1 August 2026',
         line_items: [
             {
-                price: 'price_1RVYT2KMWpUKzQVzleFRk7vr', // production
-                // price: 'price_1RLn8fKMWpUKzQVzG5ZhHwZM', // prod testing (£5)
-                // price: 'price_1TUHtiKMWpUKzQVzQK1vBQ1O', // testing
+                price: STRIPE_PRICES.serviceProvider,
                 quantity: 1,
-                tax_rates: taxRates,
+                tax_rates: PRODUCTION_TAX_RATES,
             },
         ],
     },
@@ -118,21 +99,17 @@ export const summit: SummitRow[] = [
         title: 'Networking Soirée',
         titleSubline: 'at the UK House of Lords',
         icon: Wine,
-        old_price: 185,
-        item_price: 155,
+        item_price: 185,
         description:
             'Early evening of Day 1 \u00B7 A two-hour, invite-only reception bringing together global leaders and senior stakeholders in a unique and historic setting.',
         subDescription: 'Available to registered delegates only. Limited capacity.',
-        earlyBird: 'Save £30 book before 1 August 2026',
         cta: 'Add Now',
         rowClassName: 'bg-orange-50',
         line_items: [
             {
-                price: 'price_1TU6d9KMWpUKzQVzbvEL5xFJ', // production
-                // price: 'price_1TVyh9KMWpUKzQVzYXpxkkUr', // prod testing (£5)
-                // price: 'price_1TUHu5KMWpUKzQVzaZLAIhUe', // testing
+                price: STRIPE_PRICES.networkingSoiree,
                 quantity: 1,
-                tax_rates: taxRates,
+                tax_rates: PRODUCTION_TAX_RATES,
             },
         ],
     },
@@ -146,24 +123,13 @@ function TicketPricing() {
         <div className="z-40 py-12 bg-white sm:py-20">
             <div id="summit" className="flow-root px-6 mx-auto mt-12 rounded-md max-w-7xl">
                 <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-                    <div className="flex flex-col w-full gap-6 lg:flex-row lg:gap-4 lg:items-start lg:justify-between">
-                        <div className="flex flex-col w-full font-bold lg:w-1/2 text-center items-center justify-center lg:text-left lg:items-start">
-                            <h1 className="w-full mt-1 text-4xl text-black xl:text-5xl">
-                                Secure your pass to WCIS26
-                            </h1>
-                            <p className="w-full mt-3 text-sm font-normal text-black sm:text-base lg:max-w-xl">
-                                Join global leaders and senior stakeholders from across the coffee and cocoa supply chain.
-                            </p>
-                        </div>
-                        <div className="flex flex-col items-center w-full gap-3 lg:w-1/2">
-                            <p className="w-full max-w-xl px-1 text-xl font-bold leading-tight text-center text-lime-700 whitespace-nowrap sm:text-2xl md:text-3xl xl:text-4xl">
-                                Prices increase after 31 July 2026
-                            </p>
-                            <p className="w-full max-w-xl text-sm font-normal text-center text-black sm:text-base">
-                                Current rates end in:
-                            </p>
-                            <RegisterCountDown />
-                        </div>
+                    <div className="flex flex-col w-full font-bold text-center items-center justify-center lg:text-left lg:items-start">
+                        <h1 className="w-full mt-1 text-4xl text-black xl:text-5xl">
+                            Secure your pass to WCIS26
+                        </h1>
+                        <p className="w-full mt-3 text-sm font-normal text-black sm:text-base lg:max-w-xl">
+                            Join global leaders and senior stakeholders from across the coffee and cocoa supply chain.
+                        </p>
                     </div>
                     <div className="flex items-center justify-center w-full gap-4 mt-10">
                         <div className="h-px bg-gray-300 w-28 sm:w-44" />

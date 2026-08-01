@@ -4,6 +4,10 @@ import Tickets from "../../../models/tickets";
 import Unpaid from "../../../models/unpaid";
 import connectMongo from "../../../utils/mongodb";
 import { mailer } from "../../../utils/nodemailer";
+import {
+  getTicketNameForPriceId,
+  isNetworkingSoireePriceId,
+} from "../../../utils/stripePrices";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2024-06-20" as any,
@@ -69,17 +73,13 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
     ? req.line_items
     : JSON.parse(req.line_items ?? "[]");
   const selectedLineItem = parsedLineItems[0];
-  // Networking Soirée price IDs:
-  //   production:        price_1TU6d9KMWpUKzQVzbvEL5xFJ (active)
-  //   prod testing (£5): price_1TVyh9KMWpUKzQVzYXpxkkUr
-  //   testing:           price_1TUHu5KMWpUKzQVzaZLAIhUe
   const hasNetworkingSoiree = parsedLineItems.some(
-    (item: { price?: string }) => item?.price === "price_1TU6d9KMWpUKzQVzbvEL5xFJ"
+    (item: { price?: string }) => isNetworkingSoireePriceId(item?.price)
   );
   const isNetworkingSoireeOnly =
     hasNetworkingSoiree &&
     parsedLineItems.length === 1 &&
-    selectedLineItem?.price === "price_1TU6d9KMWpUKzQVzbvEL5xFJ";
+    isNetworkingSoireePriceId(selectedLineItem?.price);
   const isNetworkingAddonConfirmation =
     registrationFlow === "networking_addon" &&
     isNetworkingSoireeOnly &&
@@ -95,34 +95,7 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
       }
     );
   }
-  let ticketName = "Summit Delegate"
-
-  // PRODUCTION PRICES (active)
-  switch (selectedLineItem.price) {
-    case "price_1RJ3cYKMWpUKzQVzk2sR6LGo":
-      ticketName = "Academics"
-      break;
-
-    case "price_1TU6ZNKMWpUKzQVzFeZzO8Zd":
-      ticketName = "NGO / Government / Academic"
-      break;
-
-    case "price_1Rr81dKMWpUKzQVzBqtbsbxH":
-      ticketName = "Corporates"
-      break;
-
-    case "price_1Rb9T2KMWpUKzQVzaQhry4yi":
-      ticketName = "Start Ups"
-      break;
-
-    case "price_1RVYT2KMWpUKzQVzleFRk7vr":
-      ticketName = "Service Providers"
-      break;
-
-    case "price_1TU6d9KMWpUKzQVzbvEL5xFJ":
-      ticketName = "Networking Soirée"
-      break;
-  }
+  const ticketName = getTicketNameForPriceId(selectedLineItem.price);
 
   // PROD TESTING PRICES (£5 each — for live testing on production)
   // switch (selectedLineItem.price) {

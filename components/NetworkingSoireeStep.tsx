@@ -4,17 +4,9 @@ import React, { useMemo, useState } from 'react'
 import { useSearchParams } from 'next/navigation'
 import getStripe from '../get_stripe'
 import BackButton from './BackButton'
+import { networkingSoireeLineItem } from '../utils/stripePrices'
 
-const networkingLineItem = {
-    price: 'price_1TU6d9KMWpUKzQVzbvEL5xFJ', // production
-    // price: 'price_1TVyh9KMWpUKzQVzYXpxkkUr', // prod testing (£5)
-    // price: 'price_1TUHu5KMWpUKzQVzaZLAIhUe', // testing
-    quantity: 1,
-    tax_rates: [
-        'txr_1NBBYeKMWpUKzQVzkTT4Wib4', // production
-        // 'txr_1NCgheKMWpUKzQVzZ761hX9q', // testing
-    ],
-}
+const networkingLineItem = networkingSoireeLineItem
 
 type SummitLineItem = {
     price: string
@@ -110,10 +102,8 @@ function NetworkingSoireeStep() {
                     <div className="w-max space-y-2 text-lg">
                         <p className="font-medium text-red-700 not-italic">Limited capacity</p>
                         <p className="font-bold leading-snug text-gray-900">
-                            <span className=" line-through ">{gbp(185)}</span>
-                            <span> per person</span>
+                            {gbp(185)} per person
                         </p>
-                        <p className="block font-bold text-left leading-tight text-red-700">{gbp(155)}</p>
                     </div>
                 </div>
 

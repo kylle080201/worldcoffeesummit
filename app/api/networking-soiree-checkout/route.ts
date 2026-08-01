@@ -3,20 +3,15 @@ import Stripe from "stripe";
 import Tickets from "../../../models/tickets";
 import connectMongo from "../../../utils/mongodb";
 import { encryptData } from "../../../utils/encryptor";
+import { networkingSoireeLineItem } from "../../../utils/stripePrices";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2024-06-20" as any,
 });
 
 const NETWORKING_SOIREE_LINE_ITEM = {
-  price: "price_1TU6d9KMWpUKzQVzbvEL5xFJ", // production
-  // price: "price_1TVyh9KMWpUKzQVzYXpxkkUr", // prod testing (£5)
-  // price: "price_1TUHu5KMWpUKzQVzaZLAIhUe", // testing
-  quantity: 1,
-  tax_rates: [
-    "txr_1NBBYeKMWpUKzQVzkTT4Wib4", // production
-    // "txr_1NCgheKMWpUKzQVzZ761hX9q", // testing
-  ],
+  ...networkingSoireeLineItem,
+  tax_rates: [...networkingSoireeLineItem.tax_rates],
 };
 
 const resolveRequestOrigin = (request: NextRequest): string => {

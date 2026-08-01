@@ -4,16 +4,14 @@ import 'crypto-js/enc-utf8';
 import { IResponseData } from '../types/responseData';
 import Image from 'next/image';
 import getStripe from '../get_stripe'
+import {
+    isNetworkingSoireePriceId,
+    networkingSoireeLineItem,
+} from '../utils/stripePrices'
 
 const networkingLineItem = {
-    price: 'price_1TU6d9KMWpUKzQVzbvEL5xFJ', // production
-    // price: 'price_1TVyh9KMWpUKzQVzYXpxkkUr', // prod testing (£5)
-    // price: 'price_1TUHu5KMWpUKzQVzaZLAIhUe', // testing
-    quantity: 1,
-    tax_rates: [
-        'txr_1NBBYeKMWpUKzQVzkTT4Wib4', // production
-        // 'txr_1NCgheKMWpUKzQVzZ761hX9q', // testing
-    ] as const,
+    ...networkingSoireeLineItem,
+    tax_rates: [...networkingSoireeLineItem.tax_rates] as const,
 }
 
 function PaymentSuccess({
@@ -148,12 +146,12 @@ function PaymentSuccess({
         }
     }, [line_items])
     const hasNetworkingSoiree = parsedLineItems.some(
-        (item: { price?: string }) => item?.price === 'price_1TU6d9KMWpUKzQVzbvEL5xFJ'
+        (item: { price?: string }) => isNetworkingSoireePriceId(item?.price)
     )
     const isNetworkingSoireeOnly =
         hasNetworkingSoiree &&
         parsedLineItems.length === 1 &&
-        parsedLineItems[0]?.price === 'price_1TU6d9KMWpUKzQVzbvEL5xFJ'
+        isNetworkingSoireePriceId(parsedLineItems[0]?.price)
     const isNetworkingAddonConfirmation =
         registrationFlow === 'networking_addon' && isNetworkingSoireeOnly && hasNetworkingSoiree
 
