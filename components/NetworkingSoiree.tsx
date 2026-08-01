@@ -1,6 +1,7 @@
 "use client"
 import { useSearchParams } from "next/navigation";
 import getStripe from "../get_stripe";
+import { getNetworkingSoireeLineItem } from "../utils/stripePrices";
 
 interface T_Line_Items {
   price: string;
@@ -12,18 +13,12 @@ export default function NetworkingSoiree() {
   const searchParams = useSearchParams()
   const line_items = JSON.parse(searchParams?.get('line_items') as string) as T_Line_Items[];
   const formData = JSON.parse(decodeURIComponent(searchParams?.get('formData') as string));
-  const networkingSoireeTicket = {
-    price: 'price_1TU6d9KMWpUKzQVzbvEL5xFJ', // production
-    // price: 'price_1TVyh9KMWpUKzQVzYXpxkkUr', // prod testing (£5)
-    // price: 'price_1TUHu5KMWpUKzQVzaZLAIhUe', // testing
-    quantity: 1,
-    tax_rates: [
-      'txr_1NBBYeKMWpUKzQVzkTT4Wib4', // production
-      // 'txr_1NCgheKMWpUKzQVzZ761hX9q', // testing
-    ],
-  }
   const handleConfirm = async () => {
-    line_items.push(networkingSoireeTicket)
+    const networkingLineItem = getNetworkingSoireeLineItem()
+    line_items.push({
+      ...networkingLineItem,
+      tax_rates: [...networkingLineItem.tax_rates],
+    })
     
     if (line_items) {
       try {
