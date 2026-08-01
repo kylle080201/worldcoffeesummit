@@ -5,14 +5,9 @@ import { IResponseData } from '../types/responseData';
 import Image from 'next/image';
 import getStripe from '../get_stripe'
 import {
+    getNetworkingSoireeLineItem,
     isNetworkingSoireePriceId,
-    networkingSoireeLineItem,
 } from '../utils/stripePrices'
-
-const networkingLineItem = {
-    ...networkingSoireeLineItem,
-    tax_rates: [...networkingSoireeLineItem.tax_rates] as const,
-}
 
 function PaymentSuccess({
     checkoutSessionId,
@@ -167,11 +162,17 @@ function PaymentSuccess({
                 return
             }
             const origin = typeof window !== 'undefined' ? window.location.origin : ''
+            const networkingLineItem = getNetworkingSoireeLineItem()
             const res = await fetch('/api/checkout-sessions', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
-                    line_items: [networkingLineItem],
+                    line_items: [
+                        {
+                            ...networkingLineItem,
+                            tax_rates: [...networkingLineItem.tax_rates],
+                        },
+                    ],
                     formData: decryptedFormData,
                     origin,
                     registration_flow: 'networking_addon',

@@ -4,9 +4,7 @@ import React, { useMemo, useState } from 'react'
 import { useSearchParams } from 'next/navigation'
 import getStripe from '../get_stripe'
 import BackButton from './BackButton'
-import { networkingSoireeLineItem } from '../utils/stripePrices'
-
-const networkingLineItem = networkingSoireeLineItem
+import { getNetworkingSoireeLineItem, isPromoPricingActive } from '../utils/stripePrices'
 
 type SummitLineItem = {
     price: string
@@ -56,11 +54,15 @@ function NetworkingSoireeStep() {
             setErrorMessage('')
             setIsLoading(true)
 
+            const networkingLineItem = getNetworkingSoireeLineItem()
             const lineItems = [...parsedData.lineItems]
             const hasNetworking = lineItems.some((item) => item.price === networkingLineItem.price)
 
             if (includeNetworking && !hasNetworking) {
-                lineItems.push(networkingLineItem)
+                lineItems.push({
+                    ...networkingLineItem,
+                    tax_rates: [...networkingLineItem.tax_rates],
+                })
             }
 
             const origin = window.location.origin
@@ -101,12 +103,18 @@ function NetworkingSoireeStep() {
                 <div className="mt-5 flex flex-col items-center">
                     <div className="w-max space-y-2 text-lg">
                         <p className="font-medium text-red-700 not-italic">Limited capacity</p>
-                        <p className="font-bold leading-snug text-gray-900">
-                            <span className="line-through">{gbp(185)}</span>
-                            <span> per person</span>
-                        </p>
-                        <p className="block font-bold text-left leading-tight text-red-700">{gbp(165)}</p>
-                        <p className="font-bold text-red-700">Save £20 book before 5 September 2026</p>
+                        {isPromoPricingActive() ? (
+                            <>
+                                <p className="font-bold leading-snug text-gray-900">
+                                    <span className="line-through">{gbp(185)}</span>
+                                    <span> per person</span>
+                                </p>
+                                <p className="block font-bold text-left leading-tight text-red-700">{gbp(165)}</p>
+                                <p className="font-bold text-red-700">Save £20 book before 5 September 2026</p>
+                            </>
+                        ) : (
+                            <p className="font-bold leading-snug text-gray-900">{gbp(185)} per person</p>
+                        )}
                     </div>
                 </div>
 

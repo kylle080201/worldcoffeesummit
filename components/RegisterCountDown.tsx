@@ -1,57 +1,59 @@
 "use client"
 import { useEffect, useState } from "react";
+import { PRICING_DEADLINE } from "../utils/stripePrices";
 
-const RegisterCountDown = () => {
-    const [eventTime, setEventTime] = useState(false);
-    const [days, setDays] = useState("00");
-    const [hours, setHours] = useState("00");
-    const [minutes, setMinutes] = useState("00");
-    const [seconds, setSeconds] = useState("00");
+const getRemaining = () => {
+    const difference = PRICING_DEADLINE.getTime() - Date.now();
+    if (difference <= 0) {
+        return { expired: true as const, days: "00", hours: "00", minutes: "00", seconds: "00" };
+    }
 
-    const target = new Date("2026-07-31T23:59:00");
+    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+    return {
+        expired: false as const,
+        days: String(days).padStart(2, "0"),
+        hours: String(hours).padStart(2, "0"),
+        minutes: String(minutes).padStart(2, "0"),
+        seconds: String(seconds).padStart(2, "0"),
+    };
+};
+
+const RegisterCountDown = ({ onExpired }: { onExpired?: () => void } = {}) => {
+    const [remaining, setRemaining] = useState(getRemaining);
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            const now = new Date();
-            const difference = target.getTime() - now.getTime();
-
-            const d = Math.floor(difference / (1000 * 60 * 60 * 24));
-            setDays(String(d).padStart(2, '0'));
-            
-            const h = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            setHours(String(h).padStart(2, '0'));
-
-            const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-            setMinutes(String(m).padStart(2, '0'));
-
-            const s = Math.floor((difference % (1000 * 60)) / 1000);
-            setSeconds(String(s).padStart(2, '0'));
-
-            if (d <= 0 && h <= 0 && m <= 0 && s <= 0) {
-                setEventTime(true);
-            }
-        }, 1000);
-
+        const tick = () => {
+            const next = getRemaining();
+            setRemaining(next);
+            if (next.expired) onExpired?.();
+        };
+        tick();
+        const interval = setInterval(tick, 1000);
         return () => clearInterval(interval);
-    }, []);
+    }, [onExpired]);
 
-    const units = ['days', 'hrs', 'mins', 'seconds'] as const
+    if (remaining.expired) return null;
+
+    const units = ["days", "hrs", "mins", "seconds"] as const;
+    const values = [remaining.days, remaining.hours, remaining.minutes, remaining.seconds];
 
     return (
         <div className="flex flex-col items-center w-full max-w-xl">
-            {!eventTime && (
-                <div className="flex flex-row flex-wrap items-baseline justify-center w-full gap-x-2 gap-y-1 sm:gap-x-3">
-                    {[days, hours, minutes, seconds].map((value, index) => (
-                        <span
-                            key={index}
-                            className="inline-flex items-baseline gap-1 font-bold tabular-nums text-lime-700"
-                        >
-                            <span className="text-2xl sm:text-3xl md:text-4xl">{value}</span>
-                            <span className="text-sm font-normal normal-case sm:text-base">{units[index]}</span>
-                        </span>
-                    ))}
-                </div>
-            )}
+            <div className="flex flex-row flex-wrap items-baseline justify-center w-full gap-x-2 gap-y-1 sm:gap-x-3">
+                {values.map((value, index) => (
+                    <span
+                        key={units[index]}
+                        className="inline-flex items-baseline gap-1 font-bold tabular-nums text-lime-700"
+                    >
+                        <span className="text-2xl sm:text-3xl md:text-4xl">{value}</span>
+                        <span className="text-sm font-normal normal-case sm:text-base">{units[index]}</span>
+                    </span>
+                ))}
+            </div>
         </div>
     );
 };
