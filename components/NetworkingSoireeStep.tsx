@@ -102,8 +102,11 @@ function NetworkingSoireeStep() {
                     <div className="w-max space-y-2 text-lg">
                         <p className="font-medium text-red-700 not-italic">Limited capacity</p>
                         <p className="font-bold leading-snug text-gray-900">
-                            {gbp(185)} per person
+                            <span className="line-through">{gbp(185)}</span>
+                            <span> per person</span>
                         </p>
+                        <p className="block font-bold text-left leading-tight text-red-700">{gbp(165)}</p>
+                        <p className="font-bold text-red-700">Save £20 book before 5 September 2026</p>
                     </div>
                 </div>
 

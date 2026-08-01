@@ -99,10 +99,12 @@ export const summit: SummitRow[] = [
         title: 'Networking Soirée',
         titleSubline: 'at the UK House of Lords',
         icon: Wine,
-        item_price: 185,
+        old_price: 185,
+        item_price: 165,
         description:
             'Early evening of Day 1 \u00B7 A two-hour, invite-only reception bringing together global leaders and senior stakeholders in a unique and historic setting.',
         subDescription: 'Available to registered delegates only. Limited capacity.',
+        earlyBird: 'Save £20 book before 5 September 2026',
         cta: 'Add Now',
         rowClassName: 'bg-orange-50',
         line_items: [
