@@ -6,6 +6,8 @@ import chrystelImage from '../images/2026-speakers/Yara international-Chrystel-M
 import yaraLogo from '../images/2026-speakers/Yara international-Chrystel-Monthean/Knowledge_grows_for_A4.png'
 import tawandaImage from '../images/2026-speakers/Gates-Foundation-Tawanda-Mthintwa-Hove/tawanda.jpg'
 import gatesLogo from '../images/2026-speakers/Gates-Foundation-Tawanda-Mthintwa-Hove/3840px-Gates_Foundation_Logo.svg.png'
+import saurabhImage from '../images/2026-speakers/UNDP-Saurabh Sharma/SaurabhSharma.jpg'
+import undpLogo from '../images/2026-speakers/UNDP-Saurabh Sharma/UNDP_Logo_Blue.png'
 import marisaImage from '../images/2026-speakers/SC-Marisa Drew/Marisa Drew.jpeg'
 import marisaLogo from '../images/2026-speakers/SC-Marisa Drew/sc-lock-up-english-grey-rgb.png'
 import jennyImage from '../images/2026-speakers/Bain & Co.-Jenny Davis-Peccoud/Jenny Davis-Peccoud.jpg'
@@ -274,6 +276,16 @@ const speakers: Speaker[] = [
     organization: 'Gates Foundation',
     image: tawandaImage,
     logo: gatesLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: ''
+  },
+  {
+    name: 'Saurabh Sharma',
+    designation: 'Global Technical Lead - Nature & Inclusive Insurance',
+    organization: 'UNDP',
+    image: saurabhImage,
+    logo: undpLogo,
     iconHeight: 80,
     iconWidth: 80,
     description: ''

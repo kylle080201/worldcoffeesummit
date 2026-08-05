@@ -101,21 +101,18 @@ function NetworkingSoireeStep() {
                 </p>
                 <p className="mt-2 text-lg text-gray-900">Most attendees join this reception.</p>
                 <div className="mt-5 flex flex-col items-center">
-                    <div className="w-max space-y-2 text-lg">
-                        <p className="font-medium text-red-700 not-italic">Limited capacity</p>
-                        {isPromoPricingActive() ? (
-                            <>
-                                <p className="font-bold leading-snug text-gray-900">
-                                    <span className="line-through">{gbp(185)}</span>
-                                    <span> per person</span>
-                                </p>
-                                <p className="block font-bold text-center leading-tight text-red-700">{gbp(165)}</p>
-                                <p className="font-bold text-red-700">Save £20 book before 5 September 2026</p>
-                            </>
-                        ) : (
-                            <p className="font-bold leading-snug text-gray-900">{gbp(185)} per person</p>
-                        )}
-                    </div>
+                    <p className="font-medium text-red-700 not-italic text-lg">Limited capacity</p>
+                    {isPromoPricingActive() ? (
+                        <div className="mt-2 w-max space-y-2 text-lg text-left">
+                            <p className="font-bold leading-snug text-gray-900">
+                                <span className="line-through">{gbp(185)}</span>
+                                <span> per person</span>
+                            </p>
+                            <p className="font-bold leading-tight text-red-700">{gbp(165)}</p>
+                        </div>
+                    ) : (
+                        <p className="mt-2 font-bold leading-snug text-gray-900 text-lg">{gbp(185)} per person</p>
+                    )}
                 </div>
 
                 <div className="flex flex-col items-center justify-center gap-4 mt-10 sm:flex-row">
