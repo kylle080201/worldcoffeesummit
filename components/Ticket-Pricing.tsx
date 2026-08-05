@@ -212,19 +212,6 @@ function TicketPricing() {
                             <tbody className="bg-white">
                                 {summitRows.map((delegate) => (
                                     <React.Fragment key={delegate.title}>
-                                        {delegate.title === 'Networking Soirée' ? (
-                                            <tr>
-                                                <td colSpan={4} className="px-3 pt-8 pb-6 bg-white">
-                                                    <div className="flex items-center justify-center w-full gap-4">
-                                                        <div className="h-px bg-gray-300 w-28 sm:w-44" />
-                                                        <span className="text-2xl font-bold text-center text-black uppercase">
-                                                            Add-on
-                                                        </span>
-                                                        <div className="h-px bg-gray-300 w-28 sm:w-44" />
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        ) : null}
                                         <tr
                                             className={`h-full ${delegate.rowClassName ?? 'odd:bg-gray-100'}`}
                                         >

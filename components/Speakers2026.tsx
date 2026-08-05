@@ -6,6 +6,8 @@ import chrystelImage from '../images/2026-speakers/Yara international-Chrystel-M
 import yaraLogo from '../images/2026-speakers/Yara international-Chrystel-Monthean/Knowledge_grows_for_A4.png'
 import tawandaImage from '../images/2026-speakers/Gates-Foundation-Tawanda-Mthintwa-Hove/tawanda.jpg'
 import gatesLogo from '../images/2026-speakers/Gates-Foundation-Tawanda-Mthintwa-Hove/3840px-Gates_Foundation_Logo.svg.png'
+import saurabhImage from '../images/2026-speakers/UNDP-Saurabh Sharma/SaurabhSharma.jpg'
+import undpLogo from '../images/2026-speakers/UNDP-Saurabh Sharma/UNDP_Logo_Blue.png'
 import marisaImage from '../images/2026-speakers/SC-Marisa Drew/Marisa Drew.jpeg'
 import marisaLogo from '../images/2026-speakers/SC-Marisa Drew/sc-lock-up-english-grey-rgb.png'
 import jennyImage from '../images/2026-speakers/Bain & Co.-Jenny Davis-Peccoud/Jenny Davis-Peccoud.jpg'
@@ -279,6 +281,16 @@ const speakers: Speaker[] = [
     description: ''
   },
   {
+    name: 'Saurabh Sharma',
+    designation: 'Global Technical Lead - Nature & Inclusive Insurance',
+    organization: 'UNDP',
+    image: saurabhImage,
+    logo: undpLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: ''
+  },
+  {
     name: 'Michael Mowat',
     designation: 'Supply Chain Strategy Practice Leader',
     organization: 'IBM Consulting',
@@ -396,14 +408,14 @@ export default function Speakers2026({ compactTop = false }: { compactTop?: bool
                       width={160}
                       height={160}
                     />
-                    <div className="absolute w-24 h-24 right-4 top-4/4 transform -translate-y-1/2 bg-white p-2 rounded-md shadow-md">
-                      <div className='flex items-center h-full'>
+                    <div className="absolute w-24 h-24 right-4 top-4/4 transform -translate-y-1/2 bg-white p-2 rounded-md shadow-md overflow-hidden">
+                      <div className='flex items-center justify-center h-full w-full'>
                         <Image
                           src={speaker.logo}
                           alt={`${speaker.organization} logo`}
                           width={speaker.iconWidth}
                           height={speaker.iconHeight}
-                          className="my-auto mx-auto"
+                          className="object-contain max-h-full max-w-full w-auto h-auto"
                         />
                       </div>
                     </div>
