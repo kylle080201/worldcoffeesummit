@@ -408,14 +408,14 @@ export default function Speakers2026({ compactTop = false }: { compactTop?: bool
                       width={160}
                       height={160}
                     />
-                    <div className="absolute w-24 h-24 right-4 top-4/4 transform -translate-y-1/2 bg-white p-2 rounded-md shadow-md">
-                      <div className='flex items-center h-full'>
+                    <div className="absolute w-24 h-24 right-4 top-4/4 transform -translate-y-1/2 bg-white p-2 rounded-md shadow-md overflow-hidden">
+                      <div className='flex items-center justify-center h-full w-full'>
                         <Image
                           src={speaker.logo}
                           alt={`${speaker.organization} logo`}
                           width={speaker.iconWidth}
                           height={speaker.iconHeight}
-                          className="my-auto mx-auto"
+                          className="object-contain max-h-full max-w-full w-auto h-auto"
                         />
                       </div>
                     </div>
