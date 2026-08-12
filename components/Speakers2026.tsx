@@ -6,10 +6,10 @@ import chrystelImage from '../images/2026-speakers/Yara international-Chrystel-M
 import yaraLogo from '../images/2026-speakers/Yara international-Chrystel-Monthean/Knowledge_grows_for_A4.png'
 import tawandaImage from '../images/2026-speakers/Gates-Foundation-Tawanda-Mthintwa-Hove/tawanda.jpg'
 import gatesLogo from '../images/2026-speakers/Gates-Foundation-Tawanda-Mthintwa-Hove/3840px-Gates_Foundation_Logo.svg.png'
+import lukeKnowlesImage from '../images/2026-speakers/Lloyds of london-Luke Knowles/Luke.jpg'
+import lloydsLogo from '../images/2026-speakers/Lloyds of london-Luke Knowles/lloyds-logo-sized-nav (1).png'
 import saurabhImage from '../images/2026-speakers/UNDP-Saurabh Sharma/SaurabhSharma.jpg'
 import undpLogo from '../images/2026-speakers/UNDP-Saurabh Sharma/UNDP_Logo_Blue.png'
-import marisaImage from '../images/2026-speakers/SC-Marisa Drew/Marisa Drew.jpeg'
-import marisaLogo from '../images/2026-speakers/SC-Marisa Drew/sc-lock-up-english-grey-rgb.png'
 import jennyImage from '../images/2026-speakers/Bain & Co.-Jenny Davis-Peccoud/Jenny Davis-Peccoud.jpg'
 import bainLogo from '../images/2026-speakers/Bain & Co.-Jenny Davis-Peccoud/bainstackedlogo_dig_red_1280x389px (1).png'
 import prueImage from '../images/2026-speakers/Google-Prue Mackenzie/prue photo (1).jpg'
@@ -201,16 +201,6 @@ const speakers: Speaker[] = [
     description: `<p class="mb-3">With deep-rooted experience in the agribusiness sector, Chrystel Monthean is committed to fostering a more inclusive food production system by supporting farmers in their tremendous role of both feeding the world by producing nutritious and high-quality crops and protecting the planet by adopting practices that improve nature as a business.</p><p class="mb-3">As the EVP Americas at Yara International, since 2020, she brings a diverse skill set and a unique approach to tackling the complex challenges specific to the agricultural industry.</p><p class="mb-3">Embracing the richness of diversity, Chrystel champions a workplace that celebrates human beings and empowers each individual to thrive.</p><p class="mb-3">With a background in agronomy engineering and international business, her professional journey has taken her across three different continents, shaping a profound understanding of global markets and cultural nuances. She has honed her expertise in driving innovation and forging impactful partnerships in diverse food production ecosystems.</p>`
   },
   {
-    name: 'Marisa Drew',
-    designation: 'Chief Sustainability Officer',
-    organization: 'Standard Chartered',
-    image: marisaImage,
-    logo: marisaLogo,
-    iconHeight: 80,
-    iconWidth: 80,
-    description: ''
-  },
-  {
     name: 'Peter Foster',
     designation: 'World Trade Editor',
     organization: 'Financial Times (FT)',
@@ -276,6 +266,16 @@ const speakers: Speaker[] = [
     organization: 'Gates Foundation',
     image: tawandaImage,
     logo: gatesLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: ''
+  },
+  {
+    name: 'Luke Knowles',
+    designation: 'Head of Catastrophe Analytics',
+    organization: 'Lloyd’s of London',
+    image: lukeKnowlesImage,
+    logo: lloydsLogo,
     iconHeight: 80,
     iconWidth: 80,
     description: ''
