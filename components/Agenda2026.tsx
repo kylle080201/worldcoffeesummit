@@ -90,7 +90,7 @@ const day1: DayAgenda = {
         },
         {
           title:
-            "FROM EXPOSURE TO INVESTMENT: TURNING CLIMATE & NATURE INTELLIGENCE INTO BUSINESS VALUE",
+            "FROM EXPOSURE TO INVESTMENT: TURNING CLIMATE, NATURE & RISK INTELLIGENCE INTO BUSINESS VALUE",
           description:
             "Climate and nature data are becoming business intelligence. Explore how better insights are supporting investment decisions, improving risk management and helping organisations identify opportunities across global supply chains.",
         },
