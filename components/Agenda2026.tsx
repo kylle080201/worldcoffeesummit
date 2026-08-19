@@ -174,10 +174,9 @@ const day2: DayAgenda = {
     },
     {
       time: "11:50 – 12:30",
-      title:
-        "PANEL: THE PROCUREMENT DECADE: SECURING SUPPLY IN AN ERA OF STRUCTURAL CHANGE",
+      title: "PANEL: BEYOND AI – FROM ADOPTION TO ADVANTAGE",
       description:
-        "Procurement is no longer simply about buying—but can it become one of the industry's greatest drivers of long-term supply resilience? How are leading organisations balancing resilience, supplier partnerships and competitiveness in an increasingly uncertain market?",
+        "AI is only valuable when it helps organisations make faster, better and more confident decisions. As the pace of innovation accelerates, what separates the technologies that transform organisations from those that struggle to gain traction?",
     },
     {
       time: "12:30 – 13:30",
@@ -186,9 +185,10 @@ const day2: DayAgenda = {
     },
     {
       time: "13:30 – 14:10",
-      title: "PANEL: BEYOND AI – FROM ADOPTION TO ADVANTAGE",
+      title:
+        "PANEL: THE PROCUREMENT DECADE: SECURING SUPPLY IN AN ERA OF STRUCTURAL CHANGE",
       description:
-        "AI is only valuable when it helps organisations make faster, better and more confident decisions. As the pace of innovation accelerates, what separates the technologies that transform organisations from those that struggle to gain traction?",
+        "Procurement is no longer simply about buying—but can it become one of the industry's greatest drivers of long-term supply resilience? How are leading organisations balancing resilience, supplier partnerships and competitiveness in an increasingly uncertain market?",
     },
     {
       time: "14:10 – 14:50",
