@@ -156,7 +156,7 @@ const day2: DayAgenda = {
     {
       time: "09:25 – 10:40",
       title:
-        "SIGNATURE PANEL: WHO WILL SECURE COFFEE & COCOA SUPPLY BY 2030?",
+        "PANEL: WHO WILL SECURE COFFEE & COCOA SUPPLY BY 2030?",
       description:
         "Bringing together senior decision-makers from across the coffee and cocoa value chain, this signature discussion examines how procurement, finance, technology and partnerships must evolve to secure future supply. Which decisions made today will matter most over the next decade?",
     },
