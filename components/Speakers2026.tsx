@@ -8,14 +8,11 @@ import tawandaImage from '../images/2026-speakers/Gates-Foundation-Tawanda-Mthin
 import gatesLogo from '../images/2026-speakers/Gates-Foundation-Tawanda-Mthintwa-Hove/3840px-Gates_Foundation_Logo.svg.png'
 import lukeKnowlesImage from '../images/2026-speakers/Lloyds of london-Luke Knowles/Luke.jpg'
 import lloydsLogo from '../images/2026-speakers/Lloyds of london-Luke Knowles/lloyds-logo-sized-nav (1).png'
+import cleitonVargasImage from '../images/2026-speakers/Yara-international-Cleiton Vargas/Cleiton Vargas copy.jpg'
 import saurabhImage from '../images/2026-speakers/UNDP-Saurabh Sharma/SaurabhSharma.jpg'
 import undpLogo from '../images/2026-speakers/UNDP-Saurabh Sharma/UNDP_Logo_Blue.png'
 import jennyImage from '../images/2026-speakers/Bain & Co.-Jenny Davis-Peccoud/Jenny Davis-Peccoud.jpg'
 import bainLogo from '../images/2026-speakers/Bain & Co.-Jenny Davis-Peccoud/bainstackedlogo_dig_red_1280x389px (1).png'
-import prueImage from '../images/2026-speakers/Google-Prue Mackenzie/prue photo (1).jpg'
-import googleLogo from '../images/2026-speakers/Google-Prue Mackenzie/Google Logo.png'
-import katrinaImage from '../images/2026-speakers/HSBC-Katrina-Hayter/Katrina Hayter.jpeg'
-import hsbcLogo from '../images/2026-speakers/HSBC-Katrina-Hayter/Hsbc_logo_PNG2.png'
 import davidLabordeImage from '../images/2026-speakers/FAO-David Laborde/David Laborde.jpg'
 import faoLogo from '../images/2026-speakers/FAO-David Laborde/fao-logo-en.png'
 import rickVanDerKampImage from '../images/2026-speakers/IFAD-Rick van der Kamp/Rick van der Kamp.jpg'
@@ -24,11 +21,15 @@ import sonyaImage from '../images/2026-speakers/CDP-Sonya Bhonsle/Sonya Bhonsle.
 import cdpLogo from '../images/2026-speakers/CDP-Sonya Bhonsle/cdp.png'
 import julietteImage from '../images/2026-speakers/BCG-Juliette-Cody/Juliette Cody.jpg'
 import bcgLogo from '../images/2026-speakers/BCG-Juliette-Cody/header-logo--bc.png'
+import paolaScarpaImage from '../images/2026-speakers/Lavaza-Group-Paola Scarpa/Lavazza_PaolaScarpa 005 copy.jpg'
+import lavazzaLogo from '../images/2026-speakers/Lavaza-Group-Paola Scarpa/LAVAZZA GROUP.png'
+import benRimaudImage from '../images/2026-speakers/Ecom-Ben Rimaud/Ben Rimaud pic copy.jpeg'
+import ecomLogo from '../images/2026-speakers/Ecom-Teddy Esteve/ECOM logo RGB.jpg'
+import edenCotteeJonesImage from '../images/2026-speakers/BCG-Eden Jones/1759144901871.jpg'
+import bcgMonogramLogo from '../images/2026-speakers/BCG-Eden Jones/BCG_MONOGRAM.png'
 import Link from 'next/link'
 const anupImage = '/images/2026-speakers/anup-jagwani.jpg'
 const worldBankLogo = '/images/2026-speakers/world-bank-group-logo.png'
-const teddyImage = '/images/2026-speakers/teddy-esteve.jpg'
-const ecomLogo = '/images/2026-speakers/ecom-logo.jpg'
 const timImage = '/images/2026-speakers/tim-scharrer.jpg'
 const volcafeLogo = '/images/2026-speakers/volcafe-logo.png'
 const olivierImage = '/images/2026-speakers/olivier-laboulle.jpeg'
@@ -101,16 +102,6 @@ const speakers: Speaker[] = [
     description: ''
   },
   {
-    name: 'Teddy Esteve',
-    designation: 'Managing Director',
-    organization: 'ECOM Agroindustrial Corp',
-    image: teddyImage,
-    logo: ecomLogo,
-    iconHeight: 80,
-    iconWidth: 80,
-    description: 'A lifetime with ECOM. ECOM is a 178-year-old family-owned Swiss commodity trading company with its roots in Barcelona, Spain. Seven generations trading commodities. Building the coffee business one bean at a time with farmers and roasters. I have been involved in most aspects of the business. I first managed our Mexican export operation, followed by the Guatemalan and so on to become a global coffee trading company. Also, I am a proud coffee farmer. Earlier: Born in the USA (Dallas, Texas, September 18, 1960). Raised and educated in Lausanne, Switzerland (Universite de Lausanne, HEC). Moved to Mexico in 1983 for 6 months, which lasted until 2023. Married and parent of 3 children. Fluent in Spanish, French and English, almost fluent in Italian and not fluent in German.'
-  },
-  {
     name: 'Tim Scharrer',
     designation: 'COO and Regional Director Europe and North America',
     organization: 'Volcafe',
@@ -119,6 +110,16 @@ const speakers: Speaker[] = [
     iconHeight: 200,
     iconWidth: 200,
     description: 'Appointed Chief Operating Officer and member of the Senior Leadership Team of Volcafe in 2023, Tim assumes global oversight of Volcafe\'s Sustainability and Supply Chain functions. In his capacity as Regional Director Europe and North America, Tim leads our destination businesses in those regions. Tim brings over 30 years of experience in green coffee trading and operations management, from both coffee merchants and the roasting industry. Tim started his career with an apprenticeship as a wholesale and international trade specialist. He went on to work in various coffee producing countries, including eight years at Volcafe in Colombia (Carcafe), and in the coffee trade in a variety of roles and markets. Prior to re-joining Volcafe, Tim was the Managing Director of SCTC (Starbucks Coffee Trading Company), where he worked for over 15 years.'
+  },
+  {
+    name: 'Paola Scarpa',
+    designation: 'Chief Digital Transformation Officer',
+    organization: 'Lavazza Group',
+    image: paolaScarpaImage,
+    logo: lavazzaLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: `<p class="mb-3">A graduate in management engineering from Politecnico di Milano, Paola Scarpa has built solid experience in digital strategy, gained over more than 15 years at Google, where she held leadership roles and became Managing Director of the Client Solutions, Data &amp; Insights business unit. In this role, she led digital strategic consulting initiatives across several sectors, including Telco, Lead Generation, Retail, Luxury, FMCG, and Healthcare.</p><p class="mb-3">In addition to her experience at Google, Paola has worked in strategic consulting and in managerial roles at leading organizations such as Monitor Company, Vodafone, and Boston Consulting Group. Since September 2025, she has been appointed Chief Digital Transformation Officer of the Lavazza Group, responsible for leading the digital transformation of the entire Group by promoting the adoption of advanced technologies, including artificial intelligence.</p><p class="mb-3">Long committed to promoting Women &amp; STEM, Paola is an ambassador for projects both within her company and in the Italian and European context. In 2022, she received the Standout Woman Award; in 2020, Forbes included her among the 100 most successful women in Italy, and she is also among the 18 winners of the 2018 &ldquo;Merito e Talento&rdquo; award.</p>`
   },
   {
     name: 'Olivier Laboulle',
@@ -171,6 +172,16 @@ const speakers: Speaker[] = [
     description: 'Mario Abreu has been the Ferrero Group Vice President Sustainability since April 2020, based in Luxembourg. That role entails securing sustainability is fully embedded in the Group\'s long-term business strategy. Prior to Ferrero Mario worked for over 20 years in sustainability for Tetra Pak, the last 5 of them as their Global VP Sustainability based in Lund, Sweden. Throughout his time in Tetra Pak he led teams of up to 100 people globally, developing industry-leading programmes for collection and recycling of beverage cartons. Earlier Mario worked as a technical and commercial director for paper manufacturing and recycling businesses. In addition, he has served on several boards (FSC International, RSPO, High Conservation Value Resource Network, Proforest Initiative, and ACE Beverage Cartons) and technical advisory groups (Science Based Targets initiative). Mario is a Mechanical Engineer, with a Post-Grad Diploma in Environmental Decision Making, having done sustainability and business trainings at CISL (UK), IMD (CH), Ashridge (UK), the Open University (UK), and Fundaçao Getulio Vargas (BR).'
   },
   {
+    name: 'Ben Rimaud',
+    designation: 'Global Sustainability Manager for Coffee',
+    organization: 'ECOM Agroindustrial Corp',
+    image: benRimaudImage,
+    logo: ecomLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: `<p class="mb-3">Ben Rimaud joined ECOM in 2018 and serves as Global Sustainability Manager for Coffee.</p><p class="mb-3">ECOM is a 178-year-old family-owned Swiss commodity trading company with roots in Barcelona, Spain. In the early 2000s, ECOM established its Sustainable Management Services (SMS) division, dedicated to supporting farmer prosperity through technical assistance and access to innovative solutions.</p><p class="mb-3">Ben oversees coffee sustainability programmes across origin countries, reaching hundreds of thousands of smallholder farmers through ECOM&apos;s SMS field teams. He leads the Group&apos;s coffee sustainability strategy, regenerative agriculture programmes, and innovative coffee services, including the development of new coffee varieties.</p>`
+  },
+  {
     name: 'Malcolm Hett',
     designation: 'Director of Sustainability',
     organization: 'UCC Europe',
@@ -189,6 +200,16 @@ const speakers: Speaker[] = [
     iconHeight: 80,
     iconWidth: 80,
     description: 'Andre van den Beld is Chief Sustainability Officer at ETG, one of the largest global agri commodity trading and processing firms, with its stronghold in Sub-Sahara Africa. He has over 15 years of experience in building dedicated supply chains in various tropical commodities including cocoa, cashew, coffee, soya, cotton and fertilizers. Leading a 500+ FTE multidisciplinary team, ETG is mainly focusing on innovations at scale, such as waste recycling, renewable energy, biochar fertilizers and women finance solutions.'
+  },
+  {
+    name: 'Lena Schweighöfer',
+    designation: 'Head of Sustainable Coffee',
+    organization: 'Tchibo GmbH',
+    image: lenaImage,
+    logo: tchiboLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: `<p class="mb-3">Lena Schweighöfer is Head of Sustainable Coffee at Tchibo. In this role, she oversees the Tchibo coffee program &ldquo;Coffee2Stay&rdquo; which aims to create long-term prospects for coffee farmers and promote sustainable farming practices.</p><p>After completing her master&apos;s degree with a focus on international relations, Lena has built up expertise in human rights due diligence, sustainability legislation, and agricultural supply chains through her previous professional positions at ALDI Nord and GIZ.</p>`
   },
   {
     name: 'Chrystel Monthean',
@@ -211,14 +232,14 @@ const speakers: Speaker[] = [
     description: 'Peter Foster is the world trade editor of the Financial Times. His brief is to report on the shifting landscape of global supply chains, investment and trade patterns being reorientated as a result of pressures being applied by the second Trump administration. Previously Peter was UK policy editor, reporting on the UK\'s post-Brexit trade, regulatory and investment environment. Peter appears regularly discussing policy issues on radio and television broadcasts, including BBC, RTE as well as Italian and German stations. He joined the FT in April 2020 from the Telegraph Media Group where he had held the position of Europe editor since 2015, focusing on the Brexit negotiations. He has more than two decades of experience covering global affairs from all sides of the world, based in New Delhi (2004-2008) and Beijing (2008-2012), as well as Washington DC, where he served as The Telegraph\'s US editor from 2012-2015. His book What Went Wrong with Brexit - and what we can do about it was published by Canongate in September 2023. It was a Waterstones \'best book of 2023\', a Guardian \'if you read one book about politics\' pick and a Christmas Book choice by \'The Week\'.'
   },
   {
-    name: 'Prue Mackenzie',
-    designation: 'Director, Retail & CPG, Strategic Industries EMEA',
-    organization: 'Google',
-    image: prueImage,
-    logo: googleLogo,
+    name: 'Eden Cottee-Jones',
+    designation: 'Senior Director, BCG Henderson Institute',
+    organization: 'Boston Consulting Group (BCG)',
+    image: edenCotteeJonesImage,
+    logo: bcgMonogramLogo,
     iconHeight: 80,
     iconWidth: 80,
-    description: 'Prue Mackenzie is a Director at Google Cloud, based in Paris. She is responsible for Google Cloud\'s largest clients in EMEA for the luxury, retail, CPG and travel sectors. Prue leads executives and board members on their AI and agentic journeys to accelerate their strategic priorities. Previously, Prue spent 10 years in Investment Banking at Credit Suisse in global roles across UK/EMEA, Singapore, the US and Australia. A passionate advocate for technology and AI education, Prue is an Industry Fellow at the University of Queensland, President of Harvard Alumni Women in France, and a Board Member of the Harvard Club of France.'
+    description: ''
   },
   {
     name: 'Jenny Davis-Peccoud',
@@ -229,16 +250,6 @@ const speakers: Speaker[] = [
     iconHeight: 80,
     iconWidth: 80,
     description: 'Jenny Davis-Peccoud is a partner in Bain & Company\'s Amsterdam office. In her almost 30 years at Bain, Jenny has advised clients across a wide range of industries, as well as government entities and NGOs, on topics such as growth strategy, organizational effectiveness, merger integration, business transformation, digital acceleration, pricing, supply chain and leadership team development. A US and French citizen, Jenny has led projects in varied business cultures across Europe, the Middle East, Asia and North America. Jenny founded and heads Bain\'s Global Sustainability & Responsibility practice. In the sustainability sphere, Jenny advises companies on how to tackle social and environmental challenges and opportunities as strategic issues at the heart of their core businesses. Beyond her broad expertise in this area, she has a particular focus on the food value chain, from agriculture to consumer products to retail, as well as the systems solutions needed to drive impactful and lasting change. She directs Bain\'s research in this field, focusing on topics such as the change management challenge of sustainability programs and the role of sustainability in employee engagement. Her work in this area has been published in The Wall Street Journal, The Huffington Post, HBR.org and the Stanford Social Innovation Review. Jenny received her BS from Georgetown University and her MBA, with distinction, from Harvard Business School.'
-  },
-  {
-    name: 'Lena Schweighöfer',
-    designation: 'Head of Sustainable Coffee',
-    organization: 'Tchibo GmbH',
-    image: lenaImage,
-    logo: tchiboLogo,
-    iconHeight: 80,
-    iconWidth: 80,
-    description: `<p class="mb-3">Lena Schweighöfer is Head of Sustainable Coffee at Tchibo. In this role, she oversees the Tchibo coffee program &ldquo;Coffee2Stay&rdquo; which aims to create long-term prospects for coffee farmers and promote sustainable farming practices.</p><p>After completing her master&apos;s degree with a focus on international relations, Lena has built up expertise in human rights due diligence, sustainability legislation, and agricultural supply chains through her previous professional positions at ALDI Nord and GIZ.</p>`
   },
   {
     name: 'Raymond Bob Katta',
@@ -281,6 +292,16 @@ const speakers: Speaker[] = [
     description: ''
   },
   {
+    name: 'Cleiton Vargas',
+    designation: 'SVP Innovation Americas',
+    organization: 'Yara International',
+    image: cleitonVargasImage,
+    logo: yaraLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: 'Cleiton Vargas (born in 1969) has been with Yara for over 30 years and recently took on the role of Senior Vice President of Innovation for the Americas. Throughout his career at the company, he has held various positions across different business units, including Commercial, Operations, and Logistics. Cleiton holds a degree in Agronomic Engineering from the Federal University of Rio Grande do Sul and an MBA in Marketing from the Escola Superior de Propaganda e Marketing.'
+  },
+  {
     name: 'Saurabh Sharma',
     designation: 'Global Technical Lead - Nature & Inclusive Insurance',
     organization: 'UNDP',
@@ -299,16 +320,6 @@ const speakers: Speaker[] = [
     iconHeight: 80,
     iconWidth: 80,
     description: ''
-  },
-  {
-    name: 'Katrina Hayter',
-    designation: 'Global Head Sustainable Land Use & Supply Chains',
-    organization: 'HSBC',
-    image: katrinaImage,
-    logo: hsbcLogo,
-    iconHeight: 80,
-    iconWidth: 80,
-    description: 'Katrina is Global Head of Sustainable Land Use & Supply Chains at HSBC in Group Sustainability. She is HSBC\'s senior expert on land use and the agri-food system transition. Her focal areas include sustainable agriculture, new technologies & commericalisation, with a particularly focus on decarbonisation and low carbon and nature positive technologies, new industry segments and supply chain sustainability. She is supporting the bank and its customers globally, in land-based industries and across supply chains, transition to a low carbon future. Previously she was in the UK government, where she held a number senior civil servant roles including Executive Director for Healthy Living and Agriculture for the UK innovation agency. Katrina has worked for different organisations across the Agri-food sector including FERA Science, DuPont Pioneer, and the World Economic Forum. Throughout her career, she has worked on the commercialisation of technology innovation both from a public and government perspective. Katrina has a PhD in Biosciences, an MSc in Ecology and a BSc in Plant Sciences.'
   },
   {
     name: 'Rick van der Kamp',
