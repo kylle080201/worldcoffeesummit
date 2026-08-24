@@ -68,6 +68,7 @@ interface Speaker {
   iconHeight: number;
   iconWidth: number;
   description: string;
+  logoClassName?: string;
 }
 
 const speakers: Speaker[] = [
@@ -109,6 +110,7 @@ const speakers: Speaker[] = [
     logo: volcafeLogo,
     iconHeight: 200,
     iconWidth: 200,
+    logoClassName: 'scale-[1.35]',
     description: 'Appointed Chief Operating Officer and member of the Senior Leadership Team of Volcafe in 2023, Tim assumes global oversight of Volcafe\'s Sustainability and Supply Chain functions. In his capacity as Regional Director Europe and North America, Tim leads our destination businesses in those regions. Tim brings over 30 years of experience in green coffee trading and operations management, from both coffee merchants and the roasting industry. Tim started his career with an apprenticeship as a wholesale and international trade specialist. He went on to work in various coffee producing countries, including eight years at Volcafe in Colombia (Carcafe), and in the coffee trade in a variety of roles and markets. Prior to re-joining Volcafe, Tim was the Managing Director of SCTC (Starbucks Coffee Trading Company), where he worked for over 15 years.'
   },
   {
@@ -426,7 +428,7 @@ export default function Speakers2026({ compactTop = false }: { compactTop?: bool
                           alt={`${speaker.organization} logo`}
                           width={speaker.iconWidth}
                           height={speaker.iconHeight}
-                          className="object-contain max-h-full max-w-full w-auto h-auto"
+                          className={`object-contain max-h-full max-w-full w-auto h-auto ${speaker.logoClassName ?? ''}`}
                         />
                       </div>
                     </div>
