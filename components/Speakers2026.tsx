@@ -22,7 +22,7 @@ import cdpLogo from '../images/2026-speakers/CDP-Sonya Bhonsle/cdp.png'
 import julietteImage from '../images/2026-speakers/BCG-Juliette-Cody/Juliette Cody.jpg'
 import bcgLogo from '../images/2026-speakers/BCG-Juliette-Cody/header-logo--bc.png'
 import paolaScarpaImage from '../images/2026-speakers/Lavaza-Group-Paola Scarpa/Lavazza_PaolaScarpa 005 copy.jpg'
-import lavazzaLogo from '../images/2026-speakers/Lavaza-Group-Paola Scarpa/LAVAZZA GROUP.png'
+import lavazzaLogo from '../images/2026-speakers/Lavaza-Group-Paola Scarpa/LAVAZZA GROUP CROPPED.png'
 import benRimaudImage from '../images/2026-speakers/Ecom-Ben Rimaud/Ben Rimaud pic copy.jpeg'
 import ecomLogo from '../images/2026-speakers/Ecom-Teddy Esteve/ECOM logo RGB.jpg'
 import edenCotteeJonesImage from '../images/2026-speakers/BCG-Eden Jones/1759144901871.jpg'
@@ -282,16 +282,6 @@ const speakers: Speaker[] = [
     description: ''
   },
   {
-    name: 'Luke Knowles',
-    designation: 'Head of Catastrophe Analytics',
-    organization: 'Lloyd’s of London',
-    image: lukeKnowlesImage,
-    logo: lloydsLogo,
-    iconHeight: 80,
-    iconWidth: 80,
-    description: ''
-  },
-  {
     name: 'Cleiton Vargas',
     designation: 'SVP Innovation Americas',
     organization: 'Yara International',
@@ -300,6 +290,16 @@ const speakers: Speaker[] = [
     iconHeight: 80,
     iconWidth: 80,
     description: 'Cleiton Vargas (born in 1969) has been with Yara for over 30 years and recently took on the role of Senior Vice President of Innovation for the Americas. Throughout his career at the company, he has held various positions across different business units, including Commercial, Operations, and Logistics. Cleiton holds a degree in Agronomic Engineering from the Federal University of Rio Grande do Sul and an MBA in Marketing from the Escola Superior de Propaganda e Marketing.'
+  },
+  {
+    name: 'Luke Knowles',
+    designation: 'Head of Catastrophe Analytics',
+    organization: 'Lloyd’s of London',
+    image: lukeKnowlesImage,
+    logo: lloydsLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: ''
   },
   {
     name: 'Saurabh Sharma',
