@@ -25,7 +25,7 @@ import paolaScarpaImage from '../images/2026-speakers/Lavaza-Group-Paola Scarpa/
 import lavazzaLogo from '../images/2026-speakers/Lavaza-Group-Paola Scarpa/LAVAZZA GROUP CROPPED.png'
 import benRimaudImage from '../images/2026-speakers/Ecom-Ben Rimaud/Ben Rimaud pic copy.jpeg'
 import ecomLogo from '../images/2026-speakers/Ecom-Teddy Esteve/ECOM logo RGB.jpg'
-import edenCotteeJonesImage from '../images/2026-speakers/BCG-Eden Jones/1759144901871.jpg'
+import edenCotteeJonesImage from '../images/2026-speakers/BCG-Eden Jones/468 23.01.17 BCG Eden Cottee-Jones copy.jpg'
 import bcgMonogramLogo from '../images/2026-speakers/BCG-Eden Jones/BCG_MONOGRAM.png'
 import Link from 'next/link'
 const anupImage = '/images/2026-speakers/anup-jagwani.jpg'
