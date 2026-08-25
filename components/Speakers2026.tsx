@@ -25,7 +25,7 @@ import paolaScarpaImage from '../images/2026-speakers/Lavaza-Group-Paola Scarpa/
 import lavazzaLogo from '../images/2026-speakers/Lavaza-Group-Paola Scarpa/LAVAZZA GROUP CROPPED.png'
 import benRimaudImage from '../images/2026-speakers/Ecom-Ben Rimaud/Ben Rimaud pic copy.jpeg'
 import ecomLogo from '../images/2026-speakers/Ecom-Teddy Esteve/ECOM logo RGB.jpg'
-import edenCotteeJonesImage from '../images/2026-speakers/BCG-Eden Jones/1759144901871.jpg'
+import edenCotteeJonesImage from '../images/2026-speakers/BCG-Eden Jones/468 23.01.17 BCG Eden Cottee-Jones copy.jpg'
 import bcgMonogramLogo from '../images/2026-speakers/BCG-Eden Jones/BCG_MONOGRAM.png'
 import Link from 'next/link'
 const anupImage = '/images/2026-speakers/anup-jagwani.jpg'
@@ -241,7 +241,7 @@ const speakers: Speaker[] = [
     logo: bcgMonogramLogo,
     iconHeight: 80,
     iconWidth: 80,
-    description: ''
+    description: 'Eden manages the BCG Institute’s Climate & Energy Transition Lab, part of the Boston Consulting Group’s internal think-tank, dedicated to exploring new insights on pressing sustainability topics. Eden has served clients at BCG for over 10 years, on projects ranging from developing nature strategies to shaping major multi-stakeholder sustainability initiatives. Prior to BCG, Eden holds a DPhil from the University of Oxford in biodiversity conservation.'
   },
   {
     name: 'Jenny Davis-Peccoud',
