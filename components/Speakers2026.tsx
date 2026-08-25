@@ -241,7 +241,7 @@ const speakers: Speaker[] = [
     logo: bcgMonogramLogo,
     iconHeight: 80,
     iconWidth: 80,
-    description: ''
+    description: 'Eden manages the BCG Institute’s Climate & Energy Transition Lab, part of the Boston Consulting Group’s internal think-tank, dedicated to exploring new insights on pressing sustainability topics. Eden has served clients at BCG for over 10 years, on projects ranging from developing nature strategies to shaping major multi-stakeholder sustainability initiatives. Prior to BCG, Eden holds a DPhil from the University of Oxford in biodiversity conservation.'
   },
   {
     name: 'Jenny Davis-Peccoud',
