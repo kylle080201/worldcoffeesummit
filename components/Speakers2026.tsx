@@ -76,7 +76,7 @@ export interface Speaker {
 export const speakers2026: Speaker[] = [
   {
     name: 'The Rt. Hon John Gummer, The Lord Deben',
-    designation: 'Former Secretary of State for the Environment & Minister of Agriculture, Fisheries, and Food',
+    designation: 'Former UK Secretary of State for the Environment & Minister of Agriculture, Fisheries, and Food',
     organization: '',
     image: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Lord-Deben-Photo-2019-adj-003-scaled-copy.jpg',
     logo: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/House_of_Lords_logo_2020.svg.png',
