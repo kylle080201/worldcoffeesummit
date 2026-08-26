@@ -1,6 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import type { StaticImageData } from "next/image";
+import { speakers2026, type Speaker } from "./Speakers2026";
+
+type AgendaParticipant = Pick<
+  Speaker,
+  "name" | "designation" | "organization" | "image"
+>;
 
 type AgendaItem = {
   time: string;
@@ -9,6 +16,9 @@ type AgendaItem = {
   subtitle?: string;
   description?: string;
   extra?: { title: string; subtitle?: string; description?: string }[];
+  speaker?: AgendaParticipant;
+  chair?: AgendaParticipant;
+  speakers?: AgendaParticipant[];
 };
 
 type DayAgenda = {
@@ -17,6 +27,86 @@ type DayAgenda = {
   theme: string;
   items: AgendaItem[];
 };
+
+function pick(...names: string[]): AgendaParticipant[] {
+  return names.map((name) => {
+    const speaker = speakers2026.find((entry) => entry.name === name);
+    if (!speaker) {
+      throw new Error(`Speaker not found for agenda: ${name}`);
+    }
+    return {
+      name: speaker.name,
+      designation: speaker.designation,
+      organization: speaker.organization,
+      image: speaker.image,
+    };
+  });
+}
+
+function pickOne(name: string): AgendaParticipant {
+  return pick(name)[0];
+}
+
+function imageSrc(image: string | StaticImageData) {
+  return typeof image === "string" ? image : image.src;
+}
+
+function AgendaSpeakerLine({ participant }: { participant: AgendaParticipant }) {
+  return (
+    <div className="mb-3 flex items-start gap-3">
+      <img
+        className="agenda-img flex-shrink-0"
+        src={imageSrc(participant.image)}
+        alt={participant.name}
+      />
+      <p className="min-w-0 pt-1">
+        <b>{participant.name}</b>, {participant.designation}
+        {participant.organization ? (
+          <>
+            , <b>{participant.organization}</b>
+          </>
+        ) : null}
+      </p>
+    </div>
+  );
+}
+
+function AgendaParticipants({
+  speaker,
+  chair,
+  speakers,
+}: {
+  speaker?: AgendaParticipant;
+  chair?: AgendaParticipant;
+  speakers?: AgendaParticipant[];
+}) {
+  if (!speaker && !chair && !speakers?.length) return null;
+
+  return (
+    <div className="mt-4 text-base leading-relaxed">
+      {speaker ? (
+        <div>
+          <p className="font-bold">Speaker</p>
+          <AgendaSpeakerLine participant={speaker} />
+        </div>
+      ) : null}
+      {chair ? (
+        <div className={speaker ? "mt-4" : undefined}>
+          <p className="font-bold">Chair</p>
+          <AgendaSpeakerLine participant={chair} />
+        </div>
+      ) : null}
+      {speakers && speakers.length > 0 ? (
+        <div className={speaker || chair ? "mt-4" : undefined}>
+          <p className="font-bold">Speakers</p>
+          {speakers.map((participant) => (
+            <AgendaSpeakerLine key={participant.name} participant={participant} />
+          ))}
+        </div>
+      ) : null}
+    </div>
+  );
+}
 
 const day1: DayAgenda = {
   label: "Day 1",
@@ -31,6 +121,7 @@ const day1: DayAgenda = {
     {
       time: "09:00 – 09:05",
       title: "WELCOME REMARKS",
+      speaker: pickOne("Joy Macknight"),
     },
     {
       time: "09:05 – 09:15",
@@ -39,12 +130,18 @@ const day1: DayAgenda = {
     {
       time: "09:15 – 09:25",
       title: "INSPIRATIONAL TALK",
+      speaker: pickOne("The Rt. Hon John Gummer, The Lord Deben"),
     },
     {
       time: "09:25 – 10:15",
       title: "OPENING PANEL: EUDR READY? TRACEABILITY VS REALITY",
       description:
         "As EUDR reshapes global coffee and cocoa trade, traceability is becoming the licence to trade. But how ready is today's supply—and what separates compliance on paper from compliance in practice?",
+      speakers: pick(
+        "Olivier Laboulle",
+        "Mario Abreu",
+        "Marcela Gaviria"
+      ),
     },
     {
       time: "10:15 – 10:30",
@@ -61,6 +158,8 @@ const day1: DayAgenda = {
         "GLOBAL LEADERS FORUM: IS THE TRADITIONAL COFFEE TRADING MODEL STILL FIT FOR THE FUTURE?",
       description:
         "Coffee trading has always evolved—but today's combination of regulation, volatility and supply uncertainty raises a bigger question: what will define the next generation of coffee trading?",
+      chair: pickOne("Peter Foster"),
+      speakers: pick("Tim Scharrer", "Chrystel Monthean"),
     },
     {
       time: "12:00 – 12:40",
@@ -68,6 +167,11 @@ const day1: DayAgenda = {
         "PANEL: WHO PAYS—OR PROFITS—FROM RESILIENCE? FINANCING THE FUTURE OF GLOBAL SUPPLY CHAINS",
       description:
         "Resilience cannot be built without capital. Who carries the risk, who finances the transition and where is long-term value created? As investment priorities evolve, which financing models will prove most effective in securing future supply?",
+      speakers: pick(
+        "Anup Jagwani",
+        "Dr. Sarah Tischer",
+        "Saurabh Sharma"
+      ),
     },
     {
       time: "12:40 – 13:00",
@@ -107,6 +211,12 @@ const day1: DayAgenda = {
         "PANEL: DECARBONISATION AT SCALE: FROM SCOPE 3 COMMITMENTS TO MEASURABLE OUTCOMES",
       description:
         "Moving from Scope 3 commitments to measurable outcomes remains one of the industry's biggest execution challenges. What will it take to embed carbon management into procurement, supplier engagement and day-to-day business decisions—and how can digital MRV help turn ambition into measurable action?",
+      chair: pickOne("Sonya Bhonsle"),
+      speakers: pick(
+        "Andre van den Beld",
+        "Cleiton Vargas",
+        "Kevin Duisters"
+      ),
     },
     {
       time: "16:40 – 17:25",
@@ -114,10 +224,18 @@ const day1: DayAgenda = {
         "PANEL: PUTTING NATURE ON THE BALANCE SHEET: NATURAL CAPITAL AS A STRATEGIC BUSINESS ASSET",
       description:
         "Healthy landscapes underpin long-term productivity, supply security and investment performance. How can biodiversity, soil health and water resilience become measurable business assets rather than external costs?",
+      chair: pickOne("David Laborde"),
+      speakers: pick(
+        "Juliette Cody",
+        "Luke Knowles",
+        "Toby Behrmann",
+        "Dr. Tawanda Mthintwa Hove"
+      ),
     },
     {
       time: "17:25 – 17:30",
       title: "CLOSING REMARKS",
+      speaker: pickOne("Joy Macknight"),
     },
     {
       time: "18:30 – 20:30",
@@ -144,6 +262,7 @@ const day2: DayAgenda = {
     {
       time: "09:00 – 09:05",
       title: "OPENING REMARKS",
+      speaker: pickOne("Sean Edwards"),
     },
     {
       time: "09:05 – 09:15",
@@ -155,10 +274,18 @@ const day2: DayAgenda = {
     },
     {
       time: "09:25 – 10:40",
-      title:
-        "PANEL: WHO WILL SECURE COFFEE & COCOA SUPPLY BY 2030?",
+      title: "PANEL: WHO WILL SECURE COFFEE & COCOA SUPPLY BY 2030?",
       description:
         "Bringing together senior decision-makers from across the coffee and cocoa value chain, this signature discussion examines how procurement, finance, technology and partnerships must evolve to secure future supply. Which decisions made today will matter most over the next decade?",
+      chair: pickOne("Jenny Davis-Peccoud"),
+      speakers: pick(
+        "Tim Scharrer",
+        "Olivier Laboulle",
+        "Dr. Sarah Tischer",
+        "Piet van Asten",
+        "Juliette Cody",
+        "Mario Abreu"
+      ),
     },
     {
       time: "10:40 – 11:10",
@@ -171,12 +298,15 @@ const day2: DayAgenda = {
         "PANEL: REGENERATIVE AGRICULTURE – BUILDING THE NEXT GENERATION OF RESILIENT COFFEE & COCOA PRODUCTION SYSTEMS",
       description:
         "If higher productivity alone is no longer enough, what will resilient production look like? How can farming systems respond to climate pressures, protect natural resources and remain commercially viable at scale?",
+      chair: pickOne("Eden Cottee-Jones"),
+      speakers: pick("Piet van Asten", "Ben Rimaud", "Raymond Bob Katta"),
     },
     {
       time: "11:50 – 12:30",
       title: "PANEL: BEYOND AI – FROM ADOPTION TO ADVANTAGE",
       description:
         "AI is only valuable when it helps organisations make faster, better and more confident decisions. As the pace of innovation accelerates, what separates the technologies that transform organisations from those that struggle to gain traction?",
+      speakers: pick("Paola Scarpa"),
     },
     {
       time: "12:30 – 13:30",
@@ -189,6 +319,12 @@ const day2: DayAgenda = {
         "PANEL: THE PROCUREMENT DECADE: SECURING SUPPLY IN AN ERA OF STRUCTURAL CHANGE",
       description:
         "Procurement is no longer simply about buying—but can it become one of the industry's greatest drivers of long-term supply resilience? How are leading organisations balancing resilience, supplier partnerships and competitiveness in an increasingly uncertain market?",
+      chair: pickOne("Michael Mowat"),
+      speakers: pick(
+        "Malcolm Hett",
+        "Lena Schweighöfer",
+        "Rick van der Kamp"
+      ),
     },
     {
       time: "14:10 – 14:50",
@@ -226,7 +362,13 @@ function AgendaSession({ item }: { item: AgendaItem }) {
   const isBreak = item.variant === "break";
   const barClass = isBreak ? "bg-gray-600" : "bg-lime-700";
   const heading = toBarTitle(item.title, item.subtitle);
-  const hasDetails = Boolean(item.description || item.extra?.length);
+  const hasDetails = Boolean(
+    item.description ||
+      item.extra?.length ||
+      item.speaker ||
+      item.chair ||
+      item.speakers?.length
+  );
 
   return (
     <div className="mt-8">
@@ -244,7 +386,7 @@ function AgendaSession({ item }: { item: AgendaItem }) {
       </div>
 
       {hasDetails && (
-        <div className="mt-4 max-w-5xl px-2">
+        <div className="mt-4 w-full px-2">
           {item.description && <p className="italic">{item.description}</p>}
           {item.extra && item.extra.length > 0 && (
             <div
@@ -267,6 +409,11 @@ function AgendaSession({ item }: { item: AgendaItem }) {
               ))}
             </div>
           )}
+          <AgendaParticipants
+            speaker={item.speaker}
+            chair={item.chair}
+            speakers={item.speakers}
+          />
         </div>
       )}
     </div>
@@ -302,74 +449,84 @@ function Agenda2026() {
   const [activeTab, setActiveTab] = useState<TabId>("full");
 
   return (
-    <div id="agenda-2026" className="w-full scroll-mt-24">
-      <div className="mx-auto max-w-5xl px-4 pb-16 pt-6 sm:px-6">
-        <h2 className="relative text-center text-4xl font-bold tracking-tight">
-          2026 AGENDA
-        </h2>
+    <>
+      <style>{`
+        .agenda-img {
+          display: block;
+          height: 50px;
+          width: 50px;
+          border-radius: 100%;
+        }
+      `}</style>
+      <div id="agenda-2026" className="w-full scroll-mt-24">
+        <div className="mx-auto max-w-5xl px-4 pb-16 pt-6 sm:px-6">
+          <h2 className="relative text-center text-4xl font-bold tracking-tight">
+            2026 AGENDA
+          </h2>
 
-        <div
-          role="tablist"
-          aria-label="2026 agenda days"
-          className="mt-8 flex flex-wrap items-center justify-center gap-2 border-b border-gray-200 sm:gap-6"
-        >
-          {tabs.map((tab) => {
-            const isActive = activeTab === tab.id;
-            return (
-              <button
-                key={tab.id}
-                type="button"
-                role="tab"
-                aria-selected={isActive}
-                onClick={() => setActiveTab(tab.id)}
-                className={`-mb-px border-b-2 px-3 py-3 text-base font-semibold transition-colors sm:px-4 sm:text-lg ${
-                  isActive
-                    ? "border-lime-700 text-lime-700"
-                    : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-800"
-                }`}
-              >
-                {tab.label}
-              </button>
-            );
-          })}
-        </div>
+          <div
+            role="tablist"
+            aria-label="2026 agenda days"
+            className="mt-8 flex flex-wrap items-center justify-center gap-2 border-b border-gray-200 sm:gap-6"
+          >
+            {tabs.map((tab) => {
+              const isActive = activeTab === tab.id;
+              return (
+                <button
+                  key={tab.id}
+                  type="button"
+                  role="tab"
+                  aria-selected={isActive}
+                  onClick={() => setActiveTab(tab.id)}
+                  className={`-mb-px border-b-2 px-3 py-3 text-base font-semibold transition-colors sm:px-4 sm:text-lg ${
+                    isActive
+                      ? "border-lime-700 text-lime-700"
+                      : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-800"
+                  }`}
+                >
+                  {tab.label}
+                </button>
+              );
+            })}
+          </div>
 
-        <div className="mt-8" role="tabpanel">
-          {activeTab === "full" && (
-            <>
-              <DaySection day={day1} showHeading />
-              <div className="mt-16">
-                <DaySection day={day2} showHeading />
-              </div>
-            </>
-          )}
+          <div className="mt-8" role="tabpanel">
+            {activeTab === "full" && (
+              <>
+                <DaySection day={day1} showHeading />
+                <div className="mt-16">
+                  <DaySection day={day2} showHeading />
+                </div>
+              </>
+            )}
 
-          {activeTab === "day1" && (
-            <>
-              <h3 className="text-center text-3xl font-bold tracking-tight text-lime-700">
-                {day1.date}
-              </h3>
-              <h4 className="text-center text-2xl font-bold tracking-tight">
-                {day1.theme}
-              </h4>
-              <DaySection day={day1} showHeading={false} />
-            </>
-          )}
+            {activeTab === "day1" && (
+              <>
+                <h3 className="text-center text-3xl font-bold tracking-tight text-lime-700">
+                  {day1.date}
+                </h3>
+                <h4 className="text-center text-2xl font-bold tracking-tight">
+                  {day1.theme}
+                </h4>
+                <DaySection day={day1} showHeading={false} />
+              </>
+            )}
 
-          {activeTab === "day2" && (
-            <>
-              <h3 className="text-center text-3xl font-bold tracking-tight text-lime-700">
-                {day2.date}
-              </h3>
-              <h4 className="text-center text-2xl font-bold tracking-tight">
-                {day2.theme}
-              </h4>
-              <DaySection day={day2} showHeading={false} />
-            </>
-          )}
+            {activeTab === "day2" && (
+              <>
+                <h3 className="text-center text-3xl font-bold tracking-tight text-lime-700">
+                  {day2.date}
+                </h3>
+                <h4 className="text-center text-2xl font-bold tracking-tight">
+                  {day2.theme}
+                </h4>
+                <DaySection day={day2} showHeading={false} />
+              </>
+            )}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
