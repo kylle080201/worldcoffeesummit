@@ -9,6 +9,8 @@ import gatesLogo from '../images/2026-speakers/Gates-Foundation-Tawanda-Mthintwa
 import lukeKnowlesImage from '../images/2026-speakers/Lloyds of london-Luke Knowles/Luke.jpg'
 import lloydsLogo from '../images/2026-speakers/Lloyds of london-Luke Knowles/lloyds-logo-sized-nav (1).png'
 import cleitonVargasImage from '../images/2026-speakers/Yara-international-Cleiton Vargas/Cleiton Vargas copy.jpg'
+import kevinDuistersImage from '../images/2026-speakers/Proba-Projects-Kevin Duisters/Kevin Duisters copy.jpg'
+import probaLogo from '../images/2026-speakers/Proba-Projects-Kevin Duisters/ProbaPositive.png'
 import saurabhImage from '../images/2026-speakers/UNDP-Saurabh Sharma/SaurabhSharma.jpg'
 import undpLogo from '../images/2026-speakers/UNDP-Saurabh Sharma/UNDP_Logo_Blue.png'
 import jennyImage from '../images/2026-speakers/Bain & Co.-Jenny Davis-Peccoud/Jenny Davis-Peccoud.jpg'
@@ -59,7 +61,7 @@ const pmbLogo = '/images/2026-speakers/pmb-logo.png'
 const marcelaImage = '/images/2026-speakers/marcela-gaviria.jpg'
 const fncLogo = '/images/2026-speakers/fnc-logo.png'
 
-interface Speaker {
+export interface Speaker {
   name: string;
   designation: string;
   organization: string;
@@ -71,7 +73,7 @@ interface Speaker {
   logoClassName?: string;
 }
 
-const speakers: Speaker[] = [
+export const speakers2026: Speaker[] = [
   {
     name: 'The Rt. Hon John Gummer, The Lord Deben',
     designation: 'Former Secretary of State for the Environment & Minister of Agriculture, Fisheries, and Food',
@@ -294,6 +296,16 @@ const speakers: Speaker[] = [
     description: 'Cleiton Vargas (born in 1969) has been with Yara for over 30 years and recently took on the role of Senior Vice President of Innovation for the Americas. Throughout his career at the company, he has held various positions across different business units, including Commercial, Operations, and Logistics. Cleiton holds a degree in Agronomic Engineering from the Federal University of Rio Grande do Sul and an MBA in Marketing from the Escola Superior de Propaganda e Marketing.'
   },
   {
+    name: 'Kevin Duisters',
+    designation: 'Acting CEO',
+    organization: 'Proba Projects',
+    image: kevinDuistersImage,
+    logo: probaLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: `<p class="mb-3">Kevin Duisters is Managing Partner of Pinea Partners, an infrastructure development firm, and acting CEO of Proba Projects, a joint venture with Proba that develops and finances projects in low-carbon agricultural commodities and bioenergy. Proba, its founding partner, quantifies and certifies fertilizer-related emission reductions across agri-food supply chains.</p><p class="mb-3">Previously, Kevin held senior roles at the trading firms STX Commodities and Interfood. Before that, he served as a consultant to the United Nations Chief Executives Board for Coordination, advising on data strategy for development finance.</p><p>At the conference, Kevin will introduce Proba Projects and speak about how, building on Proba&apos;s quantified and certified emission reductions, it is unlocking sustainability premiums by financing reductions in fertilizer-related emissions in Brazil&apos;s coffee sector, alongside the company&apos;s expansion plans.</p>`
+  },
+  {
     name: 'Luke Knowles',
     designation: 'Head of Catastrophe Analytics',
     organization: 'Lloyd’s of London',
@@ -377,7 +389,7 @@ const speakers: Speaker[] = [
 
 export const speakerCompanyLogos = Array.from(
   new Map(
-    speakers
+    speakers2026
       .filter((speaker) => speaker.logo)
       .map((speaker) => [
         speaker.organization || speaker.name,
@@ -406,7 +418,7 @@ export default function Speakers2026({ compactTop = false }: { compactTop?: bool
             role="list"
             className="grid grid-cols-1 mx-auto mt-20 max-w-7xl gap-x-6 gap-y-20 md:grid-cols-2 lg:grid-cols-4 lg:gap-x-8"
           >
-            {speakers.map((speaker) => (
+            {speakers2026.map((speaker) => (
               <li
                 onClick={() => setSelectedSpeaker(speaker)}
                 key={speaker.name}
