@@ -53,20 +53,21 @@ function imageSrc(image: string | StaticImageData) {
 
 function AgendaSpeakerLine({ participant }: { participant: AgendaParticipant }) {
   return (
-    <>
+    <div className="mb-3 flex items-start gap-3">
       <img
-        className="agenda-img"
+        className="agenda-img flex-shrink-0"
         src={imageSrc(participant.image)}
         alt={participant.name}
-      />{" "}
-      <b>{participant.name}</b>, {participant.designation}
-      {participant.organization ? (
-        <>
-          , <b>{participant.organization}</b>
-        </>
-      ) : null}
-      <br />
-    </>
+      />
+      <p className="min-w-0 pt-1">
+        <b>{participant.name}</b>, {participant.designation}
+        {participant.organization ? (
+          <>
+            , <b>{participant.organization}</b>
+          </>
+        ) : null}
+      </p>
+    </div>
   );
 }
 
@@ -84,27 +85,24 @@ function AgendaParticipants({
   return (
     <div className="mt-4 text-base leading-relaxed">
       {speaker ? (
-        <p>
-          <b>Speaker</b>
-          <br />
+        <div>
+          <p className="font-bold">Speaker</p>
           <AgendaSpeakerLine participant={speaker} />
-        </p>
+        </div>
       ) : null}
       {chair ? (
-        <p className={speaker ? "mt-4" : undefined}>
-          <b>Chair</b>
-          <br />
+        <div className={speaker ? "mt-4" : undefined}>
+          <p className="font-bold">Chair</p>
           <AgendaSpeakerLine participant={chair} />
-        </p>
+        </div>
       ) : null}
       {speakers && speakers.length > 0 ? (
-        <p className={speaker || chair ? "mt-4" : undefined}>
-          <b>Speakers</b>
-          <br />
+        <div className={speaker || chair ? "mt-4" : undefined}>
+          <p className="font-bold">Speakers</p>
           {speakers.map((participant) => (
             <AgendaSpeakerLine key={participant.name} participant={participant} />
           ))}
-        </p>
+        </div>
       ) : null}
     </div>
   );
@@ -216,8 +214,8 @@ const day1: DayAgenda = {
       chair: pickOne("Sonya Bhonsle"),
       speakers: pick(
         "Andre van den Beld",
-        "Kevin Duisters",
-        "Cleiton Vargas"
+        "Cleiton Vargas",
+        "Kevin Duisters"
       ),
     },
     {
@@ -454,11 +452,10 @@ function Agenda2026() {
     <>
       <style>{`
         .agenda-img {
-          display: inline-block;
+          display: block;
           height: 50px;
           width: 50px;
           border-radius: 100%;
-          margin-bottom: 10px;
         }
       `}</style>
       <div id="agenda-2026" className="w-full scroll-mt-24">
