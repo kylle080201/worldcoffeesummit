@@ -137,6 +137,7 @@ const day1: DayAgenda = {
       title: "OPENING PANEL: EUDR READY? TRACEABILITY VS REALITY",
       description:
         "As EUDR reshapes global coffee and cocoa trade, traceability is becoming the licence to trade. But how ready is today's supply—and what separates compliance on paper from compliance in practice?",
+      chair: pickOne("Mumbi Gitau"),
       speakers: pick(
         "Olivier Laboulle",
         "Mario Abreu",
@@ -228,8 +229,7 @@ const day1: DayAgenda = {
       speakers: pick(
         "Juliette Cody",
         "Luke Knowles",
-        "Toby Behrmann",
-        "Dr. Tawanda Mthintwa Hove"
+        "Toby Behrmann"
       ),
     },
     {

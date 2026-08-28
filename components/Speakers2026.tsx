@@ -4,8 +4,6 @@ import React, { Fragment, useState } from 'react'
 import Image, { type StaticImageData } from 'next/image'
 import chrystelImage from '../images/2026-speakers/Yara international-Chrystel-Monthean/Chrystel Monthean.jpg'
 import yaraLogo from '../images/2026-speakers/Yara international-Chrystel-Monthean/Knowledge_grows_for_A4.png'
-import tawandaImage from '../images/2026-speakers/Gates-Foundation-Tawanda-Mthintwa-Hove/tawanda.jpg'
-import gatesLogo from '../images/2026-speakers/Gates-Foundation-Tawanda-Mthintwa-Hove/3840px-Gates_Foundation_Logo.svg.png'
 import lukeKnowlesImage from '../images/2026-speakers/Lloyds of london-Luke Knowles/Luke.jpg'
 import lloydsLogo from '../images/2026-speakers/Lloyds of london-Luke Knowles/lloyds-logo-sized-nav (1).png'
 import cleitonVargasImage from '../images/2026-speakers/Yara-international-Cleiton Vargas/Cleiton Vargas copy.jpg'
@@ -15,6 +13,8 @@ import saurabhImage from '../images/2026-speakers/UNDP-Saurabh Sharma/SaurabhSha
 import undpLogo from '../images/2026-speakers/UNDP-Saurabh Sharma/UNDP_Logo_Blue.png'
 import jennyImage from '../images/2026-speakers/Bain & Co.-Jenny Davis-Peccoud/Jenny Davis-Peccoud.jpg'
 import bainLogo from '../images/2026-speakers/Bain & Co.-Jenny Davis-Peccoud/bainstackedlogo_dig_red_1280x389px (1).png'
+import mumbiGitauImage from '../images/2026-speakers/Bloomberg-Mumbi Gitau/mumbi-gitau.jpg'
+import bloombergLogo from '../images/2026-speakers/Bloomberg-Mumbi Gitau/og-image-generic-lp.png'
 import davidLabordeImage from '../images/2026-speakers/FAO-David Laborde/David Laborde.jpg'
 import faoLogo from '../images/2026-speakers/FAO-David Laborde/fao-logo-en.png'
 import rickVanDerKampImage from '../images/2026-speakers/IFAD-Rick van der Kamp/Rick van der Kamp.jpg'
@@ -256,6 +256,16 @@ export const speakers2026: Speaker[] = [
     description: 'Jenny Davis-Peccoud is a partner in Bain & Company\'s Amsterdam office. In her almost 30 years at Bain, Jenny has advised clients across a wide range of industries, as well as government entities and NGOs, on topics such as growth strategy, organizational effectiveness, merger integration, business transformation, digital acceleration, pricing, supply chain and leadership team development. A US and French citizen, Jenny has led projects in varied business cultures across Europe, the Middle East, Asia and North America. Jenny founded and heads Bain\'s Global Sustainability & Responsibility practice. In the sustainability sphere, Jenny advises companies on how to tackle social and environmental challenges and opportunities as strategic issues at the heart of their core businesses. Beyond her broad expertise in this area, she has a particular focus on the food value chain, from agriculture to consumer products to retail, as well as the systems solutions needed to drive impactful and lasting change. She directs Bain\'s research in this field, focusing on topics such as the change management challenge of sustainability programs and the role of sustainability in employee engagement. Her work in this area has been published in The Wall Street Journal, The Huffington Post, HBR.org and the Stanford Social Innovation Review. Jenny received her BS from Georgetown University and her MBA, with distinction, from Harvard Business School.'
   },
   {
+    name: 'Mumbi Gitau',
+    designation: 'Commodities Reporter',
+    organization: 'Bloomberg News',
+    image: mumbiGitauImage,
+    logo: bloombergLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: 'Mumbi Gitau, soft commodities reporter at Bloomberg News, covering global coffee, cocoa, sugar, cotton, and orange juice markets.',
+  },
+  {
     name: 'Raymond Bob Katta',
     designation: 'Executive Chairman',
     organization: 'Produce Monitoring Board (PMB), Sierra Leone',
@@ -274,16 +284,6 @@ export const speakers2026: Speaker[] = [
     iconHeight: 80,
     iconWidth: 80,
     description: `<p class="mb-3">Marcela Gaviria is the Director of Alliances and Projects at the Colombian Coffee Growers Federation (FNC). She brings over 14 years of experience in sustainability, corporate relations, and international cooperation, having led strategic programs and high-impact partnerships with organizations such as the Nespresso AAA Program (supporting over 16,000 coffee growers), the European Union, Starbucks, and the Howard G. Buffett Foundation. Since 2023, she has led the implementation strategy for the EU Deforestation Regulation (EUDR), positioning Colombia&apos;s coffee sector as a global benchmark for regulatory compliance.</p><p>Prior to her role at the FNC, Marcela worked in international cooperation at Endeavor, where she contributed to initiatives promoting entrepreneurship and economic development. She holds a Master&apos;s degree in International Development from Universit&eacute; Paul-Val&eacute;ry Montpellier III in France and an MSc in Management from the University of Buckingham.</p>`,
-  },
-  {
-    name: 'Dr. Tawanda Mthintwa Hove',
-    designation: 'Senior Program Officer, Digital Agronomy',
-    organization: 'Gates Foundation',
-    image: tawandaImage,
-    logo: gatesLogo,
-    iconHeight: 80,
-    iconWidth: 80,
-    description: ''
   },
   {
     name: 'Cleiton Vargas',
