@@ -13,7 +13,7 @@ import saurabhImage from '../images/2026-speakers/UNDP-Saurabh Sharma/SaurabhSha
 import undpLogo from '../images/2026-speakers/UNDP-Saurabh Sharma/UNDP_Logo_Blue.png'
 import jennyImage from '../images/2026-speakers/Bain & Co.-Jenny Davis-Peccoud/Jenny Davis-Peccoud.jpg'
 import bainLogo from '../images/2026-speakers/Bain & Co.-Jenny Davis-Peccoud/bainstackedlogo_dig_red_1280x389px (1).png'
-import mumbiGitauImage from '../images/2026-speakers/Bloomberg-Mumbi Gitau/MUMBI_GITAU_003 copy.JPG'
+import mumbiGitauImage from '../images/2026-speakers/Bloomberg-Mumbi Gitau/mumbi-gitau.jpg'
 import bloombergLogo from '../images/2026-speakers/Bloomberg-Mumbi Gitau/og-image-generic-lp.png'
 import davidLabordeImage from '../images/2026-speakers/FAO-David Laborde/David Laborde.jpg'
 import faoLogo from '../images/2026-speakers/FAO-David Laborde/fao-logo-en.png'
