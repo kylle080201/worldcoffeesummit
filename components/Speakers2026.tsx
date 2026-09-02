@@ -9,6 +9,8 @@ import lloydsLogo from '../images/2026-speakers/Lloyds of london-Luke Knowles/ll
 import cleitonVargasImage from '../images/2026-speakers/Yara-international-Cleiton Vargas/Cleiton Vargas copy.jpg'
 import kevinDuistersImage from '../images/2026-speakers/Proba-Projects-Kevin Duisters/Kevin Duisters copy.jpg'
 import probaLogo from '../images/2026-speakers/Proba-Projects-Kevin Duisters/ProbaPositive.png'
+import andersFrigaardImage from '../images/2026-speakers/IFD-Anders Frigaard/anders-frigaard-investment-director-707x1024 copy.jpeg'
+import impactFundDenmarkLogo from '../images/2026-speakers/IFD-Anders Frigaard/impactfunddenmark-2025-rgb-primary-logo-payoff-1-denmarkred-oceanblue-2.avif'
 import saurabhImage from '../images/2026-speakers/UNDP-Saurabh Sharma/SaurabhSharma.jpg'
 import undpLogo from '../images/2026-speakers/UNDP-Saurabh Sharma/UNDP_Logo_Blue.png'
 import jennyImage from '../images/2026-speakers/Bain & Co.-Jenny Davis-Peccoud/Jenny Davis-Peccoud.jpg'
@@ -25,6 +27,8 @@ import julietteImage from '../images/2026-speakers/BCG-Juliette-Cody/Juliette Co
 import bcgLogo from '../images/2026-speakers/BCG-Juliette-Cody/header-logo--bc.png'
 import paolaScarpaImage from '../images/2026-speakers/Lavaza-Group-Paola Scarpa/Lavazza_PaolaScarpa 005 copy.jpg'
 import lavazzaLogo from '../images/2026-speakers/Lavaza-Group-Paola Scarpa/LAVAZZA GROUP CROPPED.png'
+import ericGorlierImage from '../images/2026-speakers/Nestle-Eric Gorlier/1747158274357.jpg'
+import nestleLogo from '../images/2026-speakers/Nestle-Eric Gorlier/49915638706_3718fc133d_o.png'
 import benRimaudImage from '../images/2026-speakers/Ecom-Ben Rimaud/Ben Rimaud pic copy.jpeg'
 import ecomLogo from '../images/2026-speakers/Ecom-Teddy Esteve/ECOM logo RGB.jpg'
 import edenCotteeJonesImage from '../images/2026-speakers/BCG-Eden Jones/468 23.01.17 BCG Eden Cottee-Jones copy.jpg'
@@ -124,6 +128,16 @@ export const speakers2026: Speaker[] = [
     iconHeight: 80,
     iconWidth: 80,
     description: `<p class="mb-3">A graduate in management engineering from Politecnico di Milano, Paola Scarpa has built solid experience in digital strategy, gained over more than 15 years at Google, where she held leadership roles and became Managing Director of the Client Solutions, Data &amp; Insights business unit. In this role, she led digital strategic consulting initiatives across several sectors, including Telco, Lead Generation, Retail, Luxury, FMCG, and Healthcare.</p><p class="mb-3">In addition to her experience at Google, Paola has worked in strategic consulting and in managerial roles at leading organizations such as Monitor Company, Vodafone, and Boston Consulting Group. Since September 2025, she has been appointed Chief Digital Transformation Officer of the Lavazza Group, responsible for leading the digital transformation of the entire Group by promoting the adoption of advanced technologies, including artificial intelligence.</p><p class="mb-3">Long committed to promoting Women &amp; STEM, Paola is an ambassador for projects both within her company and in the Italian and European context. In 2022, she received the Standout Woman Award; in 2020, Forbes included her among the 100 most successful women in Italy, and she is also among the 18 winners of the 2018 &ldquo;Merito e Talento&rdquo; award.</p>`
+  },
+  {
+    name: 'Eric Gorlier',
+    designation: 'Global Head of Procurement, Commodities and Sustainability',
+    organization: 'Nestlé',
+    image: ericGorlierImage,
+    logo: nestleLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: ''
   },
   {
     name: 'Olivier Laboulle',
@@ -304,6 +318,16 @@ export const speakers2026: Speaker[] = [
     iconHeight: 80,
     iconWidth: 80,
     description: `<p class="mb-3">Kevin Duisters is Managing Partner of Pinea Partners, an infrastructure development firm, and acting CEO of Proba Projects, a joint venture with Proba that develops and finances projects in low-carbon agricultural commodities and bioenergy. Proba, its founding partner, quantifies and certifies fertilizer-related emission reductions across agri-food supply chains.</p><p class="mb-3">Previously, Kevin held senior roles at the trading firms STX Commodities and Interfood. Before that, he served as a consultant to the United Nations Chief Executives Board for Coordination, advising on data strategy for development finance.</p><p>At the conference, Kevin will introduce Proba Projects and speak about how, building on Proba&apos;s quantified and certified emission reductions, it is unlocking sustainability premiums by financing reductions in fertilizer-related emissions in Brazil&apos;s coffee sector, alongside the company&apos;s expansion plans.</p>`
+  },
+  {
+    name: 'Anders Frigaard',
+    designation: 'Investment Director, Sustainable Food Systems',
+    organization: 'Impact Fund Denmark',
+    image: andersFrigaardImage,
+    logo: impactFundDenmarkLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: ''
   },
   {
     name: 'Luke Knowles',
