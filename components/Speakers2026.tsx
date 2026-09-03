@@ -311,13 +311,13 @@ export const speakers2026: Speaker[] = [
   },
   {
     name: 'Kevin Duisters',
-    designation: 'Acting CEO',
-    organization: 'Proba Projects',
+    designation: 'Commercial Lead',
+    organization: 'Proba',
     image: kevinDuistersImage,
     logo: probaLogo,
     iconHeight: 80,
     iconWidth: 80,
-    description: `<p class="mb-3">Kevin Duisters is Managing Partner of Pinea Partners, an infrastructure development firm, and acting CEO of Proba Projects, a joint venture with Proba that develops and finances projects in low-carbon agricultural commodities and bioenergy. Proba, its founding partner, quantifies and certifies fertilizer-related emission reductions across agri-food supply chains.</p><p class="mb-3">Previously, Kevin held senior roles at the trading firms STX Commodities and Interfood. Before that, he served as a consultant to the United Nations Chief Executives Board for Coordination, advising on data strategy for development finance.</p><p>At the conference, Kevin will introduce Proba Projects and speak about how, building on Proba&apos;s quantified and certified emission reductions, it is unlocking sustainability premiums by financing reductions in fertilizer-related emissions in Brazil&apos;s coffee sector, alongside the company&apos;s expansion plans.</p>`
+    description: `<p class="mb-3">Kevin Duisters is the Commercial Lead at Proba, Managing Partner of Pinea Partners, an infrastructure development firm, and acting CEO of Proba Projects, a joint venture with Proba that develops and finances projects in low-carbon agricultural commodities and bioenergy. Proba, its founding partner, quantifies and certifies fertilizer-related emission reductions across agri-food supply chains.</p><p class="mb-3">Previously, Kevin held senior roles at the trading firms STX Commodities and Interfood. Before that, he served as a consultant to the United Nations Chief Executives Board for Coordination, advising on data strategy for development finance. At the conference, Kevin will introduce Proba Projects and speak about how, building on Proba&apos;s quantified and certified emission reductions, it is unlocking sustainability premiums by financing reductions in fertilizer-related emissions in Brazil&apos;s coffee sector, alongside the company&apos;s expansion plans.</p>`
   },
   {
     name: 'Anders Frigaard',
