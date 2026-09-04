@@ -20,7 +20,6 @@ interface T_Speaker {
 }
 
 const S2025 = '/images/2025-speakers';
-const FT_LOGO = '/images/2026-speakers/financial-times-logo.jpg';
 
 
 
@@ -492,7 +491,7 @@ Before joining TechnoServe, Myriam was a management consultant with McKinsey & C
       role: 'World Trade Editor',
       company: 'Financial Times (FT)',
       imageUrl: `${S2025}/FT/Peter Foster.JPG`,
-      companyIcon: FT_LOGO,
+      companyIcon: "",
       iconWidth: 80,
       iconHeight: 80,
       bio: `Peter Foster is the world trade editor of the Financial Times (FT). `
@@ -701,7 +700,7 @@ With over 25 years of experience in tropical commodity production landscapes, Ni
       role: 'Journalist, Former Editor',
       company: 'Financial Times - The Banker',
       imageUrl: 'https://worldcoffeealliance.com/wp-content/uploads/2024/08/Joy-Macknight-12-of-19.jpg',
-      companyIcon: FT_LOGO,
+      companyIcon: "",
       iconWidth: 120,
       iconHeight: 120,
       bio: `Joy MacKnight is a freelance journalist and former editor of The Banker, part of the
