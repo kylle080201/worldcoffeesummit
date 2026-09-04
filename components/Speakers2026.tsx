@@ -10,13 +10,11 @@ import cleitonVargasImage from '../images/2026-speakers/Yara-international-Cleit
 import kevinDuistersImage from '../images/2026-speakers/Proba-Projects-Kevin Duisters/Kevin Duisters copy.jpg'
 import probaLogo from '../images/2026-speakers/Proba-Projects-Kevin Duisters/ProbaPositive.png'
 import andersFrigaardImage from '../images/2026-speakers/IFD-Anders Frigaard/anders-frigaard-investment-director-707x1024 copy.jpeg'
-import impactFundDenmarkLogo from '../images/2026-speakers/IFD-Anders Frigaard/impactfunddenmark-2025-rgb-primary-logo-payoff-1-denmarkred-oceanblue-2.avif'
 import saurabhImage from '../images/2026-speakers/UNDP-Saurabh Sharma/SaurabhSharma.jpg'
 import undpLogo from '../images/2026-speakers/UNDP-Saurabh Sharma/UNDP_Logo_Blue.png'
 import jennyImage from '../images/2026-speakers/Bain & Co.-Jenny Davis-Peccoud/Jenny Davis-Peccoud.jpg'
 import bainLogo from '../images/2026-speakers/Bain & Co.-Jenny Davis-Peccoud/bainstackedlogo_dig_red_1280x389px (1).png'
 import mumbiGitauImage from '../images/2026-speakers/Bloomberg-Mumbi Gitau/mumbi-gitau.jpg'
-import bloombergLogo from '../images/2026-speakers/Bloomberg-Mumbi Gitau/og-image-generic-lp.png'
 import davidLabordeImage from '../images/2026-speakers/FAO-David Laborde/David Laborde.jpg'
 import faoLogo from '../images/2026-speakers/FAO-David Laborde/fao-logo-en.png'
 import rickVanDerKampImage from '../images/2026-speakers/IFAD-Rick van der Kamp/Rick van der Kamp.jpg'
@@ -50,7 +48,6 @@ const etgLogo = '/images/2026-speakers/etg-logo.png'
 const malcolmImage = '/images/2026-speakers/malcolm-hett.jpg'
 const uccLogo = '/images/2026-speakers/ucc-europe-logo.png'
 const peterImage = '/images/2026-speakers/peter-foster.jpg'
-const financialTimesLogo = '/images/2026-speakers/financial-times-logo.jpg'
 const michaelImage = '/images/2026-speakers/michael-mowat.jpg'
 const ibmLogo = '/images/2026-speakers/michael-ibm-logo-v3.png'
 const tobyImage = '/images/2026-speakers/toby-behrmann.jpeg'
@@ -64,15 +61,16 @@ const raymondImage = '/images/2026-speakers/raymond-katta.jpeg'
 const pmbLogo = '/images/2026-speakers/pmb-logo.png'
 const marcelaImage = '/images/2026-speakers/marcela-gaviria.jpg'
 const fncLogo = '/images/2026-speakers/fnc-logo.png'
+const impactFundDenmarkLogo = '/images/2026-speakers/impactfunddenmark-logo.avif'
 
 export interface Speaker {
   name: string;
   designation: string;
   organization: string;
   image: string | StaticImageData;
-  logo: string | StaticImageData;
-  iconHeight: number;
-  iconWidth: number;
+  logo?: string | StaticImageData;
+  iconHeight?: number;
+  iconWidth?: number;
   description: string;
   logoClassName?: string;
 }
@@ -244,9 +242,6 @@ export const speakers2026: Speaker[] = [
     designation: 'World Trade Editor',
     organization: 'Financial Times (FT)',
     image: peterImage,
-    logo: financialTimesLogo,
-    iconHeight: 80,
-    iconWidth: 80,
     description: 'Peter Foster is the world trade editor of the Financial Times. His brief is to report on the shifting landscape of global supply chains, investment and trade patterns being reorientated as a result of pressures being applied by the second Trump administration. Previously Peter was UK policy editor, reporting on the UK\'s post-Brexit trade, regulatory and investment environment. Peter appears regularly discussing policy issues on radio and television broadcasts, including BBC, RTE as well as Italian and German stations. He joined the FT in April 2020 from the Telegraph Media Group where he had held the position of Europe editor since 2015, focusing on the Brexit negotiations. He has more than two decades of experience covering global affairs from all sides of the world, based in New Delhi (2004-2008) and Beijing (2008-2012), as well as Washington DC, where he served as The Telegraph\'s US editor from 2012-2015. His book What Went Wrong with Brexit - and what we can do about it was published by Canongate in September 2023. It was a Waterstones \'best book of 2023\', a Guardian \'if you read one book about politics\' pick and a Christmas Book choice by \'The Week\'.'
   },
   {
@@ -274,9 +269,6 @@ export const speakers2026: Speaker[] = [
     designation: 'Commodities Reporter',
     organization: 'Bloomberg News',
     image: mumbiGitauImage,
-    logo: bloombergLogo,
-    iconHeight: 80,
-    iconWidth: 80,
     description: 'Mumbi Gitau, soft commodities reporter at Bloomberg News, covering global coffee, cocoa, sugar, cotton, and orange juice markets.',
   },
   {
@@ -394,9 +386,6 @@ export const speakers2026: Speaker[] = [
     designation: 'Journalist, Former Editor',
     organization: 'Financial Times - The Banker',
     image: joyImage,
-    logo: financialTimesLogo,
-    iconHeight: 80,
-    iconWidth: 80,
     description: 'Joy Macknight is a freelance journalist and former editor of The Banker, part of the Financial Times group. She joined The Banker in August 2015 as transaction banking and technology editor, was promoted to deputy editor in September 2016 and then to managing editor in April 2019, before becoming the first female editor in the publication’s history in March 2021. Previously, she was features editor at Profit & Loss, editorial director at Treasury Today and editor at gtnews. She also worked as staff writer on Banking Technology and IBM Computer Today, as well as a freelancer on Computer Weekly.'
   },
   {
@@ -457,17 +446,19 @@ export default function Speakers2026({ compactTop = false }: { compactTop?: bool
                       width={160}
                       height={160}
                     />
-                    <div className="absolute w-24 h-24 right-4 top-4/4 transform -translate-y-1/2 bg-white p-2 rounded-md shadow-md overflow-hidden">
-                      <div className='flex items-center justify-center h-full w-full'>
-                        <Image
-                          src={speaker.logo}
-                          alt={`${speaker.organization} logo`}
-                          width={speaker.iconWidth}
-                          height={speaker.iconHeight}
-                          className={`object-contain max-h-full max-w-full w-auto h-auto ${speaker.logoClassName ?? ''}`}
-                        />
+                    {speaker.logo && (
+                      <div className="absolute w-24 h-24 right-4 top-4/4 transform -translate-y-1/2 bg-white p-2 rounded-md shadow-md overflow-hidden">
+                        <div className='flex items-center justify-center h-full w-full'>
+                          <Image
+                            src={speaker.logo}
+                            alt={`${speaker.organization} logo`}
+                            width={speaker.iconWidth ?? 80}
+                            height={speaker.iconHeight ?? 80}
+                            className={`object-contain max-h-full max-w-full w-auto h-auto ${speaker.logoClassName ?? ''}`}
+                          />
+                        </div>
                       </div>
-                    </div>
+                    )}
                   </div>
                   <div className="flex text-left p-4">
                     <div className="mt-6">
@@ -520,11 +511,13 @@ export default function Speakers2026({ compactTop = false }: { compactTop?: bool
                       <div className='flex-shrink-0 mx-auto'>
                         <Image className="rounded-md w-[20rem]" src={selectedSpeaker.image} alt={selectedSpeaker.name} width={160} height={160} />
                       </div>
-                      <div className='flex justify-center p-2'>
-                        <div className='bg-white p-2 rounded-md'>
-                          <Image src={selectedSpeaker.logo} alt={`${selectedSpeaker.organization} logo`} width={140} height={140} />
+                      {selectedSpeaker.logo && (
+                        <div className='flex justify-center p-2'>
+                          <div className='bg-white p-2 rounded-md'>
+                            <Image src={selectedSpeaker.logo} alt={`${selectedSpeaker.organization} logo`} width={140} height={140} />
+                          </div>
                         </div>
-                      </div>
+                      )}
                       <div className="flex mx-auto text-center">
                         <div>
                           <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{selectedSpeaker.name}</p>

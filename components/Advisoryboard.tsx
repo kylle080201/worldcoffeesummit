@@ -82,18 +82,20 @@ export default function Advisoryboard() {
                   loading="lazy"
                 />
 
-                <div className="absolute right-4 top-4/4 h-24 w-24 -translate-y-1/2 transform overflow-hidden rounded-md bg-white p-2 shadow-md">
-                  <div className="flex h-full w-full items-center justify-center">
-                    <img
-                      src={assetSrc(speaker.logo)}
-                      alt={`${speaker.organization} logo`}
-                      height={speaker.iconHeight}
-                      width={speaker.iconWidth}
-                      className={`max-h-full max-w-full object-contain ${speaker.logoClassName ?? ""}`}
-                      loading="lazy"
-                    />
+                {speaker.logo ? (
+                  <div className="absolute right-4 top-4/4 h-24 w-24 -translate-y-1/2 transform overflow-hidden rounded-md bg-white p-2 shadow-md">
+                    <div className="flex h-full w-full items-center justify-center">
+                      <img
+                        src={assetSrc(speaker.logo)}
+                        alt={`${speaker.organization} logo`}
+                        height={speaker.iconHeight}
+                        width={speaker.iconWidth}
+                        className={`max-h-full max-w-full object-contain ${speaker.logoClassName ?? ""}`}
+                        loading="lazy"
+                      />
+                    </div>
                   </div>
-                </div>
+                ) : null}
               </div>
 
               <div className="flex flex-grow flex-col justify-start bg-[#4D7C0F] p-6 px-4 pb-4 pt-12 text-white">
@@ -150,16 +152,18 @@ export default function Advisoryboard() {
               loading="lazy"
             />
 
-            <div className="mb-6 flex justify-center">
-              <img
-                src={assetSrc(selectedSpeaker.logo)}
-                alt={`${selectedSpeaker.organization} logo`}
-                width={160}
-                height={160}
-                className="h-20 object-contain"
-                loading="lazy"
-              />
-            </div>
+            {selectedSpeaker.logo ? (
+              <div className="mb-6 flex justify-center">
+                <img
+                  src={assetSrc(selectedSpeaker.logo)}
+                  alt={`${selectedSpeaker.organization} logo`}
+                  width={160}
+                  height={160}
+                  className="h-20 object-contain"
+                  loading="lazy"
+                />
+              </div>
+            ) : null}
 
             <h2 id="modal-title" className="mb-2 text-3xl font-bold">
               {selectedSpeaker.name}
