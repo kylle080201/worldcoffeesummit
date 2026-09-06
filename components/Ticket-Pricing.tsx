@@ -1,5 +1,5 @@
 "use client"
-import React, { useCallback, useEffect, useState } from 'react'
+import React, { useCallback, useState } from 'react'
 
 import Link from 'next/link'
 import { BriefcaseBusiness, Landmark, Rocket, Users, Wine, type LucideIcon } from 'lucide-react'
@@ -145,21 +145,12 @@ function TicketPricing() {
     const handleExpired = useCallback(() => setShowCountdown(false), [])
     const summitRows = getSummit()
 
-    // Hide only the countdown once the deadline passes; keep early-bird prices on the table.
-    useEffect(() => {
-        if (!showCountdown) return
-        const id = window.setInterval(() => {
-            if (!isPromoPricingActive()) setShowCountdown(false)
-        }, 1000)
-        return () => window.clearInterval(id)
-    }, [showCountdown])
-
     return (
         <div className="z-40 py-12 bg-white sm:py-20">
             <div id="summit" className="flow-root px-6 mx-auto mt-12 rounded-md max-w-7xl">
                 <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                     <div className="flex flex-col w-full gap-6 lg:flex-row lg:gap-4 lg:items-start lg:justify-between">
-                        <div className={`flex flex-col w-full font-bold text-center items-center justify-center ${showCountdown ? 'lg:w-1/2 lg:text-left lg:items-start' : ''}`}>
+                        <div className="flex flex-col w-full font-bold text-center items-center justify-center lg:w-1/2 lg:text-left lg:items-start">
                             <h1 className="w-full mt-1 text-4xl text-black xl:text-5xl">
                                 Secure your pass to WCIS26
                             </h1>
@@ -167,19 +158,21 @@ function TicketPricing() {
                                 Join global leaders and senior stakeholders from across the coffee and cocoa supply chain.
                             </p>
                         </div>
-                        {showCountdown ? (
-                            <div className="flex flex-col items-center w-full min-w-0 gap-3 px-2 lg:w-1/2">
-                                <p className="w-full text-xl font-bold leading-snug text-center text-lime-700 sm:text-2xl md:text-3xl">
-                                    Prices increase after
-                                    <br className="sm:hidden" />{' '}
-                                    19 September 2026
-                                </p>
-                                <p className="w-full text-sm font-normal text-center text-black sm:text-base">
-                                    Current rates end in:
-                                </p>
-                                <RegisterCountDown onExpired={handleExpired} />
-                            </div>
-                        ) : null}
+                        <div className="flex flex-col items-center w-full min-w-0 gap-3 px-2 lg:w-1/2">
+                            <p className="w-full text-xl font-bold leading-snug text-center text-lime-700 sm:text-2xl md:text-3xl">
+                                Prices increase after
+                                <br className="sm:hidden" />{' '}
+                                19 September 2026
+                            </p>
+                            {showCountdown ? (
+                                <>
+                                    <p className="w-full text-sm font-normal text-center text-black sm:text-base">
+                                        Current rates end in:
+                                    </p>
+                                    <RegisterCountDown onExpired={handleExpired} />
+                                </>
+                            ) : null}
+                        </div>
                     </div>
                     <div className="flex items-center justify-center w-full gap-4 mt-10">
                         <div className="h-px bg-gray-300 w-28 sm:w-44" />

@@ -24,20 +24,14 @@ export const PROMO_STRIPE_PRICES = {
     networkingSoiree: 'price_1TzZ58KMWpUKzQVz12PQEdIQ',
 } as const
 
-export function getActiveStripePrices(now = Date.now()) {
-    const promo = isPromoPricingActive(now)
+export function getActiveStripePrices(_now = Date.now()) {
+    // Keep promo Stripe IDs after the countdown ends so displayed prices stay unchanged.
     return {
-        ngoGovernmentAcademic: promo
-            ? PROMO_STRIPE_PRICES.ngoGovernmentAcademic
-            : STANDARD_STRIPE_PRICES.ngoGovernmentAcademic,
-        corporate: promo ? PROMO_STRIPE_PRICES.corporate : STANDARD_STRIPE_PRICES.corporate,
+        ngoGovernmentAcademic: PROMO_STRIPE_PRICES.ngoGovernmentAcademic,
+        corporate: PROMO_STRIPE_PRICES.corporate,
         startUp: STANDARD_STRIPE_PRICES.startUp,
-        serviceProvider: promo
-            ? PROMO_STRIPE_PRICES.serviceProvider
-            : STANDARD_STRIPE_PRICES.serviceProvider,
-        networkingSoiree: promo
-            ? PROMO_STRIPE_PRICES.networkingSoiree
-            : STANDARD_STRIPE_PRICES.networkingSoiree,
+        serviceProvider: PROMO_STRIPE_PRICES.serviceProvider,
+        networkingSoiree: PROMO_STRIPE_PRICES.networkingSoiree,
     } as const
 }
 
