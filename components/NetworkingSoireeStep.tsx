@@ -4,7 +4,7 @@ import React, { useMemo, useState } from 'react'
 import { useSearchParams } from 'next/navigation'
 import getStripe from '../get_stripe'
 import BackButton from './BackButton'
-import { getNetworkingSoireeLineItem, isPromoPricingActive } from '../utils/stripePrices'
+import { getNetworkingSoireeLineItem } from '../utils/stripePrices'
 
 type SummitLineItem = {
     price: string
@@ -102,17 +102,13 @@ function NetworkingSoireeStep() {
                 <p className="mt-2 text-lg text-gray-900">Most attendees join this reception.</p>
                 <div className="mt-5 flex flex-col items-center">
                     <p className="font-medium text-red-700 not-italic text-lg">Limited capacity</p>
-                    {isPromoPricingActive() ? (
-                        <div className="mt-2 w-max space-y-2 text-lg text-left">
-                            <p className="font-bold leading-snug text-gray-900">
-                                <span className="line-through">{gbp(185)}</span>
-                                <span> per person</span>
-                            </p>
-                            <p className="font-bold leading-tight text-red-700">{gbp(165)}</p>
-                        </div>
-                    ) : (
-                        <p className="mt-2 font-bold leading-snug text-gray-900 text-lg">{gbp(185)} per person</p>
-                    )}
+                    <div className="mt-2 w-max space-y-2 text-lg text-left">
+                        <p className="font-bold leading-snug text-gray-900">
+                            <span className="line-through">{gbp(185)}</span>
+                            <span> per person</span>
+                        </p>
+                        <p className="font-bold leading-tight text-red-700">{gbp(165)}</p>
+                    </div>
                 </div>
 
                 <div className="flex flex-col items-center justify-center gap-4 mt-10 sm:flex-row">

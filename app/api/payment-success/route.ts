@@ -6,6 +6,7 @@ import connectMongo from "../../../utils/mongodb";
 import { mailer } from "../../../utils/nodemailer";
 import {
   getTicketNameForPriceId,
+  isExhibitionPriceId,
   isNetworkingSoireePriceId,
 } from "../../../utils/stripePrices";
 
@@ -84,6 +85,9 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
     registrationFlow === "networking_addon" &&
     isNetworkingSoireeOnly &&
     hasNetworkingSoiree;
+  const isExhibitionRegistration = parsedLineItems.some(
+    (item: { price?: string }) => isExhibitionPriceId(item?.price)
+  );
 
   if (!checkoutSessionId || !selectedLineItem?.price) {
     return NextResponse.json(
@@ -169,6 +173,7 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
           ...formData,
           ticketName,
           hasNetworkingSoiree,
+          ...(isExhibitionRegistration ? { event: "Exhibition" } : {}),
         },
       },
       { new: true }

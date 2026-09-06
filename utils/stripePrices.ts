@@ -1,11 +1,11 @@
-/** Promo rates end at this instant (matches register countdown). */
-export const PRICING_DEADLINE = new Date('2026-09-04T23:59:00')
+/** Promo rates end at this instant (matches register countdown). 18 September 2026 23:59 UK (BST). */
+export const PRICING_DEADLINE = new Date('2026-09-18T23:59:00+01:00')
 
 export function isPromoPricingActive(now = Date.now()): boolean {
     return now < PRICING_DEADLINE.getTime()
 }
 
-/** Full / post–4 September rates (display + Stripe). */
+/** Full / post–19 September rates (display + Stripe). */
 export const STANDARD_STRIPE_PRICES = {
     ngoGovernmentAcademic: 'price_1TzY9lKMWpUKzQVze5HZBsjJ',
     corporate: 'price_1TzYBaKMWpUKzQVzuSIvbSuA',
@@ -15,7 +15,7 @@ export const STANDARD_STRIPE_PRICES = {
     networkingSoiree: 'price_1TzYD8KMWpUKzQVzGFsxGOI3',
 } as const
 
-/** Rates before 5 September 2026. */
+/** Rates before 20 September 2026. */
 export const PROMO_STRIPE_PRICES = {
     ngoGovernmentAcademic: 'price_1Tze7kKMWpUKzQVznfiZ3pUY',
     corporate: 'price_1SHoadKMWpUKzQVzCk3pc4oP',
@@ -24,21 +24,50 @@ export const PROMO_STRIPE_PRICES = {
     networkingSoiree: 'price_1TzZ58KMWpUKzQVz12PQEdIQ',
 } as const
 
-export function getActiveStripePrices(now = Date.now()) {
-    const promo = isPromoPricingActive(now)
+export function getActiveStripePrices(_now = Date.now()) {
+    // Keep promo Stripe IDs after the countdown ends so displayed prices stay unchanged.
     return {
-        ngoGovernmentAcademic: promo
-            ? PROMO_STRIPE_PRICES.ngoGovernmentAcademic
-            : STANDARD_STRIPE_PRICES.ngoGovernmentAcademic,
-        corporate: promo ? PROMO_STRIPE_PRICES.corporate : STANDARD_STRIPE_PRICES.corporate,
+        ngoGovernmentAcademic: PROMO_STRIPE_PRICES.ngoGovernmentAcademic,
+        corporate: PROMO_STRIPE_PRICES.corporate,
         startUp: STANDARD_STRIPE_PRICES.startUp,
-        serviceProvider: promo
-            ? PROMO_STRIPE_PRICES.serviceProvider
-            : STANDARD_STRIPE_PRICES.serviceProvider,
-        networkingSoiree: promo
-            ? PROMO_STRIPE_PRICES.networkingSoiree
-            : STANDARD_STRIPE_PRICES.networkingSoiree,
+        serviceProvider: PROMO_STRIPE_PRICES.serviceProvider,
+        networkingSoiree: PROMO_STRIPE_PRICES.networkingSoiree,
     } as const
+}
+
+/** Link-only exhibition exclusive pass — not listed on the public ticket page. */
+export const EXHIBITION_STRIPE_PRICE = 'price_1UBvR5KMWpUKzQVz1RtUgg9D'
+
+export function getExhibitionLineItems() {
+    return [
+        {
+            price: EXHIBITION_STRIPE_PRICE,
+            quantity: 1,
+            tax_rates: [...PRODUCTION_TAX_RATES],
+        },
+    ]
+}
+
+export function getExhibitionRegistrationHref() {
+    return `/register/form?line_items=${encodeURIComponent(JSON.stringify(getExhibitionLineItems()))}`
+}
+
+export function isExhibitionPriceId(priceId: string | undefined): boolean {
+    return priceId === EXHIBITION_STRIPE_PRICE
+}
+
+export function parseRegistrationLineItems(raw: string | null | undefined): { price?: string }[] {
+    if (!raw) return []
+    try {
+        const parsed = JSON.parse(raw)
+        return Array.isArray(parsed) ? parsed : []
+    } catch {
+        return []
+    }
+}
+
+export function hasExhibitionLineItem(lineItems: { price?: string }[]): boolean {
+    return lineItems.some((item) => isExhibitionPriceId(item?.price))
 }
 
 /** @deprecated Prefer getActiveStripePrices() — kept for call sites that need a static map. */
@@ -88,14 +117,16 @@ export function getTicketNameForPriceId(priceId: string): string {
         case LEGACY_STRIPE_PRICES.networkingSoireePrevious:
         case LEGACY_STRIPE_PRICES.networkingSoireeEarlyBird:
             return 'Networking Soirée'
+        case EXHIBITION_STRIPE_PRICE:
+            return 'Exhibition Exclusive'
         default:
             return 'Summit Delegate'
     }
 }
 
-export function getNetworkingSoireeLineItem(now = Date.now()) {
+export function getNetworkingSoireeLineItem() {
     return {
-        price: getActiveStripePrices(now).networkingSoiree,
+        price: PROMO_STRIPE_PRICES.networkingSoiree,
         quantity: 1 as const,
         tax_rates: PRODUCTION_TAX_RATES,
     }
