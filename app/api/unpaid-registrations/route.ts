@@ -11,6 +11,8 @@ type FormData = {
   mobileNumber?: string;
   country?: string;
   email?: string;
+  sector?: string;
+  otherSector?: string;
 };
 
 type LineItem = {
@@ -49,6 +51,8 @@ export async function POST(request: NextRequest) {
       countryCode: formData.countryCode,
       mobileNumber: formData.mobileNumber,
       country: formData.country,
+      sector: formData.sector,
+      otherSector: formData.otherSector,
       updatedAt: new Date(),
     };
 

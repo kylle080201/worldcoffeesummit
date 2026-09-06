@@ -6,6 +6,7 @@ import Image from 'next/image';
 import getStripe from '../get_stripe'
 import {
     getNetworkingSoireeLineItem,
+    isExhibitionPriceId,
     isNetworkingSoireePriceId,
 } from '../utils/stripePrices'
 
@@ -149,6 +150,9 @@ function PaymentSuccess({
         isNetworkingSoireePriceId(parsedLineItems[0]?.price)
     const isNetworkingAddonConfirmation =
         registrationFlow === 'networking_addon' && isNetworkingSoireeOnly && hasNetworkingSoiree
+    const isExhibitionRegistration = parsedLineItems.some(
+        (item: { price?: string }) => isExhibitionPriceId(item?.price)
+    )
 
     const eventUrl = 'https://www.worldcoffeeinnovationsummit.com'
     const linkedInShareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(eventUrl)}`
@@ -238,6 +242,10 @@ Join me: ${eventUrl}`
                                         Thank you for registering for the{' '}
                                         <span className="font-bold">Networking Soirée at the UK House of Lords.</span>
                                     </>
+                                ) : isExhibitionRegistration ? (
+                                    <>
+                                        Thank you for registering as an exhibitor at the <span className="font-bold">4<sup>th</sup> World Coffee Innovation Summit London 2026</span>.
+                                    </>
                                 ) : (
                                     <>
                                         Thank you for registering for the <span className="font-bold">4<sup>th</sup> World Coffee Innovation Summit London 2026</span>.
@@ -285,7 +293,7 @@ Join me: ${eventUrl}`
                             <p className="text-2xl leading-snug tracking-tight text-gray-900">
                                 Queen Elizabeth II Centre &amp; UK House of Lords
                             </p>
-                            {!hasNetworkingSoiree ? (
+                            {!hasNetworkingSoiree && !isExhibitionRegistration ? (
                                 <div className="mt-8">
                                     <h3 className="text-2xl font-bold tracking-tight text-gray-900">
                                         Join the Networking Soir&eacute;e at the UK House of Lords

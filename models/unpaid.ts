@@ -33,6 +33,8 @@ const unpaid = new Schema(
     countryCode: String,
     mobileNumber: String,
     country: String,
+    sector: String,
+    otherSector: String,
     line_items: { type: [lineItemSchema], default: undefined },
     checkoutSessionId: { type: String, index: true },
     createdAt: { type: Date, default: Date.now },

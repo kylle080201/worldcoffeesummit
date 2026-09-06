@@ -18,7 +18,7 @@ const InterestForm = () => {
     const [selectedSector, setSelectedSector] = useState('')
     const [openLetterOfInvitation, setOpenLetterOfInvitation] = useState(false)
     const [openNotice, setOpenNotice] = useState(false)
- 
+
     const sectors = [
       "Banking / Investment",
       "Built Environment / Property",
@@ -188,7 +188,7 @@ const InterestForm = () => {
                             <label htmlFor="businessEmail" className="block mb-2 text-sm font-medium text-gray-900">Business Email Address</label>
                             <input {...register('businessEmail')} type='email' className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500" required />
                         </div>
-                        
+
                         <div>
                           <label className="text-base font-semibold text-gray-900">I&apos;m interested in attending as a</label>
                           <fieldset className="mt-4">

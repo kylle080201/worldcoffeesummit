@@ -27,6 +27,8 @@ const tickets = new Schema({
   jobTitle: String,
   country: String,
   hasNetworkingSoiree: Boolean,
+  sector: String,
+  otherSector: String,
   isEmailAccepted: Boolean,
   createdAt: {
     type: Date,
