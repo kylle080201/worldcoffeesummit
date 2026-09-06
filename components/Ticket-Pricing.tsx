@@ -51,7 +51,7 @@ export function getSummit(): SummitRow[] {
             icon: Landmark,
             old_price: 1195,
             item_price: 995,
-            earlyBird: 'Save £200 book before 20 September 2026',
+            earlyBird: 'Save £200 book before 19 September',
             description:
                 'For non-profit organisations, government agencies, policymakers, producers & cooperatives, and full-time academics.',
             line_items: [
@@ -67,7 +67,7 @@ export function getSummit(): SummitRow[] {
             icon: BriefcaseBusiness,
             old_price: 1495,
             item_price: 1195,
-            earlyBird: 'Save £300 book before 20 September 2026',
+            earlyBird: 'Save £300 book before 19 September',
             description:
                 'For commercial organisations operating across coffee, cocoa and agricultural commodity value chains, including financial institutions and investment organisations.',
             line_items: [
@@ -100,7 +100,7 @@ export function getSummit(): SummitRow[] {
             icon: Users,
             old_price: 1895,
             item_price: 1695,
-            earlyBird: 'Save £200 book before 20 September 2026',
+            earlyBird: 'Save £200 book before 19 September',
             description:
                 'For organisations providing products, services or solutions to the sector, including technology companies, consultancies, advisory firms and professional service organisations.',
             line_items: [
@@ -117,7 +117,7 @@ export function getSummit(): SummitRow[] {
             icon: Wine,
             old_price: 185,
             item_price: 165,
-            earlyBird: 'Save £20 book before 20 September 2026',
+            earlyBird: 'Save £20 book before 19 September',
             description:
                 'Early evening of Day 1 \u00B7 A two-hour, invite-only reception bringing together global leaders and senior stakeholders in a unique and historic setting.',
             subDescription: 'Available to registered delegates only. Limited capacity.',
@@ -162,7 +162,7 @@ function TicketPricing() {
                             <p className="w-full text-xl font-bold leading-snug text-center text-lime-700 sm:text-2xl md:text-3xl">
                                 Prices increase after
                                 <br className="sm:hidden" />{' '}
-                                19 September 2026
+                                18 September 2026
                             </p>
                             {showCountdown ? (
                                 <>
