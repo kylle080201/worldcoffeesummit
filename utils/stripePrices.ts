@@ -1,5 +1,5 @@
-/** Promo rates end at this instant (matches register countdown). 19 September 2026 23:59 UK (BST). */
-export const PRICING_DEADLINE = new Date('2026-09-19T23:59:00+01:00')
+/** Promo rates end at this instant (matches register countdown). 18 September 2026 23:59 UK (BST). */
+export const PRICING_DEADLINE = new Date('2026-09-18T23:59:00+01:00')
 
 export function isPromoPricingActive(now = Date.now()): boolean {
     return now < PRICING_DEADLINE.getTime()
