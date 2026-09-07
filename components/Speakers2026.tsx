@@ -10,6 +10,7 @@ import cleitonVargasImage from '../images/2026-speakers/Yara-international-Cleit
 import kevinDuistersImage from '../images/2026-speakers/Proba-Projects-Kevin Duisters/Kevin Duisters copy.jpg'
 import probaLogo from '../images/2026-speakers/Proba-Projects-Kevin Duisters/ProbaPositive.png'
 import andersFrigaardImage from '../images/2026-speakers/IFD-Anders Frigaard/anders-frigaard-investment-director-707x1024 copy.jpeg'
+import impactFundDenmarkLogo from '../images/2026-speakers/IFD-Anders Frigaard/impactfunddenmark-2025-rgb-primary-logo-payoff-1-denmarkred-oceanblue-2.jpg'
 import saurabhImage from '../images/2026-speakers/UNDP-Saurabh Sharma/SaurabhSharma.jpg'
 import undpLogo from '../images/2026-speakers/UNDP-Saurabh Sharma/UNDP_Logo_Blue.png'
 import jennyImage from '../images/2026-speakers/Bain & Co.-Jenny Davis-Peccoud/Jenny Davis-Peccoud.jpg'
@@ -25,7 +26,7 @@ import julietteImage from '../images/2026-speakers/BCG-Juliette-Cody/Juliette Co
 import bcgLogo from '../images/2026-speakers/BCG-Juliette-Cody/header-logo--bc.png'
 import paolaScarpaImage from '../images/2026-speakers/Lavaza-Group-Paola Scarpa/Lavazza_PaolaScarpa 005 copy.jpg'
 import lavazzaLogo from '../images/2026-speakers/Lavaza-Group-Paola Scarpa/LAVAZZA GROUP CROPPED.png'
-import ericGorlierImage from '../images/2026-speakers/Nestle-Eric Gorlier/1747158274357.jpg'
+import ericGorlierImage from '../images/2026-speakers/Nestle-Eric Gorlier/e3e6488b-2f40-49cc-9387-48b731f3cfb2 copy.jpeg'
 import nestleLogo from '../images/2026-speakers/Nestle-Eric Gorlier/49915638706_3718fc133d_o.png'
 import benRimaudImage from '../images/2026-speakers/Ecom-Ben Rimaud/Ben Rimaud pic copy.jpeg'
 import ecomLogo from '../images/2026-speakers/Ecom-Teddy Esteve/ECOM logo RGB.jpg'
@@ -61,7 +62,6 @@ const raymondImage = '/images/2026-speakers/raymond-katta.jpeg'
 const pmbLogo = '/images/2026-speakers/pmb-logo.png'
 const marcelaImage = '/images/2026-speakers/marcela-gaviria.jpg'
 const fncLogo = '/images/2026-speakers/fnc-logo.png'
-const impactFundDenmarkLogo = '/images/2026-speakers/impactfunddenmark-logo.avif'
 
 export interface Speaker {
   name: string;
@@ -135,7 +135,7 @@ export const speakers2026: Speaker[] = [
     logo: nestleLogo,
     iconHeight: 80,
     iconWidth: 80,
-    description: ''
+    description: 'Eric Gorlier leads Procurement Commodities &amp; Sustainability at Nestlé. Having worked across science, R&amp;D, and procurement, he brings a broad perspective on how products, supply chains, and businesses connect. He is passionate about helping organisations navigate uncertainty, build resilient supply chains, and create long-term value.'
   },
   {
     name: 'Olivier Laboulle',

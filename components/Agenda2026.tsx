@@ -160,7 +160,7 @@ const day1: DayAgenda = {
       description:
         "Coffee trading has always evolved—but today's combination of regulation, volatility and supply uncertainty raises a bigger question: what will define the next generation of coffee trading?",
       chair: pickOne("Peter Foster"),
-      speakers: pick("Tim Scharrer", "Chrystel Monthean"),
+      speakers: pick("Tim Scharrer", "Chrystel Monthean", "Eric Gorlier"),
     },
     {
       time: "12:00 – 12:40",
@@ -216,7 +216,8 @@ const day1: DayAgenda = {
       speakers: pick(
         "Andre van den Beld",
         "Cleiton Vargas",
-        "Kevin Duisters"
+        "Kevin Duisters",
+        "Anders Frigaard"
       ),
     },
     {
