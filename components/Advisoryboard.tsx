@@ -102,9 +102,12 @@ export default function Advisoryboard() {
                 <h3 className="text-lg font-semibold leading-8 tracking-tight text-white md:text-2xl">
                   {speaker.name}
                 </h3>
-                <p className="text-md font-semibold leading-7 text-white">
-                  {speaker.designation}
-                </p>
+                <p
+                  className="text-md leading-7 text-white"
+                  {...(speaker.designationHtml
+                    ? { dangerouslySetInnerHTML: { __html: speaker.designationHtml } }
+                    : { children: speaker.designation, className: "text-md font-semibold leading-7 text-white" })}
+                />
                 {speaker.organization ? (
                   <p className="text-sm leading-7 text-white">{speaker.organization}</p>
                 ) : null}
@@ -168,9 +171,13 @@ export default function Advisoryboard() {
             <h2 id="modal-title" className="mb-2 text-3xl font-bold">
               {selectedSpeaker.name}
             </h2>
-            <p id="modal-description" className="mb-2 font-semibold text-gray-700">
-              {selectedSpeaker.designation}
-            </p>
+            <p
+              id="modal-description"
+              className="mb-2 text-gray-700"
+              {...(selectedSpeaker.designationHtml
+                ? { dangerouslySetInnerHTML: { __html: selectedSpeaker.designationHtml } }
+                : { children: selectedSpeaker.designation, className: "mb-2 font-semibold text-gray-700" })}
+            />
             {selectedSpeaker.organization ? (
               <p className="italic text-gray-600">{selectedSpeaker.organization}</p>
             ) : null}
