@@ -6,7 +6,7 @@ import { speakers2026, type Speaker } from "./Speakers2026";
 
 type AgendaParticipant = Pick<
   Speaker,
-  "name" | "designation" | "organization" | "image"
+  "name" | "designation" | "designationHtml" | "organization" | "image"
 >;
 
 type AgendaItem = {
@@ -37,6 +37,7 @@ function pick(...names: string[]): AgendaParticipant[] {
     return {
       name: speaker.name,
       designation: speaker.designation,
+      designationHtml: speaker.designationHtml,
       organization: speaker.organization,
       image: speaker.image,
     };
@@ -60,7 +61,12 @@ function AgendaSpeakerLine({ participant }: { participant: AgendaParticipant }) 
         alt={participant.name}
       />
       <p className="min-w-0 pt-1">
-        <b>{participant.name}</b>, {participant.designation}
+        <b>{participant.name}</b>,{" "}
+        {participant.designationHtml ? (
+          <span dangerouslySetInnerHTML={{ __html: participant.designationHtml }} />
+        ) : (
+          participant.designation
+        )}
         {participant.organization ? (
           <>
             , <b>{participant.organization}</b>
@@ -147,6 +153,7 @@ const day1: DayAgenda = {
     {
       time: "10:15 – 10:30",
       title: "CASE STUDY",
+      speaker: pickOne("Patrick Lanz"),
     },
     {
       time: "10:30 – 11:00",
@@ -168,6 +175,7 @@ const day1: DayAgenda = {
         "PANEL: WHO PAYS—OR PROFITS—FROM RESILIENCE? FINANCING THE FUTURE OF GLOBAL SUPPLY CHAINS",
       description:
         "Resilience cannot be built without capital. Who carries the risk, who finances the transition and where is long-term value created? As investment priorities evolve, which financing models will prove most effective in securing future supply?",
+      chair: pickOne("Joy Macknight"),
       speakers: pick(
         "Anup Jagwani",
         "Dr. Sarah Tischer",

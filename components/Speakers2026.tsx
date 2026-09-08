@@ -32,6 +32,8 @@ import benRimaudImage from '../images/2026-speakers/Ecom-Ben Rimaud/Ben Rimaud p
 import ecomLogo from '../images/2026-speakers/Ecom-Teddy Esteve/ECOM logo RGB.jpg'
 import edenCotteeJonesImage from '../images/2026-speakers/BCG-Eden Jones/468 23.01.17 BCG Eden Cottee-Jones copy.jpg'
 import bcgMonogramLogo from '../images/2026-speakers/BCG-Eden Jones/BCG_MONOGRAM.png'
+import patrickLanzImage from '../images/2026-speakers/Osapiens-Tera-Patrick-Lanz/image1007 copy.jpg'
+import osapiensLogo from '../images/2026-speakers/Osapiens-Tera-Patrick-Lanz/osapiens Logo horizontal gradient-black RM.png'
 import Link from 'next/link'
 const anupImage = '/images/2026-speakers/anup-jagwani.jpg'
 const worldBankLogo = '/images/2026-speakers/world-bank-group-logo.png'
@@ -66,6 +68,7 @@ const fncLogo = '/images/2026-speakers/fnc-logo.png'
 export interface Speaker {
   name: string;
   designation: string;
+  designationHtml?: string;
   organization: string;
   image: string | StaticImageData;
   logo?: string | StaticImageData;
@@ -78,7 +81,9 @@ export interface Speaker {
 export const speakers2026: Speaker[] = [
   {
     name: 'The Rt. Hon John Gummer, The Lord Deben',
-    designation: 'Former UK Secretary of State for the Environment & Minister of Agriculture, Fisheries, and Food',
+    designation: 'Former UK Secretary of State for the Environment & Minister of Agriculture, Fisheries, and Food; Former Chairman, UK Climate Change Committee (CCC)',
+    designationHtml:
+      '<span class="font-bold not-italic">Former UK Secretary of State for the Environment &amp; Minister of Agriculture, Fisheries, and Food;</span> <span class="italic font-normal">Former Chairman</span>, <span class="font-bold not-italic">UK Climate Change Committee (CCC)</span>',
     organization: '',
     image: 'https://worldcoffeealliance.com/wp-content/uploads/2025/06/Lord-Deben-Photo-2019-adj-003-scaled-copy.jpg',
     logo: 'https://worldcoffeealliance.com/wp-content/uploads/2024/05/House_of_Lords_logo_2020.svg.png',
@@ -245,16 +250,6 @@ export const speakers2026: Speaker[] = [
     description: 'Peter Foster is the world trade editor of the Financial Times. His brief is to report on the shifting landscape of global supply chains, investment and trade patterns being reorientated as a result of pressures being applied by the second Trump administration. Previously Peter was UK policy editor, reporting on the UK\'s post-Brexit trade, regulatory and investment environment. Peter appears regularly discussing policy issues on radio and television broadcasts, including BBC, RTE as well as Italian and German stations. He joined the FT in April 2020 from the Telegraph Media Group where he had held the position of Europe editor since 2015, focusing on the Brexit negotiations. He has more than two decades of experience covering global affairs from all sides of the world, based in New Delhi (2004-2008) and Beijing (2008-2012), as well as Washington DC, where he served as The Telegraph\'s US editor from 2012-2015. His book What Went Wrong with Brexit - and what we can do about it was published by Canongate in September 2023. It was a Waterstones \'best book of 2023\', a Guardian \'if you read one book about politics\' pick and a Christmas Book choice by \'The Week\'.'
   },
   {
-    name: 'Eden Cottee-Jones',
-    designation: 'Senior Director, BCG Henderson Institute',
-    organization: 'Boston Consulting Group (BCG)',
-    image: edenCotteeJonesImage,
-    logo: bcgMonogramLogo,
-    iconHeight: 80,
-    iconWidth: 80,
-    description: 'Eden manages the BCG Institute’s Climate & Energy Transition Lab, part of the Boston Consulting Group’s internal think-tank, dedicated to exploring new insights on pressing sustainability topics. Eden has served clients at BCG for over 10 years, on projects ranging from developing nature strategies to shaping major multi-stakeholder sustainability initiatives. Prior to BCG, Eden holds a DPhil from the University of Oxford in biodiversity conservation.'
-  },
-  {
     name: 'Jenny Davis-Peccoud',
     designation: 'Partner, Founder, Global Sustainability & Responsibility Practice',
     organization: 'Bain & Co.',
@@ -263,6 +258,16 @@ export const speakers2026: Speaker[] = [
     iconHeight: 80,
     iconWidth: 80,
     description: 'Jenny Davis-Peccoud is a partner in Bain & Company\'s Amsterdam office. In her almost 30 years at Bain, Jenny has advised clients across a wide range of industries, as well as government entities and NGOs, on topics such as growth strategy, organizational effectiveness, merger integration, business transformation, digital acceleration, pricing, supply chain and leadership team development. A US and French citizen, Jenny has led projects in varied business cultures across Europe, the Middle East, Asia and North America. Jenny founded and heads Bain\'s Global Sustainability & Responsibility practice. In the sustainability sphere, Jenny advises companies on how to tackle social and environmental challenges and opportunities as strategic issues at the heart of their core businesses. Beyond her broad expertise in this area, she has a particular focus on the food value chain, from agriculture to consumer products to retail, as well as the systems solutions needed to drive impactful and lasting change. She directs Bain\'s research in this field, focusing on topics such as the change management challenge of sustainability programs and the role of sustainability in employee engagement. Her work in this area has been published in The Wall Street Journal, The Huffington Post, HBR.org and the Stanford Social Innovation Review. Jenny received her BS from Georgetown University and her MBA, with distinction, from Harvard Business School.'
+  },
+  {
+    name: 'Patrick Lanz',
+    designation: 'Co-Founder',
+    organization: 'osapiens terra',
+    image: patrickLanzImage,
+    logo: osapiensLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: ''
   },
   {
     name: 'Mumbi Gitau',
@@ -300,6 +305,16 @@ export const speakers2026: Speaker[] = [
     iconHeight: 80,
     iconWidth: 80,
     description: 'Cleiton Vargas (born in 1969) has been with Yara for over 30 years and recently took on the role of Senior Vice President of Innovation for the Americas. Throughout his career at the company, he has held various positions across different business units, including Commercial, Operations, and Logistics. Cleiton holds a degree in Agronomic Engineering from the Federal University of Rio Grande do Sul and an MBA in Marketing from the Escola Superior de Propaganda e Marketing.'
+  },
+  {
+    name: 'Eden Cottee-Jones',
+    designation: 'Senior Director, BCG Henderson Institute',
+    organization: 'Boston Consulting Group (BCG)',
+    image: edenCotteeJonesImage,
+    logo: bcgMonogramLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: 'Eden manages the BCG Institute’s Climate & Energy Transition Lab, part of the Boston Consulting Group’s internal think-tank, dedicated to exploring new insights on pressing sustainability topics. Eden has served clients at BCG for over 10 years, on projects ranging from developing nature strategies to shaping major multi-stakeholder sustainability initiatives. Prior to BCG, Eden holds a DPhil from the University of Oxford in biodiversity conservation.'
   },
   {
     name: 'Kevin Duisters',
@@ -465,9 +480,12 @@ export default function Speakers2026({ compactTop = false }: { compactTop?: bool
                       <p className="text-lg font-bold tracking-tight text-white md:text-2xl">
                         {speaker.name}
                       </p>
-                      <p className="text-md tracking-tight text-white md:text-xl italic">
-                        {speaker.designation}
-                      </p>
+                      <p
+                        className={`text-md tracking-tight text-white md:text-xl ${speaker.designationHtml ? '' : 'italic'}`}
+                        {...(speaker.designationHtml
+                          ? { dangerouslySetInnerHTML: { __html: speaker.designationHtml } }
+                          : { children: speaker.designation })}
+                      />
                       {speaker.organization && (
                         <p className="text-md tracking-tight font-bold text-white md:text-xl">{speaker.organization}</p>
                       )}
@@ -521,7 +539,12 @@ export default function Speakers2026({ compactTop = false }: { compactTop?: bool
                       <div className="flex mx-auto text-center">
                         <div>
                           <p className="text-lg font-semibold leading-8 tracking-tight text-gray-900 md:text-2xl">{selectedSpeaker.name}</p>
-                          <p className="text-lg leading-8 tracking-tight text-gray-900 md:text-2xl">{selectedSpeaker.designation}</p>
+                          <p
+                            className="text-lg leading-8 tracking-tight text-gray-900 md:text-2xl"
+                            {...(selectedSpeaker.designationHtml
+                              ? { dangerouslySetInnerHTML: { __html: selectedSpeaker.designationHtml } }
+                              : { children: selectedSpeaker.designation })}
+                          />
                           {selectedSpeaker.organization && (
                             <p className="text-sm font-semibold leading-6 text-gray-900">{selectedSpeaker.organization}</p>
                           )}
