@@ -32,6 +32,8 @@ import benRimaudImage from '../images/2026-speakers/Ecom-Ben Rimaud/Ben Rimaud p
 import ecomLogo from '../images/2026-speakers/Ecom-Teddy Esteve/ECOM logo RGB.jpg'
 import edenCotteeJonesImage from '../images/2026-speakers/BCG-Eden Jones/468 23.01.17 BCG Eden Cottee-Jones copy.jpg'
 import bcgMonogramLogo from '../images/2026-speakers/BCG-Eden Jones/BCG_MONOGRAM.png'
+import adamJasonImage from '../images/2026-speakers/GCC-Adam-Jason/GCC_Adam Jason-4622 (1) copy.jpg'
+import gccLogo from '../images/2026-speakers/GCC-Adam-Jason/LOGO-original-GCC (1).png'
 import patrickLanzImage from '../images/2026-speakers/Osapiens-Tera-Patrick-Lanz/image1007 copy.jpg'
 import osapiensLogo from '../images/2026-speakers/Osapiens-Tera-Patrick-Lanz/osapiens Logo horizontal gradient-black RM.png'
 import Link from 'next/link'
@@ -315,6 +317,16 @@ export const speakers2026: Speaker[] = [
     iconHeight: 80,
     iconWidth: 80,
     description: 'Eden manages the BCG Institute’s Climate & Energy Transition Lab, part of the Boston Consulting Group’s internal think-tank, dedicated to exploring new insights on pressing sustainability topics. Eden has served clients at BCG for over 10 years, on projects ranging from developing nature strategies to shaping major multi-stakeholder sustainability initiatives. Prior to BCG, Eden holds a DPhil from the University of Oxford in biodiversity conservation.'
+  },
+  {
+    name: 'Adam Jason',
+    designation: 'Co-CEO',
+    organization: 'Green Coffee Company (GCC)',
+    image: adamJasonImage,
+    logo: gccLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: 'Adam Jason is a Co-CEO of the Green Coffee Company (GCC). Prior to moving to Colombia in 2018 to help found GCC, he spent his career in the U.S. as a corporate attorney at Jones Day, specializing in corporate finance, governance, securities regulation and international business transactions. He advised Fortune 500 companies and investment banks on IPOs and debt and equity offerings totaling more than $10 billion. Adam now shares his time between GCC\'s U.S. HQ outside of Chicago and Medellin, Colombia with primary responsibility for the Company\'s U.S. operations.'
   },
   {
     name: 'Kevin Duisters',
