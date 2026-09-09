@@ -10,13 +10,21 @@ type AgendaParticipant = Pick<
   image?: Speaker["image"];
 };
 
+type AgendaExtra = {
+  title: string;
+  subtitle?: string;
+  description?: string;
+  bullets?: string[];
+};
+
 type AgendaItem = {
   time: string;
   title: string;
   variant?: "session" | "break";
   subtitle?: string;
   description?: string;
-  extra?: { title: string; subtitle?: string; description?: string }[];
+  bullets?: string[];
+  extra?: AgendaExtra[];
   speaker?: AgendaParticipant;
   chair?: AgendaParticipant;
   speakers?: AgendaParticipant[];
@@ -148,6 +156,11 @@ const day1: DayAgenda = {
       title: "OPENING PANEL: EUDR READY? TRACEABILITY VS REALITY",
       description:
         "As EUDR reshapes global coffee and cocoa trade, traceability is becoming the licence to trade. But how ready is today's supply—and what separates compliance on paper from compliance in practice?",
+      bullets: [
+        "What does genuinely audit-ready traceability look like in practice?",
+        "Can farm-level data deliver transparency without slowing trade or excluding smallholders?",
+        "What technology and data foundations are needed to make EUDR compliance scalable across complex coffee and cocoa supply chains?",
+      ],
       chair: pickOne("Mumbi Gitau"),
       speakers: pick(
         "Olivier Laboulle",
@@ -171,6 +184,11 @@ const day1: DayAgenda = {
         "GLOBAL LEADERS FORUM: IS THE TRADITIONAL COFFEE TRADING MODEL STILL FIT FOR THE FUTURE?",
       description:
         "Coffee trading has always evolved—but today's combination of regulation, volatility and supply uncertainty raises a bigger question: what will define the next generation of coffee trading?",
+      bullets: [
+        "As volatility intensifies, how should risk and value be shared across the supply chain?",
+        "As buyers demand greater visibility and supply security, how must the trader’s role evolve?",
+        "As procurement moves from a buying function to a strategic business priority, how will this reshape the role of traders and supplier relationships?",
+      ],
       speakers: pick("Tim Scharrer", "Chrystel Monthean", "Eric Gorlier"),
     },
     {
@@ -179,6 +197,11 @@ const day1: DayAgenda = {
         "PANEL: WHO PAYS—OR PROFITS—FROM RESILIENCE? FINANCING THE FUTURE OF GLOBAL SUPPLY CHAINS",
       description:
         "Resilience cannot be built without capital. Who carries the risk, who finances the transition and where is long-term value created? As investment priorities evolve, which financing models will prove most effective in securing future supply?",
+      bullets: [
+        "What will make climate and supply-chain resilience genuinely investable at scale?",
+        "How can blended finance, insurance and public-private capital reach farms and supply chains more effectively?",
+        "Where can insurance and risk-transfer mechanisms unlock investment that traditional finance cannot?",
+      ],
       chair: pickOne("Joy Macknight"),
       speakers: pick(
         "Anup Jagwani",
@@ -204,12 +227,21 @@ const day1: DayAgenda = {
             "FROM SPACE TO STRATEGY: EARTH OBSERVATION, GEOSPATIAL INTELLIGENCE & AI",
           description:
             "Satellite intelligence is moving from maps to boardrooms. Discover how Earth Observation, geospatial intelligence and AI are supporting sourcing decisions, strengthening traceability and providing earlier visibility of supply risk.",
+          bullets: [
+            "Can satellite and geospatial intelligence identify supply risks early enough for procurement teams to act?",
+            "Which use cases are most likely to move Earth Observation from pilots into everyday sourcing, traceability and supply decisions?",
+          ],
         },
         {
           title:
             "FROM EXPOSURE TO INVESTMENT: TURNING CLIMATE, NATURE & RISK INTELLIGENCE INTO BUSINESS VALUE",
           description:
-            "Climate and nature data are becoming business intelligence. Explore how better insights are supporting investment decisions, improving risk management and helping organisations identify opportunities across global supply chains.",
+            "Climate and nature data are becoming business intelligence. With a potentially very strong El Niño sharpening attention on agricultural supply risk, explore how better insights are supporting investment decisions, improving risk management and helping organisations identify opportunities across global supply chains.",
+          bullets: [
+            "What could a very strong El Niño mean for coffee and cocoa supply risk over the next 12–18 months?",
+            "Can climate and nature intelligence reveal financial exposure before it hits supply and earnings?",
+            "How can better climate and nature intelligence translate into earlier action and stronger financial protection?",
+          ],
         },
       ],
     },
@@ -224,6 +256,11 @@ const day1: DayAgenda = {
         "PANEL: DECARBONISATION AT SCALE: FROM SCOPE 3 COMMITMENTS TO MEASURABLE OUTCOMES",
       description:
         "Moving from Scope 3 commitments to measurable outcomes remains one of the industry's biggest execution challenges. What will it take to embed carbon management into procurement, supplier engagement and day-to-day business decisions—and how can digital MRV help turn ambition into measurable action?",
+      bullets: [
+        "Scope 3 targets are set—but where are emissions actually falling across the supply chain?",
+        "How can digital MRV deliver credible farm-level data without creating additional burdens for producers?",
+        "How should the cost and responsibility of upstream decarbonisation be shared?",
+      ],
       chair: pickOne("Sonya Bhonsle"),
       speakers: pick(
         "Andre van den Beld",
@@ -238,6 +275,11 @@ const day1: DayAgenda = {
         "PANEL: PUTTING NATURE ON THE BALANCE SHEET: NATURAL CAPITAL AS A STRATEGIC BUSINESS ASSET",
       description:
         "Healthy landscapes underpin long-term productivity, supply security and investment performance. How can biodiversity, soil health and water resilience become measurable business assets rather than external costs?",
+      bullets: [
+        "How can nature-related risks and dependencies be measured and valued credibly enough to influence sourcing, investment and risk decisions?",
+        "Can businesses put a price on nature without reducing it to a purely financial metric?",
+        "How can natural capital approaches create measurable value for both supply chains and producing communities?",
+      ],
       chair: pickOne("David Laborde"),
       speakers: pick(
         "Juliette Cody",
@@ -290,6 +332,11 @@ const day2: DayAgenda = {
       title: "PANEL: WHO WILL SECURE COFFEE & COCOA SUPPLY BY 2030?",
       description:
         "Bringing together senior decision-makers from across the coffee and cocoa value chain, this signature discussion examines how procurement, finance, technology and partnerships must evolve to secure future supply. Which decisions made today will matter most over the next decade?",
+      bullets: [
+        "Where will future coffee and cocoa supply come from as production conditions change?",
+        "Which investments made today will have the greatest impact on supply resilience through 2030?",
+        "Which actions and commitments are needed across producers, traders, brands, governments and investors to secure future supply?",
+      ],
       chair: pickOne("Jenny Davis-Peccoud"),
       speakers: pick(
         "Olivier Laboulle",
@@ -310,6 +357,11 @@ const day2: DayAgenda = {
         "PANEL: REGENERATIVE AGRICULTURE – BUILDING THE NEXT GENERATION OF RESILIENT COFFEE & COCOA PRODUCTION SYSTEMS",
       description:
         "If higher productivity alone is no longer enough, what will resilient production look like? How can farming systems respond to climate pressures, protect natural resources and remain commercially viable at scale?",
+      bullets: [
+        "Which practices are delivering measurable gains in resilience, productivity and farmer economics?",
+        "Can regenerative models contribute meaningfully to the living-income challenge—or are different economic levers still required?",
+        "Which technologies and data can help prove what works at farm level — and support wider adoption at scale?",
+      ],
       chair: pickOne("Eden Cottee-Jones"),
       speakers: pick("Piet van Asten", "Ben Rimaud", "Adam Jason", "Raymond Bob Katta"),
     },
@@ -318,6 +370,11 @@ const day2: DayAgenda = {
       title: "PANEL: BEYOND AI – FROM ADOPTION TO ADVANTAGE",
       description:
         "AI is only valuable when it helps organisations make faster, better and more confident decisions. As the pace of innovation accelerates, what separates the technologies that transform organisations from those that struggle to gain traction?",
+      bullets: [
+        "Where is AI already delivering measurable value across sourcing, forecasting and supply-chain risk?",
+        "What separates AI applications that scale from those that remain pilots?",
+        "Who owns, governs and is accountable for the data behind AI-driven decisions?",
+      ],
       speakers: pick("Paola Scarpa", "Tim Scharrer"),
     },
     {
@@ -331,6 +388,11 @@ const day2: DayAgenda = {
         "PANEL: THE PROCUREMENT DECADE: SECURING SUPPLY IN AN ERA OF STRUCTURAL CHANGE",
       description:
         "Procurement is no longer simply about buying—but can it become one of the industry's greatest drivers of long-term supply resilience? How are leading organisations balancing resilience, supplier partnerships and competitiveness in an increasingly uncertain market?",
+      bullets: [
+        "How are procurement teams rethinking cost, risk and supply security as market volatility increases?",
+        "What would stronger, longer-term supplier partnerships look like in practice?",
+        "How will technology, data and AI reshape risk visibility and long-term sourcing decisions?",
+      ],
       chair: pickOne("Michael Mowat"),
       speakers: pick(
         "Malcolm Hett",
@@ -344,6 +406,10 @@ const day2: DayAgenda = {
         "CLOSING PANEL: MAPPING THE NEXT FIVE YEARS: WHAT WILL DEFINE THE FUTURE OF COFFEE & COCOA?",
       description:
         "After two days of discussion, one question remains: what will define the next generation of resilient coffee and cocoa supply? From technology and finance to procurement and production, which shifts deserve the industry’s attention—and which are simply noise?",
+      bullets: [
+        "How will climate change reshape coffee and cocoa production geographies — and how must capital, regulation and technology respond through 2030?",
+        "What should the industry scale now—and what deserves less attention?",
+      ],
     },
     {
       time: "14:50 – 15:00",
@@ -376,6 +442,7 @@ function AgendaSession({ item }: { item: AgendaItem }) {
   const heading = toBarTitle(item.title, item.subtitle);
   const hasDetails = Boolean(
     item.description ||
+      item.bullets?.length ||
       item.extra?.length ||
       item.speaker ||
       item.chair ||
@@ -400,10 +467,21 @@ function AgendaSession({ item }: { item: AgendaItem }) {
       {hasDetails && (
         <div className="mt-4 w-full px-2">
           {item.description && <p className="italic">{item.description}</p>}
+          {item.bullets && item.bullets.length > 0 && (
+            <ul
+              className={`list-disc space-y-1 pl-5 text-base leading-relaxed ${
+                item.description ? "mt-3" : ""
+              }`}
+            >
+              {item.bullets.map((bullet) => (
+                <li key={bullet}>{bullet}</li>
+              ))}
+            </ul>
+          )}
           {item.extra && item.extra.length > 0 && (
             <div
               className={`grid grid-cols-1 gap-4 md:grid-cols-2 ${
-                item.description ? "mt-4" : ""
+                item.description || item.bullets?.length ? "mt-4" : ""
               }`}
             >
               {item.extra.map((block) => (
@@ -416,6 +494,13 @@ function AgendaSession({ item }: { item: AgendaItem }) {
                   </p>
                   {block.description && (
                     <p className="mt-2 italic">{block.description}</p>
+                  )}
+                  {block.bullets && block.bullets.length > 0 && (
+                    <ul className="mt-3 list-disc space-y-1 pl-5 text-base leading-relaxed">
+                      {block.bullets.map((bullet) => (
+                        <li key={bullet}>{bullet}</li>
+                      ))}
+                    </ul>
                   )}
                 </div>
               ))}
