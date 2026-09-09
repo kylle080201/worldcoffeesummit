@@ -284,7 +284,8 @@ const day1: DayAgenda = {
       speakers: pick(
         "Juliette Cody",
         "Luke Knowles",
-        "Toby Behrmann"
+        "Toby Behrmann",
+        "Raymond Bob Katta"
       ),
     },
     {
@@ -363,7 +364,7 @@ const day2: DayAgenda = {
         "Which technologies and data can help prove what works at farm level — and support wider adoption at scale?",
       ],
       chair: pickOne("Eden Cottee-Jones"),
-      speakers: pick("Piet van Asten", "Ben Rimaud", "Adam Jason", "Raymond Bob Katta"),
+      speakers: pick("Piet van Asten", "Ben Rimaud", "Adam Jason"),
     },
     {
       time: "11:50 – 12:30",
