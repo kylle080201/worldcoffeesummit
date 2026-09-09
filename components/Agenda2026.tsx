@@ -159,7 +159,7 @@ const day1: DayAgenda = {
       bullets: [
         "What does genuinely audit-ready traceability look like in practice?",
         "Can farm-level data deliver transparency without slowing trade or excluding smallholders?",
-        "What technology and data foundations are needed to make EUDR compliance scalable across complex coffee and cocoa supply chains?",
+        "Which traceability approaches are proving reliable in practice — and where are gaps, inconsistencies or false confidence still emerging?",
       ],
       chair: pickOne("Mumbi Gitau"),
       speakers: pick(
