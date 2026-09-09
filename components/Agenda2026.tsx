@@ -1,13 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import type { StaticImageData } from "next/image";
 import { speakers2026, type Speaker } from "./Speakers2026";
 
 type AgendaParticipant = Pick<
   Speaker,
-  "name" | "designation" | "designationHtml" | "organization" | "image"
->;
+  "name" | "designation" | "designationHtml" | "organization"
+> & {
+  image?: Speaker["image"];
+};
 
 type AgendaItem = {
   time: string;
@@ -48,18 +49,22 @@ function pickOne(name: string): AgendaParticipant {
   return pick(name)[0];
 }
 
-function imageSrc(image: string | StaticImageData) {
+function imageSrc(image: Speaker["image"] | undefined) {
+  if (!image) return "";
   return typeof image === "string" ? image : image.src;
 }
 
 function AgendaSpeakerLine({ participant }: { participant: AgendaParticipant }) {
+  const photo = imageSrc(participant.image);
   return (
     <div className="mb-3 flex items-start gap-3">
-      <img
-        className="agenda-img flex-shrink-0"
-        src={imageSrc(participant.image)}
-        alt={participant.name}
-      />
+      {photo ? (
+        <img
+          className="agenda-img flex-shrink-0"
+          src={photo}
+          alt={participant.name}
+        />
+      ) : null}
       <p className="min-w-0 pt-1">
         <b>{participant.name}</b>,{" "}
         {participant.designationHtml ? (
@@ -166,7 +171,6 @@ const day1: DayAgenda = {
         "GLOBAL LEADERS FORUM: IS THE TRADITIONAL COFFEE TRADING MODEL STILL FIT FOR THE FUTURE?",
       description:
         "Coffee trading has always evolved—but today's combination of regulation, volatility and supply uncertainty raises a bigger question: what will define the next generation of coffee trading?",
-      chair: pickOne("Peter Foster"),
       speakers: pick("Tim Scharrer", "Chrystel Monthean", "Eric Gorlier"),
     },
     {
@@ -307,7 +311,7 @@ const day2: DayAgenda = {
       description:
         "If higher productivity alone is no longer enough, what will resilient production look like? How can farming systems respond to climate pressures, protect natural resources and remain commercially viable at scale?",
       chair: pickOne("Eden Cottee-Jones"),
-      speakers: pick("Piet van Asten", "Ben Rimaud", "Raymond Bob Katta"),
+      speakers: pick("Piet van Asten", "Ben Rimaud", "Adam Jason", "Raymond Bob Katta"),
     },
     {
       time: "11:50 – 12:30",
