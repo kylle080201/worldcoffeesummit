@@ -15,6 +15,9 @@ type AgendaExtra = {
   subtitle?: string;
   description?: string;
   bullets?: string[];
+  speaker?: AgendaParticipant;
+  chair?: AgendaParticipant;
+  speakers?: AgendaParticipant[];
 };
 
 type AgendaItem = {
@@ -242,6 +245,7 @@ const day1: DayAgenda = {
             "Can climate and nature intelligence reveal financial exposure before it hits supply and earnings?",
             "How can better climate and nature intelligence translate into earlier action and stronger financial protection?",
           ],
+          speakers: pick("David Laborde", "Luke Knowles"),
         },
       ],
     },
@@ -503,6 +507,11 @@ function AgendaSession({ item }: { item: AgendaItem }) {
                       ))}
                     </ul>
                   )}
+                  <AgendaParticipants
+                    speaker={block.speaker}
+                    chair={block.chair}
+                    speakers={block.speakers}
+                  />
                 </div>
               ))}
             </div>
