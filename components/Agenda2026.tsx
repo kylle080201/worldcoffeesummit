@@ -287,7 +287,6 @@ const day1: DayAgenda = {
       chair: pickOne("David Laborde"),
       speakers: pick(
         "Juliette Cody",
-        "Luke Knowles",
         "Toby Behrmann",
         "Raymond Bob Katta"
       ),
