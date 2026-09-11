@@ -35,7 +35,7 @@ import bcgMonogramLogo from '../images/2026-speakers/BCG-Eden Jones/BCG_MONOGRAM
 import adamJasonImage from '../images/2026-speakers/GCC-Adam-Jason/GCC_Adam Jason-4622 (1) copy.jpg'
 import gccLogo from '../images/2026-speakers/GCC-Adam-Jason/LOGO-original-GCC (1).png'
 import patrickLanzImage from '../images/2026-speakers/Osapiens-Tera-Patrick-Lanz/image1007 copy.jpg'
-import osapiensLogo from '../images/2026-speakers/Osapiens-Tera-Patrick-Lanz/osapiens Logo horizontal gradient-black RM.png'
+import osapiensLogo from '../images/2026-speakers/Osapiens-Tera-Patrick-Lanz/logo_osapiens_horizontal_halfblack.png'
 import Link from 'next/link'
 const anupImage = '/images/2026-speakers/anup-jagwani.jpg'
 const worldBankLogo = '/images/2026-speakers/world-bank-group-logo.png'
@@ -264,12 +264,12 @@ export const speakers2026: Speaker[] = [
   {
     name: 'Patrick Lanz',
     designation: 'Co-Founder',
-    organization: 'osapiens terra',
+    organization: 'osapiens Terra',
     image: patrickLanzImage,
     logo: osapiensLogo,
     iconHeight: 80,
-    iconWidth: 80,
-    description: ''
+    iconWidth: 160,
+    description: `<p class="mb-3">Patrick leads EUDR and environmental intelligence at osapiens. He works with companies across industries to build deforestation-free supply chains that are resilient, audit-ready, and automated enough to run in day-to-day operations.</p><p>Beyond compliance, his focus is environmental intelligence that strengthens operational resilience, using geospatial insight and agentic workflows so teams can anticipate supply risk, protect continuity, and gain a competitive edge in the market.</p>`
   },
   {
     name: 'Mumbi Gitau',
