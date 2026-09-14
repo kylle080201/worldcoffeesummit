@@ -36,6 +36,8 @@ import adamJasonImage from '../images/2026-speakers/GCC-Adam-Jason/GCC_Adam Jaso
 import gccLogo from '../images/2026-speakers/GCC-Adam-Jason/LOGO-original-GCC (1).png'
 import patrickLanzImage from '../images/2026-speakers/Osapiens-Tera-Patrick-Lanz/image1007 copy.jpg'
 import osapiensLogo from '../images/2026-speakers/Osapiens-Tera-Patrick-Lanz/logo_osapiens_horizontal_halfblack.png'
+import bryceCronkiteRatcliffImage from '../images/2026-speakers/Google-Bryce-Cronkite-Ratcliff/Screenshot 2026-09-13 at 22.37.53.png'
+import googleLogo from '../images/2026-speakers/Google-Bryce-Cronkite-Ratcliff/Google Logo.png'
 import Link from 'next/link'
 const anupImage = '/images/2026-speakers/anup-jagwani.jpg'
 const worldBankLogo = '/images/2026-speakers/world-bank-group-logo.png'
@@ -277,6 +279,16 @@ export const speakers2026: Speaker[] = [
     organization: 'Bloomberg News',
     image: mumbiGitauImage,
     description: 'Mumbi Gitau, soft commodities reporter at Bloomberg News, covering global coffee, cocoa, sugar, cotton, and orange juice markets.',
+  },
+  {
+    name: 'Bryce Cronkite-Ratcliff',
+    designation: 'Senior Software Engineer, contributing to the Forest Data Partnership',
+    organization: 'Google',
+    image: bryceCronkiteRatcliffImage,
+    logo: googleLogo,
+    iconHeight: 80,
+    iconWidth: 140,
+    description: 'Bryce is a Senior Software Engineer at Google who has been working at the intersection of climate and geospatial technology since 2022 on projects including forest carbon monitoring, heat resilience support, and sustainable sourcing.'
   },
   {
     name: 'Raymond Bob Katta',
