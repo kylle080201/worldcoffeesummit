@@ -234,6 +234,7 @@ const day1: DayAgenda = {
             "Can satellite and geospatial intelligence identify supply risks early enough for procurement teams to act?",
             "Which use cases are most likely to move Earth Observation from pilots into everyday sourcing, traceability and supply decisions?",
           ],
+          speakers: pick("Bryce Cronkite-Ratcliff"),
         },
         {
           title:
@@ -288,6 +289,7 @@ const day1: DayAgenda = {
       speakers: pick(
         "Juliette Cody",
         "Toby Behrmann",
+        "Bryce Cronkite-Ratcliff",
         "Raymond Bob Katta"
       ),
     },
