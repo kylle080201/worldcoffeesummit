@@ -6,6 +6,8 @@ import chrystelImage from '../images/2026-speakers/Yara international-Chrystel-M
 import yaraLogo from '../images/2026-speakers/Yara international-Chrystel-Monthean/Knowledge_grows_for_A4.png'
 import lukeKnowlesImage from '../images/2026-speakers/Lloyds of london-Luke Knowles/Luke.jpg'
 import lloydsLogo from '../images/2026-speakers/Lloyds of london-Luke Knowles/lloyds-logo-sized-nav (1).png'
+import dominicProbynImage from '../images/2026-speakers/Aon-Dominic-Probyn/Dominic Probyn copy.png'
+import aonLogo from '../images/2026-speakers/Aon-Dominic-Probyn/new-aon-logo.png'
 import cleitonVargasImage from '../images/2026-speakers/Yara-international-Cleiton Vargas/Cleiton Vargas copy.jpg'
 import kevinDuistersImage from '../images/2026-speakers/Proba-Projects-Kevin Duisters/Kevin Duisters copy.jpg'
 import probaLogo from '../images/2026-speakers/Proba-Projects-Kevin Duisters/ProbaPositive.png'
@@ -358,7 +360,7 @@ export const speakers2026: Speaker[] = [
     logo: impactFundDenmarkLogo,
     iconHeight: 80,
     iconWidth: 80,
-    description: ''
+    description: 'Anders Frigaard is Investment Director at Impact Fund Denmark (IFDK). He has extensive experience in private equity, debt financing and impact investing across Africa and Asia, with a particular focus on agribusiness, food value chains and sustainable development. Throughout his career, he has led and overseen investments in emerging markets, combining commercial returns with development impact. He is also actively involved in governance and board oversight of portfolio companies.'
   },
   {
     name: 'Luke Knowles',
@@ -368,6 +370,16 @@ export const speakers2026: Speaker[] = [
     logo: lloydsLogo,
     iconHeight: 80,
     iconWidth: 80,
+    description: ''
+  },
+  {
+    name: 'Dominic Probyn',
+    designation: 'Managing Director, Climate Risk Advisory',
+    organization: 'Aon',
+    image: dominicProbynImage,
+    logo: aonLogo,
+    iconHeight: 80,
+    iconWidth: 140,
     description: ''
   },
   {
