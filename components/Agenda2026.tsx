@@ -290,7 +290,6 @@ const day1: DayAgenda = {
       speakers: pick(
         "Juliette Cody",
         "Toby Behrmann",
-        "Bryce Cronkite-Ratcliff",
         "Raymond Bob Katta"
       ),
     },
