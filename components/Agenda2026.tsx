@@ -373,7 +373,7 @@ const day2: DayAgenda = {
     },
     {
       time: "11:50 – 12:30",
-      title: "PANEL: BEYOND AI – FROM ADOPTION TO ADVANTAGE",
+      title: "FIRESIDE: BEYOND AI – FROM ADOPTION TO ADVANTAGE",
       description:
         "AI is only valuable when it helps organisations make faster, better and more confident decisions. As the pace of innovation accelerates, what separates the technologies that transform organisations from those that struggle to gain traction?",
       bullets: [

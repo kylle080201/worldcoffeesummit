@@ -380,7 +380,7 @@ export const speakers2026: Speaker[] = [
     logo: aonLogo,
     iconHeight: 80,
     iconWidth: 140,
-    description: ''
+    description: `<p class="mb-3">As a Managing Director and global leadership team member of Aon&apos;s Climate Risk Advisory practice, Dom provides insurance, analytics and risk advice for nature-based solutions and climate technologies that generate carbon credits, resilient outcomes in agriculture and other ecosystem services.</p><p class="mb-3">At Aon, Dom has led multiple climate risk analytics, strategic advisory and insurance engagements with clients. He has worked for the firm for over ten years in two stints between which he spent eight years as senior management consultant to insurance, commodity and oil and gas firms.</p><p>Dom has developed market leading tools to inform insurance market climate strategy. He has designed and implemented ground-breaking insurance concepts and is partnering with project developers, financiers, large corporates and across the whole risk capital market to develop and scale solutions.</p>`
   },
   {
     name: 'Saurabh Sharma',
