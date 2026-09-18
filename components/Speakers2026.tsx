@@ -290,7 +290,7 @@ export const speakers2026: Speaker[] = [
     logo: googleLogo,
     iconHeight: 80,
     iconWidth: 140,
-    description: 'Bryce is a Senior Software Engineer at Google who has been working at the intersection of climate and geospatial technology since 2022 on projects including forest carbon monitoring, heat resilience support, and sustainable sourcing.'
+    description: 'Bryce is a Senior Software Engineer at Google where he works at the intersection of geospatial technology and sustainability, including co-leading Google&apos;s contributions to the Forest Data Partnership. He has additionally contributed to projects in heat resilience, urban tree canopies, scalable food systems, and forest carbon monitoring. He holds degrees from Stanford University in Computer Science, Electrical Engineering, Materials Science, and Archaeology.'
   },
   {
     name: 'Raymond Bob Katta',
