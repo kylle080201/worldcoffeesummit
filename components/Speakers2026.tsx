@@ -38,7 +38,7 @@ import adamJasonImage from '../images/2026-speakers/GCC-Adam-Jason/GCC_Adam Jaso
 import gccLogo from '../images/2026-speakers/GCC-Adam-Jason/LOGO-original-GCC (1).png'
 import patrickLanzImage from '../images/2026-speakers/Osapiens-Tera-Patrick-Lanz/image1007 copy.jpg'
 import osapiensLogo from '../images/2026-speakers/Osapiens-Tera-Patrick-Lanz/logo_osapiens_horizontal_halfblack.png'
-import bryceCronkiteRatcliffImage from '../images/2026-speakers/Google-Bryce-Cronkite-Ratcliff/Screenshot 2026-09-13 at 22.37.53.png'
+import bryceCronkiteRatcliffImage from '../images/2026-speakers/Google-Bryce-Cronkite-Ratcliff/IMG_6591 copy.jpeg'
 import googleLogo from '../images/2026-speakers/Google-Bryce-Cronkite-Ratcliff/Google Logo.png'
 import Link from 'next/link'
 const anupImage = '/images/2026-speakers/anup-jagwani.jpg'
@@ -290,7 +290,7 @@ export const speakers2026: Speaker[] = [
     logo: googleLogo,
     iconHeight: 80,
     iconWidth: 140,
-    description: 'Bryce is a Senior Software Engineer at Google who has been working at the intersection of climate and geospatial technology since 2022 on projects including forest carbon monitoring, heat resilience support, and sustainable sourcing.'
+    description: 'Bryce is a Senior Software Engineer at Google where he works at the intersection of geospatial technology and sustainability, including co-leading Google&apos;s contributions to the Forest Data Partnership. He has additionally contributed to projects in heat resilience, urban tree canopies, scalable food systems, and forest carbon monitoring. He holds degrees from Stanford University in Computer Science, Electrical Engineering, Materials Science, and Archaeology.'
   },
   {
     name: 'Raymond Bob Katta',
