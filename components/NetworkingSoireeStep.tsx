@@ -107,7 +107,7 @@ function NetworkingSoireeStep() {
                             <span className="line-through">{gbp(185)}</span>
                             <span> per person</span>
                         </p>
-                        <p className="font-bold leading-tight text-red-700">{gbp(165)}</p>
+                        <p className="font-bold leading-tight text-red-700">{gbp(175)}</p>
                     </div>
                 </div>
 
