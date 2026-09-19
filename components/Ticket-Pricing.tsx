@@ -1,5 +1,5 @@
 "use client"
-import React, { useCallback, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import Link from 'next/link'
 import { BriefcaseBusiness, Landmark, Rocket, Users, Wine, type LucideIcon } from 'lucide-react'
@@ -50,8 +50,8 @@ export function getSummit(): SummitRow[] {
             title: 'NGO / Government / Academic',
             icon: Landmark,
             old_price: 1195,
-            item_price: 995,
-            earlyBird: 'Save £200 book before 19 September',
+            item_price: 1095,
+            earlyBird: 'Save £100 book before 10 October',
             description:
                 'For non-profit organisations, government agencies, policymakers, producers & cooperatives, and full-time academics.',
             line_items: [
@@ -65,9 +65,9 @@ export function getSummit(): SummitRow[] {
         {
             title: 'Corporate',
             icon: BriefcaseBusiness,
-            old_price: 1495,
-            item_price: 1195,
-            earlyBird: 'Save £300 book before 19 September',
+            old_price: 1395,
+            item_price: 1295,
+            earlyBird: 'Save £100 book before 10 October',
             description:
                 'For commercial organisations operating across coffee, cocoa and agricultural commodity value chains, including financial institutions and investment organisations.',
             line_items: [
@@ -98,9 +98,9 @@ export function getSummit(): SummitRow[] {
         {
             title: 'Technology & Service Provider',
             icon: Users,
-            old_price: 1895,
+            old_price: 1795,
             item_price: 1695,
-            earlyBird: 'Save £200 book before 19 September',
+            earlyBird: 'Save £100 book before 10 October',
             description:
                 'For organisations providing products, services or solutions to the sector, including technology companies, consultancies, advisory firms and professional service organisations.',
             line_items: [
@@ -116,8 +116,8 @@ export function getSummit(): SummitRow[] {
             titleSubline: 'at the UK House of Lords',
             icon: Wine,
             old_price: 185,
-            item_price: 165,
-            earlyBird: 'Save £20 book before 19 September',
+            item_price: 175,
+            earlyBird: 'Save £10 book before 10 October',
             description:
                 'Early evening of Day 1 \u00B7 A two-hour, invite-only reception bringing together global leaders and senior stakeholders in a unique and historic setting.',
             subDescription: 'Available to registered delegates only. Limited capacity.',
@@ -141,8 +141,19 @@ const gbp = (n: number) =>
     new Intl.NumberFormat('en-GB', { style: 'currency', currency: 'GBP' }).format(n)
 
 function TicketPricing() {
-    const [showCountdown, setShowCountdown] = useState(isPromoPricingActive)
-    const handleExpired = useCallback(() => setShowCountdown(false), [])
+    const [showCountdown, setShowCountdown] = useState(() => isPromoPricingActive())
+
+    useEffect(() => {
+        if (!isPromoPricingActive()) {
+            setShowCountdown(false)
+            return
+        }
+        const interval = setInterval(() => {
+            if (!isPromoPricingActive()) setShowCountdown(false)
+        }, 1000)
+        return () => clearInterval(interval)
+    }, [])
+
     const summitRows = getSummit()
 
     return (
@@ -162,14 +173,14 @@ function TicketPricing() {
                             <p className="w-full text-xl font-bold leading-snug text-center text-lime-700 sm:text-2xl md:text-3xl">
                                 Prices increase after
                                 <br className="sm:hidden" />{' '}
-                                18 September 2026
+                                9 October 2026
                             </p>
                             {showCountdown ? (
                                 <>
                                     <p className="w-full text-sm font-normal text-center text-black sm:text-base">
                                         Current rates end in:
                                     </p>
-                                    <RegisterCountDown onExpired={handleExpired} />
+                                    <RegisterCountDown />
                                 </>
                             ) : null}
                         </div>
