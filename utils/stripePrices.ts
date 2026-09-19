@@ -1,27 +1,31 @@
-/** Promo rates end at this instant (matches register countdown). 18 September 2026 23:59 UK (BST). */
-export const PRICING_DEADLINE = new Date('2026-09-18T23:59:00+01:00')
+/**
+ * Register-page countdown ends at this instant (end of 9 October 2026 UK / BST).
+ * Public copy uses “Prices increase after 9 October 2026”.
+ * After it passes, only the countdown UI is hidden — displayed amounts and Stripe
+ * checkout price IDs stay on the current rates until you change them below.
+ */
+export const PRICING_DEADLINE = new Date('2026-10-09T23:59:00+01:00')
 
+/** True while the “Current rates end in” countdown should show on /register. */
 export function isPromoPricingActive(now = Date.now()): boolean {
     return now < PRICING_DEADLINE.getTime()
 }
 
-/** Full / post–19 September rates (display + Stripe). */
+/** Full rates after the current early-bird window (display reference + future checkout). */
 export const STANDARD_STRIPE_PRICES = {
     ngoGovernmentAcademic: 'price_1TzY9lKMWpUKzQVze5HZBsjJ',
     corporate: 'price_1TzYBaKMWpUKzQVzuSIvbSuA',
     startUp: 'price_1Rb9T2KMWpUKzQVzaQhry4yi',
     serviceProvider: 'price_1RVYT2KMWpUKzQVzleFRk7vr',
-    /** £185 full rate */
     networkingSoiree: 'price_1TzYD8KMWpUKzQVzGFsxGOI3',
 } as const
 
-/** Rates before 20 September 2026. */
+/** Current register / checkout rates (book before 10 October 2026). */
 export const PROMO_STRIPE_PRICES = {
-    ngoGovernmentAcademic: 'price_1Tze7kKMWpUKzQVznfiZ3pUY',
-    corporate: 'price_1SHoadKMWpUKzQVzCk3pc4oP',
-    serviceProvider: 'price_1Rr82DKMWpUKzQVz3mGm7mS2',
-    /** £165 promo rate */
-    networkingSoiree: 'price_1TzZ58KMWpUKzQVz12PQEdIQ',
+    ngoGovernmentAcademic: 'price_1UHNUcKMWpUKzQVzXm9HIXyH',
+    corporate: 'price_1SJvX1KMWpUKzQVz604VjCdu',
+    serviceProvider: 'price_1SHogiKMWpUKzQVzWQNaw3lL',
+    networkingSoiree: 'price_1UHNWHKMWpUKzQVzce07V4qS',
 } as const
 
 export function getActiveStripePrices(_now = Date.now()) {
@@ -80,10 +84,15 @@ export const LEGACY_STRIPE_PRICES = {
     networkingSoireeEarlyBird: 'price_1TU6d9KMWpUKzQVzbvEL5xFJ',
     networkingSoireePrevious: 'price_1TzYD8KMWpUKzQVzGFsxGOI3',
     academics: 'price_1RJ3cYKMWpUKzQVzk2sR6LGo',
+    ngoGovernmentAcademicPromoSept2026: 'price_1Tze7kKMWpUKzQVznfiZ3pUY',
+    corporatePromoSept2026: 'price_1SHoadKMWpUKzQVzCk3pc4oP',
+    serviceProviderPromoSept2026: 'price_1Rr82DKMWpUKzQVz3mGm7mS2',
+    networkingSoireePromoSept2026: 'price_1TzZ58KMWpUKzQVz12PQEdIQ',
 } as const
 
 export const NETWORKING_SOIREE_PRICE_IDS = [
     PROMO_STRIPE_PRICES.networkingSoiree,
+    LEGACY_STRIPE_PRICES.networkingSoireePromoSept2026,
     STANDARD_STRIPE_PRICES.networkingSoiree,
     LEGACY_STRIPE_PRICES.networkingSoireePrevious,
     LEGACY_STRIPE_PRICES.networkingSoireeEarlyBird,
@@ -102,17 +111,21 @@ export function getTicketNameForPriceId(priceId: string): string {
         case PROMO_STRIPE_PRICES.ngoGovernmentAcademic:
         case STANDARD_STRIPE_PRICES.ngoGovernmentAcademic:
         case LEGACY_STRIPE_PRICES.ngoGovernmentAcademicEarlyBird:
+        case LEGACY_STRIPE_PRICES.ngoGovernmentAcademicPromoSept2026:
             return 'NGO / Government / Academic'
         case PROMO_STRIPE_PRICES.corporate:
         case STANDARD_STRIPE_PRICES.corporate:
         case LEGACY_STRIPE_PRICES.corporateEarlyBird:
+        case LEGACY_STRIPE_PRICES.corporatePromoSept2026:
             return 'Corporates'
         case STANDARD_STRIPE_PRICES.startUp:
             return 'Start Ups'
         case PROMO_STRIPE_PRICES.serviceProvider:
         case STANDARD_STRIPE_PRICES.serviceProvider:
+        case LEGACY_STRIPE_PRICES.serviceProviderPromoSept2026:
             return 'Service Providers'
         case PROMO_STRIPE_PRICES.networkingSoiree:
+        case LEGACY_STRIPE_PRICES.networkingSoireePromoSept2026:
         case STANDARD_STRIPE_PRICES.networkingSoiree:
         case LEGACY_STRIPE_PRICES.networkingSoireePrevious:
         case LEGACY_STRIPE_PRICES.networkingSoireeEarlyBird:
