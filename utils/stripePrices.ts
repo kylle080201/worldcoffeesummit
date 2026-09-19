@@ -24,7 +24,7 @@ export const STANDARD_STRIPE_PRICES = {
 export const PROMO_STRIPE_PRICES = {
     ngoGovernmentAcademic: 'price_1UHNUcKMWpUKzQVzXm9HIXyH',
     corporate: 'price_1SJvX1KMWpUKzQVz604VjCdu',
-    serviceProvider: 'price_1SHogiKMWpUKzQVzWQNaw3lL',
+    serviceProvider: 'price_1Rr82DKMWpUKzQVz3mGm7mS2',
     networkingSoiree: 'price_1UHNWHKMWpUKzQVzce07V4qS',
 } as const
 
@@ -87,6 +87,7 @@ export const LEGACY_STRIPE_PRICES = {
     ngoGovernmentAcademicPromoSept2026: 'price_1Tze7kKMWpUKzQVznfiZ3pUY',
     corporatePromoSept2026: 'price_1SHoadKMWpUKzQVzCk3pc4oP',
     serviceProviderPromoSept2026: 'price_1Rr82DKMWpUKzQVz3mGm7mS2',
+    serviceProviderPromoOct2026: 'price_1SHogiKMWpUKzQVzWQNaw3lL',
     networkingSoireePromoSept2026: 'price_1TzZ58KMWpUKzQVz12PQEdIQ',
 } as const
 
@@ -123,6 +124,7 @@ export function getTicketNameForPriceId(priceId: string): string {
         case PROMO_STRIPE_PRICES.serviceProvider:
         case STANDARD_STRIPE_PRICES.serviceProvider:
         case LEGACY_STRIPE_PRICES.serviceProviderPromoSept2026:
+        case LEGACY_STRIPE_PRICES.serviceProviderPromoOct2026:
             return 'Service Providers'
         case PROMO_STRIPE_PRICES.networkingSoiree:
         case LEGACY_STRIPE_PRICES.networkingSoireePromoSept2026:
