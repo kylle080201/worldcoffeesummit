@@ -25,8 +25,8 @@ function FlagItem({
       <Image
         src={country.flag}
         alt={copyIndex === 0 ? `${country.name} flag` : ''}
-        className="h-[26px] w-auto object-contain sm:h-[28px]"
-        sizes="28px"
+        className="h-[78px] w-auto object-contain sm:h-[84px]"
+        sizes="84px"
       />
       <span className="whitespace-nowrap text-lg font-medium text-gray-900 sm:text-xl">
         {country.name}
