@@ -40,6 +40,8 @@ import patrickLanzImage from '../images/2026-speakers/Osapiens-Tera-Patrick-Lanz
 import osapiensLogo from '../images/2026-speakers/Osapiens-Tera-Patrick-Lanz/logo_osapiens_horizontal_halfblack.png'
 import bryceCronkiteRatcliffImage from '../images/2026-speakers/Google-Bryce-Cronkite-Ratcliff/IMG_6591 copy.jpeg'
 import googleLogo from '../images/2026-speakers/Google-Bryce-Cronkite-Ratcliff/Google Logo.png'
+import alphaIbrahimSesayImage from '../images/2026-speakers/MTI-Alpha-Ibrahim-Sesay/Minister Alpha Ibrahim Sesay.jpeg'
+import sierraLeoneMtiLogo from '../images/2026-speakers/MTI-Alpha-Ibrahim-Sesay/Logo.png'
 import Link from 'next/link'
 const anupImage = '/images/2026-speakers/anup-jagwani.jpg'
 const worldBankLogo = '/images/2026-speakers/world-bank-group-logo.png'
@@ -96,6 +98,16 @@ export const speakers2026: Speaker[] = [
     iconHeight: 200,
     iconWidth: 200,
     description: 'The Rt. Hon John Gummer, Lord Deben, is the founder and Chairman of Sancroft International, a consultancy that advises both businesses and investors on all areas of Sustainability and ESG. Between 2012 and 2023 he was Chairman of the UK\u2019s Independent Climate Change Committee. Lord Deben was also the UK\u2019s longest serving Secretary of State for the Environment (1993-97) having previously been Minister of Agriculture, Fisheries, and Food. His sixteen years of top-level ministerial experience also include Minister for London, Employment Minister, and Paymaster General in HM Treasury. Lord Deben is currently Chairman of Valpak Ltd and of PIMFA, the trade body representing financial advisers and wealth managers. Throughout his political, business, and personal life Lord Deben has consistently championed an accord between sustainability and business sense.'
+  },
+  {
+    name: 'Hon. Alpha Ibrahim Sesay',
+    designation: 'Minister of Trade and Industry',
+    organization: 'Ministry of Trade and Industry, Republic of Sierra Leone',
+    image: alphaIbrahimSesayImage,
+    logo: sierraLeoneMtiLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: `<p class="mb-3">Mr. Alpha Ibrahim Sesay is the Minister of Trade and Industry of the Republic of Sierra Leone, a position through which he continues to demonstrate exceptional leadership, strategic foresight, and an unwavering commitment to advancing Sierra Leone&apos;s industrialization and economic diversification agenda. Under his stewardship, the Ministry of Trade and Industry has intensified efforts to stimulate manufacturing growth, empower micro, small and medium enterprises (MSMEs), and strengthen the country&apos;s participation in regional and multilateral trade frameworks, notably the African Continental Free Trade Area (AfCFTA), ECOWAS Trade Liberalization Scheme (ETLS), and other global partnerships that position Sierra Leone for sustainable growth and competitiveness.</p><p class="mb-3">Before his appointment as Minister, Mr. Sesay served with remarkable distinction as the Head of the Project Fiduciary Management Unit (PFMU) in the Ministry of Finance, where he oversaw financial management and fiduciary operations for donor-funded projects across multiple sectors. His leadership at the PFMU was marked by accountability, transparency, and efficiency, earning him widespread recognition within government and among development partners.</p><p class="mb-3">Minister Sesay is a Member of the Public Financial Management Specialists Society of Sierra Leone, a reflection of his strong technical background and deep expertise in public finance and governance.</p><p class="mb-3">Academically, Mr. Sesay combines both international training and practical policy experience. He holds a Bachelor&apos;s degree in Economics with honours in political science from Fourah Bay College University of Sierra Leone, a Master&apos;s degree in Development Administration and Management from the University of Manchester (United Kingdom) and a Masters degree in Public Administration from the Harvard Kennedy School of Government (United States of America), where he was also a Mason Fellow, an honor reserved for emerging global leaders dedicated to public service and transformational leadership.</p><p class="mb-3">Beyond his professional and academic accomplishments, Mr. Sesay&apos;s life reflects discipline, resilience, and a spirit of teamwork. His services as a former Captain of the Sierra Leone National Volleyball Team, and former Secretary General of one of the oldest football clubs in Africa — the East End Lions, embodies the values of sportsmanship, perseverance, and unity; qualities that continue to define his leadership in public service.</p><p>Today, Minister Alpha Ibrahim Sesay stands as one of Sierra Leone&apos;s most forward-thinking policymakers, championing a vision of inclusive industrialization, sustainable economic empowerment, and global competitiveness for all Sierra Leoneans. His journey that includes leadership in sports, university social clubs, and public office is testament to his dedication to serve; and serve with integrity and commitment to national progress.</p>`,
   },
   {
     name: 'Anup Jagwani',
