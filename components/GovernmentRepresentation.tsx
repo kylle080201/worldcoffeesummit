@@ -25,8 +25,8 @@ function FlagItem({
       <Image
         src={country.flag}
         alt={copyIndex === 0 ? `${country.name} flag` : ''}
-        className="h-12 w-auto object-contain sm:h-14"
-        sizes="64px"
+        className="h-[26px] w-auto object-contain sm:h-[28px]"
+        sizes="28px"
       />
       <span className="whitespace-nowrap text-lg font-medium text-gray-900 sm:text-xl">
         {country.name}
@@ -44,11 +44,11 @@ export default function GovernmentRepresentation() {
 
   return (
     <section
-      className="w-full bg-gray-100 px-4 py-6 sm:px-6 sm:py-8"
+      className="w-full bg-[#EEF3E8] px-4 py-6 sm:px-6 sm:py-8"
       aria-label="Government representation"
     >
-      <p className="text-center text-xl font-bold text-gray-900 sm:text-2xl">
-        GOVERNMENT REPRESENTATION:
+      <p className="text-center text-xl font-semibold text-[#173D2B] sm:text-2xl">
+        GOVERNMENT REPRESENTATION
       </p>
 
       <div className="relative mt-5 overflow-hidden">
