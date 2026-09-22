@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import wcaWhiteLogo from '../images/WCA-White.png'
+import GovernmentRepresentation from './GovernmentRepresentation'
 
 const whyThisSummitCards = [
   {
@@ -126,7 +127,7 @@ export default function Overview() {
                     {[
                         '200+ Attendees',
                         '25+ Countries',
-                        '60+ Speakers',
+                        '40+ Senior Speakers',
                         '75%+ C-Suite, VP or Director Level',
                     ].map((stat, index) => (
                         <React.Fragment key={stat}>
@@ -142,6 +143,8 @@ export default function Overview() {
                 </div>
 
             </div>
+
+            <GovernmentRepresentation />
 
             <section className="w-full bg-white px-6 pb-10 pt-6 sm:px-8 sm:pb-14 sm:pt-8 md:px-12">
                 <div className="mx-auto max-w-7xl">
