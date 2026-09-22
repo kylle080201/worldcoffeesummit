@@ -40,8 +40,9 @@ import patrickLanzImage from '../images/2026-speakers/Osapiens-Tera-Patrick-Lanz
 import osapiensLogo from '../images/2026-speakers/Osapiens-Tera-Patrick-Lanz/logo_osapiens_horizontal_halfblack.png'
 import bryceCronkiteRatcliffImage from '../images/2026-speakers/Google-Bryce-Cronkite-Ratcliff/IMG_6591 copy.jpeg'
 import googleLogo from '../images/2026-speakers/Google-Bryce-Cronkite-Ratcliff/Google Logo.png'
+import rachelKyteImage from '../images/2026-speakers/UK-Rachel-Kyte/Rachel Kyte headshot copy.jpeg'
 import alphaIbrahimSesayImage from '../images/2026-speakers/MTI-Alpha-Ibrahim-Sesay/Minister Alpha Ibrahim Sesay.jpeg'
-import sierraLeoneMtiLogo from '../images/2026-speakers/MTI-Alpha-Ibrahim-Sesay/Logo.png'
+import sierraLeoneMtiLogo from '../images/2026-speakers/MTI-Alpha-Ibrahim-Sesay/lOGO2.png'
 import Link from 'next/link'
 const anupImage = '/images/2026-speakers/anup-jagwani.jpg'
 const worldBankLogo = '/images/2026-speakers/world-bank-group-logo.png'
@@ -98,6 +99,13 @@ export const speakers2026: Speaker[] = [
     iconHeight: 200,
     iconWidth: 200,
     description: 'The Rt. Hon John Gummer, Lord Deben, is the founder and Chairman of Sancroft International, a consultancy that advises both businesses and investors on all areas of Sustainability and ESG. Between 2012 and 2023 he was Chairman of the UK\u2019s Independent Climate Change Committee. Lord Deben was also the UK\u2019s longest serving Secretary of State for the Environment (1993-97) having previously been Minister of Agriculture, Fisheries, and Food. His sixteen years of top-level ministerial experience also include Minister for London, Employment Minister, and Paymaster General in HM Treasury. Lord Deben is currently Chairman of Valpak Ltd and of PIMFA, the trade body representing financial advisers and wealth managers. Throughout his political, business, and personal life Lord Deben has consistently championed an accord between sustainability and business sense.'
+  },
+  {
+    name: 'Rachel Kyte',
+    designation: 'UK Special Representative for Climate',
+    organization: 'Foreign, Commonwealth and Development Office (FCDO)',
+    image: rachelKyteImage,
+    description: `<p class="mb-3">Rachel Kyte was appointed UK Special Representative for Climate on 21st October 2024. Rachel supports Ministers to increase senior international diplomatic engagement on climate and clean energy. She reports to the Foreign Secretary and the Secretary of State for Energy Security and Net Zero.</p><p class="mb-3">She is Professor of Practice in Climate Policy at the Blavatnik School of Government, University of Oxford and dean emerita of the Fletcher School of Law and Diplomacy at Tufts University.</p><p>Rachel was Special Representative of the UN Secretary-General and CEO of Sustainable Energy for All. She has held several posts at World Bank Group, including Vice President and Special Envoy for Climate Change.</p>`,
   },
   {
     name: 'Hon. Alpha Ibrahim Sesay',
