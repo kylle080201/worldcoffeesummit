@@ -1,6 +1,7 @@
 import type { StaticImageData } from 'next/image'
 
 import brazilFlag from '../images/country-flags/Brazil.png'
+import unitedKingdomFlag from '../images/country-flags/United Kingdom.png'
 import colombiaFlag from '../images/country-flags/Colombia.png'
 import costaRicaFlag from '../images/country-flags/Costa Rica.png'
 import ecuadorFlag from '../images/country-flags/Ecuador.png'
@@ -18,6 +19,7 @@ export type GovernmentRepresentationCountry = {
 
 /** Display order for the homepage government representation marquee. */
 export const governmentRepresentationCountries: GovernmentRepresentationCountry[] = [
+  { name: 'United Kingdom', flag: unitedKingdomFlag },
   { name: 'Brazil', flag: brazilFlag },
   { name: 'Colombia', flag: colombiaFlag },
   { name: 'Indonesia', flag: indonesiaFlag },
