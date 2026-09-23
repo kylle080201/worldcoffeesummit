@@ -220,7 +220,7 @@ const day1: DayAgenda = {
       title: "CASE STUDY",
     },
     {
-      time: "13:35 – 15:05",
+      time: "13:35 – 14:55",
       title: "EXECUTIVE DEEP DIVES",
       extra: [
         {
@@ -249,12 +249,12 @@ const day1: DayAgenda = {
       ],
     },
     {
-      time: "15:05 – 15:35",
+      time: "14:55 – 15:25",
       title: "NETWORKING COFFEE BREAK",
       variant: "break",
     },
     {
-      time: "15:35 – 16:25",
+      time: "15:25 – 16:15",
       title:
         "PANEL: DECARBONISATION AT SCALE: FROM SCOPE 3 COMMITMENTS TO MEASURABLE OUTCOMES",
       description:
@@ -273,7 +273,7 @@ const day1: DayAgenda = {
       ),
     },
     {
-      time: "16:25 – 17:05",
+      time: "16:15 – 16:55",
       title:
         "PANEL: PUTTING NATURE ON THE BALANCE SHEET: NATURAL CAPITAL AS A STRATEGIC BUSINESS ASSET",
       description:
@@ -291,7 +291,7 @@ const day1: DayAgenda = {
       ),
     },
     {
-      time: "17:05 – 17:10",
+      time: "16:55 – 17:00",
       title: "CLOSING REMARKS",
       speaker: pickOne("Joy Macknight"),
     },
