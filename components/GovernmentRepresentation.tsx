@@ -45,10 +45,10 @@ export default function GovernmentRepresentation() {
   return (
     <section
       className="w-full bg-[#EEF3E8] px-4 py-6 sm:px-6 sm:py-8"
-      aria-label="Government representation"
+      aria-label="Government representatives"
     >
       <p className="text-center text-xl font-semibold text-[#173D2B] sm:text-2xl">
-        GOVERNMENT REPRESENTATION
+        GOVERNMENT REPRESENTATIVES
       </p>
 
       <div className="relative mt-5 overflow-hidden">
