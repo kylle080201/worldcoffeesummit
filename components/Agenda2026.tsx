@@ -22,6 +22,8 @@ type AgendaExtra = {
 
 type AgendaItem = {
   time: string;
+  /** When true, the time column shows start and end (default: start time only). */
+  showFullTimeRange?: boolean;
   title: string;
   variant?: "session" | "break";
   subtitle?: string;
@@ -150,12 +152,7 @@ const day1: DayAgenda = {
       title: "OPENING KEYNOTE",
     },
     {
-      time: "09:15 – 09:25",
-      title: "INSPIRATIONAL TALK",
-      speaker: pickOne("The Rt. Hon John Gummer, The Lord Deben"),
-    },
-    {
-      time: "09:25 – 10:15",
+      time: "09:15 – 10:05",
       title: "OPENING PANEL: EUDR READY? TRACEABILITY VS REALITY",
       description:
         "As EUDR reshapes global coffee and cocoa trade, traceability is becoming the licence to trade. But how ready is today's supply—and what separates compliance on paper from compliance in practice?",
@@ -172,17 +169,17 @@ const day1: DayAgenda = {
       ),
     },
     {
-      time: "10:15 – 10:30",
+      time: "10:05 – 10:20",
       title: "CASE STUDY",
       speaker: pickOne("Patrick Lanz"),
     },
     {
-      time: "10:30 – 11:00",
+      time: "10:20 – 10:50",
       title: "NETWORKING COFFEE BREAK",
       variant: "break",
     },
     {
-      time: "11:00 – 12:00",
+      time: "10:50 – 11:30",
       title:
         "GLOBAL LEADERS FORUM: IS THE TRADITIONAL COFFEE TRADING MODEL STILL FIT FOR THE FUTURE?",
       description:
@@ -195,7 +192,7 @@ const day1: DayAgenda = {
       speakers: pick("Tim Scharrer", "Chrystel Monthean", "Eric Gorlier"),
     },
     {
-      time: "12:00 – 12:40",
+      time: "11:30 – 12:20",
       title:
         "PANEL: WHO PAYS—OR PROFITS—FROM RESILIENCE? FINANCING THE FUTURE OF GLOBAL SUPPLY CHAINS",
       description:
@@ -209,21 +206,20 @@ const day1: DayAgenda = {
       speakers: pick(
         "Anup Jagwani",
         "Dr. Sarah Tischer",
-        "Saurabh Sharma",
-        "Dominic Probyn"
+        "Saurabh Sharma"
       ),
     },
     {
-      time: "12:40 – 13:00",
-      title: "CASE STUDY",
-    },
-    {
-      time: "13:00 – 14:00",
+      time: "12:20 – 13:20",
       title: "NETWORKING LUNCH",
       variant: "break",
     },
     {
-      time: "14:00 – 15:30",
+      time: "13:20 – 13:35",
+      title: "CASE STUDY",
+    },
+    {
+      time: "13:35 – 15:05",
       title: "EXECUTIVE DEEP DIVES",
       extra: [
         {
@@ -252,12 +248,12 @@ const day1: DayAgenda = {
       ],
     },
     {
-      time: "15:30 – 16:00",
+      time: "15:05 – 15:35",
       title: "NETWORKING COFFEE BREAK",
       variant: "break",
     },
     {
-      time: "16:00 – 16:40",
+      time: "15:35 – 16:25",
       title:
         "PANEL: DECARBONISATION AT SCALE: FROM SCOPE 3 COMMITMENTS TO MEASURABLE OUTCOMES",
       description:
@@ -276,7 +272,7 @@ const day1: DayAgenda = {
       ),
     },
     {
-      time: "16:40 – 17:25",
+      time: "16:25 – 17:05",
       title:
         "PANEL: PUTTING NATURE ON THE BALANCE SHEET: NATURAL CAPITAL AS A STRATEGIC BUSINESS ASSET",
       description:
@@ -294,12 +290,13 @@ const day1: DayAgenda = {
       ),
     },
     {
-      time: "17:25 – 17:30",
+      time: "17:05 – 17:10",
       title: "CLOSING REMARKS",
       speaker: pickOne("Joy Macknight"),
     },
     {
       time: "18:30 – 20:30",
+      showFullTimeRange: true,
       title: "NETWORKING SOIRÉE AT UK HOUSE OF LORDS",
       variant: "break",
     },
@@ -317,24 +314,28 @@ const day2: DayAgenda = {
       variant: "break",
     },
     {
-      time: "08:00 – 08:45",
-      title: "MORNING BRIEFING",
-    },
-    {
       time: "09:00 – 09:05",
       title: "OPENING REMARKS",
       speaker: pickOne("Sean Edwards"),
     },
     {
       time: "09:05 – 09:15",
-      title: "OPENING KEYNOTE",
+      title: "INSPIRATIONAL TALK",
+      speaker: pickOne("The Rt. Hon John Gummer, The Lord Deben"),
     },
     {
       time: "09:15 – 09:25",
-      title: "INSPIRATIONAL PRESENTATION",
+      title: "KEYNOTE",
+      speaker: pickOne("Rachel Kyte"),
     },
     {
-      time: "09:25 – 10:40",
+      time: "09:25 – 09:55",
+      title: "FIRESIDE",
+      chair: pickOne("Peter Foster"),
+      speakers: pick("Hon. Alpha Ibrahim Sesay", "Rachel Kyte"),
+    },
+    {
+      time: "09:55 – 10:55",
       title: "PANEL: WHO WILL SECURE COFFEE & COCOA SUPPLY BY 2030?",
       description:
         "Bringing together senior decision-makers from across the coffee and cocoa value chain, this signature discussion examines how procurement, finance, technology and partnerships must evolve to secure future supply. Which decisions made today will matter most over the next decade?",
@@ -353,12 +354,12 @@ const day2: DayAgenda = {
       ),
     },
     {
-      time: "10:40 – 11:10",
+      time: "10:55 – 11:25",
       title: "NETWORKING COFFEE BREAK",
       variant: "break",
     },
     {
-      time: "11:10 – 11:50",
+      time: "11:25 – 12:15",
       title:
         "PANEL: REGENERATIVE AGRICULTURE – BUILDING THE NEXT GENERATION OF RESILIENT COFFEE & COCOA PRODUCTION SYSTEMS",
       description:
@@ -372,8 +373,8 @@ const day2: DayAgenda = {
       speakers: pick("Piet van Asten", "Ben Rimaud", "Adam Jason"),
     },
     {
-      time: "11:50 – 12:30",
-      title: "FIRESIDE: BEYOND AI – FROM ADOPTION TO ADVANTAGE",
+      time: "12:15 – 12:45",
+      title: "PANEL: BEYOND AI – FROM ADOPTION TO ADVANTAGE",
       description:
         "AI is only valuable when it helps organisations make faster, better and more confident decisions. As the pace of innovation accelerates, what separates the technologies that transform organisations from those that struggle to gain traction?",
       bullets: [
@@ -384,12 +385,12 @@ const day2: DayAgenda = {
       speakers: pick("Paola Scarpa", "Tim Scharrer"),
     },
     {
-      time: "12:30 – 13:30",
+      time: "12:45 – 13:45",
       title: "NETWORKING LUNCH + COFFEE TASTING",
       variant: "break",
     },
     {
-      time: "13:30 – 14:10",
+      time: "13:45 – 14:25",
       title:
         "PANEL: THE PROCUREMENT DECADE: SECURING SUPPLY IN AN ERA OF STRUCTURAL CHANGE",
       description:
@@ -407,7 +408,7 @@ const day2: DayAgenda = {
       ),
     },
     {
-      time: "14:10 – 14:50",
+      time: "14:25 – 14:55",
       title:
         "CLOSING PANEL: MAPPING THE NEXT FIVE YEARS: WHAT WILL DEFINE THE FUTURE OF COFFEE & COCOA?",
       description:
@@ -416,9 +417,11 @@ const day2: DayAgenda = {
         "How will climate change reshape coffee and cocoa production geographies — and how must capital, regulation and technology respond through 2030?",
         "What should the industry scale now—and what deserves less attention?",
       ],
+      chair: pickOne("Peter Foster"),
+      speakers: pick("Eric Gorlier"),
     },
     {
-      time: "14:50 – 15:00",
+      time: "14:55 – 15:00",
       title: "CLOSING REFLECTIONS",
     },
   ],
@@ -434,6 +437,13 @@ type TabId = (typeof tabs)[number]["id"];
 
 function startTime(time: string) {
   return time.split("–")[0]?.trim() ?? time;
+}
+
+function timeForBar(time: string, showFullTimeRange?: boolean) {
+  if (!showFullTimeRange) return startTime(time);
+  const parts = time.split("–").map((part) => part.trim());
+  if (parts.length < 2) return startTime(time);
+  return `${parts[0]}-${parts[1]}`;
 }
 
 function toBarTitle(title: string, subtitle?: string) {
@@ -461,7 +471,7 @@ function AgendaSession({ item }: { item: AgendaItem }) {
         <div
           className={`col-span-2 mx-auto flex w-full items-center justify-center px-6 font-medium text-white ${barClass}`}
         >
-          {startTime(item.time)}
+          {timeForBar(item.time, item.showFullTimeRange)}
         </div>
         <div
           className={`col-span-8 mx-auto flex w-full items-center px-6 py-2 font-medium uppercase text-white ${barClass}`}
