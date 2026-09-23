@@ -206,7 +206,8 @@ const day1: DayAgenda = {
       speakers: pick(
         "Anup Jagwani",
         "Dr. Sarah Tischer",
-        "Saurabh Sharma"
+        "Saurabh Sharma",
+        "Dominic Probyn"
       ),
     },
     {
