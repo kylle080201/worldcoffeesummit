@@ -15,14 +15,16 @@ import tanzaniaFlag from '../images/country-flags/Tanzania.png'
 export type GovernmentRepresentationCountry = {
   name: string
   flag: StaticImageData
+  /** Steps relative to default flag height (−1 smaller, +1 bigger). */
+  flagSizeOffset?: number
 }
 
 /** Display order for the homepage government representation marquee. */
 export const governmentRepresentationCountries: GovernmentRepresentationCountry[] = [
-  { name: 'United Kingdom', flag: unitedKingdomFlag },
+  { name: 'United Kingdom', flag: unitedKingdomFlag, flagSizeOffset: -1 },
   { name: 'Brazil', flag: brazilFlag },
   { name: 'Colombia', flag: colombiaFlag },
-  { name: 'Indonesia', flag: indonesiaFlag },
+  { name: 'Indonesia', flag: indonesiaFlag, flagSizeOffset: 1 },
   { name: 'Tanzania', flag: tanzaniaFlag },
   { name: 'Ecuador', flag: ecuadorFlag },
   { name: 'Rwanda', flag: rwandaFlag },
