@@ -292,6 +292,7 @@ const day1: DayAgenda = {
     },
     {
       time: "16:55 – 17:00",
+      showFullTimeRange: true,
       title: "CLOSING REMARKS",
       speaker: pickOne("Joy Macknight"),
     },
