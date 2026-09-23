@@ -9,6 +9,11 @@ import {
 } from './governmentRepresentationFlags'
 
 const MARQUEE_DURATION_SECONDS = 75
+const FLAG_SIZE_CLASS_BY_OFFSET: Record<number, string> = {
+  [-1]: 'h-[66px] sm:h-[72px]',
+  0: 'h-[78px] sm:h-[84px]',
+  1: 'h-[90px] sm:h-[96px]',
+}
 
 function FlagItem({
   country,
@@ -17,6 +22,9 @@ function FlagItem({
   country: GovernmentRepresentationCountry
   copyIndex: number
 }) {
+  const sizeOffset = country.flagSizeOffset ?? 0
+  const flagSizeClass = FLAG_SIZE_CLASS_BY_OFFSET[sizeOffset] ?? FLAG_SIZE_CLASS_BY_OFFSET[0]
+
   return (
     <div
       className="flex shrink-0 items-center gap-3 px-6 sm:px-8"
@@ -25,7 +33,7 @@ function FlagItem({
       <Image
         src={country.flag}
         alt={copyIndex === 0 ? `${country.name} flag` : ''}
-        className="h-[78px] w-auto object-contain sm:h-[84px]"
+        className={`w-auto object-contain ${flagSizeClass}`}
         sizes="84px"
       />
       <span className="whitespace-nowrap text-lg font-medium text-gray-900 sm:text-xl">
