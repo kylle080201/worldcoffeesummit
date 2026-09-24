@@ -43,9 +43,9 @@ import googleLogo from '../images/2026-speakers/Google-Bryce-Cronkite-Ratcliff/G
 import rachelKyteImage from '../images/2026-speakers/UK-Rachel-Kyte/Rachel Kyte headshot copy.jpeg'
 import alphaIbrahimSesayImage from '../images/2026-speakers/MTI-Alpha-Ibrahim-Sesay/Minister Alpha Ibrahim Sesay.jpeg'
 import sierraLeoneMtiLogo from '../images/2026-speakers/MTI-Alpha-Ibrahim-Sesay/lOGO2.png'
+import ulyanaDovbushImage from '../images/2026-speakers/IFC-Ulyana-Dovbush/Ulyana Dovbush copy.jpg'
+import ifcLogo from '../images/2026-speakers/IFC-Ulyana-Dovbush/IFC-Logo.png'
 import Link from 'next/link'
-const anupImage = '/images/2026-speakers/anup-jagwani.jpg'
-const worldBankLogo = '/images/2026-speakers/world-bank-group-logo.png'
 const timImage = '/images/2026-speakers/tim-scharrer.jpg'
 const volcafeLogo = '/images/2026-speakers/volcafe-logo.png'
 const olivierImage = '/images/2026-speakers/olivier-laboulle.jpeg'
@@ -118,16 +118,6 @@ export const speakers2026: Speaker[] = [
     description: `<p class="mb-3">Mr. Alpha Ibrahim Sesay is the Minister of Trade and Industry of the Republic of Sierra Leone, a position through which he continues to demonstrate exceptional leadership, strategic foresight, and an unwavering commitment to advancing Sierra Leone&apos;s industrialization and economic diversification agenda. Under his stewardship, the Ministry of Trade and Industry has intensified efforts to stimulate manufacturing growth, empower micro, small and medium enterprises (MSMEs), and strengthen the country&apos;s participation in regional and multilateral trade frameworks, notably the African Continental Free Trade Area (AfCFTA), ECOWAS Trade Liberalization Scheme (ETLS), and other global partnerships that position Sierra Leone for sustainable growth and competitiveness.</p><p class="mb-3">Before his appointment as Minister, Mr. Sesay served with remarkable distinction as the Head of the Project Fiduciary Management Unit (PFMU) in the Ministry of Finance, where he oversaw financial management and fiduciary operations for donor-funded projects across multiple sectors. His leadership at the PFMU was marked by accountability, transparency, and efficiency, earning him widespread recognition within government and among development partners.</p><p class="mb-3">Minister Sesay is a Member of the Public Financial Management Specialists Society of Sierra Leone, a reflection of his strong technical background and deep expertise in public finance and governance.</p><p class="mb-3">Academically, Mr. Sesay combines both international training and practical policy experience. He holds a Bachelor&apos;s degree in Economics with honours in political science from Fourah Bay College University of Sierra Leone, a Master&apos;s degree in Development Administration and Management from the University of Manchester (United Kingdom) and a Masters degree in Public Administration from the Harvard Kennedy School of Government (United States of America), where he was also a Mason Fellow, an honor reserved for emerging global leaders dedicated to public service and transformational leadership.</p><p class="mb-3">Beyond his professional and academic accomplishments, Mr. Sesay&apos;s life reflects discipline, resilience, and a spirit of teamwork. His services as a former Captain of the Sierra Leone National Volleyball Team, and former Secretary General of one of the oldest football clubs in Africa — the East End Lions, embodies the values of sportsmanship, perseverance, and unity; qualities that continue to define his leadership in public service.</p><p>Today, Minister Alpha Ibrahim Sesay stands as one of Sierra Leone&apos;s most forward-thinking policymakers, championing a vision of inclusive industrialization, sustainable economic empowerment, and global competitiveness for all Sierra Leoneans. His journey that includes leadership in sports, university social clubs, and public office is testament to his dedication to serve; and serve with integrity and commitment to national progress.</p>`,
   },
   {
-    name: 'Anup Jagwani',
-    designation: 'Global Director, Farming and Agribusiness',
-    organization: 'World Bank Group',
-    image: anupImage,
-    logo: worldBankLogo,
-    iconHeight: 80,
-    iconWidth: 80,
-    description: `<p class="mb-3">Anup Jagwani is the World Bank Group (WBG) Director for Farming and Agribusiness, which brings together public and private sector expertise to transform food systems and scale climate-smart agriculture. In this role Anup also drives the AgriConnect agenda forward to transform opportunities and livelihoods for 300 million farmers globally by 2030.</p><p class="mb-3">Anup has previously held various leadership positions across the WBG and most recently as WBG Senior Manager, Farming and Agribusiness, Solutions &amp; Impact. Prior to that, Anup was Senior Global Sector Manager for Agribusiness and Forestry at the International Finance Corporation (IFC), a member of the World Bank Group, and the largest development institution focused on the private sector in emerging markets.</p><p class="mb-3">During his WBG career, Anup also led IFC&apos;s climate finance and policy team, covering several areas of climate business including sustainable finance; carbon pricing and carbon credits; climate risk, adaptation and resilience; biodiversity finance and nature-based solutions. In addition, he spent over 20 years in IFC&apos;s investment operations, with the majority of his time focused on agribusiness and agritech investments, with a particular focus on Sub Saharan Africa and South and South-East Asia. Anup has served as nominee Director for several IFC investee companies.</p><p>Before joining IFC, Anup was with Unilever in India. Anup is a graduate of the Asian Institute of Management and the Wharton School of Business and completed his undergraduate studies in Economics at St. Xavier&apos;s College in Kolkata, India.</p>`
-  },
-  {
     name: 'David Laborde',
     designation: 'Director of Agrifood Economics and Policy Division (ESA)',
     organization: 'Food and Agriculture Organization of the United Nations (FAO)',
@@ -136,6 +126,16 @@ export const speakers2026: Speaker[] = [
     iconHeight: 80,
     iconWidth: 80,
     description: ''
+  },
+  {
+    name: 'Ulyana Dovbush',
+    designation: 'Manager for Farming and Agribusiness, Solutions and Impact',
+    organization: 'International Finance Corporation (IFC)',
+    image: ulyanaDovbushImage,
+    logo: ifcLogo,
+    iconHeight: 80,
+    iconWidth: 140,
+    description: '',
   },
   {
     name: 'Tim Scharrer',

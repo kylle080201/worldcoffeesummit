@@ -204,7 +204,7 @@ const day1: DayAgenda = {
       ],
       chair: pickOne("Joy Macknight"),
       speakers: pick(
-        "Anup Jagwani",
+        "Ulyana Dovbush",
         "Dr. Sarah Tischer",
         "Saurabh Sharma",
         "Dominic Probyn"
