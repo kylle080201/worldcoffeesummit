@@ -118,16 +118,6 @@ export const speakers2026: Speaker[] = [
     description: `<p class="mb-3">Mr. Alpha Ibrahim Sesay is the Minister of Trade and Industry of the Republic of Sierra Leone, a position through which he continues to demonstrate exceptional leadership, strategic foresight, and an unwavering commitment to advancing Sierra Leone&apos;s industrialization and economic diversification agenda. Under his stewardship, the Ministry of Trade and Industry has intensified efforts to stimulate manufacturing growth, empower micro, small and medium enterprises (MSMEs), and strengthen the country&apos;s participation in regional and multilateral trade frameworks, notably the African Continental Free Trade Area (AfCFTA), ECOWAS Trade Liberalization Scheme (ETLS), and other global partnerships that position Sierra Leone for sustainable growth and competitiveness.</p><p class="mb-3">Before his appointment as Minister, Mr. Sesay served with remarkable distinction as the Head of the Project Fiduciary Management Unit (PFMU) in the Ministry of Finance, where he oversaw financial management and fiduciary operations for donor-funded projects across multiple sectors. His leadership at the PFMU was marked by accountability, transparency, and efficiency, earning him widespread recognition within government and among development partners.</p><p class="mb-3">Minister Sesay is a Member of the Public Financial Management Specialists Society of Sierra Leone, a reflection of his strong technical background and deep expertise in public finance and governance.</p><p class="mb-3">Academically, Mr. Sesay combines both international training and practical policy experience. He holds a Bachelor&apos;s degree in Economics with honours in political science from Fourah Bay College University of Sierra Leone, a Master&apos;s degree in Development Administration and Management from the University of Manchester (United Kingdom) and a Masters degree in Public Administration from the Harvard Kennedy School of Government (United States of America), where he was also a Mason Fellow, an honor reserved for emerging global leaders dedicated to public service and transformational leadership.</p><p class="mb-3">Beyond his professional and academic accomplishments, Mr. Sesay&apos;s life reflects discipline, resilience, and a spirit of teamwork. His services as a former Captain of the Sierra Leone National Volleyball Team, and former Secretary General of one of the oldest football clubs in Africa — the East End Lions, embodies the values of sportsmanship, perseverance, and unity; qualities that continue to define his leadership in public service.</p><p>Today, Minister Alpha Ibrahim Sesay stands as one of Sierra Leone&apos;s most forward-thinking policymakers, championing a vision of inclusive industrialization, sustainable economic empowerment, and global competitiveness for all Sierra Leoneans. His journey that includes leadership in sports, university social clubs, and public office is testament to his dedication to serve; and serve with integrity and commitment to national progress.</p>`,
   },
   {
-    name: 'Ulyana Dovbush',
-    designation: 'Manager for Farming and Agribusiness, Solutions and Impact',
-    organization: 'International Finance Corporation (IFC)',
-    image: ulyanaDovbushImage,
-    logo: ifcLogo,
-    iconHeight: 80,
-    iconWidth: 140,
-    description: '',
-  },
-  {
     name: 'David Laborde',
     designation: 'Director of Agrifood Economics and Policy Division (ESA)',
     organization: 'Food and Agriculture Organization of the United Nations (FAO)',
@@ -136,6 +126,16 @@ export const speakers2026: Speaker[] = [
     iconHeight: 80,
     iconWidth: 80,
     description: ''
+  },
+  {
+    name: 'Ulyana Dovbush',
+    designation: 'Manager for Farming and Agribusiness, Solutions and Impact',
+    organization: 'International Finance Corporation (IFC)',
+    image: ulyanaDovbushImage,
+    logo: ifcLogo,
+    iconHeight: 80,
+    iconWidth: 140,
+    description: '',
   },
   {
     name: 'Tim Scharrer',
