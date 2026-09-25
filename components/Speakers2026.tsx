@@ -22,8 +22,6 @@ import davidLabordeImage from '../images/2026-speakers/FAO-David Laborde/David L
 import faoLogo from '../images/2026-speakers/FAO-David Laborde/fao-logo-en.png'
 import rickVanDerKampImage from '../images/2026-speakers/IFAD-Rick van der Kamp/Rick van der Kamp.jpg'
 import ifadLogo from '../images/2026-speakers/IFAD-Rick van der Kamp/E_g_web.png'
-import sonyaImage from '../images/2026-speakers/CDP-Sonya Bhonsle/Sonya Bhonsle.jpg'
-import cdpLogo from '../images/2026-speakers/CDP-Sonya Bhonsle/cdp.png'
 import julietteImage from '../images/2026-speakers/BCG-Juliette-Cody/Juliette Cody.jpg'
 import bcgLogo from '../images/2026-speakers/BCG-Juliette-Cody/header-logo--bc.png'
 import paolaScarpaImage from '../images/2026-speakers/Lavaza-Group-Paola Scarpa/Lavazza_PaolaScarpa 005 copy.jpg'
@@ -441,16 +439,6 @@ export const speakers2026: Speaker[] = [
     iconHeight: 80,
     iconWidth: 80,
     description: 'Toby is currently Head of London Market and Public Private Partnerships at AXA Climate, the specialized entity within the AXA Group, created to address the growing need for climate adaptation across both private and public sectors. He focuses on developing innovative financial solutions to address the growing impacts of climate change. Starting his career at international insurer AIG, Toby has spent over 20 years structuring and deploying global financial mechanisms across retail, commercial, and public sector channels, with a particular emphasis on resilience and adaptation strategies. With extensive experience in re/insurance, derivatives, and ILS, Toby is a passionate advocate for alternative risk transfer as a vital tool for bridging gaps in traditional insurance coverage and enhancing climate resilience across sectors.'
-  },
-  {
-    name: 'Sonya Bhonsle',
-    designation: 'Global Director of Corporates',
-    organization: 'CDP',
-    image: sonyaImage,
-    logo: cdpLogo,
-    iconHeight: 80,
-    iconWidth: 80,
-    description: ''
   },
   {
     name: 'Joy Macknight',

@@ -264,7 +264,6 @@ const day1: DayAgenda = {
         "How can digital MRV deliver credible farm-level data without creating additional burdens for producers?",
         "How should the cost and responsibility of upstream decarbonisation be shared?",
       ],
-      chair: pickOne("Sonya Bhonsle"),
       speakers: pick(
         "Andre van den Beld",
         "Cleiton Vargas",
