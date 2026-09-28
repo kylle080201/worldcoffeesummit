@@ -22,6 +22,8 @@ export type Sponsors2026Tier = {
   logos: Partners2026Logo[]
   /** Bronze tier: two logos side-by-side with a vertical divider. */
   layout?: 'single' | 'split'
+  /** Optional grid placement below lg (bronze spans full row on tablet). */
+  gridClassName?: string
 }
 
 export const sponsors2026Grid: Sponsors2026Tier[] = [
@@ -31,27 +33,28 @@ export const sponsors2026Grid: Sponsors2026Tier[] = [
       {
         name: 'osapiens',
         src: osapiensLogo,
-        maxHeight: 110,
-        maxWidth: 400,
+        maxHeight: 142,
+        maxWidth: 480,
       },
     ],
   },
   {
     heading: 'Bronze Sponsors',
     layout: 'split',
+    gridClassName: 'sm:col-span-2 lg:col-span-1',
     logos: [
       {
         name: 'Aon',
         src: aonLogo,
-        maxHeight: 36,
-        maxWidth: 88,
-        logoWrapperClassName: 'bg-white px-2 py-2',
+        maxHeight: 38,
+        maxWidth: 92,
+        logoWrapperClassName: 'bg-white px-2 py-1.5',
       },
       {
         name: 'Proba',
         src: probaLogo,
-        maxHeight: 52,
-        maxWidth: 110,
+        maxHeight: 54,
+        maxWidth: 120,
       },
     ],
   },
@@ -61,8 +64,8 @@ export const sponsors2026Grid: Sponsors2026Tier[] = [
       {
         name: 'Green Coffee Company',
         src: gccLogo,
-        maxHeight: 160,
-        maxWidth: 160,
+        maxHeight: 132,
+        maxWidth: 132,
       },
     ],
   },
@@ -72,8 +75,8 @@ export const sponsors2026Grid: Sponsors2026Tier[] = [
       {
         name: 'Preferred by Nature',
         src: preferredByNatureLogo,
-        maxHeight: 110,
-        maxWidth: 340,
+        maxHeight: 96,
+        maxWidth: 280,
       },
     ],
   },
@@ -83,19 +86,19 @@ export const mediaPartners2026: Partners2026Logo[] = [
   {
     name: 'Daily Coffee News by Roast Magazine',
     src: dailyCoffeeNewsLogo,
-    maxHeight: 88,
-    maxWidth: 220,
+    maxHeight: 58,
+    maxWidth: 168,
   },
   {
     name: 'international Comunicaffe',
     src: comunicaffeLogo,
-    maxHeight: 72,
-    maxWidth: 220,
+    maxHeight: 48,
+    maxWidth: 152,
   },
   {
     name: 'Perfect Daily Grind',
     src: perfectDailyGrindLogo,
-    maxHeight: 100,
-    maxWidth: 280,
+    maxHeight: 60,
+    maxWidth: 176,
   },
 ]

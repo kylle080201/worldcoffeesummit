@@ -16,8 +16,15 @@ const partnersPageSectionHeadingClass =
 const tierTitleClass =
   'text-center text-xs font-semibold uppercase tracking-[0.2em] text-gray-500 sm:text-sm'
 
-const tierBoxClass =
-  'flex h-full min-h-[200px] flex-col overflow-hidden border border-gray-300 bg-white sm:min-h-[220px]'
+/** Equal height for all sponsor tier frames on large screens. */
+const sponsorTierBoxClass =
+  'flex h-full flex-col overflow-hidden border border-gray-300 bg-white'
+
+const sponsorRowHeightClass =
+  'h-[220px] sm:h-[228px] lg:h-[236px]'
+
+const sponsorGridClass =
+  'mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1.75fr)_minmax(0,1.05fr)_minmax(0,0.52fr)] lg:items-stretch lg:gap-3'
 
 function isStaticImage(src: StaticImageData | string): src is StaticImageData {
   return typeof src !== 'string'
@@ -40,7 +47,7 @@ function PartnerLogo({
       alt={logo.name}
       className={imageClassName}
       style={{ maxHeight, maxWidth }}
-      sizes={compact ? '120px' : `(max-width: 768px) 80vw, ${maxWidth}px`}
+      sizes={compact ? '140px' : `(max-width: 768px) 80vw, ${maxWidth}px`}
     />
   ) : (
     <img
@@ -71,14 +78,16 @@ function SponsorTierCard({ tier }: { tier: Sponsors2026Tier }) {
   const isSplit = tier.layout === 'split'
 
   return (
-    <article className={tierBoxClass}>
-      <div className="shrink-0 px-4 pt-5 pb-3">
+    <article
+      className={`${sponsorTierBoxClass} ${sponsorRowHeightClass} ${tier.gridClassName ?? ''}`}
+    >
+      <div className="shrink-0 px-3 pt-4 pb-2 sm:px-4 sm:pt-5 sm:pb-3">
         <p className={tierTitleClass}>{tier.heading}</p>
-        <div className="mx-auto mt-3 h-px w-10 bg-gray-400" aria-hidden="true" />
+        <div className="mx-auto mt-2 h-px w-10 bg-gray-400 sm:mt-3" aria-hidden="true" />
       </div>
 
       {isSplit ? (
-        <div className="flex min-h-0 flex-1 items-center justify-center gap-3 px-2 py-5 sm:gap-4 sm:px-3 sm:py-6">
+        <div className="flex min-h-0 flex-1 items-center justify-center gap-3 px-2 py-3 sm:gap-5 sm:px-4 sm:py-4">
           <div className="flex min-w-0 flex-1 items-center justify-center overflow-hidden">
             <PartnerLogo logo={tier.logos[0]} compact />
           </div>
@@ -91,7 +100,7 @@ function SponsorTierCard({ tier }: { tier: Sponsors2026Tier }) {
           </div>
         </div>
       ) : (
-        <div className="flex min-h-0 flex-1 items-center justify-center px-4 py-6">
+        <div className="flex min-h-0 flex-1 items-center justify-center px-3 py-4 sm:px-4 sm:py-5">
           <PartnerLogo logo={tier.logos[0]} />
         </div>
       )}
@@ -102,10 +111,10 @@ function SponsorTierCard({ tier }: { tier: Sponsors2026Tier }) {
 function MediaPartnerCard({ logo }: { logo: Partners2026Logo }) {
   return (
     <div
-      className={`${tierBoxClass} min-h-[160px] items-center justify-center sm:min-h-[180px]`}
+      className="flex h-[88px] w-full flex-col overflow-hidden border border-gray-300 bg-white sm:h-[100px]"
     >
-      <div className="flex min-h-0 flex-1 items-center justify-center overflow-hidden px-4 py-8">
-        <PartnerLogo logo={logo} />
+      <div className="flex h-full items-center justify-center overflow-hidden px-3 py-2 sm:px-4">
+        <PartnerLogo logo={logo} compact />
       </div>
     </div>
   )
@@ -117,25 +126,27 @@ export default function Partners2026() {
       className="mt-20 w-full sm:mt-24"
       aria-labelledby="partners-2026-heading"
     >
-      <div className="w-full px-4 py-10 sm:px-8 sm:py-12 lg:px-12">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 id="partners-2026-heading" className={partnersPageSectionHeadingClass}>
           2026 Sponsors &amp; Partners
         </h2>
 
-        <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-3">
+        <div className={sponsorGridClass}>
           {sponsors2026Grid.map((tier) => (
             <SponsorTierCard key={tier.heading} tier={tier} />
           ))}
         </div>
 
-        <div className="mt-12 sm:mt-14">
-          <h3 className="text-center text-2xl font-bold leading-tight text-gray-900 sm:text-3xl">
-            Media &amp; Marketing
-            <br />
-            Partners
-          </h3>
+        <div className="mt-10 sm:mt-12">
+          <div className="border-b border-gray-300 pb-3">
+            <p
+              className="text-center text-3xl tracking-tight text-gray-900 sm:text-4xl"
+            >
+              Media &amp; Marketing Partners
+            </p>
+          </div>
 
-          <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-3">
+          <div className="mx-auto mt-5 grid max-w-lg grid-cols-1 gap-3 sm:mt-6 sm:max-w-2xl sm:grid-cols-3 sm:gap-3">
             {mediaPartners2026.map((logo) => (
               <MediaPartnerCard key={logo.name} logo={logo} />
             ))}
