@@ -226,7 +226,7 @@ const day1: DayAgenda = {
       subtitle:
         "FROM SPACE TO SUPPLY — Turning Earth, Climate & Risk Intelligence into Action",
       description:
-        "Earth Observation, climate and nature intelligence are changing how organisations understand supply risk and make decisions. How can better intelligence help anticipate disruption, strengthen sourcing and support financial resilience?",
+        "What happens when satellite signals, climate data and nature intelligence begin to change how supply risk is seen? The question is not only what can be seen — but what should shape decisions, and when.",
       bullets: [
         "Can Earth Observation, geospatial intelligence and AI identify emerging supply risks early enough to act?",
         "How could El Niño and wider climate and nature pressures affect coffee and cocoa production and supply?",
@@ -372,7 +372,7 @@ const day2: DayAgenda = {
     },
     {
       time: "12:15 – 12:45",
-      title: "PANEL: BEYOND AI – FROM ADOPTION TO ADVANTAGE",
+      title: "FIRESIDE: BEYOND AI – FROM ADOPTION TO ADVANTAGE",
       description:
         "AI is only valuable when it helps organisations make faster, better and more confident decisions. As the pace of innovation accelerates, what separates the technologies that transform organisations from those that struggle to gain traction?",
       bullets: [
