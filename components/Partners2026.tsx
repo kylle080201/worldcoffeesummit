@@ -24,7 +24,7 @@ const sponsorRowHeightClass =
   'h-[220px] sm:h-[228px] lg:h-[236px]'
 
 const sponsorGridClass =
-  'mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1.32fr)_minmax(0,1.05fr)_minmax(0,0.82fr)] lg:items-stretch lg:gap-3'
+  'mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1.68fr)_minmax(0,0.88fr)_minmax(0,0.82fr)] lg:items-stretch lg:gap-3'
 
 function isStaticImage(src: StaticImageData | string): src is StaticImageData {
   return typeof src !== 'string'
@@ -139,13 +139,11 @@ export default function Partners2026() {
 
         <div className="mt-10 sm:mt-12">
           <div className="pb-1">
-            <p
-              className="whitespace-nowrap text-center text-[11px] font-normal tracking-wide text-gray-500 sm:text-xs"
-            >
+            <p className={`${tierTitleClass} whitespace-nowrap`}>
               Media &amp; Marketing Partners
             </p>
             <div
-              className="mx-auto mt-2 h-px w-10 bg-gray-400 sm:mt-2.5"
+              className="mx-auto mt-2 h-px w-10 bg-gray-400 sm:mt-3"
               aria-hidden="true"
             />
           </div>
