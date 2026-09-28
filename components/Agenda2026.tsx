@@ -321,7 +321,14 @@ const day2: DayAgenda = {
     },
     {
       time: "09:25 – 09:55",
-      title: "FIRESIDE",
+      title: "FIRESIDE: FROM CLIMATE AMBITION TO TRADE & INVESTMENT",
+      description:
+        "Climate ambition is beginning to reshape the economics of trade. For producing countries, the question is no longer only how to respond — but how to turn transition into competitiveness, investment and long-term value.",
+      bullets: [
+        "Where could climate ambition create new trade and investment opportunities for producing countries?",
+        "What will help agricultural value chains remain competitive as climate expectations reshape markets and trade?",
+        "How can producing countries attract long-term investment, strengthen market access and retain more value at origin?",
+      ],
       chair: pickOne("Peter Foster"),
       speakers: pick("Hon. Alpha Ibrahim Sesay", "Rachel Kyte"),
     },
