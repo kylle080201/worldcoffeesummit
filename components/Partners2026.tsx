@@ -24,7 +24,7 @@ const sponsorRowHeightClass =
   'h-[220px] sm:h-[228px] lg:h-[236px]'
 
 const sponsorGridClass =
-  'mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1.75fr)_minmax(0,1.05fr)_minmax(0,0.52fr)] lg:items-stretch lg:gap-3'
+  'mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1.32fr)_minmax(0,1.05fr)_minmax(0,0.82fr)] lg:items-stretch lg:gap-3'
 
 function isStaticImage(src: StaticImageData | string): src is StaticImageData {
   return typeof src !== 'string'
@@ -47,7 +47,7 @@ function PartnerLogo({
       alt={logo.name}
       className={imageClassName}
       style={{ maxHeight, maxWidth }}
-      sizes={compact ? '140px' : `(max-width: 768px) 80vw, ${maxWidth}px`}
+      sizes={compact ? '200px' : `(max-width: 768px) 80vw, ${maxWidth}px`}
     />
   ) : (
     <img
@@ -111,7 +111,7 @@ function SponsorTierCard({ tier }: { tier: Sponsors2026Tier }) {
 function MediaPartnerCard({ logo }: { logo: Partners2026Logo }) {
   return (
     <div
-      className="flex h-[88px] w-full flex-col overflow-hidden border border-gray-300 bg-white sm:h-[100px]"
+      className="flex h-[100px] w-full flex-col overflow-hidden border border-gray-300 bg-white sm:h-[112px]"
     >
       <div className="flex h-full items-center justify-center overflow-hidden px-3 py-2 sm:px-4">
         <PartnerLogo logo={logo} compact />
@@ -138,15 +138,19 @@ export default function Partners2026() {
         </div>
 
         <div className="mt-10 sm:mt-12">
-          <div className="border-b border-gray-300 pb-3">
+          <div className="pb-1">
             <p
-              className="text-center text-3xl tracking-tight text-gray-900 sm:text-4xl"
+              className="whitespace-nowrap text-center text-[11px] font-normal tracking-wide text-gray-500 sm:text-xs"
             >
               Media &amp; Marketing Partners
             </p>
+            <div
+              className="mx-auto mt-2 h-px w-10 bg-gray-400 sm:mt-2.5"
+              aria-hidden="true"
+            />
           </div>
 
-          <div className="mx-auto mt-5 grid max-w-lg grid-cols-1 gap-3 sm:mt-6 sm:max-w-2xl sm:grid-cols-3 sm:gap-3">
+          <div className="mx-auto mt-5 grid max-w-xl grid-cols-1 gap-3 sm:mt-6 sm:max-w-3xl sm:grid-cols-3 sm:gap-4">
             {mediaPartners2026.map((logo) => (
               <MediaPartnerCard key={logo.name} logo={logo} />
             ))}

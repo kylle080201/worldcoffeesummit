@@ -86,19 +86,19 @@ export const mediaPartners2026: Partners2026Logo[] = [
   {
     name: 'Daily Coffee News by Roast Magazine',
     src: dailyCoffeeNewsLogo,
-    maxHeight: 58,
-    maxWidth: 168,
+    maxHeight: 72,
+    maxWidth: 200,
   },
   {
     name: 'international Comunicaffe',
     src: comunicaffeLogo,
-    maxHeight: 48,
-    maxWidth: 152,
+    maxHeight: 62,
+    maxWidth: 188,
   },
   {
     name: 'Perfect Daily Grind',
     src: perfectDailyGrindLogo,
-    maxHeight: 60,
-    maxWidth: 176,
+    maxHeight: 76,
+    maxWidth: 220,
   },
 ]
