@@ -46,7 +46,7 @@ export const partners2026Tiers: Partners2026Tier[] = [
         src: aonLogo,
         maxHeight: 44,
         maxWidth: 120,
-        logoWrapperClassName: 'rounded-md bg-white px-6 py-4 shadow-sm',
+        logoWrapperClassName: 'rounded-md bg-white px-6 py-4',
       },
       {
         name: 'Proba',
