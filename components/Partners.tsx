@@ -120,9 +120,11 @@ export default function Partners() {
             />
           </div>
         </div>
+      </div>
 
-        <Partners2026 />
+      <Partners2026 />
 
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mt-20 sm:mt-24">
           <h2 className="text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             WHY PARTNER WITH US?

@@ -14,18 +14,17 @@ export type Partners2026Logo = {
   src: StaticImageData | string
   maxHeight?: number
   maxWidth?: number
-  /** Optional wrapper for logos that need a light background (e.g. Aon on black). */
   logoWrapperClassName?: string
 }
 
-export type Partners2026Tier = {
+export type Sponsors2026Tier = {
   heading: string
   logos: Partners2026Logo[]
-  /** Default: single centered logo; `row` for side-by-side (e.g. bronze sponsors). */
-  layout?: 'single' | 'row'
+  /** Bronze tier: two logos side-by-side with a vertical divider. */
+  layout?: 'single' | 'split'
 }
 
-export const partners2026Tiers: Partners2026Tier[] = [
+export const sponsors2026Grid: Sponsors2026Tier[] = [
   {
     heading: 'Silver Sponsor',
     logos: [
@@ -39,20 +38,20 @@ export const partners2026Tiers: Partners2026Tier[] = [
   },
   {
     heading: 'Bronze Sponsors',
-    layout: 'row',
+    layout: 'split',
     logos: [
       {
         name: 'Aon',
         src: aonLogo,
-        maxHeight: 44,
-        maxWidth: 120,
-        logoWrapperClassName: 'rounded-md bg-white px-6 py-4',
+        maxHeight: 36,
+        maxWidth: 88,
+        logoWrapperClassName: 'bg-white px-2 py-2',
       },
       {
         name: 'Proba',
         src: probaLogo,
-        maxHeight: 72,
-        maxWidth: 200,
+        maxHeight: 52,
+        maxWidth: 110,
       },
     ],
   },
@@ -68,7 +67,7 @@ export const partners2026Tiers: Partners2026Tier[] = [
     ],
   },
   {
-    heading: 'Exhibitors',
+    heading: 'Exhibitor',
     logos: [
       {
         name: 'Preferred by Nature',
@@ -78,28 +77,25 @@ export const partners2026Tiers: Partners2026Tier[] = [
       },
     ],
   },
+]
+
+export const mediaPartners2026: Partners2026Logo[] = [
   {
-    heading: 'Media & Marketing Partners',
-    layout: 'row',
-    logos: [
-      {
-        name: 'Daily Coffee News by Roast Magazine',
-        src: dailyCoffeeNewsLogo,
-        maxHeight: 88,
-        maxWidth: 220,
-      },
-      {
-        name: 'international Comunicaffe',
-        src: comunicaffeLogo,
-        maxHeight: 72,
-        maxWidth: 220,
-      },
-      {
-        name: 'Perfect Daily Grind',
-        src: perfectDailyGrindLogo,
-        maxHeight: 100,
-        maxWidth: 280,
-      },
-    ],
+    name: 'Daily Coffee News by Roast Magazine',
+    src: dailyCoffeeNewsLogo,
+    maxHeight: 88,
+    maxWidth: 220,
+  },
+  {
+    name: 'international Comunicaffe',
+    src: comunicaffeLogo,
+    maxHeight: 72,
+    maxWidth: 220,
+  },
+  {
+    name: 'Perfect Daily Grind',
+    src: perfectDailyGrindLogo,
+    maxHeight: 100,
+    maxWidth: 280,
   },
 ]
