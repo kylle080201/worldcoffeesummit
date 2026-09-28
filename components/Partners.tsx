@@ -13,6 +13,7 @@ import becomeAPartnerIcon from '../images/partners-image/icons/become-a-partner.
 import briefcaseIcon from '../images/partners-image/icons/briefcase.png'
 import globeIcon from '../images/partners-image/icons/globe.png'
 import peopleIcon from '../images/partners-image/icons/people.png'
+import Partners2026 from './Partners2026'
 
 const sectionIconClassName = 'h-20 w-20 flex-shrink-0 object-contain sm:h-24 sm:w-24 md:h-28 md:w-28'
 
@@ -119,6 +120,8 @@ export default function Partners() {
             />
           </div>
         </div>
+
+        <Partners2026 />
 
         <div className="mt-20 sm:mt-24">
           <h2 className="text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
