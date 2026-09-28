@@ -24,7 +24,7 @@ const sponsorRowHeightClass =
   'h-[220px] sm:h-[228px] lg:h-[236px]'
 
 const sponsorGridClass =
-  'mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1.68fr)_minmax(0,0.88fr)_minmax(0,0.82fr)] lg:items-stretch lg:gap-3'
+  'mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1.68fr)_minmax(0,1.0fr)_minmax(0,0.82fr)] lg:items-stretch lg:gap-3'
 
 function isStaticImage(src: StaticImageData | string): src is StaticImageData {
   return typeof src !== 'string'

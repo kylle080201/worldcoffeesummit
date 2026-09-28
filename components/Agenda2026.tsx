@@ -218,35 +218,25 @@ const day1: DayAgenda = {
     {
       time: "13:20 – 13:35",
       title: "CASE STUDY",
+      speaker: pickOne("Bryce Cronkite-Ratcliff"),
     },
     {
       time: "13:35 – 14:55",
-      title: "EXECUTIVE DEEP DIVES",
-      extra: [
-        {
-          title:
-            "FROM SPACE TO STRATEGY: EARTH OBSERVATION, GEOSPATIAL INTELLIGENCE & AI",
-          description:
-            "Satellite intelligence is moving from maps to boardrooms. Discover how Earth Observation, geospatial intelligence and AI are supporting sourcing decisions, strengthening traceability and providing earlier visibility of supply risk.",
-          bullets: [
-            "Can satellite and geospatial intelligence identify supply risks early enough for procurement teams to act?",
-            "Which use cases are most likely to move Earth Observation from pilots into everyday sourcing, traceability and supply decisions?",
-          ],
-          speakers: pick("Bryce Cronkite-Ratcliff"),
-        },
-        {
-          title:
-            "FROM EXPOSURE TO INVESTMENT: TURNING CLIMATE, NATURE & RISK INTELLIGENCE INTO BUSINESS VALUE",
-          description:
-            "Climate and nature data are becoming business intelligence. With a potentially very strong El Niño sharpening attention on agricultural supply risk, explore how better insights are supporting investment decisions, improving risk management and helping organisations identify opportunities across global supply chains.",
-          bullets: [
-            "What could a very strong El Niño mean for coffee and cocoa supply risk over the next 12–18 months?",
-            "Can climate and nature intelligence reveal financial exposure before it hits supply and earnings?",
-            "How can better climate and nature intelligence translate into earlier action and stronger financial protection?",
-          ],
-          speakers: pick("David Laborde", "Luke Knowles"),
-        },
+      title: "EXECUTIVE DEEP DIVE",
+      subtitle:
+        "FROM SPACE TO SUPPLY — Turning Earth, Climate & Risk Intelligence into Action",
+      description:
+        "Earth Observation, climate and nature intelligence are changing how organisations understand supply risk and make decisions. How can better intelligence help anticipate disruption, strengthen sourcing and support financial resilience?",
+      bullets: [
+        "Can Earth Observation, geospatial intelligence and AI identify emerging supply risks early enough to act?",
+        "How could El Niño and wider climate and nature pressures affect coffee and cocoa production and supply?",
+        "How can better risk intelligence support sourcing, insurance, investment and financial resilience?",
       ],
+      speakers: pick(
+        "David Laborde",
+        "Bryce Cronkite-Ratcliff",
+        "Luke Knowles"
+      ),
     },
     {
       time: "14:55 – 15:25",
