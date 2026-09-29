@@ -218,35 +218,25 @@ const day1: DayAgenda = {
     {
       time: "13:20 – 13:35",
       title: "CASE STUDY",
+      speaker: pickOne("Bryce Cronkite-Ratcliff"),
     },
     {
       time: "13:35 – 14:55",
-      title: "EXECUTIVE DEEP DIVES",
-      extra: [
-        {
-          title:
-            "FROM SPACE TO STRATEGY: EARTH OBSERVATION, GEOSPATIAL INTELLIGENCE & AI",
-          description:
-            "Satellite intelligence is moving from maps to boardrooms. Discover how Earth Observation, geospatial intelligence and AI are supporting sourcing decisions, strengthening traceability and providing earlier visibility of supply risk.",
-          bullets: [
-            "Can satellite and geospatial intelligence identify supply risks early enough for procurement teams to act?",
-            "Which use cases are most likely to move Earth Observation from pilots into everyday sourcing, traceability and supply decisions?",
-          ],
-          speakers: pick("Bryce Cronkite-Ratcliff"),
-        },
-        {
-          title:
-            "FROM EXPOSURE TO INVESTMENT: TURNING CLIMATE, NATURE & RISK INTELLIGENCE INTO BUSINESS VALUE",
-          description:
-            "Climate and nature data are becoming business intelligence. With a potentially very strong El Niño sharpening attention on agricultural supply risk, explore how better insights are supporting investment decisions, improving risk management and helping organisations identify opportunities across global supply chains.",
-          bullets: [
-            "What could a very strong El Niño mean for coffee and cocoa supply risk over the next 12–18 months?",
-            "Can climate and nature intelligence reveal financial exposure before it hits supply and earnings?",
-            "How can better climate and nature intelligence translate into earlier action and stronger financial protection?",
-          ],
-          speakers: pick("David Laborde", "Luke Knowles"),
-        },
+      title: "EXECUTIVE DEEP DIVE",
+      subtitle:
+        "FROM SPACE TO SUPPLY — Turning Earth, Climate & Risk Intelligence into Action",
+      description:
+        "What happens when satellite signals, climate data and nature intelligence begin to change how supply risk is seen? The question is not only what can be seen — but what should shape decisions, and when.",
+      bullets: [
+        "Can Earth Observation, geospatial intelligence and AI identify emerging supply risks early enough to act?",
+        "How could El Niño and wider climate and nature pressures affect coffee and cocoa production and supply?",
+        "How can better risk intelligence support sourcing, insurance, investment and financial resilience?",
       ],
+      speakers: pick(
+        "David Laborde",
+        "Bryce Cronkite-Ratcliff",
+        "Luke Knowles"
+      ),
     },
     {
       time: "14:55 – 15:25",
@@ -331,7 +321,14 @@ const day2: DayAgenda = {
     },
     {
       time: "09:25 – 09:55",
-      title: "FIRESIDE",
+      title: "FIRESIDE: FROM CLIMATE AMBITION TO TRADE & INVESTMENT",
+      description:
+        "Climate ambition is beginning to reshape the economics of trade. For producing countries, the question is no longer only how to respond — but how to turn transition into competitiveness, investment and long-term value.",
+      bullets: [
+        "Where could climate ambition create new trade and investment opportunities for producing countries?",
+        "What will help agricultural value chains remain competitive as climate expectations reshape markets and trade?",
+        "How can producing countries attract long-term investment, strengthen market access and retain more value at origin?",
+      ],
       chair: pickOne("Peter Foster"),
       speakers: pick("Hon. Alpha Ibrahim Sesay", "Rachel Kyte"),
     },
@@ -375,7 +372,7 @@ const day2: DayAgenda = {
     },
     {
       time: "12:15 – 12:45",
-      title: "PANEL: BEYOND AI – FROM ADOPTION TO ADVANTAGE",
+      title: "FIRESIDE: BEYOND AI – FROM ADOPTION TO ADVANTAGE",
       description:
         "AI is only valuable when it helps organisations make faster, better and more confident decisions. As the pace of innovation accelerates, what separates the technologies that transform organisations from those that struggle to gain traction?",
       bullets: [
