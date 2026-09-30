@@ -189,6 +189,7 @@ const day1: DayAgenda = {
         "As buyers demand greater visibility and supply security, how must the trader’s role evolve?",
         "As procurement moves from a buying function to a strategic business priority, how will this reshape the role of traders and supplier relationships?",
       ],
+      chair: pickOne("Nik Gowing"),
       speakers: pick("Tim Scharrer", "Chrystel Monthean", "Eric Gorlier"),
     },
     {

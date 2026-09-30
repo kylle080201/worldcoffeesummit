@@ -43,6 +43,8 @@ import alphaIbrahimSesayImage from '../images/2026-speakers/MTI-Alpha-Ibrahim-Se
 import sierraLeoneMtiLogo from '../images/2026-speakers/MTI-Alpha-Ibrahim-Sesay/lOGO2.png'
 import ulyanaDovbushImage from '../images/2026-speakers/IFC-Ulyana-Dovbush/Ulyana Dovbush copy.jpg'
 import ifcLogo from '../images/2026-speakers/IFC-Ulyana-Dovbush/IFC-Logo.png'
+import nikGowingImage from '../images/2026-speakers/TTU-Nik-Gowing/Nik Profile copy.png'
+import ttuLogo from '../images/2026-speakers/TTU-Nik-Gowing/ttu-logo-rgb-black.png'
 import Link from 'next/link'
 const timImage = '/images/2026-speakers/tim-scharrer.jpg'
 const volcafeLogo = '/images/2026-speakers/volcafe-logo.png'
@@ -265,6 +267,16 @@ export const speakers2026: Speaker[] = [
     iconHeight: 80,
     iconWidth: 80,
     description: `<p class="mb-3">With deep-rooted experience in the agribusiness sector, Chrystel Monthean is committed to fostering a more inclusive food production system by supporting farmers in their tremendous role of both feeding the world by producing nutritious and high-quality crops and protecting the planet by adopting practices that improve nature as a business.</p><p class="mb-3">As the EVP Americas at Yara International, since 2020, she brings a diverse skill set and a unique approach to tackling the complex challenges specific to the agricultural industry.</p><p class="mb-3">Embracing the richness of diversity, Chrystel champions a workplace that celebrates human beings and empowers each individual to thrive.</p><p class="mb-3">With a background in agronomy engineering and international business, her professional journey has taken her across three different continents, shaping a profound understanding of global markets and cultural nuances. She has honed her expertise in driving innovation and forging impactful partnerships in diverse food production ecosystems.</p>`
+  },
+  {
+    name: 'Nik Gowing',
+    designation: 'Founder and Director',
+    organization: 'Thinking the Unthinkable',
+    image: nikGowingImage,
+    logo: ttuLogo,
+    iconHeight: 80,
+    iconWidth: 140,
+    description: `<p class="mb-3">Nik Gowing founded the Thinking the Unthinkable project in 2014. He is co-author of Thinking the Unthinkable (2018) and Director of Think Unthinkable Ltd.</p><p class="mb-3">TTU has been at the cutting edge of highlighting both the vulnerabilities and opportunities for leaders in the new times of acute disruption. See more details at <a href="https://www.thinkunthink.org" class="text-teal-700 underline" target="_blank" rel="noopener noreferrer">www.thinkunthink.org</a></p><p class="mb-3">Nik was a main news presenter for the BBC&apos;s international 24-hour news channel BBC World News 1996-2014. He presented The Hub with Nik Gowing, BBC World Debates, Dateline London, plus location coverage of major global stories.</p><p class="mb-3">He spent 18 years at ITN in senior roles including bureau chief in Rome and Warsaw, plus Diplomatic Editor, Channel 4 New. He collected a prestigous BAFTA award in 1982 for ITN&apos;s coverage of martial law in Poland.</p><p class="mb-3">Nik has been a two-term member of the councils of major think tanks like Chatham House and the Royal United Services Institute. He is a Visiting Professor at Kings College London and held a similar position at Nanyang Technological University, Singapore.</p><p class="mb-3">He has been a member of the World Economic Forum&apos;s Global Agenda Council on Geo-Economics. He was an adviser on leadership challenges to the President of the UN General Assembly.</p><p class="mb-3">Nik&apos;s peer-reviewed study at Oxford University &lsquo;Skyful of Lies and Black Swans&rsquo; (2009) predicted what is now labelled &lsquo;Fake News&rsquo;. It identified the new vulnerability and brittleness of institutional power in the new all-pervasive public information space.</p><p>Nik was awarded Honorary Doctorates by Exeter University and Bristol University. They recognise his ongoing cutting edge analysis and distinguished career in international journalism. Since 2021 he has been a Distinguished Fellow at the Royal United Services Institute.</p>`,
   },
   {
     name: 'Peter Foster',
