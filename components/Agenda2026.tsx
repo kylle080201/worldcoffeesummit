@@ -236,6 +236,7 @@ const day1: DayAgenda = {
       speakers: pick(
         "David Laborde",
         "Bryce Cronkite-Ratcliff",
+        "Dr. Inge Jonckheere",
         "Luke Knowles"
       ),
     },
@@ -369,7 +370,12 @@ const day2: DayAgenda = {
         "Which technologies and data can help prove what works at farm level — and support wider adoption at scale?",
       ],
       chair: pickOne("Eden Cottee-Jones"),
-      speakers: pick("Piet van Asten", "Ben Rimaud", "Adam Jason"),
+      speakers: pick(
+        "Piet van Asten",
+        "Ben Rimaud",
+        "Adam Jason",
+        "Ulyana Dovbush"
+      ),
     },
     {
       time: "12:15 – 12:45",
@@ -381,6 +387,7 @@ const day2: DayAgenda = {
         "What separates AI applications that scale from those that remain pilots?",
         "Who owns, governs and is accountable for the data behind AI-driven decisions?",
       ],
+      chair: pickOne("Dr. Harvey Lewis"),
       speakers: pick("Paola Scarpa", "Tim Scharrer"),
     },
     {

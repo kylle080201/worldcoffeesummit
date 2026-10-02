@@ -56,7 +56,7 @@ export default function GovernmentRepresentation() {
       aria-label="Government representatives"
     >
       <p className="text-center text-xl font-semibold text-[#173D2B] sm:text-2xl">
-        GOVERNMENT REPRESENTATIVES ATTENDING WCIS26
+        ORIGIN COUNTRY REPRESENTATIVES ATTENDING WCIS26
       </p>
 
       <div className="relative mt-5 overflow-hidden">
@@ -75,6 +75,10 @@ export default function GovernmentRepresentation() {
           )}
         </div>
       </div>
+
+      <p className="mt-4 text-center text-md font-normal text-lime-900 sm:text-lg">
+        Government, diplomatic, trade, agriculture, finance &amp; producer representatives
+      </p>
     </section>
   )
 }
