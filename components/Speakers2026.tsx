@@ -4,6 +4,8 @@ import React, { Fragment, useState } from 'react'
 import Image, { type StaticImageData } from 'next/image'
 import chrystelImage from '../images/2026-speakers/Yara international-Chrystel-Monthean/Chrystel Monthean.jpg'
 import yaraLogo from '../images/2026-speakers/Yara international-Chrystel-Monthean/Knowledge_grows_for_A4.png'
+import ingeJonckheereImage from '../images/2026-speakers/ESA-Inge-Jonckheere/Jonckheere-prof copy.jpg'
+import esaLogo from '../images/2026-speakers/ESA-Inge-Jonckheere/ESA_Logo_DS.png'
 import lukeKnowlesImage from '../images/2026-speakers/Lloyds of london-Luke Knowles/Luke.jpg'
 import lloydsLogo from '../images/2026-speakers/Lloyds of london-Luke Knowles/lloyds-logo-sized-nav (1).png'
 import dominicProbynImage from '../images/2026-speakers/Aon-Dominic-Probyn/Dominic Probyn copy.png'
@@ -45,6 +47,8 @@ import ulyanaDovbushImage from '../images/2026-speakers/IFC-Ulyana-Dovbush/Ulyan
 import ifcLogo from '../images/2026-speakers/IFC-Ulyana-Dovbush/IFC-Logo.png'
 import nikGowingImage from '../images/2026-speakers/TTU-Nik-Gowing/Nik Profile copy.png'
 import ttuLogo from '../images/2026-speakers/TTU-Nik-Gowing/ttu-logo-rgb-black.png'
+import harveyLewisImage from '../images/2026-speakers/EY-Harvey-Lewis/ey-harvey-lewis-v4 copy.jpeg'
+import eyLogo from '../images/2026-speakers/EY-Harvey-Lewis/ernst-young-logo-0.png'
 import Link from 'next/link'
 const timImage = '/images/2026-speakers/tim-scharrer.jpg'
 const volcafeLogo = '/images/2026-speakers/volcafe-logo.png'
@@ -269,6 +273,18 @@ export const speakers2026: Speaker[] = [
     description: `<p class="mb-3">With deep-rooted experience in the agribusiness sector, Chrystel Monthean is committed to fostering a more inclusive food production system by supporting farmers in their tremendous role of both feeding the world by producing nutritious and high-quality crops and protecting the planet by adopting practices that improve nature as a business.</p><p class="mb-3">As the EVP Americas at Yara International, since 2020, she brings a diverse skill set and a unique approach to tackling the complex challenges specific to the agricultural industry.</p><p class="mb-3">Embracing the richness of diversity, Chrystel champions a workplace that celebrates human beings and empowers each individual to thrive.</p><p class="mb-3">With a background in agronomy engineering and international business, her professional journey has taken her across three different continents, shaping a profound understanding of global markets and cultural nuances. She has honed her expertise in driving innovation and forging impactful partnerships in diverse food production ecosystems.</p>`
   },
   {
+    name: 'Dr. Inge Jonckheere',
+    designation:
+      'Head of the Green Solutions Division (EOP-SG), Climate Action, Sustainability and Science Department, Directorate of Earth Observation Programmes',
+    organization: 'ESA – European Space Agency',
+    image: ingeJonckheereImage,
+    logo: esaLogo,
+    iconHeight: 80,
+    iconWidth: 100,
+    description:
+      'Dr. Inge Jonckheere is a Belgian Environmental Engineer and obtained a PhD in Applied Bioscience Engineering, at the Katholieke Universiteit Leuven (Belgium). She worked at the Università degli Studi di Milano (Italy) and was Guest Lecturer of the Geomatics Group at the KULeuven, combined with a mandate as Science Programme Manager for Environment at the European Science Foundation, Strasbourg (France). From 2010 to 2024, she was working as Thematic Leader of Remote Sensing in the FAO of the UN, leading the remote sensing support to developing countries on climate change applications. She is an official reviewer at the UN Framework of Climate Change (UNFCCC) and is Lead Author in the International Panel of Climate Change (IPCC) including the last Assessment Report. She is co-editor of scientific books and authored more than hundred scientific  and mainstream articles. She was part of the last official ESA Astronaut selection in 2021. She joined ESA in the Esrin facility in Italy in March 2024 as Head of the Green Solutions Division, where she leads the use of earth observation for society including earth system science, R&D applications, innovation and industrial competitiveness.',
+  },
+  {
     name: 'Nik Gowing',
     designation: 'Founder and Director',
     organization: 'Thinking the Unthinkable',
@@ -421,6 +437,16 @@ export const speakers2026: Speaker[] = [
     iconHeight: 80,
     iconWidth: 80,
     description: ''
+  },
+  {
+    name: 'Dr. Harvey Lewis',
+    designation: 'Lead Analyst, Technology Theme - EY Insights',
+    organization: 'EY',
+    image: harveyLewisImage,
+    logo: eyLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: `<p class="mb-3">Harvey is EY Global Lead Analyst for the technology theme within EY Insights, where he leads research and thought leadership on the technologies shaping business, government and society. He is responsible for developing insights on emerging technology trends and their implications for organizations, helping clients and stakeholders navigate uncertainty and make informed decisions.</p><p class="mb-3">Prior to his current role, Harvey held several research, analytics and technology-focused positions in the EY organization. Over a career spanning more than 30 years, he has worked across research, government, industry and consulting, advising senior executives and policymakers on the opportunities, risks and wider impacts of AI, automation, data, quantum computing and other emerging technologies.</p><p>Harvey holds a PhD in Hypersonic Aerodynamics and a BEng (Hons) in Aeronautics and Astronautics from the University of Southampton. He is recognised for bringing together technical experience, economic analysis and organizational perspectives to provide a balanced view of technological change.</p>`,
   },
   {
     name: 'Michael Mowat',
