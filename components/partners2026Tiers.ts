@@ -2,7 +2,7 @@ import type { StaticImageData } from 'next/image'
 
 import aonLogo from '../images/2026-speakers/Aon-Dominic-Probyn/new-aon-logo.png'
 import gccLogo from '../images/2026-partners/LOGO-original-GCC (1).png'
-import osapiensLogo from '../images/2026-partners/logo_osapiens_horizontal_halfblack.png'
+import osapiensLogo from '../images/2026-speakers/Osapiens-Tera-Patrick-Lanz/osapiens Logo horizontal gradient-black RM.png'
 import preferredByNatureLogo from '../images/2026-partners/Preferred_by_Nature_Green_CMYK.png'
 import probaLogo from '../images/2026-partners/ProbaPositive.png'
 import comunicaffeLogo from '../images/2026-partners/media-and-marketing-partners/comunicaffe-international.png'
@@ -33,8 +33,8 @@ export const sponsors2026Grid: Sponsors2026Tier[] = [
       {
         name: 'osapiens',
         src: osapiensLogo,
-        maxHeight: 142,
-        maxWidth: 480,
+        maxHeight: 72,
+        maxWidth: 220,
       },
     ],
   },

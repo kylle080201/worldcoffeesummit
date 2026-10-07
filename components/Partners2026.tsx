@@ -39,14 +39,17 @@ function PartnerLogo({
 }) {
   const maxHeight = logo.maxHeight ?? 72
   const maxWidth = logo.maxWidth ?? 240
-  const imageClassName = 'h-auto w-auto max-h-full max-w-full object-contain'
+  const imageClassName =
+    'h-auto w-auto max-h-full max-w-full object-contain object-center'
 
   const image = isStaticImage(logo.src) ? (
     <Image
       src={logo.src}
       alt={logo.name}
+      width={logo.src.width}
+      height={logo.src.height}
       className={imageClassName}
-      style={{ maxHeight, maxWidth }}
+      style={{ maxHeight, maxWidth: `min(100%, ${maxWidth}px)` }}
       sizes={compact ? '200px' : `(max-width: 768px) 80vw, ${maxWidth}px`}
     />
   ) : (
@@ -54,7 +57,7 @@ function PartnerLogo({
       src={logo.src}
       alt={logo.name}
       className={imageClassName}
-      style={{ maxHeight, maxWidth }}
+      style={{ maxHeight, maxWidth: `min(100%, ${maxWidth}px)` }}
       loading="lazy"
     />
   )
@@ -68,7 +71,7 @@ function PartnerLogo({
   )
 
   return (
-    <div className={compact ? 'flex w-full max-w-full items-center justify-center' : undefined}>
+    <div className="flex w-full min-w-0 max-w-full items-center justify-center">
       {content}
     </div>
   )
@@ -100,7 +103,7 @@ function SponsorTierCard({ tier }: { tier: Sponsors2026Tier }) {
           </div>
         </div>
       ) : (
-        <div className="flex min-h-0 flex-1 items-center justify-center px-3 py-4 sm:px-4 sm:py-5">
+        <div className="flex min-h-0 min-w-0 flex-1 items-center justify-center overflow-hidden px-3 py-4 sm:px-4 sm:py-5">
           <PartnerLogo logo={tier.logos[0]} />
         </div>
       )}
