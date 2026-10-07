@@ -1,3 +1,4 @@
+import { waitUntil } from "@vercel/functions";
 import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
 import Tickets from "../../../models/tickets";
@@ -13,6 +14,31 @@ import {
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2024-06-20" as any,
 });
+
+async function sendConfirmationEmailAndMarkSent(
+  ticketId: unknown,
+  mailerPayload: Record<string, unknown>
+) {
+  try {
+    const mailerRes = await mailer(mailerPayload);
+    await connectMongo();
+    const accepted = mailerRes?.accepted?.length ?? 0;
+    await Tickets.findByIdAndUpdate(ticketId, {
+      $set: { isEmailAccepted: accepted > 0 },
+    });
+  } catch (error: unknown) {
+    const message = error instanceof Error ? error.message : String(error);
+    console.error(`Confirmation email failed: ${message}`);
+    try {
+      await connectMongo();
+      await Tickets.findByIdAndUpdate(ticketId, {
+        $set: { isEmailAccepted: false },
+      });
+    } catch {
+      // ignore secondary failure
+    }
+  }
+}
 
 export async function POST(request: NextRequest, res: NextResponse) {
   const req = await request.json();
@@ -154,6 +180,19 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
       deletedAt: { $exists: false },
     });
 
+    // Replay / typo on session_id: match paid ticket by delegate email from buyer_data.
+    if (!ticket) {
+      const delegateEmail =
+        typeof formData?.email === "string" ? formData.email.trim() : "";
+      if (delegateEmail) {
+        const escaped = delegateEmail.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+        ticket = await Tickets.findOne({
+          email: { $regex: new RegExp(`^${escaped}$`, "i") },
+          deletedAt: { $exists: false },
+        }).sort({ createdAt: -1 });
+      }
+    }
+
     // Fallback when webhook did not create the ticket yet.
     if (!ticket) {
       const checkoutSession = await stripe.checkout.sessions.retrieve(checkoutSessionId);
@@ -218,29 +257,17 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
       }
     }
 
-    if (forceResend || !res.isEmailAccepted || res.isEmailAccepted === false) {
-      const mailerPayload = {
-        ...(typeof res.toObject === "function" ? res.toObject() : res),
-        hasNetworkingSoiree,
-        isNetworkingSoireeOnly,
-        isNetworkingAddonConfirmation,
-        origin: requestOrigin,
-      };
-      const mailerRes = await mailer(mailerPayload);
-        if (mailerRes?.accepted?.length ?? 0 > 0) {
-          await Tickets.findByIdAndUpdate(res._id, {
-            $set: {
-              isEmailAccepted: true,
-            },
-          });
-        } else {
-          await Tickets.findByIdAndUpdate(res._id, {
-            $set: {
-              isEmailAccepted: false,
-            },
-          });
+    const shouldSendEmail =
+      forceResend || !res.isEmailAccepted || res.isEmailAccepted === false;
+    const mailerPayload = shouldSendEmail
+      ? {
+          ...(typeof res.toObject === "function" ? res.toObject() : res),
+          hasNetworkingSoiree,
+          isNetworkingSoireeOnly,
+          isNetworkingAddonConfirmation,
+          origin: requestOrigin,
         }
-    }
+      : null;
 
     // Payment succeeded and the registration is finalised — remove any
     // matching unpaid entry for this email. Best-effort, never blocks.
@@ -261,14 +288,13 @@ export async function PATCH(request: NextRequest, res: NextResponse) {
       console.log(`Unpaid cleanup (payment-success) failed: ${message}`);
     }
 
-    return NextResponse.json(
-      {
-        res,
-      },
-      {
-        status: 200,
-      }
-    );
+    const response = NextResponse.json({ res }, { status: 200 });
+
+    if (mailerPayload) {
+      waitUntil(sendConfirmationEmailAndMarkSent(res._id, mailerPayload));
+    }
+
+    return response;
   } catch (error: any) {
     return NextResponse.json(
       {
