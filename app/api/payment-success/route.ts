@@ -15,9 +15,6 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2024-06-20" as any,
 });
 
-/** Confirmation PATCH can send email + QR; allow headroom on Vercel. */
-export const maxDuration = 60;
-
 async function sendConfirmationEmailAndMarkSent(
   ticketId: unknown,
   mailerPayload: Record<string, unknown>
