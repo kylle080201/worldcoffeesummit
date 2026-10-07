@@ -424,7 +424,11 @@ const day2: DayAgenda = {
         "What should the industry scale now—and what deserves less attention?",
       ],
       chair: pickOne("Peter Foster"),
-      speakers: pick("Eric Gorlier"),
+      speakers: pick(
+        "Eric Gorlier",
+        "Jenny Davis-Peccoud",
+        "Michael Mowat"
+      ),
     },
     {
       time: "14:55 – 15:00",

@@ -37,7 +37,7 @@ import bcgMonogramLogo from '../images/2026-speakers/BCG-Eden Jones/BCG_MONOGRAM
 import adamJasonImage from '../images/2026-speakers/GCC-Adam-Jason/GCC_Adam Jason-4622 (1) copy.jpg'
 import gccLogo from '../images/2026-speakers/GCC-Adam-Jason/LOGO-original-GCC (1).png'
 import patrickLanzImage from '../images/2026-speakers/Osapiens-Tera-Patrick-Lanz/image1007 copy.jpg'
-import osapiensLogo from '../images/2026-speakers/Osapiens-Tera-Patrick-Lanz/logo_osapiens_horizontal_halfblack.png'
+import osapiensLogo from '../images/2026-speakers/Osapiens-Tera-Patrick-Lanz/osapiens Logo horizontal gradient-black RM.png'
 import bryceCronkiteRatcliffImage from '../images/2026-speakers/Google-Bryce-Cronkite-Ratcliff/IMG_6591 copy.jpeg'
 import googleLogo from '../images/2026-speakers/Google-Bryce-Cronkite-Ratcliff/Google Logo.png'
 import rachelKyteImage from '../images/2026-speakers/UK-Rachel-Kyte/Rachel Kyte headshot copy.jpeg'
