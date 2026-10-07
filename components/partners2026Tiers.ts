@@ -33,8 +33,8 @@ export const sponsors2026Grid: Sponsors2026Tier[] = [
       {
         name: 'osapiens',
         src: osapiensLogo,
-        maxHeight: 142,
-        maxWidth: 480,
+        maxHeight: 72,
+        maxWidth: 220,
       },
     ],
   },

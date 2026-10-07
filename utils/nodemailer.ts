@@ -18,6 +18,9 @@ export const transporter = nodemailer.createTransport({
         user,
         pass,
     },
+    connectionTimeout: 15_000,
+    greetingTimeout: 15_000,
+    socketTimeout: 30_000,
 });
 
 export const mailer = async (data: any) => {
