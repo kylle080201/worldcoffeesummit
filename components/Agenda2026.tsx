@@ -222,7 +222,7 @@ const day1: DayAgenda = {
       speaker: pickOne("Bryce Cronkite-Ratcliff"),
     },
     {
-      time: "13:35 – 14:55",
+      time: "13:35 – 14:45",
       title: "EXECUTIVE DEEP DIVE",
       subtitle:
         "FROM SPACE TO SUPPLY — Turning Earth, Climate & Risk Intelligence into Action",
@@ -241,12 +241,12 @@ const day1: DayAgenda = {
       ),
     },
     {
-      time: "14:55 – 15:25",
+      time: "14:45 – 15:15",
       title: "NETWORKING COFFEE BREAK",
       variant: "break",
     },
     {
-      time: "15:25 – 16:15",
+      time: "15:15 – 16:05",
       title:
         "PANEL: DECARBONISATION AT SCALE: FROM SCOPE 3 COMMITMENTS TO MEASURABLE OUTCOMES",
       description:
@@ -256,15 +256,15 @@ const day1: DayAgenda = {
         "How can digital MRV deliver credible farm-level data without creating additional burdens for producers?",
         "How should the cost and responsibility of upstream decarbonisation be shared?",
       ],
+      chair: pickOne("Nathan Cole"),
       speakers: pick(
         "Andre van den Beld",
-        "Cleiton Vargas",
         "Kevin Duisters",
         "Anders Frigaard"
       ),
     },
     {
-      time: "16:15 – 16:55",
+      time: "16:05 – 16:55",
       title:
         "PANEL: PUTTING NATURE ON THE BALANCE SHEET: NATURAL CAPITAL AS A STRATEGIC BUSINESS ASSET",
       description:
@@ -278,7 +278,8 @@ const day1: DayAgenda = {
       speakers: pick(
         "Juliette Cody",
         "Toby Behrmann",
-        "Raymond Bob Katta"
+        "Raymond Bob Katta",
+        "Cleiton Vargas"
       ),
     },
     {
@@ -381,11 +382,11 @@ const day2: DayAgenda = {
       time: "12:15 – 12:45",
       title: "FIRESIDE: BEYOND AI – FROM ADOPTION TO ADVANTAGE",
       description:
-        "AI is only valuable when it helps organisations make faster, better and more confident decisions. As the pace of innovation accelerates, what separates the technologies that transform organisations from those that struggle to gain traction?",
+        "AI creates real value when it helps organisations make faster, better and more confident decisions. As the pace of innovation accelerates, the bigger question is how companies decide which technologies are worth adopting — and how they assess whether they are delivering.",
       bullets: [
         "Where is AI already delivering measurable value across sourcing, forecasting and supply-chain risk?",
-        "What separates AI applications that scale from those that remain pilots?",
-        "Who owns, governs and is accountable for the data behind AI-driven decisions?",
+        "What makes an emerging technology worth adopting — and able to scale?",
+        "How should organisations assess outcomes, govern data and build trust in technology-enabled decisions?",
       ],
       chair: pickOne("Dr. Harvey Lewis"),
       speakers: pick("Paola Scarpa", "Tim Scharrer"),
