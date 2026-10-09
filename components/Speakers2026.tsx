@@ -49,7 +49,8 @@ import nikGowingImage from '../images/2026-speakers/TTU-Nik-Gowing/Nik Profile c
 import ttuLogo from '../images/2026-speakers/TTU-Nik-Gowing/ttu-logo-rgb-black.png'
 import harveyLewisImage from '../images/2026-speakers/EY-Harvey-Lewis/ey-harvey-lewis-v4 copy.jpeg'
 import eyLogo from '../images/2026-speakers/EY-Harvey-Lewis/ernst-young-logo-0.png'
-import Link from 'next/link'
+import nathanColeImage from '../images/2026-speakers/CDP-Nathan-Cole/DSC00659.jpg'
+import cdpLogo from '../images/2026-speakers/CDP-Nathan-Cole/cdp.png'
 const timImage = '/images/2026-speakers/tim-scharrer.jpg'
 const volcafeLogo = '/images/2026-speakers/volcafe-logo.png'
 const olivierImage = '/images/2026-speakers/olivier-laboulle.jpeg'
@@ -479,6 +480,17 @@ export const speakers2026: Speaker[] = [
     description: 'Toby is currently Head of London Market and Public Private Partnerships at AXA Climate, the specialized entity within the AXA Group, created to address the growing need for climate adaptation across both private and public sectors. He focuses on developing innovative financial solutions to address the growing impacts of climate change. Starting his career at international insurer AIG, Toby has spent over 20 years structuring and deploying global financial mechanisms across retail, commercial, and public sector channels, with a particular emphasis on resilience and adaptation strategies. With extensive experience in re/insurance, derivatives, and ILS, Toby is a passionate advocate for alternative risk transfer as a vital tool for bridging gaps in traditional insurance coverage and enhancing climate resilience across sectors.'
   },
   {
+    name: 'Nathan Cole',
+    designation: 'Head of Sustainable Business',
+    organization: 'CDP',
+    image: nathanColeImage,
+    logo: cdpLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description:
+      'Nathan is the Head of Sustainable Business at CDP, leading the evolution and content development of CDP’s disclosure system across the critical topics of Sustainable Finance, Sustainable Procurement, SMEs, and Plastics & Circular Economy.'
+  },
+  {
     name: 'Joy Macknight',
     designation: 'Journalist, Former Editor',
     organization: 'Financial Times - The Banker',
@@ -656,16 +668,6 @@ export default function Speakers2026({ compactTop = false }: { compactTop?: bool
         </Transition.Root>
       )}
 
-      {!compactTop && (
-        <div className="-mt-12 mb-2 w-full flex justify-center pb-4">
-            <Link
-                href="/speakers#speakers-2025"
-                className="rounded-lg bg-lime-700 px-6 py-3 text-lg font-bold text-white transition-colors duration-300 hover:bg-lime-800"
-            >
-                2025 SPEAKERS
-            </Link>
-        </div>
-      )}
     </>
   );
 }
