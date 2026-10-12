@@ -311,7 +311,7 @@ const day2: DayAgenda = {
     {
       time: "09:00 – 09:05",
       title: "OPENING REMARKS",
-      speaker: pickOne("Sean Edwards"),
+      speaker: pickOne("Joy Macknight"),
     },
     {
       time: "09:05 – 09:15",

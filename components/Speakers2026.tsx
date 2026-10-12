@@ -70,8 +70,6 @@ const ibmLogo = '/images/2026-speakers/michael-ibm-logo-v3.png'
 const tobyImage = '/images/2026-speakers/toby-behrmann.jpeg'
 const axaLogo = '/images/2026-speakers/axa-climate-logo.png'
 const joyImage = '/images/2026-speakers/joy-macknight-v2.jpg'
-const seanImage = '/images/2026-speakers/sean-edwards-v2.jpg'
-const itfaLogo = '/images/2026-speakers/sean-itfa-logo-v2.png'
 const lenaImage = '/images/2026-speakers/lena-schweighofer.jpg'
 const tchiboLogo = '/images/2026-speakers/tchibo-logo.png'
 const raymondImage = '/images/2026-speakers/raymond-katta.jpeg'
@@ -496,16 +494,6 @@ export const speakers2026: Speaker[] = [
     organization: 'Financial Times - The Banker',
     image: joyImage,
     description: 'Joy Macknight is a freelance journalist and former editor of The Banker, part of the Financial Times group. She joined The Banker in August 2015 as transaction banking and technology editor, was promoted to deputy editor in September 2016 and then to managing editor in April 2019, before becoming the first female editor in the publication’s history in March 2021. Previously, she was features editor at Profit & Loss, editorial director at Treasury Today and editor at gtnews. She also worked as staff writer on Banking Technology and IBM Computer Today, as well as a freelancer on Computer Weekly.'
-  },
-  {
-    name: 'Sean Edwards',
-    designation: 'Chairman, International Trade Forfaiting Association (ITFA); Head of Legal',
-    organization: 'Sumitomo Mitsui Banking Corporation (SMBC)',
-    image: seanImage,
-    logo: itfaLogo,
-    iconHeight: 80,
-    iconWidth: 80,
-    description: 'Sean Edwards is Head of Legal at SMBC Bank International plc, part of the Sumitomo Mitsui Financial Group. He is Special Adviser to the Trade Finance Department of the bank and a member of its Trade Innovation Unit. Sean is Chairman of the International Trade & Forfaiting Association (ITFA). He is a draftsman of the Uniform Rules for Forfaiting (URF), its counterpart for digital payment obligations, the Unform Rules for Transferable Electronic Payment Obligations (URTEPO) and the Standard Definitions for Techniques of Supply Chain Finance published by ITFA, ICC, FCI, BAFT and the EBA. He is a former member of the Executive Committee of the ICC Banking Commission and the ICC Working Group on Digitalisation in Trade Finance. Sean is a member of the World Trade Organisation (WTO) Trade Finance Expert Group. He is a non-executive director of Swiss fintech, KomGo S.A. Sean has been appointed to the advisory board of the Centre for Digital Trade and Innovation (C4DTI), a joint venture of the UK Government, ICC UK and Tees Valley Combined Authority. He is a member of the Working Group of the Commonwealth Connectivity Agenda established by The Commonwealth. Sean has written for all the major trade finance magazines and is on the editorial board of Global Trade Review (GTR). He has presented at many conferences.'
   }
 ];
 
