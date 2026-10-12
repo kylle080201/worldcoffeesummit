@@ -119,13 +119,14 @@ export default function Overview() {
                     </Link>
                 </div>
 
-                {/* Footer Links */}
+                {/* Footer stats */}
                 <div
-                    className="absolute bottom-0 mt-10 flex w-full flex-col items-center justify-center gap-4 p-4 px-2 text-xl font-bold text-white md:flex-row md:gap-0 md:text-2xl"
+                    className="absolute bottom-0 mt-10 flex w-full flex-wrap items-center justify-center gap-x-4 gap-y-2 p-4 px-2 text-base font-bold text-white sm:text-lg md:gap-x-0 md:text-2xl"
                     style={{ backgroundColor: 'rgb(38 72 51)' }}
                 >
+                    <p className="shrink-0 tracking-wide md:mr-4">Expected:</p>
                     {[
-                        'Expected 200 Attendees',
+                        '200 Attendees',
                         '25+ Countries',
                         '40+ Senior Speakers',
                         '75%+ C-Suite, VP or Director Level',
@@ -137,7 +138,11 @@ export default function Overview() {
                                     className="hidden h-8 w-px bg-gray-400/60 md:block"
                                 />
                             )}
-                            <p className="px-0 text-center md:px-10">{stat}</p>
+                            <p
+                                className={`px-0 text-center ${index === 0 ? 'md:pl-0 md:pr-10' : 'md:px-10'}`}
+                            >
+                                {stat}
+                            </p>
                         </React.Fragment>
                     ))}
                 </div>
