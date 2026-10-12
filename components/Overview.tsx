@@ -125,7 +125,7 @@ export default function Overview() {
                     style={{ backgroundColor: 'rgb(38 72 51)' }}
                 >
                     {[
-                        '200+ Attendees',
+                        'Expected 200 Attendees',
                         '25+ Countries',
                         '40+ Senior Speakers',
                         '75%+ C-Suite, VP or Director Level',

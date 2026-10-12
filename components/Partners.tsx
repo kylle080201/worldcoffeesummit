@@ -10,12 +10,7 @@ import partnerImage1 from '../images/partners-image/PARTNER-IMAGE-1.jpg'
 import partnerImage2 from '../images/partners-image/PARTNER-IMAGE-2.jpg'
 import partnerImage3 from '../images/partners-image/PARTNER-IMAGE-3.jpg'
 import becomeAPartnerIcon from '../images/partners-image/icons/become-a-partner.png'
-import briefcaseIcon from '../images/partners-image/icons/briefcase.png'
-import globeIcon from '../images/partners-image/icons/globe.png'
-import peopleIcon from '../images/partners-image/icons/people.png'
 import Partners2026 from './Partners2026'
-
-const sectionIconClassName = 'h-20 w-20 flex-shrink-0 object-contain sm:h-24 sm:w-24 md:h-28 md:w-28'
 
 const whyPartnerItems = [
   {
@@ -152,63 +147,6 @@ export default function Partners() {
           </div>
         </div>
       </div>
-
-      <section className="mt-20 w-full bg-[#E8F5F2] py-16 sm:py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            {`WHO'S IN THE ROOM`}
-          </h2>
-          <p className="mx-auto mt-4 max-w-4xl text-center text-lg leading-8 text-gray-900 sm:text-xl">
-            A cross-industry ecosystem bringing together senior leaders from business,
-            finance, technology, policy and production to address the future of resilient
-            supply chains.
-          </p>
-
-          <div className="mt-12 grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-8">
-            <div className="flex items-start gap-4 md:items-center">
-              <Image
-                src={peopleIcon}
-                alt=""
-                className={sectionIconClassName}
-                aria-hidden
-              />
-              <div>
-                <p className="text-4xl font-bold text-gray-900 sm:text-5xl">200+</p>
-                <p className="mt-2 text-base font-bold text-gray-900 sm:text-lg">
-                  Senior leaders from 25+ Countries
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4 md:items-center">
-              <Image
-                src={briefcaseIcon}
-                alt=""
-                className={sectionIconClassName}
-                aria-hidden
-              />
-              <div>
-                <p className="text-4xl font-bold text-gray-900 sm:text-5xl">75%+</p>
-                <p className="mt-2 text-base font-bold text-gray-900 sm:text-lg">
-                  C-Suite, VP or Director Level
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4 md:items-center">
-              <Image
-                src={globeIcon}
-                alt=""
-                className={sectionIconClassName}
-                aria-hidden
-              />
-              <p className="text-base leading-7 text-gray-900 sm:text-lg">
-              Uniting the entire value chain to build resilient and future-ready coffee and cocoa supply chains.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <WhoAttendsGrid
         rows={partnersPageWhoAttendsRows}

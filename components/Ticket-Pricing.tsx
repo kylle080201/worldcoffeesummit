@@ -1,15 +1,9 @@
 "use client"
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 
 import Link from 'next/link'
 import { BriefcaseBusiness, Landmark, Rocket, Users, Wine, type LucideIcon } from 'lucide-react'
-import {
-    getActiveStripePrices,
-    isPromoPricingActive,
-    PRICING_DEADLINE,
-    PRODUCTION_TAX_RATES,
-} from '../utils/stripePrices'
-import RegisterCountDown from './RegisterCountDown'
+import { getActiveStripePrices, PRODUCTION_TAX_RATES } from '../utils/stripePrices'
 
 export type SummitLineItem = {
     price: string
@@ -42,16 +36,13 @@ export type SummitRow = {
 
 /** Display amounts must match Stripe prices — update price IDs in Stripe when tariffs change. */
 export function getSummit(): SummitRow[] {
-    // Keep early-bird display and Stripe IDs after the countdown ends.
-    const prices = getActiveStripePrices(PRICING_DEADLINE.getTime() - 1)
+    const prices = getActiveStripePrices()
 
     return [
         {
             title: 'NGO / Government / Academic',
             icon: Landmark,
-            old_price: 1195,
-            item_price: 1095,
-            earlyBird: 'Save £100 book before 10 October',
+            item_price: 1195,
             description:
                 'For non-profit organisations, government agencies, policymakers, producers & cooperatives, and full-time academics.',
             line_items: [
@@ -65,9 +56,7 @@ export function getSummit(): SummitRow[] {
         {
             title: 'Corporate',
             icon: BriefcaseBusiness,
-            old_price: 1395,
-            item_price: 1295,
-            earlyBird: 'Save £100 book before 10 October',
+            item_price: 1395,
             description:
                 'For commercial organisations operating across coffee, cocoa and agricultural commodity value chains, including financial institutions and investment organisations.',
             line_items: [
@@ -98,9 +87,7 @@ export function getSummit(): SummitRow[] {
         {
             title: 'Technology & Service Provider',
             icon: Users,
-            old_price: 1795,
-            item_price: 1695,
-            earlyBird: 'Save £100 book before 10 October',
+            item_price: 1795,
             description:
                 'For organisations providing products, services or solutions to the sector, including technology companies, consultancies, advisory firms and professional service organisations.',
             line_items: [
@@ -115,9 +102,7 @@ export function getSummit(): SummitRow[] {
             title: 'Networking Soirée',
             titleSubline: 'at the UK House of Lords',
             icon: Wine,
-            old_price: 185,
-            item_price: 175,
-            earlyBird: 'Save £10 book before 10 October',
+            item_price: 185,
             description:
                 'Early evening of Day 1 \u00B7 A two-hour, invite-only reception bringing together global leaders and senior stakeholders in a unique and historic setting.',
             subDescription: 'Available to registered delegates only. Limited capacity.',
@@ -141,49 +126,19 @@ const gbp = (n: number) =>
     new Intl.NumberFormat('en-GB', { style: 'currency', currency: 'GBP' }).format(n)
 
 function TicketPricing() {
-    const [showCountdown, setShowCountdown] = useState(() => isPromoPricingActive())
-
-    useEffect(() => {
-        if (!isPromoPricingActive()) {
-            setShowCountdown(false)
-            return
-        }
-        const interval = setInterval(() => {
-            if (!isPromoPricingActive()) setShowCountdown(false)
-        }, 1000)
-        return () => clearInterval(interval)
-    }, [])
-
     const summitRows = getSummit()
 
     return (
         <div className="z-40 py-12 bg-white sm:py-20">
             <div id="summit" className="flow-root px-6 mx-auto mt-12 rounded-md max-w-7xl">
                 <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-                    <div className="flex flex-col w-full gap-6 lg:flex-row lg:gap-4 lg:items-start lg:justify-between">
-                        <div className="flex flex-col w-full font-bold text-center items-center justify-center lg:w-1/2 lg:text-left lg:items-start">
-                            <h1 className="w-full mt-1 text-4xl text-black xl:text-5xl">
-                                Secure your pass to WCIS26
-                            </h1>
-                            <p className="w-full mt-3 text-sm font-normal text-black sm:text-base lg:max-w-xl">
-                                Join global leaders and senior stakeholders from across the coffee and cocoa supply chain.
-                            </p>
-                        </div>
-                        <div className="flex flex-col items-center w-full min-w-0 gap-3 px-2 lg:w-1/2">
-                            <p className="w-full text-xl font-bold leading-snug text-center text-lime-700 sm:text-2xl md:text-3xl">
-                                Prices increase after
-                                <br className="sm:hidden" />{' '}
-                                9 October 2026
-                            </p>
-                            {showCountdown ? (
-                                <>
-                                    <p className="w-full text-sm font-normal text-center text-black sm:text-base">
-                                        Current rates end in:
-                                    </p>
-                                    <RegisterCountDown />
-                                </>
-                            ) : null}
-                        </div>
+                    <div className="flex flex-col w-full font-bold text-center items-center justify-center lg:text-left lg:items-start">
+                        <h1 className="w-full mt-1 text-4xl text-black xl:text-5xl">
+                            Secure your pass to WCIS26
+                        </h1>
+                        <p className="w-full mt-3 text-sm font-normal text-black sm:text-base lg:max-w-xl">
+                            Join global leaders and senior stakeholders from across the coffee and cocoa supply chain.
+                        </p>
                     </div>
                     <div className="flex items-center justify-center w-full gap-4 mt-10">
                         <div className="h-px bg-gray-300 w-28 sm:w-44" />

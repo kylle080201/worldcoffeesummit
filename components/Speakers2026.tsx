@@ -361,13 +361,13 @@ export const speakers2026: Speaker[] = [
   },
   {
     name: 'Cleiton Vargas',
-    designation: 'SVP Innovation Americas',
+    designation: 'SVP Business Transformation Americas',
     organization: 'Yara International',
     image: cleitonVargasImage,
     logo: yaraLogo,
     iconHeight: 80,
     iconWidth: 80,
-    description: 'Cleiton Vargas (born in 1969) has been with Yara for over 30 years and recently took on the role of Senior Vice President of Innovation for the Americas. Throughout his career at the company, he has held various positions across different business units, including Commercial, Operations, and Logistics. Cleiton holds a degree in Agronomic Engineering from the Federal University of Rio Grande do Sul and an MBA in Marketing from the Escola Superior de Propaganda e Marketing.'
+    description: 'Cleiton Vargas (born in 1969) has been with Yara for over 30 years and recently took on the role of Senior Vice President of Business Transformation for the Americas. Throughout his career at the company, he has held various positions across different business units, including Commercial, Operations, and Logistics. Cleiton holds a degree in Agronomic Engineering from the Federal University of Rio Grande do Sul and an MBA in Marketing from the Escola Superior de Propaganda e Marketing.'
   },
   {
     name: 'Eden Cottee-Jones',

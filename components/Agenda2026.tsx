@@ -170,7 +170,8 @@ const day1: DayAgenda = {
     },
     {
       time: "10:05 – 10:20",
-      title: "CASE STUDY",
+      title:
+        "CASE STUDY: FROM LICENCE TO OPERATE TO LICENCE TO WIN: DEFORESTATION-FREE AND RESILIENT SUPPLY CHAINS",
       speaker: pickOne("Patrick Lanz"),
     },
     {

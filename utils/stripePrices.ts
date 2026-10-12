@@ -1,14 +1,9 @@
-/**
- * Register-page countdown ends at this instant (end of 9 October 2026 UK / BST).
- * Public copy uses “Prices increase after 9 October 2026”.
- * After it passes, only the countdown UI is hidden — displayed amounts and Stripe
- * checkout price IDs stay on the current rates until you change them below.
- */
+/** End of early-bird window (9 October 2026 UK / BST). Used for countdown history only. */
 export const PRICING_DEADLINE = new Date('2026-10-09T23:59:00+01:00')
 
-/** True while the “Current rates end in” countdown should show on /register. */
-export function isPromoPricingActive(now = Date.now()): boolean {
-    return now < PRICING_DEADLINE.getTime()
+/** @deprecated Early-bird period has ended — countdown is no longer shown on /register. */
+export function isPromoPricingActive(_now = Date.now()): boolean {
+    return false
 }
 
 /** Full rates after the current early-bird window (display reference + future checkout). */
@@ -29,14 +24,7 @@ export const PROMO_STRIPE_PRICES = {
 } as const
 
 export function getActiveStripePrices(_now = Date.now()) {
-    // Keep promo Stripe IDs after the countdown ends so displayed prices stay unchanged.
-    return {
-        ngoGovernmentAcademic: PROMO_STRIPE_PRICES.ngoGovernmentAcademic,
-        corporate: PROMO_STRIPE_PRICES.corporate,
-        startUp: STANDARD_STRIPE_PRICES.startUp,
-        serviceProvider: PROMO_STRIPE_PRICES.serviceProvider,
-        networkingSoiree: PROMO_STRIPE_PRICES.networkingSoiree,
-    } as const
+    return { ...STANDARD_STRIPE_PRICES }
 }
 
 /** Link-only exhibition exclusive pass — not listed on the public ticket page. */
@@ -89,6 +77,9 @@ export const LEGACY_STRIPE_PRICES = {
     serviceProviderPromoSept2026: 'price_1Rr82DKMWpUKzQVz3mGm7mS2',
     serviceProviderPromoOct2026: 'price_1SHogiKMWpUKzQVzWQNaw3lL',
     networkingSoireePromoSept2026: 'price_1TzZ58KMWpUKzQVz12PQEdIQ',
+    ngoGovernmentAcademicPromoOct2026: 'price_1UHNUcKMWpUKzQVzXm9HIXyH',
+    corporatePromoOct2026: 'price_1SJvX1KMWpUKzQVz604VjCdu',
+    networkingSoireePromoOct2026: 'price_1UHNWHKMWpUKzQVzce07V4qS',
 } as const
 
 export const NETWORKING_SOIREE_PRICE_IDS = [
@@ -113,11 +104,13 @@ export function getTicketNameForPriceId(priceId: string): string {
         case STANDARD_STRIPE_PRICES.ngoGovernmentAcademic:
         case LEGACY_STRIPE_PRICES.ngoGovernmentAcademicEarlyBird:
         case LEGACY_STRIPE_PRICES.ngoGovernmentAcademicPromoSept2026:
+        case LEGACY_STRIPE_PRICES.ngoGovernmentAcademicPromoOct2026:
             return 'NGO / Government / Academic'
         case PROMO_STRIPE_PRICES.corporate:
         case STANDARD_STRIPE_PRICES.corporate:
         case LEGACY_STRIPE_PRICES.corporateEarlyBird:
         case LEGACY_STRIPE_PRICES.corporatePromoSept2026:
+        case LEGACY_STRIPE_PRICES.corporatePromoOct2026:
             return 'Corporates'
         case STANDARD_STRIPE_PRICES.startUp:
             return 'Start Ups'
@@ -127,6 +120,7 @@ export function getTicketNameForPriceId(priceId: string): string {
         case LEGACY_STRIPE_PRICES.serviceProviderPromoOct2026:
             return 'Service Providers'
         case PROMO_STRIPE_PRICES.networkingSoiree:
+        case LEGACY_STRIPE_PRICES.networkingSoireePromoOct2026:
         case LEGACY_STRIPE_PRICES.networkingSoireePromoSept2026:
         case STANDARD_STRIPE_PRICES.networkingSoiree:
         case LEGACY_STRIPE_PRICES.networkingSoireePrevious:
@@ -141,7 +135,7 @@ export function getTicketNameForPriceId(priceId: string): string {
 
 export function getNetworkingSoireeLineItem() {
     return {
-        price: PROMO_STRIPE_PRICES.networkingSoiree,
+        price: STANDARD_STRIPE_PRICES.networkingSoiree,
         quantity: 1 as const,
         tax_rates: PRODUCTION_TAX_RATES,
     }
