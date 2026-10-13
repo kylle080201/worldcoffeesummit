@@ -51,6 +51,8 @@ import nikGowingImage from '../images/2026-speakers/TTU-Nik-Gowing/Nik Profile c
 import ttuLogo from '../images/2026-speakers/TTU-Nik-Gowing/ttu-logo-rgb-black.png'
 import harveyLewisImage from '../images/2026-speakers/EY-Harvey-Lewis/ey-harvey-lewis-v4 copy.jpeg'
 import eyLogo from '../images/2026-speakers/EY-Harvey-Lewis/ernst-young-logo-0.png'
+import irinaAntoshevskaImage from '../images/2026-speakers/Mayer-Brown-Irina-Antoshevska/iantoshevska copy.jpg'
+import mayerBrownLogo from '../images/2026-speakers/Mayer-Brown-Irina-Antoshevska/image00122332.png'
 import nathanColeImage from '../images/2026-speakers/CDP-Nathan-Cole/DSC00659.jpg'
 import cdpLogo from '../images/2026-speakers/CDP-Nathan-Cole/cdp.png'
 const timImage = '/images/2026-speakers/tim-scharrer.jpg'
@@ -459,6 +461,17 @@ export const speakers2026: Speaker[] = [
     iconHeight: 80,
     iconWidth: 80,
     description: `<p class="mb-3">Harvey is EY Global Lead Analyst for the technology theme within EY Insights, where he leads research and thought leadership on the technologies shaping business, government and society. He is responsible for developing insights on emerging technology trends and their implications for organizations, helping clients and stakeholders navigate uncertainty and make informed decisions.</p><p class="mb-3">Prior to his current role, Harvey held several research, analytics and technology-focused positions in the EY organization. Over a career spanning more than 30 years, he has worked across research, government, industry and consulting, advising senior executives and policymakers on the opportunities, risks and wider impacts of AI, automation, data, quantum computing and other emerging technologies.</p><p>Harvey holds a PhD in Hypersonic Aerodynamics and a BEng (Hons) in Aeronautics and Astronautics from the University of Southampton. He is recognised for bringing together technical experience, economic analysis and organizational perspectives to provide a balanced view of technological change.</p>`,
+  },
+  {
+    name: 'Irina Antoshevska',
+    designation: 'Senior Associate',
+    organization: 'Mayer Brown',
+    image: irinaAntoshevskaImage,
+    logo: mayerBrownLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description:
+      'Irina Antoshevska, a senior associate at Mayer Brown, advises clients on trade remedy cases and on ESG-related matters. She closely monitors developments under the EU Deforestation Regulation (EUDR) and helps clients prepare for its implementation.',
   },
   {
     name: 'Michael Mowat',
