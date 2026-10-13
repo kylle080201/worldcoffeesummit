@@ -261,7 +261,8 @@ const day1: DayAgenda = {
       speakers: pick(
         "Andre van den Beld",
         "Kevin Duisters",
-        "Anders Frigaard"
+        "Anders Frigaard",
+        "Emma van de Ven"
       ),
     },
     {

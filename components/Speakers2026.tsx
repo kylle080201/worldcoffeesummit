@@ -15,6 +15,8 @@ import kevinDuistersImage from '../images/2026-speakers/Proba-Projects-Kevin Dui
 import probaLogo from '../images/2026-speakers/Proba-Projects-Kevin Duisters/ProbaPositive.png'
 import andersFrigaardImage from '../images/2026-speakers/IFD-Anders Frigaard/anders-frigaard-investment-director-707x1024 copy.jpeg'
 import impactFundDenmarkLogo from '../images/2026-speakers/IFD-Anders Frigaard/impactfunddenmark-2025-rgb-primary-logo-payoff-1-denmarkred-oceanblue-2.jpg'
+import emmaVanDeVenImage from '../images/2026-speakers/Rabobank-Emma-van-de-Ven/Emma van de Ven.jpg'
+import rabobankLogo from '../images/2026-speakers/Rabobank-Emma-van-de-Ven/rabobank_logo_icon_169809.png'
 import saurabhImage from '../images/2026-speakers/UNDP-Saurabh Sharma/SaurabhSharma.jpg'
 import undpLogo from '../images/2026-speakers/UNDP-Saurabh Sharma/UNDP_Logo_Blue.png'
 import jennyImage from '../images/2026-speakers/Bain & Co.-Jenny Davis-Peccoud/Jenny Davis-Peccoud.jpg'
@@ -406,6 +408,17 @@ export const speakers2026: Speaker[] = [
     iconHeight: 80,
     iconWidth: 80,
     description: 'Anders Frigaard is Investment Director at Impact Fund Denmark (IFDK). He has extensive experience in private equity, debt financing and impact investing across Africa and Asia, with a particular focus on agribusiness, food value chains and sustainable development. Throughout his career, he has led and overseen investments in emerging markets, combining commercial returns with development impact. He is also actively involved in governance and board oversight of portfolio companies.'
+  },
+  {
+    name: 'Emma van de Ven',
+    designation: 'Head of Strategy, Knowledge & Networks – W&R Innovation',
+    organization: 'Rabobank',
+    image: emmaVanDeVenImage,
+    logo: rabobankLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description:
+      'Through Rabobank’s Innovation department, Emma and her team have started and supported many innovative initiatives and financial solutions for decarbonisation in the food & agriculture space. For example, Emma has co-founded Rabobank’s Acorn programme, connecting 500,000+ farmers to payments for decarbonisation impact. Working at the intersection of voluntary carbon markets, supply chain decarbonisation and climate risk mitigation, Emma also serves as Technical Working Group member for the GHG Protocol’s LSRS and AMI. She has a background as an engineer and innovation strategist, but she currently focusses her attention on developing financial solutions to mitigate climate risks in agricultural supply chains.'
   },
   {
     name: 'Luke Knowles',
