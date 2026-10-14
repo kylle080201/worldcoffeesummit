@@ -43,6 +43,8 @@ import osapiensLogo from '../images/2026-speakers/Osapiens-Tera-Patrick-Lanz/osa
 import bryceCronkiteRatcliffImage from '../images/2026-speakers/Google-Bryce-Cronkite-Ratcliff/IMG_6591 copy.jpeg'
 import googleLogo from '../images/2026-speakers/Google-Bryce-Cronkite-Ratcliff/Google Logo.png'
 import rachelKyteImage from '../images/2026-speakers/UK-Rachel-Kyte/Rachel Kyte headshot copy.jpeg'
+import rachelDelhaiseImage from '../images/2026-speakers/Convex-Insurance-Rachel-Delhaise/Rachel Delhaise headshot copy 2.jpeg'
+import convexLogo from '../images/2026-speakers/Convex-Insurance-Rachel-Delhaise/Convex_Positive_RGB (1).png'
 import alphaIbrahimSesayImage from '../images/2026-speakers/MTI-Alpha-Ibrahim-Sesay/Minister Alpha Ibrahim Sesay.jpeg'
 import sierraLeoneMtiLogo from '../images/2026-speakers/MTI-Alpha-Ibrahim-Sesay/lOGO2.png'
 import ulyanaDovbushImage from '../images/2026-speakers/IFC-Ulyana-Dovbush/Ulyana Dovbush copy.jpg'
@@ -313,6 +315,16 @@ export const speakers2026: Speaker[] = [
     iconHeight: 80,
     iconWidth: 80,
     description: 'Jenny Davis-Peccoud is a partner in Bain & Company\'s Amsterdam office. In her almost 30 years at Bain, Jenny has advised clients across a wide range of industries, as well as government entities and NGOs, on topics such as growth strategy, organizational effectiveness, merger integration, business transformation, digital acceleration, pricing, supply chain and leadership team development. A US and French citizen, Jenny has led projects in varied business cultures across Europe, the Middle East, Asia and North America. Jenny founded and heads Bain\'s Global Sustainability & Responsibility practice. In the sustainability sphere, Jenny advises companies on how to tackle social and environmental challenges and opportunities as strategic issues at the heart of their core businesses. Beyond her broad expertise in this area, she has a particular focus on the food value chain, from agriculture to consumer products to retail, as well as the systems solutions needed to drive impactful and lasting change. She directs Bain\'s research in this field, focusing on topics such as the change management challenge of sustainability programs and the role of sustainability in employee engagement. Her work in this area has been published in The Wall Street Journal, The Huffington Post, HBR.org and the Stanford Social Innovation Review. Jenny received her BS from Georgetown University and her MBA, with distinction, from Harvard Business School.'
+  },
+  {
+    name: 'Rachel Delhaise',
+    designation: 'Chief Sustainability Officer',
+    organization: 'Convex Insurance',
+    image: rachelDelhaiseImage,
+    logo: convexLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description: `<p class="mb-3">Rachel Delhaise is Chief Sustainability Officer at Convex Insurance with responsibility for developing and implementing the sustainability strategy across the group. Prior to joining Convex in April 2021, she was Chief Risk Officer of Starstone Group for six years where she developed and led the risk function across five operating entities. Rachel has 30 plus years of experience in the insurance sector, with over 20 years spent with Guy Carpenter, part of Marsh and McLennan Corp, latterly as Managing Director of the firm&apos;s capital markets arm, GC Securities.</p><p class="mb-3">As part of her sustainability work within the insurance sector, Rachel is Chair of Climatewise Management Committee and a member of the Operating Committee of the Insurance Development Forum, where she co-chairs the Risk Modelling Steering Group.</p><p class="mb-3">She is also currently a Non-Executive Director of Envelop Risk, a specialty cyber underwriting managing agent.</p><p>Rachel has completed University of Cambridge Institute of Sustainability Leadership (CISL), Business Sustainability Management and Sustainable Finance courses.</p>`,
   },
   {
     name: 'Patrick Lanz',
