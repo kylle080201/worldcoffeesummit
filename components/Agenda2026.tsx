@@ -165,7 +165,8 @@ const day1: DayAgenda = {
       speakers: pick(
         "Olivier Laboulle",
         "Mario Abreu",
-        "Marcela Gaviria"
+        "Marcela Gaviria",
+        "Irina Antoshevska"
       ),
     },
     {
@@ -261,7 +262,8 @@ const day1: DayAgenda = {
       speakers: pick(
         "Andre van den Beld",
         "Kevin Duisters",
-        "Anders Frigaard"
+        "Anders Frigaard",
+        "Emma van de Ven"
       ),
     },
     {
@@ -311,7 +313,7 @@ const day2: DayAgenda = {
     {
       time: "09:00 – 09:05",
       title: "OPENING REMARKS",
-      speaker: pickOne("Sean Edwards"),
+      speaker: pickOne("Joy Macknight"),
     },
     {
       time: "09:05 – 09:15",

@@ -15,6 +15,8 @@ import kevinDuistersImage from '../images/2026-speakers/Proba-Projects-Kevin Dui
 import probaLogo from '../images/2026-speakers/Proba-Projects-Kevin Duisters/ProbaPositive.png'
 import andersFrigaardImage from '../images/2026-speakers/IFD-Anders Frigaard/anders-frigaard-investment-director-707x1024 copy.jpeg'
 import impactFundDenmarkLogo from '../images/2026-speakers/IFD-Anders Frigaard/impactfunddenmark-2025-rgb-primary-logo-payoff-1-denmarkred-oceanblue-2.jpg'
+import emmaVanDeVenImage from '../images/2026-speakers/Rabobank-Emma-van-de-Ven/Emma van de Ven.jpg'
+import rabobankLogo from '../images/2026-speakers/Rabobank-Emma-van-de-Ven/rabobank_logo_icon_169809.png'
 import saurabhImage from '../images/2026-speakers/UNDP-Saurabh Sharma/SaurabhSharma.jpg'
 import undpLogo from '../images/2026-speakers/UNDP-Saurabh Sharma/UNDP_Logo_Blue.png'
 import jennyImage from '../images/2026-speakers/Bain & Co.-Jenny Davis-Peccoud/Jenny Davis-Peccoud.jpg'
@@ -49,6 +51,8 @@ import nikGowingImage from '../images/2026-speakers/TTU-Nik-Gowing/Nik Profile c
 import ttuLogo from '../images/2026-speakers/TTU-Nik-Gowing/ttu-logo-rgb-black.png'
 import harveyLewisImage from '../images/2026-speakers/EY-Harvey-Lewis/ey-harvey-lewis-v4 copy.jpeg'
 import eyLogo from '../images/2026-speakers/EY-Harvey-Lewis/ernst-young-logo-0.png'
+import irinaAntoshevskaImage from '../images/2026-speakers/Mayer-Brown-Irina-Antoshevska/iantoshevska copy.jpg'
+import mayerBrownLogo from '../images/2026-speakers/Mayer-Brown-Irina-Antoshevska/image00122332.png'
 import nathanColeImage from '../images/2026-speakers/CDP-Nathan-Cole/DSC00659.jpg'
 import cdpLogo from '../images/2026-speakers/CDP-Nathan-Cole/cdp.png'
 const timImage = '/images/2026-speakers/tim-scharrer.jpg'
@@ -70,8 +74,6 @@ const ibmLogo = '/images/2026-speakers/michael-ibm-logo-v3.png'
 const tobyImage = '/images/2026-speakers/toby-behrmann.jpeg'
 const axaLogo = '/images/2026-speakers/axa-climate-logo.png'
 const joyImage = '/images/2026-speakers/joy-macknight-v2.jpg'
-const seanImage = '/images/2026-speakers/sean-edwards-v2.jpg'
-const itfaLogo = '/images/2026-speakers/sean-itfa-logo-v2.png'
 const lenaImage = '/images/2026-speakers/lena-schweighofer.jpg'
 const tchiboLogo = '/images/2026-speakers/tchibo-logo.png'
 const raymondImage = '/images/2026-speakers/raymond-katta.jpeg'
@@ -410,6 +412,17 @@ export const speakers2026: Speaker[] = [
     description: 'Anders Frigaard is Investment Director at Impact Fund Denmark (IFDK). He has extensive experience in private equity, debt financing and impact investing across Africa and Asia, with a particular focus on agribusiness, food value chains and sustainable development. Throughout his career, he has led and overseen investments in emerging markets, combining commercial returns with development impact. He is also actively involved in governance and board oversight of portfolio companies.'
   },
   {
+    name: 'Emma van de Ven',
+    designation: 'Head of Strategy, Knowledge & Networks – W&R Innovation',
+    organization: 'Rabobank',
+    image: emmaVanDeVenImage,
+    logo: rabobankLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description:
+      'Through Rabobank’s Innovation department, Emma and her team have started and supported many innovative initiatives and financial solutions for decarbonisation in the food & agriculture space. For example, Emma has co-founded Rabobank’s Acorn programme, connecting 500,000+ farmers to payments for decarbonisation impact. Working at the intersection of voluntary carbon markets, supply chain decarbonisation and climate risk mitigation, Emma also serves as Technical Working Group member for the GHG Protocol’s LSRS and AMI. She has a background as an engineer and innovation strategist, but she currently focusses her attention on developing financial solutions to mitigate climate risks in agricultural supply chains.'
+  },
+  {
     name: 'Luke Knowles',
     designation: 'Head of Catastrophe Analytics',
     organization: 'Lloyd’s of London',
@@ -448,6 +461,17 @@ export const speakers2026: Speaker[] = [
     iconHeight: 80,
     iconWidth: 80,
     description: `<p class="mb-3">Harvey is EY Global Lead Analyst for the technology theme within EY Insights, where he leads research and thought leadership on the technologies shaping business, government and society. He is responsible for developing insights on emerging technology trends and their implications for organizations, helping clients and stakeholders navigate uncertainty and make informed decisions.</p><p class="mb-3">Prior to his current role, Harvey held several research, analytics and technology-focused positions in the EY organization. Over a career spanning more than 30 years, he has worked across research, government, industry and consulting, advising senior executives and policymakers on the opportunities, risks and wider impacts of AI, automation, data, quantum computing and other emerging technologies.</p><p>Harvey holds a PhD in Hypersonic Aerodynamics and a BEng (Hons) in Aeronautics and Astronautics from the University of Southampton. He is recognised for bringing together technical experience, economic analysis and organizational perspectives to provide a balanced view of technological change.</p>`,
+  },
+  {
+    name: 'Irina Antoshevska',
+    designation: 'Senior Associate',
+    organization: 'Mayer Brown',
+    image: irinaAntoshevskaImage,
+    logo: mayerBrownLogo,
+    iconHeight: 80,
+    iconWidth: 80,
+    description:
+      'Irina Antoshevska, a senior associate at Mayer Brown, advises clients on trade remedy cases and on ESG-related matters. She closely monitors developments under the EU Deforestation Regulation (EUDR) and helps clients prepare for its implementation.',
   },
   {
     name: 'Michael Mowat',
@@ -496,16 +520,6 @@ export const speakers2026: Speaker[] = [
     organization: 'Financial Times - The Banker',
     image: joyImage,
     description: 'Joy Macknight is a freelance journalist and former editor of The Banker, part of the Financial Times group. She joined The Banker in August 2015 as transaction banking and technology editor, was promoted to deputy editor in September 2016 and then to managing editor in April 2019, before becoming the first female editor in the publication’s history in March 2021. Previously, she was features editor at Profit & Loss, editorial director at Treasury Today and editor at gtnews. She also worked as staff writer on Banking Technology and IBM Computer Today, as well as a freelancer on Computer Weekly.'
-  },
-  {
-    name: 'Sean Edwards',
-    designation: 'Chairman, International Trade Forfaiting Association (ITFA); Head of Legal',
-    organization: 'Sumitomo Mitsui Banking Corporation (SMBC)',
-    image: seanImage,
-    logo: itfaLogo,
-    iconHeight: 80,
-    iconWidth: 80,
-    description: 'Sean Edwards is Head of Legal at SMBC Bank International plc, part of the Sumitomo Mitsui Financial Group. He is Special Adviser to the Trade Finance Department of the bank and a member of its Trade Innovation Unit. Sean is Chairman of the International Trade & Forfaiting Association (ITFA). He is a draftsman of the Uniform Rules for Forfaiting (URF), its counterpart for digital payment obligations, the Unform Rules for Transferable Electronic Payment Obligations (URTEPO) and the Standard Definitions for Techniques of Supply Chain Finance published by ITFA, ICC, FCI, BAFT and the EBA. He is a former member of the Executive Committee of the ICC Banking Commission and the ICC Working Group on Digitalisation in Trade Finance. Sean is a member of the World Trade Organisation (WTO) Trade Finance Expert Group. He is a non-executive director of Swiss fintech, KomGo S.A. Sean has been appointed to the advisory board of the Centre for Digital Trade and Innovation (C4DTI), a joint venture of the UK Government, ICC UK and Tees Valley Combined Authority. He is a member of the Working Group of the Commonwealth Connectivity Agenda established by The Commonwealth. Sean has written for all the major trade finance magazines and is on the editorial board of Global Trade Review (GTR). He has presented at many conferences.'
   }
 ];
 
