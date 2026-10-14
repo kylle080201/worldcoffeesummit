@@ -220,7 +220,8 @@ const day1: DayAgenda = {
     },
     {
       time: "13:20 – 13:35",
-      title: "CASE STUDY",
+      title:
+        "TREES FROM SPACE: SATELLITES AND AI FOR COFFEE & COCOA SUPPLY CHAIN MAPPING",
       speaker: pickOne("Bryce Cronkite-Ratcliff"),
     },
     {
@@ -235,6 +236,7 @@ const day1: DayAgenda = {
         "How could El Niño and wider climate and nature pressures affect coffee and cocoa production and supply?",
         "How can better risk intelligence support sourcing, insurance, investment and financial resilience?",
       ],
+      chair: pickOne("Rachel Delhaise"),
       speakers: pick(
         "David Laborde",
         "Bryce Cronkite-Ratcliff",
