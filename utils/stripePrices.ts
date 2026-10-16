@@ -9,9 +9,9 @@ export function isPromoPricingActive(_now = Date.now()): boolean {
 /** Full rates after the current early-bird window (display reference + future checkout). */
 export const STANDARD_STRIPE_PRICES = {
     ngoGovernmentAcademic: 'price_1TzY9lKMWpUKzQVze5HZBsjJ',
-    corporate: 'price_1TzYBaKMWpUKzQVzuSIvbSuA',
+    corporate: 'price_1UR7fFKMWpUKzQVzp6KL7eTG',
     startUp: 'price_1Rb9T2KMWpUKzQVzaQhry4yi',
-    serviceProvider: 'price_1RVYT2KMWpUKzQVzleFRk7vr',
+    serviceProvider: 'price_1SHogiKMWpUKzQVzWQNaw3lL',
     networkingSoiree: 'price_1TzYD8KMWpUKzQVzGFsxGOI3',
 } as const
 
@@ -75,7 +75,8 @@ export const LEGACY_STRIPE_PRICES = {
     ngoGovernmentAcademicPromoSept2026: 'price_1Tze7kKMWpUKzQVznfiZ3pUY',
     corporatePromoSept2026: 'price_1SHoadKMWpUKzQVzCk3pc4oP',
     serviceProviderPromoSept2026: 'price_1Rr82DKMWpUKzQVz3mGm7mS2',
-    serviceProviderPromoOct2026: 'price_1SHogiKMWpUKzQVzWQNaw3lL',
+    serviceProviderPrevious: 'price_1RVYT2KMWpUKzQVzleFRk7vr',
+    corporatePrevious: 'price_1TzYBaKMWpUKzQVzuSIvbSuA',
     networkingSoireePromoSept2026: 'price_1TzZ58KMWpUKzQVz12PQEdIQ',
     ngoGovernmentAcademicPromoOct2026: 'price_1UHNUcKMWpUKzQVzXm9HIXyH',
     corporatePromoOct2026: 'price_1SJvX1KMWpUKzQVz604VjCdu',
@@ -111,13 +112,14 @@ export function getTicketNameForPriceId(priceId: string): string {
         case LEGACY_STRIPE_PRICES.corporateEarlyBird:
         case LEGACY_STRIPE_PRICES.corporatePromoSept2026:
         case LEGACY_STRIPE_PRICES.corporatePromoOct2026:
+        case LEGACY_STRIPE_PRICES.corporatePrevious:
             return 'Corporates'
         case STANDARD_STRIPE_PRICES.startUp:
             return 'Start Ups'
         case PROMO_STRIPE_PRICES.serviceProvider:
         case STANDARD_STRIPE_PRICES.serviceProvider:
         case LEGACY_STRIPE_PRICES.serviceProviderPromoSept2026:
-        case LEGACY_STRIPE_PRICES.serviceProviderPromoOct2026:
+        case LEGACY_STRIPE_PRICES.serviceProviderPrevious:
             return 'Service Providers'
         case PROMO_STRIPE_PRICES.networkingSoiree:
         case LEGACY_STRIPE_PRICES.networkingSoireePromoOct2026:
