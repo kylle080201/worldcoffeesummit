@@ -161,7 +161,7 @@ const day1: DayAgenda = {
       speakers: pick(
         "Olivier Laboulle",
         "Mario Abreu",
-        "Marcela Gaviria",
+        "Marcela Gaviria Botero",
         "Irina Antoshevska"
       ),
     },
@@ -320,7 +320,8 @@ const day2: DayAgenda = {
     },
     {
       time: "09:15 – 09:25",
-      title: "KEYNOTE",
+      title:
+        "KEYNOTE: WHO WILL FINANCE RESILIENCE? FROM GLOBAL CLIMATE COMMITMENTS TO THE FARM",
       speaker: pickOne("Rachel Kyte"),
     },
     {
