@@ -148,11 +148,7 @@ const day1: DayAgenda = {
       speaker: pickOne("Joy Macknight"),
     },
     {
-      time: "09:05 – 09:15",
-      title: "OPENING KEYNOTE",
-    },
-    {
-      time: "09:15 – 10:05",
+      time: "09:05 – 10:05",
       title: "OPENING PANEL: EUDR READY? TRACEABILITY VS REALITY",
       description:
         "As EUDR reshapes global coffee and cocoa trade, traceability is becoming the licence to trade. But how ready is today's supply—and what separates compliance on paper from compliance in practice?",
