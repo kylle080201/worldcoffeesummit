@@ -161,7 +161,7 @@ const day1: DayAgenda = {
       speakers: pick(
         "Olivier Laboulle",
         "Mario Abreu",
-        "Marcela Gaviria",
+        "Marcela Gaviria Botero",
         "Irina Antoshevska"
       ),
     },

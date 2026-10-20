@@ -112,7 +112,7 @@ export const speakers2026: Speaker[] = [
   {
     name: 'Rachel Kyte',
     designation: 'UK Special Representative for Climate',
-    organization: 'Foreign, Commonwealth and Development Office (FCDO)',
+    organization: 'UK Government',
     image: rachelKyteImage,
     description: `<p class="mb-3">Rachel Kyte was appointed UK Special Representative for Climate on 21st October 2024. Rachel supports Ministers to increase senior international diplomatic engagement on climate and clean energy. She reports to the Foreign Secretary and the Secretary of State for Energy Security and Net Zero.</p><p class="mb-3">She is Professor of Practice in Climate Policy at the Blavatnik School of Government, University of Oxford and dean emerita of the Fletcher School of Law and Diplomacy at Tufts University.</p><p>Rachel was Special Representative of the UN Secretary-General and CEO of Sustainable Energy for All. She has held several posts at World Bank Group, including Vice President and Special Envoy for Climate Change.</p>`,
   },
@@ -364,7 +364,7 @@ export const speakers2026: Speaker[] = [
     description: `<p class="mb-3">Raymond was appointed Executive Chairman of the Produce Monitoring Board by H.E. President Brigadier Dr. Julius Maada Bio on 14 November 2024.</p><p class="mb-3">He is a public sector leader with 15+ years of executive experience across Sierra Leone and the United States, specializing in institutional reform, rights-based development, and sustainable agricultural trade.</p><p class="mb-3">He holds a BA in Liberal Studies from Westfield State University, an MSc in Human Services &amp; Organizational Leadership from Springfield College, and a European Master&apos;s in Human Rights &amp; Democratization from the Global Campus of Human Rights, Italy.</p><p class="mb-3">Prior to PMB, he served as Deputy Executive Secretary of Sierra Leone&apos;s Human Rights Commission, Program Manager at Jubilee Association of Maryland, Head of Programmes at PSRU, and Senior Director at NaCSA.</p><p class="mb-3">At PMB, he leads efforts to align Sierra Leone&apos;s agricultural exports with international standards, focusing on EUDR readiness, farm-mapping and geolocation verification, digital traceability systems, and translating policy into operational solutions that expand market access and reduce deforestation risk.</p>`
   },
   {
-    name: 'Marcela Gaviria',
+    name: 'Marcela Gaviria Botero',
     designation: 'Director of Alliances and Projects',
     organization: 'Colombian Coffee Growers Federation (FNC)',
     image: marcelaImage,
