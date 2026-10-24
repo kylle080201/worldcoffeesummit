@@ -152,11 +152,6 @@ const day1: DayAgenda = {
       title: "OPENING PANEL: EUDR READY? TRACEABILITY VS REALITY",
       description:
         "As EUDR reshapes global coffee and cocoa trade, traceability is becoming the licence to trade. But how ready is today's supply—and what separates compliance on paper from compliance in practice?",
-      bullets: [
-        "What does genuinely audit-ready traceability look like in practice?",
-        "Can farm-level data deliver transparency without slowing trade or excluding smallholders?",
-        "Which traceability approaches are proving reliable in practice — and where are gaps, inconsistencies or false confidence still emerging?",
-      ],
       chair: pickOne("Mumbi Gitau"),
       speakers: pick(
         "Olivier Laboulle",
@@ -182,11 +177,6 @@ const day1: DayAgenda = {
         "GLOBAL LEADERS FORUM: IS THE TRADITIONAL COFFEE TRADING MODEL STILL FIT FOR THE FUTURE?",
       description:
         "Coffee trading has always evolved—but today's combination of regulation, volatility and supply uncertainty raises a bigger question: what will define the next generation of coffee trading?",
-      bullets: [
-        "As volatility intensifies, how should risk and value be shared across the supply chain?",
-        "As buyers demand greater visibility and supply security, how must the trader’s role evolve?",
-        "As procurement moves from a buying function to a strategic business priority, how will this reshape the role of traders and supplier relationships?",
-      ],
       chair: pickOne("Nik Gowing"),
       speakers: pick("Tim Scharrer", "Chrystel Monthean", "Eric Gorlier"),
     },
