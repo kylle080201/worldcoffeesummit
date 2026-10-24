@@ -186,11 +186,6 @@ const day1: DayAgenda = {
         "PANEL: WHO PAYS—OR PROFITS—FROM RESILIENCE? FINANCING THE FUTURE OF GLOBAL SUPPLY CHAINS",
       description:
         "Resilience cannot be built without capital. Who carries the risk, who finances the transition and where is long-term value created? As investment priorities evolve, which financing models will prove most effective in securing future supply?",
-      bullets: [
-        "What will make climate and supply-chain resilience genuinely investable at scale?",
-        "How can blended finance, insurance and public-private capital reach farms and supply chains more effectively?",
-        "Where can insurance and risk-transfer mechanisms unlock investment that traditional finance cannot?",
-      ],
       chair: pickOne("Joy Macknight"),
       speakers: pick(
         "Ulyana Dovbush",
@@ -217,11 +212,6 @@ const day1: DayAgenda = {
         "FROM SPACE TO SUPPLY — Turning Earth, Climate & Risk Intelligence into Action",
       description:
         "What happens when satellite signals, climate data and nature intelligence begin to change how supply risk is seen? The question is not only what can be seen — but what should shape decisions, and when.",
-      bullets: [
-        "Can Earth Observation, geospatial intelligence and AI identify emerging supply risks early enough to act?",
-        "How could El Niño and wider climate and nature pressures affect coffee and cocoa production and supply?",
-        "How can better risk intelligence support sourcing, insurance, investment and financial resilience?",
-      ],
       chair: pickOne("Rachel Delhaise"),
       speakers: pick(
         "David Laborde",
@@ -241,11 +231,6 @@ const day1: DayAgenda = {
         "PANEL: DECARBONISATION AT SCALE: FROM SCOPE 3 COMMITMENTS TO MEASURABLE OUTCOMES",
       description:
         "Moving from Scope 3 commitments to measurable outcomes remains one of the industry's biggest execution challenges. What will it take to embed carbon management into procurement, supplier engagement and day-to-day business decisions—and how can digital MRV help turn ambition into measurable action?",
-      bullets: [
-        "Scope 3 targets are set—but where are emissions actually falling across the supply chain?",
-        "How can digital MRV deliver credible farm-level data without creating additional burdens for producers?",
-        "How should the cost and responsibility of upstream decarbonisation be shared?",
-      ],
       chair: pickOne("Nathan Cole"),
       speakers: pick(
         "Andre van den Beld",
@@ -260,11 +245,6 @@ const day1: DayAgenda = {
         "PANEL: PUTTING NATURE ON THE BALANCE SHEET: NATURAL CAPITAL AS A STRATEGIC BUSINESS ASSET",
       description:
         "Healthy landscapes underpin long-term productivity, supply security and investment performance. How can biodiversity, soil health and water resilience become measurable business assets rather than external costs?",
-      bullets: [
-        "How can nature-related risks and dependencies be measured and valued credibly enough to influence sourcing, investment and risk decisions?",
-        "Can businesses put a price on nature without reducing it to a purely financial metric?",
-        "How can natural capital approaches create measurable value for both supply chains and producing communities?",
-      ],
       chair: pickOne("David Laborde"),
       speakers: pick(
         "Juliette Cody",
@@ -319,11 +299,6 @@ const day2: DayAgenda = {
       title: "FIRESIDE: FROM CLIMATE AMBITION TO TRADE & INVESTMENT",
       description:
         "Climate ambition is beginning to reshape the economics of trade. For producing countries, the question is no longer only how to respond — but how to turn transition into competitiveness, investment and long-term value.",
-      bullets: [
-        "Where could climate ambition create new trade and investment opportunities for producing countries?",
-        "What will help agricultural value chains remain competitive as climate expectations reshape markets and trade?",
-        "How can producing countries attract long-term investment, strengthen market access and retain more value at origin?",
-      ],
       chair: pickOne("Peter Foster"),
       speakers: pick("Hon. Alpha Ibrahim Sesay", "Rachel Kyte"),
     },
@@ -332,11 +307,6 @@ const day2: DayAgenda = {
       title: "PANEL: WHO WILL SECURE COFFEE & COCOA SUPPLY BY 2030?",
       description:
         "Bringing together senior decision-makers from across the coffee and cocoa value chain, this signature discussion examines how procurement, finance, technology and partnerships must evolve to secure future supply. Which decisions made today will matter most over the next decade?",
-      bullets: [
-        "Where will future coffee and cocoa supply come from as production conditions change?",
-        "Which investments made today will have the greatest impact on supply resilience through 2030?",
-        "Which actions and commitments are needed across producers, traders, brands, governments and investors to secure future supply?",
-      ],
       chair: pickOne("Jenny Davis-Peccoud"),
       speakers: pick(
         "Olivier Laboulle",
@@ -357,11 +327,6 @@ const day2: DayAgenda = {
         "PANEL: REGENERATIVE AGRICULTURE – BUILDING THE NEXT GENERATION OF RESILIENT COFFEE & COCOA PRODUCTION SYSTEMS",
       description:
         "If higher productivity alone is no longer enough, what will resilient production look like? How can farming systems respond to climate pressures, protect natural resources and remain commercially viable at scale?",
-      bullets: [
-        "Which practices are delivering measurable gains in resilience, productivity and farmer economics?",
-        "Can regenerative models contribute meaningfully to the living-income challenge—or are different economic levers still required?",
-        "Which technologies and data can help prove what works at farm level — and support wider adoption at scale?",
-      ],
       chair: pickOne("Eden Cottee-Jones"),
       speakers: pick(
         "Piet van Asten",
@@ -375,11 +340,6 @@ const day2: DayAgenda = {
       title: "FIRESIDE: BEYOND AI – FROM ADOPTION TO ADVANTAGE",
       description:
         "AI creates real value when it helps organisations make faster, better and more confident decisions. As the pace of innovation accelerates, the bigger question is how companies decide which technologies are worth adopting — and how they assess whether they are delivering.",
-      bullets: [
-        "Where is AI already delivering measurable value across sourcing, forecasting and supply-chain risk?",
-        "What makes an emerging technology worth adopting — and able to scale?",
-        "How should organisations assess outcomes, govern data and build trust in technology-enabled decisions?",
-      ],
       chair: pickOne("Dr. Harvey Lewis"),
       speakers: pick("Paola Scarpa", "Tim Scharrer"),
     },
@@ -394,11 +354,6 @@ const day2: DayAgenda = {
         "PANEL: THE PROCUREMENT DECADE: SECURING SUPPLY IN AN ERA OF STRUCTURAL CHANGE",
       description:
         "Procurement is no longer simply about buying—but can it become one of the industry's greatest drivers of long-term supply resilience? How are leading organisations balancing resilience, supplier partnerships and competitiveness in an increasingly uncertain market?",
-      bullets: [
-        "How are procurement teams rethinking cost, risk and supply security as market volatility increases?",
-        "What would stronger, longer-term supplier partnerships look like in practice?",
-        "How will technology, data and AI reshape risk visibility and long-term sourcing decisions?",
-      ],
       chair: pickOne("Michael Mowat"),
       speakers: pick(
         "Malcolm Hett",
@@ -412,10 +367,6 @@ const day2: DayAgenda = {
         "CLOSING PANEL: MAPPING THE NEXT FIVE YEARS: WHAT WILL DEFINE THE FUTURE OF COFFEE & COCOA?",
       description:
         "After two days of discussion, one question remains: what will define the next generation of resilient coffee and cocoa supply? From technology and finance to procurement and production, which shifts deserve the industry’s attention—and which are simply noise?",
-      bullets: [
-        "How will climate change reshape coffee and cocoa production geographies — and how must capital, regulation and technology respond through 2030?",
-        "What should the industry scale now—and what deserves less attention?",
-      ],
       chair: pickOne("Peter Foster"),
       speakers: pick(
         "Eric Gorlier",
