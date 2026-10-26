@@ -10,7 +10,6 @@ import SummitInTheNews from "../../components/SummitInTheNews";
 import ImageCarousel from "../../components/ImageCarousel";
 import Testimonials from "../../components/LoopedTestimonials";
 import Speakers2024 from "../../components/2024Speakers";
-import KeyThemes from "../../components/KeyThemes";
 import Attendees2023 from "../../components/2023Attendees";
 import WhoIsInTheRoom, { WhoAttends } from "../../components/WholsInTheRoom";
 import WcisInAction from "../../components/WcisInAction";
@@ -31,9 +30,9 @@ export default function HomePage() {
             <HomeSection>
                 <Speakers2026 />
             </HomeSection>
-            <HomeSection>
+            {/* <HomeSection>
                 <KeyThemes compactTop />
-            </HomeSection>
+            </HomeSection> */}
             <HomeSection><WhoIsInTheRoom /></HomeSection>
             <HomeSection><WhoAttends /></HomeSection>
             <HomeSection><Testimonials /></HomeSection>
