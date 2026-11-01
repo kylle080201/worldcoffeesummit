@@ -21,7 +21,8 @@ import { HomePageLayout, HomeSection } from "../../components/HomeSection";
 
 export default function HomePage() {
     return (
-        <HomePageLayout>
+        // Overview ends on a white section (2026 SUMMIT OVERVIEW), so start the alternation on gray
+        <HomePageLayout startIndex={1}>
             <Overview />
             {/* <WhyAttend /> */}
             {/* <HomeSection>
