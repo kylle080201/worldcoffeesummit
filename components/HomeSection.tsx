@@ -12,8 +12,15 @@ function alternatingBackground(index: number) {
   return index % 2 === 0 ? "bg-white" : "bg-gray-100";
 }
 
-export function HomePageLayout({ children }: { children: React.ReactNode }) {
-  let index = 0;
+export function HomePageLayout({
+  children,
+  startIndex = 0,
+}: {
+  children: React.ReactNode;
+  /** Index of the first HomeSection: 0 starts on white, 1 starts on gray. */
+  startIndex?: number;
+}) {
+  let index = startIndex;
 
   return (
     <SectionIndexContext.Provider value={{ consumeIndex: () => index++ }}>

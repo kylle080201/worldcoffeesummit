@@ -77,7 +77,7 @@ function LimeDivider({ className = 'mx-auto w-12' }: { className?: string }) {
 export default function AboutWcis() {
   return (
     <div className="w-full" id="about-wcis">
-      <section className="w-full bg-white px-4 pb-0 pt-12 sm:px-6 sm:pt-16 lg:px-8">
+      <section className="w-full bg-white px-4 pb-12 pt-12 sm:px-6 sm:pb-16 sm:pt-16 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="grid items-center gap-10 lg:grid-cols-10 lg:gap-12">
             <div className="lg:col-span-6">
@@ -116,6 +116,7 @@ export default function AboutWcis() {
             </div>
           </div>
 
+          {/* THE WCIS DIFFERENCE + WHO WE BRING TOGETHER (hidden)
           <div className="mt-10 sm:mt-12">
             <h2 className="text-center text-2xl font-bold tracking-tight text-lime-700 sm:text-3xl">
               THE WCIS DIFFERENCE
@@ -168,10 +169,12 @@ export default function AboutWcis() {
               ))}
             </div>
           </div>
+          */}
         </div>
       </section>
 
       <section className="w-full bg-white">
+        {/* SINCE 2023 (hidden)
         <div className="mx-auto max-w-7xl px-4 pb-0 pt-10 sm:px-6 sm:pt-12 lg:px-8">
           <p className="text-center text-2xl font-bold tracking-tight text-lime-700 sm:text-3xl">
             SINCE 2023
@@ -203,6 +206,7 @@ export default function AboutWcis() {
             edition has reflected the evolving priorities of the sector.
           </p>
         </div>
+        */}
 
         <div className="bg-lime-700">
           <div className="mx-auto flex max-w-7xl justify-center px-6 py-10 sm:py-12 lg:px-8 lg:py-14">

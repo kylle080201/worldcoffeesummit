@@ -175,6 +175,7 @@ export default function Overview() {
                 </div>
             </section>
 
+            {/* WHY THIS SUMMIT (hidden)
             <section className="w-full bg-gray-100 px-6 pb-10 pt-6 sm:px-8 sm:pb-14 sm:pt-8 md:px-12">
                 <div className="mx-auto max-w-7xl">
                     <p className="text-center text-2xl font-bold tracking-tight text-lime-700 sm:text-4xl">
@@ -207,7 +208,9 @@ export default function Overview() {
                     </div>
                 </div>
             </section>
+            */}
 
+            {/* WHY THIS MATTERS NOW (hidden)
             <section className="w-full bg-white px-6 pb-10 pt-6 sm:px-8 sm:pb-14 sm:pt-8 md:px-12">
                 <div className="mx-auto max-w-7xl">
                     <p className="text-center text-2xl font-bold tracking-tight text-lime-700 sm:text-4xl">
@@ -236,6 +239,7 @@ export default function Overview() {
                     </div>
                 </div>
             </section>
+            */}
                 {/* <Advisoryboard /> */}
                 {/* <Speakertest/> */}
 

@@ -389,6 +389,9 @@ const tabs = [
 
 type TabId = (typeof tabs)[number]["id"];
 
+// Session descriptions are hidden for now; set to true to show them again.
+const SHOW_AGENDA_DESCRIPTIONS = false;
+
 function startTime(time: string) {
   return time.split("–")[0]?.trim() ?? time;
 }
@@ -410,8 +413,9 @@ function AgendaSession({ item }: { item: AgendaItem }) {
   const isBreak = item.variant === "break";
   const barClass = isBreak ? "bg-gray-600" : "bg-lime-700";
   const heading = toBarTitle(item.title, item.subtitle);
+  const description = SHOW_AGENDA_DESCRIPTIONS ? item.description : undefined;
   const hasDetails = Boolean(
-    item.description ||
+    description ||
       item.bullets?.length ||
       item.extra?.length ||
       item.speaker ||
@@ -436,11 +440,11 @@ function AgendaSession({ item }: { item: AgendaItem }) {
 
       {hasDetails && (
         <div className="mt-4 w-full px-2">
-          {item.description && <p className="italic">{item.description}</p>}
+          {description && <p className="italic">{description}</p>}
           {item.bullets && item.bullets.length > 0 && (
             <ul
               className={`list-disc space-y-1 pl-5 text-base leading-relaxed ${
-                item.description ? "mt-3" : ""
+                description ? "mt-3" : ""
               }`}
             >
               {item.bullets.map((bullet) => (
@@ -451,7 +455,7 @@ function AgendaSession({ item }: { item: AgendaItem }) {
           {item.extra && item.extra.length > 0 && (
             <div
               className={`grid grid-cols-1 gap-4 md:grid-cols-2 ${
-                item.description || item.bullets?.length ? "mt-4" : ""
+                description || item.bullets?.length ? "mt-4" : ""
               }`}
             >
               {item.extra.map((block) => (
@@ -462,7 +466,7 @@ function AgendaSession({ item }: { item: AgendaItem }) {
                   <p className="font-bold uppercase text-lime-700">
                     {toBarTitle(block.title, block.subtitle)}
                   </p>
-                  {block.description && (
+                  {SHOW_AGENDA_DESCRIPTIONS && block.description && (
                     <p className="mt-2 italic">{block.description}</p>
                   )}
                   {block.bullets && block.bullets.length > 0 && (
