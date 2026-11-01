@@ -3,8 +3,9 @@
 import Image, { type StaticImageData } from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
-import { Partners2025Marquee, WhoAttendsGrid } from './WholsInTheRoom'
-import { partnersPageWhoAttendsRows } from './whoAttendsLogos'
+// Used by the hidden WHO ATTENDS / PREVIOUS PARTNERS INCLUDE sections below
+// import { Partners2025Marquee, WhoAttendsGrid } from './WholsInTheRoom'
+// import { partnersPageWhoAttendsRows } from './whoAttendsLogos'
 import partnerHeaderImage from '../images/partners-image/PARTNER-HEADER-IMAGE.jpg'
 import partnerImage1 from '../images/partners-image/PARTNER-IMAGE-1.jpg'
 import partnerImage2 from '../images/partners-image/PARTNER-IMAGE-2.jpg'
@@ -119,7 +120,7 @@ export default function Partners() {
 
       <Partners2026 />
 
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 sm:pb-20 lg:px-8">
         <div className="mt-20 sm:mt-24">
           <h2 className="text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             WHY PARTNER WITH US?
@@ -148,12 +149,15 @@ export default function Partners() {
         </div>
       </div>
 
+      {/* WHO ATTENDS (hidden)
       <WhoAttendsGrid
         rows={partnersPageWhoAttendsRows}
         subtitle="Organisations represented include:"
         compactBottom
       />
+      */}
 
+      {/* PREVIOUS PARTNERS INCLUDE (hidden)
       <section className="w-full bg-white pb-16 pt-12 sm:pb-20 sm:pt-16">
         <div className="w-full px-4 sm:px-6 lg:px-8">
           <h2 className="text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -162,6 +166,7 @@ export default function Partners() {
           <Partners2025Marquee />
         </div>
       </section>
+      */}
 
       <section className="w-full bg-teal-700 ">
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-6 px-4 py-10 sm:flex-row sm:justify-between sm:px-6 lg:px-8">

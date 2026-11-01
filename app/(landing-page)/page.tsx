@@ -23,7 +23,7 @@ export default function HomePage() {
     return (
         <HomePageLayout>
             <Overview />
-            <WhyAttend />
+            {/* <WhyAttend /> */}
             {/* <HomeSection>
                 <Advisoryboard />
             </HomeSection> */}
@@ -33,8 +33,10 @@ export default function HomePage() {
             {/* <HomeSection>
                 <KeyThemes compactTop />
             </HomeSection> */}
-            <HomeSection><WhoIsInTheRoom /></HomeSection>
-            <HomeSection><WhoAttends /></HomeSection>
+            {/* <HomeSection><WhoIsInTheRoom /></HomeSection> */}
+            {/* WHO ATTENDS hidden; WCIS IN ACTION (previously rendered inside WhoAttends) kept as its own section */}
+            {/* <HomeSection><WhoAttends /></HomeSection> */}
+            <HomeSection><WcisInAction /></HomeSection>
             <HomeSection><Testimonials /></HomeSection>
             {/* <Attendees2023 /> */}
             <HomeSection><SummitInTheNews /></HomeSection>
