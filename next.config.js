@@ -48,6 +48,12 @@ const nextConfig = {
       { source: '/faq', destination: '/', permanent: false },
       { source: '/resources', destination: '/', permanent: false },
       { source: '/resources/:path*', destination: '/', permanent: false },
+      // Registration closed: send the ticket purchase flow back to the homepage.
+      // Exact paths only, so /register/success (Stripe return URL) and
+      // /register/form/networking-soiree keep working.
+      { source: '/register', destination: '/', permanent: false },
+      { source: '/register/form', destination: '/', permanent: false },
+      { source: '/register/add-ons', destination: '/', permanent: false },
     ];
   },
 };

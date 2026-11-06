@@ -270,10 +270,10 @@ Join me: ${eventUrl}`
                                         If you haven&apos;t yet registered for the <span className="font-bold">World Coffee Innovation Summit London 2026</span>, you can do so below.
                                     </p>
                                     <a
-                                        href="/register"
+                                        href="/interest"
                                         className="inline-block px-8 py-2 mt-6 text-2xl font-bold text-white rounded-md shadow-sm bg-lime-700 hover:bg-lime-800"
                                     >
-                                        Register Now
+                                        Register Interest
                                     </a>
                                 </div>
                             ) : null}
