@@ -120,16 +120,10 @@ function Navbar() {
                     </div>
                     <div className='mt-4 flex gap-2'>
                       <button
-                        onClick={() => router.push('/register')}
-                        className={navButtonClassName}
-                      >
-                        Register Now
-                      </button>
-                      <button
                         onClick={() => router.push('/interest')}
                         className={navButtonClassName}
                       >
-                        Sponsor or Exhibit
+                        Register Interest
                       </button>
                     </div>
                   </div>
@@ -173,16 +167,10 @@ function Navbar() {
             </div>
             <div className="mt-4 flex flex-col gap-2 pl-3">
               <button
-                onClick={() => router.push('/register')}
-                className={`${navButtonClassName} w-fit`}
-              >
-                Register Now
-              </button>
-              <button
                 onClick={() => router.push('/interest')}
                 className={`${navButtonClassName} w-fit`}
               >
-                Sponsor or Exhibit
+                Register Interest
               </button>
             </div>
           </Disclosure.Panel>

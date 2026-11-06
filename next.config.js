@@ -48,6 +48,9 @@ const nextConfig = {
       { source: '/faq', destination: '/', permanent: false },
       { source: '/resources', destination: '/', permanent: false },
       { source: '/resources/:path*', destination: '/', permanent: false },
+      // Registration closed: send the ticket page to the Register Interest form.
+      // Only the exact /register path, so /register/success etc. (Stripe return URLs) keep working.
+      { source: '/register', destination: '/interest', permanent: false },
     ];
   },
 };
