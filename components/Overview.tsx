@@ -76,7 +76,7 @@ export default function Overview() {
 
     {/* Tagline and CTA button */}
     <div className="flex flex-col items-center gap-0 mt-[4rem] md:mt-[5rem] xl:mt-[10rem]">
-        <p className="p-2 text-2xl md:text-2xl lg:text-4xl xl:text-5xl font-normal md:whitespace-nowrap drop-shadow-xl text-[#FFBF00]">
+        <p className="p-2 text-2xl md:text-2xl lg:text-4xl xl:text-5xl font-semibold md:whitespace-nowrap drop-shadow-xl text-[#FFBF00]">
           Where Climate, Capital and Supply Chains Converge
         </p>
         <div className="flex flex-col gap-3 mt-4 sm:flex-row">
