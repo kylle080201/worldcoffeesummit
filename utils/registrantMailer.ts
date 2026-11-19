@@ -31,9 +31,9 @@ export const registrantMailer = async (data: any) => {
   try {
     const isSentToWca = await transporter.sendMail({
       from: `World Coffee Innovation Summit Team <${user}>`,
-      to: "info@worldcoffeealliance.com",
+      to: "events@worldcoffeealliance.com",
       // to: "kv.madrigal08@gmail.com",
-      subject: "World Coffee Innovation Summit London 2026: Thank you for registering your interest!",
+      subject: "WCIS27 London: Register Interest",
       html: `
       <div>Hi Mavis,</div>
       <div>${firstName} ${lastName} has just registered their interest.</div>
@@ -59,14 +59,16 @@ export const registrantMailer = async (data: any) => {
       html: `
       <div>Hello ${firstName},</div>
       <br/>
-      <div>Thank you for registering your interest in attending the World Coffee Innovation Summit London 2026.</div>
+      <div>Thank you for registering your interest in the upcoming World Coffee Innovation Summit London.</div>
       <br/>
-      <div>Our team will be in touch shortly.</div>
+      <div>We’ll keep you informed.</div>
       <br/>
-      <div>Any questions, feel free to reach out to info@worldcoffeealliance.com directly.</div>
+      <div>In the meantime, follow us on <a href="https://www.linkedin.com/company/worldcoffeealliance/" target="_blank">LinkedIn</a> for updates.</div>
+      <br/>
+      <div>If you have any questions, please feel free to contact us at <a href="mailto:events@worldcoffeealliance.com">events@worldcoffeealliance.com</a></div>
       <br/>
       <div>Best regards,</div>
-      <div>The Team @ World Coffee Innovation Summit</div>
+      <div>World Coffee Innovation Summit Team</div>
       `
     });
     return {isSentToWca, isSentToREgistrant};

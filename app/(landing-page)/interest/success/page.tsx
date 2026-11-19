@@ -5,27 +5,37 @@ export default function FormPage() {
         <>
           <div className="flex flex-col justify-center py-24 h-[80vh] max-w-4xl mx-auto">
             <div className="font-bold text-2xl xs:text-4xl text-left">
-              Thank you for registering your interest in attending the World Coffee Innovation Summit London 2026.
+              Thank you for registering your interest in the upcoming World Coffee Innovation Summit London.
             </div>
             <div className="text-lg xs:text-2xl mt-8 text-left">
-              Our team will be in touch shortly.
+              We&apos;ll keep you informed.
             </div>
             <div className="text-lg xs:text-2xl mt-4 text-left">
-              Any questions, feel free to reach out to{" "}
+              In the meantime, follow us on{" "}
               <Link
-                href={"mailto:info@worldcoffeealliance.com?Subject=Book%20Stand%20-%20Form%20Completion%20Email%20Enquiry"}
+                href={"https://www.linkedin.com/company/worldcoffeealliance/"}
                 target="_blank"
                 className="text-yellow-900 underline hover:underline-offset-4"
               >
-                info@worldcoffeealliance.com
+                LinkedIn
               </Link>{" "}
-              directly.
+              for updates.
             </div>
             <div className="text-lg xs:text-2xl mt-4 text-left">
-              Best regards, 
+              If you have any questions, please feel free to contact us at{" "}
+              <Link
+                href={"mailto:events@worldcoffeealliance.com"}
+                target="_blank"
+                className="text-yellow-900 underline hover:underline-offset-4"
+              >
+                events@worldcoffeealliance.com
+              </Link>
+            </div>
+            <div className="text-lg xs:text-2xl mt-8 text-left">
+              Best regards,
             </div>
             <div className="text-lg xs:text-2xl text-left">
-              The Team @ World Coffee Innovation Summit
+              World Coffee Innovation Summit Team
             </div>
           </div>
         </>

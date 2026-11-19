@@ -123,7 +123,7 @@ function Navbar() {
                         onClick={() => router.push('/interest')}
                         className={navButtonClassName}
                       >
-                        Register Interest
+                        Register Your Interest
                       </button>
                     </div>
                   </div>
@@ -170,7 +170,7 @@ function Navbar() {
                 onClick={() => router.push('/interest')}
                 className={`${navButtonClassName} w-fit`}
               >
-                Register Interest
+                Register Your Interest
               </button>
             </div>
           </Disclosure.Panel>
