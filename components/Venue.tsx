@@ -203,7 +203,7 @@ export default function Venue() {
           <h2 className="text-3xl font-bold text-white sm:text-4xl">Ready to join us in London?</h2>
           <div className="mt-8 flex w-full flex-col gap-4 sm:w-auto sm:flex-row">
             <Link href="/interest" className={ctaButtonClassName}>
-              Register Interest
+              Register Your Interest
             </Link>
           </div>
         </div>
