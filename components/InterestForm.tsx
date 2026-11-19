@@ -51,6 +51,7 @@ const InterestForm = () => {
     const notificationMethods = [
       "Sponsor",
       "Exhibitor",
+      "Delegate",
     ]
 
     useEffect(() => {

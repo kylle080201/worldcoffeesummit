@@ -17,7 +17,6 @@ function Navbar() {
   const navigation: NavItem[] = [
     { name: 'Overview', href: '/#overview' },
     { name: 'Speakers', href: '/speakers' },
-    { name: 'Agenda', href: '/agenda#agenda-2026' },
     { name: 'Venue', href: '/venue' },
     { name: 'Partners', href: '/partners' },
     { name: 'Newsroom', href: '/newsroom' },
@@ -120,16 +119,10 @@ function Navbar() {
                     </div>
                     <div className='mt-4 flex gap-2'>
                       <button
-                        onClick={() => router.push('/register')}
-                        className={navButtonClassName}
-                      >
-                        Register Now
-                      </button>
-                      <button
                         onClick={() => router.push('/interest')}
                         className={navButtonClassName}
                       >
-                        Sponsor or Exhibit
+                        Register Your Interest
                       </button>
                     </div>
                   </div>
@@ -173,16 +166,10 @@ function Navbar() {
             </div>
             <div className="mt-4 flex flex-col gap-2 pl-3">
               <button
-                onClick={() => router.push('/register')}
-                className={`${navButtonClassName} w-fit`}
-              >
-                Register Now
-              </button>
-              <button
                 onClick={() => router.push('/interest')}
                 className={`${navButtonClassName} w-fit`}
               >
-                Sponsor or Exhibit
+                Register Your Interest
               </button>
             </div>
           </Disclosure.Panel>
