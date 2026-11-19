@@ -82,7 +82,7 @@ export default function Overview() {
         <div className="flex flex-col gap-3 mt-4 sm:flex-row">
             <Link
                 href="/interest"
-                className="rounded-xl bg-lime-700 px-8 py-4 text-2xl md:text-3xl font-bold text-[#FFBF00] transition duration-300 hover:bg-lime-800 hover:text-[#FFD54F]"
+                className="rounded-xl bg-lime-700 px-8 py-4 text-2xl md:text-3xl font-bold text-white transition duration-300 hover:bg-lime-800"
             >
                 REGISTER YOUR INTEREST
             </Link>
