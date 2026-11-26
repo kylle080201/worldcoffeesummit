@@ -48,11 +48,13 @@ export default function Overview() {
             {/* V1 */}
   <div
   id="overview"
-  className="relative pt-2 sm:py-24 pb-6 sm:pb-12  overflow-hidden"
+  className="relative pt-2 sm:py-24 pb-6 sm:pb-12  overflow-hidden xl:flex xl:flex-col xl:justify-center xl:min-h-[calc(56.25vw+4rem)] xl:bg-[rgb(38_72_51)]"
 >
+  {/* On xl screens the hero is sized to the video's 16:9 shape (plus the stats bar below it),
+      so the whole frame shows instead of being cropped top and bottom. */}
   {/* Background Video */}
   <video
-    className="absolute inset-0 w-full h-full object-cover z-0"
+    className="absolute inset-x-0 top-0 w-full h-full object-cover z-0 xl:h-auto xl:aspect-video xl:min-h-[calc(100%-4rem)]"
     src="https://worldcoffeealliance.com/wp-content/uploads/2026/11/WCIS26-Highlight-Video.mp4"
     autoPlay
     muted
@@ -61,7 +63,7 @@ export default function Overview() {
   />
 
   {/* Teal Overlay */}
-  <div className="absolute inset-0 bg-teal-700 opacity-50 z-0" />
+  <div className="absolute inset-x-0 top-0 h-full bg-teal-700 opacity-50 z-0 xl:h-auto xl:aspect-video xl:min-h-[calc(100%-4rem)]" />
 
                 {/* Main Container */}
 <div className="w-full relative flex flex-col items-center text-center text-white mt-32 md:mt-2 xl:-mt-8 py-8 pb-80 md:pb-20">
