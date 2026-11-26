@@ -34,10 +34,9 @@ export default function HomePage() {
             {/* <HomeSection>
                 <KeyThemes compactTop />
             </HomeSection> */}
-            {/* <HomeSection><WhoIsInTheRoom /></HomeSection> */}
-            {/* WHO ATTENDS hidden; WCIS IN ACTION (previously rendered inside WhoAttends) kept as its own section */}
-            {/* <HomeSection><WhoAttends /></HomeSection> */}
-            <HomeSection><WcisInAction /></HomeSection>
+            <HomeSection><WhoIsInTheRoom /></HomeSection>
+            {/* WhoAttends renders WCIS IN ACTION underneath the logos */}
+            <HomeSection><WhoAttends /></HomeSection>
             <HomeSection><Testimonials /></HomeSection>
             {/* <Attendees2023 /> */}
             <HomeSection><SummitInTheNews /></HomeSection>
