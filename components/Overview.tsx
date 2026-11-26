@@ -84,7 +84,7 @@ export default function Overview() {
                 href="/interest"
                 className="rounded-xl bg-lime-700 px-8 py-4 text-2xl md:text-3xl font-bold text-white transition duration-300 hover:bg-lime-800"
             >
-                REGISTER YOUR INTEREST
+                REGISTER INTEREST FOR 2027
             </Link>
         </div>
     </div>
