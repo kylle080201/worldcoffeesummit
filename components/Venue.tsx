@@ -99,8 +99,7 @@ export default function Venue() {
           </h1>
           <div className="mt-6 space-y-4 text-lg leading-normal text-gray-900 sm:text-xl">
             <p>
-              WCIS takes place at the QEII Centre, located in the heart of Westminster,
-              bringing together leaders from across coffee, cocoa, finance, policy and technology.
+              WCIS takes place at the QEII Centre, located in the heart of Westminster.
             </p>
             <p>
               On day 1, the event concludes with the WCIS Networking Soirée at the House of Lords.
@@ -165,8 +164,7 @@ export default function Venue() {
               The Networking Soirée will be held at the House of Lords.
             </p>
             <p>
-              This unique setting offers an unparalleled opportunity to connect with senior leaders
-              from across the coffee and cocoa value chains, as well as finance, policy and innovation.
+              This unique setting offers an unparalleled opportunity to connect with senior leaders.
             </p>
           </div>
         </div>

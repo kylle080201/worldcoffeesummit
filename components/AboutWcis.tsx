@@ -210,25 +210,9 @@ export default function AboutWcis() {
 
         <div className="bg-lime-700">
           <div className="mx-auto flex max-w-7xl justify-center px-6 py-10 sm:py-12 lg:px-8 lg:py-14">
-            <div className="flex w-full max-w-6xl flex-col items-center gap-6 md:flex-row md:items-stretch md:justify-center md:gap-8 lg:gap-10">
-              <p className="shrink-0 text-left font-bold leading-tight text-white sm:text-2xl">
-                Different Themes.
-                <br />
-                One Mission.
-              </p>
-              <div
-                className="h-px w-20 shrink-0 bg-white md:h-auto md:w-px"
-                aria-hidden="true"
-              />
-              <p className="leading-snug text-white sm:text-2xl">
-                <span className="block md:whitespace-nowrap">
-                  To bring together the people, expertise, and partnerships
-                </span>
-                <span className="block md:whitespace-nowrap">
-                  shaping the future of coffee and cocoa.
-                </span>
-              </p>
-            </div>
+            <p className="w-full text-center leading-snug text-white sm:text-2xl xl:whitespace-nowrap">
+              To bring together the people, expertise, and partnerships shaping the future of coffee and cocoa.
+            </p>
           </div>
         </div>
       </section>
