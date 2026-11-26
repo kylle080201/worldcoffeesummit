@@ -17,6 +17,7 @@ function Navbar() {
   const navigation: NavItem[] = [
     { name: 'Overview', href: '/#overview' },
     { name: 'Speakers', href: '/speakers' },
+    { name: 'Agenda', href: '/agenda#agenda-2026' },
     { name: 'Venue', href: '/venue' },
     { name: 'Partners', href: '/partners' },
     { name: 'Newsroom', href: '/newsroom' },
@@ -122,7 +123,7 @@ function Navbar() {
                         onClick={() => router.push('/interest')}
                         className={navButtonClassName}
                       >
-                        Register Your Interest
+                        Register Interest for 2027
                       </button>
                     </div>
                   </div>
@@ -169,7 +170,7 @@ function Navbar() {
                 onClick={() => router.push('/interest')}
                 className={`${navButtonClassName} w-fit`}
               >
-                Register Your Interest
+                Register Interest for 2027
               </button>
             </div>
           </Disclosure.Panel>

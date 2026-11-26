@@ -53,7 +53,7 @@ export default function Overview() {
   {/* Background Video */}
   <video
     className="absolute inset-0 w-full h-full object-cover z-0"
-    src="https://worldcoffeealliance.com/wp-content/uploads/2024/10/World-Coffee-Innovation-Summit-London-16-17th-October-2024-Highlights-1-1.mp4"
+    src="https://worldcoffeealliance.com/wp-content/uploads/2026/11/WCIS26-Highlight-Video.mp4"
     autoPlay
     muted
     loop
@@ -84,7 +84,7 @@ export default function Overview() {
                 href="/interest"
                 className="rounded-xl bg-lime-700 px-8 py-4 text-2xl md:text-3xl font-bold text-white transition duration-300 hover:bg-lime-800"
             >
-                REGISTER YOUR INTEREST
+                REGISTER INTEREST FOR 2027
             </Link>
         </div>
     </div>
