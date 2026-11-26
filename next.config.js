@@ -54,10 +54,6 @@ const nextConfig = {
       { source: '/register', destination: '/', permanent: false },
       { source: '/register/form', destination: '/', permanent: false },
       { source: '/register/add-ons', destination: '/', permanent: false },
-      // Agenda hidden: send /agenda (and any #agenda-2026 links) to the homepage
-      // so the agenda can't be viewed or indexed.
-      { source: '/agenda', destination: '/', permanent: false },
-      { source: '/agenda/:path*', destination: '/', permanent: false },
     ];
   },
 };
